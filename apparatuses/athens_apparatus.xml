@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
+            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
+        <fileDesc xml:id="title_of_work_apparatus">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="apparatus">
+                <head type="title">&#x201C;Athens&#x201D;</head>
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>Above the first line of the first four stanzas of draft in MS VIII (pp. 1-2), <persName corresp="#JR">Ruskin</persName> inserted the title, &#x201C;Athens&#x201D; in pencil, 
+                        although he composed the draft itself in ink, suggesting that he considered the title to be tentative. 
+                        He was apparently having difficulty making up his mind. 
+                        On the back endpaper of MS VIII, he wrote a note to himself clearly referring to the fifth stanza of &#x201C;Athens,&#x201D; 
+                        in which he names the poem &#x201C;Persiad&#x201D;--no doubt an invention that refers to the poem’s subject of the Persian Wars. 
+                        This title, using the classical suffix, complements <persName corresp="#JR">Ruskin</persName>&#x02BC;s title for his earlier epic poem, 
+                        <ref type="apparatus" target="iteriad_apparatus.html">&#x201C;Iteriad&#x201D;</ref>.<!-- DCH to self: create file for this endpaper note as marginalia or work? -->
+                    </p> 
+                    <p>The title appears to have remained tentative at least until <persName corresp="#JR">Ruskin</persName> reached the draft of the tenth stanza in MS VIII, 
+                        where he boldly wrote &#x201C;Athens&#x201D; 
+                        above the stanza in ink, with no indication that he inserted this title later than the draft itself 
+                        (stanzas 10-12 composed <date notBefore="1831-12-01" notAfter="1832-01-31">between December 1831 and January 1832</date>; see <ref type="internal" target="DATE">Date</ref>). 
+                        Nonetheless, <persName corresp="#JR">Ruskin</persName> used no title for his fair copy in <ref type="apparatus" target="msv_apparatus.html">MS V</ref>, which he made shortly after completing draft of the first eighteen stanzas, 
+                        toward the end of January 1832. The fair copy in MS IA, which is probably earlier, made in December 1831, likewise lacks a title contemporary with its production 
+                        (see <ref type="internal" target="COMPPUB">Composition and Publication</ref>). Both of these fair copies carry the title &#x201C;Athens&#x201D; in pencil, 
+                        but the hand is probably W. G. Collingwood's from a much later time, when he was preparing his edition, 
+                        <ref type="note" subtype="bibliographical" target="poems_1891_note.html"><hi rend="italic">Poems</hi> (1891)</ref>.
+                    </p>
+                    <p>Of the fair copies, only MS VII presents a title. Even this manuscript's elaborate title page (59r) leaves options partly open, however, 
+                        by naming the work “ATHENS / or the,” with the subtitle left incomplete, and with the ornamented lettering for “ATHENS” 
+                        left incompletely traced in ink over top of the penciled design. 
+                        (The design matches that for the title page of 
+                        <ref type="apparatus" target="iteriad_apparatus.html">&#x201C;Iteriad&#x201D;</ref>, also contained in MS VII.)
+                    </p>
+                </div>
+                <div type="section" xml:id="GENRE">
+                    <head type="section">Genre</head>
+                    <p>Poem; epic.</p>
+                </div>
+                <div type="section" xml:id="MAJORMS">
+                    <head type="section">Manuscripts</head>
+                    <p>MS IA, MS V, MS VII, MS VIII.</p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Late August or September 1831 through May 1832.<!-- DCH to self: when did they return from Wales? --> 
+                        In their "Chronological List of Poems," the editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.html">Library Edition</ref> 
+                        date this poem broadly but correctly as 1831-32 
+                        (<ref type="bibliography" target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2: 537).
+                    </p>
+                    <p>Ruskin's progress in composing “Athens” can be dated reasonably closely since he entered stanzas intermittently in MS VIII relative to other dateable poems 
+                        in the 1831-33 section of this notebook. His composition of this mix of "Athens" stanzas along with shorter poems appears sequential, 
+                        but caveats are justified in places, which would complicate the chronology  
+                        (see <ref type="apparatus" target="msviii_apparatus.html#SECTIONA">MS VIII: Contents, Section <hi rend="italic">a</hi></ref>).
+                    </p>
+                    <p>Ruskin probably started work on "Athens" in late August or September 1831, 
+                        given that the first portion of draft in MS VIII, stanzas 1-4, precedes a section of 
+                        “Iteriad,” book 4, lines 297-320, which he likely composed in September. Previously, he had been drafting "Iteriad" in another notebook, 
+                        MS VI, which is likewise devoted to rough draft, and in which he refers to MS VIII as the "new manuscript" 
+                        (see <ref type="apparatus" target="iteriad_apparatus.html#DATE">&#x201C;Iteriad&#x201D;: Date</ref> and 
+                        <ref type="apparatus" target="iteriad_apparatus.html#COMPPUB">&#x201C;Iteriad&#x201D;: Composition and Publication</ref>). 
+                        In MS VIII, however, the "Iteriad" draft appears neatly self-contained on its page (p. 3), 
+                        an appearance suggesting the possibility that Ruskin entered this passage in MS VIII first, 
+                        and then wrapped the other poetry (including the opening "Athens" stanzas) 
+                        on pp. 1-2 and pp. 4-6 around it. Even so, this possibility might affect the chronology only in throwing the "Iteriad" draft 
+                        back in time prior to the Ruskin family's departure for the <ref type="note" subtype="contextual" target="tour_of_1831_note.html">Tour of 1831</ref> 
+                        to Wales. On their return,<!-- DCH to self: when? --> 
+                        Ruskin reflects on that experience in many of the poems of 
+                        <ref type="apparatus" target="msviii_apparatus.html#SECTIONA">MS VIII: Contents, Section <hi rend="italic">a</hi></ref>.
+                    </p>
+                    <p>The first poem in MS VIII to be dated explicitly in the manuscript is 
+                        <ref type="apparatus" target="twas_night_i_stood_by_tweeds_fair_stream_apparatus.html">&#x201C;&#x02BC;Twas night. I stood by Tweed&#x02BC;s fair stream&#x201D; [&#x201C;To the Memory of Sir Walter Scott&#x201D;]</ref>, 
+                        which Margaret Ruskin glossed as “Oct." Since the poem falls on p. 5, following both the opening "Athens" stanzas and the "Iteriad" draft, 
+                        an October date tends to confirm August or September for the inception of "Athens." 
+                        Margaret's gloss, however, may refer to a revision of this poem a year later; see the details about the 
+                        <ref type="apparatus" target="twas_night_i_stood_by_tweeds_fair_stream_apparatus.html#COMPPUB">composition</ref> of that poem.
+                    </p>
+                    <p>The next installment of "Athens" to appear in MS VIII, stanzas 5-9 (pp. 14-16), follows 
+                        <ref type="apparatus" target="curtained_in_cloudy_drapery_apparatus.html">“Curtained in cloudy drapery” [“Moonlight on the Mountains”]</ref> 
+                        (pp. 12&#x2013;13), which Ruskin dated 30 November in its MS V copy, and 
+                        <ref type="apparatus" target="i_here_begin_an-invocation_apparatus.html">“I here begin an invocation”</ref>  
+                        (p. 14), which he could have composed anytime between December 1831 and January 1832. 
+                        Thus, after beginning "Athens" in August or September 1831, Ruskin returned to the poem by the end of the year or start of the next. 
+                        Note that this set of stanzas is framed by mock-epic verses, 
+                        <ref type="apparatus" target="i_here_begin_an-invocation_apparatus.html">“I here begin an invocation”</ref> and  
+                        <ref type="apparatus" target="assist_me_oh_thou_muse_divine_apparatus.html">“Assist me oh thou muse divine”</ref> (p. 16).</p>
+                    <p>Having resumed, Ruskin continued to alternate stanzas of "Athens" with shorter poems throughout this period 
+                        of December 1831 through January 1832. 
+                        Stanzas 10-12 (pp. 17-18) follow <ref type="apparatus" target="there_is_a_solemn_silence_on_the_scene_apparatus.html">“There is a solemn silence on the scene”</ref> 
+                        (p. 17) and precede <ref type="apparatus" target="sonnet_to_a_cloud_apparatus.html">“Sonnet to a Cloud”</ref> (p. 18), 
+                        which likewise belong to this period. Stanzas 13-14 (pp. 19-20) follow 
+                        <ref type="apparatus" target="oh_mighty_monarch_of_the_noses_purple_red_apparatus.html">“Oh mighty monarch of the noses purple red”</ref> (p. 19), 
+                        which may be linked to a letter of 14 January 1832; 
+                        and stanzas 15-18 (pp. 21-22) fall between 
+                        <ref type="apparatus" target="i_heard_the_waters_pouring_apparatus.html">“I heard the waters pouring”</ref> (p. 20) and 
+                        <ref type="apparatus" target="for_the_sound_of_death_is_in_the_breeze_apparatus.html">“For the sound of death is in the breeze”</ref> (pp. 22&#x2013;24), 
+                        which cannot be dated otherwise than by their position in MS VIII, indicating the second half of January 1832.
+                    </p>
+                    <p>After a brief hiatus from "Athens," Ruskin resumed the poem in MS VIII with stanza 19 (pp. 28&#x2013;29). 
+                        This single stanza follows <ref type="the_song_of_the_southern_breeze_apparatus.html">“The Song of the Southern Breeze”</ref> (pp. 26&#x2013;28), 
+                        which Ruskin dated 12 February 1832 in MS VIII. 
+                        Stanza 19 is succeeded by drafts of three more poems 
+                        (<ref type="apparatus" target="mourn_mizraim_mourn_the_weltering_wave_apparatus.html">&#x201C;Mourn, Mizraim, mourn! The weltering wave&#x201D; [&#x201C;The Destruction of Pharaoh&#x201D;]</ref> (p. 29), 
+                        <ref type="apparatus" target="the_mountain_breeze_it_is_sunk_to_sleep_apparatus.html">&#x201C;The mountain breeze it is sunk to sleep&#x201D;</ref> (p. 30), and 
+                        <ref type="apparatus" target="the_isle_of_the_apparatus.html">&#x201C;The Isle of the&#x201D;</ref> (pp. 30&#x2013;31), 
+                        and then MS VIII is taken up with draft of a poem that Ruskin was preparing in advance of his father’s 10 May 1832 birthday, 
+                        <ref type="apparatus" target="twelve_months_all_rolling_round_have_past_apparatus.html">“Twelve months all rolling round have past”</ref> (pp. 31&#x2013;37). 
+                        How far in advance of that anniversary Ruskin was working cannot be established with certainty, 
+                        except that the possible period of composition for all these poems, starting with stanza 19 of "Athens," stretches from mid-February to May 10.
+                    </p> 
+                    <p>Finally, there follows a cluster formed by the last known stanzas of "Athens" to be composed (or, at least, the last to have survived) mixed with a few other poems: 
+                        stanzas 20-21 (pp. 37&#x2013;38), which are followed by three miscellaneous poems 
+                        (<ref type="apparatus" target="aspice_pater_invocationem_apparatus.html">&#x201C;Aspice pater invocationem&#x201D;</ref> [p. 38], 
+                        <ref type="apparatus" target="llyn_idwal_apparatus.html">&#x201C;Llyn Idwal&#x201D;</ref> [pp. 38&#x2013;39], and 
+                        <ref type="apparatus" target="they_woke_them_from_their_couch_of_rest_apparatus.html">&#x201C;They woke them from their couch of rest&#x201D;</ref> [pp. 39&#x2013;41]), 
+                        and then by one final, unnumbered stanza (p. 41). Possible fault lines run before and after this cluster, or even between poems within the cluster, 
+                        which would open up differing scenarios for dating. The most likely scenario, however, is that this final cluster belongs to the same period, 
+                        mid-February to mid-May, that also comprises the preceding cluster starting with stanza 19 and leading up to draft of the birthday poem for John James.
+                    </p> 
+                    <p>For the final cluster containing the three final known stanzas of "Athens," 
+                        two clear benchmarks for dating are formed, on the cluster's earlier end, by the draft of the birthday poem for John James, and, 
+                        on its other end, by 
+                        <ref type="apparatus" target="the_grass_grows_green_on_the_banks_of_the_tweed_apparatus.html">“The grass grows green on the banks of Tweed” [“The Grave of the Poet”]</ref> 
+                        (pp. 41&#x2013;42). In MS VIII, 
+                        Ruskin dated the latter as September 1832, for it refers to the death of 
+                        <ref type="note" subtype="biographical" target="scott_walter_note.html">Walter Scott (1771&#x2013;1832)</ref> on September 21. 
+                        The intervening gap of time was filled in part by the <ref type="note" subtype="contextual" target="tour_of_1832.html">Tour of 1832</ref>, 
+                        a family holiday in Dover and Hastings, which extended from 22 May through 19 July. At what point respecting this final "Athens" cluster did the holiday intervene?
+                    </p>
+                    <p>The physical evidence is inconclusive. 
+                        It is reassuring for the larger picture thus far formed of 
+                        <ref type="apparatus" target="msviii_apparatus.html#SECTIONA">MS VIII: Contents, Section <hi rend="italic">a</hi></ref> 
+                        that Ruskin revised his page numbering system immediately following this final cluster of "Athens" installments. 
+                        From the start of MS VIII, he had numbered versos with odd numbers, 
+                        but he changed to the more conventional numbering of rectos with odd numbers starting with p. 45, by omitting a p. 44 
+                        (see <ref type="apparatus" target="msviii_apparatus.html#DESCRIPTION">MS VIII: Description</ref>). 
+                        This facing-page spread of p. 43 and p. 45 contains 
+                        <ref type="apparatus" target="song_i_weary_for_the_torrent_leaping_apparatus.html">&#x201C;Song&#x201D; (&#x201C;I weary for the torrent leaping&#x201D;)</ref>, 
+                        and the previous spread, pp. 41-42, contains the final, unnumbered stanza of "Athens" followed by the Scott elegy. 
+                        Had Ruskin changed his numbering on the latter spread, pp. 41-42, one would be more confident in asserting that the gap in time fell here, 
+                        dividing the September 1832 elegy from the final stanza of "Athens"--and indeed, the "Athens" stanza 
+                        appears written using a different pen and/or ink than the poems surrounding it on that spread.
+                    </p> 
+                    <p>All in all, two possibilities seem most likely. One is to locate the two-month gap on pp. 41-42, 
+                        despite Ruskin's change in numbering coming afterward, on the spread formed by p. 43 and p. 45, 
+                        since Ruskin did indicate at least an awareness of the numbering anomaly on the preceding spread, pp. 39-40, 
+                        where he marked the recto page number 40 either by striking through the zero or by overwriting it with a numeral 1 
+                        (see <ref type="apparatus" target="msviii_apparatus.html#DESCRIPTION">MS VIII: Description</ref>). 
+                        Since the poem on this spread, 
+                        <ref type="apparatus" target="they_woke_them_from_their_couch_of_rest_apparatus.html">&#x201C;They woke them from their couch of rest&#x201D;</ref>, 
+                        spills over onto p. 41 (verso), followed by the unnumbered "Athens" stanza, 
+                        the physical evidence of that flagged numeral 40 lends some credence to interpreting the following spread as the watershed, 
+                        dividing the final "Athens" stanza from the September elegy by the gap representing 
+                        <ref type="note" subtype="contextual" target="tour_of_1832.html">Tour of 1832</ref>.
+                    </p> 
+                    <p>That same evidence of the flagged numeral 40 also supports a second interpretation, 
+                        identifying <ref type="apparatus" target="they_woke_them_from_their_couch_of_rest_apparatus.html">&#x201C;They woke them from their couch of rest&#x201D;</ref> 
+                        (pp. 39-41) as the first poem in MS VIII on the far side of the summer journey, 
+                        along with the lone, unnumbered "Athens" stanza (p. 41) and the Scott elegy (pp. 41-42). 
+                        This interpretation is supported not only by the physical evidence, which situates Ruskin's first flagging of the numbering anomaly at the point of homecoming, 
+                        but also by the content of 
+                        <ref type="apparatus" target="they_woke_them_from_their_couch_of_rest_apparatus.html">&#x201C;They woke them from their couch of rest&#x201D;</ref>, 
+                        which is a poem about the Scottish highlands. It is written in a distinctly darker ink and using a blunter pen than 
+                        <ref type="apparatus" target="llyn_idwal_apparatus.html">&#x201C;Llyn Idwal&#x201D;</ref> (pp. 38&#x2013;39), 
+                        which is a poem about Wales, and which is written in a lighter and finer pen and ink. 
+                        This second interpretation divides the final known "Athens" stanza, which is titled "Athens" but unnumbered, 
+                        from the previous "Athens" stanzas 20-21, which are both titled and numbered in the manuscript. 
+                        These stanzas on pp. 37-38 are also composed in the same lighter, finer pen and ink as that used for 
+                        <ref type="apparatus" target="aspice_pater_invocationem_apparatus.html">&#x201C;Aspice pater invocationem&#x201D;</ref> (p. 38) 
+                        <ref type="apparatus" target="llyn_idwal_apparatus.html">&#x201C;Llyn Idwal&#x201D;</ref> (pp. 38-39).
+                    </p> 
+                    <p>The appeal of the second interpretation is that, by placing the <ref type="note" subtype="contextual" target="tour_of_1832.html">Tour of 1832</ref> 
+                        on pp. 39-40, between <ref type="apparatus" target="llyn_idwal_apparatus.html">&#x201C;Llyn Idwal&#x201D;</ref> (pp. 38&#x2013;39) and  
+                        <ref type="apparatus" target="they_woke_them_from_their_couch_of_rest_apparatus.html">&#x201C;They woke them from their couch of rest&#x201D;</ref>, 
+                        one perceives a separation between the Welsh scenery that had dominated the poems written between August-September 1831 and May 1832, 
+                        hearkening back to the <ref type="note" subtype="contextual" target="tour_of_1831.html">Tour of 1831</ref>,
+                        and the Scottish and Lake District scenery that dominated the poems written after July or August 1832--including the poem or poems marking Walter Scott's death. 
+                        By situating the final known stanza of "Athens" among the latter, this reading hypothesizes the briefest renewal of the project--the unnumbered 
+                        stanza possibly signaling a start on a second canto just prior to Ruskin's abandoning the poem for good.
+                    </p>
+                    <p>Tending to confirm this interpretation for dating the final "Athens" cluster is the presence of other themes in this group of letters, January-March 1832, 
+                        which accord with the miscellaneous poems contained in the preceding cluster along with stanza 19 of "Athens." For the poem, 
+                        <ref type="apparatus" target="mourn_mizraim_mourn_the_weltering_wave_apparatus.html">&#x201C;Mourn, Mizraim, mourn! The weltering wave&#x201D; [&#x201C;The Destruction of Pharaoh&#x201D;]</ref>, 
+                        Ruskin may have drawn on <hi rend="italic">Ancient History of the Egyptians, Carthaginians, Assyrians, Babylonians, Medes and Persians, Macedonians and Grecians</hi> by Charles Rollin (1661-1741), 
+                        which Margaret Ruskin had been studying with John since the previous year, and which Ruskin mentioned approvingly in his 14 January 1832 letter 
+                        (<ref type="bibliography" target="bibliography#RFL">Burd, ed., <hi rend="italic">Ruskin Family Letters</hi></ref>, 257). 
+                        Possibly relating to the poems, 
+                        <ref type="the_song_of_the_southern_breeze_apparatus.html">“The Song of the Southern Breeze”</ref>, and 
+                        <ref type="apparatus" target="the_mountain_breeze_it_is_sunk_to_sleep_apparatus.html">&#x201C;The mountain breeze it is sunk to sleep&#x201D;</ref>, 
+                        Ruskin refers in the 27 February and 4 March letters to the "gloomy foggy weather" and to the outbreaks of cholera, 
+                        which had been reported in London newspapers throughout February, and which his mother had 
+                        "been wishing for a wind to blow away" 
+                        (<ref type="bibliography" target="bibliography#RFL">Burd, ed., <hi rend="italic">Ruskin Family Letters</hi></ref>, 267, 273, 273 n. 3).
+                    </p>
+                    <p>The dating of the clusters of stanzas throughout the MS VIII draft tends to be confirmed by the probable dates of the fair copies in 
+                        MS IA, MS V, and MS VII (see <ref type="internal" target="COMPPUB">Composition and Publication</ref>
+                    </p>
+                      
+                </div>
+                <div type="section" xml:id="COMPPUB">
+                    <head type="section">Composition and Publication</head>
+                    <p>Previously unpublished. While the MS IA and MS V fair copies each carry an annotation appearing to be in the hand of W. G. Collingwood, 
+                        indicating that the editor was aware of the poem's multiple versions, he did not include "Athens" in 
+                        <ref type="note" subtype="bibliographical" target="poems_1891_note.html"><hi rend="italic">Poems</hi> (1891)</ref>, 
+                        probably because he regarded the unfinished epic as falling under his policy of omitting 
+                        "such poems and passages as were either without general interest, or incomplete and inadequately 
+                        representative of the author's attainments and style at the time" 
+                        (<ref type="bibliography" target="bibliography.html#POEMS4D1891"><hi rend="italic">Poems</hi> [4<hi rend="superscript">o</hi>, 1891]</ref>, 1: ; 
+                        <ref type="bibliography" target="bibliography.html#POEMS8D1891"><hi rend="italic">Poems</hi> [8<hi rend="superscript">o</hi>, 1891]</ref>, 1: xii).
+                    </p>
+                    <p>In Ruskin's mind, his composition of "Athens" was closely associated with his immediately preceding work on the epic, 
+                        <ref type="apparatus" target="iteriad_apparatus.html">&#x201C;Iteriad&#x201D;</ref>, as shown in various compositional details. 
+                        In addition to the correspondence of the classicized title &#x201C;Iteriad&#x201D; to the title "Persiad," 
+                        which Ruskin entertained for the new poem (see <ref type="internal" target="TITLE">Title</ref>), 
+                        other ties between the composition of the two works include the following:
+                        <list type="ordered">
+                            <item n="1">Ruskin began drafting “Athens” when nearing the end of drafting “Iteriad” and preparing to fair-copy the latter in MS VII.</item>
+                            <item n="2">Ruskin started composition of “Iteriad” near the beginning of the rough-copy notebook MS VI, and he composed blocks of text intermittently, 
+                                among shorter poems. Just so, the opening stanzas of “Athens” were among the first entries drafted in a new rough-copy notebook, MS VIII, 
+                                and Ruskin continued his practice of returning to the project intermittently, drafting additional stanzas amid shorter poems.</item>
+                            <item n="3">A fair copy of “Athens” is contained in MS VII, following the fair copy “Iteriad,” 
+                                Ruskin devising a title page for the second epic that complemented the title page for “Iteriad” in lettering style.</item>
+                            <item n="4">Ruskin included fair copy of some stanzas from both poems in MS V.</item>
+                        </list>
+                        
+                    </p>
+                    <p>None of the extant fair copies of "Athens" extends the length of the 22 stanzas available in the MS VIII rough draft; 
+                        and if Ruskin intended to divide the poem into cantos, as suggested by his incomplete fair-copy 
+                        <ref type="internal" target="TITLE">title</ref> in MS VII, the extant draft must be incomplete, and all fair copies fragmentary. 
+                        Since <ref type="internal" target="DATE">dating</ref> suggests that composition of the draft was interrupted by the family's 
+                        <ref type="note" subtype="contextual" target="tour_of_1831_note.html">Tour of 1831</ref>, it seems likely that Ruskin simply abandoned the project.
+                    </p>
+                    <p>The intermittent composition of "Athen" in MS VIII--of which an account is already laid out above, in the argument for 
+                        <ref type="internal" target="DATE">dating</ref> the stages of the poem's invention--was closely shadowed at three stages by fair-copying.
+                    </p>
+                    <p>The MS IA fair copy is a folded sheet containing seven stanzas. The stanzas are unnumbered, 
+                        and the copyist's hand appears to be Margaret Ruskin’s. The manuscript is undated and cannot be dated by physical evidence; 
+                        however, several factors point to late 1831, making this version the earliest of the fair copies. 
+                        On the evidence of dating the draft in MS VIII, Ruskin had drafted the first nine stanzas of “Athens” by December 1831. 
+                        The MS IA version probably belongs to the same period, since it is untitled, 
+                        whereas the earliest draft appearing to have been entitled confidently in MS VIII is stanza 10, from late December 1831 or January 1832 
+                        (see <ref type="internal" target="TITLE">Title</ref>). 
+                        (At the top of MS IA, “Athens” is written in pencil; however, the hand, which does not resemble any of the Ruskins', appears to be W. G. Collingwood’s.)
+                    </p> 
+                    <p>The purpose of the MS IA copy may be indicated by its probable dating of December, suggesting the intention of a 
+                        <ref type="note" subtype="bibliographical" target="new_years_poems_note.html">New Year's poem</ref>. 
+                        The works itself is obviously not an occasional poem of this kind, however, and no other such presentation is known in Margaret’s hand. 
+                        Typically, Margaret produced fair copies to send to John James while he was traveling, 
+                        but no family letters survive between May 1831 and mid-January 1832 to help confirm this possible purpose.
+                    </p>
+                    <p>The fair copy in MS V was made by Ruskin, and it contains seventeen stanzas, numbered by him. Ruskin cannot have started making this copy earlier than 
+                        the fair copy of <ref type="apparatus" target="sonnet_to_a_cloud_apparatus.html">“Sonnet to a Cloud”</ref>, 
+                        which precedes the fair copy of "Athens" in MS V. In MS VIII draft, this "Sonnet" falls between the draft of "Athens" stanzas 10-12 and 
+                        the draft of stanzas 13-18--the whole of this segment of this draft of stanzas 10-18 being attributed to between December 1831 to January 1832. 
+                        That Ruskin made this MS V fair copy of "Athens" immediately following draft composition through stanza 18 
+                        accords well with what follows the fair copy in MS V--namely, 
+                        <ref type="apparatus" target="sonnet_to_the_morning_apparatus.html">&#x201C;Sonnet to the Morning&#x201D;</ref>, 
+                        which Ruskin dated 5 February [1832] in its MS VIII draft, and 
+                        <ref type="apparatus" target="the_song_of_the_southern_breeze_apparatus.html">&#x201C;The Song of the Southern Breeze&#x201D;</ref>, 
+                        which he dated 12 February [1832] in MS VIII. Tending to confirm this reconstruction of the sequence of drafting and fair copying, stanza 19 of "Athens," 
+                        which is not included in the MS V version, 
+                        appears in MS VIII draft immediately following 
+                        <ref type="apparatus" target="the_song_of_the_southern_breeze_apparatus.html">&#x201C;The Song of the Southern Breeze&#x201D;</ref>. 
+                        Thus, Ruskin resumed draft soon after he had completed the MS V fair copy of the first 18 stanzas.
+                    </p>
+                    <p>The discrepancy between the total number of seventeen stanzas in MS V and the eighteen available in MS VIII up to the point of Ruskin's fair-copying 
+                        is explained by the MS V version having dropped the fifth stanza of the draft in MS VIII, 
+                        causing the sixth stanza of MS VIII to become the fifth in MS V. 
+                        Thereafter, the stanza numbering in MS V always lags behind MS VIII by one. 
+                        The final stanza to be fair-copied in MS V, “XVII,” is thus the eighteenth stanza of draft in MS VIII. 
+                        The missing stanza is present in MS IA and in MS VII.
+                    </p> 
+                    <p>In MS VIII, one stanza, originally the sixth, was completely cancelled. 
+                        This, however, is not the stanza dropped from MS V, and the cancellation has no necessary bearing on the other discrepancies between the two versions. 
+                        Ruskin himself may or may not have been responsible for this cancellation. 
+                        The stanza is scored in pencil, perhaps by the same hand that had penciled in a word in that same stanza--a hand that appears closer to Margaret’s than Ruskin’s.
+                    </p>
+                    <p>If Margaret made her MS IA copy in December 1831, Ruskin made his soon afterward, in January 1832; 
+                        and in both copies the poem remained untitled. 
+                        (Again, the title appears in pencil, but in the same hand, probably Collingwood’s, that docketed the copy in MS IA.) 
+                        Each of these versions contains minor variants in wording and punctuation compared to the MS VIII draft, 
+                        and these variants are peculiar to their respective manuscripts, showing no influence of one on the other. 
+                        This independence is very clear in the final stanza to be copied in MS IA, stanza 7, 
+                        in which Margaret followed the MS VIII draft much more closely than did John in MS V. 
+                        Nonetheless, it is clear that MS V uses the MS VIII draft as copytext for the first seven stanzas, not the MS IA copy 
+                        (see <ref type="internal" target="#TEXTUALNOTE">Textual Note</ref>).
+                    </p>
+                    <p>The missing fifth stanza in MS V appears to have involved some struggle in composition. 
+                        In Margaret's MS IA fair copy, the ninth line of the fifth stanza reads: “But wake not those below their foam who lie” 
+                        (<hi rend="italic">their</hi> referring to the ocean "billows").
+                        Beneath “wake,” Margaret penciled in an alternate version of the line, “them--they sleep eternally.” 
+                        The alternate revives a version of the line that Ruskin had rejected in the MS VIII draft: 
+                        “But wake not <del rend="strikethrough"> them they sleep eternally</del>, Ruskin replacing the deletion with "those below their foam who lie” inserted above the line. 
+                        On the back endpaper of MS VIII, Ruskin dwelled on the issue with a memorandum: 
+                        “For line 9th Verse 5th Persiad (But wake not those below <del rend="strikethrough">its breast who</del> their foam that lie”--with 
+                        “their foam that" added to replace the deletion. No evidence settles the enticing question of whether the difficulty with this line 
+                        caused Ruskin to omit the fifth stanza from MS V altogether. 
+                        In MS VII, he accepted what may have been his mother's preference: “But wake not them: They sleep eternally.” 
+                        He also carried on with the fair-copying for only four more lines into the sixth stanza, before abandoning this version.
+                    </p>
+                    <p>Beyond the MS V version, which is the longest of the fair-copy texts, the MS VIII draft carries on for four more stanzas. 
+                        These were never fair-copied, so far as we know. The final stanza to be composed in MS VIII stands alone, and it is unnumbered. 
+                        Its generalized descriptive content gives no indication about where in the epic it should fit. 
+                        Its first line, “The sunset shone upon the isles of Greece,” reads like a new opening. 
+                        Perhaps Ruskin thought of the stanzq as the opening of a projected second canto.
+                    </p>
+                    <p>Ruskin cannot have commenced the fair copy in MS VII earlier than the preceding fair copy of 
+                        <ref type="apparatus" target="iteriad_apparatus.html">&#x201C;Iteriad&#x201D;</ref>, which he completed on 11 January 1832, 
+                        when Ruskin he put his final orthographical flourish to the “Finis” 
+                        (see <ref type="apparatus" target="iteriad_apparatus.html#DATE">&#x201C;Iteriad&#x201D;: Date</ref>). 
+                        Even then, the task remained of adding the “notes” to the earlier poem, 
+                        as he admitted in a 14 January 1832 letter, promising to append them "in such a style that the company shall stare" 
+                        (<ref type="bibliography" target="bibliography#RFL">Burd, ed., <hi rend="italic">Ruskin Family Letters</hi></ref>, 259).
+                    </p>
+                    <p>By the time he finished fair-copying "Iteriad" in MS VII, therefore, Ruskin had probably completed the first eighteen stanzas of draft for "Athens," 
+                        which he used as copytext for the MS V version. Since he fair-copied the latter in late January or early February 1832, 
+                        shortly following the drafting of the poem through that point, 
+                        logic suggests that he started the MS VII version no earlier than his resumption of the draft with stanza 19, after 12 February 1832. 
+                        By this time, he was able to head his fair copy with at least a partial title.
+                    </p>
+                    <p>How long after mid-February Ruskin may have started this new fair copy cannot be determined with physical or textual evidence. 
+                        He fair-copied only five stanzas and the first four lines of the sixth, and the punctuation variants bear little relation to the MS IA and MS V versions. 
+                        The most significant variant is the inclusion in MS VII of the fifth stanza in the MS VIII draft, which Ruskin omitted from the MS V fair copy. Again, 
+                        logic suggests that MS VII is a later version than MS V, in that MS VII makes this correction (and extends the text only so far as to confirm this correction). 
+                        Admittedly, the window of time available in the second half of January might allow a hypothesis of the MS V version as Ruskin's preferred text, 
+                        deliberately excluding the fifth stanza that he had already fair-copied in MS VII. 
+                        This scenario seems unlikely, however, since Ruskin was in fact sorely pressed for time to fit in his many activities. 
+                        If in his "former letters, the great subject is want of time," he wrote to his father on 20 February 1832, 
+                        he found "it now still more scarce than ever for what with [his lessons in] Livy, and Lucian, Homer, French, Drawing, Arithmetic, globe work, &#x0026; mineralogical dictionary, 
+                        I positively am all flurry, all hurry, never a moment in which there is not something that ought to be done." 
+                        As for poetry, he was "sorry to inform" his father on 27 February that, since John James had been away from home traveling for orders 
+                        (since 19 February, at the latest), Pegasus had "flown so high, that I am unable to follow it, &#x0026; the reinless Pegaus has left me hurled from his too lofty back 
+                        &#x0026; stuck in the mud of this nether earth. . . . I can compose no more till your presence inspires me with new vigour, &#x0026; 
+                        again I shall ride on the Pegasian wing" 
+                        (<ref type="bibliography" target="bibliography#RFL">Burd, ed., <hi rend="italic">Ruskin Family Letters</hi></ref>, 263, 268, and see 260 n. 9).
+                    </p>
+                    <p>Even when John James returned home, Ruskin's poetry composition and appear to have been checked, 
+                        with the traditional birthday ode for his father recycling material from the previous year's birthday poem, 
+                        and the version of the poem in MS VIII apparently representing a collaborative composition between father and son 
+                        (see <ref type="apparatus" target="twelve_months_all_rolling_round_have_past_apparatus.html">“Twelve months all rolling round have past”</ref>). 
+                        Fair-copying, too, evidently became mired. Ruskin did not continue any fair-copying at all in MS V, beyond “Athens” and the two following poems, 
+                        <ref type="apparatus" target="sonnet_to_the_morning_apparatus.html">&#x201C;Sonnet to the Morning&#x201D;</ref> and 
+                        <ref type="apparatus" target="the_song_of_the_southern_breeze_apparatus.html">&#x201C;The Song of the Southern Breeze&#x201D;</ref>, 
+                        dated 5 and 12 February, respectively, in draft.
+                    </p>
+                    <p>While it is possible, therefore, that Ruskin may have taken up "Athens" in its MS VII fair copy well after the period of the poem's composition, 
+                        which appears to have been arrested prior to the family's departure for Dover on 22 May 1832, 
+                        the MS VII version's state of incompletion combined with increasing ambition--the verso of its incomplete title page 
+                        announcing in light pencil the division, “Canto First” (59v), and the facing page declaring in light pencil “THE ARGUMENT” (60r), 
+                        which was never added--suggest that this collapse in plans belongs to the same period as the other fragmented projects in the first five months of 1832. 
+                        This interpretation seems consistent with Ruskin's possible message in 
+                        <ref type="apparatus" target="aspice_pater_invocationem_apparatus.html">&#x201C;Aspice pater invocationem&#x201D;</ref>, 
+                        composed as part of the final cluster containing "Athens" draft--stanzas 20-21 and the final unnumbered stanza. 
+                        Ruskin's meaning in this Latin poem is obscure, but he appears to beg his father for a new “quarto”--that is, possibly, for a new notebook or ledger, 
+                        like the one devoted to the fair copy of “Iteriad” (MS VII). 
+                        The Latin poem does not mention “Athens” specifically, but its classical epic style (“Aspice, pater, invocationem”) 
+                        suggests that he wanted a fresh notebook in order to fair-copy his new epic. 
+                        Apparently, he did not receive this “boon,” since he used MS VII itself to begin his new fair copy.                        
+                    </p>
+                    
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <p>If <ref type="apparatus" target="iteriad_apparatus.html">&#x201C;Iteriad&#x201D;</ref> 
+                        was Ruskin’s epic of travel adventure--his <hi rend="italic">Odyssey</hi>, as it were--“Athens” was his corresponding battle epic, 
+                        his <hi rend="italic">Iliad</hi>. The poem draws on the events of Xerxes’s great march on Athens and the Battle of Marathon. 
+                        The primary ancient source narrating these events, Herodotus's <hi rend="italic">Histories</hi>, 
+                        is not mentioned in the poem, which reflects little knowledge of its Herodotean subject. 
+                        What scanty historical material used in the poem could have been drawn from Charles Rollin’s 
+                        <hi rend="italic">Ancient History of the Egyptians, Carthaginians, Assyrians, Babylonians, Medes and Persians, Macedonians and Grecians</hi>, 
+                        which Ruskin and his mother were reading in early 1831 
+                        (<ref type="bibliography" target="bibliography#RFL">Burd, ed., <hi rend="italic">Ruskin Family Letters</hi></ref>, 228).
+                    </p>
+                    <p>Peculiarly, the poem is more heavily indebted to <hi rend="italic">Childe Harold’s Pilgrimage</hi> and <hi rend="italic">Don Juan</hi> 
+                        by Lord Byron than to Herodotus, Ruskin employing Byron’s Spenserian stanza for the work.
+                        Even more peculiarly, in the middle stanzas, 12-16, 
+                        the style veres markedly from the Byronic to the Wordsworthian, showing the influence of <hi rend="italic">The Excursion</hi> in general, 
+                        and of “The Brothers” in particular. While the influence of Wordsworth’s shorter poems can be detected in some earlier poems by Ruskin 
+                        (e.g., the line, “My heart leaps up when I behold,” <ref type="apparatus" target="to_my_heart_apparatus.html">“To My Heart”</ref>), 
+                        valuable evidence of Ruskin's first engagement with Wordsworth may be more apparent in “Athens” 
+                        than in the Cumbrian travel poem, “Iteriad.”
+                    </p>
+                    <p>Ruskin's growing acquaintance with Herodotean history, if not necessarily with Herodotus himself, is evident throughout the 1830s. 
+                        The earliest direct mention in John James's accounts of purchasing a “Herodotus” for the Ruskin household is November 1834 
+                        (<ref type="bibliography" target="bibliography#RFL">Burd, ed., <hi rend="italic">Ruskin Family Letters</hi></ref>, 286 n. 1), 
+                        too late to have had any bearing on Ruskin's composition “Athens.” This purchase could be connected with fragmentary notes in the manuscript, 
+                        <ref type="apparatus" target="ms_practical_geometry_apparatus.html">Practical Geometry</ref>, 
+                        which dates from either early 1832 or early 1833 and afterward. On the front inside endboard of this manuscript, Ruskin sketched 
+                        what appears to be a rough plan for a work drawing on Greek history:</p><!-- DCH to self: The following should be a work in itself, but using floatingText for now -->
+                    <floatingText><body><div><p>
+                        [Pelasge(?)]<!-- DCH: check source and use uncertainty tag if necessary; must refer to Pelasgians -->  
+                        Ellenes mention of them made in Herodotus. &#x007C; Grecian Mythology its origin &#x0026; [peculiarities(?)].<!-- uncertainty tag --> &#x007C; 
+                        Grecian colonies on shores of Euxine. &#x007C; Oracles, name most celebrated &#x007C; 
+                        Trace [connection(?)]<!-- uncertainty tag --> between Greece &#x0026; Egypt rites &#x0026; institutions &#x007C; 
+                        Sketch of the state of Asiatic Empires at beginning of reign of Croesus &#x007C; 
+                        Institutions of Lycurgus probable dates particulars of history &#x007C; 
+                        Geographical sketch of Greece to Macedonia &#x007C; 
+                        Sketch of the political state of Thessaly. &#x007C; 
+                        Geog. description of Egypt &#x007C; Macedonian Empire
+                        </p></div></body></floatingText> 
+                    <p>These notes--undated, but in style resembling the draft notes for 
+                        <ref type="apparatus" target="sermons_on_the_pentateuch_apparatus.html">Sermons on the Pentateuch</ref> of 1833-34--reflect 
+                        increased familiarity with the scope of Herodotus's history. 
+                        It is barely possible that the notes a projected resumption and expansion of “Athens,” 
+                        or the notes may sketch a plan for different work altogether, which was never realized, 
+                        or the notes may be nothing more than a summary of topics in the first part of the <hi rend="italic">Histories</hi>. 
+                        In any case, these notes along with "Athens" confirm that Ruskin had some acquaintance with the Greek historian, 
+                        if only at second hand, well before he attended Oxford 
+                        (see also his 1836 remark about Herodotus, in 
+                        <ref type="bibliography" target="bibliography#RFL">Burd, ed., <hi rend="italic">Ruskin Family Letters</hi></ref>, 351).
+                    </p>
+                    <p>At Oxford, where Ruskin studied Herodotus as part of the undergraduate curriculum, which was still largely devoted to classics, 
+                        the Greek historian remained connected in Ruskin's mind with verse composition. In 1837-38, the <hi rend="italic">Histories</hi> inspired 
+                        Ruskin's poems, 
+                        <ref type="apparatus" target="the_scythian_grave_apparatus.html">"The Scythian Grave"</ref>, 
+                        <ref type="apparatus" target="aristodemus_at_plataea_apparatus.html">"Aristodemus at Plataea"</ref>, 
+                        <ref type="apparatus" target="a_scythian_banquet_song_apparatus.html">"A Scythian Banquet Song"</ref>, 
+                        <ref type="apparatus" target="the_recreant_apparatus.html">"The Recreant"</ref>, and 
+                        (probably also from this period) the prose fragment, 
+                        <ref type="apparatus" target="expedition_of_darius_into_scythia_apparatus.html">Expedition of Darius into Scythia</ref>.
+                    </p>     
+                </div>
+                <div type="section" xml:id="TEXTUALNOTE">
+                    <head type="section">Textual Note</head>
+                    <p>Body paragraph.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
