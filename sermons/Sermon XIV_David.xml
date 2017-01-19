@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#APW">Author of Printed Work</persName>
+                </author>
+                <editor>
+                    <persName corresp="#EPW">Editor of Printed Work</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>W. G. Collingwood</persName>
+                        </editor>
+                        <title type="main">The Poems of John Ruskin</title>
+                        <title type="sub">Volume I: Poems Written in Boyhood, 1826-1835</title>
+                        <imprint>
+                            <biblScope type="vol">1</biblScope>
+                            <biblScope type="edition">4<hi rend="superscript">o</hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1891">1891</date>
+                            <biblScope type="pages">xxiii</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="prose">
+                <head type="title">Moral precepts of the old law</head>
+                <div type="chapter">
+                    <head type="chapter">Title of Chapter</head>
+                    <pb facs="Ruskin_MA_3451_296809_Verso_06"/> 
+                        <p>
+                         <!-- There is a symbol immediately below the title and above the text in the shape of a horizontally extended four point diamond/stardiamond  -->
+                            <lb/>The 19th Chapter of <title type="scripture"  corresp="LEVITICUS">Leviticus</title>, from
+                            <lb/>the beginning. In passing through the
+                            <lb/>first part of the book of <title type="scripture"  corresp="LEVITICUS">Leviticus</title>, we
+                            <lb/>have been considering the principles of
+                            <lb/>sacrifice, as a great source of spiritu
+                            <lb/>al blessing, and fellowship with god, <!-- god is lower case in Ruskin_MA_3451_296809_Verso_06, in text file , the "G's are cpaitalized -->
+                            <lb/>and we have dwelt upon this, for
+                            <lb/>some time, in order to Show how
+                            <lb/>completely and thoroughly, the whole
+                            <lb/>law of Moses was pervaded by this. <!-- "this." image  includes an errant mark interpreted as an errant (innapropriate), but retained period in the text file for the sermon and I have done the same-->
+                            <lb/>doctrine. We to day shall proceed
+                            <lb/>to examine how far this economy, un
+                            <lb/>nites the necessity for moral purity, &#38;
+                            <lb/>holiness, with the doctrine of atonement
+                            <lb/>for sin, by sacrifice. For, could it be
+                            <lb/>supposed, that throughout the whole
+                            <lb/>bible, there could be found one single
+                            <lb/>sentence which inculcated the princi
+                            <lb/>ple, that there was no necessity for pu
+                            <lb/>rity of conduct, to if sin were atoned
+                            <lb/>for when committed, it would be so.
+                            <lb/>entirely out of keeping with the doctrine
+                            <lb/>of god, as to afford us sufficient ground
+                            <lb/>for the entire rejection of the Bible, - at
+                            <lb/>least as a book of divine origin; But
+                            <lb/>when on the other hand, we find a di&#45;
+                            <lb/>rectly contrary principle held up to us,
+                            <lb/>it is as strong a confirmation of the 
+                            <lb/>divinity, as the contrary would have
+                            <lb/>been of the non divinity. of the Bible.
+                            <lb/>We find here, after all the <!-- the "h" in "the" is crossed as if it is a t --> possible pro
+                            <lb/>vision had been made for the expia
+                            <lb/>tion of sin, the command. Ye shall be
+                            <lb/>holy, as the Lord your god is holy.
+                            <lb/>Now, there are here two things to be ob&#45;
+                            <lb/>served. (1) <!-- not sure the "1" in parentheses to the left is a "1" -->. The general principle, and 
+                            <lb/>reason, for this demand To be holy
+                            <lb/>here signifies, entire purity. of mind, ex
+                            <lb/>pressed in conduct, in words, and actions
+                            <lb/>extending both to outward. and inward
+                            <lb/>condition and then there is a reason
+                            <lb/>given for the obligation, namely, that. <!-- "that." image  includes an errant mark interpreted as an errant (innapropriate), but retained period in the text file for the sermon and I have done the same-->
+                            <lb/>every one who is admitted to a fellow
+                            <lb/>ship with god, must resemble god,
+                            <lb/>for it is evident, that there can be
+                            <lb/>no fellowship, <hi><del>at the expense of others</del></hi> <!-- should this include hightlight command/tag or just delete? -->
+                            <lb/>between purity and impurity. We
+                            <lb/>see this in society every day. The
+                            <lb/>worthy and the vile are respectively
+                            <lb/>shunned by each other, they are,
+                    <pb facs="Ruskin_MA_3451_296809_Recto_07"/>
+                            <lb/>repulsive to each other. The moral
+                            <lb/>and immoral cannot amalgamate
+                            <lb/>but men of character associate with
+                            <lb/>men of character, and those who are
+                            <lb/>destitute of character, with those who
+                            <lb/>resemble them. And thus it is in
+                            <lb/>sacred things also. The Holy and
+                            <lb/>pure God cannot delight in an un
+                            <lb/>holy and impure people. there
+                            <lb/>can be no connecting link between
+                            <lb/>such, and this therefore we find to
+                            <lb/>be the reason for this demand u
+                            <lb/>pon the Israelites. Ye shall be holy,
+                            <lb/>even as the Lord your God is pure
+                            <lb/>and holy.</p>
+                        <p>
+                            <lb/>We shall no longer dwell upon gen
+                            <lb/>eral principles but shall proceed to
+                            <lb/>the particular details of conduct. the <!-- period after "conduct" should probably be a comma, and "the" a scratch-out? -->
+                            <lb/>which we find was commanded
+                            <lb/>to be observed in this chapter. The
+                            <lb/>first command, we find then, that <!-- Actually fifth commandment, but its the first that has to do with conduct between people rather than conduct concerning God or religious observance -->
+                            <lb/>is here given, is. Ye shall fear every 
+                            <lb/>man his father. and his mother. -
+                            <lb/>This is remarkable, we find that
+                            <lb/>the first commandment was one
+                            <lb/>which must be enforced on child&#45;
+                            <lb/>hood itself, and that on the very ear
+                            <lb/>liest development of the mental
+                            <lb/>powers of the child. This holy puri<!-- gloss from text file probably correct, but there is an extraneous letter or mark after the "i" in purity -->
+                            <lb/>ty was to be enforced on old age, and
+                            <lb/>infancy, and the code of commands here
+                            <lb/>commences with that very first of
+                            <lb/>all duties, which was to be observ
+                            <lb/>ed by the infant, towards its parents
+                            <lb/>The first opportunity was to be seiz
+                            <lb/>ed and then that state of purity was <!-- word "was" is obscurely written here, but "was" fits and is consistent with hand -->
+                            <lb/>to commence, which was to be con
+                            <lb/>tinued to the end of life. Now, it is to
+                            <lb/> be remarked, that there was no gen
+                            <lb/>eral principle or law of this kind, a
+                            <lb/>mong the heathens. There was no
+                            <lb/>enforement of filial piety, I do not
+                            <lb/>mean to say that it was never
+                            <lb/>practised, it was so frequently <hi><del>on the</del></hi>
+                            <lb/><hi><del>contrary,<!-- comma is not struck through, but no one would bother to strike the punctuation seperate, so I am regarding the strike through for "contrary" as including the comma --></del></hi> and always admired. Many
+                            <lb/>very fine examples of it could be ad
+                            <lb/>duced from ancient history, I only
+                            <lb/>mean to say, that the neglect of it
+                            <lb/>though always considered culpable,
+                            <lb/>was not punishable, there was no law
+                            <lb/>which commanded it observance.
+                            <lb/>Now, in this case, fear must not
+                            <lb/> be received in its general acceptation
+                            <lb/>It must be understood as meaning, re
+                            <lb/>verance, ye shall reverence every man
+                            <lb/>his father and his mother. For, the
+                            <lb/>child ought rather to trust in his
+                    <pb facs="Ruskin_MA_3451_296809_Verso_07"/>
+                            <lb/>father and his mother, then to fear
+                            <lb/>them. This law was <hi><del>ex</del></hi> and is, excee
+                            <lb/>dingly necessary, when children first
+                            <lb/>begin even to think, they generally be
+                            <lb/>gin to assert independency of  judg&#45;
+                            <lb/>udgment, this is a very strong example
+                            <lb/>of human depravity and it must be
+                            <lb/>checked at once, the child must always
+                            <lb/>be taught to confide in the guidance
+                            <lb/>of his father and his mother, and if this
+                            <lb/>is not done, there can be no hope of
+                            <lb/>their good conduct in future, nor,
+                            <lb/>any anticipation of benefit to society
+                            <lb/>accruing from them.</p>
+                         <p>
+                            <lb/>The next command here given, is as
+                             <lb/>sociated with the first, "and keep my 
+                             <lb/>Sabbaths. It may be asked what con
+                             <lb/>nection there is between these two du
+                             <lb/>ies, which are here announced, al&#45; <!-- suddenly begins using dashes -->
+                             <lb/>most as if they were the same. They.
+                             <lb/>may perhaps, we answer appear at the
+                             <lb/>first glance, entirely distinct, but this
+                             <lb/>is not the case, when we examine in&#45;
+                             <lb/>to their nature, we shall find a very
+                             <lb/>great similarity, such indeed as not
+                             <lb/> only permits, but requires, an as&#45;
+                             <lb/>sociation between them. In the first
+                             <lb/>place, children are to be taught to rev&#45;
+                             <lb/>erence their earthly parents, must they
+                             <lb/>not then much more be taught 
+                             <lb/>to reverence their heavenly parent. No
+                             <lb/>thing can be easier, than to lead the
+                             <lb/>mind of the child from one to the o
+                             <lb/>ther, it is an easy and regular tran&#45;
+                             <lb/>sition, and fellowship will be found
+                             <lb/>between the feelings of duty to the
+                             <lb/>parent, and of duty towards god.
+                             <lb/>Then when the child is taught that
+                             <lb/>he has two fathers, both of which
+                             <lb/>he must constantly render duty to
+                             <lb/>the observance of the Sabbath is an
+                             <lb/>apt, and familiar illustration of the
+                             <lb/>duty which god requires of them
+                             <lb/>Thus we see that these two prec&#45;
+                             <lb/>epts go hand in hand, and that
+                             <lb/>they are the first, the easiest, yet the
+                             <lb/>most important, which can be im
+                             <lb/>pressed upon the mind of the child. &#38;
+                             <lb/>We see that there is a reason here also
+                             <lb/>given for this demand, For, because,
+                             <lb/>I am the Lord your god. I am not
+                             <lb/>a despotic and tyrannical monarch
+                             <lb/>who forms laws merely for that
+                             <lb/>purpose of gratifying his pride, by ex&#38;
+                             <lb/>acting obedience to them, I brought
+                             <lb/>you our of bondage, affliction and 
+                             <pb facs="Ruskin_MA_3451_296809_Recto_8"/>
+                             <lb/>corruption. I caused you to pass throug<unclear reason="runoff">h</unclear>
+                             <lb/>the red sea, I preserved you and fed you
+                             <lb/>in the wilderness. I am bringing you
+                             <lb/>into that land which I promised to
+                             <lb/>your fathers, I am the Lord your Go<unclear reason="runoff">d</unclear>
+                             <lb/>and therefore I demand that you
+                             <lb/>should render duty to me, and teach
+                             <lb/>your children also, that they may
+                             <lb/>love me, and obey me, and keep my
+                             <lb/>Sabbaths. </p>   
+                        <p>
+                            <lb/>In the next verse, we find a prohi
+                            <lb/>bition of all idols.   Turn ye not unto
+                            <lb/>idols nor make to yourselves molten
+                            <lb/>gods. Now it is to be noticed, that
+                            <lb/>God is here not only jealous for his own
+                            <lb/>honour, but for the purity of his people
+                            <lb/>The nations with which the Israel
+                            <lb/>ites were surrounded, had numerous
+                            <lb/>deities with whose unhallowed wor
+                            <lb/>ship into which the Israelites were
+                            <lb/>likely to be drawn, there was so ve
+                            <lb/>ry much vilenes and impurity
+                            <lb/>connected, as would have utterly
+                            <lb/>defiled the morals root and branch
+                            <lb/>of the Israelites, had they come in any
+                            <lb/>manner into contact with it, their
+                            <lb/>purest systems of morality would 
+                            <lb/>have yielded, &#38;, without considering
+                            <lb/>the contempt which would have been
+                            <lb/>poured upon their own God. the pu
+                            <lb/>rity of that people would have been
+                            <lb/>lost, or contaminated for ever.</p>
+                        <p>
+                            <lb/>In the 5th verse, our attention is a
+                            <lb/>gain drawn to sacrifice, yet as con&#45;
+                            <lb/>nected with the code of morality that
+                            <lb/>is here set before us. Now, at the firs<unclear reason="runoff">t</unclear>
+                            <lb/>glance this may perhaps appear a
+                            <lb/>more ceremonial rite, and we may
+                            <lb/>think it misplaced among these mo
+                            <lb/>ral precepts, but it is not so, and
+                            <lb/>this upon examination, we shall
+                            <lb/>find. We are told, that the peace
+                            <lb/>offering was to be presented of free
+                            <lb/>will, and we know that part of the
+                            <lb/>
+                        </p>
+                            
+                            
+                        
+                </div>      
+            </div>
+        </body>
+    </text>
+</TEI>
