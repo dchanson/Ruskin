@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="brussels_poem_msia_g1">
+            <titleStmt>
+                <title type="main">"Brussels" [poem]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS IA Draft</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KCM">Katie C. Moore</persName>
+                    <resp>conributing encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#TPD">Timothy P. Dunn</persName>
+                    <resp>conributing transcription/encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>Early Poems MS IA</msName>
+                        <msName>"Calais"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="MSIASheet24.jpg">pp. ##-##<!--Entry needed here.--></locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="msia_apparatus.php#MAJORMS">MS IA: Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>,
+                                    examples of which can be found in MS IA and MS VIII, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="poem" met="-+|-+|-+|-+" rhyme="aa">
+                <head type="title"><handShift new="#HANDJR1833-34" script="print" medium="ink"/><space quantity="11" unit="chars" /><hi rend="caps"><hi rend="italic">Brussels</hi></hi></head>
+                <lg type="stanza">
+                    <l><handShift script="cursive"/>The racking clouds were eddying fast</l>
+                    <l>Upon the bosom of the blast<ref type="gloss" target="brussels_glosses.php#RACKINGCLOUDS"/></l>
+                    <l>In wild confusion fiercely driven<add rend="linenumber-right-JR">115</add></l>
+                    <l>Fled they across the face of heaven</l>
+                    <l>The fitful gust came shrieking high</l>
+                    <l>The rattling rain flew driving by</l>
+                    <l>But where the horizon stretched away</l>
+                    <l>Towards the couch of parting day<add rend="linenumber-right-JR">120</add><add place="margin-right">mind</add><ref type="gloss" target="brussels_poem_glosses2.php#MIND"/></l>
+                    <l>A streak of paly light was seen</l>
+                    <l>The heaped and darkling clouds between</l>
+                    <l>Against that light for time full brief</l>
+                    <l><placeName corresp="#BRUSSELS">Brussels</placeName> arose in dark relief</l>
+                    <l>Colossal on the western fire<add rend="linenumber-right-JR">125</add></l>
+                    <l>Seemed massive tower and slender spire</l>
+                    <l>Nearer and nearer as we drew</l>
+                    <l>More strongly marked the outlines grew</l>
+                    <l>Till of the buildings you might see</l>
+                    <l><damage agent="fire"><unclear resp="#KCM">D</unclear></damage>istinct the gothic tracerie<add rend="linenumber-right-JR">130</add></l>
+            <!--KCM: Continued in second column, same page.-->
+                    <l>The drawbridge rung, we past the gate<ref type="gloss" target="brussels_glosses.php#DRAWBRIDGE"/></l>
+                    <l>And regal <placeName corresp="#BRUSSELS">Brussels</placeName> entered straight</l>
+                    <l>It stirs, to see the human tide</l>
+                    <l>That marks a city in its pride</l>
+                    <l>That fitful oceans eddying sweep<add rend="linenumber-right-JR">135</add></l>
+                    <l>Is still more changeful than the deep</l>
+                    <l>For those dark billows as they roll</l>
+                    <l>Mark movements of the human soul.</l>
+                    <l><handShift medium="ink-brown"/>Yet in that city there was none</l>
+                    <l>Of that confused and busy hum<add rend="linenumber-right-JR">140</add></l>
+                    <l>That tells of traffic &#x0026; of trade</l>
+                    <l>No, <placeName corresp="#BRUSSELS">Brussels</placeName> time of power <del rend="strikethrough">is</del><add place="above"><space quantity="27" unit="chars"/>was</add> sped</l>
+                    <l>Yet in her streets was something seen</l>
+                    <l>Spoke what the city once had been</l><!--DCH: Note on British beliefs about Brussels trade.-->
+                    <l>Our rapid course as now we wheel<add rend="linenumber-right-JR">145</add></l>
+                    <l>Where <hi rend="underline">she</hi> rose the huge <placeName corresp="#HOTELDEVILLEBRUSSELS">Hotel de ville</placeName><ref type="gloss" target="brussels_glosses.php#HOTELDEVILLEGLOSS"/></l>
+                    <l>The noble spires proportions high</l>
+                    <l>Stood forth upon the cloudy sky</l>
+                    <l>In <del rend="strikethrough">rich</del> all its fretted majesty.</l>
+                    <l>And his last light the sun had sent<add rend="linenumber-right-JR">150</add></l>
+                    <l>On Buttress and on Battlement</l>
+                    <l>That while the houses were arrayed</l>
+                    <l>In all the depth of twilight shade</l>
+                    <l>Yet shot there faint a yellow glow</l>
+                    <l>Where the tall arches shafted show<add rend="linenumber-right-JR">155</add></l>
+                    <l>Glimmered a moment there the ray</l>
+                    <l>Then fainter grew, and past away</l>
+                    <l>Oh <placeName corresp="#BRUSSELS">Brussels</placeName>, <placeName corresp="#BRUSSELS">Brussels</placeName> thou hast been</l>
+                    <l><del rend="strikethrough">Th</del> Of many an action strange, the scene</l>
+                    <l>Thou sawst, on Julys dreadful night<ref type="gloss" target="brussels_glosses.php#JULYSDREADFULNIGHTGLOSS"/><add rend="linenumber-right-JR">160</add></l>
+                    <l>The veterans rushing to the fight</l>
+                    <l>Thou heardest, when the word was spoken</l>
+                    <l>At midnight thy repose was broken</l>
+                    <l><del rend="strikethrough">The</del><add place="above"><space quantity="2" unit="chars"/>By</add> tramp of men and neigh of steed</l>
+                    <l>Battalions bursting forth to bleed<add rend="linenumber-right-JR">165</add></l>
+                    <l>Till the dark phalanx waving crest</l>
+                    <l>Forth from thy gates was forward prest</l>
+                    <l>And Breaking with the morning mild</l>
+                    <l>The distant roar of battle wild</l>
+                    <l>And later still the rabble shout<add rend="linenumber-right-JR">170</add></l>
+                    <l>And revolutions riot rout</l>
+                    <l>Leaving such marks as long shall tell</l>
+                    <l>Of dark destruction fierce and fell.</l>
+                    <milestone unit="undeclared" rend="hr-half"/>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

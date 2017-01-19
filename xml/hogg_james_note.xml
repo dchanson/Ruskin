@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="hogg_james_note">
+            <titleStmt>
+                <title type="main">James Hogg (ca. 1770-1835)</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#JAL">Jensin Lopez</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2014-05-31">May 31, 2014</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="biographical">
+                <head type="title"><persName corresp="#JH">James Hogg</persName> (ca. <date notBefore="1770" notAfter="1835">1770&#x2013;1835</date>)</head>
+                <p>Scottish poet and fiction writer. <persName corresp="#JH">Hogg</persName> was familiarly known as the &#x201C;<persName type="pen_name" corresp="#JH">Ettrick Shepherd</persName>,&#x201D; owing to his youth spent as a shepherd in <geogName corresp="#ETTRICKFOREST">Ettrick Forest</geogName>. 
+                    Later, when a successful writer, he returned to the area, dividing his time between <placeName corresp="#EDINBURGH">Edinburgh</placeName> literary life and a farm, <placeName corresp="#ALTRIVE">Altrive</placeName>, 
+                    in the <geogName corresp="#YARROWVALLEY">Yarrow Valley</geogName> in the <placeName corresp="#SCOTLAND">Scottish Borders</placeName> 
+                    (<ref type="bibliography" target="bibliography.php#HUGHESHOGGLIFE">Hughes, <title type="biography" corresp="#HUGHESHOGGLIFE" rend="italic">James Hogg</title></ref>, 134, 150, 153). 
+                    The farm lay near to <placeName corresp="#ABBOTSFORD">Abbotsford</placeName>, the residence of <persName corresp="#JH">Hogg</persName>&#x02BC;s friend, the novelist <persName corresp="#WS">Walter Scott</persName>, in 
+                    <placeName corresp="#SELKIRSHIRE">Selkirkshire</placeName>. If the Bront&#x00EB; siblings viewed <persName corresp="#JH">Hogg</persName> 
+                    as a colorful, colloquial contributor to the dramatized repartee 
+                    of the <title type="series" corresp="#NOCTESAMBROSIANAE">&#x201C;Noctes Ambrosianae&#x201D;</title> of <title type="magazine" corresp="#BLACKWOODMAGAZINE" rend="italic">Blackwood&#x02BC;s Edinburgh Magazine</title>&#x2014;an 
+                    influence on the children&#x02BC;s collaborative and competitive writing, and an encouragement 
+                    to &#x201C;bravado&#x201D; and &#x201C;swagger&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#ALEXANDERREADERSANDWRITERS">Alexander, <title type="essay" corresp="#ALEXANDERREADERSANDWRITERS">&#x201C;Readers and Writers&#x201D;</title></ref>, 62, 67)&#x2014;<persName corresp="#JR">Ruskin</persName> 
+                    knew <persName corresp="#JH">Hogg</persName> as a contributor 
+                    to the <ref type="note" subtype="bibliographical" target="annuals_note.php">Annuals and Other Illustrated Books</ref>, 
+                    such as <ref type="note" subtype="bibliographical" target="friendships_offering_note.php"><title type="magazine" corresp="#FRIENDSHIPSOFFERING" rend="italic">Friendship&#x02BC;s Offering</title></ref>, 
+                    and an affirmation of benign paternity associated with the georgic and poetic landscape of <placeName corresp="#SCOTLAND">Scotland</placeName>.
+                </p>
+                <p><persName corresp="#JH">Hogg</persName> met the Ruskin family personally sometime between January and March <date notBefore="1832-01" notAfter="1832-03">1832</date>, 
+                    when he undertook his first visit to <placeName corresp="#LONDON">London</placeName> 
+                    (specifically, probably between <date notBefore="1832-01-14" notAfter="1832-02-19">14 January and 19 February</date>, 
+                    when <persName corresp="#JJR">John James Ruskin</persName> was not away from home, traveling to customers [see 
+                    <ref type="bibliography" target="bibliography.php#RFL">Burd, ed., <title type="collected_letters" corresp="#RFL" rend="italic">The Ruskin Family Letters</title></ref>, 1: 260 n. 9], 
+                    and even more likely between <date notBefore="1832-01-14" notAfter="1832-02-08">14 January and 8 February</date>, <persName corresp="#JR">John</persName>&#x02BC;s birthday, as explained below).
+                    In a later letter thanking <persName corresp="#JJR">John James Ruskin</persName> for his hospitality, <persName corresp="#JH">Hogg</persName> 
+                    mentions meeting <persName corresp="#MR">Mrs. Ruskin</persName> and <persName corresp="#JR">John</persName>, 
+                    but not <persName corresp="#JR">Ruskin</persName>&#x02BC;s cousin, <persName corresp="#MBR">Mary Richardson</persName>. 
+                    <persName corresp="#JH">Hogg</persName>&#x02BC;s purpose in coming to <placeName corresp="#LONDON">London</placeName> 
+                    was to arrange for a collected edition of his prose fiction, the <title type="anthology" corresp="#ALTRIVETALES" rend="italic">Altrive Tales</title>.
+                    His mission was tied to a significant phenomenon in British book publishing of the <date notBefore="1820" notAfter="1829">1820s</date> and <date notBefore="1830" notAfter="1839">1830s</date>, 
+                    the production of accessibly priced, but well produced, uniform editions of collected works of modern British writers.
+                </p> 
+                <p><persName corresp="#JH">Hogg</persName> had long sought to publish a collected edition of his tales, which would complement his two collected editions of poetry, 
+                    but he was now emboldened by the success of a new plan pursued by his friend, 
+                    <ref type="note" subtype="biographical" target="scott_walter_note.php"><persName corresp="#WS">Walter Scott (1771&#x2013;1832)</persName></ref>, 
+                    and by <persName corresp="#WS">Scott</persName>&#x02BC;s publisher, <orgName corresp="#CADELLROBERT">Robert Cadell</orgName>. 
+                    Hoping to tap into a popular market, <persName corresp="#WS">Scott</persName> and <orgName corresp="#CADELLROBERT">Cadell</orgName> conceived the <hi rend="italic">magnum opus</hi> edition of the Waverley novels, 
+                    which offered consumers monthly volumes of accessibly priced, yet handsomely produced, uniform volumes of the novels, each freshened with a new preface by the author, 
+                    and each embellished with a few engraved illustrations.
+                </p>
+                <p>At the very modest price of five or six shillings per volume, the success of the scheme depended on high&#x2010;volume sales to a broad market. 
+                    <persName corresp="#WS">Scott</persName>&#x02BC;s venture, which began in <date when="1829">1829</date>, proved so successful that other publishers soon repeated the experiment by profitably 
+                    reprinting the works of other popular authors. The marketing plan was supported by innovations in printing, especially mass&#x2010;producible illustration using steel engraving, 
+                    which supported a boom trade in <ref type="note" subtype="bibliographical" target="annuals_note.php">Annuals and Other Illustrated Books</ref> aimed at the middle class. 
+                    <persName corresp="#JR">Ruskin</persName> himself would debut in <date when="1834">1834</date> as a writer for this trade. 
+                </p>
+                <p><persName corresp="#JH">Hogg</persName>&#x02BC;s <placeName corresp="#LONDON">London</placeName> publisher, <orgName corresp="#COCHRANE">James Cochrane</orgName>, had produced such an edition, collecting <date notBefore="1701" notAfter="1800">eighteenth&#x2010;century</date> British novelists, 
+                    and <orgName corresp="#COCHRANE">Cochrane</orgName> promised <persName corresp="#JH">Hogg</persName> the services of that edition&#x02BC;s well&#x2010;known illustrator, 
+                    <ref type="note" subtype="biographical" target="cruikshank_george_note.php"><persName corresp="#GC">George Cruikshank</persName> (<date notBefore="1792" notAfter="1878">1792&#x2013;1878</date>)</ref>. 
+                    Regrettably, the venture came to grief because <orgName corresp="#COCHRANE">Cochrane</orgName> went bankrupt. 
+                    <orgName corresp="#COCHRANE">Cochrane</orgName> ultimately managed to produce one volume of the projected edition of <persName corresp="#JH">Hogg</persName>&#x02BC;s tales, 
+                    a volume that contained not only three of the tales but also (and a precursor to what became a characteristic feature in collected editions of modern writers) an 
+                    autobiographical &#x201C;Memoir&#x201D; <!--DCH: Title?--> by the author; a portrait engraving of <persName corresp="#JH">Hogg</persName>, which served as the volume&#x02BC;s frontispiece 
+                    (created by <persName corresp="#CFENGRAVER">Charles Fox</persName> [<date notBefore="1794" notAfter="1849">1794&#x2013;1849</date>], an artist who 
+                    who had contributed illustrations to <persName corresp="#WS">Scott</persName>&#x02BC;s <hi rend="italic">magnum opus</hi> edition); and a cut by <persName corresp="#GC">Cruikshank</persName> illustrating one of the tales 
+                    (<ref type="bibliography" target="bibliography.php#HUGHESHOGGLIFE">Hughes, <title type="biography" corresp="#HUGHESHOGGLIFE" rend="italic">James Hogg</title></ref>, 222&#x2010;23, 265&#x2010;66, 281, 287; 
+                    <ref type="bibliography" target="bibliography.php#HUGHESINTROHOGGALTRIVE">Hughes, introduction to Hogg, <title type="anthology" corresp="#ALTRIVETALES" rend="italic">Altrive Tales</title></ref>, xvii, xxxiii, xxxiv&#x2010;xliii).
+                </p>
+                <p>
+                    Later, when <persName corresp="#JH">Hogg</persName> returned to <placeName corresp="#SCOTLAND">Scotland</placeName> following <orgName corresp="#COCHRANE">Cochrane</orgName>&#x02BC;s failure, 
+                    the author negotiated with a <placeName corresp="#GLASGOW">Glasgow</placeName> publisher, <orgName corresp="#BLACKIESON">Blackie &#x0026; Son</orgName>, who arranged for a reprint series of the fiction, 
+                    by employing the <placeName corresp="#GLASGOW">Glasgow</placeName> system of &#x201C;numbers&#x201D; publishing. In this scheme, books were published in segments, 
+                    issued monthly in paper covers, so that the consumer of modest means could compile complete volumes over time with small outlays 
+                    (see <ref type="bibliography" target="bibliography.php#HUGHESINTROHOGGLETTERSVOL3">Hughes, introduction to Hogg, <title type="collected_letters" corresp="#HUGHESINTROHOGGLETTERSVOL3" rend="italic">Letters, 1832&#x2013;1835</title></ref>, xxxix&#x2013;xl). 
+                    In <persName corresp="#JH">Hogg</persName>&#x02BC;s case, the resulting six volumes of fiction published by <orgName corresp="#BLACKIESON">Blackie &#x0026; Son</orgName> proved a far cry from the uniform edition of the 
+                    <title type="anthology" corresp="#ALTRIVETALES" rend="italic">Altrive Tales</title>, modeled on <persName corresp="#WS">Scott</persName>&#x02BC;s <hi rend="italic">magnum opus</hi> edition.
+                </p> 
+                <p>These ambitions and disappointments concerning publishing arrangements are relevant to the Ruskins&#x02BC; acquaintance with <persName corresp="#JH">Hogg</persName>, 
+                    because the writer became embroiled in these difficulties in the years leading up to 
+                    <persName corresp="#JR">Ruskin</persName>&#x02BC;s own introduction to the professional <placeName corresp="#LONDON">London</placeName> literary world as 
+                    &#x201C;<persName type="pen_name" corresp="#JR">J.R.</persName>&#x201D; 
+                    In <date when="1829">1829</date> and <date when="1830">1830</date>, two poems by <persName corresp="#JR">Ruskin</persName> based on his <ref type="apparatus" target="description_of_skiddaw_and_lake_derwent_apparatus.php"><title type="poem" corresp="#RUSKINSKIDDAWANDDERWENT">&#x201C;Description of Skiddaw and Lake Derwent&#x201D;</title></ref> <!--DCH: Title?--> 
+                    had already appeared in the <title type="magazine" corresp="#SPIRITUALTIMES" rend="italic">Spiritual Times</title>; however, this magazine, which was published by the Ruskins&#x02BC; clergyman and <persName corresp="#JR">John</persName>&#x02BC;s tutor, 
+                    <ref type="note" subtype="biographical" target="andrews_edward_note.php"><persName corresp="#EA">Edward Andrews</persName> (1787&#x2013;1841)</ref>, 
+                    amounted almost to a family affair. The boy&#x02BC;s continuing facile and prolific poetry composition gave promise of a more ambitious and prominent staging of his talents, 
+                    and doubtless <persName corresp="#JJR">John James</persName> was keenly observant to learn how publishers operated.
+                </p>
+                <p>As <persName corresp="#GH">Gillian Hughes</persName> remarks, <persName corresp="#JH">Hogg</persName>&#x02BC;s disappointed expectations reflect the transition between publishing in the age of <persName corresp="#WS">Scott</persName> and 
+                    the more volatile and confusing print culture in the age of <persName corresp="#CJHD">Dickens</persName>. 
+                    <orgName corresp="#COCHRANE">Cochrane</orgName>&#x02BC;s collapse, which occurred only <date when="1832">six years after the bank failures of 1826</date> 
+                    had already ruined many publishers, represented the riskier possibilities 
+                    in publishing that were opening up alongside apparently solid houses like <orgName corresp="#MURRAY">John Murray</orgName> and <orgName corresp="#SMITHELDER">Smith, Elder</orgName>. 
+                    <persName corresp="#JH">Hogg</persName> presents an exemplary figure for authorship during this transitional period. 
+                    He was willing to experiment with new ways to reach his public; and despite his relative isolation on his <placeName corresp="#ALTRIVE">Altrive</placeName> farm, 
+                    he had become a literary celebrity by embracing new modes of publication. At the same time, <persName corresp="#JH">Hogg</persName> expressed doubts about the effects of cheap publication 
+                    on &#x201C;legitimate literature.&#x201D; His attitudes were colored not only by his personal professional triumphs and disappointments 
+                    in his ongoing struggle to support his family&#x2010;high fame coupled with great risk, as mirrored in the career of his more august friend, <persName corresp="#WS">Walter Scott</persName>&#x2013;but also 
+                    by his hardening Toryism, which resulted from adverse personal experiences during the country&#x02BC;s disturbances over the <date when="1832">1832</date> Reform Bill 
+                    (see <ref type="bibliography" target="bibliography.php#HUGHESINTROHOGGLETTERSVOL3">Hughes, introduction to Hogg, <title type="collected_letters" corresp="#HUGHESINTROHOGGLETTERSVOL3" rend="italic">Letters, 1832&#x2013;1835</title></ref>, xli, xxxviii&#x2013;xxxix).
+                </p>
+                <p>Meanwhile, in <date notBefore="1832-01" notAfter="1832-03">the first quarter of 1832</date>, <persName corresp="#JH">Hogg</persName>&#x02BC;s <placeName corresp="#LONDON">London</placeName> visit 
+                    was pleasurable and flattering, as the <persName type="pen_name" corresp="#JH">Ettrick Shepherd</persName> was widely feted as a literary celebrity&#x2014;especially, 
+                    though not exclusively, among Scottish residents. 
+                    <persName corresp="#JH">Hogg</persName> was known for his poetry and fiction, but he was perhaps most famous for his association with a character, the &#x201C;<persName type="pen_name" corresp="#JH">Shepherd</persName>,&#x201D; 
+                    in the <title type="series" corresp="#NOCTESAMBROSIANAE" rend="italic">Noctes Ambrosianae</title> series in the <placeName corresp="#EDINBURGH">Edinburgh</placeName> periodical, 
+                    <title type="magazine" corresp="#BLACKWOODMAGAZINE" rend="italic">Blackwood&#x02BC;s Magazine</title>. In his first visit to the metropolis, <persName corresp="#JH">Hogg</persName> was ready to take control over his own public persona. 
+                    He had already unsettled the complacency of <title type="magazine" corresp="#BLACKWOODMAGAZINE" rend="italic">Blackwood&#x02BC;s</title> by pursuing 
+                    the offer by a <placeName corresp="#LONDON">London</placeName> publisher, <orgName corresp="#COCHRANE">Cochrane</orgName>, 
+                    to take on the edition of the <title type="anthology" corresp="#ALTRIVETALES" rend="italic">Altrive Tales</title>. Now he sent contributions to a new <placeName corresp="#LONDON">London</placeName> periodical, <title type="magazine" corresp="#FRASERMAGAZINE" rend="italic">Fraser&#x02BC;s Magazine</title>, 
+                    which had set out in <date when="1830">1830</date> to rival specifically <title type="magazine" corresp="#BLACKWOODMAGAZINE" rend="italic">Blackwood&#x02BC;s Magazine</title>. 
+                    The connection with <title type="magazine" corresp="#FRASERMAGAZINE" rend="italic">Fraser&#x02BC;s</title> was especially gratifying for <persName corresp="#JH">Hogg</persName> 
+                    in that the metropolitan periodical did not balk at his irreverence and bawdiness&#x2014;always 
+                    an impediment in Calvinist <placeName corresp="#SCOTLAND">North Britain</placeName> to granting <persName corresp="#JH">Hogg</persName> his due respect as a sophisticated writer 
+                    (<ref type="bibliography" target="bibliography.php#HUGHESHOGGLIFE">Hughes, <title type="biography" corresp="#HUGHESHOGGLIFE" rend="italic">James Hogg</title></ref>, 233&#x2013;34).
+                </p>
+                <p>During <persName corresp="#JH">Hogg</persName>&#x02BC;s visit to <placeName corresp="#LONDON">London</placeName>, 
+                    the circle of Scottish literati who were established in the city had already grown alarmed over the probable state of 
+                    <orgName corresp="#COCHRANE">Cochrane</orgName>&#x02BC;s solvency, so <persName corresp="#JH">Hogg</persName>&#x02BC;s friends attempted to raise funds for the writer. 
+                    <persName corresp="#JH">Hogg</persName> refused charity, but he consented to a scheme for publication by subscription of a new deluxe edition of 
+                    <title type="collected_poems" corresp="#THEQUEENSWAKE" rend="italic">The Queen&#x02BC;s Wake</title> (<date notBefore="1813" notAfter="1819">1813&#x2013;19</date>), the poem that had first established his reputation. 
+                    To this effort, <persName corresp="#JJR">John James Ruskin</persName> subscribed generously 
+                    with a donation of &#x00A3;20, asking <persName corresp="#JH">Hogg</persName> in a letter of <date when="1832-02-08">8 February 1832</date> for the honor of being the first subscriber 
+                    (<ref type="bibliography" target="bibliography.php#HUGHESHOGGLIFE">Hughes, <title type="biography" corresp="#HUGHESHOGGLIFE" rend="italic">James Hogg</title></ref>, 251&#x2013;52, 266; 
+                    <ref type="bibliography" target="bibliography.php#HOGGWORKSLETTERSVOL3">Hughes, ed., <title type="collected_letters" corresp="#HOGGWORKSLETTERSVOL3" rend="italic">The Collected Letters: Volume 3, 1832&#x2010;1835</title></ref>, 32 n.). 
+                    It was surely no accident that the date of <persName corresp="#JJR">John James</persName>&#x02BC;s donation was his son&#x02BC;s <date when="1832-02-08">thirteenth birthday</date>. 
+                    Symbolically, <persName corresp="#JJR">John James</persName> was investing his son in modern Caledonian poetry. Moreover, the projected form of the book, a 
+                    deluxe edition of an established modern classic, reflected the success of another illustrated edition of modern poetry, 
+                    which <persName corresp="#JR">Ruskin</persName> is believed to have received on his <date when="1832-02-08">thirteenth birthday</date>&#x2012;the <date when="1830">1830</date> edition of 
+                    <title type="poem" corresp="#ROGERSITALY" rend="italic">Italy</title> by <ref type="note" subtype="biographical" target="rogers_samuel_note.php"><persName corresp="#SR">Samuel Rogers</persName>&#x02BC;s (<date when="1763">1763</date>&#x2013;<date when="1855">1855</date></ref>), 
+                    which was illustrated by <persName corresp="#JMWT">Turner</persName>, <persName corresp="#TSP">Stothard</persName>, and others. 
+                    The Ruskins were thus taking a direct part in a distinctly contemporary mode of book production aimed at politely learned middle&#x2010;class consumers like themselves. 
+                    Ultimately, the  <title type="collected_poems" corresp="#THEQUEENSWAKE" rend="italic">Queen&#x02BC;s Wake</title> venture presented a stark contrast with the ongoing best&#x2010;seller status of <persName corresp="#SR">Rogers</persName>&#x02BC;s <title type="poem" corresp="#ROGERSITALY" rend="italic">Italy</title> and 
+                    his <date when="1834">1834</date> collected <title type="collected_poems" corresp="#ROGERSPOEMS" rend="italic">Poems</title>, also illustrated by <persName corresp="#TSP">Turner</persName>.
+                </p>
+                <p>Confessing in a reply to <persName corresp="#JJR">John James</persName> that he felt &#x201C;queer&#x201D; accepting the donation but admitting to his pressing financial need, 
+                    <persName corresp="#JH">Hogg</persName> was emboldened by the gift to write to <persName corresp="#JGL">John Gibson Lockhart</persName> (<date notBefore="1794" notAfter="1854">1794&#x2013;1854</date>), the influential editor and the son&#x2010;in&#x2010;law of <persName corresp="#WS">Walter Scott</persName>, 
+                    nudging him with ideas for the edition. (The impetus for the deluxe <title type="collected_poems" corresp="#THEQUEENSWAKE" rend="italic">Queen&#x02BC;s Wake</title> edition was formally urged by the prestigious 
+                    <placeName corresp="#LONDON">London</placeName> firm headed by the Scotsman, <persName corresp="#JM">John Murray</persName>, 
+                    for whom <persName corresp="#JGL">Lockhart</persName> worked as the editor of the <title type="magazine" corresp="#QUARTERLYREVIEW" rend="italic">Quarterly Review</title>.) 
+                    Cannily, <persName corresp="#JH">Hogg</persName> insinuated terms for the book, which, he wrote, &#x201C;should be a work something like The Keepsake<!-- not italicized in original --> 
+                    with fewer ornaments yet so as to make it a drawing&#x2010;room book&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#HOGGWORKSLETTERSVOL3">Hughes, ed., <title type="collected_letters" corresp="#HOGGWORKSLETTERSVOL3" rend="italic">The Collected Letters: Volume 3, 1832&#x2010;1835</title></ref>, 32, 33). 
+                    <persName corresp="#JH">Hogg</persName>&#x02BC;s description shows that he wanted to take advantage of the fashion 
+                    for <ref type="note" subtype="bibliographical" target="annuals_note.xml">literary annuals</ref>, 
+                    publications meant to appeal to middle&#x2010;class consumers as presenting allegedly quality samplings of the nation&#x02BC;s art and literature, 
+                    while also constituting showy but accessibly priced luxury items for the &#x201C;drawing&#x2010;room.&#x201D; 
+                    <persName corresp="#JH">Hogg</persName>&#x02BC;s citing the <title type="periodical" corresp="#THEKEEPSAKE" rend="italic">Keepsake</title> as an example was strategic, since this annual was among the costliest and most elegant of the many crowding the market 
+                    (see <ref type="bibliography" target="bibliography.php#HUNNISETTSTEELENGRAVED">Hunnisett, <title type="essay" corresp="#HUNNISETTSTEELENGRAVED" rend="italic">Steel&#x2010;Engraved Book Illustration in England</title></ref>, 
+                    142&#x2013;43; and <ref type="note" subtype="bibliographical" target="annuals_note.php#LANDSCAPEANNUAL">Annuals and Other Illustrated Books: The Landscape Annual</ref>). 
+                    As a potential illustrator for the deluxe edition, <persName corresp="#JH">Hogg</persName> dropped the name of the popular artist, <persName corresp="#JMARTIST">John Martin</persName> (<date when="1789" notAfter="1854">1789&#x2010;1854</date>), 
+                    whom <persName corresp="#JH">Hogg</persName> met personally during his <placeName corresp="#LONDON">London</placeName> visit, and whose work he had encountered and admired in the annuals as well as in the mezzotints by which <persName corresp="#JMARTIST">Martin</persName>&#x02BC;s apocalyptic 
+                    fantasies were widely disseminated. <persName corresp="#JH">Hogg</persName> also mentioned &#x201C;some others who would do [an illustration] for me <hi rend="italic">con amore</hi> 
+                    (<ref type="bibliography" target="bibliography.php#HOGGWORKSLETTERSVOL3">Hughes, ed., <title type="collected_letters" corresp="#HOGGWORKSLETTERSVOL3" rend="italic">The Collected Letters: Volume 3, 1832&#x2010;1835</title></ref>, 33, 7). 
+                    <persName corresp="#JH">Hogg</persName> appreciated the visual arts, and througout his <placeName corresp="#LONDON">London</placeName> visit, 
+                    he sought opportunities to view exhibitions and converse with artists 
+                    (<ref type="bibliography" target="bibliography.php#HUGHESHOGGARTANNUALS">Hughes, <title type="essay" corresp="#HUGHESHOGGARTANNUALS">&#x201C;Hogg, Art, and the Annuals&#x201D;</title></ref>, xliv).
+                </p>
+                <p>Additional subscription funds were collected and eventually sent to <persName corresp="#JH">Hogg</persName>, and <persName corresp="#JMARTIST">Martin</persName> 
+                    did create and exhibit a watercolor drawing based on the tale of <title type="poem" corresp="#HOGGKILMENY" rend="italic">Kilmeny</title>, 
+                    which forms part of the bards&#x02BC; competition in <title type="collected_poems" corresp="#THEQUEENSWAKE" rend="italic">The Queen&#x02BC;s Wake</title>; however, 
+                    the planned book ultimately went the way of <persName corresp="#JH">Hogg</persName>&#x02BC;s other disappointments resulting from his <placeName corresp="#LONDON">London</placeName> venture, 
+                    and the deluxe edition was never published 
+                    (<ref type="bibliography" target="bibliography.php#OHALLORANILLUSTRATIONS">O&#x02BC;Halloran, <title type="book_chapter" corresp="#OHALLORANILLUSTRATIONS">&#x201C;Illustrations to <title type="collected_poems" corresp="#THEQUEENSWAKE" rend="italic">The Queen&#x02BC;s Wake</title>&#x201D;</title></ref>, c&#x2010;civ). 
+                    Months later in <date when="1832">1832</date>, <persName corresp="#JJR">John James Ruskin</persName> would add his name to another list for publication by subscription&#x2013;this one 
+                    for the <title type="collected_sketches" corresp="#PROUTSKETCHES" rend="italic">Facsimiles of Sketches in Flanders and <placeName corresp="#GERMANY">Germany</placeName></title> (<date when="1833">1833</date>) 
+                    by <ref type="note" subtype="biographical" target="prout_samuel_note.xml">Samuel Prout (1783&#x2010;1852)</ref> 
+                    (<ref type="bibliography" target="bibliography.php#LOCKETTPROUT">Lockett, <title type="biography" corresp="#LOCKETTPROUT" rend="italic">Samuel Prout</title></ref>, 74). 
+                    This publication did come to fruition, and <persName corresp="#JJR">John James</persName> was doubtless flattered to be listed among subscribers who included members of the aristocracy, 
+                    well&#x2010;known artists, and other successful professional men. Earlier in the year, he must have been equally proud to lead the way 
+                    among prosperous Scottish <placeName corresp="#LONDON">London</placeName> merchants in supporting <persName corresp="#JH">Hogg</persName>&#x02Bc;s book, an elegant expression of modern Caledonian poetry. 
+                    Nonetheless, while <persName corresp="#SP">Prout</persName>&#x02BC;s book proved auspicious in helping <persName corresp="#JR">Ruskin</persName> to envision his own place in the British print production of art and poetry in the <date notBefore="1830" notAfter="1839">1830s</date> 
+                    (see <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent</ref>), 
+                    the example of <persName corresp="#JH">Hogg</persName>&#x02BC;s ill&#x2010;fated <title type="collected_poems" corresp="#THEQUEENSWAKE" rend="italic">Queen&#x02BC;s Wake</title> subscription edition must have worked in part as a cautionary tale. 
+                    As a representative publishing project of the <date notBefore="1830" notAfter="1839">1830s</date>, the fading away of the deluxe <title type="collected_poems" corresp="#THEQUEENSWAKE" rend="italic">Queen&#x02BC;s Wake</title> 
+                    along with the compromising of the <title type="anthology" corresp="#ALTRIVETALES" rend="italic">Altrive Tales</title> edition poses a inverse complement to <persName corresp="#TBM">Thomas Macaulay</persName>&#x02BC;s 
+                    encomium to the <date when="1830">1830</date> illustrated <title type="poem" corresp="#ROGERSITALY" rend="italic">Italy</title>, which, were it &#x201C;dug up in some <placeName corresp="#POMPEII">Pompeii</placeName> or <placeName corresp="#HERCULANEUM">Herculaneum</placeName> 
+                    two thousand years hence,&#x201D; he enthused, &#x201C;would give to posterity a higher idea of the state of the arts amongst us 
+                    than anything else which lay in an equally small compass&#x201D;
+                    (qtd. in <ref type="bibliography" target="bibliography.php#ROGERSJOURNAL">Rogers, <title type="periodical" corresp="#ROGERSJOURNAL" rend="italic">The Italian Journal of Samuel Rogers</title></ref>, 111).
+                </p>
+                <p>In <title type="autobiography" corresp="#PRAETERITA" rend="italic">Praeterita</title>, <persName corresp="#JR">Ruskin</persName> identifies 
+                    <ref type="note" subtype="biographical" target="pringle_thomas_note.php">Thomas Pringle (1789&#x2013;1834)</ref> as responsible for arranging 
+                    <persName corresp="#JH">Hogg</persName>&#x02BC;s introduction to the Ruskins, and that connection is confirmed by <persName corresp="#JH">Hogg</persName> 
+                    mentioning in his <date when="1832-02-09">9 February 1832</date> reply to <persName corresp="#JJR">John James Ruskin</persName>, 
+                    thanking him for his subscription, that the donation was delivered by &#x201C;<persName corresp="#TP">Mr. T. Pringle</persName>,&#x201D;  
+                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <title type="anthology" corresp="#JRWORKSLE" rend="italic">Works</title></ref>, 35:93; 
+                    <ref type="bibliography" target="bibliography.php#HOGGWORKSLETTERSVOL3">Hughes, ed., <title type="collected_letters" corresp="#HOGGWORKSLETTERSVOL3" rend="italic">The Collected Letters: Volume 3, 1832&#x2010;1835</title></ref>, 33; 
+                    <ref type="bibliography" target="bibliography.php#GARDENMEMORIALS">Garden, ed., <title type="book" corresp="#GARDENMEMORIALS" rend="italic">Memorials of James Hogg</title></ref>, 246).
+                    <persName corresp="#TP">Pringle</persName>, the Scottish poet and abolitionist, had known <persName corresp="#JH">Hogg</persName> since <date when="1811">1811</date>, 
+                    and he assisted his friend in a number of professional ways during <persName corresp="#JH">Hogg</persName>&#x02BC;s visit to the metropolis 
+                    (<ref type="bibliography" target="bibliography.php#VIGNEPRINGLE">Vigne, <title type="biography" corresp="#VIGNEPRINGLE" rend="italic">Thomas Pringle</title></ref>, 23; 
+                    <ref type="bibliography" target="bibliography.php#HUGHESHOGGLIFE">Hughes, <title type="biography" corresp="#HUGHESHOGGLIFE" rend="italic">James Hogg</title></ref>, 244, 251, 260, 265). 
+                    <persName corresp="#TP">Pringle</persName> was well situated to lend influence. Since <date when="1828">1828</date>, he had edited the annual, 
+                    <ref type="note" subtype="bibliographical" target="friendships_offering_note.php"><title type="magazine" corresp="#FRIENDSHIPSOFFERING" rend="italic">Friendship&#x02BC;s Offering</title></ref>, 
+                    for the publisher, <orgName corresp="#SMITHELDER">Smith, Elder</orgName>, a firm that also employed <persName corresp="#JR">Ruskin</persName>&#x02BC;s cousin, 
+                    <ref type="note" subtype="biographical" target="richardson_charles_note.php">Charles Thomas Richardson (1811&#x2013;34)</ref> as an apprentice. 
+                    It is noteworthy that the Ruskins&#x02BC; relationship with <persName corresp="#TP">Pringle</persName> appears to have been in place two years earlier than the editor&#x02BC;s adoption of <persName corresp="#JR">Ruskin</persName>&#x02BC;s first poems 
+                    for <title type="magazine" corresp="#FRIENDSHIPSOFFERING" rend="italic">Friendship&#x02BC;s Offering</title>, which were published in late <date when="1834">1834</date>, in the volume marketed for the holiday season of <date notBefore="1834" notAfter="1835">1834&#x2010;35</date> 
+                    (see <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent</ref>; 
+                    <ref type="apparatus" target="saltzburg_apparatus.php">"Saltzburg"</ref>). 
+                    (<persName corresp="#GH">Gillian Hughes</persName> suggests, however, that <persName corresp="#AE">Alexander Elder</persName> of the <orgName corresp="#SMITHELDER">Smith, Elder</orgName> firm 
+                    may have served as the key figure for expatriate literary Scotsmen in <placeName corresp="#LONDON">London</placeName> 
+                    [<ref type="bibliography" target="bibliography.php#HUGHESINTROHOGGANNUALS">Hughes, <title type="essay" corresp="#HUGHESINTROHOGGANNUALS">&#x201C;Introductory and Textual Notes&#x201D; to <title type="book" corresp="#HOGGANNUALS" rend="italic">Contributions to Annuals and Gift&#x2010;Books</title></title></ref>, 309&#x2010;10], 
+                    so perhaps it was <persName corresp="#AE">Elder</persName> who orchestrated these connections.)
+                </p>
+                <p><persName corresp="#TP">Pringle</persName> and <persName corresp="#JH">Hogg</persName> were contrasting personalities. 
+                    <persName corresp="#TP">Pringle</persName> implored <persName corresp="#JH">Hogg</persName> to contribute to the first two volumes that he edited of <title type="magazine" corresp="#FRIENDSHIPSOFFERING" rend="italic">Friendship&#x02BC;s Offering</title>, 
+                    those for <date when="1829">1829</date> and <date when="1830">1830</date> 
+                    (i.e., published in late October or in November, <date when="1828-10">1828</date> and <date when="1829-11">1829</date>, respectively, for the holiday season; see 
+                    <ref type="bibliography" target="bibliography.php#HUGHESINTROHOGGANNUALS">Hughes, <title type="essay" corresp="#HUGHESINTROHOGGANNUALS">&#x201C;Introductory and Textual Notes&#x201D; to <title type="book" corresp="#HOGGANNUALS" rend="italic">Contributions to Annuals and Gift&#x2010;Books</title></title></ref>, 309&#x2010;10). 
+                    Yet, <persName corresp="#TP">Pringle</persName> rejected some of <persName corresp="#JH">Hogg</persName>&#x02BC;s submissions that the editor considered &#x201C;<hi rend="italic">too broad</hi>&#x201D; in humor, 
+                    for <persName corresp="#TP">Pringle</persName> vowed &#x201C;to admit not a single expression [into the annual] which would call up a blush in the cheek of the most delicate female if reading aloud to a mixt company&#x201D; 
+                    (qtd. in <ref type="bibliography" target="bibliography.php#HUGHESINTROHOGGANNUALS">Hughes, <title type="essay" corresp="#HUGHESINTROHOGGANNUALS">&#x201C;Introductory and Textual Notes&#x201D; to <title type="book" corresp="#HOGGANNUALS" rend="italic">Contributions to Annuals and Gift&#x2010;Books</title></title></ref>, 310). 
+                    <persName corresp="#JH">Hogg</persName> retaliated with satirical verses on the editors of annuals, declaring, in an <date when="1831">1831</date> poem for <title type="magazine" corresp="#BLACKWOODMAGAZINE" rend="italic">Blackwood&#x02BC;s Magazine</title>, 
+                    that &#x201C;I don&#x02BC;t like <persName corresp="#TP">Pringle</persName>, he&#x02BC;s too finical, / And so pragmatical about his slaves&#x201D; 
+                    (<title type="drama" corresp="#HOGGMISERSGRAVE">&#x201C;The Miser&#x02BC;s Grave,&#x201D;</title> qtd. in 
+                    <ref type="bibliography" target="bibliography.php#CURRIEINTROHOGGANNUALS">Currie, <title type="essay" corresp="#CURRIEINTROHOGGANNUALS">introduction to Hogg</title>, <title type="book" corresp="#HOGGANNUALS" rend="italic">Contributions to Annuals and Gift&#x2010;Books</title></ref>, xxi).
+                    <persName corresp="#MR">Margaret Ruskin</persName> considered even <persName corresp="#TP">Pringle</persName>&#x02BC;s sanitized results objectionable: &#x201C;the tales are horrible enough,&#x201D; and &#x201C;the poetry very so[,] so I think,&#x201D; and thus &#x201C;upon the whole [the annual] 
+                    does not improve&#x201D; the reader&#x02BC;s mind 
+                    (<ref type="bibliography" target="bibliography.php#RFL">Burd, ed., <title type="collected_letters" corresp="#RFL" rend="italic">The Ruskin Family Letters</title></ref>, 1: 209). <persName>Janette Currie</persName> remarks, however, that 
+                    <persName corresp="#JH">Hogg</persName>&#x02BC;s implied author as a contributor to the annuals was far more palatable to polite readers than 
+                    the boozing and boistrous persona of the &#x201C;<persName type="pen_name" corresp="#JH">Shepherd</persName>&#x201D; in <title type="series" corresp="#NOCTESAMBROSIANAE" rend="italic">Noctes Ambrosianae</title>. <persName>Currie</persName> speculates that <persName corresp="#JH">Hogg</persName> may have used his writings for the annuals 
+                    strategically, in order to recommend his paternal aspect to middle&#x2010;class readers 
+                    (<ref type="bibliography" target="bibliography.php#CURRIEINTROHOGGANNUALS">Currie, <title type="essay" corresp="#CURRIEINTROHOGGANNUALS">introduction to Hogg</title>, <title type="book" corresp="#HOGGANNUALS" rend="italic">Contributions to Annuals and Gift&#x2010;Books</title></ref>, 
+                    xxvi&#x2013;xxvii).
+                </p>
+                <p>Paternity characterizes the persona of the &#x201C;<persName type="pen_name" corresp="#JH">Ettrick Shepherd</persName>&#x201D; as he appears in the volumes of <title type="magazine" corresp="#FRIENDSHIPSOFFERING" rend="italic">Friendship&#x02BC;s Offering</title> for <date when="1829">1829</date> and for <date when="1830">1830</date>, 
+                    volumes that <persName corresp="#JR">Ruskin</persName> probably saw, since at least one of these was presented to him by his cousin, 
+                    <persName corresp="#CTR">Charles Richardson</persName>, at the end of <date when="1829-10">October, 1829</date> 
+                    (see letter by <persName corresp="#MR">Margaret Ruskin</persName> to <persName corresp="#JJR">John James Ruskin</persName>, <date when="1829-10-31">31 October 1829</date>, in 
+                    <ref type="bibliography" target="bibliography.php#RFL">Burd, ed., <title type="collected_letters" corresp="#RFL" rend="italic">The Ruskin Family Letters</title></ref>, 1: 209). 
+                    In poems such as <title type="poem" corresp="#HOGGBALLAD">&#x201C;Ballad,&#x201D;</title> <title type="poem" corresp="#HOGGVERSESBELOVED">&#x201C;Verses to a Beloved Young Friend,&#x201D;</title> 
+                    and <title type="poem" corresp="#HOGGBARDSADDRESS">&#x201C;A Bard&#x02BC;s Address to His Youngest Daughter,&#x201D;</title> the speaker exhibits a tender paternal solicitude, which is presented as autobiographical 
+                    (see <ref type="bibliography" target="bibliography.php#HUGHESINTROHOGGANNUALS">Hughes, <title type="essay" corresp="#HUGHESINTROHOGGANNUALS">&#x201C;Introductory and Textual Notes&#x201D; to <title type="book" corresp="#HOGGANNUALS" rend="italic">Contributions to Annuals and Gift&#x2010;Books</title></title></ref>, 
+                    124&#x2010;26, 138&#x2010;39, 309&#x2010;10). But the poem in these volumes that is particularly germane to <persName corresp="#JR">Ruskin</persName> is <title type="poem" corresp="HOGGMINSTRELBOY">&#x201C;The Minstrel Boy,&#x201D;</title> 
+                    which presents an image of precocious youthful poetry in naturalized terms. <persName corresp="#JH">Hogg</persName> composed the poem at <persName corresp="#TP">Pringle</persName>&#x02BC;s behest 
+                    to complement an engraved genre subject by <persName corresp="#CRL">C. R. Leslie</persName> (<date notBefore="1794" notAfter="1859">1794&#x2010;1859</date>)
+                    depicting (in <persName corresp="#TP">Pringle</persName>&#x02BC;s words, describing the picture to <persName corresp="#JH">Hogg</persName>) &#x201C;a boy of perhaps 7 or 8 years of age with a shepherds pipe in his hand 
+                    &#x0026; a highland bonnet &#x0026; plaid lying beside him&#x201D;; the boy is &#x201C;lying in the midst of a scene of wild magnificence&#x201D; among &#x201C;woods, hills and waterfalls.&#x201D; 
+                    In commissioning verse for this picture, <persName corresp="#TP">Pringle</persName> asked that <persName corresp="#JH">Hogg</persName> 
+                    connect the image with &#x201C;the glorious romance of your own boyhood when the spirit of poetry &#x0026; romance 
+                    first began to pour over you the visions of fairyland.&#x201D; <persName corresp="#JH">Hogg</persName> invented a speaker who identifies with the minstrel boy nostalgically, 
+                    but distances himself with some disillusionment.
+                </p>
+                <p>The affection for youth that <persName corresp="#JH">Hogg</persName> expressed in these poems is reflected in his letters to his own children; and during his <placeName corresp="#LONDON">London</placeName> visit, he cultivated attachments 
+                    to the children belonging to several of the families who entertained him, including the Ruskins. His <date when="1832-02-09">9 February 1832</date> note to <persName corresp="#JJR">John James Ruskin</persName>, 
+                    thanking him for his subscription to the deluxe <title type="collected_poems" corresp="#THEQUEENSWAKE" rend="italic">Queen&#x02BC;s Wake</title>, closes with &#x201C;kindest love to <persName corresp="#MR">Mrs R</persName> and dear <persName corresp="#JR">John</persName>&#x201D; (indicating that 
+                    the <persName type="pen_name" corresp="#JH">Ettrick Shepherd</persName> must have visited <placeName corresp="#HERNE">Herne Hill</placeName> within the first five weeks of his <placeName corresp="#LONDON">London</placeName> sojourn). In a letter to 
+                    <persName corresp="#AE">Alexander Elder</persName> written on <date when="1833-01-14">14 January 1833</date>, a year after his return to <placeName corresp="#SCOTLAND">Scotland</placeName>, <persName corresp="#JH">Hogg</persName> sent regards to 
+                    &#x201C;Mr Ruskie,&#x201D; declaring &#x201C;that the <persName type="pen_name" corresp="#JH">old shepherd</persName> shall never 
+                    forget their kindness and warmth of attachments to his interests till his dying day,&#x201D; and he entreated &#x201C;to hear from time to time how Mr Ruskie jun. is coming on. 
+                    Though I am not very fond in general of precocity of talent I must say yon is the most extraordinary 
+                    callan<ref type="gloss" target="hogg_james_note_glosses.php#CALLANGLOSS"/> 
+                    I ever met with&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#HOGGWORKSLETTERSVOL3">Hughes, ed., <title type="collected_letters" corresp="#HOGGWORKSLETTERSVOL3" rend="italic">The Collected Letters: Volume 3, 1832&#x2010;1835</title></ref>, 119).
+                </p> 
+                <p>One year lapsed before <persName corresp="#JJR">John James</persName> followed up on this remembrance with a letter of <date when="1834-01-22">22 January 1834</date>,  
+                    in which the father evasively explains to <persName corresp="#JH">Hogg</persName> that <persName corresp="#AE">Alexander Elder</persName> had &#x201C;long since . . . favoured&#x201D; 
+                    him &#x201C;with a sight of part&#x201D; of the <date when="1833-01">January 1833</date> letter commending his son, but that meanwhile 
+                    &#x201C;sundry hints from our wife, and niece, and son&#x201D; had been urging reply, since &#x201C;all indulge in periodical remembrances of the delight your only too short visit offered them&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#GARDENMEMORIALS">Garden, ed., <title type="book" corresp="#GARDENMEMORIALS" rend="italic">Memorials of James Hogg</title></ref>, 273&#x2010;74). 
+                    What <persName corresp="#JJR">John James</persName> suggests only indirectly is that he was now prompted to confide in <persName corresp="#JH">Hogg</persName> 
+                    concerning <persName corresp="#JR">John</persName>&#x02BC;s &#x201C;precocity of talent,&#x201D; which <persName corresp="#JH">Hogg</persName> held in high regard despite his reservations about precocity as such.
+                </p>
+                <p>In his letter, <persName corresp="#JJR">John James</persName> says that he has ventured to write because <persName corresp="#JH">Hogg</persName> 
+                    is a man &#x201C;of talent and of heart,&#x201D; whereas &#x201C;the world at large,&#x201D; 
+                    lacks &#x201C;comprehen[sion] . . . patience . . . feeling . . . delicacy,&#x201D; and <persName corresp="#JJR">John James</persName> dares not entrust others with his 
+                    &#x201C;weaknesses, because&#x201D; he is &#x201C;not yet willing to be laughed out of them.&#x201D; 
+                    Namely, <persName corresp="#JJR">John James</persName> declares, &#x201C;the youth you were kind enough to notice,&#x201D; his son <persName corresp="#JR">John</persName>, &#x201C;gives promise of very considerable talent.  
+                    His faculty of composition is unbounded.&#x201D; The composition that has finally persuaded <persName corresp="#JJR">John James</persName> 
+                    to bring <persName corresp="#JR">John</persName>&#x02BC;s talent to <persName corresp="#JH">Hogg</persName>&#x02BC;s attention is  
+                    <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent</ref>.  
+                    &#x201C;Last summer,&#x201D; <persName corresp="#JJR">John James</persName> explains, &#x201C;we spent four months in <placeName corresp="#SWITZERLAND">Switzerland</placeName> and <placeName corresp="#ITALY">Italy</placeName>, 
+                    of which tour every scene is sketched in verse or prose, or picture&#x201D; in the <title type="guidebook" corresp="#JJRACCOUNT">&#x201C;Account.&#x201D;</title> While he demures over a lack of 
+                    &#x201C;any very strong indication of originality&#x201D; in the writing, <persName corresp="#JJR">John James</persName> marvels at his son&#x02Bc;s &#x201C;rapidity of composition&#x201D; and prolific 
+                    production of &#x201C;thosands of lines.&#x201D; <persName corresp="#JJR">John James</persName> included as a sample <persName corresp="#JR">John</persName>&#x02BC;s latest &#x201C;80 or 100 lines&#x201D; (unidentified), 
+                    which the boy &#x201C;produced in one hour, while he waited for me in the city&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#GARDENMEMORIALS">Garden, ed., <title type="book" corresp="#GARDENMEMORIALS" rend="italic">Memorials of James Hogg</title></ref>, 274).
+                </p>
+                <p>Perhaps abashed by <persName corresp="#JH">Hogg</persName>&#x02BC;s expression of distaste for precocity, <persName corresp="#JJR">John James</persName> 
+                    hastens to assure <persName corresp="#JH">Hogg</persName> that he and <persName corresp="#MR">Margaret</persName> are not &#x201C;fostering a poetical plant or genius&#x201D; in order to be able &#x201C;to say <hi rend="italic">we keep a poet</hi>. 
+                    It is impossible for any parents to make less of a gift than we do of this, firstly, from its small intrinsic value, as yet unsuspected in him; 
+                    and next, because we dread the sacrifice of our offspring by making him a victim to the pangs of despised verse, a sacrifice to a thankless world, 
+                    who read, admire, and trample on the greatest and the best&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#GARDENMEMORIALS">Garden, ed., <title type="book" corresp="#GARDENMEMORIALS" rend="italic">Memorials of James Hogg</title></ref>, 274&#x2010;75). 
+                    Here <persName corresp="#JJR">John James</persName> appears to evoke the mythology surrounding 
+                    <ref type="note" subtype="biographical" target="chatterton_thomas_note.php"><persName corresp="#TCPOET">Thomas Chatterton</persName> (<date notBefore="1752" notAfter="1770">1752&#x2010;70</date></ref>), the perished boy poet. 
+                    While suggestive more of rhetorical flourish than of credible anxiety, the allusion links <persName corresp="#JR">John Ruskin</persName> as an emerging poet to <persName corresp="#JH">James Hogg</persName> as an established poet 
+                    &#x201C;of talent and of heart,&#x201D; who has nonetheless reaped misfortune and abuse along with his fame. 
+                    At the end of his letter, <persName corresp="#JJR">John James</persName> commiserates with the poet for having to retreat from the glare of <placeName corresp="#LONDON">London</placeName> with his health compromised, 
+                    his life&#x02BC;s work having fallen victim to an insecure publishing scheme. &#x201C;I should like to see your works coming forward in better hands,&#x201D; <persName corresp="#JJR">John James</persName> concludes, 
+                    referring to the debacle of <orgName corresp="#COCHRANE">Cochrane</orgName>&#x02BC;s bankruptcy. 
+                    &#x201C;You began your memoir so well&#x201D; (i.e., the first volume of the <title type="anthology" corresp="#ALTRIVETALES" rend="italic">Altrive Tales</title>, containing <persName corresp="#JH">Hogg</persName>&#x02BC;s <title type="memoir" corresp="#HOGGMEMOIR">&#x201C;Memoir of the Author&#x02BC;s Life&#x201D;</title>), 
+                    &#x201C;that I feel quite enraged at the stupid bookseller for breaking at such a crisis&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#GARDENMEMORIALS">Garden, ed., <title type="book" corresp="#GARDENMEMORIALS" rend="italic">Memorials of James Hogg</title></ref>, 275).
+                </p>
+                <p>Thus, <persName corresp="#JJR">John James</persName>&#x02BC;s decision to write a year after <persName corresp="#JH">Hogg</persName> invited news &#x201C;from time to time [of] how Mr Ruskie jun. is coming on&#x201D; should perhaps be understood in context of 
+                    the Ruskins&#x02BC; wariness of the dangers besetting authorship in the publishing culture of the <date notBefore="1830" notAfter="1839">1830s</date>. As <persName>Robert Patten</persName> remarks about <persName corresp="#CJHD">Charles Dickens</persName>, 
+                    who was starting to formulate his persona of &#x201C;<persName type="pen_name" corresp="#CJHD">Boz</persName>&#x201D; at this time, considerable entrepreneurial resources were required in order for an author 
+                    to &#x201C;both fuel and stand up to capitalist material and cultural production during the heyday of British industrialism&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#PATTENDICKENSANDBOZ">Patten, <title type="book" corresp="#PATTENDICKENSANDBOZ" rend="italic">Charles Dickens and &#x201C;Boz&#x201D;</title></ref>, 19). 
+                    <persName corresp="#JR">Ruskin</persName>&#x02BC;s achievement in <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent</ref>, 
+                    which he was presently composing, and to which his father referred as evidence of serious poetic ability, would shortly lead to <persName corresp="#JR">Ruskin</persName>&#x02BC;s first significant public commission 
+                    in the persona of <persName type="pen_name" corresp="#JR">J.R.</persName>&#x2013;the poem <ref type="apparatus" target="saltzburg_apparatus.php">"Saltzburg"</ref>, composed to accompany an engraving of that title in the annual, 
+                    <title type="magazine" corresp="#FRIENDSHIPSOFFERING" rend="italic">Friendship&#x02BC;s Offering . . . for <date when="1835">MDCCCXXXV</date></title>, published in <date when="1834-11">November 1834</date>. 
+                    By the time <persName corresp="#JJR">John James</persName> wrote to <persName corresp="#JH">Hogg</persName> in <date when="1834-01">January 1834</date>, the Ruskins may already have been approached by <persName corresp="#TP">Thomas Pringle</persName>, 
+                    as editor of <title type="magazine" corresp="#FRIENDSHIPSOFFERING" rend="italic">Friendship&#x02BC;s Offering</title>, with the commission for this poem, 
+                    and <persName corresp="#JJR">John James</persName> may have looked to <persName corresp="#JH">Hogg</persName> for guidance as a previous contributor to this annual&#x2013;and yet as one whose deluxe <title type="collected_poems" corresp="#THEQUEENSWAKE" rend="italic">Queen&#x02BC;s Wake</title>, 
+                    planned on the splendid pattern of the annuals, with the expenses partly underwritten by <persName corresp="#JJR">John James</persName> himself, had proved a nonstarter. 
+                    It may have been at about this time, too, that <persName corresp="#TP">Pringle</persName> introduced the young <persName corresp="#JR">Ruskin</persName> as a prodigy to another great man, 
+                    <ref type="note" subtype="biographical" target="rogers_samuel_note.php">Samuel Rogers&#x02BC;s (1763&#x2013;1855</ref>), 
+                    who by comparison with <persName corresp="#JH">Hogg</persName> presented an almost opposite example of urbanity and success in the new illustrated literary publishing of the <date notBefore="1830" notAfter="1839">1830s</date>, 
+                    but who must also have seemed forbidding as a wealthy and influential &#x201C;man of taste&#x201D; in his London &#x201C;palace of art.&#x201D; 
+                    In <persName corresp="#JJR">John James</persName>&#x02BC;s appeal to <persName corresp="#JH">Hogg</persName> as a writer &#x201C;of talent and of heart,&#x201D; the father may have sought comfort not only from &#x201C;the world at large,&#x201D; 
+                    which lacks &#x201C;comprehen[sion] . . . patience . . . feeling . . . delicacy,&#x201D; but specifically from the notoriously acid wit of the batchelor poet/banker 
+                    of 22 <placeName corresp="#STJAMESPLACE">St. James Place</placeName>.
+                </p>
+                <p>In a striking contrast with <persName corresp="#SR">Rogers</persName>, who received <persName corresp="#JR">Ruskin</persName> for a stately visit of a few hours to his temple of taste, 
+                    with its view of the fashionable metropolitan <placeName corresp="#GREENPARK">Green Park</placeName>, 
+                    <persName corresp="#JH">Hogg</persName> invited the boy for an extended stay at his <placeName corresp="#ALTRIVE">Altrive</placeName> farm in <geogName corresp="#YARROWVALLEY">Yarrow</geogName>. The invitation was not unique, 
+                    <persName corresp="#JH">Hogg</persName> having made such an offer also to the young daughter of his publisher, <persName corresp="#JCP">James Cochrane</persName>. 
+                    <persName corresp="#JH">Hogg</persName> loved children and wielded great charm over them, and he appears to have thought of such visits as invigorating holidays for country&#x2010;starved city children 
+                    in the company of his own &#x201C;noisy romping healthy brats but good learners&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#HUGHESHOGGLIFE">Hughes <title type="biography" corresp="#HUGHESHOGGLIFE" rend="italic">James Hogg</title></ref>, 244, 264). 
+                    On <date when="1834-02-13">13 February 1834</date>, <persName corresp="#JR">John</persName> wrote to decline <persName corresp="#JH">Hogg</persName>&#x02BC;s invitation, explaining that he could not &#x201C;make up [his] mind to leave [his] parents even for a short time&#x201D; 
+                    until he went to university, and that his parents were &#x201C;equally tenacious&#x201D; of him. Writing of what might have been, however, <persName corresp="#JR">Ruskin</persName> summons an idyllic myth 
+                    that frames the nurturing of the emergent writer in a georgic or pastoral setting, like the landscape surrounding <persName corresp="#JH">Hogg</persName>&#x02BC;s <title type="poem" corresp="HOGGMINSTRELBOY">&#x201C;The Minstrel Boy.&#x201D;</title> 
+                    Such mythology probably underwrote <persName corresp="#JJR">John James</persName>&#x02BC;s motives in appealing 
+                    to the <persName type="pen_name" corresp="#JH">Ettrick Shepherd</persName> as a man of &#x201C;heart&#x201D; as well as talent.
+                </p>
+                <p>Writing nostalgically to <persName corresp="#JH">Hogg</persName> about &#x201C;the blue hills&#x201D; of <placeName corresp="#SCOTLAND">Scotland</placeName>, 
+                    among which he has &#x201C;passed some of the happiest days of [his] short life,&#x201D; <persName corresp="#JR">Ruskin</persName> was doubtless thinking 
+                    of visits to his father&#x02BC;s family in <ref type="note" subtype="geographical" target="perth_note.php">Perth</ref> during the 
+                    <ref type="note" subtype="contextual" target="tours_of_1822-25_note.php">Tours of 1822&#x2013;25</ref> and 
+                    <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php">Tours of 1826&#x2013;27</ref>, 
+                    prior to the death of his aunt, 
+                    <ref type="note" subtype="biographical" target="richardson_jessie.php">Janet (&#x201C;Jessie&#x201D;) Richardson (1783&#x2010;1828)</ref>, 
+                    which interrupted the <ref type="note" subtype="contextual" target="tour_of_1828_note.php">Tour of 1828</ref>. 
+                    These times in the &#x201C;North Countrie&#x201D; were &#x201C;exceedingly pleasant,&#x201D; but &#x201C;can never more return&#x201D; to him, 
+                    <persName corresp="#JR">Ruskin</persName> mourns; and having framed this ballad&#x2010;like yearning, he goes on to imagine sojourning in the Border country, 
+                    &#x201C;the braes of <geogName corresp="#YARROWVALLEY">Yarrow</geogName>, and the banks of Tweed,&#x201D; in the company of <persName corresp="#JH">Hogg</persName>&#x02BC;s bairns somewhat in the fantastic manner of one of <persName corresp="#JH">Hogg</persName>&#x02BC;s supernatural tales, 
+                    in which a youth wakes among the fairies, as in <title type="poem" corresp="#HOGGKILMENY" rend="italic">Kilmeny</title>: it would &#x201C;be more than [he] can well tell of pleasure&#x201D; to be able to  
+                    to wander among the holmes and hills of lovely <placeName corresp="#ETTRICK">Ettrick</placeName> with&#x201D; 
+                    the <persName type="pen_name" corresp="#JH">Ettrick Shepherd</persName>, &#x201C;to whom they and <placeName corresp="#SCOTLAND">Scotland</placeName> owe much, 
+                    very much of their celebrity, and to find brothers in his children 
+                    (for if the children have the loving&#x2010;kindness of the father 
+                    they would be sisters and brothers to me)&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#GARDENMEMORIALS">Garden, ed., <title type="book" corresp="#GARDENMEMORIALS" rend="italic">Memorials of James Hogg</title></ref>, 276&#x2010;77).
+                </p>
+                <p><persName corresp="#JR">Ruskin</persName> closes by replying to <persName corresp="#JH">Hogg</persName>&#x02BC;s critique of his verse (apparently lost, along with <persName corresp="#JH">Hogg</persName>&#x02BC;s invitation to <persName corresp="#JR">Ruskin</persName> to stay at <placeName corresp="#ALTRIVE">Altrive</placeName>, 
+                    which was probably contained in the same letter). <persName corresp="#JH">Hogg</persName>&#x02BC;s &#x201C;examination of [his] very worthless rhymes,&#x201D; as <persName corresp="#JR">Ruskin</persName> puts it, must have been based on the 
+                    &#x201C;80 or 100 lines&#x201D; that <persName corresp="#JJR">John James</persName> had sent as a sample&#x2013;lines therefore written in <date when="1834-01">January 1834</date> or somewhat earlier, it appears, and possibly intended for 
+                    <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent</ref>. <persName corresp="#JH">Hogg</persName> remarks on 
+                    Ruskin&#x02BC;s imitativeness of verse by <ref type="note" subtype="biographical" target="scott_walter_note.php">Walter Scott (1771&#x2010;1832)</ref> and 
+                    <ref type="note" subtype="biographical" target="byron_note.php">George Gordon, Lord Byron (1788&#x2010;1824)</ref>. This opinion was shared, <persName corresp="#JH">Hogg</persName> must have said, by a &#x201C;Mr. Marshall,&#x201D; 
+                    who is unidentified, but who was probably <persName corresp="#CM">Charles Marshall</persName>, <persName corresp="#JH">Hogg</persName>&#x02BC;s amanuensis and tutor for his children, a young man who had taken up residence at <placeName corresp="#ALTRIVE">Altrive</placeName> 
+                    toward the end of <date when="1833">1833</date> 
+                    (<ref type="bibliography" target="bibliography.php#GARDENMEMORIALS">Garden, ed., <title type="book" corresp="#GARDENMEMORIALS" rend="italic">Memorials of James Hogg</title></ref>, 277, and see 296&#x2010;307 
+                    for <persName corresp="#CM">Marshall</persName>&#x02BC;s recollections of <persName corresp="#JH">Hogg</persName>; see also 
+                    <ref type="bibliography" target="bibliography.php#HUGHESINTROHOGGLETTERSVOL3">Hughes, introduction to Hogg, <title type="collected_letters" corresp="#HUGHESINTROHOGGLETTERSVOL3" rend="italic">Letters, 1832&#x2013;1835</title></ref>, 224, 263).                    
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

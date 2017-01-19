@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="passing_the_alps_glosses">
+            <titleStmt>
+                <title type="main">"Passing the Alps" [poem]</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-24">January 25, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="PASSTHEALPSGLOSS" resp="#DCH">&#x201C;To day we pass the Alps&#x201D; (MS IA, <hi rend="italic">g</hi>.2; <hi rend="italic">Poems</hi> [1891]; <hi rend="italic">Works</hi> [1903])&#x2014;The 
+                    Ruskin family approached the <geogName corresp="#ALPS">Alps</geogName> 
+                    for the first time from the north, traveling from <placeName corresp="#SCHAFFHAUSEN">Schaffhausen</placeName> and <placeName corresp="#CONSTANCE">Constance</placeName>, 
+                    and they crossed into <placeName corresp="#ITALY">Italy</placeName> through the <geogName corresp="#VIAMALA">Via Mala</geogName> and the <geogName corresp="#SPLUGEN">Spl&#x00FC;gen Pass</geogName> 
+                    (see <ref type="note" subtype="contextual" target="tour_of_1833_note.php">Tour of 1833</ref>).<lb/>
+                    
+                    To describe the approach and crossing, <persName corresp="#JR">Ruskin</persName> intended, according to his <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php">Plan for Continuation of the Account of a Tour on the Continent</ref>, 
+                    to situate <ref type="witness" target="passing_the_alps_poem_msia_g2.php">&#x201C;Passing the Alps&#x201D;</ref> 
+                    at the start of a cluster of poems and/or prose pieces about the experience of crossing the <geogName corresp="#ALPS">Alps</geogName>, several of which he did draft in verse: <ref type="witness" target="passing_the_alps_poem_msia_g2.php">&#x201C;Passing the Alps&#x201D;</ref>, 
+                    <ref type="witness" target="viamala_poem_msviii.php">&#x201C;Via Mala&#x201D;</ref>, 
+                    <ref type="witness" target="splugen_poem_msviii.php">&#x201C;Splugen&#x201D;</ref>, <ref type="witness" target="the_summit_poem_msviii.php">&#x201C;The Summit&#x201D;</ref>, 
+                    <ref type="witness" target="the_descent_poem_msviii.php">&#x201C;The Descent&#x201D;</ref>, and &#x201C;Italia, Italia&#x201D;.<!-- DCH: "Italia, Italia" has only a title tag; no witness exists for this poem --> 
+                    As sections leading up to <ref type="witness" target="passing_the_alps_poem_msia_g2.php">&#x201C;Passing the Alps&#x201D;</ref>, 
+                    the plan lists <ref type="witness" target="schaffhausen_poem_msviii.php">&#x201C;Schaffhausen&#x201D;</ref>, 
+                    &#x201C;The Alps,&#x201D; &#x201C;The Fall of the Rhine,&#x201D; &#x201C;Constance,&#x201D; &#x201C;Werdenberg, and &#x201C;Pfaffers.&#x201D;<lb/><!-- DCH: again, apart from Schaffhausen, title tags only; no witnesses for these poems exist -->
+                    
+                    <persName corresp="#JR">Ruskin</persName> models this arrangement on <hi rend="italic">Italy</hi> by <ref type="note" subtype="biographical" target="rogers_samuel_note.php">Samuel Rogers (<date notBefore="1763" notAfter="1855">1763&#x2013;1855</date>)</ref>, 
+                    in which a poem about the western Alpine pass, &#x201C;The Great St. Bernard,&#x201D; gives way to &#x201C;The Descent,&#x201D; 
+                    followed by &#x201C;The Alps.&#x201D; In the latter poem, <persName corresp="#SR">Rogers</persName>&#x02BC;s speaker retraces imaginatively the entire span of the crossing, 
+                    preparing for his celebration of arrival in the following poems about <placeName corresp="#ITALY">Italy</placeName>. 
+                    (Also, between &#x201C;The Descent&#x201D; and &#x201C;The Alps,&#x201D; <persName corresp="#SR">Rogers</persName> pauses to relate two verse tales: &#x201C;Jorasse,&#x201D; 
+                    a highland tale about an intrepid Alpine hunter; and &#x201C;Marguerite de Tours,&#x201D; a lowland tale about a girl who crosses from <placeName corresp="MARTIGNY">Martigny</placeName>, 
+                    on the Swiss side of the <geogName corresp="#STBERNARD">St. Bernard</geogName>, to the opposite <placeName corresp="#VALDAOSTA">vale of Aosta</placeName> in order to attend to her dying father. 
+                    In the <date when="1839">1839</date> edition, <persName corresp="#SR">Rogers</persName> added a third tale, &#x201C;The Brothers,&#x201D; about twin brothers who lose their infant brother to an eagle.)<lb/>
+                    
+                    In <persName corresp="#JR">Ruskin</persName>&#x02BC;s <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php">plan</ref> for the &#x201C;Account,&#x201D; 
+                    he makes <ref type="witness" target="passing_the_alps_poem_msia_g2.php">&#x201C;Passing the Alps&#x201D;</ref> serve the structural function of <persName corresp="#SR">Rogers</persName>&#x02BC;s 
+                    &#x201C;The Alps&#x201D; as a summary reflection on the experience of crossing. Both poems use a trope of the <geogName corresp="#ALPS">Alps</geogName> as a &#x201C;barrier&#x201D; between civilizations, 
+                    a trope developed by a historical reference to <persName corresp="#HANNIBAL">Hannibal</persName> as the sublime analogy for struggling against that barrier 
+                    (<persName corresp="#HANNIBAL">Hannibal</persName>&#x02BC;s crossing is also the subject of <persName corresp="#JMWT">Turner</persName>&#x02BC;s vignette for &#x201C;The Alps&#x201D; 
+                    in the <date when="1830">1830</date> illustrated <hi rend="italic">Italy</hi>). Thus, <persName corresp="#JR">Ruskin</persName> captures <persName corresp="#SR">Rogers</persName>&#x02BC;s 
+                    idea of one poem serving as an epitome of the experience of crossing that is elaborated&#x2014;topographically, historically, anecdotally&#x2014;in surrounding poems.<lb/>
+                    
+                    There are also differences between <persName corresp="#JR">Ruskin</persName>&#x02BC;s 
+                    and <persName corresp="#SR">Rogers</persName>&#x02BC;s crossing poems. In <ref type="witness" target="passing_the_alps_poem_msia_g2.php">&#x201C;Passing the Alps&#x201D;</ref>, <persName corresp="#JR">Ruskin</persName> 
+                    develops the vision of <persName corresp="#HANNIBAL">Hannibal</persName>&#x02BC;s invasion as its sole topic, 
+                    whereas in &#x201C;The Alps&#x201D; <persName corresp="#SR">Rogers</persName> characteristically contrasts the turbulent past with his speaker&#x02BC;s present 
+                    &#x201C;path of pleasure&#x201D; (<ref type="bibliography" target="bibliography.php#ROGERSITALY1830">Rogers, <hi rend="italic">Italy</hi> [1830]</ref>, 30). 
+                    Also, <persName corresp="#JR">Ruskin</persName>, according to his <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php">plan</ref>, 
+                    intended to situate <ref type="witness" target="passing_the_alps_poem_msia_g2.php">&#x201C;Passing the Alps&#x201D;</ref> 
+                    at the head of a cluster of poems about the mountain pass, unlike <persName corresp="#SR">Rogers</persName> who posed &#x201C;The Alps&#x201D; as a retrospection past the watershed. 
+                    Despite these differences, <persName corresp="#JR">Ruskin</persName> clearly adopted structural cues from <persName corresp="#SR">Rogers</persName>&#x02BC;s sequence of poems.<lb/>
+                    
+                    According to this interpretation, <persName corresp="#WGC">W. G. Collingwood</persName> violated <persName corresp="#JR">Ruskin</persName>&#x02BC;s structural intentions. 
+                    As the first editor to reconstruct the &#x201C;Account&#x201D; by appending draft to <persName corresp="#JR">Ruskin</persName>&#x02BC;s 
+                    <ref type="witness" target="account_of_a_tour_on_the_continent_msix.php">MS IX fair copy</ref>, <persName corresp="#WGC">Collingwood</persName> erred 
+                    by placing &#x201C;Passing the Alps&#x201D; between <ref type="witness" target="genoa_poem_1891.php">&#x201C;Genoa&#x201D;</ref> 
+                    and <ref type="witness" target="chamouni_poem_msvii.php">&#x201C;Chamouni&#x201D;</ref>, causing <persName corresp="#JR">Ruskin</persName>&#x02BC;s poem 
+                    to function as a transition between <placeName corresp="#ITALY">Italy</placeName> and <placeName corresp="#SWITZERLAND">Switzerland</placeName>, 
+                    rather than between <placeName corresp="#GERMANY">Germany</placeName> and <placeName corresp="#ITALY">Italy</placeName>. The latter arrangement appears to have been in 
+                    <persName corresp="#JR">Ruskin</persName>&#x02BC;s mind as early as the <ref type="witness" target="account_of_a_tour_on_the_continent_msia_g2.php">MS IA, <hi rend="italic">g</hi>.2</ref> sequence, 
+                    which pairs <ref type="witness" target="passing_the_alps_poem_msia_g2.php">&#x201C;Passing the Alps&#x201D;</ref> with 
+                    <ref type="witness" target="milan_cathedral_poem_msia_g2.php">&#x201C;Milan Cathedral&#x201D;</ref>.<lb/>
+                    
+                    In another view, however, <persName corresp="#WGC">Collingwood</persName>&#x02BC;s erroneous placement of &#x201C;Passing the Alps&#x201D; was inspired, 
+                    for while he disrupted <persName corresp="#JR">Ruskin</persName>&#x02BC;s elaboration of <persName corresp="#SR">Rogers</persName>&#x02BC;s model, 
+                    the editor used available materials to patch together an approximation of how <persName corresp="#JR">Ruskin</persName>&#x02BC;s cluster of poems 
+                    about the north crossing would eventually have been mirrored by a cluster about the western crossing. According to <persName corresp="#JR">Ruskin</persName>&#x02BC;s 
+                    <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php">plan</ref>, the <geogName corresp="#SPLUGEN">Spl&#x00FC;gen</geogName> cluster, extending from 
+                    <ref type="witness" target="passing_the_alps_poem_msia_g2.php">&#x201C;Passing the Alps&#x201D;</ref> through 
+                    <ref type="witness" target="the_descent_poem_msviii.php">&#x201C;The Descent&#x201D;</ref> and poems on the Italian lakes, 
+                    would have been mirrored in reverse by a cluster including &#x201C;The Ascent&#x201D; and &#x201C;The Grand St. Bernard,&#x201D; leading to &#x201C;The Lake of Geneva&#x201D;&#x2014;and 
+                    doubtless this cluster, too, would have exploited <persName corresp="#SR">Rogers</persName>&#x02BC;s tropes about crossings. Thus, <persName corresp="#WGC">Collingwood</persName>&#x02BC;s 
+                    solution reveals another way in which <persName corresp="#JR">Ruskin</persName> abandoned &#x201C;The Account&#x201D; only when he had effectively completed his apprenticeship to his models 
+                    (see <ref type="apparatus" target="account_of_a_tour_on_the_continent.php#SOURCES">Account of a Tour on the Continent: Discussion&#x2014;Sources</ref>). 
+                    Moreover, <persName corresp="#WGC">Collingwood</persName>&#x02BC;s &#x201C;misplacement&#x201D; allows <ref type="witness" target="passing_the_alps_poem_msia_g2.php">&#x201C;Passing the Alps&#x201D;</ref> 
+                    to stand in for &#x201C;The Grand St. Bernard,&#x201D; which <persName corresp="#JR">Ruskin</persName> never composed, by associating the reference to 
+                    <persName corresp="#HANNIBAL">Hannibal</persName>&#x02BC;s crossing with a western passage where the event belongs historically.</note>
+                
+                <note xml:id="BARRIERGLOSS" resp="#DCH">&#x201C;The barrier of boundless length&#x201D; (MS IA, <hi rend="italic">g</hi>.2; <hi rend="italic">Poems</hi> [1891]; <hi rend="italic">Works</hi> [1903])&#x2014;Cf. &#x201C;To me they [the <placeName corresp="ALPS">Alps</placeName>] seemed the barriers of a world&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#ROGERSITALY1830">Rogers, <hi rend="italic">Italy</hi> (1830)</ref>, 30).</note>
+                
+                <note xml:id="QUEENOFNATIONSGLOSS" resp="#DCH">&#x201C;The Queen of nations&#x201D; (MS IA, <hi rend="italic">g</hi>.2; <hi rend="italic">Poems</hi> [1891]; <hi rend="italic">Works</hi> [1903])&#x2014;<placeName corresp="#ROMEANCIENT">Ancient Rome</placeName>.</note>
+                
+                <note xml:id="CARTHAGINIANFOEGLOSS" resp="#DCH">&#x201C;The Carthaginian foe . . . Avalanches roar&#x201D; (MS IA, <hi rend="italic">g</hi>.2; <hi rend="italic">Poems</hi> [1891]; <hi rend="italic">Works</hi> [1903])&#x2014;In <date when="-0218">218 BC</date>, 
+                    near the start of the <date notBefore="-0218" notAfter="-0201">Second Punic War</date> between <placeName corresp="#CARTHAGEANCIENT">Carthage</placeName> and <placeName corresp="#ROMEANCIENT">Rome</placeName>, 
+                    the Carthaginian leader, <persName corresp="#HANNIBAL">Hannibal</persName>, led his army on an unprecedented march across the <geogName corresp="#ALPS">Alps</geogName>, 
+                    invading <placeName corresp="#ITALY">Italy</placeName> and surprising <placeName corresp="#ROMEANCIENT">Rome</placeName> via a western passage somewhere in present&#x2010;day 
+                    <placeName corresp="#PIEDMONT">Piedmont</placeName>.</note>
+                
+                <note xml:id="CANNAESPLAINGLOSS" resp="#DCH">&#x201C;<placeName corresp="#CANNAE">Cann&#230;</placeName>s plain&#x201D; (MS IA, <hi rend="italic">g</hi>.2; <hi rend="italic">Poems</hi> [1891]; <hi rend="italic">Works</hi> [1903])&#x2014;An area in <placeName corresp="#APULIA">Apulia</placeName>, 
+                    in southeast <placeName corresp="#ITALY">Italy</placeName>, where <persName corresp="#HANNIBAL">Hannibal</persName>&#x02BC;s 
+                    army won a major victory over a large Roman force in <date when="-0216">216 BC</date>.</note>
+            </div>
+        </body>
+    </text>
+</TEI>

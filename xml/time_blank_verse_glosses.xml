@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="time_blank_verse_glosses">
+            <titleStmt>
+                <title type="main">"Time: Blank Verse"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="BASELINEPUNCTUATIONGLOSS" resp="#DCH">Periods and commas at lines 2 and 12 (MS IA), line 24 (MS III)&#x2014;These commas and periods are placed too high, above the baseline, 
+                    a difficulty characteristic of <persName corresp="#JR">Ruskin</persName>&#x20BC;s early, 
+                    <date notBefore="1826" notAfter="1827">1826&#x2013;27</date> hand, both in print and cursive, pencil and ink;  
+                    see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Commas, Periods, and Other Punctuation</ref>.
+                </note>
+                
+                <note xml:id="PRONOUNCORRECTIONGLOSS" resp="#CWB">&#x201C;them&#x201D; (MS IA)&#x2014;A descender appears on the <hi rend="italic">m</hi> in <hi rend="italic">them</hi>, 
+                    probably indicating that <persName corresp="#JR">Ruskin</persName> or someone else attempted to correct the pronoun to form <hi rend="italic">they</hi>. 
+                    The correction is carried over to the <title type="manuscript" corresp="#MSIII">MS III</title> witness of the poem.</note>
+                
+                <note xml:id="NEWYEARSDAYGLOSS" resp="#CWB">&#x201C;newyearsday&#x201D; (MS III)&#x2014;<persName corresp="#JR">Ruskin</persName> writes <hi rend="italic">newyearsday</hi> as 
+                    <hi rend="italic"><hi rend="caps, doubleletter-fill">N</hi>ew&#x2010;<hi rend="caps, doubleletter-fill">Y</hi>ears&#x2010;<hi rend="caps, doubleletter-fill">D</hi>ay</hi> 
+                    in the <title type="manuscript" corresp="#MSIA">MS IA</title> witness of the poem, suggesting that, here, the words may be deliberately run togther.</note>
+                
+                <note xml:id="NEWYEARSDAYSPACEDGLOSS" resp="#CWB">&#x201C;Newyearsday&#x201D; (MS III)&#x2014;Here it is unclear whether <persName corresp="#JR">Ruskin</persName> intended to write 
+                    <date when="1827-01-01"><hi rend="italic"><hi rend="caps">N</hi>ewyearsday</hi></date> or <date when="1827-01-01"><hi rend="italic"><hi rend="caps">N</hi>ew years day</hi></date>. 
+                    In the <title type="manuscript" corresp="#MSIA">MS IA</title> witness of the poem, he writes <date when="1827-01-01"><hi rend="italic"><hi rend="caps, doubleletter-fill">N</hi>ew <hi rend="caps, doubleletter-fill">Y</hi>ears <hi rend="caps, doubleletter-fill">D</hi>ay</hi></date>, 
+                    separating the words with distinct spaces and capital letters.</note>
+            </div>
+        </body>
+    </text>
+</TEI>

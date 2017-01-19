@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <fileDesc xml:id="the_meuse_prose_glosses2">
+            <titleStmt>
+                <title type="main">"The Meuse" [prose]</title>
+                <title type="sub">Glosses2</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="TERMINALCOMMA" resp="#DCH">Terminal comma (MS VIII)&#x2014;See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</note>
+                
+                <note xml:id="JUSTIFICATION" resp="#DCH">Justification mark (MS IX)&#x2014;See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#JUSTIFICATION">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Justification, Runover, and Word Division</ref>.</note>
+                
+                <note xml:id="INTO" resp="#DCH">&#x201C;in to&#x201C; (MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;In the <title type="manuscript" corresp="#MSVIII">MS VIII</title> draft, the word is undivided; 
+                    <persName corresp="#JR">Ruskin</persName> omitted the hyphen indicating word division in order to avoid violating the justification of the right margin.</note>
+                
+                <note xml:id="BEAUTY" resp="#DCH">&#x201C;sublimity or beauty&#x201C; (MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;In the <title type="manuscript" corresp="#MSVIII">MS VIII</title> draft, 
+                    &#x201C;sublimity or immensity&#x201C;; in <title type="manuscript" corresp="#MSIX">MS IX</title>, the space left by <persName corresp="#JR">Ruskin</persName> 
+                    as if for missing word may indicate that he wrote 
+                    &#x201C;beauty&#x201C; in place of &#x201C;immensity&#x201C; accidentally, but thought better of revising the error.</note>
+                
+                <note xml:id="PAUSEPERIOD" resp="#DCH">Pause&#x2013;period (MS IX)&#x2014;See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</note>
+                
+                
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <fileDesc xml:id="ragland_castle_apparatus">
+            <titleStmt>
+                <title type="main">"Ragland Castle"</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing encoding, review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#CNW">Casey N. White</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-07-07">July 7, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0.-->
+                    <title>Apparatus Version 1.0 (TC)</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="apparatus">
+                <head type="title">&#x201C;Ragland Castle&#x201D;</head>
+                <div type="section" xml:id="WITNESSES">
+        			<head type="section">Witnesses</head>
+        			<list>
+                        <item><ref type="witness" target="ragland_castle_msiii.php"><title type="poem" corresp="RAGLANDCASTLE">&#x201C;Ragland Castle&#x201D;</title> (MS III)</ref></item>
+        			    <item><ref type="witness" target="ragland_castle_le.php"><title type="poem" corresp="RAGLANDCASTLE">&#x201C;Ragland Castle&#x201D;</title> (Library Edition)</ref></item>
+        			</list>
+                </div>
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>&#x201C;Ragland Castle&#x201D;</p>
+                    <p><persName corresp="#JR">Ruskin</persName> wrote the title as <title type="poem" corresp="RAGLANDCASTLE">&#x201C;ragland castle&#x201D;</title>.</p>
+                    <p>See <ref type="note" subtype="bibliographical" target="title_citation_note.php">System of Title Citation for Works</ref>.</p>
+                    <p>While today the preferred spelling of the name of this castle and village in <placeName corresp="#WALES">Wales</placeName> is 
+                        <hi rend="italic"><placeName rend="italic" corresp="#RAGLAN">Raglan</placeName></hi> or the Welsh <hi rend="italic"><placeName rend="italic" corresp="#RAGLAN">Rhaglan</placeName></hi>, 
+                        <persName corresp="#JR">Ruskin</persName>&#x02BC;s spelling, <hi rend="italic"><placeName rend="italic" corresp="#RAGLAN">Ragland</placeName></hi>, 
+                        would have seemed correct to nineteenth&#x2010;century English tourists. 
+                        For example, the spelling <hi rend="italic"><placeName rend="italic" corresp="#RAGLAN">Ragland</placeName></hi> appears in two important maps of the period: 
+                        the <title type="map" rend="italic" corresp="#GREENWOODMAPMONMOUTH">Map of the County of Monmouth, from an Actual Survey Made in the Years 1829 &#x0026; 1830</title> 
+                        (<placeName corresp="#LONDON">London</placeName>, <date when="1831">1831</date>) by the Greenwood brothers, 
+                        <persName corresp="#CGCARTOGRAPHER">Christopher</persName> (<date notBefore="1786" notAfter="1855">1786&#x2013;1855</date>) and <persName corresp="#JGCARTOGRAPHER">John</persName> (<date notBefore="1791" notAfter="1867">1791&#x2013;1867</date>); 
+                        and the <title type="map" rend="italic" corresp="#ORDINANCESURVEYMAPS">Ordinance Survey &#x201C;Old Series&#x201D;</title> maps (sheet 43 [<placeName corresp="#LONDON">London</placeName>, <date when="1831">1831</date>]). 
+                        In tourism literature, the spelling was used by the <placeName corresp="#MONMOUTH">Monmouth</placeName> printer, <persName corresp="#CHMONMOUTH">Charles Heath</persName> (<date notBefore="1761" notAfter="1830">1761&#x2013;1830</date>), 
+                        in his <title type="guidebook" rend="italic" corresp="#HEATHRAGLANDCASTLE">Historical and Descriptive Accounts of the Ancient and Present State of Ragland Castle</title> (<date when="1792">1792</date>), 
+                        a publication that preceded <persName corresp="#CHMONMOUTH">Heath</persName>&#x02BC;s popular guidebook to <placeName corresp="#TINTERN">Tintern Abbey</placeName>, 
+                        <title type="guidebook" rend="italic" corresp="#HEATHTINTERN">Descriptive Account of Tintern Abbey</title> (<date when="1793">1793</date>). 
+                        <persName corresp="#CHMONMOUTH">Heath</persName>&#x02BC;s guidebooks to these monuments lasted through many editions <date notBefore="1790" notAfter="1829">from the 1790s through the 1820s</date> 
+                        (see &#x201C;&#x2018;The Picture of the Mind&#x2019;: Tintern and Vicinity through Images&#x201D; and 
+                        &#x201C;&#x2018;Gleams of Past Existence&#x2019;: Charles Heath&#x02BC;s Guide to Tintern Abbey&#x201D; in 
+                        <ref type="bibliography" target="bibliography.php#MATHESONENCHANTINGRUIN">Matheson, <hi rend="italic">Enchanting Ruin</hi></ref>; see also 
+                        <ref type="bibliography" target="bibliography.php#HEBRONROMANTICSANDBRITISHLANDSCAPE">Hebron, <hi rend="italic">Romantics and the British Landscape</hi>, 10&#x2013;11</ref>). 
+                        In his guidebook to the castle, <persName corresp="#CHMONMOUTH">Heath</persName> traced the Welsh etymology of the name and remarked that, in the process of &#x201C;Englishiz[ing]&#x201D; the name, 
+                        &#x201C;within these very few years . . . the letter D has been added to it&#x201D; 
+                        (&#x201C;Etymology&#x201D; in <ref type="bibliography" target="bibliography.php#HEATHRAGLANDCASTLE">Heath, <hi rend="italic">Historical and Descriptive Accounts of the Ancient and Present State of Ragland Castle</hi> [11th ed., <date when="1829">1829</date>]</ref>, n.p.).
+                    </p>
+                </div>
+                <div type="section" xml:id="GENRE">
+                    <head type="section">Genre</head>
+                    <p>Poem; <ref type="note" subtype="contextual" target="topographical_poetry_note.php" >topographical poem</ref>.</p>
+                </div>
+                <div type="section" xml:id="MAJORMS">
+                    <head type="section">Manuscripts</head>
+                    <p><ref type="apparatus" target="msiii_apparatus.php">MS III</ref> (p. 62), a <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Book</ref>
+                        devoted primarily to <ref type="apparatus" target="harry_and_lucy_vol2_apparatus.php">&#x201C;Harry and Lucy,&#x201D; Vol. 2</ref>. &#x201C;Ragland Castle&#x201D; is the first poem in
+                        <ref type="apparatus" target="poetry_discriptive_apparatus.php">&#x201C;Poetry Discriptive&#x201D;</ref>.</p>
+                    <p>Facsimile and transcript by permission of Beinecke Rare Book and Manuscript Library, Yale University.</p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p><date notBefore="1827-07-01" notAfter="1827-12-31">1827, after June</date>.</p>
+                    <p>The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> were mistaken
+                        in calling this &#x201C;possibly the <persName corresp="#JR">author</persName>&#x02BC;s earliest poem&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic" >Works</hi></ref>, 2:255&#x2013;56 n. 1; and see 
+                        <ref type="apparatus" target="the_needless_alarm_apparatus.php#DATE"><title type="poem" corresp="#THENEEDLESSALARM">&#x201C;The Needless Alarm&#x201D;</title>: Date</ref> for the case for
+                        <persName corresp="#JR">Ruskin</persName>&#x02BC;s earliest extant poem). There is no reason to believe that
+                        <title type="poem" corresp="RAGLANDCASTLE">&#x201C;Ragland Castle&#x201D;</title> is earlier than the anthology containing it, 
+                        <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;Poetry Discriptive&#x201D;</title></ref>.</p>
+                    <p><ref type="note" subtype="biographical" target="viljoen_h_g_note.php"><persName corresp="#HGV">Helen Gill Viljoen</persName></ref>
+                        believed that, because the hand for this poem is smaller than for that characterizing other poems in 
+                        <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;Poetry Discriptive&#x201D;</title></ref>, 
+                        <persName corresp="#JR">Ruskin</persName> may have added it later to the front of the anthology 
+                        (<ref type="bibliography" target="bibliography.php#VILJOENPAPERS">Viljoen Papers</ref><!--Entry needed here.-->).
+                        The argument is not convincing, since no crowding of lines suggests a later insertion, and the hypothesis creates a new problem of explaining why the following poem, 
+                        <ref type="apparatus" target="lochleven_apparatus.php"><title type="poem" corresp="#LOCHLEVENPOEM">&#x201C;Lochleven&#x201D;</title></ref> would have begun so far down on the page. 
+                        In fact, the size of the lettering varies even within this fair copy of <title type="poem" corresp="RAGLANDCASTLE">&#x201C;Ragland Castle&#x201D;</title>, 
+                        and its smallest printing is no smaller than for some other portions of <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;Poetry Discriptive&#x201D;</title></ref>.</p>
+                    <p>See <ref type="note" subtype="bibliographical" target="date_citation_note.php">System of Date Citation</ref>.</p>
+                </div>
+                <div type="section" xml:id="COMPPUB">
+                    <head type="section">Composition and Publication</head>
+                    <p><ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic" >Works</hi></ref>, 2:255&#x2013;56 n. 1.</p>
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <div type="subsection">
+                        <head type="subsection">Occasion</head>
+                    <p>The poem reflects a visit to <placeName corresp="#RAGLAN">Raglan Castle</placeName> near <placeName corresp="#MONMOUTH">Monmouth</placeName>, 
+                        constructed largely in the <date notBefore="1400" notAfter="1499">fifteenth century</date> and significantly damaged during the <date notBefore="1642" notAfter="1651">Civil War</date>. 
+                        The poem, along with references
+                        in <ref type="apparatus" target="harry_and_lucy_vol2_apparatus.php"><title type="lesson" corresp="#HARRYANDLUCYVOL2">&#x201C;Harry and Lucy,&#x201D; Vol. 2</title></ref> 
+                        to <placeName corresp="#MONMOUTH">Monmouth</placeName> and <placeName corresp="#TINTERN">Tintern Abbey</placeName>,
+                        confirms that the Ruskins visited the <geogName corresp="#WYE">Wye Valley</geogName> in <date when="1827">1827</date>. 
+                        The family could have departed no earlier than when <persName corresp="#JJR">John James Ruskin</persName> completed his business travel, 
+                        a trip prolonged beyond his <date when="1827-05-10">10 May birthday</date> through at least the week of <date notBefore="1827-05-14" notAfter="1827-05-20">14&#x2013;20 May 1827</date> 
+                        (see <ref type="bibliography" target="bibliography.php#RFL">Burd, ed., <hi rend="italic">Ruskin Family Letters</hi></ref>, 157 n. 1; 
+                        see also <ref type="apparatus" target="wales_apparatus.php"><title type="poem" corresp="#WALES">&#x201C;Wales&#x201D;</title></ref> and 
+                        <ref type="apparatus" target="spring_blank_verse_apparatus.php"><title type="poem" corresp="#SPRINGBLANKVERSE">&#x201C;Spring: Blank Verse&#x201D;</title></ref>).</p>
+                        <p>By <date when="1827">1827</date>, the <geogName corresp="#WYE">Wye</geogName> tour had sponsored a tourism industry of nearly three&#x2010;quarters of a century&#x02BC;s standing, 
+                            and in the <date notBefore="1820" notAfter="1829">1820s</date> the comforts and efficiency of the tour were augmented 
+                        by steam transport on the river and by improved roads on land 
+                        (see <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php">Tours of 1826&#x2013;27</ref>).
+                        For the excursion from <placeName corresp="#MONMOUTH">Monmouth</placeName> to <placeName corresp="#RAGLAN">Raglan</placeName> in particular, 
+                            the local guidebook author and printer, <persName corresp="#CHMONMOUTH">Charles Heath</persName>, highlighted the commodiousness of the 
+                            &#x201C;new road from <placeName corresp="#MONMOUTH">Monmouth</placeName> to <placeName corresp="#RAGLAN">Ragland</placeName>, a pleasant drive of eight miles,&#x201D; 
+                            in his eleventh (<date when="1829">1829</date>) edition of 
+                        <ref type="bibliography" target="bibliography.php#HEATHRAGLANDCASTLE"><hi rend="italic">Historical and Descriptive Accounts of the Ancient and Present State of Ragland Castle</hi></ref> (n.p.), 
+                            although further research is required to determine in what year <persName corresp="#CHMONMOUTH">Heath</persName> first printed this notice.</p>
+                    <p>As indicated by other poems in the anthology,
+                        <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;Poetry Discriptive&#x201D;</title></ref>, 
+                        the Ruskins probably traveled on from southern <placeName corresp="#WALES">Wales</placeName> to visit
+                        family in <ref type="note" subtype="geographical" target="perth_note.php"><placeName corresp="#PERTH">Perth</placeName></ref>, <placeName corresp="#SCOTLAND">Scotland</placeName>
+                        (see <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php">Tours of 1826&#x2013;27</ref>).</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Sources</head>
+                        <p>With its trope of a mouse&#x02BC;s house reflecting in miniature a human scale of awareness of and provision for danger, 
+                            the poem is related to <persName corresp="#JR">Ruskin</persName>&#x02BC;s adaptation 
+                            of poems, tales, and lessons by <persName corresp="#WCP">William Cowper</persName>, <persName corresp="#ALB">Anna Letitia Barbauld</persName>, and 
+                            <persName corresp="#JAIKIN">John Aikin</persName> in <ref type="apparatus" target="the_needless_alarm_apparatus.php"><title type="poem" corresp="#THENEEDLESSALARM">&#x201C;The Needless Alarm&#x201D;</title></ref> 
+                            (see especially, for that poem, <ref type="apparatus" target="the_needless_alarm_apparatus.php#SOURCES">Discussion: Sources</ref>). 
+                            Also, contextualizing both the poem and the anthology that the poem heads, <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;Poetry Discriptive&#x201D;</title></ref>, 
+                            is the tradition of picturesque travel, writing, and art. Comically, however, <persName corresp="#JR">Ruskin</persName>&#x02BC;s narrator reduces the elements of the 
+                            picturesque to a mere catalogue of the castle&#x02BC;s architectural features, while the most picturesque effect seems achieved by the mice, 
+                            which patch their &#x201C;falling dwellings&#x201D; with vegetation contrasting pleasingly with the stone of the &#x201C;spiral towers.&#x201D;</p>
+                        <p><ref type="appendix" target="msiii_appendix.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref> contains a drawing, 
+                            <ref type="drawing" target="ragland_castle_drawing_msiii.php">&#x201C;Ragland Castle When Newly Built&#x201D;</ref>, which was probably suggested by 
+                            <persName corresp="#CHMONMOUTH">Heath</persName>&#x02BC;s guidebook, 
+                            <ref type="bibliography" target="bibliography.php#HEATHRAGLANDCASTLE"><hi rend="italic">Historical and Descriptive Accounts of the Ancient and Present State of Ragland Castle</hi></ref>. 
+                            See <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php">Tours of 1826&#x2013;27</ref>.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

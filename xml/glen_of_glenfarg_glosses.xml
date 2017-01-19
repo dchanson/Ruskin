@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="glen_of_glenfarg_glosses">
+            <titleStmt>
+                <title type="main">"Glen of Glenfarg" ("Glen of Glenfarg thy beauteous rill")</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-11">January 11, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="CHARLESSWAINGLOSS" resp="#DCH">&#x201C;charles&#x02BC;s wain&#x201D; (MS III; <hi rend="italic">Poems</hi> [1891]; <hi rend="italic">Works</hi> [1903])&#x2014;Noting 
+                    the reference to <name type="constellation" corresp="#CHARLESSWAIN">Charles&#x02BC;s Wain</name>,
+                <ref type="note" subtype="biographical" target="viljoen_h_g_note.php"><persName corresp="#HGV">Helen Gill Viljoen</persName></ref>
+                (<ref type="bibliography" target="bibliography.php#VILJOENPAPERS">&#x201C;Viljoen Papers&#x201D;</ref>,
+                box F.X) remarks that <persName corresp="#JR">Ruskin</persName> could have learned the constellations from
+                <ref type="note" subtype="biographical" target="joyce_jeremiah.php"><persName corresp="#JJ">Jeremiah Joyce</persName></ref>
+                (<ref type="bibliography" target="bibliography.php#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Scientific Dialogues</hi></ref>, <!--Entry needed here.-->) or from
+                <ref type="note" subtype="biographical" target="day_thomas_note.php"><persName corresp="#TD">Thomas Day</persName></ref>
+                (<ref type="bibliography" target="bibliography.php#SANDFORDANDMERTON">Day, <hi rend="italic">Sandford and Merton</hi></ref>, <!--Entry needed here.-->). For
+                <persName corresp="#JR">Ruskin</persName>&#x02BC;s interest in this constellation, see also &#x201C;Harry and Lucy,&#x201D; Vol. 2, chap. 1; and &#x201C;The
+                Constellations: Northern, Some of the Zodiac, and Some of the Southern.&#x201D;</note>
+                
+                <note xml:id="SEPTEMBER1826GLOSS" resp="#DCH">Between lines 24 and 25&#x2014;The Library Edition incorrectly identifies <persName corresp="#JJR">John James Ruskin</persName> as adding the date <date when="1826-09-09">9 September 1826</date>.
+                The hand, which is certainly <persName corresp="#MR">Margaret Ruskin</persName>&#x02BC;s, is identical to that for a similar annotation in MS I.</note>
+                
+                <note xml:id="WORDINBRACKETSGLOSS" resp="#CWB">&#x201C;[lost]&#x201D; (<hi rend="italic">Poems</hi> [1891]; <hi rend="italic">Works</hi> [1903])&#x2014;<ref type="note" subtype="biographical" target="collingwood_w_g_note.php">W. G. Collingwood</ref> 
+                    comments that the &#x201C;word in square brackets,&#x201D; which he supplied, &#x201C;is wanting in the original&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#POEMS4D1891"><hi rend="italic">Poems</hi> [4<hi rend="superscript">o</hi>, 1891]</ref>, 1:xxv; 
+                    <ref type="bibliography" target="bibliography.php#POEMS8D1891"><hi rend="italic">Poems</hi> [8<hi rend="superscript">o</hi>, 1891]</ref>, 1:xii). 
+                    In the sole extant manuscript version, there is no evidence of such a word existing. <persName corresp="#WGC">Collingwood</persName> assumes <persName corresp="#JR">Ruskin</persName>&#x02BC;s intention, 
+                    since, without the word, the second line in the stanza would deviate from the &#x201C;abab&#x201d; rhyme scheme that prevails throughout the remainder of poem.</note>
+            </div>
+        </body>
+    </text>
+</TEI>

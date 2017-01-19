@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="milan_cathedral_glosses">
+            <titleStmt>
+                <title type="main">"Milan Cathedral"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-25">January 25, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="RELIEVEDGLOSS" resp="#DCH">&#x201C;Relieved&#x201D; (MS IA, <hi rend="italic">g</hi>.2; <hi rend="italic">Poems</hi> [1891]; <hi rend="italic">Works</hi> [1903])&#x2014;adjectival use of the participle of the verb <hi rend="italic">relieve</hi>, 
+                    used here in a rare figurative sense, &#x201C;to stand out in relief&#x201D; or &#x201C;to bring into relief,&#x201D; which the the <hi rend="italic">Oxford English Dictionary</hi> 
+                    traces to eighteenth&#x2010;century commentary on painting, 
+                    as in examples from a <date when="1795">1795</date> treatise on painting in oils, 
+                    and from <persName corresp="#SJR">Joshua Reynolds</persName>&#x02BC;s (<date notBefore="1723" notAfter="1792">1723&#x2013;92</date>) <hi rend="italic">Discourses</hi> 
+                    (<date notBefore="1769" notAfter="1790">1769&#x2013;90</date>): 
+                    &#x201C;To <persName corresp="#ARIADNE">Ariadne</persName> is given (say the criticks) a red scarf, to relieve the figure from the sea, which is behind her&#x201D; 
+                    (<ref type="bibliography" target="bibliography#REYNOLDSWORKS1797">Reynolds, <hi rend="italic">Discourses</hi> [1797]</ref>, 1:183 [Discourse 8]). 
+                    The dictionary also cites a later instance from <persName corresp="#JR">Ruskin</persName> himself, in <hi rend="italic">The Stones of Venice</hi>: 
+                    &#x201C;I drove on to <placeName corresp="#BRENTFORD">Brentford</placeName>, and walked over <placeName corresp="#KEWBRIDGE1789">Kew Bridge</placeName>; 
+                    the twilight relieving in purple masses the foliage on the Island above it&#x201D; (preface to third edition [<date when="1874">1874</date>], 
+                    <ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 9:12). 
+                    (See &#x201C;relieve, v.,&#x201D; <hi rend="italic">OED Online</hi>, accessed <date when="2015-01-16">16 January 2015</date>.) 
+                    Ruskin began learning oil painting from his drawing master, <persName corresp="#CR">Charles Runciman</persName>, in 1832; 
+                    see <ref type="note" subtype="biographical" target="runciman_charles_note.php">Charles Runciman (<date notBefore="1798" notAfter="1864">1798&#x2013;1864</date>)</ref>.
+                </note>                
+            </div>
+        </body>
+    </text>
+</TEI>

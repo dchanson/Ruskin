@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="the_hill_of_kinnoul">
+            <titleStmt>
+                <title type="main">"The Hill of Kinnoul"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS III Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing encoding, review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-17">January 17, 2015</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS III</msName>
+                        <msName>"Red book No. 2"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="1229186.jpg 1229187.jpg">pp. 65[b]-66</locus>
+                            <note>Ruskin misnumbered the first of these pages "65" when it should have been "66;" see collation of MS III. For a discussion of foliation, see <ref type="apparatus" target="the_hill_of_kinnoul_apparatus.php#MAJORMS">"The Hill of Kinnoul": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS III, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="poem">
+                <head type ="title"><handShift new="#HANDJR1826-27" script="print" medium="ink"/>The hill of kinnoul</head>
+                    <lg type="stanza">
+                        <l>First winding round the base of<lb type="runover"/><space quantity="7" unit="chars"/><geogName corresp="#KINNOULLHL">that smooth rock</geogName></l>
+                        <l>Flows the glass <geogName corresp="#TAYRIV">tay</geogName> not always<lb type="runover"/><space quantity="6" unit="chars"/>quite so smooth</l>
+                        <l>as that clear substance. from the<lb type="runover"/><space quantity="7" unit="chars"/>surface rises</l>
+                        <l><geogName corresp="#KINNOULLHL">a steep rock</geogName> and towering oer<lb type="runover"/><space quantity="22" unit="chars"/>its head</l>
+                        <l>appear the high topped trees<lb type="runover"/><space quantity="9" unit="chars"/>above below</l>
+                        <l>green natures colour stands<lb type="runover"/><space quantity="6" unit="chars"/><geogName corresp="#KINNOULLHL">upon the rock</geogName></l>
+                        <l>and high above thy head<lb type="runover"/><space quantity="5" unit="chars"/>appears the green of trees</l>
+                        <l>walk on the top of that <geogName corresp="#KINNOULLHL">rock</geogName> and<lb type="runover"/><space quantity="8" unit="chars"/>look down</l>
+                        <l>from thence upon the <geogName corresp="#TAYRIV">tay</geogName> the<lb type="runover"/><space quantity="9" unit="chars"/>precipice</l>
+                <pb facs="1229187v"/>
+                <fw type="pageNum" place="top"><space quantity="10" unit="chars"/>66</fw>
+                        <l>tween thee and it doth make thee<lb type="runover"/><space quantity="27" unit="chars"/>giddy</l>
+                        <l>it is so high that from<lb type="runover"/><space quantity="7" unit="chars"/>it seen the <geogName corresp="#TAYRIV">tay</geogName></l>
+                        <l>appears like a little rivulet among<lb type="runover"/><space quantity="12" unit="chars"/>the hills</l>
+                        <l>dwindling into nothing mong<lb type="runover"/><space quantity="8" unit="chars"/><geogName corresp="#GRAMPIANS">the distant mountains</geogName></l>
+                    </lg>
+            </div>   
+        </body>
+    </text>
+</TEI>
