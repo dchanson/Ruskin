@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="sonnet_to_a_cloud_witness">
+            <titleStmt>
+                <title type="main">151. "Sonnet to a Cloud" Witness</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS VIII</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. 18</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Example entries have been provided from MS I in the <handShift/>s below. Actual entries may vary.-->
+            
+            <div type="prose">
+                <head type="title">151. "Sonnet to a Cloud" Witness</head>
+                <p>151. &#x201C;Sonnet to a Cloud,&#x201D; <date when="1831-12">December 1831</date> to <date when="1832-01">January 1832</date>, 
+                    MSS V, VIII. Printed PJR, 1:102; Works, 2:332.</p>
+                
+                <p>See no. 148 for dating. Follows no. 147 in MS V; in MS VIII, nos. 148&#x2013;50 and stanzas 5&#x2013;12 of no. 135 intervene 
+                    between no. 147 and this poem. In MS VIII, entitled merely &#x201C;Sonnet.&#x201D;</p>
+            </div>
+            <!--Simple Verse. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title">Sonnet to a Cloud</head>
+                <lg type="stanza" rhyme="aa">
+                    <l>Thou little roamer of the northern blast</l>
+                    <l>Mantling the brow of ruby fring&#x00E8;d morn<!--looks like fringed, no accent--></l>
+                    <l>So swift so transient whither art thou borne</l>
+                    <l>Hither and thither by the breezes cast</l>
+                    <l>Hast shadowed sultry Araby or past</l>
+                    <l>Lumed by the lightning on the gloomy storm<!--might be lightening?--></l>
+                    <l>Or dimmed the lustre of the moon&#x00E8;s horn </l>
+                    <l>Or swept oer mountain summit fleet and fast</l>
+                    <l>Or darkened oer the bosom of the brine</l>
+                    <l>Or wanton chased the summer breezes sigh <!--you had chased as fled, maybe I misread?--></l>
+                    <l>And floated oer a <!--thirsty, salty, sultry?--> scorching clime<!--the word choice here doesn't look like thirsty to me, looks like it starts with an 's' and ends with 'ltry', but the second letter is peculiar--></l>
+                    <l>Fading upon the clear and azure sky</l>
+                    <l>Met<subst><del>hought</del><add>hinks</add></subst> I see thee like the wing of time</l>
+                    <l>Melting away into eternity</l>
+                </lg>
+            </div>
+            
+            <div type="prose">
+                <p>Textual note.&#x2014;As compared with the edited version in Works, <persName corresp="#JR">Ruskin’s</persName> fair copy in MS V and his draft in MS VIII have all lines 
+                    are flush left, without the editors' indentations; and first letters of lines and place names are capitalized. MS VIII version 
+                    entirely unpunctuated; MS V unpunctuated, except for accents on &#x201C;fring&#x00E8;d&#x201D; (line 2) and &#x201C;moon&#x00E8;s&#x201D; (line 7). </p>
+                
+                <p>6, MS V, Works lightening] lightning MS VIII</p>
+                <p>7, MS V moon&#x00E8;s] moons MS VIII; Works moon&#x00E8;&#x2019;s</p>
+                <p>8, MS V mountain summit] mountains summit MS VIII; Works mountain-summit,</p>
+                <p>10, MS V wanton fled] wanton [chased] fled MS VIII; Works wanton, fled</p> 
+                <p>11, MS V a thirsty] a [sultry] thirsty MS VIII; Works a thirsty,</p>
+                <p>13, MS V Methinks I see thee] Me[thought]thinks I see the MS VIII; Works &#x2014;Methinks I see thee</p>
+            </div>
+        </body>
+    </text>
+</TEI>
