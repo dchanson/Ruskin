@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"The Ship"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName></author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#DWW">David W. Wall</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="1229220.jpg">p. 1</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1828" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1829" notAfter="1830">1829-30</date>,
+                                    examples of which can be found in MS II, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                            <handNote corresp="#HANDJWGC" scribe="WGC">
+                                <p>W. G. Collingwood's hand.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            
+            <div type="poem">
+                <head type="title"><handShift new="#HANDWGC" script="print" medium="pencil"/><add place="margin-left">(1828-1829)</add><handShift new="#HANDJR1829-30" script="cursive" medium="ink"/>The ship</head>
+                <lg type="stanza" rhyme="aa">
+                    <!-- What to do with title "The Ship Vol I" is still undetermined: whether it a title, part of the text, heading... -->
+                    <l>Look at that ship</l>
+                    <l>her flying streamer and her mountain <add place="above"><space quantity="31" unit="chars"/>sides</add></l>  
+                    <l>her towering mast that seems to reach <add place="above"><space quantity="29" unit="chars"/> the sky</add></l>  
+                    <l>her noble stern<add place="above"><space quantity="15" unit="chars"/>&#x002A; </add> her filling sails with drops</l>
+                    <l>of water hanging to her mountain bulk</l>
+                    <l>glittering like<add place="above"><space quantity="16" unit="chars"/><metamark function="insertion" target="INSERTION1">&#x002A;</metamark></add> &#x0026;c</l>
+                    <l>that flying streamer shows that she is <add place="below"><space quantity="26" unit="chars"/>british</add></l>
+                    <l>And says though mutely I will neer <add place="above"><space quantity="26" unit="chars"/>be conquered</add></l>
+                    <l>for I was by the noble british made</l>
+                    <l>And I’ve a british crew . <!-- What is the function of periord to left? --> those mountain <add place="below"><space quantity="31" unit="chars"/>sides</add></l>
+                    <l>below which boats do look like little pigmys</l>
+                    <l>below which sloops do look like dwarfs <add place="below"><space quantity="13" unit="chars"/>below</add></l>
+                    <l>which mountain sides the brigs do look <add place="above"><space quantity="30" unit="chars"/>like men</add></l>
+                    <l>compared with giants .. <!-- What is the function of the two periods to left? --> those proclaim <add place="below"><space quantity="13" unit="chars"/>her trade</add></l>
+                    <l>and mutely say. I am a warrior</l>
+                    <l>Her towering mast <hi>that<del>is</del><add place= "above"><space quantity="24" unit="chars"></space>seems a norway pine</add></hi></l>
+                    <l><hi>brought from the icy snows of Dovrefields</hi></l> <!-- these mountains are spelled both as "Dorrefield" "Dovre Field," and "Dovrefield" on the net. JR's spelling looks like Dovrefields to me -->
+                    <l>when tis compared with that <add place="above"><space quantity="29" unit="chars"/>huge</add> hulk that <add place="below"><space quantity="0" unit="chars"/> <del>supports</del>bears it</add></l>
+                    <l>but put it near the mast of merchant<add place="above"><space quantity="33" unit="chars"/>men</add></l>
+                    <l>and it spreads to an oak of largest size</l>
+                    <l>and towers in giant bulk far towards <add place="below"><space quantity="17" unit="chars"/>the clouds</add></l>             
+                    <l>her stern proclaims her name the royal <add place="below"><space quantity="15" unit="chars"/>GEORGE</add></l>
+                    <!-- do we want to have a crib note for 'royal George" I don't see any other ship names in the regularization/crib list. Giving it a crib note has a second problem: "royal" and George are on different 
+                        lines and grouping them with a crib mote means that the crib note moves across "add" command necessary to place "George" as a continuation below. -->
+                    <l>And her huge sails do bear her on her way</l>
+                    <l>her faithless way that played a traitor's part</l>
+                    <l>and did forsake her in the hour of need</l>
+                    <l>and did precipitate her down far down</l>
+                    <l>to coral banks to pearls to <name type="fictional" corresp="#NEPTUNE">Neptune</name>s court<ref type="gloss" target="the_ship_glosses.php#THESHIPROYALGEORGEGLOSS"/></l>
+                    <l>those sails that sometimes pleasing zephrs <add place="below"><space quantity="16" unit="chars"/>fill</add></l>
+                    <l>and sometimes <name type="fictional" corresp="#BOREAS">Boreas</name> blows with all his <add place="below"><space quantity="14" unit="chars"/>force</add></l>
+                    <l>now at the present time look fair and sweet</l>
+                    <l>but who can tell the future ina day</l>
+                    <l>perhaps those sails are tattered rags shot through</l>
+                    <l>with many a ball half dropping off their yards.</l>
+                    <l>Then those destructive rows of huge machines</l>
+                    <l>destructive in their making in their use</l>
+                    <l><del>by which the scottish james does meet his </del> <add place="below"><space quantity="13" unit="chars"/><del>death</del></add></l>
+                    <l>O war what causes thee the curse of man</l>
+                    <l>tis avarice and ambition kindred vices</l>
+                    <l>tis vice not war that is the curse of man</l>
+                    <l>if vice were far all would be happiness <add place="below"><space quantity="19" unit="chars"/>conclusion</add></l>
+                    <l>thus the whole ship united makes form</l>
+                    <l>accustomed oft to battle with the storm</l>
+                    <l>And urged by <name type="fictional" corresp="#BOREAS">Boreas</name> on full quick to sweep</l>
+                    <l>the large and waving surface of the deep</l>
+                    <l>And urged by men their whizzing balls <add place="below"><space quantity="15" unit="chars"/>to throw</add></l>
+                    <l>at other men that they their deaths may <add place="above"><space quantity="35" unit="chars"/>know</add></l>
+                            <addSpan xml:id="INSERTION1" spanTo="#INSERTION1-END"/><l>and her destructive rows of huge machines</l><anchor xml:id="INSERTION1-END"/>
+                </lg>
+            </div>          
+        </body>
+    </text>
+</TEI>
+
+
+
+
+
