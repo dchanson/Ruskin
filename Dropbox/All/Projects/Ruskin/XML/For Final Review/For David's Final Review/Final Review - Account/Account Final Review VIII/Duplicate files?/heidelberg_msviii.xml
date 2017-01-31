@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#AMU">Amanda M. Upton</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America, Blossman Foundation, Huntington Library,
+                    Louisiana Board of Regents, National Endowment for the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language
+                    Association, and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work":
+                                    Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>, examples of which
+                                    can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Example entries have been provided from MS I in the <handShift/>s below. Actual entries may vary.-->
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="poem">
+                <lg type="stanza" n="18">
+                    <head rend="caps">Heidelberg</head>
+                    <l>Now from the smiling afternoon</l>
+                    <l>The rain had past away;</l>
+                    <l>And glimmered forth the pallid moon,</l>
+                    <l>Amid the heavens grey.</l>
+                    <l>Brake, and bush, and mead, and flower</l>
+                    <l>Were glistening with the sunny shower;</l>
+                    <l>Where, from the tangled, viny wreath,</l>
+                    <l>The clustered grape looked out beneath,&#x02014;</l>
+                    <l>Climbing up the southern side</l>
+                    <l>Of the round hills&#x02019; bosom wide,&#x02014;</l>
+                    <l>Branches of the chain that bound</l>
+                    <l>All the south horizon round.</l>
+                    <l>Far towards the western day</l>
+                    <l>Mannheim&#x02019;s towers softened lay.&#x02014;<hi
+                        rend="superscript">1</hi><note xml:id="xmlidneeded36" n="36" resp="#DH"
+                            place="botwin">Notation Needed</note></l>
+                    <l>From behind a thunder cloud</l>
+                    <l>Dark as envy, shot the sun</l>
+                    <l>On those towers high and proud,</l>
+                    <l>Hazily his rays down</l>
+                    <l>Smiling from those bright rays kiss</l>
+                    <l>Shooting round effulgence moony</l>
+                    <l>Likely a lovely Oasis</l>
+                    <l>Mid a desert dark and glomy</l>
+                    <l>But a moment&#x02014;darkly down</l>
+                    <l>Came the cloudy heavens frown</l>
+                    <l>Mong the leaves, a fitful shaking.</l>
+                    <l>Told the hoarse nitwind was waking</l>
+                    <l>Grey upon his mountain throne</l>
+                    <l>Heidelberg his ruins lone</l>
+                    <l>Reared colossally,</l>
+                    <l>All begirt with mighty trees</l>
+                    <l>Bending to the evens breeze</l>
+                    <l>Flapping faintly by.</l>
+                    <l>It was morning. from the height</l>
+                    <l>Cumbered with its ruins hoar</l>
+                    <l>All the lovely valley bright</l>
+                    <l>We were looking oer,</l>
+                    <l>With its silver river bending</l>
+                    <l>Vineyards to its banks descending <handShift/></l>
+                    <l>Many a distant mountain chain</l>
+                    <l>Girded round the mighty plain.</l>
+                    <l>Here the sky was clear and bright</l>
+                    <l>But upon their distant height</l>
+                    <l>Like a monster oer his prey</l>
+                    <l>Rain and tempest scowling lay</l>
+                    <l>Like a mighty ocean wave</l>
+                    <l>All along th&#x02019; horizon sweeping</l>
+                    <l>Flinging far its cloudy spray</l>
+                    <l>Oer the peaceful heaven beating <!-- start here --></l>
+                    <l>Then around, the reddening sun</l>
+                    <l>Gathered, throwing darkness dun</l>
+                    <l>On the ruin&#x02019;s ghostly wall,&#x02014;</l>
+                    <l>Then between the pine-trees tall,<hi rend="superscript">1</hi><note
+                        xml:id="xmlidneeded37" n="37" resp="#DH" place="botwin">Notation
+                        Needed</note></l>
+                    <l>Came quick the sound of raindrop fall.</l>
+                    <l>Fast increased, the leafy rattle</l>
+                    <l>Spoke the coming tempest-battle.</l>
+                    <l>Enter then the chambers cold&#x02014;</l>
+                    <l>Cold and lifeless, bald and bare;</l>
+                    <l>Though with banners decked of old,</l>
+                    <l>Ivy tendrils&#x02019; flickering flare</l>
+                    <l>Are the only banners there.</l>
+                    <l>You would start to hear your tread</l>
+                    <l>Given back by echoes dead!</l>
+                    <l>You would look around to see<hi rend="superscript">2</hi><note
+                        xml:id="xmlidneeded38" n="38" resp="#DH" place="botwin">Notation
+                        Needed</note></l>
+                    <l>If a sprite were watching thee!</l>
+                    <l>Yet a vision would come o&#x02019;er thee</l>
+                    <l>Of the scenes had past before thee;&#x02014;</l>
+                </lg>
+                <lg type="stanza" n="19">
+                    <l>Of the time when many a guest</l>
+                    <l>Blessed the baron for his feast;</l>
+                    <l>When the peasant, homeward stealing,&#x02014;</l>
+                    <l>Dusky night the hills concealing&#x02014;</l>
+                    <l>Heard the swell of wassail wild,</l>
+                    <l>Cadence from the castle coming,</l>
+                    <l>Mingling with the night-breeze humming;</l>
+                    <l>And, until the morning mild</l>
+                    <l>Lightened upon wall and tower,</l>
+                    <l>Beacon-light from hour to hour</l>
+                    <l>Streaming from the windows tall</l>
+                    <l>Of the baron&#x02019;s ancient hall:</l>
+                    <l>Where the shout around was ringing,</l>
+                    <l>And the troubadour was singing</l>
+                    <l>Ancient air and ancient rhyme&#x02014;</l>
+                    <l>Legend of the ancient time:&#x02014;</l>
+                    <l>Of some knight&#x02019;s blood, nobly spilt</l>
+                    <l>In the mel&#x000E9;e or the tilt;&#x02014;<hi rend="superscript"
+                        >1</hi><note xml:id="xmlidneeded39" n="39" resp="#DH" place="botwin"
+                            >Notation Needed</note></l>
+                    <l>Of the deeds of some brave band,</l>
+                    <l>Oath-bound in the Holy Land,</l>
+                    <l>Such as iron Richard led,</l>
+                    <l>Steeled without and steeled within,&#x02014;</l>
+                    <l>True in hand and heart and head,</l>
+                    <l>Worthy foes of Saladin.</l>
+                    <l>Or, if pleased a darker theme;&#x02014;</l>
+                    <l>Of spectres huge, at twilight seen</l>
+                    <l>Above some battle-field,</l>
+                    <l>Mimicking with motion dread<hi rend="superscript">1</hi><note
+                        xml:id="xmlidneeded40" n="40" resp="#DH" place="botwin">Notation
+                        Needed</note></l>
+                    <l>Past combat of those lying dead</l>
+                    <l>Beneath their cloudy pinions spread&#x02014;</l>
+                    <l>Crested helm, and spear, and shield</l>
+                    <l>In the red cloud blazonPd.</l>
+                    <l>Thus with feast and revelry</l>
+                    <l>Oft the huge halls rang with glee;</l>
+                    <l>All reckless of the withering woe</l>
+                    <l>Reigned in their dungeons dank below,</l>
+                    <l>Where, in the lone hours&#x02019; sullen flight,</l>
+                    <l>The masked day mingled with the night;</l>
+                    <l>Until the captive&#x02019;s practised eye</l>
+                    <l>Could pierce the thick obscurity&#x02014;</l>
+                    <l>Could see his fetters glance, or tell</l>
+                    <l>The stones which walled his narrow cell:</l>
+                    <l>Till, at the time the warder came,</l>
+                    <l>His dusky lamp&#x02019;s half smothered flame</l>
+                </lg>
+                <lg type="stanza" n="20">
+                    <l>Flashed on him like that sun whose ray,</l>
+                    <l>And all the smile of lightsome day,</l>
+                    <l>He has almost forgotten.<hi rend="superscript">1</hi><note
+                        xml:id="xmlidneeded41" n="41" resp="#DH" place="botwin">Notation
+                        Needed</note></l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

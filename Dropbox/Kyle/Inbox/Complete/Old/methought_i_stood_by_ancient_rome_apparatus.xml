@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
+            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
+        <fileDesc xml:id="title_of_work_apparatus">
+            <titleStmt>
+                <title type="main">"Methought I stood by ancient Rome"</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="apparatus">
+                <head type="title">&#x201C;Methought I stood by ancient Rome&#x201D;</head>
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>Untitled by Ruskin.</p>
+                </div>
+                <div type="section" xml:id="GENRE">
+                    <head type="section">Genre</head>
+                    <p>Poem.</p>
+                </div>
+                <div type="section" xml:id="MAJORMS">
+                    <head type="section">Manuscript</head>
+                    <p>MS VIII. In their &#x201C;Chronological List of Poems,&#x201D; the editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.html">Library Edition</ref> 
+                        list this poem as one of three &#x201C;fragments&#x201D; composed in <date when="1831">1831</date> and belonging to MS VIII, 
+                        along with <ref type="apparatus" target="i_saw_ye_sweep_athwart_the_deep_apparatus.html">&#x201C;I saw ye sweep athwart the deep&#x201D;</ref> and 
+                        <ref type="apparatus" target="oh_mighty_monarch_of_the_noses_purple_red_apparatus.html">&#x201C;Oh mighty monarch of the noses purple red&#x201D;</ref> 
+                        (<ref type="bibliography" target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2: 537). 
+                        In their separate list of the contents of MS VIII, 
+                        the editors do not name this fragment, but it is presumably included within their catch&#x2010;all phrase, &#x201C;and a few fragments&#x201D; 
+                        (<ref type="bibliography" target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2: 534).
+                    </p>
+                    
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Approximately between <date notBefore="1831-08" notAfter="1831-09">August and September 1831</date>. 
+                        This poem is the first entry appearing sequentially in MS VIII, 
+                        followed by <ref type="apparatus" target="i_saw_ye_sweep_athwart_the_deep_apparatus.html">&#x201C;I saw ye sweep athwart the deep&#x201D;</ref>. 
+                        Together, the two fragments precede the first cluster of stanzas drafted for 
+                        <ref type="apparatus" target="athens_apparatus.html">&#x201C;Athens&#x201D;</ref>, which was begun in about <date when="1831-09">September</date>.
+                    </p> 
+                    <p>The baseline for dating the entries drafted on the first two pages of MS VIII is established by the draft on p. 3 of a portion of 
+                        &#x201C;Iteriad,&#x201D; book 4. In MS VI, this portion of draft is cross&#x2010;referenced as to be found in the &#x201C;new manuscript,&#x201D; which is MS VIII 
+                        (see &#x201C;Iteriad&#x201D;: Date). 
+                        That cross reference in MS VI is datable as about <date when="1831-09">September 1831</date>, and thus <persName corresp="#JR">Ruskin&#x02BC;s</persName> start on a &#x201C;new manuscript&#x201D; can likewise be attributed to that same period. 
+                        It is possible, however, that the entries on the first two pages of MS VIII predate the &#x201C;Iteriad&#x201D; fragment on p. 3 by a wider margin, 
+                        or even that they postdate the &#x201C;Iteriad&#x201D; entry&#x2014;<persName corresp="#JR">Ruskin</persName> having wrapped the first two pages of entries around the &#x201C;Iteriad&#x201D; fragment, 
+                        with which he initiated his new notebook. While the latter possibility can be neither proven nor discounted by physical or textual evidence, 
+                        it is unlikely that much time separated the works drafted in the opening three pages of MS VIII, given <persName corresp="#JR">Ruskin&#x02BC;s</persName> reference to the notebook as a &#x201C;new&#x201D; manuscript.
+                    </p>
+                </div>
+                <div type="section" xml:id="COMPPUB">
+                    <head type="section">Composition and Publication</head>
+                    <p>Previously unpublished.</p>
+                    </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <p><persName corresp="#JR">Ruskin</persName> may have drawn his idea for this poem from <persName corresp="#GGB">Byron&#x02BC;s</persName> verse play, <hi rend="italic">Manfred</hi>. 
+                        In the hero&#x02BC;s night meditation on the mountains, Manfred hopes to &#x201C;linger yet with Nature&#x201D; and learn &#x201C;the language of another world.&#x201D; 
+                        Recalling when he had &#x201C;stood within the Colosseum&#x02BC;s wall, / &#x02BC;Midst the chief relics of almighty <placeName corresp="#ROME">Rome</placeName>,&#x201D; 
+                        Manfred is momentarily able to witness memory and nature joined by the &#x201C;rolling moon&#x201D; casting &#x201C;a wide and tender light, / 
+                        Which soften&#x02BC;d down the hoar austerity / Of rugged desolation, and fill&#x02BC;d up, / As &#x02BC;twere, anew, the gaps of centuries&#x201D; 
+                        (Byron, Complete Poetical Works, ed. McGann, 4: 97&#x2013;98 [III.iv.3, 7, 10&#x2013;11, 31&#x2013;35]).
+                    </p>
+                    
+                </div>
+                
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#APW">Author of Printed Work</persName>
+                </author>
+                <editor>
+                    <persName corresp="#EPW">Editor of Printed Work</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#SEM">Sarah Elizabeth Montelepre</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>W. G. Collingwood</persName>
+                        </editor>
+                        <title type="main">The Poems of John Ruskin</title>
+                        <title type="sub">Volume I: Poems Written in Boyhood, 1826-1835</title>
+                        <imprint>
+                            <biblScope type="vol">1</biblScope>
+                            <biblScope type="edition">4<hi rend="superscript">o</hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1891">1891</date>
+                            <biblScope type="pages">xxiii</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="prose">
+                <head type="title">Sermon VII</head>
+                <div type="chapter">
+                    <pb facs="Ruskin_MA_3451_296806_Recto_5"/>
+                    <head type="chapter">The Israelites in Egypt</head>
+                    <p>8th to 14 verse of 1. <title type="scripture" corresp="#EXODUS">Exodus</title>.  In taking up
+                    <lb/>this part of the Mosaic narrative, we
+                    <lb/>have a most important subject presen
+                    <lb/>ted to us, for when we take the church
+                    <lb/>of <persName corresp="#GOD">God</persName> at its beginning, and see it go&#x2010;
+                    <lb/>ing from strength to strength, daily &#x0026; 
+                    <lb/>rapidly increasing <del rend="strikethrough">among</del> in the midst
+                    <lb/> of all endeavours to suppress it, we un
+                    <lb/>derstand more of its institutions, and of
+                    <lb/>the Providence which wrought it up
+                    <lb/>than we could possibly do, if we on
+                    <lb/>ly considered it in its present ma
+                    <lb/>ture and flourishing state of perfection
+                    <pb facs="Ruskin_MA_3451_296806_Verso_5"/>
+                    <lb/>We must first, in order fully to under
+                    <lb/>stand this subject, remember the condit
+                    <lb/>ion of the Israelites, before <persName corresp="#JOSEPH">Joseph</persName>s death
+                    <lb/>We are told, that when <persName corresp="#JACOB">Jacob</persName> and his
+                    <lb/>family first came up into <persName corresp="#EGYPT">Egypt</persName>, they
+                    <lb/> had possessions in flocks and herds, they
+                    <lb/>had been shepherds from their youth, and
+                    <lb/>Pharaoh<!--which one?--> therefore, in requital of the ser
+                    <lb/>vices of <persName corresp="#JOSEPH">Joseph</persName>, established them in the
+                    <lb/>land of <placeName corresp="#GOSHEN">Goshen</placeName>, because it was a fruit
+                    <lb/>ful land, and fit for cattle.  And there&#x2010;
+                    <lb/>fore, during the life of Pharaoh<!--which one?-->, having un
+                    <lb/>der the favour of the king and placed
+                    <lb/>in an eligible situation, we may sup
+                    <lb/>pose that they accumulated very much
+                    <lb/>wealth of this sort, and at the death of
+                    <lb/>Pharaoh<!--which one?--> were in a most prosperous, &#x0026;
+                    <lb/>flourishing condition, till another king
+                    <lb/>arose, which knew not <persName corresp="#JOSEPH">Joseph</persName>.  Now
+                    <lb/>if we ask how the very numerous and
+                    <lb/>important services of <persName corresp="#JOSEPH">Joseph</persName>, could
+                    <lb/>be so soon forgotten, we would reply
+                    <lb/>that it can be accounted for in no
+                    <lb/>other way than by considering the na
+                    <lb/>ture of human gratitude,  Some,
+                    <lb/>affirm, that the new king was a
+                    <lb/>usurper, and feared the proximity of
+                    <lb/>the Israelites because they had now
+                    <lb/>become a very powerful people, and , ha
+                    <lb/>ving experienced many benefits from
+                    <lb/>the former monarch, might perhaps
+                    <lb/>assist the native Egyptians, in depos&#x2010;
+                    <lb/>ing him from the throne which he
+                    <lb/>But this is a mere, suppositions,  de
+                    <lb/>duced only from the kings forgetfulness of the.
+                    <lb/>many services of <persName corresp="#JOSEPH">Joseph</persName>, we have
+                    <lb/>no evidence of the fact, but on the
+                    <lb/>contrary have very strong evidence
+                    <lb/>against it. for we re assured, in a
+                    <lb/>number of ancient historical re&#x2010;
+                    <lb/>cords, that a disturbance, a revoluti
+                    <lb/>on of this kind had taken place
+                    <lb/>before <persName corresp="#JOSEPH">Joseph</persName> was carried into <placeName corresp="#EGYPT">Egypt</placeName> 
+                    <lb/>very long before that time indeed,
+                    <lb/>and had retained the throne for a con
+                    <lb/>siderable period, and also that the sove
+                    <lb/>reign who received <persName corresp="#JOSEPH">Joseph</persName>, was in fact
+                    <lb/>the first of the native kings, who
+                    <lb/>was enabled to reassume the throne of
+                    <lb/>which he ancestors had been depriv&#x02BC;d
+                    <lb/>and we surely cannot suppose it to
+                    <pb facs="Ruskin_MA_3451_296806_Recto_6"/>
+                    <lb/>be likely, that another revolution of the
+                    <lb/>same kind, should have taked places
+                    <lb/>within a period so short
+                    </p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

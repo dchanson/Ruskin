@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="tite_of_work_note">
+            <titleStmt>
+                <title type="main">Title of Work</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The notes version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
+            <div type="note" subtype="subtype">
+                <head type="title">Title of Note</head>
+                <p>Viljoen.—The provenance of the so-called Sermon Books (MSS IIA–E) is not involved with the Sotheby sales, whose catalogs do not list the handmade booklets. Their provenance first emerges when the third of the five booklets was deposited in the Ruskin Museum in Coniston, the village across Coniston Lake from Brantwood. Presumably, the booklet was donated as part of the village museum’s core collection since the booklet was already there when W. G. Collingwood facsimilied one of its pages in 1903, only two years after the museum’s founding. Today, the museum copy has been replaced by a photocopy and the original moved for safekeeping to the Cumbria Record Office in Kendal.
+                    The remaining four Sermon Books came into the possession of J. S. Ladd-Thomas, a prominent Methodist churchman and dean of the School of Theology at Temple University, Philadelphia, from 1943 to his retirement in 1958. Ladd-Thomas collected manuscripts in religion, many of which he left to the School of Theology Library, an interest that probably attracted him to the Sermon Books. Welsh by birth, and educated at University College in London, Ladd-Thomas emigrated to America in 1897, but, according to his obituaries, he frequently returned to Europe to serve his church in various capacities. On one of these occasions, he must have made the visit to Brantwood that led to his acquisition of the Sermon Books.
+                    Remarks by Ladd-Thomas preserved among Helen Viljoen’s papers suggest that he obtained the manuscripts prior to the Sotheby auctions and the following 1931 dispersal sale at Brantwood. The remarks, however, raise more ques­tions than they answer since Ladd-Thomas remembered only “that these mss. were sent him after he visited Coniston and met someone he describes as one of Ruskin’s neighbors—not Mr. Collingwood, though this neighbor lived about a mile down the road. Around 1930, this man sent Dean Thomas this material as a gift. Dean Thomas did not recall his name” (HGVP, file labeled “Ruskin’s Sermons as a Boy”). James Dearden has suggested to me that nearby neighbors likely to have had access to Ruskin manuscripts, other than the Collingwoods, might have been the Hilliard family. Mrs. J. C. Hilliard, a sister of Pauline Trevelyan and married to the Reverend J. C. Hilliard, became a “chief comfort” to Ruskin in his later years. She was given the penultimate manuscript of Modern Painters II, so it seems logical that Ruskin might also have made her a gift of the Sermon Books, which contained the doctrine of his youth supporting that volume. Mrs. Hilliard’s Modern Painters manuscripts was inherited by Frederick, the eldest son of the family (Works, 4:361), who also possessed other manuscripts relevant to religious topics or to reminiscence of Ruskin’s childhood—portions of St. Mark’s Rest, Deucalion, and Fiction, Fair and Foul (Works, 24:lviii, 26:xlvii, 34:xxxv).
+                    That the four Sermon Books had remained with the Hilliard family would explain why Cook and Wedderburn seem to have been aware of only the one booklet in the Coniston museum (see Works, 38:206). Possibly the Hilliards were responsible, too, for donating the one booklet to the Coniston Museum. The problem with this suggestion is that the dates do not chime with Ladd-Thomas’s account. Frederick lived with his sister Ethel at Tent Cottage, which does fit the description of a home “about a mile down the road” from Brantwood; however, Frederick cannot be the “man” of Ladd-Thomas’s acquaintance around 1930, since he died in 1913, and, in any case, he and his sister had vacated Tent Lodge in 1908. If the Hilliard family is credible as owners, one must imagine Ladd-Thomas striking an acquaintance earlier than 1930—a bond established on the strength of Ladd-Thomas’s church connections, Hilliard Sr. having been a clergyman—and Ladd-Thomas being sent the Sermon Books much later. (Ethel was still alive in 1930, at which time she moved from Ascot to Uxbridge.)
+                    If the Sermon Books did not come from Hilliards, suspicion points to Myles Wilkinson, the Brantwood factotum who is known to have made unautho­rized gifts and sales of Ruskin materials (RBB, 48, 196). But Brantwood Lodge, where Wilkinson presumably lived with his aunt and uncle, cannot by any stretch be described as “a mile down the road.” The affair remains mysterious, above all that Ladd-Thomas would have forgotten the name of a person, who was on sufficiently familiar terms to make him a present of Ruskin manuscripts.
+                    The Sermon Books first gained serious scholarly scrutiny when Ladd-Thomas loaned them to Helen Viljoen, who later acquired them outright as the gift from Ladd-Thomas’s daughter, Mildred Durling, presumably following the dean’s death in 1959. When Viljoen received the booklets, they had been docketed as “Sermons Written by Ruskin as a Child” and, on an accompanying envelope, as “Reports of Sermons, written by John Ruskin as a child. One specimen is in the Coniston Museum.” Ruskin himself did not entitle the Sermon Books.
+                    Recognizing that the Sermon Books represented Ruskin’s first extended, mature religious exer­cise, Viljoen prepared an edition of the sermons, which she entitled as “Ruskin’s Sermons on the Pentateuch and His Religious Life.” The edition was intended to comple­ment her Ruskin’s Scottish Heritage, and the two books together would provide a foundation for her full-scale biography of Ruskin. She was unable to publish the edition of the Sermons, however, so it awaited pairing with the biography, which itself never reached completion. On Viljoen’s death, the Sermon Books were donated as part of the Sharp Collection to the Pierpont Morgan Library. Her own papers were bequeathed to Van Akin Burd, who published her conclusions about the Sermons in an article-length summary account (“Ruskin’s Testament”). Burd has since passed on all the Viljoen papers to the Morgan Library.
+                    The provenance of manuscripts owned by Viljoen (but not originally owned by Sharp) is designated as Viljoen.
+                    Sharp.—The principal local Lake District dealer to profit directly from Brantwood, both before and during the final dispersal sales of late July 1931, was T. H. Telford of Grasmere; and the most important collector of the juvenilia to acquire from Telford, as well as from Brantwood directly and from other sources, was F. J. Sharp, a craftsman, teacher, and disciple of Ruskin’s socialist theories. Sharp’s career has been described most recently and extensively by Van Akin Burd in an article for the Book Collector, and the collector’s shrewdness and discernment have previously been established by such testimonials as Helen Viljoen’s catalog for her 1965 exhibition of the Sharp Collection at Queens College in New York. In RBB, Dearden tells the story of Sharp’s quarrel with Whitehouse and of the dispersal of the collection after Sharp’s death (182–86).
+                    As remarked earlier (“Approaches to Bibliography and Editing of the Early Manuscripts”), collecting Ruskin juvenilia seems to have been a peculiarly American preoccupation during the earlier decades of the century. The exceptions were Haddon Clifford Adams and, especially, F. J. Sharp. Sharp was the only English collector to acquire significantly in the early manuscripts and, it is worth noting, the major English collector to work apart from the inner circle of Ruskinians. For Viljoen, Sharp’s pride in concentrating on the juvenilia and his “recognition of their importance” provided a special “token of his insight.”
+                    Included in Sharp’s large collection were many of Ruskin’s childhood books, drawings, some stray juvenile manuscripts, and, most importantly, MSS IB and XA, and the 1830 diary formerly included in MS X (for this manuscript’s former association with Joan Severn, see above, Sotheby’s 1930; and part 2, MS IB, “Provenance”). Sharp bequeathed his collection of manuscripts to Helen Viljoen, and she was also given books and drawings from the collection. Viljoen supplemented and finally entrusted the larger portion of the Sharp collection, including the juvenile manuscripts, to the Pierpont Morgan Library. Viljoen gave the books owned by Ruskin, including his childhood books, to the Beinecke. The provenance of manuscripts originally owned by Sharp (as opposed to items, such as the Sermon Books, that Viljoen added to the Sharp Collection) is designated throughout this edition as Sharp.</p>
+                <p>Body paragraph containing a list:
+                    <list type="ordered">
+                        <item n="1">First item in the list.</item>
+                        <item n="2">Second item.</item>
+                        <item n="3">Third item.</item>
+                    </list>
+                </p>
+                <p>Body paragraph.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

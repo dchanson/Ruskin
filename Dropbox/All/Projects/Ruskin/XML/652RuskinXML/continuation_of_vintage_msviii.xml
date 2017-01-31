@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="Continuation_of_Voyage_poem_msviii">
+            <titleStmt>
+                <title type="main">"Contiuation of Vintage" [poem]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS VIII Draft</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#BGG">Brandon George Guidry</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>                   
+                    <persName corresp="#KBT">Katrina Thomas</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2016-10-03">October 3, 2016</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <!--Example entries have been provided for MS VIII from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Account of a Tour on the Continent"</idno>
+                        <msName>MS VIII</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="MSVIII76v-77r.jpg-MSVIII77v-78r.jpg">pp. 76-78</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="Continuation_of_Voyage_poem_msviii.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>,
+                                    examples of which can be found in MS VIII, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb facs="MSVIII77r"/>
+            <div type="witness" subtype="poem" rhyme="aabbccddefefghghghiijjkkllccaammnn" met="-+|-+|-+|-+|-+|-+|-+|">
+               <head type="title"><handShift new="#HANDJR1833-34" script="cursive" medium="ink"/>Continuation of Vintage</head>
+                <lg type="stanza">
+                    <l>It chanced, that on that vintage time, in order set, were <add place="above"><space quantity="51" unit="chars"/>seen</add></l>
+                    <l>Two casks of sparkling with<!--?--> champagne, a cask of port between</l>
+                    <l>Outflanked were they by sherry butts, some claret standing <add place="above"><space quantity="53" unit="chars"/>near</add></l>
+                    <l>And who shall blame safe <!--illeglible word--> hock for bringing up the rear</l>
+                    <l>I scarcely know <del rend="strikethrough">how</del> now how it was, but certes the Champagne</l>
+                    <l>Was frisky, hot, resembling not the steady <!--illegible word--> from <placeName corresp="SPAIN">Spain</placeName>&#x2014;</l>
+                    <l>He quarrelled with his company &#x0026; nearly burst his butt</l>
+                    <l>And straight attacked the good old port, when cellar doors were <add place="above"><space quantity="56" unit="chars"/>shut</add></l>
+                    <l><!--Random dot before line-->Thou crusty old rascal <add place="above"><space quantity="23" unit="chars"/>&#x201C;</add>&#x2014; <!--" is placed above the dash-->the Champagne said</l>
+                    <l>(And foamed &#x0026; fizzed forth indignation</l>
+                    <l>How dar&#x02BC;st thou come near with thy nose so red</l>
+                    <l><!--illegible word--> Or approximate thy situation&#x2014;</l>
+                    <l>To mine you dull body, to mine I say</l>
+                    <l>Be off &#x2014; or Ill bang in your bung</l>
+                    <l>We&#x02BC;ll see who&#x02BC;s most spirit&#x2014; Port kept him at bay</l>
+                    <pb facs="MSVIII77v"/>
+                    <l>Quoth he&#x2014;&#x201C;You&#x02BC;re not wanting in tongue.</l>
+                    <l>I&#x02BC;m a quiet old gentleman, not much to say</l>
+                    <l>But I wont take affront, so have done.</l>
+                    <l>And port looked to the sherry, and tipped him the wink<!--Best logical guess due to scratch-out--></l>
+                    <l>And I wish you had seen how the champagne grew pink</l>
+                    <l>Almost scarlet with rage, you&#x02BC;d have thought it demented</l>
+                    <l>The sputtered and stuttered and fizzed &#x0026; fermented</l>
+                    <l>Nor long within those wooden walls had remained</l>
+                    <l>The casks yielding timbers they creaked &#x0026; complained</l>
+                    <l>Then streams of rich wine through the cellar had ran</l>
+                    <l>But with calmness, composing the sherry began<!--Em-dash?--></l>
+                    <l>Thou wert quarrelsome always, thou heady champagne</l>
+                    <l>We know thee of old <space quantity="4" unit="chars"/> Must I tell thee again</l>
+                    <l>We have pardoned thy faults, for we know &#x0026; have seen</l>
+                    <l>Thou wert pressed from the grape when twas acid &#x0026; green</l>
+                    <l>But dost think that the wines will have thee for their lord,</l>
+                    <l>They rather will give you presumptions reward</l>
+                    <l>Discard from their presence a subject so bold</l>
+                    <l>So his pride be abased, and his passion controlled</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

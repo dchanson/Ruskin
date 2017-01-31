@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"CHAMOUNI."</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#JAL">Jensin A. Lopez</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>CHAMOUNI.</head>
+                <lg type="stanza" rhyme="aa">
+                                        
+                    <l>THE wreathing clouds are fleeting fast,</l> 
+                    <l>Deep shade upon the hills they cast,</l> 
+                                        
+                    <l>While through their openings ever show</l> 
+                    <l>Enormous pyramids of snow ;</l> 
+                    <l>Scarce can you tell in middle air</l> 
+                    <l>If cloud or mountain rises there,</l> 
+                    <l>Yet may you mark the glittering light</l> 
+                    <l>That glances from the glaciered height ;</l> 
+                    <l>And you may mark the shades that sever</l> 
+                    <l>The throne where winter sits for ever,</l> 
+                    <l>The avalanche&#x02BC;s thunder rolling,</l> 
+                    <l>No summer heat his reign controlling;</l> 
+                    <l>The gloomy tyrant in his pride</l> 
+                    <l>Spreads his dominion far and wide,</l> 
+                    <l>Till, set with many an icy gem,</l> 
+                    <l>Rises his cliffy diadem.</l> 
+                    
+                    <l>Above a steepy crag we wound</l> 
+                    <l>Where gloomy pines his forehead crowned ;</l> 
+                    <l>And heard we, with a sullen swell,</l> 
+                    <l>The turbid <geogName corresp="#ARVE">Arve</geogName> dash through the dell ;</l> 
+                    <l>You might have thought it, moaning by,</l> 
+                    <l>Wail for the loss of liberty ;</l> 
+                    <l>For high the rocks whose mighty screen</l>                     
+                    <l>Confined the narrow pass between,</l> 
+                    <l>And many a mass of granite grey</l>                     
+                    <l>Opposed the torrent&#x02BC;s forceful way ;</l>
+                    <l>So headlong rushed the lightning tide,</l>                     
+                    <l>No pass was there for aught beside ;</l> 
+                    <l>And we high o&#x02BC;er those cliffs so sheer</l>                     
+                    <l>Must climb the mountain barrier,</l> 
+                                                            
+                    <l>Until unfolded to the eye</l> 
+                    <l>The fruitful fields of <placeName corresp="#CHAMOUNI">Chamouni</placeName>.</l> 
+                    
+                    <l>It lay before us, as a child</l> 
+                    <l>Of beauty in the desert wild ;</l> 
+                    <l>Full strange it seemed that thing so fair,</l> 
+                    <l>So fairy&#x2010;like, could harbour there ;</l>                     
+                    <l>For fields of bending corn there grew</l> 
+                    <l>Close to the glacier&#x02BC;s wintry blue ;</l>                     
+                    <l>And saw we the same sun&#x2010;ray shine</l> 
+                    <l>On pasture gay and mountain pine,</l>                     
+                    <l>Whose dark and spiry forests rose</l> 
+                    <l>Till mingled with eternal snows</l>                     
+                    <l>That climbed into the clear blue sky</l> 
+                    <l>In peaked, impending majesty.</l>                     
+                    <l>&#x02BC;Tis passing strange that such a place</l> 
+                    <l>In all its native loveliness</l>                     
+                    <l>Should, pent within those wilds so lone,</l> 
+                    <l>For many ages pass unknown&#x2014;</l>                     
+                    <l>Unknown save by a simple few</l> 
+                    <l>Who their own valley only knew,</l>                     
+                    <l>Nor dared the mountain ridge that bound</l> 
+                    <l>That lovely vale with terrors round ;</l>                     
+                    <l>That lived secluded from mankind,</l>
+                    <l>Contented yet in heart and mind ;</l>                     
+                    <l>That lived within that world alone,</l> 
+                    <l>A world of beauty of their own.</l>                     
+                    <l>And now Helvetia&#x02BC;s cliffy reign</l> 
+                    <l>Contains not in her <geogName corresp="#ALPS">Alpine</geogName> chain,</l>                     
+                    
+                    <l>In valley deep, on mountain high,</l>
+                    <l>A race like those of <placeName corresp="#CHAMOUNI">Chamouni</placeName> ;</l>                             
+                    <l>For they have loved, at dawn of day,</l> 
+                    <l>To trace the chamois&#x02BC; fearful way,</l>                             
+                    <l>Or on the toppling shelf of snow</l> 
+                    <l>With crags above and clouds below ;</l>                                 
+                    <l>Or on the peak whose spiry head</l> 
+                    <l>Is beetling o&#x02BC;er abysses dread,</l>                                 
+                    <l>Where place for foot, and grasp for hand,</l> 
+                    <l>Is all the hunter can command ;</l>                                 
+                    <l>Or on the glacier&#x02BC;s rigid wave</l> 
+                    <l>Where he may hnd a chasmy grave;</l>                                 
+                    <l>Returning with his spoils at even</l> 
+                    <l>Ere the red sun hath left the heaven.</l> 
+                                
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
+                                

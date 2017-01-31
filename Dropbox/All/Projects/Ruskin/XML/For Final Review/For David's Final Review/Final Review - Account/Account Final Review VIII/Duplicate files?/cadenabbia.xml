@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="cadenabbia">
+            <titleStmt>
+                <title type="main">A Tour on the Continent</title>
+                <title type="sub">Cadenabbia</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="poem">
+                <pb facs="79v"/>
+                <ab><title>Cadenabbia</title></ab>
+                
+                <l>Oh <del>lovel</del> coolly came on Comos lake</l>
+                <l>The lovely beams of morning mild,</l>
+                <l>That oer the Lecco mountains break,</l>
+                <l>And red their summits piled,</l>
+                <l>That high above their dim shore,</l>
+                <l>Their weary winter garments bore,</l>
+                <l>The broad boat lay along the tide</l>
+                <l>The light waves lapped its sloping side</l>
+                <l>And soft perfume of orange trees</l>
+                <l>By fits came on the landward breeze</l>
+                <pb facs="80r"/>
+                <fw type="pageNum" place="top-right" corresp="#WGC">p80</fw>
+                <l>The trouts shot through the waters blue</l>
+                <l>Like small stars in the heaven glance</l>
+                <l>Or hid them where the broad weeds grew <!--unclear--></l>
+                <l>With wavy motion dancing.</l>
+                <l>Away, away, across the lake</l>
+                <l>How fast retires yon myrtle brake</l>
+                <l>All sprinkled with a silver shower.</l>
+                <l><subst><del>On</del><add>Through</add></subst> the dark leaves of lemon flower.</l>
+                <l>Clear, as if near, nor faint, though far</l>
+                <l>Shines on the mountain, like a star</l>
+                <l>The rock born torrents milky spray</l><note><hi rend="italic">Torrents</hi> is possessive case.</note>
+                <l>And many a small boat on its way</l>
+                <l>Urged by a breeze that bore them well</l>
+                <l>Though unfelt as invisible</l>
+                <l>With sunshine on their winglike sail,</l>
+                <l>Past like young Eaglets on the gale.</l>
+                <l>The steps were broken, mossed and steep.</l>
+                <l>The waters sparkling, clear, and deep.</l>
+                <l>The rock was high, the cavern dark</l>
+                <l>Scarce lit up by the jewelled spark,</l>
+                <l>Of the cold stream, that under earth</l>
+                <l>Was <del>buri</del> darkling buried at its birth.</l>
+                <l>Nor once its wave had sunned, nor seen,</l>
+                <l><subst><del>O</del><add>A</add></subst>ught but dark rock, and ice caves green</l>
+                <l>Where the deep waters, as a home</l>
+                <l>Received the torrents churned foam</l><note><hi rend="italic">Torrents</hi> is possessive case.</note>
+                <l>We launched again, and downward bore</l>
+                <l>Awhile beside the centre shore.</l>
+                <l>Then left the shadowy eastern lake</l>
+                <l>Crossed through thick vines the wooded cape.</l>
+                <pb facs="80v"/>
+                <fw type="pageNum" place="top-left" corresp="#WGC"><del>p105</del></fw>
+                <l>Struck the clear wave with long light oar</l>
+                <l>Left a white wake that sought the shore,</l>
+                <l>High oer the boat the awning spread,</l>
+                <l>And quick as sun<add place="above">red</add> waves flashed before</l>
+                <l>Toward the southward fled.</l>
+            </div>
+        </body>
+    </text>
+</TEI>

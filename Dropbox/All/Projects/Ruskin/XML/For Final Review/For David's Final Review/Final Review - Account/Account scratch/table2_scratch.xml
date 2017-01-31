@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
+            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
+        <fileDesc xml:id="title_of_work_apparatus">
+            <titleStmt>
+                <title type="main">"Table draft"</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="apparatus">
+                <head type="title">&#x201C;Title of Work&#x201D;</head>
+                <!--An apparatus may contain all or only some of the following sections.-->
+                
+                <div type="section" xml:id="COMPPUB">
+                    <head type="section">Composition &#x0026; Publication</head>
+                    <p>Table 2 draft</p>
+                </div>
+                
+                <div type="tablespace">
+                    <table rows="20" cols="9" xml:id="APPARATUSTABLE2">
+                        <head type="table">Table 2. Account of a Tour on the Continent, MS IX: Sequence of Contents by Titled Sections</head>
+                        <row role="label">
+                            <cell role="data">&#x201C;Calais&#x201D;</cell>
+                        </row>
+                        <row role="data">
+                            <cell role="data"><ref type="drawing" target="D1_msix.php">Drawing 1, MS IX: Calais, Fishermen and Boats</ref></cell>
+                        </row>
+                        <row role="data">
+                            <cell role="data"><ref type="witness" target="the_sands_are_in_the_sunlight_sleeping_msix.php">&#x201C;The sands are in the sunlight sleeping&#x201D; [&#x201C;Calais&#x201D; (poem)]</ref></cell>
+                        </row>
+                        <row role="data">
+                            <cell role="data"><ref type="drawing" target="D2_msix.php">Drawing 2, MS IX: Calais, Fishermen with Spy&#x2010;glass</ref></cell>
+                        </row>
+                        <row role="data">
+                            <cell role="data"><ref type="drawing" target="D3_msix.php">Drawing 3, MS IX: Calais, Fishermen on Pier, Looking out to Sea at Boats</ref></cell>
+                        </row>
+                        <row role="data">
+                            <cell role="data"><ref type="witness" target="calais_prose_msix.php">&#x201C;How much has been said of Calais&#x201D; [&#x201C;Calais&#x201D; (prose)]</ref></cell>
+                        </row>
+                        <row role="data">
+                            <cell role="data"><ref type="drawing" target="D4_msix.php">Drawing 4, MS IX: Calais, English Tourist Family Arrived in Northern French or Belgian City</ref></cell>
+                        </row>
+                        <row role="data">
+                            <cell role="data"><ref type="drawing" target="D5_msix.php">Drawing 5, MS IX: Cassel, Prospect with Windmills</ref></cell>
+                        </row>
+                    </table>
+                </div>
+                <div>
+                    <list>
+                        <item n="1">Half&#x2010;page vertical space above the heading for
+                            &#x201C;Brussels&#x201D; (p. ???).<!-- entry needed --></item>
+                        <item n="2">Third&#x2010;page vertical space following the prose section
+                            for &#x201C;Brussels&#x201D; (p. ???).<!-- entry needed --></item>
+                        <item n="3">Third&#x2010;page vertical space above the heading for
+                            &#x201C;The Meuse&#x201D; (p. ???).<!-- entry needed --></item>
+                        <item n="4">Third&#x2010;page vertical space following the prose section
+                            for &#x201C;The Meuse&#x201D; (p. ???).<!-- entry needed -->;
+                            however, since a full&#x2010;page broadside copy&#x2014;so far,
+                            unprecedented in its scale&#x2014;of a scene from Prout&#x02BC;s <hi rend="italic">Facsimiles</hi> occupies the following page (p.
+                            ???)<!-- entry needed -->, no vignette&#x2010;sized sketch may have
+                            been intended here. Just so, the verso following p.
+                            ???<!-- entry needed --> containing the broadside (i.e., p.
+                            ???)<!-- entry needed --> is blank, and <persName corresp="#JR">Ruskin</persName> may have intended nothing here, just as the
+                            versos of the large, full&#x2010;page lithographs in Prout&#x02BC;s
+                            <hi rend="italic">Facsimiles</hi> are blank. The following
+                            section, &#x201C;Aix la Chapelle,&#x201D; lacks a poem, but such
+                            verse presumably would not have preceded the heading and drawing for
+                            this section, which appear on p. ???. </item>
+                        <item n="5">Three&#x2010;quarters&#x2010;page vertical space, between
+                            the two final lines of prose section for &#x201C;Aix la
+                            Chapelle&#x201D; at the top of the page, and the two opening lines
+                            of the poem for &#x201C;Cologne&#x201D; at the bottom of the page
+                            (p. ???). This space might have been intended for a drawing related
+                            to &#x201C;Cologne,&#x201D; or for a poem related to the preceding
+                            section, &#x201C;Aix la
+                            Chapelle.&#x201D;<!-- entry needed -->.</item>
+                        <item n="6">Two&#x2010;line vertical space, as if two lines of the poem
+                            for &#x201C;Cologne&#x201D; are missing (p.
+                            ???)<!-- entry needed -->, but if a vignette was projected for this
+                            space, its small size would have been unpecedented.</item>
+                        <item n="7">Quarter&#x2010;page vertical space following the prose
+                            section for &#x201C;Cologne&#x201D; (p.
+                            ???).<!-- entry needed --></item>
+                        <item n="8">Two&#x2010;thirds&#x2010;page vertical space above the
+                            heading for &#x201C;Andernacht&#x201D; (p.
+                            ???).<!-- entry needed --></item>
+                        <item n="9">Three&#x2010;quarters&#x2010;page vertical space following
+                            the prose section for &#x201C;Andernacht&#x201D; (p.
+                            ???).<!-- entry needed --></item>
+                        <item n="10">Three&#x2010;quarters&#x2010;page vertical space following
+                            the poem for &#x201C;Ehrenbreitstein,&#x201D; which ends on the
+                            preceding verso, and above the opening four lines of prose for this
+                            section, at the bottom of this page (p.
+                            ???).<!-- entry needed --></item>
+                        <item n="11">Half&#x2010;page vertical space above the poem for
+                            &#x201C;St. Goar,&#x201D; which itself lacks a heading (p.
+                            ???).<!-- entry needed --></item>
+                        <item n="12">Quarter&#x2010;page vertical space following poem for
+                            &#x201C;St. Goar&#x201D; (p. ???), but this small space may have not
+                            been intended for a drawing.<!-- entry needed --></item>
+                        <item n="13">Third&#x2010;page vertical space above the prose section
+                            for &#x201C;St. Goar&#x201D; (p. ???).<!-- entry needed --> At this
+                            place in the Library Edition, the editors do identify a
+                            &#x201C;sketch of a town in a large plain, with distant
+                            mountains&#x201D; (Works, 2:360 n. 1), but this appears to be an
+                            error. A drawing fitting that description appears instead on p. ???,
+                            in a space above the poem (which lacks a heading) for
+                            &#x201C;Heidelberg,&#x201D; where the editors do not note the
+                            presence of a drawing. It appears, therefore, that the editors
+                            simply misplaced their note on this drawing&#x2014;unless at some
+                            point following their description, the slip with the drawing became
+                            detached and was reattached in the incorrect space.</item>
+                        <item n="14">On each of two facing pages (pp. ???), a half&#x2010;page
+                            vertical space below lines in the poem
+                            &#x201C;Heidelberg&#x201D;&#x2014;following, respectively,
+                            &#x201C;In the melee, or the tilt&#x201D; (p. ???) and
+                            &#x201C;Mimicking with motion dread&#x201D; (p.
+                            ???).<!-- entry needed --></item>
+                        <item n="1">Two full pages (pp. ????) and a half&#x2010;page vertical
+                            space (p. ???) above an opening fragment of prose for
+                            &#x201C;Heidelberg&#x201D; (&#x201C;Most beautiful . . .
+                            sometimes&#x201D;).<!-- entry needed --></item>
+                    </list>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

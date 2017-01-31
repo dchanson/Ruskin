@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="cologne_poem_msix">
+            <titleStmt>
+                <title type="main">"Cologne" [poem]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS IX Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KCM">Katie C. Moore</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina Bianca Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                       <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS IX</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="MSIX30v-31r.jpg - MSIX31v-32r.jpg">pp. 31r-32r</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                       <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="aa">
+                <space quantity="17" unit="lines"/>
+                <lg type="stanza" n="1">
+                    <l><handShift corresp="#HANDJR1833-34" script="cursive-copperplate" medium="ink"/>The noon was past, the sun was low</l>
+                    <l>Yet still we felt his arid glow</l>
+                    <pb facs="MSIX31v"/>
+                    <l>From the red sand reflected glare</l>
+                    <l>Deadened the breeze, and fired the air</l>
+                    <l>The open sky was misty grey,</l>
+                    <l>The clouds in mighty masses lay</l>
+                    <l>That heaped on the horizon high,</l>
+                    <l>Marked Alpine outline on the sky</l>
+                    <l>Long had we toiled to gain a brow,<ref type="gloss" target="cologne_glosses_contextual.php#GAINABROWGLOSS"/></l>
+                    <l>On which we stood triumphant now<ref type="gloss" target="cologne_poem_glosses_textual.php#ERASEDLINESGLOSS"/></l>
+                </lg>
+                <space quantity="2" unit="lines"/>
+                <lg type="stanza" n="2">
+                    <l>While the white mist was certain sign</l>
+                    <l>Where took his course the mighty <placeName corresp="#RHINE">Rhine</placeName>,</l>
+                    <l>Hills in the distant haze were seen,<ref type="gloss" target="cologne_glosses_contextual.php#SIEBENGEBIRGEGLOSS"/></l>
+                    <l>And wide expanse of plain between,</l>
+                    <l>Whose desert length without a tree,</l>
+                    <l>Was stretched in vast monotony.</l>
+                    <l>We drove adown that hill amain</l>
+                    <l>We past along the shadeless plain</l>
+                    <l>Rested we now where uncontrolled</l>
+                    <l>The <placeName corresp="#RHINE">Rhine</placeName> his bursting billows rolled,</l>
+                    <l>And ever, ever, fierce and free,</l>
+                    <pb facs="MSIX32r"/>
+                    <l>Bore broadly onward to the sea.</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="st_goar_poem_msix">
+            <titleStmt>
+                <title type="main">["St. Goar"] [poem]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS IX Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KCM">Katie C. Moore</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#SB">Sushantika Bhandari</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS IX</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="MSIX42v-43r.jpg">pp. 42v-43r</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="poem" met="-+|-+|-+|-+" rhyme="aa">
+                <space quantity="11" unit="lines"/>
+                <lg type="stanza" n="1">
+                    <l>We<ref type="gloss" target="st_goar_poem_glosses_textual.php#STGOARBLANK"/> past a rock, whose bare front ever,<ref type="gloss" target="st_goar_poem_glosses_textual.php#STGOARWGCGLOSS"/></l>
+                    <l>Had borne the brunt of wind, &#x0026; weather,<ref type="gloss" target="st_goar_glosses_contextual.php#STGOARLORELEIGLOSS"/></l>
+                    <l>And downwards by the <placeName corresp="#RHINE">Rhine</placeName> we bore,</l>
+                    <l>Upon the village of <placeName corresp="#STGOAR">St Goar</placeName>,</l>
+                    <l>That, mid the hills embosomed lay,</l>
+                    <l>Where the <placeName corresp="#RHINE">Rhine</placeName> checked his onward way,</l>
+                    <l>And lay the mighty crags between,</l>
+                    <l>As if, enamoured of the scene,</l>
+                    <l>He loved not on his way to wind,</l>
+                    <l>And leave a scene so fair behind</l>
+                <pb facs="MSIX43r"/>
+                    <l>For grim the chasm, through whose cleft,</l>
+                    <l>The waters had a passage reft,</l>
+                    <l>And gaunt the gorge that yawned before</l>
+                    <l>Through which, emerging, they must roar,</l>
+                    <l>No marvel they should love to rest,</l>
+                    <l>And peaceful spread their placid breast,</l>
+                    <l>Before, in fury driving dread,</l>
+                    <l>Tormented on their rocky bed,</l>
+                    <l>Or flinging far their scattering spray,</l>
+                    <l>O&#x02BC;er the peaked rocks that barred their way,</l>
+                    <l>Wave upon wave at random tossed,</l>
+                    <l>Or in the giddy whirlpool lost,<ref type="gloss" target="st_goar_glosses_contextual.php#STGOARWHIRLPOOLGLOSS"/></l>
+                    <l>And now are undisturbed sleeping,</l>
+                    <l>No more on rocks those billows beating,</l>
+                    <l>But lightly laughing laps the tide,</l>
+                    <l>Where stoop the vineyards to his side.</l>
+                </lg>
+                <space quantity="5" unit="lines"/>
+            </div>
+            
+        </body>
+    </text>
+</TEI>

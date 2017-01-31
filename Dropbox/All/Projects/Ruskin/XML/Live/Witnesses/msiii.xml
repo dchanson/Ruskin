@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="manuscript">
+        <fileDesc xml:id="msiii">
+            <titleStmt>
+                <title type="main">"MS III"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS III Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName><!--Correction needed here?-->
+                </editor>
+                <principal><persName>David C. Hanson</persName></principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName>David C. Hanson</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing review, encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-12-14">December 14, 2011</date>
+                    <!--The corpus version for all first passes is 1.0.-->
+                    <title>Corpus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Shelves Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS III</msName>
+                        <msName>"Red book No. 2"</msName>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material>paper</material>
+                                </support>
+                                <extent>42 leaves
+                                    <dimensions unit="cm">
+                                        <height>15.2</height>
+                                        <width>9.9</width>
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                    <history>
+                        <origin notBefore="1827-05" notAfter="1829-03"/>
+                        <provenance>
+                            <p>Item I.3 of lot 112, "Early Poems and Juvenilia," Sotheby &#x0026; Co., <hi rend="italic">Catalogue of the Manuscripts and
+                                Remaining Library of John Ruskin></hi>, 24 July 1930, p. 20. Lot 112 consisted of items nos. I–VI, of which no. I was a
+                                blue-morocco slipcase, "Harry &#x0026; Lucy, Poems &#x0026;c." The slipcase contained 5 items
+                                (MS I, MS II, MS III, MS IIIA, MS IV), with MS III forming I.3, described in the catalogue as "84 pp. 'Harry and Lucy,'
+                                'poetry descriptive' (<hi rend="italic">sic</hi>), miscellaneous verses, 'The Monastery' (Scott's novel versified), etc.
+                                1827-29, <hi rend="italic">roan</hi> [<hi rend="italic">W.G.C. III</hi>] (6 <hi rend="italic">in. by</hi> 3&#x00BE;
+                                <hi rend="italic">in.)</hi> At the sale, lot 112 went at &#x00A3;260 to a member of the Allen family, probably
+                                Hugh Allen, who apparently acted on behalf of Charles Goodspeed, as it was the Boston bookseller who sold the lot to Yale.</p>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+<!--EXCLUDED FROM FIRST TWENTY
+    <xi:include href="harry_and_lucy_vol2_msiii.xml">
+        <xi:fallback>
+            <ab>WARNING: Could not include harry_and_lucy_vol2_msiii.xml.</ab>
+        </xi:fallback>
+    </xi:include>
+EXCLUDED FROM FIRST TWENTY-->
+    <xi:include href="poetry_anthology_2/msiii_poetry_anthology_2.xml"><!--MS III Second Poetry Anthology begins here.-->
+        <xi:fallback>
+            <ab>WARNING: Could not include msiii_poetry_anthology_2.xml.</ab>
+        </xi:fallback>
+    </xi:include>
+    <xi:include href="poetry_anthology_3/msiii_poetry_anthology_3.xml"><!--MS III Third Poetry Anthology begins here.-->
+        <xi:fallback>
+            <ab>WARNING: Could not include msiii_poetry_anthology_3.xml.</ab>
+        </xi:fallback>
+    </xi:include>
+    <xi:include href="poetry_discriptive/poetry_discriptive.xml"><!--Poetry Discriptive begins here.-->
+        <xi:fallback>
+            <ab>WARNING: Could not include poetry_discriptive.xml.</ab>
+        </xi:fallback>
+    </xi:include>
+</teiCorpus>

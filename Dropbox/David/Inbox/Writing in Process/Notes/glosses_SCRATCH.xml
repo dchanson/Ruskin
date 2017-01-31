@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="title_of_work_glosses">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="DISHONOURGLOSS" resp="#DCH">In British criticism of Rubens, a foundation was laid by <persName corresp="#JRE">Jonathan Richardson</persName> (1667-1745)<!-- list him as JRE because he's Jonathan Richardson the Elder (son was a painter too --> 
+                    in the Essay on the Theory of Painting (1715), 
+                    in which Richardson followed the French critic, Roger de Piles (1635-1709), in assessing Rubens in terms of the persistent academic debate over the merits of color versus line, 
+                    personalized as the <hi rend="italic">rubenistes</hi> versus the <hi rend="italic">poussinistes</hi>, although Richardson listed Rubens as master in both categories. 
+                    <persName corresp="#SJR">Joshua Reynolds</persName> (<date notBefore="1723" notAfter="1792">1723&#x2013;92</date>), in the <hi rend="italic">Discourses</hi> 
+                    (<date notBefore="1769" notAfter="1790">1769&#x2013;90</date>), frames his discussion in the same terms of Rubens versus Poussin, but he finds Rubens wanting both in composition and coloring. 
+                    In composition, Reynolds asserts in Discourse 5, his "art is too apparent," his figures exhibiting "expression" and "energy," but lacking "simplicity and dignity"; and in coloring, there is 
+                    "too much of what we call tinted." In what perhaps comes closest in the Discourses to the criticism relayed by Ruskin in "Cologne," Reynolds believes that, 
+                    in the "higher walks of painting" 
+                    (i.e., history and religious painting), Rubens failed in a "nicety of distinction and elegance of mind." Despite these detractions, overall Reynolds regarded Rubens 
+                    as "a remarkable instance of the same mind being seen in all the various parts of the art" so that "whilst his works continue before us, . . . his deficiencies are fully supplied."<lb/>
+                    
+                    In 1781, when Reynolds took a tour of the Low Countries, his estimation of Rubens was raised by observing more of the painter's work. 
+                    The change is summarized in "Character of Rubens," a part of Reynolds's notes from the tour, which were 
+                    published posthumously as A Journey to Flanders and Holland (1797). The "Character of Rubens" begins by challenging criticism 
+                    with "the works of men of genius," in which "great faults are united with great beauties." As in Discourse 5, 
+                    Reynolds understands Rubens according to "the genius which prevails and illuminates the whole," but 
+                    the English critic goes on to develop his ideas oppositely to Ruskin's, for now he finds: "It is only in large compositions that his [Rubens's] 
+                    powers seem to have room to expand themselves. . . . 
+                    His superiority is not seen in easel pictures"--the scale of Ruskin's preference. Rubens's best works "flow with a freedom and prodigality, as if they cost him nothing."<lb/>
+                    
+                    Respecting the traditional contest between color and line, Reynolds returns to Richardson's assessment of placing Rubens high in both categories: 
+                    "The striking brilliancy of his colours, and their lively opposition to each other, the flowing liberty and freedom of his outline, and animated pencil, 
+                    with which every object is touched, all contribute to awaken and keep alive the attention of the spectator." Thus, a view that in the Discourses was offered as 
+                    a concession, now reads as an inevitability: Rubens achieves "the complete uniformity in all the parts of the work," 
+                    a unity that seems to "grow out of one mind." The "confidence" of that mind places Rubens above rules, which are "subject to his control," rather than he being "himself subject to the rules." 
+                    His "originality of manner" can therefore "be truly said to have extended the limits of the art."<lb/>
+                    
+                    Even in the "Character of Rubens," Reynolds does admit to some shortcomings in "excellencies, 
+                    which would have perfectly united with his style," and these remarks might also lie behind Ruskin's comment in "Cologne." 
+                    In his figures, Reynolds finds wanting a "poetical conception of character"; and in his "representations of the highest characters 
+                    in the christian or the fabulous world, . . . the spectator finds little more than mere mortals, such as he meets with every day" 
+                    (<ref type="bibliography" target="bibliography.php#WHITERUBENSANDBRITISHART">White, &#x201C;Rubens and British Art&#x201D;</ref>, 30, 33-35; 
+                    <ref type="bibliography" target="bibliography.php#REYNOLDSWORKS1797">/Reynolds, <hi rend="italic">Discourses</hi> [1797]</ref>, 1:89-90; 2:115, 117, 118-19, 121-22).</note>
+
+                <note xml:id="STAMBROSIUSGLOSS" resp="#DCH">Unidentified. While Ruskin's description might fit any number of Rubens's easel pictures featuring a single saint, 
+                    I have located no such picture of Saint Ambrose, whom Rubens appears to have depicted only among groups of holy figures.</note>
+                
+                <note xml:id="SEVENMOUNTAINSGLOSS" resp="#DCH">"seven mountains" ()--The Siebengebirge (see above).</note>
+                
+                <note xml:id="MAGIGLOSS" resp="#DCH">In 1833, Mrs. Trollope was likewise skeptical, but impressed by the "wonder of wonders . . . the 
+                    Mausoleum of the Eastern Kings." Having paid her fee, she was "informed that this splendid monument contains not only the bones of Caspar, Melchior, and Balthasar, 
+                    but likewise those of St. Felix, St. Nabor, and St. Gregory. . . . [T]he shrine itself is most superb; 
+                    and when you enter the little tabernacle in which it is deposited, there is something so mystically glowing in the eternal lamplight reflected by the gold 
+                    and precious stones,--something so horrific in the three grim skulls, protruding themselves from amidst the jewels with which they are encircled, 
+                    for each one, 'The likeness of a kingly crown has on,' and the whole scene is at once so ghastly, and so gorgeous, that, for the moment, one is almost tempted 
+                    to believe some real sanctity must be attached to the relics, which princes and prelates have for ages agreed to honour with such extravagant and strange devotion. 
+                    The date of this singular monument is 1170" 
+                    (<ref type="bibliography" target="bibliography.php#TROLLOPEBELGIUM">Trollope, <hi rend="italic">Belgium and Western Germany in 1833</hi></ref>, 127).</note>
+            </div>
+        </body>
+    </text>
+</TEI>

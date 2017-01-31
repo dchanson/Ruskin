@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="spring_blank_verse_am">
+            <titleStmt>
+                <title type="main">"Spring: Blank Verse"</title>
+                <title type="sub">Electronic Text Generated from the Published Witness in Atlantic Monthly 94 (August 1904), 164</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#CEN">Charles Eliot Norton</persName><!--Correction needed here? See below.-->
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing review, encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#CNW">Casey N. White</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-17">January 17, 2015</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>John Ruskin</author>
+                        <title>"Spring"</title>
+                        <ref></ref>
+                    </analytic>
+                    <analytic>
+                        <editor>
+                            <persName>Charles Eliot Norton</persName>
+                        </editor>
+                        <title type="main">Letters of John Ruskin</title>
+                        <title type="sub">IV: 1868-1872</title>
+                    </analytic>
+                    <monogr>
+                        <title>The Atlantic Monthly</title>
+                        <imprint>
+                            <biblScope type="vol">94</biblScope>
+                            <date when="1904-08">August 1904</date>
+                            <biblScope type="pages">161-70</biblScope>
+                            <biblScope type="page">164</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct><!--Is this entry necessary? If yes, should the <editor> above be expanded?-->
+                    <analytic>
+                        <author>John Ruskin</author>
+                        <title>"Spring"</title>
+                        <ref></ref>
+                    </analytic>
+                    <monogr>
+                        <editor>
+                            <persName>E. T. Cook</persName>
+                        </editor>
+                        <editor>
+                            <persName>Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <title type="sub">Library Edition</title>
+                        <imprint>
+                            <biblScope type="vol">36</biblScope>
+                            <date notBefore="1903" notAfter="1912">1903-12</date>
+                            <biblScope type="pages">2</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem">
+                <head type="title"><hi rend="caps">Spring</hi></head>
+                <lg type="stanza">
+                    <l>What beauties spring thou hast the waving lilac</l>
+                    <l>and the stiff tall peach with roselike flowers</l>
+                    <l>with yellow chorchorus and with nectarine blossom</l>
+                    <l>some with grace wave and some though tall are stiff</l>
+                    <l>waving is lilac, so is yellow chorchorus</l>
+                    <l>waving is cherry blossom though not so graceful</l>
+                    <l>as the spiry lilac and the hyacinth</l>
+                    <l>stiff is the pear and nectarine with the peach</l>
+                </lg>
+                <lg type="stanza">
+                    <l>and apricot, all these are stiff but in return</l>
+                    <l>their flowers are beautiful. so are birds and beasts</l>
+                    <l>as well as flowers some are wild and cruel</l>
+                    <l>such are the tiger, panther, lynx and ounce</l>
+                </lg>
+                <lg type="stanza">
+                    <l>so also in return these animals</l>
+                    <l>are pretty in the other sort</l>
+                    <l>some dogs are ugly, but conceal within</l>
+                    <l>some good intentions good ideas good thoughts.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>but spring, there is one tree that thou bring&#x02BC;st forth</l>
+                    <l>that is more beautiful than all the others&#x2014;</l>
+                    <l>this is the apple blossom o how sweet</l>
+                    <l>is that fine tree and so I end.</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

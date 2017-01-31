@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="spring_blank_verse_houghton">
+            <titleStmt>
+                <title type="main">"Spring: Blank Verse"</title>
+                <title type="sub">Electronic Text Generated from the Fair Copy in a May 1827 Letter by Ruskin to His Father, John James Ruskin</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName></principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing encoding, review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#CNW">Casey N. White</persName>
+                    <resp>contributing review
+                    </resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-17">January 17, 2015</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Massachusetts</region>
+                        <settlement type="city">Cambridge</settlement>
+                        <institution>Harvard University</institution>
+                        <repository>Houghton Library</repository>
+                        <collection>Charles Eliot Norton Papers</collection>
+                        <idno>bMS Am 1088 (5955)</idno>
+                        <msName>A.L., John Ruskin to John James Ruskin, May 1827</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="modbm_ms_am_1088_5955_0004.jpg">pp. 2-3</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="spring_blank_verse_apparatus.php#MAJORMS">"Spring: Blank Verse": Manuscripts</ref>.</note>
+                            <filiation><ref target="spring_blank_verse_msiii.php">MS III witness</ref></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in A.L., John Ruskin to John James Ruskin, May 1827, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem">
+                <space quantity="5" unit="chars"/><head type="title"><handShift new="#HANDJR1826-27" script="print" medium="ink"/><hi rend="caps">Spring</hi></head>
+                <lg type="stanza">
+                    <l>What beauties spring <add place="below"><space quantity="21" unit="chars"/>&#x2038;</add><add place="above"><space quantity="18" unit="chars"/>thou hast</add> the waving lilac</l>
+                    <l>And the stiff tall peach with roselike<lb type="runover"/><space quantity="12" unit="chars"/>flowers</l>
+                    <l>with yellow chorchorus and with nectarine<lb type="runover"/><space quantity="11" unit="chars"/>blossom</l>
+                    <l>some with grace wave and some though<lb type="runover"/><space quantity="10" unit="chars"/>tall are stiff</l>
+                    <l>waving is lilac so is yellow chorchorus</l>
+                    <l>waving is cherry blossom though not so<lb type="runover"/><space quantity="12" unit="chars"/>graceful</l>
+                    <l>as the spiry lilac and the hyacinth</l>
+                    <l>stiff is the pear and nect<subst><del rend="strikethrough">ron</del><add place="below"><space quantity="28" unit="chars"/>&#x2038;</add><add place="above"><space quantity="26" unit="chars"/>arine</add></subst> with<lb type="runover"/><space quantity="14" unit="chars"/>the peach</l>
+                <pb facs="modbm_ms_am_1088_5955_0004r"/>
+                    <l>and apricot all these are stiff but in return</l>
+                    <l>their flowers are beautiful . so are birds<lb type="runover"/><space quantity="13" unit="chars"/>and beasts</l>
+                    <l>as well as flowers some are wild and<lb type="runover"/><space quantity="33" unit="chars"/>cruel</l>
+                    <l>such are the tiger panther lynx and ounce</l>
+                    <l>so also in return these animals</l>
+                    <l>are pretty in the other sort</l>
+                    <l>some dogs are ugly but con<unclear resp="#CWB">&#x2010;</unclear>ceal within</l>
+                    <l>some good intentions good <subst><del rend="scratchout"><subst><del rend="strikethrough">intentions</del><add place="above"><space quantity="26" unit="chars"/>ideas</add></subst><add place="above"><space quantity="27" unit="chars"/>good</add> though</del><add place="below" quantity="28" unit="chars"><unclear resp="#CWB">&#x005E;</unclear></add><add place="below"><space quantity="26" unit="chars"/>ideas good thoughts</add></subst></l>
+                    <l>but spring there is one tree that thou<lb type="runover"/><space quantity="13" unit="chars"/>bring&#x02BC;st forth</l>
+                    <l>that is more beautiful than all the others</l>
+                    <l>this is the apple blossom o how sweet</l>
+                    <l>is that fine tree and so I end</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Example entries have been provided from MS I in the <handShift/>s below. Actual entries may vary.-->
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="prose">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Prose Piece</head>
+                <div type="chapter">
+                    <head type="chapter">Title of Chapter</head>
+                    <p>Body paragraph.</p>
+                    <p>Body paragraph containing a list:
+                        <list type="ordered">
+                            <item n="1">First item in the list.</item>
+                            <item n="2">Second item.</item>
+                            <item n="3">Third item.</item>
+                        </list>
+                    </p>
+                    <!--Paragraphs containing dialogue.-->
+                    <p>
+                        <said who="#Lucy">oh is it raining</said> cried Lucy <said who="#Lucy">I am very sorry for I have so many things to do.
+                        but however I have plenty of things. to do in the house as well</said> said Lucy
+                    </p>
+                    <p>
+                        <said who="#mamma">yes you have</said> answered her mother.
+                    </p>
+                </div>
+            </div>
+            <!--Simple Verse. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>ON SKIDDAW AND DERWENT WATER</head>
+                <lg type="stanza" rhyme="aa">
+                    <l>SKIDDAW upon thy heights the sun shines
+                        bright
+                        But only for a moment then gives place
+                        Unto a playful cloud which on thy brow
+                        Sports wantonly then floats away in air
+                        [tipped-in p. 11, opposite p. 145, no extra space]
+                        Throwing its shadow on thy towering height
+                        And darkening for a moment they green side [ride?]
+                        But adds unto its beauty as it makes
+                        The sun more bright when it again appears.
+                        Then in the morning on thy brow those
+                        clouds
+                        Rest as upon a couch and give fair scope
+                        For fancys play and airy fortresses
+                        And towers battlements and all appear
+                        Chasing each other off and in their turn
+                        Are chased by the others. But enough
+                        I=ve treated of the clouds Now Skiddaw come
+                        Noble and grand and beauteous clothed with
+                        green
+                        And yet but scantily. And in some parts
+                        A bare terrific cliff precipitate
+                        Descends with only here and there a bush
+                        A straggler with its roots fixed in the stone
+                        And bare a scraggy as befits the soil.
+                        Skiddaw majestic giant natures work
+                        Lower than Alps or Andes. Pyrenee=s
+                        Are all much higher But those works of art
+                        Those giant works of art with thee compared
+                        [@*@ above Aart@ referring to footnote: A* The Pyramids@]
+                        Sink into nothing. All that art can do
+                        Is nothing beside thee. The touch of man
+                        [tipped-in p. 12, opposite p. 145]
+                        Raised pigmy mountains but gigantic tombs
+                        The touch of nature raised the mountains brow
+                        But made no tombs at all save where the snow
+                        The fleecy locks of winter fall around
+                        And form a frail memorial for the sain
+                        Who wanders far from home and meets his
+                        death
+                        Amidst the cold of Winter. But no more
+                        On this sad subject on this happy day
+                        Now Derwent Water come A looking glass
+                        Wherein reflected are the mountains height
+                        As in a mirror framed in rocks and woods.
+                        So upon thee there is a seeming mount
+                        A seeming tree a seming rivulet
+                        All upon thee are painted by a hand
+                        Which not a critic can well criticise
+                        But to disturb thee oft bluf Eolus
+                        Descends upon the mountains With his
+                        breath
+                        Thy polished surface is a boy at play
+                        Who labours at the snow to make a man
+                        And when he=s made it knocks it down
+                        again
+                        So when thou=st made a picture thou dost
+                        play
+                        [tipped-in p. 13, opposite p. 147]
+                        At tearing it to pieces Trees do first
+                        Tremble as if a monstrous heart of Oak
+                        Were but an aspen leaf and then as if
+                        It were a cobweb in the tempests blow
+                        Thus like Penelope thou weavst a web
+                        And then thou dost undo it. Thou=rt like her
+                        Because thourt fair and oft deceiving too
+                        Sweet Derwent on thy winding shore
+                        Beside thy mountain forests hoar
+                        There would I like to wander still
+                        And drink from out the rippling rill
+                        Which from thy mountain head doth fall
+                        And mingles with the eagles call
+                        While on Helvellyn thunder roars
+                        Re-echoed by all Derwents shores
+                        And where the lightning flashes still
+                        Reflected in the mountain rill.
+                        
+                        FINIS
+                        
+                    </l>
+                    
+                    </p>
+                </lg>
+            </div>
+            <!--Simple Drama. Delete this <div/> if not used.-->
+            <div type="drama">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Drama</head>
+                <div type="act">
+                    <head type="act">Act I</head>
+                    <sp>
+                        <speaker>Antony</speaker>
+                            <stage>(pacing anxiously)</stage>
+                            <l>I come to bury Caesar, not to praise him.</l>
+                    </sp>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

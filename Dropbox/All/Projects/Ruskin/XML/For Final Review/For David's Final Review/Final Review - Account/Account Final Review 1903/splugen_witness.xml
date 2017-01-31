@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="splugen_witness">
+            <titleStmt>
+                <title type="main">Spl&#x00FC;gen</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#">E. T. Cook and Alexander Wedderburn</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>E. T. Cook and Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <imprint>
+                            <biblScope type="vol">2</biblScope>
+                            <biblScope type="edition">Library<hi rend="superscript"></hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1903">1903</date>
+                            <biblScope type="pages">xxiii<!--I don't know what goes here?--></biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title"><placeName corresp="#SPLUGEN">Spl&#x00FC;gen</placeName><hi rend="superscript">2</hi>
+                   <name><persName corresp="#JR">by John Ruskin</persName></name></head> 
+                
+                <l>A <hi rend="smallcaps">little</hi> cultivated space </l>
+                <l>Amid the rocky wilderness,&#x2014;</l>
+                <l>It was not so conspicuous seen, </l>
+                <l>Where every mountain top was green;</l> 
+                <l>But that a little hamlet lay, </l>
+                <l>With its enclosures, &#x02BC;mid the array</l> 
+                <l>Of the dark pines, most peacefully: </l>
+                <l>And a few cattle strayed along, </l>
+                <l>Browsing the grass the rocks among, </l>
+                <l>Ringing their bells; and here and there,</l> 
+                <l>Poised on rock&#x2010;pinnacles i&#x02BC; the air, </l>
+                <l>Looked out from his round glassy eye </l>
+                <l>The mountain goat suspiciously. </l>
+                <l>And, drop by drop, a little spring </l>
+                <l>Down the smooth crag came glistering, </l>
+                <l>With a sweet, tinkling sound, and fell </l>
+                <l>Into a mossed receptacle,&#x2014;</l>
+                <l>The long trunk of an aged fir: </l>
+                <l>You scarce could see the water there, </l>
+                <l>So clear it ran, and sparkled round, </l>
+                <l>Then gurgled o&#x02BC;er the grassy ground, </l>
+                <l>Marking its course by the fresh green </l>
+                <l>Of the grass&#x2010;blades it danced between. </l>
+                <l>I drank, and rested, and would fain </l>
+                <l>Have stopped to gaze, and gaze again,</l> 
+                <l>And rest awhile the wearied eye, </l>
+                <l>Wearied with wild sublimity. </l>
+                <l>No! on! the peaceful bourne is past; </l>
+                <l>The rocks around are closing fast: </l>
+                <l>Higher and higher tow&#x02BC;rds the heaven </l>
+                <l>Betwixt the cliffs our road is riven; </l>
+                <l>Or twining round the hillside bare </l>
+                <l>With many a bend, where the high air </l>
+                <l>&#x02BC;Gan to blow cold, and damp, and keen, </l>
+                <l>But sharp, and pressureless. The green, </l>
+                <l>Though fresh upon the mountain side,</l> 
+                <l>Was now more thinly scatter&#x00E8;d. </l>
+                <l>Now might you see, in sheltered nook, </l>
+                <l>The snow arch o&#x02BC;er the icy brook, </l>
+                <l>With strange, white, delicate, bridgy curve </l>
+                <l>That the green light shot through above. </l>
+                <l>And round, beneath, beside, there grew </l>
+                <l>The Alpine rose&#x02BC;s heathery hue,</l> 
+                <pb/>
+                <l>That blushed along the mountain head. </l>
+                <l>Was never flow&#x02BC;r so regal red! </l>
+                <l>It climbed the scathed old rocks along,&#x2014;</l>
+                <l>Looked out, the cold, white snow among, </l>
+                <l>And, where no other flower would blow, </l>
+                <l>There you might see the red rose grow.<hi rend="superscript">1</hi> </l>
+                
+                <p><hi rend="superscript">1</hi> [This was of course the so&#x2010;called &#x201C;Alpine rose,&#x201D; <emph>i.e.</emph> rhododendron. <persName corresp="#JR">Ruskin</persName> 
+                    never lost his particular affection for this flower: see, <emph>e.g. Sesame and Lilies,</emph> preface to 
+                    second edition.] </p>
+           </div>
+        </body>
+    </text>
+</TEI>

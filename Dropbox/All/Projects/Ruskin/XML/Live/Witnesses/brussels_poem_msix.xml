@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="brussels_poem_msix">
+            <titleStmt>
+                <title type="main">"Brussels" [poem]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS IX Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KCM">Katie C. Moore</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KTM">Kiran Thapa Magar</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS IX</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="MSIX20v-21r.jpg - MSIX22v-23r">pp. 21r-22v</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin&#x02BC;s boyhood hand, circa <date notBefore="1833" notAfter="1834">1833&#x2013;34</date>,
+                                    examples of which can be found in MS IX, pages <locus from="##" to="##">##-##</locus>. 
+                                    In the present example from MS IX, which is a fair&#x2010;copy manuscript, 
+                                    Ruskin used a &#x201C;copperplate&#x201D; cursive hand; and for section heads, 
+                                    he imitated the display type heads found in Samuel Rogers, <hi rend="italic">Italy</hi> (<date when="1830">1830</date>).
+                                </p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb facs="MSIX20r"/>
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="aa">
+                <space quantity="9" unit="lines"/>
+                <lg type="stanza" n="1">
+                    <l><handShift script="cursive-copperplate" medium="ink"/>The racking clouds were fleeting fast</l>
+                    <l>Upon the bosom of the blast<ref type="gloss" target="brussels_glosses_contextual.php#RACKINGCLOUDS"/></l>
+                    <l>In wild confusion fiercely driven</l>
+                    <l>Fled they across the face of heaven</l>
+                    <l>The fitful gust came shrieking high,</l>
+                    <l>The rattling rain flew driving by</l>
+                    <l>But where the horizon stretched away</l>
+                    <l>Towards the couch of parting day</l>
+                    <l>A streak of paly light was seen</l>
+                    <l>The heaped and darkling clouds between</l>
+                    <l>Against that light, for time full brief</l>
+                <pb facs="MSIX21v"/>
+                    <l><placeName corresp="#BRUSSELS">Brussels</placeName> arose in dark relief</l>
+                    <l>Colossal on the western fire</l>
+                    <l>Seemed massive tow&#x02BC;r and slender spire</l>
+                    <l>Nearer, and nearer as we drew</l>
+                    <l>More strongly marked the outlines grew,</l>
+                    <l>Till of the buildings, you might see,</l>
+                    <l>Distinct the Gothic tracerie</l>
+                    <l>The drawbridge rung, we passed the gate,<ref type="gloss" target="brussels_glosses_contextual.php#DRAWBRIDGE"/></l>
+                    <l>And regal <placeName corresp="#BRUSSELS">Brussels</placeName> entered straight</l>
+                    <l>It stirs, to see the human tide</l>
+                    <l>That marks a city in its pride</l>
+                    <l>That fitful oceans eddying sweep</l>
+                    <l>Is still more changeful than the deep</l>
+                    <l>For those dark billows as they roll</l>
+                    <l>Mark movements of the human soul.</l>
+                    <l>Yet in that city, there was none,</l>
+                    <l>Of that confused and busy hum,</l>
+                    <l>That tells of traffic, and of trade</l>
+                    <l>No, <placeName corresp="#BRUSSELS">Brussels</placeName> time of pow&#x02BC;r was sped</l>
+                    <l>Yet in her streets was something seen</l>
+                    <l>Spoke what the city once had been</l>
+                <pb facs="MSIX22r"/>
+                    <l>Our rapid course as now we wheel</l>
+                    <l>Where rose the huge hotel de ville<ref type="gloss" target="brussels_glosses_contextual.php#HOTELDEVILLEGLOSS"/></l>
+                    <l>The noble spires proportions high</l>
+                    <l>Stood forth upon the cloudy sky,</l>
+                    <l>In all its fretted majesty</l>
+                    <l>And his last light the sun had sent</l>
+                    <l>On buttress and on battlement</l>
+                    <l>That while the houses were arrayed</l>
+                    <l>In all the depth of twilight shade,</l>
+                    <l>Yet shot there faint a yellow glow</l>
+                    <l>Where the tall arches shafted show</l>
+                    <l>Glimmered a moment there the ray,</l>
+                    <l>Then fainter grew, and past away</l>
+                    <l><placeName corresp="#BRUSSELS">Brussels</placeName>, thy battlements have been</l>
+                    <l>Of many an action strange the scene</l>
+                    <l>Thou sawst on Julys dreadful night<ref type="gloss" target="brussels_glosses_contextual.php#JULYSDREADFULNIGHTGLOSS"/></l>
+                    <l>The veterans rushing to the fight</l>
+                    <l>Thou heardest when the word was spoken</l>
+                    <l>At midnight thy repose was broken</l>
+                    <l>By tramp of men and neigh of steed</l>
+                    <l>Battalions bursting forth to bleed</l>
+                <pb facs="MSIX22v"/>
+                    <l>Till the dark phalanx waving crest</l>
+                    <l>Forth from thy gates was forward prest</l>
+                    <l>And breaking with the morning mild</l>
+                    <l>The disant roar of battle wild.</l>
+                    <l>And later still the rabble shout</l>
+                    <l>And revolutions riot rout</l>
+                    <l>Leaving such marks as long shall tell</l>
+                    <l>Of dark destruction fierce and fell.</l>
+                </lg>
+            </div>
+            
+        </body>
+    </text>
+</TEI>

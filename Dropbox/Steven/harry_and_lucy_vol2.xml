@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="harry_and_lucy_vol1_msi">
+            <titleStmt>
+                <title type="main">"Harry and Lucy," Vol. 1</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS I Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName></principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription, encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America, Blossman Foundation, Huntington Library,
+                    Louisiana Board of Regents, National Endowment for the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language
+                    Association, and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-09-07">September 7, 2011</date>
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>
+                    <name type="institution">Southeastern Louisiana University Department of English</name>
+                </distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Shelves Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="1229197.jpg-1229237.jpg">Inside Front Endboard + pp. 1-96</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="">"Harry and Lucy," Vol. 3: Manuscripts</ref>.</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc hands="1">
+                            <handNote xml:id="HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-7</date>, examples of which can
+                                    be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                            <handNote xml:id="HANDJR1870" scribe="JR">
+                                <p>John Ruskin's adult hand, circa <date when="1870">1870</date>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <pb facs="1229151"/>
+                <docTitle>
+                    <titlePart type="main" rend="left"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/><hi rend="caps">Harry</hi> <hi rend="smallcaps">and</hi> <hi rend="caps">Lucy</hi></titlePart>
+                    <lb/>
+                    <titlePart type="sub">
+                        <hi rend="smallcaps">Concluded<lb/>
+                        <hi rend="smallcaps">Being<lb/>
+                        <hi rend="caps">The Last Part<lb/>
+                        <hi rend="smallcaps">of<lb/>
+                        <hi rend="caps">Early Lessons</hi><lb/>
+                        <hi rend="caps">in<lb/>
+                        <hi rend="caps">in four vols<lb/>
+                        vol. 2<lb/>
+                        <hi rend="smallcaps">with copper plate</hi>
+                        </titlePart>
+                </docTitle>
+            </titlePage>
+        </front>
+        <body>
+            <div type="note">
+                <pb facs="1229153v"/>
+                harry going across the sea<lb/>
+                <space quantity="6" units="chars"/>in a steamboat
+            </div>
+            <div type="chapter" n="1">
+                <pb facs="1229154"/>
+                <fw type="pageNum" place="top=center">page 1</fw>
+                <head type="chapter"><space quantity="10" unit="chars"/><hi rend="smallcaps">chap I</hi></head>
+                <p>
+                    <hi rend="caps">the rest</hi> of the noon&#x2010;<lb/>
+                    was so foggy that Harry&#x2010;<lb/>
+                    could not see more than &#x2010;<lb/>
+                    four yeards before him. But</lb>
+                    he amused himself with&#x2010;<lb/>
+                    drawing the rest of the noon<lb/>
+                    and took dinner.<lb/>
+                </p>
+                <p>
+                    After finner Harry had&#x2010;<lb/>
+                    to learn his lessons because<lb/>
+                    the elecrical phenomenon&#x2010;<lb/>
+                    had quite driven them out of 
+               </p>
+            </div>
+        </body>
+    </text>
+</TEI>

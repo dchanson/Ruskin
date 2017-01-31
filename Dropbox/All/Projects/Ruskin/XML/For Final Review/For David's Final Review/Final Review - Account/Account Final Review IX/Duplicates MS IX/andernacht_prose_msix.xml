@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="andernacht_prose_msix">
+            <titleStmt>
+                <title type="main">"Andernacht" Prose</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="MSIX.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="31r" to="32r">31r-32r</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="prose">
+                <pb facs="MSIX35v-36r.jpg"/>
+                <!--There is no title between the poem and the prose
+                   <head type="title"><placeName corresp="#ANDERNACH">Andernacht</placeName> Prose
+                   <name><persName corresp="#JR">by John Ruskin</persName></name></head>
+                -->
+                <p>What is it that makes the very heart leap wi
+                    <lb/>thin you, at the sight of a hill's blue outline,
+                    <lb/>that so &#x00E6;therializes the soul, and ennobles 
+                    <lb/>the spirit; that so raises you from the earth, and 
+                    <lb/>from aught of the earth, Is it their apparent 
+                    <lb/>proximity to the blue heaven's inaccessible&#x2013;
+                    <lb/>ness, is it the humbling sense of your own 
+                    <lb/>littleness, or the immoveable, unchangeable mag
+                    <lb/>nificence, of that which has seen the begin<lb/>
+                    <pb facs="MSIX36v-37r.jpg"/>
+                    ning of the world and will see its end, or is 
+                    <lb/>it that the thoughts range insensibly, from 
+                    <lb/>the things created, to him who created them
+                    <lb/>I know not. <g type="punctuation">* * *</g>.    How it thrilled 
+                    <lb/>through me, when first, far away, across 
+                    <lb/>the lake like swell of the deep waters of that 
+                    <lb/>wondrous river. rose the cloudy outline<g type="justification">,-</g>
+                    <lb/>of the blue mountains. Long time hath 
+                    <lb/>past over me, since I saw the swell of a 
+                    <lb/>blue hill. I have longed for them,&#x2014;I 
+                    <lb/>have yearned for them as an exile yearns for 
+                    <lb/>his native land, and I am with them.</p> 
+                    
+                <p>We left <placeName corresp="#COLOGNE">Cologne</placeName> on a misty summer mor-
+                    <lb/>ning, its many turreted spires rising colos&#x2013;
+                    <lb/>sally, but grey and faint amid the wreath
+                    <lb/>ing columns of mist, which smoked up
+                    <lb/>ward from the course of the broad <geogName corresp="#RHINE">Rhine</geogName>. 
+                    <lb/>There was the huge cathedral, dark with 
+                    <lb/>the confused richness of its own fretwork, 
+                    <lb/>and the remains of its unfinished, but 
+                    <lb/>magnificent tower, showing ruinlike be<lb/>
+                    <pb facs="MSIX36v-37r.jpg"/>
+                    side it; There were the red sails and min
+                    <lb/>gled masts of the innumerable shipping, with
+                    <lb/>out one sail swelling, or a flag bending, with. <!--punctuation?--> 
+                    <lb/>the morning breeze, There was that peace&#x2013;
+                    <lb/>ful and lovely lassitude over everything, that 
+                    <lb/>sleep of the earth, and the air, and the sky, that 
+                    <lb/>charms the mind into a correspondent fas&#x2013;
+                    <lb/>cination of stillness, the very thoughts seem 
+                    <lb/>sleeping. <g type="justification">&#x2014;</g></p> 
+                    
+                <p>We went on, we past <placeName corresp="#BONN">Bonn</placeName>, and <placeName corresp="#GODESBERG">Godes&#x2013;
+                    <lb/>berg</placeName>, and <geogName corresp="#DRACHENFELS">Drachenfels</geogName> and sunset was 
+                    <lb/>sorrowing over hill and valley, when 
+                    <lb/>the gloomy and venerable towers of 
+                    <lb/><placeName corresp="#ANDERNACH">Andernacht</placeName> beetled over us. </p>
+                    
+                <p>I love to look upon the crags that C&#x00E6;sar, 
+                    has scaled, and upon the towers that his 
+                    <lb/>legions have founded. These are now 
+                    <lb/>as they were then, looking up to the bro&#x2013;
+                    <lb/>ad blue heaven, these are in ruins. Yet 
+                    <lb/>they are mighty in their ruin, and majes
+                    <lb/>tic in their decay, but their Lords are depar<lb/>
+                    <pb facs="MSIX37v-38r.jpg"/>
+                    ted and forgotten as the waves that once lashed their 
+                    <lb/>foundations. Other snows have melted, and the 
+                    <lb/><geogName corresp="#RHINE">Rhine</geogName> yet rolls onward unbroken, but those wav&#x2013;
+                    <lb/>es are lost in the ocean for ever</p>
+           </div>
+        </body>
+    </text>
+</TEI>

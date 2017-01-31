@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject MANUSCRIPT followed by "apparatus", for example,
+            "msi_apparatus". The xml:id also corresponds with its XML file's name, for example, "msi_apparatus.xml".-->
+        <fileDesc xml:id="title_of_manuscript_apparatus">
+            <titleStmt>
+                <title type="main">Title of Manuscript</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>            
+    <text>
+        <body>
+            <div type="apparatus">
+            <head type="title">Title of Manuscript</head>
+                <!--A manuscript apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>MS VI</p>
+                </div>
+                <div type="section" xml:id="LOCATION">
+                    <head type="section">Location</head>
+                    <p>Body paragraph.</p>
+                    Princeton (cataloged as  Ruskin MS.--Poems ).
+                </div>
+                <div type="section" xml:id="PROVENANCE">
+                    <head type="section">Provenance</head>
+                    <p>Body paragraph.</p>
+                    Sotheby’s 1931.
+                </div>
+                <div type="section" xml:id="DESCRIPTION">
+                    <head type="section">Description</head>
+                    <p>Body paragraph.</p>
+                    In the time since Collingwood described the manuscript, its  reddish marbled paper covers  have disappeared, replaced by a dark red leather or roan binding, 32.5 × 11.5 cm, with  Ruskin MS.--Poems  impressed in gilt on the spine and cover. Arrangements for this binding would have been made by Alexander Wedderburn, since the  limp roan  described in Sotheby Cat. 1931 and the  red leather  mentioned in Goodspeed, Cat., must refer to the same binding. The original notebook was purchased, not handmade, with marbled edges and pre-ruled paper, watermarked  J Wh[at(?)]man 1829.
+                    <!--The subsection that follows, Collation, is common to all manuscript apparatuses and was, accordingly, assigned an xml:id by
+                        the Ruskin Project Team during work on the "First Twenty."-->
+                    <div type="subsection" xml:id="COLLATION">
+                    <head type="subsection">Collation</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+                <div type="section" xml:id="CONTENTS">
+                    <head type="section">Contents</head>
+                    <!--Typically, this section will begin:-->
+                    <p>
+                        <hi rend="italic">From front of book, the sequential order of contents:</hi>
+                    </p>
+                    <!--and continue with a list, which may group items according to type (e.g. prose, poetry) or other similiarity. Note: drawings
+                        may be included as items in this list.-->
+                    <list xml:id="LIST" type="ordered">
+                        <item n="a">Item belonging to Group A.</item>
+                        <item n="b.1">First item belonging to Group B.</item>
+                        <item n="b.2">Second item belonging to Group B.</item>
+                        <item n="b.3">Third item belonging to Group B.</item>
+                        <item n="c">Item belonging to Group C.</item>
+                    </list>
+                    <p>Body paragraph.</p>
+                    Collation
+                    Because MS VI is a rough-draft notebook, the sequence of its contents reveals their rough order of composition. This evidence is obscured in places by folios having been torn out, destroying many drafts both of poems known from copies elsewhere and of pieces that apparently existed only here. Fortunately, there remains in the back of MS VI Ruskin’s own index, giving us the sequence and at least the titles of the lost entries. The mutilation had already occurred when Collingwood first described the manuscript for PJR, and evidence suggests that Ruskin himself tore out the pages--or at least that the destruction, if not by him, occurred during the notebook’s use.
+                    Interpretation of the index involves some speculation, since Ruskin renumbered some pages after some folios were torn out, and, later, someone else also took a hand to numbering pages; however, the use of the notebook can be broadly reconstructed as follows.
+                    The first 57 pages are missing (as Collingwood also remarks, although he errs in listing only one other  page  as missing elsewhere in the book: there are, in fact, three other missing folios, as discussed below). The next pages 58-85 were accurately numbered by Ruskin, though with even numbers unconventionally assigned to rectos. The versos were likely odd-numbered from the beginning, since page 57 is the last missing--i.e., the folio, pp. 56-57.
+                    Following p. 85 (a verso), two folios (pp. 86-87 and 88-89) were completely torn out, leaving stubs to attest to their former existence. With their removal, two works were irrevocably lost--according to Ruskin’s index,  Rustic in London [p.] 87  (no. 120), and  Heat [p.] 88  (no. 121). Possibly the draft of some portion of  Iteriad [p.] 88  was lost, as well (see below). Clearly, these two folios were removed during the notebook’s use, since the index lists the extant poem  Creation  (no. 129) on page 91 (a verso), a number at which one can arrive only by counting the two missing folios that fell just before the folio with  Creation. 
+                    The index entry for  Creation  reads in full as  Creation 91 86,  with  86  lined up with a column consistent with other entries. This mystery may be solved two ways: As one possibility,  Creation  or a related poem may originally have been drafted on the first of the two missing folios (the former pp. 86-87), and that earlier draft or related poem has simply been lost. This possibility is supported by the extant poem opening with  The second day past oer and gloomy night,  as if an earlier poem had described the first day. As a second possibility, both of the index numbers referred to the same poem, but Ruskin corrected  91  to  86  after tearing out the two folios. Two problems arise from this explanation. First, Ruskin had to err, since the poem occurs, according to revised numbering, on the verso, page 87, not on the recto, page 86. Second,  86  appears to be the earlier index entry, not one added as a correction. Thus, the former possibility is easier to accept, but Ruskin has befuddled explanation by tearing away approximately a quarter-page from the top of the folio with the extant  Creation,  thus losing any page numbers he might have written. What is certain is that, prior to the notebook’s mutilation, the extant poem  Creation  had been indexed for p. 91; and, following the notebook’s mutilation, Ruskin’s new (visible) numbering starts on the page after  Creation --i.e., the new page 88, formerly (presumably) page 92.
+                    By tearing away the top of the folio holding the extant  Creation,  Ruskin also destroyed most of the first stanza of the intriguing no. 122 from its recto and, from its verso, something that preceded the fragment no. 128 ( tis not the proper measure ). On the next recto following this mutilated folio, Ruskin’s revised page numbering is visible, pp. 88-89. The index gives as its last two page numbers for  Iteriad  (though more was to be written, if not indexed, in MS VI)  88  and  92.  These entries present a puzzle similar to that for  Creation.  The newly numbered pp. 88 and 92 do hold  Iteriad --the former even entitled  Iteriad Book 4th  and starting with line 27. That p. 88, however, according to the old numbering, would have been p. 92, and the old p. 88, now removed, might well have contained  Iteriad  draft--in fact, there are very good reasons to believe it did (see note, no. 91).
+                    Thus, while definite conclusions cannot be drawn, probabilities suggest that Ruskin stopped his indexing not long after he mutilated the notebook, and that all his index numbers refer, therefore, to his earlier numbering. That is, an earlier version of  Creation  (probably describing the  first day ) once existed on the missing p. 86; some  Iteriad  draft was lost with the removed p. 88; not long before removing pp. 86-89, Ruskin had indexed his latest  Iteriad  draft as  92  and, after the removal of 86-89, he renumbered that same p. 92 on the page itself as p. 88.
+                    The extant folio, pp. 88-89 (new numbering), following the torn folio holding  Creation,  would formerly have been p. 92; but it is numbered  88  with no sign of a prior erasure. It appears, then, that when Ruskin reached about this point--the composition of  Iteriad,  4:27-68--he for some reason tore out the two missing folios, started his new page numbering, and halted his indexing for  Iteriad.  (Alternatively, the mutilation and renumbering could conceivably have occurred somewhat later, when Ruskin reached about three hundred lines into book 4. This possibility will be discussed below.) This means that poems indexed as falling on pages after this watershed had already been drafted; otherwise, their index entries would refer to the new page numbering, and this theory seems borne out by the disposition of the remaining pages.
+                    Following the newly numbered pp. 88-89, yet another folio has been removed, what would have been pp. 90-91, according to the new numbering. A remaining stub attests to the folio’s existence and shows that it once held  Iteriad  draft on the recto--at least, line 95 of book 4, a line continuous with 4:69-94 at the bottom of p. 89. The next existing folio was numbered 90-91. Ruskin’s index mentions  De arte poetica [p.] 94  (no. 130), a title that is nowhere extant in MS VI. If one counts pages, including all three missing folios, prior to Ruskin’s renumbering (i.e., when the second-day  Creation  poem was correctly indexed as p. 91), one will arrive at pp. 94-95 for the third missing folio. Thus,  De arte poetica  was lost with this folio, and it likely existed prior to the new page numbering--i.e., prior to the composition of  Iteriad  4:27ff., which Ruskin reached about summer 1831 (see note to no. 91), or perhaps somewhat later when he had reached 300 lines into book 4 (see below). A fragment of  De arte poetica  may, nonetheless, have been retained. At the top of the recto following the third missing folio--i.e., on what would formerly have been p. 95, now numbered p. 90--a fragment appears to have been carried over from the previous page (two stanzas extant, the first of which is incomplete). The subject of this fragment, no. 131, is consistent with  De arte poetica,  no. 130, and the two may be the same poem.
+                    A few other index entries point to the old numbering, before midsummer:  Bed [p.] 102,   Eternal hills [p.] 103,  and  Fun [p.] 103.  These poems--the former two untitled in draft (nos. 133-34), and the latter entitled  different style  in draft but with a refrain  Fun fun &#x0026;c  (no. 136)--now fall on pp. 96-97, a folio that would have been numbered pp. 102-3 prior to removal of all three missing folios. Thus, these three poems, too, likely preexisted the composition of  Iteriad  4:27ff. or 4:300ff., when the missing folios were removed. This means that these poems should not regarded as composed sequentially with the draft of  Iteriad  presently surrounding them but that they were composed earlier and the  Iteriad  draft wrapped around them. This arrangement may be confirmed by the appearance of the manuscript: on p. 96 (i.e., formerly, p. 102)  Iteriad  4:247-61 extends from the top of the page down to the beginning of  Bed,  which runs to the bottom of the page. At the top of p. 97 (i.e., formerly, p. 103), Ruskin squeezed in just one line of  Iteriad,  4:262, before  Eternal Hills  and  Fun  take up the remainder of the page; then  Iteriad  recommences with 4:263ff. on the next page.
+                    Another index entry,  Joy, where is [p.] 97  (no. 132), can be made to correspond with the poem itself only by counting all three missing folios. It presently falls on p. 91; thus, it probably predates the  Iteriad  draft surrounding it--4:101ff. that follows it, and  Coming down upon Ambleside  (4:383-402) that precedes it (see below).
+                    The passage  Coming down upon Ambleside  is responsible for the suggestion, already mentioned, that Ruskin’s mutilation and renumbering of MS VI may have occurred somewhat later than the composition of  Iteriad  4:27-68. The  Ambleside  passage, which is placed (and perhaps written) out of sequence in the notebook, is cross-referenced by Ruskin’s own note later on,  FROM LINE 375 TO LINE 401 AT PAGE NINETY SIX ; since  page ninety six  refers to the old numbering, Ruskin may not have yet removed the missing folios before composing book 4 into the 300s.
+                    Unfortunately, the pages holding these shorter poems composed earlier than their surrounding  Iteriad  draft do not show erasure of a former page numbering. The page with  Where Is Joy  (no. 132) is unnumbered; only the recto of that folio is numbered (the new p. 90). The same is true of  Eternal Hills  and  Fun,  whose page (a verso) is unnumbered, with its recto numbered (the new p. 96). The latter page is the location of  Bed,  but there is no sign of an erasure of the former p. 102 (as  Bed  is indexed) beneath the new p. 96. One can only assume that, with the earlier numbering system, Ruskin either indexed these poems by counting his pages, without marking the pages themselves, or wrote the numbers on the pages themselves in erasable pencil.
+                    The composition of book 4 of  Iteriad  (new p. 88 and following) is complex; full discussion will be found in the note to no. 91. It may be generally remarked here that this part of the manuscript is given over to partly drafting, partly schematizing line arrangements of draft from elsewhere. Thus, Ruskin is by now, perhaps, starting to fair-copy  Iteriad  in MS VII. This task may partly account for the removal of the three missing folios from MS VI. If so, one wonders why Ruskin did not mutilate MS VI after having completely finished the draft of book 4, rather than toward the onset of its composition.
+                    Starting with the first page of his new system (p. 88, holding  Iteriad  4:27-67), and not counting removed folios, Ruskin numbered rectos only with even numbers through page 100 (only failing to indicate the new p. 94, which is unnumbered). On the last of these pages,  100  is written over top of an erroneous  99,  and another hand has also numbered this latter page as 100 in pencil. This new hand numbers the next recto in pencil as 101 and continues, 101-35. Since p. 135 falls on an endpaper that does not appear part of Ruskin’s original notebook, this hand must be later--probably Wedderburn’s, after the manuscript acquired its present binding.
+                    
+                    Content	
+                    MS VI falls into fairly distinct sections. In their sequence of appearance, the contents are as follows:
+                    a) The sequence of the titles in the missing part of the manuscript can be reconstructed as nos. 70 (p. 6), 71 (p. 8), 73 (p. 10), 74 (p. 12), 75 (p. 13), 76 (p. 21), 77(?) (p. 25, see no. 77), 92 (p. 28), 93 (p. 29), 94 (p. 30), 95 (p. 31), 91 (p. 32; this is bk. 3, indexed under both  Skiddaw  and  Iteriad ), 96 (p. 37), 77(?) (p. 39, see no. 77), 97 (p. 40), 100 (p. 46), 101 (p. 47), 102 (p. 48), 91 (p. 48, some portion, presumably of book 3 or beginning of book 1), 103 (p. 49), 104 (p. 51), 105 (p. 51), 106 (no p. no., but see no. 106), 107 (p. 52), 91 (p. 54, some portion presumably of bk. 1).
+                    b) In the extant portion of MS VI, from p. 58, the roughly continuous record of poetry composition continues. Extant are drafts of books 1, 2, and 4 of  Iteriad,  no. 91, which are listed as follows, broken down into their parts and interspersed with shorter poems, to show their sequence: no. 91 (pp. 58-74; bk. 1:176-518, and bk. 2: 1-400; probably listed as  Iteriad 54  in index), 109 (p. 75, confirmed by index,  Poesie 75 ), 110 (pp. 75-76, listed  Wind 76  in index), 91 (p. 76; bk. 2:401-26; listed as  Iteriad 76  in index), 111 (pp. 77-78, listed  Want of subject 77  in index), 112 (p. 78; listed  To dash howling  without page no. in index, unless the  79  for following entry, no. 114, is incorrectly meant to cover no. 112, as well), 113 (p. 78; through third stanza, line 5, followed by  Contd on p 81 ; listed as  Feminine Gender 78  in index), 114 (p. 79; listed as  Doctors 79  in index), 91 (p. 79; bk. 2:659-67; entitled  Conclusion of Book 2 Iteriad  on p. 79; not listed in index), 115 (pp. 79-80; not listed in index, owing either to oversight or to later insertion), 116 (p. 80; partial draft, i.e., five lines not identical but closely related to later occurence of poem), 91 (p. 80; bk. 2:668-83; not listed in index, almost certainly owing to later insertion), 113 (p. 81; remaining 4 lines of stanza 3), 116 (p. 81; full draft; listed as  Life 81  in index), 91 (p. 81, beneath rule at bottom of page; bk. 2:684-88; not listed in index), 91 (p. 82; bk. 2:427-69; listed in index as  Iteriad 82 ), 91 (p. 82, beneath rule at bottom of page; bk. 2:689-92; not listed in index), 91 (p. 83; bk. 2:470-513; continuation of index listing  Iteriad 82 ), 91 (p. 83, beneath rule at bottom of page; bk. 2:693-94; not listed in index), 91 (p. 84; bk. 2:514-38; continuation of index listing  Iteriad 82 ), 117 (pp. 84-85; listed as  Day of joy 84  in index), 119 (p. 85; listed as  Mariners song 85  in index), [120-21 (indexed as  Rustic in london 87  and  Heat 88 ), and a portion of 91 (probably bk. 2:539-658 and bk. 4:1-26, and possibly indexed as  Iteriad 88 ), now lost with removed folios, i.e., old pp. 86-89], 122 (unnumbered partially torn folio, i.e., old p. 90; no identifiable listing in index), 123 (unnumbered partially torn folio, i.e., old p. 90; listed as  Tempest 90  in index), 128 (unnumbered partially torn folio, i.e., old p. 91; no identifiable listing in index), 129 (unnumbered partially torn folio--i.e., old p. 91--and continuing onto following folio, new p. 88; listed as  Creation 91 86  in index), 91 (new p. 88; bk. 4:27-67; possibly listed as  Iteriad 92,  i.e., old p. 92, in index), 91 (unnumbered verso of new p. 88, i.e., new p. 89; bk. 4:68), 73 (p. 88v, i.e., new p. 89; unfinished revision, indexed only by its earlier version  Death 10 ), 91 (p. 88v, i.e., new p. 89; bk. 4:69-94; not indexed), [130 (indexed as  De arte poetica 94 ), and 91 (4:95, probably 95-100; not indexed), lost with removed folio, i.e. old pp. 94-95], 131 (new p. 90; possibly a remainder of no. 130; not otherwise indexed), 91 (new p. 90; variant, unpublished conclusion to bk. 4), 91 (new pp. 90-91; bk. 4:383-408; entitled here  Coming down upon Ambleside  and lines unnumbered; not indexed), 132 (new pp. 91-92; listed as  Joy, where is 97  in index, i.e., old p. 97), 91 (new pp. 92-96; bk. 4:101-261; not indexed), 133 (new p. 96; listed in index as  Bed 102,  i.e., old p. 102), 91 (new p. 97; bk. 4:262; not indexed), 134 (new p. 97; listed as  Eternal hills 103  in index, i.e., old p. 103), 136 (new p. 97; listed as  Fun 103  in index, i.e., old p. 103), 91 (new p. 98; bk. 4:264-326 [these lines numbered differently in the draft--i.e., 248-313--than in their final fair copy, whose numbering is cited here, for the sake of clarity; some of these lines indicated in this draft only by their opening words or by a note referring to where they will be found in some other manuscript]), 91 (new pp. 99-100r, 100v, and pp. 101-5 by later hand; 4:327-696 [numbered differently in this draft--i.e., 314-704--than their final numbering in fair copy; at line 382 (i.e., Ruskin’s line 376), there is a note to pick up lines 383-408 from earlier in MS VI:  from line 375 to line 401 at page ninety six --i.e., old p. 96, now new p. 90 with the section  Coming down upon Ambleside ), 91 (pp. 107-8 in new hand;  Notes  to  Iteriad,  book 1, scored through in draft).
+                    c) Pp. 130-32: index to MS VI. The index was constructed by listing letters of the alphabet equally spaced down the page; then the titles were entered in the spaces under the headings. This was done in ink, while in pencil on these pages and the following folio, 133-34, are some multiplication and addition exercises. These exercises accord with the lessons starting in 1831 that Ruskin is known to taken from Mr. Rowbotham ( sums are advancing in very good style,  Ruskin announced in January 1832,  addition subtraction multiplication and division,  but he thought Rowbotham’s instruction made up of  disagreeable et ceteras  and to be  a dry, and entertainmentless thing  [RFL 258, 268, and see 261 n. 11].) Also on p. 134 is a fragment of verse,  The [gem(?)] Oh [gemini(?) how monstrous pretty tale / Ah what a deal of trouble authors ye / Ye ladies Wayward fancie for to hit--. 
+                    d) Probably after the index was started on page 130, Ruskin used the preceding p. 129, working upside down and in the opposite direction to the rest of the book, for nos. 87, 88, and 90 (no. 90 dated 10 September 1830). No. 90 continues from p. 129 backwards to page 126.
+                    e) Various items are scattered throughout pages remaining in the space between c-d at the back of the manuscript and a-b coming from the front. Reading from the back, and upside down to text coming from front of book: On p. 124, a four-stanza poem,  The Brave Hussar.  This is copied, not in Ruskin’s hand, but possibly John James’s; in any case, the poem is signed by, or attributed to,  Eliza Andrews --probably the daughter of Edward Andrews, Ruskin’s tutor, who had a child by this name.
+                    On p. 123, a four-line fragment ( I think that the elements are contramacious / Such a huge disposition they showed for to splash us / For if we did but wish on some day to go out / That day they were sure to kick up such a rout ). This is headed  <4> 3rd book,  no doubt referring to  Iteriad.  The passage is scored through, and apparently it was not ultimately used.
+                        On pp. 110-11, rough pen-and-ink sketches for the Account of a Tour of the Continent, 1833, no. 180. The first shows a Swiss cottage and bridge, and the drawing is captioned  No. 1. Head [i.e., at the head of a poem or prose selection of no. 180, as fair-copied and illustrated in MS IX]. The Swiss Cottages.  Alongside this drawing is one of a gothic fountain, captioned  No 2. Tail. Swiss Cottages.  Following these is a rocky, narrow path alongside a cliff, with a horse and rider proceeding toward a distant town; captioned,  No. 1. Splugen. Head.  Enclosed in rules, between the first two and the third drawings, is a note (but no sketches) for  No 3 head, William tell from boys own book  and  No 4. tail. Tells tower at Altorf.  On the opposite page (p. 111), Ruskin drew a precipitous waterfall from high crags, captioned  Perhaps. No. 2. Tail. The descent.  Alongside this, another sketch (including stone arches) is not captioned and too fragmentary for identification.
+                        f) Much later in 1838(?), Ruskin used remaining blank spaces to compose no. 270. This essay begins on p. 112 and goes forward to p. 125 (working around the Eliza Andrews poem and  Iteriad  fragment in e); then, obstructed by no. 90 in d, Ruskin continued the essay on available blank pages 106, 108-9, 111. Ruskin numbered these pages in sequence, 1-18.
+                        
+                        
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Body paragraph.</p>
+                    Date of composition January 1830 through fall 1831; 1833-34; 1838(?).
+                    Contrary to earlier assumptions (see Dearden, ed., Iteriad, 22), this manuscript probably was not used during the summer tour of 1830, since poems associated with that tour (nos. 78-82, 84, and 85[?]) are not listed in Ruskin’s index to MS VI (see  Content,  a, below); however, the manuscript may have accompanied Ruskin on the summer tour of 1831 (see no. 91).
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    As Collingwood remarks, MS VI is a rough-copy book for  Iteriad  and for shorter poems, many of them copied into MS V. Unlike MS V, in which poems were fair-copied in an order regardless of their dates of composition, MS VI reveals a compositional sequence of poems--some lost with the removal of folios. The sequence starts with  Vesuvius,  which is the earliest item listed in Ruskin’s index. Since  Vesuvius  can be independently dated as February 1830, and some other titles in the index can also be dated from other sources, conjectural dates can be assigned to pieces based on their relative positions in the manuscript.
+                    Dates can be provisionally given even to titles of lost pieces, since their former positions are recorded in the index. Of course, we cannot be certain that Ruskin drafted the lost poems seriatim in the notebook, any more than we can assume that the extant poems form an undeviating sequence--and, as explained in  Description  above and in no. 91, Ruskin did at times skip backwards and fill unused spaces. In broad outline, however, the titles of lost poems indicate interests that absorbed Ruskin from early 1830 to late February or early March 1831, the period covered in the lost portion of MS VI.
+                    Throughout the notebook, shorter poems were interspersed with draft of  Iteriad,  no. 91. The index tells us that  Iteriad  itself started life as a shorter poem,  The Ascent of Skiddaw,  which would later become book 3 (see no. 91). The index cites p. 32 both for  Skiddaw  and for the first of a series of pages for  Iteriad.   Skiddaw  was drafted, judging by its indexed position, starting in late December 1830 or early January 1831, just following the lost piece  Revolution.  In MS VII Ruskin says he started  Iteriad  on November 28, 1830, either referring to MS VI and offsetting these calculations by just a month or referring to draft in another manuscript, now lost.
+                    <!--The Discussion section may contain all or only some of the following subsections.-->
+                    <div type="subsection">
+                        <head type="subsection">Hand</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Composition &#x0026; Sources</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Domestic Scene</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,2594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="places">
+        <fileDesc xml:id="places">
+            <titleStmt>
+                <title type="main">Places</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBT">Katrina Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-09-17">September 17, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Places Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="places">
+                <listPlace>
+                <!--The XML IDs included in the <place>s that follow should appear on the Names tab of the Regularization Crib Sheet and must be
+                    unique. It is recommended that places be listed alphabetically.-->
+                    <place type="settlement" xml:id="BLACKHEATH">
+                        <placeName>Blackheath</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">London</region>   
+                            <geo>55.05 -6.7</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 6.50 sq mi</desc>
+                            <desc>An area located in the Greenwich bourough of east London.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SHOOTERSHILL">
+                        <placeName>Shooter's Hill</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">London</region>   
+                            <geo>51.4692  0.06697</geo>
+                        </location>
+                        <terrain>
+                            <desc>An area located in the Greenwich bourough of east London.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DARTFORD">
+                        <placeName>Dartford</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">Kent</region>   
+                            <geo>51.44657	0.21423</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 28.10 sq mi</desc>
+                            <desc>Town in Kent&#x002C; England. Five miles from London. Located along the Thames River.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>    
+                    <place type="settlement" xml:id="ROCHESTER">
+                        <placeName>Rochester</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">Kent</region>   
+                            <geo>55.2752	-2.2649</geo>
+                        </location>
+                        <terrain>
+                            <desc>A Town in Kent&#x002C; England. Located 30 miles from London&#x002C; along River Medway.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SITTINGBOURNE">
+                        <placeName>Sittingbourne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">Kent</region>   
+                            <geo>51.34128	0.73282</geo>
+                        </location>
+                        <terrain>
+                            <desc>A town in Kent, England. Located 45 miles from London&#x002C; and 15 miles from Canterbury.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CANTERBURY">
+                        <placeName>Canterbury</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">Kent</region>   
+                            <geo>51.27904	1.07992</geo>
+                        </location>
+                        <terrain>
+                            <desc>City with its own government&#x002C; located in Kent.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DOVER">
+                        <placeName>Dover</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">Kent</region>   
+                            <geo>51.13333	1.3</geo>
+                        </location>
+                        <terrain>
+                            <desc>Major ferry port in Kent&#x002C; England accross the English Channel from Calais&#x002C; France.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CALAIS">
+                        <placeName>Calais</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Calais</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 12.9 sq mi</desc>
+                            <desc>A port city in France accross the English Channel from Dover.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ANDRES">
+                        <placeName>Andres</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Calais</region>   
+                            <geo>50.86556	1.92094</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 2.76 sq mi</desc>
+                            <desc>A village located in Calais.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LARECOUSE">
+                        <placeName>Larecouse</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Nord-Pas-de-Calais</region>
+                            <region type="department">Pas-de-Calais</region>   
+                            <geo>50.78416	1.93844</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Technically Licques. Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STOMER">
+                        <placeName>St. Omer</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Calais</region>   
+                            <geo>50.75	2.25</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 6.3 sq mi</desc>
+                            <desc>A large town located in Calais.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CASSEL">
+                        <placeName>Cassel</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Nord</region>   
+                            <geo>50.80109	2.48527</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 4.88 sq mi</desc>
+                            <desc>A town located in the Nord department of France.</desc>
+                        </terrain>
+                        <event type="departure" when="1833-05-17">
+                            <label>Left for Lille.</label>
+                        </event>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BAILLEUL">
+                        <placeName>Bailleul</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Nord</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 16.76 sq mi</desc>
+                            <desc>A town in the Nord department of France.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ARMENTIERES">
+                        <placeName>Armenti&#x00E8;res</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Nord</region>   
+                            <geo>50.68568	2.88214</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 2.42 sq mi</desc>
+                            <desc>A town located in France.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LILLE">
+                        <placeName>Lille</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Nord</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 13.4 sq mi</desc>
+                            <desc>A town located on the De&#x00FB;le River near the border of France.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="bridge" xml:id="PONTATRESSIN">
+                        <placeName>Le Pont &#x00E0; Tressin</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Nord</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>A bridge located outside of Tressin to the east&#x002C; in route to Tournai</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="TOURNAI">
+                        <placeName>Tournai</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Hainaut</region>   
+                            <geo>50.60715	3.38932</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 82.53 sq mi</desc>
+                            <desc>A Belgian city with the River Scheldt flowing through it.</desc>
+                        </terrain>
+                            <note>
+                                <p></p>
+                            </note>
+                    </place>
+                    <place type="settlement" xml:id="LEUZEENHAINAUT">
+                        <placeName>Leuze-en-Hainaut</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Hainaut</region>   
+                            <geo>50.6	3.6</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 28.39 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ATH">
+                        <placeName>Ath</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Hainaut</region>   
+                            <geo>50.62937	3.77801</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 49.02 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ENGHIEN">
+                        <placeName>Enghien</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Hainaut</region>   
+                            <geo>50.68373	4.03284</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 15.67 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HALLE">
+                        <placeName>Halle</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Flemish Brabant</region>   
+                            <geo>50.95	5.75</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 17.14 sq mi</desc>
+                            <desc>Located southwest of Brussels.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BRUSSELS">
+                        <placeName>Brussels</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Flemish Brabant</region>   
+                            <geo>50.85045	4.34878</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 12.59 sq mi</desc>
+                            <desc>Located southwest of Brussels.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LAEKEN">
+                        <placeName>Laeken</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Flemish Brabant</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Located within the city of Brussels.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WATERLOO">
+                        <placeName>Waterloo</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Walloon Brabant</region>   
+                            <geo>50.71469	4.3991</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 8.12 sq mi</desc>
+                            <desc>Cedar River runs directly through.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="GENAPPE">
+                        <placeName>Genappe</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Walloon Brabant</region>   
+                            <geo>50.61173	4.45152</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 34.58 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SOMBREFE">
+                        <placeName>Sombrefe</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Walloon Brabant</region>   
+                            <geo>50.52865	4.60087</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 13.81 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="NAMUR">
+                        <placeName>Namur</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Namur</region>   
+                            <geo>50.4669	4.86746</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 7.83 sq mi</desc>
+                            <desc>Where the Meuse River meets the Sambre River.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HUY">
+                        <placeName>Huy</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Liège</region>   
+                            <geo>50.51894	5.23284</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 18.43 sq mi</desc>
+                            <desc>Located along the Meuse River.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LIEGE">
+                        <placeName>Li&#x00E8;ge</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Liège</region>   
+                            <geo>50.63373	5.56749</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 26.79 sq mi</desc>
+                            <desc>Where the Meuse River meets the Ourthe River.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SPA">
+                        <placeName>Spa</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Liège</region>   
+                            <geo>50.48375	5.86674</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 15.39 sq mi</desc>
+                            <desc>Located in the Ardennes mountains&#x002C; south of Liège.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VERVIERS">
+                        <placeName>Verviers</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Liège</region>   
+                            <geo>50.58907	5.86241</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 12.77 sq mi</desc>
+                            <desc>Located half way between Liège and Germany.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="AIXLACHAPELLE">
+                        <placeName>Aix-la-Chapelle</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">North Rhine-Westphalia</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 62.10 sq mi</desc>
+                            <desc>Also know as Aachen. Border town of Germany.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="JULIERS">
+                        <placeName>Juliers</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">North Rhine-Westphalia</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 34.9 sq mi</desc>
+                            <desc>Also known Jülich. A Border town of Germany.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="COLOGNE">
+                        <placeName>Cologne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">North Rhine-Westphalia</region>   
+                            <geo>50.93333	6.95</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 156.43 sq mi</desc>
+                            <desc>The Rhine flows through its center.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="chruch" xml:id="STGEREON">
+                        <placeName>St. Gereon's Basilica</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">North Rhine-Westphalia</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>Roman Catholic Church located in Cologne.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BONN">
+                        <placeName>Bonn</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">North Rhine-Westphalia</region>   
+                            <geo>50.73438	7.09549</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 54.46 sq mi</desc>
+                            <desc>Located 14 miles from Cologne&#x002C; with The Rhine flowing through.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="GODESBERG">
+                        <placeName>Godesberg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">North Rhine-Westphalia</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 12.34 sq mi</desc>
+                            <desc>Bad Godesberg is a district located within Bonn, Germany. Contains the ruins of Godesberg.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="REMAGEN">
+                        <placeName>Remagen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>50.57879	7.22703</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 12.80 sq mi</desc>
+                            <desc>The Rhine flowing to the east.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ROLANDSECK">
+                        <placeName>Rolandseck</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>50.62932	7.2078</geo>
+                        </location>
+                        <terrain>
+                            <desc>Located within Remagen.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ANDERNACH">
+                        <placeName>Andernach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>50.43109	7.40425</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 20.55 sq mi</desc>
+                            <desc>South of Remagen along the Rhine River.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="COBLENTZ">
+                        <placeName>Coblentz</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>50.35357	7.57883</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 40.55 sq mi</desc>
+                            <desc>South of Andernach&#x002C; with the Rhine running through.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BOPPART">
+                        <placeName>Boppart</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 29.01 sq mi</desc>
+                            <desc>Lies along the Rhine&#x002C; north of St. Goar.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STGOAR">
+                        <placeName>St. Goar</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>50.14878	7.7072</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 8.85 sq mi</desc>
+                            <desc>Located along the middle of the Rhine.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BINGEN">
+                        <placeName>Bingen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>48.11127	9.27238</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 8.85 sq mi</desc>
+                            <desc>Located along and next to Hunsrück mountians.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MAINZ">
+                        <placeName>Mainz</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>49.98419	8.2791</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 37.74 sq mi</desc>
+                            <desc>Located where the Rhine meets the Main river.</desc>
+                        </terrain>
+                        <note>
+                            <p>Mayence</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WIESBADEN">
+                        <placeName>Wiesbaden</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo>50.08258	8.24932</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 78.7 sq mi</desc>
+                            <desc>Lies accross the Rhine from Mainz.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="FRANKFURT">
+                        <placeName>Frankfurt</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo>49.68333	10.53333</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 95.87 sq mi</desc>
+                            <desc>West of Wiesbaden&#x002C; with the Main running through its center.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LANGEN">
+                        <placeName>Langen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo>53.60554	8.59509</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DARMSTADT">
+                        <placeName>Darmstadt</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo>49.87167	8.65027</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BICKENBACH">
+                        <placeName>Bickenbach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HAPPENHEIM">
+                        <placeName>Happenheim</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WEINHEIM">
+                        <placeName>Weinheim</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>49.73763	8.06611</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HEIDELBERG">
+                        <placeName>Heidelberg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>48.31667	8.91667</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WIESLOCH">
+                        <placeName>Wiesloch</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BRUCHSAL">
+                        <placeName>Bruchsal</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="KARLSRUHE">
+                        <placeName>Karlsruhe</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>49.00937	8.40444</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>At the time "Carlsruhe".</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ETTLINGEN">
+                        <placeName>Ettlingen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BURSTADT">
+                        <placeName>Bürstadt</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BADEN">
+                        <placeName>Baden-Baden</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>53.00272	9.08593</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STOLSHOFEN">
+                        <placeName>Stolshofen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BISCHOFSHEIM">
+                        <placeName>Bischofsheim</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="KEHL">
+                        <placeName>Weinheim</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>49.03	11.01306</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STRASBOURG">
+                        <placeName>Strasbourg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Alsace</region>
+                            <region type="department">Bas-Rhin</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Visited before returning to Kehl, Germany.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="OFFENBURG">
+                        <placeName>Offenburg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>48.47377	7.94495</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BIBERACH">
+                        <placeName>Biberach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>49.1933	9.14428</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HAUSACH">
+                        <placeName>Hausach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>48.28426	8.17602</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HORNBERG">
+                        <placeName>Hornberg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>49.20793	9.99593</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SCHILTACH">
+                        <placeName>Schiltach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VILLINGEN">
+                        <placeName>Villingen-Schwenningen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DONAUESCHINGEN">
+                        <placeName>Donaueschingen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BLONBERG">
+                        <placeName>Blonberg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SCHAFFHAUSEN">
+                        <placeName>Schaffhausen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schaffhausen</region>   
+                            <geo>47.69732	8.63493</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CONSTANCE">
+                        <placeName>Konstanz</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Written as Constance.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="RORSCHACH">
+                        <placeName>Rorschach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">St. Gallen</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SARGENS">
+                        <placeName>Sargens</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">St. Gallen</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="COIRE">
+                        <placeName>Coire</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Graubünden</region>   
+                            <geo>46.84986	9.53287</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SPLUGEN">
+                        <placeName>Splügen Pass</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Graubünden</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VIAMALA">
+                        <placeName>Via Mala</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Graubünden</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SPLUGENVILLAGE">
+                        <placeName>Splügen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Graubünden</region>   
+                            <geo>46.5531	9.3231</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CHIAVENNA">
+                        <placeName>Chiavenna</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>46.32063	9.39816</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DOMASO">
+                        <placeName>Domaso</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>46.15284	9.3315</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CADENABBIA">
+                        <placeName>Cadenabbia</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>45.98861	9.23615</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="COMO">
+                        <placeName>Como</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>45.80998	9.08744</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MILAN">
+                        <placeName>Milan</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>45.59282	12.17278</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="PAVIA">
+                        <placeName>Pavia</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>45.18446	9.16145</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="NOVI">
+                        <placeName>Novi Ligure</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="GENOA">
+                        <placeName>Genoa</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Liguria</region>   
+                            <geo>44.41286	8.95729</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ALEXANDRIA">
+                        <placeName>Alexandria</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo>44.9	8.61</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Alessandria</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MARENGO">
+                        <placeName>Spinetta Marengo</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo>44.88859	8.67691</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through. Now called Piedmont.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="TURIN">
+                        <placeName>Turin</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo>45.21154	7.73357</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="NOVARA">
+                        <placeName>Novara</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ARONA">
+                        <placeName>Arona</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo>45.7589	8.55715</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ANGERA">
+                        <placeName>Angera</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VARESE">
+                        <placeName>Varese</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BORROMEANISLANDS">
+                        <placeName>Borromean Islands</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DOMODOSSOLA">
+                        <placeName>Duomo d'Ossola</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SIMPLONVILLAGE">
+                        <placeName>Simplon Village</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo>46.19451	8.05753</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STBERNARD">
+                        <placeName>Great St. Bernard Pass</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo>45.86898	7.17107</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Mountain pass. Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SION">
+                        <placeName>Sion</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MARTIGNY">
+                        <placeName>Martigny</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LIDDES">
+                        <placeName>Liddes</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo>45.99249	7.18729</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STBERNARDHOSPICE">
+                        <placeName>Great St. Bernard Hopsice</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>A hostel on the Great St. Bernard Pass. Pass-through, return?</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BEX">
+                        <placeName>Bex</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo>46.25214	7.01141</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CHILLONCASTLE">
+                        <placeName>Château de Chillon</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VEVEY">
+                        <placeName>Vevey</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo>46.46299	6.84345</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LAUSANNE">
+                        <placeName>Lausanne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MOUDON">
+                        <placeName>Moudon</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo>46.66947	6.80127</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="PAYERNE">
+                        <placeName>Payerne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo>46.82201	6.93608</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="FRIBOURG">
+                        <placeName>Fribourg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Fribourg</region>   
+                            <geo>46.80237	7.15128</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BERNE">
+                        <placeName>Berne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.94809	7.44744</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="THUN">
+                        <placeName>Thun</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.75118	7.62166</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="UNTERSEEN">
+                        <placeName>Unterseen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.6853	7.84722</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Called "Newhouse" in journal, referencing "Neuhaus". Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="INTERLAKEN">
+                        <placeName>Interlaken</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.68387	7.86638</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WORB">
+                        <placeName>Worb</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.92984	7.56306</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WALKRINGEN">
+                        <placeName>Walkringen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.94856	7.6204</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SOMMISWALD">
+                        <placeName>Sommiswald</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>47.02747	7.74526</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HUTWIL">
+                        <placeName>Hutwil</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>47.11502	7.86209</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SURSEE">
+                        <placeName>Sursee</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Lucerne</region>   
+                            <geo>47.17088	8.11113</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LUCERNE">
+                        <placeName>Lucerne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Lucerne</region>   
+                            <geo>47.05048	8.30635</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="KUSSNACHT">
+                        <placeName>Küssnacht</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo>47.08557	8.44206</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ARTH">
+                        <placeName>Arth</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo>47.06337	8.52349</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 16.25 sq mi</desc>
+                            <desc>Located on the shore of Lake Zug between Righi and Rossberg</desc>
+                        </terrain>
+                        <note>
+                            <p>Where tourist gather to ascend Mount Righi</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="RIGI">
+                        <placeName>Rigi</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schwyz and Lucerne</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 16.25 sq mi</desc>
+                            <desc>Located on the shore of Lake Zug between Righi and Rossberg</desc>
+                        </terrain>
+                        <note>
+                            <p>Visit.</p>
+                        </note>
+                    </place>
+                    <place type="mountain" xml:id="STAFFEL">
+                        <placeName>Staffel</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo>46.9279	8.47668</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length:</desc>
+                            <desc>Mountain summit in Alps.</desc>
+                        </terrain>
+                        <note>
+                            <p>To visit Giesbach Falls.</p>
+                        </note>
+                    </place>
+                    <place type="mountain" xml:id="KULM">
+                        <placeName>Kulm</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length:</desc>
+                            <desc>Mountain summit in Alps.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SCHWYZ">
+                        <placeName>Schwyz</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo>47.02076	8.65414</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 20.56 sq mi</desc>
+                            <desc>Located along Lake Lauerz, and contains mountains Kleiner Mythen and Grosser Mythen.</desc>
+                        </terrain>
+                        <note>
+                            <p>Stay at Einsiedeln.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="EINSIEDELN">
+                        <placeName>Einsiedeln</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 38.24 sq mi</desc>
+                            <desc>47.12849	8.74735</desc>
+                        </terrain>
+                        <note>
+                            <p>Stay at Einsiedeln Abbey.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="RAPPERSWYL">
+                        <placeName>Rapperswyl</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">St. Gallen</region>   
+                            <geo>47.22557	8.82228</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 0.67 sq mi</desc>
+                            <desc>Along Lake Zurich.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ZURICH">
+                        <placeName>Zurich</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Zurich</region>   
+                            <geo>47.36667	8.55</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 33.93 sq mi</desc>
+                            <desc>Where the Limmat river flows into Lake Zurich.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SWISSBADEN">
+                        <placeName>Baden</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Aargau</region>   
+                            <geo>47.47333	8.30592</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 5.09 sq mi</desc>
+                            <desc>The Lamat river flows along side.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STEIN">
+                        <placeName>Stein am Rhein</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Aargau</region>   
+                            <geo>47.65933	8.85964</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 2.22 sq mi</desc>
+                            <desc>The Rhine flows through.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="RHEINFEL">
+                        <placeName>Rheinfel</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Aargau</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Rheinfelden</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BASEL">
+                        <placeName>Basel</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Basel-Stadt</region>   
+                            <geo>47.55839	7.57327</geo>
+                        </location>
+                        <terrain>
+                            <desc>Lenth: 9.23 sq mi</desc>
+                            <desc>Located along the Rhine.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SOLEURE">
+                        <placeName>Soleure</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Solothurn</region>   
+                            <geo>47.20791	7.53714</geo>
+                        </location>
+                        <terrain>
+                            <desc>Lenth: 2.42 sq mi</desc>
+                            <desc>Located along the Rhine.</desc>
+                        </terrain>
+                        <note>
+                            <p>Solothurn. Located along the Aar river within the Jura mountains.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BIENNE">
+                        <placeName>Bienne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>47.13713	7.24608</geo>
+                        </location>
+                        <terrain>
+                            <desc>Lenth: 8.20 sq mi</desc>
+                            <desc>Lies at the foot of the Jura Mountains.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="NEUFCHATEL">
+                       <placeName>Neufchatel</placeName>
+                       <location>
+                           <bloc type="continent">Europe</bloc>
+                           <country>Switzerland</country>
+                           <region type="canton">Neuchatel</region>   
+                           <geo>46.99179	6.931</geo>
+                       </location>
+                       <terrain>
+                           <desc>Length: 7.0 sq mi</desc>
+                           <desc>Located on Lake Neuchatel within the Jura Mountains.</desc>
+                       </terrain>
+                       <note>
+                           <p></p>
+                       </note>
+                   </place>
+                   <place type="settlement" xml:id="YVERDON">
+                       <placeName>Yverdon</placeName>
+                       <location>
+                           <bloc type="continent">Europe</bloc>
+                           <country>Switzerland</country>
+                           <region type="canton">Vaud</region>
+                           <geo>46.77852	6.64115</geo>
+                       </location>
+                       <terrain>
+                           <desc>Length: 4.36 sq mi</desc>
+                           <desc>South of Neuchatel. Surrounded with very low marshy and lately drained lands - stunted willows - large flat fields surrounded with poplars and long avenues for promenades.</desc>
+                       </terrain>
+                       <note>
+                           <p>Iverdon</p>
+                       </note>
+                   </place>
+                   <place type="settlement" xml:id="ORGES">
+                       <placeName>Orges</placeName>
+                       <location>
+                           <bloc type="continent">Europe</bloc>
+                           <country>Switzerland</country>
+                           <region type="canton">Vaud</region>
+                           <geo>46.80927	6.58348</geo>
+                       </location>
+                       <terrain>
+                           <desc>Length: 1.55 sq mi</desc>
+                           <desc>Farming area.</desc>
+                       </terrain>
+                       <note>
+                           <p></p>
+                       </note>
+                   </place>
+                   <place type="settlement" xml:id="MORGES">
+                       <placeName>Morges</placeName>
+                       <location>
+                           <bloc type="continent">Europe</bloc>
+                           <country>Switzerland</country>
+                           <region type="canton">Vaud</region>
+                           <geo>46.51127	6.49854</geo>
+                       </location>
+                       <terrain>
+                           <desc>Length: 1.49 sq mi</desc>
+                           <desc>Adjacent to Lake Geneva. A town with "fine trees giving to many parts the appearance of a grand park."</desc>
+                       </terrain>
+                       <note>
+                           <p></p>
+                       </note>
+                   </place>
+                    <place type="settlement" xml:id="GENEVA">
+                        <placeName>Geneva</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Geneva</region>
+                            <geo>46.20222	6.14569</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 6.15 sq mi</desc>
+                            <desc>Cloth in Vegetation. Rhone River flows through town&#x002C; split into two with houses built on island between.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BONNEVILLE">
+                        <placeName>Bonneville</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Haute-Savoie</region>
+                            <geo>50.08223	2.24927</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 10.48 sq mi</desc>
+                            <desc>Half way between Geneva and Chamouni.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STMARTIN">
+                        <placeName>St. Martin</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department"></region>
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place> 
+                    <place type="settlement" xml:id="SALLANCHES">
+                        <placeName>Sallanches</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Haute-Savoie</region>
+                            <geo>45.94423	6.63162</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 25.43 sq mi</desc>
+                            <desc>Located in the Arve valley.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CHAMOUNI">
+                        <placeName>Chamonix-Mont-Blanc</placeName>
+                        <location>
+                            <bloc type="countinent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Haute-Savoie</region>
+                            <geo>45.92375	6.86933</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 94.77 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="glacier" xml:id="MONTANVERT">
+                        <geoName>Mer de Glace</geoName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Haute-Savoie</region>
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 4.3 mi</desc>
+                            <desc>Located in Chamouni valley in the Mont Blanc massif.</desc>
+                        </terrain>
+                        <note>
+                            <p>Mont Anvert</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="NANTUA">
+                        <placeName>Nantua</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Ain</region>
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 4.94 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LYONS">
+                        <placeName>Lyons</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Rhône</region>
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 18.48 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VILLEFRANCHE">
+                        <placeName>Villefranche</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Rhône</region>
+                            <geo>47.93333	3.13333</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Technically Villefranche-sur-Saône. Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MACON">
+                        <placeName>Macon</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Burgundy</region>
+                            <region type="department">Saône-et-Loire</region>
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 10.44 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CHALONS">
+                        <placeName>Chalons-sur-Saône</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Burgundy</region>
+                            <region type="department">Saône-et-Loire</region>
+                            <geo>47.22311	6.11682</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 5.88 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DIJON">
+                        <placeName>Dijon</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Burgundy</region>
+                            <region type="department">Côte-d'Or</region>
+                            <geo>47.31667	5.01667</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 15.60 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="AUXERRE">
+                        <placeName>Auxerre</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Burgundy</region>
+                            <region type="department">Yonne</region>
+                            <geo>47.8	3.56667</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 19.29 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SENS">
+                        <placeName>Sens</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Burgundy</region>
+                            <region type="department">Yonne</region>
+                            <geo>48.2	3.28333</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 10.76 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="FONTAINBLEAU">
+                        <placeName>Fontainbleu</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Île-de-France</region>
+                            <region type="department">Seine-et-Marne</region>
+                            <geo>48.4	2.7</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 66.43 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="PARIS">
+                        <placeName>Paris</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Île-de-France</region>
+                            <region type="department">Paris</region>
+                            <geo>48.85341	2.3488</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 40.7 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CHANTILLY">
+                        <placeName>Chantilly</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Picardy</region>
+                            <region type="department">Oise</region>
+                            <geo>49.19461	2.47124</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 6.25 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="AMIENS">
+                        <placeName>Amiens</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Picardy</region>
+                            <region type="department">Somme</region>
+                            <geo>49.9	2.3</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 19.10 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MONTREUIL">
+                        <placeName>Montreuil</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Lle-de-France</region>
+                            <region type="department">Seine-Saint-Denis</region>
+                            <geo>50.46667	1.76667</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 3.44 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p>Technically Montreuil-sur-Bois.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BOULOGNE">
+                        <placeName>Boulogne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Nord-Pas-de-Calais</region>
+                            <region type="department">Pas-de-Calais</region>
+                            <geo>46.79346	-1.3194</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 3.25 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p>Technically Boulogne-sur-Mer. Pass-through.</p>
+                        </note>
+                    </place>
+                    <!--Next <place>-->
+                    <!--Next <place>-->
+                    <!--Next <place>-->
+                </listPlace>
+            </div>
+        </body>
+    </text>
+</TEI>

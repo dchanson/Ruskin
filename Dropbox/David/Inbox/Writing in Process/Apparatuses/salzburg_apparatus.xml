@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
+            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
+        <fileDesc xml:id="title_of_work_apparatus">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="apparatus">
+                <head type="title">&#x201C;Title of Work&#x201D;</head>
+                <!--An apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>"Salzburg," October-December, MS VIII; printed PJR 1:238-39, Works 2:441-43.</p>
+                </div>
+                <div type="section" xml:id="GENRE">
+                    <head type="section">Genre</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="MAJORMS">
+                    <head type="section">Manuscripts</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="COMPPUB">
+                    <head type="section">Composition &#x0026; Publication</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <p>According to Cook and Wedderburn, no manuscript is extant of the final version of this poem as it was published in Friendship's Offering, 
+                        although MS VIII contains a considerably different first version, which they reprint in a note. 
+                        (The editors, incidentally, refer to the “Friendship’s Offering for 1835" [Works 2:441 n.], but the annual for 1836 must be intended--i.e., 
+                        the volume ready by Christmas 1835.) This draft initiates the material in MS VIII related to the Continental tour of 1835 
+                        (see app A, MS VIII, “Content,” [e]).  For most of the tour, Ruskin's attention had been directed at geology, which he discussed in his prose diary no. 202, 
+                        but the diary notes abruptly end in late September.  He must have turned to poetry during the remaining few months of the tour--the family visiting Salzburg in mid-October--since "Salzburg" was ready to be published at the end of 1835 in a gift annual, which also included excerpts from no. 180.  Presumably, Ruskin was carrying MS VIII with him (though it contains no draft for no. 203), and he and John James were in correspondence with the editor of Friendship's Offering, Thomas Pringle, since the family did not return to Herne Hill until December. Indeed, the draft, “barely legible” as Cook and Wedderburn remark, may reflect the bustle and inconveniences of travel; the inks vary considerably in this section. See no. 209 for further commentary on the difficulty of dating the work of late 1835.
+                        Untitled in MS VIII.
+                        .</p>
+                    <p>Body paragraph containing a list:
+                        <list type="ordered">
+                            <item n="1">First item in the list.</item>
+                            <item n="2">Second item.</item>
+                            <item n="3">Third item.</item>
+                        </list>
+                    </p>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="TEXTUALNOTE">
+                    <head type="section">Textual Note</head>
+                    <p>Body paragraph.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

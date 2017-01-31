@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="wales_am">
+            <titleStmt>
+                <title type="main">"Wales"</title>
+                <title type="sub">Electronic Text Generated from the Published Witness in Atlantic Monthly 94 (August 1904), 164</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#CEN">Charles Eliot Norton</persName><!--Correction needed here? See below.-->
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName></principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName corresp="#TJI">Terri J. Ilgen</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#CNW">Casey N. White</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-13">January 13, 2015</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>John Ruskin</author>
+                        <title>"Wales"</title>
+                        <ref></ref>
+                    </analytic>
+                    <analytic>
+                        <editor>
+                            <persName corresp="#CEN">Charles Eliot Norton</persName>
+                        </editor>
+                        <title type="main">Letters of John Ruskin</title>
+                        <title type="sub">IV: 1868-1872</title>
+                    </analytic>
+                    <monogr>
+                        <title>The Atlantic Monthly</title>
+                        <imprint>
+                            <biblScope type="vol">94</biblScope>
+                            <date when="1904-08">August 1904</date>
+                            <biblScope type="pages">161-70</biblScope>
+                            <biblScope type="page">164</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct><!--Is this entry necessary? If yes, should the <editor> above be expanded?-->
+                    <analytic>
+                        <author>John Ruskin</author>
+                        <title>"Wales"</title>
+                        <ref></ref>
+                    </analytic>
+                    <monogr>
+                        <editor>
+                            <persName corresp="#ETC">E. T. Cook</persName>
+                        </editor>
+                        <editor>
+                            <persName corresp="#AW">Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <title type="sub">Library Edition</title>
+                        <imprint>
+                            <biblScope type="vol">36</biblScope>
+                            <date notBefore="1903" notAfter="1912">1903-12</date>
+                            <biblScope type="pages">2</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc><!--New element.-->
+            <metDecl>
+                <metSym value="+">metrical prominence</metSym>
+                <metSym value="-">metrical non-prominence</metSym>
+                <metSym value="|">foot boundary</metSym>
+                <metSym value="/">metrical line boundary</metSym>
+            </metDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem">
+                <head type="title"><hi rend="caps">Wales</hi></head>
+                <lg type="stanza" met="-+|-+|-+|-+|-+" rhyme="abab">
+                    <l>That rock with waving willows on its side</l>
+                    <l>That hill with beauteous forests on its top</l>
+                    <l>That stream that with its rippling waves doth glide</l>
+                    <l>And oh what beauties has that mountain got<ref type="gloss" target="wales_glosses_contextual.php#LINE4STANZABREAK"/></l>
+                </lg>
+                <lg type="stanza" met="-+|-+|-+|-+" rhyme="abbcc">
+                    <l>That rock stands high against the sky</l>
+                    <l>Those trees stand firm upon the rock</l>
+                    <l>and seem as if they all did lock</l>
+                    <l>Into each other; tall they stand</l>
+                    <l met="+-|-+|-+|-+">Towering above the whitened land.</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

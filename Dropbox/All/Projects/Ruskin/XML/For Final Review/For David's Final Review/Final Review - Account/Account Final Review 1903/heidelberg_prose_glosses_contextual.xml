@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="heidelberg_prose_glosses_contextual">
+            <titleStmt>
+                <title type="main">"Heidelberg" [prose]</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses" subtype="contextual">
+                <note xml:id="BEAUTIFULPATHS" resp="#DCH"><p><hi rend="bold">&#x201C;Most beautiful are the paths which scale the face of the hill which is crowned by the 
+                    <placeName type="building" corresp="#HEIDELBERGCASTLE">castle of Heidelberg</placeName>&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="manuscript" corresp="#MSIX">MS IX</title>; 
+                    <hi rend="italic">Works</hi> [<date when="1903">1903</date>])&#x2014;</hi><persName corresp="#FMT">Frances Trollope</persName> (<date notBefore="1769" notAfter="1863">1779&#x2013;1863</date>), 
+                    traveling in the same year as did the Ruskins, explained that "there are two approaches to the castle; one, by a fair smooth path, sheltered by noble trees, 
+                    and gradually leading above the tops of those which grow on the hill-side, till at length the level space behind the castle and in front of the great gateway is reached; 
+                    the other is by a steep flight of steps into the very heart of the fortress, through a vast, subterranean, vaulted hall. . . . Take which route you will, 
+                    there is no danger of the highest-wrought expectations being disappointed. By the first, you will wind round the base of towers, which look as if a giant architect 
+                    had reared them for a giant prince . . .  and both lead to a terrace, from whence a view is seen, so much beyond what the power of words can paint, 
+                    that all the most faithful traveller can say, to any purpose, on the subject is, 'Go, all, with as little delay as possible, and look at it.' . . . 
+                    On reaching the esplanade, before the chief entrance, you have no very extended view; for the lofty summit of the Geissberg is on one side, 
+                    and the wide-spreading castle on the other; but, on passing under this portal, and crossing the court-yard, you reach another archway, 
+                    which leads to the grand north terrace, acknowledged to be one of the finest points of view in Europe" 
+                    (<ref type="bibliography" target="bibliography.php#TROLLOPEBELGIUM">Trollope, <hi rend="italic">Belgium and Western Germany in 1833</hi></ref>, 1:262-63).</p></note>
+
+                <note xml:id="BRAKE" resp="#DCH"><p>&#x201C;brake&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="manuscript" corresp="#MSIX">MS IX</title>; 
+                    <hi rend="italic">Works</hi> [<date when="1903">1903</date>])&#x2014;bracken.</p></note>
+                
+                <note xml:id="EMBOUCHURE" resp="#DCH"><p><hi rend="bold">&#x201C;embouchure&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <hi rend="italic">Works</hi> [<date when="1903">1903</date>])&#x2014;</hi>"The mouth of a river or creek. 
+                    Also <hi rend="italic">transf</hi>.," as Ruskin is using the word here, "the opening out of a valley into a plain" 
+                    (&#x201C;embouchure, 1.&#x201D; <hi rend="italic">OED Online</hi>, accessed <date when="2015-01-16">16 January 2015</date>).</p></note>
+                
+                <note xml:id="DESOLATE" resp="#DCH"><p><hi rend="bold">&#x201C;The <placeName type="building" corresp="#HEIDELBERGCASTLE">castle of Heidelberg</placeName> is exceeding desolate. 
+                    Armies have razed its foundations, the thunder hath riven its towers and there is no sound in its courts, and the wind is still in the open galleries&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <hi rend="italic">Works</hi> [<date when="1903">1903</date>])&#x2014;</hi>In 
+                    his <date when="1836">1836</date> guidebook to the <geogName corresp="#CONTINENT">Continent</geogName>, <persName corresp="#JM">John Murray</persName> 
+                    introduces his account of Heidelberg with the reminder that "[f]ew cities in Europe have experienced to a greater extent, or more frequently, the horrors of war, 
+                    than the ill-starred Heidelberg. Previous to the Thirty Years' War, it displayed in its buildings all the splendour arising from nourishing commerce 
+                    and the residence of the Court of the Electors Palatine of the Rhine. It has been five times bombarded, twice laid in ashes, 
+                    and thrice taken by assault and delivered over to pillage." Of the castle in particular, Murray wonders at the "architectural magnificence which it still displays, 
+                    after having been three times burnt, and having ten times experienced the horrors of war. Its final destruction was owing to its having been struck by lightning 
+                    in 1764: and since the total conflagration which ensued, it has never been restored or tenanted. It is at present only, a collection of red stone walls, 
+                    and has remained roofless for nearly a century" 
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand&#x2010;book for Travellers on the Continent</hi></ref>, 430, 432).</p></note>
+                
+                <note xml:id="TURENNE" resp="#DCH"><p><hi rend="bold">&#x201C;When <persName corresp="#TURENNE">Marshall Turenne</persName> attacked the castle in question&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <hi rend="italic">Works</hi> [<date when="1903">1903</date>])&#x2014;</hi>The larger context lay in the 
+                    wars waged by Louis XIV (1638-1715) to secure borders and achieve glory in the aftermath of the declining Hapsburg empire, divided between the Spanish and German lines. 
+                    One border was threatened by the Spanish Netherlands; to guard against its southward flowing rivers, France maintained a series of fortresses. 
+                    Another border was the Rhine and Moselle valleys. While French control over Alsace remained as a legacy of the Thirty Years' War, 
+                    and the diplomacy of Louis's boyhood minister, Cardinal Mazarin (1602-61), made an alliance with neutral German states that countered the rival Hapsburg influence 
+                    of the Holy Roman Emperor, Leopold I (1640-1705), Louis abandoned Mazarin's diplomacy and sought to secure this border militarily 
+                    (<ref type="bibliography" target="bibliography.php#LYNNWARSOFLOUISXIV">Lynn, <hi rend="italic">The Wars of Louis XIV</hi></ref>, 1-16).</p>
+                    
+                    <p>The second of Louis's wars for glory, the Dutch War (1672-78), formed the context of the actions by Henri de la Tour d'Auvergne, Vicomte Turenne, the marshall of France (1611-75), 
+                    to whom Ruskin refers. In a prior conflict, the War of Devolution (1667-68), Louis laid claim to parts of the Spanish Netherlands on the grounds that these holdings "devolved" 
+                    on his Spanish queen. To the north, although the Dutch Republic had been warring with the English navy, the Republic, alarmed by Louis's aggression, 
+                    signed a Triple Alliance with Britain and Sweden. Louis regarded the alliance as a betrayal by a longtime ally against Spain, which he avenged by launching the Dutch War, 
+                    meantime undermining the alliance with a secret treaty with the king of England, Charles II (1630-85). English troops including the young 
+                    John Churchill, the future duke of Marlborough (1650-1722), joined the French assault on the Dutch, 
+                    with Churchill distinguishing himself in the successful breach of the Dutch fortress of Maastricht. 
+                    In 1674, the English Parliament finally forced Charles II to make peace with the Dutch Republic, motivated both by mercantile interests and by sympathy for Protestant Holland. 
+                    Some English troops under Churchill's command of remained with the French, however, and they joined with the army led by Turenne, 
+                    which was stationed in Alsace and the Palatinate
+                    (<ref type="bibliography" target="bibliography.php#LYNNWARSOFLOUISXIV">Lynn, <hi rend="italic">The Wars of Louis XIV</hi></ref>, 105-22).</p>
+                    
+                    <p>Louis's attention turned to the German theater in order to protect Alsace while, if possible, capturing Franche-Comt&#x00E9; to the south, 
+                    along the Savoyard and Swiss border, which he also treated as a Spanish Hapsburg inheritance owing to him. As Leopold I, in alliance with the Dutch, 
+                    turned Imperial forces against Louis, the formerly neutral and Protestant Palatinate grew more hostile to France than they had resented domination by the Empire, 
+                    owing to Turenne's occupation. In June 1674, Turenne led a battle against Imperial forces up to the gates of Heidelberg, the seat of the Elector of the Palatinate; 
+                    and in the subsequent summer months he laid waste to the Neckar valley overlooked by Heidelberg Castle, supplying his troops and burning villages that refused to cooperate 
+                    (<ref type="bibliography" target="bibliography.php#LYNNWARSOFLOUISXIV">Lynn, <hi rend="italic">The Wars of Louis XIV</hi></ref>, 122-35).</p>
+                    
+                    <p>At the onset of the Nine Years' War (1688-97), the suffering of the Palatinate again became a symbol of the perceived ruthlessness of the French. 
+                    In the year that Louis's old enemy, William of Orange and Stadtholder of the Dutch Republic, took the place of his father in law, James II, 
+                    as king of England, Louis took defensive measures against the Dutch-Imperial alliance by adopting a scorched-earth campaign in the Palatinate so that an enemy army 
+                    would be unable to support itself in the region. While the brutal destruction was not unique in Louis's wars, 
+                    it was "the devastation of the Palatinate that burned itself into the European conscience," 
+                    according to a modern historian, to become "one of the influences that inspired Europeans to try to make the conduct of war more restrained and humane in the eighteenth century 
+                    (<ref type="bibliography" target="bibliography.php#LYNNWARSOFLOUISXIV">Lynn, <hi rend="italic">The Wars of Louis XIV</hi></ref>, 199, and see 191-99).</p>
+                    
+                    <p>As an example of English feeling about what the desolation of the Palatinate and Heidelberg Castle represented, here is <persName corresp="#JM">John Murray</persName>'s 
+                    guidebook description from 1836 of the repeated attacks on the castle: 
+                    "In 1674, the Elector, Charles Louis [1617-80], incurred the displeasure of Louis XIV; and a French army, under Turenne, was in consequence let loose 
+                    upon the Palatinate, carrying slaughter and desolation before them. The Elector beheld with distress, from the castle in which he had shut himself up, 
+                    the inroads of foreign troops, and flame and smoke rising up along the plain from burning towns and villages. Unable to oppose the French with equal force 
+                    at the head of an army, but anxious to avenge the wrongs of his country, he resolved, in a spirit which some may deem Quixotic, others chivalrous, 
+                    to endeavour to end the contest with his own sword; and accordingly he sent a cartel to Marshal Turenne, challenging him to single combat. 
+                    The French general returned a civil answer, hut did not accept it. The ambition of Louis XIV led him, on the death of the Elector, to lay claim to the Palatinate 
+                    on behalf of [his younger brother,] the Duke of Orleans [1640-1701, whose second marriage was to the daughter of Elector Charles Louis], 
+                    and another French army, more wicked than the first, was marched across the Rhine. 
+                    Heidelberg was taken and burnt, 1688 [the onset of the Nine Years' War], by [Compte de] Melac [1630-1704], a general whose brutality and cruelty surpassed that 
+                    of [the Count of] Tilly [1559-1632, known for the sacking and massacre of the Protestant German city of Magdeburg in 1631, during the Thirty Years' War]. 
+                    But it was at the following siege under [the Marquis de] Chamilly [1636-1715], in 1693, that it was reserved for the French to display the most merciless tyranny, 
+                    and practise excesses worthy of fiends rather than men, upon the town and its inhabitants, paralleled only in the French Revolution, 
+                    and which will ever render the name of Frenchman odious in the Palatinate. The castle was betrayed through the cowardice or treachery of the governor, 
+                    with the garrison, and many of the townspeople who had fled to it for refuge. The cruelty of the treatment they met with was, in this instance, 
+                    heightened by religious intolerance, and no mercy was shown to the Protestants. On this occasion the castle was entirely destroyed" 
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand&#x2010;book for Travellers on the Continent</hi></ref>, 430).</p></note>
+                
+                <note xml:id="CELEBRATEDBUTT" resp="#DCH"><p><hi rend="bold">&#x201C;And the celebrated butt sounds mournfully hollow&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <hi rend="italic">Works</hi> [<date when="1903">1903</date>])&#x2014;</hi>The giant Heidelberg Tun, 
+                    "the largest wine cask in the world, being capable of holding 800 hogsheads, 283,200 bottles, which is less, after all, than the dimensions of the porter vat 
+                    of a London brewer. In former days, when the Tun was filled with the produce of the vintage, it was usual to dance on the platform on the top. 
+                    It has, however, remained empty since 1769, more than half a century" 
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand&#x2010;book for Travellers on the Continent</hi></ref>, 432-33).</p></note>
+                
+                <note xml:id="VINUM" resp="#DCH"><p><hi rend="bold">&#x201C;vinum&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <hi rend="italic">Works</hi> [<date when="1903">1903</date>])&#x2014;</hi>wine (Lat.).</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>

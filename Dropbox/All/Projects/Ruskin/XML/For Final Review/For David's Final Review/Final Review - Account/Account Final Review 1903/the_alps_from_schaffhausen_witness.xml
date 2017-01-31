@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="the_alps_from_schaffhausen_witness">
+            <titleStmt>
+                <title type="main">The Alps from Schaffhausen</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#">E. T. Cook and Alexander Wedderburn</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>E. T. Cook and Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <imprint>
+                            <biblScope type="vol">2</biblScope>
+                            <biblScope type="edition">Library<hi rend="superscript"></hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1903">1903</date>
+                            <biblScope type="pages">xxiii<!--I don't know what goes here?--></biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title">The <geogName corresp="#ALPS">Alps</geogName> from <placeName corresp="#SCHAFFHAUSEN">Schaffhausen</placeName><hi rend="superscript">2</hi>
+                   <name><persName corresp="#JR">by John Ruskin</persName></name></head> 
+                
+                <l>There is a charmed peace that aye </l>
+                <l>Sleeps upon the Sabbath day, </l>
+                <l>A rest around and a calm on high, </l>
+                <l>Though a still small voice speaks from earth and sky: </l>
+                <l>&#x201C;Keep holy the Sabbath day, </l>
+                <l>Sleep it holy ever alway.&#x201D; </l>
+                <l>Sabbath morn was soft and shroudless; </l>
+                <l>Sabbath noon was calm and cloudless; </l>
+                <pb/>
+                <l>Sabbath eve is sinking low </l>
+                <l>O&#x02BC;er the blue <geogName corresp="#RHINE">Rhine&#x02BC;s</geogName> sullen flow. </l>
+                <l>He has worn a prisoned way </l>
+                <l>&#x02BC;Neath the round hills&#x02BC; bending sway. </l>
+                <l>Far and near their sides you see </l>
+                <l>Gay with vivid greenery. </l>
+                <l>Many a branch and bough is bending </l>
+                <l>O&#x02BC;er the grey rocks, grim impending. </l>
+                <l>Danced the leaves on the bent twigs high, </l>
+                <l>Skeleton like on the evening sky. </l>
+                <l>And the oaks threw wide their jagged spray </l>
+                <l>On their old, straight branches mossed and grey, </l>
+                <l>And the foam drove down on the water&#x02BC;s hue </l>
+                <l>Like a wreath of snow on the sapphire&#x02BC;s blue. </l>
+                <l>And a wreath of mist curled faint and far, </l>
+                <l>Where the cataract drove his dreadful war. </l>
+                <l>The <geogName corresp="#ALPS">Alps</geogName>! the <geogName corresp="#ALPS">Alps</geogName>!&#x2014;it is no cloud<hi rend="superscript">1</hi> </l>
+                <l>Wreathes the plain with its paly shroud! </l>
+                <l>The <geogName corresp="#ALPS">Alps</geogName>! the <geogName corresp="#ALPS">Alps</geogName>!&#x2014;Pull far away </l>
+                <l>The long successive ranges lay. </l>
+                <l>Their fixed solidity of size </l>
+                <l>Told that they were not of the skies. </l>
+                <l>For could that rosy line of light,</l>
+                <l>Of unimaginable height,&#x2014;</l>
+                <l>The moony gleam, so far that threw </l>
+                <l>Its fix&#x00E8;d flash above the blue </l>
+                <l>Of the far hills and <geogName corresp="#MONTRIGI">Rigi</geogName>&#x02BC;s crest </l>
+                <l>Yet russet from the flamy west,&#x2014;</l>
+                <l>Were they not clouds, whose sudden change </l>
+                <l>Had bound them down, an icy range?&#x2014;</l>
+                <l>Was not the wondrous battlement </l>
+                <l>A thing of the domy firmament? </l>
+                <l>Are they of heaven, are they of air? </l>
+                <l>Or can earth bring forth a thing so fair? </l>
+                <l>There&#x02BC;s beauty in the sky&#x2010;bound sea, </l>
+                <l>With its noble sweep of infinity: </l>
+                <l>There&#x02BC;s beauty in the sun&#x02BC;s last fire, </l>
+                <l>When he lighteth up his funeral pvre: </l>
+                <l>There is loveliness in the heaven&#x02BC;s hue, </l>
+                <l>And there&#x02BC;s beauty in the mountain&#x02BC;s blue; </l>
+                <l>But look on the <geogName corresp="#ALPS">Alps</geogName> by the sunset quiver </l>
+                <l>And think on the moment thenceforward for ever!<hi rend="superscript">2</hi></l>
+                
+                <p><hi rend="superscript">2</hi> [&#x201C;See <emph>Pr&#x00E6;terita</emph>, i. ch. vi. § 132. &#x2018;It was past midnight when we reached her 
+                    closed gates,&#x2019; etc. The whole tour is well re&#x2010;told in <emph>Pr&#x00E6;terita;</emph> and the two accounts 
+                    are worth comparing, written as they are at an interval of more than fifty years apart, 
+                    &#x2014;the one in verse and the other in prose,&#x2014;and the latter with a power of recollective 
+                    imagination resembling that of Turner.&#x201D;&#x2014;<emph>Editor&#x02BC;s Note,</emph> <date when="1891">1891</date>. The first eight lines of 
+                    this passage were omitted in the ed. of <date when="1891">1891</date>.]</p>
+                    
+                <p><hi rend="superscript">1</hi> [For the first sight of the <geogName corresp="#ALPS">Alps</geogName>, here told in verse, see <emph>Pr&#x00E6;terita</emph>, i. ch. vi. § 134: 
+                    &#x201C;There was no thought in any of us for a moment of their being clouds,&#x201D; etc.] </p>
+                    
+                <p><hi rend="superscript">2</hi> [<persName corresp="#JR">Ruskin</persName> was faithful throoghout life to this instruction of his boyhood. That 
+                    evening on the garden&#x2010;terrace of <placeName corresp="#SCHAFFHAUSEN">Schaffhausen</placeName> fixed, he said, his destiny: &#x201C;To that 
+                    terrace ... my heart and faith return to this day&#x201D; (<emph>Pr&#x00E6;terita</emph>, i. ch. vi. § 136).] </p>
+           </div>
+        </body>
+    </text>
+</TEI>

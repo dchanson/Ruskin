@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject MANUSCRIPT followed by "apparatus", for example,
+            "msi_apparatus". The xml:id also corresponds with its XML file's name, for example, "msi_apparatus.xml".-->
+        <fileDesc xml:id="title_of_manuscript_apparatus">
+            <titleStmt>
+                <title type="main">Title of Manuscript</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>            
+    <text>
+        <body>
+            <div type="apparatus">
+            <head type="title">Title of Manuscript</head>
+                <!--A manuscript apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>MS XB</p>
+                </div>
+                <div type="section" xml:id="LOCATION">
+                    <head type="section">Location</head>
+                    <p>Body paragraph.</p>
+                    Princeton (cataloged as  Early Prose Writings ).
+                </div>
+                <div type="section" xml:id="PROVENANCE">
+                    <head type="section">Provenance</head>
+                    <p>Body paragraph.</p>
+                    Sotheby's 1931. According to Collingwood (PJR ?), the two manuscripts contained in this binding were originally included among the contents of MS X. By Cook and Wedderburn’s time, the two manuscripts, like MS XA, had been bound apart from MS X.
+                </div>
+                <div type="section" xml:id="DESCRIPTION">
+                    <head type="section">Description</head>
+                    <p>Body paragraph.</p>
+                    Bound in red buckram, with  Ruskin Ms. Early Prose Writings  in gilt on spine, 21.5 × 34.5 cm. Of the contents, the first, no. 216, consists of 9 leaves of bluish paper, watermarked  Ruse &#x0026; Turner / 1836,  21 × 34 cm, written in ink on both sides of each leaf, except for blank 9v. The second, no. 270, consists of 6 leaves of paper identical to the first, written in ink on both sides of each leaf.
+                    Owing to the later binding and to the consistency of the paper used for the two manuscripts, one cannot be positive that the  Chronicles  (no. 216) and the  Essay  (no. 270) are written on distinct gatherings--i.e., that they were fair-copied separately. The likelihood of distinct gatherings, however, is suggested by the soiling of the blank back page of no. 216 (9v), as compared with the good condition of the first page of no. 270, which follows immediately in the present binding. Also, the hands differ, that for no. 216 being very small and close, despite the folio-sized pages--much like the later portion of the large mineralogical dictionary, MS IVD (i.e., the dense flush-and-hang entries)--whereas the hand for no. 270 is much larger and more widely spaced, Ruskin fitting about half the number of lines per page as compared with no. 216 (although the lines become more crowded in the  Essay,  as Ruskin runs short of paper at the end of the booklet). Finally, two separate gatherings is suggested by their slight misalignment from one another where they meet at the spine of the binding.
+                    Although probably distinct gatherings, the two manuscripts must have been bound together owing to their matching physical characteristics. At Brantwood, the paper booklets may even have been found folded together, since horizontal creases in the paper match throughout the two manuscripts. In addition to the identical paper, the manuscripts share some similarities of presentation, such as justified right and left margins, and a double-ruled line, which is used in no. 216 to divide the introduction from chapter one, and which in no. 270 closes the essay.
+                    Owing to the present binding, I am unable to account for the odd number of leaves in no. 216. Generally, Ruskin constructed his handmade pamphlets by sewing folded sheets. In some of these other manuscripts, a leaf was cut away from the outside of the gathering, leaving an odd number of leaves, and one suspects that to be the case here. Nothing appears to be missing from no. 216, which begins with a title at the top of 1r and ends with a blank page, 9v.
+                    When bound, the two manuscripts were enclosed together within sheets of foolscap, with contents ennumerated in Wedderburn’s hand:  Ruskin MS. / Early Prose Writings  (2r); and  Ruskin MS / Early Prose Writings. / Chronicles of St. Bernard. / Velasquez, a Novice. / Essay on Music &#x0026; Painting  (3r).
+                    <!--The subsection that follows, Collation, is common to all manuscript apparatuses and was, accordingly, assigned an xml:id by
+                        the Ruskin Project Team during work on the "First Twenty."-->
+                    <div type="subsection" xml:id="COLLATION">
+                    <head type="subsection">Collation</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+                <div type="section" xml:id="CONTENTS">
+                    <head type="section">Contents</head>
+                    <!--Typically, this section will begin:-->
+                    <p>
+                        <hi rend="italic">From front of book, the sequential order of contents:</hi>
+                    </p>
+                    <!--and continue with a list, which may group items according to type (e.g. prose, poetry) or other similiarity. Note: drawings
+                        may be included as items in this list.-->
+                    <list xml:id="LIST" type="ordered">
+                        <item n="a">Item belonging to Group A.</item>
+                        <item n="b.1">First item belonging to Group B.</item>
+                        <item n="b.2">Second item belonging to Group B.</item>
+                        <item n="b.3">Third item belonging to Group B.</item>
+                        <item n="c">Item belonging to Group C.</item>
+                    </list>
+                    <p>Body paragraph.</p>
+                    Contents
+                    a) Two blank binder’s sheets.
+                    b) Wedderburn’s contents pages, 3 leaves, written on 2r and 3r, as specified in  Description  above.
+                    c) No. 216, 9 unnumbered leaves.
+                    d) No. 270, 6 leaves, numbered pp. 1-12 by Ruskin.
+                    e) Wedderburn’s foolscap, 2 leaves, blank.
+                    f) Two blank binder’s sheets.
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Body paragraph.</p>
+                    Date of composition 1836 and 1838, possibly wholly in 1838.
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <!--The Discussion section may contain all or only some of the following subsections.-->
+                    <div type="subsection">
+                        <head type="subsection">Hand</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Composition &#x0026; Sources</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Domestic Scene</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

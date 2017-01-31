@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="via_mala_poem_msviii">
+            <titleStmt>
+                <title type="main">"Via Mala" [poem]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS VIII</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="MSVIII57v-58r.jpg">pp. 57v-58r</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="2">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>, examples of which can be
+                                    found in MS VIII, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                            <handNote corresp="#HANDWGC" scribe="WGC">
+                                <p>W. G. Collingwood, at the time of preparing the "Preliminary Note on the Original MSS. of the Poems" for Poems (1891).</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="aa">
+                <head type="title"><handShift new="#HANDJR1833-34" script="cursive" medium="ink"/><placeName corresp="#VIAMALA">Viamala</placeName></head>
+                <lg type="stanza">
+                    <l>Our faith is on the precipice<add rend="linenumber-right-JR">615</add></l><!-- insert these line no. markers below as appropriate -->
+                    <l>How far far down those waters hiss</l>
+                    <l>That like an avalanche below</l>
+                    <l>Whirl on a stream of foamy snow.</l>
+                    <l>Ive seen the <geogName corresp="#RHINE">Rhine</geogName> when in his pride</l>
+                    <l>All unresisted undefied<add rend="linenumber-right-JR">620</add></l>
+                    <l>Rolled smoothly on his aged tide</l>
+                    <l>Ive seen the <geogName corresp="#RHINE">Rhine</geogName> with younger wave</l>
+                    <l>Oer every obstacle to rave</l>
+                    <l>I see the <geogName corresp="#RHINE">Rhine</geogName> in his native wild</l>
+                    <l>Is still a mighty mountain child <add rend="linenumber-right-JR">625</add></l>
+                    <l>How raked upon his tortuous bed</l>
+                    <pb facs="MSVIII58r"/>
+                    <fw type="pageNum" place="top-right"><handShift new="#HANDWGC" medium="pencil"/>58</fw>
+                    <l><handShift new="#HANDJR1833-34" script="cursive" medium="ink"/>Came up from the abyss of dread</l>
+                    <l>The deafing now with softened sound</l>
+                    <l>Murmuring up from the profound</l>
+                    <l>Of distance dark where light of day<add rend="linenumber-right-JR">630</add></l>
+                    <l>Pierced <del type="strikethrough">t</del> not the thick damp twilight grey</l>
+                    <l>To the precipices sharp and sheer</l>
+                    <l>Whence the white foam looked up so clear</l>
+                    <l>On looking oer the barrier</l>
+                    <l>From that <subst><del type="strikethrough">one</del> <add place="above"><space unit="chars" n="11"/>rock</add></subst><!--add unit count chars please--> shelf, that hung so high<del type="strikethrough">t</del><add rend="linenumber-right-JR">635</add></l>
+                    <l>Twixt the far depth and the blue sky</l>
+                    <l>Above, beside, around there stood</l>
+                    <l>The difficult crags in order rude</l>
+                    <l>Soaring to the thin cold upper air</l>
+                    <l><del type="strikethrough">It</del> Looked forth unnaturally clear <add rend="linenumber-right-JR">640</add></l>
+                    <l>Jagged with many a piny spear</l>
+                    <l>And here and there a patch of snow</l>
+                    <l>Contrasted strangely with the glow</l>
+                    <l>Of the red rough mighty cliffs, and shed</l>
+                    <l>A strange cold light through the yawning dread <add rend="linenumber-right-JR">645</add></l>
+                    <l>Of the Abyssy gulph below</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

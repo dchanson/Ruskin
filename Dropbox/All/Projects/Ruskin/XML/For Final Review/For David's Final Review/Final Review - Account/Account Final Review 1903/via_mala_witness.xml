@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="via_mala_witness">
+            <titleStmt>
+                <title type="main">Via Mala</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#">E. T. Cook and Alexander Wedderburn</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>E. T. Cook and Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <imprint>
+                            <biblScope type="vol">2</biblScope>
+                            <biblScope type="edition">Library<hi rend="superscript"></hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1903">1903</date>
+                            <biblScope type="pages">xxiii<!--I don't know what goes here?--></biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title"><geogName corresp="#VIAMALA">Via Mala</geogName><hi rend="superscript">1</hi>
+                   <name><persName corresp="#JR">by John Ruskin</persName></name></head> 
+                
+                <l>O<hi rend="smallcaps">ur</hi> path is on the precipice! </l>
+                <l>How far, far down those waters hiss</l> 
+                <l>That like an avalanche below </l>
+                <l>Whirl on a stream of foamy snow!</l> 
+                <l>I&#x02BC;ve seen the <geogName corresp="#RHINE">Rhine</geogName> when in his pride,</l> 
+                <l>All unresisted, undefied, </l>
+                <l>Rolled smoothly on his aged tide. </l>
+                <l>I&#x02BC;ve seen the <geogName corresp="#RHINE">Rhine</geogName> with younger wave </l>
+                <l>O&#x02BC;er every obstacle to rave. </l>
+                <l>I see the <geogName corresp="#RHINE">Rhine</geogName> in his native wild </l>
+                <l>Is still a mighty mountain child,&#x2014;</l>
+                <l>How rocked upon his tortuous bed! </l>
+                <l>Came up, from the abyss of dread, </l>
+                <l>The deafening roar with softened sound,&#x2014;</l>
+                <l>Murmuring up from the profound </l>
+                <l>Of distance dark, where light of day </l>
+                <l>Pierced not the thick, damp, twilight grey,</l>
+                <l>To the precipices sharp and sheer </l>
+                <l>Whence the white foam looked up so clear. </l>
+                <l>On looking o&#x02BC;er the barrier </l>
+                <l>From that rock&#x2010;shelf, that hung so high </l>
+                <l>&#x02BC;Twixt the far depth and the blue sky, </l>
+                <l>Above, beside, around there stood </l>
+                <l>The difficult crags in order rude </l>
+                <l>Soaring to the thin, cold upper air,&#x2014;</l>
+                <l>Looked forth unnaturally clear, </l>
+                <l>Jagged with many a piny spear. </l>
+                <l>And here and there a patch of snow </l>
+                <l>Contrasted strangely with the glow </l>
+                <l>Of the red, rough, mighty cliffs, and shed </l>
+                <l>A strange, cold light through the yawning dread </l>
+                <l>Of the abyssy gulph below. </l>
+                
+                <p><hi rend="superscript">1</hi> [&#x201C;It was again fortunate that we took the grandest pass into Italy,&#x2014;that the first 
+                    ravine of the main <geogName corresp="#ALPS">Alps</geogName> I saw was the <geogName corresp="#VIAMALA">Via Mala</geogName>&#x201D; (<emph>Pr&#x00E6;terita</emph>, i. ch. vi. § 136).]</p>
+           </div>
+        </body>
+    </text>
+</TEI>

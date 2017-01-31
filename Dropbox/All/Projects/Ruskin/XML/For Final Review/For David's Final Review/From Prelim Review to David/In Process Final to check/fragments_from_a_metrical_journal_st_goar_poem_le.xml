@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="st_goar_witness">
+            <titleStmt>
+                <title type="main">St. Goar</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#">E. T. Cook and Alexander Wedderburn</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>E. T. Cook and Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <imprint>
+                            <biblScope type="vol">2</biblScope>
+                            <biblScope type="edition">Library<hi rend="superscript"></hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1903">1903</date>
+                            <biblScope type="pages">xxiii<!--I don't know what goes here?--></biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title"><placeName corresp="#STGOAR">St. Goar</placeName><hi rend="superscript">1</hi>
+                   <name><persName corresp="#JR">by John Ruskin</persName></name></head> 
+                
+                <l>P<hi rend="smallcaps">ast</hi> a rock with frowning front, </l>
+                <l>Wrinkled by the tempest&#x02BC;s brunt, </l>
+                <l>By the <geogName corresp="#RHINE">Rhine</geogName> we downward bore </l>
+                <l>Upon the village of <placeName corresp="#STGOAR">St. Goar</placeName>. </l>
+                <l>Bosomed deep among the hills, </l>
+                <l>Here old <geogName corresp="#RHINE">Rhine</geogName> his current stills, </l>
+                <l>Loitering the banks between, </l>
+                <l>As if, enamoured of the scene, </l>
+                <l>He had forgot his onward way </l>
+                <l>For a live&#x2010;long summer day. </l>
+                <l>Grim the crags through whose dark cleft, </l>
+                <l>Behind, he hath a passage reft;</l><pb/>
+                <l>While, gaunt as gorge of hunted boar, </l>
+                <l>Dark yawns the foaming pass before, </l>
+                <l>Where the tormented waters rage, </l>
+                <l>Like demons in their Stygian cage, </l>
+                <l>In giddy eddies whirling round </l>
+                <l>With a sullen choking sound; </l>
+                <l>Or flinging far the scattering spray, </l>
+                <l>O&#x02BC;er the peaked rocks that bar his way. </l>
+                <l>&#x2014;No marvel that the spell&#x2010;bound <geogName corresp="#RHINE">Rhine</geogName>, </l>
+                <l>Like giant overcome with wine, </l>
+                <l>Should here relax his angry frown, </l>
+                <l>And, soothed to slumber, lay him down </l>
+                <l>Amid the vine&#x2010;clad banks, that lave</l> 
+                <l>Their tresses in his placid wave.<hi rend="superscript">1</hi></l>
+               
+                <p><hi rend="superscript">1</hi> [The verses on <placeName corresp="#STGOAR">St. Goar</placeName> were published, with &#x201C;<placeName corresp="ANDERNACHT">Andernacht</placeName>,&#x201D; in <emph>Friendship&#x02BC;s
+                   Offering</emph>, <date when="1835">1835</date>, pp. 318&#x2013;319; not included in the <emph>Poems</emph>, <date when="1850">1850</date>; published in the American
+                   edition, pp. 5&#x2013;6.  &#x201C;With this, as in the case of <placeName corresp="ANDERNACHT">Andernacht</placeName>, it may be interesting to 
+                   compare the first draft; if for nothing else, to show that the young poet could polish
+                   when he chose, and that he would have eliminated the slipshod grammar and faulty
+                   rhymes if he had prepared the rest of his juvenile verses for publication.&#x201D;&#x2014;<emph>Editor&#x02BC;s
+                   Note,</emph> <date when="1891">1891</date>. The MS. sent to <emph>Friendship&#x02BC;s Offering</emph> is no longer extant; but there is a
+                   draft in MS. iA, and a fair copy in ix., which differ very slightly. The latter was
+                   printed in the <emph>Poems,</emph> <date when="1891">1891</date>, i. 284&#x2013;285, as follows:&#x2014;</p>
+                
+                <p>First Sketch of &#x201C;<placeName corresp="#STGOAR">St. Goar</placeName>&#x201D;</p>
+                <lg><l>W<hi rend="smallcaps">e</hi> past a rock, whose bare front ever </l>
+                <l>Had borne the brunt of wind and weather; </l>
+                <l>And downwards by the <geogName corresp="#RHINE">Rhine</geogName> we bore </l>
+                <l>Upon the village of <placeName corresp="#STGOAR">St. Goar</placeName>, </l>
+                <l>That, &#x02BC;mid the hills embosomed, lay </l>
+                <l>Where the <geogName corresp="#RHINE">Rhine</geogName> checked his onward way. </l>
+                <l>And lay the mighty crags between; </l>
+                <l>As if, enamoured of the scene, </l>
+                <l>He loved not on his way to wind, </l>
+                <l>And leave a scene so fair behind. </l>
+                <l>For grim the chasm through whose cleft </l>
+                <l>The waters had a passage reft; </l>
+                <l>And gaunt the gorge that yawned before, </l>
+                <l>Through which, emerging, they must roar. </l>
+                <l>No marvel they should love to rest, </l>
+                <l>And peaceful spread their placid breast, </l>
+                <l>Before in fury driving dread, </l>
+                <l>Tormented on their rocky bed; </l>
+                <l>Or flinging far their scattering spray </l>
+                <l>O&#x02BC;er the peaked rocks, that barred their way,&#x2014;</l>
+                <l>Wave upon wave at random tossed </l>
+                <l>Or in the giddy whirlpool lost, </l>
+                <l>And now are undisturoed sleeping,&#x2014;</l>
+                <l>No more on rocks those billows beating </l>
+                <l>But, lightly laughing, laps the tide, </l>
+                <l>Where stoop the vineyards to his side.]</l></lg>
+                
+                <p><hi rend="superscript">1</hi> [Here follows a sketch of a town in a large plain, with distant mountains. The 
+                    rough draft of the &#x201C;Tour&#x201D; (viii.) contains at this point the following prose passage:&#x2014; 
+                    <quote>&#x201C;It was a wide stretchy sweep of lovely blue champaign, richly cultivated 
+                    and beautifully wooded, and bounded by magnificent mountain ranges: here 
+                    fading away, faint and blue and cloudlike toward the south; there distinct 
+                    and near and lofty, with the green cultivation climbing up their broad flanks. 
+                    I had read that the snowy summit of the <geogName corresp="#MONTTITLIS">Mont Titlis</geogName> was visible from 
+                     <placeName corresp="#STRASBURG">Strasburg</placeName>, the consequence of which marvellous information was, that I meta&#x2010; 
+                    morphosed every cloud I saw into a mountain, strained my eyes with looking 
+                    for that which was out of sight, and had at last very nearly argued myself into 
+                    a conviction that blue hills were white ones, until our entrance into the narrow 
+                    dell above mentioned precluded all farther observations upon the clouds. A 
+                    Swiss cottage is a celebrated thing, celebrated far and wide; it has modelled 
+                    the Tivolian villas of&#x2014;Highgate and Hampstead, the mock waterfalls and 
+                    crocodile stools of the Coliseum have extended its fame, and much it delighted 
+                    me when first the wide projecting wooden roof and carved galleries and 
+                    external stairs looked out to greet us from among the dark pines. What 
+                    a host of associations and recollections tumbled in upon me. Mountains, 
+                    avalanches, glaciers, cottages, Hannibal, vinegar. Tell, <geogName corresp="#ALPS">Alps</geogName>, apples, tyrants, 
+                    and crossbows came crowding into my brain, jumbled together in most 
+                    admired disorder. I thought of nothing connected the whole day.&#x201D;</quote> 
+                    With this first impression of a Swiss cottage, cf. <emph>Poetry of Architecture</emph>, § 38, in 
+                    Vol. I. p. 31. The reference to vinegar is of course to the story told by Livy (xxi. 37) 
+                    about Hannibal&#x02BC;s use of vinegar for blasting operations in his passage of the Alps.]</p>
+           </div>
+        </body>
+    </text>
+</TEI>

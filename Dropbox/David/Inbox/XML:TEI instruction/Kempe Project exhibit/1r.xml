@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="kempe.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <!--The xml:id for <fileDesc/>, represented by "_rv", should include the number of the subject folio (_) followed by an abbreviation of recto (r)
+            or verso (v), for example, "1r" or "1v". The xml:id also corresponds with its XML file's name, for example, "1r.xml" or "1v.xml".-->
+        <fileDesc xml:id="f18r">
+            <titleStmt>
+                <title type="main">Folio 18r of <hi rend="italic">The Book of Margery Kempe</hi></title>
+                <title type="sub">Electronic Text Generated from a Diplomatic Transcription of the Manuscript</title>
+                <author>
+                    <persName corresp="#MK">Margery Kempe</persName>
+                </author>
+                <editor>
+                    <persName corresp="#JWF">Joel W. Fredell</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#JWF">Joel W. Fredell</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#JKB">Jaime K. Barrilleaux</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>Dorothy Louise Blossman Charitable Foundation and Louisiana Board of Regents.</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-13">September 13, 2012</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>DEPARTMENT OF ENGLISH</addrLine>
+                    <addrLine>SOUTHEASTERN LOUISIANA UNIVERSITY</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>HAMMOND LA 70402-0001</addrLine>
+                    <addrLine>kempeproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright Joel Fredell.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United Kingdom</country>
+                        <region type="country">England</region>
+                        <settlement type="city">London</settlement>
+                        <institution>British Library</institution>
+                        <repository>Manuscripts</repository>
+                        <collection>MS Additional</collection>
+                        <idno>61823</idno>
+                        <msName>The Book of Margery Kempe</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="18r.jpg">f. 18r</locus>
+                            <note>Medieval foliation.</note>
+                        </msItem>
+                    </msContents>
+                    <!--The following is included here for reference only:
+                    <physDesc>
+                        <handDesc hands="16">
+                            <handNote xml:id="SALTHOWS" medium="ink-black" scope="major">
+                                <p>Hand responsible for the main text, catchwords, and quire signatures.</p>
+                            </handNote>
+                            <handNote xml:id="LITTLE_BROWN" medium="ink-brown" scope="minor">
+                                <p>Small hand, possibly Salthows, providing marginal annotations and occasional insertions or corrections.</p>
+                            </handNote>
+                            <handNote xml:id="MOUNT_GRACE" medium="ink-black" scope="minor">
+                                <p>Hand responsible for the ownership inscription ("Mount Grace Charterhouse") on f. iv verso.</p>
+                            </handNote>
+                            <handNote xml:id="FLAG" medium="ink-brown" scope="minor">
+                                <p>Marginal hand responsible for flag-like marks associated with the beginnings of new chapters within the main text.</p>
+                            </handNote>
+                            <handNote xml:id="TINY_BROWN_NOTAE" medium="ink-brown" scope="minor">
+                                <p>Very small, marginal hand annotating the beginnings of new chapters within the main text.</p>
+                            </handNote>
+                            <handNote xml:id="BIG_BROWN" medium="ink-brown" scope="minor">
+                                <p>Large marginal hand responsible for bracketing, figures, and annotations.</p>
+                            </handNote>
+                            <handNote xml:id="PLUMMET" medium="pencil" scope="minor">
+                                <p>Marginal hand responsible for vertical marks beside or through other marginalia.</p>
+                            </handNote>
+                            <handNote xml:id="BIG_BLACK" medium="ink-black" scope="minor">
+                                <p>Large hand providing marginal annotations and occasional insertions or corrections within the main text.</p>
+                            </handNote>
+                            <handNote xml:id="RUBY_PARAPH" medium="ink-red" scope="minor">>
+                                <p>Marginal hand responsible for paraphs emphasizing specific passages within the main text.</p>
+                            </handNote>
+                            <handNote xml:id="RED_BRACKETS" medium="ink-red" scope="minor">
+                                <p>Marginal hand responsible for scattered, single empty brackets.</p>
+                            </handNote>
+                            <handNote xml:id="BIG_RED_N" medium="ink-red" scope="minor">
+                                <p>Marginal hand responsible for single flourished n's (for "nota") emphasizing specific passages within the main text.</p>
+                            </handNote>
+                            <handNote xml:id="FADED_RED_BLOTCH" medium="ink-red" scope="minor">
+                                <p>Marginal hand responsible for now largely illegible annotations and/or decorations.</p>
+                            </handNote>
+                            <handNote xml:id="RED_INK_ANNOTATOR" medium="ink-red" scope="major">
+                                <p>Principal hand responsible for decorations, highlighting, corrections, and punctuation within the main text, as well as marginalia and emphases upon marginalia.</p>
+                            </handNote>
+                            <handNote xml:id="FINAL_FOLIO_1" medium="ink-brown" scope="minor">
+                                <p>Hand responsible for the text at the top of f. 124 verso.</p>
+                            </handNote>
+                            <handNote xml:id="FINAL_FOLIO_2" medium="ink-brown" scope="minor">
+                                <p>Hand responsible for the fragment at the bottom of f. 124 verso.</p>
+                            </handNote>
+                            <handNote xml:id="LIBRARIAN" medium="pencil" scope="minor">
+                                <p>Modern marginal hand responsible for catalogue marks and foliation.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>-->
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!--The following is included here for reference only:
+        <encodingDesc>
+            <p>Hand are differentiated in HTML by the following colors: black (000), light brown (960), dark blue (003), pale orange (FC6), light orange (F90),
+                brown (630), gray (999), dark gray (333), dark pink (C03), dark red (900), bright red (F00), orange (F60), red (C00), dark brown (300),
+                ruddy brown (600) and light gray (CCC).</p>
+            <tagsDecl>
+                <rendition xml:id="SAL" corresp="#SALTHOWS" scheme="css">color: #000;</rendition>
+                <rendition xml:id="LB" corresp="#LITTLE_BROWN" scheme="css">color: #960;</rendition>
+                <rendition xml:id="MG" corresp="#MOUNT_GRACE" scheme="css">color: #003;</rendition>
+                <rendition xml:id="FLA" corresp="#FLAG" scheme="css">color: #FC6;</rendition>
+                <rendition xml:id="TBN" corresp="#TINY_BROWN_NOTAE" scheme="css">color: #F90;</rendition>
+                <rendition xml:id="BBR" corresp="#BIG_BROWN" scheme="css">color: #630;</rendition>
+                <rendition xml:id="PLU" corresp="#PLUMMET" scheme="css">color: #999;</rendition>
+                <rendition xml:id="BBL" corresp="#BIG_BLACK" scheme="css">color: #333;</rendition>
+                <rendition xml:id="RP" corresp="#RUBY_PARAPH" scheme="css">color: #C03;</rendition>
+                <rendition xml:id="RB" corresp="#RED_BRACKETS" scheme="css">color: #900;</rendition>
+                <rendition xml:id="BRN" corresp="#BIG_RED_N" scheme="css">color: #F00;</rendition>
+                <rendition xml:id="FRB" corresp="#FADED_RED_BLOTCH" scheme="css">color: #F60;</rendition>
+                <rendition xml:id="RIA" corresp="#RED_INK_ANNOTATOR" scheme="css">color: #C00;</rendition>
+                <rendition xml:id="FF1" corresp="#FINAL_FOLIO_1" scheme="css">color: #300;</rendition>
+                <rendition xml:id="FF2" corresp="#FINAL_FOLIO_2" scheme="css">color: #633;</rendition>
+                <rendition xml:id="LIB" corresp="#LIBRARIAN" scheme="css">color: #CCC;</rendition>
+            </tagsDecl>
+        </encodingDesc>-->
+    </teiHeader>
+    <text>
+        <body>
+            <div type="folio" n="1r">
+                <pb facs="1r.jpg"/>
+                        <lb/>
+                        <lb/>
+                        <lb/>
+                        <lb/><ab><add place="top-right" hand="#LIBRARIAN">1</add></ab>
+                        <lb/><ab n="1"><handShift new="#SALTHOWS"/><hi rend="prompt" n="4">h</hi><add rend="overwriting" hand="#RED_INK_ANNOTATOR"><hi rend="dropcap" n="4">H</hi></add><hi rend="highlight" rendition="#RIA">E</hi>re begynnyth a schort tretys and a comfortabyl &#x00B7; for</ab>
+                        <lb/><ab n="2">synful wrecchys &#x00B7; wher in &#x00FE;ei may haue gret solas</ab>
+                        <lb/><ab n="3">and <choice><abbr>co&#x0352;fort</abbr><expan>co<ex>m</ex>fort</expan></choice> to hem &#x00B7; and vndyrstondyn <choice><abbr>&#x00FE;<hi rend="superscript">e</hi></abbr><expan>&#x00FE;<ex>e</ex></expan></choice> hy &#x00B7; &#x0026; vnspe&#x2E17;</ab>
+                        <lb/><ab n="4">cabyl <choice><abbr>m&#x1DD1;cy</abbr><expan>m<ex>er</ex>cy</expan></choice> of ower souereyn Sauyowr cryst <choice><abbr>Ihu</abbr><expan>Ih<ex>es</ex>u</expan></choice></ab>
+                        <lb/><ab n="5">whos name be worschepd and <choice><abbr>m&#x0363;gnyfyed</abbr><expan>m<ex>a</ex>gnyfyed</expan></choice> <choice><abbr>w<hi rend="superscript">t</hi></abbr><expan>w<ex>yth</ex></expan></choice> owten ende &#x00B7;<add rend="overwriting" hand="#RED_INK_ANNOTATOR">&#x00B7;</add> <choice><abbr>&#x00FE;<hi rend="superscript">t</hi></abbr><expan>&#x00FE;<ex>at</ex></expan></choice></ab>
+                        <lb/><ab n="6">now in ower days to vs vnworthy deyneth to <choice><abbr>ex&#x1DD1;cysen</abbr><expan>ex<ex>er</ex>cysen</expan></choice></ab>
+                        <lb/><ab n="7">hys nobeley &#x0026; hys goodnesse &#x00B7;<add rend="overwriting" hand="#RED_INK_ANNOTATOR">&#x002F;</add> <hi rend="highlight" rendition="#RIA">A</hi>lle <choice><abbr>&#x00FE;<hi rend="superscript">e</hi></abbr><expan>&#x00FE;<ex>e</ex></expan></choice> werkys of ower Sa&#x2E17;</ab>
+                        <lb/><ab n="8">viowr ben for ower exampyl &#x0026; instruccyon <add hand="#RED_INK_ANNOTATOR">&#x23A3;</add>And what <choice><abbr>g &#x0363; &#x0305;ce</abbr><expan>g<ex>ra</ex>ce</expan></choice></ab>
+                        <lb/><ab n="9"><choice><abbr>&#x00FE;<hi rend="superscript">t</hi></abbr><expan>&#x00FE;<ex>at</ex></expan></choice> he werkyth in any creatur &#xF1F0; is ower <choice><abbr>&#xA753;fyth</abbr><expan>p<ex>ro</ex>fyth</expan></choice> yf lak of</ab>
+                        <lb/><ab n="10">charyte be not ower hynderawnce &#x00B7;<add rend="overwriting" hand="#RED_INK_ANNOTATOR">&#x005B;</add><hi rend="highlight" rendition="#RIA">A</hi>nd  <choice><abbr>&#x00FE; &#x1DD1;for</abbr><expan>&#x00FE;<ex>er</ex>for</expan></choice> be <choice><abbr>&#x00FE;<hi rend="superscript">e</hi></abbr><expan>&#x00FE;<ex>e</ex></expan></choice> leue</ab>
+                        <lb/><ab n="11">of ower <choice><abbr>m&#x1DD1;cyful</abbr><expan>m<ex>er</ex>cyful</expan></choice> lord cryst <choice><abbr>Ihu&#x0352;</abbr><expan>Ih<ex>es</ex>u</expan></choice> to <choice><abbr>&#x00FE;<hi rend="superscript">e</hi></abbr><expan>&#x00FE;<ex>e</ex></expan></choice> magnyfying of hys</ab>
+                        <lb/><ab n="12">holy name <choice><abbr>i&#xE517;c</abbr><expan>Ih<ex>esu</ex>c<ex>rist</ex></expan></choice>&#x00B7; <choice><abbr>&#x00FE;<hi rend="superscript">i</hi>s</abbr><expan>&#x00FE;<ex>i</ex>s</expan></choice> lytyl tretys &#x00B7; schal tretyn <choice><abbr>su&#x0305;deel</abbr><expan>su<ex>m</ex>deel</expan></choice> in &#x2E17;</ab>
+                        <lb/><ab n="13">parcel of hys wonderful werkys &#x00B7;<add rend="overwriting" hand="#RED_INK_ANNOTATOR">&#x00B7;</add> how <choice><abbr>m&#x1DD1;cyfully</abbr><expan>m<ex>er</ex>cyfully</expan></choice> how be&#x2E17;</ab>
+                        <lb/><ab n="14"><choice><abbr>ny&#x0233;gly</abbr><expan>ny<ex>n</ex>gly</expan></choice> &#x0026; how charytefully &#x00B7; he meued &#x0026; stered a synful</ab>
+                        <lb/><ab n="15">caytyf vn to hys love &#x00B7; whech synful caytyf many <choice><abbr>&#x021D;er&#xA76D;</abbr><expan>&#x021D;er<ex>ys</ex></expan></choice></ab>
+                        <lb/><ab n="16">was in wyl and in <choice><abbr>p&#xF1C2;pose</abbr><expan>p<ex>ur</ex>pose</expan></choice> &#x00B7; thorw <choice><abbr>stery&#x0352;g</abbr><expan>stery<ex>n</ex>g</expan></choice> of <choice><abbr>&#x00FE;<hi rend="superscript">e</hi></abbr><expan>&#x00FE;<ex>e</ex></expan></choice> holy gost &#x00B7; to</ab>
+                        <lb/><ab n="17">folwyn <add place="below" hand="#RED_INK_ANNOTATOR">&#x2038;</add><add place="above" hand="#RED_INK_ANNOTATOR">oure</add> <choice><abbr>savyo &#xF1C2;</abbr><expan>savyo<ex>ur</ex></expan></choice> &#x00B7; makyng gret behestys of <choice><abbr>fastyng&#xA76D;</abbr><expan>fastyng<ex>ys</ex></expan></choice> &#x00B7; wyth</ab>
+                        <lb/><ab n="18">many <choice><abbr>o&#x00FE; &#x1DD1;</abbr><expan>o&#x00FE;<ex>er</ex></expan></choice> dedys of penawns &#x00B7;<add rend="overwriting" hand="#RED_INK_ANNOTATOR">&#x00B7;</add> <hi rend="highlight" rendition="#RIA">A</hi>nd <choice><abbr>eu&#x1DD1;</abbr><expan>eu<ex>er</ex></expan></choice> sche was turned</ab>
+                        <lb/><ab n="19">a &#x021D;en a bak in tym of temptacyon &#x00B7; lech vn to &#x00FE;e reed &#x2E17;</ab>
+                        <lb/><ab n="20">spyr &#x00B7; whech boweth <choice><abbr>w<hi rend="superscript">t</hi></abbr><expan>w<ex>yth</ex></expan></choice> <choice><abbr>eu&#x1DD1;y</abbr><expan>eu<ex>er</ex>y</expan></choice> wynd &#x0026; <choice><abbr>neu &#x1DD1;</abbr><expan>neu<ex>er</ex></expan></choice> is stable &#x00B7; les</ab>
+                        <lb/><ab n="21">&#x00FE;an no wynd bloweth &#x00B7;<add rend="overwriting" hand="#RED_INK_ANNOTATOR">&#x00B7;</add> <hi rend="highlight" rendition="#RIA">v</hi>n to <choice><abbr>&#x00FE;<hi rend="superscript">e</hi></abbr><expan>&#x00FE;<ex>e</ex></expan></choice> tyme <choice><abbr>&#x00FE;<hi rend="superscript">t</hi></abbr><expan>&#x00FE;<ex>at</ex></expan></choice> ower <choice><abbr>m&#x1DD1;cyfulle</abbr><expan>m<ex>er</ex>cyfulle</expan></choice></ab>
+                        <lb/><ab n="22">lord &#x00B7; cryst <choice><abbr>Ihu</abbr><expan>Ih<ex>es</ex>u</expan></choice> &#x00B7; hauyng pety &#x00B7; &#x0026; <choice><abbr>co&#x0352;passion</abbr><expan>co<ex>m</ex>passion</expan></choice> of hys hand&#x2E17;</ab>
+                        <lb/><ab n="23">werke &#x0026; hys creatur &#xF1F0; <choice><abbr>tn&#x1DD1;yd</abbr><expan>t<ex>ur</ex>nyd</expan></choice> helth in to sekenesse &#x00B7; <choice><abbr>&#xA753;s&#xA751;y&#x2E17;</abbr><expan>p<ex>ro</ex>sp<ex>er</ex>y&#x2E17;</expan></choice></ab>
+                        <lb/><ab n="24">te in to <choice><abbr>adu&#x1DD1;syte</abbr><expan>adu<ex>er</ex>syte</expan></choice> &#x00B7; worshep in to repref &#x0026; love in to</ab>
+                        <lb/><ab n="25">hatered &#x00B7;<add rend="overwriting" hand="#RED_INK_ANNOTATOR">&#x002F;</add> thus alle <choice><abbr>&#x00FE;<hi rend="superscript">i</hi>s</abbr><expan>&#x00FE;<ex>i</ex>s</expan></choice> <choice><abbr>thyng&#xA76D;</abbr><expan>thyng<ex>ys</ex></expan></choice> <choice><abbr>tn&#xF1C2;yng</abbr><expan>t<ex>ur</ex>nyng</expan></choice> vp so down &#x00B7;<add rend="overwriting" hand="#RED_INK_ANNOTATOR">&#x002F;</add> <choice><abbr>&#x00FE;<hi rend="superscript">i</hi>s</abbr><expan>&#x00FE;<ex>i</ex>s</expan></choice></ab>
+                        <lb/><ab n="26">creatur whych many &#x021D;erys had gon wil &#x0026; <choice><abbr>eu&#x1DD1;</abbr><expan>eu<ex>er</ex></expan></choice> ben</ab>
+                        <lb/><ab n="27">vnstable &#x00B7; was <choice><abbr>&#xA751;fythly</abbr><expan>p<ex>er</ex>fythly</expan></choice> drawen &#x0026; steryd to entren</ab>
+                        <lb/><ab n="28">&#x00FE;e wey of hy &#x00B7; <choice><abbr>&#xA751;feccyon</abbr><expan>p<ex>er</ex>feccyon</expan></choice> &#x00B7;<add rend="overwriting" hand="#RED_INK_ANNOTATOR">&#x002F;</add> whech <choice><abbr>&#xA751;fyth</abbr><expan>p<ex>ar</ex>fyth</expan></choice> wey &#x00B7; cryst ower</ab>
+                        <lb/><ab n="29">Savyowr in hys <choice><abbr>&#xA753;pyr</abbr><expan>p<ex>ro</ex>pyr</expan></choice> <choice><abbr>&#xA751;soone</abbr><expan>p<ex>er</ex>soone</expan></choice> examplyd &#x00B7; sadly &#x00B7; he &#x2E17;</ab>
+                        <lb/><ab n="30">trad it &#x00B7; &#x0026; dewly he went it &#x00B7; be forn &#x00B7;<add rend="overwriting" hand="#RED_INK_ANNOTATOR">&#x00B7;</add> <hi rend="highlight" rendition="#RIA">T</hi>han <choice><abbr>&#x00FE;<hi rend="superscript">i</hi>s</abbr><expan>&#x00FE;<ex>i</ex>s</expan></choice> crea&#x2E17;</ab>
+                        <lb/><ab n="31">tur of whom thys tretys &#x00B7; thorw &#x00FE;e <choice><abbr>m&#x1DD1;cy</abbr><expan>m<ex>er</ex>cy</expan></choice> of <choice><abbr>Ihu</abbr><expan>Ih<ex>es</ex>u</expan></choice> schal</ab>
+                        <lb/><ab n="32">schewen in <choice><abbr>&#xA751;ty</abbr><expan>p<ex>ar</ex>ty</expan></choice> &#x00FE;e leuyng &#x00B7;<add rend="overwriting" hand="#RED_INK_ANNOTATOR">&#x002F;</add>  towched be &#x00FE;e hand of owyr &#x2E17;</ab>
+                        <lb/>
+                        <lb/>
+                        <lb/>
+                        <lb/>
+                        <lb/>
+                        <lb/>
+                        <lb/>
+                        <lb/>
+                        <lb/>
+                        <lb/>
+                        <lb/>
+             </div>
+        </body>
+    </text>
+</TEI>

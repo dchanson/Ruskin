@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <fileDesc xml:id="date_citation_note.xml">
+            <titleStmt>
+                <title type="main">The System of Date Citation</title>
+                <title type="sub">Notes</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#TPD">Timothy P. Dunn</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="biographical">
+                <head type="title">The System of Date Citation</head>
+                <p>On the Apparatus Page for any given work, the &#x201C;Date&#x201D; section begins with a declaration of a date or a date range, 
+                    which is used to place the work in the chronological index of the archive
+                    (see <ref type="note" subtype="bibliographical" target="plan_of_archive_note.php">The Plan of the Archive</ref>). This opening declaration in the &#x201C;Date&#x201D; section 
+                    is followed by a discussion of the evidence for dating the work. The choice of date for indexing purposes awards priority to a date inscribed in the manuscript 
+                    by <persName corresp="#JR">Ruskin</persName> himself or by his parents, if that date is reasonably trustworthy; otherwise, the opening declaration uses a date or date range of composition.</p>
+                <p>The date thus selected for indexing purposes is somewhat arbitrary since, as the discussion in the &#x201C;Date&#x201D; section of an apparatus clarifies in any given instance,
+                    the date that <persName corresp="#JR">Ruskin</persName> or his parents inscribed may refer to a variety of stages in the composition, specifying possibly when he wrote a work, or when he fair&#x2010;copied it, 
+                    or the occasion when he presented it to a recipient. For example, a date of &#x201C;<date when="1828-01-01">1 January 1828</date>&#x201D; that <persName corresp="#JR">Ruskin</persName> inscribed on a
+                    <ref type="note" subtype="bibliographical" target="new_years_poems_note.php">New Year&#x02BC;s Poem</ref> refers obviously to the occasion of the fair copy&#x02BC;s presentation, 
+                    and <date when="1828-01-01">1 January 1828</date> is used to index the poem in the archive. In such an instance, as the discussion of a work will clarify, however, <persName corresp="#JR">Ruskin</persName> would typically have drafted and fair&#x2010;copied
+                    the poem in <date notBefore="1827-12-01" notAfter="1827-12-31">December 1827</date>.</p>
+                <p>For indexing purposes, less credence is apt to be awarded to dates inscribed in the manuscript by later hands&#x2014;typically by
+                    <ref type="note" subtype="biographical" target="wedderburn_note.php"><persName corresp="#AW">Alexander Wedderburn</persName> (d. <date when="1931">1931</date>)</ref> 
+                    or <ref type="note" subtype="biographical" target="collingwood_w_g_note.php"><persName corresp="#WGC">W. G. Collingwood</persName> (<date notBefore="1854" notAfter="1932">1854&#x2013;1932</date>)</ref>. If these dates are questionable, 
+                    the inscription is merely mentioned and discussed in the &#x201C;Date&#x201D; section.</p>
+                <p>In some cases, even dates that <persName corresp="#JR">Ruskin</persName> himself inscribed can be very misleading. For example, he dated several poems in <ref type="apparatus" target="msiii_apparatus.php">MS III</ref> 
+                    as <date when="1829-03-09">9 March 1829</date>. He is unlikely to have composed, or even fair&#x2010;copied, so many poems in a single day. This may be a case in which <persName corresp="#JR">Ruskin</persName>&#x02BC;s inscription of a date 
+                    refers, rather, to a wished&#x2010;for date of fair&#x2010;copying, a performative episode turning on tensions arising from his parents&#x02BC; attempts to control his writing, 
+                    in conflict with his ardent desire to please them with his compositions 
+                    (see <ref type="apparatus" target="of_rocks_first_apparatus.php#DISCUSSION.php">&#x201C;Of rocks first and of caverns now I sing&#x201D;: Discussion</ref>).</p>
+                <p>The compositional date is given&#x2014;and the piece is ordered sequentially
+                    within a given year, according to that date&#x2014;only when a datable
+                    rough draft or some other hard evidence about its composition is available. In
+                    cases for which only the fair copy remains, one may often assume only a few
+                    months, at most, to have elapsed between beginning composition and
+                    fair&#x2010;copying. Parts of some longer poems such
+                    as <ref type="apparatus" target="eudosia_apparatus.php"><title type="poem" corresp="#RUSKINEUDOSIA">&#x201C;Eudosia&#x201D;</title></ref> appear, in fact, to have been
+                    fair&#x2010;copied almost as soon as <persName corresp="#JR">Ruskin</persName> drafted them. Such assumptions
+                    are not uniformly safe, however, since <persName corresp="#JR">Ruskin</persName>&#x02BC;s anthologies include
+                    poems that good evidence may date as much as a year earlier than when he
+                    compiled the anthology.</p> 
+            </div>
+        </body>
+    </text>
+</TEI>

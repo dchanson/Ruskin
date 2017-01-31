@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#SEP">Steven E. Petite</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>[THE <geogName corresp="BLACKFOREST">BLACK FOREST</geogName>.]</head>
+                <lg type="stanza" rhyme="aa">
+                    
+                    <l>OH! the morn looked bright on hill and dale,</l> 
+                    <l>As we left the walls of merry [<placeName corresp="#KEHL">Kehl</placeName>], <hi rend="superscript">1</hi></l>
+                    <l>And tow&#x02BC;rd the long hill&#x2010;ridges wound</l>
+                    <l>That ramparted the plain around,&#x2014;</l> 
+                    <l>That, greener growing as we neared,</l>
+                    <l>At length with meadows decked appeared</l>
+                    <l>Fair as our fields in May ; and then</l> 
+                    <l>We entered on a little glen,</l> 
+                    <l>Those miniature <geogName corresp="#ALPS">Alps</geogName> among,</l>
+                    <l>All smiling with a morning sun ;</l> 
+                    <l>Grassy, and woody, and most sweet</l>
+                    <l>As ever fairy her retreat</l> 
+                    <l>Formed for her midnight dances. Through&#x2014;</l>
+                    <l>Tracing, in mazy winds anew,</l> 
+                    <l>The spots it had passed o&#x02BC;er, as fain</l> 
+                    <l>To run its sweet course o&#x02BC;er again,&#x2014;</l>
+                    <l>Flowed a small tributary stream</l> 
+                    <l>That the <geogName corresp="#RHINE">Rhine</geogName> levied. All between</l>
+                    <l>The frontlets of the fair, fresh hills</l> 
+                    <l>Leaped merrily the glad, young rills,</l> 
+                    <l>Smiling in silver as they sprang,</l> 
+                    <l>And merry were the notes they sang :</l> 
+                    <l>For they were joyful at their birth</l> 
+                    <l>From the cold prisons of the earth</l>
+                    <l>To the warm sun, and open sky ;</l> 
+                    <l>And their song was all of liberty.</l> 
+                    <l>But the dell narrowed as we went ;</l> 
+                    <l>Till, &#x02BC;twixt the promontories pent</l>
+                <pb/>
+                    
+                    <l>It upward ran ; and the clear stream</l> 
+                    <l>Now forward shot, its banks between,</l>
+                    <l>Fast flashing ; till from the obscure</l> 
+                    <l>Emerged we on a lofty moor,</l> 
+                    <l>Open, and shelterless, and bare,</l> 
+                    <l>And gently undulating far;</l>
+                    <l>With here and there a patch of pine</l> 
+                    <l>Breaking the smoothness of its line.</l>
+                   
+                </lg>
+                <p><hi rend="superscript">1</hi> [&#x201C;<emph><placeName corresp="#KEHL">Kehl</placeName>,</emph> line2, is my conjecture ; the word in the original is illegible. The poem
+                    must refer to the day&#x02BC;s journey described in <emph>Pr&#x00E6;terita</emph>, i. ch. vi. § 130; &#x2018;Earliest
+                    morning saw us trotting over the bridge of boats to <placeName corresp="#KEHL">Kehl</placeName>, and in the eastern light I 
+                    well remember watching the <geogName corresp="#BLACKFOREST">Black Forest</geogName> hills enlarge and rise as we crossed the 
+                    plain of the <geogName corresp="#RHINE">Rhine</geogName>&#x2019;&#x201C;&#x2014;<emph>Editor&#x02BC;s Note,</emph> 1891.]</p>
+            </div>
+        </body>
+    </text>
+</TEI>
+             
+                    

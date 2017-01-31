@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="tite_of_work_note">
+            <titleStmt>
+                <title type="main">Editorial and Encoding Rationale and Methodology</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KCM">Katie C. Moore</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The notes version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department
+                        of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc></fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="bibliographical">
+                <head type="title">Editorial and Encoding Rationale and Methodology</head>
+                <div type="section">
+                    <p>For a detailed description of the kinds of webpages contained in the archive and their organization and navigation, 
+                        see <ref type="note" subtype="bibliographical" target="plan_of_archive_note.php">Plan of the Archive</ref>. 
+                        The present note discusses the more fundamental rationale and methodology for editing and encoding the manuscripts. 
+                        Past editorial appproaches are reviewed in 
+                        <ref type="note" subtype="bibliographical" target="history_of_bibliography_and_editing_note.php">History of the Bibliography and Editing of the Early Manuscripts</ref>.</p> 
+                    <p>The present note is divided into the following sections:
+                    <list><!-- add code for internal jumps to heads below -->
+                        <item>The Editorial Design of the Archive</item>
+                        <item>
+                            <list>
+                                <item>Defining <hi rend="italic">Works</hi> and <hi rend="italic">Manuscripts</hi></item>
+                                <item>teiCorpus Markup and the Tension between Corpora and Works</item>
+                                <item>Expressing the Materiality of Manuscripts</item>
+                                <item>Collection and Anthology</item>
+                                <item>Apparatuses, Notes, and Annotation</item>
+                            </list></item>
+                        <item>The Documentary Editorial Orientation in <hi rend="italic">ERM</hi></item>
+                        <item>
+                            <list>
+                                <item>Transcription</item>
+                                <item>The Private, Confidential, and Public in the Early Manuscripts</item>  
+                            </list></item>
+                        <item>The Scope of the <hi rend="italic">ERM</hi> Archive</item>
+                    </list></p>
+                </div>
+                
+                <div type="section">
+                    <head type="section">The Editorial Design of the Archive</head>
+                    
+                    <div type="subsection">
+                        <head type="subsection">Defining <hi rend="italic">Works</hi> and <hi rend="italic">Manuscripts</hi></head>
+                        <p>The archive contains, at the most fundamental level, two sets of edited primary materials: 
+                            <hi rend="italic">Works</hi> and <hi rend="italic">Manuscripts</hi>.</p>
+                        <list>
+                            <item>A <hi rend="italic">work</hi> in this edition consists of a discrete text
+                                by <persName corresp="#JR">Ruskin</persName> (e.g., a poem, an essay, a
+                                sermon, a mathematical proof), including all available witnesses of that
+                                text (each of these edited and annotated), and accompanied by the
+                                work&#x02BC;s explanatory apparatus and available facsimiles.</item>
+                            <item>A <hi rend="italic">manuscript</hi> is a physical document manifesting
+                                <persName corresp="#JR">Ruskin</persName>&#x02BC;s texts,
+                                represented in the archive by its own explanatory apparatus in addition to
+                                the <hi rend="italic">works</hi> that make up the manuscript.</item>
+                        </list>
+                        <p>As translated into Web pages, these two sets of materials form a given work&#x02BC;s Work Pages,
+                            and a given manuscript&#x02BC;s Manuscript Pages (see <ref type="note" subtype="bibliographical" target="plan_of_archive_note.php">Plan of the Archive</ref>). 
+                            This organization arose from our determination editorially to strive for a double centeredness, reflecting 
+                            a creative tension between <persName corresp="#JR">Ruskin&#x02BC;s</persName> composition of a unitary work and a dynamic conception of the collection containing that work.
+                        </p>
+                        <p>Historically, a more static editorial approach to the early manuscripts was adopted by <persName corresp="#WGC">W. G. Collingwood,</persName> the editor of Poems (1891),<!--2 notes--> and, 
+                            following his suit, by  <persName corresp="#ETC">E. T. Cook</persName> and <persName corresp="#AW">Alexander Wedderburn,</persName> the editors of the Library Edition,<!--3 notes-->. 
+                            They divided the early writing by genre, poetry and prose, with  <persName corresp="#WGC">Collingwood</persName> taking the lead by dividing his task into the Poems (1891) and 
+                            a complementary edition of prose, the latter never realized under his editorship. 
+                            Accordingly, in fashioning the first descriptive bibliography of the early manuscripts, 
+                            &#x201C;Preliminary Note on the Original MSS. of the Poems,&#x201D; published as an appendix to the Poems (1891), 
+                            <persName corresp="#WGC">Collingwood</persName> awkwardly set apart the verse manuscripts 
+                            from the archive available to him, describing and chronologically ordering only those manuscripts (primarily the bound &#x201C;notebooks&#x201D;) containing poetry. 
+                            The division is problematic even on terms of the &#x201C;Preliminary Note&#x201D; itself, 
+                            which fails to explain the presence of prose genres contained within some of the manuscripts that it does describe, 
+                            and which is altogether silent about manuscripts omitted from the list presumably because they contain solely prose.</p> 
+                        <p>In the Library Edition, <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn</persName> addressed the problems raised by this division only imperfectly. 
+                            The first two volumes fulfill <persName corresp="#WGC">Collingwood&#x02BC;s</persName> vision by housing early prose and poetry, respectively, 
+                            but the former was a rough and ready repackaging of existing <persName corresp="#GA">George Allen</persName> editions. They attempted no serious reexamination of the underlying approach; 
+                            and in the second volume, &#x201C;Poems,&#x201D; the editors reprinted <persName corresp="#WGC">Collingwood&#x02BC;s</persName> &#x201C;Preliminary Note,&#x201D; 
+                            expanding it with brief descriptions of some additional manuscripts, and with lists by title of the poems contained in the manuscripts, 
+                            but without questioning the flawed logic of the division. Of the early manuscripts that they found written exclusively in prose, they bound some together with poems 
+                            but omitted details about the prose pieces in their revision of the &#x201C;Preliminary Note,&#x201D;  while they relegated description of other such manuscripts to the &#x201D;Bibliography&#x201D; volume 
+                            of the Library Edition, classifying these under &#x201C;Juvenilia&#x201D;&#x2014;as if the early poetry manuscripts were not juvenilia (see 
+                            <ref type="note" subtype="bibliographical" target="history_of_bibliography_and_editing_note.php">History of the Bibliography and Editing of the Early Manuscripts</ref>).
+                        </p><!-- DCH, intros to these volumes -->
+                        <p><persName corresp="#WGC">Collingwood&#x02BC;s</persName> decision to divide the editorial task by genre is nonetheless historically significant, 
+                            since <persName corresp="#JR">Ruskin</persName> himself in his late autobiographical writing encouraged readers to conceptualize his career as divided between an early misguided ambition for poetry 
+                            and a discovery of true vocation in prose. By prose, according to the later autobiographical writing of <hi rend="italic">Fors Clavigera</hi> 
+                            and <hi rend="italic">Praeterita</hi>, <persName corresp="#JR">Ruskin</persName> meant not the poetic prose of his youth, but the allegedly more analytical and plain prose 
+                            by which he sought to position himself rhetorically. This account is faithfully reflected in fin de si&#x00E8;cle biographical and editorial projects, even 
+                            at the cost of distorting facts, such as <persName corresp="#WGC">Collingwood&#x02BC;s</persName> insistence that <persName corresp="#JR">Ruskin</persName> started his writing life with scientific prose, 
+                            despite the opposite picture revealed by <persName corresp="#WGC">Collingwood&#x02BC;s</persName> own careful chronological analysis of the manuscripts.</p>
+                        <p>While the late&#x2010;century reception of the early manuscripts forms an important part of the discussion in the archive, 
+                            ERM is organized editorially around a persistent phenomenon in the early writing that entails both the poetry and the prose manuscripts&#x2014;namely, 
+                            <persName corresp="#JR">Ruskin&#x02BC;s</persName> urge to conceptualize his compositions 
+                            in terms both of a unitary work and of some larger anthology or collection containing it. In the <ref type="note" subtype="bibliographical" target="red_book_note.php"><hi rend="italic">Red Books</hi> of the <date notBefore="1800" notAfter="1820">1820s,</date></ref> 
+                            Ruskin projected his prose compositions as &#x201C;volumes&#x201D; in an ongoing multi&#x2010;volume series, while he filled out each of these &#x201C;volumes&#x201D; with poems collected as small anthologies. 
+                            In the &#x201C;Account of a Tour on the Continent of <date notBefore="1833" notAfter="1834">1833&#x2010;34,</date>&#x201D; he collaborated with his father on what appears designed initially as a travelogue in verse, 
+                            but then <persName corresp="#JR">Ruskin</persName> re&#x2010;conceived the project as a composite genre, an anthology&#x2010;like travelogue in verse, prose, and picture. 
+                            At the same time, along with increasingly complex composite projects, <persName corresp="#JR">Ruskin</persName> observes 
+                            generic boundaries in some poetic, scientific, and theological manuscripts of the mid&#x2010;1830s onward.
+                        </p>
+                        <p>As <persName corresp="#JR">Ruskin</persName> himself testified, the tension between work and anthology was a creative one, his process of composition and invention 
+                            depending on simultaneous attention and resistance to 
+                            bounding and containing structures. . . . Inevitably, the archive&#x02BC;s organization 
+                            into Works Pages and Manuscript Pages tends to dispel these tensions by the effort to achieve clarity at those levels. 
+                            In an attempt to represent some of the dynamic tension between container and contained, however, 
+                            we have adopted an approach to encoding that describes <persName corresp="#JR">Ruskin&#x02BC;s</persName> nested structures at least within the confines of a single bound manuscript.</p>
+                        </div>
+                    
+                    <div type="subsection">
+                        <head type="subsection">teiCorpus Markup and the Tension between Corpora and Works</head>
+                        <p>To represent the competing integrity of the unitary work and of the anthology containing it, 
+                            and even of anthologies containing anthologies, <hi rend="italic">ERM</hi> uses the element &#x3008;teiCorpus&#x3009;<!-- these angle brackets taken from math signs; these should be replaced with &#x3008; and &#x3009; --> 
+                            combined with standoff markup using XInclude. Since &#x3008;teiCorpus&#x3009; can both contain and be contained by other &#x3008;teiCorpus&#x3009; documents, 
+                            as well as contain other TEI documents, the element is the most available means of representing the double centeredness of the archive.</p>
+                        <p>Typically, the highest&#x2010;level entity described as a <hi rend="italic">corpus</hi> in <hi rend="italic">ERM</hi> 
+                            is the bound <hi rend="italic">manuscript</hi>, which <persName corresp="#WGC">Collingwood</persName> likewise recognized as a basic unit of the archive, and which he numbered 
+                            according to chronological sequence in his "Preliminary Note," using roman numerals 
+                            (see <ref type="note" subtype="bibliographical" target="overview_of_mss_note.php">Overview of Manuscripts</ref>).<!-- cite also ms title note -->
+                            Cook and Wedderburn annotated the &#x201C;Preliminary Note&#x201D; with lists of titles of works contained in each of these manuscripts, 
+                            an expansion that supplies the sequence of works as they appear in a manuscript (although not necessarily their order of composition),
+                            but that did fundamentally affect <persName corresp="#WGC">Collingwood&#x02BC;s</persName> editorial practice, which was present eclectic texts of single works, arranged chronologically. 
+                            ERM likewise seeks to display and annotate single works (as documentary, not eclectic texts), but also to exhibit the context of <persName corresp="#WGC">Ruskin&#x02BC;s</persName> strategies for inclusion 
+                            in larger bounding structures such as anthologies, and anthologies within anthologies.</p>
+                        <p>For example, in the originally blank, pre&#x2010;bound notebook that <persName corresp="#WGC">Collingwood</persName> named <ref type="apparatus" target="msi_apparatus.php">MS I</ref>, 
+                            and that the <persName corresp="#JR">Ruskin</persName> family knew as one of the <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Books</ref>, 
+                            <persName corresp="#JR">Ruskin</persName> used the inside front endboard to make a title page for a text, <ref type="apparatus" target="harry_and_lucy_vol1_apparatus.php">&#x201C;Harry and Lucy,&#x201D; Vol. 1</ref>, 
+                            which he possibly intended, at least initially, to be coextensive with the physical Red Book 
+                            (see <ref type="apparatus" subtype="works" target="harry_and_lucy_vol1_apparatus.php#TITLE">&#x201C;Harry and Lucy,&#x201D; Vol. 1: Title</ref>, and 
+                            <ref type="apparatus" subtype="mss" target="msi_apparatus.php#TITLE">MS I: Title</ref>). Having completed this installment of the prose work&#x2014;a terminus 
+                            that he declared by inscribing &#x201C;end of harry and Lucy&#x201D;&#x2014;<persName corresp="#JR">Ruskin</persName> 
+                            extended the contents of MS I with an anthology, <ref type="apparatus" target="msi_poetry_anthology_apparatus.php">&#x201C;Poetry&#x201D;</ref>. 
+                            This, too, reached a terminus declared by a colophon:</p>
+                            <ab type="colophon" rend="center">
+                                The end<lb/>
+                                <placeName corresp="#HERNE">hernhill</placeName><lb/>
+                                <placeName corresp="#FOUNTAINST">fountain street</placeName><lb/> 
+                                <del>end of the poems</del><lb/>
+                                juvenile library <placeName corresp="#FOUNTAINST">fountain street</placeName><lb/>
+                            </ab>                               
+                        <p>The colophon reflects the play of closure by doubly declaring an &#x201C;end&#x201D;&#x2014;the second declaration, &#x201C;end of the poems,&#x201D; specifying 
+                            the end of the anthology. This declaration is then erased (with a roughly scrawled strikethrough), 
+                            apparently in order to mark the end of a larger entity. That larger entity may be understood as 
+                            volume 1 of the prose work plus the poetry anthology, the latter appended to but distinct from that first prose &#x201C;volume&#x201D;; 
+                            or the entity may <hi rend="italic">be</hi> volume 1, which comprises both the prose work and the poetry anthology. 
+                            Compounding the possible tensions, we do not know who scored through &#x201C;end of the poems.&#x201D; If not <persName corresp="#JR">Ruskin</persName> himself, 
+                            one of his parents may have &#x201C;corrected&#x201D; the redundancy&#x2014;perhaps his mother, also added a kind of colophon of her own, 
+                            which dated her son&#x02BC;s beginning and completion of the manuscript 
+                            (<ref type="apparatus" subtype="gloss" target="mr_gloss_dating_msi_apparatus.php">Margaret Ruskin&#x02BC;s Gloss on the Dating of MS I</ref>). 
+                            Whoever was responsible, <persName corresp="#JR">Ruskin</persName> violated both his mother&#x02BC;s gloss and his own colophon 
+                            by adding a new work to the inside back endboard&#x2014;an emblem representing the &#x201C;heights of wisdom&#x201D; and &#x201C;depths of folly,&#x201D; which 
+                            he dated a few months later. It was not the &#x201C;end&#x201D; of the Red Book, after all.</p>
+                        <p>The &#x3008;teiCorpus&#x3009; markup represents MS I as a corpus containing other corpora made up of nested unitary works (TEI documents). 
+                            Thus, for MS I, the markup uses &#x3008;TEIcorpus&#x3009; elements to describe two containers&#x2014;the 
+                            manuscript or Red Book as a whole, and the poetry anthology&#x2014;with &#x3008;xi: include&#x3009; pointing to standoff markup 
+                            of &#x3008;TEI&#x3009;<!-- angles --> files containing the texts, &#x201C;Harry and Lucy,&#x201D; Vol. 1, and the six poems in the anthology.</p>
+                        
+                        <p>&#x3008;teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"&#x3009;<lb/>
+                            <space quantity="3" unit="chars"/>&#x3008;teiHeader type="anthology"&#x3009;<lb/>
+                                <space quantity="6" unit="chars"/>&#x3008;fileDesc xml:id="msi_poetry_anthology"&#x3009;<lb/>
+                                    <space quantity="9" unit="chars"/>&#x3008;titleStmt&#x3009;<lb/>
+                                        <space quantity="12" unit="chars"/>&#x3008;title type="main"&#x3009;"Poetry"&#x3008;/title&#x3009;<lb/>
+                                        <space quantity="12" unit="chars"/>&#x3008;title type="sub"&#x3009;Electronic Text Generated from a Transcription of the MS I Fair Copy&#x3008;/title&#x3009;<lb/>
+                                        <space quantity="12" unit="chars"/>&#x3008;author&#x3009;<lb/>
+                                            <space quantity="15" unit="chars"/>&#x3008;persName corresp="#JR"&#x3009;John Ruskin&#x3008;/persName&#x3009;<lb/>
+                                        <space quantity="12" unit="chars"/>&#x3008;/author&#x3009;<lb/>
+                                        <space quantity="12" unit="chars"/>...<lb/>
+                                    <space quantity="9" unit="chars"/>&#x3008;/titleStmt&#x3009;<lb/>
+                                    <space quantity="9" unit="chars"/>&#x3008;sourceDesc&#x3009;<lb/>
+                                        <space quantity="12" unit="chars"/>&#x3008;msDesc&#x3009;<lb/>
+                                             <space quantity="15" unit="chars"/>&#x3008;msIdentifier&#x3009;<lb/>
+                                                 <space quantity="18" unit="chars"/>&#x3008;country type="nation"&#x3009;United States of America&#x3008;/country&#x3009;<lb/>
+                                                        <space quantity="21" unit="chars"/>...<lb/>
+                                             <space quantity="15" unit="chars"/>&#x3008;/msIdentifier&#x3009;<lb/>
+                                             <space quantity="15" unit="chars"/>&#x3008;msContents&#x3009;<lb/>
+                                                 <space quantity="18" unit="chars"/>&#x3008;msItem&#x3009;<lb/>
+                                                        <space quantity="21" unit="chars"/>...<lb/>
+                                                 <space quantity="18" unit="chars"/>&#x3008;/msItem&#x3009;<lb/>
+                                             <space quantity="15" unit="chars"/>&#x3008;/msContents&#x3009;<lb/>
+                                         <space quantity="12" unit="chars"/>&#x3008;/msDesc&#x3009;<lb/>
+                                     <space quantity="9" unit="chars"/>&#x3008;/sourceDesc&#x3009;<lb/>
+                                 <space quantity="6" unit="chars"/>&#x3008;/fileDesc&#x3009;<lb/>
+                             <space quantity="3" unit="chars"/>&#x3008;/teiHeader&#x3009;<lb/>
+                        &#x3008;teiCorpus&#x3009;</p>
+                        
+                        <!-- schematization showing corpora of MS I, Harry and Lucy vol 1, poetry anthology, JR's colophon, emblem, but NOT MR's gloss and NOT titles of Harry and Lucy or poetry anthology -->
+                        <p>Further, the standoff markup using &#x3008;xi: include&#x3009; accommodates the necessary complexity involved in representing the integrity 
+                            of <hi rend="italic">works</hi> as well as <hi rend="italic">manuscripts</hi>. As explained in 
+                            <ref type="note" subtype="bibliographical" target="plan_of_archive_note.php">Plan of the Archive</ref>, 
+                            a <hi rend="italic">work</hi> in <hi rend="italic">ERM</hi> is repesented by Work Pages, 
+                            which comprise an Appartus Page discussing the work and Text Pages showing edited transcriptions and facsimiles of the various witnesses of that work. 
+                            A <hi rend="italic">manuscript</hi> is represented 
+                            by an Apparatus Page, while its Text Pages are effectively the sum of the Text Pages for those witnesses contained within it, 
+                            and of any Apparatus pages for corpora also contained within the manuscript&#x2014;such 
+                            as the Apparatus for the poetry anthology inside MS I. The &#x3008;teiCorpus&#x3009; element accommodates these various 
+                            &#x3008;TEI&#x3009; document types in <hi rend="italic">ERM</hi>&#x2014;<hi rend="italic">apparatus</hi>, 
+                            <hi rend="italic">witness</hi>, <hi rend="italic">drawing</hi>, 
+                            <hi rend="gloss">gloss</hi>, and so on&#x2014;that make up the archive. Thus, the markup for MS I with the &#x3008;xi: include&#x3009; standoff markup 
+                            fully unfurled would look like this:</p>
+                                
+                        <p>&#x3008;teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"&#x3009;<lb/>
+                                <space quantity="3" unit="chars"/>&#x3008;teiHeader type="anthology"&#x3009;<lb/>
+                                <space quantity="3" unit="chars"/>&#x3008;fileDesc xml:id="msi_poetry_anthology"&#x3009;<lb/>
+                                    <space quantity="6" unit="chars"/>&#x3008;titleStmt&#x3009;<lb/>
+                                        <space quantity="9" unit="chars"/>&#x3008;title type="main"&#x3009;"Poetry"&#x3008;/title&#x3009;<lb/>
+                                        <space quantity="6" unit="chars"/>&#x3008;title type="sub"&#x3009;Electronic Text Generated from a Transcription of the MS I Fair Copy&#x3008;/title&#x3009;<lb/>
+                                        <space quantity="6" unit="chars"/>&#x3008;author&#x3009;<lb/>
+                                            <space quantity="9" unit="chars"/>&#x3008;persName corresp="#JR"&#x3009;John Ruskin&#x3008;/persName&#x3009;<lb/>
+                                        <space quantity="6" unit="chars"/>&#x3008;/author&#x3009;<lb/>
+                                    <space quantity="6" unit="chars"/>&#x3008;sourceDesc&#x3009;<lb/>
+                                        <space quantity="9" unit="chars"/>&#x3008;msDesc&#x3009;<lb/>
+                                            <space quantity="12" unit="chars"/>&#x3008;msIdentifier&#x3009;<lb/>
+                                                <space quantity="15" unit="chars"/>&#x3008;country type="nation"&#x3009;United States of America&#x3008;/country&#x3009;<lb/>
+                                                     <space quantity="18" unit="chars"/>...<lb/>
+                                            <space quantity="12" unit="chars"/>&#x3008;/msIdentifier&#x3009;<lb/>
+                                            <space quantity="12" unit="chars"/>&#x3008;msContents&#x3009;<lb/>
+                                                    <space quantity="15" unit="chars"/>&#x3008;msItem&#x3009;<lb/>
+                                                     <space quantity="18" unit="chars"/>...<lb/>
+                                                <space quantity="15" unit="chars"/>&#x3008;/msItem&#x3009;<lb/>
+                                            <space quantity="12" unit="chars"/>&#x3008;/msContents&#x3009;<lb/>
+                                        <space quantity="9" unit="chars"/>&#x3008;/msDesc&#x3009;<lb/>
+                                    <space quantity="6" unit="chars"/>&#x3008;/sourceDesc&#x3009;<lb/>
+                                <space quantity="3" unit="chars"/>&#x3008;/fileDesc&#x3009;<lb/>
+                                <space quantity="3" unit="chars"/>&#x3008;/teiHeader&#x3009;<lb/>
+                                <space quantity="3" unit="chars"/>&#x3008;xi:include href="msi_poetry_anthology_title.xml"&#x3009;<!--John Ruskin's title for the anthology.--><lb/>
+                                    <space quantity="6" unit="chars"/>&#x3008;xi:fallback&#x3009;<lb/>
+                                        <space quantity="9" unit="chars"/>&#x3008;ab&#x3009;WARNING: Could not include msi_poetry_anthology_title.xml.&#x3008;/ab&#x3009;<lb/>
+                                    <space quantity="6" unit="chars"/>&#x3008;/xi:fallback&#x3009;<lb/>
+                                <space quantity="3" unit="chars"/>&#x3008;/xi:include&#x3009;<lb/>
+                                <space quantity="3" unit="chars"/>&#x3008;xi:include href="the_steam_engine_msi.xml"&#x3009;<lb/>
+                                    <space quantity="6" unit="chars"/>&#x3008;xi:fallback&#x3009;<lb/>
+                                        <space quantity="9" unit="chars"/>&#x3008;ab&#x3009;WARNING: Could not include the_steam_engine_msi.xml.&#x3008;/ab&#x3009;<lb/>
+                                    <space quantity="6" unit="chars"/>&#x3008;/xi:fallback&#x3009;<lb/>
+                                <space quantity="3" unit="chars"/>&#x3008;/xi:include&#x3009;<lb/>
+                                <space quantity="3" unit="chars"/>&#x3008;xi:include href="on_scotland_msi.xml"&#x3009;<lb/>
+                                    <space quantity="6" unit="chars"/>&#x3008;xi:fallback&#x3009;<lb/>
+                                        <space quantity="9" unit="chars"/>&#x3008;ab&#x3009;WARNING: Could not include on_scotland_msi.xml.&#x3008;/ab&#x3009;<lb/>
+                                    <space quantity="6" unit="chars"/>&#x3008;/xi:fallback&#x3009;<lb/>
+                                <space quantity="3" unit="chars"/>&#x3008;/xi:include&#x3009;<lb/>
+                            &#x3008;teiCorpus&#x3009;</p>
+                        
+                        <!-- schematization showing at least one of the standoff markups opened up and showing apparatus, text files etc. -->
+                        
+                        
+                        
+                        <p>Expression of corpora allows for interpretation of <persName corresp="#JR">Ruskin&#x02BC;s</persName> intention as unfolding rather than teleological and fixed. Here and in other instances, 
+                            he seems to have been intrigued by corpora as provisional. In MS III&#x2014;chronologically, the next Red Book he used after MS I&#x2014;he worked simultaneously 
+                            on volume 2 of the prose work, &#x201C;Harry and Lucy,&#x201D; which starts on the first page of the notebook, 
+                            and on an anthology entitled &#x201C;poetry discriptive,&#x201D; which starts several leaves into the notebook. Thus, it appears that <persName corresp="#JR">Ruskin</persName> did not just imagine filling MS III 
+                            by running up one text, &#x201C;Harry and Lucy,&#x201D; against another group of texts, the anthology, 
+                            but that he conceived the manuscript in terms of two corpora vying for the space between them. 
+                            As it turned out, he left this volume of &#x201C;Harry and Lucy&#x201D; incomplete (a fate common to many of his works), 
+                            so that the remaining blank leaves between the stop of &#x201C;Harry and Lucy&#x201D; and the start of the &#x201C;poetry discriptive&#x201D; anthology 
+                            became available to enter two additional poetry anthologies and allow them to clash for space as well.</p>
+                        <p>Other examples of provisional corpora include MS II, a handmade booklet that <persName corresp="#JR">Ruskin</persName> compiled around the same time as MS III, 
+                            and that he inscribed with the title &#x201C;Works&#x201D; at the top of the first page, 
+                            suggesting perhaps that now that all his writing&#x2014;MS I, MS II, and MS III, and perhaps unbound pieces too&#x2014;formed a single corpus, 
+                            like <persName corresp="#WW">Wordsworth&#x02BC;s</persName> cathedral with its tripartite naves forming the great philosophical poem and with the single poems ranged round as antechapels. 
+                            By <date when="1834">1834,</date> <persName corresp="#JR">Ruskin&#x02BC;s</persName> ambitions rose to the &#x201C;Account of a Tour on the Continent,&#x201D; 
+                            which he modeled on the composite, anthology&#x2010;like genre of the illustrated travelogue, such as <persName corresp="#SR">Samuel Rogers&#x02BC;s</persName> <hi rend="italic">Italy</hi>, 
+                            and consisting of poems, prose, and his hand&#x2010;drawn imitations engravings and lithographs.</p>
+                       <p>An older way of representing such collections in TEI would be to enclose texts with the &#x3008;group&#x3009; element, 
+                            an element that does validate a representation of groups within groups, such as a poetry anthology enclosed within a manuscript that is itself conceived as a group. 
+                            But because this element can nest only within a &#x3008;TEI&#x3009; document, 
+                            and unlike &#x3008;teiCorpus&#x3009; cannot itself contain a &#x3008;TEI&#x3009; document, 
+                            the &#x3008;group&#x3009; element is too inflexible to represent <persName corresp="#JR">Ruskin&#x02BC;s</persName> double centeredness of work and manuscript and their dynamic, evolving relation. 
+                            Conceivably, the entirety of <hi rend="italic">ERM</hi> could be encoded as a single corpus, with each manuscript forming a group, 
+                           but this expression would conceal <persName corresp="#JR">Ruskin&#x02BC;s</persName> evolving intentionality as grandly and deceptively as <persName corresp="#WW">Wordsworth&#x02BC;s</persName> metaphor overwrote 
+                            the provisional status of <hi rend="italic">The Recluse</hi>.
+                       </p>
+                        <p>The &#x3008;teiCorpus&#x3009; markup also allows for potentially reordering corpora athwart manuscripts, such as the &#x201C;volumes&#x201D; making up the uncompleted &#x201C;Harry and Lucy,&#x201D; 
+                            drawn from MS I, MS III, and MS IIIA, or the poems, prose, and drawings forming the uncompleted &#x201C;Account,&#x201D; 
+                            drawn from fair copy of two versions, in MS IA and MS IX respectively, and from draft in MS VIII.
+                            We could choose from the start to represent an eclectic text of &#x201C;Harry and Lucy&#x201D; or of the &#x201C;Account,&#x201D; 
+                            by nesting the texts of the parts inside a &#x3008;group&#x3009; element, but this structure would assume a fixed rather than unfolding intention, 
+                            requiring subordination of the separate texts to a common frontmatter, but that frontmatter, even if only implicit, would be an editorial invention. 
+                            <persName corresp="#JR">Ruskin&#x02BC;s</persName> &#x201C;volumes&#x201D; of &#x201C;Harry and Lucy&#x201D; are related to one another only loosely, resembling less the volumes in <persName corresp="#ME">Maria Edgeworth&#x02BC;s</persName> <hi rend="italic">Harry and Lucy; or Early Lessons Concluded</hi>,<!-- check --> 
+                            the book on which <persName corresp="#JR">Ruskin</persName> modeled his title page, than the separate books in the series, each aimed at a successively older age group: 
+                            <hi rend="italic">Early Lessons</hi>, <hi rend="italic">Frank</hi>, <hi rend="italic">Harry and Lucy; or Early Lessons Concluded</hi>.<!-- check --> 
+                            Nonetheless, if one can argue for forming these volumes into a unified work, &#x201C;Harry and Lucy,&#x201D; the &#x3008;teiCorpus&#x3009; markup does not prevent such a move. 
+                            Meanwhile, encoding each volume of &#x201C;Harry and Lucy&#x201D; as a corpus within MS I, MS III, and MS IIIA also expresses those volumes&#x02BC; relation to those respective 
+                            corpora&#x2014;a relation that is perhaps closer than that binding the volumes to one another.</p>
+                        <p>Other texts potentially form groups in which the bonds between texts do appear stronger than their adherance to separate corpora in which they are found. The 
+                            <ref type="apparatus" subtype="works" target="sermons_on_the_pentateuch_apparatus.php">Sermons on the Pentateuch</ref> exist in fair copy in five handsewn booklets, 
+                            while their drafts (some revised and fair&#x2010;copied in the booklets, and some unique) are contained in various Red Books. Because <persName corresp="#JR">Ruskin</persName> entered these drafts in unused spaces 
+                            in Red Books that he had abandoned some time earlier as an integral corpus&#x2014;in some instances, the draft text of a sermon running reverso and upside down to the original contents 
+                            of the Red Book&#x2014;these drafts probably should not be interpreted in terms of the dynamic competition for space that characterizes <persName corresp="#JR">Ruskin&#x02BC;s</persName> composition of the corpora forming MS III. 
+                            Again, &#x3008;teiCorpus&#x3009; markup does not prevent reordering of the sermons&#x02BC; separate text documents into a whole, while also allowing the presence of the sermons&#x02BC; drafts 
+                            to be expressed in their various manuscripts.
+                        </p>
+                        <p>In this markup, insertions by outside parties, such as glosses by <persName corresp="#JR">Ruskin&#x02BC;s</persName> parents are represented as &#x201C;works&#x201D; in themselves with TEI headers, 
+                            when the glosses refer to the manuscript corpus as a whole. 
+                            They are a file type named <hi rend="italic">gloss</hi>, with an ordered presence in the manuscript, but not a hierarchical dominance:</p>
+                            <!-- Same schematization as preceding, but now showing (and highlighting) the gloss file. --> 
+                        <p>By its placement in the midst of the poetry anthology, the gloss is ambiguous about what state the manuscript had achieved when <persName corresp="#MR">Margaret</persName> pronounced it &#x201C;finished.&#x201D; 
+                            The gloss&#x02BC;s declaration of completion was trumped, at the very least, by <persName corresp="#JR">Ruskin&#x02BC;s</persName> addition of the emblem on the inside back endboard, 
+                            if not also by the two poems physically situated beneath the gloss on the page. 
+                            Alternatively, <persName corresp="#MR">Margaret</persName> may have timed her insertion of the gloss appropriately, if not positioned it so clearly, in response to <persName corresp="#JR">Ruskin&#x02BC;s</persName> signals of closure&#x2014;his 
+                            colophon, and his final poem in the anthology, <ref type="apparatus" subtype="works" target="on_the_rainbow_apparatus.php">&#x201C;On the Rainbow&#x201D;</ref>, 
+                            which may pose its emblem of the rainbow as mirroing a drawing of a rainbow in the &#x201C;frontispiece&#x201D;<!-- link this apparatus --> of MS I, 
+                            and hence strengthening appearance of closure&#x2014;however provisional that closure turned out to be.
+                        </p>
+                        <p>An apparent limitation of this approach to markup is that we are sometimes driven to representing such components of a corpus as the title &#x201C;Poetry,&#x201D; 
+                            the head for the MS I Poetry Anthology, as a separate TEI document, since &#x3008;teiCorpus&#x3009; cannot accommodate such a textual element at a lesser level 
+                            of granularity. But if it seems to stretch credulity to create a TEI document to witness a one&#x2010;word head, the solution is responsible to the provisional quality 
+                            of <persName corresp="#JR">Ruskin&#x02BC;s</persName> title page for MS I, which may refer solely to the prose tale, but which may also refer to the prose tale plus the poetry anthology plus the emblem of 
+                            the &#x201C;heights of wisdom&#x201D; and &#x201C;depths of folly.&#x201D; The &#x201C;Account&#x201D; lacks a main title in any of its manuscripts, even the fair copies, 
+                            and the starting and ending point of its draft in MS VIII, amid drafts of unrelatied works, is ambiguous.
+                        </p>
+                    </div>
+                    
+                    <div type="subsection">
+                        <head type="subsection">Expressing the Materiality of the Manuscripts</head>
+                        <p>For <persName corresp="#JR">Ruskin,</persName> was the physical Red Book containing MS I co&#x2010;terminous with &#x201C;volume 1&#x201D; of a compound text, 
+                            consisting of a title page (oddly situated on the inside front endboard, a verso); the prose work, &#x201C;Harry and Lucy&#x201D;; 
+                            the poetry anthology with its title and individual texts; the colophon; and the late&#x2010;added emblem? 
+                            <persName corresp="#JR">Ruskin</persName> seems keenly conscious of the uses of materiality&#x2014;pre&#x2010;bound notebooks, ledgers, handsewn pamphlets, folded sheets&#x2014;to set boundaries for texts, 
+                            which he could both push against and accept as a constraint. Another justification for reliance on &#x3008;teiCorpus&#x3009; to define a manuscript is that 
+                            its physical description can be encoded within the header for the highest&#x2010;level teiCorpus element (as well as described discursively in the Apparatus Page) 
+                            that circumscribes a given manuscript&#x2014;MS I, MS II, and so on&#x2014;with the implication that these physical elements apply 
+                            significantly to the various text corpora contained therein. Because <persName corresp="#JR">Ruskin</persName> often imitated the material condition of a published codex in his manuscripts&#x2014;lettering 
+                            his fair copies in imitations of typographic elements such as title pages, colophons, pages with justified margins, and illustrating them with drawings that imitate 
+                            the stippling of an engraving or the wash of a lithograph&#x2014;the binding of a manuscript may prove as significant to express as the hand in which it is copied.
+                        </p>
+                        <!-- Discussion of how categories of intention overlap that are kept separate in Tanselle&#x02BC;s rationale of copytext  -->
+                    </div>
+                        
+                    <div type="subsection">
+                        <head type="subsection">Collection and Anthology</head>   
+                        <p>Corpora range in levels of cohesion from collection to anthology. . . .</p>
+                        <p><persName corresp="#JR">Ruskin</persName> thought of a class of manuscripts that the family called his 
+                            <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Books</ref> as embodying collections that could be defined by beginnings and endings. 
+                            &#x201C;I am trying to get that red book of mine which has the Monastery in it finished, by the time you come home. I am putting in the shipwreck altogether 
+                            and the adventures of an ant &#x0026;c&#x201D; (letter from <persName corresp="#JR">John</persName> to <persName corresp="#JJR">John James Ruskin,</persName> 10 March 1829, RFL 192).<!-- ADD LINKS TO MS III, MONASTERY, SHIPWRECK, ADVENTURES --> 
+                            What prompted these openings and closings in a given instance is a question of interpretation, but the boundaries often appear defined 
+                            by the manufactured physical notebook.</p>
+                        <!-- Is there a way to relate the notebook type to textual condition of anthology / collection or is the relation arbitrary? -->
+                    </div>
+                    
+                    <div type="subsection">
+                        <head type="subsection">Apparatuses, Notes, and Annotation</head>   
+                        <!-- Discuss organization of apparatuses, and distinguish between notes and annotation. Scope of description and annotation -->
+                    </div>
+                </div>
+                        
+                <div type="section">
+                    <head type="section">The Documentary Editorial Orientation in <hi rend="italic">ERM</hi></head>
+                        <p>At the levels of both the <hi rend="italic">work</hi> and the <hi rend="manuscript">manuscript</hi>, the editorial orientation of <hi rend="italic">ERM</hi> is documentary. 
+                            This approach contrasts with <persName corresp="#WGC">W. G. Collingwood&#x02BC;s</persName> in Poems (1891), which can be characterized as aesthetic in method, in the sense described by 
+                            (<ref type="bibliography" target="bibliography.php#SCHOLARLYEDITING">Shillingsburg in <hi rend="italic">Scholarly Editing in the Computer Age</hi></ref><!-- Bibl -->,  
+                            although a more historical orientation developed when Cook and Wedderburn incorporated the Poems (1891) into the Library Edition. 
+                            A documentary approach might seem to threaten the double centeredness sought in <hi rend="italic">ERM</hi> by favoring the work over the manuscript, 
+                            since documentary editing tends to treat 
+                            each witness of a text as monolithic&#x2014;annotated perhaps, but not amended 
+                            (<ref type="bibliography" target="bibliography.php#SCHOLARLYEDITING">Shillingsburg, <hi rend="italic">Scholarly Editing</hi></ref>, 23), 
+                            but in the design of the archive a documentary account of a given witness can be related either to the manuscript containing that witness or to the work&#x02BC;s 
+                            subsequent publishing history, if any.
+                        </p>
+                        <p>Moreover, juvenilia as a field of study privileges a documentary rather than an eclectic methodology. 
+                            The aim of documentary editing, as summarized by <persName corresp="#MJK">Mary&#x2010;Jo Kline,</persName> is to represent &#x201C;inscribed artifacts whose unique 
+                            physical characteristics and original nature give them special evidentiary value&#x201D; (Guide to Documentary Editing, 2, and see 9). Writing in the mid&#x2010;1980s,
+                            <persName corresp="#MJK">Kline</persName> could still generalize a contrast between this approach and literary editing. 
+                            Increasingly, literary scholars have adopted a more sociological approach focuseed on study of the  artifact in its cultural moment, 
+                            while historians have come to recognize that their allegedly purist documentary editing has always been more interventionist and &#x201C;literary&#x201D; 
+                            than some wanted to claim, prompted apparently by the politics of academic discipline 
+                            (see the introduction to the third edition of the Guide to Documentary Editing). The study of juvenilia foregrounds the merits that historians have traditionally claimed 
+                            for diplomatic editing of manuscript documents while highlighting the difficulties of achieving the purity of a diplomatic method, on which some historians insisted 
+                            while refusing to own up to ways in which they compromised that supposed purity.<!--Tanselle on historical editing-->
+                        </p>
+                    <p>Earlier editors of the <persName corresp="#JR">Ruskin</persName> juvenilia apparently took for granted that readers would benefit by an almost opposite editorial orientation, the aesethetic. 
+                        From <persName corresp="#JJR">John James Ruskin</persName> and <persName corresp="#WHH">W. H. Harrison,</persName> to <persName corresp="#WGC">W. G. Collingwood,</persName> 
+                        to <persName corresp="#ETC">E. T. Cook</persName> and <persName corresp="#AW">Alexander Wedderburn,</persName> the early editors freely and without acknowledgment changed punctuation, invented titles, 
+                            revised lines and reorganized strophes of poetry, and joined fragments that are unrelated in the manuscripts to 
+                            form texts that <persName corresp="#JR">Ruskin</persName> never wrote 
+                            (see History of the Bibliography and Editing of the Early Ruskin Manuscripts). These edited texts are encoded in <hi rend="italic">ERM</hi> 
+                        as witnesses contributing to a sociological representation of a given work, as they embody a conception of <persName corresp="#JR">Ruskin’s</persName> boyhood 
+                        as formed by <persName corresp="#JR">Ruskin</persName> and his circle in the <date notBefore="1880" notAfter="1899">1880s and 1890s.</date></p>
+                    <p>In twentieth&#x2010;century editing of <persName corresp="#JR">Ruskin,</persName> the orientation swung to a documentary method, prompted in part by <persName corresp="#HGV">Helen Viljoen&#x02BC;s</persName> scorn for the methods 
+                        of Cook and Wedderburn in the Library Edition. (She was less willing to point out similar faults in <persName corresp="#WGC">Collingwood&#x02BC;s</persName> editing, 
+                            failing to situate either the Poems [1891] or the Library Edition in a context of the history of editing.) The results of this swing are reflected in 
+                        <persName corresp="#VAB">Van Akin Burd&#x02BC;s</persName> 0000 edition of the <persName corresp="#JR">Ruskin</persName> Family Letters, which influenced Victorian studies by his insistence on treating 
+                            the entire family&#x02BC;s historical papers&#x2014;the <hi rend="italic">family</hi> letters&#x2014;as requisite to scholarship, 
+                        and not just <persName corresp="#JR">Ruskin’s</persName> literary accomplishment. Before Burd [Viljoen and the Bowerswell Papers]<!-- DEVELOP and reference history of edting note--></p>
+                        <!-- DISCUSS ALEXANDER  -->
+                
+                    
+                    <div type="subsection">
+                        <head type="subsection">Transcription</head>   
+                        <!-- Discuss organization of apparatuses, and distinguish between notes and annotation. Scope of description and annotation -->
+                        <p>Whereas Ruskin's first editors were determined to regularize Ruskin's punctuation, 
+                            later editors and critics, such as Van Akin Burd, attempted faithfully to reproduce Ruskin’s punctuation, 
+                            on the grounds that one could detect the pulse of thought in his hand. Similarly, for Emerson, 
+                            the lack of punctuation in Ruskin's early writing provided a window to how he “bound his phrases each to each” 
+                            and allowed “their movement [to jam] back and forth in the mind” (RGI 27).</p>
+                        <p>These movements of mind, if indeed reflected in Ruskin's punctuation or lack of it, are preserved in the documentary transcripts and accompanying facsimiles. 
+                            Nonetheless, Ruskin's punctuation must be coherently and consistently encoded, especially in its idiosyncracies. 
+                            Fortunately, Ruskin's inventions and oddities prove sufficiently persistent and consistent, at least for a period in the evolution of his hand, 
+                            that they can be represented in XML/TEI more meaningfully than as an accidental.</p>
+                        <p>Some of these marks are more accurately understood in terms of Ruskin's reflection of the materiality of the published texts that he imitated 
+                            than as an expression of thought according to a Romantic poetics. For example, in order to imitate printed prose that is justified on both left and right 
+                            margins, yet without having to achieve that effect in a given line of text by adjusting space between words or between letters within a word, 
+                            Ruskin invented a mark that simply fills any remaining space in a line to the margin. In his earliest prose text, 
+                            <ref type="apparatus" target="harry_and_lucy_vol1_apparatus.php">&#x201C;Harry and Lucy,&#x201D; Vol. 1</ref>, 
+                            the mark has the appearance of a dash of varying lengths, but it would misrepresent the mark to encode it as a hyphen, en-dash, or em-dash according to appearance. 
+                            Rather, we encode this consistently as a geije of @type purposed for justifying text:
+                            &#x003C;g type&#x003D;&#x201C;justification&#x201D;&#x003E;-&#x003C;/g&#x003E;.
+                            In the MS IX fair copy of <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent</ref>, 
+                            the mark takes the form of a point combined with a dash:
+                            &#x003C;g type&#x003D;&#x201C;justification&#x201D;&#x003E;.-&#x003C;/g&#x003E;.
+                            We do not attempt to encode the varying length of this geije, as the length is apparent in the facsimile; 
+                            and in any case, the mark's length is a function of its purpose of filling remaining space to the margin.
+                        </p>
+                        <p>In practice, the justification geije is typically followed by tags indicating a line break or a page break; 
+                            and the line break is the @type for "runover"--that is, the prose text spills over to the next line: 
+                            Harry determined<g type="justification">-</g><lb type="runover"/>
+                            to go on with science and<lb type="runover"/>
+                            There are instances, however, of Ruskin using the justification geije at the start of a line, rather than at the end. 
+                            It seems in some texts that he did not like indentations for paragraphs; and if he did indent a paragraph, he filled in the space 
+                            with his justification geije. Correspondingly, he used the justification geije to signal the end of a paragraph, so he could start the next paragraph 
+                            flush left. Examples are found in <!-- Calais prose MS IX: how code a jump to this? -->
+                        </p>
+                        <p>In some cases, what looks like the justification geije, and may effectively function as such, serves primarily to indicate a word division. 
+                            These instances are encoded as a hyphen followed by a line-break tag, as follows:
+                            now I<lb type="runover"/>
+                            will show you some experi&#x2010;<lb type="runover"/>
+                            ments on sound.
+                            It is possible that, at this early stage, Ruskin did not clearly distinguish a word-division hyphen from a justification geijeFor the same reason, I ignore dots and fancy flourishes used to fill out and justify lines with the margin (unless, as in some cases, a flourish indicates the end of a paragraph) and other marks that serve only decorative or doodling purposes (e.g., a prominent dot raised above the line in the middle of a sentence where one would expect to find no punctuation, or stray horizontal lines that seem have occupied the writer in moments of abstraction). Where Ruskin omitted ending punctuation, I follow suit and supply extra space, as does Burd in RFL. I do indent paragraphs, although—whether to give the appearance of a solid block of text, or merely to save paper—Ruskin often indents only slightly or inserts a narrow extra line space at the end of a paragraph and brings the next one flush.
+                        </p>
+                        <p>Rough drafts present the usual problems of transcription. Conjectural readings are represented in square brackets and with a query mark: for example, W[ho(?)]. 
+                            When I cannot make out a word at all, I supply simply the query [(?)]. 
+                            Words that Ruskin crossed out are enclosed in angle brackets: for example,. 
+                            Double angle brackets indicate letters or words written over by other letters or words, 
+                            although I have more often found it clearer to write out such explanations in the textual notes. 
+                            I prefer to let stand, often without comment, Ruskin’s remarkably rare misspellings and grammatical errors, 
+                            supplying [sic] only when the problem might appear to be my error. 
+                            One error I do consistently and silently correct is Ruskin’s doubled letters arising from dividing a word between lines, 
+                            and doubled words occurring before and after page breaks. 
+                            Except where noted otherwise, I retain Ruskin’s capitalizations, ampersands, and spaces in words like to day, every day, and every one. 
+                            Omitted letters usually are meant to serve poetic meter, both in rough and fair copy; 
+                            however, when a missing letter is clearly an error, as in the prose works, I supply it in braces { }.
+                            The prose works, such as “Harry and Lucy” and the sermons, present special problems in their accidental features, 
+                            precisely because the fair copies are on such good behavior.</p>
+                        <p>A frequent oddity, perhaps related to Ruskin’s later idiosyncracy that Burd terms his “half-comma,” 
+                            are periods in the place of commas in the middle of sentences. 
+                            Conversely, commas often stand for periods at the end of sentences. 
+                            This reversal is not consistent but occurs regularly enough that the modern reader should be made aware of it without having to translate the punctuation. 
+                            My compromise is to substitute the customary punctuation in square brackets, 
+                            so that the reader will understand that [,] means Ruskin used a period and that [.] means he used a comma. 
+                            I substitute [.] for an ending comma, however, only when that punctuation is followed by a capital at the beginning of the following sentence; 
+                            if independent clauses are strung together and divided by commas with no capitalization, I leave the commas.</p>
+                        <p>In years prior to using the period and comma reversal, Ruskin evidently has trouble writing commas on the baseline, 
+                            and they float like apostrophes and quotation marks. These marks are regularly interpreted as commas.</p>
+                        <p>In the earliest writing, Ruskin appears to have developed some  punctuation peculiar to himself—as obscure, 
+                            in some instances, as his later mineralogical code symbols. In the first “Harry and Lucy” (no. 3), 
+                            Ruskin ends sentences with a mark that might be a question mark or might be an exclamation point, 
+                            and that seems to serve both of those functions. I have interpreted this mark similarly to my treatment of Ruskin’s comma and period reversal, 
+                            using [?] for the mark when the sense calls for a question, and [!] for the mark in other cases.</p>
+                        <p>As another system of his own in the earlier writing, especially in no. 3, Ruskin added closing quotation marks only to the ends of paragraphs, 
+                            never paired with opening quotation marks. Not all the paragraphs with closing quotation marks are dialogue, 
+                            and not all dialogue paragraphs have quotation marks. I suspect either that Ruskin misunderstood the symbol as indicating the end of a paragraph, 
+                            or that he just liked the mark’s appearance. In either case, the mark would be best omitted altogether in transcription; 
+                            however, I have retained it, since another reader might make better sense of it.</p>
+                        <p>Still more bizarre is Ruskin’s doubled period, which he uses in the second “Harry and Lucy” (no. 20) and still more frequently in “Eudosia” (no. 27). 
+                            The mark certainly does not indicate an emphatic stop; the opposite is more likely, a two-point ellipsis suggesting a slight pause, 
+                            in the way a dash would normally be used. Ruskin may have needed to invent his own sign to function as a dash, 
+                            since he used dashes and hyphens for another purpose, namely, to fill out and “justify” lines. 
+                            In nos. 20 and 27, a bracketed dash [—] is used in place of Ruskin’s double period (..).
+                        </p>
+                    </div>
+                
+                    <div type="subsection">
+                        <head type="subsection">The Private, Confidential, and Public in the Early Manuscripts</head>
+                        <p>In <hi rend="italic">The Study of Modern Manuscripts</hi>, <persName corresp="#DHR">Donald Reiman</persName> recommends that editors &#x201C;use different procedures for analyzing and editing 
+                            private and confidential manuscripts from those they employ in presenting public documents.&#x201D; <persName corresp="#DHR">Reiman</persName> defines these three categories, 
+                            not by the depth of intimacy between writer and reader, nor by the intricacy of artfulness in the writing, 
+                            but by &#x201C;the nature and extent of the writer&#x02BC;s intended audience. 
+                            A manuscript is <hi rend="italic">private</hi> if its author intended it to be read only by one person 
+                            or a specific small group of people whose identity he knew in advance; 
+                            <hi rend="italic">confidential</hi> if it was intended for a predefined but larger audience who may&#x2014;or may not&#x2014;be personally known to or interested in 
+                            the author; and <hi rend="italic">public</hi> only if it was written to be published or circulated for perusal by a widespread, unspecified audience, 
+                            including such abstractions as the nation, the reading public, and posterity&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#REIMANMODERNMANUSCRIPTS">Reiman, <hi rend="italic">Study of Modern Manuscripts</hi></ref>, 43, 65).
+                        </p>
+                        <p>Which of these definitions applies to juvenilia and youthful writing, which often imitates public forms&#x2014;even to the extent of mimicking 
+                            the appearance of published documents&#x2014;but which, in practical terms, cannot have been intended for an audience beyond the family circle? 
+                            In considering an example of juvenilia, Jane Austen&#x02BC;s <hi rend="italic">Volume the First</hi>, <persName corresp="#DHR">Reiman</persName> proposes a special subcategory, 
+                            &#x201C;<hi rend="italic">polished</hi> private and confidential manuscripts,&#x201D; and frames the question regarding the intention of such artifacts in terms of manuscript authority. 
+                            <date notBefore="1801" notAfter="1900">Nineteenth&#x2010;century</date> juvenilia is special case among manuscripts belonging to an &#x201C;age of printing&#x201D; when professional &#x201C;authors realized that their final manuscripts 
+                            were way stations on the road to a perfected text, rather than the thing itself.&#x201D; For mature, professional writers in the industrial age of print, 
+                            &#x201C;the manuscript no longer carried the same textual authority that it once had, 
+                            even when it represented the author&#x02BC;s final involvement in such matters as the orthography and punctuation of most of the text.&#x201D; Authors in the age of print 
+                            &#x201C;send their work to press . . . anticipating&#x2014;and in many cases hoping&#x2014;that changes in the text or its presentation will be introduced by the printers 
+                            or the publishers.&#x201D; Not so manuscript &#x201C;poems or other compositions that were intended for the perusal of a few specific individuals&#x2014;in short, 
+                            <hi rend="italic">private</hi> or <hi rend="italic">confidential</hi> documents&#x201D;&#x2014;that the author fair&#x2010;copied for limited distribution, but did not intend 
+                            for publication. These kinds of artifacts, typical of nineteenth&#x2010;century juvenilia, 
+                            bear authority comparable to that of scribal copies of pre&#x2010;modern manuscripts, which &#x201C;the writer never expected . . . to be superseded 
+                            by a more authoritative printed text. Such a manuscript had to be more carefully prepared than a press copy, because it would neither be vetted by publisher&#x02BC;s 
+                            readers and compositors nor corrected in proof&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#REIMANMODERNMANUSCRIPTS">Reiman, <hi rend="italic">Study of Modern Manuscripts</hi></ref>, 92, 93, 94-95).
+                        </p>
+                        <p><persName corresp="#DHR">Reiman</persName> is referring to the authority of copytext; and he points to sensible measures for situating an artifact like 
+                            <!-- DH, do I need to put Jane Austen in crib sheet?-->Austen&#x02BC;s <hi rend="italic">Volume the First</hi> in the category of polished confidential or private manuscript: 
+                            in this case, &#x201C;since some neighbors and acquaintances whom [Austen] disliked seem to have been targets of her satirical thrusts, 
+                            the manuscript was clearly not intended to circulate beyond Jane Austen&#x02BC;s circle of like&#x2010;minded intimates, 
+                            who alone could understand the point of these barbs and share the humor of them&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#REIMANMODERNMANUSCRIPTS">Reiman, <hi rend="italic">Study of Modern Manuscripts</hi></ref>, 94). 
+                            Similar evidence is available of <persName corresp="#JR">Ruskin&#x02BC;s</persName> carefully prepared fair&#x2010;copy manuscripts circulating among a close circle of admiring and sympathetic readers, 
+                            such as the couple, <ref type="note" subtype="biographical" target="richard_gray_note.php">Richard</ref> and 
+                            <ref type="note" subtype="biographical" target="mary_gray_note.php">Mary</ref> Gray, who were intimate friends of <persName corresp="#MR">Margaret</persName> and <persName corresp="#JJR">John James&#x02BC;s.</persName> 
+                            &#x201C;I should like Mr. &#x0026; Mrs. Gray to see Johns letters,&#x201D; <persName corresp="#MR">Margaret</persName> wrote to her husband in <date notBefore="1831-03-01" notAfter="1831-03-31">March 1831,</date> 
+                            suggesting that, when <persName corresp="#JJR">John James</persName>in his travels neared <placeName corresp="#GLASGOW">Glasgow,</placeName> 
+                            where the Grays had recently relocated, he &#x201C;make up a small parcel and send also [the poems] the fairies&#x2014;the lines on Jessy these on Lord Nelson[.] 
+                            I do not know exactly what you have but any you might wish to send I could let you have&#x2014;Weep for the Dead&#x2014;O to My Heart I should like them to see&#x201D; 
+                            (RFL 232). For all of these poems, 
+                            there survive fair copies in <persName corresp="#JR">Ruskin&#x02BC;s</persName> hand, and these were probably the manuscripts that <persName corresp="#MR">Margaret</persName> deemed presentable for perusal by initimate friends&#x2014;in 
+                            <persName corresp="#DHR">Reiman&#x02BC;s</persName> terms, the polished confidential manuscripts, bearing authority of copytext.
+                        </p>
+                        <p>What does this classification indicate for the &#x201C;different procedures&#x201D; that, according to <persName corresp="#DHR">Reiman,</persName> should be observed in editing and analyzing private or confidential 
+                            manuscripts as compared with public? First, the class of manuscripts that derive authority from both their polished presentation and their confidential status 
+                            suggests that readers perceived authority in the material artifact itself, which bore direct witness to the authority of the writer&#x2014;or 
+                            of something about the writer. &#x201C;I let Johns letters come just as he writes them,&#x201D; <persName corresp="#MR">Margaret</persName> explained to <persName corresp="#JJR">John James</persName> when enclosing their son&#x02BC;s letters inside her own, 
+                            &#x201C;that you may not be misled in your judgment as to his hopes and feelings&#x201D; 
+                            (4 March 1829, in RFL 185). 
+                            <persName corresp="#MR">Margaret</persName> assumes a Romantic idea about writing as an open window to the writer&#x02BC;s expression, which if copied in her own hand 
+                            would not only lose authority, but even potentially mislead the reader. 
+                            There do survive copies of <persName corresp="#JR">Ruskin&#x02BC;s</persName> works in his parents&#x02BC; hands, but these are far less common than <persName corresp="#JR">Ruskin&#x02BC;s</persName> own fair copies; 
+                            and it seems unlikely that what <persName corresp="#MR">Margaret</persName> wanted the Grays to "see"&#x2014;not just read&#x2014;would have been a fair copy in her own hand, 
+                            which derived authority from her adult sophistication of punctuation, spelling, orthography, and the like. 
+                            Rather, &#x201C;judgment as to [the child writer&#x02BC;s] hopes and feelings&#x201D; derived from an intimate experience and knowledge that were available 
+                            only through the authoritative original artifact; and by virtue of the artifact&#x02BC;s materiality, 
+                            this experience could be extended to a trusted confidential circle.
+                        </p>
+                        <p>Evidence suggests that <persName corresp="#JR">Ruskin</persName> shared this sense of an intended confidential audience that, to refine <persName corresp="#DHR">Reiman&#x02BC;s</persName> defintion, 
+                            was most likely "personally known to or interested in the author."  
+                            <persName corresp="#JR">Ruskin&#x02BC;s</persName> understanding of these conditions is indicated by his inclusion of a letter to the Grays&#x02BC; relation, Mrs. Robert Monro, <!-- DH, do I need to put Mrs. Robert Monro in crib sheet?-->
+                            as part of MS II, a manuscript that he entitled &#x201C;vol 1&#x201D; of his &#x201C;Works.&#x201D; 
+                            By including the letter as part of the handsewn pamphlet, which otherwise contains poems, 
+                            <persName corresp="#JR">Ruskin</persName> appears implicitly to invite Mrs. Monro to form part his confidential audience beyond the immediate family circle. 
+                            The designation &#x201C;Works,&#x201D; moreover, attests to the significance of this production, both as a physical thing, a &#x201C;volume,&#x201D; 
+                            and as an abstract promise of more to come.
+                        </p>
+                        <p>It follows that, as an editorial procedure that <persName corresp="#DHR">Reiman</persName> calls for establishing in keeping with a manuscript&#x02BC;s classification, 
+                            an edition of <date notBefore="1801" notAfter="1900">nineteenth&#x2010;century</date> juvenilia should include manuscript images; diplomatic, and not eclectic or otherwise &#x201C;corrected&#x201D; transcriptions of texts; 
+                            and a thorough physical description the manuscript. In <hi rend="italic">fin de siecle</hi> editions of the poems and early prose, 
+                            interest in the physical manuscripts was attested by facsimiles of selected pages, 
+                            although the basis of selection was rarely made evident, and the sparseness of the facsimiles was doubtless legislated by cost. 
+                            (Like illustrations, manuscript facsimiles on heavier stock were bound only into the large&#x2010;paper, quarto collector&#x02BC;s edition of the 1891 Poems, 
+                            and not the inexpensive octavo edition; the Library Edition was designed solely as a collector&#x02BC;s set, differing only in the luxury of bindings.) 
+                            The editors also supplied descriptive bibliographies of the manuscripts, although limited in detail, and aimed primarily at dating their contents. 
+                            At the same time, the editors intervened heavily in the texts, improving them according to what they presumably deemed a public standard.
+                        </p>
+                        <p>By this procedure, the earlier editors misled readers about the family context of <persName corresp="#JR">Ruskin&#x02BC;s</persName> writing, a context that <persName corresp="#VAB">Van Akin Burd</persName> . . . conbut also confused evidence of variations in that context. 
+                            In <persName corresp="#DHR">Reiman&#x02BC;s</persName> example of an editorial procedure inattentive to distinctions of private, confidential, and public status of manuscripts, 
+                            <persName corresp="#PBS">Percy Bysshe Shelley&#x02BC;s</persName> poems were arranged &#x201C;primarily by chronology, rather than by the author&#x02BC;s intentions,&#x201D; 
+                            resulting in indiscriminate mixing of &#x201C;highly polished completed poems 
+                            (with a few fragments) that <persName corresp="#PBS">[P. B. Shelley]</persName> released for publication with false starts and rejected fragments,&#x201D; which &#x201C;Mary Shelley had so assiduously 
+                            rescued from his draft notebooks,&#x201D; readers of these chronologically ordered editions inadvertently developed &#x201C;a less positive picture of <persName corresp="#PBS">Shelley&#x02BC;s</persName> intelligence&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#REIMANMODERNMANUSCRIPTS">Reiman, <hi rend="italic">Study of Modern Manuscripts</hi></ref>, 43, 53-54). 
+                            Fundamental as these distinctions between private, confidential, and public may be, however, juvenilia highlights ambiguities in an age of print rather than 
+                            supplying a unique case of manuscript authority. As <persName corresp="#DHR">Reiman</persName> realizes, professional authors&#x02BC; intentions about audiences can be ambivalent or ambiguous; 
+                            and intentions, like the circumstances of reception, can change over time, even respecting the same document. 
+                            In the case of juvenilia, these ambiguities can be as compounded as they are clarified by the apparently straightforwardly confidential status of a fair copy 
+                            meant for circulation among intimate friends, since more than one cook is involved in making the stew.</p>
+                        <p>Accordingly, in an edition of juvenilia and youthful writing, the greater the distance that the editor interposes between text and artifact, 
+                            the less authoritative the transcription, by standards of the child writer&#x02BC;s original circle. 
+                        </p>
+                        <p><persName corresp="#MR">Margaret</persName> classes some poems as confidential based on genre: 
+                            what she &#x201C;should like [the Grays] to see&#x201D; are especially elegies, whether eulogizing family members (<persName corresp="#JRP">Jessie Richardson</persName>) or national heroes (Horatio Nelson), 
+                            along with poems about childhood fantasy (fairies). Did she rein in the circle of confidentiality around other kinds of poems, 
+                            or did she simply regard <persName corresp="#JR">Ruskin&#x02BC;s</persName> other productions as less worthy of regard? 
+                            It was his parents, moreover, who decided the wider, if still select audience for the elegies 
+                            along with whatever letters <persName corresp="#JJR">John James</persName> singled out for the &#x201C;small parcel.&#x201C; 
+                            Much or even most of the time, <persName corresp="#JR">Ruskin</persName> may equally have taken that potential audience for granted. 
+                             But some of the time, 
+                            he may have regarded his letters as more narrowly confidential or some writings even as private, 
+                            whatever his parents may have assumed.Even on the level of a unique manuscript witness of a given juvenile text, however, 
+                            authority can be complicated by tensions. As remarked above, <persName corresp="#JR">Ruskin&#x02BC;s</persName> intentions included an awareness of tensions 
+                        between competing boundaries of work and of manuscript, tensions to which he responded creatively; 
+                        and his authority over text and/or manuscript was potentially shared&#x2014;often willingly, sometimes submissively, and perhaps sometimes unwillingly&#x2014;with 
+                        his parents and, at times, with his cousin, <persName corresp="#MBR">Mary Richardson.</persName> These complications do not scuttle the basic usefulness of <persName corresp="#DHR">Reiman&#x02BC;s</persName> categorizing of modern manuscripts 
+                        by intended audience. Reiman
+                        
+                        </p>
+                            <p>Circumstances could also tilt texts, and perhaps <persName corresp="#JR">Ruskin&#x02BC;s</persName> polished confidential manuscripts, toward the public. 
+                                In the letter recommending her son&#x02BC;s writings to the Grays, <persName corresp="#MR">Margaret</persName> reveals that <persName corresp="#JJR">John James</persName> 
+                            carried many of these documents with him on his travels. Why? Did he cherish John&#x02BC;s writings only privately, or could he be moved by fatherly pride 
+                            to exhibit them to customers or fellow travelers? Hardly less speculative is the process by which some works, 
+                            which had circulated in confidential manuscript, became publications by &#x201C;J. R.&#x201C; As argued in the apparatus for 
+                            &#x201C;Account of a Tour on the Continent,&#x201D; the precocious fair copy of this ambitious work might have gained <persName corresp="#JR">Ruskin&#x02BC;s</persName> entree 
+                                to the man of taste, <persName corresp="#SR">Samuel Rogers,</persName> and his celebrated palace of art. 
+                        </p>
+                        
+                    </div>
+                </div>
+                    
+                <div type="section">
+                    <head type="section">The Scope of <hi rend="italic">ERM</hi></head>
+                    <p>For a descriptive survey of the manuscripts planned for inclusion in <hi rend="italic">ERM</hi>, 
+                        see <ref type="note" subtype="bibliographical" target="overview_of_mss_note.php">Overview of the Manuscripts</ref>.
+                    </p>
+                    <p>Chronologically, a starting point for the scope of <hi rend="italic">ERM</hi> would appear easily determined by the earliest available manuscripts in <persName corresp="#JR">Ruskin&#x02BC;s</persName> hand. 
+                        
+                        However, the elusiveness of beginnings was proved by <persName corresp="#HGV">Helen Viljoen,</persName> whose interest in <persName corresp="#JR">Ruskin&#x02BC;s</persName> early writings drove her farther back to his "Scottish heritage" in order to understand <persName corresp="#JR">Ruskin&#x02BC;s</persName> parents. 
+                        The personalities and influence of <persName corresp="#JJR">John James Ruskin</persName> and of <persName corresp="#MR">Margaret Ruskin,</persName> <persName corresp="#HGV">Viljoen</persName> believed, were foundational to any understanding of <persName corresp="#JR">Ruskin</persName> as a writer 
+                        (<!-- SUPPLY SCOTTISH HERITAGE CITATION; ADD NOTE FOR VILJOEN -->).
+                        <hi rend="italic">ERM</hi> is not primarily a biographical resource, but an archive supporting the study of childhood and youthful writing, a purpose 
+                        that narrows the scope to <persName corresp="#JR">Ruskin&#x02BC;s</persName> own writing, and not his parents&#x02BC; and relatives&#x02BC;, except as others&#x02BC; writing occurs in the early manuscripts.
+                        Still, if the study of childhood writing establishes a reasonable terminus a quo in <persName corresp="#JR">Ruskin&#x02BC;s</persName> own juvenilia, that aim opens up difficulties in determining a terminus ad quem for the archive.</p>
+                    <p>The parameters proposed for many <date notBefore="1801" notAfter="1900">nineteenth&#x2010;century</date> authors&#x02BC; &#x201C;apprentice&#x201D; work point up the inadequate critical attention to juvenilia. 
+                        As Juliet McMaster and Christine Alexander remark, 
+                        in their contributions to a seminal collection on the <date notBefore="1801" notAfter="1900">nineteenth&#x2010;century</date> child writer, the peculiarly pejorative connotations of the term <hi rend="italic">juvenilia</hi> in literary criticism 
+                        has caused, for example, the separation between the Bront&#x00EB; sisters&#x02BC; early writing (assumed to be inferior) and their novels (called "mature") to be regarded as a "problem" in a derogatory sense, 
+                        with the <hi rend="italic">juvenile</hi> understood to persist as a kind of infection into the later work. On the same uncritical grounds, 
+                        the term <hi rend="italic">juvenilia</hi> has been applied to the entirety of Branwell Bront&#x00EB;&#x02BC;s work, although he died at age 31 
+                        (<!-- REFERENCE --> 3, 71-72). The term continues to be applied quizzically to writers in our own time: in the <date notBefore="1970" notAfter="1979">1970s,</date> the publisher of the novelist <persName corresp="#PKF">Penelope Fitzgerald</persName> struggled 
+                        to situate her first novel, <hi rend="italic">The Golden Child</hi>, in the writer&#x02BC;s corpus, declaring the work to be &#x201C;the only piece of juvenilia I know of by a sixty&#x2010;one year old&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#GORDONFITZGERALD">Gordon, "C&#x02BC;est qu&#x02BC; elle a v&#x00E9;cu"</ref>). Such pronouncements not only beg questions about the definition of 
+                        <hi rend="italic">juvenilia</hi> but also suggest an indifference to authors&#x02BC; early writing as a critical focus.</p>
+                    <p>Pejorative views of major authors&#x02BC; childhood writing have a deep history, not least among writers themselves, and much remains to be studied in order to examine these prejudices critically. 
+                        In this archive, hostility to the study specifically of <date notBefore="1801" notAfter="1900">nineteenth&#x2010;century</date> writers is explored in attitudes surrounding 
+                        (<ref type="note" subtype="bibliographical" target="collecting_of_modern_authors_note.php">The Collecting of Modern Authors in the Late Nineteenth and Early Twentieth Centuries</ref>), 
+                        a fin de si&#x00E8;cle practice that significantly influenced the bibliography and editing of the <persName corresp="#JR">Ruskin</persName> juvenilia. 
+                        Whereas many &#x201C;modern&#x201D; authors expressed embarrassment about their juvenilia&#x2014;and directed their anger at collectors who sought out early publications, and at the dealers, publishers, bibliographers, 
+                        and editors who supported this collecting fashion&#x2014;<persName corresp="#JR">Ruskin</persName> willingly risked 
+                        &#x201C;whatever charge of folly may come on me&#x201D; by printing his <date when="1828">1828</date> poem, <ref type="apparatus" subtype="work" target="glenfarg_apparatus.php">&#x201C;Glenfarg&#x201D;</ref>, in 
+                        <hi rend="italic">The Queen of the Air</hi> (1869). The comment suggests that <persName corresp="#JR">Ruskin,</persName> 
+                        at least in his later writing, was unusual in giving any serious attention at all to the critical status of juvenilia; 
+                        and his justification&#x2014;that &#x201C;the weak little rhyme already&#x201D; demonstrated &#x201C;all that I ever could be, and all that I cannot be&#x201D;&#x2014;suggests he would have considered an attempt 
+                        to define the dividing line between juvenilia and mature work to be futile 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKS">Ruskin, <hi rend="italic">Works</hi></ref>, 19:396).</p>
+                    <p>The difficulty of defining a terminus ad quem for juvenilia also returns us to <persName corresp="#HGV">Viljoen&#x02BC;s</persName> enigma in establishing a starting point, 
+                        in that the continuities of self that <persName corresp="#JR">Ruskin</persName> claimed between his early and later writing reopen the question of continuities between the self who writes and others who write in response. 
+                        In his masterful edition, <hi rend="italic">The Ruskin Family Letters</hi>, <persName corresp="#VAB">Van Akin Burd</persName> included the full, available correspondence not only between <persName corresp="#JR">Ruskin</persName> and his parents 
+                        but also between <persName corresp="#JJR">John James</persName> and <persName corresp="#MR">Margaret</persName> and even between the latter and <hi rend="italic">their</hi> parents. 
+                        <persName corresp="#VAB">Burd</persName> does not justify this inclusiveness directly, but allows the rationale to evolve implicitly from his critique of the biographical tradition, 
+                        which had omitted reference to much of this correspondence. The critical issue, for <persName corresp="#VAB">Burd,</persName> was marked by <persName corresp="#HGV">Viljoen&#x02BC;s</persName> identification of two, seemingly conflicting principles, 
+                        which she perceived as setting the scope for materials included in the 
+                        <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref>: namely, that &#x201C;nothing should be made public which might reflect adversely, 
+                        from [the editors&#x02BC;] point of view, either upon <persName corresp="#JR">Ruskin</persName> or upon any member of the family&#x201D;; 
+                        and yet that &#x201C;all that <persName corresp="#JR">Ruskin</persName> said autobiographically, especially in <hi rend="italic">Praeterita</hi>, about his life and that of his parents should be given unqualified editorial support&#x201D; 
+                        (<!-- RFL xxviii, and see xvi-xxxvi; and see Viljoen Scottish 16-17?? -->). <persName corresp="#VAB">Burd</persName> shared <persName corresp="#HGV">Viljoen&#x02BC;s</persName> determination that the first principle should no longer interfere with the second, 
+                        but he also hinted that his publication of the full scope of the family letters would likely force a reassessment of <persName corresp="#HGV">Viljoen&#x02BC;s</persName> rather strident views 
+                        on the personalities of <persName corresp="#JR">Ruskin&#x02BC;s</persName> parents and their influence on their son. Particularly open to question on the evidence of the family letters was <persName corresp="#HGV">Viljoen&#x02BC;s</persName> view 
+                        of <persName corresp="#JJR">John James</persName> as a tyrant and narcissist (<!-- xxxvii-xliii RFL xxxv; Scottish, 143, 151?? check Dark Star-->). 
+                        Another possibility offered by <hi rend="italic">The Ruskin Family Letters</hi>, which <persName corresp="#VAB">Burd</persName> did not touch on, but which the edition prompts, is evidence of collaboration 
+                        between <persName corresp="#JR">Ruskin</persName> and his parents in the early manuscripts&#x2014;evidence
+                        that <persName corresp="#HGV">Viljoen,</persName> given her assessments of the parents&#x02BC; personalities, was unlikely to detect, 
+                        except in the form parental impositions on the genius of their son.<!-- cite my TEXT article here --> 
+                        An inherently collaborative aspect of child writing as a family enterprise, so obvious in the case of the Bront&#x00EB; juvenilia, is another insufficiently explored critical question 
+                        that problematizes the scope of an archive of juvenilia.</p>
+                    <p>Thus, in establishing the scope as well as editorial methodology of a corpus of juvenilia, the aim should be to encourage new questions about a category of <date notBefore="1801" notAfter="1900">nineteenth&#x2010;century</date> writing that Alexander and McMaster call "almost a genre" 
+                        (<!-- p 3 -->&#x2014;questions that <persName corresp="#JR">Ruskin</persName> and other <date notBefore="1837-06-20" notAfter="1901-01-22">Victorian</date> writers recognized, if their responses were sometimes derisive, hostile, and dismissive. 
+                        In ERM, the modifier <hi rend="italic">early</hi> is based on a precedent set by the Library Edition, not because the editors were particularly thoughtful in their choice&#x2014;"by &#x02BC;early&#x02BC; writings,&#x201C; 
+                        they wrote, &#x201C;is meant such as were composed previously to the first volume of <hi rend="italic">Modern Painters</hi>," and they tended to use the term interchangeably with <hi rend="italic">juvenilia</hi> 
+                        (<!-- 1:xxiii -->)&#x2014;but because the neutrality of the term offers the advantage of leaving questions open for investigation. In <persName corresp="#JR">Ruskin&#x02BC;s</persName> early manuscripts, what is the relation 
+                        between <hi rend="italic">childhood writing</hi> and <hi rend="italic">youthful writing</hi>? Between <hi rend="italic">amateur status</hi> and <hi rend="italic">professional writer</hi>? 
+                        Between the personae of <hi rend="italic">J.R.</hi>, <hi rend="italic">Kata Phusin</hi>, and the <hi rend="italic">Graduate of Oxford</hi>? 
+                        Between <persName corresp="#JR">Ruskin&#x02BC;s</persName> personae and the publications that featured them, and between these publications and the family circle in which <persName corresp="#JR">Ruskin</persName> initially tried out these personae? 
+                        Many of the publications that featured <persName corresp="#JR">Ruskin&#x02BC;s</persName> first publications placed him in dialogue&#x2014;with artists and other writers in the literary annuals, and 
+                        with amateur scientists in the <hi rend="italic">Magazine of Natural History</hi>&#x2014;and these dialogues may have been reflected the society of the minor art and literary professionals that <persName corresp="#JJR">John James</persName> 
+                        hosted at the family dining table&#x2014;presumably in part for his son&#x02BC;s benefit. To support such explorations, ERM&#x02BC;s goal is to be as comprehensive as possible in scope and, as discussed below, 
+                        flexible in editorial and encoding methodology.</p>
+                    <p>At the same time, practical and reasonable limitations on the scope of the archive are set by the relation of the archive to other editions in <persName corresp="#JR">Ruskin</persName> studies. 
+                        <persName corresp="#VAB">Van Akin Burd</persName> granted permission for <hi rend="italic">The Ruskin Family Letters</hi> to be incorporated into <hi rend="italic">ERM</hi> so long as we maintained his edition&#x02BC;s exact integrity. 
+                        Burd&#x02BC;s conditions effectively require a stand&#x2010;off, searchable electronic reproduction of his edition, a comparatively low priority since the edition remains so readily available in paper form. 
+                        Moreover, thanks to the extraordinary quality of <persName corresp="#VAB">Burd&#x02BC;s</persName> editing, there is no call at present for new transcription of the letters. When transcribing the juvenilia at the Beinecke Library, 
+                            David Hanson checked the accuracy of <persName corresp="#VAB">Burd&#x02BC;s</persName> transcriptions of the letters&#x2014;not exhaustively, but sufficiently 
+                        to conclude that this labor would result in only minor disagreements over the text of the letters. Thus, the scoope of ERM is limited to <persName corresp="#JR">Ruskin&#x02BC;s</persName> early writings exclusive of the letters.</p>
+                    <p>ERM does re&#x2010;edit the poems contained in <hi rend="italic">The Ruskin Family Letters</hi>, since <persName corresp="#VAB">Burd</persName> included only those poems whose fair copies could be considered epistolary presentations. 
+                        For those works, <persName corresp="#VAB">Burd</persName> did not attempt thorough, systematic comparison or collation with drafts and other fair copies and published versions; and this thoroughness, 
+                        including transcription and editing of epistolary versions, is the province of ERM. We have therefore captured images of <persName corresp="#JR">Ruskin&#x02BC;s</persName> letters to his parents at the Beinecke Library, 
+                        as these are required to support the editing of the other juvenilia.</p>
+                    <p>This division of labor with <hi rend="italic">The Ruskin Family Letters</hi> also justifies ERM in taking <persName corresp="#JR">Ruskin&#x02BC;s</persName> &#x201C;own&#x201D; earliest writing in his hand as its starting point, 
+                        without reaching earlier into family papers, except for purposes of annotating the edition. 
+                        The endpoint of ERM reflects Burd&#x02BC;s choice to close <hi rend="italic">The Ruskin Family Letters</hi> in <date when="1843-06">June 1843,</date> when the first volume of <hi rend="italic">Modern Painters</hi> appeared. 
+                        <hi rend="italic">Modern Painters I</hi> was also selected by the Lancaster University Ruskin Programme as the most productive starting point for a digital reediting of <persName corresp="#JR">Ruskin&#x02BC;s</persName> major works.<!-- cite ed --> 
+                        This date remains a justifiable target for ERM, not only because publication of <hi rend="italic">Modern Painters I</hi> represents a convenient and long&#x2010;standing fulcrum in <persName corresp="#JR">Ruskin</persName> scholarship, 
+                        but also because the range of <date notBefore="1826" notAfter="1843">1826 to 1843</date> is sufficiently expansive for the reader to explore the definintion of <hi rend="italic">juvenilia</hi> and related questions. Nonetheless, since <persName corresp="#JR">Ruskin</persName> 
+                        did not cease in <date when="1843">1843</date> writing poetry and publishing in the gift annuals, the investigation of his relation to this venue of publication requires extension of the scope 
+                        in this one respect into the later 1840s. The manuscripts included are surveyed in <ref type="note" subtype="bibliographical" target="overview_of_mss_note.php">Overview of the Manuscripts</ref></p>
+                    <p>Another superior published edition of an early <persName corresp="#JR">Ruskin</persName> manuscript is A Tour to the Lakes in Cumberland, the account of the joint travel diary by <persName corresp="#JR">Ruskin</persName> and his cousin, <persName corresp="#MBR">Mary Richardson,</persName> 
+                        edited by <persName corresp="#JSD">James S. Dearden</persName> and <persName corresp="#VAB">Van Akin Burd.</persName> Again, as <persName corresp="#VAB">Burd</persName> and <persName corresp="#JSD">Dearden</persName> stipulate that any use of their editorial work is to be copied &#x201C;as it stands, introducing comments or variants as an addendum&#x201D; 
+                        (Van Akin Burd to David C. Hanson, 14 August 2003; James S. Dearden to David C. Hanson, 3 September 2003), what would amount to a stand&#x2010;off, searchable reproduction of their widely available edition 
+                        need not take high priority. However, inclusion of this manuscript in an electronic archive provides new benefits for investigating travel and collaborative writing in the Ruskin family, 
+                        and therefore it is re&#x2010;edited on ERM&#x02BC;s terms, while pointing the reader to Burd&#x02BC;s and Dearden&#x02BC;s edition as an invaluable complement. Less valuable from a textual standpoint is 
+                        <persName corresp="#JSD">James Dearden&#x02BC;s</persName> <date when="1969">1969</date> edition of <persName corresp="#JR">Ruskin&#x02BC;s</persName> <date when="1830">1830</date> Lake District tour poem, &#x201C;Iteriad.&#x201D; For copytext, <persName corresp="#JSD">Dearden</persName> relied on the transcript of <persName corresp="#JR">Ruskin&#x02BC;s</persName> fair copy 
+                        that <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn</persName> prepared for use in the Library Edition. While adequate for <persName corresp="#JSD">Dearden&#x02BC;s</persName> intended audience at the time, general readers interested in the history of tourism in the Lakes, 
+                        <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn&#x02BC;s</persName> transcript has little scholarly interest owing to its errors, the editors&#x02BC; policy of freely repunctuating juvenilia, and their neglect of the poem&#x02BC;s draft. 
+                        <persName corresp="#JSD">Dearden</persName> has given permission, however, to quote from his lively notes for the edition. Unpublished scholarly attention to the juvenilia, which is quoted and referenced in ERM, 
+                        includes the unfinished biography of <persName corresp="#JR">Ruskin</persName> by <persName corresp="#HGV">Helen Viljoen,</persName> and her edition of the Sermons on the Pentateuch, now among the Viljoen Papers (see Spates, "Dark Star"; 
+                        and <persName corresp="#VAB">Burd,</persName> "Ruskin&#x02BC;s Testament of His Boyhood Faith").</p>
+                    <p>Earlier editions themselves form a portion of the edited materials in ERM. For most readers, the primary source for the early <persName corresp="#JR">Ruskin</persName> remains the first two volumes of the Library Edition, 
+                        edited by <persName corresp="#ETC">E. T. Cook</persName> and <persName corresp="#AW">Alexander Wedderburn,</persName> which in turn incorporate the Poems (1891), edited by <persName corresp="#WGC">W. G. Collingwood,</persName> and the editions of eqrly prose compiled by <persName corresp="#GA">George Allen</persName> in the <date notBefore="1890" notAfter="1899">1890s.</date> 
+                        The editorial inadequacies of these editions are discussed in 
+                        <ref type="note" subtype="bibliographical" target="history_of_bibliography_and_editing_note.php">History of the Bibliography and Editing of the Early Manuscripts</ref>, 
+                        and below in The Documentary Editorial Orientation in <hi rend="italic">ERM</hi>. Rather than simply displacing these editions, however, ERM treats their orientation to <persName corresp="#JR">Ruskin&#x02BC;s</persName> texts as itself 
+                        historically and biographically valuable, reflecting fin de si&#x00E8;cle attitudes (including <persName corresp="#JR">Ruskin&#x02BC;s</persName> own) about juvenilia in general and <persName corresp="#JR">Ruskin&#x02BC;s</persName> juvenilia and boyhood in particular. 
+                        Transcripts of <persName corresp="#WGC">Collingwood&#x02BC;s,</persName> <persName corresp="#GA">Allen&#x02BC;s,</persName> and <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn&#x02BC;s</persName> edited texts are therefore included for collation and comparison with ERM&#x02BC;s transcripts of the manuscripts.
+                    </p>
+                    <p>Of course, the notes, bibliographies, and editorial apparatuses for these earlier editions contain much that is valuable&#x2014;indeed, in some respects foundational&#x2014;for editing the early manuscripts, 
+                        and these resources are referenced throughout ERM. The archive also upholds <persName corresp="#VAB">Burd&#x02BC;s</persName> and <persName corresp="#HGV">Viljoen&#x02BC;s</persName> standards of rich annotation by quoting from family and related papers, 
+                        as opportunity allows. <!-- link following to bibliography and bio notes -->
+                        Unpublished <persName corresp="#JR">Ruskin</persName> manuscripts that have been transcribed for this use include: <persName corresp="#JR">Ruskin&#x02BC;s</persName> autobiographical reflections on his childhood and early writing, 
+                        such as the manuscript of Praeterita; his correspondence with Sarah Corlass; and his correspondence with Susan Beever. Besides manuscript sources, 
+                        rare printed sources include <persName corresp="#JR">Ruskin&#x02BC;s</persName> childhood books, some of which contain drawings and marginalia, and copies of the gift annuals, magazines, and other venues for his early publications.</p>
+                    <p>Unpublished manuscripts by members of <persName corresp="#JR">Ruskin&#x02BC;s</persName> circle, which have been collected to annotate the edition, include: 
+                        <persName corresp="#MBR">Mary Richardson&#x02BC;s</persName> diary and sketchbook; <persName corresp="#JJR">John James Ruskin&#x02BC;s</persName> earlier diaries and some unpublished letters of later years regarding <persName corresp="#JR">Ruskin&#x02BC;s</persName> poems; 
+                        <persName corresp="#JJR">John James Ruskin&#x02BC;s</persName> and <persName corresp="#JR">John Ruskin&#x02BC;s</persName> correspondence with the editor, <persName corresp="#WHH">W. H. Harrison,</persName> concerning publication of <persName corresp="#JR">Ruskin&#x02BC;s</persName> poems in annuals throughout the <date notBefore="1830" notAfter="1849">1830s and 1840s, </date>
+                        and concerning the publication of Poems by J.R. in 1850; <persName corresp="#WHH">Harrison&#x02BC;s</persName> marked set of printer&#x02BC;s proofs for Poems by J.R.; 
+                        <persName corresp="#WGC">W. G. Collingwood&#x02BC;s</persName> marked set of printer&#x02BC;s proofs of Poems (1891); <persName corresp="#WGC">Collingwood&#x02BC;s</persName> annotated catalog for his 1900 exhibition of <persName corresp="#JR">Ruskin&#x02BC;s</persName> drawings and manuscripts; 
+                        and <persName corresp="#GA">George Allen&#x02BC;s</persName> correspondence with <persName corresp="#JR">John Ruskin, Ruskin&#x02BC;s</persName> editors and executors, and Allen’s family. Later editors&#x02BC; papers include: 
+                        <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn&#x02BC;s</persName> records of editing the Library Edition, such as their scrapbook of newspaper clippings of reviews and other notices, 
+                        their annotations of Poems (1891), and bound volumes of transcripts; and the <persName corresp="#HGV">Viljoen</persName> Papers. Some materials that it is hoped can be sifted in the future include juvenilia by the 
+                        children of <persName corresp="#JR">Ruskin&#x02BC;s</persName> first tutor, Edward Andrews; and the records of <persName corresp="#JR">Ruskin&#x02BC;s</persName> years as an Oxford undergraduate.</p>
+                    </div>
+                    
+                    
+                
+                   <!--      Cataloging the early drawings lies beyond the
+                        financing of this edition as well as beyond the editor’s expertise; however, the
+                        so-called first sketchbook (in fact, probably the first two sketchbooks) are
+                        included and reproduced as one of the early manuscripts since it includes
+                        significant passages of writing, and other important drawings will be discussed
+                        throughout the edition in connection with the writings. Public domain images,
+                        such as published engravings, are included where useful. The Beinecke Library of
+                        Yale University cares for the largest collection: twelve holograph notebooks
+                        plus bound letters and a box of loose sheets. All but one of the notebooks,
+                        along with the loose items (some formerly bound), correspond to the designations
+                        MSS I, IA, II, III, IV, V, VII, VIII, IX, X, and XI and “Juvenilia” a–c in
+                        Collingwood’s bibliography. Discrepancies between the manuscripts and the
+                        bibliography are owing partly to the editors’ errors and omissions but primarily
+                        to damage sustained in a house fire of the manuscripts’ last private owner,
+                        Charles Goodspeed of Boston, who donated them to Yale. The Beinecke owns in
+                        addition to this gift a holograph fair copy of King of the Golden River, maps,
+                        and some of Ruskin’s letters to his college friend Edward Clayton. Burd has
+                        expertly edited the Beinecke’s MS XI, a bound volume of poems and letters to
+                        Ruskin’s father, as part of Ruskin Family Letters. In working with these
+                        manuscripts, I have encountered only occasional and minor questions about Burd’s
+                        transcription and bibliographic description of the letters; and, therefore,
+                        apart from re-editing the poems for the reasons already given, I see no
+                        justification for including the texts of the letters or of the 1830 diary, which
+                        has likewise been well edited by Burd and Dearden. Indeed, Burd has given
+                        tentative “blessing to the proposal” of incorporating Ruskin Family Letters into
+                        the new electronic edition as “a way of extending the availability of these
+                        important letters to scholars.” The condition is reasonable since
+                        no sufficient case has been made for substantive re-editing of the letters and
+                        diary; however, the stipulation reduces the advantages of incorporating the
+                        printed editions in ERM to rendering them electronically searchable—the
+                        equivalent of transferring the Library Edition to CD-Rom, as was done a few
+                        years ago by the Lancaster Ruskin Programme. That is no mean advantage, but an
+                        insufficient one to justify the cost and labor of obtaining extensive
+                        permissions (from the original manuscripts’ owners as well as from the editors)
+                        and of keyboarding and proofing the edited texts exactly as they stand. Both
+                        editions, although out of print, are widely available (which could not be said
+                        for the Library Edition when it was transferred to CD); and they are furnished
+                        with excellent indexes, which, along with their chronological organization, will
+                        enable researchers to make convenient use of them in tandem with the electronic
+                        edition. Some portions of Ruskin’s early letters, however, must be included in
+                        the edition since he composed poems as a part of their fabric. Indeed, some
+                        letters are poems—verse epistles—and Burd also included in his edition
+                        fair-copied poems that were not meant to be posted but were presented by hand on
+                        holidays and birthdays. Since these letters—approximately 30 of the 270 letters
+                        in the Family Letters—form an essential part of the textual history of the poems
+                        they contain, portions at least of these texts must be included. In re-editing
+                        these portions, should the new edition come to rely on Burd’s editing and notes
+                        in Ruskin Family Letters to an extent beyond fair use, then we would of course
+                        seek permission and pay appropriate fees. Otherwise, at this stage, we propose
+                        only to quote from Family Letters and Tour in accordance with fair use, as would
+                        any scholarly publication. Another important collection of early Ruskin to be
+                        represented in the edition is the Morgan’s, which includes four of the five
+                        so-called sermon books plus another possibly early sermon; an early sketchbook;
+                        the larger portion of the 1830 diary (the basis of Tour); The Puppet Show (i.e.,
+                        MS IB); draft for The Exile of St. Helena; fair-copy holographs of the Essay on
+                        Literature and a portion of The Poetry of Architecture; and some scattered
+                        sheets of drawings and notes. In addition, the Morgan houses the “Bowerswell
+                        Papers,” related to the Ruskins’ earlier family history, and the Viljoen Papers.
+                        Princeton University Library holds the rough-draft poetry notebook, MS VI;
+                        geological studies; and the holograph fair copies of Essay on Painting and Music
+                        and Chronicles of the St. Bernard. The Ruskin Library at Lancaster University
+                        has an early commonplace book, another draft of Exile of St. Helena, and more
+                        letters to Clayton. The richest collection of early work at the Ruskin Library
+                        consists of drawings and diaries. See James S. Dearden, Ruskin, Bembridge, and
+                        Brantwood: The Growth of the Whitehouse Collection (Staffordshire: Ryburn, for
+                        Keele University Press, 1994). The diaries for 1835 and 1839–43 fall within the
+                        scope of the new edition (none are extant for 1836–38), although members of the
+                        Ruskin Programme and I need to discuss the advisability of leaving aside the
+                        diaries to be reedited as a separate project. Smaller but important holdings
+                        include the Huntington Library’s notebook of Euclidean exercises, the letters to
+                        Edward Clayton and the religious essay that were published as Letters to a
+                        College Friend (other Clayton letters at the Beinecke and the Ruskin Library
+                        were omitted from that publication but will be included in the new edition), and
+                        some scattered pieces probably dating from college years. The British Library
+                        has maps drawn in childhood and a copy of Aristotle heavily annotated in
+                        college. The Coniston Ruskin Museum completes missing parts of the Morgan’s
+                        holdings with a fifth “sermon book,” a leaf of the 1830 diary, and sketch books
+                        containing draft for The Poetry of Architecture. Finally, the Ruskin Library in
+                        Tokyo has a manuscript of Exile of St. Helena plus scattered pieces of
+                        juvenilia. In addition to this corpus, the following supporting materials will
+                        be analyzed and amply quoted: </p>
+                
+                The editors can be charged with questionable
+                    principles of selection, erroneous dating, inaccurate and outdated bibliographic
+                    description, and unacknowledged meddling with the texts.The description of the major manuscripts has a long bibliographic
+                    history in Ruskin scholarship, and because the manuscripts themselves are
+                    inextricably tied to the meaning of the works they contain, organizationally the
+                    archive turns also on their respresentation as ; and at the level of TEI
+                    encoding, it is a given manuscript that sets the parameters of TEI Corpus file.
+                    Descriptively, it would be equally legitimate to make each corpus coterminous
+                    with a work—but not, we believe, equally powerful. Ruskin was as interested in
+                    the material “volumes” and anthologies that he formed from witnesses of his
+                    works, as he was engaged by the drafts and fair copies of given works that
+                    extend athwart the manuscripts. 
+                    
+                    Approach in Ruskin studies.  Because juvenilia are not masterpieces, production of a
+                    “clear” reading text in parrt because the possibilities opened by thehi
+                    decentered interlinking of unlimited quantities of potentially interesting text
+                    are so narcotic.  In contrast, two modern editions—Van Akin Burd’s Ruskin
+                    Family Letters (1973) and Burd’s and J. S. Dearden’s edition of the 1830 diary,
+                    A Tour to the Lakes (1990)—achieve exemplary standards of accuracy and
+                    annotation. . . . . Other modern
+                    editions of the early writing do not rise to these standards. 
+                    Finally, the Diaries (1956), edited by J. Evans and J. H. Whitehouse, makes
+                    available the 1835 and 1839–43 diaries, but that edition is notorious among
+                    Ruskin scholars for its inexplicable omissions, faulty transcriptions, and
+                    inadequate annotations. Among critics and biographers who have drawn extensively
+                    on the early writing, Helen Gill Viljoen stands out as the first to expose the
+                    failings of the Library Edition generally and of its presentation of the
+                    Ruskins’ family life in particular. She relied on her own study of the early
+                    manuscripts as the basis for Viljoen, Ruskin’s Scottish Heritage, which she
+                    published as a prelude to a substantially drafted, but incomplete and
+                    unpublished, biography of Ruskin (see Spates, “Dark Star”). She also prepared an
+                    edition of early religious writing, “Sermons on the Pentateuch,” likewise
+                    unpublished (see Burd, “Ruskin’s Testament”). Viljoen’s notes and unpublished
+                    scholarship (Viljoen Papers) are now housed in the Pierpont Morgan Library and
+                    are cited and appreciatively discussed throughout ERM. The Viljoen Papers, as
+                    forming an archive in itself for study of Ruskin’s early writing, however, is
+                    not only an impractical resource for most scholars—obscurely organized, fragile,
+                    as well as requiring travel to the Morgan Library—but also unreliable since
+                    Viljoen’s manuscript transcriptions are filled with errors, doubtless owing to
+                    the haste and isolation with which she had to pursue her pioneering task. Among
+                    other critics and biographers to make use of unpublished early manuscripts,
+                    Emerson, Genesis of Invention (1993) cites poems and scientific notes to discuss
+                    Ruskin’s creative development and compositional techniques; Hunt, Wider Sea
+                    (1982) studies the early prose tales for clues about family life; Spear, Dreams
+                    of an English Eden (1984) finds the origins of Ruskin’s social thought in early
+                    poems and drawings; and Finley, Nature’s Covenant (1992) exploits the sermons
+                    for evidence of Ruskin’s theological training. These scholars, however,
+                    consulted unpublished manuscripts in a necessarily limited and partial way, if
+                    an intelligently selective one, since the manuscripts are scattered among more
+                    than half a dozen collections on three continents, and since there exists no
+                    up-to-date, comprehensive, and accurate bibliography to describe the current
+                    condition of those manuscripts. In ERM, these constraints are removed, not only
+                    by contemporary editorial standards improving on century-old editions, but also
+                    by hypertext presentation. The electronic archive accommodates the size and
+                    breadth of the corpus while also interlinking the texts to highlight the complex
+                    interplay of Ruskin’s texts and his overlapping poetic, artistic, scientific,
+                    and religious interests. A hypertext edition lends itself, too, to representing
+                    the changing constructions of Ruskin’s youth, from his self-conscious adoption
+                    of the culturally coded role of the precocious child to the late-Victorian
+                    portrayal of childhood, which Ruskin freighted with cultural meanings connected
+                    with his critique of society, in the public letters Fors Clavigera (1871–84) and
+                    the autobiography Praeterita (1885–89). These diffuse and difficult later works,
+                    such as Fors, have taken center stage in Ruskin studies, as Tim Hilton’s
+                    two-volume biography—Hilton, Early Years (1985), and Hilton, Later Years
+                    (2000)—has moved attention beyond fixation on the canonical texts of the middle
+                    period. The late texts, however, hinge to a significant degree on Ruskin’s
+                    reinterpretation of his childhood. That reinterpretation profoundly influenced
+                    W. G. Collingwood, E. T. Cook, and Alexander Wedderburn, who produced their
+                    editions of the early writing while living and working close to Ruskin in his
+                    last home, Brantwood. Since those editions remain the primary available sources
+                    for the early writing, scholars have had few resources to query the earlier
+                    editors’ constructions of the childhood and youthful writing. Scope of the
+                    Archive and Survey of Manuscripts  Research
+                    completed. — I have transcribed (or, in the case of printed materials, obtained
+                    photocopies of) all the materials listed above in “Materials Contained in the
+                    Edition,” both the main corpus of manuscripts and the related materials, except
+                    for the manuscripts in Tokyo and the 1839–42 diaries. I also stopped short of
+                    completely transcribing the mineralogy notes at Princeton and the Beinecke,
+                    unsure of whether long lists of minerals would be of any use; therefore, as
+                    mentioned in “Context and Work Plan,” I place high priority on conferring about
+                    these materials at Princeton with Francis O’Gorman, and I would use the strength
+                    of an ATLAS grant to bid for travel support from Princeton University Library.
+                    Otherwise, only a few minor tasks remain to complete the manuscript-collection
+                    stage of the project: I have not closely examined Ruskin’s annotated Aristotle
+                    at the British Library, and I will require Dinah Birch’s assistance to do so. I
+                    have not visited the Christ Church archive—if indeed anything is to be found
+                    there—and I have not seen the two private collections pertaining to Ruskin’s
+                    boyhood tutor, Edward Andrews. Beyond collecting materials, I have completed the
+                    foundational work of a 140-page descriptive manuscript bibliography as well as a
+                    lengthy account of provenance, and I have established a chronology of the
+                    individual works. The critical apparatus includes the following: ABBREVIATIONS
+                    OF COMMONLY CITED WORKS BIBLIOGRAHIC INTRODUCTION APPROACHES TO BIBLIOGRAPHY AND
+                    EDITING OF THE EARLY MANUSCRIPTS THE DESIGN OF THIS EDITION The Scope of the
+                    Edition The System of Title Citation The System of Date Citation Publication
+                    Information Head Notes and Annotations for the Individual Entries The
+                    Transcription of Texts HE DESIGN OF THE DESCRIPTIVE BIBLIOGRAPHY OF RUSKIN’S
+                    EARLY MANUSCRIPT NOTEBOOKS The Roman Numeral Designation of the Major
+                    Manuscripts The Provenance of the Major Manuscripts Sotheby’s 1930 Sotheby’s
+                    1931 Viljoen SharP Huntington The next stage is to annotate and collate texts
+                    and write accounts of sources and composition and publication history. I have
+                    completed this work for the earliest pieces, those of 1826–31, and then more
+                    sketchily for the remainder, through 1842. As I resume work on these materials,
+                    I will develop points of entry into the edition for the audience beyond Ruskin
+                    scholars. In consultation with Dinah Birch, Christine Alexander, Francis
+                    O’Gorman, Keith Hanley, and Michael Wheeler, who have confirmed their
+                    willingness to lend support to the project, I will devise broad topical essays
+                    of interest to a broader audience. For example, general Romantic and Victorian
+                    scholars (who, I hope, will access the site through the NINES cluster of
+                    electronic projects) may wish to enter the edition via pages on forms of
+                    education, following links to individual educational texts, while Ruskin
+                    scholars will likely prefer to start with texts and navigate toward more general
+                    materials. In either case, ERM will be unique in anchoring the general materials
+                    on Romantic and Victorian childhood in specific texts and images, allowing the
+                    child to speak for himself as far as possible. Methods. — As explained earlier,
+                    understanding of the early work has until now been distorted by the earlier
+                    editors’ darkly hinted criteria of selection: no fragments; no gore; nothing
+                    disturbing. This edition will present the entire surviving corpus—with the
+                    possible exception of the mineralogy notes, concerning which O’Gorman and I will
+                    arrive at a rationale. Remarkably few pieces seem absolutely trivial. As
+                    demonstrated by the wide use in Victorian scholarship of the early letters and
+                    other published early works, the young Ruskin really could be that consistently
+                    engaging and inventive. The corpus appears reasonably complete. Most works
+                    mentioned in the family letters survive in some form; and Collingwood’s
+                    bibliography, as amended by Cook and Wedderburn, supplies a survey of the early
+                    manuscripts kept at Brantwood at the turn of the century, most of which can
+                    still be identified. I have never found evidence that the editors deliberately
+                    destroyed any juvenilia, although Ruskin’s literary executors did burn some
+                    documents that embarrassed them. A few pieces that the editors transcribed or
+                    photographed can no longer be located, and comparison of their descriptive
+                    bibliographies with the present state of the manuscripts presents some puzzles;
+                    however, the only known deliberate destruction—half of one notebook, whose
+                    former contents are known from a surviving index—appears to have been
+                    perpetrated by Ruskin himself in childhood. I have transcribed every manuscript
+                    with scrupulous attention to detail. As a shortcut in the archives, I
+                    occasionally marked up transcripts photocopied from the Viljoen Papers, but I
+                    always checked these against the originals, as Viljoen was a rapid but
+                    inaccurate copyist. Symbols are used where necessary to explain rather than
+                    correct Ruskin’s punctuation. Burd detects a language in Ruskin’s punctuation,
+                    in which even the varying lengths of dashes have significance. The lack of
+                    punctuation can likewise be purposeful as well, as Emerson remarks. Oddities and
+                    ambiguities, although explained as systematically as possible in the
+                    transcriptions, should be resolved for the reader by reference to accompanying
+                    images of the manuscripts. Lancaster’s edition of Modern Painters I (hereafter,
+                    MPI) was conceived as a “social” edition in two senses: first, the edition was
+                    constructed by a large team of researchers; second, rather than presenting the
+                    reader with a single, eclectic “reading” text, the edition displays all the main
+                    printed editions available over time to the Victorian public. In one window, the
+                    reader can alternate between the manuscript and the 1843, 1846, 1851, 1878, and
+                    1888 editions, as if the physical texts were open to the same passage. The
+                    reader can turn the “pages” simultaneously since Garside innovated a way to mark
+                    up images of the printed pages. This “prioritizing of the visible,” as it is
+                    termed in the edition’s introduction, is a persuasive approach to the early
+                    manuscripts as well since, throughout his life, Ruskin was concerned with the
+                    physical presentation of his writing. He conveyed meaning visually, from his
+                    childish imitation of typeface and “plates” in his earliest homemade books to
+                    the elegant presentation of his poetry in literary annuals, accompanied by steel
+                    engravings based on his own drawings; and his editors’ re-presented the
+                    juvenilia as controlled, completed texts, “corrected” to make them appear more
+                    finished. A difference from MPI, however, arises from a large proportion of
+                    ERM’s texts existing only in manuscript. Images of many of these manuscripts,
+                    although essential for information, would be useless as a reading text,
+                    especially in cases where only very rough draft survives. (Users of MPI, it
+                    appears, shrink from reading the image of the manuscript and turn immediately to
+                    the transcript.) In these cases, a machine-readable transcript must move to the
+                    center of the user’s approach to the edition, if not to the physical center of
+                    the screen, where the main window will consistently be reserved for images of
+                    manuscripts and printed pages. As in MPI, the reader will always be able to
+                    access a transcript of the manuscript in a pop-up window, alongside whatever
+                    image has been called up in the main window. Another difference is that, whereas
+                    in MPI the reader chooses from a consistent set of six images—the five main
+                    editions and the manuscript—in ERM the reader will be presented with a variable
+                    number of images, depending on the manuscript and publication history in
+                    question, which differs for each text. (Ideally, whichever image of a given text
+                    the reader calls up, annotations should be consistently accessible from the same
+                    textual feature. In the present release of MPI, only the image of the 1846
+                    edition carries the annotation links, compromising the sense of history since
+                    readers tend to privilege that edition as a reading text. This result was
+                    dictated neither by technology nor by editorial preferences but by ad hoc
+                    decisions.) In design, the website will encase the edition in a shell providing
+                    two main pathways, one leading directly to the edition proper, the other leading
+                    into the edition by way of guided tours. The latter path, intended to make the
+                    edition accessible to a broader range of researchers who are not committed
+                    primarily to Ruskin studies, will offer the user a menu of topics: family and
+                    childhood; education and literature; travel and history; fine arts and art
+                    education; amateur science and collecting; and worship and theology. This menu
+                    will lead the researcher to essays on the respective topics. The essays will
+                    orient the user to relevant clusters of texts in the edition, by situating them
+                    in scholarship pitched at the level of a general, interdisciplinary scholarly
+                    audience (i.e., the kind of reader I keep in view for the journal I edit,
+                    Nineteenth Century Studies—a reader who wishes to cross disciplines, and so must
+                    have material outside his or her specialization made accessible, but who has the
+                    scholarly sophistication to recognize whether the material forms an original
+                    contribution to the ongoing conversation in the field in question). These guided
+                    tours will render ERM, to borrow Woof’s terms regarding the Lancaster edition,
+                    more classical in approach than gothic and organic. The latter approach, in
+                    which the annotations avoid hierarchical structures, is more Ruskinian. However,
+                    since ERM consists of over 300 texts ranging across several fields of knowledge,
+                    a truly Ruskinian design—however interesting to specialists—might thwart general
+                    researchers. Once inside the edition, the general reader will be led by the
+                    hypertext environment to explore how, for Ruskin, any given interest tended to
+                    overlap with others. This approach, gothic nestled inside of classical,
+                    approximates the experience of Ruskin’s childhood. His mother instructed him in
+                    sharply differentiated fields of knowledge—the hours for Bible study being
+                    strictly set apart from, and taking precedence over, time allowed for poetry and
+                    drawing—and Ruskin did obey these constraints. Nonetheless, he found ways to
+                    overcome boundaries by forming unexpected links. This “gothic” aspect of the
+                    edition will be supported by projected NINES tools allowing users to play
+                    different interpretive games: “Ivanhoe,” for example, will allow users to adopt
+                    multiple, differing interpretive roles and to observe the record of the
+                    interactions, a game that would apply usefully to Ruskin’s composing his poems
+                    in the context of his letters to his father and with his mother looking on;
+                    “Collex” will allow users to collate and rearrange on-line archives, a capacity
+                    that mimics Ruskin’s own proclivity for constantly rearranging and recombining
+                    his collections. Participation in the University of Virginia workshop mentioned
+                    in “Context and Work Plan” would enable me to integrate such tools. For the
+                    edition proper—which researchers will be able to access directly from the outer
+                    shell, if desired—two levels of navigation are required: one for specific texts;
+                    a second for the manuscript notebooks containing the texts, the manuscript
+                    bibliography, and other global-level apparatuses. At the global level,
+                    individual titles will be indexed alphabetically and chronologically as well as
+                    according to their place within the notebook containing them. At the level of
+                    the individual text, as described earlier, readers will access images of the
+                    manuscript and/or published forms of the work—the number of images varying
+                    according to the history of the text in question—and consult a manuscript
+                    transcript in a pop-up window. Each text will be annotated with a master note
+                    summarizing the composition, publication, and source history. Other annotations
+                    and images will include, as in MPI, a list of collations, explanatory notes
+                    keyed to particular textual features, and additional images related to the text.
+                    Following this prospectus, I supply excerpts from two sample edited texts. I
+                    take the samples from two stages in Ruskin’s development—from earliest
+                    childhood, a portion of his “Harry and Lucy” books, which he modeled on Maria
+                    Edgeworth’s tales of that title; and, from adolescence, a portion of his sermons
+                    explicating texts from the Pentateuch as a means of explaining the major
+                    doctrines of his family’s moderately Calvinist evangelical faith. These samples
+                    afford representative master notes on composition history and sources as well as
+                    explanatory notes. Also supplied is a section of the manuscript bibliography
+                    describing the notebook containing the “Harry and Lucy” sample. In this paper
+                    sample, directions to the reader to see and see also, as well as numbered
+                    references to the three hundred other texts, should be understood as being
+                    replaced by active links in the electronic edition. Electronic editing at
+                    Lancaster. — Electronic editing was included in the founding vision of the
+                    Lancaster Ruskin Programme when the director, Michael Wheeler, consulting with
+                    the Ruskin scholar and hypermedia expert George Landow, proposed Modern Painters
+                    I as a logical starting point for re-editing Ruskin’s works. Supported by a
+                    1997–2001 grant from the Leverhulme Trust, which monitored and approved
+                    progress, Wheeler assembled and led a large editing team that comprehensively
+                    represented the many research areas associated with Modern Painters, and he
+                    appointed Lawrence Woof as a research fellow to help coordinate the editing. The
+                    edition was launched in its first fully operational public version in July 2002
+                    (www.lancs.ac.uk/ users/ruskin/empi/index.php). With its completion, electronic
+                    editing in the Ruskin Programme is proceeding case by case, taking advantage of
+                    the interests of individual scholars associated with the program. Since each
+                    project is self-contained, ERM can follow its own schedule. Consultants. —
+                    Senior consulting scholars would not be paid out of the ATLAS grant, and they
+                    have agreed to advise the project without pay at all, so long as any travel and
+                    serious investment of skill and time are appropriately remunerated. Strictly,
+                    the project could go forward without them, especially with peer oversight being
+                    provided by the NINES board, which includes the Ruskin scholar and hypertext
+                    expert George Landow. Obviously, however, ERM will benefit by the participation
+                    of the Ruskin scholarly community. As a journal editor, I believe in scholarship
+                    as a communal activity, and I have experience in promoting exchange—never
+                    ceasing to marvel at individuals’ generosity in supporting worthwhile projects.
+                    n the strength of the ATLAS grant application, I will seek to supply various
+                    kinds of remuneration for consultants through such sources as the travel grants
+                    that I have mentioned from Princeton University Library and the Huntington
+                    Library (applications due in December 2004 and January 2005) and small SLU
+                    grants such as the Arts and Lectures series, which I could use to bring Garside
+                    to SLU, and Faculty Development grants, which I could use to defray my own
+                    travel. Such additional support will need to be pieced together as we go along,
+                    but I am confident that the project is financially well within reach because it
+                    is already so far advanced; the need, apart from what would be provided by
+                    ATLAS, is not large in dollar terms and clearly justifiable to granting
+                    agencies; and the smaller requests of a few thousand dollars at a time can be
+                    spread over not only the ATLAS year of academic leave but also the year beyond.
+                    The ATLAS grant would provide the most essential boost, by supporting
+                    much-needed release from a heavy teaching load, as well as by financing the
+                    large one-time expense of imaging fees. Here are brief biographies of the
+                    contributing staff: This archive has evolved over below the clearly
+                    distinguishable editorial titleedition is divided in two parts. Part 1 presents
+                    a revised and comprehensive chronology of all known individual prose and poetry
+                    pieces—published or unpublished, extant or lost—contained in the major early
+                    manuscripts, preserved on stray sheets elsewhere, or known at least by title.
+                    Next, the whereabouts and publication (if any) of each item is identified. Each
+                    item is then followed by a note justifying its dating, and discussing its
+                    sources and compositional history—more or less lengthily, depending on the
+                    complexity of the work. Part 1 also selectively prints texts of works that are
+                    either previously unpublished or published with such invasive emendations by
+                    earlier editors as to justify a new text. Where silent editorial emendations in
+                    existing printed texts are localized or minor, a textual note summarizing the
+                    differences between the manuscript and printed text is deemed sufficient. Part 2
+                    presents a revised and comprehensive descriptive bibliography. For each known
+                    major manuscript of juvenilia, I supply its physical characteristics and
+                    provenance, enumerate its contents, and attempt to reconstruct the order and
+                    circumstances of its composition—that is, the compositional history of the major
+                    manuscript, as opposed to that of an individual title contained therein, which
+                    is presented in part 1. Throughout this edition, MS followed by a roman numeral
+                    refers to the manuscripts described in part 2; no. followed by an arabic numeral
+                    refers to individual items in part 1. I do not attempt to list Ruskin’s
+                    drawings, better left to the expertise of art historians. In part 2, I do
+                    include, however, descriptions of Ruskin’s first two sketchbooks (MSS VIIIA,
+                    VIIIB), dating from 1831–32, since the logic of the edition demands that they be
+                    included in part 2 as major early manuscripts. Their inclusion is necessitated,
+                    moreover, by the prose writings contained in one of them. In part 1, I also omit
+                    the letters published in RFL, which the reader may easily compare against the
+                    chronology. I do, on a few occasions in part 1 in connection with other items,
+                    dispute Burd’s dating of a letter; and, in part 2, where MS XI is described,
+                    which contains letters, I have been able to supply portions of some letters for
+                    the first time, portions that were omitted from RFL. All the poems printed in
+                    RFL, as a matter of course, will be found listed in the chronology, part 1. My
+                    editorial principles governing the various segments of parts 1 and 2 are
+                    explained in greater detail below. First, a broad survey of Ruskin’s early
+                    writing will help to orient the reader. THE DESIGN OF PART 1, “COMPLETE
+                    CHRONOLOGY AND SELECTED TEXTS OF RUSKIN’S WRITINGS, 1826–38” Much can be learned
+                    from the proper ordering of the notebooks’ contents, so long as one remains
+                    aware that a given notebook may include several sequences from differing times
+                    and that the overall, day-to-day sequence of Ruskin’s activities must be
+                    reconstructed from his simultaneous use of several notebooks. For these reasons,
+                    Cook and Wedderburn were wise to pair Collingwood’s descriptive bibliography of
+                    the major manuscripts with the “Chronology” of the individual poems that the
+                    manuscripts contain. Accordingly, I have gratefully adopted their fundamental
+                    design, by pairing a complete chronology of the individual items of juvenilia
+                    (part 1) with a descriptive bibliography of the major manuscripts (part 2). I
+                    have revised and expanded the chronology beyond a merely enumerative list of
+                    poetry titles like Cook and Wedderburn’s, to comprise the nearly three hundred
+                    items of poetry as well as prose through 1838, each item annotated by a
+                    justification of its position in the sequence. The manuscript notebooks by
+                    themselves give a perplexing impression of Ruskin’s activities, since he wrote
+                    in a given notebook at many different times, spread in some cases over years,
+                    and he worked with more than one notebook simultaneously. One’s head reels in
+                    leafing through the manuscript notebooks, trying to discern a sequence in
+                    Ruskin’s interests and developing literary activity. Notebooks starting with his
+                    careful but childish pencil print lettering, used for his “Harry and Lucy” and
+                    earliest poems of 1826–28, might also contain ink and pencil script used for
+                    drafts of sermons and mineralogical “articles” of a considerably later time. A
+                    range of one to eight years is possible for his use of any single notebook. Even
+                    wider parameters characterize MSS IA, X, and XI, which are not notebooks already
+                    bound when Ruskin first used them but collections of loose manuscripts compiled
+                    and bound in later years by Alexander Wedderburn. What is more confusing, the
+                    notebooks’ contents are not always sequential. Although Ruskin seems usually to
+                    have placed his initial entry in a notebook’s first pages, frequently even
+                    providing a title page, he at various times copied groups of poems in the
+                    middle, and returned years later and drafted new projects starting at the
+                    opposite end from, and upside down to, the text at the beginning. The texts
+                    coming from opposite ends often meet, and in some cases the new text extends
+                    over top of the old—Ruskin either erasing part of the old text to accommodate
+                    the new, or running the new text into whatever marginal spaces were left over.
+                    Other available gaps here and there were filled at almost any time. In another
+                    procedure, causing a conundrum that Dearden successfully unraveled in the 1830
+                    diary (TLC, 10–14), Ruskin would leave gaps to fill in later, but, discovering
+                    he had allowed insufficient space, he would fill the gap and continue the
+                    inserted text elsewhere in the notebook. The task of ordering the notebooks’
+                    contents involves an exacting and elaborate game of cross-referencing. Each poem
+                    or prose item takes its place on a conceptual grid, its position fixed by
+                    vectors converging from various determinations—Ruskin’s own dates when
+                    available, the item’s placement in a notebook vis-à-vis other datable pieces,
+                    references to it in datable family letters, and its source in books the family
+                    is known to have bought or read at a certain time. With these items fixed, a
+                    story gradually emerges of how and when an entire notebook was used, and this
+                    story can in turn inform us both about individual items that cannot be dated by
+                    any other method and about the simultaneous evolution of other notebooks.
+                    Fortunately, substantial sections of some notebooks were composed more or less
+                    sequentially—most importantly, those like MSS II, VI, and VIII, in which Ruskin
+                    entered rough drafts of his work and which therefore preserve a successive
+                    record of his compositions. The sequences in the rough-draft notebooks also
+                    became convoluted in certain places, however—extremely so, in MS VIII—requiring
+                    meticulous interpretation provided in parts 1 and 2. In part 1, each entry
+                    begins with an item’s title, followed by its most precise known date, its
+                    manuscript source, publication history, and a note discussing the evidence for
+                    dating, compositional history, and sources. Texts follow for those poems and
+                    prose works I have chosen to publish. The Scope of the Chronology The chronology
+                    begins with the earliest known compositions—those of 1826, putting aside
+                    possibly earlier drawings and “signatures” on the flyleaves of books, and
+                    Ruskin’s first “letter” of 1823.#FN01# The chronology extends through 1838,
+                    thereby encompassing all the individual items contained in the major
+                    manuscripts. Items are grouped by year and, insofar as can be determined,
+                    arranged chronologically within the year, according to the earliest known
+                    date—that is, the date of an item’s draft, if known, rather than its fair copy
+                    or publication. The choice of inclusive dates to frame the chronology, 1826–38,
+                    has been governed by the contents of the major manuscript notebooks. It has
+                    proved prudent to extend the chronology from the earliest known compositions
+                    through the latest items contained in the major manuscripts, although by 1838
+                    Ruskin had produced work certainly too mature to be regarded as juvenilia, such
+                    as The Poetry of Architecture (no. 255). Since Ruskin returned to his early
+                    notebooks long after their initial childhood use, appropriating available leaves
+                    to draft such comparatively sophisticated pieces as “Marcolini” (no. 241) and
+                    the “Essay on the Relative Dignity of the Studies of Painting and Music . . .”
+                    (no. 270), the evidence for dating these later items needs to be in place in
+                    part 1, in order to decode the manuscript notebooks comprehensively in part 2.
+                    As it has turned out, some work by the emerging critic and prose writer, such as
+                    the “Essay on . . . Painting and Music” and the “Chronicles of St. Bernard” (no.
+                    216), is as problematic to date as work by the juvenile poet, although Cook and
+                    Wedderburn’s (and the elder Ruskin’s) dates for this youthful criticism have
+                    always been taken for granted. Some works are listed that have been lost
+                    altogether, but whose titles and dates remain recoverable, especially from MS
+                    VI. These deserve to be listed and annotated for what they can tell us about
+                    Ruskin’s interests and compositional habits. THE DESIGN OF PART 2, “DESCRIPTIVE
+                    BIBLIOGRAPHY OF RUSKIN’S EARLY MANUSCRIPT NOTEBOOKS” In part 2, each major
+                    manuscript entry begins with its designation by roman numeral; its location
+                    (when appropriate, using the abbreviations listed at the front of this book),
+                    along with any specialized cataloging information; and its inclusive dates of
+                    composition. These opening identifications are followed by three discursive
+                    sections: (a) provenance; (b) physical description, and discusssion of any
+                    special circumstances that affected the manuscript’s composition or compilation;
+                    and (c) contents, listed in their sequential order (not necessarily the same as
+                    the contents’ compositional order, which is accounted for in part 1). #FN01#See,
+                    e.g., the penciled drawings and “signatures” in Ruskin’s childhood copies of
+                    Maria Edgeworth’s Frank and Aesop’s Fables (described in Viljoen, Sharp
+                    Collection, 6, 7 [items 2, 5b]), and in a book Little Jack (listed in “Adams
+                    Collection,” 317). Ruskin’s first “letter,” written by his mother from his
+                    dictation on 15 March 1823 and signed by himself in very awkward capital
+                    letters, is printed in Collingwood, Life, 18–19?; Works 1:xxvi, n. 3; and RFL
+                    127–28. The autograph letter itself is reproduced in Dearden, “The Ruskin
+                    Galleries at Bembridge School, Isle of Wight,” pl. III.</p>  -->
+                
+            </div>   
+        </body>
+    </text>
+</TEI>

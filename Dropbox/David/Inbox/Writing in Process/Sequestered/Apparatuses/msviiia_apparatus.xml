@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject MANUSCRIPT followed by "apparatus", for example,
+            "msi_apparatus". The xml:id also corresponds with its XML file's name, for example, "msi_apparatus.xml".-->
+        <fileDesc xml:id="title_of_manuscript_apparatus">
+            <titleStmt>
+                <title type="main">Title of Manuscript</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>            
+    <text>
+        <body>
+            <div type="apparatus">
+            <head type="title">Title of Manuscript</head>
+                <!--A manuscript apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>MS VIIIA</p>
+                </div>
+                <div type="section" xml:id="LOCATION">
+                    <head type="section">Location</head>
+                    <p>Body paragraph.</p>
+                    Bem ?; 1188-89. PML ?. 
+                </div>
+                <div type="section" xml:id="PROVENANCE">
+                    <head type="section">Provenance</head>
+                    <p>Body paragraph.</p>
+                    In Praeterita, Ruskin says he removed  two little pencillings from Canterbury south porch and central tower,  which he gave  to Miss Gale, of Burgate House, Canterbury; the remnants of the book itself to Mrs. Talbot, of Tyn-y-Ffynon, Barmouth, both very dear friends  (Works, 35:78). He did not give the entire remnants to Fanny Talbot, however, for  among the early drawings left for gift to Joanie [Severn] are all those made--the first ever made from nature--at Sevenoaks, Tunbridge, Canterbury, and Dover  (Works, 35:467). In  John Ruskin’s First Sketchbook,  James S. Dearden notes that Miss Gale’s Canterbury drawings were signed and dated by Ruskin 15 January 1880, when he must have given them away. The discrepancy in Praeterita concerning the remainder of the sketchbook is explained by Ruskin’s letter of 6 January 1885 to Fanny Talbot, quoted by Dearden:
+                    by way of a beginning of rubbish I’ve sent you the cover and most of the sheets of my first sketch book, 1831--when I was 12. It has some pencil scrawls at Dover and Canterbury and much MS of my proposed Mineralogical Dictionary! I have taken out some leaves which I mean to frame to preserve, referring to the book only as given to you. (Facets, 88)
+                    The removed sketches,  first ever made from nature,  remained at Brantwood until the dispersal sales of 1931.
+                    The Talbot book (Bem ?) was acquired by J. H. Whitehouse at some point between 1919 and 1923 (RBB 38). The Gale drawings (Bem 1188-89). . . . The Severn drawings were divided among different lots at the 1931 Brantwood dispersal sales. Two, the Battle Abbey and Tunbridge Wells drawings, were bought for Charles Goodspeed. They are not listed in Goodspeed, Cat., which begins with drawings of 1833
+                </div>
+                <div type="section" xml:id="DESCRIPTION">
+                    <head type="section">Description</head>
+                    <p>Body paragraph.</p>
+                    Ruskin himself describes the sketchbook in Praeterita as  my quite first sketch-book, an extremely inconvenient upright small octavo in mottled and flexible cover, the paper pure white, and ribbedly gritty, filled with outlines, irregularly defaced by impulsive efforts at finish, in arbitrary places and corners  (Works, 35:77). It is ? x ? cm (cover), ? X ? cm (pages); 33 leaves.
+                    The sketchbook was used during a summer tour of 1831 to sketch sites in the southeast of England, before the family traveled on to Wales. According to Dearden, John James described the following itinerary in ?:
+                    1831, May 25  Dover, Margate, Southampton, Portsmouth, Stonehenge, Hereford, Devil’s Bridge, Hafod, Aberystwyth, Dolgelly, Cader Idris, Barmouth, Harlech, Tan-y-bwlch, Caernarvon, Snowdon, Bangor, Conway, Llangollen, Oswestry, Monmouth, Chepstow, Clifton, Bath, Newbury, 21 July.
+                    The sketchbook was used again in 1832, during a similar journey to the southeast (see MS VIIIB). This itinerary is listed by John James in ? as restricted to the southeast:
+                    1832  Sevenoaks, Dover from 22 May to 30 June; Hastings to 19 July.
+                    <!--The subsection that follows, Collation, is common to all manuscript apparatuses and was, accordingly, assigned an xml:id by
+                        the Ruskin Project Team during work on the "First Twenty."-->
+                    <div type="subsection" xml:id="COLLATION">
+                    <head type="subsection">Collation</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+                <div type="section" xml:id="CONTENTS">
+                    <head type="section">Contents</head>
+                    <!--Typically, this section will begin:-->
+                    <p>
+                        <hi rend="italic">From front of book, the sequential order of contents:</hi>
+                    </p>
+                    <!--and continue with a list, which may group items according to type (e.g. prose, poetry) or other similiarity. Note: drawings
+                        may be included as items in this list.-->
+                    <list xml:id="LIST" type="ordered">
+                        <item n="a">Item belonging to Group A.</item>
+                        <item n="b.1">First item belonging to Group B.</item>
+                        <item n="b.2">Second item belonging to Group B.</item>
+                        <item n="b.3">Third item belonging to Group B.</item>
+                        <item n="c">Item belonging to Group C.</item>
+                    </list>
+                    <p>Body paragraph.</p>
+                    Owing to Ruskin’s dismemberment of the book, the original order of the pages is uncertain. As presently arranged, the content is as follows.
+                    a) [get order right at Lancaster] As inscribed by Ruskin later? (see Facets 89):  Gateway at Maidstone 1831; Maidstone Church 1831; Dover Cliffs; Abbey near Dover see Fors [St. Radigund’s Abbey; see Fors 27:491]; My first tree from nature 1831; Gateway of a college at Maidstone inside view.  Uninscribed drawings that Dearden identifies with help of Mary Richardson’s sketchbook: Leeds Castle near Maidstone; Ruins of the Roman Tower,  Dover Castle built by Julius Ceasar ; architectural details from the end of the S.W. transept of Canterbury Cathedral.
+                    b) Drawings detached for Gale: half of top part of central tower of Canterbury Cathedral, inscribed by Ruskin  My first as ever was drawing of architecture, 1832. J. Ruskin signed 15 January 1880 ; carving and pinnacles above entrance of the S.W. porch of Canterbury Cathedral, inscribed by Ruskin  J. Ruskin. Canterbury South porch 1832. Signed 15 January 1880. 
+                    c)dismembered book’s sketches are followed by mineralogical notes (no. 157), then more sketches, and then more mineralogy. The mineralogy might have been written either later in 1831 following the summer tour, or in 1832 following another summer tour to the southeast--the latter tour also apparently recorded by sketches in the notebook. (In fact, the notes may well date from both times; and another prose item--the notes on a military drill witnessed at Dover Castle, no. 166--while appearing at the very start of the present arrangement, may have been written during either of the family’s visits to Dover in 1831 and 1832.)
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Body paragraph.</p>
+                    Date of use, summer 1831 and summer 1832(?).
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <!--The Discussion section may contain all or only some of the following subsections.-->
+                    <div type="subsection">
+                        <head type="subsection">Hand</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Composition &#x0026; Sources</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Domestic Scene</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="purser_william_note">
+            <titleStmt>
+                <title type="main">William Purser (ca. 1790-1852)</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KBV">Kyle Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="biographical">
+                <head type="title">William Purser (ca. 1790&#x2013;1852)</head>
+                <p>Painter, architect. He exhibited landscapes and architectural subjects at the <orgName corresp="#ROYALACADEMY">Royal Academy</orgName>, 1805&#x2013;34. 
+                    He traveled in <placeName corresp="#ITALY">Italy</placeName> and <placeName corresp="#GREECE">Greece</placeName> with the architect, 
+                    <persName corresp="#GLT">George Ledwell Taylor</persName> (1788&#x2013;1873), in <date notBefore="1817" notAfter="1820">1817&#x2013;20</date>, and in 
+                    <placeName corresp="#TURKEY">Turkey</placeName> in the <date notBefore="1820" notAfter="1839">1820s&#x2013;30s</date> 
+                    (catalogue note on William Purser, 
+                    <ref type="note" subtype="biographical" target="bibliography.php#SOTHEBYCAT2011">Sotheby  &#x0026; Co., <title type="reference" corresp="#SOTHEBYCAT2011" rend="italic">Catalogue of Old Master and British Drawings . . . Walter Brandt</title></ref>). 
+                    The <orgName corresp="#VAM">Victoria and Albert Museum</orgName> and the <orgName corresp="#BRITISHMUSEUM">British Museum</orgName> hold numerous orientalist watercolor drawings and prints 
+                    by or after <persName corresp="#WPPAINTER">Purser</persName> of subjects set in <placeName corresp="#TURKEY">Turkey</placeName> and <placeName corresp="#INDIA">India</placeName>.
+                </p>
+                <p>The editor of <ref type="note" subtype="bibliographical" target="friendships_offering_note.php"><title type="magazine" corresp="#FRIENDSHIPSOFFERING" rend="italic">Friendship&#x02BC;s Offering</title></ref> 
+                    between <date when="1828">1828</date> and his death in <date when="1834">1834</date>, 
+                    <ref type="note" subtype="biographical" target="pringle_thomas_note.php"><persName corresp="#TP">Thomas Pringle</persName></ref>, engaged <persName corresp="#JR">Ruskin</persName> to compose a poem, 
+                    <ref type="apparatus" target="saltzburg_apparatus.php"><title type="poem" corresp="SALTZBURG">&#x201C;Saltzburg&#x201D;</title></ref>, 
+                    to accompany an engraving by <ref type="note" subtype="biographical" target="goodall_edward_note.php"><persName corresp="#EG">Edward Goodall</persName> (1795&#x2013;1870)</ref> 
+                    after <persName corresp="#WPPAINTER">Purser</persName>&#x02BC;s view of that city. See also 
+                    <ref type="apparatus" subtype="work" target="account_of_a_tour_on_the_continent_apparatus.php#DISCUSSION">Account of a Tour on the Continent: Discussion</ref>.
+                </p>
+                
+            </div>
+        </body>
+    </text>
+</TEI>

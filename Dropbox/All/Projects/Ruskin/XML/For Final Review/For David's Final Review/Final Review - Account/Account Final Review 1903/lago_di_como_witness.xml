@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="lago_di_como_witness">
+            <titleStmt>
+                <title type="main">Lago Di Como</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#">E. T. Cook and Alexander Wedderburn</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>E. T. Cook and Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <imprint>
+                            <biblScope type="vol">2</biblScope>
+                            <biblScope type="edition">Library<hi rend="superscript"></hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1903">1903</date>
+                            <biblScope type="pages">xxiii<!--I don't know what goes here?--></biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title">Lago Di <placeName corresp="#COMO">Como</placeName><hi rend="superscript">1</hi>
+                   <name><persName corresp="#JR">by John Ruskin</persName></name></head> 
+                
+                <l>It was a little peaceful bay </l>
+                <l>Beneath the precipices grey, </l>
+                <l>Lay deep and blue and calm, but clear </l>
+                <l>As is the sapphire; and you saw </l>
+                <pb/>
+                <l>The precipices sharp and sheer, </l>
+                <l>And the white clouds&#x02BC; careering war, </l>
+                <l>And the blue sky, and the high hills </l>
+                <l>&#x02BC;Neath the cold waters where they slept </l>
+                <l>Seemed fed by thousand mountain rills </l>
+                <l>Flowed upward from the crystal depth.<hi rend="superscript">1</hi> </l>
+                <l>And all along that quiet bay </l>
+                <l>A range of little shipping lay, </l>
+                <l>With their red flags drooped downward right, </l>
+                <l>And sheltered by their awnings white </l>
+                <l>From the high sun&#x02BC;s red, scorching look, </l>
+                <l>That o&#x02BC;er the living waters shook </l>
+                <l>A blaze of hot and swarthy glow. </l>
+                <l>When we had launch&#x00E8;d from below </l>
+                <l>The shade of the tall cliffs, and came </l>
+                <l>Where <placeName corresp="COMO">Como</placeName> rolled his breast of flame, </l>
+                <l>Down southward winding far away, </l>
+                <l>The olives&#x02BC; tints of gentle grey </l>
+                <l>Stooped to his borders, from between </l>
+                <l>The hills&#x02BC; uncultivated green. </l>
+                <l>And orange&#x2010;groves him girded round, </l>
+                <l>Blossoming o&#x02BC;er him fragrantly; </l>
+                <l>And in the sleep of his profound </l>
+                <l>White villages shone silently.<hi rend="superscript">2</hi> </l>
+                <l>And from our prow the ripple&#x02BC;s flash </l>
+                <l>Threw forth its little sparkles paly; </l>
+                <l>The light sound of the oars&#x02BC; dash<hi rend="superscript">3</hi> </l>
+                <l>Came dancing on the waters gaily. </l>
+                <l>There was blue above, and blue below, </l>
+                <l>And the gleam of the eternal snow. </l>
+                <l>Forth from the fastnesses it came </l>
+                <l>Of the high <geogName corresp="#ALPS">Alps</geogName>&#x02BC; retiring chain.<hi rend="superscript">4</hi> </l>
+                <l>And all along the shore, where&#x02BC;er </l>
+                <l>The storm&#x2010;winds wont to chafe the wave, </l>
+                <l>The crucifix is shrined there; </l>
+                <l>That Christ may hear the passioned prayer </l>
+                <l>&#x2014;May hear, may pity, and may save! </l>
+                
+                <p><hi rend="superscript">1</hi> [See <emph>Pr<!--ae-->terita,</emph> i. ch. vi. § 136; and cf. <emph>Poetry of Architecture</emph>, 
+                    § 102, in Vol I. p. 77.]</p>
+                
+                <p><hi rend="superscript">1</hi> [The above ten lines were omitted in the ed. of <date when="1891">1891</date>.] </p>
+                
+                <p><hi rend="superscript">2</hi> [In <emph>The Poetry of Architecture</emph> (§ 116), Ruskin describes the crystalline waters of 
+                    the lake, &#x201C;of which,&#x201D; he adds, quoting partly his own early verses, &#x201C;some one aptly 
+                    says, &#x2018;Deep within its azure rest, white villages sleep silently.&#x2019;&#x201D;]</p>
+                
+                <p><hi rend="superscript">3</hi> [So in the MS., the word o-ar making two syllables. Altered in the ed. of <date when="1891">1891</date> 
+                    to &#x201C;oar [blade&#x02BC;s] dash.&#x201D;]</p>
+                
+                <p><hi rend="superscript">4</hi> [This and the preceding line were omitted from the ed. of <date when="1891">1891</date>.]</p>
+           </div>
+        </body>
+    </text>
+</TEI>
