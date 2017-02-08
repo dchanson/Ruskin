@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="figure">
+        <fileDesc xml:id="andernacht_tower_drawing_msix">
+            <titleStmt>
+                <title type="main">Andernacht Tower [drawing]</title>
+                <title type="sub">Electronic text describing original drawing</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#SEP">Steven E. Petite</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                       <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS IX</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="MSIX35v-36r.jpg">p. 36r</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>,
+                                    examples of which can be found in MS VIII and MS IX, pages <locus from="##" to="##">##-##</locus>, and MS IX.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="figure" subtype="drawing">
+                <figure>
+                <!--<head type="title"><handShift new="#HANDJR1833-34" script="print" medium="pencil"/>Title of Drawing</head>-->
+                    <figDesc>Pen and ink, approx. 6.8 &#x00D7; 12.4 cm (image only). The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.html">Library Edition</ref> 
+                        describe the image as &#x201C;a sketch of a wooded, high&#x2010;banked river, with towers and a church in the distance&#x201D; 
+                        (<ref type="bibliography" target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:354n.). 
+                        The sketch shows a grouping of <placeName corresp="#ANDERNACH">Andernach</placeName>&#x02BC;s most familiar medieval buildings. 
+                        In the sketch, standing closest to the river, is the sixteenth&#x02010;century <placeName type="building" corresp="#ANDERNACHCRANE">crane</placeName>; 
+                        in the middle distance, the fifteenth&#x02010;century <placeName type="building" corresp="#ANDERNACHROUNDTOWER">round tower</placeName>; 
+                        and in the far distance, the towers of <placeName type="building" corresp="#STMARYASSUMPTIONANDERNACH">St. Mary Assumption Cathedral</placeName>. 
+                        In the drawing, <persName corresp="#JR">Ruskin</persName> has crowded these buildings closer together than they can in fact be seen in a single view.
+                    </figDesc>
+                </figure>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <fileDesc xml:id="st_goar_prose_glosses_textual">
+            <titleStmt>
+                <title type="main">"St. Goar" [prose]</title>
+                <title type="sub">Glosses [textual]</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses" subtype="textual">
+                <note xml:id="STGOARPROSEBLANK" resp="#DCH"><p><hi rend="bold">Blank space on page for possible drawing (MS IX)&#x2014;</hi>As on the first page of the poem about <placeName corresp="#STGOAR">St. Goar</placeName>, 
+                    on the first page of the prose the first line is placed significantly below the top of the page, leaving a vertical column measuring approximately nine lines 
+                    of <persName corresp="#JR">Ruskin</persName>&#x02BC;s cursive copperplate script. It is reasonable to assume, therefore, that he intended to paste a drawing here, 
+                    but never produced it, or that he produced a drawing, but it has been removed or lost. At this juncture between the poem and prose account of <placeName corresp="#STGOAR">St. Goar</placeName>, 
+                    the <ref type="note" subtype="bibliographical" target="library_edition_note.php"><title type="book" corresp="#JRWORKSLE">Library Edition</title></ref> erroneously situates 
+                    &#x201C;a sketch of a town in a large plain, with distant mountains.&#x201D; This drawing is affixed to p. 44v, not 43v, on which the prose account of <placeName corresp="#STGOAR">St. Goar</placeName> begins. 
+                    The editors also erroneously state that, "at this point" in MS VIII, the &#x201C;rough draft&#x201D; presents the untitled prose piece beginning 
+                    <ref type="witness" target="it_was_a_wide_stretchy_sweep_prose_msviii"><title type="essay" corresp="#JRITWASAWIDESTRETCHYSWEEP">&#x201C;It was a wide and stretchy sweep&#x201D;</title></ref> 
+                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:360 n. 1). In MS VIII, this piece is drafted 
+                    on p. 62r, separated by ten pages and drafts of eight other items, from the prose section on &#x201C;<placeName corresp="#STGOAR">St. Goar</placeName>,&#x201D; which appears on p. 56v (see 
+                    <ref type="apparatus" target="msviii_apparatus">MS VIII: Contents, section <hi rend="italic">b</hi></ref>).</p></note>
+                
+                <note xml:id="STGOARTERMINALCOMMA" resp="#DCH"><p><hi rend="bold">Terminal comma (MS VIII)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</p></note>
+
+                <note xml:id="STGOARAND" resp="#DCH"><p><hi rend="bold">Repeated &#x201C;and&#x201D; (MS IX)&#x2014;</hi>A copying error.</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>
