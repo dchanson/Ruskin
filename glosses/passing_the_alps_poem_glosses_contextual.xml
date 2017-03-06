@@ -3,8 +3,6 @@
 <?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="glosses">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="passing_the_alps_glosses_contextual">
             <titleStmt>
                 <title type="main">"Passing the Alps" [poem]</title>
@@ -64,7 +62,8 @@
                     and they crossed into <placeName corresp="#ITALY">Italy</placeName> through the <geogName corresp="#VIAMALA">Via Mala</geogName> and the <geogName corresp="#SPLUGEN">Spl&#x00FC;gen Pass</geogName> 
                     (see <ref type="note" subtype="contextual" target="tour_of_1833_note.php">Tour of 1833</ref>).</p>
                     <p>To describe the approach and crossing, <persName corresp="#JR">Ruskin</persName> apparently intended, according to his <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php"><title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan for Continuation of the Account of a Tour on the Continent</title></ref>, 
-                    to situate the present poem in a section named <title type="composite" corresp="#JRPASSINGTHEALPSCOMP">&#x201C;Passing the Alps&#x201D;</title>. This section title is followed by others related to the Alpine crossing, for most of which <persName corresp="#JR">Ruskin</persName> drafted at least a verse componeent:</p>
+                    to situate the present poem in a section named <title type="composite" corresp="#JRPASSINGTHEALPSCOMP">&#x201C;Passing the Alps&#x201D;</title> (or, possibly, the title in the list refers only to the present poem, 
+                        and not an expanded, composite&#x2010;genre section). In the list, this title is followed by others related to the Alpine crossing, for most of which <persName corresp="#JR">Ruskin</persName> did draft at least a verse componeent:</p>
                     <list>
                         <item><title type="composite" corresp="#JRPASSINGTHEALPSCOMP">&#x201C;Passing the Alps&#x201D;</title>, for which the poem <title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title> is extant;</item>
                         <item><title type="composite" corresp="#JRVIAMALACOMP">&#x201C;Via Mala&#x201D;</title>, for which the poem <ref type="witness" target="via_mala_poem_msviii"><title type="poem" corresp="#JRVIAMALA">&#x201C;Via Mala&#x201D;</title></ref> is extant;</item>
@@ -76,17 +75,21 @@
                     <p>Also according to the <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">List of Proposed Additional Contents for the Account</title>, <persName corresp="#JR">Ruskin</persName> 
                     meant to lead up to this group with another group relating to the first distant sightings of the <geogName corresp="#ALPS">Alps</geogName> and of Swiss character 
                     in the borderland between <placeName corresp="#GERMANY">Germany</placeName> and <placeName corresp="#SWITZERLAND">Switzerland</placeName>. 
-                    This group was to be positioned following the last section that <persName corresp="#JR">Ruskin</persName> succeeded in fair&#x2010;copying (incompletely) in MS IX, <title type="composite" corresp="#JRHEIDELBERGCOMP">[Heidelberg]</title>:</p>
+                    This group was to be positioned following the last section that <persName corresp="#JR">Ruskin</persName> succeeded in fair&#x2010;copying (incompletely) in MS IX, <title type="composite" corresp="#JRHEIDELBERGCOMP">[Heidelberg]</title>. 
+                        This group is more scantily represented in extant draft, with only the poem, <title type="poem" corresp="#JRSCHAFFHAUSENPOEM">&#x201C;Schaffhausen&#x201D; [&#x201C;Entrance to Schaffhausen&#x201D;]</title>, 
+                        definitively entitled by <persName corresp="#JR">Ruskin</persName>, and the untitled <title type="poem" corresp="#JRALPSFROMSSCHAFFHAUSENPOEM">&#x201C;There is a charmed peace that aye&#x201D; [&#x201C;The Alps from Schaffhausen&#x201D;]</title> 
+                        very likely belonging to the group (possibly meant to occupy the position of <title type="composite" corresp="#JRTHEALPSCOMP">&#x201C;The Alps&#x201D;</title> in the list). Both of these drafts 
+                        are found in <title type="manuscript" corresp="#MSVIII">MS VIII</title>.</p>
                     <list>
-                        <item><title type="composite" corresp="#JRSTRASBURGCOMP">&#x201C;Strasburg&#x201D;</title>, for which no readily identifiable composition survives;</item>
-                        <item><title type="composite" corresp="#JRSWISSCOTTAGESCOMP">&#x201C;The swiss cottages&#x201D;</title>, for which no readily identifiable composition survives;</item>
-                        <item><title type="composite" corresp="#JRSCHAFFHAUSENCOMP">&#x201C;Schaffhausen&#x201D;</title>, for which the poem <ref type="witness" target="splugen_poem_msviii"><title type="poem" corresp="#JRSPLUGEN">&#x201C;Splugen&#x201D;</title></ref> is extant;</item>
-                        <item><title type="composite" corresp="#JRTHEALPSCOMP">&#x201C;The Alps&#x201D;</title>, for which the poem <ref type="witness" target="the_summit_poem_msviii"><title type="poem" corresp="#JRTHESUMMIT">&#x201C;The Summit&#x201D;</title></ref> is extant;</item> 
-                        <item><title type="composite" corresp="#JRFALLOFTHERHINECOMP">&#x201C;The Fall of the Rhine&#x201D;</title>, for which the poem <ref type="witness" target="the_descent_poem_msviii"><title type="poem" corresp="#JRTHEDESCENT">&#x201C;The Descent&#x201D;</title></ref> is extant;</item>
-                        <item><title type="composite" corresp="#JRCONSTANCECOMP">&#x201C;Constance&#x201D;</title>, for which there survives no readily identifiable composition.</item>
-                        <item><title type="composite" corresp="#JRCWERDENBERGCOMP">&#x201C;Werdenberg&#x201D;</title>, for which there survives no readily identifiable composition.</item>
-                        <item><title type="composite" corresp="#JRCWERDENBERGCOMP">&#x201C;&#x201C;Pfaffers&#x201D;&#x201D;</title>, for which there survives no readily identifiable composition.</item>
-                        <item><title type="composite" corresp="#JRCWERDENBERGCOMP">&#x201C;Werdenberg&#x201D;</title>, for which there survives no readily identifiable composition.</item>
+                        <item><title type="composite" corresp="#JRSTRASBURGCOMP">&#x201C;Strasburg&#x201D;</title>;</item>
+                        <item><title type="composite" corresp="#JRSWISSCOTTAGESCOMP">&#x201C;The swiss cottages&#x201D;</title>;</item>
+                        <item><title type="composite" corresp="#JRSCHAFFHAUSENCOMP">&#x201C;Schaffhausen&#x201D;</title>;</item>
+                        <item><title type="composite" corresp="#JRTHEALPSCOMP">&#x201C;The Alps&#x201D;</title>;</item> 
+                        <item><title type="composite" corresp="#JRFALLOFTHERHINECOMP">&#x201C;The Fall of the Rhine&#x201D;</title>;</item>
+                        <item><title type="composite" corresp="#JRCONSTANCECOMP">&#x201C;Constance&#x201D;</title>;</item>
+                        <item><title type="composite" corresp="#JRCWERDENBERGCOMP">&#x201C;Werdenberg&#x201D;</title>;.</item>
+                        <item><title type="composite" corresp="#JRCWERDENBERGCOMP">&#x201C;&#x201C;Pfaffers&#x201D;&#x201D;</title>;</item>
+                        <item><title type="composite" corresp="#JRCWERDENBERGCOMP">&#x201C;Werdenberg&#x201D;</title>.</item>
                     </list> 
                     
                     <p><persName corresp="#JR">Ruskin</persName> models this arrangement on <title type="poem" corresp="#ROGERSITALY"><hi rend="italic">Italy</hi></title> by 
@@ -143,6 +146,14 @@
                     <title type="poem" corresp="#JRMILANCATHEDRAL">&#x201C;Milan Cathedral&#x201D;</title>&#x2014;even though the reference in 
                     <title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title> to <persName corresp="#HANNIBAL">Hannibal</persName>&#x02BC;s 
                     crossing is more appropriately connected with the western passage.</p>
+                    
+                    <p><persName corresp="#WGC">W. G. Collingwood</persName> further obscured <persName corresp="#SR">Rogers</persName>&#x02BC;s influence in this segment of the 
+                        <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title> by omitting from <title type="poem" corresp="#JRTHESUMMIT">&#x201C;The Summit&#x201D;</title> 
+                        the tale of <persName corresp="#CG">Gough</persName> and his dog (see contextual glosses for <ref type="witness" target="the_summit_poem_msviii"><title type="poem" corresp="#JRTHESUMMIT">&#x201C;The Summit&#x201D;</title></ref>). 
+                        <persName corresp="#JR">Ruskin</persName>&#x02BC;s inclusion of a narrative in a poem for the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title> 
+                        is unusual, for he typically used the verse for topographical description, reserving narrative for the prose sections. In this place, the story about <persName corresp="#CG">Gough</persName>&#x02BC;s 
+                        fatal fall, and his dog&#x02BC;s fidelity in watching over his corpse, shows <persName corresp="#JR">Ruskin</persName> imitating <persName corresp="#SR">Rogers</persName>&#x02BC;s 
+                        use of narrative to represent a range of emotion entailed in the stages of mountain crossing.</p>
                     
                     <p>In another view, however, <persName corresp="#WGC">Collingwood</persName>&#x02BC;s erroneous placement of 
                     <title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title> was inspired, 
