@@ -3,9 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="glosses">
-        <fileDesc xml:id="splugen_poem_glosses_contextual">
+        <fileDesc xml:id="the_descent_glosses_contextual">
             <titleStmt>
-                <title type="main">"Splugen" [poem]</title>
+                <title type="main">"The Descent"[poem]</title>
                 <title type="sub">Glosses</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -17,7 +17,8 @@
                     <persName corresp="#DCH">David C. Hanson</persName>
                 </principal>
                 <respStmt>
-                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#JLF">Jessica L. Firmin</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -55,12 +56,12 @@
     <text>
         <body>
             <div type="glosses">
-                <note xml:id="SPLUGENPASSINGTHEALPSCLUSTER" resp="#DCH"><p><hi rend="bold">&#x201C;Splugen&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; 
+                <note xml:id="THEDESCENTPASSINGTHEALPSCLUSTER" resp="#DCH"><p><hi rend="bold">&#x201C;The Descent&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; 
                     <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; 
                     <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi><persName corresp="#JR">Ruskin</persName> 
                     lists this title in his <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php"><title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan for Continuation of the Account of a Tour on the Continent</title></ref> 
                     on the back endpapers of <title type="manuscript" corresp="#MSVIII">MS VIII</title>. The positioning of this poem in the <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan</title> 
-                    (presumably as part of a projected composite section to be entitled <title type="composite" corresp="#JRSPLUGENCOMP">&#x201C;Splugen&#x201D;</title>) reflects the influence 
+                    (presumably as part of a projected composite section to be entitled <title type="composite" corresp="#JRTHEDESCENTCOMP">&#x201C;The Descent&#x201D;</title>) reflects the influence 
                     of the poet, <ref type="note" subtype="biographical" target="rogers_samuel_note.php"><persName corresp="#SR">Samuel Rogers</persName> (<date notBefore="1763" notAfter="1855">1763&#x2013;1855</date>)</ref>. 
                     <persName corresp="#JR">Ruskin</persName>&#x02BC;s borrowings from <persName corresp="#SR">Rogers</persName>&#x02BC;s <title type="poem" corresp="#ROGERSITALY"><hi rend="italic">Italy</hi></title> 
                     are especially prominent in treating the trope of mountain crossing. See, in the apparatus for the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>, 
@@ -68,7 +69,7 @@
                     and see also the contextual glosses for <ref type="witness" target="passing_the_alps_poem_msia_g2.php"><title type="poem" corresp="JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title></ref>.</p>
                     
                     <p>In <persName corresp="#JR">Ruskin</persName>&#x02BC;s <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan</title>, 
-                        the title <title type="composite" corresp="#JRSPLUGENCOMP">&#x201C;Splugen&#x201D;</title> is the third in what can be interpreted as a definable cluster, 
+                        the title <title type="composite" corresp="#JRTHESUMMITCOMP">&#x201C;The Descent&#x201D;</title> is the fifth in what can be interpreted as a definable cluster, 
                         which constructs the experience of crossing the <geogName corresp="ALPS">Alps</geogName>:</p>
                     
                     <p><list>
@@ -89,42 +90,26 @@
                         <title type="poem" corresp="ROGERSTHEALPS">&#x201C;The Alps&#x201D;</title> in <title type="poem" corresp="#ROGERSITALY"><hi rend="italic">Italy</hi></title>, 
                         applying themes and structure in <persName corresp="#SR">Rogers</persName>&#x02BC;s poem to his own cluster.</p></note>
                 
-                <note xml:id="CULTIVATEDSPACE" resp="#DCH"><p><hi rend="bold">&#x201C;A little cultivated space / Amid the rocky wilderness&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; 
-                    <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>While 
-                    <persName corresp="#JR">Ruskin</persName>&#x02BC;s cousin, <ref type="note" subtype="biographical" target="richardson_mary_note.php"><persName corresp="#MRC">Mary Richardson</persName></ref>, 
-                    declared the village of <placeName corresp="#SPLUGENVILLAGE">Spl&#x00FC;gen</placeName> &#x201C;a poor place&#x201D; 
-                    (<ref type="bibliography" target="bibliography.php#RFT48">Diary of <persName corresp="#MRC">Mary Richardson</persName>, <date when="1833">1833</date></ref>, 41), 
-                    <persName corresp="#JR">Ruskin</persName> represents the village as a pastoral respite from the sublime experience of the <geogName corresp="#VIAMALA">Via Mala</geogName>. 
-                    In his guidebook to <placeName corresp="#SWITZERLAND">Switzerland</placeName>, <persName corresp="#GS">George Smith III</persName> treats <placeName corresp="#SPLUGENVILLAGE">Spl&#x00FC;gen</placeName> 
-                    in a businesslike manner as &#x201C;the chief place in the desolate pastoral vale of the <geogName corresp="#RHEINWALD">Rheinwald</geogName>. . . . 
-                    The atmosphere is very chilly here, and barley barely ripens.&#x201D; The village&#x02BC;s economy, <persName corresp="#GS">George Smith III</persName> explains, 
-                    depended on serving as a transport hub, &#x201C;prosper[ing] by the constant passage of goods and travellers to and from <placeName corresp="#ITALY">Italy</placeName>. 
-                    In autumn it is thronged with drovers; large herds of cattle and many horses then cross the <geogName corresp="#ALPS">Alps</geogName> for the <placeName corresp="#MILAN">Milan</placeName> market&#x201D; 
-                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKSWITZERLAND1838"><persName corresp="#GS">Smith</persName>, <title type="book" corresp="#MURRAYSHANDBOOKSWITZERLAND1838"><hi rend="italic">Hand&#x2010;book for Travellers in Switzerland</hi></title></ref>, 209). 
-                    According to <persName corresp="#WBI">William Brockedon</persName>, the village&#x02BC;s &#x201C;importance&#x201D; as a &#x201C;dep&#x00F4;t&#x201D; did not decline owing to the <placeName corresp="#AUSTRIA">Austrian</placeName> government&#x02BC;s recent engineering 
-                    improvements to carriage roads through the <geogName corresp="#SPLUGEN">Spl&#x00FC;gen Pass</geogName>, although prior to the increased flow of self&#x2010;sufficient conveyances, 
-                    the village maintained &#x201C;some hundreds of horses and mules . . . for the transport of goods&#x201D; 
-                    (<ref type="bibliography" target="bibliography.php#BROCKEDONILLUSTRATIONS"><persName corresp="#WBI">Brockedon</persName>,<title type="book" corresp="#BROCKEDONILLUSTRATIONS"><hi rend="italic">Illustrations of the Passes of the Alps</hi></title></ref>, vol. 2, no. 9, p. 9).
-                    None of these conditions is evident in <persName corresp="#JR">John</persName>&#x02BC;s poem, in which the only sign of drovers&#x02BC; herds is a bucolic &#x201C;few cattle straying&#x201D;.</p></note>
-                    
-                <note xml:id="HIGHERANDHIGHER" resp="#DCH"><p><hi rend="bold">&#x201C;No, on, the peaceful bourne is past / The rocks around are closing fast, / Higher and higher towards the heaven / 
-                    Betwixt the cliffs our road is riven, / Or twining round the hill side bare / With many a bend&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; 
-                    <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>The 
-                    climb from the village of <placeName corresp="#SPLUGENVILLAGE">Spl&#x00FC;gen</placeName> to the <geogName corresp="#SPLUGEN">mountain pass</geogName>, 
-                    as <persName corresp="#WBI">Brockedon</persName> explains, began where &#x201C;the road . . . abruptly leaves the <placeName corresp="#SPLUGENVILLAGE">village</placeName> by a covered bridge across the <geogName corresp="#RHINE">Rhine</geogName>, 
-                    and ascends the mountain directly from the river,&#x201D; rising &#x201C;by a succession of zig&#x2010;zags, [to] the greatest elevation, which is 6500 English feet above the level of the sea.&#x201D; 
-                    At the summit, &#x201C;unlike the col of the <geogName corresp="#SANBERNARDINOPASS">Bernardin</geogName>,&#x201D; the road reaches &#x201C;a narrow crest 
-                    whence the road rapidly descends&#x201D; 
-                    (<ref type="bibliography" target="bibliography.php#BROCKEDONILLUSTRATIONS">Brockedon, <title type="book" corresp="#BROCKEDONILLUSTRATIONS"><hi rend="italic">Illustrations of the Passes of the Alps</hi></title></ref>, vol. 2, no. 9, pp. 9, 13).</p></note>
-                
-                <note xml:id="ALPINEROSE" resp="#DCH"><p><hi rend="bold">&#x201C;And round, beneath, beside there grew, / The <geogName corresp="#ALPS">Alpine</geogName> roses heathery hue&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; 
-                    <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi><name type="botanical" corresp="#ALPINEROSE">Rhododendrum ferrugineum, or Rusty&#x2010;leaved Rhododendrum</name>. 
-                    In the <title type="book" corresp="#JRWORKSLE">Library Edition</title>, the editors remark that &#x201C;<persName corresp="#JR">Ruskin</persName> never lost his particular affection 
-                    for this flower,&#x201D; and refer the reader to the preface to the second edition (<date when="1865">1865</date>) of <title type="book" corresp="#JRSESAME"><hi rend="italic">Sesame and Lilies</hi></title>. 
-                    A recent fatal climbing accident suffered by members of the <orgName corresp="#ALPINECLUB">Alpine Club</orgName> leads <persName corresp="#JR">Ruskin</persName> 
-                    to relate an anecdote about ill&#x2010;behaved youths who trampled a bed of <name type="botanical" corresp="#ALPINEROSE">Alpine roses</name> 
-                    that he was drawing, prompting a reflection on the difference between reverence for beauty and love of excitement 
-                    (<ref type="bibliography" target="bibliography.php">Ruskin, <hi rend="italic">Works</hi></ref>, 18:27).</p></note>
+                <note xml:id="SIXTHOUSANDFEETGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;A fearful mountain wall whose sweep / At one sheer plunge six thousand feet&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <hi rend="italic">Poems</hi> [<date when="1891">1891</date>]; 
+                    <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>Ruskin&#x02BC;s cousin, 
+                    <ref type="note" subtype="biographical" target="richardson_mary_note.php"><persName corresp="#MRC">Mary Richardson</persName></ref>, 
+                    likewise noted in her diary that the <geogName corresp="#SPLUGEN">Spl&#x00FC;gen Pass</geogName> reaches 6000 feet above sea level; <persName corresp="#GS">George Smith III</persName> cites 6500 feet 
+                    (<ref type="bibliography" target="bibliography.php#RFT48">Diary of <persName corresp="#MRC">Mary Richardson</persName>, <date when="1833">1833</date></ref>, 41; 
+                    <ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKSWITZERLAND1838"><persName corresp="#GS">Smith</persName>, <title type="book" corresp="#MURRAYSHANDBOOKSWITZERLAND1838"><hi rend="italic">Hand&#x2010;book for Travellers in Switzerland</hi></title></ref>, 209). 
+                    <persName corresp="#GS">Smith</persName> goes on to remark that, at the summit, travelers crossed the boundary line between <placeName corresp="#SWITZERLAND">Switzerland</placeName> and <placeName corresp="#LOMBARDY">Lombardy</placeName>; 
+                    and that only travelers with an <placeName corresp="#AUSTRIA">Austrian</placeName> official&#x02BC;s signature on their passport were allowed to cross the frontier. 
+                    At the bottom of the descent, travelers reached another <placeName corresp="#AUSTRIA">Austrian</placeName> custom house, where they submitted their passports and luggage to additional scrutiny (ibid.).</p>
+                </note>
+
+                <note xml:id="SCALEDARIDGESOHIGH" resp="#DCH"><p><hi rend="bold">&#x201C;At length looked up to the white snow, / From the deep valley, it would seem, / 
+                    Incredible, a very dream / That we had scaled a ridge so high / . . . / And we wound on, beside the course / Of a roaring torrents flashing force&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <hi rend="italic">Poems</hi> [<date when="1891">1891</date>]; 
+                    <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi><persName corresp="#GS">George Smith III</persName> describes the scene 
+                    looking up from the <placeName corresp="#AUSTRIA">Austrian</placeName> custom house at the bottom of the descent: &#x201C;The custom&#x2010;house stands at one end of a sort of oval basin, surrounded by lofty mountain peaks, 
+                    among which, on the rt. [<expan>right</expan>] of the road, rises that of the <placeName corresp="#SPLUGEN">Spl&#x00FC;gen</placeName>, and the glaciers which feed the rivers running towards <placeName corresp="#ITALY">Italy</placeName>. It is a scene of extreme desolation; 
+                    not a shrub of any kind grows here; no vegetation is seen but lichen, mosses, and a little coarse grass. The snow often reaches up to the windows of the first story of the houses&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKSWITZERLAND1838"><persName corresp="#GS">Smith</persName>, <title type="book" corresp="#MURRAYSHANDBOOKSWITZERLAND1838"><hi rend="italic">Hand&#x2010;book for Travellers in Switzerland</hi></title></ref>, 209&#x2013;10).</p></note>
             </div>
         </body>
     </text>

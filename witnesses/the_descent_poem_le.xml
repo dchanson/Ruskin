@@ -3,15 +3,18 @@
 <?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
-        <fileDesc xml:id="it_was_a_wide_and_stretchy_sweep_le">
+        <fileDesc xml:id="the_descent_poem_le">
             <titleStmt>
-                <title type="main">"It was a wide stetchy sweep" [prose]</title>
+                <title type="main">"The Descent" [poem]</title>
                 <title type="sub">Electronic Text Generated from the Printed Witness in Ruskin, <hi rend="italic">Works</hi> (1903)</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
                 </author>
                 <editor>
-                    <persName corresp="#">E. T. Cook and Alexander Wedderburn</persName>
+                    <persName corresp="#ETC">E. T. Cook</persName>
+                </editor>
+                <editor>
+                    <persName corresp="#AW">Alexander Wedderburn</persName>
                 </editor>
                 <principal>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -57,11 +60,11 @@
                         <title type="main">The Works of John Ruskin</title>
                         <imprint>
                             <biblScope type="vol">2</biblScope>
-                            <biblScope type="edition">Library Edition</biblScope>
+                            <biblScope type="edition">Library<hi rend="superscript"></hi></biblScope>
                             <pubPlace>London</pubPlace>
                             <publisher>George Allen</publisher>
                             <date when="1903">1903</date>
-                            <biblScope type="pages">347-48</biblScope>
+                            <biblScope type="pages">372-73</biblScope>
                         </imprint>
                     </monogr>
                 </biblStruct>
@@ -70,27 +73,38 @@
     </teiHeader>
     <text>
         <body>
-            <div type="witness" subtype="essay">
-                <p>It was a wide stretchy sweep of lovely blue champaign,<ref type="gloss" target="it_was_a_wide_and_stretchy_sweep_prose_glosses_textual.php#PLACEMENT"/> richly cultivated 
-                    and beautifully wooded, and bounded by magnificent mountain ranges: here 
-                    fading away, faint and blue and cloudlike toward the south;<ref type="gloss" target="it_was_a_wide_and_stretchy_sweep_prose_glosses_contextual.php#SOUTH"/> there distinct 
-                    and near and lofty, with the green cultivation climbing up their broad flanks. 
-                    I had read that the snowy summit of the <geogName corresp="#MONTTITLIS">Mont Titlis</geogName> was visible from 
-                    <placeName corresp="#STRASBOURG">Strasburg</placeName>, the consequence of which marvellous information was, 
-                    that I metamorphosed every cloud I saw into a mountain, strained my eyes with looking 
-                    for that which was out of sight,<ref type="gloss" target="it_was_a_wide_and_stretchy_sweep_prose_glosses_contextual.php#TITLIS"/> and had at last very nearly argued myself into 
-                    a conviction that blue hills were white ones, until our entrance into the narrow 
-                    dell above mentioned precluded all farther observations upon the clouds. A 
-                    Swiss cottage is a celebrated thing, celebrated far and wide; it has modelled 
-                    the Tivolian villas of&#x2014;<placeName corresp="#HIGHTGATE">Highgate</placeName> and <placeName corresp="#HAMPSTEAD">Hampstead</placeName>,<ref type="gloss" target="it_was_a_wide_and_stretchy_sweep_prose_glosses_contextual.php#HIGHGATE"/> the mock waterfalls and 
-                    crocodile stools of the Coliseum<ref type="gloss" target="it_was_a_wide_and_stretchy_sweep_prose_glosses_contextual.php#COLISEUM"/> have extended its fame, and much it delighted 
-                    me when first the wide projecting wooden roof and carved galleries and 
-                    external stairs looked out to greet us from among the dark pines. What 
-                    a host of associations and recollections tumbled in upon me. Mountains, 
-                    avalanches, glaciers, cottages, <persName corresp="#HANNIBAL">Hannibal</persName>, vinegar,<ref type="gloss" target="it_was_a_wide_and_stretchy_sweep_prose_glosses_contextual.php#VINEGAR"/> <name type="fictional_person">Tell</name>, <geogName corresp="#ALPS">Alps</geogName>, apples, tyrants, 
-                    and crossbows came crowding into my brain, jumbled together in most 
-                    admired disorder. I thought of nothing connected the whole day.</p>
-                </div>
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="aa">
+                <head type="title"><hi rend="caps">THE DESCENT</hi>The descent<ref type="gloss" target="the_descent_poem_glosses_textual.php#THEDESCENTGLOSS"/></head> 
+                <lg type="stanza" n="1">
+                    <l>A <hi rend="smallcaps">FEARFUL</hi> mountain wall, whose sweep<ref type="gloss" target="the_descent_poem_glosses_contextual.php#THEDESCENTPASSINGTHEALPSCLUSTER"/></l>
+                    <l>At one sheer plunge, six thousand feet,<ref type="gloss" target="the_descent_poem_glosses_contextual.php#SIXTHOUSANDFEETGLOSS"/></l>
+                <l>Stoops to the valley; on each side</l>
+                <l>Is tossed a very ocean tide,</l>
+                <l>Of surgy, snowy mountain crest;</l>
+                <l>And all along that hill&#x02BC;s steep breast</l>
+                <l>With snake&#x2010;like coilings, wound our way</l>
+                <l>On narrow shelves of rock, that lay</l>
+                <l>Almost o&#x02BC;erhanging, and so sheer,</l>
+                <l>&#x02BC;Twas terror to look down, so near</l> 
+                <l>To such a precipice of fear.</l>
+                <pb/>
+                <l>And far before, and far behind,</l>
+                <l>We tracked our dread way&#x02BC;s mazy wind,</l>
+                <l>Continuous and descending, low,</l>
+                <l>At length looked up to the white snow</l>
+                <l>From the deep valley, it would seem</l>
+                <l>Incredible, a very dream,</l>
+                <l>That we had scaled a ridge so high,</l>
+                <l>Or climbed so near the domy sky;</l>
+                <l>And we wound on, beside the course</l>
+                    <l>Of a roaring torrent&#x02BC;s flashing force;<ref type="gloss" target="the_descent_poem_glosses_contextual.php#SCALEDARIDGESOHIGH"/></l>
+                <l>And many a fall of minor stream</l>
+                <l>Down the smooth rooks came thundering,</l>
+                <l>Or in white sheets of gauzy foam</l>
+                <l>Mingled with archy iris shone</l>
+                <l>Among the forest pines.</l>
+                </lg>
+            </div>
         </body>
     </text>
 </TEI>
