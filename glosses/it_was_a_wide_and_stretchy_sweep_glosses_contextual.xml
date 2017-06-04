@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="it_was_a_wide_and_stretchy_sweep_prose_glosses_contextual">
+            <titleStmt>
+                <title type="main">"It was a wide stetchy sweep" [prose]</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="SOUTH" resp="#DCH"><p><hi rend="bold">&#x201C;It was a wide stretchy sweep of lovely blue champaign, . . . toward the south&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>See the closing lines of 
+                    <ref type="witness" target="oh_the_morn_looked_bright_on_hill_and_dale_poem_msviii.php"><title type="poem" corresp="JROHTHEMORNLOOKEDBRIGHT">&#x201C;Oh, the morn looked bright on hill and dale&#x201D; [&#x201C;The Black Forest&#x201D;]</title></ref>, 
+                    which immediately precede this prose passage in <title type="manuscript" corresp="#MSVIII">MS VIII</title>: 
+                    &#x201C;Emerged we on a lofty moor, / Open, and shelterless, and bare, / And gently undulating far / With here and there a patch of pine / Breaking the smoothness of its line, / 
+                    Toward the south horizon!&#x201D; This moor is probably the same landscape described here in prose as a &#x201C;wide stretchy sweep&#x201D; of &#x201C;champaign&#x201D; opening to the south 
+                    and bounded by mountains. As the contextual notes to the poem explain, this landscape likely refers to the eastern side of the 
+                    <geogName corresp="#BLACKFOREST">Black Forest</geogName>, on the road to <placeName corresp="#SCHAFFHAUSEN">Schaffhausen</placeName>, 
+                    passing through <placeName corresp="#VILLINGEN"> Villingen</placeName> and <placeName corresp="#DONAUESCHINGEN">Donaueschingen</placeName>, 
+                    where <persName corresp="#JR">Ruskin</persName>&#x02BC;s cousin, <persName corresp="MRC">Mary Richardson</persName> wrote that they crossed the 
+                    <geogName corresp="#DANUBE">Danube</geogName>&#x2014;that is, its headwaters.</p></note>
+                <!--The pointer to this gloss would be <ref type="gloss" target="it_was_a_wide_and_stretchy_sweep_prose_glosses_contextual.php#SOUTH"/>-->
+
+                <note xml:id="TITLIS" resp="#DCH"><p><hi rend="bold">&#x201C;I had read, that the snowy summit of the <geogName corresp="#MONTTITLIS">Mont Titlis</geogName>, was visible 
+                    from <placeName corresp="#STRASBOURG">Strasburg</placeName>, the consequence of which marvellous information was, that . . . strained my eyes with looking for that 
+                    which was out of sight&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>In 
+                    his guidebook to <placeName corresp="#SWITZERLAND">Switzerland</placeName>, <persName corresp="#JM">John Murray III</persName> acknowledges this belief 
+                    but likewise expresses skepticism: the &#x201C;principal peak&#x201D; of <geogName corresp="#MONTTITLIS">Titlis</geogName>, &#x201C;the <geogName corresp="#NOLLEN">Nollen</geogName>, 
+                    composed of limestone, is said to be visible (?) from <placeName corresp="#STRASBOURG">Strasburg</placeName>&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKSWITZERLAND1838"><title type="book" corresp="#MURRAYSHANDBOOKSWITZERLAND1838"><hi rend="italic">Hand&#x2010;book for Travellers in Switzerland</hi></title></ref>, 91). 
+                    <geogName corresp="#MONTTITLIS">Titlus</geogName> is part of the <geogName corresp="#URIALPS">Uri Alps</geogName>, 
+                    lying in a direct line south of <placeName corresp="#STRASBOURG">Strasbourg</placeName> and <placeName corresp="#SCHAFFHAUSEN">Schaffhausen</placeName>. 
+                    <geogName corresp="#NOLLEN">Nollen</geogName> is an older name for the mountain.</p></note>
+                <!--The pointer to this gloss would be <ref type="gloss" target="it_was_a_wide_and_stretchy_sweep_prose_glosses_contextual.php#TITLIS"/>-->
+                
+                <note xml:id="HIGHGATE" resp="#DCH"><p><hi rend="bold">&#x201C;Tivolian villas of&#x2014;<placeName corresp="#HIGHGATE">Highgate</placeName> and <placeName corresp="#HAMPSTEAD">Hampstead</placeName>&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>In 
+                    the early nineteenth century, <placeName corresp="#HIGHGATE">Highgate</placeName> and <placeName corresp="#HAMPSTEAD">Hampstead</placeName> were villages, 
+                    separate from <placeName corresp="#LONDON">London</placeName>, situated in the hills north of the city and overlooking it. Just so, the Roman town of <placeName corresp="#TIVOLI">Tibur</placeName>, or modern <placeName corresp="#TIVOLI">Tivoli</placeName>, 
+                    lay among the hills east of <placeName corresp="#ROME">Rome</placeName>, overlooking the <geogName corresp="#CAMPAGNA">Campagna</geogName>; and here the wealthy citizens of ancient <placeName corresp="#ROMEANCIENT">Rome</placeName> built villas&#x2014;hence, <persName corresp="#JR">Ruskin</persName>&#x02BC;s jest about the &#x201C;Tivolian 
+                    villas&#x201D; constructed by wealthy Londoners.</p></note>
+                <!--The pointer to this gloss would be <ref type="gloss" target="it_was_a_wide_and_stretchy_sweep_prose_glosses_contextual.php#HIGHGATE"/>-->
+                
+                <note xml:id="COLISEUM" resp="#DCH"><p><hi rend="bold">&#x201C;the mock waterfalls and crocodile stools of the <placeName type="architecture" corresp="#COLISEUM">Coliseum</placeName>&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>For 
+                    the <placeName type="building" corresp="#COLOSSEUM">Coliseum</placeName>, usually spelled <placeName type="building" corresp="#COLOSSEUM"><hi rend="italic">Colosseum</hi></placeName>, 
+                    see <ref type="note" subtype="contextual" target="colosseum_note.php">The Colosseum, <persName corresp="#THP">Hornor</persName>&#x02BC;s London Panorama, and Regent&#x02BC;s Park</ref>. 
+                    <persName corresp="#JR">Ruskin</persName>&#x02BC;s mockery of the farrago, from &#x201C;crocodile stools&#x201D; to a <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">&#x201C;Swiss Cottage&#x201D;</placeName>, 
+                    would be revived in his introduction to <title type="essay" corresp="#JRPOETRYOFARCHITECTURE1837_38"><hi rend="italic">The Poetry of Architecture</hi></title>: instead of &#x201C;unity of feeling&#x201D; 
+                    in architecture, he writes, &#x201C;[w]e have . . . quiet old English gentlemen reclining on crocodile stools, and peeping out of the windows of Swiss ch&#x00E2;lets&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 1:8&#x2013;9). Here, in the original context of the 
+                    <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>, <persName corresp="#JR">Ruskin</persName>&#x02BC;s object of mockery referred to the attractions 
+                    exhibited at the <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName>&#x2014;not its main exhibit, <persName corresp="#THP">Thomas Hornor</persName>&#x02BC;s panorama of <placeName corresp="#LONDON">London</placeName>, 
+                    which encircled the interior of the building&#x02BC;s dome, but to the subordinate exhibits, which surrounded the building on its perimeter. By the time of the 
+                    <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName>&#x02BC;s opening in <date when="1829">1829</date>, <persName corresp="#THP">Hornor</persName> 
+                    had begun surrounding the structure with pleasure gardens, which contained a bewildering variety of attractions that were anything but unified in feeling, 
+                    and among these <persName corresp="#JR">Ruskin</persName> singled out these seemingly random objects.</p>
+                    
+                    <p>The crocodile stools are explained by an <date when="1829">1829</date> aquatint by the <orgName corresp="#ACKERMANN">Ackermann firm</orgName>, 
+                        <title type="artwork" corresp="#ACKERMANNCOLOSSEUMSOUTHGROUNDS">&#x201C;South Side of the Grounds surrounding the <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName>, <placeName corresp="#REGENTSPARK">Regent&#x02BC;s Park</placeName>&#x201D;</title>. 
+                        The scene in the print opens out to a large fountain from inside a &#x201C;treillage pavilion&#x201D; designed in the manner of <persName corresp="#HR">Humphry Repton</persName>. 
+                        This pavilion apparently was never built at the <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName>, but the aquatint includes a garden seat fancifully 
+                        speared by a reptile, its head protruding from one end, its tail curling outward from the other end, and its legs forming the stool&#x02BC;s frame. With unconscious irony, 
+                        the print&#x02BC;s caption highlights the heterogeneous mixing of styles and objects: the scene &#x201C;represents the south side of the grounds which surround the building, 
+                        embracing a picturesque trait of the beautiful union of Greek Architecture, thus judiciously combining with plants and flowering shrubs. The view is taken from the 
+                        Corridor or covered way, leading from the interior of the structure [the trellised pavilion] to the first Fountain, whose refreshing showers are felt delightfully cooling 
+                        after the ascent to the Gallery of the <title type="artwork" corresp="#HORNORSLONDONPANORAMA">Panorama</title>, 
+                        and the circuit of the Pavilion enriched with so great a treasury of art. This enchanting spot leads through delightful alleys formed by extensive greenhouses, 
+                        abounding in all the richest productions of <name type="fictional_person" corresp="#FLORA">Flora</name>, from almost every region, to the <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">Swiss Farm&#x2010;House</placeName>, 
+                        from the verandah of which will be viewed the Rocky Scene, with the stupendous Water&#x2010;falls, and other objects, characteristic of the romantic and picturesque region 
+                        which it is intended to describe. This part of the great scheme, when completed, it is believed, will amount to an illusion, having been prepared 
+                        with rare skill and at a vast expense&#x201D;. Thus, the print&#x02BC;s caption leads the viewer from the crocodile stools shown in the print&#x02BC;s foreground 
+                        to the other miscellaneous object in <persName corresp="#JR">Ruskin</persName>&#x02BC;s farrago, the <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">Swiss Cottage</placeName>. 
+                        (See <ref type="bibliography" target="bibliography.php#HYDECOLOSSEUM"><persName corresp="#RHYDE">Hyde</persName>, <title type="book" corresp="#HYDECOLOSSEUM"><hi rend="italic">The Regent&#x02BC;s Park Colosseum</hi></title></ref>, 
+                        plate 2, p. 29 opp. For <persName corresp="#HR">Repton</persName>&#x02BC;s garden pavilions, 
+                        see <ref type="bibliography" target="bibliography.php#REPTONOBSERVATIONS"><persName corresp="#HR">Repton</persName>, <title type="book" corresp="#REPTONOBSERVATIONS"><hi rend="italic">Observations on the Theory and Practice of Landscape Gardening</hi></title></ref>, 103, 105&#x2010;6; and plates p. 102 opp. and p. 106 opp. 
+                        For a floor plan of the <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName> outlining its exhibition areas on the perimeter, 
+                        as these were laid out in <date when="1855">1855</date>, see 
+                        <ref type="bibliography" target="bibliography.php#BASIRECOLOSSEUMPLAN"><persName corresp="#JBASIRE">Basire</persName>, <title type="artwork" corresp="#BASIRECOLOSSEUMPLAN"><hi rend="italic">Ground Plan of the Royal Colosseum</hi></title></ref>; in this diagram, 
+                        an area labeled &#x201C;Stalactite Caverns&#x201D; possibly corresponds to the subterranean passage to the <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">Swiss Cottage</placeName>.)</p>
+                    
+                    <p>The <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">Swiss Cottage</placeName> exhibit was accessed via a subterranean passage, &#x201C;lined with coral, shells, and geological specimens&#x201D; like a grotto, 
+                        which led from a conservatory pictured in another <date when="1829">1829</date> <orgName corresp="#ACKERMANN">Ackermann</orgName> aquatint of the <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName>, 
+                        a garden scene formed round the <title type="artwork" corresp="#ACKERMANNCOLOSSEUMMARBLESTATUE">&#x201C;Fountain surrounding a marble Statue&#x201C;</title>. 
+                        (The fountain, another assemblage of miscellaneous objects, was a &#x201C;veil of water&#x201D; thrown upward and around a &#x201C;sleeping undine&#x201D;, 
+                        and then falling down onto shells, corals, and mosses, as a &#x201C;dial of shells&#x201D; revolved above&#x2014;the whole enclosed inside a glass dome topped with a flowery finial.) 
+                        From this &#x201C;work indeed of matchless art&#x201D;, the print&#x02BC;s caption promises, &#x201C;the spectator will be led to the various splendid apartments&#x201D; 
+                        of the <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">Swiss Cottage</placeName>, &#x201C;which, when completed, will be the wonder of the age!&#x201D; Perhaps a gendering of these spaces 
+                        is suggested by a fashion plate from the <date notBefore="1830" notAfter="1839">1830s</date>, in which a young boy is shown leading his mama away from the feminine 
+                        undine&#x02BC;s shell&#x2010;fountain, and into the passage leading &#x201C;<hi rend="smallcaps">TO THE SWISS COTTAGE</hi>&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#HYDECOLOSSEUM"><persName corresp="#RHYDE">Hyde</persName>, <title type="book" corresp="#HYDECOLOSSEUM"><hi rend="italic">The Regent&#x02BC;s Park Colosseum</hi></title></ref>, 
+                        p. 40; plate 3, p. 37 opp.; p. 34).</p>
+                    
+                    <p>The <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">Swiss Cottage</placeName> exhibit was completed in <date when="1832">1832</date>, so the Ruskins 
+                        could have visited the model either when planning their Continental journey, thus anticipating their experience in the <geogName corresp="#ALPS">Alps</geogName>, 
+                        or when they had returned and could compare their memories of the actual scenes. According to an article in the <title type="periodical" corresp="#MIRROROFLITERATURE"><hi rend="italic">Mirror of Literature</hi></title>, 
+                        in <date when="1832">1832</date> the cottage exhibit was already popular enough to have featured in painted scenery for a <placeName corresp="#COVENTGARDENTHEATRE">Covent Garden Theatre</placeName> 
+                        musical entertainment set in <placeName corresp="#SWITZERLAND">Switzerland</placeName> 
+                        (<ref type="bibliography" target="bibliography.php#MIRRORSWISSCOTTAGECOLOSSEUM"><title type="essay" corresp="#MIRRORSWISSCOTTAGECOLOSSEUM">&#x201C;Swiss Cottage, at the Colosseum, in the Regent&#x02BC;s Park&#x201D;</title></ref>, 258). 
+                        The exhibit was composed of four full&#x2010;scale room interiors, which were built outside the <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName>, 
+                        adjacent to two of its angled polygonal sides. The grandest room, as described and illustrated in the <title type="periodical" corresp="#MIRROROFLITERATURE"><hi rend="italic">Mirror of Literature</hi></title>, 
+                        was &#x201C;wainscotted with coloured (knotted) wood, and carved in imitation of the ornamented dwelling of a Swiss family&#x201D;. An engraving features a carved fireplace 
+                        projecting into the room, large enough to accommodate built&#x2010;in settles cozily near the fire&#x2014;&#x201C;the very <hi rend="italic">beau ideal</hi> of cottage comfort&#x201D;. 
+                        With its &#x201C;raised hearthstone, massive fire&#x2010;dogs and chimney&#x2010;back, and its cosy seats&#x201D;, the fireplace was &#x201C;calculated to contain a whole family seated at the sides of its ample hearth&#x201D; 
+                        and was considered &#x201C;characteristic of the primitive enjoyments of the happy people from among whom this model was taken&#x201D;. The rustic furnishings shown in the engraving, 
+                        carved as if formed from forest&#x2010;tree branches, reinforced the idea of the primitive 
+                        (<ref type="bibliography" target="bibliography.php#MIRRORSWISSCOTTAGECOLOSSEUM"><title type="essay" corresp="#MIRRORSWISSCOTTAGECOLOSSEUM">&#x201C;Swiss Cottage, at the Colosseum, in the Regent&#x02BC;s Park&#x201D;</title></ref>, 258, 257).</p>
+                    
+                    <p>The <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">Swiss Cottage</placeName> was designed by an architect, <persName corresp="#PFR">Peter Frederick Robinson</persName> 
+                        (<date notBefore="1776" notAfter="1858">1776&#x2013;1858</date>), whose eclectic collections of designs for domestic architecture included Swiss&#x2013;inspired buildings, 
+                        which he based on observations taken during a Continental tour of <date when="1816">1816</date>. In his book, 
+                        <ref type="bibliography" target="bibliography.php#ROBINSONRURALARCHITECTURE"><title type="book" corresp="ROBINSONRURALARCHITECTURE"><hi rend="italic">Rural Architecture</hi></title> (<date when="1822">1822</date>, rev. <date when="1828">1828</date>)</ref>, 
+                        he provides floor plans and elevations, as well as full renderings in landscape settings, of a &#x201C;Swiss Cottage&#x201D; and a &#x201C;Swiss Farm House&#x201D; 
+                        (designs VIII, XIV); and in another book, <ref type="bibliography" target="bibliography.php#ROBINSONORNAMENTALVILLAS"><title type="book" corresp="ROBINSONORNAMENTALVILLAS"><hi rend="italic">Designs for Ornamental Villas</hi></title> (<date when="1827">1827</date>, rev. <date when="1836">1836</date>)</ref>, 
+                        he adapts the Swiss chalet style (as well as several other styles) to villa architecture. As <persName corresp="#JSACKERMAN">James Ackerman</persName> comments, 
+                        <persName corresp="#PFR">Robinson</persName>&#x02BC;s &#x201C;major contribution was his expansion of the canon of acceptable historical styles&#x201D; for villa and cottage designs. 
+                        This eclecticism was an outgrowth of the shift in the aesthetics and sociology of the British villa&#x2014;from emulation of <persName corresp="#AP">Palladio</persName> by elites 
+                        in the earlier eighteenth century, entailing the Platonic notion that architecture imitated nature conceptually, &#x201C;exemplifying the principles of harmony in the universe&#x201D;, 
+                        to the revolution in taste for the picturesque, entailing a psychology of associationism and democratic individualism, allowing &#x201C;the designer to give his work 
+                        whatever character he believed to be suited to his client, the nature of the setting, or the function of the building&#x201D;
+                        (<ref type="bibliography" target="bibliography.php#ACKERMANVILLA"><persName corresp="#JSACKERMAN">Ackerman</persName>, <title type="book" corresp="#ACKERMANVILLA"><hi rend="italic">The Villa</hi></title></ref>, 223, 141, 217; see also 
+                        <ref type="bibliography" target="bibliography.php#ROBINSONDNB"><persName corresp="#SBRINDLE">Brindle</persName>, <title type="essay" corresp="#ROBINSONDNB">&#x201C;<persName corresp="#PFR">Robinson, Peter Frederick</persName> [<date notBefore="1776" notAfter="1858">1776&#x2013;1858</date>]&#x201D;</title></ref>).</p>
+                    
+                    <p><persName corresp="#PFR">Robinson</persName>&#x02BC;s publications are mentioned in the <title type="periodical" corresp="#MIRROROFLITERATURE"><hi rend="italic">Mirror of Literature</hi></title> 
+                        article about the <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">Swiss Cottage</placeName>, which reads in part like a puff for his designs. Just so, 
+                        the <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">Swiss Cottage</placeName> at the <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName> 
+                        with its surrounding &#x201C;Rocky Scene&#x201D; might be understood a diorama version of his lithographs, with the miniature Alpine &#x201C;Rocky Scene&#x201D; 
+                        standing in for the landscape shown surrounding the structures in the culminating plate for each set of designs. In <title type="book" corresp="ROBINSONRURALARCHITECTURE"><hi rend="italic">Rural Architecture</hi></title>, 
+                        the design for a Swiss cottage is pictured in an Alpine valley, rather than in an English suburb. Just so, as promised in the caption to the <orgName corresp="#ACKERMANN">Ackermann</orgName> aquatint, 
+                        <persName corresp="#THP">Hornor</persName> contrived an Alpine setting for the full&#x2010;scale <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">Swiss Cottage</placeName>, 
+                        a scene visitors could view through its windows. According to the <title type="periodical" corresp="#MIRROROFLITERATURE"><hi rend="italic">Mirror of Literature</hi></title>, 
+                        across from the fireplace in the main room, a large recessed window bay commanded &#x201C;a view of a mass of rock&#x2010;scenery, ornamented with waterfalls 
+                        of singular contrivance and effect. The frames [of the windows] are filled in with plate&#x2010;glass, so that the view of these artificial wonders is unobstructed&#x201D;. 
+                        The effect of the scenery, the writer enthused, conveyed &#x201C;the character of the <hi rend="italic">sublime in miniature</hi>&#x201D;
+                        (<ref type="bibliography" target="bibliography.php#MIRRORSWISSCOTTAGECOLOSSEUM"><title type="essay" corresp="#MIRRORSWISSCOTTAGECOLOSSEUM">&#x201C;Swiss Cottage, at the Colosseum, in the Regent&#x02BC;s Park&#x201D;</title></ref>, 258).</p>
+                    
+                    <p><persName corresp="#THP">Hornor</persName>, as an experienced landscape architect and surveyor, was able to complement his main attraction, the enormous panorama, 
+                        with these miniature scenes&#x2014;&#x201C;illusions&#x201D; seemingly on a sublime scale, yet contained within a mere four acres of grounds surrounding the building. 
+                        As the topographer and antiquarian, <persName corresp="#JBRITTON">John Britton</persName> (<date notBefore="1771" notAfter="1857">1771&#x2013;1857</date>), wrote in an 
+                        <date when="1829">1829</date> pamphlet about the <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName>, <persName corresp="#THP">Hornor</persName>&#x02BC;s 
+                        &#x201C;art had the necromantic or talismanic power of creating mountains, dells, cascades, and the most delicious scenes of Paradise from a small and limited piece of flat land&#x201D;. 
+                        The charm of the sublime in miniature still held in <date when="1848">1848</date>, when <persName corresp="#EMW">Edward Mogg</persName> in his tourist&#x02BC;s guide 
+                        to <placeName corresp="#LONDON">London</placeName> remarked that the gardens around the <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName> were 
+                        &#x201C;laid out so as to appear much more extensive than they really are, and comprise conservatories, waterfalls, fountains, a Swiss cottage, a marine cave and grotto, all of beautiful construction&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#HYDECOLOSSEUM"><persName corresp="#RHYDE">Hyde</persName>, <title type="book" corresp="#HYDECOLOSSEUM"><hi rend="italic">The Regent&#x02BC;s Park Colosseum</hi></title></ref>, 40; 
+                        <ref type="bibliography" target="bibliography.php#MOGGSPICTUREOFLONDON"><title type="book" corresp="#MOGGSPICTUREOFLONDON"><hi rend="italic">Mogg&#x02BC;s New Picture of London</hi></title></ref>, 194). 
+                        (The &#x201C;verandah&#x201D; of the cottage from which the Rocky Scene could also be viewed, according to the <orgName corresp="#ACKERMANN">Ackermann</orgName> description, appears in an 
+                        <date when="1842">1842</date> engraving for the <title type="periodical" corresp="ILLUSTRATEDLONDONNEWS"><hi rend="italic">Illustrated London News</hi></title> as a balustraded facade, 
+                        from which ladies gaze at gentlemen skating on the newly installed ice rink, the &#x201C;Glaciarium&#x201D;, which was frozen year&#x2010;round, and which replaced 
+                        at least a portion of <persName corresp="#THP">Hornor</persName>&#x02BC;s original &#x201C;lake&#x201D; filling the space between the cottage and the rocky scenery 
+                        [<ref type="bibliography" target="bibliography.php#HYDECOLOSSEUM"><persName corresp="#RHYDE">Hyde</persName>, <title type="book" corresp="#HYDECOLOSSEUM"><hi rend="italic">The Regent&#x02BC;s Park Colosseum</hi></title></ref>, 43, 49].)</p>
+                    
+                    <p>The cottage remained standing in <date when="1855">1855</date>, when its &#x201C;roof, walls, and projecting fireplace&#x201D; could still draw the admiration 
+                        of the journalist, <persName corresp="#JTA">John Timbs</persName>, for their &#x201C;fancifully carved&#x201D; ornament 
+                        (<ref type="bibliography" target="bibliography.php#TIMBSCURIOSITIES"><persName corresp="#JTA">Timbs</persName>, <title type="book" corresp="#TIMBSCURIOSITIES"><hi rend="italic">Curiosities of London</hi></title></ref>, 224). 
+                        The Rocky Scene, however, reflected the ups and downs of the <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName>&#x02BC;s fortunes over the years. 
+                        After <persName corresp="#THP">Hornor</persName>&#x02BC;s bankruptcy and flight to <placeName corresp="#USA">America</placeName> (see 
+                        <ref type="note" subtype="contextual" target="colosseum_note.php">The Colosseum, <persName corresp="#THP">Hornor</persName>&#x02BC;s London Panorama, and Regent&#x02BC;s Park</ref>), 
+                        the <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName> was taken over in <date when="1835">1835</date> by a famous singer and entrepreneur, 
+                        <persName corresp="#JBRAHAM">John Braham</persName> (<date notBefore="1777" notAfter="1856">1777&#x2013;1856</date>), who had great ambitions to develop the attractions. 
+                        These plans failed to prosper, however, and the <placeName type="building" corresp="#SWISSCOTTAGECOLOSSEUM">Swiss Cottage</placeName> gained only a miserable eagle, 
+                        the survivor of a shuttered menagerie. While the bird perched haplessly on the miniature scenery outside the windows, refreshments were sold on the inside 
+                        by a Cockney in Swiss costume. Later, in <date when="1845">1845</date>, another entrepreneur oversaw a more successful re&#x2010;opening, for which the Swiss scenery 
+                        was refreshed by a theater&#x2010;scenery painter named <persName corresp="#GDANSON">George Danson</persName> (<ref type="bibliography" target="bibliography.php#HYDECOLOSSEUM"><persName corresp="#RHYDE">Hyde</persName>, <title type="book" corresp="#HYDECOLOSSEUM"><hi rend="italic">The Regent&#x02BC;s Park Colosseum</hi></title></ref>, 42, 49, 52, 44). 
+                        The waterworks for the scenery apparently originated with <persName corresp="#THP">Hornor</persName>&#x2014;the &#x201C;singular contrivance and effect&#x201D; of a mountain cascade, as reported by the 
+                        <title type="periodical" corresp="#MIRROROFLITERATURE"><hi rend="italic">Mirror of Literature</hi></title>, having consisted in &#x201C;real water&#x201D; being 
+                        &#x201C;interspersed&#x201D; among the &#x201C;mountain&#x2010;scenery&#x201D;, which according to <persName corresp="#JTA">Timbs</persName> was &#x201C;executed by 
+                        <persName corresp="#THP">Mr. Hornor</persName>&#x201D; in his excess of &#x201C;enthusiasm&#x201D;. <persName corresp="#GDANSON">Danson</persName> apparently now enhanced the moving&#x2010;water effects by 
+                        by erecting &#x201C;the snow&#x2010;clad peak of <geogName corresp="#MONTBLANC">Mont Blanc</geogName>&#x201D; in the center of the scene, flanked on one side 
+                        by a model of the <geogName corresp="#MERDEGLACE">Mer de Glace</geogName>, and on the other side by a &#x201C;Mountain Torrent&#x201D;, which went &#x201C;leaping over 
+                        the nearest rocks, [and came] . . . roaring down the precipices; and after forming a small lake in front of the cottage windows [in spite of the year&#x2010;round &#x201C;Glaciarium&#x201D;?] 
+                        overflow[ed] its stony basin, and, with a second fall, disappear[ed] in the gulf below&#x201D;. According to the <title type="periodical" corresp="ILLUSTRATEDLONDONNEWS"><hi rend="italic">London Illustrated News</hi></title>, 
+                        the scene offered &#x201C;unquestionably, the finest specimen of Model Scenery executed in this country&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#TIMBSCURIOSITIES"><persName corresp="#JTA">Timbs</persName>, <title type="book" corresp="#TIMBSCURIOSITIES"><hi rend="italic">Curiosities of London</hi></title></ref>, 224, and see 221&#x2013;24; 
+                        <ref type="bibliography" target="bibliography.php#REOPENINGOFTHECOLOSSEUM"><title type="essay" corresp="#REOPENINGOFTHECOLOSSEUM">&#x201C;Re&#x2010;opening of the Colosseum, Regent&#x02BC;s Park&#x201D;</title></ref>, 264; see also 
+                        <title type="dictionary_entry" corresp="#THECOLOSSEUM">&#x201C;The Colosseum&#x201D;</title>, in 
+                        <ref type="bibliography" target="bibliography.php#JACKSONVICTORIANDICTIONARY"><persName corresp="#LJ">Jackson</persName>, <title type="archive" corresp="JACKSONVICTORIANDICTIONARY"><hi rend="italic">The Victorian Dictionary</hi></title></ref>).</p></note>
+                <!--The pointer to this gloss would be <ref type="gloss" target="it_was_a_wide_and_stretchy_sweep_prose_glosses_contextual.php#COLISEUM"/>-->
+                
+                <note xml:id="VINEGAR" resp="#DCH"><p><hi rend="bold">&#x201C;<persName corresp="#HANNIBAL">Hannibal</persName>, vinegar&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>The 
+                    editors of the <title type="book" corresp="#JRWORKSLE">Library Edition</title> annotate <hi rend="italic">vinegar</hi> as referring &#x201C;to the story told by <persName corresp="#LIVY">Livy</persName> 
+                    . . . about <persName corresp="#HANNIBAL">Hannibal</persName>&#x02BC;s use of vinegar for blasting operations in his passage of the <geogName corresp="#ALPS">Alps</geogName>&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:360 n. 1). In <title type="book" corresp="#LIVYHISTORY"><hi rend="italic">Ab urbe condita libri</hi></title>, 
+                    book 21, chapters 35&#x2013;37, <persName corresp="#LIVY">Livy</persName> relates that <persName corresp="#HANNIBAL">Hannibal</persName>&#x02BC;s army reached the summit 
+                    of an <geogName corresp="#ALPS">Alpine</geogName> pass having suffered great losses in the climb upward. <persName corresp="#HANNIBAL">Hannibal</persName> encouraged 
+                    the men by leading them to an eminence from which they could survey the plains of <placeName corresp="#ITALY">Italy</placeName> below. Yet the descent threatened to become 
+                    even more treacherous than the ascent, since wintry weather had rendered the barren ground slippery with snow and ice, which the pack animals made worse by trampling 
+                    into a slurry. At this crisis, the army advanced by using a technology that, while crude, would have evoked a modern parallel for post&#x2010;Napoleonic readers, 
+                    as the editors of the <title type="book" corresp="#JRWORKSLE">Library Edition</title> seem to suggest by their choice of the term, &#x201C;blasting operations&#x201D;. 
+                    Like their ancient Carthaginian counterparts, the modern French invading armies made their way into <placeName corresp="#ITALY">Italy</placeName> by blasting and engineering 
+                    operations to improve the navigability of the <geogName corresp="#ALPS">Alpine pass</geogName>. The relevant passage in <persName corresp="#LIVY">Livy</persName>&#x02BC;s 
+                    history emphasizes the army&#x02BC;s relief at finding the means to the inhabitable places below the pass:</p>
+                    <floatingText>
+                        <body>
+                        <div>
+                    <p><quote>At length, after the men and beasts of burden had been fatigued to no purpose, the camp was pitched on the summit, the ground being cleared for that purpose 
+                        with great difficulty, so much snow was there to be dug out and carried away. The soldiers being then set to make a way down the cliff, 
+                        by which alone a passage could be effected, and it being necessary that they should cut through the rocks, having felled and lopped a number of large trees 
+                        which grew around, they make a huge pile of timber; and as soon as a strong wind fit for exciting the flames arose, they set fire to it, and, 
+                        pouring vinegar on the heated stones, they render them soft and crumbling. They then open a way with iron instruments through the rock thus heated by the fire, 
+                        and soften its declivities by gentle windings, so that not only the beasts of burden, but also the elephants could be led down it. Four days were spent 
+                        about this rock, the beasts nearly perishing through hunger: for the summits of the mountains are for the most part bare, and if there is any pasture the snows bury it. 
+                        The lower parts contain valleys, and some sunny hills, and rivulets flowing beside woods, and scenes more worthy of the abode of man. 
+                        There the beasts of burden were sent out to pasture, and rest given for three days to the men, fatigued with forming the passage: 
+                        they then descended into the plains, the country and the dispositions of the inhabitants being now less rugged.</quote></p>
+                            <p>(<ref type="bibliography" target="bibliography.php#LIVYHISTORY">Livy, <title type="book" corresp="#LIVYHISTORY"><hi rend="italic">History of Rome</hi></title>, trans. <persName corresp="#DSPILLAN">Spillan</persName> and <persName corresp="#CEDMONDS">Edmonds</persName></ref>, bk. 21, chap. 37)</p>
+                        </div>
+                        </body>
+                    </floatingText>
+                </note>
+                <!--The pointer to this gloss would be <ref type="gloss" target="it_was_a_wide_and_stretchy_sweep_prose_glosses_contextual.php#VINEGAR"/>-->
+            </div>
+        </body>
+    </text>
+</TEI>
