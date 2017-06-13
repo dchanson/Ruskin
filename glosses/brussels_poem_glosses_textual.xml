@@ -3,9 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="glosses">
-        <fileDesc xml:id="aix_la_chapelle_prose_glosses_textual">
+        <fileDesc xml:id="brussels_poem_glosses_textual">
             <titleStmt>
-                <title type="main">"Aix la Chapelle" [prose]</title>
+                <title type="main">"Brussels" [poem]</title>
                 <title type="sub">Glosses [textual]</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -56,20 +56,11 @@
     <text>
         <body>
             <div type="glosses" subtype="textual">
-                <note xml:id="ATREATYGLOSS" resp="#DCH">&#x201C;atreaty&#x201D; (MS VIII)&#x2014;In manuscript, the two words are run together.</note>
-
-                <note xml:id="PAUSEPERIOD" resp="#DCH">Pause&#x2013;period (MS MS VIII)&#x2014;See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</note>
-                
-                <note xml:id="ORSO" resp="#DCH">&#x201C;orso&#x201D; (MS VIII)&#x2014;The <hi rend="italic">s</hi> in <hi rend="italic">so</hi> is written over top of the tail of the <hi rend="italic">r</hi> of <hi rend="italic">or</hi>. 
-                    Followed by a terminal comma (see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</note>
-                
-                <note xml:id="TERMINALCOMMA" resp="#DCH">Terminal comma (MS VIII)&#x2014;See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</note>
-                
-                <note xml:id="TWILIGHTGLOSS" resp="#DCH">&#x201C;Twili&#x201D; (MS VIII)&#x2014;<persName corresp="#JR">Ruskin</persName> perhaps started to write <hi rend="italic">Twilight</hi>.</note>
-                
-                <note xml:id="JUSTIFICATION" resp="#DCH">Justification mark (MS IX)&#x2014;See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#JUSTIFICATION">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Justification, Runover, and Word Division</ref>.</note>
-                
-                <note xml:id="APOSTROPHE" resp="#DCH">&#x201C;Return,d&#x201D; (MS IX)&#x2014;In MS VIII, <persName corresp="#JR">Ruskin</persName> correctly uses an apostrophe to form the contraction.</note>
+                <note xml:id="MIND" resp="#DCH"><p><hi rend="bold">&#x201C;Mind&#x201D; (MS IA, <hi rend="italic">g</hi>.1)&#x2014;</hi>This word, written sideways between the columns of the poem, 
+                    does not appear to be intended as part of &#x201C;Brussels&#x201D; itself; and the hand may not be <persName corresp="#JR">Ruskin</persName>&#x02BC;s, 
+                    although the formation of the terminal <hi rend="italic">d</hi> is more characteristic of his hand than of <persName corresp="#MR">Margaret Ruskin</persName>&#x02BC;s, 
+                    whose handwriting can sometimes be confused her son&#x02BC;s. The word seems to form an imperative; and while no other clue remains to indicate what was to be &#x201C;minded&#x201D;, 
+                    the word may be a metamark (see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#METAMARKS">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Metamarks</ref>).</p></note>
             </div>
         </body>
     </text>
