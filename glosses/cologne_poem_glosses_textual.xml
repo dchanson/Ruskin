@@ -3,10 +3,10 @@
 <?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="glosses">
-        <fileDesc xml:id="source_of_the_arveron_prose_glosses_textual">
+        <fileDesc xml:id="cologne_poem_glosses_textual">
             <titleStmt>
-                <title type="main">"Source of the Arveron" [prose]</title>
-                <title type="sub">Glosses</title>
+                <title type="main">"Cologne"</title>
+                <title type="sub">Glosses2</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
                 </author>
@@ -18,7 +18,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#SEP">Steven Petite</persName>
+                    <persName corresp="#YNH">Your Name Here</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -30,7 +30,7 @@
             <editionStmt>
                 <edition n="1.0">
                     <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
-                    <date when="2015-01-12">January 12, 2015</date>
+                    <date when="2017-06-15">June 15, 2017</date>
                     <!--The notes version for all first passes is 1.0.-->
                     <title>Glasses Version 1.0</title>
                 </edition>
@@ -55,16 +55,12 @@
     </teiHeader>
     <text>
         <body>
-            <div type="glosses">
-                <note xml:id="JRSOURCEOFTHEARVERONTITLE" resp="#DCH">Title (MS VIII; <hi rend="italic">Works</hi> [<date when="1903">1903</date>])&#x2014;In the <title type="manuscript" corresp="#MSVIII">MS VIII</title> draft, the title 
-                    <title type="essay" corresp="#JRSOURCEOFTHEARVERON">&#x201C;Source of the Arveron&#x201D;</title> appears to belong exclusively to the prose essay, above which it appears; 
-                    however, <persName corresp="#JR">Ruskin</persName> likely intended the title to head both the prose essay and the poem that immediately follows it, 
-                    the untitled verse, <title type="poem" corresp="#JRIWOKETOHEARTHELULLABY">&#x201C;I woke to hear the lullaby&#x201D;</title>, 
-                    which <persName corresp="#WGC">W. G. Collingwood</persName> entitled <title type="poem" corresp="#JRARVEATCHAMOUNI">&#x201C;The Arve at Chamouni&#x201D;</title> 
-                    (see that poem and its textual gloss for the close relation between the poem and the prose essay). In other words, <persName corresp="#JR">Ruskin</persName>&#x02BC;s title, 
-                    <title type="essay" corresp="#JRSOURCEOFTHEARVERON">&#x201C;Source of the Arveron&#x201D;</title> should be understood as a section title, like all the titles in the <title type="manuscript" corresp="#MSIX">MS IX</title> fair copy, 
-                    and not the title just of the prose piece (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:386-87). 
-                    The title appears toward the end of <persName corresp="#JR">Ruskin</persName>&#x02BC;s <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.xml">Proposed Table of Contents for the Account of a Tour on the Continent</ref>.</note>
+            <div type="glosses" subtype="textual">
+                <note xml:id="ERASEDLINESGLOSS" resp="#DCH"><p><persName corresp="#WGC">Collingwood</persName> comments that &#x201C;two lines following are completely erased in the MS.,&#x201D; 
+                    referring to the fair copy in <title type="manuscript" corresp="#MSIX">MS IX</title> (<ref type="bibliography" target="bibliography.php#POEMS4D1891"><title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [4<hi rend="superscript">o</hi>, 1891]</ref>,
+                    1:264&#x2013;65; <ref type="bibliography" target="bibliography.php#POEMS8D1891"><title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [8<hi rend="superscript">o</hi>, 1891]</ref>, 1:267n.). 
+                    In the gap between what we represent as a first and second stanza, the trace of a couplet is barely visible. No rough draft of the poem is extant to show what these lines might have been, 
+                    if not a duplication.</p></note>
             </div>
         </body>
     </text>
