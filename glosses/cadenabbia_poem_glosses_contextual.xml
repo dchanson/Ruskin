@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="title_of_work_glosses">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2017-08-08">August 08, 2017</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="LECCOGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Oh coolly came on <geogName corresp="#LAKECOMO">Comos lake</geogName> / The lovely beams of morning mild, / That oer the <geogName corresp="#MOUNTRESEGONE">Lecco mountains</geogName> break&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; 
+                    <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>For the Ruskins&#x02BC; excursion on <geogName corresp="#LAKECOMO">Lake Como</geogName>, see 
+                    the contextal glosses for <ref type="witness" target="lago_di_como_poem_msviii.php"><title type="poem" corresp="#JRLAGODICOMO">&#x201C;Lago di Como&#x201D;</title></ref>. 
+                    The town of <placeName corresp="#LECCO">Lecco</placeName> lies at the bottom of the eastern leg of <geogName corresp="#LAKECOMO">Lake Como</geogName>, corresponding to the town of <placeName corresp="#COMO">Como</placeName> lying at the bottom of the western leg. 
+                    The latter was the Ruskins&#x02BC; ultimate destination. As they set out steaming southward on the lake in the &#x201C;morning mild,&#x201D; they did not turn at the fork toward the eastern leg and <placeName corresp="#LECCO">Lecco</placeName>, 
+                    but disembarked from the steamboat and were rowed to their resting place at <placeName corresp="#CADENABBIA">Cadenabbia</placeName> on the western bank, which they reached at four o&#x02BC;clock in the afternoon. 
+                    By referring at the start of the poem to the morning breaking over <placeName corresp="#LECCO">Lecco</placeName>, and closing with &#x201C;sunwaves&#x201D;&#x2014;altered in draft by the insertion of &#x201C;sun&#x2010;red waves&#x201D;&#x2014;<persName corresp="#JR">Ruskin</persName> 
+                    frames the poem as if contained in a single day, but in fact the journey from <placeName corresp="#CHIAVENNA">Chiavenna</placeName> to <placeName corresp="#COMO">Como</placeName> extended from Saturday to Monday, 15&#x2013;17 June, with Monday devoted to excursions 
+                    from the family&#x02BC;s base in <placeName corresp="#CADENABBIA">Cadenabbia</placeName>, as explained in the following gloss. The sunrise&#x2010;to&#x2010;sunset frame of the poem is also geographical, spanning the eastern leg to the western leg of the lake. 
+                    <persName corresp="#MWS">Mary Shelley</persName> uses the same trope in a striking paragraph of <ref type="bibliography" target="bibliography.php#SHELLEYRAMBLES"><persName corresp="#MWS">Shelley</persName>, <title type="book" corresp="#SHELLEYRAMBLES"><hi rend="italic">Rambles in Germany and Italy</hi></title></ref>, 
+                    describing the &#x201C;progress of each day&#x201D; she spent in <placeName corresp="#CADENABBIA">Cadenabbia</placeName> (1:67&#x2013;68).</p>
+                    
+                    <p>In nineteenth&#x2010;century British travel guides, as now, the eastern leg of <geogName corresp="#LAKECOMO">Lake Como</geogName> is often called <geogName corresp="#LAKELECCO">Lake Lecco</geogName>. <persName corresp="#JR">Ruskin</persName>&#x02BC;s phrase, &#x201C;<geogName corresp="#MOUNTRESEGONE">Lecco mountains</geogName>&#x201D;, however, is poetic; the mountain that rises above <placeName corresp="#LECCO">Lecco</placeName> 
+                        is <geogName corresp="#MONTERESEGONE">Monte Resegone</geogName>, &#x201C;distinguished by the saw&#x2010;like form of its crest against the sky&#x201D;, as implied in its name
+                        (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKNORTHERNITALY1847"><title type="book" corresp="#MURRAYSHANDBOOKNORTHERNITALY1847"><persName corresp="#GBM">Maule</persName>, <hi rend="italic">Hand&#x2010;book for Travellers in Northern Italy</hi></title></ref>, 150). 
+                        <geogName corresp="#MOUNTRESEGONE">Resegone</geogName> is visible above <placeName corresp="#LECCO">Lecco</placeName>, as one sails down the lake toward <placeName corresp="#BELLAGIO">Bellagio</placeName>, before turning toward the western bank; and it can be seen even from <placeName corresp="#CADENABBIA">Cadenabbia</placeName> on the western bank, 
+                        rising above the promontory of <placeName corresp="#BELLAGIO">Bellagio</placeName>, as <persName corresp="#MWS">Mary Shelley</persName> remarked, its crest calling to her mind scenes from <persName corresp="#AMANZONI">Manzoni</persName>&#x02BC;s <title type="book" corresp="#MANZONIPROMESSISPOSI"><hi rend="italic">I Promessi Sposi</hi></title> (<date when="1827">1827</date>) 
+                        (<ref type="bibliography" target="bibliography.php#SHELLEYRAMBLES"><persName corresp="#MWS">Shelley</persName>, <title type="book" corresp="#SHELLEYRAMBLES"><hi rend="italic">Rambles in Germany and Italy</hi></title></ref>, 1:67). 
+                        (The Ruskins would also have been able to look back on their path, by sighting the crest of <geogName corresp="#MOUNTRESEGONE">Resegone</geogName> from atop <name type="building" corresp="#DUOMOMILAN">Milan Cathedral</name>; see 
+                        <ref type="witness" target="milan_cathedral_poem_msviii.php"><title type="poem" corresp="#JRMILANCATHEDRAL">&#x201C;Milan Cathedral&#x201D;</title></ref> and its contextual glosses.)</p>
+                    
+                    <p><persName corresp="#JR">Ruskin</persName> does not describe the village of <placeName corresp="#CADENABBIA">Cadenabbia</placeName> itself in the poem. He probably found too little excitment in its most attractive feature, which since the eighteenth century had consisted in 
+                        accommodations outside of the larger cities that English travelers could consider as &#x201C;clean as in <placeName corresp="#ENGLAND">England</placeName>&#x201D;, its people &#x201C;civil and <hi rend="italic">honest</hi>&#x201D;, and cookery worthy of a diplomat. 
+                        &#x201C;Did you think there existed such a place in <placeName corresp="#ITALY">Italy</placeName>?&#x201D; (the bear&#x2010;leader <persName corresp="#TBRAND">Thomas Brand</persName> [<date notBefore="1751" notAfter="1814">1751&#x2013;1814</date>], quoted from a <date when="1791">1791</date> letter in <ref type="bibliography" target="bibliography.php#BLACKITALY"><persName corresp="#JBLACK">Black</persName>, <title type="book" corresp="#BLACKITALY"><hi rend="italic">Italy and the Grand Tour</hi></title></ref>, 69). 
+                        A more nuanced study of the village and its hotel life was written by <persName corresp="#MWS">Mary Shelley</persName> during her long stay in <date when="1840">1840</date>, an account attuned to the daily life of the people, ordinary objects, and peace of the surroundings.</p></note>
+                    
+                <note xml:id="EASTERNLAKEGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Away, away, across the lake / . . . / The rock was high, the cavern dark / Scarce lit up by the jewelled spark, / Of the cold stream, that under earth / 
+                    Was darkling buried at its birth. / . . . / We launched again, and downward bore / Awhile beside the centre shore. / Then left the shadowy eastern lake&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; 
+                    <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>The latter three lines in this passage confirm that, from line 15 (&#x201C;Away, away, across the lake&#x201D;), 
+                    <persName corresp="#JR">Ruskin</persName> is referring to an excursion that the family made to the eastern shores of the lake on Monday, 17 June, after spending Saturday night and Sunday at <placeName corresp="#CADENABBIA">Cadenabbia</placeName>; 
+                    then, as poem explains in conclusion, the family &#x201C;launched&#x201D; back across the lake to their hotel, and rowed south to <placeName corresp="#COMO">Como</placeName>, taking in even more sights along the way. The sight on the opposite shore that <persName corresp="#JR">Ruskin</persName> 
+                    describes most particularly in the poem can be identified in <persName corresp="#MRC">Mary Richardson</persName>&#x02BC;s diary account as the &#x201C;torrent&#x201D; <geogName corresp="#FIUMELATTE">Fiumelatte</geogName>, 
+                    which cascades into the lake below <placeName corresp="#VARENNA">Varenna</placeName>, on the <placeName corresp="#LECCO">Lecco</placeName> side of the lake (<ref type="bibliography" target="bibliography.php#RFT48"><title type="manuscript" corresp="#RFT48">Diary of Mary Richardson, 1833</title></ref>, 43). 
+                    This is the &#x201C;cold stream&#x201D; that issues &#x201C;darkling&#x201D; from a subterranean source, in <persName corresp="#JR">Ruskin</persName>&#x02BC;s lines. <persName corresp="#JCEDITOR">Josiah Conder</persName> (<date notBefore="1789" notAfter="1855">1789&#x2013;1855</date>), 
+                    the writer and compiler of the <title type="series" corresp="#CONDERMODERNTRAVELLER">&#x201C;Modern Traveller&#x201D;</title> series of travel accounts, highlights this cascade in the series&#x02BC; <date when="1831">1831</date> volume on <placeName corresp="#ITALY">Italy</placeName>: 
+                    &#x201C;The <hi rend="italic">Fiume di Latte</hi> (so called from the milky colour of the water) is one of the wonders of the lake, being an intermittent stream, and, according to some Italian antiquaries, 
+                    the one which <persName corresp="#PLINYYOUNGER">the younger Pliny</persName> refers to as being in the neighbourhood of his residence. . . . The <geogName corresp="FIUMELATTE">Fiume di Latte</geogName> intermits wholly during the winter, 
+                    running only from March to September. It increases by degrees till it reaches its utmost height, and then decreases again till its bed again becomes dry. 
+                    There seems to be no reason to doubt that its semi&#x2010;annual course is occasioned by the melting of the snows in the higher mountains, though the length of the subterranean channel through which it flows is unknown. 
+                    Its excessive coldness is in favour of the supposition, that it is fed by some distant glacier; and its milky colour indicates that it has found or forced a channel through some limestone or calcareous formation. 
+                    It bursts forth with great impetuosity from its subterranean channel, tumbling down a broken declivity of nearly a thousand feet into the lake&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#CONDERITALY"><persName corresp="#JCEDITOR">Conder</persName>, <title type="book" corresp="#CONDERITALY"><hi rend="italic">Italy</hi></title></ref>, 1:332&#x2013;33). 
+                    Shelley could hear the &#x201C;hollow roar of the mysterious torrent . . . borne, softened by distance, from the opposite shore,&#x201D; when seated in the calm of evening at the lakeside in <placeName corresp="#CADENABBIA">Cadenabbia</placeName> 
+                    (<ref type="bibliography" target="bibliography.php#SHELLEYRAMBLES"><persName corresp="#MWS">Shelley</persName>, <title type="book" corresp="#SHELLEYRAMBLES"><hi rend="italic">Rambles in Germany and Italy</hi></title></ref>, 1:93).</p>
+                    
+                    <p><persName corresp="#JCEDITOR">Conder</persName> disputes the association of the <geogName corresp="#FIUMELATTE">Fiumelatte</geogName> with <persName corresp="#PLINYYOUNGER">Pliny</persName>; and the Ruskins likewise looked elsewhere for this classical location; see 
+                        <ref type="witness" target="villa_pliniana_msviii"><title type="poem" corresp="#JRVILLAPLINIANA">&#x201C;Villa Pliniana&#x201D;</title></ref> and its contextual notes.
+                        Also in connection with the <geogName corresp="#FIUMELATTE">Fiumelatte</geogName>, <persName corresp="#JCEDITOR">Conder</persName> quotes from the popular travel account of the Continent, <title type="book" corresp="#MATTHEWSDIARYINVALID"><hi rend="italic">Diary of an Invalid</hi></title> (<date when="1820">1820</date>), by 
+                        <persName corresp="#HMATTHEWS">Henry Matthews</persName> (<date notBefore="1789" notAfter="1828">1789&#x2013;1828</date>). Relevant to the trope of describing the expanse of the lake, <persName corresp="#HMATTHEWS">Matthews</persName> orients the traveler to the waterfall as a checkpoint, 
+                        when sitting in a boat on the lake. Oppposite this &#x201C;romantic little waterfall&#x201D;, he writes, &#x201C;there is a spot . . . from which you command a prospect of the whole scene&#x201D;. 
+                        Without having to climb to &#x201C;a bird&#x02BC;s&#x2010;eye view&#x201D;, which <persName corresp="#HMATTHEWS">Matthews</persName> regards as a &#x201C;disadvantage&#x201D;, one has &#x201C;the three branches of the lake under your eye at once&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#CONDERITALY"><persName corresp="#JCEDITOR">Conder</persName>, <title type="book" corresp="#CONDERITALY"><hi rend="italic">Italy</hi></title></ref>, 1:331&#x2013;33; 
+                        <ref type="bibliography" target="bibliography.php#MATTHEWSDIARYINVALID"></ref>, <persName corresp="#HMATTHEWS">Matthews</persName>, <title type="book" corresp="#MATTHEWSDIARYINVALID"><hi rend="italic">Diary of an Invalid</hi></title>, 304).</p>
+                    
+                    <p>Toward the end of this passage, in the lines touching on the &#x201C;centre shore&#x201D; after launching back toward <placeName corresp="#CADENABBIA">Cadenabbia</placeName>, <persName corresp="#JR">Ruskin</persName> is referring to the point between the two legs of the lake, 
+                        where <placeName corresp="#BELLAGIO">Bellagio</placeName> is settled beneath its promontory. <persName corresp="#MRC">Mary Richardson</persName> notes that they also paused here to visit villas, one of them <placeName type="building" corresp="#VILLAMELZI">Villa Melzi</placeName>, 
+                        which guidebooks recommended for its gardens 
+                        (see, e.g., <ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKSWITZERLAND1838"><persName corresp="#JM">Murray</persName>, <title type="book" corresp="#MURRAYSHANDBOOKSWITZERLAND1838"><hi rend="italic">A Hand&#x2010;book for Travellers in Switzerland</hi></title></ref>, 224; 
+                        <ref type="bibliography" target="bibliography.php#RFT48"><title type="manuscript" corresp="#RFT48">Diary of Mary Richardson, 1833</title></ref>, 43).</p></note>
+                
+                <note xml:id="DARKLINGGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Was darkling buried at its birth&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; 
+                    <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>Besides 
+                    <persName corresp="#JKEATS">Keats</persName>&#x02BC;s <title type="poem" corresp="#KEATSNIGHTINGALE">&#x201C;Ode to a Nightingale&#x201D;</title>, and, behind that poem, <persName corresp="#JMILTON">Milton</persName>&#x02BC;s invocation to light in book 3 of <title type="book" corresp="#MILTONPARADISE">Paradise Lost</title>, a possible source for <persName corresp="#JR">Ruskin</persName>&#x02BC;s adverbial usage of <hi rend="italic">darkling</hi>&#x2014;and a more likely source&#x2014;is 
+                    <persName corresp="#WS">Walter Scott</persName>&#x02BC;s <title type="poem" corresp="#SCOTTROKEBY"><hi rend="italic">Rokeby</hi></title>. Concluding the description of the dreamy youth, <name type="fictional_person" corresp="#WWYCLIFFE">Wilfred Wycliffe</name>&#x2014;an unathletic and bookish boy, 
+                    born with the &#x201C;minstrel&#x02BC;s skill, . . . / The art unteachable, untaught&#x201D;, a kind of fictional youth with whom <persName corresp="#JR">Ruskin</persName> may well have identified&#x2014;<name type="fictional_person" corresp="#WWYCLIFFE">Wilfred</name> is described as the &#x201C;only heir&#x201D;, &#x201C;destined darkling to pursue / 
+                    Ambition&#x02BC;s maze by [his father] Oswald&#x02BC;s clue&#x201D; (<ref type="bibliography" target="bibliography.php#SCOTTWORKSCALEDONIAN"><persName corresp="#WS">Scott</persName>, <title type="book" corresp="#SCOTTWORKSCALEDONIAN"><hi rend="italic">Works</hi></title></ref>, 49:35&#x2013;36 [bk. 1, stz. 26]).</p></note>
+                    
+            </div>
+        </body>
+    </text>
+</TEI>
