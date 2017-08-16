@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject MANUSCRIPT followed by "apparatus", for example,
+            "msi_apparatus". The xml:id also corresponds with its XML file's name, for example, "msi_apparatus.xml".-->
+        <fileDesc xml:id="title_of_manuscript_apparatus">
+            <titleStmt>
+                <title type="main">Title of Manuscript</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2017-08-14">August 1, 2017</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>            
+    <text>
+        <body>
+            <div type="apparatus">
+            <head type="title">Title of Manuscript</head>
+                <!--A manuscript apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>MS X</p>
+                </div>
+                <div type="section" xml:id="LOCATION">
+                    <head type="section">Location</head>
+                    <p>Body paragraph.
+                        <orgName corresp="#YALE">Yale</orgName> (original contents dispersed in individual folders by title, and the folders contained either in box labeled  <persName corresp="#JR">Ruskin, John</persName>, <date notBefore="1819" notAfter="1900">1819&#x2013;1900</date> / Miscellaneous Manuscripts  [along with other folders unrelated to the original <title type="manuscript" corresp="#MSX">MS X</title>] or in  <persName corresp="#JR">Ruskin, John</persName>, <date notBefore="1891" notAfter="1900">1819&#x2013;1900</date> / Letters,  boxes  F&#x2010;H  and  N&#x2010;Z ).
+                    </p>
+                </div>
+                <div type="section" xml:id="PROVENANCE">
+                    <head type="section">Provenance</head>
+                    <p>Body paragraph.
+                        <title type="catalog_auction" corresp="#SOTHEBYCAT1931">Sotheby&#x02BC;s 1931</title>. For <persName corresp="#JSAR">Joan Severn</persName>&#x02BC;s possession of <title type="manuscript" corresp="#MSX">MS X</title>, along with other manuscripts containing tour poems, see <title type="catalog_auction" corresp="#SOTHEBYCAT1930">Sotheby&#x02BC;s 1930</title>. Not all the items in <title type="manuscript" corresp="#MSX">MS X</title> are associated with touring; it is unknown whether the other items held some especially fond association for <persName corresp="#JSAR">Joan</persName>.
+                    </p>
+                </div>
+                <div type="section" xml:id="DESCRIPTION">
+                    <head type="section">Description</head>
+                    <p>Body paragraph.
+                        According to <persName corresp="#WGC">Collingwood</persName>&#x02BC;s original description, <title type="manuscript" corresp="#MSX">MS X</title> was a  cover  containing a number of miscellaneous items, from which, by the time the <title type="book" corresp="#JRWORKSLE">Library Edition</title> was undertaken, <title type="manuscript" corresp="#RFT48">the diary of <date when="1830">1830</date></title>as well as  other papers, not in verse  had been separated (see MSS XA and XB). The remaining contents of the original  cover,  along with a few additions, were  bound up in a volume,  which retained the designation <title type="manuscipt" corresp="#MS">MS X</title>. This was item III of lot 27 in <title type="catalog_auction" corresp="#SOTHEBYCAT1931">Sotheby Cat. <date when="1931">1931</date></title> (p. 6), described as <title type="book" corresp="#JRPOETICALTOUR1835">The Poetical Tour of 1835</title>, Letter to his Father in verse, <date when="1836-03-31">31 March, 1836</date>, and much later in date <title type="poem" corresp="#JRPEACESONG">The Peace Song</title> and the <title type="poem" corresp="#JRZODIACSONG">The Zodiac Song</title>, and other pieces.  <title type="manuscript" corresp="#MSX">MS X</title> then came into <persName corresp="#CG">Goodspeed</persName>&#x02BC;s possession and is described in his <title type="catalog_auction" corresp="#GOODSPEEDCAT">Cat</title>. as  one volume, red cloth,  no doubt the red buckram used for other <persName corresp="#JR">Ruskin</persName> manuscript bindings of this period. Like <title type="manuscript" corresp="#MSIA">MS IA</title>, however, by the time <title type="manuscript" corresp="#MSX">MS X</title> was turned over to <orgName corresp="#YALE">Yale</orgName>, it had been unbound and its contents separated&#x2014;whether before <persName corresp="#CG">Goodspeed</persName>&#x02BC;s fire, or after (and owing to) the damage. The separate items are now cataloged at <orgName corresp="#YALE">Yale</orgName> under their individual titles, many of them enclosed in folders inside the box <persName corresp="#JR">Ruskin, John</persName>, <date notBefore="1819" notAfter="1900">1819&#x2013;1900</date> / Miscellaneous Manuscripts (see also <title type="manuscript" corresp="#MSIA">MS IA</title>,  Description ).
+                    </p>
+                    <!--The subsection that follows, Collation, is common to all manuscript apparatuses and was, accordingly, assigned an xml:id by
+                        the Ruskin Project Team during work on the "First Twenty."-->
+                    <div type="subsection" xml:id="COLLATION">
+                    <head type="subsection">Collation</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+                <div type="section" xml:id="CONTENTS">
+                    <head type="section">Contents</head>
+                    <!--Typically, this section will begin:-->
+                    <p>
+                        <hi rend="italic">From front of book, the sequential order of contents:</hi>
+                    </p>
+                    <!--and continue with a list, which may group items according to type (e.g. prose, poetry) or other similiarity. Note: drawings
+                        may be included as items in this list.-->
+                    <list xml:id="LIST" type="ordered">
+                        <item n="a">Item belonging to Group A.</item>
+                        <item n="b.1">First item belonging to Group B.</item>
+                        <item n="b.2">Second item belonging to Group B.</item>
+                        <item n="b.3">Third item belonging to Group B.</item>
+                        <item n="c">Item belonging to Group C.</item>
+                    </list>
+                    <p>Body paragraph.
+                    Content
+                    a)  <title type="poem" corresp="#JRPOESIE">To Poesie</title>  (no. 109) is listed first in <title type="catalog_auction" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, Cat</title>. (item 83.A), and presumably appeared first in the original binding, although according to <title type="book" corresp="#JRWORKSLE">Works</title> (2:534) this item either was added later to <title type="manuscript" corresp="#MSX">MS X</title> as described by <persName corresp="#WGC">Collingwood</persName> or was omitted from that earlier description. Its place in front of the contents may account for its severe fire damage, much of the upper right corner being lost of the 10.3 × 18.8&#x2010;cm sheet. (Similarly, the upper right corners of b, below, which probably lay immediately beneath a, were sacrificed.) For preservation, the sheet is encased in rice paper, and enclosed in a separte folder in  Miscellaneous Manuscripts. 
+                        Both <persName corresp="#CG">Goodspeed</persName>, <title type="catalog_auction" corresp="#GOODSPEEDCAT">Cat</title>. and <title type="book" corresp="#JRWORKSLE">Works</title> are tentative in identifying the hand of this copy, but the hand is unquestionably <persName corresp="#MR">Margaret</persName>&#x02BC;s. In a penciled note at the end of the poem, she apologizes  I am sorry this is no better writte[n b]ut my pen was bad &#x0026; I coul[d] not make it better. 
+                        b) <title type="poem" corresp="#JRTOURFRANCE1835">Journal of a Tour through France to <placeName corresp="#CHAMONIX">Chamouni</placeName></title> (no. 203), according to <title type="book" corresp="#JRWORKSLE">Works</title> (2:534), was contained in  two paper books,  one of 26 pages for Canto I, and the second of 10 pages  as far as carried  for Canto II. <persName corresp="#CG">Goodspeed</persName>, <title type="catalog_auction" corresp="#GOODSPEEDCAT">Cat</title>. (item 83.B) summarizes  36 pp., 4to.  Despite the severe charring, the manuscript is preserved complete, although the  books  are cut into individual leaves, which are encased in rice paper.  Canto 1st  (the poem is untitled) is written on thirteen 15.5 × 19&#x2010;cm sheets; the presumptive second canto (no such designation is supplied, only the stanzas are numbered) is written on five 22.5 × 18&#x2010;cm sheets.
+                        In both  books,  the stanzas run continuously recto to verso, leaf by leaf. In canto two, two successive stanzas are numbered  24,  the editors of the <title type="book" corresp="#JRWORKSLE">Library Edition</title> silently correcting the second to  25  and adjusting the successive numbering accordingly. The fragmentary twenty&#x2010;ninth and final stanza (thirtieth, in the <title type="book" corresp="#JRWORKSLE">Library Edition</title>) is not incomplete owing to missing manuscript, since it stops in the middle of a verso.
+                        With its very few corrections, the manuscript appears to be fair or semifinal copy (although one must never underestimate <persName corresp="#JR">Ruskin</persName>&#x02BC;s facile ability to produce uncorrected draft). If fair copy, the manuscript, by comparison with <persName corresp="#JR">Ruskin</persName>&#x02BC;s other travelogues, is no  copperplate  fair copy like the  <title type="poem" corresp="#JRITERIAD">Iteriad</title>  in <title type="manuscript" corresp="#MSVII">MS VII</title>, much less an elaborately illustrated production like the <title type="composite" corresp="#JRACCOUNTTOUR">Account of a Tour on the Continent</title> in <title type="manuscript" corresp="#MSIX">MS IX</title>. Perhaps <persName corresp="#JR">Ruskin</persName> was becoming less interested in bookmaking as an aspect of his poetry.
+                        c) Both descriptions (<title type="catalog_auction" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, Cat</title>., item 83.C, and <title type="book" corresp="#JRWORKSLE">Works</title>, 2:534) list a versified letter from abroad to <persName corresp="#RFALL">Richard Fall</persName>, <date notBefore="1835-06-14" notAfter="1835-09-02">14 June&#x2014;2 September 1835</date> (no. 204), which is now kept inside a folder in a box at <orgName corresp="#YALE">Yale</orgName>,  <persName corresp="#JR">Ruskin, John</persName>, <date notBefore="1819" notAfter="1900">1819&#x2013;1900</date> / Letters: F&#x2010;H. 
+                        The description in <title type="book" corresp="#JRWORKSLE">Works</title> specifies double columns on  5 large pages,  but <title type="catalog_auction" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, Cat</title>. cites  10 pp.  On the folder containing the manuscript (resembling the other folders for items of the <persName corresp="#CG">Goodspeed</persName> donation), as in <title type="book" corresp="#JRWORKSLE">Works</title>,  5 p.  is notated. <persName corresp="#CG">Goodspeed</persName> <title type="catalog_auction" corresp="#GOODSPEEDCAT">Cat</title>. gives the erroneous description, since the manuscript presently consists of three sheets, 20.5 × 25 cm, two of them written in double columns on both sides, and the third written in double columns on one side. Nothing is missing, since these sheets constitute the entirety of the poem as published in <title type="book" corresp="#JRWORKSLE">Works</title>, 2:429&#x2013;38&#x2014;including the  ms.  postscript, dropped into a note on p. 438.
+                        The charred sheets are encased in rice paper. The hand appears to be <persName corresp="#MR">Margaret Ruskin</persName>&#x02BC;s.
+                        d) Both <title type="catalog_auction" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, Cat</title>. (item 83.D) and <title type="book" corresp="#JRWORKSLE">Works</title> (2:534) list  Conversation supposed to be held between Mr R. Mrs R. Miss R. &#x0026; Master R. on <date when="1836-01-01">New&#x2010;years morning 1836</date>  (no. 215). Both descriptions count six pages&#x2014; 6 pp., 4to,  according to <persName corresp="#CG">Goodspeed</persName>&#x2014;which correspond to the three extant 25 × 20&#x2010;cm sheets, encased in plastic and enclosed in a separate folder in the box  Miscellaneous Manuscripts.  Fire damage was severe to the right edges, which show a curious vertical streak, as if the sheets had been folded along that crease; however, <persName corresp="#JR">Ruskin</persName>&#x02BC;s writing carries across the crease.
+                        e) Both <title type="catalog_auction" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, Cat</title>. (item 83.E) and <title type="book" corresp="#JRWORKSLE">Works</title> (2:534) list a rhymed letter to <persName corresp="#JJR">John James Ruskin</persName>, <date when="1836-03-31">31 March 1836</date> (no. 230), which is now kept inside a folder in a box at <orgName corresp="#YALE">Yale</orgName>,  <persName corresp="#JR">Ruskin, John</persName>, <date notBefore="1819" notAfter="1900">1819&#x2013;1900</date> / Letters: N&#x2010;Z.  The 20.5 × 25&#x2010;cm folded sheet, written in verse on three sides, with the address and a prose paragraph on the fourth side, corresponds to <persName corresp="#CG">Goodspeed</persName>&#x02BC;s  3 pp., 4to, and address.  Charred and encased in rice paper. The most thorough transcription of the letter is in <title type="book" corresp="#RFL">RFL</title>, 358&#x2013;64, which also provides a full description of the letter.
+                        This is the only item from <title type="manuscript" corresp="#MSX">MS X</title> that is specifically identified among <persName corresp="#CG">Goodspeed</persName>&#x02BC;s donations in YULG (17, no. 3 [<date when="1943-01">January 1943</date>]: 59). The remainder may have been included among the  31 sheets of poems  also listed in that acknowledgment, or they may have been comprised in the  other Ruskiniana  acknowledged later in YULG (19, no. 2 [<date when="1944-10">October 1944</date>]: 35). See <title type="manuscript" corresp="#MSIA">MS IA</title>,  Description. 
+                        f) Both descriptions (<title type="catalog_auction" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, Cat</title>., item 83.F, and <title type="book" corresp="#JRWORKSLE">Works</title>, 2:534) identify a partial copy (lines 1&#x2013;185 only) of  <title type="poem" corresp="#JREXILESTHELENA">The Exile of St. Helena</title>  (no. 256) in an unidentified hand&#x2014; in the hand of a secretary,  the <title type="book" corresp="#JRWORKSLE">Library Edition</title> adds, in its list of <title type="poem" corresp="#JREXILESTHELENA">Exile</title>  manuscripts, of which <orgName corresp="#YALE">Yale</orgName>&#x02BC;s is  b  (<title type="book" corresp="#JRWORKSLE">Works</title>, 2:45 n. 2). The hand, I believe, is <persName corresp="#MR">Margaret Ruskin</persName>&#x02BC;s.
+                        The manuscript is untitled, except for the epigraph drawn from II Samuel (the second epigraph of the printed version, from <persName corresp="#AEG">Aeschylus</persName>, is not present; see <title type="book" corresp="#JRWORKSLE">Works</title>, 2:45). The manuscript consists of three 18 × 23&#x2010;cm sheets, written on both sides, plus one shorter 18 × 15&#x2010;cm sheet, written on one side, and torn just below line 185; hence, the torn page represents the state of the manuscript since it was first described as totaling 185 lines, and nothing was lost to fire damage except for the right edges, which are severely charred. The leaves are encased in plastic and enclosed in a folder in the box  Miscellaneous Manuscripts.  
+                    g) Both descriptions (<persName corresp="#CG">Goodspeed</persName>, <title type="catalog_auction" corresp="#GOODSPEEDCAT">Cat.</title>, item 83.G, and <title type="book" corresp="#JRWORKSLE">Works</title>, 2:534) include the <title type="poem" corresp="#JRPEACESONG">Peace Song</title>,  and the <title type="poem" corresp="#JRZODIACSONG">Zodiac Song</title>,  the <title type="book" corresp="#JRWORKSLE">Library Edition</title> explaining that these poems, like a above, were added to <title type="manuscript" corresp="#MSX">MS X</title> when first bound and were not enclosed in the  cover  described by <persName corresp="#WGC">Collingwood</persName>.
+                    The charred manuscripts of the two poems are encased in rice paper and kept in separate folders in the box  Miscellaneous Manuscripts.  <title type="book" corresp="#JRWORKSLE">Works</title> (2:245 n.) describes a  loose sheet  for each, and <title type="catalog_auction" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, Cat</title>.  2 pp., 4to  for both. Specifically, <title type="poem" corresp="#JRPEACESONG">The Peace Song</title>  is 20 × 25 cm and watermarked <date when="1863">1863</date>, and  <title type="poem" corresp="#JRZODIACSONG">The Zodiac Song</title>  is  18 × 25 cm (no watermark). Perhaps the two manuscripts were intended as a pair, since the one is entitled and numbered  1. <title type="poem" corresp="#JRPEACESONG">The Peace Song</title>,  and the other  2. <title type="poem" corresp="#JRZODIACSONG">The Zodiac Song</title>. 
+                    The first printing of <title type="poem" corresp="#JRZODIACSONG">The Zodiac Song</title>  (<title type="book" corresp="#JRWORKSLE">Works</title> 2:247) follows this manuscript exactly and is evidently taken from it, while the printing of <title type="poem" corresp="#JRPEACESONG">The Peace Song</title> in the <title type="book" corresp="#JRWORKSLE">Library Edition</title> (there entitled  <title type="poem" corresp="#JRAWAKE">Awake, Awake</title> ) is taken from another source and lists this manuscript as a variant. See also <persName corresp="#VAB">Van Akin Burd</persName>, ed., <title type="book" corresp="#WINNINGTONLETTERS">The Winnington Letters</title> (<placeName corresp="#CAMBRIDGE">Cambridge</placeName>, <placeName corresp="#MASSACHUSETTS">Mass</placeName>.: <orgName corresp="#HARVARDPRESS">Harvard University Press</orgName>, <orgName corresp="#BELKNAPPRESS">Belknap Press</orgName>, <date when="1969">1969</date>), 251, 253 n. 4.
+                    </p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Body paragraph.
+                    Dates of composition of original contents range from <date notBefore="1831" notAfter="1860">1831 to 1860</date>
+                    </p>
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <!--The Discussion section may contain all or only some of the following subsections.-->
+                    <div type="subsection">
+                        <head type="subsection">Hand</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Composition &#x0026; Sources</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Domestic Scene</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
