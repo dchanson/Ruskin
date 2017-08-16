@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="application/json; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/csv; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>The Ruskin Journey</title>
+      <link rel="shortcut icon" href="http://i446.photobucket.com/albums/qq183/coryclapp/ruskin_logo_zpsz32unfpj.jpg" type="image/png"/>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.14/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.14/esri/css/esri.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href="style.css">
+    <script src="http://js.arcgis.com/3.14/"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="jquery.csv-0.71.js"></script>
+    <script src="script.js"></script>
+
+  </head>
+
+  <body>
+      <div id="mapDiv" class="map">
+        <header>
+            <div id="header" style="display: block;">
+                <div class="textArea">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <a href="http://english.selu.edu/humanitiesonline/ruskin/apparatuses/account_of_a_tour_on_the_continent_apparatus.php" target="_blank" title="Go to Ruskin Apparatus Page">
+                                    <img id="ruskin_logo" src="resources/ruskin_logo_2.png" >
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </header>
+        <div id="HomeButton" ></div>
+        <div id ="search"></div>
+        <div class ="rightPane">
+            <legend> Perspective </legend>
+            <div class="legend">
+                <form>
+                    <fieldset>
+                        <input type="checkbox" id="layer1" checked> Places
+                        <br>
+                        <input type="checkbox" id="layer2" checked> Ruskin
+                        <br>
+                        <input type="checkbox" id="layer3" checked> Mock Witness
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div id="footer">
+                <div class="toggle">
+                    <div id="buttonContainer">
+                        <input type="button" class="timeButton" id="timebutton1" value="Places">
+                        <input type="button" class="timeButton" id="timebutton2" value="Ruskin">
+                        <input type="button" class="timeButton" id="timebutton3" value="Mock Witness">
+                    </div>
+                    <i class="fa fa-arrow-down fa-arrow-up ::before" id="upArrow" style="opacity: .5"></i>
+                </div>
+                <div id= "timeline">
+                    <div id="grad1"></div>
+                    <div class ="timecontainer" id = "container1" style="display: block;">
+                    </div>
+                    <div class ="timecontainer" id = "container2" style="display: block;">
+                    </div>
+                    <div class ="timecontainer" id = "container3" style="display: block;">
+                    </div>
+                    <div id="grad2"></div>
+                    <script>setVisibleContainer(1)</script>
+                </div>
+                <img id="slideLeft" src="resources/white-left-arrow.png" alt="Left" width="30" height="60">
+                <img id="slideRight" src="resources/white-right-arrow.png" alt="Right" width="30" height="60">
+            </div>
+        </footer>
+    </div>
+  </body>
+</html>
