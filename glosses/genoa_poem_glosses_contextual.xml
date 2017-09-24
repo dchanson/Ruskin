@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="genoa_poem_glosses_contextual">
+            <titleStmt>
+                <title type="main">"Genoa"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="NAVIGLIODIPAVIAGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Of various trees a vista green / Into the streamlet looking down / . . . / . . . and through / That natural arched avenue / 
+                    There showed a rich and mighty plain / . . . / And through the stretch of that champaign / A noble river wound its way&#x201D; (MS VIII; <hi rend="italic">Poems</hi> [<date when="1891">1891</date>]; <hi rend="italic">Works</hi> [1903])&#x2014;</hi>The 
+                    &#x201C;rich and mighty plain&#x201D; viewed in this poem opens up the country south of <placeName corresp="#MILAN">Milan</placeName>, where the family took the road 
+                    to <placeName corresp="#GENOA">Genoa</placeName>, passing through <placeName corresp="#PAVIA">Pavia</placeName>. Points in this landscape seem telescoped in the poem, 
+                    so it is ambiguous whether <persName corresp="#JR">Ruskin</persName> means the &#x201C;rich and mighty plain&#x201D; to be near or far. If near to <placeName corresp="#MILAN">Milan</placeName>, 
+                    the plain may be what <persName corresp="#GBM">G. B. Maule</persName> terms &#x201C;the most <placeName corresp="#FLANDERS">Flemish</placeName> portion of the plain of <placeName corresp="#LOMBARDY">Lombardy</placeName>. 
+                    Meadows, rich in clover, yield two or three crops a year; thick rows of sallows and poplars, bespeak the humidity of the soil, luxuriant even to rankness&#x201D;. 
+                    Entering this <placeName corresp="#LOMBARDY">Lombard</placeName> plain, &#x201C;the road skirts [a] canal all the way&#x201D;, 
+                    the <geogName corresp="#NAVIGLIOPAVESE">Naviglio di Pavia</geogName> (or <geogName corresp="#NAVIGLIOPAVESE">Naviglio Pavese</geogName>), 
+                    which connects <placeName corresp="#MILAN">Milan</placeName> to <placeName corresp="#PAVIA">Pavia</placeName>, and which may be the &#x201C;streamlet&#x201D; 
+                    that forms the foreground of <persName corresp="#JR">Ruskin</persName>&#x02BC;s vista in these lines 
+                    (i.e., the opening lines of <title type="poem" corresp="#JROFVARIOUSTREES">&#x201C;Of various trees a vista green&#x201D;</title>, 
+                    later incorporated into <title type="poem" corresp="#JRGENOA">&#x201C;Genoa&#x201D;</title>) 
+                    (<persName corresp="#GBM">Maule</persName>, <title type="book" corresp="#MURRAYSHANDBOOKNORTHERNITALY1847"><hi rend="italic">Hand&#x2010;book for Travellers in Northern Italy</hi></title>, 202). 
+                    If Ruskin means the plain beyond this foreground to comprise a longer perspective, he probably refers to the expanse of both 
+                    <placeName corresp="#LOMBARDY">Lombardy</placeName> and <placeName corresp="#PIEDMONT">Piedmont</placeName>; and the &#x201C;noble river [that] wound its way&#x201D; 
+                    through the plain must be the <geogName corresp="#PORIVER">Po</geogName>.</p></note><!--The pointer to this gloss would be <ref type="gloss" target="genoa_poem_glosses_contextual.php#NAVIGLIODIPAVIAGLOSS"/>.-->
+
+                <note xml:id="STBERNARDGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;And on the horizon to the north / Pale gleams . . . / From the <geogName corresp="#STBERNARD">St Bernards</geogName> fastnesses / 
+                    that heaven girt boundary&#x201D; (MS VIII; <hi rend="italic">Poems</hi> [<date when="1891">1891</date>]; <hi rend="italic">Works</hi> [1903])&#x2014;</hi>Ruskin 
+                    is sweeping the horizon from south to north, a panorama that may not have been visible from a single place along this journey. In 
+                    her travel diary for <date when="1833-06-22">22 June 1833</date>, <persName corresp="#MRC">Mary Richardson</persName> reported seeing the &#x201C;snowy <geogName corresp="#ALPS">Alps</geogName>&#x201D;, 
+                    after the family had departed <placeName corresp="#PAVIA">Pavia</placeName> and spent the night at &#x201C;<placeName corresp="#NOVI">Novi</placeName>&#x201D;&#x2014;referring 
+                    to <placeName corresp="#NOVI">Novi Ligure</placeName>, where the family stopped owing to a storm (<ref type="bibliography" target="bibliography.php#RFT48">Diary of Mary Richardson, 1833</ref>, 54). 
+                    By marking this horizon as "St Bernard's fastnesses", Ruskin means the pass of the Great St. Bernard between the valley of Aosta on the Italian side to Martigny in the valley of the Rh&#x00F4;ne on the Swiss side.</p></note><!--The pointer to this gloss would be <ref type="gloss" target="genoa_poem_glosses_contextual.php#STBERNARDGLOSS"/>.-->
+                
+                <note xml:id="MARENGOSSEAGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<placeName corresp="#MARENGO">Marengo</placeName>s sea&#x201D; 
+                    (MS VIII; <hi rend="italic">Poems</hi> [<date when="1891">1891</date>]; <hi rend="italic">Works</hi> [1903])&#x2014;</hi>In late May 1800, 
+                    <persName corresp="#NBE">Napoleon</persName> led his army across the Great St. Bernard Pass and on 14 June fought with Austrian troops under Michael von Melas 
+                    in the <date when="1800-06-14">Battle of Marengo</date>. Napoleon's narrow victory regained control of northern Italy for France in the Revolutionary Wars, 
+                    thwarting Melas's attempt to sow discontent with French domination in the region 
+                    (<ref type="bibliography" target="bibliography.php#CHANDLERNAPOLEON"><persName corresp="#DGC">Chandler</persName>, <title type="book" corresp="#CHANDLERNAPOLEON"><hi rend="italic">Napoleon</hi></title></ref>, 50-56). 
+                    On the road between Pavia and Novi, the plain around Alessandria and Marengo where the battle was fought lay on the Ruskins' right, to the west.</p></note><!--The pointer to this gloss would be <ref type="gloss" target="genoa_poem_glosses_contextual.php#MARENGOSSEAGLOSS"/>.-->
+                
+                <note xml:id="APENNINEGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Unto the <geogName corresp="#APENNINE">Apennine</geogName>. / Tis sweet a topmost mountain ridge, / 
+                    Impatiently to climb, / And there to stand and dream away&#x201D; (MS VIII; <hi rend="italic">Poems</hi> [<date when="1891">1891</date>]; <hi rend="italic">Works</hi> [1903])&#x2014;</hi>At 
+                    Novi, where the Ruskins staid the night, and which was still described a decade later in G. B. Maule's guidebook as the "best sleeping place between Milan and Genoa", 
+                    travellers were well situated not only to glimpse the Alps to the northwest but also the Apennines to the south. Maule writes: "Beyond Novi, you begin to enter the Apennines, 
+                    and the country becomes very beautiful. Fine hills in the distance, curiously stratified rocks nearer the road, and the most beautiful groves of chestnut, 
+                    all cheer and enliven the way." Perhaps the "topmost mountain ridge" where Ruskin stood to "dream away" was near <placeName corresp="#PONTEDECIMO">Ponte Decimo</placeName>, 
+                    where Maule says "the ridge of the Apennines is now crossed; and the scenery becomes finer and finer, until at length you gain a most extensive view of the <hi rend="italic">riviera</hi>, 
+                    with Genoa and its bay beneath you, the vineyards, of which the trellices are supported by stone pillars, forming beautiful avenues. 
+                    The descent continues very rapid; villas and ornamental gardens increase in number, forming an appropriate introduction to the magnificence of Genoa" 
+                    (<persName corresp="#GBM">Maule</persName>, <title type="book" corresp="#MURRAYSHANDBOOKNORTHERNITALY1847"><hi rend="italic">Hand&#x2010;book for Travellers in Northern Italy</hi></title>, 49). 
+                    A sheet of pen-and-ink drawings of <ref type="bibliography" target="bibliography.php#JRSIXVIEWS"><title type="artwork" corresp="#JRSIXVIEWS">Six Swiss and Italian Views</title></ref>, which Ruskin made during the 1833 journey, 
+                    includes a mountain and water scene labeled "In the Apennines[.] Road from Novi to Genoa".</p></note><!--The pointer to this gloss would be <ref type="gloss" target="genoa_poem_glosses_contextual.php#APENNINEGLOSS"/>.-->
+            </div>
+        </body>
+    </text>
+</TEI>
