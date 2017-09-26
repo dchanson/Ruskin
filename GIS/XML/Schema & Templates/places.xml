@@ -1,0 +1,2770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="places">
+        <fileDesc xml:id="places">
+            <titleStmt>
+                <title type="main">Places</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBT">Katrina Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-09-17">September 17, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Places Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="places">
+                <listPlace>
+                <!--The XML IDs included in the <place>s that follow should appear on the Names tab of the Regularization Crib Sheet and must be
+                    unique. It is recommended that places be listed alphabetically.-->
+                    <place type="settlement" xml:id="BLACKHEATH">
+                        <placeName>Blackheath</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">London</region>   
+                            <geo>55.05 -6.7</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 6.50 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <event type="arrival" when="1833-05-14">
+                            <label>Passed through in route to Dover.</label>
+                        </event>
+                        <event type="departure" when="1833-05-14">
+                            <label></label>
+                        </event>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SHOOTERSHILL">
+                        <placeName>Shooter's Hill</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">London</region>   
+                            <geo>51.4692  0.06697</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                        </terrain>
+                        <event type="arrival" when="1833-05-14">
+                            <label>Passed through in route to Dover.</label>
+                        </event>
+                        <event type="departure" when="1833-05-14">
+                            <label></label>
+                        </event>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DARTFORD">
+                        <placeName>Dartford</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">Kent</region>   
+                            <geo>51.44657	0.21423</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 28.10 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>    
+                    <place type="settlement" xml:id="ROCHESTER">
+                        <placeName>Rochester</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">Kent</region>   
+                            <geo>55.2752, -2.2649</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SITTINGBOURNE">
+                        <placeName>Sittingbourne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">Kent</region>   
+                            <geo>51.34128	0.73282</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CANTERBURY">
+                        <placeName>Canterbury</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">Kent</region>   
+                            <geo>51.27904	1.07992</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DOVER">
+                        <placeName>Dover</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>England</country>
+                            <region type="county">Kent</region>   
+                            <geo>51.13333	1.3</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CALAIS">
+                        <placeName>Calais</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Calais</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>Calais &#x201C;is a fortress of the 2nd class, situated in the most barren and unpicturesque district, with sandhills raised by the wind and the sea on the one side, and morasses on the other, contributing considerably to its military strength, but by no means to the beauty of its position&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 85).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 10,000</p>
+                            <p>
+                               <ref type="witness" target="calais_poem_msia_g1.php">&#x201C;Calais&#x201D; [poem]</ref>
+                               <ref type="witness" target="account_of_a_tour_on_the_continent_msia_g2.php">Account of a Tour on the Continent (MS IA g2)</ref>
+                               <ref type="witness" target="calais_prose_msia_g2.php">&#x201C;Calais&#x201D; [prose]</ref>
+                               <ref type="witness" target="calais_poem_msix.php">&#x201C;Calais&#x201D; [poem]</ref>
+                               <ref type="witness" target="calais_prose_msia.php">&#x201C;Calais&#x201D;</ref>
+                               <ref type="witness" target="calais_poem_1891.php">&#x201C;Calais&#x201D;</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ANDRES">
+                        <placeName>Andres</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Calais</region>   
+                            <geo>50.86556	1.92094</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 2.76 sq mi</desc>
+                            <desc>&#x201C;Andres, a small town on the canal named after it&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 86).. </desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LARECOUSE">
+                        <placeName>Larecouse</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Nord-Pas-de-Calais</region>
+                            <region type="department">Pas-de-Calais</region>   
+                            <geo>50.78416	1.93844</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Alternative Name: La Recousse</p>
+                            <p>Alternative Name: Licques</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STOMER">
+                        <placeName>St. Omer</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Calais</region>   
+                            <geo>50.75	2.25</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 6.3 sq mi</desc>
+                            <desc>&#x201C;A fortified town in a marshy situation&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 86)..</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 21,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CASSEL">
+                        <placeName>Cassel</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Nord</region>   
+                            <geo>50.80109	2.48527</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 4.88 sq mi</desc>
+                            <desc>&#x201C;Cassel is most agreeably situated on a hill commanding a view much celebrated in France, but which, after all, will bear no comparison with that from the Malvern Hills in England. It extends over the flat and fertile plains of Flanders, and as far as the white cliffs of England into 3 different kingdoms; includes 32 towns and 100 villages&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 87).. </desc>
+                        </terrain>
+                        <note>
+                            <p>
+                                <ref type="witness" target="cassel_poem_msia_g1.php">&#x201C;Cassel&#x201D; [poem]</ref>
+                                <ref type="witness" target="cassel_poem_1891.php">&#x201C;Cassel&#x201D; [poem]</ref>
+                                <ref type="witness" target="cassel_poem_le.php">&#x201C;The way was long, and yet &#x02BC;twas sweet&#x201D; [poem]</ref>
+                                <ref type="witness" target="cassel_prose_le.php">&#x201C;When shall we get up this hill&#x201D; [&#x201C;Cassel,&#x201D; prose]</ref>
+                                <ref type="witness" target="cassel_prose_msix.php">&#x201C;When shall we get up this hill&#x201D; [&#x201C;Cassel,&#x201D; prose]</ref>
+                                <ref type="witness" target="cassel_hill_drawing_msix.php">&#x201C;Cassel Hill&#x201D; [drawing]</ref>
+                                <ref type="witness" target="cassel_saint_omer_corpus_christi_drawing_msix.php">&#x201C;Cassel and Saint Omer Corpus Christi Procession&#x201D; [drawing]</ref>
+                                <ref type="witness" target="cassel_windmills_drawing_msix.php">&#x201C;Cassel Windmills&#x201D; [drawing]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BAILLEUL">
+                        <placeName>Bailleul</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Nord</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 16.76 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ARMENTIERES">
+                        <placeName>Armenti&#x00E8;res</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Nord</region>   
+                            <geo>50.68568	2.88214</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 2.42 sq mi</desc>
+                            <desc>&#x201C;The road here almost touches upon the Belgic frontier&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 87).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 7700</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LILLE">
+                        <placeName>Lille</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Nord</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 13.4 sq mi</desc>
+                            <desc>Lille is &#x201C;handsomely built, and surrounded by fortifications which render it one of the strongest places in France&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 87). </desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 70,000</p>
+                            <p>
+                                <ref type="witness" target="lille_poem_msia_g1.php">&#x201C;Lille&#x201D; [poem]</ref>
+                                <ref type="witness" target="lille_poem_msix.php">&#x201C;Lille&#x201D; [poem]</ref>
+                                <ref type="witness" target="lille_poem_1891.php">&#x201C;Lille&#x201D; [poem]</ref>
+                                <ref type="witness" target="lille_poem_le.php">&#x201C;Lille&#x201D; [poem]</ref>
+                                <ref type="witness" target="lille_poem_le.php">&#x201C;Lille&#x201D; [prose]</ref>
+                                
+                            </p>
+                        </note>
+                    </place>
+                    <place type="bridge" xml:id="PONTATRESSIN">
+                        <placeName>Le Pont &#x00E0; Tressin</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Nord</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;Pont&#x2010;a&#x2010;Tressin. &#x2013; The last post town in France&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 88). </desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="TOURNAI">
+                        <placeName>Tournai</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Hainaut</region>   
+                            <geo>50.60715	3.38932</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 82.53 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                            <note>
+                                <p>Population: 33,000</p>
+                                <p>Alternative Name: Tournay</p>
+                            </note>
+                    </place>
+                    <place type="settlement" xml:id="LEUZEENHAINAUT">
+                        <placeName>Leuze-en-Hainaut</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Hainaut</region>   
+                            <geo>50.6	3.6</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 28.39 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 5000</p>
+                            <p>Alternative Name: Leuze</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ATH">
+                        <placeName>Ath</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Hainaut</region>   
+                            <geo>50.62937	3.77801</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 49.02 sq mi</desc>
+                            <desc>Ath &#x201C;is a fortress on the Dender&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 89).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 8500</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ENGHIEN">
+                        <placeName>Enghien</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Hainaut</region>   
+                            <geo>50.68373	4.03284</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 15.67 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 3000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HALLE">
+                        <placeName>Halle</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Flemish Brabant</region>   
+                            <geo>50.95	5.75</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 17.14 sq mi</desc>
+                            <desc>Located southwest of Brussels.</desc>
+                        </terrain>
+                        <note>
+                            <p>Alternative Name: Hal</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BRUSSELS">
+                        <placeName>Brussels</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Flemish Brabant</region>   
+                            <geo>50.85045	4.34878</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 12.59 sq mi</desc>
+                            <desc>&#x201C;Brussels, the capital of the kingdom of Belgium, and seat of government and the chambers, on the small river Senne, has 106,000 inhabitants. 
+                                It is divided into the upper and lower towns, the former being the newest as well as the most fashionable and healthy quarter, and built on a height. 
+                                It contains the King’s palace, the chambers, and the chief hotels. The lower town abounds in find old picturesque buildings, the residences in former 
+                                times of the Brabant noblesse, now occupied by merchants and tradespeople: the Grande Place, with its splendid Hotel de Ville in this quarter, is beyond 
+                                doubt unrivalled as an instance of Gothic splendor in civic edifices&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 134).. </desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 106,000</p>
+                            <p>Language: French</p>
+                            <p><ref type="witness" target="brussels_poem_msia_g1.php">&#x201C;Brussels&#x201D;</ref>
+                               <ref type="witness" target="part_of_brussels_prose1_msviii.php">&#x201C;Part of Brussels&#x201D; [prose, part 1]</ref>
+                               <ref type="witness" target="part_of_brussels_prose2_msviii.php">&#x201C;Part of Brussels&#x201D; [prose, part 2]</ref> 
+                               <ref type="witness" target="brussels_prose_msix">&#x201C;Brussels&#x201D;[prose]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LAEKEN">
+                        <placeName>Laeken</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Flemish Brabant</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;Laeken, a country residence of the King of Belgium, about three miles from the Port de Lachen, on the road to Vilvorde and Antwerp&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 140).. </desc>
+                        </terrain>
+                        <note>
+                            <p>Alternative Name: Lachen</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WATERLOO">
+                        <placeName>Waterloo</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Walloon Brabant</region>   
+                            <geo>50.71469	4.3991</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 8.12 sq mi</desc>
+                            <desc>&#x201C;This small village, on the outskirts of the forest, about 10 miles from Brussels, was the head-quarters of the English army, on the days before and following the battle to which it has given its name&#x201D; (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836],142). 
+                                &#x201C;Waterloo is now nearly joined to Mont St. Jean, a long straggleing village, once almost a mile from it and lying on the edge of the field of battle&#x201D; 
+                                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836],143).</desc>
+                        </terrain>
+                        <note>
+                            
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="GENAPPE">
+                        <placeName>Genappe</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Walloon Brabant</region>   
+                            <geo>50.61173	4.45152</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 34.58 sq mi</desc>
+                            <desc>Genappe is &#x201C;19 miles from Brussels&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 149).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 12,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SOMBREFE">
+                        <placeName>Sombrefe</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Walloon Brabant</region>   
+                            <geo>50.52865	4.60087</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 13.81 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="NAMUR">
+                        <placeName>Namur</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Namur</region>   
+                            <geo>50.4669	4.86746</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 7.83 sq mi</desc>
+                            <desc>&#x201C;Capital of the province of Namur, and a strong fortress, with 19,500 inhabitants, built at the junction of the Sambre and Meuse&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836],149)..</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 19,500</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HUY">
+                        <placeName>Huy</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Liège</region>   
+                            <geo>50.51894	5.23284</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 18.43 sq mi</desc>
+                            <desc>Huy &#x201C;is romantically situated on the Meuse, which divides it into two parts, and is traversed by an ancient stone bridge&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 151).. </desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 7000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LIEGE">
+                        <placeName>Li&#x00E8;ge</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Liège</region>   
+                            <geo>50.63373	5.56749</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 26.79 sq mi</desc>
+                            <desc>&#x201C;Liege lies at the junction of the Ourthe with the Meuse&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 152)..</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 58,500</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SPA">
+                        <placeName>Spa</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Liège</region>   
+                            <geo>50.48375	5.86674</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 15.39 sq mi</desc>
+                            <desc>&#x201C;Spa is very prettily situated in a sort of semi-basin, in the midst of mountains forming part of the Ardennes Chain; 
+                                the heights overhanging it are covered with shrubberies and intersected by healthful and airy walks, with pleasing prospects at intervals. 
+                                A large part of the town is built close under the rocks, which, so far from holding out any encouragement to this near approximation, have 
+                                on several occasions given the inhabitants warning to keep at a more respectful distance, by overwhelming their dwellings with vast masses of stone detached from above&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 156).</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VERVIERS">
+                        <placeName>Verviers</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Belgium</country>
+                            <region type="province">Liège</region>   
+                            <geo>50.58907	5.86241</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 12.77 sq mi</desc>
+                            <desc>Located &#x201C;on the Vesdre&#x201D; (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 159).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 20,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="AIXLACHAPELLE">
+                        <placeName>Aix-la-Chapelle</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">North Rhine-Westphalia</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 62.10 sq mi</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 37,800</p>
+                            <p>
+                                <ref type="witness" target="aix_la_chapelle_prose_msix.php">&#x201C;Aix la Chapelle&#x201D; [prose]</ref>
+                                <ref type="witness" target="aix_la_chapelle_prose_le.php">&#x201C;Hast ever heard of the peace of Aix&#x2010;la&#x2010;Chapelle, reader?&#x201D; [&#x201C;Aix&#x2010;la&#x2010;Chapelle,&#x201D; prose]</ref>
+                                <ref type="witness" target="aix_la_chapelle_prose_msviii.php">&#x201C;Aix la Chapelle&#x201D; [prose]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="JULIERS">
+                        <placeName>Juliers</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">North Rhine-Westphalia</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 34.9 sq mi</desc>
+                            <desc>A melancholy looking fortress, with four thousand inhabitants, in the midst of a plain, surrounded by marshes and stagnant ditches, which render it very unhealthy
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 202).</desc>
+                        </terrain>
+                        <note>
+                            <p>Alternative Name: Jülich</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="COLOGNE">
+                        <placeName>Cologne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">North Rhine-Westphalia</region>   
+                            <geo>50.93333	6.95</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 156.43 sq mi</desc>
+                            <desc>Cologne is a fortified town of 65,000 inhabitants, on the left bank of the Rhine, connected by a bridge of boats with a fortress and suburb of Deutz
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 207).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 65,000</p>
+                            <p>
+                                <ref type="witness" target="cologne_prose_msviii.php">&#x201C;Cologne&#x201D; [prose]</ref>
+                                <ref type="witness" target="cologne_poem_1891.php">&#x201C;Cologne&#x201D; [poem]</ref>
+                                <ref type="witness" target="cologne_poem_le.php">&#x201C;The noon was past, the sun was low&#x201D; [&#x201C;Cologne,&#x201D; poem]</ref>
+                                <ref type="witness" target="cologne_prose_le.php">&#x201C;And this is the birthplace of Rubens!&#x201D; [&#x201C;Cologne,&#x201D; prose]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BONN">
+                        <placeName>Bonn</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">North Rhine-Westphalia</region>   
+                            <geo>50.73438	7.09549</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 54.46 sq mi</desc>
+                            <desc>Bonn is located &#x201C;on the left bank of the Rhine&#x201D; (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 217).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 12,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="GODESBERG">
+                        <placeName>Godesberg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">North Rhine-Westphalia</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 12.34 sq mi</desc>
+                            <desc>&#x201C;Near it is a mineral spring, Called Draischer Brunnen.&#x201D; 
+                                &#x201C;Godesberg is a little more than one mile distant from the Rhine&#x201D; (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 217). </desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 1000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="REMAGEN">
+                        <placeName>Remagen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>50.57879	7.22703</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 12.80 sq mi</desc>
+                            <desc>&#x201C;As we proceed and approach Remagen on the left bank [of the Rhine], we open out a beautiful verdant mountain, well clothed with forest-trees, named Appolonisberg, which, with its old Gothic Church and convent crowning its summit, affords, when viewed from the inn at Remagen, one of the most pleasing among the many delightful scenes with which this magnificent river gratifies the traveller&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#BARROWSFAMILYTOUR">Barrow</ref> <hi rend="italic">A Family Tour</hi> [1831], 186).</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ROLANDSECK">
+                        <placeName>Rolandseck</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>50.62932	7.2078</geo>
+                        </location>
+                        <terrain>
+                            <desc>Located within Remagen.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ANDERNACH">
+                        <placeName>Andernach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>50.43109	7.40425</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 20.55 sq mi</desc>
+                            <desc>&#x201C;At Andernach, the mountains on both sides of the Rhine again approach the water's edge, and form majestic defile (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 224)</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 2700</p>
+                            <p>Alternative Name: Andernacht</p>
+                            <p>
+                                <ref type="witness" target="andernacht_poem_msia_g2.php">&#x201C;Andernacht&#x201D; [poem]</ref>
+                                <ref type="witness" target="andernacht_poem_fo.php">&#x201C;Andernacht&#x201D; [Friendship Offering Version]</ref>
+                                <ref type="witness" target="andernacht_poem_1891.php">&#x201C;Andernacht&#x201D; [poem]</ref>
+                                <ref type="witness" target="andernacht_first_sketch_poem_1891.php">&#x201C;First Sketch of &#x2018;Andernach.&#x2019;&#x201D; [poem]</ref>
+                                <ref type="witness" target="andernacht_prose_msviii.php">&#x201C;Andernacht&#x201D; [prose]</ref>
+                            </p>
+                            
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="COBLENTZ">
+                        <placeName>Coblentz</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>50.35357	7.57883</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 40.55 sq mi</desc>
+                            <desc>&#x201C;Coblentz is a strongly fortified town, on the left bank of the Rhine, and the right of the Mosel&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 227)</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 22,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BOPPART">
+                        <placeName>Boppart</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 29.01 sq mi</desc>
+                            <desc>&#x201C;A very ancient walled town, with 3500 inhabitant, and dark narrow streets, no better than lanes. Like many other places upon the Rhine, it owed its origin to a castle built by Dursus, which formed the rudiments of the future town&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 232)</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 3500</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STGOAR">
+                        <placeName>St. Goar</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>50.14878	7.7072</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 8.85 sq mi</desc>
+                            <desc>S. Goar is situated immediately below The Rhine and Rheinfels 
+                                (<ref type="bibliography" target="bibliography.php#BARROWSFAMILYTOUR">Barrow</ref> <hi rend="italic">A Family Tour</hi> [1831], 196).</desc>
+                        </terrain>
+                        <note>
+                            <p>
+                                <ref type="witness" target="st_goar_poem_msia_g2.php">&#x201C;St. Goar&#x201D; [poem]</ref>
+                                <ref type="witness" target="st_goar_poem_fo.php">&#x201C;St. Goar&#x201D; [poem]</ref>
+                                <ref type="witness" target="st_goar_poem_1891.php">&#x201C;St. Goar&#x201D; [poem]</ref>
+                                <ref type="witness" target="st_goar_first_sketch_poem.php">&#x201C;First Sketch of &#x2018;St. Goar.&#x2019;&#x201D; [poem]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BINGEN">
+                        <placeName>Bingen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>48.11127	9.27238</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 8.85 sq mi</desc>
+                            <desc>&#x201C;Beyond this water-tower [Mausethurm] to the right, at the confluence of the Nahe and the Rhine, is the small town of Bingen&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#THERHENISHALBUM1836">The Rhenish Album</ref> <hi rend="italic">Journal</hi> [1836], 241).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 4000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MAINZ">
+                        <placeName>Mainz</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Rhineland-Palatinate</region>   
+                            <geo>49.98419	8.2791</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 37.74 sq mi</desc>
+                            <desc>Mainz &#x201C;lies on the left bank of the Rhine, nearly opposite the junction of the Main&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 246).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 30,000</p>
+                            <p>Alternative Name: Mayence</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WIESBADEN">
+                        <placeName>Wiesbaden</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo>50.08258	8.24932</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 78.7 sq mi</desc>
+                            <desc>&#x201C;Weisbaden is distant only six or eight miles from Mayence, by the high road, five miles by foot paths across the fields&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 398).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 9000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="FRANKFURT">
+                        <placeName>Frankfurt</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo>49.68333	10.53333</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 95.87 sq mi</desc>
+                            <desc>&#x201C;Frankfort is a free town, and the seat of the German Diet: It lies on the right bank of the Main, and is connected by a stone bridge with the smaller quarter or suburb of Sachsenhausen, on the left bank&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 403).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 46,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LANGEN">
+                        <placeName>Langen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo>53.60554	8.59509</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>&#x201C;The country, as far as Darmstadt, is flat and unintersesting&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 425).</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DARMSTADT">
+                        <placeName>Darmstadt</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo>49.87167	8.65027</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>&#x201C;It is a dull, unteresting tow, which need not detain the traveller long. The appearance of torpidity is increased by the extent of the surface over which it spread. The streets are straight and very wide, the squares numerous, and many of the houses are built singly, with intervals between them.  &#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 425).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 22,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BICKENBACH">
+                        <placeName>Bickenbach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HEPPENHEIM">
+                        <placeName>Heppenheim</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>&#x201C;This small town of 3700 inhabitant, like most others on the Bergstrasse, has an ancient and decayed appearance, but is prettily situated &#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 429).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 3700</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WEINHEIM">
+                        <placeName>Weinheim</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>49.73763	8.06611</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>&#x201C;Weinheim is considered the most beautiful spot on the Bergstrasse; it lies on the Weschnitz, and has 4900 inhabitants, whose wealth consists in the orchards and vineyards around&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 429).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 4900</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HEIDELBERG">
+                        <placeName>Heidelberg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>48.31667	8.91667</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>&#x201C;Heidelberg is beautifully situated on the left bank of the Neckar, on a narrow ledge between the river and the castle rock&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 430).</desc>
+                        </terrain>
+                        <note>
+                            <p>
+                                <ref type="witness" target="heidelberg_poem1_msviii.php">&#x201C;Smiling from those bright rays kiss&#x201D; [&#x201C;Heidelberg&#x201D; poem, part 1]</ref>
+                                <ref type="witness" target="heidelberg_poem2_msviii.php">&#x201C;Continuation Heidelberg&#x201D; [&#x201C;Heidelberg&#x201D; poem, part 2]</ref>
+                                <ref type="witness" target="heidelberg_prose1_msviii.php">&#x201C;Most beautiful are the paths&#x201D;</ref>
+                                <ref type="witness" target="heidelberg_prose2_msviii.php">&#x201C;Cont. Heidelberg&#x201D; [&#x201C;Heidelberg&#x201D; prose, part 2]</ref>
+                                <ref type="witness" target="heidelberg_prose3_msviii.php">&#x201C;All has yielded to it from time immemorial&#x201D; [&#x201C;Heidelberg&#x201D; prose, part 3]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WIESLOCH">
+                        <placeName>Wiesloch</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BRUCHSAL">
+                        <placeName>Bruchsal</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 7200</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="KARLSRUHE">
+                        <placeName>Karlsruhe</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>49.00937	8.40444</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>&#x201C;The city is nearly surrounded by the Hardt forest, which is intersected by roads radiating from the palace, and corresponding with the streets of the town. Beyond this are seen the silvery windings of the Rhine, and behind it the Vosges Mountain in France; while to the S. the picturesque outline of the Black Forest mountains, and on the N. those of the Bergstrasse, complete the panorama.&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 435).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 22,000</p>
+                            <p>Alternative Name: Carlsruhe</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ETTLINGEN">
+                        <placeName>Ettlingen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 3300</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BURSTADT">
+                        <placeName>Bürstadt</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Alternative Name: Rastadt?</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BADEN">
+                        <placeName>Baden</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>53.00272	9.08593</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>&#x201C;There can be but one opinion as to the beauty of the situation of the town of Baden, embosomed among hills forming an offset or commencement of the Black Forest range,
+                            and seated on the banks of the Oes, a stream which though insignificant in size, once formed the boundary line between the Franks and Alemanni&#x201D;
+                            (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 439).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 4500</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STOLLHOFEN">
+                        <placeName>Stollhofen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>&#x201C;The Rhine is seen at intervals on the right; its banks are flat and uninteresting&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 445).</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BISCHOFSHEIM">
+                        <placeName>Bischofsheim</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Hesse</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="KEHL">
+                        <placeName>Kehl</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>49.03	11.01306</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>&#x201C;Kehl, on the right bank of the Rhine, though dignified by the name of the town, resembles more nearly a village&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 445).
+                                &#x201C;Kehl: a well cultivated plain intervenes between this and Offenburg, situated on the high road from Carlsruhe to Basle, and at the entrance of the valley of Kinzig&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 448).</desc>
+                        </terrain>
+                        
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STRASBOURG">
+                        <placeName>Strasbourg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Alsace</region>
+                            <region type="department">Bas-Rhin</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc>Strasbourg is &#x201C;on the Ill, which is on its way to join the Rhine, at the distance of about a mile, intersects the town in all directions, in canals&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 445).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 50,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="OFFENBURG">
+                        <placeName>Offenburg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>48.47377	7.94495</geo>
+                        </location>
+                        <terrain>
+                            <desc>Offenburg is &#x201C;situated at the entrance of the valley of the Kinzig, on the direct road from Strasburg to Schaffhausen, which here crosses the road from Frankfort to Basle&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 436).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 3700</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BIBERACH">
+                        <placeName>Biberach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>49.1933	9.14428</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HAUSACH">
+                        <placeName>Hausach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>48.28426	8.17602</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HORNBERG">
+                        <placeName>Hornberg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo>49.20793	9.99593</geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;This little town is beautifully situated under a height crowned by an old donjon keep, and at the foot of the main chain of the Black Forets range of mountains&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 449).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SCHILTACH">
+                        <placeName>Schiltach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VILLINGEN">
+                        <placeName>Villingen-Schwenningen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;A market-town of about 3600 inhabitants, surrounded by bleak hills&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836">Murray</ref> <hi rend="italic">Hand&#x2010;book</hi> [1836], 449).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 3600</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DONAUESCHINGEN">
+                        <placeName>Donaueschingen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 2800</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BLUMBERG">
+                        <placeName>Blumberg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SCHAFFHAUSEN">
+                        <placeName>Schaffhausen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schaffhausen</region>   
+                            <geo>47.69732	8.63493</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>
+                                <ref type="witness" target="schaffhausen_poem_msviii.php">&#x201C;Schaffhausen&#x201D; [poem]</ref>
+                                <ref type="witness" target="entrance_to_schaffhausen_poem_1891.php">[&#x201C;Entrance to Schaffhausen.&#x201D;] [poem]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CONSTANCE">
+                        <placeName>Constance</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Germany</country>
+                            <region type="state">Baden-Württemberg</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;The Lake of Constance, anciently called Brigantinus is about eighteen leagues in length, five in breadth, and chiefly supplied by the Rhine&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 635).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Alternative Name: Konstanz</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="RORSCHACH">
+                        <placeName>Rorschach</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">St. Gallen</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SARGANS">
+                        <placeName>Sargans</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">St. Gallen</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="COIRE">
+                        <placeName>Coire</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Graubünden</region>   
+                            <geo>46.84986	9.53287</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SPLUGEN">
+                        <placeName>Splügen Pass</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Graubünden</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VIAMALA">
+                        <placeName>Via Mala</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Graubünden</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;The Defile between Coire and Splugen&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 567).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>
+                                <ref type="witness" target="via_mala_poem_msviii.php">&#x201C;Viamala&#x201D; [poem]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SPLUGENVILLAGE">
+                        <placeName>Splügen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Graubünden</region>   
+                            <geo>46.5531	9.3231</geo>
+                        </location>
+                        <terrain>
+                            <desc>The Village of Splugen is &#x201C;situated in the Valley of the Rheinwald&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 567).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>
+                                <ref type="witness" target="splugen_poem_msviii.php">&#x201C;Splugen&#x201D; [poem]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CHIAVENNA">
+                        <placeName>Chiavenna</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>46.32063	9.39816</geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;The distance from La Riva to Chiavenna is about twelve miles&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 596).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>
+                                <ref type="witness" target="oh_softly_blew_the_morning_breeze_poem_msviii.php">&#x201C;Oh softly blew the morning breeze&#x201D; [&#x201C;Chiavenna&#x201D;]</ref>  
+                                <ref type="witness" target="chiavenna_poem_1891.php">&#x201C;Chiavenna&#x201D; [poem]</ref>
+                                <ref type="witness" target="chiavenna_poem_le.php">&#x201C;Chiavenna&#x201D; [poem]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DOMASO">
+                        <placeName>Domaso</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>46.15284	9.3315</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CADENABBIA">
+                        <placeName>Cadenabbia</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>45.98861	9.23615</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>
+                                <ref type="witness" target="cadenabbia_poem_msviii.php">&#x201C;Cadenabbia&#x201D; [poem]</ref> 
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="COMO">
+                        <placeName>Como</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>45.80998	9.08744</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MILAN">
+                        <placeName>Milan</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>45.59282	12.17278</geo>
+                        </location>
+                        <terrain>
+                            <desc>Milan is &#x201C;seated on a peculiarly fertile spot, between the rivers Adda and Ticino (anciently Addua and Ticinus), and intersected by three Navigable Canals, one of which extends to Pavia&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 47-48).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 130,000</p>
+                            <p>
+                                <ref type="witness" target="milan_cathedral_poem_msia_g2.php">&#x201C;Milan Cathedral&#x201D; [poem]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="PAVIA">
+                        <placeName>Pavia</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo>45.18446	9.16145</geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;Pavia is about seven leagues distant from Milan, and accessible both by land and water&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 50).
+                                &#x201C;It is placed in a fertile plain; and boasts an University long famed for the talents of its professors&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 51).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="NOVI">
+                        <placeName>Novi Ligure</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;Novi, placed among vineyards at the base of the Apennine, contains six thousand inhabitants, several magnificent houses, which belong to opulent Genovesi, who spend the autumn here; and two Inns; 
+                                  it is, therefore, the best sleeping place between Turin and Genoa, both on account of the last-named circumstance, and likewise from being situated about midway &#x201D;
+                                  (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 118).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 6,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="GENOA">
+                        <placeName>Genoa</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Liguria</region>   
+                            <geo>44.41286	8.95729</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>
+                                <ref type="witness" target="genoa_poem1_msviii.php">&#x201C;Of various trees a vista green&#x201D; [poem, &#x201C;Genoa,&#x201D; part 1]</ref>  
+                                <ref type="witness" target="genoa_poem2_msviii.php">&#x201C;Genoa&#x201D; [poem, part 2, &#x201C;Now rouse the ho. for Genoa straight&#x201D;]</ref>
+                                <ref type="witness" target="genoa_poem_1891.php">&#x201C;Genoa&#x201D; [poem]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ALESSANDRIA">
+                        <placeName>Alessandria</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo>44.9	8.61</geo>
+                        </location>
+                        <terrain>
+                            <desc>Alessandria is &#x201C; a handome Fortress, seated in the midst of an extensive plain, and watered by the Tanaro&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 117).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 18,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MARENGO">
+                        <placeName>Spinetta Marengo</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo>44.88859	8.67691</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through. Now called Piedmont.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="TURIN">
+                        <placeName>Turin</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo>45.21154	7.73357</geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;The modern walls or ramparts of this city, now the capital of Piedmont, are about four mile round, and contain near eighty-thousand persons: the Citadel, a particularly fine fortress, which the French almost destroyed, is now rebuilt &#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 116).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 80,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="NOVARA">
+                        <placeName>Novara</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ARONA">
+                        <placeName>Arona</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo>45.7589	8.55715</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ANGERO">
+                        <placeName>Angero</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VARESE">
+                        <placeName>Varese</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Lombardy</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BORROMEANISLANDS">
+                        <placeName>Borromean Islands</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DOMODOSSOLA">
+                        <placeName>Duomo d'Ossola</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region>Piedmont</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SIMPLONVILLAGE">
+                        <placeName>Simplon Village</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo>46.19451	8.05753</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STBERNARD">
+                        <placeName>Great St. Bernard Pass</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo>45.86898	7.17107</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Mountain pass. Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SION">
+                        <placeName>Sion</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;Sion, anciently Sedunum, and in German Sitten, the Capital of the Haut-Valais, and built partly on the right bank of the Rhone, and partly on the River Sitten, is a very old Swiss Bishophric&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 41).
+                                &#x201C;Near Sion flows the river Morges, which divides the Haut from the Bas Valais &#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 41).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MARTIGNY">
+                        <placeName>Martigny</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Martigny (the ancient Octodurus), seated at the entrance of the Great Valley of the Rhone, where the roads from France, Italy, and Chamouni meet, 
+                                was a well-built and flourishing Town, till nearly destroyed by a sudden and dreadful inundation of the Dranse; which occurred not long ago&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 635).</desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LIDDES">
+                        <placeName>Liddes</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo>45.99249	7.18729</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STBERNARDHOSPICE">
+                        <placeName>Great St. Bernard Hospice</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Valais</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>A hostel on the Great St. Bernard Pass. Pass-through, return?</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BEX">
+                        <placeName>Bex</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo>46.25214	7.01141</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CHILLONCASTLE">
+                        <placeName>Château de Chillon</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VEVEY">
+                        <placeName>Vevey</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo>46.46299	6.84345</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LAUSANNE">
+                        <placeName>Lausanne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MOUDON">
+                        <placeName>Moudon</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo>46.66947	6.80127</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="PAYERNE">
+                        <placeName>Payerne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Vaud</region>   
+                            <geo>46.82201	6.93608</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="FRIBOURG">
+                        <placeName>Fribourg</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Fribourg</region>   
+                            <geo>46.80237	7.15128</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BERNE">
+                        <placeName>Berne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.94809	7.44744</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="THUN">
+                        <placeName>Thun</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.75118	7.62166</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="UNTERSEEN">
+                        <placeName>Unterseen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.6853	7.84722</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Called "Newhouse" in journal, referencing "Neuhaus". Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="INTERLAKEN">
+                        <placeName>Interlaken</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.68387	7.86638</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WORB">
+                        <placeName>Worb</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.92984	7.56306</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="WALKRINGEN">
+                        <placeName>Walkringen</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>46.94856	7.6204</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SUMISWALD">
+                        <placeName>Sumiswald</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>47.02747	7.74526</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="HUTTWIL">
+                        <placeName>Huttwil</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>47.11502	7.86209</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SURSEE">
+                        <placeName>Sursee</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Lucerne</region>   
+                            <geo>47.17088	8.11113</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LUCERNE">
+                        <placeName>Lucerne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Lucerne</region>   
+                            <geo>47.05048	8.30635</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="KUSSNACHT">
+                        <placeName>Küssnacht</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo>47.08557	8.44206</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ARTH">
+                        <placeName>Arth</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo>47.06337	8.52349</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 16.25 sq mi</desc>
+                            <desc>Located on the shore of Lake Zug between Righi and Rossberg</desc>
+                        </terrain>
+                        <note>
+                            <p>Where tourist gather to ascend Mount Righi</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="RIGI">
+                        <placeName>Rigi</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schwyz and Lucerne</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 16.25 sq mi</desc>
+                            <desc>Located on the shore of Lake Zug between Righi and Rossberg</desc>
+                        </terrain>
+                        <note>
+                            <p>Visit.</p>
+                        </note>
+                    </place>
+                    <place type="mountain" xml:id="STAFFEL">
+                        <placeName>Staffel</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo>46.9279	8.47668</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length:</desc>
+                            <desc>Mountain summit in Alps.</desc>
+                        </terrain>
+                        <note>
+                            <p>To visit Giesbach Falls.</p>
+                        </note>
+                    </place>
+                    <place type="mountain" xml:id="KULM">
+                        <placeName>Kulm</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length:</desc>
+                            <desc>Mountain summit in Alps.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SCHWYZ">
+                        <placeName>Schwyz</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo>47.02076	8.65414</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 20.56 sq mi</desc>
+                            <desc>Located along Lake Lauerz, and contains mountains Kleiner Mythen and Grosser Mythen.</desc>
+                        </terrain>
+                        <note>
+                            <p>Stay at Einsiedeln.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="EINSIEDELN">
+                        <placeName>Einsiedeln</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Italy</country>
+                            <region type="canton">Schwyz</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 38.24 sq mi</desc>
+                            <desc>47.12849	8.74735</desc>
+                        </terrain>
+                        <note>
+                            <p>Stay at Einsiedeln Abbey.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="RAPPERSWYL">
+                        <placeName>Rapperswyl</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">St. Gallen</region>   
+                            <geo>47.22557	8.82228</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 0.67 sq mi</desc>
+                            <desc>Along Lake Zurich.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="ZURICH">
+                        <placeName>Zurich</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Zurich</region>   
+                            <geo>47.36667	8.55</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 33.93 sq mi</desc>
+                            <desc>Where the Limmat river flows into Lake Zurich.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SWISSBADEN">
+                        <placeName>Baden</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Aargau</region>   
+                            <geo>47.47333	8.30592</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 5.09 sq mi</desc>
+                            <desc>&#x201C;Baden, two Post from Vienna, is situated near a branch of the Kahlenberg: its Hot Baths were known to the ancient Romans, who called the Aquae Cetiae, 
+                                or the Baths of Mons Cetius, now the Kahlenberg. Baden is a small Town, with extensive Suburbs; its Valley of S. Helena is lovely; and, considering its vicinity to the Styrian Alps, the climate is not rigorous&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 511).</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STEIN">
+                        <placeName>Stein am Rhein</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Shaffhausen</region>   
+                            <geo>47.65933	8.85964</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 2.22 sq mi</desc>
+                            <desc>The Rhine flows through.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="RHEINFEL">
+                        <placeName>Rheinfel</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton"></region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BASEL">
+                        <placeName>Basel</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Basel-Stadt</region>   
+                            <geo>47.55839	7.57327</geo>
+                        </location>
+                        <terrain>
+                            <desc>Lenth: 9.23 sq mi</desc>
+                            <desc>Located along the Rhine.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SOLEURE">
+                        <placeName>Soleure</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Solothurn</region>   
+                            <geo>47.20791	7.53714</geo>
+                        </location>
+                        <terrain>
+                            <desc>Lenth: 2.42 sq mi</desc>
+                            <desc>Located along the Rhine.</desc>
+                        </terrain>
+                        <note>
+                            <p>Solothurn. Located along the Aar river within the Jura mountains.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BIENNE">
+                        <placeName>Bienne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Bern</region>   
+                            <geo>47.13713	7.24608</geo>
+                        </location>
+                        <terrain>
+                            <desc>Lenth: 8.20 sq mi</desc>
+                            <desc>Lies at the foot of the Jura Mountains.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="NEUCHATEL">
+                       <placeName>Neuchatel</placeName>
+                       <location>
+                           <bloc type="continent">Europe</bloc>
+                           <country>Switzerland</country>
+                           <region type="canton">Neuchatel</region>   
+                           <geo>46.99179	6.931</geo>
+                       </location>
+                       <terrain>
+                           <desc>Length: 7.0 sq mi</desc>
+                           <desc>Located on Lake Neuchatel within the Jura Mountains.</desc>
+                       </terrain>
+                       <note>
+                           <p></p>
+                       </note>
+                   </place>
+                   <place type="settlement" xml:id="YVERDON">
+                       <placeName>Yverdon</placeName>
+                       <location>
+                           <bloc type="continent">Europe</bloc>
+                           <country>Switzerland</country>
+                           <region type="canton">Vaud</region>
+                           <geo>46.77852	6.64115</geo>
+                       </location>
+                       <terrain>
+                           <desc>Length: 4.36 sq mi</desc>
+                           <desc>South of Neuchatel. Surrounded with very low marshy and lately drained lands - stunted willows - large flat fields surrounded with poplars and long avenues for promenades.</desc>
+                       </terrain>
+                       <note>
+                           <p>Iverdon</p>
+                       </note>
+                   </place>
+                   <place type="settlement" xml:id="ORGES">
+                       <placeName>Orges</placeName>
+                       <location>
+                           <bloc type="continent">Europe</bloc>
+                           <country>Switzerland</country>
+                           <region type="canton">Vaud</region>
+                           <geo>46.80927	6.58348</geo>
+                       </location>
+                       <terrain>
+                           <desc>Length: 1.55 sq mi</desc>
+                           <desc>Farming area.</desc>
+                       </terrain>
+                       <note>
+                           <p></p>
+                       </note>
+                   </place>
+                   <place type="settlement" xml:id="MORGES">
+                       <placeName>Morges</placeName>
+                       <location>
+                           <bloc type="continent">Europe</bloc>
+                           <country>Switzerland</country>
+                           <region type="canton">Vaud</region>
+                           <geo>46.51127	6.49854</geo>
+                       </location>
+                       <terrain>
+                           <desc>Length: 1.49 sq mi</desc>
+                           <desc>Adjacent to Lake Geneva. A town with "fine trees giving to many parts the appearance of a grand park."</desc>
+                       </terrain>
+                       <note>
+                           <p></p>
+                       </note>
+                   </place>
+                    <place type="settlement" xml:id="GENEVA">
+                        <placeName>Geneva</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">Geneva</region>
+                            <geo>46.20222	6.14569</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 6.15 sq mi</desc>
+                            <desc>&#x201C;Geneva, said to contain near thirty thousand inhabitants, and anciently a strong town belonging to the Allobroges, is delightfully situated on the immense Lake which bears its name; and divided into unequal parts by the Rhone&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 35).</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BONNEVILLE">
+                        <placeName>Bonneville</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Haute-Savoie</region>
+                            <geo>50.08223	2.24927</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 10.48 sq mi</desc>
+                            <desc>Half way between Geneva and Chamouni.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="STMARTIN">
+                        <placeName>St. Martin</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department"></region>
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place> 
+                    <place type="settlement" xml:id="SALLANCHES">
+                        <placeName>Sallanches</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Haute-Savoie</region>
+                            <geo>45.94423	6.63162</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 25.43 sq mi</desc>
+                            <desc>Located in the Arve valley.</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CHAMOUNI">
+                        <placeName>Chamonix-Mont-Blanc</placeName>
+                        <location>
+                            <bloc type="countinent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Haute-Savoie</region>
+                            <geo>45.92375	6.86933</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 94.77 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p>
+                                <ref type="witness" target="i_woke_to_hear_the_lullaby_msviii.php">&#x201C;I woke to here the lullaby&#x201D; [&#x201C;The Arve at Chamouni&#x201D;]</ref>
+                                <ref type="witness" target="journal_of_a_tour_through_france_to_chamouni_1835.php">&#x201C;Journal of a Tour through France to Chamouni, 1835&#x201D;</ref>
+                                <ref type="witness" target="not_such_the_night_whose_stormy_might_poem_msviii.php">&#x201C;Not such the night whose stormy might&#x201D; [&#x201C;Evening at Chamouni&#x201D;]</ref>
+                                <ref type="witness" target="chamouni_prose_msvii.php">&#x201C;Chamouni&#x201D; [prose]</ref>
+                                <ref type="witness" target="chamouni_poem_msvii.php">&#x201C;Chamouni&#x201D; [poem]</ref>
+                            </p>
+                        </note>
+                    </place>
+                    <place type="glacier" xml:id="MONTANVERT">
+                        <placeName>Mer de Glace</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region type="department">Haute-Savoie</region>
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 4.3 mi</desc>
+                            <desc>Located in Chamouni valley in the Mont Blanc massif.</desc>
+                        </terrain>
+                        <note>
+                            <p>Mont Anvert</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="NANTUA">
+                        <placeName>Nantua</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Ain</region>
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 4.94 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="LYONS">
+                        <placeName>Lyons</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Rhône</region>
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 18.48 sq mi</desc>
+                            <desc>&#x201C;This City situated near the site of the ancient Lugdunum, founded by Lucius Munatius Plancus, forty-two years before the Christian era, 
+                                on a Hill rising above the Modern Town, which contains about 100,470 inhabitants, and is, in point of wealth, the second City in France. 
+                                It stands on a narrow piece of ground, between the Rhone (anciently called Rhodanus), and the Saone; is encircled by a rich and beautiful 
+                                country, and owes one of its bridges, with several other embellishments, to Napoleon&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 544).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 100,470</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="VILLEFRANCHE">
+                        <placeName>Villefranche</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Rhône-Alpes</region>
+                            <region type="department">Rhône</region>
+                            <geo>47.93333	3.13333</geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Technically Villefranche-sur-Saône. Pass-through.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MACON">
+                        <placeName>Macon</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Burgundy</region>
+                            <region type="department">Saône-et-Loire</region>
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 10.44 sq mi</desc>
+                            <desc>&#x201C;This City, called Matisco, by the AEdui, to whom it originally belonged, contains 11,000 inhabitants, and a beautiful Quay, from which the Alps are discoverable&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 544).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 11,000</p>
+                            <p>Alternative Name: Matisco</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CHALONS_SUR_SAONE">
+                        <placeName>Chalons-sur-Saône</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Burgundy</region>
+                            <region type="department">Saône-et-Loire</region>
+                            <geo>47.22311	6.11682</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 5.88 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="DIJON">
+                        <placeName>Dijon</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Burgundy</region>
+                            <region type="department">Côte-d'Or</region>
+                            <geo>47.31667	5.01667</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 15.60 sq mi</desc>
+                            <desc>&#x201C;This City, anciently Dibio, or Divio, the Capital of Burgundy, and supposed to contain about twenty-two thousand inhabitants, is well situated between the rivers Ouch and Suzon&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 33).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 22,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="AUXERRE">
+                        <placeName>Auxerre</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Burgundy</region>
+                            <region type="department">Yonne</region>
+                            <geo>47.8	3.56667</geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;Auxerre is "seated on the left bank of the Yonne, and contains twelve thousand inhabitants: it stands, like all the large towns in this part of France, amidst wide-stretching vineyards&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 32).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 12,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="SENS">
+                        <placeName>Sens</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Burgundy</region>
+                            <region type="department">Yonne</region>
+                            <geo>48.2	3.28333</geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;Sens, once the Capital of the Galli-Sennones, and called by Caesar Agendicum, contains near eleven thousand inhabitants; is seated at the confluence of the Yonne and Vanne, and encircled by handsome Promenades and Walls, the lower part of which are exceedingly ancient and well worth notice&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 31).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 11,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="FONTAINBLEAU">
+                        <placeName>Fountainbleau</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Île-de-France</region>
+                            <region type="department">Seine-et-Marne</region>
+                            <geo>48.4	2.7</geo>
+                        </location>
+                        <terrain>
+                            <desc>About the centre of this singular and extensive Forest [Forest of Fontainebleau] stands the Town of Fountaineblue: where the Hotel de la Ville de Londres is a good Inn&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 31).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 9,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="PARIS">
+                        <placeName>Paris</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Île-de-France</region>
+                            <region type="department">Paris</region>
+                            <geo>48.85341	2.3488</geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;Paris, once called Parisii vel Lutetia, is watered by the Seine, anciently Sequana; and previous to the dethronement of Louis XVI, was supposed to contain from seven to eight hundred thousand inhabitants; after that period the number was considerably diminished; but now it amounts to nearly nine hundred thousand, exclusive of Foreigners and Troops&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 7).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 9,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="CHANTILLY">
+                        <placeName>Chantilly</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Picardy</region>
+                            <region type="department">Oise</region>
+                            <geo>49.19461	2.47124</geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;Amiens</desc>
+                        </terrain>
+                        <note>
+                            <p></p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="AMIENS">
+                        <placeName>Amiens</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Picardy</region>
+                            <region type="department">Somme</region>
+                            <geo>49.9	2.3</geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;Amiens is watered by the Somme, and contains 40,000 inhabitants, together with a good inn, L'Hotel de la Poste&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 533).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 40,000</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="MONTREUIL">
+                        <placeName>Montreuil</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Lle-de-France</region>
+                            <region type="department">Seine-Saint-Denis</region>
+                            <geo>50.46667	1.76667</geo>
+                        </location>
+                        <terrain>
+                            <desc>Length: 3.44 sq mi</desc>
+                        </terrain>
+                        <note>
+                            <p>Technically Montreuil-sur-Bois.</p>
+                        </note>
+                    </place>
+                    <place type="settlement" xml:id="BOULOGNE">
+                        <placeName>Boulogne</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>France</country>
+                            <region>Nord-Pas-de-Calais</region>
+                            <region type="department">Pas-de-Calais</region>
+                            <geo>46.79346	-1.3194</geo>
+                        </location>
+                        <terrain>
+                            <desc>&#x201C;Boulogne, supposed to occupy the site of the ancient Gessoriacum, is a large Town, pleasantly situated at the mouth of the river Liane&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 5).
+                                &#x201C;Vestiges of a Tower, built in the days of Caligula, may be seen at Boulogne, which is reputed to contain thirty thousand inhabitants, beside British visitors; who, during peace, are very numerous&#x201D;
+                                (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, </ref> <hi rend="italic">Travels in Europe</hi> [1833], 6).</desc>
+                        </terrain>
+                        <note>
+                            <p>Population: 30,000</p>
+                        </note>
+                    </place>
+                    <!--Next <place>-->
+                    <!--Next <place>-->
+                    <!--Next <place>-->
+                </listPlace>
+            </div>
+        </body>
+    </text>
+</TEI>
