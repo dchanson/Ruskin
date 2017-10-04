@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <fileDesc xml:id="it_was_an_eve_of_summer_mild_poem_glosses_textual">
+            <titleStmt>
+                <title type="main">"It was an eve of summer mild" ["Lago Maggiore"] [poem]</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="TITLE" resp="#DCH"><p><hi rend="bold">Title (<hi rend="italic">Poems</hi> [<date when="1891">1891</date>]; <hi rend="italic">Works</hi> [1903])&#x2014;</hi>W. G. Collingwood 
+                    gave the title "Lago Maggiore" to this poem, which is untitled in MS VIII draft. Collingwood does not justify this choice in his notes on the "Account"; 
+                    but while no definitive internal evidence sanctions this identification, one can guess that Lago Maggiore was suggested to the editor by elements of the poet's description, 
+                    as noted in the contextual glosses.</p></note>
+
+                <note xml:id="TERMINALCOMMA" resp="#DCH"><p><hi rend="bold">Terminal comma (MS VIII)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</p></note>
+                
+                <note xml:id="SOBROADLYSTRETCHED" resp="#DCH"><p><hi rend="bold">"So broadly stretched in sapphire sheet,&#x2014; / . . . / And the moon she sits in her majesty" 
+                    (<hi rend="italic">Poems</hi> [<date when="1891">1891</date>]; <hi rend="italic">Works</hi> [1903])&#x2014;</hi>Without comment, W. G. Collingwood attached the eight lines, 
+                    <title type="poem" corresp="#JRSOBROADLYSTRETCHED">"So broadly stretched in sapphire sheet"</title>, which appear on 78v of MS VIII, to the end of 
+                    <title type="poem" corresp="#JRLAGOMAGGIORE">"It was an eve of summer mild" ["Lago Maggiore"]</title>. In MS VIII, the eight lines on 78v are enclosed in parentheses--marks 
+                    that may or may not have been made by Ruskin, and that are unclear in their significance; otherwise, no meta-discursive indication in the manuscript connects the two line groups.</p>
+                    
+                    <p>In the Library Edition, the editors reprinted Collingwood's text, including the interpolated lines, likewise without comment. They did compare the added lines 
+                        with the MS VIII witness, however, as indicated by their correcting Collingwood's version of the line, "Another heaven beneath our feet", to 
+                        "Another heaven 'neath our feet", preserving Ruskin's contraction as found in the manuscript witness.</p>
+                </note>
+            </div>
+        </body>
+    </text>
+</TEI>
