@@ -85,6 +85,9 @@
                                 <p>John Ruskin's boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>,
                                     examples of which can be found in MS IA and VIII, pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
+                            <handNote corresp="#HANDWGC" scribe="WGC">
+                                <p>W. G. Collingwood, at the time of preparing the "Preliminary Note on the Original MSS. of the Poems" for Poems (1891).</p>
+                            </handNote>
                         </handDesc>
                     </physDesc>
                 </msDesc>
@@ -120,7 +123,8 @@
                     <l>Down southward winding far away</l>
                     <l>The olives tints of gentle gray</l>
                     <pb facs="MSVII64r"/>
-                    <l>Stooped to his borders from between<add rend="linenumber-right-JR">845</add></l>
+                    <fw type="pageNum" place="top-right"><handShift new="#HANDWGC" medium="pencil"/>64</fw>
+                    <l><handShift new="#HANDJR1833-34" script="script" medium="ink"/>Stooped to his borders from between<add rend="linenumber-right-JR">845</add></l>
                     <l>The hills uncultivated green</l>
                     <l>And orange groves him girded round</l>
                     <l>Blossoming oer him fragrantly</l>
@@ -133,14 +137,14 @@
                     <l>There was blue above, and blue below <add rend="linenumber-right-JR">855</add></l>
                     <l>And the gleam of the eternal snow</l>
                     <l>Forth from the fastnesses it came</l>
-                    <l>Of the high alps retiring <del rend="strikethrough">th</del> chain<ref type="gloss" target="lago_di_como_poem_glosses_textual.php#FASTNESSES"/></l>
+                    <l>Of the high <geogName corresp="#ALPS">alps</geogName> retiring <del rend="strikethrough">th</del> chain<ref type="gloss" target="lago_di_como_poem_glosses_textual.php#FASTNESSES"/></l>
                     <l>And all along the shored whereer,</l>
                     <l>The stormwinds wont to chafe the wave <add rend="linenumber-right-JR">860</add></l>
                     <l><subst><del>A</del><add rend="overwriting">The</add></subst> <del rend="strikethrough">crucif</del> crucifix is shrined there</l>
                     <l>That <name type="scriptural_person" corresp="#JESUSCHRIST">Christ</name> may hear the passioned prayer</l>
                     <l>May hear, may <del rend="strikethrough">listen</del><add place="below"><space quantity="16"></space>pity</add>, and may save</l>
-                    <!--There is a physically drawn line after the poem ends-->
                 </lg>
+                <milestone unit="undeclared" rend="hr-threequarter"/>
             </div>
         </body>
     </text>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="the_rhine_poem_poems_1891">
+            <titleStmt>
+                <title type="main">"The Rhine" [poem]</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in Ruskin, <hi rend="italic">Poems</hi> (1891)</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#WGC">W. G. Collingwood</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                       <editor>
+                            <persName>W. G. Collingwood</persName>
+                        </editor>
+                        <title type="main">The Poems of John Ruskin</title>
+                        <title type="sub">Volume I: Poems Written in Boyhood, 1826-1835</title>
+                        <imprint>
+                            <biblScope type="vol">1</biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1891">1891</date>
+                            <biblScope type="pages">142-43</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem"  met="-+|-+|-+|-+" rhyme="aa">
+                <head type="title"><hi rend="caps">THE RHINE</hi>.<ref type="gloss" target="the_rhine_glosses_contextual.php#THERHINETITLE"/></head>
+                <lg>
+                    <l><hi rend="caps">W</hi><hi rend="smallcaps">E</hi> saw it where its billow swells</l>
+                    <l>Beneath the ridge of <placeName corresp="#DRACHENFELS">Drachenfels</placeName>;<ref type="gloss" target="the_rhine_glosses_contextual.php#DRACHENFELS"/></l>
+                <l>We saw it where its ripples ride</l>
+                    <l>&#x02BC;Neath <geogName corresp="#EHRENBREITSTEIN">Ehrenbreitstein</geogName>&#x02BC;s beetling pride;</l>
+                <l>We saw it where its whirlpools roar</l>
+                <l>Among the rocks of gaunt <placeName corresp="#STGOAR">St. Goar</placeName>&#x2014;</l> 
+                    <l>In all its aspects &#x02BC;tis as fair!</l>
+                <l>That aspect changes everywhere.</l>
+                    <l>From <geogName corresp="#RHAETIANALPS">Rh&#x00E6;tian</geogName> and <geogName corresp="#DINARICALPS">Dinaric</geogName> crest,<ref type="gloss" target="the_rhine_glosses_contextual.php#DINARIC"/></l>
+                    <l>From the wild waters to the west,<ref type="gloss" target="the_rhine_poem_glosses_textual.php#FOAMGLOSS"/></l>
+                    <l>From fearful <placeName corresp="#SPLUGEN">Spl&#x00FC;gen</placeName>&#x02BC;s glaciered head,</l> 
+                <l>The mighty torrent dashes, dread;</l><pb/>
+                <l>And, swelled by every Alpine snow,</l>
+                <l>Now see it chase these clffs below,</l>
+                <l>On whose high summits deeply rent</l>
+                <l>Rise many a fortress battlement,</l>
+                <l>Seeming the lords of rock and hill,</l> 
+                <l>And mighty in their ruin still.</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
