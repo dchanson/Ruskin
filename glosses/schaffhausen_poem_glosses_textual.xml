@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="glosses">
-        <fileDesc xml:id="schaffhausen_poem_glosses_contextual">
+        <fileDesc xml:id="schaffhausen_poem_glosses_textual">
             <titleStmt>
                 <title type="main">"Schaffhausen" [poem]</title>
                 <title type="sub">Glosses</title>
@@ -56,6 +56,10 @@
     <text>
         <body>
             <div type="glosses">
+                <note xml:id="LINENUMBERINGGLOSS" resp="#DCH"><p><hi rend="bold">Line numbering (<title type="manuscript" corresp="#MSVIII">MS VIII</title>)&#x2014;</hi>In 
+                    numbering the lines of this poem, <persName corresp="#JR">Ruskin</persName> appears to have made a deliberate readjustment to his larger scheme of consecutively numbering lines of draft 
+                    verse for the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>. See the entry for the poem in <ref type="apparatus" subtype="manuscript" target="msviii_apparatus#LISTB1"><hi rend="italic">MS VIII: Contents, b.1</hi></ref>.</p></note>
+                
                 <note xml:id="LEVERETGLOSS" resp="#DCH"><p><hi rend="bold">Leveret (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <hi rend="italic">Poems</hi> [<date when="1891">1891</date>]; 
                     <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>&#x201C;A young hare, strictly one in its first year&#x201D; 
                     (&#x201C;leveret, n.1&#x201D;, <title type="dictionary" corresp="#OED"><hi rend="italic">OED Online</hi></title>, accessed <date when="2015-09-04">21 October 2017</date>). 
