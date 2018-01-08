@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <fileDesc xml:id="chamouni_poem_glosses_textual">
+            <titleStmt>
+                <title type="main">"Chamouni"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="HANDGLOSS" resp="#DCH"><p><hi rend="bold">Unidentified fair&#x2010;copy hand (<title type="manuscript" corresp="#MSVII">MS VII</title>)&#x2014;</hi>For 
+                    speculation concerning the hand responsible for this manuscript fair copy, see <ref type="note" subtype="bibliographical" target="hand_note.php#UNIDENTIFIEDMSSVII_XI">The Ruskin Family Handwriting: Unidentified Hands&#x2014;MS VII, XI Fair Copy of the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title></ref>.</p></note>
+                <!--The pointer to this gloss would be <ref type="gloss" target="chamouni_poem_glosses_textual.php#HANDGLOSS"/>.-->
+                
+                <note xml:id="SHINESHINEGLOSS" resp="#DCH"><p><hi rend="bold"><hi rend="italic">Shineshine</hi> (<title type="manuscript" corresp="#MSVII">MS VII</title>; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>Since 
+                    this fair copy was not made by <persName corresp="#JR">Ruskin</persName> himself, this redundancy may be a transcription error. In the <title type="book" corresp="#JRWORKSLE">Library Edition</title> version, 
+                    the word is amended to &#x201C;sunshine&#x201D;.</p></note>
+                <!--The pointer to this gloss would be <ref type="gloss" target="chamouni_poem_glosses_textual.php#SHINESHINEGLOSS"/>.-->
+                
+                <note xml:id="TERMINALCOMMA" resp="#DCH"><p><hi rend="bold">Terminal comma (<title type="manuscript" corresp="#MSVII">MS VII</title>)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</p></note>
+                
+                <note xml:id="FULLSTOP" resp="DCH"><p><hi rend="bold">Full stop (<title type="manuscript" corresp="#MSVII">MS VII</title>)&#x2014;</hi>The full stop, which creates a baffling sentence fragment, is perhaps an error in transcription.</p></note>
+                
+                <note xml:id="DATELINEGLOSS" resp="#DCH"><p><hi rend="bold">Dateline (<title type="manuscript" corresp="#MSVII">MS VII</title>)&#x2014;</hi>For the datelines added at the bottom of the 
+                    <title type="manuscript" corresp="#MSVII">MS VII</title> and <title type="manuscript" corresp="#MSXI">MS XI</title> transcriptions, and the dating and circumstances of transcribing these texts, 
+                    see the apparatus, <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php#COMPOSITEILLUSTRATEDTRAVELOGUEDRAFT">Account of a Tour on the Continent: Drafting the Composite&#x2010;Genre Travelogue (MS VII, MS VIII, MS XI)</ref>.</p></note>
+                <!--The pointer to this gloss would be <ref type="gloss" target="chamouni_prose_glosses_textual.php#DATELINEGLOSS"/>.-->
+            </div>
+        </body>
+    </text>
+</TEI>
