@@ -19,6 +19,11 @@
                     <persName xml:id="CWB">Charles W. Borchers, IV</persName>
                     <resp>contributing encoding</resp>
                 </respStmt>
+                <respStmt>
+                    <!--For XML:ID, enter your intials.-->
+                    <persName xml:id="AEH">Aimee E. Harris</persName>
+                    <resp>contributing enconding</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
                     Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
@@ -28,7 +33,7 @@
             <editionStmt>
                 <edition n="1.0">
                     <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
-                    <date when="2010-10-25">October 25, 2010</date>
+                    <date when="2018-01-16">January 16, 2018</date>
                     <!--The notes version for all first passes is 1.0.-->
                     <title>Notes Version 1.0</title>
                 </edition>
@@ -55,15 +60,15 @@
         <body>
             <div type="note">
                 <head type="title">Grace Allen (<!--Entry needed here.-->)</head>
-                <p>Eldest daughter<!--Correction needed here.--> of George Allen. In 1901, along with her brothers Hugh Allen
-                    and William Allen, she became a member of the board of the publishing business
-                    now named George Allen and Sons. Grace had an important role in preparing many
-                    of her father&#x02BC;s late&#x2010;century publications of
-                    Ruskin&#x02BC;s early works. W. G. Collingwood says in <hi rend="italic"
-                        >Poems</hi> ([1891], 1:268) that she transcribed poems for that edition from
-                    her father&#x02BC;s copy of the scarce <hi rend="italic">Poems</hi>
-                    (1850).</p>
-                <p>See Dawson, <hi rend="italic">People&#x2019;s Ruskin</hi>, 10.</p>
+                <p>Eldest daughter<!--Correction needed here.--> of <persName corresp="#GA">George Allen</persName>. In <date when="1901">1901</date>, along with her brothers <persName corresp="#ALLENH">Hugh Allen</persName>
+                    and <persName corresp="#ALLENW">William Allen</persName>, she became a member of the board of the publishing business
+                    now named <orgName corresp="#GEORGEALLEN">George Allen and Sons</orgName>. <persName corresp="#ALLENG">Grace</persName> had an important role in preparing many
+                    of her <persName corresp="#GA">father</persName>&#x02BC;s late&#x2010;century publications of
+                    <persName corresp="#JR">Ruskin</persName>&#x02BC;s early works. <persName corresp="#WGC">W. G. Collingwood</persName> says in <title type="book" corresp="#JRPOEMS1891"><hi rend="italic"
+                        >Poems</hi></title> ([<date when="1891">1891</date>], 1:268) that she transcribed poems for that edition from
+                    her father&#x02BC;s copy of the scarce <title type="book" corresp="#JRPOEMS1850"><hi rend="italic">Poems</hi>
+                    (<date when="1850">1850</date>)</title>.</p>
+                <p>See <persName corresp="#PDAWSON">Dawson</persName>, <title type="book" corresp="#DAWSONPEOPLESRUSKIN"><hi rend="italic">People&#x2019;s Ruskin</hi></title>, 10.</p>
             </div>
         </body>
     </text>
