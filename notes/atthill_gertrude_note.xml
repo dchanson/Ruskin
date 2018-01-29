@@ -19,6 +19,11 @@
                     <persName xml:id="CWB">Charles W. Borchers, IV</persName>
                     <resp>contributing encoding</resp>
                 </respStmt>
+                <respStmt>
+                    <!--For XML:ID, enter your intitials.-->
+                    <persName xml:id="AEH">Aimee E. Harris</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
                     Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
@@ -28,7 +33,7 @@
             <editionStmt>
                 <edition n="1.0">
                     <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
-                    <date when="2010-10-25">October 25, 2010</date>
+                    <date when="2018-01-29">January 29, 2018</date>
                     <!--The notes version for all first passes is 1.0.-->
                     <title>Notes Version 1.0</title>
                 </edition>
@@ -55,16 +60,16 @@
         <body>
             <div type="note">
                 <head  type="title">Gertrude Atthill</head>
-                <p>As granddaughter of Ruskin&#x02BC;s cousin, Mary Richardson, Atthill both
+                <p>As granddaughter of ><persName corresp="#JR">Ruskin</persName>&#x02BC;s cousin, <persName corresp="#MRC">Mary Richardson</persName>, <persName corresp="#MGPBA">Atthill</persName> both
                     inherited and purchased a collection related to Ruskin family history. Items
-                    from the early years included Mary Richardson&#x02BC;s diaries of 1833 and
-                    1840&#x2013;41 (now at the Huntington Library <!--Entry needed here.-->), and one of her sketchbooks
-                    (now at Brantwood); and the portraits of Margaret Ruskin, by James Northcote,
-                    and of John James Ruskin, by <!--Entry needed here.--> Watson (both now at Brantwood). Dearden
-                    speculated that all the Ruskin drawings listed in the <hi rend="italic"
-                        >Catalogue of Drawings</hi> (<hi rend="italic">Works</hi> 38:<!--Entry needed here.-->) as owned by
-                    J. J. Bolding (Atthill&#x02BC;s father) belonged to her, as well, but these
-                    had disappeared (see Deaden, &#x201C;Mrs Gertrude Atthill&#x201D;).</p>
+                    from the early years included <persName corresp="#MRC">Mary Richardson</persName>&#x02BC;s diaries of <date when="1833">1833</date> and
+                    <date notBefore="1840" notAfter="1841">1840&#x2013;41</date> (now at the <orgName corresp="#HUNTINGTONG">Huntington Library</orgName> <!--Entry needed here.-->), and one of her sketchbooks
+                    (now at <placeName corresp="#BRANTWOOD">Brantwood</placeName>); and the portraits of <persName corresp="#MR">Margaret Ruskin</persName>, by <persName corresp="#JNORTHCOTE">James Northcote</persName>,
+                    and of <persName corresp="#JJR">John James Ruskin</persName>, by <!--Entry needed here.--> Watson (both now at <placeName corresp="#BRANTWOOD">Brantwood</placeName>). <persName corresp="#JSD">Dearden</persName>
+                    speculated that all the <persName corresp="#JR">Ruskin</persName> drawings listed in the <hi rend="italic"
+                        >Catalogue of Drawings</hi> (<title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> 38:<!--Entry needed here.-->) as owned by
+                    <persName corresp="#JJBOLDING">J. J. Bolding</persName> (<persName corresp="#MGPBA">Atthill</persName>&#x02BC;s father) belonged to her, as well, but these
+                    had disappeared (see <persName corresp="#JSD">Dearden</persName>, &#x201C;Mrs Gertrude Atthill&#x201D;).</p>
             </div>
         </body>
     </text>
