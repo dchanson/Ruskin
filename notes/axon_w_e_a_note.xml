@@ -19,6 +19,11 @@
                     <persName xml:id="CWB">Charles W. Borchers, IV</persName>
                     <resp>contributing encoding</resp>
                 </respStmt>
+                <respStmt>
+                    <!--For XML:ID, enter your initials.-->
+                    <persName xml:id="AEH">Aimee E. Harris</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
                     Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
@@ -28,7 +33,7 @@
             <editionStmt>
                 <edition n="1.0">
                     <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
-                    <date when="2010-10-25">October 25, 2010</date>
+                    <date when="2018-01-30">January 30, 2018</date>
                     <!--The notes version for all first passes is 1.0.-->
                     <title>Notes Version 1.0</title>
                 </edition>
@@ -54,17 +59,17 @@
     <text>
         <body>
             <div type="note">
-                <head type="title">W. E. A. Axon (1846&#x2013;1913)</head>
-                <p>Among the first bibliographers of Ruskin, William Edward Armytage Axon was a prolific and
-                    wide&#x2010;ranging scholar. He worked at the Manchester Free Library and for
-                    the <hi rend="italic">Manchester Guardian</hi>, and he was active in numerous
-                    organizations, including the Manchester Literary Club. He contributed significantly to the study of local Lancashire history and literature 
-                    (<ref type="bibliography" target="bibliography.html#AXONDNB">Hollingworth, &#x201C;Axon&#x201D;</ref>).</p> 
-                <p>John Carter lists Axon among &#x201C;that group of collectors which from the eighties onwards were concentrating on first editions of the Romantic 
+                <head type="title"><persName corresp="#WEA">W. E. A. Axon</persName> (<date notBefore="1846" notAfter="1913">1846&#x2013;1913</date>)</head>
+                <p>Among the first bibliographers of <persName corresp="#JR">Ruskin</persName>, <persName corresp="#WEA">William Edward Armytage Axon</persName> was a prolific and
+                    wide&#x2010;ranging scholar. He worked at the <orgName corresp="#MANCHESTERFREELIBRARY">Manchester Free Library</orgName> and for
+                    the <orgName corresp="#THEGUARDIAN"><hi rend="italic">Manchester Guardian</hi></orgName>, and he was active in numerous
+                    organizations, including the <orgName corresp="#MANCHESTERLITERARYCLUB">Manchester Literary Club</orgName>. He contributed significantly to the study of local <placeName corresp="#LANCASHIRE">Lancashire</placeName> history and literature 
+                    (<ref type="bibliography" target="bibliography.html#AXONDNB"><persName corresp="#BCHOLLINGWORTH">Hollingworth</persName>, <title type="dictionary_entry" corresp="#AXONDNB">&#x201C;Axon&#x201D;</title></ref>).</p> 
+                <p><persName corresp="#JC">John Carter</persName> lists <persName corresp="#WEA">Axon</persName> among &#x201C;that group of collectors which from the eighties onwards were concentrating on first editions of the Romantic 
                     and Victorian authors, and particularly on the poets&#x201D; 
-                    (<ref type="bibliography" target="bibliography#BOOKCOLLECTORS.html">Carter, <hi rend="italic">Books and Book-Collectors</hi></ref>, 17). 
-                    It was in the <hi rend="italic">Papers of the Manchester Literary Club</hi> that Axon published <!--Entry needed here.-->.</p>
-                <p>Relevant contributions to the <hi rend="italic">Papers</hi> include <!--Entry needed here.-->.</p>
+                    (<ref type="bibliography" target="bibliography#CARTERBOOKCOLLECTORS.html"><persName corresp="#JC">Carter</persName>, <title type="book" corresp="#CARTERBOOKCOLLECTORS"><hi rend="italic">Books and Book&#x2010;Collectors</hi></title></ref>, 17). 
+                    It was in the <title type="book" corresp="#MANCHESTERLITCLUBPAPERS"><hi rend="italic">Papers of the Manchester Literary Club</hi></title> that <persName corresp="#WEA">Axon</persName> published <!--Entry needed here.-->.</p>
+                <p>Relevant contributions to the <title type="book" corresp="#MANCHESTERLITCLUBPAPERS"><hi rend="italic">Papers</hi></title> include <!--Entry needed here.-->.</p>
             </div>
         </body>
     </text>

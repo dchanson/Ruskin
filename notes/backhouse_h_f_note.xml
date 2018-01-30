@@ -33,6 +33,11 @@
                     <persName corresp="#KBV">Kyle B. Volkmann</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last initials.-->
+                    <persName xml:id="AEH">Aimee E. Harris</persName>
+                    <resp>contributing encoding/review</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
                     Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
@@ -42,7 +47,7 @@
             <editionStmt>
                 <edition n="1.0">
                     <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
-                    <date when="2012-09-04">September 4, 2011</date>
+                    <date when="2018-01-30">January 30, 2018</date>
                     <!--The notes version for all first passes is 1.0.-->
                     <title>Notes Version 1.0</title>
                 </edition>
@@ -69,17 +74,17 @@
         <body>
             <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
             <div type="note" subtype="biographical">
-                <head type="title">Henry Fleetwood Backhouse (1818/19&#x2013;1901)</head>
-                <p><persName corresp="#HFB">Backhouse</persName>, the dedicatee of <ref type="note" subtype="bibliographical" target="bibliography_of_ruskin_shepherd_note"><title type="reference" corresp="#RUSKINBIBLIOGRAPHY" rend="italic">Bibliography of Ruskin</title> (1878&#x2013;81)</ref> by 
-                    <ref type="note" subtype="biographical" target="shepherd_r_h_note.php">Richard Herne Shepherd</ref>, was an artist and wood engraver. 
+                <head type="title"><persName corresp="#HFB">Henry Fleetwood Backhouse</persName> (<date notBefore="1818" notAfter="1901">1818/19&#x2013;1901</date>)</head>
+                <p><persName corresp="#HFB">Backhouse</persName>, the dedicatee of <ref type="note" subtype="bibliographical" target="bibliography_of_ruskin_shepherd_note"><title type="reference" corresp="#RUSKINBIBLIOGRAPHY" rend="italic">Bibliography of Ruskin</title> (<date notBefore="1878" notAfter="1881">1878&#x2013;81</date>)</ref> by 
+                    <ref type="note" subtype="biographical" target="shepherd_r_h_note.php"><persName corresp="#RHS">Richard Herne Shepherd</persName></ref>, was an artist and wood engraver. 
                     He was born in <placeName corresp="#LIVERPOOL">Liverpool</placeName> to <persName corresp="#RBRHSMOTHER">Ruth</persName>, 
                     wife of <persName corresp="#TBRHSFATHER">Thomas Backhouse</persName>, whose occupation was a sailmaker, 
-                    according to <ref type="bibliography" target="bibliography.php#BACKHOUSEBAPTISM">&#x201C;Baptisms at St Peter in the City of Liverpool&#x201D; (Register for 1818&#x2013;1819&#x201D;)</ref>, 
+                    according to <ref type="bibliography" target="bibliography.php#BACKHOUSEBAPTISM">&#x201C;Baptisms at St Peter in the City of Liverpool&#x201D; (Register for <date notBefore="1818" notAfter="1819">1818&#x2013;1819&#x201D;</date>)</ref>, 
                     or a wine merchant, according to the entry in the <title type="reference" corresp="#DICTIONARYBIOGRAPHY" rend="italic">Dictionary of National Biography</title> 
-                    for his wife, the artist <persName corresp="#MBH">Margaret Backhouse</persName>, n&#x00E9;e Holden (1818&#x2013;96). 
-                    (<ref type="bibliography" target="bibliography.php#BACKHOUSEDNB">Yeldham, &#x201C;Margaret Backhouse&#x201D;)</ref>. 
+                    for his wife, the artist <persName corresp="#MBH">Margaret Backhouse</persName>, n&#x00E9;e Holden (<date notBefore="1818" notAfter="1896">1818&#x2013;96</date>). 
+                    (<ref type="bibliography" target="bibliography.php#BACKHOUSEDNB"><persName corresp="#CYELDHAM">Yeldham</persName>, <title type="dictionary_entry" corresp="#BACKHOUSEDNB">&#x201C;Margaret Backhouse&#x201D;)</title></ref>. 
                     One of their daughters, <persName corresp="#MBHDAUGHTER">Mary</persName>, was also an artist. <persName corresp="#HFB">Backhouse</persName> died 
-                    in <placeName corresp="#KEW">Kew</placeName>Kew, <placeName corresp="#LONDON">London</placeName>, and was buried in East Sheen and Richmond Cemeteries<!--Should this be tagged with a placeName?  If so, is it a single entity?-->
+                    in <placeName corresp="#KEW">Kew</placeName>, <placeName corresp="#LONDON">London</placeName>, and was buried in <placeName corresp="#EASTSHEENCEMETERY">East Sheen and Richmond Cemeteries</placeName><!--Should this be tagged with a placeName?  If so, is it a single entity?-->
                     (<ref type="bibliography" target="bibliography.php#BACKHOUSEGRAVE">&#x201C;Henry Fleetwood Backhouse&#x201D; [Grave])</ref>)</p>
             </div>
         </body>
