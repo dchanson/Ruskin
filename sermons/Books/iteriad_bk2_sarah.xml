@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#SEM">Sarah Elizabeth Montelepre</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#SEP">Steven Eric Petite</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS VII</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="MSVIIp26.jpeg MSVII31r.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="2">
+                            <handNote corresp="#HANDJR1830-31" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1830" notAfter="1831">1830-31</date>,
+                                    examples of which can be found in MS VII, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                            <handNote corresp="#HANDUNKNOWN" scribe="UNKNOWN"></handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="poem" facs="MSVIIp26">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Iteriad: Book second</head>
+                <lg type="stanza" rhyme="aa">
+                    <l><space quantity="16" unit="chars"/>Book second<space quantity="23" unit="chars"/></l>
+                    <l><space quantity="14" unit="chars"/>The argument<space quantity="22" unit="chars"/></l>
+                    <l>Excursions about <placeName corresp="#KESWICK">Keswick</placeName> &#x0026; expedition to <geogName corresp="#BUTTERDMERE">Buttermere</geogName></l>
+                    <l>Walk to the lake Washing clothes Missing our way As&#x2010;</l>
+                    <l>cending a hill Sitting on the top Returning</l>
+                    <l><placeName corresp="#CROSTHWAITESM">Crosthwaites museum</placeName> Church Mr <persName corresp="#RS">Southey</persName></l>
+                    <l>Setting off for <placeName corresp="#BORROWDALE">Borrowdale</placeName> Straits of <placeName corresp="#BORROWDALE">Borrow&#x2010;<!--rest of place name on next line--></placeName></l>
+                    <l>dale The dale itself <geogName corresp="#BOWDERSTONE">Bowder stone</geogName> Ascen&#x2010;</l>
+                    <l>ding the mountains <geogName corresp="#HONISTARCRAG">Honistar crag</geogName> <geogName corresp="#BUTTERMERE">Butter<!--rest of geog name on next line--></geogName></l>
+                    <l>mere Thunder storm return <del rend="strikethrough">h</del> to <placeName corresp="#KESWICK">Keswick</placeName></l>
+                    <!--decorative symbol-->
+                    <l>When breakfast was done on the following day</l>
+                    <l><hi rend="bold">A</hi>s impatient we were <geogName corresp="#DERWENTWATER">Derwent lake</geogName> to survey</l>
+                    <l>We determined a walk to its banks we would take</l>
+                    <l>And therefore inquired the way to the lake</l>
+                    <l><add rend="linenumber-left-JR">5</add><hi rend="bold">Tho</hi>ugh the sun in his noon and meridian <add type="runover" place="above"><space quantity="37" unit="chars"/>glory</add></l>
+                    <l>Was seeming to tell us a different story</l>
+                    <l>And that if we attempted to walk to the lake</l>
+                    <l>Our faces he,d broil and our hands he would <add type="runover" place="above"><space quantity="39" unit="chars"/>bake</add></l>
+                    <l>Till too much oppressed and enraged with the <add type="runover" place="above"><space quantity="42" unit="chars"/>heat</add></l>
+                    <pb facs="MSVIIp27"/>
+                    <l><add rend="linenumber-left-JR">10</add>In its bosom we,d souse with an unlucky leap</l>
+                    <l>For his threatenings we did not a fiddlestick care</l>
+                    <l>And astonished we were how atall he could <add type="runover" place="above"><space quantity="40" unit="chars"/>dare</add></l>
+                    <l>We bade him his heat keep it all to himself</l>
+                    <l>We,d evade him by force or evade him by stealth</l>
+                    <l><add rend="linenumber-left-JR">15</add>We shelter would seek or some wood shaded place</l>
+                    <l>Or pop up some green parasols in his face</l>
+                    <l>Or if uninterrupted continual he shined</l>
+                    <l>Why then all his roastings we,d not atall mind</l>
+                    <l>For we <del rend="strikethrough">we</del> would not for any thing stay from <add type="runover" place="above"><space quantity="37" unit="chars"/>our ramble</add></l>
+                    <l><add rend="linenumber-left-JR">20</add>So thou proud haughty sun let thy majesty <add type="runover" place="above"><space quantity="41" unit="chars"/>tremble</add></l>
+                    <l>Now on by a path through the meadows <add type="runover" place="above"><space quantity="31" unit="chars"/>we stray</add></l>
+                    <l>All rich with the fragrance of newly mown <add type="runover" place="above"><space quantity="38" unit="chars"/>hay</add></l>
+                    <l>Each outracing the other with much emulation</l>
+                    <l>To arrive at the top of some small elevation</l>
+                    <l><add rend="linenumber-left-JR">25</add>Till the sheet where the dark water still onward flows</l>
+                    <l>Lay not at our feet but in front of our nose</l>
+                    <l>A shout burst from all while each one of us strove</l>
+                    <l>We had first seen the blue billow rolling to <add type="runover" place="above"><space quantity="41" unit="chars"/>prove</add></l>
+                    <l>I first saw the lake No no no it was I</l>
+                    <l><add rend="linenumber-left-JR">30</add>Till mamma checked us all with a mum&#x2010;<add type="runover" place="above"><space quantity="32" unit="chars"/>making tie</add></l>
+                    <pb facs="MSVIIp28"/>
+                    <l>We stood on the beach whence some small <add type="runover" place="above"><space quantity="34" unit="chars"/>piers of stone</add></l>
+                    <l>Forth into the water some distance were thrown</l>
+                    <l>While a fleet of small boats there at anchorage <add type="runover" place="above"><space quantity="44" unit="chars"/>hung</add></l>
+                    <l>And dividing the ripples they carelessly swung</l>
+                    <l><add rend="linenumber-left-JR">35</add>But there on the beach and with shame be it <add type="runover" place="above"><space quantity="38" unit="chars"/>(said</add></l>
+                    <l>Some women were washing Oh women indeed</l>
+                    <l>Disfiguring the <geogName corresp="#DERWENTWATER">Derwent</geogName> their linen were washing</l>
+                    <l>And tubbing and wetting and splashing and dashing</l>
+                    <l>Then hung them all out on the boughs to be dried</l>
+                    <l><add rend="linenumber-left-JR">40</add>And clothed with a margin of linen the tide</l>
+                    <l>Oh <name type="fictional" corresp="#JUPITER">Jupiter</name> dost thou in calmness yet see</l>
+                    <l>Are the shores of the <geogName corresp="#DERWENTWATER">Derwent</geogName> as nothing to thee</l>
+                    <l>Do these women not yet feel thy well&#x2010;deserved rage</l>
+                    <l>Oh, <name type="fictional" corresp="#JUPITER">Jupiter</name> though must be blinded with age</l>
+                    <l><add rend="linenumber-left-JR">45</add>Blind? yes quite stark blind from the length of thy life</l>
+                    <l>Or opposing<!--"calming" written directly below-->the scolds of thy crabbed old wife</l>
+                    <l>It is a complete a most excellent sign</l>
+                    <l>That the all seeing eye, it no longer is thine</l>
+                    <l>But give <name type="fictional" corresp="#JUPITER">Jove</name> oh give thy great God shaking frown</l>
+                    <l><add rend="linenumber-left-JR">50</add>And let on these women thine anger come down</l>
+                    <l>And now having passed through a sunshading wood</l>
+                    <pb facs="MSVIIp29"/>
+                    <l>On a point of rough rocks oer the waters we stood</l>
+                    <l>The roots of the fir of the elm and the oak</l>
+                    <l>Through the rock covering soil they a passage had broke</l>
+                    <l><add rend="linenumber-left-JR">55</add>And oh they presented such nets for the toes</l>
+                    <l>We were always in danger of breaking our nose</l>
+                    <l>Below us upon the dark wave&#x2010;beaten rock</l>
+                    <l>The white angry billows their foaming crests broke</l>
+                    <l>As soothing the ear with a neer&#x2010;ceasing dashing</l>
+                    <l><add rend="linenumber-left-JR">60</add>And moistening the moss and the weeds with their splashing.</l>
+                    <l>And now some small height we did wish to attain</l>
+                    <l>A view of the lake and the valley to gain</l>
+                    <l>And so in returning turned off by a way</l>
+                    <l>Which we thought tow&#x02BC;rd a treecovered eminence lay</l>
+                    <l><add rend="linenumber-left-JR">65</add>It entered a wood we still kept going on</l>
+                    <l>Completely shut out from the light of the sun</l>
+                    <l>No part of the scene the confused eye sees</l>
+                    <l>Save copses on copses and trees upon trees</l>
+                    <l>Till the path in the forest bewildringly tost</l>
+                    <l><add rend="linenumber-left-JR">70</add>All points of the compafs completely were lost</l>
+                    <l>North, east, west, or south from each other not knowing</l>
+                    <l>With all kinds of conjectures how, where we were going</l>
+                    <pb facs="MSVIIp30"/>
+                    <l>Although it afforded a great deal of fun</l>
+                    <l>We shall soon find a path through the meadows says one</l>
+                    <l><add rend="linenumber-left-JR">75</add>Lawkadaisy that bough nearly knocked off my hat</l>
+                    <l>One of us says this and another says that</l>
+                    <l>We are nearing the lake or at <del rend="strikethrough">at</del> an&#x02BC;rate we ought to be</l>
+                    <l>Well I declare that a most excellent thought to be</l>
+                    <l>Thus wondring we sepent like twisted about</l>
+                    <l><add rend="linenumber-left-JR">80</add>Till just where we got in twas just there we got out</l>
+                    <l>And we this occurence determined quite by</l>
+                    <l>Not any more by paths uncertain to try</l>
+                    <l>We left the fair lake where so azure it flowed</l>
+                    <l>And hotly set off by the <placeName corresp="#BORROWDALE">Borrowdale</placeName> road</l>
+                    <l><add rend="linenumber-left-JR">85</add>And laughing and chafing and gazing and toiling</l>
+                    <l>Perspiring and frying and roasting and boiling</l>
+                    <l>Glad gladly the sheltering wood we surveyed</l>
+                    <l>Which promised to cool and to soothe with its shade</l>
+                    <l>The track it was steep thorny rugged and rocky</l>
+                    <l><add rend="linenumber-left-JR">90</add>As it angled and turned round the oak trees so knotty</l>
+                    <l>Some decaying <del rend="strikethrough">was</del> were but a vast gray hollow shell</l>
+                    <l>Of former young grandeur and might they did tell</l>
+                    <l>And the soil which hung thick round their huge roots far spreading</l>
+                    <pb facs="MSVIIp31"/>
+                    <l>Formed steps trunk supported where&#x2010;eer we were treading</l>
+                    <l><add rend="linenumber-left-JR">95</add>We pulled up the hill and we turned round about</l>
+                    <l>And we crossed and we recrossed within and without</l>
+                    <l>To all parts of the wood we full pryingly rambled</l>
+                    <l>Over stone over rock we impatiently scrambled</l>
+                    <l>Oh we shall not get up to the summit this hour</l>
+                    <l><add rend="linenumber-left-JR">100</add>Oh mamma I have got such a beautiful flow&#x02BC;r</l>
+                    <l>Heres a violet Look mamma Pray papa do</l>
+                    <l>What is this of rich crimson this delicate blue</l>
+                    <l>This moss of a bright living green do behold</l>
+                    <l>And here is a cowslip the goblet of gold</l>
+                    <l><add rend="linenumber-left-JR">105</add>Look under the moss there it cannot be sage! Ah</l>
+                    <l>What can that queer thing be, tis a saxifrage</l>
+                    <l>And heres <hi rend="bold">L</hi>adies slipper and heres Ladies smock</l>
+                    <l>And this Oh dont touch it its poison Hemlock</l>
+                    <l>And many more flowers mid the forest which grew</l>
+                    <l><add rend="linenumber-left-JR">110</add>Whose names Ive forgot or perhaps never knew</l>
+                    <l>Now the rocks gave us rather more trouble to climb</l>
+                    <l>And rather more labour and took us more time</l>
+                    <l>For the slippery moss always set us a sliding</l>
+                    <l>Insomuch that <hi rend="bold">We</hi> could not atall it confide in</l>
+                    <pb facs="MSVIIp32"/>
+                    <l><add rend="linenumber-left-JR">115</add>Except where in velvety cushings it grows</l>
+                    <l>And kindly invited our rock fatigued toes</l>
+                    <l>These troublesome stones I am always a stumbling</l>
+                    <l>Hollo Whats that there I was nearly a tumbling</l>
+                    <l>What do not you think we the summit are near</l>
+                    <l><add rend="linenumber-left-JR">120</add>Oh give me your hand so pray help me up here</l>
+                    <l>Till emerging from under a<del rend="strikethrough">an</del> thick stunted tree</l>
+                    <l>An old rotten seat on the summit we see</l>
+                    <l>The people before to this summit who came</l>
+                    <l>Had carved or had knocked on its surface their name</l>
+                    <l><add rend="linenumber-left-JR">125</add>And had covered the seat with no spaces between each</l>
+                    <l>Oh mighty conceit so like cockneys at <placeName corresp="#GREENWICH">Greenwich</placeName></l>
+                    <l>But twast so decrepid so old and decayed</l>
+                    <l>To trust to its legs we were somewhat afraid</l>
+                    <l>Lest tumbling as if they had sat upon wheels</l>
+                    <l><add rend="linenumber-left-JR">130</add>It had landed our heads in the place of our heels</l>
+                    <l>So some on a rock that was cushioned with moss</l>
+                    <l>And some on the June tinted brown turf repose</l>
+                    <l>Stretched out upon earths verdant bosom we rest</l>
+                    <l>But tear her young flowers from her nourishing breast</l>
+                    <l><add rend="linenumber-left-JR">135</add>Which forth to our hands she luxuriantly poured</l>
+                    <pb facs="MSVIIp33"/>
+                    <l>Thou sayest that it was but a cruel reward</l>
+                    <l>The scene which we saw I so often shall treat of</l>
+                    <l>Twould be needless at present its beauties to speak of</l>
+                    <l>But time flew away on the wings of the wind</l>
+                    <l><add rend="linenumber-left-JR">140</add>While still at the summit we lingered behind</l>
+                    <l>Oh the rogue How I do wish that catch him I could</l>
+                    <l>I,d teach him to fly slower ay that I would</l>
+                    <l>Before I would let him from my fingers slip</l>
+                    <l>That he might not be able his wings I would clip</l>
+                    <l><add rend="linenumber-left-JR">145</add>I&#x02BC;d give him a wig and in in case that the wig fail</l>
+                    <l>In order to catch him I&#x02BC;d give him a pigtail</l>
+                    <l>But twould be a fine thing Oh I should be blythe</l>
+                    <l>If I could but snatch from his fingers the scythe</l>
+                    <l>Oh what would the ladies say unto me then</l>
+                    <l><add rend="linenumber-left-JR">150</add>And what the old women and what would the men</l>
+                    <l>The ladies no longer regard would each hour</l>
+                    <l>If over their beauty old Time had no pow&#x02BC;r</l>
+                    <l>And even the men if they young could appear</l>
+                    <l>They would not (so much at least) growing old fear</l>
+                    <l><add rend="linenumber-left-JR">155</add>And I do believe that when once he found out</l>
+                    <l>That hes coming or going none winded about</l>
+                    <pb facs="MSVIIp34"/>
+                    <l>And that for his presence there cared not a lump any</l>
+                    <l>That really he&#x02BC;d give us much more of his company</l>
+                    <l>However we gladly the hill stumbled down</l>
+                    <l><add rend="linenumber-left-JR">160</add>And onwards we galloped in haste to the town</l>
+                    <l>And sheltered our heads from the suns burning ray</l>
+                    <l>In the royal oaks parlour the rest of the day</l>
+                    <l>But the weather how terribly much twas to blame</l>
+                    <l>When the next mornings dawning proved heavy with <add type="runover" place="above"><space quantity="42" unit="chars"/>rain</add></l>
+                    <l><add rend="linenumber-left-JR">165</add>But a proof to the showrs of their weakness to gie em</l>
+                    <l>We determined to step into <placeName corresp="#CROSTHWAITEM">Crosthwaites museum</placeName></l>
+                    <l>And scrambled we first up an oldfashioned stair</l>
+                    <l>All Indian weapons and paddles were there</l>
+                    <l>I am sure no description is needed of these</l>
+                    <l><add rend="linenumber-left-JR">170</add>For in every museum some of them one sees</l>
+                    <l>But the thing which our eyes upon entering struck</l>
+                    <l>Was a hugeous gigantical rib bone hung up</l>
+                    <l><persName corresp="#CROSTHWAITE">Mr Crosthwaite</persName> took plenty of hours to explain</l>
+                    <l>This prodigy to be a fossil remain</l>
+                    <l><add rend="linenumber-left-JR">175</add>He told us (believe it or not as you can)</l>
+                    <l>Twas the bone (or it had been the bone) of a man</l>
+                    <l>And twas proved and that by a good calcalation</l>
+                    <pb facs="MSVIIp35"/>
+                    <l>That twenty one feet had been his elevation</l>
+                    <l>Imagine the fellow just stagg&#x02BC;ring along</l>
+                    <l><add rend="linenumber-left-JR">180</add>Like a moving church steeple parading it on</l>
+                    <l>I do not know what kind of monsters were then.</l>
+                    <l>Perhaps they were all <name type="fictional" corresp="#BROBDINGNAG">Brobdignagian</name> men</l>
+                    <l>But imagine him taking a walk in the street</l>
+                    <l>Forthe lovers of wonders oh then what a treat</l>
+                    <l><add rend="linenumber-left-JR">185</add>I think he would first play the notable trick</l>
+                    <l>Of the monument taking for his walking stick</l>
+                    <l>And an omnibus next kicking oer with his toe</l>
+                    <l>Exclaim in stentorian accents Hullo</l>
+                    <l>These troublesome stones&#x2014; Tis a terrible pity.</l>
+                    <l><add rend="linenumber-left-JR">190</add>They have paved so tremendously badly the city</l>
+                    <l>But the reader he will not have patience to read</l>
+                    <l>These nonsensical frolics and I must proceed</l>
+                    <l>To a gong which on high from the roof was suspended</l>
+                    <l>Whose noise we all thought never was to be ended</l>
+                    <l><add rend="linenumber-left-JR">195</add>I think that as hard as a stone was his pate</l>
+                    <l>And as deaf as a post is was <persName corresp="#CROSTHWAITE">Mr Crosthwaite</persName></l>
+                    <l>For he thwacked and he whacked and he beat and he bang,d</l>
+                    <l>And the gong in our ear so incessantly clangd</l>
+                    <pb facs="MSVIIp36"/>
+                    <l>Till we thought that at each and at every knock</l>
+                    <l><add rend="linenumber-left-JR">200</add>We should be obliged our ears for to stop</l>
+                    <l>And now when at last he would let it alone</l>
+                    <l>Some Indian Idols unto us were shown</l>
+                    <l>To the lovers of oddities let it not seem odd</l>
+                    <l>That I could have made as good out of a bean pod</l>
+                    <l><add rend="linenumber-left-JR">205</add>Such kind of hole<add place="above"><space quantity="14" unit="chars"/>pale?<!--pencil--></add> eyes such a parroty nose</l>
+                    <l>Such straight stick like legs and such nothing like toes</l>
+                    <l>That really I do not know what them to call</l>
+                    <l>But queerly formed figures of no form atall</l>
+                    <l>Now where playful the breezes each other they chased</l>
+                    <l><add rend="linenumber-left-JR">210</add>An<del rend="strikethrough">d</del> Eolian harp in the window was placed</l>
+                    <l>And the wind on its whispering murmuring wings</l>
+                    <l><hi rend="bold">L</hi>ight wand&#x02BC;ring amongst them scare touched the strings</l>
+                    <l>And followed the cadences nature alone</l>
+                    <l>Could have given that wild yet harmonious tone</l>
+                    <l><add rend="linenumber-left-JR">215</add>Now calmly it sunk in a low sighing breath</l>
+                    <l><hi rend="bold">L</hi>ike the accents of mourning th, attendant of death</l>
+                    <l>When the hollow grave sounds as returning the moan</l>
+                    <l>And sobs half suppressed mingled<!--'d' scratched out in pencil--> in with the song</l>
+                    <l>Then rose on our ears the high soundings of war</l>
+                    <pb facs="MSVIIp37"/>
+                    <l><add rend="linenumber-left-JR">220</add>When the brazenlipped trumpet is heard from afar</l>
+                    <l>When the echoing drum beats its rage rousing note</l>
+                    <l>And the battle breath bursts from the pipes shrilly throat</l>
+                    <l>So varied the sounds which the swift breezes poured</l>
+                    <l>And with numbers of harmony vibrates the chord</l>
+                    <l><add rend="linenumber-left-JR">225</add>Now coated with dust and hung up on the wall</l>
+                    <l>A wonderful mirror was shown unto all</l>
+                    <l>And those who would stand in a certain position</l>
+                    <l>Seemed to come with their own image into collision</l>
+                    <l>I dont mean the glass it was not atall there</l>
+                    <l><add rend="linenumber-left-JR">230</add>But a queer kind of image seemed painted on air</l>
+                    <l>So each with himself after one kindly look</l>
+                    <l>His hands as a token of kindness he shook</l>
+                    <l>And then we beheld where the minerals lay</l>
+                    <l>And the copper shone bright with its golden like ray.</l>
+                    <l><add rend="linenumber-left-JR">235</add>And next we were shown upon quite a new plan&#x2010;O</l>
+                    <l>And kind of a sort of a stoney piano</l>
+                    <l>Some stones in the bed of the <geogName corresp="#GRETAS">Gretas&#x2010;stream</geogName> found</l>
+                    <l>Emitted when struck a most musical sound</l>
+                    <l>But as some sounded high and as some sounded low</l>
+                    <l><add rend="linenumber-left-JR">240</add>They were ranged in the order of notes in a row</l>
+                    <pb facs="MSVIIp38"/>
+                    <l>And <persName corresp="#CROSTHWAITE">mr Crosthwaite</persName> on their sides gan to patter</l>
+                    <l>A tune with a kind of a musical clatter</l>
+                    <l>From one end of his row to the other end ranging</l>
+                    <l>And rattling and thumping and <hi rend="bold">Ch</hi>opping and changing</l>
+                    <l><add rend="linenumber-left-JR">245</add>But this though twas bearable finished he soon</l>
+                    <l>And ushered us into another small room</l>
+                    <l>Which was almost filled up by a monstrous white bear</l>
+                    <l>Whose most wonderful wonder was how it got there</l>
+                    <l>With its master and every thing else of a piece</l>
+                    <l><add rend="linenumber-left-JR">250</add>Full of a dust full of dirt full of age full of grease</l>
+                    <l>And on the shelves round birds of every feather</l>
+                    <l>Hawks owls parrots eagles and magpies together</l>
+                    <l>And now having looked all his rooms well about</l>
+                    <l>From <placeName corresp="#CROSTHWAITEM">Crosthwaites museum</placeName> we all trotted out</l>
+                    <l><add rend="linenumber-left-JR">255</add>And as the sky looked quite as dark as before</l>
+                    <l>That day we determined to ramble no more</l>
+                    <l>But twas settled that next day if fine was the weather</l>
+                    <l>We,d go to the summit of <geogName corresp="#SKIDDAW">Skiddaw</geogName> together</l>
+                    <l>Next morning whose fineness so much we had hoped</l>
+                    <l><add rend="linenumber-left-JR">260</add>As soon as our eyelids completely where oped</l>
+                    <l>We looked to the window but (Oh what a shame)</l>
+                    <pb facs="MSVIIp39"/>
+                    <l>The eaves of the houses were dripping with rain</l>
+                    <l>And down in a pour it most peltingly pattered</l>
+                    <l>On roofs tiles and pavments incessantly clattered</l>
+                    <l><add rend="linenumber-left-JR">265</add>And the coulds oer our heads <hi rend="bold">C</hi>at and <hi rend="bold">D</hi>oggedly storming</l>
+                    <l>They kept us within doors the whole of the morning</l>
+                    <l>But when fair day declined oer gigantic <geogName corresp="#GRASMOOR">Grasmoor</geogName></l>
+                    <l>The bright blushing sun shot his rays on the shore</l>
+                    <l>Then wandered we forth eer the evening should close</l>
+                    <l><add rend="linenumber-left-JR">270</add>And the shadowy mountains should sink to repose</l>
+                    <l>To gaze on his glory we wandered forth</l>
+                    <l>And on the last margin of pebbles we sport</l>
+                    <l>Now casting a stone in the deep drowsy lake</l>
+                    <l>To watch how the plunge would its smoothness break</l>
+                    <l><add rend="linenumber-left-JR">275</add>While ripples on ripples succeedingly pour</l>
+                    <l>And chasing each other till driven on shore</l>
+                    <l>And hurried we home and while taking our tea</l>
+                    <l>Now thought Mr<persName corresp="#RS">Southey</persName> at Church we might see</l>
+                    <l>And then unto sleep we our bodies resigned</l>
+                    <l><add rend="linenumber-left-JR">280</add>And sunk in oblivian and silence our mind</l>               
+                    <l>Next morn to the church how we wished for the reaching</l>
+                    <l>Im afraid twas as much for the poet as preaching</l>
+                    <pb facs="MSVIIp40"/>
+                    <l>And Ohwhat a shame were shown into a seat</l>
+                    <l>With every thing save what was wanted replete</l>
+                    <l><add rend="linenumber-left-JR">285</add>And so dirty and greasy though many times dusted</l>                
+                    <l>The ladies all thought it could never be trusted</l>
+                    <l>First looking at seat and again upon flounce</l>
+                    <l>And dusting and gazing for fear of their gowns</l>
+                    <l>I think all the time they took such mighty care</l>
+                    <l><add rend="linenumber-left-JR">290</add>They sat upon thorns and perhaps upon air</l>              
+                    <l>Howeer I forgave &#x02BC;deed I scarcly did know it</l>
+                    <l>For really we were cheek by jowl with the poet</l>
+                    <l>His hair was no colour atall by the way</l>
+                    <l>But half oft was black slightly scattered with grey</l>
+                    <l><add rend="linenumber-left-JR">295</add>His eyes were as black as a coal but in turning</l>              
+                    <l>They flashed Ay as much as that coal does in burning</l>
+                    <l>His nose in the midst took a small outward bend</l>
+                    <l>Rather hooked like an eagles and sharp at the end</l>
+                    <l>But his dark lightning eye made him seem half inspired</l>
+                    <l><add rend="linenumber-left-JR">300</add>Or like his own <title type="poem" corresp="#THALABATHEDESTROYER">Thalaba</title> vengefully fired</l>              
+                    <l>We looked and we gazed and we stared in his face</l>
+                    <l>Marched out at a slow stopping lingering pace</l>
+                    <l>And as towards <placeName corresp="#KESWICK">Keswick</placeName> delighted we walked</l>
+                    <pb facs="MSVIIp41"/>
+                    <l>Of his face and his form and his features we talked</l>
+                    <l><add rend="linenumber-left-JR">305</add>With various chatter beguiling the day</l>
+                    <l>Till the sun disappeared and the light fled away</l>
+                    <l>The morning appeared with a great face of doubt</l>
+                    <l>Or to make us keep in or to let us go out</l>
+                    <l>And at the first opening of joy bringing dawn</l>
+                    <l><add rend="linenumber-left-JR">310</add>Dark cloaks of thick clouds round the mountains were drawn</l>
+                    <l>We look out at the window call guides after guides<add place="above"><space quantity="56" unit="chars"/><handShift new="#HANDX" script="print" medium="pencil"/><metamark function="unknown">&#x00D7;</metamark></add></l>
+                    <l>Demand whether rain or fair weather betides</l>
+                    <l>The first puts his thumb on one side of his nose</l>
+                    <l>And looks up to the smoke to see how the wind blows</l>
+                    <l><add rend="linenumber-left-JR">315</add>Then pronounces it after a great deal of puffing</l>
+                    <l>&#x201C;<hi rend="underline">A vara bad dai Why you couldnt see nothing</hi></l>
+                    <l>&#x201C;<hi rend="underline">The next Whai ye sees sir Ise cant hardly say</hi></l>
+                    <l>&#x201C;<hi rend="underline">Boot Ise think that it may be a middlin fine day</hi></l>
+                    <l>&#x201C;<hi rend="underline">Another for <geogName corresp="#SKIDDAW">Skudda</geogName> this never will do</hi></l>
+                    <l><add rend="linenumber-left-JR">320</add>&#x201C;<hi rend="underline">But I thinks it prove fine though not fit for a view</hi></l>
+                    <l>&#x201C;<hi rend="underline">And so if you liked it a trip you might take</hi></l>
+                    <l>&#x201C;<hi rend="underline">By <placeName corresp="#BORROWDALE">Borrowdale</placeName> down unto <geogName corresp="#BUTTERMERE">Bootthermere&#x002A; lake</geogName></hi>&#x201D;</l>
+                    <l>Delighted we heard the most capital thought</l>
+                    <l>And at the glad prospect we eagerly caught</l>
+                    <l>&#x002A;<geogName corresp="#BUTTERMERE">Buttermere</geogName> lake</l>
+                    <pb facs="MSVIIp42"/>
+                    <l><add rend="linenumber-left-JR">325</add>But the ladies a little were daunted in courage</l>
+                    <l>When they heard that six mules could be passed by no carriage</l>
+                    <l>And that twould require een a great deal of care</l>
+                    <l>To ride upon sure footed ponies up there</l>
+                    <l>But the more that we heard of its steepness and trouble</l>
+                    <l><add rend="linenumber-left-JR">330</add>Our impatience to vanquish it still became double</l>
+                    <l>Till an open vehicle we ask and a guide</l>
+                    <l>And following steeds for the ladies beside</l>
+                    <l>Which when ready all and prepared we were told</l>
+                    <l>Away from the Inn<!--do I need to tag which inn?--> we most joyfully rolled</l>
+                    <l><add rend="linenumber-left-JR">335</add>By the road to dark<placeName corresp="#BORROWDALE">Borrowdale</placeName> onward we ride</l>
+                    <l>By the wave beaten beach of the <geogName corresp="#DERWENTWATER">Derwent</geogName>s blue tide</l>
+                    <l>How fresh looked the waters a breeze oer them swept</l>
+                    <l>And roused into anger their passionless depth</l>
+                    <l>Till the ripples which rose in its following train</l>
+                    <l><add rend="linenumber-left-JR">340</add>Sunk into their own native silence again</l>
+                    <l>But now we were roused by a few rainy taps</l>
+                    <l>On the ribbon bound bonnets and crowns of the hats</l>
+                    <l>Thus adding a fresh prospect unto the view</l>
+                    <l>The beautiful prospect of being wet through</l>
+                    <l><add rend="linenumber-left-JR">345</add>So covering our knees oer with cloaks and shawls plenteous</l>
+                    <pb facs="MSVIIp43"/>
+                    <l>We erected a kind of a parasol penthouse</l>
+                    <l>Then after a great deal of rain preparation</l>
+                    <l>We awaited the showr with a sad expectation</l>
+                    <l>It cam with a kind of I do not know what to do</l>
+                    <l><add rend="linenumber-left-JR">350</add>What I should, what I could, what I would, <del rend="strikethrough">would</del> what I ought, <add type="runover" place="above"><space quantity="55" unit="chars"/><hi rend="bold">to do</hi></add></l>
+                    <l>We were wondering much what t&#x02BC;was going to be at</l>
+                    <l>And now it was this and again it was that</l>
+                    <l>And the rain it was changeable ay as the wind</l>
+                    <l>Till to shine on our journey it made up its mind</l>
+                    <l><add rend="linenumber-left-JR">355</add>But the sun when at last to peep out he would deign</l>
+                    <l><hi rend="bold">L</hi>ooked as if he&#x02BC;d been troubled as much by <hi rend="strikethrough">of</hi> by the rain</l>
+                    <l>And, vexed at the rain so incessantly storming</l>
+                    <l>Looked as if he&#x02BC;d been crying the whole of the morning</l>
+                    <l>Now in front rose the cliff where mid tumble and roar</l>
+                    <l><add rend="linenumber-left-JR">360</add>The quaking crags quiver neath angry <geogName corresp="#LOWDORE">Lowdore</geogName></l>
+                    <l>But as long was the way and as we were in haste</l>
+                    <l>Its waters those waters of thunder we past</l>
+                    <l>And then we looked back upon <placeName corresp="#KESWICK">Keswick</placeName>s sweet vale</l>
+                    <l>Ere we entered the gorges of dark <placeName corresp="#BORROWDALE">Borrowdale</placeName></l>
+                    <l><add rend="linenumber-left-JR">365</add>Beyond the bright space where the <geogName corresp="#DERWENTWATER">Derwent lake</geogName> flows</l>
+                    <l>More majestic in distance huge <geogName corresp="#SKIDDAW">Skiddaw</geogName> arose</l>
+                    <pb facs="MSVIIp44"/>
+                    <l>And softened the valley was smilingly seen</l>
+                    <l>The lakes azure waters and Islands between</l>
+                    <l>A range of huge mountains rose sheer from its verge</l>
+                    <l><add rend="linenumber-left-JR">370</add>And into the lake their steep pointlets they urge</l>
+                    <l>Where many a gulph tree surrounded was made</l>
+                    <l>Where the wave placid rested completely embayed</l>
+                    <l>While steep to the left the white shepherds crag stood</l>
+                    <l>And their loose slately sides thinly scattered with wood</l>
+                    <l><add rend="linenumber-left-JR">375</add>But now in our front our low road seemed to check</l>
+                    <l>In a chaos of hills a dark mountainous wreck</l>
+                    <l>All traces of verdure and forest were lost</l>
+                    <l>In that dark group of hills all so gloomily tost</l>
+                    <l>Where cliff after cliff and dark rock over rock</l>
+                    <l><add rend="linenumber-left-JR">380</add>Reluctantly seemed at the heavens to stop</l>
+                    <l>Hanging oer the dread dell their huge summits they hurled</l>
+                    <l>At whose foot the fair <geogName corresp="#DERWENTWATER">Derwent</geogName> so crystalline purled</l>
+                    <l>Astonished we passed through that wilderness lone</l>
+                    <l>Till burst on our eyesight dark <geogName corresp="#BOWDERSTONE">Bowder</geogName>s huge stone</l>
+                    <l><add rend="linenumber-left-JR">385</add>A dark rock its high summit right forward did face</l>
+                    <l>And altered the fierce torrents rock beating course</l>
+                    <l>High raised on its brink frowning down on the flood</l>
+                    <pb facs="MSVIIp45"/>
+                    <l>A vast mass of mossy rock dreadfully stood</l>
+                    <l>It seemed from the heights high above as if torn</l>
+                    <l><add rend="linenumber-left-JR">390</add>And down to its wonderful resting place borne</l>
+                    <l>But nature most queerly contrived has to hitch it</l>
+                    <l>And poised on a narrow edge managed to pitch it</l>
+                    <l>And yet though so balanced so firm is the rock</l>
+                    <l>You may mount by a ladder quite up to its top</l>
+                    <l><add rend="linenumber-left-JR">395</add>As when some vast ship the blue ocean divides</l>
+                    <l>Her keen arching bow stems the breast of the tides</l>
+                    <l>The wondering waves &#x02BC;gainst her stern dash their spray</l>
+                    <l>The waters enraged yet are forced to obey</l>               
+                    <l>And back from her sides the hugh billows are thrown</l>
+                    <l><add rend="linenumber-left-JR">400</add>So sternly triumphing appeared <geogName corresp="#BOWDERSTONE">Bowder stone</geogName></l>
+                    <l>By many a rugged and stern slatey fell</l>
+                    <l>Right onward we passed through the gorge of the dell</l>
+                    <l>Till slightly it widened and freshened the scene.</l>
+                    <l>Where some grassy meadows were washed by the stream</l>
+                    <l><add rend="linenumber-left-JR">405</add>And behind the dark rocks in the distance were hurled</l>
+                    <l>While the crystalline river between them it purled</l>
+                    <l>Now across the old bridge oer the river we trot</l>
+                    <l>Till our road at the foot of the mountain did stop</l>
+                    <pb facs="MSVIIp46"/>
+                    <l>And then as the path was excessively stoney</l>
+                    <l><add rend="linenumber-left-JR">410</add>Our guide for each lady brought forward a poney</l>
+                    <l>And agreed as the end of our pathway was utter here</l>
+                    <l>Our carriage returning should meet us at <geogName corresp="#BUTTERMERE">Buttermere</geogName></l>
+                    <l>Now for mounting the ladies we took many pains</l>
+                    <l>With holding the stirrup and checking the reins</l>
+                    <l><add rend="linenumber-left-JR">415</add>Or scrambling upon some convenient stone</l>
+                    <l>Or mounting a wall to get easier on</l>
+                    <l>Guide holding the bridle the better to guide em</l>
+                    <l>The gentlemen walking the ladies a riding</l>
+                    <l>But Oh what a road twas a terrible shame</l>
+                    <l><add rend="linenumber-left-JR">420</add>A road did I say twas not worthy the name</l>
+                    <l>A road only fit to be clambered by sheep</l>
+                    <l>As toilsome as rough and as long as twas steep</l>
+                    <l>Ascending the <geogName corresp="#DERWENTWATER">Derwent</geogName>s first sources beside</l>
+                    <l>Now only a rock tumbling, pebbly tide</l>
+                    <l><add rend="linenumber-left-JR">425</add>Here and there at its banks fed a few scattered sheep</l>
+                    <l>Which cropped the thin heather scarce covring the steep</l>
+                    <l>Some sleeping some climbing some frisking some browsing</l>
+                    <l>At the sound of our footsteps a moment arousing</l>
+                    <l>Unaccustomed to man mid that desert so drear</l>
+                    <pb facs="MSVIIp47"/>
+                    <l><add rend="linenumber-left-JR">430</add>They gazed in wonder but seemed not to fear</l>
+                    <l>And knowing him not therefore dreading no ill</l>
+                    <l><hi rend="bold">L</hi>ay down having looked on the heath covered hill</l>
+                    <l>We slowly and pantingly scrambled along</l>
+                    <l>The ponies full carefully stept oer each stone</l>
+                    <l><add rend="linenumber-left-JR">435</add>Full frequent the streams from their cloud hidden source</l>
+                    <l><hi rend="bold">D</hi>ashed down the dark mountain their thundering course</l>
+                    <l>Or over the road they did<!--has arrow placing this word before the preceeding word--> rippling flow</l>
+                    <l>And fed with their waters the torrent below</l>
+                    <l>The horses dashed through with <hi rend="strikethrough">h</hi> a gown splashing step</l>
+                    <l><add rend="linenumber-left-JR">440</add>But the Ladies had gowns just intended for wet</l>
+                    <l>I really do think they scarce cared a <hi rend="bold">p</hi>in</l>
+                    <l>Whether we stayed behind or jumped over or <hi rend="underline">in</hi></l>
+                    <l>And now we behold the stern mountains huge head</l>
+                    <l>From whose riven rocks they m<hi rend="bold">i</hi>ne out the black lead</l>
+                    <l><add rend="linenumber-left-JR">445</add>Which is hidden within the dark crags so prolific</l>
+                    <l>Black lead did I say Oh how unscientific</l>
+                    <l><hi rend="bold">D</hi>ear me what a vulgar mistake I have made O</l>
+                    <l>In the language of science &#x02BC;tis calle<hi rend="underline">d</hi> <hi rend="bold">p</hi>lumbago</l>
+                    <l>But neer Oh dread <placeName corresp="#BORROWDALE">Borrowdale</placeName> wouldst thou have given</l>
+                    <l><add rend="linenumber-left-JR">450</add>Or suffered thy rocks for that lead to be riven</l>
+                    <pb facs="MSVIIp47"/>
+                    <l>If thou thoughts&#x02BC;t by some<hi rend="bold">Mi</hi>ss scrawled thy deserts so drear</l>
+                    <l>In an <orgName corresp="#ACKERMANN">Ackermann</orgName>s Album would ever appear</l>
+                    <l>And now on the peak of the mountain we stood</l>
+                    <l><hi rend="bold">L</hi>ooked back upon field upon forest &#x0026; flood</l>
+                    <l><add rend="linenumber-left-JR">455</add>Where suntopped <geogName corresp="#HELVELLYN">Helvellyn</geogName> his summits up threw</l>
+                    <l><hi rend="bold">D</hi>istinctly outlined on the firmament blue</l>
+                    <l>And the few retired fields which in firmament lay</l>
+                    <l>So richly reposed in th,enlivening ray</l>
+                    <l>But no longer we now on the mountain remain</l>
+                    <l><add rend="linenumber-left-JR">460</add>But hasten broad <geogName corresp="#BUTTERMERE">Buttermere</geogName>s banks to attain</l>
+                    <l>Our way down the gorge of the valley we bend</l>
+                    <l>And slowly the rough mountain path we descend</l>
+                    <l>Vast <geogName corresp="#HONISTARCRAG">Honistar crag</geogName> overhanging the road</l>
+                    <l>Pushed right cross our path his high forehead so broad</l>
+                    <l><add rend="linenumber-left-JR">465</add>Opposing our progress We turned round his brow</l>
+                    <l>Encircled his cliff by the streamlet below</l>
+                    <l>And gazed on the giant as round him we wheeled</l>
+                    <l>As his wonderful shape was distinctly revealed</l>
+                    <l>Hes none of your beauties no elegant wood</l>
+                    <l><add rend="linenumber-left-JR">470</add>With romantical glades on his summit upstood</l>
+                    <l>No soften<hi rend="bold">i</hi>ng the scene or enlivening the view</l>
+                    <pb facs="MSVIIp49"/>
+                    <l>No Fading in distance the mountains so blue</l>
+                    <l>No cockneys could find in its dread rocks so anti<hi rend="bold">q</hi>ue</l>
+                    <l>The fair picturesque or the rural romantic</l>
+                    <l><add rend="linenumber-left-JR">475</add>No silly school bred Mis just turned seventeen</l>
+                    <l>Can affectedly say oft How charming a scene !!!</l>
+                    <l>But above any misses O my admiration</l>
+                    <l>Dark <geogName corresp="#HONISTARGRAG">Honistar crag</geogName> rears his stern elevation</l>
+                    <l>Makes one silent in wonder and dread altogether</l>
+                    <l><add rend="linenumber-left-JR">480</add>As feeling description a fruitless endeavour</l>
+                    <l>But now we were forced by a bend in the hills</l>
+                    <l>To cross oer the torrent receiver of rills</l>
+                    <l>Which dashed down the pass chafed and foaming in wrath</l>
+                    <l>At the huge rocks which lay in its furious path</l>
+                    <l><add rend="linenumber-left-JR">485</add>Right dashed in the ladies and they being through</l>
+                    <l><hi rend="bold">L</hi>eft us all behind puzzled much what to do</l>
+                    <l>We looked to the left and we looked to the right</l>
+                    <l>Still no easy passage appeared to our sight</l>
+                    <l>Stones were in the stream but were rough and were round</l>
+                    <l><add rend="linenumber-left-JR">490</add>And the foam of the waves oh it sported around</l>
+                    <l>And although ere our leaping we took plenty looking</l>
+                    <l>Ye<hi rend="bold">t</hi> still it was dangerous slippery floating</l>
+                    <pb facs="MSVIIp50"/>
+                    <l>And as none could be reached from the shore with a step</l>
+                    <l>If we leaped on their surface so polished and wet</l>
+                    <l><add rend="linenumber-left-JR">495</add>Or if in our bound we might happen to stumble</l>
+                    <l>Twas clear we ran very great rish of a tumble</l>
+                    <l>But each like a hen on a hot girdle hopping</l>
+                    <l>And stagg&#x02BC;ring and balancing still never stopping</l>
+                    <l>And slipping<!--originally "slipplng"--> and sliding and sliddring at last sir</l>
+                    <l><add rend="linenumber-left-JR">500</add>We accomplished the dandy all dangerous pass sir</l>
+                    <l>But oh dear the ladies (Were only a pair of em)</l>
+                    <l>What ill rewards gave for our mighty great care of em</l>
+                    <l>By <del rend="strikethrough">artiface</del>what kind of <!--inserted "artiface oh"--> can they <del rend="strikethrough">oh</del> that elude</l>
+                    <l>Or how can they stand to the charge of ingratitude</l>
+                    <l><add rend="linenumber-left-JR">505</add>By the time that with plenty of duck threatening hops sir</l>
+                    <l>We had scrambled ashore from those slippery rocks sir</l>
+                    <l>The ladies had got to a part of the glen</l>
+                    <l>Some quarter mile distant where bending again</l>
+                    <l>The rocks with their shaggy tops gloomy and bare</l>
+                    <l><add rend="linenumber-left-JR">510</add><hi rend="bold">L</hi>ooked back to the region of torrent and scar</l>
+                    <l>There, but not for us waited, Twas only the fear</l>
+                    <l>Of losing themselves in that desert so drear</l>
+                    <l>That made them at last check the long loosened rain</l>
+                    <pb facs="MSVIIp51"/>
+                    <l>And impatiently wait for our coming again</l>
+                    <l><add rend="linenumber-left-JR">515</add>But enough We advanced by a pleasanter road</l>
+                    <l>The stream on our right it more pleasantly flowed</l>
+                    <l>And watered the vale The dark mountains receding</l>
+                    <l>Left open our path it no longer impeading</l>
+                    <l>And widening the vale their tops backward they threw</l>
+                    <l><add rend="linenumber-left-JR">520</add>And to <geogName corresp="#BUTTERMERE">Buttermere</geogName> opened so deep and so blue</l>
+                    <l>We saw not the lake till the stream being crossed</l>
+                    <l>We stood on its banks where its waters were tost</l>
+                    <l>And hurled on the pebbles With dashing and foam</l>
+                    <l>The whispering surges their singings do moan</l>
+                    <l><add rend="linenumber-left-JR">525</add>When broke on the stones yet return to the deep</l>
+                    <l>Again to the sands of their wrecking they sweep</l>
+                    <l>Again they are broken rerolling again</l>
+                    <l>Yet still are they murmuring still are the same</l>
+                    <l>On a road that was shaded by natural wood</l>
+                    <l><add rend="linenumber-left-JR">530</add>Whose rich mossy trunks most confusedly stood</l>
+                    <l>We slowly advanced by field and by flood<!--originally "flodd"--></l>
+                    <l>But had not gone far till were stopped by the mud</l>
+                    <l>Through a deep miry slough we were forced to go</l>
+                    <l>It much having rained and the road lying low</l>
+                    <pb facs="MSVIIp52"/>
+                    <l><add rend="linenumber-left-JR">535</add>There were some high banks on one side of the road</l>
+                    <l>But were covered and fenced up by brambles and wood</l>
+                    <l>We caught hold of a bough and we scrambled there up</l>
+                    <l>But there mid the<del rend="strikethrough">re</del> brambles we almost had stuck</l>
+                    <l>The bramble Oh dear tis a tree of renown</l>
+                    <l><add rend="linenumber-left-JR">540</add>For catching a coat&#x2010;tail or tearing a gown</l>
+                    <l>Besides it talks Latin though no one would guess it</l>
+                    <l>Its Thorns say &#x201C;<hi rend="underline">Me nemo impune lacessit</hi>&#x201D;</l>
+                    <l>While elastical boughs by the first of us bent back</l>
+                    <l>Switched back in our face as we followed his track</l>
+                    <l><add rend="linenumber-left-JR">545</add>From the hand which back bent it, ast angrily flies out</l>
+                    <l>We almost cried Zooks sir you near put my eye out</l>
+                    <l>But now<del rend="strikethrough">e</del> having past by the pass of the bramble</l>
+                    <l>We almost began to be tired of our ramble</l>
+                    <l>Till we gladly beheld the clean whitewashen inn</l>
+                    <l><add rend="linenumber-left-JR">550</add>A few yards of earth interposing between</l>
+                    <l>Straight (not like sad Hector<!--?--> that poor gory chief</l>
+                    <l>Appeared the glad ghost of roast mutton and beef</l>
+                    <l><del rend="strikethrough">W</del>Very horses go faster and swifter they fly</l>
+                    <l>Their ears at the sight they did lift upon high</l>
+                    <l><add rend="linenumber-left-JR">555</add>Flew back neath their heels the long lingering way</l>
+                    <pb facs="MSVIIp53"/>
+                    <l>Them beckoned the spirit of manger and hay</l>
+                    <l>Now reached we the inn and no sooner were landed</l>
+                    <l>Than straight we to bring us our dinner commanded</l>
+                    <l>When lo the landlady most couteously brings</l>
+                    <l><add rend="linenumber-left-JR">560</add>I suppose twas to hasten old times lazy wings</l>
+                    <l>A great set of scrawls I suppose that she thought em</l>
+                    <l>Most wondrously fine or she would not have brought em</l>
+                    <l>Which her daughter her daughter her dear darling daughter</l>
+                    <l>Had made of romantical mountains and water</l>
+                    <l><add rend="linenumber-left-JR">565</add>At some genteel boarding school wasting her time</l>
+                    <l>And also her paper with line after line</l>
+                    <l>The houses all tipsy most giddily reeling</l>
+                    <l>The castles in air most confusedly wheeling</l>
+                    <l>And lions like cats in their dark caverns brooding</l>
+                    <l><add rend="linenumber-left-JR">570</add>And each flying cloud like a flying plumpudding</l>
+                    <l>And noble stitched guadrupeds birds insects fishes</l>
+                    <l>And all the et ceteras of boarding school misses</l>
+                    <l>Now dinner brought in was adorning the board</l>
+                    <l>The dishes we hoped were most plenteously stored</l>
+                    <l><add rend="linenumber-left-JR">575</add>So we hungrily took from the viands the covers</l>
+                    <l>But there was no treat for the good dinner lovers</l>
+                    <pb facs="MSVIIp54"/>
+                    <l>Though our appetite were most tremendously high</l>
+                    <l>We only got taties and mouldy veal pie</l>
+                    <l>But now on the mountains the dark clouds assembled<add place="above"><space quantity="39" unit="chars"/><handShift new="#HANDX" script="print" medium="pencil"/><metamark function="unknown">&#x00D7;</metamark></add></l>
+                    <l><add rend="linenumber-left-JR">580</add>And the waves of the lake they more gloomily trembled</l>
+                    <l>And then came a calm on their billowless breast</l>
+                    <l>As deep expectation were stilling teir rest</l>
+                    <l>The clouds flew not swift but in lowring and gloom</l>
+                    <l><hi rend="bold">L</hi>ay mighty and dark on the heat of the nooon</l>
+                    <l><add rend="linenumber-left-JR">585</add>The air was oppressive and swiftly and still</l>
+                    <l>And no cooling breezed swept over the hill</l>
+                    <l>When lo from a cloud oer dark <geogName corresp="#HONISTARGRAG">Honistar</geogName>s head</l>
+                    <l>There gleamed through the darkness a thunderbolt red</l>
+                    <l>The lake for a moment reflected the flash</l>
+                    <l><add rend="linenumber-left-JR">590</add>Then dreadfully heard in the distance a crash</l>
+                    <l>As if mountains on mountains that moment were hurled</l>
+                    <l>Or dashed into atoms and ruins a world</l>
+                    <l>Or rocks to their heart by the lightning were riven</l>
+                    <l>So the thunder it rolled oer the face of the heaven</l>
+                    <l><add rend="linenumber-left-JR">595</add>Re&#x2010;echoed from mountains rebounding from hills</l>
+                    <l>Again the dread sound the vast aether it fills</l>
+                    <l>Oer gloomy <geogName corresp="#HELVELLYN">Helvellyn</geogName> sublimely it swells</l>
+                    <pb facs="MSVIIp55"></pb>
+                    <l>Then wakes the rude echoes of <geogName corresp="#LANGDALE"><hi rend="bold">L</hi>angdales</geogName> peaked fells</l>
+                    <l>Then <geogName corresp="#KIRKSTONE">Kirkstones</geogName> vast echoes replied to the sound</l>
+                    <l><add rend="linenumber-left-JR">600</add>And hurled it the circle of mountains around</l>
+                    <l>Red pike tossed the thunder in distance with scorn</l>
+                    <l>Till the dells of the <geogName corresp="#DERWENTWATER">Derwent</geogName> receiving the storm</l>
+                    <l>The thunder it spoke from the crags of <geogName corresp="#LOWDORE">Lowdore</geogName></l>
+                    <l>And <geogName corresp="#SKIDDAW">Skiddaw</geogName>s twin summits awoke to the roar</l>
+                    <l><add rend="linenumber-left-JR">605</add>Again growled the lion on <geogName corresp="#BLENCATHRA">Saddlebacks dells</geogName></l>
+                    <l>And the last thunder died on the distant shap<!--??--> fells</l>
+                    <l>Then fitful the breeze from its mountainous hold</l>
+                    <l>Forced all the stern thunders to peace as it rolled</l>
+                    <l>The winds in their anger rushed down on the deep</l>
+                    <l><add rend="linenumber-left-JR">610</add>Through every ravine with a passionate sweep</l>
+                    <l>Then woke the dark waters and plumage of foam</l>
+                    <l>On the lakes swelling bosom was dazzlingly thrown</l>
+                    <l>Reflecting the lightning and ratt<hi rend="bold">l</hi>ing peals</l>
+                    <l>Again roused the mimicking sport of the hills</l>
+                    <l><add rend="linenumber-left-JR">615</add>Those chasm hidden lions again from their caves</l>
+                    <l>Sent back the dread sounds oer the wondering waves</l>
+                    <l>And the echoes from <geogName corresp="#BLACKCOMBE">Blackcombe</geogName> oerhanging the main</l>
+                    <l>To <geogName corresp="#SCAFELL">Scawfell</geogName> in mockery growled them again</l>
+                    <pb facs="MSVIIp56"/>
+                    <l>And numberless flashes and numberless roars</l>
+                    <l><add rend="linenumber-left-JR">620</add>Hurled all their lone terrors on deep <geogName corresp="#CRUMMOCK">Crummocks</geogName> shores</l>
+                    <l>Till the clouds oer the lake which so threateningly hung</l>
+                    <l>Flew away the huge fells of the <geogName corresp="#DERWENTWATER">Derwent</geogName>among</l>
+                    <l>Then first the bright orb of the heavens appearing</l>
+                    <l>Again with his presence the hills he was cheering</l>
+                    <l><add rend="linenumber-left-JR">625</add>Though a shower yet distilling its dews on the ground</l>
+                    <l>Its glistering drops was outpouring around</l>
+                    <l>Till high oer the heads of the mountains below</l>
+                    <l>There spanned the wide heavens the wonderful bow</l>
+                    <l>All glowing in people and crimson and gold</l>
+                    <l><add rend="linenumber-left-JR">630</add>It grasped in its circle the waters which rolled</l>
+                    <l>Returning the colours so gloriously given</l>
+                    <l>Returning again to the face of the heaven</l>
+                    <l>Till its bright dazzling tints in the distance do fade<add place="above"><space quantity="42" unit="chars"/><handShift new="#HANDX" script="print" medium="pencil"/><metamark function="unknown">&#x00D7;</metamark></add></l>
+                    <l>Admiring its hues at the window we staid</l>
+                    <l><add rend="linenumber-left-JR">635</add>And then as the sun on the mountains descending</l>
+                    <l>Reminded us now that the day was near ending</l>
+                    <l>We ordered the bill and as then we did find</l>
+                    <l>That a long and steep hill was by us to be climbed</l>
+                    <l>And as also we found that the one of the ladies</l>
+                    <pb facs="MSVIIp57"/>
+                    <l><add rend="linenumber-left-JR">640</add>To ascend the high hill in the coach much afraid is</l>
+                    <l>One gentleman leaving on them to attend</l>
+                    <l>That steep on the ponies we gan to ascend</l>
+                    <l>Which they with the carriage the mountains up climbed</l>
+                    <l>Which lazy and last of all lingered behind</l>
+                    <l><add rend="linenumber-left-JR">645</add>And now a cascade mid the hills we beheld</l>
+                    <l>Whose crystalline waters with anger they swelled</l>
+                    <l>But scarce had we looked on the thundering stream</l>
+                    <l>Ere again the stern heavens to rain on&#x02BC;s begin</l>
+                    <l>O <name type="fictional" corresp="#JUPITER">Jupiter</name> why didst permit such a shame</l>
+                    <l><add rend="linenumber-left-JR">650</add>On the ladies fine bonnets allow it to rain</l>
+                    <l>Why generous <name type="fictional" corresp="#JUPITER">Jove</name> whom I cant see for clouds</l>
+                    <l>Why spread on these mountains such vapoury shrouds</l>
+                    <l>Oh pray sir remove this most troublesome rain</l>
+                    <l>And give us the sun in his glory again</l>
+                    <l><add rend="linenumber-left-JR">655</add>Oh no sir I wont and I tell you I cant</l>
+                    <l>And whats more than all these sir I tell you I shant</l>
+                    <l>And although I do think that you dont it much love</l>
+                    <l>Ill pepper you more f&#x02BC;ort I was thus replied <name type="fictional" corresp="#JUPITER">Jove</name></l>
+                    <l>But while we continued this vain supplication</l>
+                    <l><add rend="linenumber-left-JR">660</add>We found twas unfitting upon the occasion</l>
+                    <pb facs="MSVIIp30v"/>
+                    <l>To stand in the mud and receive all the rain</l>
+                    <l>While talking beseeching and praying in vain</l>
+                    <l>So pushing our steeds to a galloping trot</l>
+                    <l>The scenes we were passing completely forgot</l>
+                    <l><add rend="linenumber-left-JR">665</add>And one of us hitched on a huge ladies saddle</l>
+                    <l>Of course rather awkward for riding a straddle</l>
+                    <l>The ladies and carriage completely behind</l>
+                    <l>Towards <placeName corresp="#KESWICK">Keswick</placeName> we galloped as swift as the wind</l>
+                    <l>Who half in revenge for his losing the race</l>
+                    <l><add rend="linenumber-left-JR">670</add>He gave us he gave us a terrible chase</l>
+                    <l><hi rend="bold">L</hi>ike Paddy<!--??--> who drove all the racers before him</l>
+                    <l>So gallantly on mr <name type="fictional" corresp="#BOREAS">Boreas</name> bore him</l>
+                    <l>Until we arrived at a kind of a shed</l>
+                    <l>Under whose shelt,ring roof we our ponies did lead</l>
+                    <l><add rend="linenumber-left-JR">675</add>There long did we wait till the ladies up came</l>
+                    <l>When one of us entered the carriage again</l>
+                    <l>While I very gladly accepted the offer</l>
+                    <l>Which gentlemen two very kindly did proffer</l>
+                    <l>And sheltered myself from the pityless flood</l>
+                    <l><add rend="linenumber-left-JR">680</add>By entering their carriage so covered and snug</l>
+                    <l>And followed the ladies while showr after showr</l>
+                    <pb facs="MSVII31r"/>
+                    <l>In pityless peltings upon us did pour</l>
+                    <l>Neer ceasing near ceasing the merciless rain</l>
+                    <l>Until to our coverings <placeName corresp="#KESWICK">Keswick</placeName> we came</l>
+                    <l><add rend="linenumber-left-JR">685</add>Where the halls did resound with the loud lamentations</l>
+                    <l>And the walls did reecho the deep e<!--?-->exclamations</l>
+                    <l>The ladies bemoaning their bonnets in vain</l>
+                    <l>Those bonnets they never may worn be again</l>
+                    <l>And then what delight when to tea we sat down</l>
+                    <l><add rend="linenumber-left-JR">690</add>The mourning all ended for bonnet and gown</l>
+                    <l>And heard the rain pattering and rattling as we</l>
+                    <l>Most thirstily drank up the goblets of tea</l>
+                    <l>And then on our couches as softly we lay</l>
+                    <l>We determined old <geogName corresp="#SKIDDAW">Skiddaw</geogName> to climb the next day</l>
+                    <!--decorative symbol-->
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
