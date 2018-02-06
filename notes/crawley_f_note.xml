@@ -23,6 +23,11 @@
                     <persName xml:id="JLF">Jessica L. Firmin</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last initials.-->
+                    <persName xml:id="AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
                     Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
@@ -31,7 +36,7 @@
             </titleStmt>
             <editionStmt>
                 <edition n="1.0">
-                    <date when="2011-08-01">August 1, 2011</date>
+                    <date when="2018-02-06">February 06, 2018</date>
                     <!--The notes version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
                     <title>Notes Version 1.0</title>
                 </edition>
@@ -58,10 +63,10 @@
         <body>
             <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
             <div type="note" subtype="subtype">
-                <head type="title">Frederick Crawley (0000-0000)</head>
-                <p>Between 1853 and 1876, Crawley served as Ruskin's valet and copyist, in which capacity Ruskin gave him several manuscripts. 
-                    After 1876 until ca. 1892, Crawley attended to Ruskin's rooms at Oxford and the pictures at the Drawing School 
-                    (<ref type="bibliography" target="bibliography.html#WISERUSKINIII">Dearden, "Wise and Ruskin III"</ref>, 46).</p>
+                <head type="title"><persName corresp="#FCRAWLEY">Frederick Crawley</persName> (0000&#x2013;0000)</head>
+                <p>Between <date notBefore="1853" notAfter="1876">1853 and 1876</date>, <persName corresp="#FCRAWLEY">Crawley</persName> served as <persName corresp="#JR">Ruskin</persName>'s valet and copyist, in which capacity <persName corresp="#JR">Ruskin</persName> gave him several manuscripts. 
+                    After <date notBefore="1876" notAfter="1892">1876 until ca. 1892</date>, <persName corresp="#FCRAWLEY">Crawley</persName> attended to <persName corresp="#JR">Ruskin</persName>'s rooms at <orgName corresp="#OXFORDU">Oxford</orgName> and the pictures at the <orgName corresp="#RUSKINSCHOOLOFART">Drawing School</orgName> 
+                    (<ref type="bibliography" target="bibliography.html#WISERUSKINIII"><persName corresp="#JSD">Dearden</persName>, <title type="essay" corresp="#DEARDENWISERUSKINIII">"Wise and Ruskin III"</title></ref>, 46).</p>
                 
             </div>
         </body>
