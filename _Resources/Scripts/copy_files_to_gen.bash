@@ -83,7 +83,8 @@ else
 	ln -sf "`pwd`/_Resources/images/" $OUT/
 
 	echo "Linking search project"
-	ln -sf "`pwd`/_Search/" $OUT/
+    rm -f $OUT/_Search
+	ln -sf "`pwd`/_Search" "$OUT/search"
 
 	echo "Linking XML transformations to $OUT"
 	find "`pwd`/gen/_Completed" -type d -maxdepth 1 -mindepth 1
