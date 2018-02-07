@@ -1,7 +1,7 @@
 <?php include_once('header.php'); ?>
 
 	<div class="navigation">
-        <a href="/index.php"><img src="images/ruskin_logo.jpg" width="100%"/></a>
+        <a href="index.php"><img src="images/ruskin_logo.jpg" width="100%"/></a>
         <br/>
         <br/>
         <span class="navigation-title">
@@ -16,7 +16,7 @@
         <br/>
         <br/>
 		<?php include('search/navbox.php'); ?>
-        <span><a href="/index.php">Home</a><span>
+        <span><a href="index.php">Home</a><span>
         <span>
         	<br/><a href="essays/indices_essay.php">Indices</a>
             <br/><a class="subnavigation" href="essays/indices_essay.php#WORKS">Works</a>
@@ -31,7 +31,7 @@
         <br/>
 		<span>Bibliography</span>
         <br/>
-        <span><a href="/webpages/staff.php">Staff and Support</a><span>
+        <span><a href="webpages/staff.php">Staff and Support</a><span>
         <br/>
-        <span><a href="/webpages/legal.php">Legal</a><span>
+        <span><a href="webpages/legal.php">Legal</a><span>
 	</div>
