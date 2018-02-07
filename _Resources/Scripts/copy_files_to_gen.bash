@@ -73,8 +73,6 @@ if [ "$SYMLINK" -eq "0" ]; then
 	echo "Copying search project"
 	cp -r _Search $OUT/search
 
-	echo "Copying XML transformations to $OUT"
-	cp -r gen/_Completed/. $OUT/
 else
 	echo "Symlinking src to $OUT";
 	ln -s src $OUT
@@ -86,16 +84,9 @@ else
     rm -f $OUT/_Search
 	ln -sf "`pwd`/_Search" "$OUT/search"
 
-	echo "Linking XML transformations to $OUT"
-	find "`pwd`/gen/_Completed" -type d -maxdepth 1 -mindepth 1
-	find "`pwd`/gen/_Completed" -type d -maxdepth 1 -mindepth 1 -exec ln -sf {} $OUT/ \;
-
 fi
-echo "done."; echo;
 
-
-exit 0
-
-
+echo "Copying XML transformations to $OUT"
+rsync -r gen/_Completed/. $OUT/
 
 echo "All done."
