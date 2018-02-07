@@ -7,6 +7,9 @@
 	<link rel="icon" 
 	type="image/png" 
 	href="images/ruskin_icon.png">
+
+    <base href="http://english.selu.edu/humanitiesonline/ruskin/" >
+
 </head>
 <body>
     <?php include("navigation.inc.php"); ?>
