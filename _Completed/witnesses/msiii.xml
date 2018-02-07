@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
-<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
 <teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="manuscript">
         <fileDesc xml:id="msiii">
@@ -103,17 +103,17 @@
         </xi:fallback>
     </xi:include>
 EXCLUDED FROM FIRST TWENTY-->
-    <xi:include href="poetry_anthology_2/msiii_poetry_anthology_2.xml"><!--MS III Second Poetry Anthology begins here.-->
+    <xi:include href="msiii_poetry_anthology_2.xml"><!--MS III Second Poetry Anthology begins here.-->
         <xi:fallback>
             <ab>WARNING: Could not include msiii_poetry_anthology_2.xml.</ab>
         </xi:fallback>
     </xi:include>
-    <xi:include href="poetry_anthology_3/msiii_poetry_anthology_3.xml"><!--MS III Third Poetry Anthology begins here.-->
+    <xi:include href="msiii_poetry_anthology_3.xml"><!--MS III Third Poetry Anthology begins here.-->
         <xi:fallback>
             <ab>WARNING: Could not include msiii_poetry_anthology_3.xml.</ab>
         </xi:fallback>
     </xi:include>
-    <xi:include href="poetry_discriptive/poetry_discriptive.xml"><!--Poetry Discriptive begins here.-->
+    <xi:include href="poetry_discriptive.xml"><!--Poetry Discriptive begins here.-->
         <xi:fallback>
             <ab>WARNING: Could not include poetry_discriptive.xml.</ab>
         </xi:fallback>

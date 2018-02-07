@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
-<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
 <teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
         <teiHeader type="manuscript">
             <fileDesc xml:id="msi">
@@ -101,7 +101,7 @@
             </xi:fallback>
         </xi:include>
 EXCLUDED FROM FIRST TWENTY-->
-        <xi:include href="poetry_anthology/msi_poetry_anthology.xml"><!--MS I Poetry Anthology begins here.--> 
+        <xi:include href="msi_poetry_anthology.xml"><!--MS I Poetry Anthology begins here.--> 
             <xi:fallback>
                 <ab>WARNING: Could not include msi_poetry_anthology.xml.</ab>
             </xi:fallback>
