@@ -1,5 +1,7 @@
+<?php include_once('header.php'); ?>
+
 	<div class="navigation">
-        <a href="/index.php"><img src="/images/ruskin_logo.jpg" width="100%"/></a>
+        <a href="/index.php"><img src="images/ruskin_logo.jpg" width="100%"/></a>
         <br/>
         <br/>
         <span class="navigation-title">

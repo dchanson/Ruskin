@@ -1,3 +1,5 @@
+<?php include_once('header.php'); ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,7 +10,7 @@
 	type="image/png" 
 	href="images/ruskin_icon.png">
 
-    <base href="http://english.selu.edu/humanitiesonline/ruskin/" >
+    <base href="<?php echo r_get_base();?>" >
 
 </head>
 <body>
