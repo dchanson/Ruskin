@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
-<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
         <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
@@ -90,7 +90,7 @@
                 <head type="title"><handShift new="#HANDJR1833-34" script="cursive" medium="pencil"/><placeName corresp="#ATHENS">Athens</placeName></head>
                 <lg type="strophe">
                     <l>Thou muse who once from <hi rend="underline">fair</hi> <placeName corresp="#PARNASSUS">Parnassus</placeName> height</l>
-                    <l>Fanned agèd <persname corresp="#HOMER">Homer</persname> with thy plumy wings</l>
+                    <l>Fanned agèd <persName corresp="#HOMER">Homer</persName> with thy plumy wings</l>
                     <l><hi rend="underline">Who</hi> told of <placeName corresp="#GREECE">Greece</placeName> and <placeName corresp="#TROY">Trojas</placeName> ancient might</l>
                     <l><del rend="strikethrough">And fierce <name type="fictional" corresp="#ACHILLES">Achilles</name> anger! Thou, that</del><add place="below">&#x2038;</add> <add place="above">O thou whose lyre all wild resounding</add> sings</l>
                     <l>Of the war field where the broad banner flings</l>
@@ -101,9 +101,13 @@
                         
                         <lg n="2" type="strophe">
                         <subhead type="strophe_number">2</subhead>
-                        <l><add place="above">Oer the <unclear resp="#CJL">wide</unclear> fi</add><delSpan rend="strikethrough"></delSpan>O ancient <placeName corresp="#ATHENS">Athens</placeName> thou who once didst reign</l>
+                        <l><add place="above">Oer the <unclear resp="#CJL">wide</unclear> fi</add>
+                            <delSpan rend="strikethrough"></delSpan>
+                            O ancient <placeName corresp="#ATHENS">Athens</placeName> thou who once didst reign</l>
                         <l>Oer the wide fields of sea encircled <placeName corresp="#GREECE">Greece</placeName></l>
-                        <l>Ruler of <placeName corresp="#THEBES">Thebes</placeName> and rugged <placeName corresp="#SPARTA">Spa</placeName></l></delSpan>
+                        <l>Ruler of <placeName corresp="#THEBES">Thebes</placeName> 
+                            and rugged <placeName corresp="#SPARTA">Spa</placeName></l>
+                            </delSpan>
                             
                         <l>Oer the wide fields of sea encircled <placeName corresp="#GREECE">Greece</placeName></l>
                         <l>Oh ancient <placeName corresp="#ATHENS">Athens</placeName> thou who once didst reign</l>
