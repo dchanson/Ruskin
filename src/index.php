@@ -10,8 +10,6 @@
 	type="image/png" 
 	href="images/ruskin_icon.png">
 
-    <base href="<?php echo r_get_base();?>" >
-
 </head>
 <body>
     <?php include("navigation.inc.php"); ?>

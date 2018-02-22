@@ -459,6 +459,9 @@
         <!--The <!DOCTYPE> below matches the default assigned by Adobe Dreamweaver CS4 and ensures that webpages created outside the application
             (through XSLT) match those created inside.-->
         <xsl:variable name="docVar">&#x003C;!DOCTYPE html PUBLIC &#x0022;-//W3C//DTD XHTML 1.0 Transitional//EN&#x0022; &#x0022;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#x0022;&#x003E;</xsl:variable>
+        <xsl:variable name="headerIncludeVar">&#x003C;?php include_once(&#x022;../header.php&#x022;) ?&#x003E;
+        </xsl:variable>
+        <xsl:value-of select="$headerIncludeVar" disable-output-escaping="yes"/>
         <xsl:value-of select="$docVar" disable-output-escaping="yes"/>
         <html>
             <xsl:apply-templates/>
@@ -476,8 +479,13 @@
                 <title>
                     <xsl:apply-templates/>
                 </title>
-                <xsl:variable name="phpVar">&#x003C;?php include(&#x022;../inactive.inc.php&#x022;); ?&#x003E;</xsl:variable>
+                
+                <xsl:variable name="phpVar">
+                    &#x003C;?php include(&#x022;../inactive.inc.php&#x022;); ?&#x003E;
+                </xsl:variable>
+                
                 <xsl:value-of select="$phpVar" disable-output-escaping="yes"/>
+                
             </xsl:for-each>
 
     <!--The following associates the appropriate CSS with the HTML document based upon the <teiHeader>'s @type in XML.-->
@@ -485,13 +493,19 @@
             <xsl:choose>
                 
                 <xsl:when test="self::*[@type='anthology' or @type='manuscript' or @type='witness']">
-                    <xsl:variable name="cssVar">&#x003C;link href=&#x022;witness_styles.css&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;</xsl:variable>
+                    <xsl:variable name="cssVar">
+                        &#x003C;link href=&#x022;../witness_styles.css&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
+                        &#x003C;link href=&#x022;../styles.css&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
+                    </xsl:variable>
                     <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
+                    
                 </xsl:when>
                 
                 <xsl:otherwise>
                     <!--Remove the ../ in ../styles.css for local testing.-->
-                    <xsl:variable name="cssVar">&#x003C;link href=&#x022;../styles.css&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;</xsl:variable>
+                    <xsl:variable name="cssVar">
+                        &#x003C;link href=&#x022;../styles.css&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
+                    </xsl:variable>
                     <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
                 </xsl:otherwise>
                 

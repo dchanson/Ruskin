@@ -88,5 +88,6 @@ fi
 
 echo "Copying XML transformations to $OUT"
 rsync -r gen/_Completed/. $OUT/
+rsync -r "gen/_In%20Process/." $OUT/
 
 echo "All done."
