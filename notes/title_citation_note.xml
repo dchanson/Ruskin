@@ -29,7 +29,7 @@
                 </respStmt>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#LAL">Lauren A. Lambert</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -77,13 +77,13 @@
                     to the following set of conventions.
                     <list type="ordered">
                         <item n="a"><persName corresp="#JR">Ruskin</persName>&#x02BC;s own titles for poetry and prose are distinguished by quotation marks. First and important words are capitalized, and
-                            spelling regularized, regardless of <persName corresp="#JR">Ruskin</persName>&#x02BC;s own practice. Generally, <persName corresp="#">Ruskin</persName>&#x02BC;s complete titles are given, except when
+                            spelling regularized, regardless of <persName corresp="#JR">Ruskin</persName>&#x02BC;s own practice. Generally, <persName corresp="#JR">Ruskin</persName>&#x02BC;s complete titles are given, except when
                             very long titles prove impractical for routine purposes of hyperlinking; and in those cases, some reasonable short form is substituted, such as
-                            <title type="lesson" corresp="#HARRYANDLUCYVOL1" rend="bold">&#x201C;Harry and Lucy,&#x201D; Vol. 1</title> replacing (were the rule being followed strictly) 
-                            <title type="lesson" corresp="#HARRYANDLUCYVOL1" rend="bold">&#x201C;Harry and Lucy Concluded, Being the Last Part of Early Lessons, in Four Volumes, Vol. 1, with Copper Plates, Printed and Composed by a Little Boy and Also Drawn.&#x201D;</title></item>
+                            <title type="lesson" corresp="#HARRYANDLUCYVOL1"><hi rend="bold">&#x201C;Harry and Lucy,&#x201D; Vol. 1</hi></title> replacing (were the rule being followed strictly) 
+                            <title type="lesson" corresp="#HARRYANDLUCYVOL1"><hi rend="bold">&#x201C;Harry and Lucy Concluded, Being the Last Part of Early Lessons, in Four Volumes, Vol. 1, with Copper Plates, Printed and Composed by a Little Boy and Also Drawn&#x201D;.</hi></title></item>
                         <item n="b">Untitled poems are cited by their first lines, which are likewise placed in quotation marks, but with only the first word and proper nouns capitalized.</item>
                         <item n="c">When <persName corresp="#JR">Ruskin</persName> assigned more than one and differing titles to witnesses of the same work, rule no. 1 applies, and the separate titles are joined by
-                            <hi rend="italic">and</hi>, thus: <hi rend="bold">&#x201C;The Shipwreck&#x201D; <hi rend="italic">and</hi> &#x201C;A Shipwreck.&#x201D;</hi> <!--DCH: Are these actual titles?--> Hyperlinks to such works are, however, for
+                            <hi rend="italic">and</hi>, thus: <hi rend="bold">&#x201C;The Shipwreck&#x201D; <hi rend="italic">and</hi> &#x201C;A Shipwreck&#x201D;.</hi> <!--DCH: Are these actual titles?--> Hyperlinks to such works are, however, for
                             convenience, named by only one of these joined titles&#x2014;the link taking the reader to the &#x201C;Title&#x201D; section of the Works Apparatus Page of the work in
                             question, where the complexity is fully explained.</item>
                         <item n="d">When <persName corresp="#JR">Ruskin</persName> assigned the same title to different works (e.g. there are more than one poem named
@@ -93,27 +93,27 @@
                             the necessary distinctions. For example:
                             <list type="ordered">
                                 <item n="e.1"><!-- NEW e.1 -->Titles that were invented by later editors (e.g., by <ref type="note" subtype="biographical" target="collingwood_w_g_note.php"><persName corresp="#WGC">W. G. Collingwood</persName></ref> 
-                                    in <title type="anthology" corresp="#POEMS4D1891" rend="italic">Poems</title> [1891]) are cited inside square brackets following <persName corresp="#JR">Ruskin</persName>&#x02BC;s title, with quotation marks and with first and important words
+                                    in <title type="book" corresp="#JRPOEMS4D1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]) are cited inside square brackets following <persName corresp="#JR">Ruskin</persName>&#x02BC;s title, with quotation marks and with first and important words
                                     capitalized. The use of square brackets for this purpose was established by <persName corresp="#WGC">Collingwood</persName> 
-                                    (<ref type="bibliography" target="bibliography.php#POEMS4D1891"><title type="anthology" corresp="#POEMS4D1891" rend="italic">Poems</title> [4<hi rend="superscript">o</hi>, 1891]</ref>, 1: xxv; 
-                                    <ref type="bibliography" target="bibliography.php#POEMS8D1891"><title type="anthology" corresp="#POEMS8D1891" rend="italic">Poems</title> [8<hi rend="superscript">o</hi>, 1891]</ref>, 1: xii), 
-                                    and the editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
-                                    followed suit (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <title type="anthology" corresp="#JRWORKSLE" rend="italic">Works</title></ref>, 2: xxxvi). 
+                                    (<ref type="bibliography" target="bibliography.php#POEMS4D1891"><title type="book" corresp="#JRPOEMS4D1891"><hi rend="italic">Poems</hi></title> [4<hi rend="superscript">o</hi>, <date when="1891">1891</date>]</ref>, 1: xxv; 
+                                    <ref type="bibliography" target="bibliography.php#POEMS8D1891"><title type="book" corresp="#JRPOEMS8D1891"><hi rend="italic">Poems</hi></title> [8<hi rend="superscript">o</hi>, <date when="1891">1891</date>]</ref>, 1: xii), 
+                                    and the editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php"><title type="book" corresp="#JRWORKSLE">Library Edition</title></ref> 
+                                    followed suit (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2: xxxvi). 
                                     Both editions, however, proved inconsistent in maintaining this practice.</item>
                                 <item n="e.2">Works that share the same or similar titles but that cannot be distinguished by citation of a first line (e.g., because they
                                     are not poems) are given distinguishing information in square brackets. For example, prose works with similar titles, such as
                                     &#x201C;A Sermon,&#x201D; are followed by the opening words of the text in square brackets, thus: 
                                     <hi rend="bold">&#x201C;A Sermon&#x201D; [&#x201C;beautiful allegory&#x201D;]</hi>. Similarly, drawings with similar titles
                                     are expanded with distinguishing information in square brackets, thus: 
-                                    <hi rend="bold">&#x201C;Frontispiece&#x201D; <hi rend="italic">and</hi> [Plate] &#x201C;1,&#x201D; [<title type="lesson" corresp="#HARRYANDLUCYVOL1" rend="italic">&#x201C;Harry and Lucy,&#x201D; Vol. 1</title>]</hi>.</item>
+                                    <hi rend="bold">&#x201C;Frontispiece&#x201D; <hi rend="italic">and</hi> [Plate] &#x201C;1,&#x201D; [<title type="lesson" corresp="#HARRYANDLUCYVOL1"><hi rend="italic">&#x201C;Harry and Lucy,&#x201D; Vol. 1</hi></title>]</hi>.</item>
                                 <item n="e.3">A date in square brackets following the main title distinguishes between works that share a common title <hi rend="italic">and</hi> 
-                                    a common first line, yet are not necessarily witnesses of the same work (e.g., <hi rend="bold"><title type="poem" corresp="#THESHIP1827">&#x201C;The Ship&#x201D;</title> [1827] and <title type="poem" corresp="#THESHIP182829">&#x201C;The Ship&#x201D;</title> [1828&#x2013;29]</hi>).</item>
+                                    a common first line, yet are not necessarily witnesses of the same work (e.g., <hi rend="bold"><title type="poem" corresp="#JRTHESHIP1827">&#x201C;The Ship&#x201D;</title> [<date when="1827">1827</date>] and <title type="poem" corresp="#JRTHESHIP182829">&#x201C;The Ship&#x201D;</title> [<date notBefore="1828" notAfter="1829">1828&#x2013;29</date>]</hi>).</item>
                             </list>
                         </item>
                         <item n="f">When <persName corresp="#JR">Ruskin</persName> assigned no title but a first&#x2010;line citation is impractical or impossible&#x2014;for example, in the case of a prose work, 
                             or in the case of a long poem that lacks a main title but that consists of multiple parts, each part carrying its own title or needing to be cited
                             by the first line&#x2014;these works are given titles without quotation marks, and with first and important words capitalized. For example:
-                            <title type="anthology" corresp="#RUSKINACCOUNTTOUR" rend="bold">Account of a Tour of the Continent</title>. Where possible, these descriptive titles are drawn from <persName corresp="#JR">Ruskin</persName>&#x02BC;s habitual way of referring to
+                            <title type="composite" corresp="#JRACCOUNTTOUR"><hi rend="bold">Account of a Tour of the <geogName corresp="#CONTINENT">Continent</geogName></hi></title>. Where possible, these descriptive titles are drawn from <persName corresp="#JR">Ruskin</persName>&#x02BC;s habitual way of referring to
                             the works, albeit not on the manuscript itself (e.g., in his letters, <persName corresp="#JR">Ruskin</persName> refers to the &#x201C;Mineralogical Dictionary,&#x201D; although no such
                             title appears on the manuscript of that work). Another kind of example calling for this kind of descriptive title is a poem that has been all but
                             obliterated, rendering illegible both <persName corresp="#JR">Ruskin</persName>&#x02BC;s own title (if any existed) along with the first line that might have served by rule no. 2. For example: 
