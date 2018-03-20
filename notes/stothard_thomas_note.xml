@@ -23,6 +23,11 @@
                     <persName corresp="#YNH">Katrina B. Thomas</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
                     Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
@@ -32,7 +37,7 @@
             <editionStmt>
                 <edition n="1.0">
                     <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
-                    <date when="2012-09-04">September 4, 2011</date>
+                    <date when="2018-03-20">March 20, 2018</date>
                     <!--The notes version for all first passes is 1.0.-->
                     <title>Notes Version 1.0</title>
                 </edition>
@@ -59,16 +64,16 @@
         <body>
             <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
             <div type="note" subtype="biographical">
-                <head type="title">Thomas Stothard (1755&#x2013;1834)</head>
+                <head type="title">Thomas Stothard (<date notBefore="1755" notAfter="1834">1755&#x2013;1834</date>)</head>
                 <p>Painter and illustrator. <persName corresp="#TSB">Stothard</persName> was one of the most prolific book illustrators of his time, 
                     and he adapted his art to many media and emerging printing technologies, 
                     while simultaneously maintaining a reputation as a history painter and playing a respected role at the <orgName corresp="#ROYALACADEMY">Royal Academy</orgName>.
                 </p>
-                <p>One of <persName corresp="#TSB">Stothard&#x02BC;s</persName> influential patrons was <ref type="note" subtype="biographical" target="rogers_samuel_note.php"><persName corresp="#SR">Samuel Rogers</persName> (1763&#x2013;1855)</ref>, 
+                <p>One of <persName corresp="#TSB">Stothard&#x02BC;s</persName> influential patrons was <ref type="note" subtype="biographical" target="rogers_samuel_note.php"><persName corresp="#SR">Samuel Rogers</persName> (<date notBefore="1763" notAfter="1855">1763&#x2013;1855</date>)</ref>, 
                     for whom <persName corresp="#TSB">Stothard</persName> provided, among other commissions, the figure vignettes to illustrate the poet&#x02BC;s <date when="1830">1830</date> edition of the travelogue poem, <title type="poem" corresp="#ROGERSITALY"><hi rend="italic">Italy</hi></title>. 
                     <persName corresp="#JR">Ruskin</persName> imitated the style of these vignettes, along with those designed by <ref type="note" subtype="biographical" target="turner_joseph_note.php"><persName corresp="#JMWT">Turner</persName></ref> 
                     and <ref type="note" subtype="biographical" target="prout_samuel_note.php"><persName corresp="#SP">Prout</persName></ref> for the same publication, in the fair copy of his own 
-                    <ref type="apparatus" subtype="work" target="account_of_a_tour_on_the_continent_apparatus.php"><title type="anthology" corresp="#RUSKINACCOUNTTOUR">Account of a Tour on the Continent</title></ref>.
+                    <ref type="apparatus" subtype="work" target="account_of_a_tour_on_the_continent_apparatus.php"><title type="composite" corresp="#JRACCOUNTTOUR">Account of a Tour on the Continent</title></ref>.
                 </p>
             </div>
         </body>
