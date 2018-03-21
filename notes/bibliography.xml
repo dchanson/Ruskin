@@ -17,7 +17,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -207,7 +207,7 @@
                         <biblStruct xml:id="POEMS1850">
                             <monogr>
                                 <author>
-                                    <persName type="pen_name">J.R.</persName>
+                                    <persName type="pen_name">J.R.</persName><!--Change pen_name to <persName corres="JR"?-->
                                 </author>
                                 <title level="m"><hi rend="italic">Poems</hi></title>
                                 <imprint>
@@ -220,7 +220,7 @@
                         <biblStruct xml:id="JRLINESCUMBERLAND1829">
                             <analytic>
                                 <author><persName>
-                                    <surname><persName type="pen_name">R&#x2014; [Ruskin, John]</persName></surname>
+                                    <surname><persName type="pen_name">R&#x2014; [Ruskin, John]</persName></surname><!--Change pen_name to <persName corres="JR"?-->
                                 </persName></author>
                                 <title level="a">&#x201C;Lines Written at the Lakes in Cumberland. &#x007C; <hi rend="italic">Derwentwater</hi>&#x201D;</title>
                             </analytic>
@@ -239,7 +239,7 @@
                         <biblStruct xml:id="JRONSKIDDAWANDDERWENTWATER1830">
                             <analytic>
                                 <author><persName>
-                                    <surname><persName type="pen_name">R. [Ruskin, John]</persName></surname>
+                                    <surname><persName type="pen_name">R. [Ruskin, John]</persName></surname><!--Change pen_name to <persName corres="JR"?-->
                                 </persName></author>
                                 <title level="a">&#x201C;On Skiddaw and Derwent&#x2010;Water&#x201D;</title>
                             </analytic>
@@ -258,17 +258,17 @@
                         <biblStruct xml:id="JRDIARIES">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">The Diaries of John Ruskin</hi></title>
-                                <editor><persName>
+                                <editor><persName corresp="JEVANS">
                                     <forename>Joan</forename>
                                     <surname>Evans</surname>
                                 </persName></editor>
-                                <editor><persName>
+                                <editor><persName corresp="JHW">
                                     <forename>John Howard</forename>
                                     <surname>Whitehouse</surname>
                                 </persName></editor>
@@ -284,7 +284,7 @@
                         <biblStruct xml:id="JRDIARY1835">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
@@ -304,25 +304,25 @@
                         <biblStruct xml:id="MPIELEC">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="LWOOF">
                                         <forename>Lawrence</forename>
                                         <surname>Woof</surname>
                                     </persName>
                                 </editor>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="RHASLAM">
                                         <forename>Ray</forename>
                                         <surname>Haslam</surname>
                                     </persName>
                                 </editor>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="RGARSIDE">
                                         <forename>Roger</forename>
                                         <surname>Garside</surname>
                                     </persName>
@@ -339,13 +339,13 @@
                         <biblStruct xml:id="DEARDENITERIAD">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="JSD">
                                         <forename>James S.</forename>
                                         <surname>Dearden</surname>
                                     </persName>
@@ -362,7 +362,7 @@
                         <biblStruct xml:id="JRLETTERSTOWARD">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
@@ -386,12 +386,12 @@
                         
                         <biblStruct xml:id="JRLETTERS">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JR">
                                     <forename>John</forename>
                                     <surname>Ruskin</surname>
                                 </persName></author>
                                 <editor>
-                                    <persName>Charles Eliot Norton</persName>
+                                    <persName corresp="CEN">Charles Eliot Norton</persName>
                                 </editor>
                                 <title level="a">&#x201C;Letters of John Ruskin&#x201D;</title>
                             </analytic>
@@ -415,13 +415,13 @@
                         <biblStruct xml:id="JRLETTERSNORTON">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">Letters of John Ruskin to Charles Eliot Norton</hi></title>
-                                <editor><persName>
+                                <editor><persName corresp="CEN">
                                     <forename>Charles Eliot</forename>
                                     <surname>Norton</surname>
                                 </persName></editor>
@@ -437,7 +437,7 @@
                         <biblStruct xml:id="JRLETTERSTOACOLLEGEFRIEND1894">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
@@ -454,7 +454,7 @@
                         
                         <biblStruct xml:id="JRMYFIRSTEDITOR1878">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JR">
                                     <forename>John</forename>
                                     <surname>Ruskin</surname>
                                 </persName></author>
@@ -473,13 +473,13 @@
                         <biblStruct xml:id="JRPOEMS1882">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>James Osborne</forename>
                                         <surname>Wright</surname>
                                     </persName>
@@ -496,13 +496,13 @@
                         <biblStruct xml:id="JRPOEMS1886">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="JOWRIGHT">
                                         <forename>James Osborne</forename>
                                         <surname>Wright</surname>
                                     </persName>
@@ -519,13 +519,13 @@
                         <biblStruct xml:id="JRPOEMS4D1891">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="WGC">
                                         <forename>W. G.</forename>
                                         <surname>Collingwood</surname>
                                     </persName>
@@ -545,13 +545,13 @@
                         <biblStruct xml:id="JRPOEMS8D1891">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="WGC">
                                         <forename>W. G.</forename>
                                         <surname>Collingwood</surname>
                                     </persName>
@@ -571,7 +571,7 @@
                         <biblStruct xml:id="JRPOETRYOFARCHITECTURE1893">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
@@ -589,13 +589,13 @@
                         <biblStruct xml:id="RFL">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="VAB">
                                         <forename>Van Akin</forename>
                                         <surname>Burd</surname>
                                     </persName>
@@ -614,13 +614,13 @@
                         <biblStruct xml:id="RUSKININITALY">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="HIS">
                                         <forename>Harold I.</forename>
                                         <surname>Shapiro</surname>
                                     </persName>
@@ -637,13 +637,13 @@
                         <biblStruct xml:id="RUSKINTHREELAKELANDPOEMS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="JSD">
                                         <forename>J. S.</forename>
                                         <surname>Dearden</surname>
                                     </persName>
@@ -660,13 +660,13 @@
                         <biblStruct xml:id="JRTHREELETTERS1893">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="HPDALE">
                                         <forename>Helen Pelham</forename>
                                         <surname>Dale</surname>
                                     </persName>
@@ -684,19 +684,19 @@
                         <biblStruct xml:id="TOURLAKES">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="VAB">
                                         <forename>Van Akin</forename>
                                         <surname>Burd</surname>
                                     </persName>
                                 </editor>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="JSD">
                                         <forename>James S.</forename>
                                         <surname>Dearden</surname>
                                     </persName>
@@ -714,13 +714,13 @@
                         <biblStruct xml:id="WINNINGTONLETTERS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="VAB">
                                         <forename>Van Akin</forename>
                                         <surname>Burd</surname>
                                     </persName>
@@ -738,19 +738,19 @@
                         <biblStruct xml:id="JRWORKSLE">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="ETC">
                                         <forename>E. T.</forename>
                                         <surname>Cook</surname>
                                     </persName>
                                 </editor>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="AW">
                                         <forename>Alexander</forename>
                                         <surname>Wedderburn</surname>
                                     </persName>
@@ -791,7 +791,7 @@
                         <biblStruct xml:id="ACKERMANVILLA">
                             <monogr>
                                 <author>
-                                    <persName corresp="#JSACKERMAN">
+                                    <persName corresp="JSACKERMAN">
                                         <forename>James S.</forename>
                                         <surname>Ackerman</surname>
                                     </persName>
@@ -809,13 +809,13 @@
                         <biblStruct xml:id="AIKINBARBAULDEVENINGS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JAIKIN">
                                         <forename>John</forename>
-                                        <surname>Aiken</surname>
+                                        <surname>Aikin</surname>
                                     </persName>
                                 </author>
                                 <author>
-                                    <persName>
+                                    <persName corresp="ALB">
                                         <forename>Anna Letitia</forename>
                                         <surname>Barbauld</surname>
                                     </persName>
@@ -836,7 +836,7 @@
                         <biblStruct xml:id="AIKINMEMOIR">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="#LAIKIN">
                                         <forename>Lucy</forename>
                                         <surname>Aikin</surname>
                                     </persName>
@@ -875,13 +875,13 @@
                             </analytic>
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="CAA">
                                         <forename>Christine</forename>
                                         <surname>Alexander</surname>
                                     </persName>
                                 </author>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JMCM">
                                         <forename>Juliet</forename>
                                         <surname>McMaster</surname>
                                     </persName>
@@ -899,7 +899,7 @@
                         <biblStruct xml:id="ALEXANDEREARLYWRITINGS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="CAA">
                                         <forename>Christine</forename>
                                         <surname>Alexander</surname>
                                     </persName>
@@ -916,13 +916,13 @@
                         <biblStruct xml:id="ALEXANDERMCMASTERINTRODUCTION">
                             <analytic>
                                 <author>
-                                    <persName>
+                                    <persName corresp="CAA">
                                         <forename>Christine</forename>
                                         <surname>Alexander</surname>
                                     </persName>
                                 </author>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JMCM">
                                         <forename>Juliet</forename>
                                         <surname>McMaster</surname>
                                     </persName>
@@ -931,13 +931,13 @@
                             </analytic>
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="CAA">
                                         <forename>Christine</forename>
                                         <surname>Alexander</surname>
                                     </persName>
                                 </author>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JMCM">
                                         <forename>Juliet</forename>
                                         <surname>McMaster</surname>
                                     </persName>
@@ -955,7 +955,7 @@
                         <biblStruct xml:id="ALEXANDERPLAYANDAPPRENTICESHIP">
                             <analytic>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JMCM">
                                         <forename>Christine</forename>
                                         <surname>Alexander</surname>
                                     </persName>
@@ -964,13 +964,13 @@
                             </analytic>
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="CAA">
                                         <forename>Christine</forename>
                                         <surname>Alexander</surname>
                                     </persName>
                                 </author>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JMCM">
                                         <forename>Juliet</forename>
                                         <surname>McMaster</surname>
                                     </persName>
@@ -987,7 +987,7 @@
                         
                         <biblStruct xml:id="ALEXANDERREADERSANDWRITERS">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="CAA">
                                     <forename>Christine</forename>
                                     <surname>Alexander</surname>
                                 </persName></author>
@@ -1005,7 +1005,7 @@
                         
                         <biblStruct xml:id="ALEXANDERBRONTEANNUALS">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="CAA">
                                     <forename>Christine</forename>
                                     <surname>Alexander</surname>
                                 </persName></author>
@@ -1024,30 +1024,30 @@
                         
                         <biblStruct xml:id="ALLENPAULMELLONSLEGACY">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="BALLEN">
                                     <forename>Brian</forename>
                                     <surname>Allen</surname>
                                 </persName></author>
                                 <title level="a">&#x201C;Paul Mellon and Scholarship in the History of British Art&#x201D;</title>
                             </analytic>
                             <monogr>
-                                <editor>
+                                <editor><persName corresp="BALLEN"></persName>
                                     <forename>Brian</forename>
                                     <surname>Allen</surname>
                                 </editor>
-                                <editor>
+                                <editor><persName corresp="JBASKETT"></persName>
                                     <forename>John</forename>
                                     <surname>Baskett</surname>
                                 </editor>
-                                <editor>
+                                <editor><persName corresp="JDPROWN"></persName>
                                     <forename>Jules David</forename>
                                     <surname>Prown</surname>
                                 </editor>
-                                <editor>
+                                <editor><persName corresp="WJREESE"></persName>
                                     <forename>William</forename>
                                     <surname>Reese</surname>
                                 </editor>
-                                <editor>
+                                <editor><persName corresp="DROBINSON"></persName>
                                     <forename>Duncan</forename>
                                     <surname>Robinson</surname>
                                 </editor>
@@ -1082,7 +1082,7 @@
                         <biblStruct xml:id="ANDREWSPICTURESQUE">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="MANDREWS">
                                         <forename>Malcolm</forename>
                                         <surname>Andrews</surname>
                                     </persName>
@@ -1114,7 +1114,7 @@
                         <biblStruct xml:id="ANSTRUTHERCOVENTRYPATMORESANGEL">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="IA">
                                         <forename>Ian</forename>
                                         <surname>Anstruther</surname>
                                     </persName>
@@ -1196,7 +1196,7 @@
                         
                         <biblStruct xml:id="INGLISDNB">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="EBAIGENT">
                                     <forename>Elizabeth</forename>
                                     <surname>Baigent</surname>
                                 </persName></author>
@@ -1216,7 +1216,7 @@
                         <biblStruct xml:id="BAINGIFTBOOKILLUSTRATIONS">
                             <analytic>
                                 <author>
-                                    <persName>
+                                    <persName corresp="IBAIN">
                                         <forename>Iain</forename>
                                         <surname>Bain</surname>
                                     </persName>
@@ -1225,7 +1225,7 @@
                             </analytic>
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="FWFAXON">
                                         <forename>Frederick W.</forename>
                                         <surname>Faxon</surname>
                                     </persName>
@@ -1245,7 +1245,7 @@
                         
                         <biblStruct xml:id="BAINPERTHSTEAM">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JCBAIN">
                                     <forename>J. Colin</forename>
                                     <surname>Bain</surname>
                                 </persName></author>
@@ -1279,16 +1279,16 @@
                         <biblStruct xml:id="BARBAULDPOEMS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="ALB">
                                         <forename>Anna Letitia</forename>
                                         <surname>Barbauld</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">The Poems of Anna Letitia Barbauld</hi></title>
-                                <editor>
+                                <editor><persName corresp="WMCCARTHY">
                                     <forename>William</forename>
                                     <surname>McCarthy</surname>
-                                </editor>
+                                </persName></editor>
                                 <editor>
                                     <forename>Elizabeth</forename>
                                     <surname>Kraft</surname>
@@ -1304,15 +1304,16 @@
                         <biblStruct xml:id="BARBAULDWORKS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="ALB">
                                         <forename>Anna Letitia</forename>
                                         <surname>Barbauld</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">The Works of Anna L&#x00E6;titia Barbauld, with a Memoir</hi></title>
-                                <editor>
+                                <editor><persName corresp="LAIKIN">
                                     <forename>Lucy</forename>
                                     <surname>Aikin</surname>
+                                </persName>
                                 </editor>
                                 <imprint>
                                     <biblScope type="vol" n="2">2 vols.</biblScope>
@@ -1326,13 +1327,13 @@
                         <biblStruct xml:id="SEQUELTOENQUIRY">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="NB">
                                         <forename>Nicolas</forename>
                                         <surname>Barker</surname>
                                     </persName>
                                 </author>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JCC">
                                         <forename>John</forename>
                                         <surname>Collins</surname>
                                     </persName>
