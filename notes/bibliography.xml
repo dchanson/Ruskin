@@ -20,6 +20,11 @@
                     <persName corresp="#AEH">Aimee E. Harris</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#LAL">Lauren A. Lambert</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
                     Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
@@ -370,11 +375,17 @@
                                 <title level="m"><hi rend="italic">John Ruskin&#x02BC;s Letters to William Ward</hi></title>
                                 <respStmt>
                                     <resp>With a short biography of William Ward by</resp>
-                                    <name>William C. Ward;</name>
+                                    <persName corresp="WWARD">
+                                        <forename> William C.</forename>
+                                        <surname> Ward </surname>
+                                    </persName>             
                                 </respStmt>
                                 <respStmt>
                                     <resp>and an introduction by</resp>
-                                    <name>Alfred Mansfield Brooks</name>
+                                    <persName corresp="AMBROOKS">
+                                        <forename> Alfred Mansfield</forename>
+                                        <surname> Brooks </surname>
+                                    </persName>   
                                 </respStmt>
                                 <imprint>
                                     <pubPlace>Boston</pubPlace>
@@ -1351,13 +1362,13 @@
                         <biblStruct xml:id="BARRETTBROWNINGEARLIERPOEMS1878">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="EBB">
                                         <forename>Elizabeth</forename>
                                         <surname>Barrett Browning</surname>
                                     </persName>
                                 </author>
-                                <title level="m"><hi rend="italic">The Earlier Poems of Elizabeth Barrett Browning, 1826–1833</hi></title>
-                                <editor>
+                                <title level="m"><hi rend="italic">The Earlier Poems of Elizabeth Barrett Browning, <date notBefore="1826" notAfter="1833">1826&#x2013;1833</date></hi></title>
+                                <editor corresp="RHS">
                                     <forename>Richard Herne</forename>
                                     <surname>Shepherd</surname>
                                 </editor>
@@ -1372,7 +1383,7 @@
                         <biblStruct xml:id="BARROWFAMILYJOURNEY">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="SJB">
                                         <forename>John]</forename>
                                         <surname>[Barrow</surname>
                                     </persName>
@@ -1394,7 +1405,7 @@
                                         <surname>Basire</surname>
                                     </persName>
                                 </author>
-                                <title level="m" type="main"><hi rend="italic">Ground Plan of the Royal Colosseum, Regents Park, London</hi> [lithograph, 1855]</title>
+                                <title level="m" type="main"><hi rend="italic">Ground Plan of the Royal Colosseum, Regents Park, London</hi> [lithograph, <date when="1855">1855</date>]</title>
                                 <imprint>
                                     <pubPlace>http://www.bl.uk/onlinegallery/onlineex/crace/g/007000000000014u00036000.html (accessed <date when="2017-05-19">19 May 2017</date></pubPlace>
                                     <publisher>British Library Online Gallery</publisher>
@@ -1405,13 +1416,13 @@
                     <biblStruct xml:id="BATTENPLEASURABLEINSTRUCTION">
                         <monogr>
                             <author>
-                                <persName>
+                                <persName corresp="CB">
                                     <forename>Charles L.</forename>
                                     <surname>Batten</surname>
                                 </persName>
                             </author>
                             <title level="m" type="main"><hi rend="italic">Pleasurable Instruction</hi></title>
-                            <title type="sub"><hi rend="italic">Form and Convention in Eighteenth-Century Travel Literature</hi></title>
+                            <title type="sub"><hi rend="italic">Form and Convention in Eighteenth&#x2010;Century Travel Literature</hi></title>
                             <imprint>
                                 <pubPlace>Berkeley and Los Angeles</pubPlace>
                                 <publisher>University of California Press</publisher>
@@ -1423,7 +1434,7 @@
                     <biblStruct xml:id="SCOTLANDILLUSTRATED">
                         <monogr>
                             <author>
-                                <persName>
+                                <persName corresp="WB">
                                     <forename>William</forename>
                                     <surname>Beattie</surname>
                                 </persName>
@@ -1432,15 +1443,15 @@
                             <title type="sub"><hi rend="italic">In a Series of Views Taken Expressly for This Work</hi></title>
                             <respStmt>
                                 <resp>Illustrated by</resp>
-                                <persName>
+                                <persName corresp="TALLOM">
                                     <forename>T.</forename>
                                     <surname>Allom</surname>
                                 </persName>
-                                <persName>
+                                <persName corresp="WHBARTLETT">
                                     <forename>W. H.</forename>
                                     <surname>Bartlett</surname>
                                 </persName>
-                                <persName>
+                                <persName corresp="HMCCULLOCH">
                                     <forename>H.</forename>
                                     <surname>M&#x2018;Culloch</surname>
                                 </persName>
@@ -1457,7 +1468,7 @@
                         <biblStruct xml:id="BEATTIESWITZERLANDILLUSTRATED">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="WB">
                                         <forename>William</forename>
                                         <surname>Beattie</surname>
                                     </persName>
@@ -1466,7 +1477,7 @@
                                 <title type="sub"><hi rend="italic">In a Series of Views Taken Expressly for This Work</hi></title>
                                 <respStmt>
                                     <resp>Illustrated by</resp>
-                                    <persName>
+                                    <persName corresp="WHBARTLETT">
                                         <forename>W. H.</forename>
                                         <surname>Bartlett</surname>
                                     </persName>
@@ -1483,12 +1494,12 @@
                         <biblStruct xml:id="BECKERPRACTICEOFLETTERS">
                             <monogr>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="DPBECKER">
                                         <forename>David P.</forename>
                                         <surname>Becker</surname>
                                     </persName>
                                 </editor>
-                                <title level="m" type="main"><hi rend="italic">The Practice of Letters: The Hofer Collection of Writing Manuals, 1514-1800</hi></title>
+                                <title level="m" type="main"><hi rend="italic">The Practice of Letters: The Hofer Collection of Writing Manuals, <date notBefore="1514" notAfter="1800">1514&#x2013;1800</date></hi></title>
                                 <imprint>
                                     <pubPlace>Cambridge, Mass.</pubPlace>
                                     <publisher>Harvard College Library</publisher>
@@ -1499,11 +1510,11 @@
                         
                         <biblStruct xml:id="SMITHDNB">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="BBELL">
                                     <forename>Bill</forename>
                                     <surname>Bell</surname>
                                 </persName></author>
-                                <title level="a">&#x201C;Smith, George Murray (1824&#x2013;1901)&#x201D;</title>
+                                <title level="a">&#x201C;Smith, George Murray (<date notBefore="1824" notAfter="1901">1824&#x2013;1901</date>)&#x201D;</title>
                             </analytic>
                             <monogr>
                                 <title level="m"><hi rend="italic">Oxford Dictionary of National Biography Online Edition</hi></title>
@@ -1518,14 +1529,14 @@
                     
                     <biblStruct xml:id="BEAUTIES">
                         <analytic>
-                            <author><persName>
+                            <author><persName  corresp="BMB">
                                 <forename>Barbara M.</forename>
                                 <surname>Benedict</surname>
                             </persName></author>
-                            <title level="a">&#x201C;The &#x2018;Beauties&#x2019; of Literature, 1750&#x2013;1820: Tasteful Prose and Fine Rhyme for Private Consumption&#x201D;</title>
+                            <title level="a">&#x201C;The &#x2018;Beauties&#x2019; of Literature, <date notBefore="1750" notAfter="1820">1750&#x2013;1820</date>: Tasteful Prose and Fine Rhyme for Private Consumption&#x201D;</title>
                         </analytic>
                         <monogr>
-                            <title level="j"><hi rend="italic">1650-1850: Ideas, Aesthetics and Inquiries in the Early Modern Era</hi></title>
+                            <title level="j"><hi rend="italic"><date notBefore="1650" notAfter="1850">1650&#x2013;1850</date>: Ideas, Aesthetics and Inquiries in the Early Modern Era</hi></title>
                             <imprint>
                                 <biblScope type="vol">1</biblScope>
                                 <date when="1994">1994</date>
@@ -1536,7 +1547,7 @@
                     
                     <biblStruct xml:id="MISCELLANIES">
                         <analytic>
-                            <author><persName>
+                            <author><persName corresp="BMB">
                                 <forename>Barbara M.</forename>
                                 <surname>Benedict</surname>
                             </persName></author>
@@ -1556,7 +1567,7 @@
                         <biblStruct xml:id="BENNETTSTOTHARD">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="SMBENNETT">
                                         <forename>Shelley M.</forename>
                                         <surname>Bennett</surname>
                                     </persName>
@@ -1574,7 +1585,7 @@
                         <biblStruct xml:id="BENSONPRINTEDPICTURE">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="RBENSON">
                                         <forename>Richard</forename>
                                         <surname>Benson</surname>
                                     </persName>
@@ -1625,13 +1636,13 @@
                         <biblStruct xml:id="BLAKEPOEMS1874">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="WBP">
                                         <forename>William</forename>
                                         <surname>Blake</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">Poems of William Blake</hi></title>
-                                <editor>
+                                <editor corresp="RHS">
                                     <forename>Richard Herne</forename>
                                     <surname>Shepherd</surname>
                                 </editor>
@@ -1646,13 +1657,13 @@
                         <biblStruct xml:id="BLAKESONGS1866">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="WBP">
                                         <forename>William</forename>
                                         <surname>Blake</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">Songs of Innocence and Experience, with Other Poems</hi></title>
-                                <editor>
+                                <editor corresp="RHS">
                                     <forename>Richard Herne</forename>
                                     <surname>Shepherd</surname>
                                 </editor>
@@ -1666,7 +1677,7 @@
                         
                         <biblStruct xml:id="BOCKAUTHORSHIP">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="CBOCK">
                                     <forename>Carol</forename>
                                     <surname>Bock</surname>
                                 </persName></author>
@@ -1685,7 +1696,7 @@
                         <biblStruct xml:id="BOCKOURPLAYS">
                             <analytic>
                                 <author>
-                                    <persName>
+                                    <persName corresp="CBOCK">
                                         <forename>Carol</forename>
                                         <surname>Bock</surname>
                                     </persName>
@@ -1694,7 +1705,7 @@
                             </analytic>
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="HGLEN">
                                         <forename>Heather</forename>
                                         <surname>Glen</surname>
                                     </persName>
@@ -1726,7 +1737,7 @@
                         <biblStruct xml:id="BRAYSTOTHARD">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="AEBRAY">
                                         <forename>[Anna Eliza]</forename>
                                         <surname>Bray</surname>
                                     </persName>
@@ -1742,7 +1753,7 @@
                         
                         <biblStruct xml:id="BRETONJUVENILIA">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="RBRETON">
                                     <forename>Rob</forename>
                                     <surname>Breton</surname>
                                 </persName></author>
@@ -1761,11 +1772,11 @@
                         
                         <biblStruct xml:id="ROBINSONDNB">
                             <analytic>
-                                <author><persName corresp="#SBRINDLE">
+                                <author><persName corresp="SBRINDLE">
                                     <forename>Steven</forename>
                                     <surname>Brindle</surname>
                                 </persName></author>
-                                <title level="a">&#x201C;Robinson, Peter Frederick (1776&#x2013;1858)&#x201D;</title>
+                                <title level="a">&#x201C;Robinson, Peter Frederick (<date notBefore="1776" notAfter="1858">1776&#x2013;1858</date>)&#x201D;</title>
                             </analytic>
                             <monogr>
                                 <title level="m"><hi rend="italic">Oxford Dictionary of National Biography Online Edition</hi></title>
@@ -1781,7 +1792,7 @@
                         <biblStruct xml:id="BRISTOWVICTORIANPOETINTRO">
                             <analytic>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JBRISTOW">
                                         <forename>Joseph</forename>
                                         <surname>Bristow</surname>
                                     </persName>
@@ -1790,7 +1801,7 @@
                             </analytic>
                             <monogr>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="JBRISTOW">
                                         <forename>Joseph</forename>
                                         <surname>Bristow</surname>
                                     </persName>
@@ -1808,7 +1819,7 @@
                         <biblStruct xml:id="BROCKEDONILLUSTRATIONS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="WBI">
                                         <forename>William</forename>
                                         <surname>Brockedon</surname>
                                     </persName>
@@ -1816,7 +1827,7 @@
                                 <title level="m"><hi rend="italic">Illustrations of the Passes of the Alps, by Which Italy Communicates with France, Switzerland, and Germany</hi></title>
                                 <respStmt>
                                     <resp>Illustrated by</resp>
-                                    <persName>
+                                    <persName corresp="WBI">
                                         <forename>William</forename>
                                         <surname>Brockedon</surname>
                                     </persName>
@@ -1834,21 +1845,21 @@
                         <biblStruct xml:id="BRONTEVILLETTE">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="CBW">
                                         <forename>Charlotte</forename>
                                         <surname>Bront&#x00EB;</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">Villette</hi></title>
-                                <editor>
+                                <editor corresp="MSMITH">
                                     <forename>Margaret</forename>
                                     <surname>Smith</surname>
                                 </editor>
-                                <editor>
+                                <editor corresp="HROSENGARTEN">
                                     <forename>Herbert</forename>
                                     <surname>Rosengarten</surname>
                                 </editor>
-                                <editor>
+                                <editor corresp="TDOLAN">
                                     <forename>Tim</forename>
                                     <surname>Dolan</surname>
                                 </editor>
@@ -1869,7 +1880,7 @@
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">Tales of Glass Town, Angria, and Gondal: Selected Writings</hi></title>
-                                <editor>
+                                <editor corresp="CAA">
                                     <forename>Christine</forename>
                                     <surname>Alexander</surname>
                                 </editor>
@@ -1884,13 +1895,13 @@
                         <biblStruct xml:id="BROWNINGWORKS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="RB">
                                         <forename>Robert</forename>
                                         <surname>Browning</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">The Complete Works of Robert Browning</hi></title>
-                                <editor>
+                                <editor corresp="RKING">
                                     <forename>Roma</forename>
                                     <surname>King</surname>
                                 </editor>
@@ -1906,7 +1917,7 @@
                         <biblStruct xml:id="BULWERLYTTONPILGRIMS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="EBL">
                                         <forename>Edward]</forename>
                                         <surname>[Bulwer&#x2010;Lytton</surname>
                                     </persName>
@@ -1923,7 +1934,7 @@
                         <biblStruct xml:id="RFLINTRO">
                             <analytic>
                                 <author>
-                                    <persName>
+                                    <persName corresp="VAB">
                                         <forename>Van Akin</forename>
                                         <surname>Burd</surname>
                                     </persName>
@@ -1932,19 +1943,19 @@
                             </analytic>
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="VAB">
                                         <forename>Van Akin</forename>
                                         <surname>Burd</surname>
                                     </persName>
                                 </editor>
                                 <title type="main" level="m"><hi rend="italic">The Ruskin Family Letters</hi></title>
-                                <title type="sub"><hi rend="italic">The Correspondence of John James Ruskin, His Wife, and Their Son, John, 1801&#x2013;1843</hi></title>
+                                <title type="sub"><hi rend="italic">The Correspondence of John James Ruskin, His Wife, and Their Son, John, <date notBefore="1801" notAfter="1843">1801&#x2013;1843</date></hi></title>
                                 <imprint>
                                     <biblScope type="vol" n="2">2 vols.</biblScope>
                                     <pubPlace>Ithaca, N.Y.</pubPlace>
@@ -1958,7 +1969,7 @@
                         <biblStruct xml:id="TOURLAKESINTRO">
                             <analytic>
                                 <author>
-                                    <persName>
+                                    <persName corresp="VAB">
                                         <forename>Van Akin</forename>
                                         <surname>Burd</surname>
                                     </persName>
@@ -1967,25 +1978,25 @@
                             </analytic>
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="VAB">
                                         <forename>Van Akin</forename>
                                         <surname>Burd</surname>
                                     </persName>
                                 </editor>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="JSD">
                                         <forename>James S.</forename>
                                         <surname>Dearden</surname>
                                     </persName>
                                 </editor>
                                 <title type="main" level="m"><hi rend="italic">A Tour to the Lakes in Cumberland</hi></title>
-                                <title type="sub"><hi rend="italic">John Ruskin's Diary for 1830</hi></title>
+                                <title type="sub"><hi rend="italic">John Ruskin's Diary for <date when="1830">1830</date></hi></title>
                                 <imprint>
                                     <pubPlace>Aldershot</pubPlace>
                                     <publisher>Scolar</publisher>
@@ -1998,7 +2009,7 @@
                         <biblStruct xml:id="WINNINGTONLETTERSINTRO">
                                 <analytic>
                                     <author>
-                                        <persName>
+                                        <persName corresp="VAB">
                                             <forename>Van Akin</forename>
                                             <surname>Burd</surname>
                                         </persName>
@@ -2007,13 +2018,13 @@
                                 </analytic>
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JR">
                                         <forename>John</forename>
                                         <surname>Ruskin</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="VAB">
                                         <forename>Van Akin</forename>
                                         <surname>Burd</surname>
                                     </persName>
@@ -2032,7 +2043,7 @@
                         <biblStruct xml:id="BURDRUSKINSTESTAMENT">
                             <analytic>
                                 <author>
-                                    <persName>
+                                    <persName corresp="VAB">
                                         <forename>Van Akin</forename>
                                         <surname>Burd</surname>
                                     </persName>
@@ -2041,7 +2052,7 @@
                             </analytic>
                             <monogr>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="RHEWISON">
                                         <forename>Robert</forename>
                                         <surname>Hewison</surname>
                                     </persName>
@@ -2059,7 +2070,7 @@
                         <biblStruct xml:id="BURNEJONESMEMORIALS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="GBURNEJONES">
                                         <forename>Georgiana</forename>
                                         <surname>Burne&#x2010;Jones</surname>
                                     </persName>
@@ -2076,7 +2087,7 @@
                     
                     <biblStruct xml:id="STATISTICALACCOUNT">
                         <analytic>
-                            <author><persName>
+                            <author><persName corresp="ABURT">
                                 <forename>Alexander</forename>
                                 <surname>Burt</surname>
                             </persName></author>
@@ -2094,7 +2105,7 @@
                         
                         <biblStruct xml:id="BUTLERSHIBBOLETH">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JBUTLER">
                                     <forename>Janet</forename>
                                     <surname>Butler</surname>
                                 </persName></author>
@@ -2114,13 +2125,13 @@
                         <biblStruct xml:id="BUZARDBEATEN">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JB">
                                         <forename>James</forename>
                                         <surname>Buzard</surname>
                                     </persName>
                                 </author>
                                 <title level="m" type="main"><hi rend="italic">The Beaten Track</hi></title>
-                                <title type="sub"><hi rend="italic">European Tourism, Literature, and the Ways to Culture, 1800&#x2013;1918</hi></title>
+                                <title type="sub"><hi rend="italic">European Tourism, Literature, and the Ways to Culture, <date notBefore="1800" notAfter="1918">1800&#x2013;1918</date></hi></title>
                                 <imprint>
                                     <pubPlace>Oxford</pubPlace>
                                     <publisher>Clarendon Press</publisher>
@@ -2132,13 +2143,13 @@
                         <biblStruct xml:id="BYRONWORKS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="GGB">
                                         <forename>George Gordon,</forename>
                                         <surname>Lord Byron</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">The Complete Poetical Works</hi></title>
-                                <editor>
+                                <editor corresp="JJM">
                                     <forename>Jerome J.</forename>
                                     <surname>McGann</surname>
                                 </editor>
@@ -2154,7 +2165,7 @@
                         <biblStruct xml:id="FINDENSILLUSTRATIONSBYRON">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="GGB">
                                         <forename>George Gordon, Lord</forename>
                                         <surname>Byron</surname>
                                     </persName>
@@ -2162,11 +2173,21 @@
                                 <title level="m"><hi rend="italic">Finden&#x02BC;s Illustrations of the Life and Works of Lordy Byron</hi></title>
                                 <respStmt>
                                     <resp>Illustrated by</resp>
-                                    <name>Edward Francis and William Finden</name>
+                                    <persName corresp="EFF">
+                                        <forename> Edward Francis</forename>
+                                        <surname> Finden </surname>
+                                    </persName>
+                                    <persName corresp="WF">
+                                        <forename> William</forename>
+                                        <surname> Finden </surname>
+                                    </persName>   
                                 </respStmt>
                                 <respStmt>
                                     <resp>Engravings introduced by</resp>
-                                    <name>William Brockedon</name>
+                                    <persName corresp="WBI">
+                                        <forename> William </forename>
+                                        <surname> Brockedon </surname>
+                                    </persName> 
                                 </respStmt>
                                 <imprint>
                                     <biblScope type="vol" n="3">3 vols.</biblScope>
@@ -2180,13 +2201,13 @@
                         <biblStruct xml:id="BYRONLETTERSJOURNALSMOORE">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="GGB">
                                         <forename>George Gordon, Lord</forename>
                                         <surname>Byron</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">Letters and Journals of Lord Byron; with Notices of His Life</hi></title>
-                                <editor>
+                                <editor corresp="TM">
                                     <forename>Thomas</forename>
                                     <surname>Moore</surname>
                                 </editor>
@@ -2212,13 +2233,13 @@
                             </analytic>
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="CCASALIGGI">
                                         <forename>Carmen</forename>
                                         <surname>Casaliggi</surname>
                                     </persName>
                                 </author>
                                 <author>
-                                    <persName>
+                                    <persName corresp="PMARCHRUSSELL">
                                         <forename>Paul</forename>
                                         <surname>March&#x2010;Russell</surname>
                                     </persName>
@@ -2236,7 +2257,7 @@
                         <biblStruct xml:id="BOOKCOLLECTORS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JC">
                                         <forename>John</forename>
                                         <surname>Carter</surname>
                                     </persName>
@@ -2253,7 +2274,7 @@
                         <biblStruct xml:id="TASTEANDTECHNIQUE">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JC">
                                         <forename>John</forename>
                                         <surname>Carter</surname>
                                     </persName>
@@ -2271,18 +2292,18 @@
                         <biblStruct xml:id="ENQUIRY">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JC">
                                         <forename>John</forename>
                                         <surname>Carter</surname>
                                     </persName>
                                 </author>
                                 <author>
-                                    <persName>
+                                    <persName corresp="HGP">
                                         <forename>Graham</forename>
                                         <surname>Pollard</surname>
                                     </persName>
                                 </author>
-                                <title level="m"><hi rend="italic">An Enquiry into the Nature of Certain Nineteenth-Century Pamphlets</hi></title>
+                                <title level="m"><hi rend="italic">An Enquiry into the Nature of Certain Nineteenth&#x2010;Century Pamphlets</hi></title>
                                 <imprint>
                                     <pubPlace>London</pubPlace>
                                     <publisher>Constable</publisher><!-- simultaneously published New York: Charles Scribner’s Sons; how show this, using same pub year?-->
@@ -2294,7 +2315,7 @@
                         <biblStruct xml:id="CERVANTESQUIXOTELOCKHART">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="MDC">
                                         <forename>Miguel de</forename>
                                         <surname>Cervantes</surname>
                                     </persName>
@@ -2302,9 +2323,12 @@
                                 <title level="m"><hi rend="italic">The History of the Ingenious Gentleman, Don Quixote of La Mancha</hi></title>
                                 <respStmt>
                                     <resp>Translated by</resp>
-                                    <name>Peter Anthony Motteux</name>
+                                    <persName corresp="PAM">
+                                        <forename> Peter Anthony</forename>
+                                        <surname> Motteux </surname>
+                                    </persName>   
                                 </respStmt>
-                                <editor>
+                                <editor corresp="JGL">
                                     <forename>John Gibson</forename>
                                     <surname>Lockhart</surname>
                                 </editor>
@@ -2320,7 +2344,7 @@
                         <biblStruct xml:id="CHADWICKSTOMERS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="HCHADWICK">
                                         <forename>Hubert</forename>
                                         <surname>Chadwick</surname>
                                     </persName>
@@ -2336,7 +2360,7 @@
                         
                         <biblStruct xml:id="CHANDLERSOUTHEYSGERMANSUBLIMITY">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="DCHANDLER">
                                     <forename>David</forename>
                                     <surname>Chandler</surname>
                                 </persName></author>
@@ -2345,8 +2369,8 @@
                             <monogr>
                                 <title level="j"><hi rend="italic">Romanticism on the Net</hi></title>
                                 <imprint>
-                                    <biblScope type="no">32-33</biblScope>
-                                    <date notBefore="2003-11" notAfter="2004-02">November 2003-February 2004</date>
+                                    <biblScope type="no">32&#x2013;33</biblScope>
+                                    <date notBefore="2003-11" notAfter="2004-02">November 2003&#x2013;February 2004</date>
                                     <biblScope type="pages">58&#x2013;66</biblScope>
                                     <pubPlace>https://www.erudit.org/fr/revues/ron/2003-n32-33-ron769/009257ar/</pubPlace>
                                     <date when="2017-12-21">Accessed 21 December 2017</date>
@@ -2375,7 +2399,7 @@
                         <biblStruct xml:id="CHASEEROSANDPSYCHE">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="KC">
                                         <forename>Karen</forename>
                                         <surname>Chase</surname>
                                     </persName>
@@ -2391,15 +2415,15 @@
                         
                         <biblStruct xml:id="LAURIEDNB">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="TCLAYTON">
                                     <forename>Timothy</forename>
                                     <surname>Clayton</surname>
                                 </persName></author>
-                                <author><persName>
+                                <author><persName corresp="AMCCONNELL">
                                     <forename>Anita</forename>
                                     <surname>McConnell</surname>
                                 </persName></author>
-                                <title level="a">&#x201C;Laurie, Robert (1755?&#x2013;1836&#x201D;</title>
+                                <title level="a">&#x201C;Laurie, Robert (<date notBefore="1755" notAfter="1836">1755?&#x2013;1836&#x201D;</date></title>
                             </analytic>
                             <monogr>
                                 <title level="m"><hi rend="italic">Oxford Dictionary of National Biography Online Edition</hi></title>
@@ -2415,7 +2439,7 @@
                         <biblStruct xml:id="COXHEADSTOTHARD">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="ACCOXHEAD">
                                         <forename>A. C.</forename>
                                         <surname>Coxhead</surname>
                                     </persName>
@@ -2432,7 +2456,7 @@
                         <biblStruct xml:id="CLEALSTORYCONGREGATIONALISM">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="EECLEAL">
                                         <forename>Edward E.</forename>
                                         <surname>Cleal</surname>
                                     </persName>
@@ -2440,7 +2464,7 @@
                                 <title level="m" type="main"><hi rend="italic">The Story of Congregationalism in Surrey</hi></title>
                                 <respStmt>
                                     <resp>Assisted by</resp>
-                                    <persName>
+                                    <persName corresp="TGCRIPPEN">
                                         <forename>T. G.</forename>
                                         <surname>Crippen</surname>
                                     </persName>
@@ -2469,13 +2493,13 @@
                         <biblStruct xml:id="BRITONS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="LC">
                                         <forename>Linda</forename>
                                         <surname>Colley</surname>
                                     </persName>
                                 </author>
                                 <title level="m" type="main"><hi rend="italic">Britons</hi></title>
-                                <title type="sub"><hi rend="italic">Forging the Nation, 1707&#x2013;1837</hi></title>
+                                <title type="sub"><hi rend="italic">Forging the Nation, <date notBefore="1707" notAfter="1837">1707&#x2013;1837</date></hi></title>
                                 <imprint>
                                     <pubPlace>New Haven, Conn.</pubPlace>
                                     <publisher>Yale University Press</publisher>
@@ -2487,7 +2511,7 @@
                         <biblStruct xml:id="WGCLIFEOFJR1893">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="WGC">
                                         <forename>W. G.</forename>
                                         <surname>Collingwood</surname>
                                     </persName>
@@ -2510,7 +2534,7 @@
                         <biblStruct xml:id="WGCLIFEOFJR1900">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="WGC">
                                         <forename>W. G.</forename>
                                         <surname>Collingwood</surname>
                                     </persName>
@@ -2531,11 +2555,11 @@
                         
                         <biblStruct xml:id="SHEPHERDDNB">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JFRCOLLINS">
                                     <forename>J. F. R.</forename>
                                     <surname>Collins</surname>
                                 </persName></author>
-                                <title level="a">&#x201C;Shepherd, Richard Herne (1840&#x2013;1895)&#x201D;</title>
+                                <title level="a">&#x201C;Shepherd, Richard Herne (<date notBefore="1840" notAfter="1895">1840&#x2013;1895</date>)&#x201D;</title>
                             </analytic>
                             <monogr>
                                 <title level="m"><hi rend="italic">Oxford Dictionary of National Biography Online Edition</hi></title>
@@ -2551,7 +2575,7 @@
                         <biblStruct xml:id="COLLINSTWOFORGERS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JFRCOLLINS">
                                         <forename>J. F. R.</forename>
                                         <surname>Collins</surname>
                                     </persName>
@@ -2570,7 +2594,7 @@
                         <biblStruct xml:id="EARLYPOEMSTENNYSON">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JCC">
                                         <forename>John Churton</forename>
                                         <surname>Collins</surname>
                                     </persName>
@@ -2587,7 +2611,7 @@
                         <biblStruct xml:id="COOKLIFEOFRUSKIN">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="ETC">
                                         <forename>E. T.</forename>
                                         <surname>Cook</surname>
                                     </persName>
@@ -2622,7 +2646,7 @@
                         
                         <biblStruct xml:id="COOPERPATRIOT">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JNCOOPER">
                                     <forename>J. Nicoll</forename>
                                     <surname>Cooper</surname>
                                 </persName></author>
@@ -2641,7 +2665,7 @@
                         
                         <biblStruct xml:id="COPEEARLYANALYSIS">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JICOPE">
                                     <forename>Jackson I.</forename>
                                     <surname>Cope</surname>
                                 </persName></author>
@@ -2661,17 +2685,17 @@
                         <biblStruct xml:id="COWPERPOEMS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="WCP">
                                         <forename>William</forename>
                                         <surname>Cowper</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">The Poems of William Cowper</hi></title>
-                                <editor>
+                                <editor corresp="JDBAIRD">
                                     <forename>John D.</forename>
                                     <surname>Baird</surname>
                                 </editor>
-                                <editor>
+                                <editor corresp="CRYSKAMP">
                                     <forename>Charles</forename>
                                     <surname>Ryskamp</surname>
                                 </editor>
@@ -2687,7 +2711,7 @@
                         <biblStruct xml:id="CRAIKHISTORY">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="GLCRAIK">
                                         <forename>George Lillie</forename>
                                         <surname>Craik</surname>
                                     </persName>
@@ -2704,18 +2728,18 @@
                         
                         <biblStruct xml:id="CRANECHATTERTON">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JCCRITIC">
                                     <forename>Julie</forename>
                                     <surname>Crane</surname>
                                 </persName></author>
                                 <title level="a">&#x201C;&#x2018;Wandering between Two Worlds&#x2019; The Victorian Afterlife of Thomas Chatterton&#x201D;</title>
                             </analytic>
                             <monogr>
-                                <editor><persName>
+                                <editor><persName corresp="ARADFORD">
                                     <forename>Andrew</forename>
                                     <surname>Radford</surname>
                                 </persName></editor>
-                                <editor><persName>
+                                <editor><persName corresp="MSANDY">
                                     <forename>Mark</forename>
                                     <surname>Sandy</surname>
                                 </persName></editor>
@@ -2732,7 +2756,7 @@
                         <biblStruct xml:id="CRAMSIEGRAPHIC">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="PCRAMSIE">
                                         <forename>Patrick</forename>
                                         <surname>Cramsie</surname>
                                     </persName>
@@ -2749,7 +2773,7 @@
                         <biblStruct xml:id="CURRIEINTROHOGGANNUALS">
                             <analytic>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JCURRIE">
                                         <forename>Janette</forename>
                                         <surname>Currie</surname>
                                     </persName>
@@ -2758,19 +2782,19 @@
                             </analytic>
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JH">
                                         <forename>James</forename>
                                         <surname>Hogg</surname>
                                     </persName>
                                 </author>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="JCURRIE">
                                         <forename>Janette</forename>
                                         <surname>Currie</surname>
                                     </persName>
                                 </editor>
                                 <editor>
-                                    <persName>
+                                    <persName corresp="GH">
                                         <forename>Gillian</forename>
                                         <surname>Hughes</surname>
                                     </persName>
@@ -2785,7 +2809,18 @@
                             </monogr>
                             <series>
                                 <title level="s">The Stirling / South Carolina Research Edition of the Collected Works of James Hogg</title>
-                                <editor>Douglas S. Mack and Gillian Hughes</editor>
+                                <editor>
+                                    <persName corresp="DSMACK">
+                                        <forename>Douglas S.</forename>
+                                        <surname>Mack</surname>
+                                    </persName>
+                                </editor>
+                                <editor>
+                                    <persName corresp="GH">
+                                        <forename>Gillian</forename>
+                                        <surname>Hughes</surname>
+                                    </persName>
+                                </editor>
                                 <biblScope>
                                     <date notBefore="1995">1995&#x2013;</date>
                                 </biblScope>
@@ -2799,7 +2834,7 @@
                                 <imprint>
                                     <pubPlace>London</pubPlace>
                                     <publisher>Sherwood, Neely, &#x0026; Jones</publisher>
-                                    <date notBefore="1787">1787&#x2013;</date>
+                                    <date when="1787">1787&#x2013;</date>
                                 </imprint>
                             </monogr>
                         </biblStruct>
@@ -2807,7 +2842,7 @@
                         <biblStruct xml:id="DARWINWORKS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="ED">
                                         <forename>Erasmus</forename>
                                         <surname>Darwin</surname>
                                     </persName>
@@ -2825,7 +2860,7 @@
                         <biblStruct xml:id="DAYHISTORY">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="TD">
                                         <forename>Thomas]</forename>
                                         <surname>[Day</surname>
                                     </persName>
@@ -2841,7 +2876,7 @@
                         
                         <biblStruct xml:id="DEARDENFIRSTPUB">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JSD">
                                     <forename>James S.</forename>
                                     <surname>Dearden</surname>
                                 </persName></author>
@@ -2860,7 +2895,7 @@
                         <biblStruct xml:id="DEARDENRUSKINLIBRARY">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JSD">
                                         <forename>James S.</forename>
                                         <surname>Dearden</surname>
                                     </persName>
@@ -2876,7 +2911,7 @@
                         
                         <biblStruct xml:id="DEARDENPOEMS1850">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JSD">
                                     <forename>James S.</forename>
                                     <surname>Dearden</surname>
                                 </persName></author>
@@ -2896,7 +2931,7 @@
                         <biblStruct xml:id="RUSKINBEMBRIDGEBRANTWOOD">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JSD">
                                         <forename>James S.</forename>
                                         <surname>Dearden</surname>
                                     </persName>
@@ -2913,7 +2948,7 @@
                         
                         <biblStruct xml:id="DEARDENRUSKINGALLERIES">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JSD">
                                     <forename>James S.</forename>
                                     <surname>Dearden</surname>
                                 </persName></author>
@@ -2932,7 +2967,7 @@
                         
                         <biblStruct xml:id="WISERUSKINI">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JSD">
                                     <forename>James S.</forename>
                                     <surname>Dearden</surname>
                                 </persName></author>
@@ -2950,7 +2985,7 @@
                         
                         <biblStruct xml:id="WISERUSKINII">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JSD">
                                     <forename>James S.</forename>
                                     <surname>Dearden</surname>
                                 </persName></author>
@@ -2968,7 +3003,7 @@
                         
                         <biblStruct xml:id="WISERUSKINIII">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="JSD">
                                     <forename>James S.</forename>
                                     <surname>Dearden</surname>
                                 </persName></author>
@@ -2987,7 +3022,7 @@
                         <biblStruct xml:id="DICKINSONJOHNCARTER">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="DCDICKINSON">
                                         <forename>Donald C.</forename>
                                         <surname>Dickinson</surname>
                                     </persName>
@@ -3004,11 +3039,11 @@
                         
                         <biblStruct xml:id="JOYCEDNB">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="GMDITCHFIELD">
                                     <forename>G. M.</forename>
                                     <surname>Ditchfield</surname>
                                 </persName></author>
-                                <title level="a">&#x201C;Joyce, Jeremiah (1763&#x2013;1816)&#x201D;</title>
+                                <title level="a">&#x201C;Joyce, Jeremiah (<date notBefore="1763" notAfter="1816">1763&#x2013;1816</date>)&#x201D;</title>
                             </analytic>
                             <monogr>
                                 <title level="m"><hi rend="italic">Oxford Dictionary of National Biography Online Edition</hi></title>
@@ -3024,7 +3059,7 @@
                         <biblStruct xml:id="DORFMANBLAKE">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="DDORFMAN">
                                         <forename>Deborah</forename>
                                         <surname>Dorfman</surname>
                                     </persName>
@@ -3041,11 +3076,11 @@
                         
                         <biblStruct xml:id="DEMPSTERDNB">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="ADUTOIT">
                                     <forename>Alexander</forename>
                                     <surname>Du Toit</surname>
                                 </persName></author>
-                                <title level="a">&#x201C;Dempster, Thomas (1579&#x2013;1625)&#x201D;</title>
+                                <title level="a">&#x201C;Dempster, Thomas (<date notBefore="1579" notAfter="1625">1579&#x2013;1625</date>)&#x201D;</title>
                             </analytic>
                             <monogr>
                                 <title level="m"><hi rend="italic">Oxford Dictionary of National Biography Online Edition</hi></title>
@@ -3061,7 +3096,7 @@
                         <biblStruct xml:id="EDGEWORTHHARRYANDLUCYCONCLUDED">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="ME">
                                         <forename>Maria</forename>
                                         <surname>Edgeworth</surname>
                                     </persName>
@@ -3081,13 +3116,13 @@
                         <biblStruct xml:id="EDGEWORTHWORKS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="ME">
                                         <forename>Maria</forename>
                                         <surname>Edgeworth</surname>
                                     </persName>
                                 </author>
                                 <title level="m"><hi rend="italic">The Novels and Selected Works of Maria Edgeworth</hi></title>
-                                <editor>
+                                <editor corresp="MBUTLER">
                                     <forename>Marilyn</forename>
                                     <surname>Butler</surname>
                                 </editor>
@@ -3103,7 +3138,7 @@
                         <biblStruct xml:id="EDGEWORTHADDRESSMOTHERS">
                             <analytic>
                                 <author>
-                                    <persName>
+                                    <persName corresp="RLE">
                                         <forename>Richard Lovell</forename>
                                         <surname>Edgeworth</surname>
                                     </persName>
@@ -3112,7 +3147,7 @@
                             </analytic>
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="ME">
                                         <forename>Maria</forename>
                                         <surname>Edgeworth</surname>
                                     </persName>
@@ -3131,7 +3166,7 @@
                         <biblStruct xml:id="GENESISOFINVENTION">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="SE">
                                         <forename>Sheila</forename>
                                         <surname>Emerson</surname>
                                     </persName>
@@ -3152,14 +3187,21 @@
                                 <title type="sub"><hi rend="italic">A Popular Dictionary of Arts, Sciences, Literature, History, Politics, and Biography, Brought Down to the Present Time; including a Copious Collection of Original Articles in American Biography; on the Basis of the Seventh Edition of the German Conversations&#x2010;Lexicon</hi></title>
                                 <respStmt>
                                     <resp>Edited by</resp>
-                                    <persName>
+                                    <persName corresp="FL">
                                         <forename>Francis</forename>
                                         <surname>Lieber</surname>
                                     </persName>
                                 </respStmt>
                                 <respStmt>
                                     <resp>Assisted by</resp>
-                                    <name>E. Wigglesworth and T. G. Bradford</name>
+                                    <persName corresp="EWIGGLESWORTH">
+                                        <forename> E.</forename>
+                                        <surname> Wigglesworth </surname>
+                                    </persName>   
+                                    <persName corresp="TGBRADFORD">
+                                        <forename> T. G.</forename>
+                                        <surname> Bradford </surname>
+                                    </persName> 
                                 </respStmt>
                                 <imprint>
                                     <biblScope type="vol">13 vols.</biblScope>
@@ -3173,7 +3215,7 @@
                         <biblStruct xml:id="ENFIELDSPEAKER">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="WENFIELD">
                                         <forename>William</forename>
                                         <surname>Enfield</surname>
                                     </persName>
@@ -3192,13 +3234,13 @@
                         <biblStruct xml:id="ERICKSONECONOMY">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="LE">
                                         <forename>Lee</forename>
                                         <surname>Erickson</surname>
                                     </persName>
                                 </author>
                                 <title level="m" type="main"><hi rend="italic">The Economy of Literary Form</hi></title>
-                                <title type="sub"><hi rend="italic">English Literature and the Industrialization of Publishing, 1800&#x2013;1850</hi></title>
+                                <title type="sub"><hi rend="italic">English Literature and the Industrialization of Publishing, <date notBefore="1800" notAfter="1850">1800&#x2013;1850</date></hi></title>
                                 <imprint>
                                     <pubPlace>Baltimore</pubPlace>
                                     <publisher>Johns Hopkins University Press</publisher>
@@ -3209,14 +3251,14 @@
                         
                         <biblStruct xml:id="FAIRERCHATTERTON">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="DFAIRER">
                                     <forename>David</forename>
                                     <surname>Fairer</surname>
                                 </persName></author>
-                                <title level="a">&#x201C;Chatterton&#x02BC;s Poetic Afterlife, 1770&#x2013;1794: A Context for Coleridge&#x02BC;s <hi rend="italic">Monody</hi>&#x201D;</title>
+                                <title level="a">&#x201C;Chatterton&#x02BC;s Poetic Afterlife, <date notBefore="1770" notAfter="1794">1770&#x2013;1794</date>: A Context for Coleridge&#x02BC;s <hi rend="italic">Monody</hi>&#x201D;</title>
                             </analytic>
                             <monogr>
-                                <editor><persName>
+                                <editor><persName corresp="NGROOM">
                                     <forename>Nick</forename>
                                     <surname>Groom</surname>
                                 </persName></editor>
@@ -3233,7 +3275,7 @@
                         <biblStruct xml:id="FAXONLITERARYANNUALS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="FWFAXON">
                                         <forename>Frederick Winthrop</forename>
                                         <surname>Faxon</surname>
                                     </persName>
@@ -3251,7 +3293,7 @@
                         <biblStruct xml:id="FINLAYWESTERNWRITINGIMPLEMENTS">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="MFINLAY">
                                         <forename>Michael</forename>
                                         <surname>Finlay</surname>
                                     </persName>
@@ -3268,7 +3310,7 @@
                         <biblStruct xml:id="FINLEYLANDSCAPESOFMEMORY">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="GFINLEY">
                                         <forename>Gerald</forename>
                                         <surname>Finley</surname>
                                     </persName>
@@ -3286,19 +3328,19 @@
                         <biblStruct xml:id="LAKESOFSCOTLAND">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JF">
                                         <forename>John</forename>
                                         <surname>Fleming</surname>
                                     </persName>
                                 </author>  
                                 <author>
-                                    <persName>
+                                    <persName corresp="JL">
                                         <forename>John M.</forename>
                                         <surname>Leighton</surname>
                                     </persName>
                                 </author>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JWILSON">
                                         <forename>John</forename>
                                         <surname>Wilson</surname>
                                     </persName>
@@ -3316,12 +3358,12 @@
                         <biblStruct xml:id="FORDACKERMANN">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="JFORD">
                                         <forename>John</forename>
                                         <surname>Ford</surname>
                                     </persName>
                                 </author>
-                                <title level="m" type="main"><hi rend="italic">Ackermann, 1783&#x2013;1983</hi></title>
+                                <title level="m" type="main"><hi rend="italic">Ackermann, <date notBefore="1783" notAfter="1983">1783&#x2013;1983</date></hi></title>
                                 <title type="sub"><hi rend="italic">The Business of Art</hi></title>
                                 <imprint>
                                     <pubPlace>London</pubPlace>
@@ -3334,7 +3376,7 @@
                         <biblStruct xml:id="FRAISTATPOEMANDTHEBOOK">
                             <monogr>
                                 <author>
-                                    <persName>
+                                    <persName corresp="NF">
                                         <forename>Neil</forename>
                                         <surname>Fraistat</surname>
                                     </persName>
@@ -3351,7 +3393,7 @@
                         
                         <biblStruct xml:id="FRANKLINWELTER">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="WFRANKLIN">
                                     <forename>Wayne</forename>
                                     <surname>Franklin</surname>
                                 </persName></author>
@@ -3370,11 +3412,11 @@
                         
                         <biblStruct xml:id="FRANCOISBELGIUM">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="PF">
                                     <forename>Pieter</forename>
                                     <surname>Fran&#x00E7;ois</surname>
                                 </persName></author>
-                                <title level="a">&#x201C;Belgium&#x2014;Country of Liberals, Protestants, and the Free: British Views on Belgium in the Mid-Nineteenth Century&#x201D;</title>
+                                <title level="a">&#x201C;Belgium&#x2014;Country of Liberals, Protestants, and the Free: British Views on Belgium in the Mid&#x2010;Nineteenth Century&#x201D;</title>
                             </analytic>
                             <monogr>
                                 <title level="j"><hi rend="italic">Historical Research</hi></title>
@@ -3388,11 +3430,11 @@
                         
                         <biblStruct xml:id="FRANCOIS1815">
                             <analytic>
-                                <author><persName>
+                                <author><persName corresp="PF">
                                     <forename>Pieter</forename>
                                     <surname>Fran&#x00E7;ois</surname>
                                 </persName></author>
-                                <title level="a">&#x201C;If It&#x02BC;s 1815, This Must Be Belgium: The Origins of the Modern Travel Guide&#x201D;</title>
+                                <title level="a">&#x201C;If It&#x02BC;s <date when="1815">1815</date>, This Must Be Belgium: The Origins of the Modern Travel Guide&#x201D;</title>
                             </analytic>
                             <monogr>
                                 <title level="j"><hi rend="italic">Book History</hi></title>
