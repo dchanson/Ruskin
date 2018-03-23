@@ -2,7 +2,9 @@
 <xsl:stylesheet version="2.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns:teix="http://www.tei-c.org/ns/Examples">
+    xmlns:teix="http://www.tei-c.org/ns/Examples"
+    xmlns:custom="http://whatever"
+    >
 
 <!--A B O U T   T H I S   D O C U M E N T
     Filename:               ruskin.xls
@@ -114,6 +116,32 @@
     <xsl:variable name="xtableVar">&#x003C;/table&#x003E;</xsl:variable>            <!--</table>    -->
 
 
+    <!-- Generate alphabetic indices-->
+    <xsl:function name="custom:getAlphabeticIndex">
+        <xsl:param name="number"/>
+        
+        <xsl:variable name="val" select="floor($number)" />
+        
+        <xsl:variable name="remainder" select="floor($val mod 26)"/>
+        <xsl:variable name="quotient" select="(($val - $remainder) div 26)"/>
+        
+        
+        <xsl:choose>
+            <xsl:when test="$quotient &gt; 0">
+                <xsl:value-of select="custom:getAlphabeticIndex($quotient)" />
+                <xsl:value-of select="codepoints-to-string(96 + $remainder)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="codepoints-to-string(round(96 + $remainder))"/>
+                <!-- <xsl:text>Quotient: </xsl:text><xsl:value-of select="$quotient"/> -->
+                <!-- <xsl:text>Remainder: </xsl:text><xsl:value-of select="$remainder"/> -->
+            </xsl:otherwise>
+        </xsl:choose>
+
+    </xsl:function>
+
+
+
     <!--The following is an example of a variable's use in this XSL document:
         
         <xsl:value-of select="$brVar" disable-output-escaping="yes"/>.
@@ -157,6 +185,18 @@
                     </xsl:otherwise>
 
                 </xsl:choose>
+                
+            </xsl:when>
+
+            <xsl:when test="@type='figure'">
+                <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
+                <xsl:variable name="phpVar">../witnesses/<xsl:value-of select="@target"/></xsl:variable>
+           
+                
+                <a href="{$phpVar}" target="_blank" class="inactive">
+                    <xsl:apply-templates/>
+                </a>
+                    
                 
             </xsl:when>
 
@@ -258,26 +298,61 @@
                 
             </xsl:when>
 
-            <xsl:when test="@type='gloss'">
+            <xsl:when test="@type='gloss' or @type='gloss_contextual'">
+                
+
                 <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
                 
+
+                <!-- <xsl:variable name="refVar">
+                    &#x003C;a href=&#x0022;../glosses/<xsl:value-of select="@target"/>&#x0022; target=&#x022;_blank"&#x022; class=&#x022;inactive&#x022;&#x003E;
+                    <xsl:value-of select="$nVar"/>
+                    <span>
+
+                        <xsl:value-of select="custom:getAlphabeticIndex(1)"/>
+                        <br />
+                        <xsl:value-of select="custom:getAlphabeticIndex(27)"/>
+                        <br />
+                        <xsl:value-of select="custom:getAlphabeticIndex(29)"/>
+                    </span>
+                </xsl:variable> -->
+
+
+                
+                <xsl:variable name="refVar">
+                    &#x003C;a href=&#x0022;../glosses/<xsl:value-of select="@target"/>&#x0022; target=&#x022;_blank"&#x022; class=&#x022;inactive&#x022;&#x003E;
+                    <span>
+                        <xsl:choose>
+                            <xsl:when test="@type='gloss_contextual'">
+                                <xsl:variable name="nVar" select="floor(count(preceding::tei:ref[@type='gloss_contextual'])+1)"/>
+                                <xsl:value-of select="custom:getAlphabeticIndex($nVar)"/>
+                            
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:variable name="nVar">
+                                    <xsl:value-of select="format-number(count(preceding::tei:ref[@type='gloss'])+1,'0')"/>
+                                </xsl:variable>
+                                <xsl:value-of select="$nVar"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </span>
+                </xsl:variable>
+
+
                 <xsl:choose>
-                    
                     <xsl:when test="doc-available($xmlVar)">
-                            <xsl:variable name="nVar"><xsl:value-of select="format-number(count(preceding::tei:ref[@type='gloss'])+1,'0')"/></xsl:variable>
-                            <xsl:variable name="refVar">&#x003C;a href=&#x0022;../glosses/<xsl:value-of select="@target"/>&#x0022; target=&#x022;_blank&#x022;&#x003E;<xsl:value-of select="$nVar"/></xsl:variable>
                             <span class="glosses">
                                 <xsl:value-of select="$refVar" disable-output-escaping="yes"/>
+                                
                                 <xsl:value-of select="$xaVar" disable-output-escaping="yes"/>
                             </span>
                     </xsl:when>
 
                     <!--Code for jQuery- and CSS-controlled inactive links until the document is made available.-->
                     <xsl:otherwise>
-                            <xsl:variable name="nVar"><xsl:value-of select="format-number(count(preceding::tei:ref[@type='gloss'])+1,'0')"/></xsl:variable>
-                            <xsl:variable name="refVar">&#x003C;a href=&#x0022;../glosses/<xsl:value-of select="@target"/>&#x0022; target=&#x022;_blank"&#x022; class=&#x022;inactive&#x022;&#x003E;<xsl:value-of select="$nVar"/></xsl:variable>
                             <span class="glosses">
                                 <xsl:value-of select="$refVar" disable-output-escaping="yes"/>
+                                
                                 <xsl:value-of select="$xaVar" disable-output-escaping="yes"/>
                             </span>
                     </xsl:otherwise>
@@ -459,7 +534,7 @@
         <!--The <!DOCTYPE> below matches the default assigned by Adobe Dreamweaver CS4 and ensures that webpages created outside the application
             (through XSLT) match those created inside.-->
         <xsl:variable name="docVar">&#x003C;!DOCTYPE html PUBLIC &#x0022;-//W3C//DTD XHTML 1.0 Transitional//EN&#x0022; &#x0022;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#x0022;&#x003E;</xsl:variable>
-        <xsl:variable name="headerIncludeVar">&#x003C;?php include_once(&#x022;../header.php&#x022;) ?&#x003E;
+        <xsl:variable name="headerIncludeVar">&#x003C;?php include_once(&#x022;../header.inc.php&#x022;) ?&#x003E;
         </xsl:variable>
         <xsl:value-of select="$headerIncludeVar" disable-output-escaping="yes"/>
         <xsl:value-of select="$docVar" disable-output-escaping="yes"/>
@@ -494,8 +569,8 @@
                 
                 <xsl:when test="self::*[@type='anthology' or @type='manuscript' or @type='witness']">
                     <xsl:variable name="cssVar">
-                        &#x003C;link href=&#x022;../witness_styles.css&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
-                        &#x003C;link href=&#x022;../styles.css&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
+                        &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;witness_styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
+                        &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
                     </xsl:variable>
                     <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
                     
@@ -504,7 +579,8 @@
                 <xsl:otherwise>
                     <!--Remove the ../ in ../styles.css for local testing.-->
                     <xsl:variable name="cssVar">
-                        &#x003C;link href=&#x022;../styles.css&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
+                        &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
+                        
                     </xsl:variable>
                     <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
                 </xsl:otherwise>
