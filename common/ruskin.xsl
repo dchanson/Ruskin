@@ -721,14 +721,21 @@
                        </div>
                     </xsl:when>
 
-                    <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus']">
+                    <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus' or @type='note']">
                         <xsl:choose>
+
                             <xsl:when test="following::tei:div/@xml:id='LOCATION'">
                                 <div id="top" class="title-apparatus">
                                     <xsl:apply-templates/>
                                 </div>
                                 <xsl:variable name="phpVar">&#x003C;?php include(&#x022;../navigation-manuscript.inc.php&#x022;); ?&#x003E;</xsl:variable>
                                 <xsl:value-of select="$phpVar" disable-output-escaping="yes"/>
+                            </xsl:when>
+
+                            <xsl:when test="ancestor::*[@type='note']">
+                                <div id="top" class="title-apparatus">
+                                    <xsl:apply-templates/>
+                                </div>
                             </xsl:when>
                             
                             <xsl:otherwise>
