@@ -52,8 +52,8 @@ body {
 	padding-left: 1em;
 	}
 .content, .apparatus, .essay, .note, .glosses, .webpage {
-	background-color: #FFF;
-	float: right;
+	background-color: transparent;
+	/*float: right;*/
 	height: 72%;
 	overflow: auto;
 	padding-bottom: 8%;
@@ -262,6 +262,10 @@ page(s) that will use them share the SAME folder, and 4) IE8-compatible webfonts
 	font-size: 0.75em;
 	position: relative;
 	top: -0.5em;
+    /*padding: 10px;*/
+    padding: 3px;
+
+    width: auto;
 	}
 .l {
     display: block;

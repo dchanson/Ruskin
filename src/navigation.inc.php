@@ -1,7 +1,7 @@
-<?php include_once('header.php'); ?>
+<?php include_once('header.inc.php'); ?>
 
 	<div class="navigation">
-        <a href="<?php echo r_get_base();?>"><img src="<?=r_build_url("images/ruskin_logo.jpg")?>" width="100%"/></a>
+        <a href="<?php echo r_get_base();?>"><img src="<?php echo r_build_url("images/ruskin_logo.jpg"); ?>" width="100%"/></a>
         <br/>
         <br/>
         <span class="navigation-title">
@@ -16,7 +16,7 @@
         <br/>
         <br/>
 		<?php include('search/navbox.php'); ?>
-        <span><a href="<?=r_get_base()?>">Home</a><span>
+        <span><a href="<?php echo r_get_base(); ?>">Home</a><span>
         <span>
             <br/><a href="<?php echo r_build_url("essays/indices_essay.php"); ?>">Indices</a>
             <br/><a class="subnavigation" href="<?php echo r_build_url("essays/indices_essay.php#WORKS"); ?>">Works</a>

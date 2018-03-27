@@ -12,9 +12,9 @@ if(file_exists($path)){
     $json = file_get_contents($path);
     $r_config = json_decode($json, true);
 }else{
-	$r_config = [
-		'BASE'=> 'http://english.selu.edu/humanitiesonline/ruskin'
-	];
+	$r_config = array(
+        'BASE'=> 'http://english.selu.edu/humanitiesonline/ruskin'
+	);
 }
 
 if(!function_exists('r_build_url')){
