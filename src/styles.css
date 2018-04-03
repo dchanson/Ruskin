@@ -258,15 +258,7 @@ page(s) that will use them share the SAME folder, and 4) IE8-compatible webfonts
 .g-terminal_comma {                              /* x New 04/06/16. Style? */
 
     }
-.glosses {
-	font-size: 0.75em;
-	position: relative;
-	top: -0.5em;
-    /*padding: 10px;*/
-    padding: 3px;
 
-    width: auto;
-	}
 .l {
     display: block;
 	position: relative;
@@ -914,3 +906,10 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 		color: #FFF;
 		padding: 6%;
 		}
+
+    .gloss-inline{
+        padding: 3px;
+        font-size: 0.75em;
+        position: relative;
+        top: -0.5em;
+    }

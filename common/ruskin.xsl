@@ -323,7 +323,7 @@
                     &#x003C;a href=&#x0022;../glosses/<xsl:value-of select="@target"/>&#x0022; target=&#x022;_blank"&#x022; class=&#x022;inactive&#x022;&#x003E;
                     <span>
                         <xsl:choose>
-                            <xsl:when test="@type='gloss_contextual'">
+                            <xsl:when test="@type='gloss-inline gloss-contextual'">
                                 <xsl:variable name="nVar" select="floor(count(preceding::tei:ref[@type='gloss_contextual'])+1)"/>
                                 <xsl:value-of select="custom:getAlphabeticIndex($nVar)"/>
                             
@@ -350,7 +350,7 @@
 
                     <!--Code for jQuery- and CSS-controlled inactive links until the document is made available.-->
                     <xsl:otherwise>
-                            <span class="glosses">
+                            <span class="gloss-inline">
                                 <xsl:value-of select="$refVar" disable-output-escaping="yes"/>
                                 
                                 <xsl:value-of select="$xaVar" disable-output-escaping="yes"/>
