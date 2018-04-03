@@ -25,6 +25,7 @@
             <br/><a class="subnavigation" href="<?php echo r_build_url("essays/indices_essay.php#WORKSBYOTHERS"); ?>">Works by Others</a>
             <br/><a class="subnavigation" href="<?php echo r_build_url("essays/indices_essay.php#COMMENTARY"); ?>">Commentary</a>
             <br/><a class="subnavigation" href="<?php echo r_build_url("essays/indices_essay.php#ESSAYS"); ?>">Essays</a>
+            <br/><a class="subnavigation" href="<?php echo r_build_url("essays/indices_essay.php#DRAWINGS"); ?>">Drawings</a>
         </span>
         <br/>
 		<span>XML</span>
