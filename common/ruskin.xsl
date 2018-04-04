@@ -323,16 +323,22 @@
                     &#x003C;a href=&#x0022;../glosses/<xsl:value-of select="@target"/>&#x0022; target=&#x022;_blank"&#x022; class=&#x022;inactive&#x022;&#x003E;
                     <span>
                         <xsl:choose>
-                            <xsl:when test="@type='gloss-inline gloss-contextual'">
+                            <xsl:when test="@type='gloss_contextual'">
                                 <xsl:variable name="nVar" select="floor(count(preceding::tei:ref[@type='gloss_contextual'])+1)"/>
-                                <xsl:value-of select="custom:getAlphabeticIndex($nVar)"/>
-                            
+                                <span class="gloss-inline gloss-contextual">
+                                    <xsl:value-of select="custom:getAlphabeticIndex($nVar)"/>
+                                </span>
+
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:variable name="nVar">
                                     <xsl:value-of select="format-number(count(preceding::tei:ref[@type='gloss'])+1,'0')"/>
                                 </xsl:variable>
-                                <xsl:value-of select="$nVar"/>
+                                <span class="gloss-inline">
+                                    <xsl:value-of select="$nVar"/>
+                                </span>
+
+
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
@@ -725,7 +731,7 @@
                         <xsl:choose>
 
                             <xsl:when test="following::tei:div/@xml:id='LOCATION'">
-                                <div id="top" class="title-apparatus">
+                                <div id="top" class="page-title">
                                     <xsl:apply-templates/>
                                 </div>
                                 <xsl:variable name="phpVar">&#x003C;?php include(&#x022;../navigation-manuscript.inc.php&#x022;); ?&#x003E;</xsl:variable>
@@ -733,13 +739,19 @@
                             </xsl:when>
 
                             <xsl:when test="ancestor::*[@type='note']">
-                                <div id="top" class="title-apparatus">
+                                <div id="top" class="page-title">
+                                    <xsl:apply-templates/>
+                                </div>
+                            </xsl:when>
+
+                            <xsl:when test="ancestor::figure">
+                                <div id="top" class="page-title">
                                     <xsl:apply-templates/>
                                 </div>
                             </xsl:when>
                             
                             <xsl:otherwise>
-                               <div id="top" class="title-apparatus">
+                               <div id="top" class="page-title">
                                    <xsl:apply-templates/>
                                </div>
                                <xsl:variable name="phpVar">&#x003C;?php include(&#x022;../navigation-work.inc.php&#x022;); ?&#x003E;</xsl:variable>

@@ -15,7 +15,7 @@
 <body>
 	<?php include("../home_navigation.inc.php"); ?>
     <div class="content">
-        <span id="top" class="title-apparatus">The Archive</span>
+        <span id="top" class="page-title">The Archive</span>
         <hr/>
         <p>For a detailed explanation of the archive's organization, consult <a href="../notes/plan_of_archive_note.php" target="_blank">The Plan of the Archive</a>. Justification of the archive's organization and contents is offered in <a href="../notes/editorial_rationale_note.php" target="_blank">Editorial and Encoding Rationale and Methodology</a>.</p>
         <br/>
