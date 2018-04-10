@@ -8,13 +8,12 @@
         <fileDesc xml:id="title_of_work_witness">
             <titleStmt>
                 <title type="main">"Title of Work"</title>
-                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
-                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
                 <author>
-                    <persName corresp="#APW">Author of Printed Work</persName>
+                    <persName corresp="#JR">John Ruskin</persName>
                 </author>
                 <editor>
-                    <persName corresp="#EPW">Editor of Printed Work</persName>
+                    <persName corresp="#DCH">David C. Hanson</persName>
                 </editor>
                 <principal>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -52,32 +51,45 @@
                 </availability>
             </publicationStmt>
             <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
-                        <editor>
-                            <persName>W. G. Collingwood</persName>
-                        </editor>
-                        <title type="main">The Poems of John Ruskin</title>
-                        <title type="sub">Volume I: Poems Written in Boyhood, 1826-1835</title>
-                        <imprint>
-                            <biblScope type="vol">1</biblScope>
-                            <biblScope type="edition">4<hi rend="superscript">o</hi></biblScope>
-                            <pubPlace>London</pubPlace>
-                            <publisher>George Allen</publisher>
-                            <date when="1891">1891</date>
-                            <biblScope type="pages">xxiii</biblScope>
-                        </imprint>
-                    </monogr>
-                </biblStruct>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <body>
+            <!--Example entries have been provided from MS I in the <handShift/>s below. Actual entries may vary.-->
             <!--Simple Prose. Delete this <div/> if not used.-->
             <div type="prose">
-                <head type="title">Title of Prose Piece</head>
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Prose Piece</head>
                 <div type="chapter">
                     <head type="chapter">Title of Chapter</head>
                     <p>Body paragraph.</p>
@@ -100,15 +112,32 @@
             </div>
             <!--Simple Verse. Delete this <div/> if not used.-->
             <div type="poem">
-                <head type="title">Title of Poem</head>
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Poem</head>
                 <lg type="stanza" rhyme="aa">
-                    <l>Ruskin was a certainly a poet.</l>
-                    <l>Even his early work did show it.</l>
+                    <l>As eagerly waiting the dawn of the day</l>
+                    <l>And sleeplessly counting the moments Hay</l>
+                    <l>I thought of the joys that my bosom should know</l>
+                    <l>Of the rich tides of pleasure unmingled which flow</l>
+                    <l>Unmingled with grief and unmingled with gall</l>
+                    <l>But draughts of delight rapture banquetings all</l>
+                    <l>Impatient I watched as the lingering light</l>
+                    <l>Too slowly overpowered the clouds of the night</l>
+                    <l>Who clothed in her star sprinkled heaven shrouding vest</l>
+                    <l>Which gracefully masked her er peaceful breast</l>
+                    <l>And while on her brows her dark tresses among</l>
+                    <l>Which flowed soft the pale crescent benignantly shone</l>
+                    <l>From the earth cheering rays of Aurora she fled</l>
+                    <l>In stern winter palaces hiding her head</l>
+                    <l>At length the time came when the bill being made</l>
+                    <l>Boots hostler and chambermaid all duly paid</l>
+                    <l>Sticks bonnets hats greatcoats all duly prepared</l>
+                    
+                    
                 </lg>
             </div>
             <!--Simple Drama. Delete this <div/> if not used.-->
             <div type="drama">
-                <head type="title">Title of Drama</head>
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Drama</head>
                 <div type="act">
                     <head type="act">Act I</head>
                     <sp>
