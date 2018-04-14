@@ -298,47 +298,30 @@
                 
             </xsl:when>
 
-            <xsl:when test="@type='gloss' or @type='gloss_contextual'">
+            <xsl:when test="@type='gloss' or @type='gloss_textual'">
                 
 
                 <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
-                
-
-                <!-- <xsl:variable name="refVar">
-                    &#x003C;a href=&#x0022;../glosses/<xsl:value-of select="@target"/>&#x0022; target=&#x022;_blank"&#x022; class=&#x022;inactive&#x022;&#x003E;
-                    <xsl:value-of select="$nVar"/>
-                    <span>
-
-                        <xsl:value-of select="custom:getAlphabeticIndex(1)"/>
-                        <br />
-                        <xsl:value-of select="custom:getAlphabeticIndex(27)"/>
-                        <br />
-                        <xsl:value-of select="custom:getAlphabeticIndex(29)"/>
-                    </span>
-                </xsl:variable> -->
-
-
                 
                 <xsl:variable name="refVar">
                     &#x003C;a href=&#x0022;../glosses/<xsl:value-of select="@target"/>&#x0022; target=&#x022;_blank"&#x022; class=&#x022;inactive&#x022;&#x003E;
                     <span>
                         <xsl:choose>
-                            <xsl:when test="@type='gloss_contextual'">
-                                <xsl:variable name="nVar" select="floor(count(preceding::tei:ref[@type='gloss_contextual'])+1)"/>
-                                <span class="gloss-inline gloss-contextual">
-                                    <xsl:value-of select="custom:getAlphabeticIndex($nVar)"/>
-                                </span>
+                            <xsl:when test="@type='gloss_textual'">
+                                <xsl:variable name="nVar" select="floor(count(preceding::tei:ref[@type='gloss_textual'])+1)"/>
+                                
+                                &#x003C;span class=&#x022;gloss-textual&#x022;&#x003E;
+                                <xsl:value-of select="custom:getAlphabeticIndex($nVar)"/>
+                                &#x003C;/span&#x003E;
 
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:variable name="nVar">
                                     <xsl:value-of select="format-number(count(preceding::tei:ref[@type='gloss'])+1,'0')"/>
                                 </xsl:variable>
-                                <span class="gloss-inline">
-                                    <xsl:value-of select="$nVar"/>
-                                </span>
-
-
+                                &#x003C;span class=&#x022;gloss-contextual&#x022;&#x003E;
+                                <xsl:value-of select="$nVar"/>
+                                &#x003C;/span&#x003E;
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
@@ -727,7 +710,7 @@
                        </div>
                     </xsl:when>
 
-                    <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus' or @type='note']">
+                    <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus' or @type='note' or @type='figure']">
                         <xsl:choose>
 
                             <xsl:when test="following::tei:div/@xml:id='LOCATION'">
@@ -744,7 +727,7 @@
                                 </div>
                             </xsl:when>
 
-                            <xsl:when test="ancestor::figure">
+                            <xsl:when test="ancestor::*[@type='figure']">
                                 <div id="top" class="page-title">
                                     <xsl:apply-templates/>
                                 </div>
