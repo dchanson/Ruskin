@@ -90,4 +90,10 @@ echo "Copying XML transformations to $OUT"
 rsync -r gen/_Completed/. $OUT/
 rsync -r "gen/_In%20Process/." $OUT/
 
+echo "Handling config"
+if [ "$SYMLINK" -eq "0" ]; then
+    echo "Overriting config.json"
+    mv -f "$OUT/config_production.json" "$OUT/config.json"
+fi
+
 echo "All done."
