@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="tite_of_work_note">
+            <titleStmt>
+                <title type="main">Title of Work</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="contextual">
+                <head type="title">Napoleonic Monuments in Milan</head>
+                <p>When the Ruskins visited <placeName corresp="#MILAN">Milan</placeName> in <date when="1833">1833</date>, <persName corresp="#JR">Ruskin</persName>&#x02BC;s cousin, 
+                    <persName corresp="#MRC">Mary Richardson</persName>, took note especially of Napoleonic monuments in the city. In <persName corresp="#JR">Ruskin</persName>&#x02BC;s extant writing about the city 
+                    for the <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php"><title type="composite" corresp="#JRACCOUNTTOUR">Account of a Tour on the Continent</title></ref>&#x2014;the poem 
+                    <ref type="witness" target="milan_cathedral_poem_msia_g2.php"><title type="poem" corresp="#JRMILANCATHEDRAL">&#x201C;Milan Cathedral&#x201D;</title></ref>&#x2014;his 
+                    imagination is captured by the vertical thrust of the Gothic architecture complemented by the mountain heights beyond the city. In contrast, a planned but apparently unexecuted section for the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>, 
+                    <title type="composite" corresp="#JRCORSOMILANCOMP">&#x201C;The Corso of Milan&#x201D;</title>, presumably would have reflected the horizontal expanse of neoclassical and Napoleonic&#x2010;era monuments in the city 
+                    (see <ref type="bibliography" target="bibliography.php#RFT48">Diary of Mary Richardson, 1833</ref>; 
+                    <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php"><title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan for the Continuation of the Account of a Tour on the Continent</title></ref>).</p>
+                <p>During the Enlightenment, under the administration of the <orgName corresp="#HAPSBURG">Hapsburgs</orgName>, urban planning in neoclassical style for <placeName corresp="#MILAN">Milan</placeName> 
+                    was overseen by the architect <persName corresp="#GPIERMARINI">Giuseppe Piermarini</persName> (<date notBefore="1734" notAfter="1808">1734&#x2013;1808</date>). The Ruskins 
+                    visited his most famous building, the <placeName type="building" corresp="#TEATROALLASCALA">Teatro alla Scala</placeName> (<date notBefore="1776" notAfter="1778">1776&#x2013;78</date>), 
+                    although they were unable to attend a performance, and they would have encountered other structures associated with <persName corresp="#GPIERMARINI">Piermarini</persName>&#x02BC;s neoclassical renovations 
+                    throughout the city. For example, the <hi rend="italic">corso</hi> that <persName corresp="#JR">Ruskin</persName> planned to write about and that <persName corresp="#MRC">Mary</persName> mentions in her diary was most likely 
+                    the <placeName type="building" corresp="#PORTAVENEZIA">Corso di Porta Orientale</placeName> (also known as the <placeName corresp="#PORTAVENEZIA">Porta Venezia</placeName>), 
+                    which underwent modernization between <date when="1827">1827</date> and the year of the Ruskins&#x02BC; visit, <date when="1833">1833</date>. 
+                    Designed by <persName corresp="#RVANTINI">Rodolfo Vantini</persName> (<date notBefore="1792" notAfter="1856">1792&#x2013;1856</date>), its gateway is marked by a pair of cubical structures that, 
+                    like the <placeName type="building" corresp="#BRANDEBURGGATE">Brandeburg Gate</placeName> in <placeName corresp="#BERLIN">Berlin</placeName>, 
+                    evoke the <placeName type="building" corresp="#PROPYLAEAATHENS">Propylaea of the Acropolis</placeName> in <placeName corresp="#ATHENS">Athens</placeName>. In the late eighteenth 
+                    and early nineteenth centuries, such imposing neoclassical gates were meant to herald the entrance to the city conceived as &#x201C;work of art&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#ETLINSYMBOLICSPACE"><persName corresp="#RAETLIN">Etlin</persName>, <title type="book" corresp="ETLINSYMBOLICSPACE"><hi rend="italic">Symbolic Space</hi></title></ref>, 2&#x2013;4; 
+                    and see <ref type="bibliography" target="bibliography.php#OLSENCITY"><persName corresp="#DJOLSEN">Olsen</persName>, <title type="book" corresp="OLSENCITY"><hi rend="italic">The City as a Work of Art</hi></title></ref>).</p>
+                <p>By the <date notBefore="1830" notAfter="1839">1830s</date>, however, the Enlightenment <orgName corresp="#HAPSBURG">Hapsburg</orgName> project in <placeName corresp="#MILAN">Milan</placeName> 
+                    had been overlain by <persName corresp="#NBE">Napoleon</persName>&#x02BC;s ambitions for the city, which appropriated the neoclassical design 
+                    to promote republican and imperial ideals. This symbolism was often expressed using a columnar, Doric vocabulary associated with <placeName corresp="#PAESTUM">Paestum</placeName>. 
+                    The Ruskins appear to have sought out these Napoleonic monuments, including a vast &#x201C;amphitheatre&#x201D;, referring apparently to the <placeName corresp="#FOROBONAPARTE">Foro Bonaparte</placeName> (<date notBefore="1801" notAfter="1806">1801-6</date>), 
+                    planned by <persName corresp="#GAANTOLINI">Giovanni Antonio Antolini</persName> (<date notBefore="1756" notAfter="1841">1756-1841</date>) as a spectacular entrance to the city from the <geogName corresp="#SIMPLON">Strada del Sempione</geogName>, 
+                    connecting to the <geogName corresp="#SIMPLON">Simplon Pass</geogName>, which <persName corresp="#NBE">Napoleon</persName>&#x02BC;s engineers had modernized as an accessible carriage road. The <placeName type="building" corresp="#FOROBONAPARTE">Foro Bonaparte</placeName> was completed in altered form 
+                    by Luigi Canonica (<date notBefore="1762" notAfter="1844">1762-1844</date>). At its entrance on the city side, the Ruskins also viewed the arch commemorating <persName corresp="#NBE">Napeoleon</persName>&#x02BC;s victory at <placeName corresp="#MARENGO">Marengo</placeName> (now known as the <placeName type="building" corresp="#ARCODELLAPACE">Arco della Pace</placeName>), 
+                    designed by Luigi Cagnola (<date notBefore="1762" notAfter="1833">1762-1833</date>), begun in <date notBefore="1807">1807</date> and still incomplete when the Ruskins visited. On their last day in <placeName corresp="#MILAN">Milan</placeName>, they viewed <persName corresp="#MLCAGNOLA">Cagnola</persName>&#x02BC;s city gate built 
+                    &#x201C;in memory of [<persName corresp="#NBE">Napoleon</persName>&#x02BC;s] victory at <placeName corresp="#MARENGO">Marengo</placeName>&#x201D;, today known as the <placeName type="building" corresp="#PORTATICINESE">Porta Ticinese</placeName> (<date notBefore="1801" notAfter="1814">1801-14</date>) (Kirk 77-83, 91-98).</p>
+                <p> what she calls the <name type="building" corresp="#FOROBONAPARTE">Amphitheatre</name>, designed to accommodate tens of thousands of spectators 
+                    (probably referring to the <placeName type="building" corresp="#FOROBONAPARTE">Foro Bonaparte</placeName>, <date notBefore="1801" notAfter="1806">1801&#x2013;6</date>, 
+                    planned by <persName corresp="#GAANTOLINI">Giovanni Antonio Antolini</persName> [<date notBefore="1756" notAfter="1841">1756&#x2013;1841</date>] as a spectacular entrance to the city from the <placeName type="building" corresp="#STRADADELSEMPIONE">Strada del Sempione</placeName>); 
+                    and the arch commemorating this road, which led to the mountain pass that <persName corresp="#NBE">Napoleon</persName>&#x02BC;s engineers had forged through the <geogName corresp="#SIMPLON">Simplon</geogName> (<ref type="bibliography" target="bibliography.php#RFT48"><title type="manuscript" corresp="#RFT48">Diary of Mary Richardson, 1833</title></ref>, 46). 
+                    See Ruskin's planned section of the "Account" on the Corso of Milan and associated glosses. These Napoleonic projects were designed to impress an imperial stamp 
+                    on the principal cities of the Italian kingdom. The <name type="building" corresp="#AMPHITHEATREMILAN">Amphitheatre</name> was built to stage military parades and spectacles; and the arch proclaimed a ceremonial finish for the <geogName corresp="#SIMPLON">Simplon</geogName> road, 
+                    which was extended into <placeName corresp="#MILAN">Milan</placeName> under the name of the Strada Napoleone (<ref type="bibliography" target="bibliography.php#GREGORYNAPOLEONSITALY"><persName corresp="#DGREGORY">Gregory</persName>, <title type="book" corresp="#GREGORYNAPOLEONSITALY"><hi rend="italic">Napoleon&#x02BC;s Italy</hi></title></ref>, 75&#x2013;76). 
+                    At the time of the Ruskins&#x02BC; visit, the latter monument not only remained under construction, like the <name type="building" corresp="#DUOMOMILAN">Duomo</name>, but was also in process of redefinition. As explained in <title type="book" corresp="#MURRAYSHANDBOOKNORTHERNITALY1847"><persName corresp="#JM">Murray</persName>&#x02BC;s guide to northern Italy</title> 
+                    (<date when="1847">1847</date>), the triumphal arch was begun in <date notBefore="1806" notAfter="1807">1806&#x2013;7</date> as the &#x201C;Arch of the <geogName corresp="#SIMPLON">Simplon</geogName> . . . in commemoration of the <date when="1806-10-14">battle of Jena</date>&#x201D;&#x2014;<persName corresp="#NBE">Napoleon</persName>&#x02BC;s 
+                    victory over the Prussian army, in the war against the Fourth Coalition of allies&#x2014;and the monument was meant to be decorated &#x201C;with bas&#x2010;reliefs representing the events of <date notBefore="1799-11-09" notAfter="1815-06-18">Napoleon&#x02BC;s wars</date>&#x201D;; 
+                    however, when the Kingdom of <placeName corresp="#ITALY">Italy</placeName> fell and <placeName corresp="#MILAN">Milan</placeName> returned to control by <placeName corresp="#AUSTRIA">Austria</placeName>, the name of the monument &#x201C;was changed to the Arch of Peace, . . . and the sculptures underwent a transformation 
+                    to make them represent the events which preceded the general peace&#x201D; (completed after the Ruskins&#x02BC; visit, in <date when="1838">1838</date>, for the <placeName corresp="#MILAN">Milan</placeName> coronation of the Austrian emperor, <persName corresp="#FERDINAND">Ferdinand I</persName>).
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKNORTHERNITALY1847"><persName corresp="#GBMAULE">Maule</persName>, <title type="book" corresp="#MURRAYSHANDBOOKNORTHERNITALY1847"><hi rend="italic">Hand&#x2010;book for Travellers in Northern Italy</hi></title></ref>, 147).</p>
+            </div>
+        </body>
+    </text>
+</TEI>
