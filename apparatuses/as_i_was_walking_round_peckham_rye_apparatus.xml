@@ -23,6 +23,11 @@
                     <persName corresp="#AEH">Aimee E. Harris</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#LAL">Lauren A. Lambert</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
                     Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
@@ -58,22 +63,22 @@
     <text>
         <body>
             <div type="apparatus">
-                <head type="title">&#x201C;As I was walking round by Peckham rye&#x201D;</head>
+                <head type="title">&#x201C;As I was walking round by <placeName corresp="#PECKHAMRYE">Peckham rye</placeName>&#x201D;</head>
                 <!--An apparatus may contain all or only some of the following sections.-->
                 <div type="section" xml:id="TITLE">
                     <head type="section">
                     </head>
-                    <p>Untitled, except in the form of a salutation in the fair copy (1r), &#x201C;To My Father / Jan.y 1.st. / 1835.&#x201D;</p>
+                    <p>Untitled, except in the form of a salutation in the fair copy (1r), &#x201C;To My Father / <date when="1835-01-01">Jan.<hi rend="superscript">y</hi> 1.<hi rend="superscript">st.</hi> / 1835</date>&#x201D;.</p>
                 </div>
                 <div type="section" xml:id="GENRE">
                     <head type="section">Genre</head>
-                    <p>New Year&#x02BC;s poem. In <title type="manuscript" corresp="#MSXI">MS XI</title> fair copy, seventeen numbered stanzas of 10 lines; ababacaccc; iambic pentameter. 
+                    <p>New Year&#x02BC;s poem. <!--Hyperlink to New Year's note--> In <title type="manuscript" corresp="#MSXI">MS XI</title> fair copy, seventeen numbered stanzas of 10 lines; ababacaccc; iambic pentameter. 
                      The <title type="manuscript" corresp="#MSVIII">MS VIII</title> draft consists of these seventeen stanzas, but irregularly numbered, with stanza 6 incomplete (and not represented in the fair copy), followed by stanza 7 and two stanzas both numbered 8. 
-                     Following stanza 11, or possibly inside that stanza, <persName corresp="#JR">Ruskin</persName> inserts a poem separately titled &#x201C;January,&#x201D; consisting of 32 lines, each line typically consisting of two anapests..</p>
+                     Following stanza 11, or possibly inside that stanza, <persName corresp="#JR">Ruskin</persName> inserts a poem separately titled &#x201C;January,&#x201D; consisting of 32 lines, each line typically consisting of two anapests.</p>
                 </div>
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
-                    <p><title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="manuscript" corresp="#MSXI">MS XI</title>.</p>
+                    <p><title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="manuscript" corresp="#MSXI">MS XI</title>.</p> <!--Add page numbers-->
                 </div>
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
@@ -82,14 +87,14 @@
                 </div>
                 <div type="section" xml:id="COMPPUB">
                     <head type="section">Composition &#x0026; Publication</head>
-                    <p><persName corresp="#JR">Ruskin</persName> drafted stanzas 1-5 in an even hand with no deletions and only one insertion. (A substitution of &#x201C;aimed&#x201D; for &#x201C;feigned&#x201D; in stanza 3 is in the hand of <persName corresp="#JR">Ruskin</persName>&#x02BC;s <persName corresp="#JJR">father</persName>.)  Alterations become more frequent starting with stanza 6, which he drafted through 5 lines and then cut by scoring with diagonal lines. 
-                       Despite this deletion, he numbered the following two stanzas as 7 (which contains three significant substitutions) and 8, respectively, but then he apparently noticed his miscounting and, to compensate, duplicated the number 8 for the following the stanza.
-                        <persName corresp="#JR">Ruskin</persName> resumed drafting with no deletions or substitutions. (The facsimile gives the appearance of his having labeled stanza 10 incorrectly as 5, but this illusion is caused by a tear in the page, showing the numeral 5 from the page beneath.) After stanza 11, however, <persName corresp="#JR">Ruskin</persName> makes a significant departure from the dominant stanza, rhyme, and meter pattern by inserting a 32-line poem titled &#x201C;January&#x201D; using shorter, anapestic lines. At the top of he page, he sketched stresses in three-syllable feet which may or may not match specific lines of this poem, but which show <persName corresp="#JR">Ruskin</persName>&#x02BC;s experimentation with meter.
+                    <p><persName corresp="#JR">Ruskin</persName> drafted stanzas 1&#x2013;5 in an even hand with no deletions and only one insertion. (A substitution of &#x201C;aimed&#x201D; for &#x201C;feigned&#x201D; in stanza 3 is in the hand of <persName corresp="#JR">Ruskin</persName>&#x02BC;s <persName corresp="#JJR">father</persName>). Alterations become more frequent starting with stanza 6, which he drafted through 5 lines and then cut by scoring with diagonal lines. 
+                       Despite this deletion, he numbered the following two stanzas as 7 (which contains three significant substitutions) and 8, respectively, but then he apparently noticed his miscounting and, to compensate, duplicated the number 8 for the following stanza.
+                        <persName corresp="#JR">Ruskin</persName> resumed drafting with no deletions or substitutions. (The facsimile gives the appearance of his having labeled stanza 10 incorrectly as 5, but this illusion is caused by a tear in the page, showing the numeral 5 from the page beneath). After stanza 11, however, <persName corresp="#JR">Ruskin</persName> makes a significant departure from the dominant stanza, rhyme, and meter pattern by inserting a 32&#x2010;line poem titled &#x201C;January&#x201D; using shorter, anapestic lines. At the top of the page, he sketched stresses in three&#x2010;syllable feet which may or may not match specific lines of this poem, but which show <persName corresp="#JR">Ruskin</persName>&#x02BC;s experimentation with meter.
                         The idea for &#x201C;January&#x201D;  appears to be introduced at the end of stanza 11: &#x201C;I sing the year. Ye months, come listen all / That is if ye have any years atall&#x201D;. Was <persName corresp="#JR">Ruskin</persName> toying with composing a poem describing each of the twelve months, like a minor Shepherd&#x02BC;s Calendar? Ultimately, in the fair copy, <persName corresp="#JR">Ruskin</persName> deleted the entirety of this poem; and already, in the draft of stanza 12, he incorporated descriptions of the months of January, February, and March into  a single stanza, suggesting that he abandoned the expansion after drafting only the first month.
-                        What is significant about this episode in the draft is that, although abandoning &#x201C;January&#x201D; along with a possible expansion of the New Year&#x02BC;s ode, <persName corresp="#JR">Ruskin</persName> appears to have found an idea for what became &#x201C;The Months&#x201D; as published in <title type="annual" corresp="#FRIENSHIPSOFFERING1835">Friendship&#x02BC;s Offering</title>. While that poem is not a month-by-month catalog, it does pick up with the condensed rehearsal of the twelve months as <persName corresp="#JR">Ruskin</persName> went on to draft in stanzas 12-14. 
-                       On this evidence, one  should not conceive of <persName corresp="#JR">Ruskin</persName> as a precocious but innocent youthful author, whose verse was subsequently edited and polished by his father and editor, but as an ambitious writer who wrote with an eye to publication at the same time that he was composing an apparently private gift of verse for a family holiday occasion.
-                        This interpretation is seconded by the hand of <persName corresp="#JR">Ruskin</persName>&#x02BC;s father in the draft. In stanza three of the draft, <persName corresp="#JR">Ruskin</persName> attested to his ambition, albeit with affected modesty: &#x201C;You know, Sir, that I always feigned to be / At least a something more than common rhymer.&#x201D; <persName corresp="#JJR">John James</persName>, however, changed &#x201C;feigned&#x201D; to &#x201C;aimed&#x201D; in the draft. 
-                        <persName corresp="#JR">Ruskin</persName>&#x02BC;s more modest &#x201C;feigned&#x201D; indicates he has always wanted to be worthy of being more than a common rhymer. His father&#x02BC;s more confident &#x201C;aim&#x201D; urges him to work toward becoming a great poet. In writing for the household, father and son were already staging greater ambitions.
+                        What is significant about this episode in the draft is that, although abandoning &#x201C;January&#x201D; along with a possible expansion of the New Year&#x02BC;s ode, <persName corresp="#JR">Ruskin</persName> appears to have found an idea for what became &#x201C;<title type="poem" corresp="#JRTHEMONTHS">The Months</title>&#x201D; as published in <title type="annual" corresp="#FRIENSHIPSOFFERING1835">Friendship&#x02BC;s Offering</title>. While that poem is not a month&#x2010;by&#x2010;month catalog, it does pick up with the condensed rehearsal of the twelve months as <persName corresp="#JR">Ruskin</persName> went on to draft in stanzas 12&#x2013;14. 
+                       On this evidence, one  should not conceive of <persName corresp="#JR">Ruskin</persName> as a precocious but innocent youthful author, whose verse was subsequently edited and polished by his <persName corresp="#JJR">father</persName> and <persName corresp="#WHH">editor</persName>, but as an ambitious writer who wrote with an eye to publication at the same time that he was composing an apparently private gift of verse for a family holiday occasion.
+                        This interpretation is seconded by the hand of <persName corresp="#JR">Ruskin</persName>&#x02BC;s father in the draft. In stanza three of the draft, <persName corresp="#JR">Ruskin</persName> attested to his ambition, albeit with affected modesty: &#x201C;You know, Sir, that I always feigned to be / At least a something more than common rhymer&#x201D;. <persName corresp="#JJR">John James</persName>, however, changed &#x201C;feigned&#x201D; to &#x201C;aimed&#x201D; in the draft. 
+                        <persName corresp="#JR">Ruskin</persName>&#x02BC;s more modest &#x201C;feigned&#x201D; indicates he has always wanted to be worthy of being more than a common rhymer. His <persName corresp="#JJR">father</persName>&#x02BC;s more confident &#x201C;aim&#x201D; urges him to work toward becoming a great poet. In writing for the household, <persName corresp="#JJR">father</persName> and <persName corresp="#JR">son</persName> were already staging greater ambitions.
                     </p>
                 </div>
                 <div type="section" xml:id="DISCUSSION">
