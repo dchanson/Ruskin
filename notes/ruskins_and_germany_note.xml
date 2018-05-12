@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <fileDesc xml:id="ruskins_and_germany_note">
+            <titleStmt>
+                <title type="main">The Ruskins and Germany</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="contextual">
+                <head type="title">The Ruskins and Germany</head>
+                <p>The Ruskins first visited <placeName corresp="#GERMANY">Germany</placeName> during the <ref type="note" subtype="contextual" target="tour_of_1833">Tour of 1833</ref>. Leading up to that journey, 
+                    <persName corresp="#JJR">John James Ruskin</persName> purchased unidentified books about the region in <date when="1831">1831</date> and <date when="1832">1832</date>, 
+                    a work by <persName corresp="#JCFS">Friedrich Schiller</persName> in <date when="1832">1832</date>, and a German dictionary and a grammar respectively in <date when="1832">1832</date> and <date when="1833">1833</date>. 
+                    Following their return, he acquired a &#x201C;P. Rhine&#x201D; in <date when="1834">1834</date>, which was probably 
+                    <title type="book" corresp="#BULWERLYTTONPILGRIMS"><hi rend="italic">The Pilgrims of the Rhine</hi></title> 
+                    by <persName corresp="#EBL">Edward Bulwer&#x2010;Lytton</persName> (<date notBefore="1803" notAfter="1873">1803&#x2013;73</date>), published in that year
+                    (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 230 n. 2, 260 n. 2, 286 n. 1).</p>
+                <!--<p>Prior to this journey, Ruskin's notions of Germany would have been based primarily on his reading of Grimm</p>-->
+                <p>This nationalistic pride in the <geogName corresp="#RHINE">Rhine</geogName> as a &#x201C;German&#x201D; river was a comparatively recent cultural development, as was the sentiment surrounding the ruined medieval 
+                    castles towering on the romantic heights above the <geogName corresp="#RHINE">Middle Rhine</geogName>. Until well into the eighteenth century, according to <persName corresp="#RRT">Robert R. Taylor</persName> explains, the castles 
+                    evoked in Rhinelanders feelings of rivalrous disunity and oppression rather than a unifying national feeling. For each settlement, the river represented 
+                    a differently configured boundary and trade artery. Sentiments changed with the development of German Romanticism and taste for the picturesque in the time of <persName corresp="#JWG">Goethe</persName>, 
+                    while a more unified German nationalism accompanied the political realignments that followed the defeat of <persName corresp="#NBE">Napoleon</persName> and the dissolution of the Napoleonic <orgName corresp="#GERMANCONFEDERATION">German Confederation</orgName> 
+                    (<ref type="bibliography" target="bibliography.php#TAYLORCASTLES"><persName corresp="#RRT">Taylor</persName>, <title type="book" corresp="#TAY LORCASTLES"><hi rend="italic">Castles of the Rhine</hi></title></ref>, 24&#x2013;68). In the <title type="composite" corresp="#JRCOLOGNECOMP">&#x201C;Cologne&#x201D;</title> section of the 
+                    <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>, <persName corresp="#JR">Ruskin</persName> announces some of this <geogName corresp="#RHINE">Rhine</geogName> sentiment, but he also expresses disappointment in the 
+                    unpicturesque commercial traffic on the river. It is in the <title type="composite" corresp="#JRANDERNACHTCOMP">&#x201C;Andernacht&#x201D;</title> section (properly spelled <hi rend="italic">Andernach</hi>) that he most positively turns 
+                    his unfolding travelogue toward the romantic sentiment of the river, along with its hills (which intrigue him for their formation from volcanic basalt), and its picturesque castle ruins.</p>
+                
+
+
+            </div>
+        </body>
+    </text>
+</TEI>
