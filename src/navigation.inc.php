@@ -1,4 +1,6 @@
 <?php include_once('header.inc.php'); ?>
+<?php if(!isset($_REQUEST['show_navbar']) or $_REQUEST['show_navbar'] != '0'){
+	?>
 
 	<div class="navigation">
         <a href="<?php echo r_get_base();?>"><img src="<?php echo r_build_url("images/ruskin_logo.jpg"); ?>" width="100%"/></a>
@@ -36,3 +38,4 @@
         <br/>
         <span><a href="<?php echo r_build_url("webpages/legal.php"); ?>">Legal</a><span>
 	</div>
+<?php } ?>

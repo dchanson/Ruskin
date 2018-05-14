@@ -54,13 +54,25 @@ body {
 .content, .apparatus, .essay, .note, .glosses, .webpage {
 	background-color: transparent;
 	/*float: right;*/
-	height: 72%;
+
 	overflow: auto;
 	padding-bottom: 8%;
 	padding-left: 10%;
 	padding-right: 10%;
 	padding-top: 8%;
-	width: 65%;
+
+}
+@media all and (max-width: 900px){
+	.content, .apparatus, .essay, .note, .glosses, .webpage{
+		height: 90%;
+		width: auto;
+	}
+}
+@media all and (min-width: 901px){
+	.content, .apparatus, .essay, .note, .glosses, .webpage{
+		height: 72%;
+		width: 65%;
+	}
 }
 
 
@@ -922,4 +934,14 @@ position: fixed;
 .floating-text{
 	margin-left: 5%;
 	margin-right: 5%;
+}
+
+
+#topFileName {
+    margin: 1.5%;
+}
+
+#topFileName span {
+    color: #52585f;
+    font-weight: bold;
 }

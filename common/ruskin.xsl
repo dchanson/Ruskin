@@ -581,7 +581,8 @@
 
 <!--<body> - Enable for Apparatuses, Essays, Notes, and Glosses. Disable for Anthologies, Manuscripts, and Witnesses.
     The following uses the body of the XML docment as the body of the HTML document.-->
-
+    <xsl:variable name="navigationPhpVar">&#x003C;?php include(&#x022;../navigation.inc.php&#x022;); ?&#x003E;</xsl:variable>
+    <xsl:variable name="topBtnPhpVar">&#x003C;?php include(&#x022;../top_button.inc.php&#x022;); ?&#x003E;</xsl:variable>
     <xsl:template match="tei:body">
         <xsl:choose>
 
@@ -589,24 +590,40 @@
               <body>
                   <div class="floating-text">
                     <xsl:apply-templates/>
-                    <xsl:variable name="phpVar2">&#x003C;?php include(&#x022;../top_button.inc.php&#x022;); ?&#x003E;</xsl:variable>
-                    <xsl:value-of select="$phpVar2" disable-output-escaping="yes"/>
                   </div>
               </body>
           </xsl:when>
           <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus']">
               <body>
-                  <xsl:variable name="phpVar">&#x003C;?php include(&#x022;../navigation.inc.php&#x022;); ?&#x003E;</xsl:variable>
-                  <xsl:value-of select="$phpVar" disable-output-escaping="yes"/>
+
+                  <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
                   <xsl:apply-templates/>
-                  <xsl:variable name="phpVar2">&#x003C;?php include(&#x022;../top_button.inc.php&#x022;); ?&#x003E;</xsl:variable>
-                  <xsl:value-of select="$phpVar2" disable-output-escaping="yes"/>
+                  <xsl:value-of select="$topBtnPhpVar" disable-output-escaping="yes"/>
+              </body>
+          </xsl:when>
+          <xsl:when test="ancestor::*[tei:teiHeader/@type='witness']">
+              <body>
+                  <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
+                  <div id="topFileName">
+
+                    <xsl:variable name="filename" select="(tokenize(base-uri(),'/'))[last()]" />
+                    <xsl:variable name="fileNameWithoutExtension" select="substring-before($filename, '.xml')"/>
+
+                    <!-- <xsl:value-of select="$filename"/> -->
+
+                    Current file:  <span><xsl:value-of select="$fileNameWithoutExtension"/>.php</span>
+
+
+
+                  </div>
+                  <xsl:apply-templates/>
+                  <xsl:value-of select="$topBtnPhpVar" disable-output-escaping="yes"/>
               </body>
           </xsl:when>
 
             <xsl:otherwise>
                 <xsl:variable name="phpVar">&#x003C;?php include(&#x022;../navigation.inc.php&#x022;); ?&#x003E;</xsl:variable>
-                <xsl:value-of select="$phpVar" disable-output-escaping="yes"/>
+                <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
                 <xsl:apply-templates/>
             </xsl:otherwise>
 
