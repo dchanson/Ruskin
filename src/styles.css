@@ -279,7 +279,16 @@ page(s) that will use them share the SAME folder, and 4) IE8-compatible webfonts
 .l {
 	display: block;
 	position: relative;
+	text-align: justify;
+  text-justify: inter-word;
+	/* overflow: hidden; */
 }
+/* .l:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+} */
+
 p {
 	position: relative;
 }
