@@ -54,7 +54,7 @@ body {
 	font-weight: normal;
 	padding-left: 1em;
 }
-.content, .apparatus, .essay, .note, .glosses, .webpage {
+.content, .apparatus, .essay, .note, .glosses, .webpage, .figure {
 	background-color: transparent;
 	/*float: right;*/
 
@@ -66,13 +66,13 @@ body {
 
 }
 @media all and (max-width: 900px){
-	.content, .apparatus, .essay, .note, .glosses, .webpage{
+	.content, .apparatus, .essay, .note, .glosses, .webpage, .figure{
 		height: 90%;
 		width: auto;
 	}
 }
 @media all and (min-width: 901px){
-	.content, .apparatus, .essay, .note, .glosses, .webpage{
+	.content, .apparatus, .essay, .note, .glosses, .webpage, .figure{
 		height: 72%;
 		width: 65%;
 	}

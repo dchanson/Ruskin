@@ -757,6 +757,7 @@
                                 <div id="top" class="page-title">
                                     <xsl:apply-templates/>
                                 </div>
+                                <br />
                             </xsl:when>
 
                             <xsl:otherwise>
