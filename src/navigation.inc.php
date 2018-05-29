@@ -32,10 +32,10 @@
         <br/>
 		<span>XML</span>
         <br/>
-		<span>Bibliography</span>
+		<span><a href="<?php echo r_build_url("notes/bibliography.php"); ?>">Bibliography</a></span>
         <br/>
-        <span><a href="<?php echo r_build_url("webpages/staff.php"); ?>">Staff and Support</a><span>
-        <br/>
-        <span><a href="<?php echo r_build_url("webpages/legal.php"); ?>">Legal</a><span>
+    <span><a href="<?php echo r_build_url("webpages/staff.php"); ?>">Staff and Support</a><span>
+    <br/>
+    <span><a href="<?php echo r_build_url("webpages/legal.php"); ?>">Legal</a><span>
 	</div>
 <?php } ?>
