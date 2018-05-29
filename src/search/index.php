@@ -1,5 +1,5 @@
 <?php
-$base = "../";
+require('../header.inc.php');
 
 // Load MySQL credentials from config file.
 include('config.php');
@@ -171,7 +171,7 @@ if (isset($_GET['full_text_of_document']) AND $_GET['full_text_of_document'] == 
 	<link rel="icon" type="image/png" href="http://english.selu.edu/humanitiesonline/ruskin/images/ruskin_icon.png">
 </head>
 <body>
-	<?php include($base."navigation.inc.php"); ?>
+	<?php include("../navigation.inc.php"); ?>
 		<form action="" method="get" style="background: white;">
 			<fieldset>
 				<legend>Advanced Search</legend>

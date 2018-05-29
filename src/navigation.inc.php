@@ -1,4 +1,5 @@
 <?php include_once('header.inc.php'); ?>
+
 <?php if(!isset($_REQUEST['show_navbar']) or $_REQUEST['show_navbar'] != '0'){
 	?>
 
