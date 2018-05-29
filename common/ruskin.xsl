@@ -298,7 +298,7 @@
 
             </xsl:when>
 
-            <xsl:when test="@type='gloss' or @type='gloss_textual'">
+            <xsl:when test="@type='gloss_contextual' or @type='gloss_textual'">
 
 
                 <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
@@ -317,7 +317,7 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:variable name="nVar">
-                                    <xsl:value-of select="format-number(count(preceding::tei:ref[@type='gloss'])+1,'0')"/>
+                                    <xsl:value-of select="format-number(count(preceding::tei:ref[@type='gloss_contextual'])+1,'0')"/>
                                 </xsl:variable>
                                 &#x003C;span class=&#x022;gloss-contextual&#x022;&#x003E;
                                 <xsl:value-of select="$nVar"/>
