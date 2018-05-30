@@ -162,13 +162,12 @@ if (isset($_GET['full_text_of_document']) AND $_GET['full_text_of_document'] == 
 }
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0048)http://english.selu.edu/humanitiesonline/ruskin/ -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	<title>The Early Ruskin Manuscripts, Advanced Search Results</title>
-	<link href="http://english.selu.edu/humanitiesonline/ruskin/styles.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo r_build_url('styles.css'); ?>" rel="stylesheet" type="text/css">
 	<link href="searchStyle.css" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/png" href="http://english.selu.edu/humanitiesonline/ruskin/images/ruskin_icon.png">
+	<link rel="icon" type="image/png" href="<?php echo r_build_url('images/ruskin_icon.png'); ?>">
 </head>
 <body>
 	<?php include("../navigation.inc.php"); ?>
