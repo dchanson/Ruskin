@@ -54,6 +54,10 @@ error_reporting(E_ERROR);
 function construct_url($filename, $divtype, $doctype) {
 	global $entry;
 
+	$filenames = explode('/', $filename);
+	$filename = $filenames[count($filenames)-1];
+	echo $filename;
+
 	// Base URL of website.
 	$url = r_build_url('');
 
@@ -75,7 +79,7 @@ function construct_url($filename, $divtype, $doctype) {
 	// add glosses doctype
 
 	// Change the extension of the file from .XML to .PHP
-	$url .= str_replace('xml', 'php', $entry);
+	$url .= str_replace('xml', 'php', $filename);
 
 	return $url;
 }
@@ -360,6 +364,9 @@ foreach ($files AS $entry) {
 		$not_needed++;
 		continue;
 	}
+
+	// Determine the URL of the file on the website.
+		$url = construct_url($filename, $divtype, $doctype);
 
 	// Constrcut an SQL query to insert the document into the MySQL database.
 	$insert = "INSERT INTO `" . mysqli_real_escape_string($db_conn, $database) . "`.`documents` (
