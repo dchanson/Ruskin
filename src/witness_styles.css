@@ -3,7 +3,7 @@
 /* A B O U T   T H I S   D O C U M E N T
     Filename:               witness_styles.css
     Version:                1.0
-    Original Release Date:  
+    Original Release Date:
     Last Modified:          02/10/2015
     Project Title:          The Early Works of John Ruskin (1826-42)
     Project Director:       David C. Hanson
@@ -128,7 +128,7 @@ sup {
         padding-bottom: 1.5em;
         width: 6em;
         }
-        
+
     /* P a g e   N u m b e r s*/
 
     .pageNum-top {
@@ -159,11 +159,11 @@ sup {
 All hands are assigned the following default styles: add, add-above, add-below, add-margin-left, add-margin-right. */
 
     /* J o h n   R u s k i n */
-       
+
    .JR {
        color: #000;
        }
-	   
+
         /* D a m a g e */
 
         .damage-fire {                           /* x New 04/06/16. */
@@ -172,7 +172,7 @@ All hands are assigned the following default styles: add, add-above, add-below, 
         .damage-stain {                          /* x New 04/06/16. */
             background-color: #CCC;
         }
-		
+
     	/* D e c o r a t i o n */
 
         .bold-caps {                             /* x New 04/06/16 */
@@ -205,7 +205,7 @@ All hands are assigned the following default styles: add, add-above, add-below, 
             }
 
 		/* Line Numbers */
-		
+
 		.linenumber-right-JR {
             color: #000;
             right: -1em;
@@ -214,7 +214,7 @@ All hands are assigned the following default styles: add, add-above, add-below, 
             }
 
 		/* R e v i s i o n */
-    
+
         .del {
             color: #CCC;
             position: absolute;
@@ -226,7 +226,7 @@ All hands are assigned the following default styles: add, add-above, add-below, 
         .del-strikethrough {
             color: #000;
             text-decoration: line-through;
-            }    
+            }
         .del-scratchout {                        /* x New 04/06/16 */
             border-top: 0.5em solid #000;
             display: inline-block;
@@ -235,7 +235,7 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 		.del-underline {
             color: #000;
             text-decoration: underline;
-			} 
+			}
         .add {
             color: #000;
             }
@@ -286,7 +286,7 @@ All hands are assigned the following default styles: add, add-above, add-below, 
             }
 
         /* S u b s t i t u t i o n */
-        
+
         .subst-del {
             color: #CCC;
             position: absolute;
@@ -321,13 +321,13 @@ All hands are assigned the following default styles: add, add-above, add-below, 
             }
 
     /* J o h n   J a m e s   R u s k i n */
-    
+
     .JJR {
         color: #000;
         }
-    
+
         /* R e v i s i o n */
-         
+
         .add-JJR {
             color: #000;
             }
@@ -357,9 +357,9 @@ All hands are assigned the following default styles: add, add-above, add-below, 
     .MR {
     	color: #000;
         }
-    
+
         /* R e v i s i o n */
-       
+
         .add-MR {
             color: #000;
             }
@@ -383,9 +383,9 @@ All hands are assigned the following default styles: add, add-above, add-below, 
             right: -1.5em;
     		position: absolute;
             }
-            
+
         /* N o t e s */
-        
+
         .note-gloss-MR {
             color: #000;
             }
@@ -397,14 +397,14 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 	page(s) that will use them share the SAME folder, and 4) IE8-compatible webfonts be listed first. */
 
 		/* Used by IE8 */
-	
+
 		@font-face {
 			font-family: Andron;
 			src: url('andron_scriptor_web_3_1.eot');
 			}
-		
+
 		/* Used by Other Web Browsers */
-	
+
 		@font-face {
 			font-family: Andron;
 			src: url('andron_scriptor_web_3_1.woff');
@@ -491,7 +491,7 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 		}
 	.navbar-navigation {
 		background-color: #000;
-		display: inline-block;
+		display: inline;
 		height: 20px;
 		width: 110px;
 		}
