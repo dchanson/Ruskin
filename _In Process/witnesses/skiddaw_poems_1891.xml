@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#APW">Author of Printed Work</persName>
+                </author>
+                <editor>
+                    <persName corresp="#EPW">Editor of Printed Work</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#SEP">Steven Petite</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>W. G. Collingwood</persName>
+                        </editor>
+                        <title type="main">The Poems of John Ruskin</title>
+                        <title type="sub">Volume I: Poems Written in Boyhood, 1826-1835</title>
+                        <imprint>
+                            <biblScope type="vol">1</biblScope>
+                            <biblScope type="edition">4<hi rend="superscript">o</hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1891">1891</date>
+                            <biblScope type="pages">xxiii</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+        
+            <!--Simple Verse. Delete this <div/> if not used.-->
+            <div type="poem" met="-+|-+|-+|-+|-+" rhyme="unrhymed">
+                <head type="title"> <geogName corresp="#SKIDDAW"><hi rend="caps">SKIDDAW.</hi></geogName></head>
+                <lg type="stanza">
+                    <l><geogName corresp="#SKIDDAW">S<hi rend="smallcaps">kiddaw</hi></geogName>, upon thy heights the sun shines bright,</l>
+                    <l>But only for a moment: then gives place</l>
+                    <l>Unto a playful cloud which on thy brow</l>
+                    <l>Sports wantonly,&#x2014;then floats away in air,&#x2014;</l>
+                    <l>Throwing its shadow on thy towering height;</l>
+                    <l>And, darkening for a moment thy green side,</l>
+                    <l>But adds unto its beauty as it makes</l>
+                    <l>The sun more bright when it again appears.</l>
+                    <l>This in the morning on thy brow those clouds</l>
+                    <l>Rest as upon a couch, and give vain scope</l>
+                    <l>For fancy&#x02BC;s play.  And airy fortresses,</l>
+                    <l>And towers, and battlements, and all appear</l>
+                    <l>Chasing the others off, and in their turn</l>
+                    <l>Are chased by the others.</l>
+                    <space quantity="28" unit="lines"/><geogNAme corresp="#SKIDDAW">Skiddaw</geogNAme> came,
+                    <l>Noble, and grand, and beauteous, clothed with green,</l>
+                    <l>And yet but scantily and in some parts.</l>
+                    <l>A bare, terrific cliff precipitous</l>
+                    <l>Descends, with only here and there a root,</l>
+                    <l>A straggler, pushing forth its branches stiff.</l>
+                    <l><geogName corresp="#SKIDDAW">Skiddaw</geogName>, majestic!  Giant Nature&#x02BC;s work!</l>  
+                </lg>
+            </div>
+          
+        </body>
+    </text>
+</TEI>
