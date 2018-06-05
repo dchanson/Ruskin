@@ -312,4 +312,8 @@ $(document).ready(function(){
 		window.open(this.href, '_blank', "height=" + height + "px,width=" + width + "px");
 		return false;
 	});
+
+	$("#backButton").click(function(){
+
+	});
 });

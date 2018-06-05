@@ -760,6 +760,8 @@
 
       <xsl:choose>
         <xsl:when test="tei:TEI/tei:teiHeader[@type='witness']">
+          <xsl:variable name="facsFileName" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:locus/@facs" />
+          <xsl:variable name="facsFile" select="substring-before($facsFileName, '.jpg')" />
 
           <xsl:choose>
             <xsl:when test="$outputFullWitnessPage" >
@@ -767,11 +769,25 @@
               <xsl:value-of disable-output-escaping="yes" select="'&#x003C;?php include_once(&#x022;../showcase_top.inc.php&#x022;) ?&#x003E;'" />
 
               <div id="content-left">
-                <img id="facs_preview" src="../images/_previews/msia/MSIAsheet20_preview.jpg" width="100%"/>
-                <img id="facs" src="../images/facsimiles/msia/MSIAsheet20.jpg" width="100%" style="display:none"/>
+                <img id="facs_preview" src="../images/_previews/msia/{$facsFile}_preview.jpg" width="100%"/>
+                <img id="facs" src="../images/facsimiles/msia/{$facsFile}.jpg" width="100%" style="display:none"/>
                 <!--<div id="copyright"><img src="..." alt="..." title="Manuscript images &#x00A9;...." width="30" height="60" /></div>-->
               </div>
               <div id="content-right">
+
+                <div id="topFileName">
+                  Now showcasing:
+                  <span>
+                    <xsl:value-of select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']" />
+                  </span><br />
+
+                  Back to:
+                  <span>
+                     <xsl:apply-templates select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:note/tei:ref" />
+                  </span>
+                </div>
+
+                <!-- <xsl:apply-templates/> -->
 
                 <xsl:apply-templates select="//tei:body/*"/>
               </div>
@@ -867,25 +883,6 @@
               <body>
 
                   <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
-                  <xsl:apply-templates/>
-                  <xsl:value-of select="$topBtnPhpVar" disable-output-escaping="yes"/>
-              </body>
-          </xsl:when>
-          <xsl:when test="ancestor::*[tei:teiHeader/@type='witness']">
-              <body>
-                  <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
-                  <div id="topFileName">
-
-                    <xsl:variable name="filename" select="(tokenize(base-uri(),'/'))[last()]" />
-                    <xsl:variable name="fileNameWithoutExtension" select="substring-before($filename, '.xml')"/>
-
-                    <!-- <xsl:value-of select="$filename"/> -->
-
-                    Current file:  <span><xsl:value-of select="$fileNameWithoutExtension"/>.php</span>
-
-
-
-                  </div>
                   <xsl:apply-templates/>
                   <xsl:value-of select="$topBtnPhpVar" disable-output-escaping="yes"/>
               </body>
