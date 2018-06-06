@@ -77,7 +77,7 @@ $ brew services start php@7.1
 $ cd ~/Ruskin
 
 $ cd src/
-$ sed -i -e 's/http\:\/\/english.selu.edu\/humanitiesonline\/ruskin\//http\:\/\/ruskin.local:8080\/src/g' config.json
+$ sed -e 's/http\:\/\/english.selu.edu\/humanitiesonline\/ruskin\//http\:\/\/ruskin.local:8080\/src/g' config.json | tee config.json
 
 $ cd ~/Ruskin
 $ mkdir -p "gen/_Completed/" "gen/_In%20Process"
