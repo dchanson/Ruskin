@@ -762,11 +762,20 @@
         <xsl:when test="tei:TEI/tei:teiHeader[@type='witness']">
           <xsl:variable name="facsFileName" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:locus/@facs" />
           <xsl:variable name="facsFile" select="substring-before($facsFileName, '.jpg')" />
+          <xsl:variable name="witnessTitle" select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']" />
 
           <xsl:choose>
             <xsl:when test="$outputFullWitnessPage" >
+              <xsl:value-of disable-output-escaping="yes">
+                &#x003C;?php
 
-              <xsl:value-of disable-output-escaping="yes" select="'&#x003C;?php include_once(&#x022;../showcase_top.inc.php&#x022;) ?&#x003E;'" />
+                define(&#x022;FILE_NAME&#x022;, &#x003C;&#x003C;&#x003C;EOT
+                <xsl:value-of select="$witnessTitle" disable-output-escaping="no"/>
+EOT
+);
+                include_once(&#x022;../showcase_top.inc.php&#x022;)
+                ?&#x003E;
+              </xsl:value-of>
 
               <div id="content-left">
                 <img id="facs_preview" src="../images/_previews/msia/{$facsFile}_preview.jpg" width="100%"/>

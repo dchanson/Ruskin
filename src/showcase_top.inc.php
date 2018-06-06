@@ -9,7 +9,7 @@
 <link rel="icon"
 	type="image/png"
 	href="../images/ruskin_icon.png">
-<title>Now Showcasing: "Calais" [poem] (MS IA g1)</title>
+<title>Now Showcasing: <?php echo FILE_NAME;?></title>
 <script src="https://code.jquery.com/jquery-1.6.js"></script>
 <script>
   window.BASE_URL = "<?php echo r_get_base(); ?>";
