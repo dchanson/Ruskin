@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
-<link href="<?php echo r_build_url('witness_styles.css'); ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo r_build_url('css/witness_styles.css'); ?>" rel="stylesheet" type="text/css" />
 <link rel="icon"
 	type="image/png"
 	href="../images/ruskin_icon.png">

@@ -853,7 +853,7 @@ EOT
 
                 <xsl:when test="self::*[@type='anthology' or @type='manuscript' or @type='witness']">
                     <xsl:variable name="cssVar">
-                        &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;witness_styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
+                        &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;css/witness_styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
                         <!-- &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E; -->
                     </xsl:variable>
                     <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
@@ -863,7 +863,7 @@ EOT
                 <xsl:otherwise>
                     <!--Remove the ../ in ../styles.css for local testing.-->
                     <xsl:variable name="cssVar">
-                        &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
+                        &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;css/styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
 
                     </xsl:variable>
                     <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
