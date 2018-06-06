@@ -760,8 +760,8 @@
 
       <xsl:choose>
         <xsl:when test="tei:TEI/tei:teiHeader[@type='witness']">
-          <xsl:variable name="facsFileName" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:locus/@facs" />
-          <xsl:variable name="facsFile" select="substring-before($facsFileName, '.jpg')" />
+          <xsl:variable name="facsFileNames" select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:locus/@facs" />
+          <xsl:variable name="facsFile" select="substring-before($facsFileNames, '.jpg')" />
           <xsl:variable name="witnessTitle" select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']" />
 
           <xsl:choose>
@@ -773,13 +773,19 @@
                 <xsl:value-of select="$witnessTitle" disable-output-escaping="no"/>
 EOT
 );
+
+define(&#x022;FACS_FILE_NAMES&#x022;, &#x003C;&#x003C;&#x003C;EOT
+<xsl:value-of select="$facsFileNames" disable-output-escaping="no"/>
+EOT
+);
+
                 include_once(&#x022;../showcase_top.inc.php&#x022;)
                 ?&#x003E;
               </xsl:value-of>
 
               <div id="content-left">
-                <img id="facs_preview" src="../images/_previews/msia/{$facsFile}_preview.jpg" width="100%"/>
-                <img id="facs" src="../images/facsimiles/msia/{$facsFile}.jpg" width="100%" style="display:none"/>
+                <img id="facs_preview" src="" width="100%"/>
+                <img id="facs" src="" width="100%" style="display:none"/>
                 <!--<div id="copyright"><img src="..." alt="..." title="Manuscript images &#x00A9;...." width="30" height="60" /></div>-->
               </div>
               <div id="content-right">

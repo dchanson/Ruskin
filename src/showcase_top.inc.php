@@ -13,6 +13,7 @@
 <script src="https://code.jquery.com/jquery-1.6.js"></script>
 <script>
   window.BASE_URL = "<?php echo r_get_base(); ?>";
+	window.FACS_FILE_NAMES = "<?php echo FACS_FILE_NAMES; ?>";
 </script>
 </head>
 <body>
@@ -21,13 +22,15 @@
 	<img id="toggle-navbar" src="<?php echo r_build_url('images/navbar/tab_ro.jpg'); ?>" alt="Show/Hide NavBar Button" title="Show/Hide the Navbar" width="20" height="10" />
   </div>
   <div id="navbar">
-	<img id="first_button" src="<?php echo r_build_url('images/navbar/first.jpg'); ?>" alt="First Facsimile Button" title="Go to the First Facsimile" width="26" height="20" />
-	<div id="navbar-navigation-1" class="navbar-navigation">
-	<img id="previous-1" class="previous_button" src="<?php echo r_build_url('images/navbar/previous.jpg'); ?>" alt="Previous Facsmilie Button" title="Go to the Previous Facsimile" width="26" height="20"/>
-  <div class="navbar-location" title="Select a Facsimile">f1</div>
-  <img id="next-1" class="next_button" src="<?php echo r_build_url('images/navbar/next.jpg'); ?>" alt="Next Facsimile Button" title="Go to the Next Facsimile" width="26" height="20"/>
+
+	<div id="navbar-navigation" data-current-fac="0">
+		<img id="first_button" src="<?php echo r_build_url('images/navbar/first.jpg'); ?>" alt="First Facsimile Button" title="Go to the First Facsimile" width="26" height="20" />
+		<img id="previous_button" src="<?php echo r_build_url('images/navbar/previous.jpg'); ?>" alt="Previous Facsmilie Button" title="Go to the Previous Facsimile" width="26" height="20"/>
+	  <div id="navbar-location" title="Select a Facsimile"></div>
+	  <img id="next_button" src="<?php echo r_build_url('images/navbar/next.jpg'); ?>" alt="Next Facsimile Button" title="Go to the Next Facsimile" width="26" height="20"/>
+		<img id="last_button" src="<?php echo r_build_url('images/navbar/last.jpg'); ?>" alt="Last Facsimile Button" title="Go to the Last Facsimile" width="26" height="20" />
 	</div>
-<img id="last_button" src="<?php echo r_build_url('images/navbar/last.jpg'); ?>" alt="Last Facsimile Button" title="Go to the Last Facsimile" width="26" height="20" />
+
 <img id="toggle-view" src="<?php echo r_build_url('images/navbar/facsimile-transcription_ro.jpg'); ?>" alt="Toggle Views Button" title="Toggle Views" width="26" height="20" />
 <img id="toggle-magnify" src="<?php echo r_build_url('images/navbar/magnify_ro.jpg'); ?>" alt="Magnification Button" title="Increase the Magnification of the Facsimile" width="26" height="20" />
 <img id="toggle-enlarge" src="<?php echo r_build_url('images/navbar/enlarge_ro.jpg'); ?>" alt="Point Size Button" title="Increase the Point Size of the Transcription" width="26" height="20" />
@@ -36,16 +39,15 @@
 <img id="toggle-info" src="<?php echo r_build_url('images/navbar/info.jpg'); ?>" alt="Info Button" title="Learn about Showcase" width="26" height="20" style="float:right" />
 <img id="toggle-info_ro" src="<?php echo r_build_url('images/navbar/info_ro.jpg'); ?>" alt="Info Button" title="Learn about Showcase" width="26" height="20" style="display:none; float:right" />
 	<div id="navbar-facsimile" title="Select a Facsimile">
-    	<span class="navbar-facsimile-text">Facsimile:
+    	<span class="navbar-facsimile-text" id="navbar-facsimile-holder">Facsimile:
             <br/>
-            <br/><div id="navbar-facsimile-1" class="shortcut" style="color:#09C">f1</div>
             <br/>
 			<br/>
             <br/>
         </span>
 	</div>
     <div id="navbar-facs" style="display:none">
-    	<img id="navbar-facs_preview" src="<?php echo " " or r_build_url('images/_previews_wynkyn/blank.jpg'); ?>" width="100%" />
+    	<img id="navbar-facs_preview" src="" width="100%" />
     </div>
 	<div id="navbar-magnify" title="Increase the Magnification of the Facsimile">
 		<span class="navbar-magnify-text">Facsimile Magnification:

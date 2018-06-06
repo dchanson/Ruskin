@@ -489,13 +489,13 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 	#first_button {
 		margin-left: 45px;
 		}
-	.navbar-navigation {
+	#navbar-navigation {
 		background-color: #000;
 		display: inline;
 		height: 20px;
 		width: 110px;
 		}
-	.navbar-location {
+	#navbar-location {
 		border: 1px solid #666;
 		color: #09C;
 		display: inline-block;
@@ -536,8 +536,8 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 		line-height: 14px;
 		padding-left: 5px;
 		}
-	.shortcut {
-		color: #FFF;
+	.navbar-facsimile-item {
+		color: #09c;
 		float: left;
 		font-family: Arial;
 		font-size: 8pt;
@@ -711,4 +711,12 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 #topFileName span {
     color: #52585f;
     font-weight: bold;
+}
+
+.navbar-facsimile-item:hover {
+	color: white;
+}
+
+.navbar-facsimile-item.active{
+	color: green;
 }
