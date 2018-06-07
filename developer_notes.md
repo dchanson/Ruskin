@@ -25,7 +25,7 @@ For authors,
 
 \<monogr/title\>.
 
-\<Vol\>, \<issue\>, \<date\>, \<page number\>. # (\<biblScope\>.\<biblScope\> (\<date\>): \<biblScope\>.)
+\<Vol\>, \<issue\>, \<date\>, \<page number\>. `// (\<biblScope\>.\<biblScope\> (\<date\>): \<biblScope\>.)`
 
 2. For books, the general format will be the following:
 
