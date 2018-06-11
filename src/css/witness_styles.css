@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import 'styles_common.css';
 
 /* A B O U T   T H I S   D O C U M E N T
 Filename:               witness_styles.css
@@ -721,4 +722,8 @@ position: fixed;
 .navbar-facsimile-item.active, #navbar-location{
 	color: white;
 
+}
+
+.tablespace .del{
+	position: relative;
 }
