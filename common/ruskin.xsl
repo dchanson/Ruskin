@@ -944,8 +944,10 @@ EOT
             </xsl:when>
 
             <xsl:when test="@subtype">
-                <div class="{@subtype}">
+                <div class="{@type}">
+                  <div class="{@subtype}">
                     <xsl:apply-templates/>
+                  </div>
                 </div>
             </xsl:when>
 
