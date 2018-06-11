@@ -945,14 +945,14 @@ EOT
 
             <xsl:when test="@subtype">
                 <div class="{@type}">
-                  <div class="{@subtype}">
+                  <div class="{@subtype}" id="{@xml:id}">
                     <xsl:apply-templates/>
                   </div>
                 </div>
             </xsl:when>
 
             <xsl:when test="@type">
-                <div class="{@type}">
+                <div class="{@type}" id="{@xml:id}">
                     <xsl:apply-templates/>
                 </div>
             </xsl:when>
