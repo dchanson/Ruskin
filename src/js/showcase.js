@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 	// extract the manuscript for this facsimile
-	var rx = /^[A-Za-z]+/;
+	var rx = /^[A-Z]+/;
 	window.FACS = window.FACS_FILE_NAMES.split(' ').map(function(fileName, i){
 		var msName = rx.exec(fileName)[0].toLowerCase();
 		var fileNameWithoutExtension = fileName.replace(".jpg", "");

@@ -39,12 +39,10 @@
 <img id="toggle-info" src="<?php echo r_build_url('images/navbar/info.jpg'); ?>" alt="Info Button" title="Learn about Showcase" width="26" height="20" style="float:right" />
 <img id="toggle-info_ro" src="<?php echo r_build_url('images/navbar/info_ro.jpg'); ?>" alt="Info Button" title="Learn about Showcase" width="26" height="20" style="display:none; float:right" />
 	<div id="navbar-facsimile" title="Select a Facsimile">
-    	<span class="navbar-facsimile-text" id="navbar-facsimile-holder">Facsimile:
-            <br/>
-            <br/>
-			<br/>
-            <br/>
-        </span>
+    	<div class="navbar-facsimile-text" id="navbar-facsimile-holder">
+				Facsimile:
+
+			</div>
 	</div>
     <div id="navbar-facs" style="display:none">
     	<img id="navbar-facs_preview" src="" width="100%" />

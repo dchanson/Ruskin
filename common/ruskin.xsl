@@ -1150,9 +1150,9 @@ EOT
             </xsl:when>
 
             <xsl:when test="@type='stanza'">
-                <span class="lg-stanza">
+                <div class="lg-stanza">
                     <xsl:apply-templates/>
-                </span>
+                </div>
             </xsl:when>
 
         </xsl:choose>
