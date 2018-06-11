@@ -11,12 +11,6 @@ Replace: `<ref type="gloss_textual" target="$1" $2`
 ## Discovering duplicates
 `name="witnesses" && diff -rq "_Completed/$name" "_In Process/$name" | sort | grep -vE '^Only'`
 
-## Hex Codes
-* hyphen (-): `-` (minus sign)
-* backslash (&#92;): `&#92;`
-* En dash (&ndash;): `&ndash;`
-* Em dash (&ndash;): `&mdash;`
-
 ## Bibliography format
 The bibliography items are in flush and hang indentation.
 
