@@ -86,7 +86,7 @@
         <body>
             <div type="witness" subtype="bibliography_text">
                 <head type="title">List of Proposed Additional Contents for the &#x201C;Account&#x201D; [Account of a Tour on the Continent]</head>
-                <div type="tablespace">
+                <div type="tablespace" xml:id="account_toc_msviii_addictional_sections_table">
                     <head type="section">[Table 1. Additional Sections and/or Works]</head>
                     <table cols="3">
                         <row role="label">
@@ -139,7 +139,7 @@
                             <cell n="2">9</cell>
                             <cell n="3"><title type="composite" corresp="#JRTHEALPSCOMP"><geogName corresp="#ALPS">The Alps</geogName></title></cell>
                         </row>
-                        
+
                         <row role="data" xml:id="ACCOUNTTOCFALLOFTHERHINE">
                          <cell/>
                          <cell>10</cell>
@@ -177,15 +177,15 @@
                          </cell>
                        </row>
                        <row role="data" xml:id="ACCOUNTTOCPASSINGTHEALPS">
-                         <cell><metamark function="unknown"/>14 </cell>
-                         <cell/>
+                         <cell><metamark function="unknown"/>\</cell>
+                         <cell>14</cell>
                          <cell>
                            <title type="composite" corresp="#JRPASSINGTHEALPS">Passing the <geogName corresp="#ALPS">Alps</geogName></title>
                          </cell>
                        </row>
                        <row role="data" xml:id="ACCOUNTTOCVIAMALA">
-                         <cell><metamark function="unknown"/>15 </cell>
-                         <cell/>
+                         <cell><metamark function="unknown"/>\</cell>
+                         <cell>15</cell>
                          <cell>
                            <title type="composite" corresp="#JRVIAMALACOMP">
                              <geogName corresp="#VIAMALA">The via mala</geogName>
@@ -193,8 +193,8 @@
                          </cell>
                        </row>
                        <row role="data" xml:id="ACCOUNTTOCSPLUGEN">
-                         <cell><metamark function="unknown"/>16 </cell>
-                         <cell/>
+                         <cell><metamark function="unknown"/>\</cell>
+                         <cell>16</cell>
                          <cell>
                            <title type="composite" corresp="#JRSPLUGENCOMP">
                              <placeName corresp="#SPLUGEN">Splugen</placeName>
@@ -211,8 +211,8 @@
                          </cell>
                        </row>
                        <row role="data" xml:id="ACCOUNTTOCTHEDESCENT">
-                         <cell><metamark function="unknown"/>17 </cell>
-                         <cell/>
+                         <cell><metamark function="unknown"/>\</cell>
+                         <cell>17</cell>
                          <cell>
                            <title type="composite" corresp="#JRTHEDESCENTCOMP">The descent</title>
                          </cell>
@@ -227,8 +227,8 @@
                          </cell>
                        </row>
                        <row role="data" xml:id="ACCOUNTTOCLAGODICOMO">
-                         <cell><metamark function="unknown"/>19 </cell>
-                         <cell/>
+                         <cell><metamark function="unknown"/>\</cell>
+                         <cell>19</cell>
                          <cell>
                            <title type="composite" corresp="#JRLAGODICOMOCOMP">
                              <geogName corresp="#LAKECOMO">Lago di Como</geogName>
@@ -263,8 +263,8 @@
                          </cell>
                        </row>
                        <row role="data" xml:id="ACCOUNTTOCDUOMO">
-                         <cell><metamark function="unknown"/>23 </cell>
-                         <cell/>
+                         <cell><metamark function="unknown"/>\</cell>
+                         <cell>23</cell>
                          <cell>
                            <title type="composite" corresp="#JRDUOMOFMILANCOMP">
                              <placeName type="building" corresp="#DUOMOMILAN">The duomo of Milan</placeName>
@@ -751,9 +751,9 @@
                          </row>
                     </table>
                     </div>
-                
-                
-                    <div type="tablespace">
+
+
+              <div type="tablespace" xml:id="account_toc_msviii_table_2">
                         <head type="section">[Table 2. List of Sections and/or Works "Wanted" with Associated Figures]</head>
                         <table cols="3">
                             <row role="label">
@@ -1372,7 +1372,7 @@
                               </row>
                             </table>
                     </div>
-                
+
                 <div>
                     <list type="simple">
                         <item n="1">Begin with</item>
@@ -1381,7 +1381,7 @@
             </div>
 <div type="section" >
     <head>Table 1</head>
-    <div type="tablespace">
+  <div type="tablespace" xml:id="account_toc_msviii_table_1">
             <head type="table">Table 1. Account of a Tour on the Continent: Table of Contents</head>
         <table cols="3">
             <row role="data">
@@ -1752,7 +1752,7 @@
                 <cell n="1" role="data"></cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JROLDENGLANDCOMP">Old England</title></cell>
                 <cell n="3" role="data">4 of <placeName corresp="#DOVERCASTLE">Dover Castle</placeName></cell>
-            </row>           
+            </row>
         </table>
     </div>
  <div type="section" xml:id="TOCTABLE2">
@@ -1848,7 +1848,7 @@
              <row role="data">
                  <cell n="1" role="data">41</cell>
                  <cell n="2" role="data">3</cell>
-                 <cell n="3" role="data">2</cell>               
+                 <cell n="3" role="data">2</cell>
              </row>
              <row role="data">
                  <cell n="1" role="data">2</cell>
@@ -1884,7 +1884,7 @@
      </div>
 </div>
 </div>
-            
+
         </body>
     </text>
 </TEI>
