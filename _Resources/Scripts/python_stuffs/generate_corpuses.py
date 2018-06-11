@@ -4,6 +4,7 @@ from __future__ import print_function
 from lxml import etree, objectify
 import re
 from os import path
+from constants import *
 
 XML_NS_URI = 'http://www.w3.org/XML/1998/namespace'
 TEI_NS_URI = 'http://www.tei-c.org/ns/1.0'
@@ -49,7 +50,7 @@ for witness in witnesses:
     # if 'IX' not in title:
         # ms_ix_witness = witness
         # continue
-        
+
     # print(etree.tostring(title_elem))
     # print(title_elem.attrib)
     # print('\n\n\ntitle: ', title)

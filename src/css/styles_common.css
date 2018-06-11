@@ -1,0 +1,23 @@
+.tablespace>table,
+.tablespace>table>tr,
+.tablespace>table>tbody>tr,
+.tablespace>table>tr>td,
+.tablespace>table>tbody>tr>td
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.tablespace>table{
+	width: 100%;
+	text-align: center;
+}
+
+.tablespace>table>tr.label,
+.tablespace>table>tbody>tr.label{
+	font-weight: bold;
+}
+
+.tablespace{
+	margin: 2%;
+}
