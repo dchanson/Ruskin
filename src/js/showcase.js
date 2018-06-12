@@ -174,16 +174,16 @@ $(document).ready(function(){
 
 		if(ratio < 0.2){
 			//make left pane visible
-			$("#content-left").css("width", "98%");
+			$("#content-left").css("width", "98.5%");
 			$("#content-right").css("width", "0%");
 		}else if(ratio < 0.8){
 			//make right pane visible
 			$("#content-left").css("width", "0");
-			$("#content-right").css("width", "98%");
+			$("#content-right").css("width", "98.5%");
 		}else{
 			//make both panes visible
-			$("#content-left").css("width", "58%");
-			$("#content-right").css("width", "38%");
+			$("#content-left").css("width", "58.5%");
+			$("#content-right").css("width", "38.5%");
 		}
 
 		updateCurrentViewMode();
