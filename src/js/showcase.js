@@ -75,7 +75,7 @@ $(document).ready(function(){
 	}
 
 	// Toggle NavBar //
-  $("#navbar-tab").click(function(){
+	$("#navbar-tab").click(function(){
 		if($("#navbar").is(":visible")){
 			$(this).css("position", "fixed");
 
@@ -96,16 +96,16 @@ $(document).ready(function(){
 			// $("#content-right").css("margin-top", "0px");
 
 		}
- 	});
+	});
 
-  // Toggle facsimile Drop-down //
-  $("#navbar-location").click(function(){
+	// Toggle facsimile Drop-down //
+	$("#navbar-location").click(function(){
 		$("#navbar-magnify").hide();
 		$("#navbar-enlarge").hide();
 		$("#navbar-hand").hide();
 		$("#navbar-info").hide();
 		$("#navbar-facsimile").toggle();
-  });
+	});
 
 
 
@@ -144,57 +144,57 @@ $(document).ready(function(){
 		$("#navbar-facs").show();
 		$("#navbar-facs_preview").attr("src", window.erm.facsimiles[index].prev);
 		$("#navbar-facs_preview").show();
-		},function(){
+	},function(){
 		$("#navbar-facs").hide();
 		$("#navbar-facs_preview").attr("src", window.erm.base_url + "/images/_previews/blank.jpg");
 	});
 
 	// Toggle View //
 	$('#toggle-view').click(function () {
-	  var classes = ['both-panes-visible','left-pane-visible','right-pane-visible'];
-	  var contentDiv = $('#content');
+		var classes = ['both-panes-visible','left-pane-visible','right-pane-visible'];
+		var contentDiv = $('#content');
 		contentDiv.each(function(){
-	    this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
-	  });
+			this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
+		});
 	});
 
 	// Toggle Magnification Drop-down //
-  $("#toggle-magnify").click(function(){
+	$("#toggle-magnify").click(function(){
 		$("#navbar-facsimile").hide();
 		$("#navbar-enlarge").hide();
 		$("#navbar-hand").hide();
 		$("#navbar-info").hide();
 		$("#navbar-magnify").toggle();
-  });
+	});
 
 	// Toggle Point Size Drop-down //
-    $("#toggle-enlarge").click(function(){
-			$("#navbar-facsimile").hide();
-			$("#navbar-magnify").hide();
-			$("#navbar-hand").hide();
-			$("#navbar-info").hide();
-			$("#navbar-enlarge").toggle();
-    });
+	$("#toggle-enlarge").click(function(){
+		$("#navbar-facsimile").hide();
+		$("#navbar-magnify").hide();
+		$("#navbar-hand").hide();
+		$("#navbar-info").hide();
+		$("#navbar-enlarge").toggle();
+	});
 
-		$(".navbar-enlarge-text").click(function(){
-			$(".navbar-enlarge-text").removeClass('active');
-			$(this).addClass('active');
+	$(".navbar-enlarge-text").click(function(){
+		$(".navbar-enlarge-text").removeClass('active');
+		$(this).addClass('active');
 
-			var sizes = $(this).attr('data-font-size').split(',');
+		var sizes = $(this).attr('data-font-size').split(',');
 
-			$('.witness').css('line-height', '1.5em');
-			$('.witness').css('font-size', sizes[0]);
-			$('.smallcaps').css('font-size', sizes[1]);
-		});
+		$('.witness').css('line-height', '1.5em');
+		$('.witness').css('font-size', sizes[0]);
+		$('.smallcaps').css('font-size', sizes[1]);
+	});
 
-		$(".navbar-magnify-text").click(function(){
-			$(".navbar-magnify-text").removeClass('active');
-			$(this).addClass('active');
+	$(".navbar-magnify-text").click(function(){
+		$(".navbar-magnify-text").removeClass('active');
+		$(this).addClass('active');
 
-			var sizes = $(this).attr('data-zoom-width').split(',');
+		var sizes = $(this).attr('data-zoom-width').split(',');
 
-			$('#facs_preview, #facs').css('width', sizes[0]);
-		});
+		$('#facs_preview, #facs').css('width', sizes[0]);
+	});
 
 	$("#toggle-transcription").click(function(){
 		var allStates = ["composite", "original", "revised"];
@@ -207,30 +207,30 @@ $(document).ready(function(){
 		console.log('switching to', state)
 		switch (state) {
 			case "original":
-				$("#toggle-transcription")
-					.attr("src", window.erm.base_url + "/images/navbar/text-original.jpg");
-				$("[class*='add']").hide();
-				$("[class*='del']").show();
-				$("[class*='add-overwriting']").hide();
-				$("[class*='subst-add']").hide();
-				$("[class*='subst-del']").css("position", "initial").show()
-				$(".del-erasure").hide();
-				break;
+			$("#toggle-transcription")
+			.attr("src", window.erm.base_url + "/images/navbar/text-original.jpg");
+			$("[class*='add']").hide();
+			$("[class*='del']").show();
+			$("[class*='add-overwriting']").hide();
+			$("[class*='subst-add']").hide();
+			$("[class*='subst-del']").css("position", "initial").show()
+			$(".del-erasure").hide();
+			break;
 			case "revised":
-				$("#toggle-transcription")
-					.attr("src", window.erm.base_url + "/images/navbar/text-revised.jpg");
-				$("[class*='add']").show();
-				$("[class*='del']").hide();
-				$("[class*='add-overwriting']").show();
-				$("[class*='subst-add']").show();
-				$("[class*='subst-del']").hide();
-				break;
+			$("#toggle-transcription")
+			.attr("src", window.erm.base_url + "/images/navbar/text-revised.jpg");
+			$("[class*='add']").show();
+			$("[class*='del']").hide();
+			$("[class*='add-overwriting']").show();
+			$("[class*='subst-add']").show();
+			$("[class*='subst-del']").hide();
+			break;
 			default: // composite
-				$("#toggle-transcription")
-					.attr("src", window.erm.base_url + "/images/navbar/text-composite.jpg");
-				$(".del-erasure").css("position","absolute").show();
-				$("[class*='subst-del']").css("position","absolute").show();
-				$("[class*='del']").show();
+			$("#toggle-transcription")
+			.attr("src", window.erm.base_url + "/images/navbar/text-composite.jpg");
+			$(".del-erasure").css("position","absolute").show();
+			$("[class*='subst-del']").css("position","absolute").show();
+			$("[class*='del']").show();
 		}
 
 		$(this).attr("data-current-state", state);
@@ -255,7 +255,7 @@ $(document).ready(function(){
 	// );
 
 	// Toggle Hand Drop-down //
-  $("#toggle-hand").click(function(){
+	$("#toggle-hand").click(function(){
 		$("#navbar-facsimile").hide();
 		$("#navbar-magnify").hide();
 		$("#navbar-enlarge").hide();
