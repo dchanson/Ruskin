@@ -730,7 +730,6 @@ body {
 	float: left;
 	flex: 0 0 auto;
   width: 60%;
-  min-height: 200px;
   white-space: nowrap;
   background: #838383;
   color: white;
@@ -746,13 +745,17 @@ position: fixed;
 	background-color: #FFF;
 	float: right;
 	flex: 1 1 auto;
+	min-width: 1px;
   /* resizable */
   padding: 10px;
   width: 40%;
-  min-height: 200px;
   background: #eee;
 	overflow: scroll;
 }
+#content-right, #content-left{
+	height: 100%;
+}
+
 #content-splitter {
   flex: 0 0 auto;
   width: 2%;
@@ -833,43 +836,4 @@ position: fixed;
 }
 #account_toc_msviii_table_2 td:nth-child(3){
 	width: 45%;
-}
-
-
-#content.both-panes-visible #content-right{
-	width: 38%;
-}
-#content.both-panes-visible #content-left{
-	width: 58%;
-}
-
-#content.left-pane-visible #content-right{
-	width: 0 !important;
-}
-#content.right-pane-visible #content-right{
-	width: 98%;
-}
-
-#content.left-pane-visible #content-left{
-	width: 98%;
-}
-#content.right-pane-visible #content-left{
-	width: 0;
-}
-
-#content-right, #content-left{
-	height: 100%;
-}
-
-
-
-
-.content-left {
-
-}
-
-
-
-#content-right {
-
 }
