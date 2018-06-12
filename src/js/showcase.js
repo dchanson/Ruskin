@@ -80,14 +80,21 @@ $(document).ready(function(){
 			$(this).css("position", "fixed");
 
 			$("#toggle-navbar").attr("src", window.erm.base_url + "/images/navbar/tab.jpg");
+			$("#content").css("height", "100%");
 			$("#navbar").slideUp("fast", function(){
-				$("#content").css("padding-bottom", "0px");
+				$("#content").css({
+					"padding-bottom": "0px"
+				});
 				// $("#content-right").css("margin-top", "12px");
 			});
 
 		}else{
 			$(this).css("position", "initial");
 			$("#toggle-navbar").attr("src", window.erm.base_url + "/images/navbar/tab_ro.jpg");
+			$("#content").css({
+				"padding-bottom": "21px",
+				"height": "98%"
+			});
 			$("#navbar").slideDown("fast", function(){
 				console.log('finish');
 				// $("#content").css("padding-bottom", "21px");
