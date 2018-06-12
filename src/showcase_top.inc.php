@@ -40,19 +40,16 @@
 <div id="toggle-magnify-holder">
 	<img id="toggle-magnify" src="<?php echo r_build_url('images/navbar/magnify_ro.jpg'); ?>" alt="Magnification Button" title="Increase the Magnification of the Facsimile" width="26" height="20" />
 	<div id="navbar-magnify" title="Increase the Magnification of the Facsimile">
-		<span class="navbar-magnify-text">Facsimile Magnification:
-            <span id="vss-magnify" style="display:none">
-            	<br/>
-            	<br/><span id="x0" class="navbar-magnify-text">Default</span>
-            </span>
+		<span class="navbar-magnify-popup">Facsimile Magnification:
+
             <br/>
-            <br/><span id="x1" class="navbar-magnify-text" style="color:#09C">100%</span>
+            <br/><span data-zoom-width="100%" class="navbar-magnify-text active">100%</span>
             <br/>
-            <br/><span id="x2" class="navbar-magnify-text">200%</span>
+            <br/><span data-zoom-width="200%" class="navbar-magnify-text">200%</span>
             <br/>
-            <br/><span id="x4" class="navbar-magnify-text">400%</span>
+            <br/><span data-zoom-width="300%" class="navbar-magnify-text">400%</span>
             <br/>
-            <br/><span id="x8" class="navbar-magnify-text">800%</span>
+            <br/><span data-zoom-width="400%" class="navbar-magnify-text">800%</span>
             <br/>
             <br/>
 		</span>
@@ -61,15 +58,15 @@
 <div id="toggle-enlarge-holder">
 	<img id="toggle-enlarge" src="<?php echo r_build_url('images/navbar/enlarge_ro.jpg'); ?>" alt="Point Size Button" title="Increase the Point Size of the Transcription" width="26" height="20" />
 	<div id="navbar-enlarge" title="Increase the Point Size of the Transcription">
-		<span class="navbar-enlarge-text">Transcription Point Size:
+		<span class="navbar-enlarge-popup">Transcription Point Size:
 						<br/>
-						<br/><span id="12pt" class="navbar-enlarge-text" style="color:#09C">12pt</span>
+						<br/><span data-font-size="12pt,8pt" class="navbar-enlarge-text active">12pt</span>
 						<br/>
-						<br/><span id="16pt" class="navbar-enlarge-text">16pt</span>
+						<br/><span data-font-size="16pt,10.7pt" class="navbar-enlarge-text">16pt</span>
 						<br/>
-						<br/><span id="20pt" class="navbar-enlarge-text">20pt</span>
+						<br/><span data-font-size="20pt,13.3pt" class="navbar-enlarge-text">20pt</span>
 						<br/>
-						<br/><span id="24pt" class="navbar-enlarge-text">24pt</span>
+						<br/><span data-font-size="24pt,16pt" class="navbar-enlarge-text">24pt</span>
 						<br/>
 						<br/>
 				</span>

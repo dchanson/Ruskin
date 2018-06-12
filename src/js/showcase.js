@@ -167,109 +167,34 @@ $(document).ready(function(){
 		$("#navbar-magnify").toggle();
   });
 
-	// Reset Image Magnification to One Times (Default) //
-	$("#x1").click(function(){
-		$("#toggle-magnify").attr("src", window.erm.base_url + "/images/navbar/magnify_ro.jpg");
-		$("#x0").css("color", "#FFF");
-		$("#x2").css("color", "#FFF");
-		$("#x4").css("color", "#FFF");
-		$("#x8").css("color", "#FFF");
-		$("#x1").css("color", "#09C");
-		$("#facs_preview, #facs").attr("width", "100%");
-	});
-
-	// Magnify Image Two Times //
-	$("#x2").click(function(){
-		$("#toggle-magnify").attr("src", window.erm.base_url + "/images/navbar/magnify_ro.jpg");
-		$("#x0").css("color", "#FFF");
-		$("#x1").css("color", "#FFF");
-		$("#x4").css("color", "#FFF");
-		$("#x8").css("color", "#FFF");
-		$("#x2").css("color", "#09C");
-		$("#facs_preview, #facs").attr("width", "200%");
-	});
-
-	// Magnify Image Four Times //
-	$("#x4").click(function(){
-		$("#toggle-magnify").attr("src", window.erm.base_url + "/images/navbar/magnify_ro.jpg");
-		$("#x0").css("color", "#FFF");
-		$("#x1").css("color", "#FFF");
-		$("#x2").css("color", "#FFF");
-		$("#x8").css("color", "#FFF");
-		$("#x4").css("color", "#09C");
-		$("#facs_preview, #facs").attr("width", "400%");
-	});
-
-	// Magnify Image Eight Times //
-	$("#x8").click(function(){
-		$("#toggle-magnify").attr("src", window.erm.base_url + "/images/navbar/magnify_ro.jpg");
-		$("#x0").css("color", "#FFF");
-		$("#x1").css("color", "#FFF");
-		$("#x2").css("color", "#FFF");
-		$("#x4").css("color", "#FFF");
-		$("#x8").css("color", "#09C");
-		$("#facs_preview, #facs").attr("width", "800%");
-	});
-
 	// Toggle Point Size Drop-down //
     $("#toggle-enlarge").click(function(){
-		$("#navbar-facsimile").hide();
-		$("#navbar-magnify").hide();
-		$("#navbar-hand").hide();
-		$("#navbar-info").hide();
-		$("#navbar-enlarge").toggle();
+			$("#navbar-facsimile").hide();
+			$("#navbar-magnify").hide();
+			$("#navbar-hand").hide();
+			$("#navbar-info").hide();
+			$("#navbar-enlarge").toggle();
     });
 
-	// Reset Text to 12pt (Default) //
-	$("#12pt").click(function(){
-		$("#toggle-enlarge").attr("src", window.erm.base_url + "/images/navbar/enlarge_ro.jpg");
-		$("#8pt").css("color", "#FFF");
-		$("#16pt").css("color", "#FFF");
-		$("#20pt").css("color", "#FFF");
-		$("#24pt").css("color", "#FFF");
-		$("#12pt").css("color", "#09C");
-		$(".witness").css("line-height", "1.5em");
-		$(".witness").css("font-size", "12pt");
-		$(".smallcaps").css("font-size", "8pt");
-	});
+		$(".navbar-enlarge-text").click(function(){
+			$(".navbar-enlarge-text").removeClass('active');
+			$(this).addClass('active');
 
-	// Enlarge Text to 16pt //
-	$("#16pt").click(function(){
-		$("#toggle-enlarge").attr("src", window.erm.base_url + "/images/navbar/enlarge_ro.jpg");
-		$("#8pt").css("color", "#FFF");
-		$("#12pt").css("color", "#FFF");
-		$("#20pt").css("color", "#FFF");
-		$("#24pt").css("color", "#FFF");
-		$("#16pt").css("color", "#09C");
-		$(".witness").css("line-height", "1.5em");
-		$(".witness").css("font-size", "16pt");
-		$(".smallcaps").css("font-size", "10.7pt");
-	});
-	// Enlarge Text to 20pt //
-	$("#20pt").click(function(){
-		$("#toggle-enlarge").attr("src", window.erm.base_url + "/images/navbar/enlarge_ro.jpg");
-		$("#8pt").css("color", "#FFF");
-		$("#12pt").css("color", "#FFF");
-		$("#16pt").css("color", "#FFF");
-		$("#24pt").css("color", "#FFF");
-		$("#20pt").css("color", "#09C");
-		$(".witness").css("line-height", "1.5em");
-		$(".witness").css("font-size", "20pt");
-		$(".smallcaps").css("font-size", "13.3pt");
-	});
+			var sizes = $(this).attr('data-font-size').split(',');
 
-	// Enlarge Text to 24pt //
-	$("#24pt").click(function(){
-		$("#toggle-enlarge").attr("src", window.erm.base_url + "/images/navbar/enlarge_ro.jpg");
-		$("#8pt").css("color", "#FFF");
-		$("#12pt").css("color", "#FFF");
-		$("#16pt").css("color", "#FFF");
-		$("#20pt").css("color", "#FFF");
-		$("#24pt").css("color", "#09C");
-		$(".witness").css("line-height", "1.5em");
-		$(".witness").css("font-size", "24pt");
-		$(".smallcaps").css("font-size", "16pt");
-	});
+			$('.witness').css('line-height', '1.5em');
+			$('.witness').css('font-size', sizes[0]);
+			$('.smallcaps').css('font-size', sizes[1]);
+		});
+
+		$(".navbar-magnify-text").click(function(){
+			$(".navbar-magnify-text").removeClass('active');
+			$(this).addClass('active');
+
+			var sizes = $(this).attr('data-zoom-width').split(',');
+
+			$('#facs_preview, #facs').css('width', sizes[0]);
+		});
 
 	$("#toggle-transcription").click(function(){
 		var allStates = ["composite", "original", "revised"];
