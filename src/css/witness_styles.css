@@ -712,10 +712,16 @@ body {
 	font-size: 10pt;
 	text-align: justify;
 }
+/*
+#copyright {
+bottom: 22px;
+position: fixed;
+}
+*/
+
 #content {
 	display: flex;
   flex-direction: row;
-  border: 1px solid silver;
   overflow: hidden;
 
   /* avoid browser level touch actions */
@@ -727,7 +733,6 @@ body {
 
 #content-left {
 	background-color: #000;
-	float: left;
 	flex: 0 0 auto;
   width: 60%;
   white-space: nowrap;
@@ -735,15 +740,8 @@ body {
   color: white;
 	overflow: scroll;
 }
-/*
-#copyright {
-bottom: 22px;
-position: fixed;
-}
-*/
 #content-right {
 	background-color: #FFF;
-	float: right;
 	flex: 1 1 auto;
 	min-width: 1px;
   /* resizable */

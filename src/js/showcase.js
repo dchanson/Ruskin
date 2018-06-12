@@ -85,7 +85,6 @@ $(document).ready(function(){
 				$("#content").css({
 					"padding-bottom": "0px"
 				});
-				// $("#content-right").css("margin-top", "12px");
 			});
 
 		}else{
@@ -95,12 +94,7 @@ $(document).ready(function(){
 				"padding-bottom": "21px",
 				"height": "98%"
 			});
-			$("#navbar").slideDown("fast", function(){
-				console.log('finish');
-				// $("#content").css("padding-bottom", "21px");
-
-			});
-			// $("#content-right").css("margin-top", "0px");
+			$("#navbar").slideDown("fast");
 
 		}
 	});
