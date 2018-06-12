@@ -10,10 +10,15 @@
 	type="image/png"
 	href="../images/ruskin_icon.png">
 <title>Now Showcasing: <?php echo FILE_NAME;?></title>
-<script src="https://code.jquery.com/jquery-1.6.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.6.js"></script> -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 <script>
-  window.BASE_URL = "<?php echo r_get_base(); ?>";
-	window.FACS_FILE_NAMES = "<?php echo FACS_FILE_NAMES; ?>";
+	if(window.erm === undefined) window.erm = {};
+	window.erm.base_url = "<?php echo r_get_base(); ?>";
+	window.erm.facsimiles_file_names = "<?php echo FACS_FILE_NAMES; ?>";
+	window.erm.file_name = "<?php echo htmlspecialchars(FILE_NAME); ?>"
 </script>
 </head>
 <body>
@@ -32,21 +37,8 @@
 	</div>
 
 <img id="toggle-view" src="<?php echo r_build_url('images/navbar/facsimile-transcription_ro.jpg'); ?>" alt="Toggle Views Button" title="Toggle Views" width="26" height="20" />
-<img id="toggle-magnify" src="<?php echo r_build_url('images/navbar/magnify_ro.jpg'); ?>" alt="Magnification Button" title="Increase the Magnification of the Facsimile" width="26" height="20" />
-<img id="toggle-enlarge" src="<?php echo r_build_url('images/navbar/enlarge_ro.jpg'); ?>" alt="Point Size Button" title="Increase the Point Size of the Transcription" width="26" height="20" />
-<img id="toggle-transcription" src="<?php echo r_build_url('images/navbar/text-composite.jpg'); ?>" alt="Transcription Button" title="Toggle Transcriptions" width="26" height="20" />
-<img id="toggle-hand" src="<?php echo r_build_url('images/navbar/scribe_ro.jpg'); ?>" alt="Hands Button" title="Toggle Hands On/Off" width="26" height="20" />
-<img id="toggle-info" src="<?php echo r_build_url('images/navbar/info.jpg'); ?>" alt="Info Button" title="Learn about Showcase" width="26" height="20" style="float:right" />
-<img id="toggle-info_ro" src="<?php echo r_build_url('images/navbar/info_ro.jpg'); ?>" alt="Info Button" title="Learn about Showcase" width="26" height="20" style="display:none; float:right" />
-	<div id="navbar-facsimile" title="Select a Facsimile">
-    	<div class="navbar-facsimile-text" id="navbar-facsimile-holder">
-				Facsimile:
-
-			</div>
-	</div>
-    <div id="navbar-facs" style="display:none">
-    	<img id="navbar-facs_preview" src="" width="100%" />
-    </div>
+<div id="toggle-magnify-holder">
+	<img id="toggle-magnify" src="<?php echo r_build_url('images/navbar/magnify_ro.jpg'); ?>" alt="Magnification Button" title="Increase the Magnification of the Facsimile" width="26" height="20" />
 	<div id="navbar-magnify" title="Increase the Magnification of the Facsimile">
 		<span class="navbar-magnify-text">Facsimile Magnification:
             <span id="vss-magnify" style="display:none">
@@ -65,20 +57,38 @@
             <br/>
 		</span>
 	</div>
-    <div id="navbar-enlarge" title="Increase the Point Size of the Transcription">
+</div>
+<div id="toggle-enlarge-holder">
+	<img id="toggle-enlarge" src="<?php echo r_build_url('images/navbar/enlarge_ro.jpg'); ?>" alt="Point Size Button" title="Increase the Point Size of the Transcription" width="26" height="20" />
+	<div id="navbar-enlarge" title="Increase the Point Size of the Transcription">
 		<span class="navbar-enlarge-text">Transcription Point Size:
-            <br/>
-            <br/><span id="12pt" class="navbar-enlarge-text" style="color:#09C">12pt</span>
-            <br/>
-            <br/><span id="16pt" class="navbar-enlarge-text">16pt</span>
-            <br/>
-            <br/><span id="20pt" class="navbar-enlarge-text">20pt</span>
-            <br/>
-            <br/><span id="24pt" class="navbar-enlarge-text">24pt</span>
-            <br/>
-            <br/>
-        </span>
+						<br/>
+						<br/><span id="12pt" class="navbar-enlarge-text" style="color:#09C">12pt</span>
+						<br/>
+						<br/><span id="16pt" class="navbar-enlarge-text">16pt</span>
+						<br/>
+						<br/><span id="20pt" class="navbar-enlarge-text">20pt</span>
+						<br/>
+						<br/><span id="24pt" class="navbar-enlarge-text">24pt</span>
+						<br/>
+						<br/>
+				</span>
 	</div>
+</div>
+<img id="toggle-transcription" src="<?php echo r_build_url('images/navbar/text-composite.jpg'); ?>" alt="Transcription Button" title="Toggle Transcriptions" width="26" height="20" />
+<img id="toggle-hand" src="<?php echo r_build_url('images/navbar/scribe_ro.jpg'); ?>" alt="Hands Button" title="Toggle Hands On/Off" width="26" height="20" />
+<img id="toggle-info" src="<?php echo r_build_url('images/navbar/info_ro.jpg'); ?>" alt="Info Button" title="Learn about Showcase" width="26" height="20" style="float:right" />
+<div id="navbar-facsimile" title="Select a Facsimile">
+	<div class="navbar-facsimile-text" id="navbar-facsimile-holder">
+		Facsimile:
+
+	</div>
+</div>
+<div id="navbar-facs" style="display:none">
+	<img id="navbar-facs_preview" src="" width="100%" />
+</div>
+
+
 <div id="navbar-hand" title="Toggle Hands On/Off">
 		<span class="navbar-hand-text">
         	<span style="color:#FFF">Hands:</span>
