@@ -157,27 +157,6 @@ $(document).ready(function(){
 	    this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
 	  });
 	});
-	// $("#toggle-view").toggle(function(){ //Facsimile View//
-	// 	$("#toggle-view").attr("src", window.erm.base_url + "/images/navbar/facsimile_ro.jpg");
-	// 	$("#content-right").css("width", "0");
-	// 	$("#content-right").css("height", "0");
-	// 	$("#content-left").css("width", "100%");
-	// 	$("#content-left").css("height", "100%");},
-	// 	function(){ //Transcription View//
-	// 	$("#toggle-view").attr("src", window.erm.base_url + "/images/navbar/transcription_ro.jpg");
-	// 	$("#content-left").css("width", "0");
-	// 	$("#content-left").css("height", "0");
-	// 	$("#content-right").css("width", "100%");
-	// 	$("#content-right").css("height", "100%");
-	// 	$("#copyright").css("display", "none");},
-	// 	function(){ //Facsimile-Transcription View//
-	// 	$("#toggle-view").attr("src", window.erm.base_url + "/images/navbar/facsimile-transcription_ro.jpg");
-	// 	$("#content-right").css("width", "40%");
-	// 	$("#content-right").css("height", "100%");
-	// 	$("#content-left").css("width", "60%");
-	// 	$("#content-left").css("height", "100%");
-	// 	$("#copyright").css("display", "");
-	// });
 
 	// Toggle Magnification Drop-down //
   $("#toggle-magnify").click(function(){
@@ -292,6 +271,45 @@ $(document).ready(function(){
 		$(".smallcaps").css("font-size", "16pt");
 	});
 
+	$("#toggle-transcription").click(function(){
+		var allStates = ["composite", "original", "revised"];
+
+		var state = $(this).attr("data-current-state");
+		if(!state) state = allStates[1];
+		else{
+			state = allStates[(allStates.indexOf(state) +1)%allStates.length];
+		}
+		console.log('switching to', state)
+		switch (state) {
+			case "original":
+				$("#toggle-transcription")
+					.attr("src", window.erm.base_url + "/images/navbar/text-original.jpg");
+				$("[class*='add']").hide();
+				$("[class*='del']").show();
+				$("[class*='add-overwriting']").hide();
+				$("[class*='subst-add']").hide();
+				$("[class*='subst-del']").css("position", "initial").show()
+				$(".del-erasure").hide();
+				break;
+			case "revised":
+				$("#toggle-transcription")
+					.attr("src", window.erm.base_url + "/images/navbar/text-revised.jpg");
+				$("[class*='add']").show();
+				$("[class*='del']").hide();
+				$("[class*='add-overwriting']").show();
+				$("[class*='subst-add']").show();
+				$("[class*='subst-del']").hide();
+				break;
+			default: // composite
+				$("#toggle-transcription")
+					.attr("src", window.erm.base_url + "/images/navbar/text-composite.jpg");
+				$(".del-erasure").css("position","absolute").show();
+				$("[class*='subst-del']").css("position","absolute").show();
+				$("[class*='del']").show();
+		}
+
+		$(this).attr("data-current-state", state);
+	});
 	// Toggle Transcriptions //
 	// $("#toggle-transcription").toggle(function(){ // Display Original Text //
 	// 	$("#toggle-transcription").attr("src", window.erm.base_url + "/images/navbar/text-original.jpg");
@@ -319,17 +337,6 @@ $(document).ready(function(){
 		$("#navbar-info").hide();
 		$("#navbar-hand").toggle();
 	});
-
-	// Toggle Librarian (Example) //
-	// $("#toggle-LIBRARIAN").toggle(function(){
-	// 	$("#toggle-LIBRARIAN").css("color", "#FFF");
-	// 	$(".add-LIBRARIAN").hide();
-	// 	$(".add-bottom-LIBRARIAN").hide();},
-	// 	function(){
-	// 	$("#toggle-LIBRARIAN").css("color", "#09C");
-	// 	$(".add-LIBRARIAN").show();
-	// 	$(".add-bottom-LIBRARIAN").show();}
-	// );
 
 	// Close Drop-downs //
 	$("#content, #first_button, #previous_button, #next_button, #last_button, #toggle-view, #toggle-marginalia, #toggle-expansion").click(function(){
