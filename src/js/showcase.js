@@ -152,10 +152,23 @@ $(document).ready(function(){
 	// Toggle View //
 	$('#toggle-view').click(function () {
 		var classes = ['both-panes-visible','left-pane-visible','right-pane-visible'];
+		var icons = [
+			window.erm.base_url + "/images/navbar/facsimile-transcription_ro.jpg",
+			window.erm.base_url + "/images/navbar/facsimile_ro.jpg",
+			window.erm.base_url + "/images/navbar/transcription_ro.jpg",
+		]
+
 		var contentDiv = $('#content');
-		contentDiv.each(function(){
-			this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
-		});
+
+		var index = classes.findIndex(function(x){return contentDiv.hasClass(x);});
+		var newIndex = (index + 1) % classes.length;
+
+		contentDiv
+			.removeClass(classes[index])
+			.addClass(classes[newIndex]);
+
+		$(this).attr("src", icons[newIndex]);
+
 	});
 
 	// Toggle Magnification Drop-down //
