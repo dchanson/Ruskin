@@ -173,17 +173,17 @@ $(document).ready(function(){
 		var ratio = $("#content-left").width()/$("#content").width();
 
 		if(ratio < 0.2){
-			//make both panes visible
-			$("#content-left").css("width", "58%");
-			$("#content-right").css("width", "38%");
+			//make left pane visible
+			$("#content-left").css("width", "98%");
+			$("#content-right").css("width", "0%");
 		}else if(ratio < 0.8){
 			//make right pane visible
 			$("#content-left").css("width", "0");
 			$("#content-right").css("width", "98%");
 		}else{
-			//make left pane visible
-			$("#content-left").css("width", "98%");
-			$("#content-right").css("width", "0%");
+			//make both panes visible
+			$("#content-left").css("width", "58%");
+			$("#content-right").css("width", "38%");
 		}
 
 		updateCurrentViewMode();
