@@ -713,12 +713,28 @@ body {
 	text-align: justify;
 }
 #content {
+	display: flex;
+  flex-direction: row;
+  border: 1px solid silver;
+  overflow: hidden;
+
+  /* avoid browser level touch actions */
+  xtouch-action: none;
+
 	height: 98%;
 	width: 100%;
 }
+
 #content-left {
 	background-color: #000;
 	float: left;
+	flex: 0 0 auto;
+  width: 60%;
+  min-height: 200px;
+  white-space: nowrap;
+  background: #838383;
+  color: white;
+	overflow: scroll;
 }
 /*
 #copyright {
@@ -729,6 +745,21 @@ position: fixed;
 #content-right {
 	background-color: #FFF;
 	float: right;
+	flex: 1 1 auto;
+  /* resizable */
+  padding: 10px;
+  width: 40%;
+  min-height: 200px;
+  background: #eee;
+	overflow: scroll;
+}
+#content-splitter {
+  flex: 0 0 auto;
+  width: 2%;
+	max-width: 18px;
+  background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/vsizegrip.png) center center no-repeat #535353;
+  min-height: 200px;
+  cursor: col-resize;
 }
 #witnesses {
 	color: #FFF;
@@ -806,27 +837,39 @@ position: fixed;
 
 
 #content.both-panes-visible #content-right{
-	width: 40%;
+	width: 38%;
 }
 #content.both-panes-visible #content-left{
-	width: 60%;
+	width: 58%;
 }
 
 #content.left-pane-visible #content-right{
-	width: 0;
+	width: 0 !important;
 }
 #content.right-pane-visible #content-right{
-	width: 100%;
+	width: 98%;
 }
 
 #content.left-pane-visible #content-left{
-	width: 100%;
+	width: 98%;
 }
 #content.right-pane-visible #content-left{
 	width: 0;
 }
 
 #content-right, #content-left{
-	overflow: scroll;
 	height: 100%;
+}
+
+
+
+
+.content-left {
+
+}
+
+
+
+#content-right {
+
 }

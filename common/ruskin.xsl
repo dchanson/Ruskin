@@ -783,6 +783,13 @@ EOT
                 ?&#x003E;
               </xsl:value-of>
 
+              <div id="content-left">
+                <img id="facs_preview" src="" width="100%"/>
+                <img id="facs" src="" width="100%" style="display:none"/>
+                <!--<div id="copyright"><img src="..." alt="..." title="Manuscript images &#x00A9;...." width="30" height="60" /></div>-->
+              </div>
+              <div id="content-splitter">
+              </div>
 
               <div id="content-right">
 
@@ -799,12 +806,6 @@ EOT
                 </div>
 
                 <xsl:apply-templates select="//tei:body/*"/>
-              </div>
-
-              <div id="content-left">
-                <img id="facs_preview" src="" width="100%"/>
-                <img id="facs" src="" width="100%" style="display:none"/>
-                <!--<div id="copyright"><img src="..." alt="..." title="Manuscript images &#x00A9;...." width="30" height="60" /></div>-->
               </div>
 
               <xsl:value-of disable-output-escaping="yes" select="'&#x003C;?php include_once(&#x022;../showcase_bottom.inc.php&#x022;) ?&#x003E;'" />

@@ -156,26 +156,37 @@ $(document).ready(function(){
 		$("#navbar-facs_preview").attr("src", window.erm.base_url + "/images/_previews/blank.jpg");
 	});
 
+	var updateCurrentViewMode = function(){
+		var ratio = $("#content-left").width()/$("#content").width();
+		var image = $("#toggle-view");
+
+		if(ratio < 0.2){
+			image.attr("src", window.erm.base_url + "/images/navbar/transcription_ro.jpg");
+		}else if(ratio < 0.8){
+			image.attr("src", window.erm.base_url + "/images/navbar/facsimile-transcription_ro.jpg");
+		}else{
+			image.attr("src", window.erm.base_url + "/images/navbar/facsimile_ro.jpg");
+		}
+	}
 	// Toggle View //
 	$('#toggle-view').click(function () {
-		var classes = ['both-panes-visible','left-pane-visible','right-pane-visible'];
-		var icons = [
-			window.erm.base_url + "/images/navbar/facsimile-transcription_ro.jpg",
-			window.erm.base_url + "/images/navbar/facsimile_ro.jpg",
-			window.erm.base_url + "/images/navbar/transcription_ro.jpg",
-		]
+		var ratio = $("#content-left").width()/$("#content").width();
 
-		var contentDiv = $('#content');
+		if(ratio < 0.2){
+			//make both panes visible
+			$("#content-left").css("width", "58%");
+			$("#content-right").css("width", "38%");
+		}else if(ratio < 0.8){
+			//make right pane visible
+			$("#content-left").css("width", "0");
+			$("#content-right").css("width", "98%");
+		}else{
+			//make left pane visible
+			$("#content-left").css("width", "98%");
+			$("#content-right").css("width", "0%");
+		}
 
-		var index = classes.findIndex(function(x){return contentDiv.hasClass(x);});
-		var newIndex = (index + 1) % classes.length;
-
-		contentDiv
-			.removeClass(classes[index])
-			.addClass(classes[newIndex]);
-
-		$(this).attr("src", icons[newIndex]);
-
+		updateCurrentViewMode();
 	});
 
 	// Toggle Magnification Drop-down //
@@ -324,4 +335,12 @@ $(document).ready(function(){
 		$("#navbar-navigation").hide();
 		$("#toggle-view").hide();
 	}
+
+	$("#content-left").resizable({
+	  handleSelector: "#content-splitter",
+	  resizeHeight: false,
+		onDrag: function(){
+			updateCurrentViewMode();
+		}
+	});
 });
