@@ -799,10 +799,16 @@ EOT
                     <xsl:value-of select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']" />
                   </span><br />
 
-                  Back to:
-                  <span>
-                     <xsl:apply-templates select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:note/tei:ref" />
-                  </span>
+                  <xsl:for-each select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref">
+                    <xsl:variable name="aVar">
+                      &#x003C;a href=&#x022;&#x003C;?php echo r_build_url(&#x022;<xsl:value-of select="./@target" />&#x022;); ?&#x003E;&#x022; &#x022;&#x003E;Back to apparatus&#x003C;/a&#x003E;
+                    </xsl:variable>
+                    <xsl:value-of select="$aVar" disable-output-escaping="yes" />
+                    <span>
+                       <xsl:apply-templates select="." />
+                    </span>
+                  </xsl:for-each>
+
                 </div>
 
                 <xsl:apply-templates select="//tei:body/*"/>
@@ -861,7 +867,6 @@ EOT
                 <xsl:when test="self::*[@type='anthology' or @type='manuscript' or @type='witness']">
                     <xsl:variable name="cssVar">
                         &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;css/witness_styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
-                        <!-- &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E; -->
                     </xsl:variable>
                     <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
 
@@ -1069,7 +1074,7 @@ EOT
                     </xsl:when>-->
 
                     <xsl:otherwise>
-                       <div class="title">
+                       <div class="page-title">
                            <xsl:apply-templates/>
                        </div>
                     </xsl:otherwise>

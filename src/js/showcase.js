@@ -6,11 +6,12 @@ if(window.erm.showcase === undefined) window.erm.showcase = {};
 window.erm.facsimiles = window.erm.facsimiles_file_names.split(' ')
 .filter(function(x){return x;})
 .map(function(fileName, i){
+	var fileNameWithoutExtension = fileName.replace(/\.\w+$/, "");
 	return {
-		prev: window.erm.base_url + "/images/_previews/"+fileName+"_preview.jpg",
-		full: window.erm.base_url + "/images/facsimiles/"+fileName+".jpg",
+		prev: window.erm.base_url + "/images/_previews/"+fileNameWithoutExtension+"_preview.jpg",
+		full: window.erm.base_url + "/images/facsimiles/"+fileNameWithoutExtension+".jpg",
 		label: "f"+(i+1),
-		manuscript: fileName
+		manuscript: fileNameWithoutExtension
 	};
 });
 
