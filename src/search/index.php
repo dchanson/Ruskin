@@ -165,7 +165,7 @@ if (isset($_GET['full_text_of_document']) AND $_GET['full_text_of_document'] == 
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	<title>The Early Ruskin Manuscripts, Advanced Search Results</title>
-	<link href="<?php echo r_build_url('styles.css'); ?>" rel="stylesheet" type="text/css">
+	<link href="<?php echo r_build_url('css/styles.css'); ?>" rel="stylesheet" type="text/css">
 	<link href="searchStyle.css" rel="stylesheet" type="text/css">
 	<link rel="icon" type="image/png" href="<?php echo r_build_url('images/ruskin_icon.png'); ?>">
 </head>

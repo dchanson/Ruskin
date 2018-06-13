@@ -6,18 +6,13 @@ import re
 from os import path
 from constants import *
 
-XML_NS_URI = 'http://www.w3.org/XML/1998/namespace'
-TEI_NS_URI = 'http://www.tei-c.org/ns/1.0'
-XI_NS_URI = 'http://www.w3.org/2001/XInclude'
-XML_NS = lambda x: '{{{}}}{}'.format(XML_NS_URI, x)
-TEI_NS = lambda x: '{{{}}}{}'.format(TEI_NS_URI, x)
-XI_NS = lambda x: '{{{}}}{}'.format(XI_NS_URI, x)
-NS_MAP = {None: TEI_NS_URI, 'xi': XI_NS_URI, 'xml': XML_NS_URI}
-
-STRIP_TITLE_TAG = re.compile('<title[^<]+?>(.*)</title>(.*)')
-
 xml_file = './account_of_a_tour_on_the_continent_apparatus.xml'
 output_dir = './corpuses/'
+
+def add_processing_instructions(node):
+    corpus.addprevious(etree.ProcessingInstruction('oxygen', 'RNGSchema="../../common/ruskin.rnc" type="compact"'))
+    corpus.addprevious(etree.ProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="../../common/ruskin.xsl"'))
+
 def get_text(node):
     str1 = ""
     if node.text:
@@ -107,16 +102,23 @@ for witness in witnesses:
     ## Make a Corpus
     corpus = etree.Element(TEI_NS('teiCorpus'), nsmap=NS_MAP)
     corpusDoc = etree.ElementTree(corpus)
+    add_processing_instructions(corpus)
 
     teiHeader = etree.SubElement(corpus, TEI_NS('teiHeader'), type='manuscript')
     fileDesc = etree.SubElement(teiHeader, TEI_NS('fileDesc'), **{XML_NS('id'): witness_data['id']})
+    titleStmt = etree.SubElement(fileDesc, TEI_NS('titleStmt'))
+    title = etree.SubElement(titleStmt, TEI_NS('title'))
+    publicationStmt = etree.SubElement(fileDesc, TEI_NS('publicationStmt'))
+    pInPublication = etree.SubElement(publicationStmt, TEI_NS('p'))
+    sourceStmt = etree.SubElement(fileDesc, TEI_NS('sourceDesc'))
+    pInSource = etree.SubElement(sourceStmt, TEI_NS('p'))
 
     for subwit in witness_data['subwitnesses']:
 
 
         xi_include = etree.SubElement(corpus,
                 XI_NS('include'),
-                href=subwit['target']
+                href=path.join('../witnesses', subwit['target'])
                 )
         etree.SubElement(xi_include,
                          TEI_NS('meta'),
@@ -138,7 +140,7 @@ for witness in witnesses:
             for this_subwit in subwit['subwitnesses']:
                 sub_xi_include = etree.SubElement(subCorpus,
                                                   XI_NS('include'),
-                                                  href=this_subwit['target'])
+                                                  href=path.join('../witnesses/', this_subwit['target']))
                 sub_xi_include.text = this_subwit['text']
                 # print('t: ', sub_xi_include.text)
             output_file = path.join(output_dir, 'subcorpus', 'file.xml')
