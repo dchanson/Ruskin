@@ -7,18 +7,21 @@ window.erm.facsimiles = window.erm.facsimiles_file_names.split(' ')
 .filter(function(x){return x;})
 .map(function(fileName, i){
 	var fileNameWithoutExtension = fileName.replace(/\.\w+$/, "");
+	var fileExtension= fileName.match(/\.\w+$/)[0];
 	return {
-		prev: window.erm.base_url + "/images/_previews/"+fileNameWithoutExtension+"_preview.jpg",
-		full: window.erm.base_url + "/images/facsimiles/"+fileNameWithoutExtension+".jpg",
+		prev: window.erm.base_url + "/images/_previews/"+fileNameWithoutExtension+"_preview"+fileExtension,
+		full: window.erm.base_url + "/images/facsimiles/"+fileNameWithoutExtension+fileExtension,
 		label: "f"+(i+1),
 		manuscript: fileNameWithoutExtension
 	};
 });
 
 if(window.erm.facsimiles.length){
-	$("#content").addClass("both-panes-visible");
+	$("#content-left").css("width", "58.5%");
+	$("#content-right").css("width", "38.5%");
 }else{
-	$("#content").addClass("right-pane-visible");
+	$("#content-left").css("width", "0%");
+	$("#content-right").css("width", "98.5%");
 }
 
 $(document).ready(function(){
@@ -78,7 +81,6 @@ $(document).ready(function(){
 	// Toggle NavBar //
 	$("#navbar-tab").click(function(){
 		if($("#navbar").is(":visible")){
-			$(this).css("position", "fixed");
 
 			$("#toggle-navbar").attr("src", window.erm.base_url + "/images/navbar/tab.jpg");
 			$("#content").css("height", "100%");
@@ -89,7 +91,6 @@ $(document).ready(function(){
 			});
 
 		}else{
-			$(this).css("position", "initial");
 			$("#toggle-navbar").attr("src", window.erm.base_url + "/images/navbar/tab_ro.jpg");
 			$("#content").css({
 				"padding-bottom": "21px",
@@ -321,8 +322,6 @@ $(document).ready(function(){
 	$("#backButton").click(function(){
 
 	});
-
-	$("#content").addClass("both-panes-visible");
 
 	if(window.erm.facsimiles.length){
 		selectFacsimile(0);

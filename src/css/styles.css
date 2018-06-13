@@ -26,7 +26,6 @@ body {
 	text-align: justify;
 	height: 100%;
 	width: 85%;
-	margin-left: 15%;
 }
 .navigation {
 	background-color: #FFF;
@@ -71,11 +70,15 @@ body {
 		height: 90%;
 		width: auto;
 	}
+
 }
 @media all and (min-width: 901px){
 	.content, .apparatus, .essay, .note, .glosses, .webpage, .figure{
 		height: 72%;
 		width: 65%;
+	}
+	body{
+		margin-left: 15%;
 	}
 }
 

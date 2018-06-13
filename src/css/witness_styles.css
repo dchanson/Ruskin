@@ -480,6 +480,7 @@ body {
 	float: left;
 	width: 24px;
 	z-index: 5;
+	position: fixed;
 	-moz-border-radius-bottomleft: 5px;
 	-moz-border-radius-bottomright: 5px;
 	-webkit-border-bottom-left-radius: 5px;
@@ -490,13 +491,11 @@ body {
 	border-bottom: 1px solid #666;
 	width: 100%;
 	z-index: 2;
-	margin-left: 25px;
-  margin-top: -12px;
+	padding-left: 25px;
+  /* margin-top: -12px; */
 	float: left;
 }
-#first_button {
-	margin-left: 45px;
-}
+
 #toggle-info{
 		margin-right: 25px;
 }
