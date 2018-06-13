@@ -7,9 +7,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>The Archive</title>
-	<link href="<?php echo r_build_url("styles.css"); ?>" rel="stylesheet" type="text/css" />
-	<link rel="icon" 
-	type="image/png" 
+	<link href="<?php echo r_build_url("src/styles.css"); ?>" rel="stylesheet" type="text/css" />
+	<link rel="icon"
+	type="image/png"
 	href="../images/ruskin_icon.png">
 </head>
 <body>
