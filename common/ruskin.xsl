@@ -799,10 +799,16 @@ EOT
                     <xsl:value-of select="//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']" />
                   </span><br />
 
-                  Back to:
-                  <span>
-                     <xsl:apply-templates select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:note/tei:ref" />
-                  </span>
+                  <xsl:for-each select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref">
+                    <xsl:variable name="aVar">
+                      &#x003C;a href=&#x022;&#x003C;?php echo r_build_url(&#x022;<xsl:value-of select="./@target" />&#x022;); ?&#x003E;&#x022; &#x022;&#x003E;Back to apparatus&#x003C;/a&#x003E;
+                    </xsl:variable>
+                    <xsl:value-of select="$aVar" disable-output-escaping="yes" />
+                    <span>
+                       <xsl:apply-templates select="." />
+                    </span>
+                  </xsl:for-each>
+
                 </div>
 
                 <xsl:apply-templates select="//tei:body/*"/>
