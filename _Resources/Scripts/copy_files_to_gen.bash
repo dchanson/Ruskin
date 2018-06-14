@@ -95,6 +95,11 @@ if [ "$SYMLINK" -eq "0" ]; then
     cp -r _Completed "$OUT/xml"
     cp -r "_In Process" "$OUT/xml"
 fi
-    
+
+if [ "$SYMLINK" -eq "0" ]; then
+    echo "Copying fonts"
+    rm -rf "$OUT/fonts"
+    cp -r "_Resources/fonts" "$OUT/fonts"
+fi
 
 echo "All done."

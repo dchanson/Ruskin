@@ -57,7 +57,7 @@
   <!--<pb>
   The following transforms each <pb> in the XML document into a <br> in the HTML document. The variable facsVar is used to output <br id="_"/>,
   where _ is extracted from the <pb>'s @facs.-->
-  <xsl:template match="tei:pb">
+  <xsl:template match="tei:pb" name="tei:pb">
     <xsl:variable name="facsVar">&#x003C;div id=&#x0022;<xsl:value-of select="@facs"/>&#x0022; class=&#x0022;pb&#x0022;&#x003E;</xsl:variable>
     <xsl:value-of select="$facsVar" disable-output-escaping="yes"/>
     <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
