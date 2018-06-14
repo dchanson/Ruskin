@@ -50,7 +50,7 @@ for witness in witnesses:
     # print('\n\n\ntitle: ', title)
     witness_data = {
         "title": title,
-        'target_file': target_file.replace(".php", ".xml"),
+        'target_file': target_file.replace(".php", "_corpus.xml"),
         'id': target_file.replace(".php", ""),
         "subwitnesses": []}
 

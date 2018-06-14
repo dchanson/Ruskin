@@ -31,10 +31,6 @@
   <xsl:import href="xsl_imports/tei_ref.xsl"/>
   <xsl:import href="xsl_imports/witness_tags.xsl"/>
 
-  <!-- Parameters to be passed to this page. -->
-  <xsl:param name="outputFullWitnessPage"/>
-
-
   <!--V A R I A B L E S
   The following assigns variables to frequently-used code and/or to code that, if not assigned a variable, would fail to validate and/or fail to
   output correctly. Variables appear after "name="; output in the associated comment to the right. Variables that begin with "x" output closing
