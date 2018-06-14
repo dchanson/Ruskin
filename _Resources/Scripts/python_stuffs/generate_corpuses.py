@@ -34,8 +34,7 @@ objectify.deannotate(root, cleanup_namespaces=True)
 
 # Find witnesses element root
 witness_root = root.xpath("//div[@xml:id='WITNESSES']")[0]
-
-witnesses = witness_root.xpath("p")
+witnesses = witness_root.xpath("list/item")
 
 ms_ix_witness = None
 for witness in witnesses:
@@ -58,6 +57,9 @@ for witness in witnesses:
     wits = witness.xpath('list/item')
     # print('length of wits: ', len(wits))
     for wit in wits:
+        id=None
+        if XML_NS('id') in wit.attrib:
+            id = wit.attrib[XML_NS('id')]
         this_subwits_data = []
         # print('wit: ', re.sub('<[^<]+?>', '', etree.tostring(wit)))
 
@@ -91,6 +93,7 @@ for witness in witnesses:
 
         witness_data['subwitnesses'].append({
             "text": text,
+            "id": id,
             "target": target.replace('.php', '.xml'),
             "type": _type,
             "subtype": _subtype,
@@ -120,12 +123,6 @@ for witness in witnesses:
                 XI_NS('include'),
                 href=path.join('../witnesses', subwit['target'])
                 )
-        etree.SubElement(xi_include,
-                         TEI_NS('meta'),
-                         type=subwit['type'],
-                         subtype=subwit['subtype'])
-        title = etree.SubElement(xi_include, TEI_NS('title'))
-        title.text = subwit['text']
 
         if subwit['subwitnesses']:
             subCorpus = etree.Element(TEI_NS('teiCorpus'), nsmap=NS_MAP)
@@ -136,16 +133,17 @@ for witness in witnesses:
 
             teiHeaderText = etree.SubElement(subTeiHeader, TEI_NS('title'))
             teiHeaderText.text = subwit['text']
+            if len(subwit['subwitnesses']) > 1:
+                for this_subwit in subwit['subwitnesses']:
+                    sub_xi_include = etree.SubElement(subCorpus,
+                                                      XI_NS('include'),
+                                                      href=path.join('../witnesses/', this_subwit['target']))
+                    # print('t: ', sub_xi_include.text)
 
-            for this_subwit in subwit['subwitnesses']:
-                sub_xi_include = etree.SubElement(subCorpus,
-                                                  XI_NS('include'),
-                                                  href=path.join('../witnesses/', this_subwit['target']))
-                sub_xi_include.text = this_subwit['text']
-                # print('t: ', sub_xi_include.text)
-            output_file = path.join(output_dir, 'subcorpus', 'file.xml')
-            subCorpusDoc.write(output_file, xml_declaration=True, encoding='utf-8', pretty_print=True)
-            print('XML written: ', output_file, 'for ', subwit['text'])
+                assert(subwit['id'] is not None)
+                output_file = path.join(output_dir, '{}.xml'.format(subwit['id']))
+                subCorpusDoc.write(output_file, xml_declaration=True, encoding='utf-8', pretty_print=True)
+                print('XML written: ', output_file, 'for ', subwit['text'])
     output_file = path.join(output_dir, witness_data['target_file'])
 
 
