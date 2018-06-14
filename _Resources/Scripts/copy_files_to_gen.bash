@@ -70,19 +70,12 @@ if [ "$SYMLINK" -eq "0" ]; then
 	echo "Copying images"
 	cp -r _Resources/images $OUT/
 
-	echo "Copying search project"
-	cp -r _Search $OUT/search
-
 else
 	echo "Symlinking src to $OUT";
 	ln -s src $OUT
 
 	echo "Linking Images"
 	ln -sf "`pwd`/_Resources/images/" $OUT/
-
-	echo "Linking search project"
-    rm -f $OUT/_Search
-	ln -sf "`pwd`/_Search" "$OUT/search"
 
 fi
 
@@ -95,5 +88,13 @@ if [ "$SYMLINK" -eq "0" ]; then
     echo "Overriting config.json"
     mv -f "$OUT/config_production.json" "$OUT/config.json"
 fi
+
+if [ "$SYMLINK" -eq "0" ]; then
+    echo "Copying raw XML files"
+    mkdir -p "$OUT/xml"
+    cp -r _Completed "$OUT/xml"
+    cp -r "_In Process" "$OUT/xml"
+fi
+    
 
 echo "All done."

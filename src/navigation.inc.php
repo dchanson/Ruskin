@@ -31,7 +31,7 @@
             <br/><a class="subnavigation" href="<?php echo r_build_url("essays/indices_essay.php#DRAWINGS"); ?>">Drawings</a>
         </span>
         <br/>
-		<span>XML</span>
+		<span><a href="<?php echo r_build_url("xml"); ?>">XML</a></span>
         <br/>
 		<span><a href="<?php echo r_build_url("notes/bibliography.php"); ?>">Bibliography</a></span>
         <br/>
