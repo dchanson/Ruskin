@@ -30,11 +30,7 @@
 
 
   <xsl:template match="tei:orgName">
-    <xsl:for-each select="self::*[@corresp]">
-      <span class="orgName-{substring-after(@corresp, '#')}">
-        <xsl:apply-templates/>
-      </span>
-    </xsl:for-each>
+    <xsl:apply-templates/>  
   </xsl:template>
 
   <xsl:template match="tei:persName">
