@@ -107,10 +107,10 @@ for witness in witnesses:
     corpusDoc = etree.ElementTree(corpus)
     add_processing_instructions(corpus)
 
-    teiHeader = etree.SubElement(corpus, TEI_NS('teiHeader'), type='manuscript')
+    teiHeader = etree.SubElement(corpus, TEI_NS('teiHeader'))
     fileDesc = etree.SubElement(teiHeader, TEI_NS('fileDesc'), **{XML_NS('id'): witness_data['id']})
     titleStmt = etree.SubElement(fileDesc, TEI_NS('titleStmt'))
-    title = etree.SubElement(titleStmt, TEI_NS('title'))
+    title = etree.SubElement(titleStmt, TEI_NS('title'), **{'type': 'main'})
     publicationStmt = etree.SubElement(fileDesc, TEI_NS('publicationStmt'))
     pInPublication = etree.SubElement(publicationStmt, TEI_NS('p'))
     sourceStmt = etree.SubElement(fileDesc, TEI_NS('sourceDesc'))
@@ -128,11 +128,17 @@ for witness in witnesses:
             subCorpus = etree.Element(TEI_NS('teiCorpus'), nsmap=NS_MAP)
             subCorpusDoc = etree.ElementTree(subCorpus)
 
-            subTeiHeader = etree.SubElement(subCorpus, TEI_NS('teiHeader'), type='manuscript')
+            subTeiHeader = etree.SubElement(subCorpus, TEI_NS('teiHeader'))
             subFileDesc = etree.SubElement(subTeiHeader, TEI_NS('fileDesc'))
+            subTitleStmt = etree.SubElement(subFileDesc, TEI_NS('titleStmt'))
+            subTitle = etree.SubElement(subTitleStmt, TEI_NS('title'), type='main')
+            subPublicationStmt = etree.SubElement(subFileDesc, TEI_NS('publicationStmt'))
+            subPInPublication = etree.SubElement(subPublicationStmt, TEI_NS('p'))
+            subSourceStmt = etree.SubElement(subFileDesc, TEI_NS('sourceDesc'))
+            subPInSource = etree.SubElement(subSourceStmt, TEI_NS('p'))
 
-            teiHeaderText = etree.SubElement(subTeiHeader, TEI_NS('title'))
-            teiHeaderText.text = subwit['text']
+            # teiHeaderText = etree.SubElement(subTeiHeader, TEI_NS('title'), **{'type': 'main'})
+            subTitle.text = subwit['text']
             if len(subwit['subwitnesses']) > 1:
                 for this_subwit in subwit['subwitnesses']:
                     sub_xi_include = etree.SubElement(subCorpus,
@@ -144,13 +150,13 @@ for witness in witnesses:
                 output_file = path.join(output_dir, '{}.xml'.format(subwit['id']))
                 subCorpusDoc.write(output_file, xml_declaration=True, encoding='utf-8', pretty_print=True)
                 print('XML written: ', output_file, 'for ', subwit['text'])
-    output_file = path.join(output_dir, witness_data['target_file'])
+        else:
+            output_file = path.join(output_dir, witness_data['target_file'])
 
-
-    corpusDoc.write(output_file,
-        xml_declaration=True,
-        encoding='utf-8',
-        pretty_print=True)
+            corpusDoc.write(output_file,
+                xml_declaration=True,
+                encoding='utf-8',
+                pretty_print=True)
     print('XML written: ', output_file)
     # break
     # print(witness_data, '\n')
