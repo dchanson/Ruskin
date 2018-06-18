@@ -14,11 +14,11 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>_Completed/corpuses/account_of_a_tour_on_the_continent_msia_g1.xml</String>
+                                    <String>_Completed/corpuses/</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Generate witness.php</String>
+                                        <String>Generate in generated directory</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -34,36 +34,6 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>Generate in generated directory</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_Completed/witnesses/</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate witness.php</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_In%20Process/witnesses/</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate witness.php</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -97,7 +67,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>Generate and open witness.php</String>
+                                    <String>Generate and open witnesses</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -635,7 +605,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>Generate witness.php</String>
+                                    <String>Generate and open corpuses</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -671,7 +641,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="outputFile">
                                     <File>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</File>
@@ -683,7 +653,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="locationToOpenInBrowserURL">
-                                    <String>http://ruskin.local:8080/src/witnesses/${cfn}.php</String>
+                                    <String>http://ruskin.local:8080/src/corpuses/${cfn}.php</String>
                                 </field>
                                 <field name="openInEditor">
                                     <Boolean>false</Boolean>

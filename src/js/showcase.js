@@ -4,7 +4,10 @@ if(window.erm.showcase === undefined) window.erm.showcase = {};
 
 // extract the manuscript for this facsimile
 window.erm.facsimiles = window.erm.facsimiles_file_names.split(' ')
-.filter(function(x){return x;})
+.filter(function(x){return x;});
+
+window.erm.facsimiles = window.erm.facsimiles
+.filter(function(x, i){return window.erm.facsimiles.indexOf(x) == i; })
 .map(function(fileName, i){
 	var fileNameWithoutExtension = fileName.replace(/\.\w+$/, "");
 	var fileExtension= fileName.match(/\.\w+$/)[0];

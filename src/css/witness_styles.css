@@ -59,15 +59,20 @@ p {
 .pb {
 	border-top: 5px solid #CCC;
 	margin-left: 0em;
-	margin-right: -5em;
+	/* margin-right: -5em; */
 	padding-bottom: 1em;
 }
-.poem, .prose, .witness {
+#content-right>.poem,
+#content-right>.prose,
+#content-right>.witness,
+#content-right>.lg-stanza {
+	box-sizing: border-box;
+	width: 100%;
 	background-color: #FFF;
 	display: inline-block;
 	padding-bottom: 1em;
-	padding-left: 3em;
-	padding-right: 2em;
+	padding-left: 4em;
+	padding-right: 1em;
 	padding-top: 1em;
 	text-align: left;
 	white-space: nowrap;
@@ -214,7 +219,7 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 
 .linenumber-right-JR {
 	color: #000;
-	right: -3em;
+	right: 0;
 	position: absolute;
 	top: 0em;
 }
@@ -270,12 +275,12 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 }
 .add-margin-right {
 	color: #000;
-	right: -1.5em;
+	right: 0em;
 	position: absolute;
 }
 .add-margin-right-counterclockwise {     /* x New 04/06/16 */
 	color: #000;
-	right: -3em;
+	right: 0em;
 	position: absolute;
 	transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
@@ -349,12 +354,12 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 }
 .add-margin-left-JJR {
 	color: #000;
-	left: -1.5em;
+	left: 0em;
 	position: absolute;
 }
 .add-margin-right-JJR {
 	color: #000;
-	right: -1.5em;
+	right: 0em;
 	position: absolute;
 }
 
@@ -381,12 +386,12 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 }
 .add-margin-left-MR {
 	color: #000;
-	left: -1.5em;
+	left: 0em;
 	position: absolute;
 }
 .add-margin-right-MR {
 	color: #000;
-	right: -1.5em;
+	right: 0em;
 	position: absolute;
 }
 
@@ -406,14 +411,14 @@ page(s) that will use them share the SAME folder, and 4) IE8-compatible webfonts
 
 @font-face {
 	font-family: Andron;
-	src: url('andron_scriptor_web_3_1.eot');
+	src: url('../fonts/andron_scriptor_web_3_1.eot');
 }
 
 /* Used by Other Web Browsers */
 
 @font-face {
 	font-family: Andron;
-	src: url('andron_scriptor_web_3_1.woff');
+	src: url('../fonts/andron_scriptor_web_3_1.woff');
 }
 
 /* H y p e r l i n k s */
@@ -740,7 +745,6 @@ position: fixed;
 	overflow: scroll;
 }
 #content-right {
-	background-color: #FFF;
 	flex: 1 1 auto;
 	min-width: 1px;
   /* resizable */
@@ -748,6 +752,7 @@ position: fixed;
   width: 40%;
   background: #eee;
 	overflow: scroll;
+	font-family: Andron;
 }
 #content-right, #content-left{
 	height: 100%;
@@ -778,11 +783,14 @@ position: fixed;
 	font-weight: bold;
 }
 
-#topFileName {
+.backToApparatusLink{
+	font-weight: bold;
+}
+.fileName {
 	margin: 1.5%;
 }
 
-#topFileName span {
+.fileName span {
 	color: #52585f;
 	font-weight: bold;
 }
