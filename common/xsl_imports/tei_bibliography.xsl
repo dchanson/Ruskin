@@ -129,8 +129,13 @@
                 
                 <xsl:if test="./tei:publisher">
                   <xsl:apply-templates select="./tei:publisher" />
+                  <xsl:if test="./tei:date">
+                    <xsl:value-of select="', '" />
+                    <xsl:value-of select="./tei:date" />
+                  </xsl:if>
                   <xsl:value-of select="'. '" />
                 </xsl:if>
+                
                 
                 <xsl:if test="./tei:pubPlace">
                   <xsl:apply-templates select="./tei:pubPlace" />
@@ -141,7 +146,6 @@
               <xsl:otherwise>
                 <xsl:if test="./tei:pubPlace">
                   <xsl:apply-templates select="./tei:pubPlace" />
-                  
                   <xsl:if test="./tei:publisher">
                     <xsl:value-of select="': '" />
                   </xsl:if>
@@ -222,7 +226,7 @@
                     <xsl:value-of select="custom:printAuthors(./tei:monogr/tei:author)" />
                     
                     <xsl:for-each select="./tei:monogr/tei:title">
-                      <xsl:apply-templates /><text>. </text>
+                      <xsl:apply-templates/><text>. </text>
                     </xsl:for-each>
                     <xsl:value-of select="custom:printRespStmt(./tei:monogr/tei:respStmt)" />
                     <xsl:value-of select="custom:printEditors(./tei:monogr/tei:editor)" />
