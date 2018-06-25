@@ -90,9 +90,20 @@
 
   <!--<item>-->
   <xsl:template match="tei:item">
-    <li>
-      <xsl:apply-templates/>
-    </li>
+    <xsl:choose>
+      <xsl:when test="@xml:id">
+        <li id="{@xml:id}">
+          <xsl:apply-templates/>
+        </li>
+      </xsl:when>
+      <xsl:otherwise>
+        <li>
+          <xsl:apply-templates/>
+        </li>
+      </xsl:otherwise>
+    </xsl:choose>
+    
+    
   </xsl:template>
 
   <!--<lg>
