@@ -20,10 +20,10 @@
 
 
   <xsl:template match="tei:ref">
+    <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
     <xsl:choose>
 
       <xsl:when test="@type='apparatus'">
-        <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
         <xsl:variable name="phpVar">../apparatuses/<xsl:value-of select="@target"/></xsl:variable>
 
         <xsl:choose>
@@ -46,7 +46,6 @@
       </xsl:when>
 
       <xsl:when test="@type='figure'">
-        <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
         <xsl:variable name="phpVar">../witnesses/<xsl:value-of select="@target"/></xsl:variable>
 
 
@@ -58,7 +57,6 @@
       </xsl:when>
 
       <xsl:when test="@type='bibliography'">
-        <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
         <xsl:variable name="phpVar">../bibiliography/<xsl:value-of select="@target"/></xsl:variable>
 
         <xsl:choose>
@@ -104,7 +102,6 @@
       </xsl:when>
 
       <xsl:when test="@type='essay'">
-        <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
         <xsl:variable name="phpVar">../essays/<xsl:value-of select="@target"/></xsl:variable>
 
         <xsl:choose>
@@ -133,7 +130,6 @@
       </xsl:when>
 
       <xsl:when test="@type='note'">
-        <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
         <xsl:variable name="phpVar">../notes/<xsl:value-of select="@target"/></xsl:variable>
 
         <xsl:choose>
@@ -208,7 +204,6 @@
       </xsl:when>
 
       <xsl:when test="@type='webpage'">
-        <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
         <xsl:variable name="phpVar">../webpages/<xsl:value-of select="@target"/></xsl:variable>
 
         <xsl:choose>
@@ -231,7 +226,6 @@
       </xsl:when>
 
       <xsl:when test="@type='witness'">
-        <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
         <xsl:variable name="phpVar">../witnesses/<xsl:value-of select="@target"/></xsl:variable>
 
         <xsl:choose>
@@ -251,6 +245,12 @@
 
         </xsl:choose>
 
+      </xsl:when>
+      
+      <xsl:when test="@type='corpus'">
+        <a href="../corpuses/{@target}">
+          <xsl:apply-templates/>
+        </a>
       </xsl:when>
 
     </xsl:choose>
