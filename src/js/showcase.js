@@ -9,13 +9,11 @@ window.erm.facsimiles = window.erm.facsimiles_file_names.split(' ')
 window.erm.facsimiles = window.erm.facsimiles
 .filter(function(x, i){return window.erm.facsimiles.indexOf(x) == i; })
 .map(function(fileName, i){
-	var fileNameWithoutExtension = fileName.replace(/\.\w+$/, "");
-	var fileExtension= fileName.match(/\.\w+$/)[0];
 	return {
-		prev: window.erm.base_url + "/images/_previews/"+fileNameWithoutExtension+"_preview"+fileExtension,
-		full: window.erm.base_url + "/images/facsimiles/"+fileNameWithoutExtension+fileExtension,
+		prev: window.erm.base_url + "/images/facsimiles_previews/"+fileName,
+		full: window.erm.base_url + "/images/facsimiles/"+fileName,
 		label: "f"+(i+1),
-		manuscript: fileNameWithoutExtension
+		manuscript: fileName
 	};
 });
 
@@ -152,7 +150,7 @@ $(document).ready(function(){
 		$("#navbar-facs_preview").show();
 	},function(){
 		$("#navbar-facs").hide();
-		$("#navbar-facs_preview").attr("src", window.erm.base_url + "/images/_previews/blank.jpg");
+		$("#navbar-facs_preview").attr("src", window.erm.base_url + "/images/blank.jpg");
 	});
 
 	var updateCurrentViewMode = function(){
