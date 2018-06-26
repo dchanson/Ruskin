@@ -171,8 +171,6 @@
           <xsl:apply-templates/>
         </xsl:when>
 
-        <!--Corrected 04/10/16; kempe.xsl to be updated.-->
-
         <xsl:when test="preceding-sibling::*[1][self::tei:lb/@type='runover']">
           <xsl:apply-templates/>
         </xsl:when>
@@ -259,7 +257,7 @@
       <xsl:choose>
 
         <xsl:when test="@type='runover' and following-sibling::*[1][self::tei:space]">
-          <xsl:variable name="runoverVar">&#x003C;div class=&#x0022;runover&#x0022; style=&#x0022;left:<xsl:value-of select="(format-number((following-sibling::*[1][self::tei:space]/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
+          <xsl:variable name="runoverVar">&#x003C;span class=&#x0022;runover&#x0022; style=&#x0022;left:<xsl:value-of select="(format-number((following-sibling::*[1][self::tei:space]/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
           <xsl:value-of select="$runoverVar" disable-output-escaping="yes"/>
         </xsl:when>
 
