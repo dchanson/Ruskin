@@ -7,12 +7,14 @@ window.erm.facsimiles = window.erm.facsimiles_file_names.split(' ')
 .filter(function(x){return x;});
 
 window.erm.facsimiles = window.erm.facsimiles
-.filter(function(x, i){return window.erm.facsimiles.indexOf(x) == i; })
+.filter(function(x, i){return window.erm.facsimiles.indexOf(x) == i; });
+
+window.erm.facsimiles = window.erm.facsimiles
 .map(function(fileName, i){
 	return {
 		prev: window.erm.base_url + "/images/facsimiles_previews/"+fileName,
 		full: window.erm.base_url + "/images/facsimiles/"+fileName,
-		label: "f"+(i+1),
+		label: "Page "+(i+1)+"/"+window.erm.facsimiles.length,
 		manuscript: fileName
 	};
 });
@@ -54,7 +56,7 @@ $(document).ready(function(){
 
 	window.erm.facsimiles.forEach(function(fac, i){
 
-		var div = $("<div data-facs-index="+i+" class='navbar-facsimile-item' >f"+(i+1)+"</div>");
+		var div = $("<div data-facs-index="+i+" class='navbar-facsimile-item' >Page "+(i+1)+"</div>");
 		div.appendTo($("#navbar-facsimile-holder"));
 	})
 
