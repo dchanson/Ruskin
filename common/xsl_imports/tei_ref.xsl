@@ -157,7 +157,7 @@
         <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
 
         <xsl:variable name="refVar">
-          &#x003C;a href=&#x0022;../glosses/<xsl:value-of select="@target"/>&#x0022; target=&#x022;_blank"&#x022; class=&#x022;inactive&#x022;&#x003E;
+          &#x003C;a href=&#x0022;../glosses/<xsl:value-of select="@target"/>&#x0022; target=&#x022;_blank&#x022; class=&#x022;inactive&#x022;&#x003E;
           <span>
             <xsl:choose>
               <xsl:when test="@type='gloss_textual'">

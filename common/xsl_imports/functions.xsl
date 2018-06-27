@@ -6,28 +6,31 @@
   xmlns:teix="http://www.tei-c.org/ns/Examples"
   xmlns:custom="http://whatever"
   >
-
+  
+  <xsl:function name="custom:printLetterRecursively">
+    <xsl:param name="character" />
+    <xsl:param name="num_times" />
+    
+    <xsl:value-of select="$character" />
+      
+    <xsl:if test="$num_times &gt; 1">
+      <xsl:variable name="num_times" select="$num_times - 1" />
+      <xsl:value-of select="custom:printLetterRecursively($character, $num_times)" />
+    </xsl:if>
+  </xsl:function>
   <!-- Generate alphabetic indices-->
   <xsl:function name="custom:getAlphabeticIndex">
     <xsl:param name="number"/>
 
     <xsl:variable name="val" select="floor($number)" />
 
-    <xsl:variable name="remainder" select="floor($val mod 26)"/>
-    <xsl:variable name="quotient" select="(($val - $remainder) div 26)"/>
-
-
-    <xsl:choose>
-      <xsl:when test="$quotient &gt; 0">
-        <xsl:value-of select="custom:getAlphabeticIndex($quotient)" />
-        <xsl:value-of select="codepoints-to-string(96 + $remainder)"/>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:value-of select="codepoints-to-string(round(96 + $remainder))"/>
-        <!-- <xsl:text>Quotient: </xsl:text><xsl:value-of select="$quotient"/> -->
-        <!-- <xsl:text>Remainder: </xsl:text><xsl:value-of select="$remainder"/> -->
-      </xsl:otherwise>
-    </xsl:choose>
+    <xsl:variable name="remainder" select="floor(($val - 1) mod 26) + 1"/>
+    <xsl:variable name="quotient" select="(($val - $remainder) div 26) + 1"/>
+    
+    <xsl:variable name="character" select="codepoints-to-string(96 + $remainder)" />
+    
+    <!-- <xsl:value-of select="$val" /> -->
+    <xsl:value-of select="custom:printLetterRecursively($character, $quotient)" />
 
   </xsl:function>
 

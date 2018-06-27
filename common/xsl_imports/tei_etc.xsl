@@ -139,7 +139,7 @@
       <xsl:when test="child::tei:lb/@type='runover'">
         <span class="l">
           <xsl:apply-templates/>
-          <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/></span>
+          <xsl:value-of select="$xspanVar" disable-output-escaping="yes"/></span>
           <xsl:value-of select="$brVar" disable-output-escaping="yes"/>
         </xsl:when>
 
@@ -262,7 +262,7 @@
         </xsl:when>
 
         <xsl:when test="@type='runover'">
-          <xsl:variable name="runoverVar">&#x003C;div class=&#x0022;runover&#x0022;&#x003E;</xsl:variable>
+          <xsl:variable name="runoverVar">&#x003C;span class=&#x0022;runover&#x0022;&#x003E;</xsl:variable>
           <xsl:value-of select="$runoverVar" disable-output-escaping="yes"/>
         </xsl:when>
 
