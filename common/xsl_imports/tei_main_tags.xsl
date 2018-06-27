@@ -40,7 +40,7 @@ EOT
 
       <div class="backToApparatusLink">
         <xsl:variable name="aVar">
-          &#x003C;a href=&#x022;&#x003C;?php echo r_build_url(&#x022;<xsl:value-of select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref[1]/@target" />&#x022;); ?&#x003E;&#x022; &#x022;&#x003E;Back to apparatus&#x003C;/a&#x003E;
+          &#x003C;a href=&#x022;&#x003C;?php echo r_build_url(&#x022;<xsl:value-of select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref[1]/@target" />&#x022;); ?&#x003E;&#x022; &#x003E;Back to apparatus&#x003C;/a&#x003E;
         </xsl:variable>
         <xsl:value-of select="$aVar" disable-output-escaping="yes" />
         <div class="pb" />
