@@ -23,7 +23,7 @@
                 <xsl:when test="position() = 1">
                   <xsl:apply-templates select="./tei:orgName"/></xsl:when>
 
-                <xsl:otherwise>, <xsl:if test="position() = count($root)" >and</xsl:if><xsl:apply-templates select="./tei:orgName"/></xsl:otherwise>
+                <xsl:otherwise>, <xsl:if test="position() = count($root)" >and </xsl:if><xsl:apply-templates select="./tei:orgName"/></xsl:otherwise>
               </xsl:choose>
             </xsl:when>
 
@@ -44,7 +44,7 @@
                   </xsl:choose>
                 </xsl:when>
 
-                <xsl:otherwise>, <xsl:if test="position() = count($root)" >and</xsl:if>
+                <xsl:otherwise>, <xsl:if test="position() = count($root)" >and </xsl:if>
 
                   <xsl:apply-templates select="./tei:persName/tei:forename"/>
 
@@ -321,7 +321,7 @@
               <xsl:variable name="index_count" select="$index_count + 1" />
               <xsl:value-of select="custom:commaOrPeriod($index_count, $children_count)" />
             </xsl:for-each>
-            <xsl:variable name="index_count" select="$index_count + count(./tei:country)" />
+            <!-- <xsl:variable name="index_count" select="$index_count + count(./tei:country)" /> -->
             
             
           </xsl:for-each>
@@ -338,20 +338,38 @@
 
               <xsl:value-of select="custom:printAuthors(./tei:analytic/tei:author)"/>
 
-              <text>
 
-                <xsl:for-each select="./tei:analytic/tei:title">
+              <xsl:for-each select="./tei:analytic/tei:title">
 
-                  <xsl:apply-templates/><xsl:value-of select="'. '"/>
-                </xsl:for-each>
+                <xsl:apply-templates/><xsl:value-of select="'. '"/>
+              </xsl:for-each>
+              
+              <xsl:value-of select="custom:printAuthors(./tei:monogr/tei:author)"/>
+              
+              
+              <xsl:for-each select="./tei:monogr/tei:title">
 
-                <xsl:for-each select="./tei:monogr/tei:title">
+                <xsl:apply-templates/><xsl:value-of select="'. '"/>
+              </xsl:for-each>
 
-                  <xsl:apply-templates/><xsl:value-of select="'. '"/>
-                </xsl:for-each>
 
-              </text>
+              
               <xsl:for-each select="tei:monogr/tei:imprint">
+                <xsl:choose>
+
+                  <xsl:when test="./tei:pubPlace">
+                    <xsl:apply-templates select="./tei:pubPlace"/>,
+                  </xsl:when>
+                </xsl:choose>
+                
+                <xsl:choose>
+
+                  <xsl:when test="./tei:publisher">
+
+                    <xsl:apply-templates select="./tei:publisher"/>,
+                  </xsl:when>
+                </xsl:choose>
+                
                 <xsl:choose>
 
                   <xsl:when test="./tei:biblScope[@type='vol']">
