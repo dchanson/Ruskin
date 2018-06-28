@@ -20,7 +20,9 @@
 
 
   <xsl:template match="tei:ref">
-    <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
+
+    <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(./@target, '.php')"/>.xml</xsl:variable>
+
     <xsl:choose>
 
       <xsl:when test="@type='apparatus'">
@@ -125,6 +127,12 @@
 
       <xsl:when test="@type='internal'">
         <a href="{@target}">
+          <xsl:apply-templates/>
+        </a>
+      </xsl:when>
+      
+      <xsl:when test="@type='external'">
+        <a href="{@target}" target="_blank">
           <xsl:apply-templates/>
         </a>
       </xsl:when>

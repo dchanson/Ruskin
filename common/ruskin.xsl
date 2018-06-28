@@ -27,8 +27,8 @@
   <xsl:import href="xsl_imports/tei_etc.xsl"/>
   <xsl:import href="xsl_imports/tei_head.xsl"/>
   <xsl:import href="xsl_imports/tei_hi.xsl"/>
-  <xsl:import href="xsl_imports/tei_main_tags.xsl"/>
   <xsl:import href="xsl_imports/tei_ref.xsl"/>
+  <xsl:import href="xsl_imports/tei_main_tags.xsl"/>
   <xsl:import href="xsl_imports/witness_tags.xsl"/>
 
   <!--V A R I A B L E S
