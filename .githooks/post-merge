@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "Executing post-merge hook..."
+
+echo "git dir located at $GIT_DIR"
+
+OSTYPE="darwin100"
+case "$OSTYPE" in
+  "darwin"* | "linux-gnu"*)
+    echo "Either macOS or GNU/Linux detected."
+    
+    ## If ImageMagic installed
+    if [ -x "$(command -v convert)" ]; then
+      echo "Generating thumbnails..."
+      . _Resources/Scripts/generate_images_preview.bash
+    fi
+    
+  ;;
+  *)
+    echo "Unknown OS detected: $OSTYPE."
+esac
+
+echo "execution of post-merge hook has completed."
