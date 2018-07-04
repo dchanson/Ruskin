@@ -41,6 +41,8 @@
   <xsl:variable name="xdivVar">&#x003C;/div&#x003E;</xsl:variable>                <!--</div>      -->
   <xsl:variable name="xspanVar">&#x003C;/span&#x003E;</xsl:variable>              <!--</span>     -->
   <xsl:variable name="xtableVar">&#x003C;/table&#x003E;</xsl:variable>            <!--</table>    -->
+  <xsl:variable name="xtrVar">&#x003C;/tr&#x003E;</xsl:variable>            <!--</table>    -->
+  <xsl:variable name="xtdVar">&#x003C;/td&#x003E;</xsl:variable>            <!--</table>    -->
   <xsl:variable name="navigationPhpVar">&#x003C;?php include(&#x022;../navigation.inc.php&#x022;); ?&#x003E;</xsl:variable>
   <xsl:variable name="topBtnPhpVar">&#x003C;?php include(&#x022;../top_button.inc.php&#x022;); ?&#x003E;</xsl:variable>
 
