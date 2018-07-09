@@ -1,7 +1,7 @@
 <?php
 
 if(!defined('RUSKIN_CONFIG_PATH')){
-    define('RUSKIN_CONFIG_PATH', 'config.json');
+    define('RUSKIN_CONFIG_PATH', 'config.json.php');
 }
 $r_config = null;
 
@@ -12,9 +12,7 @@ if(file_exists($path)){
     $json = file_get_contents($path);
     $r_config = json_decode($json, true);
 }else{
-	$r_config = array(
-        'BASE'=> 'http://english.selu.edu/humanitiesonline/ruskin'
-	);
+	die('Config file could not be loaded');
 }
 
 if(!function_exists('r_build_url')){

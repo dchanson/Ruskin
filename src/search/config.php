@@ -3,14 +3,14 @@ $paths = array('./', '../', '../../');
 $root_path = './';
 
 foreach ($paths  as $path){
-  $filename = $path.'config.json';
+  $filename = $path.'config.json.php';
   
   if (file_exists($filename)){
     $root_path = $path;
     break;
   };
 }
-$contents = file_get_contents($root_path."config.json") or die("unable to load config.json");
+$contents = file_get_contents($root_path."config.json.php") or die("unable to load config");
 $json = json_decode($contents);
 
 // MySQL server credentials.

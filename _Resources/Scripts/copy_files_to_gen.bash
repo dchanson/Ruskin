@@ -86,8 +86,8 @@ rsync -r "gen/_In%20Process/." $OUT/
 echo "Handling config"
 if [ "$SYMLINK" -eq "0" ]; then
     echo "Overriting config.json"
-    rm -f $OUT/config.json $OUT/config_template.json
-    mv "$OUT/config_production.json" "$OUT/config.json"
+    rm -f $OUT/config.json.php $OUT/config_template.json
+    mv "$OUT/config_production.json" "$OUT/config.json.php"
 fi
 
 if [ "$SYMLINK" -eq "0" ]; then
