@@ -81,7 +81,7 @@ EOT
             (through XSLT) match those created inside.-->
             <xsl:variable name="docVar">&#x003C;!DOCTYPE html PUBLIC &#x0022;-//W3C//DTD XHTML 1.0 Transitional//EN&#x0022; &#x0022;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#x0022;&#x003E;</xsl:variable>
             <xsl:variable name="headerIncludeVar"><![CDATA[<?php
-$paths = array('./', '../', '.../');
+$paths = array('./', '../', '../../');
 $root_path = './';
 
 foreach ($paths  as $path){

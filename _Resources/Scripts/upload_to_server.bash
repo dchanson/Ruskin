@@ -3,6 +3,10 @@
 
 # Ensure that you run copy_files_to_gen.bash directory before you run this script
 
-DIRECTORY="./deploy/"
+DIRECTORY="./deploy"
 REMOTE_DIRECTORY="/home/www/humanitiesonline/ruskin_dev"
-rsync -aP $DIRECTORY humanitiesga@english.selu.edu:$REMOTE_DIRECTORY
+
+echo "Uploading files"
+# rsync -aP $DIRECTORY humanitiesga@english.selu.edu:$REMOTE_DIRECTORY
+sshpass -f .ssh_password rsync -aP $DIRECTORY/ humanitiesga@english.selu.edu:$REMOTE_DIRECTORY
+
