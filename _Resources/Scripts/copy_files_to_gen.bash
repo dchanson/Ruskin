@@ -4,6 +4,7 @@
 # Option defaults for symlinking/copying
 SYMLINK=0
 OUT="./deploy"
+HTACCESS_SOURCE_DIR="_Resources/htaccesses"
 
 # getopts string
 # This string needs to be updated with the single character options (e.g. -f)
@@ -100,6 +101,20 @@ if [ "$SYMLINK" -eq "0" ]; then
     echo "Copying fonts"
     rm -rf "$OUT/fonts"
     cp -r "_Resources/fonts" "$OUT/fonts"
+fi
+
+if [ "$SYMLINK" -eq "0" ]; then
+  echo "Handling .htaccess files"
+
+  for filename in $HTACCESS_SOURCE_DIR/*.htaccess; do
+    htpath1=$(basename $filename | cut -f 1 -d '.' | tr '_' '/')
+    htpath2="$OUT/$htpath1"
+    htpath3="$htpath2/.htaccess"
+    
+    mkdir -p $htpath2
+    echo "Copying $filename to $htpath3"
+    cp $filename $htpath3
+  done
 fi
 
 echo "All done."
