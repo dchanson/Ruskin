@@ -1,0 +1,8 @@
+<FilesMatch ".(eot|woff)">
+	Header set Access-Control-Allow-Origin "*" 
+</FilesMatch>
+
+<Files ~ "\.(inc|json)\.php$">
+    Order Deny,Allow
+    Deny from all
+</Files>
