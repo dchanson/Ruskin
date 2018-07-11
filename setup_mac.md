@@ -1,6 +1,11 @@
 ## Setting up a mac for use
 Asserting that the Ruskin directory is located at `/Users/sluuser/Ruskin`, the following steps are required to run the project at `http://ruskin.local:8080/src`.
 
+* Use custom `githook`s
+```
+git config core.hooksPath .githooks
+```
+
 * Install XCode
 ```
 $ xcode-select --install
@@ -16,8 +21,9 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew doctor
 $ brew cask
 $ brew services list
-```
+
 $ git -C "$(brew --repo homebrew/core)" fetch --unshallow
+```
 
 * Install required packages
 ```
@@ -28,7 +34,7 @@ $ brew cask
 $ brew install phpmyadmin
 ```
 
-* Add `/etc/hosts` record
+* Add host in `/etc/hosts`
 ```
 $ sudo bash -c "echo '127.0.0.1       ruskin.local' >> /etc/hosts"
 ```
@@ -74,6 +80,11 @@ server {
 $ brew services start mysql
 $ brew services start nginx
 $ brew services start php@7.1
+```
+
+* Create `config.json.php`
+```
+cp src/config_template.json src/config.json.php
 ```
 
 * Maintenance
