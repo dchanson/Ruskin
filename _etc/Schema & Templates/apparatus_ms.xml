@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject MANUSCRIPT followed by "apparatus", for example,
+            "msi_apparatus". The xml:id also corresponds with its XML file's name, for example, "msi_apparatus.xml".-->
+        <fileDesc xml:id="title_of_manuscript_apparatus">
+            <titleStmt>
+                <title type="main">Title of Manuscript</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>            
+    <text>
+        <body>
+            <div type="apparatus">
+            <head type="title">Title of Manuscript</head>
+                <!--A manuscript apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="LOCATION">
+                    <head type="section">Location</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="PROVENANCE">
+                    <head type="section">Provenance</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="DESCRIPTION">
+                    <head type="section">Description</head>
+                    <p>Body paragraph.</p>
+                    <!--The subsection that follows, Collation, is common to all manuscript apparatuses and was, accordingly, assigned an xml:id by
+                        the Ruskin Project Team during work on the "First Twenty."-->
+                    <div type="subsection" xml:id="COLLATION">
+                    <head type="subsection">Collation</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+                <div type="section" xml:id="CONTENTS">
+                    <head type="section">Contents</head>
+                    <!--Typically, this section will begin:-->
+                    <p>
+                        <hi rend="italic">From front of book, the sequential order of contents:</hi>
+                    </p>
+                    <!--and continue with a list, which may group items according to type (e.g. prose, poetry) or other similiarity. Note: drawings
+                        may be included as items in this list.-->
+                    <list xml:id="LIST" type="ordered">
+                        <item n="a">Item belonging to Group A.</item>
+                        <item n="b.1">First item belonging to Group B.</item>
+                        <item n="b.2">Second item belonging to Group B.</item>
+                        <item n="b.3">Third item belonging to Group B.</item>
+                        <item n="c">Item belonging to Group C.</item>
+                    </list>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <!--The Discussion section may contain all or only some of the following subsections.-->
+                    <div type="subsection">
+                        <head type="subsection">Hand</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Composition &#x0026; Sources</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Domestic Scene</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
