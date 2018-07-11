@@ -318,7 +318,7 @@ $(document).ready(function(){
 		var height = parseInt(window.innerHeight / 2);
 		var width = parseInt(window.innerWidth / 2);
 
-		window.open(this.href, '_blank', "height=" + height + "px,width=" + width + "px");
+		window.open(this.href, '_blank', "scrollbars=1,resizable=1,height=" + height + "px,width=" + width + "px");
 		return false;
 	});
 
