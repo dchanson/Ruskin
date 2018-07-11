@@ -34,5 +34,29 @@
 
   </xsl:function>
 
+
+  <xsl:template name="custom:render_anchor">
+    <xsl:param name="href" />
+    <xsl:param name="target" select="'_blank'" />
+    
+    <xsl:text disable-output-escaping="yes">&lt;a href="</xsl:text>
+    <xsl:value-of select="$href" disable-output-escaping="yes" />
+    <xsl:text disable-output-escaping="yes">" target="</xsl:text>
+    <xsl:value-of select="$target" disable-output-escaping="yes" />
+    <xsl:text disable-output-escaping="yes">"&gt;</xsl:text>
+    <xsl:apply-templates />
+    <xsl:text disable-output-escaping="yes">&lt;/a&gt;</xsl:text>
+  </xsl:template>
   
+  <xsl:template name="custom:build_url_and_render_anchor">
+    <xsl:param name="href" />
+    <xsl:param name="target" select="'_self'" />
+    
+    <xsl:variable name="href">&lt;?php echo r_build_url(&quot;<xsl:value-of select="$href"/>&quot;);?&gt;</xsl:variable>
+    
+    <xsl:call-template name="custom:render_anchor">
+      <xsl:with-param name="href" select="$href" />
+      <xsl:with-param name="target" select="$target" />
+    </xsl:call-template>
+  </xsl:template>
       </xsl:stylesheet>

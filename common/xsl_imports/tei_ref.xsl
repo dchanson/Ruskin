@@ -18,7 +18,7 @@
   phpVar is used here to insert the appropriate php path to a file (e.g. ../apparatuses/msi_apparatus.php, ../essays/poetry_essay.php) based
   upon the @type and @target of a <ref>.-->
 
-
+  
   <xsl:template match="tei:ref">
 
     <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(./@target, '.php')"/>.xml</xsl:variable>
@@ -26,103 +26,33 @@
     <xsl:choose>
 
       <xsl:when test="@type='apparatus'">
-        <xsl:variable name="phpVar">../apparatuses/<xsl:value-of select="@target"/></xsl:variable>
-
-        <xsl:choose>
-
-          <xsl:when test="doc-available($xmlVar)">
-            <a href="{$phpVar}" target="_blank">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:when>
-
-          <!--Code for jQuery- and CSS-controlled inactive links until the document is made available.-->
-          <xsl:otherwise>
-            <a href="{$phpVar}" target="_blank" class="inactive">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:otherwise>
-
-        </xsl:choose>
-
+        <xsl:call-template name="custom:build_url_and_render_anchor">
+          <xsl:with-param name="href" select="concat('apparatuses/',@target)" />
+        </xsl:call-template>
       </xsl:when>
 
       <xsl:when test="@type='figure'">
-        <xsl:variable name="phpVar">../witnesses/<xsl:value-of select="@target"/></xsl:variable>
-
-
-        <a href="{$phpVar}" target="_blank" class="inactive">
-          <xsl:apply-templates/>
-        </a>
-
-
+        <xsl:call-template name="custom:build_url_and_render_anchor">
+          <xsl:with-param name="href" select="concat('witnesses/',@target)" />
+        </xsl:call-template>
       </xsl:when>
 
       <xsl:when test="@type='bibliography'">
-        <xsl:variable name="phpVar">../bibiliography/<xsl:value-of select="@target"/></xsl:variable>
-
-        <xsl:choose>
-
-          <xsl:when test="doc-available($xmlVar)">
-            <a href="{$phpVar}" target="_blank">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:when>
-
-          <!--Code for jQuery- and CSS-controlled inactive links until the document is made available.-->
-          <xsl:otherwise>
-            <a href="{$phpVar}" target="_blank" class="inactive">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:otherwise>
-
-        </xsl:choose>
-
+        <xsl:call-template name="custom:build_url_and_render_anchor">
+          <xsl:with-param name="href" select="concat('notes/',@target)" />
+        </xsl:call-template>
       </xsl:when>
 
       <xsl:when test="@type='drawing'">
-        <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.jpg</xsl:variable>
-        <xsl:variable name="phpVar">../drawings/<xsl:value-of select="substring-before(@target, '.php')"/>.jpg</xsl:variable>
-
-        <xsl:choose>
-
-          <xsl:when test="doc-available($xmlVar)">
-            <a href="{$phpVar}" target="_blank">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:when>
-
-          <!--Code for jQuery- and CSS-controlled inactive links until the document is made available.-->
-          <xsl:otherwise>
-            <a href="{$phpVar}" target="_blank" class="inactive">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:otherwise>
-
-        </xsl:choose>
-
+        <xsl:call-template name="custom:build_url_and_render_anchor">
+          <xsl:with-param name="href" select="concat('drawings/',@target)" />
+        </xsl:call-template>
       </xsl:when>
 
       <xsl:when test="@type='essay'">
-        <xsl:variable name="phpVar">../essays/<xsl:value-of select="@target"/></xsl:variable>
-
-        <xsl:choose>
-
-          <xsl:when test="doc-available($xmlVar)">
-            <a href="{$phpVar}" target="_blank">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:when>
-
-          <!--Code for jQuery- and CSS-controlled inactive links until the document is made available.-->
-          <xsl:otherwise>
-            <a href="{$phpVar}" target="_blank" class="inactive">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:otherwise>
-
-        </xsl:choose>
-
+        <xsl:call-template name="custom:build_url_and_render_anchor">
+          <xsl:with-param name="href" select="concat('essays/',@target)" />
+        </xsl:call-template>
       </xsl:when>
 
       <xsl:when test="@type='internal'">
@@ -138,25 +68,9 @@
       </xsl:when>
 
       <xsl:when test="@type='note'">
-        <xsl:variable name="phpVar">../notes/<xsl:value-of select="@target"/></xsl:variable>
-
-        <xsl:choose>
-
-          <xsl:when test="doc-available($xmlVar)">
-            <a href="{$phpVar}" target="_blank">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:when>
-
-          <!--Code for jQuery- and CSS-controlled inactive links until the document is made available.-->
-          <xsl:otherwise>
-            <a href="{$phpVar}" target="_blank" class="inactive">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:otherwise>
-
-        </xsl:choose>
-
+        <xsl:call-template name="custom:build_url_and_render_anchor">
+          <xsl:with-param name="href" select="concat('notes/',@target)" />
+        </xsl:call-template>
       </xsl:when>
 
       <xsl:when test="@type='gloss_contextual' or @type='gloss_textual'">
@@ -212,53 +126,21 @@
       </xsl:when>
 
       <xsl:when test="@type='webpage'">
-        <xsl:variable name="phpVar">../webpages/<xsl:value-of select="@target"/></xsl:variable>
-
-        <xsl:choose>
-
-          <xsl:when test="doc-available($xmlVar)">
-            <a href="{$phpVar}" target="_blank">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:when>
-
-          <!--Code for jQuery- and CSS-controlled inactive links until the document is made available.-->
-          <xsl:otherwise>
-            <a href="{$phpVar}" target="_blank" class="inactive">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:otherwise>
-
-        </xsl:choose>
-
+        <xsl:call-template name="custom:build_url_and_render_anchor">
+          <xsl:with-param name="href" select="concat('webpages/',@target)" />
+        </xsl:call-template>
       </xsl:when>
 
       <xsl:when test="@type='witness'">
-        <xsl:variable name="phpVar">../witnesses/<xsl:value-of select="@target"/></xsl:variable>
-
-        <xsl:choose>
-
-          <xsl:when test="doc-available($xmlVar)">
-            <a href="{$phpVar}">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:when>
-
-          <!--Code for jQuery- and CSS-controlled inactive links until the document is made available.-->
-          <xsl:otherwise>
-            <a href="{$phpVar}" target="_blank" class="inactive">
-              <xsl:apply-templates/>
-            </a>
-          </xsl:otherwise>
-
-        </xsl:choose>
-
+        <xsl:call-template name="custom:build_url_and_render_anchor">
+          <xsl:with-param name="href" select="concat('witnesses/',@target)" />
+        </xsl:call-template>
       </xsl:when>
       
       <xsl:when test="@type='corpus'">
-        <a href="../corpuses/{@target}">
-          <xsl:apply-templates/>
-        </a>
+        <xsl:call-template name="custom:build_url_and_render_anchor">
+          <xsl:with-param name="href" select="concat('corpuses/',@target)" />
+        </xsl:call-template>
       </xsl:when>
 
     </xsl:choose>
