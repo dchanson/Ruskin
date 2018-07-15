@@ -68,7 +68,8 @@
                             by <persName corresp="#JR">Ruskin</persName> (e.g., a poem, an essay, a 
                             sermon, a mathematical proof), including all available witnesses of that 
                             text (each of these edited and annotated), and accompanied by the 
-                            work&#x02BC;s explanatory apparatus and available facsimiles.</item>
+                            work&#x02BC;s explanatory apparatus and available facsimiles. The scope of a work may be comprised 
+                            by a poem of only a few lines or by a composite&#x2010;genre project extending over many lengthy sections of verse, prose, and illustration.</item>
                         <item>A <hi rend="italic">manuscript</hi> is a physical document manifesting 
                             <persName corresp="#JR">Ruskin</persName>&#x02BC;s texts, 
                             represented in the archive by its own explanatory apparatus in addition to 
@@ -78,130 +79,134 @@
                     as represented by a given work&#x02BC;s <ref type="internal" target="#WORKSPAGES">Work Pages</ref> 
                     and by a given manuscript&#x02BC;s <ref type="internal" target="#MANUSCRIPTPAGES">Manuscript Pages</ref>. 
                     The fundamental relation between these two kinds of units is the manuscript as container and the work as contained. 
-                    For <persName corresp="#JR">Ruskin</persName>, however, the separate integrity of these units often creates a creative tension, 
-                    which the archive aims to preserve through its editorial methodology (see 
+                    For <persName corresp="#JR">Ruskin</persName>, however, the separate integrity of these units often posed a creative tension. 
+                    He treated some manuscript notebooks as anthologies that assembled many separate works, but he also developed single works 
+                    into complex, lengthy composites that usurped the borders of their manuscript witness.
+                    The archive aims to represent and preserve this creative tension through its editorial methodology (see 
                     <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php">Editorial and Encoding Rationale and Methodology)</ref>.</p>
-                <p><ref type="internal" target="#WORKSPAGES">Work Pages</ref> and <ref type="internal" target="#MANUSCRIPTPAGES">Manuscript Pages</ref> consist respectively 
-                    of consistent sets of XML/TEI documents, discussed below. At a global level, the archive also contains editorial 
-                    materials&#x2014;<ref type="internal" target="#NOTES">Notes</ref>, <ref type="internal" target="#ESSAYS">Essays</ref>, and 
-                    <ref type="internal" target="#BIBLIOGRAPHY">Bibliography</ref>&#x2014;that are not anchored to particular works or manuscripts, 
-                    but serve as universally accessible resources, and that are indexed at the same level as works and manuscripts. 
-                    These materials, like the various <ref type="internal" target="#WORKSPAGES">Work Pages</ref> and <ref type="internal" target="#MANUSCRIPTPAGES">Manuscript Pages</ref>, each open on a separate 
-                    tab in the user's browser.
-                </p>
-            
                     
                 <div type="section" xml:id="WORKSPAGES">
                     <head type="section">Work Pages</head>
-                    <p>A given work may be represented by the following kinds of documents:</p>
+                    <p>A given work is typically represented by the following kinds of documents:</p>
                         <list>
                             <item>the <ref type="internal" target="#WORKAPPARATUSPAGE">Work Apparatus Page</ref>;</item>
                             <item>the <ref type="internal" target="#WORKTEXTPAGES">Work Text Pages</ref>, consisting of</item>
                             <item>
                                 <list>
-                                    <item><ref type="internal" target="#WORKWITNESSES">Transcript(s) of witness(es)</ref>,</item>
-                                    <item>the <ref type="internal" target="#GLOSSES">Glosses</ref> that annotate the witness(es),</item>
-                                    <item><ref type="internal" target="#WORKFACSIMILES">Facsimile(s)</ref> associated with the respective witness(es);</item>
+                                    <item><ref type="internal" target="#WORKWITNESSES">transcript(s) of witness(es)</ref>;</item>
+                                    <item>the <ref type="internal" target="#GLOSSES">glosses</ref> that annotate specific passages of the witness(es);</item>
+                                    <item><ref type="internal" target="#WORKFACSIMILES">facsimile(s)</ref> associated with the respective witness(es).</item>
                                 </list>
                             </item>
-                            <item><ref type="internal" target="#WORKDRAWINGS">Drawings</ref>.</item>
+                            <item><ref type="internal" target="#WORKDRAWINGS">Drawings</ref> integral to the work.</item>
                         </list>
                     
-                    <p>If a work is selected by title from the indicies, the selection defaults to the <ref type="internal" target="#WORKAPPARATUSPAGE">Work Apparatus Page</ref>. 
+                    <p>When a work is selected from the indicies (by title or first line), the selection defaults to the <ref type="internal" target="#WORKAPPARATUSPAGE">Work Apparatus Page</ref>.
+                        From here, the reader may choose from the list of witnesses, and read the main body of commentary on the work. 
                         This page is headed by the editorial title of the work, 
                         a form of the title that is standardized according to rules given in 
                         the <ref type="note" subtype="bibliographical" target="title_citation_note.php">System of Title Citation for Works</ref>, 
-                        in order to insure consistent reference throughout the archive. (The <ref type="internal" target="#WORKAPPARATUSPAGE">Work Apparatus Page</ref> includes 
+                        in order to insure consistent reference throughout the archive. (The <ref type="internal" target="#WORKAPPARATUSPAGE">Work Apparatus Page</ref> also includes 
                         a section, <ref type="internal" target="#TITLE">Title</ref>, devoted to explaining <persName corresp="#JR">Ruskin</persName>&#x02BC;s own title or titles for the work, if any, 
                         along with the often complex subsequent history of entitling the work.)</p>
                 
-            
                 <div type="subsection" xml:id="WORKAPPARATUSPAGE">
                     <head type="subsection">Work Apparatus Page</head>
-                    <p>Each work defaults to an Apparatus Page, which is divided into six (or, in some cases, seven) sections, listed in a menu at the top of the page: 
-                        Witnesses, Title, Genre, Manuscripts, Date, Composition and Publication, Discussion, and, in 
-                        some cases, Textual Note.</p>
+                    <p>The Apparatus Page for each work is divided into seven sections, listed in a menu at the top of the page: 
+                        Witnesses, Title, Genre, Manuscripts, Date, Composition and Publication, Discussion.</p>
                         <list>
-                            <item><hi rend="italic">Witnesses</hi>, the first section on the Apparatus Page, consists of a list of hyperlinks to the available 
-                                witnesses and associated facsimiles, which constitute the <ref type="internal" target="#WORKTEXTPAGES">Text Pages</ref> for a given work.</item>
-                            <item><hi rend="italic">Title</hi> declares the editorial title, followed by <persName corresp="#JR">Ruskin</persName>&#x02BC;s
-                                form(s) of the title, if any, along with discussion of sources or other matters relevant to the entitling of the work by <persName corresp="#JR">Ruskin</persName> 
+                            <item><hi rend="italic">Witnesses</hi>. All available witnesses for a given work are listed, with each item hyperlinked 
+                                to an edited transcription. Clicking the item displays the transcript along with its associated facsimile in <ref type="internal" target="#SHOWCASE">Showcase</ref>.</item>
+                            <item><hi rend="italic">Title</hi>. This section declares the editorial title of the work, 
+                                followed by <persName corresp="#JR">Ruskin</persName>&#x02BC;s form(s) of the title, if any, 
+                                along with discussion of sources or other matters relevant to the entitling of the work by <persName corresp="#JR">Ruskin</persName> 
                                 or by his editors.</item>
-                            <item><hi rend="italic">Genre</hi> declares the work&#x02BC;s genre and, in some cases, subgenre. 
-                                For poems, the section also supplies commentary on its prosody.</item>
-                            <item><hi rend="italic">Manuscripts</hi> identifies the physical manifestations of the work (e.g., drafts, fair copies, published versions), 
-                                each hyperlinked to the Apparatus Page of the manuscript in question (see 
-                                <ref type="internal">Manuscript Pages</ref>).</item>
-                            <item><hi rend="italic">Date</hi> contains the argument for the date assigned to the work.</item>
-                            <item><hi rend="italic">Composition and Publication</hi> describes the publication history, if any, for the work, 
+                            <item><hi rend="italic">Genre</hi>. This section declares the work&#x02BC;s genre and provides additional relevant information, such as 
+                                (in the case of poems) a brief commentary on prosody.</item>
+                            <item><hi rend="italic">Manuscripts</hi>. All known physical manifestations of the work (e.g., drafts, fair copies, published versions) are listed, 
+                                with each item hyperlinked to the Apparatus Page of the manuscript in question (see 
+                                <ref type="internal" target="#MANUSCRIPTPAGES">Manuscript Pages</ref>).</item>
+                            <item><hi rend="italic">Date</hi>. This section contains the argument for the date assigned to the work.</item>
+                            <item><hi rend="italic">Composition and Publication</hi>. This section analyzes the work&#x2010;s publication history, if any, 
                                 and reconstructs the compositional history, if materials are available to form such an argument.</item>
-                            <item><hi rend="italic">Discussion</hi> takes up contextual questions not covered in the previous sections, such as evidence for a work&#x02BC;s sources, the occasion of its
-                                composition, and so on.</item>
-                            <item><hi rend="italic">Textual Note</hi> contains summmary remarks based on collations performed by the <hi rend="italic">ERM</hi> editor and staff. 
-                                The reader can also perform collations of witnesses using a tool such as <orgName corresp="#NINES">NINES</orgName>&#x02BC;s Juxta.</item>
+                            <item><hi rend="italic">Discussion</hi>. A final section takes up contextual matters not previously covered, 
+                                such as evidence for a work&#x02BC;s sources, the occasion of its
+                                composition, and other topics suggested by the work&#x02BC;s contents.</item>
                         </list>
-                    
                 </div>
             
                 <div type="subsection" xml:id="WORKTEXTPAGES">
                     <head type="subsection">Work Text Pages and Showcase</head>
-                    <p>From the <ref type="internal" target="#WORKAPPARATUSPAGE">Work Apparatus Page</ref>, the reader may select available witnesses and corpora connected with the work. 
-                        Each of these witnesses or corpora is represented by Work Text Pages, 
-                        which open in Showcase windows as a transcript of a witness paired with a corresponding facsimile of the physical witness. 
-                        Acknowledgement is made if a facsimile is unavailable for a given witness.</p>
+                    <p>From the <ref type="internal" target="#WORKAPPARATUSPAGE">Work Apparatus Page</ref>, the reader may select available witnesses and corpora connected with the work, 
+                        each of which opens a Work Text Page in Showcase, consisting of an edited transcription paired with a corresponding facsimile of the physical witness. 
+                        At present, only edited transcriptions but not facsimiles are provided of commonly available printed witnesses, such as those in 
+                        <ref type="note" subtype="bibliographical" target="poems_1891_note.php"><hi rend="italic">Poems</hi> (1891)</ref> and the 
+                        <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref>.</p>
                     
                     <div type="sub-subsection" xml:id="SHOWCASE">
                         <head type="sub-subsection">Showcase</head>
-                    <p><hi rend="italic">Showcase</hi> is the display space for Text Pages. The controls in Showcase include the following functions, ordered from left to right atop the Showcase window. 
-                        (These functions are also identified by mouseover.)</p>
+                    <p><hi rend="italic">Showcase</hi> is the display space for Text Pages. The controls in Showcase include the following functions, ordered from left to right atop the Showcase window.</p>
                         <list>
-                            <item>Forward arrows advance the reader through a work&#x02BC;s available facsimiles for a particular witness, provided that witness occupies more than one facsimile; 
-                                and backward arrows reverse the reader through those same facsimiles. 
-                                The reader may also select these available facsimiles from the pull&#x2010;down menu between the arrows.</item>
-                            <item>A facsimile and its transcript for a particular witness are tied together, and by default they appear side by side in Showcase. 
-                                Using a windowpane control, however, the reader may fill the window with the facsimile alone, 
-                                or the transcript alone, or return to the divided window.</item>
-                            <item>A pull&#x2010;down menu increases or decreases magnification of the facsimile.</item>
-                            <item>A pull&#x2010;down menu increases or decreases font size of the transcript.</item>
-                            <item>A toggle view advances the reader through layers of additions, deletions, overwriting, etc., as interpreted by the <hi rend="italic">ERM</hi> team and 
-                                encoded in the edited witness of a work. The baseline view is a representation of all of these layers simultaneously.</item>
-                            <item>A toggle view separates the hands (e.g., <persName corresp="#JR">John Ruskin</persName>&#x02BC;s, <persName corresp="#MR">Margaret Ruskin</persName>&#x02BC;s, 
-                                <persName corresp="#JJR">John James Ruskin</persName>&#x02BC;s) responsible for all or portions of a witness.</item>
+                            <item><hi rend="italic">Arrows</hi>. Left and right arrows respectively reverse and advance the reader through a work&#x02BC;s available facsimiles for a particular witness, 
+                                provided that witness occupies more than one facsimile. The reader may also select the available facsimiles 
+                                from the pull&#x2010;down menu between the arrows.</item>
+                            <item><hi rend="italic">Windowpane</hi>. A facsimile and its transcript for a particular witness are tied together, and by default they appear side by side in Showcase. 
+                                Using the windowpane control, however, the reader may fill the window with the facsimile alone, 
+                                or with the transcript alone, and then return to the divided window.</item>
+                            <item><hi rend="italic">Magnification</hi>. A pull&#x2010;down menu increases or decreases magnification of the facsimile.</item>
+                            <item><hi rend="italic">Font</hi>. A pull&#x2010;down menu increases or decreases font size of the transcript.</item>
+                            <item><hi rend="italic">Revision view toggle</hi>. Where possible without confusion to the reader, deletions and insertions are rendered in transcriptions 
+                                exactly as they appear in the manuscript witness&#x2014;for example, with the deletion scored through, and the insertion 
+                                above the line. In such cases as overwriting, however, which are difficult to represent, 
+                                a toggle tool (shown as a curved arrow) advances the reader through the original text and then the overwritten text. 
+                                Three successive points on the toggle respresent, first, the original text (in gray); second, the overwritten text (in standard text color); 
+                                and third, the darker overwritten text and the gray underlying text simultaneously. Since the toggle suggests a timeline, 
+                                it is activated only by XML/TEI markup justifiably interpreting a sequence of actions, as in the case of overwriting and certain other substitutions.</item>
+                            <item><hi rend="italic">Hand toggle</hi>. Another toggle tool (shown as a pen) allows the user to filter multiple hands 
+                                in a witness. The default view exhibits all hands without descrimination. A pull-dowm menu allows the user to filter 
+                                only <persName corresp="#JR">John Ruskin</persName>&#x02BC;s hand, or only other hands that may be present, such as 
+                                <persName corresp="#MR">Margaret Ruskin</persName>&#x02BC;s, or 
+                                <persName corresp="#JJR">John James Ruskin</persName>&#x02BC;s.</item>
                         </list>
-                    
                     </div>
                     
                     <div type="sub-subsection" xml:id="WORKWITNESSES">
-                        <head type="sub-subsection">Work Witnesses</head>
-                    <p>By default, when a given witness is selected by the reader, its transcript along with the corresponding facsimile appears in 
-                        <ref type="internal" target="#SHOWCASE">Showcase</ref>. 
-                        For discussion of the transcription and encoding methodologies governing these transcriptions, see 
+                        <head type="sub-subsection">Witnesses and Commentary</head>
+                    <p>For discussion of the transcription and encoding methodologies governing the transcription of witnesses, see 
                         <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php">Editorial and Encoding Rationale and Methodology</ref>.</p>
-                        <p>Transcripts of witnesses carry some editorial features, which are local to this level of the archive and cannot be accessed through the archive indices, 
-                            although occasionally a hyperlink elsewhere in the archive will point directly to one of these features.</p>
+                        <p>Transcriptions carry metadiscursive information and editorial commentary tied to specific passages of text. Unlike <ref type="internal" target="#NOTES">Notes</ref>, 
+                            which deal with global topics hyperlinked throughout the archive, and the <ref type="internal" target="#WORKAPPARATUSPAGE">Apparatus Page</ref>, 
+                            which supplies general commentary on a work as a whole, these more specialized annotations are accessed primarily at the local level of the textual witness, 
+                            although this commentary is also searchable by keyword using the archive&#x02BC;s main Search tool.</p>
                         <list>
-                            <item xml:id="GLOSSES"><hi rend="italic">Glosses</hi> are editorial commentary linked to specific features of a transcript 
-                                (as opposed to the global <ref type="internal" target="#NOTES">Notes</ref>). This commentary cannot be conveniently discussed in the 
-                                <ref type="internal" target="#WORKAPPARATUSPAGE">Apparatus Page</ref> of a work, as the glosses depend on a specific context. 
-                                Hyperlinks (reference numbers) to glosses are colored to distinguish them from the transcript as editorial. 
-                                On occasion, <persName corresp="#JR">Ruskin</persName> annotated texts himself, 
-                                and these reference numbers or characters, because they are originally present in the manuscript, appear in the same color as the transcript. 
-                                <persName corresp="#JR">Ruskin</persName>&#x02BC;s corresponding note is distinguished from the editors&#x02BC; notes by the bracketed comment: 
-                                [Ruskin&#x02BC;s note]. When summoned, glosses appear as an ordered list in a single document, which opens on a separate tab.</item>
-                            <item><hi rend="italic">Page notations</hi> identify page breaks in the witness, as reflected in the the corresponding facsimile.</item>
-                            <item><hi rend="italic">Line Numbers</hi> (in the case of poems) in a transcript at present record only 
-                                <persName corresp="#JR">Ruskin</persName>&#x02BC;s own marginal numbering in a manuscript.</item>
+                            <item xml:id="GLOSSES"><hi rend="italic">Glosses</hi>. These annotations are tied to specific passages in textual witnesses 
+                                by superscript characters (letters or numbers, colored blue to distinguish from the original text). The hyperlinked characters open 
+                                a separate window, with the desired commentary shaded for ease of reference. There are two types of glossses.</item>
+                            <item>
+                                <list>
+                                    <item><hi rend="italic">Contextual glosses</hi>. Hyperlinked using Arabic numerals, these glosses annotate persons, 
+                                        places, literary and mythical references, historical background, and other contextual information needed to appreciate 
+                                        a particular passage. Also, annotations by <persName corresp="#JR">Ruskin</persName>&#x02BC;s earlier editors and by 
+                                        <persName corresp="#JR">Ruskin</persName> himself are included here. These are distinguished from the current editor&#x02BC;s 
+                                        glosses by a bracketed comment, such as [Ruskin&#x02BC;s note].</item>
+                                    <item><hi rend="italic">Textual glosses</hi>. Hyperlinked using lowercase alphabetical Latin characters, these glosses annotate 
+                                        textual matters affecting a particular passage, which are too specific to be treated in the <ref type="internal" target="#WORKAPPARATUSPAGE">Apparatus Page</ref>.</item>
+                                </list>
+                            </item>
+                            <item><hi rend="italic">Page notations</hi>. A gray bar marks page breaks in the witness, 
+                                as reflected in the the corresponding facsimile.</item>
+                            <item><hi rend="italic">Line Numbers</hi>. For poems, line numbering is transcribed only from 
+                                <persName corresp="#JR">Ruskin</persName>&#x02BC;s own marginal numbering in a manuscript, since this information 
+                                can prove useful for textual analysis. At present, no additional editorial line numbering is provided.</item>
                         </list>
-                    
                 </div>
                     
                 <div type="sub-subsection" xml:id="WORKFACSIMILES">
-                    <head type="sub-subsection">Work Facsimiles</head>
-                    <p>Facsimile views, in the case of bound manuscripts, open to the page(s) containing the chosen witness of the work. In most cases, this view will appear as a
-                        two&#x2010;page spread. These views are identical to what the reader finds when opening the facsimile from the <ref type="internal" target="#MANUSCRIPTPAGES">Manuscript Pages</ref>. 
-                        If a given work continues beyond the two&#x2010;page spread, the reader can advance the pages using the <ref type="internal" target="#SHOWCASE">Showcase</ref> controls.</p>
-                    <p>For manuscripts that were formerly bound but now disassembled owing to damage, such as <ref type="apparatus" target="msia_apparatus.php">MS IA</ref>, 
-                        the facsimile view is often similar to a two&#x2010;page spread. Loose single-sheet manuscripts are shown one side per view, recto followed by verso.</p>
+                    <head type="sub-subsection">Facsimiles</head>
+                    <p>Facsimile views, in the case of bound manuscripts, open to the page(s) containing the chosen witness of the work. At present, in most cases, this view will appear as a
+                        two&#x2010;page spread. These views are identical to what the reader finds when opening the facsimile from the <ref type="internal" target="#MANUSCRIPTPAGES">Manuscript Pages</ref>.</p>
+                    <p>For manuscripts that were formerly bound but now disassembled owing to damage, such as those comprised in <ref type="apparatus" target="msia_apparatus.php">MS IA</ref>, 
+                        the facsimile view is often similar to a two&#x2010;page spread. Loose single&#x2010;sheet manuscripts are shown one side per view, recto followed by verso.</p>
                 </div>
                 </div>
                 </div>
@@ -314,7 +319,18 @@
                             
                     </div>
                             
-                
+                        <!--<p><ref type="internal" target="#WORKSPAGES">Work Pages</ref> and <ref type="internal" target="#MANUSCRIPTPAGES">Manuscript Pages</ref> consist respectively 
+                            of consistent sets of XML/TEI documents, discussed below. At a global level, the archive also contains editorial 
+                            materials&#x2014;<ref type="internal" target="#NOTES">Notes</ref>, <ref type="internal" target="#ESSAYS">Essays</ref>, and 
+                            <ref type="internal" target="#BIBLIOGRAPHY">Bibliography</ref>&#x2014;that are not anchored to particular works or manuscripts, 
+                            but serve as universally accessible resources, and that are indexed at the same level as works and manuscripts. 
+                            These materials, like the various <ref type="internal" target="#WORKSPAGES">Work Pages</ref> and <ref type="internal" target="#MANUSCRIPTPAGES">Manuscript Pages</ref>, each open on a separate 
+                            tab in the user's browser.
+                            
+                            
+                            <item><hi rend="italic">Textual Note</hi> contains summmary remarks based on collations performed by the <hi rend="italic">ERM</hi> editor and staff. 
+                                The reader can also perform collations of witnesses using a tool such as <orgName corresp="#NINES">NINES</orgName>&#x02BC;s Juxta.</item>
+                        </p>-->
             </div>
            
             </div>      
