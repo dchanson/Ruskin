@@ -83,7 +83,7 @@
                     He treated some manuscript notebooks as anthologies that assembled many separate works, but he also developed single works 
                     into complex, lengthy composites that usurped the borders of their manuscript witness.
                     The archive aims to represent and preserve this creative tension through its editorial methodology (see 
-                    <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php">Editorial and Encoding Rationale and Methodology)</ref>.</p>
+                    <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php">Editorial and Encoding Rationale and Methodology</ref>).</p>
                     
                 <div type="section" xml:id="WORKSPAGES">
                     <head type="section">Work Pages</head>
@@ -101,7 +101,8 @@
                             <item><ref type="internal" target="#WORKDRAWINGS">Drawings</ref> integral to the work.</item>
                         </list>
                     
-                    <p>When a work is selected from the indicies (by title or first line), the selection defaults to the <ref type="internal" target="#WORKAPPARATUSPAGE">Work Apparatus Page</ref>.
+                    <p>When a work is selected from the indicies (by title or first line), or from any other location in the archive, 
+                        the selection defaults to the <ref type="internal" target="#WORKAPPARATUSPAGE">Work Apparatus Page</ref>.
                         From here, the reader may choose from the list of witnesses, and read the main body of commentary on the work. 
                         This page is headed by the editorial title of the work, 
                         a form of the title that is standardized according to rules given in 
@@ -117,19 +118,19 @@
                         <list>
                             <item><hi rend="italic">Witnesses</hi>. All available witnesses for a given work are listed, with each item hyperlinked 
                                 to an edited transcription. Clicking the item displays the transcript along with its associated facsimile in <ref type="internal" target="#SHOWCASE">Showcase</ref>.</item>
-                            <item><hi rend="italic">Title</hi>. This section declares the editorial title of the work, 
+                            <item><hi rend="italic">Title</hi>. Declares the editorial title of the work, 
                                 followed by <persName corresp="#JR">Ruskin</persName>&#x02BC;s form(s) of the title, if any, 
                                 along with discussion of sources or other matters relevant to the entitling of the work by <persName corresp="#JR">Ruskin</persName> 
                                 or by his editors.</item>
-                            <item><hi rend="italic">Genre</hi>. This section declares the work&#x02BC;s genre and provides additional relevant information, such as 
+                            <item><hi rend="italic">Genre</hi>. Declares the work&#x02BC;s genre and provides additional relevant information, such as 
                                 (in the case of poems) a brief commentary on prosody.</item>
                             <item><hi rend="italic">Manuscripts</hi>. All known physical manifestations of the work (e.g., drafts, fair copies, published versions) are listed, 
                                 with each item hyperlinked to the Apparatus Page of the manuscript in question (see 
                                 <ref type="internal" target="#MANUSCRIPTPAGES">Manuscript Pages</ref>).</item>
-                            <item><hi rend="italic">Date</hi>. This section contains the argument for the date assigned to the work.</item>
-                            <item><hi rend="italic">Composition and Publication</hi>. This section analyzes the work&#x2010;s publication history, if any, 
+                            <item><hi rend="italic">Date</hi>. Contains the argument for the date assigned to the work.</item>
+                            <item><hi rend="italic">Composition and Publication</hi>. Analyzes the work&#x2010;s publication history, if any, 
                                 and reconstructs the compositional history, if materials are available to form such an argument.</item>
-                            <item><hi rend="italic">Discussion</hi>. A final section takes up contextual matters not previously covered, 
+                            <item><hi rend="italic">Discussion</hi>. This final section takes up contextual matters not previously covered, 
                                 such as evidence for a work&#x02BC;s sources, the occasion of its
                                 composition, and other topics suggested by the work&#x02BC;s contents.</item>
                         </list>
@@ -209,14 +210,16 @@
                         the facsimile view is often similar to a two&#x2010;page spread. Loose single&#x2010;sheet manuscripts are shown one side per view, recto followed by verso.</p>
                 </div>
                 </div>
-                </div>
+                
             
                 <div type="section" xml:id="MANUSCRIPTPAGES">
                     <head type="section">Manuscript Pages</head>
-                    <p>The only Web pages representing a manuscript are the <ref type="internal" target="#MANUSCRIPTAPPARATUSPAGE">Manuscript Apparatus Page</ref> 
-                        and the <ref type="internal" target="#MANUSCRIPTFACSIMILE">Manuscript Facsmile</ref>. 
-                        There are no Text Pages as in the case of works, as Manuscript Text Pages would effectively be identical to the sum of the Text Pages
-                        belonging to the work(s) contained within the manuscript.</p>    
+                    <p>For some manuscripts, Manuscript Page logically consist only of the <ref type="internal" target="#MANUSCRIPTAPPARATUSPAGE">Manuscript Apparatus Page</ref> 
+                        and the <ref type="internal" target="#MANUSCRIPTFACSIMILE">Manuscript Facsmile</ref>, since a manuscript transcription would amount to 
+                        the sum of the Text Pages constituing the work(s) contained within the manuscript. In some cases, however, <hi rend="italic">ERM</hi> 
+                        compiles <hi rend="italic">corpuses</hi>&#x2014;entire manuscripts or parts of manuscripts that <persName corresp="#JR">Ruskin</persName> 
+                        appears to have regarded as coterminous with a composite work or anthology of works (see 
+                        <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php">Editorial and Encoding Rationale and Methodology</ref>).</p>    
                 
             
                 <div type="subsection" xml:id="MANUSCRIPTAPPARATUSPAGE">
@@ -224,28 +227,26 @@
                     <p>The Manuscript Apparatus Page is the default destination for any hyperlinked occurrence of a manuscript title, whether accessed through the indices, Works Pages, or various forms of commentary. 
                         The page is headed by the manuscript&#x02BC;s editorial title, as governed by rules given in the 
                         <ref type="note" subtype="bibliographical" target="title_citation_for_major_mss_note.php">System of Title Citation for Major Manuscripts</ref>.</p>
-                    <p>The Apparatus is a single page consisting of seven sections: Title, Location, Provenance, Description, Contents, Discussion.</p>
+                    <p>The Apparatus consists of seven sections: Title, Location, Provenance, Description, Contents, Discussion.</p>
                         <list>
-                            <item><hi rend="italic">Title</hi> declares the editorial title, and goes on to discuss the history of entitling the manuscript, including <persName corresp="#JR">Ruskin</persName>&#x02BC;s
+                            <item><hi rend="italic">Title</hi>. Declares the editorial title, and goes on to discuss the history of entitling the manuscript, including <persName corresp="#JR">Ruskin</persName>&#x02BC;s
                                 own title, if any, and his editors&#x02BC; titles.</item>
-                            <item><hi rend="italic">Location</hi> identifies where the manuscript is currently held, along with any helpful cataloging information.</item>
-                            <item><hi rend="italic">Provenance</hi> describes the history of ownership and transmission. For many manuscripts, which share a common provenance with others, this section consists simply of a
+                            <item><hi rend="italic">Location</hi>. Identifies where the manuscript is currently held, along with any helpful cataloging information.</item>
+                            <item><hi rend="italic">Provenance</hi>. Describes the history of ownership and transmission. For many manuscripts, which share a common provenance with others, this section consists simply of a
                                 link to the appropriate section of the long note on <ref type="note" subtype="bibliographical" target="provenance_note.php">Provenance</ref>. For some manuscripts, however, the Apparatus
                                 requires this section in order to elaborate on a unique history.</item>
-                            <item><hi rend="italic">Description</hi> supplies physical characteristics, such as size, color, and kind of binding materials. The description also include what in <hi rend="italic">ERM</hi> is
-                                termed a <hi rend="italic">Collation</hi>. Rather than an account of the assemblage of signatures in a printed book, however, <hi rend="italic">collation</hi> here refers to
-                            <persName corresp="#JR">Ruskin</persName>&#x02BC;s (and, sometimes, his and/or others&#x02BC;) pagination. This pagination applies either to an originally blank, bound notebook or of a bound
-                                compilation of originally separate leaves. In the case of <persName corresp="#JR">Ruskin</persName>&#x02BC;s own page numbering, collations must often take account of the misnumbering of
-                                pages and of missing pages. The collation provides the basis for a somewhat more speculative reconstruction of <persName corresp="#JR">Ruskin</persName>&#x02BC;s patterns of use of the manuscript,
-                                a narrative reserved for the Discussion. Page references in the collation list are active, capable of opening the corresponding Manuscript Facsimile views. In some cases, descriptions of a
-                                manuscript&#x02BC;s cover and endpapers contain active links to facsimile views, as well.</item>
-                            <item><hi rend="italic">Contents</hi> lists sequentially the works contained in the manuscript. The titles in the list are active, hyperlinked to their respective Work Apparatus Page.</item>
-                            <item><hi rend="italic">Date</hi> gives the inclusive dates for use of the manuscript by <persName corresp="#JR">Ruskin</persName> and sometimes by others.</item>
-                            <item><hi rend="italic">Discussion</hi>, like the corresponding section in a Work Apparatus, is a catch&#x2010;all for topics that cannot be accommodated in other sections. For example,
-                                one frequently recurring topic placed here is an attempt to reconstruct <persName corresp="#JR">Ruskin</persName>&#x02BC;s palimpsest&#x2010;like uses and reuses of an originally bound manuscript.
-                                These reconstructions propose sequences of composition rarely corresponding to the <hi rend="italic">sequential</hi> list given in the Contents, which describes the physical order of a
-                                manuscript&#x02BC;s contents: <persName corresp="#JR">Ruskin</persName> seldom worked straightforwardly from beginning to end of a notebook. Other topics taken up in this section include
-                                discussion of the hand(s) characterizing the manuscript, its relation to similar manuscripts, and so on.</item>
+                            <item><hi rend="italic">Description</hi>. Describes physical characteristics, such as size, color, and kind of binding materials. In many cases, 
+                                the description also includes what <persName corresp="#WGC">W. G. Collingwood</persName>, using a geological metaphor, termed the <hi rend="italic">stratification</hi> 
+                                of a manuscript notebook. Somewhat like an account of the <hi rend="italic">collation</hi> of a printed work, the aim is in part to describe 
+                            <persName corresp="#JR">Ruskin</persName>&#x02BC;s (and, sometimes, his and/or others&#x02BC;) pagination of the manuscript, 
+                                whether applied to an originally blank, bound notebook or to a compilation of originally separate leaves, bound at a later time. 
+                                In the case of <persName corresp="#JR">Ruskin</persName>&#x02BC;s own page numbering, descriptions must often take account of some misnumbering of
+                                pages and of missing pages. More analytical and historical than descriptive, however, descriptions must also undertake a reconstruction of 
+                                <persName corresp="#JR">Ruskin</persName>&#x02BC;s patterns of use of the manuscript. Some of this speculation may be reserved for the Discussion section.</item>
+                            <item><hi rend="italic">Contents</hi>. Lists simply sequentially the works contained in the manuscript. The titles in the list are active, hyperlinked to their respective Work Apparatus Page.</item>
+                            <item><hi rend="italic">Date</hi>. Provides the inclusive dates for use of the manuscript by <persName corresp="#JR">Ruskin</persName> and sometimes by others.</item>
+                            <item><hi rend="italic">Discussion</hi>. Topics germane to particular manuscripts are discussed here, often continuing the analysis 
+                                of <persName corresp="#JR">Ruskin</persName>&#x02BC;s palimpsest&#x2010;like uses and reuses of an originally bound manuscript.</item>
                         </list>
                     
                 </div>
@@ -255,8 +256,6 @@
                     <p>The complete facsimile of a manuscript&#x2014;from cover to cover, if bound, viewed as a sequence usually of two&#x2010;page spreads&#x2014;is the same as what a reader would view when selecting
                         sequentially the Work Facsimiles it contains. (The difference in the terms <hi rend="italic">Manuscript Facsimile</hi> and <hi rend="italic">Work Facsimile</hi> is merely one of convenience referring,
                         not to differing entities, but to viewing the same entity from different places in the archive&#x2014;the Manuscript Pages and Works Pages, respectively.)</p>
-                    <p>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php">Editorial and Encoding Rationale and Methodology</ref>for an explanation of how manuscripts 
-                        are represented in <hi rend="italic">ERM</hi> using the &#x3008;teiCorpus&#x3009; element.</p>
                 </div>
                 </div>
                     
@@ -264,7 +263,7 @@
                         <head type="section">Notes</head>
                         <p><hi rend="italic">Notes</hi> contain commentary, which can be hyperlinked from any point in the archive 
                             (unlike <ref type="internal" target="#GLOSSES"><hi rend="italic">Glosses</hi></ref>, 
-                            which are anchored to transcripts of <ref type="internal" target="#WORKWITNESSES">witnesses</ref>) 
+                            which anchor commentary to particular passages in <ref type="internal" target="#WORKWITNESSES">witnesses</ref>) 
                             Notes are grouped in four subtypes:</p>
                                 <list>
                                     <item>bibliographical;</item>
@@ -272,10 +271,9 @@
                                     <item>contextual;</item>
                                     <item>geographical.</item>
                                 </list>
-                        
                         </div>
                     
-                    <div>
+                    <!--<div>
                         <div type="section" xml:id="ESSAYS">
                             <head type="section">Essays</head>
                             <p><hi rend="italic">Essays</hi> provide broad overviews of large topics pertinent to the archive. 
@@ -292,27 +290,25 @@
                                     <item>Religion.</item>
                                 </list>
                             
-                    </div>
+                    </div>-->
                         
                     <div type="section" xml:id="BIBLIOGRAPHY">
                             <head type="section">Bibliography</head>
                         <p>The <hi rend="italic">Bibliography</hi> is the reference point for bibliographical citations of works, published and unpublished, 
-                                exclusive of the manuscripts and edited witnesses of works of which the archive itself consists. Scattered througout the archive, the reader will find 
-                                bibliographical citations in short&#x2010;title form, which are hyperlinked to full citations in the Bibliography. 
+                                exclusive of the manuscripts and edited witnesses of works that comprise the archive itself. Througout the archive, 
+                                bibliographical citations are given in short&#x2010;title form, hyperlinked to full citations in the Bibliography. 
                                 Viewed as a full document, the Bibliography is divided into sections:</p>
                                 <list>
-                                    <item>Primary Sources
+                                    <item>Manuscript Sources
                                         <list>
-                                            <item>Works by <persName corresp="#JR">Ruskin</persName> and the Ruskin Family in Manuscript Other than the Manuscripts Constituting This Edition</item>
-                                            <item>Works by <persName corresp="#JR">Ruskin</persName> in Published Editions</item>
-                                            <item>Works by Other Authors in Manuscript</item>
-                                            <item>Works by Other Authors in Published Editions</item>
+                                            <item>Works in Manuscript by Ruskin and the Ruskin Family Other Than the Manuscripts Constituting This Edition</item>
+                                            <item>Works in Manuscript by Authors Other Than the Ruskins</item>
                                         </list>
                                     </item>
-                                    <item>Secondary Sources
+                                    <item>Published Sources
                                         <list>
-                                            <item>Unpublished</item>
-                                            <item>Published</item>
+                                            <item>Works by <persName corresp="#JR">Ruskin</persName> in Published Editions</item>
+                                            <item>Secondary Sources, along with Primary Sources in Published Editions of Authors Other Than Ruskin</item>
                                         </list>
                                     </item>
                                 </list>
