@@ -360,6 +360,94 @@
   <xsl:template match="tei:anchor">
     <span id="{string(@xml:id)}"></span>
   </xsl:template>
+  
+  <!--<lg>
+  Normal processing differentiates between <lg>s with the @types strophe and stanza.-->
+  <xsl:template match="tei:lg">
+    <xsl:choose>
+
+      <xsl:when test="@type='strophe'">
+        <span class="lg-strophe">
+          <xsl:apply-templates/>
+        </span>
+      </xsl:when>
+
+      <xsl:when test="@type='stanza'">
+        <div class="lg-stanza">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+
+    </xsl:choose>
+  </xsl:template>
+
+  <!--<l>
+  child is used here to test whether the a <l> contains a <lb> with a @type of runover. If it does, special processing (see <lb>) of the <l> is
+  performed before its content is output to a <span>.
+
+  brVar inserts <br/> before each <span> to ensure that proper lineation.
+
+  xdivVar inserts a </div> before the </span> when a <l> contains a <lb>.-->
+  <xsl:template match="tei:l">
+    <xsl:choose>
+
+      <xsl:when test="child::tei:lb/@type='runover'">
+        <span class="l">
+          <xsl:apply-templates/>
+          <xsl:value-of select="$xspanVar" disable-output-escaping="yes"/></span>
+          <xsl:value-of select="$brVar" disable-output-escaping="yes"/>
+        </xsl:when>
+
+        <xsl:otherwise>
+          <span class="l">
+            <xsl:apply-templates/>
+          </span>
+          <xsl:value-of select="$brVar" disable-output-escaping="yes"/>
+        </xsl:otherwise>
+
+      </xsl:choose>
+    </xsl:template>
+
+    <!--<space>
+    The following transforms each <space> in the XML document into a <span> in the HTML document - unless the <space> is part of an above- or below-
+    below-the-line addition or runover (special transformations for these are included later in this XSL document). The variable spaceVar is used to
+    output <span class="space" style="padding-left:_em"> </span>, where _ is calculated as the product of the <space>'s @quantity and 0.4 (to
+    approximate the width of 1 character in the variable-width font used by this project). The <span> thus inserts padding to the left of a
+    character or word to create space (note that a non-breaking space - &#x00A0; - between the <span>'s opening and closing tags is required for the
+    <span> to be output correctly). The XML element name is retained as a CSS class name in the HTML document.-->
+    <xsl:template match="tei:space">
+      <xsl:choose>
+
+        <xsl:when test="parent::tei:add/@place='above'">
+          <xsl:apply-templates/>
+        </xsl:when>
+
+        <xsl:when test="parent::tei:add/@place='below'">
+          <xsl:apply-templates/>
+        </xsl:when>
+
+        <xsl:when test="preceding-sibling::*[1][self::tei:lb/@type='runover']">
+          <xsl:apply-templates/>
+        </xsl:when>
+
+        <xsl:otherwise>
+          <xsl:variable name="spaceVar">&#x003C;span class="space" style=&#x0022;padding-left:<xsl:value-of select="(format-number((@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;&#x00A0;&#x003C;/span&#x003E;</xsl:variable>
+          <xsl:value-of select="$spaceVar" disable-output-escaping="yes"/>
+        </xsl:otherwise>
+
+      </xsl:choose>
+    </xsl:template>
+
+    <!--<damage> and <gap>
+    The following transforms each <gap> in the XML document into a <span> in the HTML document - similar to the way that <space>s are transformed
+    above. For <gap>s with extents of "several words" or "several characters," the gap (i.e. space) to the left of a character or word is
+    approximated (i.e. as 8em or 2em). The variable gapVar is used to output <span class="gap" style="padding-left:_em"> </span>. The XML element
+    name is retained as a CSS class name in the HTML document.-->
+    <xsl:template match="damage">
+      <span class="damage-{string(@agent)}">
+        <xsl:apply-templates/>
+      </span>
+    </xsl:template>
 
   <!--STYLES-->
 </xsl:stylesheet>
