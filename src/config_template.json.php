@@ -1,5 +1,6 @@
 {
 	"BASE": "http://ruskin.local:8080/src",
+    "SCSS_DIRECTORY": "./css_styles",
 	"DB": {
 		"HOST": "localhost",
 		"DATABASE_NAME": "ruskin",

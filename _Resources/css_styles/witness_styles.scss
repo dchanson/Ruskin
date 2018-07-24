@@ -1,0 +1,53 @@
+@import "styles_common";
+@import "witness_styles_old";
+
+.overwriting {
+	font-weight: bold;
+}
+
+.subst{
+	display: inline-block;
+}
+
+.add {
+	display: inline-block;
+}
+.add.overwriting{
+	font-weight: normal;
+}
+
+.del {
+	color: #ccc;
+}
+.del, .add{
+	display: inline-block;
+}
+.del.absolute{
+	position: absolute;
+}
+
+
+.l {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+.runover {
+	position: absolute;
+	display: inline;
+}
+.runover.above{
+	bottom: 1em;
+}
+.runover.below{
+	bottom: -1em;
+}
+
+
+
+.tablespace {
+	.del{
+		position: relative;
+	}
+}

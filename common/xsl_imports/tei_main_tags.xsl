@@ -123,29 +123,11 @@ require($root_path."header.inc.php");
 
       </xsl:for-each>
 
-      <!--The following associates the appropriate CSS with the HTML document based upon the <teiHeader>'s @type in XML.-->
-
-      <xsl:choose>
-
-        <xsl:when test="self::*[@type='anthology' or @type='manuscript' or @type='witness']">
-          <xsl:variable name="cssVar">
-            &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;css/witness_styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
-          </xsl:variable>
-          <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
-
-        </xsl:when>
-
-        <xsl:otherwise>
-          <!--Remove the ../ in ../styles.css for local testing.-->
-          <xsl:variable name="cssVar">
-            &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;css/styles.css&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
-
-          </xsl:variable>
-          <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
-        </xsl:otherwise>
-
-      </xsl:choose>
-
+      <xsl:variable name="cssVar">
+        &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;style.php?p=site_styles.scss&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
+      </xsl:variable>
+      <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
+      
     </head>
   </xsl:template>
 

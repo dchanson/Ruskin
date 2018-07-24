@@ -1,5 +1,7 @@
 <?php
 
+require_once 'vendor/autoload.php';
+
 if(!defined('RUSKIN_CONFIG_PATH')){
     define('RUSKIN_CONFIG_PATH', 'config.json.php');
 }
@@ -28,4 +30,11 @@ if(!function_exists('r_get_base')){
 		global $r_config;
 		return $r_config['BASE'];
 	}
+}
+
+if(!function_exists('r_get_config')){
+  function r_get_config(){
+    global $r_config;
+    return $r_config;
+  }
 }

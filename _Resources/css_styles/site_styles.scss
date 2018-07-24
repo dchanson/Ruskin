@@ -1,18 +1,5 @@
-@import 'styles_common.css';
+@import 'styles_common';
 @charset "UTF-8";
-
-/* A B O U T   T H I S   D O C U M E N T
-Filename:               styles.css
-Version:                2.0
-Original Release Date:
-Last Modified:          04/10/2016
-Author:					Charles W. Borchers, IV
-Project Title:          The Early Ruskin Manuscripts, 1826-1842
-Project Director:       David C. Hanson
-Project Email Address:  ruskinproject@selu.edu
-Copyright Notice:       This document was created exclusively for The Early Ruskin Manuscripts, 1826-1842, a Digital Humanities project of
-Southeastern Louisiana University's Department of English. The contents of this document may not be used or reproduced in
-any form without the express permission of the Author and the Project Director. */
 
 /* T E X T   F E A T U R E S */
 
@@ -476,6 +463,7 @@ Note: Bold, italics, and underlining are performed by the <b>, <i>, and <u> HTML
 	color: #000;
 	position: absolute;
 	top: -1em;
+	margin-left:-0.5em;
 }
 .add-below {
 	bottom: -1em;

@@ -3,7 +3,6 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   xmlns:xi="http://www.w3.org/2001/XInclude"
-  xmlns:teix="http://www.tei-c.org/ns/Examples"
   xmlns:custom="http://whatever"
   >
 
@@ -76,9 +75,9 @@
 
   <!--<p>-->
   <xsl:template match="tei:p">
-    <p>
+    <div class="p">
       <xsl:apply-templates/>
-    </p>
+    </div>
   </xsl:template>
 
   <!--<list>-->
@@ -102,8 +101,8 @@
         </li>
       </xsl:otherwise>
     </xsl:choose>
-    
-    
+
+
   </xsl:template>
 
     <xsl:template match="tei:gap">

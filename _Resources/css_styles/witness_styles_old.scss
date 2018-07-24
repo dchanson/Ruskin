@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import 'styles_common.css';
 
 /* A B O U T   T H I S   D O C U M E N T
 Filename:               witness_styles.css
@@ -48,11 +47,7 @@ any form without the express permission of the Author and the Project Director. 
 	position: relative;
 	top: -0.5em;
 }
-.l {
-	display: block;
-	position: relative;
-	width: 100%;
-}
+
 p {
 	position: relative;
 }
@@ -84,10 +79,7 @@ p {
 	line-height: 1.5em;
 	font-size: 12pt;
 }
-.runover {
-	bottom: -1em;
-	position: absolute;
-}
+
 sub {
 	line-height: 0em;
 }
@@ -210,10 +202,7 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 	color: #666;
 	text-shadow: 1px 1px #000, 0px 1px #000, 0px -1px #000;
 }
-.overwriting {
-	color: #000;
-	font-weight: bold;
-}
+
 .underline {
 	border-bottom: 1px solid #000;
 }
@@ -229,10 +218,6 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 
 /* R e v i s i o n */
 
-.del {
-	color: #CCC;
-	position: absolute;
-}
 .del-erasure {
 	color: #CCC;
 	position: absolute;
@@ -250,13 +235,12 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 	color: #000;
 	text-decoration: underline;
 }
-.add {
-	color: #000;
-}
+
 .add-above {
 	color: #000;
 	position: absolute;
 	top: -1em;
+	display: inline-block;
 }
 .add-below {
 	bottom: -1em;
@@ -810,9 +794,7 @@ position: fixed;
 
 }
 
-.tablespace .del{
-	position: relative;
-}
+
 
 
 #account_toc_msviii_addictional_sections_table td:nth-child(1){
