@@ -1,3 +1,20 @@
+@charset "UTF-8";
+
+/* Used by IE8 */
+
+@font-face {
+	font-family: Andron;
+	src: url('fonts/andron_scriptor_web_3_1.eot');
+}
+
+/* Used by Other Web Browsers */
+
+@font-face {
+	font-family: Andron;
+	src: url('fonts/andron_scriptor_web_3_1.woff');
+}
+
+
 .tablespace{
 	margin: 2%;
   > table{
@@ -25,3 +42,5 @@
 .p{
 	margin: 1em 0.5em 1em 0.3em;
 }
+
+

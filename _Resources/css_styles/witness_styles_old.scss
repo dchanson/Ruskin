@@ -1,19 +1,5 @@
 @charset "UTF-8";
 
-/* A B O U T   T H I S   D O C U M E N T
-Filename:               witness_styles.css
-Version:                1.0
-Original Release Date:
-Last Modified:          02/10/2015
-Project Title:          The Early Works of John Ruskin (1826-42)
-Project Director:       David C. Hanson
-Project Email Address:  ruskinproject@selu.edu
-Copyright Notice:       This document was created exclusively for The Early Works of John Ruskin (1826-42), a Digital Humanities project of
-Southeastern Louisiana University's Department of English. The contents of this document may not be used or reproduced in
-any form without the express permission of the Author and the Project Director. */
-
-/* W I T N E S S   T E X T   F E A T U R E S */
-
 .anthology, .manuscript {
 	color: #000;
 	font-family: Andron;
@@ -390,23 +376,6 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 
 /* S H O W C A S E */
 
-/* E m b e d d e d   F o n t s
-Cross-browser support REQUIRES that 1) the style sheet containing the @font-face rule(s), 2) the font(s) referenced by those rule(s), 3) the Web
-page(s) that will use them share the SAME folder, and 4) IE8-compatible webfonts be listed first. */
-
-/* Used by IE8 */
-
-@font-face {
-	font-family: Andron;
-	src: url('../fonts/andron_scriptor_web_3_1.eot');
-}
-
-/* Used by Other Web Browsers */
-
-@font-face {
-	font-family: Andron;
-	src: url('../fonts/andron_scriptor_web_3_1.woff');
-}
 
 /* H y p e r l i n k s */
 

@@ -1,5 +1,5 @@
-@import 'styles_common';
 @charset "UTF-8";
+@import 'styles_common';
 
 /* T E X T   F E A T U R E S */
 
@@ -222,19 +222,7 @@ page(s) that will use them share the SAME folder, and 4) IE8-compatible webfonts
 	font-family: Andron;
 }
 
-/* U s e d   b y   I E 8 */
 
-@font-face {
-	font-family: Andron;
-	src: url(http://english.selu.edu/humanitiesonline/ruskin/showcase/andron_scriptor_web_3_1.eot);
-}
-
-/* U s e d   b y   O t h e r   W e b   B r o w s e r s */
-
-@font-face {
-	font-family: Andron;
-	src: url(http://english.selu.edu/humanitiesonline/ruskin/showcase/andron_scriptor_web_3_1.woff);
-}
 
 /* W I T N E S S   T E X T   F E A T U R E S */
 
@@ -620,25 +608,6 @@ Note: Bold, italics, and underlining are performed by the <b>, <i>, and <u> HTML
 	color: #CCC;
 }
 
-/* S H O W C A S E */
-
-/* E m b e d d e d   F o n t s
-Cross-browser support REQUIRES that 1) the style sheet containing the @font-face rule(s), 2) the font(s) referenced by those rule(s), 3) the Web
-page(s) that will use them share the SAME folder, and 4) IE8-compatible webfonts be listed first. */
-
-/* Used by IE8 */
-
-@font-face {
-	font-family: Andron;
-	src: url('andron_scriptor_web_3_1.eot');
-}
-
-/* Used by Other Web Browsers */
-
-@font-face {
-	font-family: Andron;
-	src: url('andron_scriptor_web_3_1.woff');
-}
 
 /* H y p e r l i n k s */
 
