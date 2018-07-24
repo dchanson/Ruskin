@@ -3,10 +3,12 @@
 <?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
-        <fileDesc xml:id="cassel_poem_msix_witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="a_poet_is_a_very_foolish_stay_msviii">
             <titleStmt>
-                <title type="main">"Cassel"</title>
-                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <title type="main">"A poet is a very foolish stay"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS VIII Fair Copy</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
                 </author>
@@ -17,12 +19,9 @@
                     <persName corresp="#DCH">David C. Hanson</persName>
                 </principal>
                 <respStmt>
-                    <persName corresp="#KCM">Katie C. Moore</persName>
-                    <resp>contributing transcription/encoding/review</resp>
-                </respStmt>
-                <respStmt>
-                    <persName corresp="#KTM">Kiran Thapa Magar</persName>
-                    <resp>contributing encoding</resp>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#SB">Sushantika Bhandari</persName>
+                    <resp>contributing transcription</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
@@ -67,7 +66,7 @@
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="MSIX15v-16r.jpg- MSIX16v-17r.jpg">pp. ##-##</locus>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
                             <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
                             <filiation><!--Entry needed here.--></filiation>
                         </msItem>
@@ -88,51 +87,39 @@
     <text>
         <body>
             <div type="poem">
-                <pb facs="MSIX15v"/>
-                <lg type="stanza" rhyme="aa">
-                    <l><handShift script="cursive"/>The way was long and yet twas sweet.</l>
-                    <l>Through many a shady soft retreat</l>
-                    <l>Where the broad willow semblance gave</l>
-                    <l>Of weeping beauty to the wave</l>
-                    <l>And elm with mossy foliage prest</l>
-                    <l>And feathery aspens quivering crest</l>
-                    <l>And many a spiry poplar glade</l>
-                    <l>And hazels rich entangled shade</l>
-                    <l>While onward as advancing still</l>
-                    <l>From Omars plain to <placeName corresp="#CASSEL">Cassels</placeName> hill</l>
-                <pb facs="MSIX16r"/>
-                    <l>Far yet more far the landscape threw</l>
-                    <l>Its deep immeasurable blue</l>
-                    <l>Oh beautiful those plains were showing</l>
-                    <l>Where summer sun was hotly glowing</l>
-                    <l>Many a battle field lay spread</l>
-                    <l>Once the dark dwelling of the dead</l>
-                    <l>But fruitful now their champaigns wave</l>
-                    <l>With bending grain on soldiers grave.</l>
-                    <l>While far beneath in long array</l>
-                    <l>The priestly orders wound their way</l>
-                    <l>Heavy the massive banners rolled</l>
-                    <l>Rich wrought with gems and stiff with gold</l>
-                    <l>While as the cross came borne on high</l>
-                    <l>Beneath its crimson canopy</l>
-                    <l>Many the haughty head that bowed</l>
-                    <l>Sunk his high crest the warrior proud</l>
-                    <l>The priest his glance benignant cast</l>
-                    <l>And murmured blessings as he past</l>
-                    <l>While round the hillside echoing free</l>
-                    <l>Rung the loud hymming melody</l>
-                    <l>Many a monkish voice was there</l>
-                <pb facs="MSIX16v"/>
-                    <l>Many a trumpet rent the air</l>
-                    <l>And softer, sweeter yet same</l>
-                    <l>The sounds in failing cadence came</l>
-                    <l>No marvel that the pomp and pride</l>
-                    <l>Of Romes religion thus should hide</l>
-                    <l>The serpent folds beneath that roll</l>
-                    <l>The poison mantling in the bowl.</l>
+                <pb facs="MSVIIIp3-4r"/>
+                <fw type="pageNum" place="top-right">4</fw>
+                <lg type="stanza">
+                    <l>A poet is a very foolish stay</l>
+                    <l>I mustnt call em idiotical</l>
+                    <l>I cant abuse em<unclear resp="#SB">.</unclear> Yet I think I may</l>
+                    <l>Although it is a very ticklish topic all</l>
+                    <l>Must here allow me<unclear resp="#SB">.</unclear> But I here will say</l>
+                    <l>Evn though I be thought misanthropical</l>
+                    <l>That of each racked nay more unlaurelled fate</l>
+                    <l>The worst of alls a poet Laureate</l>
                 </lg>
-            </div>
-            
+                <lg type="stanza">
+                    <l>Oh thou Poor Southey<note n="n" type="gloss" resp="#DCH">In his <date when="1830">1830</date> diary, <persName corresp="#JR">Ruskin</persName> had written respectfully of <persName corresp="#RS">Southey</persName>, after the family had ogled him in church, during their tour of the <placeName corresp="#LAKES">Lakes</placeName> (<hi rend="underline">TLC</hi> 42)<!--Need info here.-->; and by <date when="1831-03">March 1831</date> in &#x201C;Iteriad,&#x201D; he had drafted the lines on the poet&#x02BC;s &#x201C;dark lightning eye&#x201D; that &#x201C;made him seem half inspired / Or like a New Thalaba<!--Need info here.--> vengefully fired,&#x201D; referring to <persName corresp="#RS">Southey</persName>&#x02BC;s <hi rend="underline">Thalaba the Destroyer</hi> (2:299&#x2013;300; MS VI, 72).</note> But tis now too late</l>
+                    <l>Thou knowest not thy woeful situation</l>
+                    <l>Oh how I pity thy most wretched fate</l>
+                    <l>But nothing now remains save lamentation</l>
+                    <l>Thou art <del rend="strikethrough"><unclear resp="#SB">unstabled</unclear></del><add place="above"><space quantity="10" unit="chars"/>appointed</add> poet laureate</l>
+                    <l>In this rotunda orbe the worst station</l>
+                    <l>Alas thy brow of bays will now be bold</l>
+                    <l>Because because because thou wert installed</l>
+                </lg>
+                <lg type="stanza">
+                    <l>On every birthday of reforming Bill</l>
+                    <l>As regularly they come round again</l>
+                    <l>And (I should hope it was against your<add place="above"><space quantity="31" unit="chars"/><g type="addon">-</g>will</add></l>
+                    <l>For birthday images must rack your brain</l>
+                    <l>And lines most complimentary instil</l>
+                    <l>That always signify the very same</l>
+                    <l>When not a goose then much less a goose quill</l>
+                    <l>Will run on rapidly against its will<note n="n" type="gloss" resp="#DCH">2As an ultra-Tory, Southey was opposed to the Reform Bill. Ruskin apparently is not referring to a recent publication by Southey. Although in <date notBefore="1831-06-21" notAfter="1831-09-22">summer 1831</date> the poet drafted colloquies on political topics, he abandoned the project when the Reform Bill proved inevitable (Geoffrey Carnall, Robert Southey and His Age: The Development of a Conservative Mind [Oxford: Clarendon, 1960], 185-88).</note></l>
+                </lg>
+            </div>            
         </body>
     </text>
 </TEI>

@@ -3,10 +3,12 @@
 <?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
-        <fileDesc xml:id="cassel_poem_msix_witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
             <titleStmt>
-                <title type="main">"Cassel"</title>
-                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <title type="main">"Through the stone and ancient gate"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft VIII Fair Copy</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
                 </author>
@@ -17,12 +19,9 @@
                     <persName corresp="#DCH">David C. Hanson</persName>
                 </principal>
                 <respStmt>
-                    <persName corresp="#KCM">Katie C. Moore</persName>
-                    <resp>contributing transcription/encoding/review</resp>
-                </respStmt>
-                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
                     <persName corresp="#KTM">Kiran Thapa Magar</persName>
-                    <resp>contributing encoding</resp>
+                    <resp>contributing transcription</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
@@ -67,7 +66,7 @@
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="MSIX15v-16r.jpg- MSIX16v-17r.jpg">pp. ##-##</locus>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
                             <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
                             <filiation><!--Entry needed here.--></filiation>
                         </msItem>
@@ -88,51 +87,31 @@
     <text>
         <body>
             <div type="poem">
-                <pb facs="MSIX15v"/>
-                <lg type="stanza" rhyme="aa">
-                    <l><handShift script="cursive"/>The way was long and yet twas sweet.</l>
-                    <l>Through many a shady soft retreat</l>
-                    <l>Where the broad willow semblance gave</l>
-                    <l>Of weeping beauty to the wave</l>
-                    <l>And elm with mossy foliage prest</l>
-                    <l>And feathery aspens quivering crest</l>
-                    <l>And many a spiry poplar glade</l>
-                    <l>And hazels rich entangled shade</l>
-                    <l>While onward as advancing still</l>
-                    <l>From Omars plain to <placeName corresp="#CASSEL">Cassels</placeName> hill</l>
-                <pb facs="MSIX16r"/>
-                    <l>Far yet more far the landscape threw</l>
-                    <l>Its deep immeasurable blue</l>
-                    <l>Oh beautiful those plains were showing</l>
-                    <l>Where summer sun was hotly glowing</l>
-                    <l>Many a battle field lay spread</l>
-                    <l>Once the dark dwelling of the dead</l>
-                    <l>But fruitful now their champaigns wave</l>
-                    <l>With bending grain on soldiers grave.</l>
-                    <l>While far beneath in long array</l>
-                    <l>The priestly orders wound their way</l>
-                    <l>Heavy the massive banners rolled</l>
-                    <l>Rich wrought with gems and stiff with gold</l>
-                    <l>While as the cross came borne on high</l>
-                    <l>Beneath its crimson canopy</l>
-                    <l>Many the haughty head that bowed</l>
-                    <l>Sunk his high crest the warrior proud</l>
-                    <l>The priest his glance benignant cast</l>
-                    <l>And murmured blessings as he past</l>
-                    <l>While round the hillside echoing free</l>
-                    <l>Rung the loud hymming melody</l>
-                    <l>Many a monkish voice was there</l>
-                <pb facs="MSIX16v"/>
-                    <l>Many a trumpet rent the air</l>
-                    <l>And softer, sweeter yet same</l>
-                    <l>The sounds in failing cadence came</l>
-                    <l>No marvel that the pomp and pride</l>
-                    <l>Of Romes religion thus should hide</l>
-                    <l>The serpent folds beneath that roll</l>
-                    <l>The poison mantling in the bowl.</l>
+                <pb facs="MSVIIIp41-42"/>
+                    <fw type="pageNum" place="top-right">42</fw>
+                <lg type="stanza">
+                    <l>Through the stone and ancient gate</l>
+                    <l>Where the sarcophagi lie in stone</l>
+                    <l>Up the stone stairs</l>
+                    <l>Where are the walruses, seals, and bears</l>
+                    <l>Camelopardus</l>
+                    <l>Hippotamus</l>
+                    <l>Hugeous affairs</l>
+                </lg>
+                    
+                <lg type="stanza">
+                    <l><unclear resp="#KTM">How to put the number 2 in the middle of page </unclear> </l> 
+                    <l>Tramping tramping over the planks</l>
+                    <l><del rend="strikethrough">Cut</del> Force the way through crowd<del rend="strikethrough">ed</del><add place="below"><space quantity="34" unit="chars"/>ing</add> ranks</l>
+                    <l>Pink and white and blue each shell</l>
+                    <l>Nate as ninepence lies in its cell</l>
+                    <l>Within whithout</l>
+                    <l>Noses knocked in and eyes knocked out</l>
+                    <l>Many a head</l>
+                    <l>Tattoed with red</l>
+                    <l>Standing about</l>
                 </lg>
             </div>
-            
         </body>
     </text>
 </TEI>

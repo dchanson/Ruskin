@@ -3,10 +3,10 @@
 <?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
-        <fileDesc xml:id="brussels_prose_msix">
+        <fileDesc xml:id="brussels_prose_msix_witness">
             <titleStmt>
-                <title type="main">"Brussels" [prose]</title>
-                <title type="sub">Electronic Text Generated from a Transcription of the MS IX Fair Copy</title>
+                <title type="main">"Brussels"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
                 </author>
@@ -54,17 +54,20 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
                         <country type="nation">United States of America</country>
                         <region type="state">Connecticut</region>
                         <settlement type="city">New Haven</settlement>
                         <institution>Yale University</institution>
                         <repository>Beinecke Rare Book and Manuscript Library</repository>
                         <collection>MS Vault Ruskin</collection>
-                        <msName>MS IX</msName>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="MSIX22v-23r - MSIX24v-25r.jpg">pp. 23r-25r</locus>
+                            <locus facs="MSIX22v-23r - MSIX24v-25r.jpg">pp. ##-##</locus>
                             <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
                             <filiation><!--Entry needed here.--></filiation>
                         </msItem>
@@ -72,8 +75,9 @@
                     <physDesc>
                         <!--If additional entries are made below, the hands count must be increased.-->
                         <handDesc hands="1">
-                            <handNote corresp="#HANDJR1833-34" scribe="JR">
-                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>.</p>
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -84,53 +88,53 @@
     <text>
         <body>
             <div type="prose">
-                <p><placeName corresp="#BRUSSELS">Brussels</placeName> is a lovely, a queenlike city, from 
-                    <lb/>a distance, sweeping up the flanks of its 
+                <pb facs="MSIX23r"/>
+                <p><placeName corresp="#BRUSSELS">Brussels</placeName> is a lovely, a queenlike city, from
+                    <lb/>a distance, sweeping up the flanks of its
                     <lb/>hill, battlement over battlement swell&#x2013;
-                    <lb/>ing up higher, and higher, and yet higher 
-                    <lb/>and the massive obscurity of the two huge 
-                    <lb/>square cathedral tow&#x02BC;rs looming over the 
-                    <lb/>whole, and contrasted strangely with the 
-                    <lb/>delicate sharp spiriness of the steeple of 
-                    <lb/>the <title type="architecture" corresp="#HOTELDEVILLEBRUSSELS">hotel de ville</title>.<ref type="gloss_contextual" target="brussels_glosses.php#CATHEDRALHOTELDEVILLEGLOSS"/> 
-                    <placeName corresp="#PARIS">Paris</placeName> would look like 
-                    <lb/>an assemblage of brick kilns beside it.<ref type="gloss_contextual" target="brussels_glosses.php#PARISBRICKKILNSGLOSS"/> 
-                    <lb/>We saw <placeName corresp="#BRUSSELS">Brussels</placeName> at eleven miles distance 
+                    <lb/>ing up higher, and higher, and yet higher
+                    <lb/>and the massive obscurity of the two huge
+                    <lb/>square cathedral tow&#x02BC;rs looming over the
+                    <lb/>whole, and contrasted strangely with the
+                    <lb/>delicate sharp spiriness of the steeple of
+                    <lb/>the hotel de ville. <placeName corresp="#PARIS">Paris</placeName> would look like
+                    <lb/>an assemblage of brick kilns beside it.
+                    <lb/>We saw <placeName corresp="#BRUSSELS">Brussels</placeName> at eleven miles distance
                     <lb/>its towers rising dark and spearlike out
                 <pb facs="MSIX23v"/>
-                    <lb/>of the horizon&#x2014; It was waxing dark as we 
-                    <lb/>entered the city, and the lights began to 
-                    <lb/>twinkle in the few, the very few shop win&#x2010; 
-                    <lb/>dows. I love to pass through a city at night 
-                    <lb/>the hum of the voices rises so softly out of 
-                    <lb/>the obscurity, and the figures flit about 
-                    <lb/>dark and batlike, and the cold starlight 
-                    <lb/>mingles so strangely withe<ref type="gloss_contextual" target="brussels_prose_glosses2.php#WITHE"/> the red swar&#x2010; 
+                    <lb/>of the horizon. It was waxing dark as we
+                    <lb/>entered the city, and the lights began to
+                    <lb/>twinkle in the few, the very few shop win
+                    <lb/>dows. I love to pass through a city at night
+                    <lb/>the hum of the voices rises so softly out of
+                    <lb/>the obscurity, and the figures flit about
+                    <lb/>dark and batlike, and the cold starlight
+                    <lb/>mingles so strangely withe the red swar
                     <lb/>thy gleam of the lamps, and when you 
-                    <lb/>look up, the narrow strip of sky is of 
+                    <lb/>look up, the narrow strip of sky is of
                     <lb/>such a dark dark blue, you may see 
                     <lb/>it appear to quiver with the starlight 
                     <lb/>if you look long, and the white house 
-                    <lb/>fronts rise so ghastly, so ghostlike agains<ref type="gloss_contextual" target="brussels_prose_glosses2.php#AGAINS"/> 
-                    <lb/>it and the windows seem grinning ma&#x2013; 
+                    <lb/>fronts rise so ghostly, so ghostlike agains 
+                    <lb/>it and the windows seem grinning ma&#x2013;
                     <lb/>liciously askance at you. It makes one 
-                    <lb/>shiver to think of it.<ref type="gloss_contextual" target="brussels_glosses.php#WAXINGDARKGLOSS"/> Cities are exceed&#x2013; 
+                    <lb/>shiver to think of it. Cities are exceed&#x2013;
                     <lb/>ingly picturesque when built upon hills 
                     <lb/>but for exploring for circumnavigating for 
                     <lb/>perambulating&#x2014; Oh woe to the walker 
                     <lb/>who is compelled to drag himself up
                 <pb facs="MSIX24r"/>
-                    <lb/>their steeps, those tiresome paved steeps, 
-                    <lb/>those hard unyielding provokingly smooth 
-                    <lb/>flagstones;or to go thundering down, 
-                    <lb/>his rapidity increasing every instant<g type="justification">-</g><ref type="gloss_contextual" target="brussels_prose_glosses2.php#JUSTIFICATION"/> 
-                    <lb/>when he is once in for it, lurching 
-                    <lb/>tremendously like a ship in a swell,<g type="justification">-</g><ref type="gloss_contextual" target="brussels_prose_glosses2.php#JUSTIFICATION"/> 
+                    <lb/>their steeps, those tiresome paved steeps,
+                    <lb/>those hard unyielding provokingly smooth
+                    <lb/>flagstones;or to go thundering down,
+                    <lb/>his rapidity increasing every instant
+                    <lb/>when he is once in for it, lurching
+                    <lb/>tremendously like a ship in a swell,
                     <lb/>jerk, jerk, jerking, &#x2014; Oh facilis des&#x2013;
-                    <lb/>census Averni,<ref type="gloss_contextual" target="brussels_glosses.php#FACILISDESCENSUSAVERNIGLOSS"/> sed;<ref type="gloss_contextual" target="brussels_glosses.php#SEDSEDGLOSS"/> Ay theres the rub.<ref type="gloss_contextual" target="brussels_glosses.php#THERESTHERUBGLOSS"/>
-                    <lb/>The <title type="architecture" corresp="#HOTELDEBELLEVUE">hotel de Bellevue</title> at <placeName corresp="#BRUSSELS">Brussels</placeName><ref type="gloss_contextual" target="brussels_glosses.php#HOTELDEBELLEVUEBRUSSELSGLOSS"/> ought
-                    <lb/>to have a belle vue, for you might as<g type="justification">-</g><ref type="gloss_contextual" target="brussels_prose_glosses2.php#JUSTIFICATION"/>
-                    <lb/>well scale the crags of <placeName corresp="#GIBRALTAR">Gibraltar</placeName>, as storm
+                    <lb/>census Averni, sed; Ay theres the rub.
+                    <lb/>The hotel de Bellevue at <placeName corresp="#BRUSSELS">Brussels</placeName> ought
+                    <lb/>to have a belle vue, for you might as
+                    <lb/>well scale the crags of <placeName corresp="#GIBRALTAR">Gibraltar,</placeName> as storm
                     <lb/>the heights of the hotel de belle vue&#x2014;;
                     <lb/>whence, for all the boast of its title, I
                     <lb/>never could discover more belle vue, than
@@ -138,10 +142,10 @@
                     <lb/>a few murky park trees.
                 </p>
                 <p>We left <placeName corresp="#BRUSSELS">Brussels</placeName> on Wednesday mor&#x2013;
-                    <lb/>ning<ref type="gloss_contextual" target="brussels_glosses.php#WEDNESDAYMORNING"/> for <placeName corresp="#WATERLOO">Waterloo</placeName><g type="pause-period">.</g><ref type="gloss_contextual" target="brussels_prose_glosses2.php#PAUSEPERIOD"/> the sun beamed
+                    <lb/>ning for <placeName corresp="#WATERLOO">Waterloo,</placeName> the sun beamed
                     <lb/>sweetly among the long trunk of the
-                    <lb/>aged trees of the forest of <placeName corresp="#SONIANFOREST">Soigny</placeName>;<ref type="gloss_contextual" target="brussels_glosses.php#FORESTOFSOIGNYGLOSS"/> and<g type="justification">-</g><ref type="gloss_contextual" target="brussels_prose_glosses2.php#JUSTIFICATION"/>
-                    <lb/>their damp bark glistened dewily,&#x2014; as<g type="justification">-</g><ref type="gloss_contextual" target="brussels_prose_glosses2.php#JUSTIFICATION"/>
+                    <lb/>aged trees of the forest of <placeName corresp="#LOIGNY">Loigny;</placeName> and&#x2014;
+                    <lb/>their damp bark glistened dewily, &#x2014; as
                 <pb facs="MSIX24v"/>
                     <lb/>it rose up taller, and taller, branching off
                     <lb/>into the bending boughs, and slender spray
@@ -150,22 +154,22 @@
                     <lb/>ly, as you looked up to the broad sky there
                     <lb/>in light spready masses partially con&#x2013;
                     <lb/>cealing the long tapery grey trunks which
-                    <lb/>which<ref type="gloss_contextual" target="brussels_prose_glosses2.php#WHICHWHICH"/> retired back, farther and still far&#x2013;
+                    <lb/>which retired back, farther and still far&#x2013;
                     <lb/>ther, yet distinctly grouped, and those 
-                    <lb/>groups separated by the gleamy stream,
-                    <lb/>of yellow sunshine, which shone full<g type="justification">-</g><ref type="gloss_contextual" target="brussels_prose_glosses2.php#JUSTIFICATION"/>
+                    <lb/>groups seperated by the gleamy stream
+                    <lb/>of yellow sunshine, which shone full&#x2013;
                     <lb/>on the sides of the swelling green grassy
                     <lb/>banks, then broken by the intervening
                     <lb/>hollows, then climbing again up the
                     <lb/>dewy moss and white trunks. It was
                     <lb/>exceeding beautiful, I could have fan&#x2013;
-                    <lb/>cied the glister<ref type="gloss_contextual" target="brussels_glosses.php#GLISTERGLOSS"/> of the bright bayonets<g type="justification">-</g><ref type="gloss_contextual" target="brussels_prose_glosses2.php#JUSTIFICATION"/>
+                    <lb/>cied the glister of the bright bayonets
                     <lb/>changing, like starlight on a wavy o&#x2013;
-                    <lb/>cean, among the retiring foilage of<g type="justification">-</g><ref type="gloss_contextual" target="brussels_prose_glosses2.php#JUSTIFICATION"/>
-                    <lb/>those ancient trees,&#x2014; I forgot how many
+                    <lb/>cean, among the retiring foilage of
+                    <lb/>those ancient trees, &#x2014; I forgot how many
                     <lb/>long years had past by since that ev&#x2013;
                 <pb facs="MSIX25r"/>
-                    <lb/>entful day. &#x002A; &#x002A; &#x002A; This is the field of <placeName corresp="#WATERLOO">Waterloo</placeName>.<ref type="gloss_contextual" target="brussels_glosses.php#FIELDOFWATERLOOGLOSS"/>
+                    <lb/>entful day. &#x002A; &#x002A; &#x002A; This is the field of <placeName corresp="#WATERLOO">Waterloo.</placeName>
                     <lb/>The round hills of green pasture lay unbro
                     <lb/>ken before me, without a single tree except
                     <lb/>where far to the right the rich forest coun
@@ -173,12 +177,12 @@
                     <lb/>rounded masses, till lost in the blue of
                     <lb/>the faint horizon. All is peace now.
                     <lb/>Englishmen may feel proud on the field
-                    <lb/>of <placeName corresp="#WATERLOO">Waterloo</placeName>, perhaps I did, but there is
-                    <lb/>something mingled with it.&#x2014; Poor
-                    <lb/><persName corresp="#NBE">Napoleon</persName>. The grass is very green on
-                    <lb/>the field of <placeName corresp="#WATERLOO">Waterloo</placeName>&#x2014; it has grown from
+                    <lb/>of <placeName corresp="#WATERLOO">Waterloo,</placeName> perhaps I did, but there is
+                    <lb/>something mingled with it. &#x2014; Poor
+                    <lb/><persName corresp="#NBE">Napoleon.</persName> The grass is very green on
+                    <lb/>the field of <placeName corresp="#WATERLOO">Waterloo</placeName> &#x2014; it has grown from
                     <lb/>the dust of our bravest. Oh tread on
-                    <lb/>it softly<ref type="gloss_contextual" target="brussels_glosses.php#TREADSOFTLYGLOSS"/>
+                    <lb/>it softly.
                     <space quantity="7" unit="lines"/>
                 </p>
             </div>
