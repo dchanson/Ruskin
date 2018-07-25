@@ -31,7 +31,7 @@ $(document).ready(function(){
 	
 	var toggleZoom=function(){
 
-		var zoomLevels = [100, 200, 300, 400];
+		var zoomLevels = [100, 200, 400];
 		
 		var handle = $('#toggle-magnify-holder');
 		
@@ -46,6 +46,16 @@ $(document).ready(function(){
 		$("#toggle-magnify-text").text(state+'%');
 	}
 
+	var showLineNumbers = function(){
+		$(".l").each(function(ind, elem){
+			if(ind %5 != 4)return;
+			
+			var lineNumber = ind+1;
+			var tag = $("<span class='s-line-number'>"+lineNumber+"</span>");
+			tag.appendTo(elem);
+		});
+	}
+	
 	var selectFacsimile = function(index){
 		if(!window.erm.facsimiles.length) return;
 
@@ -237,20 +247,16 @@ $(document).ready(function(){
 			case "original":
 				$("#toggle-transcription")
 				.attr("src", window.erm.base_url + "/images/navbar/text-original.jpg");
-				
-				console.log('original');
 
 				$(".s-subst.s-add").hide();
-				$(".s-subst.s-del").show();
-				console.log('finish');
-				// $(".del-erasure").hide();
+				$(".s-subst.s-del").addClass("s-revision-original").show();
 				break;
 			case "revised":
 				$("#toggle-transcription")
 				.attr("src", window.erm.base_url + "/images/navbar/text-revised.jpg");
 
 				$(".s-subst.s-add").show();
-				$(".s-subst.s-del").hide();
+				$(".s-subst.s-del").removeClass("s-revision-original").hide();
 				break;
 			default: // composite
 				$("#toggle-transcription")
@@ -318,4 +324,5 @@ $(document).ready(function(){
 	});
 	
 	$("#toggle-transcription").click();
+	showLineNumbers();
 });
