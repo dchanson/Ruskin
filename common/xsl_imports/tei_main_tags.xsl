@@ -25,7 +25,7 @@ define(&#x022;FACS_FILE_NAMES&#x022;, &#x003C;&#x003C;&#x003C;EOT
 <xsl:value-of select="$facsFileNames" disable-output-escaping="no"/>
 EOT
 );
-      include_once(&#x022;../showcase_top.inc.php&#x022;)
+      include_once(ROOT_PATH.&#x022;showcase_top.inc.php&#x022;)
       ?&#x003E;
     </xsl:value-of>
 
@@ -55,13 +55,15 @@ EOT
         <xsl:call-template name="tei:pb" />
       </xsl:for-each>
     </div>
-    <xsl:value-of disable-output-escaping="yes" select="'&#x003C;?php include_once(&#x022;../showcase_bottom.inc.php&#x022;) ?&#x003E;'" />
+    <xsl:value-of disable-output-escaping="yes" select="'&#x003C;?php include_once(ROOT_PATH.&#x022;showcase_bottom.inc.php&#x022;) ?&#x003E;'" />
 
 </xsl:template>
 
   <xsl:template match="/">
-    <!-- <xsl:value-of select="tei:TEI" />
-    Node -->
+    
+    <xsl:value-of select="$headerIncludeVar" disable-output-escaping="yes"/>
+    <xsl:value-of select="$docVar" disable-output-escaping="yes"/>
+    
     <xsl:choose>
       <xsl:when test="tei:teiCorpus">
         <xsl:call-template name="custom:renderWitness">
@@ -77,26 +79,7 @@ EOT
 
           </xsl:when>
           <xsl:otherwise>
-            <!--The <!DOCTYPE> below matches the default assigned by Adobe Dreamweaver CS4 and ensures that webpages created outside the application
-            (through XSLT) match those created inside.-->
-            <xsl:variable name="docVar">&#x003C;!DOCTYPE html PUBLIC &#x0022;-//W3C//DTD XHTML 1.0 Transitional//EN&#x0022; &#x0022;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#x0022;&#x003E;</xsl:variable>
-            <xsl:variable name="headerIncludeVar"><![CDATA[<?php
-$paths = array('./', '../', '../../');
-$root_path = './';
-
-foreach ($paths  as $path){
-  $filename = $path.'header.inc.php';
-  
-  if (file_exists($filename)){
-    $root_path = $path;
-    break;
-  };
-}
-define('ROOT_PATH', $root_path);
-require($root_path."header.inc.php");
-  ?>]]></xsl:variable>
-            <xsl:value-of select="$headerIncludeVar" disable-output-escaping="yes"/>
-            <xsl:value-of select="$docVar" disable-output-escaping="yes"/>
+            
             <html>
               <xsl:apply-templates/>
             </html>

@@ -30,6 +30,7 @@
   <xsl:import href="xsl_imports/tei_ref.xsl"/>
   <xsl:import href="xsl_imports/tei_main_tags.xsl"/>
   <xsl:import href="xsl_imports/witness_tags.xsl"/>
+  <xsl:import href="xsl_imports/tei_variables.xsl"/>
 
   <!--V A R I A B L E S
   The following assigns variables to frequently-used code and/or to code that, if not assigned a variable, would fail to validate and/or fail to

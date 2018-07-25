@@ -20,22 +20,23 @@
   <xsl:template match="tei:subst/tei:del">
     <xsl:choose>
 
-      <xsl:when test="@rend='erasure'">
-        <span class="subst-del-erasure">
+      <xsl:when test="@rend='erasure' or @rend='strikethrough' or @rend='scratchout'">
+        <!-- <span class="subst-del-erasure">
           <xsl:apply-templates/>
-        </span>
-      </xsl:when>
-
-      <xsl:when test="@rend='strikethrough'">
-        <span class="subst-del-strikethrough">
-          <xsl:apply-templates/>
-        </span>
+        </span> -->
+        <xsl:variable name="substVar">&#x003C;div 
+          class=&#x0022;subst-del-<xsl:value-of select="@rend"/> s-subst s-del s-<xsl:value-of select="@rend"/>&#x0022; &#x003E;</xsl:variable>
+        <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
+        <xsl:apply-templates/>
+        <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
       </xsl:when>
 
       <xsl:otherwise>
-        <span class="subst-del">
-          <xsl:apply-templates/>
-        </span>
+        <xsl:variable name="substVar">&#x003C;div 
+          class=&#x0022;subst-del s-subst s-del&#x0022; &#x003E;</xsl:variable>
+        <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
+        <xsl:apply-templates/>
+        <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
       </xsl:otherwise>
 
     </xsl:choose>
