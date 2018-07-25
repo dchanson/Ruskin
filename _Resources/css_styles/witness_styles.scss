@@ -36,11 +36,6 @@
 .runover {
 	position: absolute;
 	display: inline;
-}
-.runover.above{
-	bottom: 1em;
-}
-.runover.below{
 	bottom: -1em;
 }
 
@@ -50,4 +45,57 @@
 	.del{
 		position: relative;
 	}
+}
+
+.s-inline{
+	display: inline;
+}
+.s-subst{
+	&.s-add{
+		&.s-overwrite{
+			&.s-inline{
+				position: relative;
+			}
+			&:not(.s-inline){
+				position: absolute;
+			}
+			&.s-above{
+				top: -1em;
+			}
+			&.s-below{
+				bottom: -1em;
+			}
+		}
+		
+	}
+	
+}
+
+/* S u b s t i t u t i o n */
+
+.subst-del {
+	color: #CCC;
+	position: absolute;
+}
+.subst-del-strikethrough {
+	color: #000;
+	text-decoration: line-through;
+}
+.subst-add-above {
+	color: #000;
+	position: absolute;
+	top: -1em;
+}
+
+.subst-add-below {
+	bottom: -1em;
+	color: #000;
+	position: absolute;
+}
+.subst-add-below-overwriting {
+	bottom: -1em;
+}
+
+.subst-add-above-overwriting {
+	top: -1em;
 }

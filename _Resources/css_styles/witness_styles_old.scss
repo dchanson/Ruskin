@@ -224,7 +224,6 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 	color: #000;
 	position: absolute;
 	top: -1em;
-	display: inline-block;
 }
 .add-below {
 	bottom: -1em;
@@ -265,41 +264,6 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 	color: #000;
 	position: absolute;
 	top: -1em;
-}
-
-/* S u b s t i t u t i o n */
-
-.subst-del {
-	color: #CCC;
-	position: absolute;
-}
-.subst-del-strikethrough {
-	color: #000;
-	text-decoration: line-through;
-}
-.subst-add-above {
-	color: #000;
-	position: absolute;
-	top: -1em;
-}
-.subst-add-above-overwriting {
-	color: #000;
-	position: absolute;
-	top: -1em;
-}
-.subst-add-below {
-	bottom: -1em;
-	color: #000;
-	position: absolute;
-}
-.subst-add-below-overwriting {
-	bottom: -1em;
-	color: #000;
-	position: absolute;
-}
-.subst-add-overwriting {
-	color: #000;
-	position: relative;
 }
 
 /* J o h n   J a m e s   R u s k i n */

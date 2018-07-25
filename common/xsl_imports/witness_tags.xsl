@@ -20,25 +20,6 @@
   <xsl:template match="tei:subst/tei:del">
     <xsl:choose>
 
-      <xsl:when test="parent::tei:subst/@hand">
-        <xsl:choose>
-
-          <xsl:when test="@rend='strikethrough'">
-            <xsl:variable name="substVar">&#x003C;span class=&#x0022;subst-del-strikethrough-<xsl:value-of select="substring-after(parent::tei:subst/@hand, '#')"/>&#x0022;&#x003E;</xsl:variable>
-            <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
-            <xsl:apply-templates/>
-            <xsl:value-of select="$xspanVar" disable-output-escaping="yes"/>
-          </xsl:when>
-
-          <xsl:otherwise>
-            <span class="subst-del">
-              <xsl:apply-templates/>
-            </span>
-          </xsl:otherwise>
-
-        </xsl:choose>
-      </xsl:when>
-
       <xsl:when test="@rend='erasure'">
         <span class="subst-del-erasure">
           <xsl:apply-templates/>
@@ -63,64 +44,38 @@
   <xsl:template match="tei:subst/tei:add">
     <xsl:choose>
 
-      <xsl:when test="parent::tei:subst/@hand">
-        <xsl:choose>
-
-          <xsl:when test="@rend='overwriting' and @place='above' or @place='below'">
-            <xsl:variable name="substVar">&#x003C;div class=&#x0022;subst-add-<xsl:value-of select="@place"/>-overwriting-<xsl:value-of select="substring-after(parent::tei:subst/@hand, '#')"/>&#x0022; style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
-            <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
-            <xsl:apply-templates/>
-            <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
-          </xsl:when>
-
-          <xsl:when test="@place='above' or @place='below'">
-            <xsl:variable name="substVar">&#x003C;div class=&#x0022;subst-add-<xsl:value-of select="@place"/>-<xsl:value-of select="substring-after(parent::tei:subst/@hand, '#')"/>&#x0022; style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
-            <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
-            <xsl:apply-templates/>
-            <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
-          </xsl:when>
-
-          <xsl:when test="@rend='overwriting'">
-            <xsl:variable name="substVar">&#x003C;span class=&#x0022;subst-add-overwriting-<xsl:value-of select="substring-after(parent::tei:subst/@hand, '#')"/>&#x0022;&#x003E;</xsl:variable>
-            <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
-            <xsl:apply-templates/>
-            <xsl:value-of select="$xspanVar" disable-output-escaping="yes"/>
-          </xsl:when>
-
-          <xsl:otherwise>
-            <xsl:variable name="substVar">&#x003C;span class=&#x0022;subst-add-<xsl:value-of select="substring-after(parent::tei:subst/@hand, '#')"/>&#x0022;&#x003E;</xsl:variable>
-            <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
-            <xsl:apply-templates/>
-            <xsl:value-of select="$xspanVar" disable-output-escaping="yes"/>
-          </xsl:otherwise>
-
-        </xsl:choose>
-      </xsl:when>
-
       <xsl:when test="@rend='overwriting' and @place='above' or @place='below'">
-        <xsl:variable name="substVar">&#x003C;div class=&#x0022;subst-add-<xsl:value-of select="@place"/>-overwriting&#x0022; style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
+        <xsl:variable name="substVar">&#x003C;div 
+          class=&#x0022;subst-add-<xsl:value-of select="@place"/>-overwriting s-subst s-add s-overwrite s-<xsl:value-of select="@place"/>&#x0022; 
+          style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
         <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
         <xsl:apply-templates/>
         <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
       </xsl:when>
 
       <xsl:when test="@place='above' or @place='below'">
-        <xsl:variable name="substVar">&#x003C;div class=&#x0022;subst-add-<xsl:value-of select="@place"/>&#x0022; style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
+        <xsl:variable name="substVar">&#x003C;div 
+          class=&#x0022;subst-add-<xsl:value-of select="@place"/> s-subst s-add s-<xsl:value-of select="@place"/>&#x0022; 
+          style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
         <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
         <xsl:apply-templates/>
         <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
       </xsl:when>
 
       <xsl:when test="@rend='overwriting'">
-        <span class="subst-add-overwriting">
-          <xsl:apply-templates/>
-        </span>
+        <xsl:variable name="substVar">&#x003C;div 
+          class=&#x0022;s-subst s-add s-overwrite s-inline&#x0022;&#x003E;</xsl:variable>
+        <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
+        <xsl:apply-templates/>
+        <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
       </xsl:when>
 
       <xsl:otherwise>
-        <span class="subst-add">
-          <xsl:apply-templates/>
-        </span>
+        <xsl:variable name="substVar">&#x003C;div 
+          class=&#x0022;s-subst s-add s-inline&#x0022;&#x003E;</xsl:variable>
+        <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
+        <xsl:apply-templates/>
+        <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
       </xsl:otherwise>
 
     </xsl:choose>
@@ -150,48 +105,21 @@
 
       <xsl:when test="@rend='strikethrough'">
         <xsl:choose>
-
-          <xsl:when test="@hand">
-            <xsl:choose>
-
-              <xsl:when test="child::tei:del/@rend='strikethrough'">
-                <xsl:variable name="delVar">&#x003C;span class=&#x0022;del-strikethrough-<xsl:value-of select="substring-after(@hand, '#')"/>&#x0022;&#x003E;</xsl:variable>
-                <xsl:value-of disable-output-escaping="yes" select="$delVar"/>
-                <xsl:apply-templates/>
-                <xsl:value-of select="$xspanVar" disable-output-escaping="yes"/>
-              </xsl:when>
-
-              <xsl:otherwise>
-                <xsl:variable name="delVar">&#x003C;span class=&#x0022;del-strikethrough-<xsl:value-of select="substring-after(@hand, '#')"/>&#x0022;&#x003E;&#x003C;span class=&#x0022;SALTHOWS&#x0022;&#x003E;</xsl:variable>
-                <xsl:value-of disable-output-escaping="yes" select="$delVar"/>
-                <xsl:apply-templates/>
-                <xsl:value-of select="$xspanVar" disable-output-escaping="yes"/><xsl:value-of select="$xspanVar" disable-output-escaping="yes"/>
-              </xsl:otherwise>
-
-            </xsl:choose>
-
+          <xsl:when test="parent::tei:del/@rend='strikethrough'">
+            <xsl:variable name="delVar">&#x003C;span class=&#x0022;del-strikethrough-<xsl:value-of select="substring-after(parent::tei:del/@hand, '#')"/>-SALTHOWS&#x0022;&#x003E;</xsl:variable>
+            <xsl:value-of disable-output-escaping="yes" select="$delVar"/>
+            <xsl:apply-templates/>
+            <xsl:value-of select="$xspanVar" disable-output-escaping="yes"/>
           </xsl:when>
 
           <xsl:otherwise>
-            <xsl:choose>
-
-              <xsl:when test="parent::tei:del/@rend='strikethrough'">
-                <xsl:variable name="delVar">&#x003C;span class=&#x0022;del-strikethrough-<xsl:value-of select="substring-after(parent::tei:del/@hand, '#')"/>-SALTHOWS&#x0022;&#x003E;</xsl:variable>
-                <xsl:value-of disable-output-escaping="yes" select="$delVar"/>
-                <xsl:apply-templates/>
-                <xsl:value-of select="$xspanVar" disable-output-escaping="yes"/>
-              </xsl:when>
-
-              <xsl:otherwise>
-                <span class="del-strikethrough">
-                  <xsl:apply-templates/>
-                </span>
-              </xsl:otherwise>
-
-            </xsl:choose>
+            <span class="del-strikethrough">
+              <xsl:apply-templates/>
+            </span>
           </xsl:otherwise>
 
         </xsl:choose>
+          
       </xsl:when>
 
       <xsl:when test="@rend='underline'">
@@ -214,7 +142,6 @@
 
   <xsl:template match="tei:add">
     <xsl:choose>
-
       <xsl:when test="@place='margin-left' and @rend">
         <div class="add-margin-left-{string(@rend)}">
           <xsl:apply-templates/>
@@ -268,38 +195,13 @@
         <xsl:value-of select="$xspanVar" disable-output-escaping="yes"/>
       </xsl:when>
 
-      <xsl:when test="parent::tei:hi[contains(@rend, 'box')]">
-        <xsl:variable name="addVar">&#x003C;div class=&#x0022;add-<xsl:value-of select="parent::tei:hi/@rend"/>-<xsl:value-of select="substring-after(parent::tei:hi/@rendition, '#')"/>-<xsl:value-of select="@place"/>-<xsl:value-of select="substring-after(@hand, '#')"/>&#x0022;&#x003E;</xsl:variable>
-        <xsl:value-of disable-output-escaping="yes" select="$addVar"/>
-        <xsl:apply-templates/>
-        <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
-      </xsl:when>
-
-      <xsl:when test="@place and @hand">
-        <xsl:choose>
-
-          <xsl:when test="@place='above' or @place='below'">
-            <xsl:variable name="addVar">&#x003C;div class=&#x0022;add-<xsl:value-of select="@place"/>-<xsl:value-of select="substring-after(@hand, '#')"/>&#x0022; style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
-            <xsl:value-of disable-output-escaping="yes" select="$addVar"/>
-            <xsl:apply-templates/>
-            <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
-          </xsl:when>
-
-          <xsl:otherwise>
-            <xsl:variable name="addVar">&#x003C;div class=&#x0022;add-<xsl:value-of select="@place"/>-<xsl:value-of select="substring-after(@hand, '#')"/>&#x0022;&#x003E;</xsl:variable>
-            <xsl:value-of disable-output-escaping="yes" select="$addVar"/>
-            <xsl:apply-templates/>
-            <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
-          </xsl:otherwise>
-
-        </xsl:choose>
-      </xsl:when>
-
       <xsl:when test="@place">
         <xsl:choose>
 
           <xsl:when test="@place='above' or @place='below'">
-            <xsl:variable name="addVar">&#x003C;div class=&#x0022;add-<xsl:value-of select="@place"/>&#x0022; style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
+            <xsl:variable name="addVar">&#x003C;div 
+              class=&#x0022;add-<xsl:value-of select="@place"/>&#x0022; 
+              style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
             <xsl:value-of disable-output-escaping="yes" select="$addVar"/>
             <xsl:apply-templates/>
             <xsl:value-of select="$xdivVar" disable-output-escaping="yes"/>
@@ -319,13 +221,6 @@
         <span class="add-overwriting">
           <xsl:apply-templates/>
         </span>
-      </xsl:when>
-
-      <xsl:when test="@hand">
-        <xsl:variable name="addVar">&#x003C;span class=&#x0022;add-<xsl:value-of select="substring-after(@hand, '#')"/>&#x0022;&#x003E;</xsl:variable>
-        <xsl:value-of select="$addVar" disable-output-escaping="yes"/>
-        <xsl:apply-templates/>
-        <xsl:value-of select="$xspanVar" disable-output-escaping="yes"/>
       </xsl:when>
 
       <xsl:when test="@rend='linenumber-right-JR'">

@@ -228,59 +228,40 @@ $(document).ready(function(){
 		var allStates = ["composite", "original", "revised"];
 
 		var state = $(this).attr("data-current-state");
-		if(!state) state = allStates[1];
+		if(!state) state = allStates[0];
 		else{
 			state = allStates[(allStates.indexOf(state) +1)%allStates.length];
 		}
-		console.log('switching to', state)
+
 		switch (state) {
 			case "original":
-			$("#toggle-transcription")
-			.attr("src", window.erm.base_url + "/images/navbar/text-original.jpg");
-			$("[class*='add']").hide();
-			$("[class*='del']").show();
-			$("[class*='add-overwriting']").hide();
-			$("[class*='subst-add']").hide();
-			$("[class*='subst-del']").css("position", "initial").show()
-			$(".del-erasure").hide();
-			break;
+				$("#toggle-transcription")
+				.attr("src", window.erm.base_url + "/images/navbar/text-original.jpg");
+				
+				console.log('original');
+
+				$(".s-subst.s-add").hide();
+				$(".s-subst.s-del").show();
+				console.log('finish');
+				// $(".del-erasure").hide();
+				break;
 			case "revised":
-			$("#toggle-transcription")
-			.attr("src", window.erm.base_url + "/images/navbar/text-revised.jpg");
-			$("[class*='add']").show();
-			$("[class*='del']").hide();
-			$("[class*='add-overwriting']").show();
-			$("[class*='subst-add']").show();
-			$("[class*='subst-del']").hide();
-			break;
+				$("#toggle-transcription")
+				.attr("src", window.erm.base_url + "/images/navbar/text-revised.jpg");
+
+				$(".s-subst.s-add").show();
+				$(".s-subst.s-del").hide();
+				break;
 			default: // composite
-			$("#toggle-transcription")
-			.attr("src", window.erm.base_url + "/images/navbar/text-composite.jpg");
-			$(".del-erasure").css("position","absolute").show();
-			$("[class*='subst-del']").css("position","absolute").show();
-			$("[class*='del']").show();
+				$("#toggle-transcription")
+				.attr("src", window.erm.base_url + "/images/navbar/text-composite.jpg");
+				
+				$(".s-subst.s-add").show();
+				$(".s-subst.s-del").show();
 		}
 
 		$(this).attr("data-current-state", state);
 	});
-	// Toggle Transcriptions //
-	// $("#toggle-transcription").toggle(function(){ // Display Original Text //
-	// 	$("#toggle-transcription").attr("src", window.erm.base_url + "/images/navbar/text-original.jpg");
-	// 	$("[class*='add-overwriting']").hide();
-	// 	$("[class*='subst-add']").hide();
-	// 	$("[class*='subst-del']").css("position","relative");
-	// 	$(".del-erasure").css("position","relative");},
-	// 	function(){ // Display Revised Text //
-	// 	$("#toggle-transcription").attr("src", window.erm.base_url + "/images/navbar/text-revised.jpg");
-	// 	$("[class*='del']").hide();
-	// 	$("[class*='add-overwriting']").show();
-	// 	$("[class*='subst-add']").show();},
-	// 	function(){ // Display Composite Text (Default) //
-	// 	$("#toggle-transcription").attr("src", window.erm.base_url + "/images/navbar/text-composite.jpg");
-	// 	$(".del-erasure").css("position","absolute");
-	// 	$("[class*='subst-del']").css("position","absolute");
-	// 	$("[class*='del']").show();}
-	// );
 
 	// Toggle Hand Drop-down //
 	$("#toggle-hand").click(function(){
@@ -335,4 +316,6 @@ $(document).ready(function(){
 			updateCurrentViewMode();
 		}
 	});
+	
+	$("#toggle-transcription").click();
 });
