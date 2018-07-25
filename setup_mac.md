@@ -16,15 +16,15 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew doctor
 $ brew cask
 $ brew services list
-```
+
 $ git -C "$(brew --repo homebrew/core)" fetch --unshallow
+```
 
 * Install required packages
 ```
 $ brew install nginx
 $ brew install mysql
 $ brew install --without-apache --with-fpm --with-mysql php71
-$ brew cask
 $ brew install phpmyadmin
 ```
 
@@ -59,7 +59,6 @@ server {
         fastcgi_index  index.php;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         fastcgi_param DOCUMENT_ROOT $document_root;
-        # fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
     }
     
     location ~ \.xml$ {
