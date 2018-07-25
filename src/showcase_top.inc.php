@@ -38,22 +38,10 @@
 
 <img id="toggle-view" src="<?php echo r_build_url('images/navbar/facsimile-transcription_ro.jpg'); ?>" alt="Toggle Views Button" title="Toggle Views" width="26" height="20" />
 <div id="toggle-magnify-holder">
-	<img id="toggle-magnify" src="<?php echo r_build_url('images/navbar/magnify_ro.jpg'); ?>" alt="Magnification Button" title="Increase the Magnification of the Facsimile" width="26" height="20" />
-	<div id="navbar-magnify" title="Increase the Magnification of the Facsimile">
-		<span class="navbar-magnify-popup">Facsimile Magnification:
-
-            <br/>
-            <br/><span data-zoom-width="100%" class="navbar-magnify-text active">100%</span>
-            <br/>
-            <br/><span data-zoom-width="200%" class="navbar-magnify-text">200%</span>
-            <br/>
-            <br/><span data-zoom-width="300%" class="navbar-magnify-text">400%</span>
-            <br/>
-            <br/><span data-zoom-width="400%" class="navbar-magnify-text">800%</span>
-            <br/>
-            <br/>
-		</span>
-	</div>
+	<img id="toggle-magnify-img" 
+		src="<?php echo r_build_url('images/navbar/magnify_ro.jpg'); ?>" 
+		alt="Magnification Button" 
+		title="Increase the Magnification of the Facsimile" /> <span id="toggle-magnify-text">100%</span>
 </div>
 <div id="toggle-enlarge-holder">
 	<img id="toggle-enlarge" src="<?php echo r_build_url('images/navbar/enlarge_ro.jpg'); ?>" alt="Point Size Button" title="Increase the Point Size of the Transcription" width="26" height="20" />

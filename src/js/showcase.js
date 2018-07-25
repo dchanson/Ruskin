@@ -28,7 +28,23 @@ if(window.erm.facsimiles.length){
 }
 
 $(document).ready(function(){
+	
+	var toggleZoom=function(){
 
+		var zoomLevels = [100, 200, 300, 400];
+		
+		var handle = $('#toggle-magnify-holder');
+		
+		var state = handle.attr('data-zoom');
+		
+		state = (!!state)?parseInt(state):zoomLevels[0];
+		
+		state = zoomLevels[(zoomLevels.indexOf(state) +1)%zoomLevels.length];
+		
+		handle.attr('data-zoom', state);
+		$('#facs_preview, #facs').css('width', state+'%');
+		$("#toggle-magnify-text").text(state+'%');
+	}
 
 	var selectFacsimile = function(index){
 		if(!window.erm.facsimiles.length) return;
@@ -66,7 +82,7 @@ $(document).ready(function(){
 		$("#navbar").css("height", "30px");
 		$("[src*='"+window.erm.base_url + "/images/navbar']").css({"height":"30px", "width":"39px"});
 		$("[src='"+window.erm.base_url + "/images/navbar/navbar.jpg']").css({"width":"600", "height":"44"});
-		$(".navbar-facsimile-text, .navbar-magnify-text, .navbar-enlarge-text, .navbar-hand-text, .navbar-facsimile-item").css({"font-size":"10pt", "line-height":"20px"});
+		$(".navbar-facsimile-text, .navbar-enlarge-text, .navbar-hand-text, .navbar-facsimile-item").css({"font-size":"10pt", "line-height":"20px"});
 		$("#navbar-tab").css({"height":"18px", "width":"36px"});
 		$("#toggle-navbar").css({"height":"15px", "width":"30px"});
 		$("#first_button").css("margin-left", "68px");
@@ -75,7 +91,6 @@ $(document).ready(function(){
 		$("#navbar-facsimile").css({"left":"162px", "top":"30px", "width":"150px"});
 		$("#navbar-facs").css({"left":"296px", "top":"30px"});
 		$("#toggle-view").css("margin-left", "30px");
-		$("#navbar-magnify").css({"left":"390px", "top":"30px"});
 		$("#navbar-enlarge").css({"left":"429px", "top":"30px"});
 		$("#toggle-transcription").css("margin-left", "30px");
 		$("#navbar-hand").css({"left":"524px", "top":"30px"});
@@ -106,7 +121,6 @@ $(document).ready(function(){
 
 	// Toggle facsimile Drop-down //
 	$("#navbar-location").click(function(){
-		$("#navbar-magnify").hide();
 		$("#navbar-enlarge").hide();
 		$("#navbar-hand").hide();
 		$("#navbar-info").hide();
@@ -189,18 +203,11 @@ $(document).ready(function(){
 	});
 
 	// Toggle Magnification Drop-down //
-	$("#toggle-magnify").click(function(){
-		$("#navbar-facsimile").hide();
-		$("#navbar-enlarge").hide();
-		$("#navbar-hand").hide();
-		$("#navbar-info").hide();
-		$("#navbar-magnify").toggle();
-	});
+	$("#toggle-magnify-holder").click(toggleZoom);
 
 	// Toggle Point Size Drop-down //
 	$("#toggle-enlarge").click(function(){
 		$("#navbar-facsimile").hide();
-		$("#navbar-magnify").hide();
 		$("#navbar-hand").hide();
 		$("#navbar-info").hide();
 		$("#navbar-enlarge").toggle();
@@ -215,15 +222,6 @@ $(document).ready(function(){
 		$('.witness').css('line-height', '1.5em');
 		$('.witness').css('font-size', sizes[0]);
 		$('.smallcaps').css('font-size', sizes[1]);
-	});
-
-	$(".navbar-magnify-text").click(function(){
-		$(".navbar-magnify-text").removeClass('active');
-		$(this).addClass('active');
-
-		var sizes = $(this).attr('data-zoom-width').split(',');
-
-		$('#facs_preview, #facs').css('width', sizes[0]);
 	});
 
 	$("#toggle-transcription").click(function(){
@@ -287,7 +285,6 @@ $(document).ready(function(){
 	// Toggle Hand Drop-down //
 	$("#toggle-hand").click(function(){
 		$("#navbar-facsimile").hide();
-		$("#navbar-magnify").hide();
 		$("#navbar-enlarge").hide();
 		$("#navbar-info").hide();
 		$("#navbar-hand").toggle();
@@ -296,7 +293,6 @@ $(document).ready(function(){
 	// Close Drop-downs //
 	$("#content, #first_button, #previous_button, #next_button, #last_button, #toggle-view, #toggle-marginalia, #toggle-expansion").click(function(){
 		$("#navbar-facsimile").hide();
-		$("#navbar-magnify").hide();
 		$("#navbar-enlarge").hide();
 		$("#navbar-hand").hide();
 		$("#navbar-info").hide();
@@ -305,7 +301,6 @@ $(document).ready(function(){
 	// Toggle Info Panel //
 	$("#toggle-info").click(function(){
 		$("#navbar-facsimile").hide();
-		$("#navbar-magnify").hide();
 		$("#navbar-enlarge").hide();
 		$("#navbar-hand").hide();
 		$("#navbar-info").toggle();

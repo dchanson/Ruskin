@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 .anthology, .manuscript {
 	color: #000;
 	font-family: Andron;
@@ -467,22 +465,6 @@ body {
 	height: 20px;
 	width: 110px;
 }
-#navbar-location {
-	border: 1px solid #666;
-	display: inline-block;
-	font-family: Arial;
-	font-size: 8pt;
-	font-weight: bold;
-	height: 14px;
-	margin-left: 8px;
-	margin-right: 8px;
-	margin-top: 2px;
-	text-align: center;
-	vertical-align: top;
-	width: 75px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-}
 #navbar-facsimile {
 	background-color: #000;
 	border: 1px solid #666;
@@ -534,9 +516,7 @@ body {
 	margin-left: 20px;
 }
 
-#toggle-magnify-holder{
-	display: inline-block;
-}
+
 #navbar-magnify {
 	background-color: #000;
 	border: 1px solid #666;
@@ -549,31 +529,6 @@ body {
 	-webkit-border-bottom-left-radius: 5px;
 	-webkit-border-bottom-right-radius: 5px;
 }
-.navbar-magnify-text {
-	color: #FFF;
-	font-family: Arial;
-	font-size: 8pt;
-	font-weight: bold;
-	line-height: 14px;
-	padding-left: 5px;
-	padding-right: 15px;
-	vertical-align: bottom;
-}
-
-.navbar-magnify-popup {
-	color: #FFF;
-	font-family: Arial;
-	font-size: 8pt;
-	font-weight: bold;
-	line-height: 14px;
-	padding-left: 5px;
-	padding-right: 15px;
-	vertical-align: bottom;
-}
-.navbar-magnify-text.active{
-	color:#09C;
-}
-
 
 #toggle-enlarge-holder{
 	display: inline-block;
@@ -752,10 +707,41 @@ position: fixed;
 }
 
 .navbar-facsimile-item:hover,
-.navbar-magnify-text:hover,
 .navbar-enlarge-text:hover
  {
 	background: #333;
+}
+
+#toggle-magnify-holder, 
+#navbar-location{
+	border: 1px solid #666;
+	display: inline-block;
+	font-family: Arial;
+	font-size: 8pt;
+	font-weight: bold;
+	height: 14px;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 4px;
+	text-align: center;
+	vertical-align: top;
+	width: 75px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: white;
+}
+#toggle-magnify-text{
+	display: inline-block;
+	float: right;
+	margin-right: 9px;
+}
+#toggle-magnify-img{
+	width: 26px;
+	height: 20px;
+	display: inline-block;
+	float: left;
+	margin-left: 9px;
+	margin-top: -4px;
 }
 
 .navbar-facsimile-item.active, #navbar-location{
@@ -804,8 +790,8 @@ div.drawing{
   line-height: 1.2em;
 }
 #first_button, #previous_button, #navbar-location, 
-#next_button, #last_button, #toggle-view, #toggle-magnify, #toggle-enlarge,
+#next_button, #last_button, #toggle-view, #toggle-magnify-holder, #toggle-enlarge,
 #toggle-transcription, #toggle-hand, #toggle-info, .navbar-facsimile-item, 
-.navbar-magnify-text, .navbar-enlarge-text{
+.navbar-enlarge-text{
 	cursor: pointer;
 }
