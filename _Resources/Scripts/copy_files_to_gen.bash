@@ -55,40 +55,28 @@ done
 echo "Deleting existing files..."
 rm -rf 'deploy'
 
-echo "SYMLINK is $SYMLINK"
+echo "Copying source files to $OUT";
+# cp -r src $OUT
+rsync -a --no-l \
+  --exclude-from="_Resources/deploy_exclude_list.txt"\
+  --cvs-exclude \
+  --filter="dir-merge,- .gitignore" \
+  src/. $OUT >/dev/null
+  
+cp src/$(readlink src/index.php) $OUT/index.php
 
-if [ "$SYMLINK" -eq "0" ]; then
-	echo "Coying files";
-else
-	echo "Symlinking files";
-fi
-
-echo "Handling source files"
-if [ "$SYMLINK" -eq "0" ]; then
-	echo "Copying source files to $OUT";
-	cp -r src $OUT
-
-	echo "Copying images"
-	cp -r _Resources/images $OUT/
-
-else
-	echo "Symlinking src to $OUT";
-	ln -s src $OUT
-
-	echo "Linking Images"
-	ln -sf "`pwd`/_Resources/images/" $OUT/
-
-fi
+echo "Copying images"
+cp -r _Resources/images $OUT/
 
 echo "Copying XML transformations to $OUT"
-rsync -r gen/_Completed/. $OUT/
-rsync -r "gen/_In%20Process/." $OUT/
+rsync -r gen/_Completed/. $OUT/ >/dev/null
+rsync -r "gen/_In%20Process/." $OUT/ >/dev/null
 
 echo "Handling config"
 if [ "$SYMLINK" -eq "0" ]; then
-    echo "Overriting config.json"
+    echo "Overwriting config.json"
     rm -f $OUT/config.json.php $OUT/config_template.json.php
-    mv "$OUT/config_production.json.php" "$OUT/config.json.php"
+    cp "src/config_production.json.php" "$OUT/config.json.php"
 fi
 
 if [ "$SYMLINK" -eq "0" ]; then
@@ -104,6 +92,14 @@ if [ "$SYMLINK" -eq "0" ]; then
     cp -r "_Resources/fonts" "$OUT/fonts"
 fi
 
+echo "Copying private directory"
+rm -rf "$OUT/private"
+cp -r "_Resources/private" "$OUT/private"
+
+echo "Copying scss"
+cp -r "_Resources/css_styles" "$OUT/private/css_styles"
+rm -rf "$OUT/private/css_styles/scss_cache"
+
 if [ "$SYMLINK" -eq "0" ]; then
   echo "Handling .htaccess files"
 
@@ -117,5 +113,6 @@ if [ "$SYMLINK" -eq "0" ]; then
     cp $filename $htpath3
   done
 fi
+
 
 echo "All done."
