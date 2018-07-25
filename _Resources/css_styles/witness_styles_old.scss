@@ -220,52 +220,6 @@ All hands are assigned the following default styles: add, add-above, add-below, 
 	text-decoration: underline;
 }
 
-.add-above {
-	color: #000;
-	position: absolute;
-	top: -1em;
-}
-.add-below {
-	bottom: -1em;
-	color: #000;
-	position: absolute;
-}
-.add-margin-left {
-	color: #000;
-	left: -1.5em;
-	position: absolute;
-}
-.add-margin-left-counterclockwise {      /* x New 04/06/16 */
-	color: #000;
-	left: -3.5em;
-	position: absolute;
-	transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-}
-.add-margin-right {
-	color: #000;
-	right: 0em;
-	position: absolute;
-}
-.add-margin-right-counterclockwise {     /* x New 04/06/16 */
-	color: #000;
-	right: 0em;
-	position: absolute;
-	transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-}
-.add-overwriting {
-	color: #000;
-	position: relative;
-}
-.add-runover-above {                     /* ~ New 04/06/16 */
-	color: #000;
-	position: absolute;
-	top: -1em;
-}
-
 /* J o h n   J a m e s   R u s k i n */
 
 .JJR {
@@ -711,43 +665,6 @@ position: fixed;
 .navbar-facsimile-item.active, #navbar-location{
 	color: white;
 
-}
-
-
-
-
-#account_toc_msviii_addictional_sections_table td:nth-child(1){
-	width: 15%;
-}
-#account_toc_msviii_addictional_sections_table td:nth-child(2){
-	width: 15%;
-}
-#account_toc_msviii_addictional_sections_table td:nth-child(3){
-
-}
-
-
-#account_toc_msviii_table_1 td:nth-child(1){
-	width: 8%;
-}
-
-#account_toc_msviii_table_1 td:nth-child(2){
-	width: 40%;
-}
-#account_toc_msviii_table_1 td:nth-child(3){
-	width: 20%;
-}
-
-
-#account_toc_msviii_table_2 td:nth-child(1){
-	width: 15%;
-}
-
-#account_toc_msviii_table_2 td:nth-child(2){
-	width: 40%;
-}
-#account_toc_msviii_table_2 td:nth-child(3){
-	width: 45%;
 }
 
 div.drawing{
