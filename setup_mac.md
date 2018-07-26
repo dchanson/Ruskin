@@ -6,6 +6,13 @@ Asserting that the Ruskin directory is located at `/Users/sluuser/Ruskin`, the f
 $ xcode-select --install
 ```
 
+* `git` stuffs
+```
+$ cd ~/Ruskin/
+$ git pull
+$ make
+```
+
 * Install `brew`
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -16,16 +23,18 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew doctor
 $ brew cask
 $ brew services list
-```
+
 $ git -C "$(brew --repo homebrew/core)" fetch --unshallow
+```
 
 * Install required packages
 ```
 $ brew install nginx
 $ brew install mysql
 $ brew install --without-apache --with-fpm --with-mysql php71
-$ brew cask
 $ brew install phpmyadmin
+$ brew install composer
+$ brew install imagemagick
 ```
 
 * Add `/etc/hosts` record
@@ -59,7 +68,6 @@ server {
         fastcgi_index  index.php;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         fastcgi_param DOCUMENT_ROOT $document_root;
-        # fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
     }
     
     location ~ \.xml$ {
@@ -75,6 +83,14 @@ $ brew services start mysql
 $ brew services start nginx
 $ brew services start php@7.1
 ```
+
+* Install composer packages
+```
+$ cd ~/Ruskin
+$ composer install
+```
+
+* Pre-run scripts
 
 * Maintenance
 ```
