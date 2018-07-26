@@ -4,7 +4,6 @@ echo "Executing post-merge hook..."
 
 echo "git dir located at $GIT_DIR"
 
-OSTYPE="darwin100"
 case "$OSTYPE" in
   "darwin"* | "linux-gnu"*)
     echo "Either macOS or GNU/Linux detected."
