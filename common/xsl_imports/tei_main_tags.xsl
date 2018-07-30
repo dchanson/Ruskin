@@ -25,9 +25,9 @@ define(&#x022;FACS_FILE_NAMES&#x022;, &#x003C;&#x003C;&#x003C;EOT
 <xsl:value-of select="$facsFileNames" disable-output-escaping="no"/>
 EOT
 );
-      require_once (ROOT_PATH.&#x022;layout_includes/showcase_top.inc.php&#x022;)
       ?&#x003E;
     </xsl:value-of>
+    <xsl:value-of select="$showCaseTopPhpVar" />
 
     <div id="content-left">
       <img id="facs_preview" src="" width="100%"/>
@@ -55,7 +55,7 @@ EOT
         <xsl:call-template name="tei:pb" />
       </xsl:for-each>
     </div>
-    <xsl:value-of disable-output-escaping="yes" select="'&#x003C;?php require_once(ROOT_PATH.&#x022;layout_includes/showcase_bottom.inc.php&#x022;) ?&#x003E;'" />
+    <xsl:value-of select="$showCaseBottomPhpVar" />
 
 </xsl:template>
 
@@ -136,7 +136,6 @@ EOT
       </xsl:when>
 
       <xsl:otherwise>
-        <xsl:variable name="phpVar">&#x003C;?php require_once(&#x022;../layout_includes/navigation.inc.php&#x022;); ?&#x003E;</xsl:variable>
         <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
         <xsl:apply-templates/>
       </xsl:otherwise>

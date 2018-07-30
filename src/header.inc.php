@@ -38,3 +38,12 @@ if(!function_exists('r_get_config')){
     return $r_config;
   }
 }
+
+if(!function_exists('r_server_base')){
+  function r_server_base(){
+    if(!defined('ROOT_PATH')){
+      die('root path not set. r_server_base() can not be obtained.');
+    }
+    return ROOT_PATH;
+  }
+}

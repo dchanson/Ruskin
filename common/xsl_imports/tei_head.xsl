@@ -49,14 +49,6 @@
           <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus' or @type='note' or @type='figure']">
             <xsl:choose>
 
-              <xsl:when test="following::tei:div/@xml:id='LOCATION'">
-                <div id="top" class="page-title">
-                  <xsl:apply-templates/>
-                </div>
-                <xsl:variable name="phpVar">&#x003C;?php require_once(&#x022;../layout_includes/navigation-manuscript.inc.php&#x022;); ?&#x003E;</xsl:variable>
-                <xsl:value-of select="$phpVar" disable-output-escaping="yes"/>
-              </xsl:when>
-
               <xsl:when test="ancestor::*[@type='note']">
                 <div id="top" class="page-title">
                   <xsl:apply-templates/>
@@ -69,14 +61,6 @@
                 </div>
                 <br />
               </xsl:when>
-
-              <xsl:otherwise>
-                <div id="top" class="page-title">
-                  <xsl:apply-templates/>
-                </div>
-                <xsl:variable name="phpVar">&#x003C;?php require_once(&#x022;../layout_includes/navigation-work.inc.php&#x022;); ?&#x003E;</xsl:variable>
-                <xsl:value-of select="$phpVar" disable-output-escaping="yes"/>
-              </xsl:otherwise>
 
             </xsl:choose>
           </xsl:when>

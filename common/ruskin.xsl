@@ -33,20 +33,4 @@
   <xsl:import href="xsl_imports/witness_tags.xsl"/>
   <xsl:import href="xsl_imports/tei_variables.xsl"/>
 
-  <!--V A R I A B L E S
-  The following assigns variables to frequently-used code and/or to code that, if not assigned a variable, would fail to validate and/or fail to
-  output correctly. Variables appear after "name="; output in the associated comment to the right. Variables that begin with "x" output closing
-  tags.-->
-
-  <xsl:variable name="brVar">&#x003C;br/&#x003E;</xsl:variable>                   <!--<br/>       -->
-  <xsl:variable name="xaVar">&#x003C;/a&#x003E;</xsl:variable>                    <!--</a>        -->
-  <xsl:variable name="xdivVar">&#x003C;/div&#x003E;</xsl:variable>                <!--</div>      -->
-  <xsl:variable name="xspanVar">&#x003C;/span&#x003E;</xsl:variable>              <!--</span>     -->
-  <xsl:variable name="xtableVar">&#x003C;/table&#x003E;</xsl:variable>            <!--</table>    -->
-  <xsl:variable name="xtrVar">&#x003C;/tr&#x003E;</xsl:variable>            <!--</table>    -->
-  <xsl:variable name="xtdVar">&#x003C;/td&#x003E;</xsl:variable>            <!--</table>    -->
-  <xsl:variable name="navigationPhpVar">&#x003C;?php require_once(ROOT_PATH.&#x022;layout_includes/navigation.inc.php&#x022;); ?&#x003E;</xsl:variable>
-  <xsl:variable name="topBtnPhpVar">&#x003C;?php require_once(ROOT_PATH.&#x022;layout_includes/top_button.inc.php&#x022;); ?&#x003E;</xsl:variable>
-  <xsl:variable name="siteTopPhpVar">&#x003C;?php require_once(ROOT_PATH.&#x022;layout_includes/site_top.inc.php&#x022;); ?&#x003E;</xsl:variable>
-
 </xsl:stylesheet>
