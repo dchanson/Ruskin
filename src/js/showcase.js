@@ -46,16 +46,6 @@ $(document).ready(function(){
 		$("#toggle-magnify-text").text(state+'%');
 	}
 
-	var showLineNumbers = function(){
-		$(".l").each(function(ind, elem){
-			if(ind %5 != 4)return;
-			
-			var lineNumber = ind+1;
-			var tag = $("<span class='s-line-number'>"+lineNumber+"</span>");
-			tag.appendTo(elem);
-		});
-	}
-	
 	var selectFacsimile = function(index){
 		if(!window.erm.facsimiles.length) return;
 
@@ -324,5 +314,4 @@ $(document).ready(function(){
 	});
 	
 	$("#toggle-transcription").click();
-	showLineNumbers();
 });

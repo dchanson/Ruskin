@@ -225,8 +225,13 @@
       </xsl:when>
 
       <xsl:when test="@rend='linenumber-right-JR'">
-        <div class="linenumber-right-JR">
-          <xsl:apply-templates/>
+        <div class="s-line-number s-line-number-ruskin linenumber-right-JR">
+          <div class="tooltip">
+             Ruskin's line number
+          </div>
+          <a href="javascript:void(0)">
+            <xsl:apply-templates/>
+          </a>
         </div>
       </xsl:when>
 
@@ -285,6 +290,7 @@
 
   xdivVar inserts a </div> before the </span> when a <l> contains a <lb>.-->
   <xsl:template match="tei:l">
+    
     <xsl:choose>
 
       <xsl:when test="child::tei:lb/@type='runover'">
@@ -297,6 +303,7 @@
         <xsl:otherwise>
           <span class="l">
             <xsl:apply-templates/>
+            <xsl:call-template name="custom:printLineNumber" />
           </span>
           <xsl:value-of select="$brVar" disable-output-escaping="yes"/>
         </xsl:otherwise>

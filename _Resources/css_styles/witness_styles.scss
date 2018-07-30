@@ -1,6 +1,9 @@
 @import "styles_common";
 @import "witness_styles_old";
 
+@import "components/showcase/account_toc";
+@import "components/showcase/linenumber";
+
 .overwriting {
 	font-weight: bold;
 }
@@ -155,45 +158,4 @@
 	color: #000;
 	position: absolute;
 	top: -1em;
-}
-
-.witness{
-	.s-line-number{
-		display: inline-block;
-		float: right;
-	}
-}
-
-#account_toc_msviii_addictional_sections_table{
-	td:nth-child(1){
-		width: 15%;
-	}
-	td:nth-child(2){
-		width: 15%;
-	}
-	td:nth-child(3){
-
-	}
-}
-#account_toc_msviii_table_1{
-	td:nth-child(1){
-		width: 8%;
-	}
-	td:nth-child(2){
-		width: 40%;
-	}
-	td:nth-child(3){
-		width: 20%;
-	}
-}
-#account_toc_msviii_table_2{
-	td:nth-child(1){
-		width: 15%;
-	}
-	td:nth-child(2){
-		width: 40%;
-	}
-	td:nth-child(3){
-		width: 45%;
-	}
 }
