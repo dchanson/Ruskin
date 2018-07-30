@@ -1,16 +1,25 @@
 <?php
+require_once 'header.inc.php';
+
 if(!isset($_REQUEST['open']))die;
 
 $open = $_REQUEST['open'];
 $open = preg_replace("/(\.\.\/)/","", $open);
 $open = preg_replace("/\.xml$/", ".php", $open);
 
-$path = dirname(__DIR__);
+$path = dirname(__DIR__)."/_xml/";
 
 if(strpos($open, $path) != 0){
   die("You can not open external links.");
 }
 
-$open = str_replace($path, "../gen", $open);
+$open = str_replace($path, "", $open);
+$open = str_replace("_Completed/", "", $open);
+$open = str_replace("_In_Process/", "", $open);
 
-require $open;
+$open = r_build_url($open);
+
+header("Location: $open");
+
+// echo $open;
+die;
