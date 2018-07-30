@@ -3,8 +3,6 @@
 <?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="tour_of_1833_note">
             <titleStmt>
                 <title type="main">Tour of 1833</title>
@@ -19,12 +17,10 @@
                     <persName corresp="#DCH">David C. Hanson</persName>
                 </principal>
                 <respStmt>
-                    <!--For xml:id, enter your first, middle, and last intials.-->
                     <persName corresp="#KBV">Kyle B. Volkmann</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <respStmt>
-                    <!--For corresp, enter your first, middle, and last intials.-->
                     <persName corresp="#LAL">Lauren A. Lambert</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
@@ -77,62 +73,53 @@
                     and in <date when="1833">1833</date>, as in <date when="1825">1825</date>, the family benefited from the rapid rise of efficent and inexpensive travel to the <geogName corresp="#CONTINENT">Continent</geogName> by steam. 
                     For these developments in travel across the <placeName corresp="#ENGLISHCHANNEL">English Channel</placeName>, which the Ruskins enjoyed 
                     along with thousands of middle&#x2010;class British travelers in the decades after the <date when="1815-06-18">Battle of <placeName corresp="#WATERLOO">Waterloo</placeName></date>, 
-                    see <ref type="note" subtype="contextual" target="tour_of_1825_note.php">Tour of <date when="1825">1825</date></ref>. 
+                    see <ref type="note" subtype="contextual" target="touring_and_travel_on_the_continent_note.php">Touring and Travel on the Continent</ref>. 
                     In <date when="1833">1833</date>, steam packets departed daily between <date notBefore="1833-04" notAfter="1833-11">April and November</date> for <placeName corresp="#CALAIS">Calais</placeName> 
                     from the <placeName corresp="#TOWEROFLONDON">Tower of London</placeName>, and five days per week from <geogName corresp="#DOVERCLF">Dover</geogName>, 
                     which was where the Ruskins boarded. Traveling to <placeName corresp="#BELGIUM">Belgium</placeName> in the same year as the Ruskins, 
-                    <persName corresp="#FMT">Frances Trollope</persName> (<date notBefore="1769" notAfter="1863">1779&#x2013;1863</date>) found that her steam vessel was &#x201C;dirty, and the fare both bad and insufficient,&#x201D; 
+                    <persName corresp="#FMT">Frances Trollope</persName> (<date notBefore="1769" notAfter="1863">1779&#x2013;1863</date>) found that her steam vessel was &#x201C;dirty, and the fare both bad and insufficient&#x201D;, 
                     especially for the &#x201C;many children aboard&#x201D; 
                     (<ref type="bibliography" target="bibliography.php#TROLLOPEBELGIUM"><persName corresp="#FMT">Trollope</persName>, <title type="book" corresp="#TROLLOPEBELGIUM"><hi rend="italic"><placeName corresp="#BELGIUM">Belgium</placeName> and Western <placeName corresp="#GERMANY">Germany</placeName> in <date when="1833">1833</date></hi></title></ref>, 1:2) 
-                    In contrast, <persName corresp="#MRC">Mary Richardson</persName>, proud that the Ruskin family &#x201C;went by English packet (not French),&#x201D; 
+                    In contrast, <persName corresp="#MRC">Mary Richardson</persName>, proud that the Ruskin family &#x201C;went by English packet (not French)&#x201D;, 
                     commented that there were &#x201C;not many passengers but all kept well&#x201D; 
                     (<ref type="bibliography" target="bibliography.php#RFT48"><title type="manuscript" corresp="#RFT48">Diary of Mary Richardson, <date when="1833">1833</date></title></ref>, p. 1).
                 </p>
-                <p>Besides relying on their courier, <ref type="note" subtype="biographical" target="salvador_note.php"><persName corresp="#SALVADOR">Salvador</persName></ref>, the Ruskins carried guidebooks, 
-                    which in the <date notBefore="1820" notAfter="1835">1820s through the mid&#x2010;1830s</date> were undergoing a transition. 
-                    The vade mecum for English travelers landing in <placeName corresp="#NORMANDY">Normandy</placeName> 
-                    and the Low Countries, <persName corresp="#JM">John Murray</persName>&#x02BC;s 
+                <p>As a guide, the Ruskins for the first time employed the services of a cicerone, <ref type="note" subtype="biographical" target="salvador_note.php"><persName corresp="#SALVADOR">Salvador</persName></ref>. 
+                    They also carried guidebooks, as they did on all their tours. These texts, prior to the appearance in <date when="1836">1836</date> of 
+                    the vade&#x2010;mecum for English travelers on the Continent, <persName corresp="#JM">John Murray III</persName>&#x02BC;s 
                     <ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><title type="book" corresp="#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand&#x2010;book for Travellers on the <geogName corresp="#CONTINENT">Continent</geogName></hi></title></ref>, 
-                    did not become available until <date when="1836">1836</date>. Whereas <persName corresp="#JM">Murray</persName>&#x02BC;s 
-                    <title type="book" corresp="#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand&#x2010;book</hi></title> is now often credited with founding the genre of the modern English traveler&#x02BC;s guidebook, 
-                    for earlier journeys like the Ruskins&#x02BC;, taken after the reopening of the <geogName corresp="#CONTINENT">Continent</geogName> following the <date when="1815-06-18">Battle of <placeName corresp="#WATERLOO">Waterloo</placeName></date> in  
-                    <date notBefore="1815" notAfter="1836">1815 and continuing through the mid&#x2010;1830s</date>, travelers relied on publications that combined personal travel narrative with some practical advice. 
-                    As <persName corresp="#PF">Pieter Fran&#x00E7;ois</persName> has shown, in the period prior to the publication of <persName corresp="#JM">Murray</persName>&#x02BC;s <title type="book" corresp="#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand&#x2010;book</hi></title>, 
-                    there appeared numerous examples of the guidebook genre, particularly relating to the Low Countries, but in an emergent and somewhat inchoate form. 
-                    Only gradually, after <date when="1815-06-18">Waterloo</date>, the modern guidebook emerged as a genre distinct from the so&#x2010;called 
-                    <hi rend="italic">travel account</hi>, in that the guidebook came to offer mainly practical travel advice, 
-                    whereas the more traditional travel account emphasized topographical description and narrative from an individual perspective 
-                    (albeit not too individualistic, lest decorum and authority seem to succumb to eccentricity). In the immediate <date notBefore="1815-06-18">post&#x2010;Waterloo</date> period, 
-                    these genres were often mixed in the same book, with traces of the <date notBefore="1701" notAfter="1800">eighteenth&#x2010;century</date> travel account governing the narrative (for example, in the adoption of an epistolary form), 
-                    while tables of practical advice were added to recommend the book in a crowded field 
-                    (<ref type="bibliography" target="bibliography.php#FRANCOIS1815"><persName corresp="#PF">Fran&#x00E7;ois</persName>, <title type="essay" corresp="#FRANCOIS1815">&#x201C;If It&#x02BC;s <date when="1815">1815</date>, This Must Be <placeName corresp="#BELGIUM">Belgium</placeName>&#x201D;</title></ref>, 76&#x2013;82).
+                    were undergoing a transition from the <date notBefore="1701" notAfter="1800">eighteenth&#x2010;century</date> travel narrative (often in epistolary form) 
+                    to the organized manual of practical advice and digest of historical information found in the modern guidebook 
+                    (see <ref type="note" subtype="contextual" target="touring_and_travel_on_the_continent_note.php">Touring and Travel on the Continent</ref>).</p>
+                <p>A number of these transitional texts were also updated reissues of travel works that had appeared earlier in the century, particularly from when the Continent reopened following the end 
+                    of the <date notBefore="1799-11-09" notAfter="1815-06-18">Napoleonic Wars</date>. An example used by the Ruskins in <date when="1833">1833</date> is 
+                    <ref type="bibliography" target="bibliography.php#EBELTRAVELLERSGUIDE"><title type="book" corresp="EBELTRAVELLERSGUIDE"><hi rend="italic">The Traveller&#x02BC;s Guide through Switzerland</hi></title></ref> (<date when="1820">1817</date>), 
+                    which <persName corresp="#NTP">Nicholas Parsons</persName> calls &#x201C;a bastardisation and plagiarism&#x201D; of <persName corresp="JGE">Johann Gottfried Ebel</persName>&#x02BC;s (<date notBefore="1764" notAfter="1830">1764&#x2013;1830</date>)
+                    <title type="book" corresp="#EBELANLEITUNG"><hi rend="italic">Anleitung auf die n&#x00FC;tzlichste und genu&#x00DF;vollste Art die Schweiz zu bereisen</hi></title> (<date when="1793">1793</date>; 2d ed., <date when="1804">1804</date>), 
+                    but which the adapter, <persName corresp="#DWALL">Daniel Wall</persName>, characterizes as &#x201C;Ebel&#x02BC;s Switzerland in miniature&#x201D;, a &#x201C;<hi rend="italic">portable</hi> volume&#x201D; 
+                    preferred by the tourist who &#x201C;would feel greatly disappointed to meet with merely a Dictionary, however complete, when he stood in need of a <hi rend="italic">Guide</hi>&#x201D; (pp. iii&#x2013;iv). 
+                    <persName corresp="JGE">Ebel</persName>&#x02BC;s <ref type="bibliography" target="bibliography.php#EBELVOYAGEURENSUISSE"><title type="book" corresp="EBELVOYAGEURENSUISSE"><hi rend="italic">Manuel du Voyageur en Suisse</hi></title></ref> (<date when="1820">1818</date>) is 
+                    associated (in an <date notBefore="1830" notAfter="1831">1830&#x2013;31</date> edition) with the Ruskins&#x02BC; <ref type="note" subtype="contextual" target="tour_of_1835_note.php">Tour of 1835</ref>, 
+                    but the English adaptation was cited directly in <date notBefore="1833" notAfter="1834">1833&#x2013;34</date> by <persName corresp="#JR">Ruskin</persName> and <persName corresp="#MCR">Mary Richardson</persName>, 
+                    and is listed in <persName corresp="#JJR">John James Ruskin</persName>&#x02BC;s accounts as &#x201C;Edel [sic] Switz<hi rend="superscript">d</hi>&#x201D; as a <date when="1833-05-02">2 May 1833</date> purchase 
+                    along with &#x201C;Kellar [sic], Map&#x201D;&#x2014;the latter referring to the map of <placeName corresp="#SWITZERLAND">Switzerland</placeName> (first version, <date when="1813">1813</date>)
+                    by <persName corresp="#HK">Heinrich Keller</persName> (<date notBefore="1778" notAfter="1862">1778&#x2013;1862</date>), which was sold with <title type="book" corresp="EBELTRAVELLERSGUIDE"><hi rend="italic">The Traveller&#x02BC;s Guide through Switzerland</hi></title>, 
+                    and which <persName corresp="#JM">Murray</persName>&#x02BC;s <date when="1838">1838</date> <title type="book" corresp="#MURRAYSHANDBOOKSWITZERLAND1838"><hi rend="italic">Hand&#x2010;book for Travellers in Switzerland</hi></title> 
+                    placed &#x201C;at the head of the list of requisites for travelling in Switzerland&#x201D; since it almost constituted a guidebook in itself, by indicating, 
+                    &#x201C;not only every place and every road, but . . . each kind of road, whether carriage, char, bridle&#x2010;road, or foot&#x2010;path; marking at the same time 
+                    the heights of the mountains, the depths of the lakes, the waterfalls, points of view, and other remarkable objects&#x201D;. 
+                    (<persName corresp="#JM">Murray</persName> advised acquisition of <persName corresp="#HK">Keller</persName>&#x02BC;s own edition [<placeName corresp="#ZURICH">Zurich</placeName>, <date when="1833">1833</date>], 
+                    since &#x201C;English and French copies&#x201D; were &#x201C;very inferior&#x201D;; for a digital copy, see 
+                    <ref type="bibliography" target="bibliography.php#KELLERSCHWEIZ"><persName corresp="#HK">Keller</persName>, <title type="map" corresp="#KELLERSCHWEIZ"><hi rend="italic">Reisecharte der Schweiz</hi></title></ref>.)
+                    (<ref type="bibliography" target="bibliography.php#PARSONSWORTHTHEDETOUR"><persName corresp="#NTP">Parsons</persName>, <hi rend="italic">Worth the Detour</hi></ref>, 337 n. 22; 
+                    <ref type="bibliography" target="bibliography.php#DEARDENRUSKINLIBRARY"><persName corresp="#JSD">Dearden</persName>, <hi rend="italic">The Library of John Ruskin</hi></ref>, 104 [no. 802]; 
+                    <ref type="bibliography" target="bibliography.php#WILDMANRUSKININSWITZERLAND1"><persName corresp="#SWILDMAN">Wildman</persName>, <hi rend="italic">Ruskin in Switzerland, Part 1</hi></ref>, [p. 9]; 
+                    <ref type="bibliography" target="bibliography.php#RFMS28"><persName corresp="#JJR">John James Ruskin</persName>, <title type="manuscript" corresp="#RFMS28">Account Book, 1827&#x2013;45</title>, 29v</ref>; 
+                    <ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKSWITZERLAND1838"><persName corresp="#JM">Murray</persName>, <title type="book" corresp="#MURRAYSHANDBOOKSWITZERLAND1838"><hi rend="italic">Hand&#x2010;book for Travellers in Switzerland</hi></title></ref>, xxiii).
                 </p>
-                <p>This transitional and eclectic period of travel writing is reflected in the Ruskins&#x02BC; book purchases, 
-                    both before setting out on their <date when="1833">1833</date> journey and following their return. Besides arming themselves with a German grammar book, 
-                    the Ruskins carried a work by <persName corresp="#MSA">Mariana Starke</persName> (<date notBefore="1762" notAfter="1838">1762&#x2013;1838</date>), 
-                    whose travel books both <persName corresp="#PF">Fran&#x00E7;ois</persName> and <persName corresp="#JB">James Buzard</persName> characterize as typical of the transitional period 
-                    of travel writing, displaying characteristics both of the guidebook and the travel account, 
-                    and whose work <persName corresp="#CB">Charles Batten</persName> similarly describes as moving away from the decorum of the <date notBefore="1701" notAfter="1800">eighteenth&#x2010;century</date> travel account 
-                    (<ref type="bibliography" target="bibliography.php#FRANCOIS1815"><persName corresp="#PF">Fran&#x00E7;ois</persName>, <title type="essay" corresp="#FRANCOIS1815">&#x201C;If It&#x02BC;s <date when="1815">1815</date>, This Must Be <placeName corresp="#BELGIUM">Belgium</placeName>&#x201D;</title></ref>, 76, 90; 
-                    <ref type="bibliography" target="bibliography.php#BUZARDBEATEN"><persName corresp="#JB">Buzard</persName>, <title type="book" corresp="#BUZARDBEATEN"><hi rend="italic">Beaten Track</hi></title></ref>, 68&#x2013;70; 
-                    <ref type="bibliography" target="bibliography.php#BATTENPLEASURABLEINSTRUCTION"><persName corresp="#CB">Batten</persName>, <title type="book" corresp="#BATTENPLEASURABLEINSTRUCTION"><hi rend="italic">Pleasurable Instruction</hi></title></ref>, 30). 
-                    The <persName corresp="#MSA">Starke</persName> work acquired by the Ruskins may have been <title type="book" corresp="#STARKETRAVELS"><hi rend="italic">Travels in <geogName corresp="#EUROPE">Europe</geogName></hi></title>, a popular guidebook first published by 
-                    <orgName corresp="#MURRAY">Murray</orgName> in <date when="1820">1820</date> as <title type="book" corresp="#MURRAYTRAVELLERS1820"><hi rend="italic">Travellers on the <geogName corresp="#CONTINENT">Continent</geogName></hi></title>, 
-                    and available in a &#x201C;considerably enlarged&#x201D; eighth edition in <date when="1833">1833</date>.
-                </p>
-                <p><persName corresp="#MSA">Starke&#x02BC;s</persName> <title type="book" corresp="#STARKETRAVELS"><hi rend="italic">Travels in <geogName corresp="#EUROPE">Europe</geogName></hi></title> along with her more portable <title type="book" corresp="#STARKEDIRECTIONS"><hi rend="italic">Information and Directions for Travellers on the <geogName corresp="#CONTINENT">Continent</geogName></hi></title>, 
-                    which was published on the <geogName corresp="#CONTINENT">Continent</geogName> by <orgName corresp="#GALIGNANI">Galignani</orgName>, approached closely, <persName corresp="#JB">Buzard</persName> remarks, 
-                    to the form of the modern guidebook. Even <persName corresp="#MSA">Starke</persName>&#x02BC;s much earlier success, <title type="book" corresp="#STARKEITALY" rend="italic">Travels in <placeName corresp="#ITALY">Italy</placeName></title> 
-                    (<date when="1800">1800</date>), had been &#x201C;felt by many before the rise of the <orgName corresp="#MURRAY">Murray</orgName> 
-                    and <orgName corresp="#BAEDEKER">Baedeker</orgName> guides to be the best available vade&#x2010;mecum for <placeName corresp="#ITALY">Italy</placeName>.&#x201D; 
-                    This work, <persName corresp="#JB">Buzard</persName> says, &#x201C;was by no means single&#x2010;mindedly devoted to the role of &#x2018;handbook.&#x2019;&#x201D; 
-                    It was characteristic of the transitional period of travel writing, in having &#x201C;the appearance, 
-                    when we look back at it with generic presuppositions founded on <orgName corresp="#MURRAY">Murray</orgName> and <orgName corresp="#BAEDEKER">Baedeker</orgName>, 
-                    of an impressionistic &#x2018;travel book&#x2019;&#x201D;&#x2014;that is, as still relying, despite its &#x201C;serving as a makeshift [modern] &#x2018;handbook&#x2019; 
-                    in the absence of any alternative,&#x201D; on such <date notBefore="1701" notAfter="1800">eighteenth&#x2010;century></date> conventions as a series of letters containing the traveler&#x02BC;s personal impressions 
-                    balanced by judicious reflection (<ref type="bibliography" target="bibliography.php#BUZARDBEATEN"><persName corresp="#JB">Buzard</persName>, <title type="book" corresp="#BUZARDBEATEN"><hi rend="italic">Beaten Track</hi></title></ref>, 68, and see 69&#x2013;70).
-                </p>
-                <p>Comparatively compendious as <title type="book" corresp="#STARKETRAVELS"><hi rend="italic">Travels in <geogName corresp="#EUROPE">Europe</geogName></hi></title> was, the guide offered no advice on the route from 
+                <p>
+                    
+                    the Ruskins carried guidebooks on their tours abroad.Comparatively compendious as <title type="book" corresp="#STARKETRAVELS"><hi rend="italic">Travels in <geogName corresp="#EUROPE">Europe</geogName></hi></title> was, the guide offered no advice on the route from 
                     <placeName corresp="#CALAIS">Calais</placeName> to <placeName corresp="#COLOGNE">Cologne</placeName>, which the Ruskins followed in order to access the 
                     <geogName corresp="#RHINE">Rhine</geogName>; for while <persName corresp="#MSA">Starke</persName>&#x02BC;s updated guide did supply information on 
                     <placeName corresp="#GERMANY">Germany</placeName> and many other regions of <geogName corresp="#EUROPE">Europe</geogName> in an appendix, the main text remained traditionally focused on getting the traveler 
@@ -144,6 +131,7 @@
                     on some of the most celebrated Works of Art&#x201D; 
                     (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE"><persName corresp="#MSA">Starke</persName>, <title type="book" corresp="#STARKETRAVELS"><hi rend="italic">Travels in <geogName corresp="#EUROPE">Europe</geogName></hi></title></ref>, 2).
                 </p>
+                <p></p>
                 <div type="section" xml:id="NORTHERNEUROPE">
                     <head type="section">Northern <placeName corresp="#FRANCE">France</placeName>, <placeName corresp="#BELGIUM">Belgium</placeName>, and <placeName corresp="#GERMANY">Germany</placeName></head>
                     <p>Once arrived in <placeName corresp="#CALAIS">Calais</placeName>, the Ruskins would have stayed at one of the well&#x2010;established inns, 
