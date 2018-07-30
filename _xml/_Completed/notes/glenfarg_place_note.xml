@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <fileDesc xml:id="glenfarg_place_note">
+            <titleStmt>
+                <title type="main">Glenfarg (Place)</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For XML:ID, enter your intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing encoding, review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#CNW">Casey N. White</persName>
+                    <resp>contributing review, encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing review, encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing review, encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America, Blossman Foundation, Huntington Library,
+                    Louisiana Board of Regents, National Endowment for the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language
+                    Association, and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2018-02-20">February 20, 2018</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0 (TC)</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>
+                    <name type="institution">Southeastern Louisiana University Department of English</name>
+                </distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="geographical">
+                <head type="title">Glenfarg (place)</head>
+                <p>A glen in <placeName corresp="#PERTHSHIRE">Perthshire</placeName>, approximately four miles in length, that follows the <geogName corresp="#FARG">River Farg</geogName>.
+                    <persName corresp="#JR">Ruskin</persName> wrote two
+                    poems about the glen, <ref type="apparatus" target="glen_of_glenfarg_apparatus.php"><title type="poem" corresp="#GLENOFGLENFARG">&#x201C;Glen of Glenfarg&#x201D; (&#x201C;Glen of Glenfarg thy beauteous rill&#x201D;)</title></ref> 
+                    and <ref type="apparatus" target="glenfarg_apparatus.php"><title type="poem" corresp="#GLENFARG">&#x201C;Glenfarg&#x201D; <hi rend="italic">and</hi> &#x201C;Glen of Glenfarg&#x201D; (&#x201C;Papa how pretty those icicles are&#x201D;)</title></ref>.</p>
+                <p>In <ref type="bibliography" target="bibliography.php#SCOTTISHTOURIST"><title type="guidebook" corresp="#SCOTTISHTOURIST" rend="italic">The Scottish Tourist, and Itinerary</title></ref>
+                    (<date when="1825">1825</date>; 3d ed., <date when="1830">1830</date>), a guidebook available at the time of <persName corresp="#JR">Ruskin</persName>&#x02BC;s poems, <geogName corresp="#GLENFARG">Glenfarg</geogName> is described
+                    as &#x201C;a romantic little valley embosomed by the <placeName corresp="#OCHILS">Ochils</placeName>&#x201D; (p. 125). As treated in this guidebook,
+                    which a scholar classes among &#x201C;short, portable books&#x201D; emerging in the <date notBefore="1820" notAfter="1829">1820s</date> that &#x201C;led readers on a series of
+                    tours&#x201D; of <placeName corresp="#SCOTLAND">Scotland</placeName> (<ref type="bibliography" target="bibliography.php#TOURISMANDIDENTITY"><persName corresp="#KHGRENIER">Grenier</persName>, <title type="book" corresp="#TOURISMANDIDENTITY"><hi rend="italic">Tourism and Identity in Scotland</hi></title></ref>,
+                    66), <geogName corresp="#GLENFARG">Glenfarg</geogName> was a place one visited, not when taking a day excursion from <placeName corresp="#PERTH">Perth</placeName>, but when departing <placeName corresp="#PERTH">Perth</placeName> altogether&#x2014;proceeding southward, on the way to
+                    <geogName corresp="#LOCHLEVEN">Loch Leven</geogName> and beyond. That this was the route taken by the Ruskins is supported by
+                    <ref type="apparatus" target="on_scotland_apparatus.php"><title type="poem" corresp="#ONSCOTLAND">&#x201C;On Scotland&#x201D;</title></ref>, which, describing a departure from
+                    <placeName corresp="#PERTH">Perth</placeName>, crosses the <geogName corresp="#EARN">River Earn</geogName>. Just so, according to 
+                    <ref type="bibliography" target="bibliography.php#SCOTTISHTOURIST"><title type="guidebook" corresp="#SCOTTISHTOURIST"><hi rend="italic">The Scottish Tourist, and Itinerary</hi></title></ref>, 
+                    the traveler would go south from <placeName corresp="#PERTH">Perth</placeName> to
+                    <geogName corresp="#STRATHEARN">Strathearn</geogName>, cross the river at <placeName corresp="#EARNBRG">Bridge of Earn</placeName> (an important crossing since the
+                    <date notBefore="0410" notAfter="1516">Middle Ages</date><!--Correction needed here?-->), and proceed to <placeName corresp="#KINROSS">Kinross</placeName> and <geogName corresp="#LOCHLEVEN">Loch Leven</geogName>.</p>
+                <p>The main feature in <geogName corresp="#GLENFARG">Glenfarg</geogName>, according to this guidebook, was the <placeName corresp="#OCHILS">Ochils</placeName>: &#x201C;These hills are dwarfish when compared with the
+                    lofty <geogName corresp="#GRAMPIANS">Grampians</geogName>, and contrast with them in many respects. They present a smooth surface, and are clothed to
+                    their summits with the deepest verdure, possessing also a pastoral serenity and softness, which give a new and pleasurable tone to
+                    the mind of the tourist, who returns from contemplating the magnificence of Highland scenery&#x201D; (p. 125). The appeal of the
+                    glen, therefore, appears to have lain in its modesty and domesticity rather than in the sublime grandeur that tourists typically
+                    sought in the Scottish landscape.</p>
+                <p>There were views to be captured, however. In an article on the <placeName corresp="#PERTH">Parish</placeName> prepared for <ref type="bibliography" target="bibliography.php#STATISTICALACCOUNT"><title type="reference" corresp="#STATISTICALACCOUNT"><hi rend="italic">The New Statistical Account of Scotland</hi></title></ref>
+                    (<date when="1845">1845</date>), a clergyman boasted that &#x201C;the prospect from <placeName corresp="#GEDDES">Cairn Geddes</placeName>. . . is particularly splendid, comprehending the <geogName corresp="#TAY">Frith of Tay</geogName>,
+                    <placeName corresp="#GOWRIE">Carse of Gowrie</placeName>, the <placeName corresp="#SIDLAWS">Sidlaws</placeName>, terminating in <placeName corresp="#MONCRIEFF">Moncrieff</placeName> and <placeName corresp="#KINNOULL">Kinnoull</placeName> 
+                    hills, the upper part of <geogName corresp="#STRATHEARN">Strathearn</geogName>, and a considerable
+                    portion of the <geogName corresp="#GRAMPIANS">Grampian Range</geogName>&#x201D; (p. 883).</p>
+            </div>
+        </body>
+    </text>
+</TEI>

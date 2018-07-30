@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <fileDesc xml:id="tour_of_1825_note">
+            <titleStmt>
+                <title type="main">Tour of 1825</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#LAL">Lauren A. Lambert</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="contextual">
+                <head type="title">Tour of <date when="1825">1825</date></head>
+                <p>In <date when="1825">1825</date>, when <persName corresp="#JR">John</persName> was six, the Ruskin family made its first visit to the <geogName corresp="#CONTINENT">Continent</geogName>. 
+                    According to <persName corresp="#VAB">Van Akin Burd</persName>, the family party included <persName corresp="#JR">John</persName>&#x02BC;s nurse, 
+                    <ref type="note" subtype="biographical" target="strachan_anne_note.html"><persName corresp="#ASB">Anne Strachan</persName></ref>, who accompanied the family also on the <date when="1833">1833</date> Continental journey. 
+                    <persName corresp="#VAB">Burd</persName> adds that they journeyed between <date notBefore="1825-05-11" notAfter="1825-07-13">11 May and 13 July</date>, 
+                    and the itinerary covered <placeName corresp="#CALAIS">Calais</placeName>, <placeName corresp="#BRUGES">Bruges</placeName>, <placeName corresp="#GHENT">Ghent</placeName>, <placeName corresp="#BRUSSELS">Brussels</placeName>, and <placeName corresp="#PARIS">Paris</placeName>, including <placeName corresp="#VERSAILLES">Versailles</placeName> 
+                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 1:xxv; 
+                    <ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 132 n. 3).<!-- LE SAYS JUNE 13; BURD SAYS JULY 13; HOW DOES BURD KNOW THIS? --> 
+                    As such, the tour was characteristically <date notBefore="1799-11-09" notAfter="1815-06-18">post&#x2010;Napoleonic</date>, organized around paying tribute to the Allies&#x02BC; victory on <placeName corresp="WATERLOO">Waterloo Field</placeName>
+                    and witnessing the festivities in <placeName corresp="#PARIS">Paris</placeName> to celebrate the crowning of <persName corresp="#KC10">Charles X</persName>&#x2014;the successor to <persName corresp="#KL18">Louis XVIII</persName> 
+                    who died in <date when="1824">1824</date>.</p>
+                
+                <p>The route through <placeName corresp="#BRUGES">Bruges</placeName>, <placeName corresp="#GHENT">Ghent</placeName>, and <placeName corresp="#BRUSSELS">Brussels</placeName> was that taken by <persName corresp="#GGB">Lord Byron</persName>, when embarking on his exile in <date when="1816">1816</date> 
+                    (see <ref type="bibliography" target="bibliography.php#HAWKINSBYRONCHRONOLOGY"><persName corresp="#ARHAWKINS">Hawkins</persName>, ed., <title type="book" corresp="#HAWKINSBYRONCHRONOLOGY">&#x201C;The Byron Chronology&#x201D;</title></ref>, years <date notBefore="1816" notAfter="1819">1816&#x2013;19</date>).</p>
+                
+                <p>The coronation of <persName corresp="#KC10">Charles X</persName> was the first since the restoration of the <orgName corresp="#BOURBONMONARCHY">Bourbon monarchy</orgName>&#x2014;<persName corresp="#KC10">Charles</persName>&#x02BC;s brother, <persName corresp="#KL18">Louis XVIII</persName>, 
+                    having died less than a decade after being restored to the throne following the Allies&#x02BC; victory. The ceremony itself took place on <date when="1825-05-29">29 May 1825</date> at the <placeName type="building" corresp="#REIMSCATHEDRAL">cathedral</placeName> in <placeName corresp="#REIMS">Reims</placeName>, 
+                    where French monarchs had for centuries traditionally been anointed, and not in <placeName corresp="#PARIS">Paris</placeName>, where <persName corresp="#NBE">Napoleon</persName> had crowned himself emperor in <placeName type="building" corresp="#NOTREDAMEPARIS">Notre Dame</placeName>. 
+                    While some aspects of the ceremony were updated to take account of political conditions in the Restoration, &#x201C;the overriding symbolism was that of the <date notAfter="1789">pre&#x2010;1789</date> monarchy, 
+                    with pride of place being given to the clergy and nobility&#x201D; (<ref type="bibliography" target="bibliography.php#PRICEPERILOUSCROWN"><persName corresp="#MPRICE">Price</persName>, <title type="book" corresp="#PRICEPERILOUSCROWN"><hi rend="italic">Perilous Crown</hi></title></ref>, 119). 
+                    In <placeName corresp="#BRITAIN">Britain</placeName>, where <persName corresp="#KC10">Charles</persName> had lived in exile in <placeName corresp="#LONDON">London</placeName> and <placeName corresp="#EDINBURGH">Edinburgh</placeName>, 
+                    theaters staged replicas of the <placeName type="building" corresp="#REIMSCATHEDRAL">Reims Cathedral</placeName> ceremony; and in <placeName corresp="#PARIS">Paris</placeName>, 
+                    opera houses mounted productions that reflected the spectacle at <placeName corresp="#REIMS">Reims</placeName>, which was in itself deemed by many to be inappropriately operatic in character 
+                    (<ref type="bibliography" target="bibliography.php#WALTONQUELQUE"><persName corresp="#PHW">Walton</persName>, <title type="essay" corresp="#WALTONQUELQUE">&#x201C;&#x2018;Quelque peu th&#x00E9;&#x00E2;tral&#x2019;&#x201D;</title>, 6&#x2013;10</ref>).</p>
+                
+                <p>In his travel diary for <date when="1833">1833</date>, <persName corresp="#JJR">John James Ruskin</persName> reflected back on this <date when="1825">1825</date> journey, 
+                    comparing the family&#x02BC;s experiences during the much more ambitious Continental <ref type="note" subtype="contextual" target="tour_of_1833_note.html">Tour of <date when="1833">1833</date></ref>. 
+                    On this present visit, he notes that <placeName corresp="#PARIS">Paris</placeName> was &#x201C;not so gay as in <date when="1825-05">May 1825</date>&#x201D; 
+                    (<ref type="bibliography" target="bibliography.html#RFMS33A"><title type="manuscript" corresp="#RFMS33A">Diary of <persName corresp="#JJR">John James Ruskin</persName>,<date notBefore="1833" notAfter="1846">1833&#x2013;46</date></title></ref>, 72, 73). 
+                    Following the <date notBefore="1830-07-26" notAfter="1830-07-29">July Revolution of 1830</date> and the abdication of <persName corresp="#KC10">Charles X</persName>, as a historian remarks, 
+                    &#x201C;a coronation for <persName corresp="#KLP1">Louis Philippe</persName> was never raised&#x201D;, even in the tempered form of medievalism surrounding <persName corresp="#KC10">Charles X</persName>&#x02BC;s ceremony, 
+                    &#x201C;and the bourgeoisie&#x02BC;s king contented himself with his proclamation by the <orgName corresp="#CHAMBEROFDEPUTIESFRANCE">Chamber of Deputies</orgName> and the swearing of an oath 
+                    of fidelity to the <title type="law" corresp="#1814CHARTERFRANCE">Constitutional Charter</title> as his sole inaurgural rite&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#JACKSONVIVELEROI"><persName corresp="#RAJACKSON">Jackson</persName>, <title type="book" corresp="#JACKSONVIVELEROI"><hi rend="italic">Vive le Roi!</hi></title></ref>, 199). 
+                    In his autobiography, <title type="book" corresp="#JRPRAETERITA">Praeterita</title>, <persName corresp="#JR">Ruskin</persName> acknowledged that the trip was prompted by the coronation festivities, but he remembered nothing of the pomp, 
+                    claiming to have been &#x201C;only interested by things near me, or at least clearly visible and present&#x201D;, such as the good&#x2010;natured servants at the <placeName corresp="#PARIS">Paris</placeName> hotel 
+                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"> <hi rend="italic">Works</hi></title></ref>, 35:104).</p>
+                
+                <p>A journey to the <geogName corresp="#CONTINENT">Continent</geogName> may seem ambitious for a middle&#x2010;class <placeName corresp="#LONDON">London</placeName> family, only recently established (since <date when="1823">1823</date>) in their new suburban home, 
+                    <placeName type="building" corresp="#HERNE">Herne Hill</placeName>, and with a young boy to raise and educate. By the <date notBefore="1825" notAfter="1829">mid&#x2010;1820s</date>, however, 
+                    <geogName corresp="#ENGLISHCHANNEL">Channel</geogName> crossings were common, if limited to the nearby and comparatively inexpensive destination of the <placeName corresp="#NETHERLANDS">Kingdom of the Netherlands</placeName> 
+                    (<placeName corresp="#BELGIUM">Belgium</placeName> did not secede and form a nation until <date when="1830">1830</date>). Trips expressly to view the <placeName corresp="#WATERLOO">Waterloo</placeName> battlefield
+                    had been popular since as early as the weeks immediately following the battle. The popularity had been enhanced by personal visits paid by such well&#x2010;known literary figures as 
+                    <persName corresp="#WS">Walter Scott</persName>, <persName corresp="#RS">Robert Southey</persName>, and <persName corresp="#GGB">Lord Byron</persName> 
+                    (<ref type="bibliography" target="bibliography.html#FRANCOIS1815"><persName corresp="#PF">Fran&#x00E7;ois</persName>, <title type="essay" corresp="#FRANCOIS1815">&#x201C;If It&#x02BC;s <date when="1815">1815</date>, This Must Be <placeName corresp="#BELGIUM">Belgium</placeName>&#x201D;</title></ref>, 74&#x2013;75, 89). 
+                    For the increased affordability and efficiency of steam packet lines crossing the <geogName corresp="#ENGLISHCHANNEL">Channel</geogName> 
+                    by the <date notBefore="1825" notAfter="1829">mid&#x2010;1820s</date>, see <ref type="note" subtype="contextual" target="touring_and_travel_on_the_continent_note.php">Touring and Travel on the Continent</ref>; 
+                    and for the Ruskins&#x02BC; crossing by steam seven years later, see <ref type="note" subtype="contextual" target="tour_of_1833_note.php">Tour of <date when="1833">1833</date></ref>, along with the essay, 
+                    <title type="essay" corresp="#JRCALAISPROSE">&#x201C;<placeName corresp="#CALAIS">Calais</placeName>&#x201D;</title> (with its glosses), in the <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php"><title type="composite" corresp="#JRACCOUNTTOUR">Account of a Tour on the <geogName corresp="#CONTINENT">Continent</geogName></title></ref>.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

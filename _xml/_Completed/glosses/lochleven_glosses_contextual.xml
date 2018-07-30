@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="lochleven_glosses_contextual">
+            <titleStmt>
+                <title type="main">"Lochleven"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#SB">Sushantika Bhandari</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses" subtype="contextual">
+                <note xml:id="ISYOURCASTLETHERE" resp="#DCH"><p><hi rend="bold">&#x201C;Lochleven is your castle there&#x201D; (MS III)&#x2014;</hi>On an island in the lake stands <placeName corresp="#LOCHLEVENCAS">Loch Leven Castle</placeName>,
+                    where <persName corresp="#MQS">Mary, Queen of Scots</persName>, was imprisoned, and where she was forced to abdicate 
+                    to her infant son in <date when="1567">1567</date>, who became <persName corresp="#KJ6">James VI</persName>. In <date when="1568">1568</date>, 
+                    she escaped from the castle, an episode that <persName corresp="#JR">Ruskin</persName> would have known from <hi rend="italic"><title type="book" corresp="#SCOTTABBOT">The Abbot</title></hi> (<date when="1820">1820</date>) 
+                    by <persName corresp="#WS">Walter Scott</persName>. 
+                    In <persName corresp="#WS">Scott</persName>&#x02BC;s telling of the story, <persName corresp="#MQS">Mary</persName> is abetted in her escape by the young page, 
+                    <name type="fictional" corresp="#ROLANDSCOTTABBOT">Roland Graeme</name>, who switches a fake set of keys for the closely watched genuine keys, 
+                    and assists <persName corresp="#MQS">Mary</persName> and her attendants to a waiting boat (vol. 3, chap. 8 [<date when="1820">1820</date>]).</p></note>
+                
+                <note xml:id="QUEENSBOATGLOSS" resp="#DCH"><p><hi rend="bold"><hi rend="italic">when tis so long when cried aloud / was boat is near when queen of scots / stepped in the boat and rowed from shore</hi>&#x2014;</hi><persName corresp="#JR">Ruskin</persName> evidently 
+                    refers to the cry raised by <persName corresp="#MQS">Queen Mary</persName>&#x02BC;s escape (i.e., &#x201C;it is so long since that boat was near, the boat into which the queen stepped&#x201D;). 
+                    In <persName corresp="#WS">Scott</persName>&#x02BC;s novel, the dash of the oars wakens a sentinel, who cries: &#x201C;&#x2018;A boat&#x2014;a boat!&#x2014;bring to, or I shoot!&#x2019;&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#SCOTTABBOT1820"><persName corresp="#WS">Scott</persName>, <hi rend="italic">Abbot</hi></ref>, 3:267).</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>

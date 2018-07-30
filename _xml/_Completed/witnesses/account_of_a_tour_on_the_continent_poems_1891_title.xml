@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="account_of_a_tour_on_the_continent_poems_1891_title">
+            <titleStmt>
+                <title type="main">"Account of a Tour on the Continent"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in Ruskin, <hi rend="italic">Poems</hi> (1891)</title>
+                <author>
+                <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#WGC">W. G. Collingwood</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier></msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_poems_1891"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <biblStruct>
+                    <monogr>
+                        <editor>
+                            <persName>W. G. Collingwood</persName>
+                        </editor>
+                        <title type="main">The Poems of John Ruskin</title>
+                        <title type="sub">Volume I: Poems Written in Boyhood, 1826-1835</title>
+                        <imprint>
+                            <biblScope type="vol">1</biblScope>
+                            <biblScope type="edition">8<hi rend="superscript">o</hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1891">1891</date>
+                            <biblScope type="pages">119</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="title">
+                <head><title type="composite" corresp="#JRACCOUNTTOUR"><hi rend="caps">ACCOUNT OF A TOUR ON THE CONTINENT</hi></title>.</head>
+                <epigraph>
+                    <cit>
+                        <quote>
+                            <p>&#x201C;Early in the spring of <date when="1833">1833</date> <persName corresp="#SP">Prout</persName> published his <title xml:id="PROUTSKETCHES">Sketches in<lb/> 
+                                Flanders and Germany</title>. I well remember going with my father<lb/> 
+                                into the shop where subscribers entered their names, and being<lb/> 
+                                referred to the specimen print, the turreted window over the<lb/> 
+                                <geogName corresp="#MOSELLE">Moselle</geogName>, at <placeName corresp="#COBLENZ">Coblentz</placeName>. We got the book home to <placeName corresp="#HERNE">Herne Hill</placeName><lb/> 
+                                before the time of our usual annual tour; and as my mother<lb/>
+                                watched my father&#x02BC;s pleasure and mine in looking at the wonderful<lb/> 
+                                places, she said, why should we not go and see some of them in<lb/> 
+                                reality? My father hesitated a little, then with glittering eyes<lb/> 
+                                said&#x2014;why not? And there were two or three weeks of entirely<lb/> 
+                                rapturous and amazed preparation. . . .</p>
+                            <p>&#x201C;We went by <placeName corresp="#CALAIS">Calais</placeName> and <placeName corresp="#BRUSSELS">Brussels</placeName> to <placeName corresp="#COLOGNE">Cologne</placeName>; up the <geogName corresp="#RHINE">Rhine</geogName><lb/> 
+                                to <placeName corresp="#STRASBURG">Strasburg</placeName>, across the <geogName corresp="#BLACKFOREST">Black Forest</geogName> to <placeName corresp="#SCHAFFHAUSEN">Schaffhausen</placeName>, then made<lb/> 
+                                a sweep through North <placeName corresp="#SWITZERLAND">Switzerland</placeName> by <placeName corresp="#BASLE">Basle</placeName>, <placeName corresp="#BERNE">Berne</placeName>, <placeName corresp="#INTERLACHEN">Unterlachen</placeName>,<lb/> 
+                                <placeName corresp="#LUCERNE">Lucerne</placeName>, <placeName corresp="#ZURICH">Zurich</placeName>, to <placeName corresp="#CONSTANCE">Constance</placeName>,&#x2014;following up the <geogName corresp="#RHINE">Rhine</geogName> still to<lb/> 
+                                <placeName corresp="#COIRE">Coire</placeName>, then over <placeName corresp="#SPLUGEN">Spl&#x00FC;gen</placeName> to <placeName corresp="#COMO">Como</placeName>, <placeName corresp="#MILAN">Milan</placeName>, and <placeName corresp="#GENOA">Genoa</placeName>; meaning,<lb/> 
+                                as I now remember, for <placeName corresp="#ROME">Rome</placeName>. But, it being <date when="1833-06">June</date> already, the<lb/> 
+                                heat of <placeName corresp="#GENOA">Genoa</placeName> warned us of imprudence; we turned, and came<lb/> 
+                                back over the <geogName corresp="#SIMPLON">Simplon</geogName> to <placeName corresp="#GENEVA">Geneva</placeName>, saw <placeName corresp="#CHAMOUNI">Chamouni</placeName>, and so home<lb/> 
+                                by <placeName corresp="#LYONS">Lyons</placeName> and <placeName corresp="#DIJON">Dijon</placeName>.&#x201D;</p>
+                        </quote>
+                        <bibl>(<title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title>, I.iv)</bibl>
+                    </cit>
+                </epigraph>
+            </div>
+        </body>
+    </text>
+</TEI>

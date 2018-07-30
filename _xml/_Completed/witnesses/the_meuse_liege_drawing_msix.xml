@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="figure">
+        <fileDesc xml:id="the_meuse_liege_drawing_msix">
+            <titleStmt>
+                <title type="main">Li&#x00E8;ge [drawing]</title>
+                <title type="sub">Electronic text describing original drawing</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                       <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS IX</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msix/MSIX28r-rotated.jpg">p. 28r</locus>
+
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msix"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>,
+                                    examples of which can be found in MS VIII and MS IX, pages <locus from="##" to="##">##-##</locus>, and MS IX.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="figure" subtype="drawing">
+                <figure>
+                    <head type="title"><title type="artwork" corresp="#JRTHEMEUSELIEGESIX">Li&#x00E8;ge</title></head>
+                    <figDesc>Pen and ink, approx. ? &#x00D7; ? cm (image only). The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
+                        describe the image as a &#x201C;a full&#x2010;page illustration of a courtyard, with a pillared corridor, steps etc.&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:350 n. 2). 
+                        The drawing is a copy of <title type="artwork" corresp="#PROUTPALAISPRINCELIEGE"><hi rend="italic">Palais du Prince, Li&#x00E8;ge</hi></title>, by 
+                        <ref type="note" subtype="biographical" target="prout_samuel_note.php"><persName corresp="#SP">Samuel Prout</persName> (<date notBefore="1783" notAfter="1852">1783&#x2013;1852</date>)</ref>, 
+                        in <ref type="bibliography" target="bibliography.php#PROUTSKETCHES"><title type="artwork" corresp="#PROUTSKETCHES"><hi rend="italic">Facsimiles of Sketches Made in Flanders and Germany</hi></title></ref> 
+                        (<date when="1833">1833</date>). The scene is set inside the Renaissance arcade (the &#x201C;Court of Honor&#x201D;) of the 
+                        <placeName type="building" corresp="#PRINCEBISHOPSPALACELIEGE">Palais des Princes&#x2010;&#x00C9;v&#x00EA;ques</placeName> in <placeName corresp="#LIEGE">Li&#x00E8;ge</placeName>, 
+                        constructed under the patronage of the prince&#x2010;bishop, <persName corresp="#EDLM">&#x00C9;rard de la Marck</persName> (<date notBefore="1472" notAfter="1538">1472&#x2013;1538</date>, 
+                        ruled <date notBefore="1506" notAfter="1538">1506&#x2013;38</date>). 
+                        In an <date when="1828">1828</date> tour account by <persName corresp="#SJB">John Barrow</persName> (<date notBefore="1764" notAfter="1848">1764&#x2013;1848</date>), 
+                        a description of the palace suggests the picturesque scene inside the arcade that captured <persName corresp="#SP">Samuel Prout</persName>&#x02BC;s imagination: 
+                        &#x201C;an imposing old edifice, though somewhat heavy, with an interior quadrangle 
+                        containing the public offices and records, and several courts for civil and provincial affairs&#x201D; 
+                        (the prince&#x2010;bishopric having succumbed to the French Republic even before the <date notBefore="1830-08-25" notAfter="1831-07-14">Belgian Revolution of 1830</date>). 
+                        &#x201C;The columns supporting the arcade are short and thick, having very much of the Moorish character. Under the arcade are little cells or shops, 
+                        in which small articles of daily use of every description are exposed for sale&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#BARROWFAMILYTOUR"><title type="book" corresp="#BARROWFAMILYTOUR"><hi rend="italic">Family Tour through South Holland</hi></title></ref>, 239). 
+                        <persName corresp="#JR">Ruskin</persName>&#x02BC;s cousin, 
+                        <ref type="note" subtype="biographical" target="richardson_mary_note.php"><persName corresp="#MRC">Mary Richardson</persName></ref>, mentions the family 
+                        visiting the palace on <date when="1833-05-23">23 May 1833</date> (<ref type="bibliography" target="bibliography.php#RFT48">Diary of Mary Richardson, 1833</ref>, p. 11).
+                    </figDesc>
+                </figure>
+            </div>
+        </body>
+    </text>
+</TEI>

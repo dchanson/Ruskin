@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="cemetery_architecture__note">
+            <titleStmt>
+                <title type="main">Early Victorian Cemetery Architecture</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#BSP">Brianna S. Poche</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="contextual">
+                <head type="title">Early Victorian Cemetery Architecture</head>
+                <p>When the Ruskins visited the <placeName type="building" corresp="#FRANKFURTNEWCEMETERY">New Cemetery</placeName> in <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#FRANCFURTGLOSS"><placeName corresp="#FRANKFURT">Frankfurt am Main</placeName></ref>
+                    in <date when="1833">1833</date>, <persName corresp="#JR">John Ruskin</persName> perhaps gained his first exposure to the new urban cemeteries that were starting to replace the traditional parish churchyard in the <date notBefore="1820" notAfter="1829">1820s</date> and <date notBefore="1830" notAfter="1839">1830s</date>, 
+                    although by that time he had also visited <placeName corresp="#LIVERPOOL">Liverpool</placeName> with his family and therefore may have viewed that city&#x02BC;s new <placeName type="building" corresp="#STJAMESSCEMETERY">St. James&#x02BC;s Cemetery</placeName> 
+                    opened in <date when="1829">1829</date>. Responding both to hygienic concerns made pressing by rapid urban growth that led to overcrowded city burial places and 
+                    to the need for nondenominational alternatives to <orgName corresp="#CHURCHOFENGLAND">Anglican</orgName> parish churchyards, the new cemeteries were operated by joint stock companies.</p>
+                
+                <p>Architecturally, these cemeteries presented a significant focus for neoclassicism until that taste was displaced by Gothic Revival influences in <date notBefore="1834" notAfter="1867">mid&#x2010;century</date>. Entered via a massive gatehouse, 
+                    often modeled on the Greek Doric propylaeum, the grounds were conceived as a classical <placeName corresp="#ELYSIUM">Elysium</placeName>, inspired by the Arcadian landscape tradition in painting and estate gardening. 
+                    Another classical model was the &#x201C;city of the dead&#x201D; or necropolis, drawn from <placeName corresp="ETRUSCANS">Etruscan</placeName> tomb complexes and (although quite different from the Etruscan model in origin and conception) Roman catacombs. 
+                    At the same time, since the new cemetery designs arose well into the <date notBefore="1801" notAfter="1899">nineteenth century</date>, the non&#x2010;classical taste for the picturesque guided the layout 
+                    of walks, drives, and the botanically diverse plantings. Thus, the English gardening tradition combined with classical monuments, even in Continental new cemeteries. 
+                    The hugely influential design combining these elements was the <placeName type="building" corresp="#PERELACHAISE">Cimeti&#x00E8;re du P&#x00E8;re&#x2010;Lachaise</placeName> in <placeName corresp="#PARIS">Paris</placeName>, established in <date when="1804">1804</date>, 
+                    and created by <persName corresp="#ATBRONGNIART">Alexandre&#x2010;Th&#x00E9;odore Brongniart</persName> (<date notBefore="1739" notAfter="1813">1739&#x2013;1813</date>) 
+                    under the patronage of <persName corresp="#NBE">Napoleon Bonaparte</persName>. (Apparently, the Ruskins visited <placeName type="building" corresp="#PERELACHAISE">P&#x00E8;re&#x2010;Lachaise</placeName> 
+                    on their way home from the <ref type="note" subtype="contextual" target="tour_of_1833_note.php">Tour of 1833</ref>, 
+                    since <persName corresp="#JR">Ruskin</persName> planned to write about the cemetery in the <title type="composite" corresp="JRACCOUNTTOUR">Account of a Tour on the Continent</title>; see 
+                    <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php#ACCOUNTOCPERELACHAISE"><title type="bibliography_text" corresp="JRPROPOSEDTABLEOFCONTENTS">List of Proposed Additional Contents for the &#x201C;Account&#x201D;</title></ref>.) 
+                    In <placeName corresp="#BRITAIN">Britain</placeName>, cemetery architecture eventually came under the influence of <ref type="note" subtype="biographical" target="loudon_j_c_note.php"><persName corresp="#JCL">John Claudius Loudon</persName></ref> (<date notBefore="1783" notAfter="1843">1783&#x2013;1843</date>), 
+                    who modified the combined Arcadian and picturesque tastes that had governed the garden cemetery, by enforcing a characteristically comprehensive plan 
+                    that was hygienically practical for disposal of the dead yet also morally instructive for the living observer. <persName corresp="#JCL">Loudon</persName>&#x02BC;s treatise, 
+                    <title type="book" corresp="#LOUDONLAYINGOUTMANAGINGCEMETERIES"><hi rend="italic">On the Laying Out, Planting, and Managing of Cemeteries; and on the Improvement of Churchyards</hi></title> was published in the year of his death 
+                    (<ref type="bibliography" target="bibliography.php#RUTHERFORDVICTORIANCEMETERY"><persName corresp="#SRUTHERFORD">Rutherford</persName>, <title type="book" corresp="#RUTHERFORDVICTORIANCEMETERY"><hi rend="italic">The Victorian Cemetery</hi></title></ref>, 
+                    5, 10, 13, 20&#x2013;21, 22&#x2013;23, 11, 24&#x2013;29; 
+                    <ref type="bibliography" target="bibliography.php#WORPOLELASTLANDSCAPES"><persName corresp="#RWORPOLE">Worpole</persName>, <title type="book" corresp="#WORPOLELASTLANDSCAPES"><hi rend="italic">Last Landscapes</hi></title></ref>, 
+                    46&#x2013;49, 79&#x2013;88, 135).</p>
+            </div>
+        </body>
+    </text>
+</TEI>

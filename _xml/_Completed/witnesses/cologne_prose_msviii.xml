@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="cologne_prose_msviii">
+            <titleStmt>
+                <title type="main">"Cologne" [essay]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#TPD">Timothy P. Dunn</persName>
+                    <resp>conributing transcription/encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>conributing transcription/encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS VIII</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msviii/MSVIII60v-61r.jpg">pp. ##-##</locus>
+
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msviii"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>, examples of which can be
+                                    found in MS VIII, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="essay">
+                <head type="title"><handShift new="#HANDJR1833-34" script="cursive" medium="ink"/><placeName corresp="COLOGNE">Cologne</placeName>.</head>
+                <p>And this is the birth place of <persName corresp="#PPR">Rubens</persName>. Sink these<lb/> 
+                    french bad roads<g type="terminal_comma">,</g><ref type="gloss_textual" target="cologne_prose_glosses_textual.php#TERMINALCOMMA" /> <del rend="strikethrough">f</del> A long days journey over them<lb/> 
+                    under a burning Sun, together with a perambulation<lb/> 
+                    on a damp evening at <persName corresp="AIXLACHAPELLE">Aix la Chapelle</persName>, so knocked<lb/> 
+                    me up, that I was forced to diet it, and quiet it<lb/> 
+                    And could not stir out to see <del rend="strikethrough">the</del> <persName corresp="#PPR">Rubens</persName>&#x02BC; last picture<lb/> 
+                    the masterpiece of the master, the <title type="artwork" corresp="#RUBENSCRUCIFIXIONSTPETER">crucifixion of <persName corresp="#STPETER">St<lb/> 
+                    Peter</persName></title>, bequeathed by him at his death to his native<lb/> 
+                    city, and, yet more, his birthchamber, &#x2014; fragment,<lb/>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

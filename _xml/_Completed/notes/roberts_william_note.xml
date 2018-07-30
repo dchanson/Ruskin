@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="roberts_william_note">
+            <titleStmt>
+                <title type="main">William Roberts (1862-1940)</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KCM">Katie C. Moore</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2018-03-07">March 7, 2018</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
+            <div type="note" subtype="biographical">
+                <head type="title">William Roberts (<date notBefore="1862" notAfter="1940">1862&#x2013;1940</date>)</head>
+                <p><persName corresp="#WR">Roberts</persName> was an art critic for
+                    the <title type="periodical" corresp="#TIMESLONDON"><placeName corresp="#LONDON">London</placeName> <hi rend="italic">Times</hi></title>, starting as second critic under the chief, <persName corresp="#HWARD">Humphry Ward</persName> (<date notBefore="1845" notAfter="1926">1845&#x2013;1926</date>), 
+                    and advancing later to become the main art critic.
+                </p>
+                <p><persName corresp="#WR">Roberts&#x02BC;s</persName> career typified a phenomenon of professional British art history in the <date notBefore="1901" notAfter="1934">early twentieth century,</date> 
+                    whereby, according to <persName corresp="#BAA">Brian Allen,</persName> &#x201C;the study of historic British painting was almost entirely in the hands 
+                    of the art trade&#x201D;. <persName corresp="#WR">Roberts</persName> ranked as a leading so&#x2010;called &#x201C;expert&#x201D; who worked with <placeName corresp="#LONDON">London</placeName> art dealers, 
+                    authoring pamphlets designed to sell individual paintings. 
+                    &#x201C;These now rather rare and often sumptuous publications are invariably anonymous&#x201D;, <persName corresp="#BAA">Allen</persName> remarks, 
+                    &#x201C;undoubtedly written by scholars who were cautious about protecting their anonymity&#x201D;. 
+                    Although he and others like him operated outside the institutional art establishment, 
+                    &#x201C;<persName corresp="#WR">Roberts</persName> . . . would, for five pounds, write certificates of authenticity for any <date notBefore="1701" notAfter="1800">eighteenth&#x2010;century</date> British picture placed in front of him&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#PAULMELLONSLEGACY"><persName corresp="#BAA">Allen</persName>, <title type="book" corresp="#PAULMELLONSLEGACY">&#x201C;Paul Mellon and Scholarship in the History of British Art&#x201D;</title></ref>, 45).
+                    <!-- DCH look in Sutherland's Mrs Humphry Ward --> 
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

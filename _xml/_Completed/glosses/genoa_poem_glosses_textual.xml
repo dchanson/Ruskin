@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="genoa_poem_glosses_textual">
+            <titleStmt>
+                <title type="main">"Genoa"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2017-09-27">September 27, 2017</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="SEASBROADBLUEGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;That . . . oer the seas broad blue&#x201D;
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>This version of the phrase in manuscript was altered in
+                    <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi> (<date when="1891">1891</date>)</title> to &#x201C;broad sea&#x02BC;s blue&#x201D;. Restored to &#x201C;sea&#x02BC;s broad blue&#x201D; in
+                    <title type="book" corresp="#JRWORKSLE">Library Edition</title> (<ref type="bibliography" target="bibliography.php#JRWORKSLE">><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:378).</p></note>
+
+                <note xml:id="OFVARIOUSTREESGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Of various trees a vista green&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [1903])&#x2014;</hi>In
+                    <title type="manuscript" corresp="#MSVIII">MS VIII</title>, twenty-six lines beginning with this line first appear on 64r&#x2013;v, divided by a horizontal line from the preceding titled draft of the poem,
+                    <title type="poem" corresp="#JRLAGODICOMO">&#x201C;Lago di Como&#x201D;</title>, and divided by another line space from the following untited poem,
+                    <title type="poem" corresp="#JRLAGOMAGGIORE">&#x201C;It was an eve of summer, mild&#x201D; [<geogName corresp="#LAKEMAGGIORE">&#x201C;Lago Maggiore&#x201D;</geogName>]</title>. On 79r,
+                    <persName corresp="#JR">Ruskin</persName> repeats the line &#x201C;Of various trees a vista green&#x201D;, followed by a metadiscursive mark <hi rend="italic">&#x0026;c.</hi>
+                    He also copies the next two lines from 64r, again followed by a metadiscursive mark <hi rend="italic">&#x0026;.</hi>, plus the final line of the earlier poem, from 64v
+                    (lines 1395&#x2013;98 of <title type="poem" corresp="#JRGENOA">&#x201C;Genoa&#x201D;</title> in <title type="manuscript" corresp="#MSVIII">MS VIII</title>). A metamark
+                    above the final line copied from the earlier poem, <hi rend="italic">XXX</hi>, perhaps signifies the end of the lines previously composed.
+                    The metadiscursive marks presumably indicate that the full twenty&#x2010;six lines on 64r&#x2013;v are to be inserted at that designated point of the draft of <title type="poem" corresp="#JRGENOA">&#x201C;Genoa&#x201D;</title>,
+                    an intention that is supported by the correspondingly metadiscursive symbol of four asterisks that follow the final, twenty&#x2010;sixth line of the earlier poem on 64r&#x2013;v.
+                    As another metadiscursive mark confirming this intention, <persName corresp="#JR">Ruskin</persName> notated the line from the earlier poem,
+                    &#x201C;Whose living crystal shot between <metamark function="insertion">&#x0026;.</metamark>&#x201D; with the numeral 50, and the line
+                    &#x201C;When all that there you look upon&#x201D;&#x2014;the latter line (deleted in <title type="manuscript" corresp="#MSVIII">MS VIII</title>) marking
+                    the end of the inserted passage (along with a few additionally composed lines), which do approximately number thirty lines. Taking all these cues,
+                    <persName corresp="#WGC">W. G. Collingwood</persName> without comment inserted the lines transferred from the earlier poem into the text of
+                    <title type="poem" corresp="#JRGENOA">&#x201C;Genoa&#x201D;</title> printed in <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi> (<date when="1891">1891</date>)</title>
+                    (but omitting the additional lines that <persName corresp="#JR">Ruskin</persName> deleted in the <title type="manuscript" corresp="#MSVIII">MS VIII</title>),
+                    and the editors of the <title type="book" corresp="#JRWORKSLE">Library Edition</title> followed suit, without remarking on the transferred lines forming a separate unit earlier in the manuscript.</p>
+
+                    <p>Since <persName corresp="#JR">Ruskin</persName> might have added these asterisks to the earlier poem after starting <title type="poem" corresp="#JRGENOA">&#x201C;Genoa&#x201D;</title> later in <title type="manuscript" corresp="#MSVIII">MS VIII</title>,
+                        there are no grounds for necessarily treating the twenty&#x2010;six lines of <title type="poem" corresp="#JROFVARIOUSTREES">&#x201C;Of various trees a vista green&#x201D;</title> as a fragment;
+                        <persName corresp="#JR">Ruskin</persName> may initially have considered these lines as forming a self&#x2010;standing poem about the journey from <placeName corresp="#MILAN">Milan</placeName>
+                        to the <geogName corresp="#MEDITERRANEAN">Mediterranean Sea</geogName>. Similarly, there are no grounds for supposing
+                        that <persName corresp="#JR">Ruskin</persName> jumped ahead from 64r&#x2013;v to compose <title type="poem" corresp="#JRGENOA">&#x201C;Genoa&#x201D;</title> fifteen pages later,
+                        or that he in any way departed from the sequential composition as the poems and essays appear in this section of the notebook.</p>
+
+                    <p>Respecting the sequence of composition at this stage in <title type="manuscript" corresp="#MSVIII">MS VIII</title>, one can broadly remark that, following draft of a cluster of poems concerning crossing the <geogName corresp="#ALPS">Alps</geogName>
+                        (see <ref type="witness" corresp="passign_the_alps_msia_g2.php"><title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title></ref> and glosses),
+                        <persName corresp="#JR">Ruskin</persName> reverted to drafting prose for the earlier Belgian segment of the journey, presumably in order to keep pace with his simultaneous
+                        fair&#x2010;copying and illustration of that portion of the <title type="composite" corresp="#JRACCOUNTTOUR">"Account"</title> in <title type="manuscript" corresp="#MSIX">MS IX</title>. Interspersed with these essays, he introduced verse about northern <placeName corresp="#ITALY">Italy</placeName>,
+                        his invention logically adverting first to the Italian lakes, as the geographical introduction to <placeName corresp="#ITALY">Italy</placeName> following an <geogName corresp="#ALPS">Alpine</geogName> crossing from the north.
+                        He composed a poem about <placeName corresp="#CHIAVENNA">Chiavenna</placeName>, <title type="poem" corresp="#JROHSOFTLYBLEW">&#x201C;Oh softly blew the morning breeze&#x201D;</title>, and
+                        <title type="poem" corresp="#JRLAGODICOMO">&#x201C;Lago di Como&#x201D;</title>, and then this poem about the journey south to <placeName corresp="#GENOA">Genoa</placeName>.
+                        He skipped writing about <placeName corresp="#MILAN">Milan</placeName>, because he had already composed <title type="poem" corresp="#MILANCATHEDRAL">&#x201C;Milan Cathedral&#x201D;</title>
+                        in <title type="manuscript" corresp="#MSIAG2">MS IA, g.2</title>. Thus, the vista of a &#x201C;rich and mighty plain&#x201D; that opens at the start of this poem
+                        refers to the country south of <placeName corresp="#MILAN">Milan</placeName>, and the poem surveys a wide panoramic arc from north to south.</p>
+                </note><!--The pointer to this gloss would be <ref type="gloss_textual" target="genoa_poem_glosses_textual.php#OFVARIOUSTREESGLOSS" />.-->
+
+                <note xml:id="THITHERGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Thither and thither&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [1903])&#x2014;</hi><persName corresp="#WGC">Collingwood</persName>
+                    altered this phrase to &#x201C;Hither and thither&#x201D;, and the <title type="book" corresp="#JRWORKSLE">Library Edition</title> silently accepted the emendation
+                    (<ref type="bibliography" target="bibliography.php#POEMS4D1891"><title type="book" corresp="#JRPOEMS4D1891"><hi rend="italic">Poems</hi></title> [4<hi rend="superscript">o</hi>, 1891]</ref>, and 
+                    <ref type="bibliography" target="bibliography.php#POEMS8D1891"><title type="book" corresp="#JRPOEMS8D1891"><hi rend="italic">Poems</hi></title> [8<hi rend="superscript">o</hi>, 1891]</ref>, 1:154;
+                    <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:378). <persName corresp="#JR">Ruskin</persName>&#x02BC;s additional modifier &#x201C;fast&#x201D; suggests, however,
+                    that he did intend that the &#x201C;sportive light ran / Thither and thither fast&#x201D;, receding rapidly away from the spectator &#x201C;through / That natural arched avenue&#x201D;,
+                    and not that the light ran randomly &#x201C;hither and thither&#x201D; on the surface of the water.</p></note><!--The pointer to this gloss would be <ref type="gloss_textual" target="genoa_poem_glosses_textual.php#THITHERGLOSS" />.-->
+
+                <note xml:id="SUNGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Pale gleams of icy sun came forth&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [1903])&#x2014;</hi><persName corresp="#WGC">Collingwood</persName>
+                    read a smeared word in the manuscript as &#x201C;sun&#x201D;, and the <title type="book" corresp="#JRWORKSLE">Library Edition</title> silently accepted this reading, though the intended word may be &#x201C;snow&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#POEMS4D1891"><title type="book" corresp="#JRPOEMS4D1891"><hi rend="italic">Poems</hi></title> [4<hi rend="superscript">o</hi>, 1891]</ref>, and
+                    <ref type="bibliography" target="bibliography.php#POEMS8D1891"><title type="book" corresp="#JRPOEMS8D1891"><hi rend="italic">Poems</hi></title> [8<hi rend="superscript">o</hi>, 1891]</ref>, 1:154;
+                    <ref type="bibliography" target="bibliography.php#JRWORKSLE">><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:379). A definitive reading may not be possible,
+                    but the following adjectival phrases, &#x201C;White as the wreathed salt sea spray / With the snow wreaths that ever press&#x201D;, read less redundantly
+                    if modifying the whiteness of sunlight rather than snow.</p></note><!--The pointer to this gloss would be <ref type="gloss_textual" target="genoa_poem_glosses_textual.php#SUNGLOSS" />.-->
+
+                <note xml:id="SOOTHEDGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Call its soothed billows from their sleep&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [1903])&#x2014;</hi>&#x201C;soothed&#x201D;
+                    in <title type="manuscript" corresp="#MSVIII">MS VIII</title> is altered to &#x201C;smooth&#x201D; in <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi> (<date when="1891">1891</date>)</title> and
+                    the <title type="book" corresp="#JRWORKSLE">Library Edition</title>.</p></note>
+
+                <note xml:id="PAUSEPERIOD" resp="#DCH"><p><hi rend="bold">Pause&#x2013;period (MS IX)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</p></note>
+
+                <note xml:id="SOLITARYGLOWGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;When far away to seaward show / Her first beams solitary glow&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [1903])&#x2014;</hi>Couplet
+                    omitted in <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi> (<date when="1891">1891</date>)</title> and restored in the
+                    <title type="book" corresp="#JRWORKSLE">Library Edition</title> (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:379).</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>

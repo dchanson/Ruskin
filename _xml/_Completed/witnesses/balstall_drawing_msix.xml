@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="figure">
+        <fileDesc xml:id="balstall_drawing_msix">
+            <titleStmt>
+                <title type="main">Balstall Drawing</title>
+                <title type="sub">Electronic text describing original drawing</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2017-09-06">September 6, 2017</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                       <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS IX</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msix/MSIX49v-50r.jpg">p. 50r</locus>
+
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msix"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p><persName corresp="#JR">John Ruskin</persName>&#x02BC;s early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833&#x2013;34</date>,
+                                    examples of which can be found in <title type="manuscript" corresp="MSVIII">MS VIII</title> and <title type="manuscript" corresp="#MSIX">MS IX</title>, pages <locus from="##" to="##">##&#x2013;##</locus>, and <title type="manuscript" corresp="#MSIX">MS IX</title>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="figure" subtype="drawing">
+                <figure>
+                    <head type="title"><title type="artwork" corresp="#JRBALSTALLMSIX">Balstall Drawing</title></head>
+                    <figDesc>Pen and ink, approx. ? &#x00D7; ? cm (image only). The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php"><title type="book" corresp="#JRWORKSLE">Library Edition</title></ref> 
+                        describe the image as &#x201C;mountain heights, a castle on one&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSKLE"><hi rend="italic">Works</hi></title></ref>, 2:364 n. 1). 
+                        The drawing is a vignette based on an original drawing by <persName corresp="#JR">Ruskin</persName> entitled <title type="artwork" corresp="#JRBALSTALLANDMONTBLANC">Ancient Fortress and Rocky peak. / Above the vale of <placeName corresp="#BALSTALL">Balstall</placeName>, <geogName corresp="#JURA">Jura</geogName></title>" 
+                        (<orgName corresp="#RUSKINLIBRARYLANCASTER">Ruskin Library</orgName>, <placeName corresp="#LANCASTER">Lancaster</placeName>, RF 1140; reproduced in <ref type="book" target="bibliography.php#WALTONDRAWINGS"><persName corresp="#PHW"><hi rend="italic">Drawings of John Ruskin</hi></persName></ref>, 15). 
+                        The location is <placeName corresp="#BALSTALL">Balsthal</placeName>, in the canton of <placeName corresp="#SOLEURE">Solothurn</placeName>. Of the two castles in the valley, this drawing apparently represents the <name type="building" corresp="#NEUFALKENSTEINCASTLE">Neu&#x2010;Falkenstein Castle</name>, which had been burned in <date when="1798">1798</date> in the Helvetian Revolution. 
+                        According to <persName corresp="#JR">Ruskin</persName>&#x02BC;s <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php"><title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan for Continuation of the Account of a Tour on the Continent</title></ref>, 
+                        he intended a section entitled <title type="composite" corresp="#JRBALSTALLCOMP">&#x201C;Balstall&#x201D;</title>, falling between the sections 
+                        <title type="composite" corresp="#JRTHERHINECOMP">&#x201C;Rhine&#x201D;</title> and <title type="composite" corresp="#JRNEUFCHATELCOMP">&#x201C;Neufchatel&#x201D;</title>, 
+                        and it was to be illustrated by a scene that could well refer to this drawing: &#x201C;Fortress. View of <geogName corresp="#ALPS">Alps</geogName>&#x201D;.
+                        In his <date when="1838">1838</date> <title type="book" corresp="#MURRAYSHANDBOOKSWITZERLAND1838">guidebook to <placeName corresp="#SWITZERLAND">Switzerland</placeName></title>, <persName corresp="#JM">John Murray III</persName> comments on these 
+                        &#x201C;imposing ruins of the <name type="building" corresp="#NEUFALKENSTEINCASTLE"><hi rend="italic">Castle of Falkenstein</hi></name>, surmounted by its circular <name type="building" corresp="#FALKENSTEINDONJON">Donjon</name>, [which] rise midway between the two roads to <placeName corresp="#BASLE">B&#x00E2;le</placeName> [i.e., <placeName corresp="#BASLE">Basel</placeName>], 
+                        by the <placeName corresp="#HAUENSTEIN">Hauenstein</placeName> and by the <geogName corresp="#PASSWANG">Passwang</geogName> [i.e., two mountain passes in the <geogName corresp="#JURA">Jura</geogName>] which unite here. This position gave to its ancient owners the powers of levying blackmail 
+                        upon each of these passes. It belonged at one time to <persName corresp="#RVONWART">Rudolph von Wart</persName> [<date notBefore="1274" notAfter="1304">1274&#x2013;1304</date>], who was broken on the wheel for his share in the murder of the [<placeName corresp="#HAPSBURGEMPIRE">Habsburg</placeName>] <persName corresp="#ALBERTI">Emperor Albert</persName> [<date notBefore="1255" notAfter="1308">1255&#x2013;1308</date>], 
+                        and was consoled in his agony by the presence and fortitude of his wife. The castle was destroyed by the men of <placeName corresp="#BASLE">Basle</placeName>, because a waggon laden with saffron, belonging to their merchants,
+                        had been pillaged by the Lords of <placeName corresp="#FALKENSTEIN">Falkenstein</placeName>&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKSWITZERLAND1838"><persName corresp="#JM">Murray</persName>, <title type="book" corresp="#MURRAYSHANDBOOKSWITZERLAND1838"><hi rend="italic">Hand&#x2010;book for Travellers in <placeName corresp="#SWITZERLAND">Switzerland</placeName></hi></title></ref>, 9&#x2013;10).
+                        </figDesc>
+                </figure>
+            </div>
+        </body>
+    </text>
+</TEI>

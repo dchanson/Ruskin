@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="title_of_work_glosses">
+            <titleStmt>
+                <title type="main">"Heidelberg" [poem]</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#SEP">Steven Petite</persName>
+                    <resp>contributing encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#TPD">Isaiah Thomas</persName>
+                    <resp>conributing transcription/encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses" subtype="textual">
+                <note xml:id="HEIDELBERGTITLEBLANK" resp="#DCH"><p><hi rend="bold">Missing section title in <title type="manuscript" corresp="#MSIX">MS IX</title>, supplied in <hi rend="italic">Works</hi> (<date when="1903">1903</date>)&#x2014;</hi>In <title type="manuscript" corresp="#MSVIII">MS VIII</title> draft, the separate parts making up the <title type="composite" corresp="#JRHEIDELBERGCOMP">&#x201C;Heidelberg&#x201D;</title> section are easily identified as such, by 
+                    <persName corresp="#JR">Ruskin</persName>&#x02BC;s having entitled the second draft installment of the poem as <title type="poem" corresp="#JRCONTIHEIDELBERG">&#x201C;Continuation Heidelberg&#x201D;</title>, and bringing this together with its prior (untitled) 
+                    draft segment to form most of the fair&#x2010;copy poem in <title type="manuscript" corresp="#MSIX">MS IX</title>; and following this, his having also fair&#x2010;copied just enough prose in <title type="manuscript" corresp="#MSIX">MS IX</title> to locate its source in an untitled draft segment of <title type="manuscript" corresp="#MSVIII">MS VIII</title>, 
+                    with two subsequent prose segments readily identifiable by their contents as belonging together. Yet as in the preceding section of the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>, <title type="composite" corresp="#JRSTGOARCOMP">&#x201C;St. Goar&#x201D;</title>, 
+                    the section on <title type="composite" corresp="#JRHEIDELBERGCOMP">&#x201C;Heidelberg&#x201D;</title> lacks a section title in <title type="manuscript" corresp="#MSIX">MS IX</title>. The section title is supplied without comment in the <title type="book" corresp="#JRWORKSLE">Library Edition</title> (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:361), 
+                    but the editors should have enclosed the title in square brackets, as here in <hi rend="italic">ERM</hi>, since <persName corresp="#JR">Ruskin</persName>&#x02BC;s intention can only be inferred, albeit with reasonable certainty 
+                    (see <ref type="note" subtype="bibliographical" target="title_citation_note.php">The System of Title Citation for Works</ref>). Unlike the start of <title type="composite" corresp="#JRSTGOARCOMP">&#x201C;St. Goar&#x201D;</title> in <title type="manuscript" corresp="#MSIX">MS IX</title>, the <title type="composite" corresp="#JRHEIDELBERGCOMP">&#x201C;Heidelberg&#x201D;</title> section does begin with a drawing, 
+                    if not a title. See the commentary on this drawing, however, regarding its uncertain relevance to the landscape near <placeName corresp="#HEIDELBERG">Heidelberg</placeName>.</p></note>
+                
+                <note xml:id="NOWFROMTHESMILING" resp="#DCH"><p><hi rend="bold">&#x201C;Now from the smiling afternoon, / . . . / Hazily his rays came down&#x201D; 
+                    (<title type="manuscript" corresp="#MSIX">MS IX</title>; <hi rend="italic">Poems</hi> [<date when="1891">1891</date>]; <hi rend="italic">Works</hi> [<date when="1903">1903</date>])&#x2014;</hi>Lines 1&#x2013;18 
+                    are not extant in <title type="manuscript" corresp="#MSVIII">MS VIII</title> draft.</p></note>
+                
+                <note xml:id="FROMBEHINDATHUNDERCLOUD" resp="#DCH"><p><hi rend="bold">&#x201C;From behind a thunder cloud, / . . . / &#x02BC;Mid a desert dark and gloomy&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <title type="manuscript" corresp="#MSIX">MS IX</title>; <hi rend="italic">Works</hi> [<date when="1903">1903</date>])&#x2014;</hi>Of 
+                    these eight lines, the draft of the poem in <title type="manuscript" corresp="#MSVIII">MS VIII</title> (which is divided between 66v&#x2013;67r and 69r&#x2013;70v) begins with the second quartet, 
+                    starting with the line &#x201C;Smiling with those bright rays kiss&#x201D;. The first quartet, starting with the line &#x201C;From behind a thunder cloud&#x201D;, first appears in the 
+                    <title type="manuscript" corresp="#MSIX">MS IX</title> fair copy, not in draft. In the <title type="book" corresp="#JRWORKSLE">Library Edition</title>, 
+                    the editors drop these eight lines into a note, incorrectly attributing them&#x2014;all eight of them&#x2014;to <title type="manuscript" corresp="#MSVIII">MS VIII</title>. 
+                    The latter confusion probably arose from <persName corresp="#WGC">W. G. Collingwood</persName> having omitted the lines&#x2014;again, all eight of them&#x2014;from the poem as printed in 
+                    <hi rend="italic">Poems</hi> (<date when="1891">1891</date>), leaving the line &#x201C;<placeName corresp="#MANNHEIM">Mannheim</placeName>&#x02BC;s towers softened lay&#x2014;&#x201D; 
+                    to be followed by &#x201C;But a moment:&#x2014;darkly down&#x201D;. It is unclear why <persName corresp="#WGC">Collingwood</persName> omitted the octet, as the lines are found in <title type="manuscript" corresp="#MSIX">MS IX</title>, which he used as copytext 
+                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:361 n. 1; 
+                    <ref type="bibliography" target="bibliography.php#POEMS4D1891"><persName corresp="#JR">Ruskin</persName>, <title type="poem" corresp="#POEMS4D1891"><hi rend="italic">Poems</hi> [4<hi rend="superscript">o</hi>, <date when="1891">1891</date>]</title></ref>, and 
+                    <ref type="bibliography" target="bibliography.php#POEMS8D1891"><persName corresp="#JR">Ruskin</persName>, <title type="poem" corresp="#POEMS8D1891"><hi rend="italic">Poems</hi> [8<hi rend="superscript">o</hi>, <date when="1891">1891</date>]</title></ref>, 1:135).</p></note>
+                
+                <note xml:id="TEMPESTBATTLE" resp="#DCH"><p><hi rend="bold">&#x201C;But climbed the cloud yet more and more / . . . / Warned us of the tempest battle&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>; <hi rend="italic">Poems</hi> [<date when="1891">1891</date>]; <hi rend="italic">Works</hi> [<date when="1903">1903</date>])&#x2014;</hi>The 
+                    first draft segment of this poem ends with the view of &#x201C;the lovely [<geogName corresp="#NECKAR">Neckar</geogName>] valley bright&#x201D; being 
+                    threatened by storm&#x2014;the &#x201C;Rain and tempest [that] scowling lay&#x201D; like &#x201C;a monster oer his prey&#x201D;. Here, in the second draft segment, which continues the poem, 
+                    <persName corresp="#JR">Ruskin</persName> resumed the mode of sublimity in the threatening storm by developing, and then deleting, lines that pursue a martial figure for the advancing storm. 
+                    <persName corresp="#WGC">W. G. Collingwood</persName> inserted the deleted draft passage into his copytext drawn from the fair copy, because he liked the passage &#x201C;for the sake of the fine &#x2018;<persName corresp="JMWT">Turner</persName>&#x2019; sky and effect&#x201D;. 
+                    <persName corresp="#WGC">He</persName> also remarked that the &#x201C;poem is apparently unfinished&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#POEMS4D1891"><persName corresp="#JR">Ruskin</persName>,<title type="poem" corresp="#POEMS4D1891"><hi rend="italic">Poems</hi> [4<hi rend="superscript">o</hi>, <date when="1891">1891</date>]</title></ref>, 1:283; and 
+                    <ref type="bibliography" target="bibliography.php#POEMS8D1891"><persName corresp="#JR">Ruskin</persName>, <title type="poem" corresp="#POEMS8D1891"><hi rend="italic">Poems</hi> [8<hi rend="superscript">o</hi>, <date when="1891">1891</date>]</title></ref>, 1:285). 
+                    There is no evidence, however, that the poem as found in the <title type="manuscript" corresp="#MSIX">MS IX</title> fair copy is unfinished, although the prose section is certainly incomplete. In his martial metaphors, 
+                    moreover, <persName corresp="#JR">Ruskin</persName> was likely thinking, not of <persName corresp="#JMWT">Turner</persName>, but of the history of multiple and brutal attacks by <placeName corresp="#FRANCE">France</placeName> against the <placeName corresp="#PALATINATE">Palatinate</placeName> of the <geogName corresp="#NECKAR">Neckar</geogName> valley. 
+                    This military history is reflected more explicitly, but still rather distantly and allusively, in the prose section of <title type="composite" corresp="#JRHEIDELBERGCOMP">&#x201C;Heidelberg&#x201D;</title> (see the contextual glosses for that section). 
+                    The editors of the <title type="book" corresp="#JRWORKSLE">Library Edition</title> removed the lines from the main copytext and dropped them in a note 
+                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:362 n. 1).</p></note>
+                
+                <note xml:id="PAUSEPERIOD" resp="#DCH"><p><hi rend="bold">Pause&#x2013;period (MS IX)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</p></note>
+                
+
+            </div>
+        </body>
+    </text>
+</TEI>

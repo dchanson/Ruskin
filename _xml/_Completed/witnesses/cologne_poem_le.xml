@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="cologne_poem_le">
+            <titleStmt>
+                <title type="main">"Cologne" [poem]</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in Ruskin, <hi rend="italic">Works</hi> (1903)</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#">E. T. Cook and Alexander Wedderburn</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#SEP">Steven E. Petite</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier></msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_le"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <biblStruct>
+                    <monogr>
+                        <editor>
+                            <persName>E. T. Cook and Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <imprint>
+                            <biblScope type="vol">2</biblScope>
+                            <biblScope type="edition">Library Edition</biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1903">1903</date>
+                            <biblScope type="pages">351</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="aa">
+           <lg type="stanza" n="1">
+               <l>T<hi rend="smallcaps">HE</hi> noon was past, the sun was low,</l>
+               <l>Yet still we felt his arid glow;</l>
+               <l>From the red sand, reflected glare</l>
+               <l>Deadened the breeze, and fired the air.</l> 
+               <l>The open sky was misty grey;</l>
+               <l>The clouds in mighty masses lay,</l>
+               <l>That, heaped on the horizon high,</l>
+               <l>Marked <geogName corresp="#ALPS">Alpine</geogName> outline on the sky.</l>
+               <l>Long had we toiled to gain a brow<ref type="gloss_contextual" target="cologne_glosses_contextual.php#GAINABROWGLOSS"/></l>
+               <l>On which we stood triumphant now,</l>
+               <l>While the white mist was certain sign</l>
+               <l>Where took his course the mighty <geogName corresp="#RHINE">Rhine</geogName>.</l>
+               <l>Hills in the distant haze were seen,<ref type="gloss_contextual" target="cologne_glosses_contextual.php#SIEBENGEBIRGEGLOSS"/></l>
+               <l>And wide expanse of plain between,</l>
+               <l>Whose desert length, without a tree,</l> 
+               <l>Was stretched in vast monotony.</l>
+               <l>We drove adown that hill amain;</l>
+               <l>We past along the shadeless plain;</l>
+               <l>Rested we now where, uncontrolled,</l>
+               <l>The <geogName corresp="#RHINE">Rhine</geogName> his bursting billows rolled;</l>
+               <l>And ever, ever, fierce and free</l>
+               <l>Bore broadly onward to the sea.</l>
+          </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

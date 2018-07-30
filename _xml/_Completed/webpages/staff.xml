@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="webpage">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="staff">
+            <titleStmt>
+                <title type="main">Staff Page</title>
+                <title type="sub">Webpage</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                    <resp>contributing encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-04-10">March 25, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Webpage Version 2.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="webpage">
+                <head type="title-webpage">Staff and Support</head>
+                <div type="section">
+                    <head type="section">Editor</head>
+                    <p>David C. Hanson<lb/>
+                        <hi rend="italic">Department of English</hi><lb/>
+                        <hi rend="italic">Southeastern Louisiana University</hi></p>
+                </div>
+                <div type="section">
+                    <head type="section">Encoders and Researchers</head>
+                    <p>Jaime Barrilleaux, Sushantika Bhandari, Samantha Bloemer, Kimberley Calhoun, Timothy Dunn, Makenzi Edwards, 
+                        Emily Elgin, Madeline Felps, Jessica Firmin, 
+                        Elizabeth Fox, Julia Gaines, Rebekah Grommon, Brandon Guidry, Stephan Haddad, Simone Hamilton, Aimee Harris, 
+                        Terri Ilgen, Garth Kiepper, Lauren Lambert, Jensin Lopez, Cody Love, Sarah Montelepre, Katie Moore, Cerissa Morse, Taylor Oakley, 
+                        Emily Odenwald, Steven Petite, Brianna Poch&#x00E9;, Rebecca Rainier, Chalines Rosario, Jessica Rushing, 
+                        Zachary Slawson, Michael Stevenson, Kiran Thapa&#x2013;Magar, Isaiah Thomas, Katrina Thomas, Heidi Toloudis, 
+                        Amanda Upton, Tracy Valentine, 
+                        Kyle Volkmann, David Wall, Casey White, William Woodard<lb/>
+                        <hi rend="italic">Southeastern Louisiana University</hi></p>
+                </div>
+                <div type="section">
+                    <head type="section">Programmers</head>
+                    <div type="section">
+                        <head type="subsection">Lead Programmers</head>
+                        <p>Charles Borchers IV, Damodar Dahal, Garth Kiepper<lb/>
+                            <hi rend="italic">Southeastern Louisiana University</hi></p>
+                    </div>
+                    <div type="section">
+                        <head type="subsection">Search Engine Team</head>
+                        <p>Kevin Dyer, Benjamin Henry, Garth Kiepper, Elena Mizell, Justin Moore<lb/>
+                            <hi rend="italic">Southeastern Louisiana University</hi></p>
+                    </div>
+                    <div type="section">
+                        <head type="subsection">Mapping Team</head>
+                        <p>Chase Blank, Cory Clapp, Nicholas Cotton, Jenna Hildebrand, Brittney Jarreau, Brian Martinez, Curtis Osko, Holden Pitre, Daniela Raygadas<lb/>
+                            <hi rend="italic">Southeastern Louisiana University</hi></p>
+                    </div>
+                </div>
+                <div type="section">
+                    <head type="section">Consultants</head>
+                    <p><hi rend="italic">ERM</hi> is indebted to the following individuals who have served as consultants on this project:</p>
+                    <p>Syd Bauman<lb/>
+                        <hi rend="italic">Digital Scholarship Group</hi><lb/>
+                        <hi rend="italic">Northeastern University</hi></p>
+                    <p>Charles Borchers IV</p>
+                    <p>Garth Kiepper<lb/>
+                        <hi rend="italic">Southeastern Louisiana University</hi></p>
+                    <p>Matthew Christy<lb/>
+                        <hi rend="italic">Initiative for Digital Humanities, Media, and Culture</hi><lb/>
+                        <hi rend="italic">Texas A &#x0026; M University</hi></p>
+                    <p>Julia Flanders<lb/>
+                        <hi rend="italic">Digital Scholarship Group</hi><lb/>
+                        <hi rend="italic">Northeastern University</hi></p>
+                    <p>Roger Garside<lb/>
+                        <hi rend="italic">School of Computing and Communications (retired)</hi><lb/>
+                        <hi rend="italic">Lancaster University</hi></p>
+                    <p>Laura Mandell<lb/>
+                        <hi rend="italic">Initiative for Digital Humanities, Media, and Culture</hi><lb/>
+                        <hi rend="italic">Texas A &#x0026; M University</hi></p>
+                    <p>Dot Porter<lb/>
+                        <hi rend="italic">Digital Research Services</hi><lb/>
+                        <hi rend="italic">University of Pennsylvania Libraries</hi></p>
+                    <p>Lawrence Woof</p>
+                </div>
+                <div type="section">
+                    <head type="section">Supporting Agencies</head>
+                    <p><hi rend="italic">ERM</hi> is also indebted to the following organizations who have supported of the Editor&#x02BC;s research and assisted staff in workshopping markup languages through grants and fellowships:</p>
+                    <p>Louisiana Board of Regents Support Fund<lb/>
+                        Undergraduate Enhancement Subprogram<lb/>
+                        LEQSF(2009-10)-ENH-UG-35, LEQSF(2012-13)-ENH-UG-26, and LEQSF(2015-16)-ENH-UG-17</p>
+                    <p>Louisiana Board of Regents Support Fund<lb/>
+                        Awards to Louisiana Artists and Scholars Subprogram<lb/>
+                        LEQSF(2005-06)-RD-ATL-10</p>
+                    <p>Huntington Library<lb/>
+                        Andrew W. Mellon Foundation Fellow, 2005&#x2013;6</p>
+                    <p>NINES<lb/>
+                        Workshop in Digital Scholarship, University of Virginia, 2005</p>
+                    <p>Beinecke Library<lb/>
+                        Visiting Fellowship, 1998</p>
+                    <p>National Endowment for the Humanities<lb/>
+                        Summer Stipend, 1998</p>
+                    <p>South Central Modern Language Association<lb/>
+                        Travel Grant, 1998</p>
+                    <p>Bibliographical Society of America<lb/>
+                        Travel Grant, 1998</p>
+                    <p>American Philosophical Society<lb/>
+                        Research Grant, 1990&#x2013;91</p>
+                    <p>National Endowment for the Humanities<lb/>
+                        Travel to Collections Grant, 1990&#x2013;91</p>
+                    <p>Southeastern Louisiana University<lb/>
+                        Faculty Development Grants and Research Sabbaticals, 1989&#x2013;2006</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

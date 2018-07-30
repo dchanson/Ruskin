@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">E. T. Cook</title>
+                <title type="sub">Notes</title>
+                <author>
+                    <persName xml:id="DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName>David C. Hanson</persName>
+                </editor>
+                <principal><persName>David C. Hanson</persName></principal>
+                <respStmt>
+                    <!--For XML:ID, enter your intials.-->
+                    <persName xml:id="CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For XML:ID, enter your intials.-->
+                    <persName xml:id="AEH">Aimee E. Harris</persName>
+                    <resp>contributing encoding/transcription/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2018-02-06">February 06, 2018</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note">
+                <head type="title"><persName corresp="#ETC">E. T. Cook</persName> (<!--Entry needed here.-->&#x2013;1919)</head>
+                <p>Over the ten&#x2010;year period of work on the<title type="book" corresp="JRWORKSLE">Library Edition</title>, <persName corresp="#ETC">Cook</persName> worked
+                    eight hours per day, while maintaining his position as a lead writer for the <title type="periodical" corresp="#LONDONDAILYCHRONICLE"><hi
+                        rend="italic">Daily Chronicle</hi></title>. He also authored his <title type="book" corresp="#COOKLIFEOFRUSKIN"><hi rend="italic"
+                        >Life of Ruskin</hi></title> and other works on <persName corresp="#JR">Ruskin</persName>.</p>
+                <p><persName corresp="#JSD">Dearden</persName>, <title type="book" corresp="#DEARDENRUSKINLIBRARY">&#x201C;Library Edition of the Works of John Ruskin&#x201D;</title>,
+                    56.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

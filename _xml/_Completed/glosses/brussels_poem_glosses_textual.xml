@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <fileDesc xml:id="brussels_poem_glosses_textual">
+            <titleStmt>
+                <title type="main">"Brussels" [poem]</title>
+                <title type="sub">Glosses [textual]</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses" subtype="textual">
+                <note xml:id="BRUSSELSBLANK" resp="#DCH"><p><hi rend="bold">Blank space on page for possible drawing (MS IX)&#x2014;</hi>Since the heading of this section is placed significantly below the top of the page, 
+                    leaving a vertical column measuring approximately nine lines of <persName corresp="#JR">Ruskin</persName>&#x02BC;s cursive copperplate script, it is reasonable to assume that 
+                    he intended to paste a drawing here, but never produced it, or that he produced a drawing, but it has been removed or lost.</p></note>
+                
+                <note xml:id="MIND" resp="#DCH"><p><hi rend="bold">&#x201C;Mind&#x201D; (MS IA, <hi rend="italic">g</hi>.1)&#x2014;</hi>This word, written sideways between the columns of the poem, 
+                    does not appear to be intended as part of &#x201C;Brussels&#x201D; itself; and the hand may not be <persName corresp="#JR">Ruskin</persName>&#x02BC;s, 
+                    although the formation of the terminal <hi rend="italic">d</hi> is more characteristic of his hand than of <persName corresp="#MR">Margaret Ruskin</persName>&#x02BC;s, 
+                    whose handwriting can sometimes be confused her son&#x02BC;s. The word seems to form an imperative; and while no other clue remains to indicate what was to be &#x201C;minded&#x201D;, 
+                    the word may be a metamark (see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#METAMARKS">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Metamarks</ref>).</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>

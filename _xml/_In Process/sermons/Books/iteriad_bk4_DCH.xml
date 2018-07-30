@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#CR">Chalines Rosario</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS VII</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1830-31" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Poem</head>
+                <lg type="stanza" rhyme="aa">
+                    <l>The morning arrived Oer <placeName corresp="#SHAP">Shapfells</placeName> rugged crest</l>
+                    <l>Arose the bright sun in the gorgeous east</l>
+                    <l>But ah far too swift flew the moments away</l> 
+                    <l>And the hours strode along and dragged onward the day</l> 
+           <!--5--> <l><add rend="linenumber-left-JR">5</add>Till the moment arrived We unwillingly gave</l>
+                    <l>The last longing look to the islanded wave</l>
+                    <l>Regretting that now from its bosom we drove</l>
+                    <l>Towards the wild moors of <placeName corresp="#PENRITH">Penrith</placeName> we silently rove</l>
+                    <l>Through the glen of the Greta a passage we found</l>
+                    <pb facs= "MSVII41v-42r"/>
+          <!--10--> <l>And round the huge <geogName corresp="#BLENCATHRA">Saddlebacks</geogName> forehead we wound</l>
+                    <l>By the bye I should think he,d a good deal of sense <!--comma instead of apostrophe see manuscript--></l>
+                    <l>For although his huge Fate be prodigiously dense</l>
+                    <l>And although very leaden be his comprehension</l>
+                    <l>Yet his forehead Im sure is of mighty extension</l>
+          <!--15--> <l>And sir you perhaps may be now recollecting</l>
+                    <l>There are plenty of brains where the foreheads projecting</l>
+                    <l>The morning was lovely The bright azure sky</l>
+                    <l>With light fleecy clouds it was studded on high</l>
+                    <l>As if <name type="fictional" corresp="#JUPITER">Jupiters</name> sheep from their fold they had strayed </l>
+          <!--20--> <l>And oer their blue meadows a ramble had made</l>
+                    <l>Perhaps you will say that the gods had no sheep</l>
+                    <l>Sir I will not enter on argument deep</l>
+                    <l>But this I will say that you must recollect sir</l>
+                    <l>That their goblets of gold were filled brimful of nectar</l>
+          <!--25--> <l>And this to th, opinion perhaps may give rise</l>
+                    <l>They had plenty of nectarine trees in the skies</l>
+                    <l>And as to heir having a good flock of sheep</l>
+                    <l>If they drank I should think thy had something to eat</l>
+                    <l>And although if they did not I care not a button</l>
+          <!--30--> <l>The gods lived on something Oh why not on mutton</l>
+                    <pb facs= "MSVII41v-42r"/>
+                    <l>But let me remember To whom do I speak</l>
+                    <l>Perhaps to a man who knows nothing of Greek</l>
+                    <l>I dont condescend sir to talk to a loon &#x02BC;O&#x02BC;</l>
+                    <l>Who perhaps knoweth nothing of <name type="fictional" corresp="#JOVE">Jove</name> or of <name type="fictional" corresp="#JUNO">Juno</name></l>
+          <!--35--> <l>And never oh never shall man be called my man</l>
+                    <l>Who cannot translate Tlevtenaidenavaiav</l> <!--Manuscript is written in Greek-->
+                    <l>I return to my tale From the mountains emerging</l>
+                    <l>Again towards <placeName corresp="#PENRITH">Penrith</placeName> our course we were urging</l>
+                    <l><geogName corresp="#HELVELLYN">Helvellyns</geogName> huge ranges arose on our right</l>
+          <!--40--> <l>To the left <placeName corresp="#SHAP">Shapfells</placeName> crags at length bounded the sight</l>
+                    <l><geogName corresp="#BLENCATHRA">Saddleback</geogName> was behind us and stretching before</l>
+                    <l>Was a gloomy expanse of the heathery moor</l>
+                    <l>How different the scene which behind us we left</l>
+                    <l>How different the scene from which we had been reft</l>
+          <!--45--> <l>And through all of us knew that those wishes were vain</l>
+                    <l>We all of us wished for the <geogName corresp="#DERWENTWATER">Derwent</geogName> again</l>
+                    <l>But now our course changed to the right we wheeled round</l>
+                    <l>Toward the range of <geogName corresp="#HELVELLYN">Helvellyn</geogName> a passage we found</l>
+                    <l>(<geogName corresp="#MELLFELL">Mellfell</geogName> being past) by that huge ranges side</l>
+          <!--50--> <l>Thats farthest from <placeName corresp="#KESWICK">Keswick</placeName> we glady do ride</l>
+                    <l>Then entered among the luxuriant woods</l>
+                    <pb facs= "MSVII42v-43r"/>
+                    <l>&#x002A;See note</l>
+                    <l>Near <placeName corresp="#GOWBARROW">Gowbarrow Park</placeName> and dark <geogName corresp="#ULLES">Ulles</geogName> floods</l>
+                    <l>Ive lost a good rhyme there its <placeName corresp="#GOWBARROW">Gowbarrow park</placeName></l>
+                    <l>And the waves of <geogName corresp="#ULLES">Ulles</geogName> water so deep and so dark</l>
+          <!--55--> <l>I never lose rhymes they are really the root</l>
+                    <l>There are three things that poetry good constitute</l>
+                    <l>Good rhymes are the first and good meausure the second</l>
+                    <l>And last I believe sense is usually reckoned</l>
+                    <l>But never allowed I am sure is digression</l>
+                    <l>So of my great sins I will make a confession</l>
+                    <l>And hope that for them I may swiftly alone</l>
+                    <l>To the reader impatient by now going on</l>
+                    <l>Mongst those beautiful woods now was winding the way</l>
+                    <l>For here they held almost tyrannical sway</l>
+                    <l>Near <placeName corresp="#GOWBARROW">Gowbarrow Park</placeName> on the steep rising heights</l>
+                    <l>Forest on forest the vision delights</l>
+                    <l>Half nature half art had those forests upreared</l>
+                    <l>Till richly they now on the mountains appeared</l>
+                    <l>And crested the crags as the plumes of red</l>
+                    <l>Wave oer some warriors helmeted head</l>
+                    <l>Richly they stand as their foilage bright</l>
+                    <l>Feathered and mantled each wave washen height</l>
+                    <pb facs= "MSVII42v-43r"/>
+                    <l>Till short the road turned and we instant behold</l>
+                    <l>A scene that was fit to be graven on gold</l>
+                    <l>Right in the front all so dark and so deep</l>
+                    <l>Azurely gloomy lay <geogName corresp="#ULLES">Ulleswaters</geogName> sheet</l>
+                    <l>Like a lurathan resting there</l>
+                    <l>It lay all so mighty so placid and fair</l>
+                    <l>Deeply deceitful deceitfully calm</l>
+                    <l>As if it were found by some wonderfulcharm</l>
+                    <l>As if it were shunning the gorgeous day</l>
+                    <l>Mountains embosomed secluded it lay</l>
+                    <l>While beyond that so blue and so beautiful flood</l>
+                    <l>The might <geogName corresp="PLACEFELL">Place&#x2010;fell</geogName> all so haughtily stood</l>
+                    <l>And heaped his huge crags so confusedly high</l>
+                    <l>As if boring a hole in the blue coloured sky</l>
+                    <l>Blue blue did I say what a monstrous mistake</l>
+                    <l>I am positive sir that it really is black</l>
+                    <l>What, wouldst contradict me Now sir if you do</l>
+                    <l>I tell you Ill beat you both black and blue</l>
+                    <l>Now left we our carriage in order to go</l>
+                    <l>To a tower which they call <placeName corresp="#LYULPHS">Lyulphs tower I know</placeName> </l>
+                    <l>And also I know it belongs to a duke</l>
+                    <pb facs= "MSVII43v-44r"/>
+                    <l>But which to my readers I leave to dispute</l>
+                    <l>Where were some fine brews and some huge horns of deer</l>
+                    <l>But nothing else worthy of mentioning here</l>
+                    <l>But now to our carriage returning we drove</l>
+                    <l>By <geogName corresp="#ULLES">Ulleswaters</geogName> side through no longer twas smooth</l>
+                    <l>For a breeze that was born mong dark <placeName corresp="#PATTERDALE">Patterdales fells</placeName></l>
+                    <l>Each miniature billoww with anger it swells</l>
+                    <l>As puny as vain and as light as the fair</l>
+                    <l>That woke its deep waters from slumbering there</l>
+                    <l>Now were I oh were I a proper lake poet</l>
+                    <l>Although you will say tis in vain that I know it</l>
+                    <l>But I cannot do what I know that I should</l>
+                    <l>Pop in an address to nymph solitude</l>
+                    <l>Oh beautiful beautiful should my muse make her</l>
+                    <l>With a thou and a thee like the words of a quaker</l>
+                    <l>All so fine Thou companion of night the black brow,d</l>
+                    <l>Who spreads oer all nature her star spangled shroud</l>
+                    <l>Tis in vain Tis in vain I am not a lake poet</l>
+                    <l>I knew from the first ont that I couldn,t do it</l>
+                    <l>Oh pray oh <name type="fictional" corresp="#MELPROMENE">Melpromene</name> help me up here</l>
+                    <l>I never shall do for the fashion I fear</l>
+                    <pb facs= "MSVII43v-44r"/>
+         <!--115--> <l>Spite of all the endeavour by poor me that made is</l>
+                    <l>I shall mess the applause of the misses and ladies</l>
+                    <l>Far contrary unto the laws that are writ</l>
+                    <l>In natures own code every miss makes a hit</l>
+                    <l>At poor me and my rhymes for their not sentimental</l>
+         <!--120--> <l>And so to the __&#x3008;stops&#x3009; to oblivion they,re sent all</l>
+                    <l>But poets forget when they praise solitude</l>
+                    <l>That by rights upon her they should never intrude</l>
+                    <l>And therefor if truly and rightly twere known</l>
+                    <l>They praise her best when they let her alone</l>
+         <!--125--> <l>But I am digressive oh pray do not blame me.</l>
+                    <l>In description I know it would go on but lamely</l>
+                    <l>You know that description alone it would be sir</l>
+                    <l>A tedious thing that would tire you and me sir</l>
+                    <l>All mountains and lakes would be very humdrum</l>
+                    <l>In a very short while you, be wanting some fun</l>
+                    <l>You,d find sir in spite of the grand and sublime</l>
+                    <l>A little ridiculous wanting in time</l>
+                    <l>Its all very well to address melancholy</l>
+                    <l>And the night and the morning and other such folly</l>
+                    <l>Or a sonnet to night loving fair <name type="fictional" corresp="PHILOMEL">Philomel</name></l>
+                    <pb facs="MSVII44v-45r"/>
+                    <l>In a fine ladies album these look very well</l>
+                    <l>But though you may think me prodigiously assical</l>
+                    <l>I do like some fun something thats hudibrastical</l>
+                    <l>Let every pert miss interrupt me in middle</l>
+                    <l>With a proper school bred and genteel kind of giggle</l>
+                    <l>I,I,__Oh dear me But Ill make a confession</l>
+                    <l>Im gigressive when I do but talk of digression</l>
+                    <l>Tis enough I go on by banks of the lake</l>
+                    <l>Towards fair <placeName corresp="#PATTERDALE">Patterdale</placeName> we our progress did take</l>
+                    <l>And hoping each house that we saw on before</l>
+                    <l>Would turn out the inn on the waves woody shore</l>
+                    <l>Though we wondering say that our horses did trot</l>
+                    <l>To the lakes extreme end and that still we stopped not</l>
+                    <l>And when full half a mile from ites verge we advance</l>
+                    <l>Despair threw our minds in a wondering trance</l>
+                    <l>And certes not less than that distance we drive</l>
+                    <l>Until at the house or the inn we arrive</l>
+                    <l>Now though I be called an eregious sinner</l>
+                    <l>I had not forgot at <geogName corresp="#ULLES">Ulles</geogName> water my dinner</l>
+                    <l>In the good open air it is well to be lunching</l>
+                    <l>You always see scenery lest when your,e munching</l>
+                    <pb facs="MSVII44v-45r"/>
+                    <l>Youd think the view beautiful if in his hand each</l>
+                    <l>Tween finger and thumb had a mustarded sandwich</l>
+                    <l>The mutton alive which away from you fled</l>
+                    <l>Would look better if you had little on,t dead</l>
+                    <l>Remember old <geogName corresp="#SKIDDAW">Skiddaw</geogName> The sandwiches there</l>
+                    <l>Drove off all the cold of the rarefied air</l>
+                    <l>Can one relish a view without any proeprsion</l>
+                    <l>Not atall fortified with the beef ammunition</l>
+                    <l>Impossible Tis very well sir for you</l>
+                    <l>Who a good appetite sir perhaps never knew</l>
+                    <l>To say I am gluttonous and Epicarian</l>
+                    <l>Your opinion is founded pray tell me what surety on</l>
+                    <l>Save that I like some meat what can you do without it</l>
+                    <l>If you answer me aught you know nothing about it</l>
+                    <l>But I do forget that a noble red mullet</l>
+                    <l>And some fine turtle soup has been stretching your gullet</l> <!--Word on top of a word-->
+                    <l>From a gallant tureen thats full broad and full deep</l>
+                    <l>So swallow my rhymes too ere you to sleep</l>
+                    <l>But now I continue me long tailed oration</l>
+                    <l>And tell me that now on the present occasion</l>
+                    <l>Impatient to sit round about the oak table</l>
+                    <pb facs="MSVII45v-46r"/>
+                    <l>We called for our dinner soon as we were able</l>
+                    <l>Now first was served up to us fine potted dear</l>
+                    <l>Peculiar to some of the large lakes they are</l>
+                    <l>Now bonistones the lake where in they are largest</l>
+                    <l>But <geogName corresp="#WINDERMERE">Windermere</geogName><geogName corresp="#WINDERMERE">Windermere</geogName> there sir they are best</l>
+                    <l>But those of <geogName corresp="#ULLES">Ulles</geogName> water to neither incline</l>
+                    <l>You can say nothing of them but they,re very fine</l>
+                    <l>Now sir without arguing snarling or wrangling</l>
+                    <l>Id dwell for a moment on fishing and angling</l>
+                    <l>Because my lord <persName corresp="#GBG">Byron</persName> has much depricated it</l>
+                    <l>And mightily mightily much has he rated it</l>
+                    <l>And at it again was the good doctor <persName corresp="JOHNSON">Johnson</persName></l>
+                    <l>But I mustnt face him Id as soon face a monsoon</l>
+                    <l>But the fish must be killed and you wont deny that sir</l>
+                    <l>You cant catch a salmon just clean in your hat sir</l>
+                    <l>Half strangled and stuck mid the meshes and rings</l>
+                    <l>Our method at least gives a morsel of fly</l>
+                    <l>A bit of good dinner before that they die</l>
+                    <l>Now when we somewhat had our hunger allayed</l>
+                    <l>Our knife and fork war for some monuments we staid</l>
+                    <l>9 Sepr</l> <!--Date-->
+                    <pb facs="MSVII45v-46r"/>
+                    <l>Then looked at the sky and consid,ring the weather</l>
+                    <l>Determined to take a short ramble together</l>
+                    <l>And first to the back of the house we went round</l>
+                    <l>Where a huge dirty dunghill full quickly we found</l>
+                    <l>Besides it a puddle where one dirty duck</l>
+                    <l>Whith her brood swam or paddled or waddled or stuck </l>
+                    <l>But we pushed past its dangers in order to try</l>
+                    <l>To ascend a small molehill some fifty feet high</l>
+                    <l>For though we could hardly call it elevation</l>
+                    <l>We thought for a view twas a good situation</l>
+                    <l>But scarce had we placed our foot on the first rock</l>
+                    <l>We suddenly suddenly met with a stop</l>
+                    <l>Twas strange passing strange that the moment we came</l>
+                    <l>Just forth from the threshold the heavens would rain</l>
+                    <l>But although we did think they were much in the wrong</l>
+                    <l>Oh then how we scampering stumbled along</l>
+                    <l>Old <persName corresp="PVM">Virgil</persName> himself could not tell how we flew</l>
+                    <l>With his Auadrupidante putrim sonitu</l> <!--Manuscript is written in foreign language-->
+                    <l>But scarecly again had we got the door</l>
+                    <l>Ere the sun and the sky became bright as before</l>
+                    <l>So we turned round about and clear scaping their wrath</l> <!--wrath is placed on top of their-->
+                    <pb facs="MSVII46v-47r"/>
+                    <l>Again trotted on by a different path</l>
+                    <l>We came to a bridge a bright streamlet thrown oer</l>
+                    <l>Which licked with its ripples the pebbly shore</l>
+                    <l>Tis a capital stream for a rod and a float</l>
+                    <l>Perhaps for a salmon perhaps for a trout</l>
+                    <l>Here and there on the banks spread the roots of a tree</l>
+                    <l>Whose other mossed members had ceased for to be</l>
+                    <l>While a fine bunch of fern oer some eddies full deep</l>
+                    <l>For a chub or a pike made a noble retreat</l>
+                    <l>I believe mongst the lakes there is no such another</l>
+                    <l>These torrent do make such a terrible pother</l>
+                    <l>Bounce bump on a rock get a monstrous rebuff</l>
+                    <l>Then leap to another repaid with a cuff</l>
+                    <l>And boiling and foaming quite into an eddy</l>
+                    <l>Attempts but attempts it in vain to be steady</l>
+                    <l>What fish could live Not a moment could they</l>
+                    <l>Mongst the bright ripples dance or in deep eddies play</l>
+                    <l>But dashed on the rocks or all madly hurled oer</l>
+                    <l>In some cataracts foaming or tossed on the shore</l>
+                    <l>Kick up suck a stench as would poison a ciy</l>
+                    <l>And excite een the lovers of angling to pity</l>
+                    <pb facs="MSVII46v-47r"/>
+                    <l>But theres something in these with their rout and their roar</l>
+                    <l>That pleases a poor fineless biped on shore</l>
+                    <l>They roar to great length of both distance and time</l>
+                    <l>Without any reason like this thing of mine</l>
+                    <l>Now we waded and walked where I need not now tell</l>
+                    <l>By fell and by forest by forest and fell</l>
+                    <l>I could tell how we found sir &#x3008; Now what do you think</l>
+                    <l>Why we saw mongst the roots of an oak in a chink</l>
+                    <l>Just placed at our feet and quite ready to pick up</l>
+                    <l>All so snug and so warm and supported by stick up</l>
+                    <l>Now with curiosity swells each ones breast</l>
+                    <l>Oh what did you find sir I found a ___ birds nest</l>
+                    <l>But though I could much this excursion expand</l>
+                    <l>And pen might run on like a goose in my hand</l>
+                    <l>Yet I will not Oh there is so much generosity</l>
+                    <l>That first I would not balk your great curiosity</l>
+                    <l>And next that I thought not my poem admired</l>
+                    <l>When all those who heard it were noddingly tired</l>
+                    <l>Oh dear it is hard to restrain this old pen</l>
+                    <l>That will not hold in to the powers of men</l>
+                    <l>I am sure that it has but a goose understanding</l>
+                    <pb facs="MSVII47v-48r"/>
+                    <l>So mounstrously foolishly always expanding</l>
+                    <l>But now Ill pass over a good deal of time</l>
+                    <l>Without any reason Nay more any rhyme</l>
+                    <l>Save remarking that we an excursion did take</l>
+                    <l>In the evening down by the banks of the lake</l>
+                    <l>And scarcely I think that it needs to be said</l> <!--The d on and seems to be altered-->
+                    <l>That when the night came then we all went to bed</l>
+                    <l>The morning arrived we rose mightily early</l>
+                    <l>To see if the day dawned or foully or fairly</l>
+                    <l>Alas where before from the window we&#x02BC;d seen</l> <!--It seems like there is both a comma and an apostrophe in the word-->
+                    <l>That mighty <geogName corresp="PLACEFELL">Placefell</geogName> the huge mists rolled between</l>
+                    <l>Where formerly heaped he his helmety top</l>
+                    <l>We saw not a fragment of mountain or rock</l>
+                    <l>And soon those same clouds which his summit concealed</l>
+                    <l>Their troublesome gloomy intentions revealed</l>
+                    <l>Oh dear it was sad for ere breakfast time came</l>
+                    <l>The waters were circled with huge drops of rain</l>
+                    <l>Those various clouds as they changed situations</l>
+                    <l>Were the subjects of dark and of deep speculations</l>
+                    <l>Howeer we determined wherever they wintered</l>
+                    <l>From our Journey to <placeName corresp="LOWWOOD">Lowwood</placeName> we would not be hindered</l>
+                    <pb facs="MSVII47v-48r"/>
+                    <l>So ordered the horses Now reader prepare</l>
+                    <l>For a tale shall raise up on thy caput thy hair</l>
+                    <l>HWhat kind of terrible tale ist What said ye</l>
+                    <l>Why the impudence of a landlord and landlady</l>
+                    <l>When we in a merry and fine happy mood</l>
+                    <l>We were just about to set off for <placeName corresp="LOWWOOD">lowwood</placeName></l>
+                    <l>When up hopped a redhaired and sourlooking maid</l>
+                    <l>Who made bold to tell us Now guess what she said</l>
+                    <l>Why that such a huge hill lay directly before</l>
+                    <l>We must somehow contrive to take two horses more</l>
+                    <l>There are many I know who when that had been said</l>
+                    <l>Instead of resisting it would have been glad</l>
+                    <l>But these want all over the grounds for to flee so</l>
+                    <l>But we being confident in our gentility</l>
+                    <l>We would not aspire to the rights of nobility</l>
+                    <l>Could we now just say in our conscience take more</l>
+                    <l>That two when a Lord does but lumber with four</l>
+                    <l>So to her landladyships impudent face</l>
+                    <l>We said that we chose not to ride such a race</l>
+                    <l>And that we by the by twas a great condescension</l>
+                    <pb facs="MSVII48v-49r"/>
+                    <l>Would walk up the hill of such mighty extension</l>
+                    <l>But the draggletailed blue stocking curlpaper pate</l>
+                    <l>Began with a great affection of state</l>
+                    <l>To inform us the hill was so high that she could not</l>
+                    <l>&#x3008;Which we found was synonym here with she would not&#x3009;</l> <!--The word not appears above the word would in the manuscript-->
+                    <l>Allow us to climb up the mountain with two</l>
+                    <l>And we would not object unto four if we knew</l>
+                    <l>What a precipice guarded one side of the road</l>
+                    <l>Which she hinted to frighten us wasnt too broad</l>
+                    <l>But I guess that the reason she ought to advance is</l>
+                    <l>A greedy desire to increase her finances</l>
+                    <l>Oh yellow faced xguoes No no tis xguon</l> <!--Foreign language?-->
+                    <l>What a circle of evils may be thee sir made be</l>
+                    <l>But chiefly the impudence of a landlady</l>
+                    <l>But methinks I do hear every reader advising</l>
+                    <l>In the midst of the tour not to stop moralizing</l>
+                    <l>We grew angry and she on no kind of condition</l>
+                    <l>Would move from her obstinate hilly position</l>
+                    <l>Oh let every person who happens to see this</l>
+                    <l>Shun quickly a quarrel de quator equis</l> <!--X at the end of the line-->
+                    <pb facs="MSVII48v-49r"/>
+                    <l>For a landlady fat as a huge roasted capon</l>
+                    <l>In scolding how finely her words she will heap pn</l>
+                    <l>And so we did find for with arms stuck a kimbo</l>
+                    <l>&#x3008;For which we did was We could not put them in limbo&#x3009;</l>
+                    <l>Stood out of most steadily stuffly and sternly</l>
+                    <l>Unmoved as <geogName corresp="#HELVELLYN">Helvellyn</geogName> himself and firmly</l>
+                    <l>Till at length as we saw twas in vain to dispute</l>
+                    <l>We gave up the argument and we were mute</l>
+                    <l>Soon saw we our carriage incumbered with four</l>
+                    <l>On its wheels swift revolving roll round to the door</l>
+                    <l>We tried her again for we thought not the sex able</l>
+                    <l>To be all so monstrously mighty inflexible</l>
+                    <l>But we could not afford any longer to stop</l>
+                    <l>When we found her so nearly akin to a rock</l>
+                    <l>So we called having yielded to her as before</l>
+                    <l>Jack hostler heres sixpence and now shut the door</l> <!--Confused as to how to research Jack-->
+                    <l>Off rapidly rolled we Postillions two</l>
+                    <l>Urged onward the steeds as fast forward we flew</l>
+                    <l>And we found as the fellows did whip and did smack its</l> <!--The word its is placed above smack-->
+                    <l>Prodigious fine fun to see two yellow jackets</l>
+                    <l>And as raising much dust the four horses did jog</l>
+                    <pb facs="MSVII49v-50r"/>
+                    <l>To see them to see them alternately bob</l>
+                    <l>So away from our mind angry feelings all flitted</l>
+                    <l>And patiently unto our fate we submitted</l>
+                    <l>Now we came to a lake which seemed <geogName corresp="#ULLES">Ulleswaters</geogName> daughter</l>
+                    <l>Which they call a romantical Brothers water</l>
+                    <l>Because &#x3008;I am sorry to have the relating&#x3009;</l>
+                    <l>Two brothers were drowned here once when they were skaitingt</l>
+                    <l>It was dear it was small but we soon saw how steep</l>
+                    <l>Was the gravelly shore that sloped down to the deep</l>
+                    <l>But we liked not its look though its wave was as clear</l>
+                    <l>It looked much more suspicious that fair <geogName corresp="#WINDERMERE">Windermere</geogName></l>
+                    <l>So we passed by its waters and gan to look round</l>
+                    <l>Where the mountains the valley more narrowly bound</l>
+                    <l>The fields got more narrow as onward we drove</l>
+                    <l>And the stream wandered not by green island or cove</l>
+                    <l>More rocky and foamy and splashy it grew sir</l>
+                    <l>And began to get into a passionate humour</l>
+                    <l>No longer our road by the valley so low went</l>
+                    <l>But steeper and steeper it grew every moment</l>
+                    <l>Till the dell shot away into three good divisions</l>
+                    <l>All holding most mountainous hilly positions</l>
+                    <pb facs="MSVII49v-50r"/>
+                    <l>The course of the two it is not worth relating</l>
+                    <l>But one went straight forward without deviating</l>
+                    <l>Up this or by hook by crook we must climb</l>
+                    <l>Which we found would take up much of trouble and time</l>
+                    <l>But there was unto <placeName corresp="LOWWOOD">Lowwood</placeName> no other approach</l>
+                    <l>So picked up resolution and then stopped the coach</l>
+                    <l>Though the road was full nearly akin to a river</l>
+                    <l>We got out and the carriage we left to the driver</l>
+                    <l>And walked up the hill by the side of the stream</l>
+                    <l>Which rumbled fantastical rocks all between</l>
+                    <l>Now heres a fine place for a plump fifty lines</l>
+                    <l>But my muse no such needless extension desgins</l>
+                    <l>Because if I wrote upon this any more</l>
+                    <l>I should now describe whats been before</l>
+                    <l>So through thick and through thin over log over rock</l>
+                    <l>I shall carry the reader at once to its top</l>
+                    <l>Oh then was a time when we gazed once more</l>
+                    <l>Upon <geogName corresp="#WINDERMERE">Windermeres</geogName> woody and waving shore</l>
+                    <l>On the gloomy ravine where we first saw the stream</l>
+                    
+                    
+                    
+                    
+                
+                        
+                    
+                        
+                        
+                    
+                    
+                 
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                
+                
+                   
+                
+                    
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

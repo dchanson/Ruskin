@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="milan_cathedral_poem_le">
+            <titleStmt>
+                <title type="main">"Milan Cathedral" [poem]</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Works</hi> (1903)</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#">E. T. Cook and Alexander Wedderburn</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBV">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier></msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_le"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>E. T. Cook and Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <imprint>
+                            <biblScope type="vol">2</biblScope>
+                            <biblScope type="edition">Library<hi rend="superscript"></hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1903">1903</date>
+                            <biblScope type="pages">376-77</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="aa">
+                <head type="title"><hi rend="caps">MILAN CATHEDRAL</hi></head>
+                <lg type="stanza" n="1">
+                    <l><hi rend="caps">T</hi><hi rend="smallcaps">HE</hi> heat of summer day is sped;</l>
+                    <l>On far <geogName corresp="#MONTEROSA">Mont Rose</geogName> the sun is red;<ref type="gloss_contextual" target="milan_cathedral_poem_glosses_contextual.php#MONTEROSAGLOSS"/></l>
+                    <l>And mark you <placeName corresp="#MILAN">Milan</placeName>&#x02BC;s marble pile</l>
+                    <l>Glow with the mellow rays awhile!</l>
+                    <pb/>
+                    <l>Lo, there relieved,<ref type="gloss_contextual" target="milan_cathedral_poem_glosses_contextual.php#RELIEVEDGLOSS"/> his front so high</l>
+                    <l>On the blue sky of <placeName corresp="ITALY">Italy</placeName>!</l>
+                    <l>While higher still above him bear,</l>
+                    <l>And slender in proportion fair,</l>
+                    <l>Fretted with Gothic carving well,</l>
+                    <l>Full many a spiry pinnacle;</l>
+                    <l>And dazzling bright as <geogName corresp="#MONTEROSA">Rosa</geogName>&#x02BC;s crest,</l>
+                    <l>Each with his sculptured statue prest,</l>
+                    <l>They seem to stand in that thin air</l>
+                    <l>As on a thread of gossamer.<ref type="gloss_contextual" target="milan_cathedral_poem_glosses_contextual.php#SPIRYPINNACLEGLOSS"/></l>
+                    <l>You think the evening zephyr&#x02BC;s play</l>
+                    <l>Could sweep them from their post away,</l>
+                    <l>And bear them on its sportful wing</l>
+                    <l>As autumn leaves, wild scattering.</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

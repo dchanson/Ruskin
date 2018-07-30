@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <fileDesc xml:id="lille_prose_glosses_textual">
+            <titleStmt>
+                <title type="main">"Lille" [prose]</title>
+                <title type="sub">Glosses2</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#JLF">Jessica L. Firmin</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses" subtype="textual">
+                <note xml:id="JUSTIFICATION" resp="#DCH"><p><hi rend="bold">Justification mark (MS IX)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#JUSTIFICATION">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Justification, Runover, and Word Division</ref>.</p></note>
+                
+                <note xml:id="GETIN" resp="#DCH"><p><hi rend="bold">&#x0201C;get in&#x0201D; (<hi rend="italic">Works</hi> [1903])&#x2014;</hi>The editors of the 
+                    <ref type="note" subtype="bibliographical" target="library_edition_note.html">Library Edition</ref> 
+                    inserted &#x201C;(<hi rend="italic">sic</hi>)&#x201D; here, presumably objecting to <persName corresp="#JR">Ruskin</persName>&#x02BC;s choice of preposition, 
+                    but they did not tamper with the parallelism that he evidently intended in this series of predicate adjective phrases
+                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:345).</p></note>
+                
+                <note xml:id="WORDDIVISIONBURNING" resp="#DCH"><p>In <title type="manuscript" corresp="MSIX">MS IX</title>, <persName corresp="#JR">Ruskin</persName> omitted a hyphen to indicate that the syllables of <hi rend="italic">burning</hi> are divided between lines.</p></note>
+                
+                <note xml:id="GAVETOLIFE" resp="#DCH"><p><hi rend="bold">&#x0201C;gave to life&#x0201D; (MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;</hi>The editors of the 
+                    <ref type="note" subtype="bibliographical" target="library_edition_note.html">Library Edition</ref> 
+                    added a note to gloss the meaning of this phrase as &#x201C;gave life to&#x201D;; however, as their restraint suggests, 
+                    <persName corresp="#JR">Ruskin</persName>&#x02BC;s inversion appears not to be a slip, but what caught his ear 
+                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic"><title type="book" corresp="#JRWORKSLE">Works</title></hi></ref>, 2:345 n. 3).</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>

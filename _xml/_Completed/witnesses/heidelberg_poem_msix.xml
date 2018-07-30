@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="heidelberg_poem_msix">
+            <titleStmt>
+                <title type="main">"Heidelberg" [poem]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS IX Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KCM">Katie C. Moore</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#TPD">Isaiah Thomas</persName>
+                    <resp>conributing transcription/encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS IX</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msix/MSIX44v-45r.jpg msix/MSIX47v-48r.jpg">pp. 44v-##</locus>
+
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msix"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="abab">
+                <lg type="stanza">
+                    <l>Now from the smiling afternoon,</l>
+                    <l>The rain had past away.</l>
+                    <l>And glimmered forth the pallid moon,</l>
+                    <l>Amid the heavens grey,</l>
+                    <l>Brake, and bush, and mead and flower,</l>
+                    <l>Were glistening with the sunny shower,</l>
+                    <l>Where from the tangled viny wreath.<ref type="gloss_textual" target="heidelberg_poem_glosses_textual.php#PAUSEPERIOD" /></l>
+                    <l>The clustered grape looked out beneath</l>
+                    <l>Climbing up the southern side,</l>
+                <pb facs="MSIX45r"/>
+                    <l>Of the round hills bosom wide,</l>
+                    <l>Branches of the chain that bound</l>
+                    <l>All the south horizon round,</l>
+                    <l>Far towards the western day,</l>
+                    <l><placeName corresp="#MANNHEIM">Manheim</placeName>s towers softened lay,<ref type="gloss_contextual" target="heidelberg_glosses_contextual.php#MANHEIMSTOWERS"/></l>
+                    <l>From behind a thunder&#x2010;cloud,</l>
+                    <l>Dark as envy, shot the sun.</l>
+                    <l>On those towers high and proud,</l>
+                    <l>Hazily his rays came down,<ref type="gloss_textual" target="heidelberg_poem_glosses_textual.php#NOWFROMTHESMILING" /></l>
+                    <l>Smiling with those bright rays kiss.</l>
+                    <l>Shooting round effulgence moony,</l>
+                    <l>Like a lovely Oasis.</l>
+                    <l>&#x02BC;Mid a desert dark and gloomy.<ref type="gloss_textual" target="heidelberg_poem_glosses_textual.php#FROMBEHINDATHUNDERCLOUD" /></l>
+                    <l>But a moment&#x2014; darkly down,</l>
+                    <l>Came the thunder heavens frown,</l>
+                    <l>&#x02BC;Mong the trees a fitful shaking,</l>
+                    <l>Told the hoarse night wind was waking,</l>
+                    <l>Grey upon his mountain throne,</l>
+                    <l><placeName corresp="#HEIDELBERG">Heidelberg</placeName> his ruins lone,</l>
+                    <l>Reared colossally,</l>
+                    <l>All begirt with mighty trees.<ref type="gloss_textual" target="heidelberg_poem_glosses_textual.php#PAUSEPERIOD" /></l>
+                <pb facs="MSIX45v"/>
+                    <l>Whistling with the evens breeze,</l>
+                    <l>Flapping faintly by.<ref type="gloss_contextual" target="heidelberg_glosses_contextual.php#HEIDELBERGHISRUINS"/></l>
+                    <l>It was morning, from the height.<ref type="gloss_textual" target="heidelberg_poem_glosses_textual.php#PAUSEPERIOD" /></l>
+                    <l>Cumbered with its ruins hoar,</l>
+                    <l>All that lovely valley bright,</l>
+                    <l>We were looking oer.</l>
+                    <l>With its silver river bending,</l>
+                    <l>Vineyards to its banks descending,<ref type="gloss_contextual" target="heidelberg_glosses_contextual.php#LOVELYVALLEY"/></l>
+                    <l>Many a distant mountain chain</l>
+                    <l>Girded round the mighty plain.</l>
+                    <l>Here the sky was clear and bright,</l>
+                    <l>But upon their distant height</l>
+                    <l>Like a monster oer his prey,</l>
+                    <l>Rain and tempest scowling lay.</l>
+                    <l>Like a mighty ocean wave,</l>
+                    <l>All along th&#x02BC; horizon sweeping,</l>
+                    <l>Flinging far its cloudy spray</l>
+                    <l>Oer the peaceful heaven beating.</l>
+                    <l>Then around the reddening sun,</l>
+                    <l>Gathered, throwing darkness dun,</l>
+                    <l>On the ruind ghostly wall.</l>
+                <pb facs="MSIX46r"/>
+                    <l>Then between the pinetrees tall,</l>
+                    <l>Came quick sound of raindrop fall.</l>
+                    <l>Fast increased, the leafy rattle,</l>
+                    <l>Spoke the coming tempest battle,</l>
+                    <l>Enter then the chambers cold,</l>
+                    <l>Cold and lifeless, bald and bare.</l>
+                    <l>Though with banners decked of old,</l>
+                    <l>Ivy tendrils flickering flare,</l>
+                    <l>Are the only banners there</l>
+                    <l>You would start, to hear your tread</l>
+                    <l>Given back by echoes dead</l>
+                    <l>You would look around to see,</l>
+                    <l>If a sprite were watching thee.</l>
+                    <l>Yet a vision would come oer thee,</l>
+                    <l>Of the scenes had past before thee,</l>
+                    <l>Of the time when many a guest,</l>
+                    <l>Blessed the baron for his feast,</l>
+                    <l>When the peasant homeward stealing</l>
+                    <l>Dusky night the hills concealing,</l>
+                    <l>Heard the swell of wassail wild</l>
+                    <l>Cadence from the castle coming.<ref type="gloss_textual" target="heidelberg_poem_glosses_textual.php#PAUSEPERIOD" /></l>
+                <pb facs="MSIX46v"/>
+                    <l>Mingling with the night breeze humming,</l>
+                    <l>And (until the morning mild</l>
+                    <l>Lightened upon wall and tower</l>
+                    <l>Beacon fires from hour to hour</l>
+                    <l>Streaming from the windows tall</l>
+                    <l>Of the barons ancient hall,</l>
+                    <l>Where the shout around was ringing</l>
+                    <l>And the troubadour was singing</l>
+                    <l>Ancient air, and ancient rhyme,</l>
+                    <l>Legend of the ancient time</l>
+                    <l>Of some knights blood nobly spilt,</l>
+                    <l>In the melee, or the tilt,</l>
+                    <space quantity="9" unit="lines"/>
+               <pb facs="MSIX47r"/>
+                    <l>Of the deeds of some brave band</l>
+                    <l>Oath bound in the holy land</l>
+                    <l>Such as iron <persName corresp="#KR1">Richard</persName> led,</l>
+                    <l>Steeled without and steeled within</l>
+                    <l>True in hand and heart and head</l>
+                    <l>Worthy foes of <persName corresp="#SALADIN">Saladin</persName>.<ref type="gloss_contextual" target="heidelberg_glosses_contextual.php#RICHARDSALADIN"/></l>
+                    <l>Or, if pleased a darker theme</l>
+                    <l>Of spectres huge at twilight seen</l>
+                    <l>Above some Battle field</l>
+                    <l>Mimicking with motion dread</l>
+                    <space quantity="11" unit="lines"/>
+                <pb facs="MSIX47v"/>
+                    <l>Past combat of those lying dead</l>
+                    <l>Beneath their cloudy pinions spread</l>
+                    <l>Crested helm and spear, and shield</l>
+                    <l>In the red cloud blazoned.</l>
+                    <l>Thus with feast and revelry</l>
+                    <l>Oft the huge halls rang with glee,</l>
+                    <l>All reckless of the withering woe</l>
+                    <l>Reigned in their dungeons dank below</l>
+                    <l>Where in the lone hours sullen flight</l>
+                    <l>The masked day mingled with the night</l>
+                    <l>Until the captives practised eye</l>
+                    <l>Could pierce the thick obscurity</l>
+                    <l>Could see his fetters glance, or tell</l>
+                    <l>The stones which walled his narrow cell</l>
+                    <l>Till at the time the warder came</l>
+                    <l>His dusky lamps half smothered flame</l>
+                    <l>Flashed on him like that sun, whose ray</l>
+                    <l>And all the smile of lightsome day</l>
+                    <l>He has almost forgotten.</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

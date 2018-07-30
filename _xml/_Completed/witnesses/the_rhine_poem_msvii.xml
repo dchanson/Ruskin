@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="the_rhine_poem_msvii">
+            <titleStmt>
+                <title type="main">"The Rhine" [poem]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS VII Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS VII</msName>
+                        </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msvii/MSVII161v-162r.jpg">161v</locus><!--Not sure where this facsimile is located.-->
+
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msvii"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJJR" scribe="JJR">
+                                </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem"  met="-+|-+|-+|-+" rhyme="aa">
+                <head type="title"><handShift new="#HANDJJR" script="cursive" medium="ink"/>The Rhine<ref type="gloss_textual" target="the_rhine_poem_glosses_textual.php#HANDGLOSS" /><ref type="gloss_contextual" target="the_rhine_glosses_contextual.php#THERHINETITLE"/></head>
+                <lg type="stanza">
+                    <l>We saw it where its billow swells</l>
+                    <l>Beneath the ridge of <placeName corresp="#DRACHENFELS">Drachenfells</placeName><ref type="gloss_contextual" target="the_rhine_glosses_contextual.php#DRACHENFELS"/></l>
+                    <l>We saw it where its ripples ride</l>
+                    <l>Neath <geogName corresp="#EHRENBREITSTEIN">Ehrenbreitstein</geogName>&#x02BC;s beetling pride</l>
+                    <l>We saw it where its whirlpools roar</l>
+                    <l>Among the rocks of gaunt <placeName corresp="#STGOAR">St Goar</placeName></l> 
+                    <l>In all its aspect is as fair</l>
+                    <l>That aspect changes everywhere</l>
+                    <l>From <geogName corresp="#RHAETIANALPS">Rhetian</geogName> and <geogName corresp="#DINARICALPS">Dinaric</geogName> crest<ref type="gloss_contextual" target="the_rhine_glosses_contextual.php#DINARIC"/></l>
+                    <l>Foam the <del rend="strikethrough">wild</del> wild waters to the west<ref type="gloss_textual" target="the_rhine_poem_glosses_textual.php#FOAMGLOSS" /></l>
+                    <l>From fearful <placeName corresp="#SPLUGEN">Splugen</placeName>s glaciered head</l> 
+                    <l>The mighty torrent dashes dread</l><pb/>
+                    <l>And swelled by every Alpine snow</l>
+                    <l>Now see it chase these clffs below</l>
+                    <l>On whose high summits deeply rent</l>
+                    <l>Rise many a fortress battlement</l>
+                    <l>Seeming the lords of rock &#x0026; hill</l> 
+                    <l>And mighty in their ruin still.</l>
+                </lg>
+            </div>
+            <div type="date">
+                <dateline><space unit="chars" quantity="31"/>1833.<ref type="gloss_textual" target="the_rhine_poem_glosses_textual.php#DATELINEGLOSS" /></dateline>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="saltzburg_fo">
+            <titleStmt>
+                <title type="main">&#x201C;Saltzburg&#x201D; [poem]</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Friendship's Offering</hi> (1835)</title>
+              <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#TP">Thomas Pringle</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier></msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="fo/saltzburg_1.jpg fo/saltzburg_2.jpg fo/saltzburg_3.jpg">p. 51r</locus>
+                            
+                            <filiation><ref type="apparatus" target="apparatuses/saltzburg_apparatus.php"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                
+                <biblStruct>
+                    <monogr>
+                        <editor>
+                            <persName>Thomas Pringle</persName>
+                        </editor>
+                        <title type="main">Friendship's Offering; and Winter's Wreath</title>
+                        <imprint>
+                            <biblScope type="vol">1835</biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Smith, Elder</publisher>
+                            <date when="1834">ca. 1834</date>
+                            <biblScope type="pages">37-38</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem" rhyme="aa">
+                <head type="title"><hi rend="caps">SALTZBURG</hi>.</head>
+                <lg type="stanza">
+                    <l>O<hi rend="smallcaps">n</hi> <geogName corresp="#SALZACH">Salza</geogName>&#x02BC;s quiet tide the westering sun</l>
+                    <l>Gleams mildly; and the lengthening shadows dun,</l>
+                    <l>Chequered with ruddy streaks from spire and roof,</l>
+                    <l>Begin to weave fair twilight&#x02BC;s mystic woof,</l>
+                    <l>Till the dim tissue, like a gorgeous veil,</l>
+                    <l>Wraps the proud city, in her beauty pale.</l>
+                    <l>A minute since, and in the rosy light</l>
+                    <l>Dome, casement, spire, were glowing warm and bright;</l>
+                    <l>A minute since, <placeName type="building" corresp="#SALZBURGCATHEDRAL"><persName corresp="#STRUPERT">St. Rupert</persName>&#x02BC;s stately shrine</placeName>,</l>
+                    <l>Rich with the spoils of many a <geogName corresp="#HARZ">Hartzwald</geogName> mine,<ref type="gloss_contextual" target="saltzburg_glosses_contextual.php#SPOILSOFHARTZWALDMINE"/></l><!-- note is signaled with asterisk-->
+                    <l>Flung back the golden glow: now, broad and vast,</l>
+                    <l>The shadows from yon ancient <placeName corresp="#HOHENSALZBURG">fortress</placeName> cast,</l>
+                    <l>Like the dark grasp of some barbaric power,</l>
+                    <l>Their leaden empire stretch o&#x02BC;er roof and tower.</l>
+                </lg>
+                <lg type="stanza" rhyme="aa">
+                    <l>Sweet is the twilight hour by <geogName corresp="#SALZACH">Salza</geogName>&#x02BC;s strand,</l><!--how do we tag a verse paragraph indent? -->
+                    <l>Though no <placeName type="fictional_place" corresp="#ARCADIA">Arcadian</placeName> visions grace the land:</l>
+                    <l>Wakes not a sound that floats not sweetly by,</l>
+                    <l>While day&#x02BC;s last beams upon the landscape die;</l>
+                    <pb facs="??? p. 38"/>
+                    <l>Low chants the fisher where the waters pour,</l>
+                    <l>And murmuring voices melt along the shore;</l>
+                    <l>The plash of waves comes softly from the side</l>
+                    <l>Of passing barge slow gliding o&#x02BC;er the tide;</l>
+                    <l>And there are sounds from city, field, and hill,</l>
+                    <l>Shore, forest, flood; yet mellow all and still.</l>
+                </lg>
+                <lg type="stanza" rhyme="aa">
+                    <l>But change we now the scene, ere night descend,</l><!-- verse paragraph indent-->
+                    <l>And through <persName corresp="#STRUPERT">St. Rupert</persName>&#x02BC;s massive portal wend.</l>
+                    <l>Full many a shrine, bedeckt with sculpture quaint</l>
+                    <l>Of steel&#x2010;clad knight and legendary saint;</l>
+                    <l>Full many an altar, where the incense&#x2010;cloud</l>
+                    <l>Rose with the pealing anthem, deep and loud;</l>
+                    <l>And pavements worn before each marble fane</l>
+                    <l>By knees devout&#x2014;(ah! bent not all in vain!)</l>
+                    <l>There greet the gaze; with statues, richly wrought,</l>
+                    <l>And noble paintings, from <placeName corresp="#ITALY">Ausonia</placeName> brought,&#x2014;</l>
+                    <l>Planned by those master minds whose memory stands</l>
+                    <l>The grace, the glory, of their native lands.</l>
+                    <l>As the hard <name type="geological" corresp="#GRANITE">granite</name>, &#x02BC;midst some softer stone,</l>
+                    <l>Starts from the mass, unbuttressed and alone,</l>
+                    <l>And proudly rears its iron strength for aye,</l>
+                    <l>While crumbling crags around it melt away;</l>
+                    <l>So, midst the ruins of long eras gone,</l>
+                    <l>Creative Genius holds his silent throne,&#x2014;</l>
+                    <l>While lesser lights grow dim,&#x2014;august, sublime,</l>
+                    <l>Gigantic looming o&#x02BC;er the gulfs of Time!</l>
+                </lg>
+            </div>
+            <div>
+                <p>J. R.</p>
+                <!-- how do we tag signature? also flush right? -->
+            </div>
+        </body>
+    </text>
+</TEI>

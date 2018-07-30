@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="andernacht_poem_le">
+            <titleStmt>
+                <title type="main">"First Sketch of Andernach" [poem]</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in Ruskin, <hi rend="italic">Works</hi> (1903)</title>
+                <author>
+                    <persName corresp="#APW">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#EPW">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier></msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_le"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+                <biblStruct>
+                    <monogr>
+                        <editor>
+                            <persName>E. T. Cook and Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <imprint>
+                            <biblScope type="vol">2</biblScope>
+                            <biblScope type="edition">Library<hi rend="superscript"></hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1903">1903</date>
+                            <biblScope type="pages">354n.</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="aa">
+                <head type="title">&#x201C;First Sketch of &#x2018;Andernach&#x2019;&#x201D;<ref type="gloss_textual" target="andernacht_poem_glosses_textual.php#ANDERNACHTVERSIONGLOSS" /></head>
+                <lg type="stanza" n="1">
+                    <l>W<hi rend="smallcaps">e</hi> have wound a weary way;</l>
+                    <l>Twilight&#x02BC;s mists are gathering grey.</l>
+                    <l>Purple now the hills are showing;</l>
+                    <l>Bright the western clouds are glowing.</l>
+                    <l>Lashing on with giant force,</l>
+                    <l>Rolls the <geogName corresp="#RHINE">Rhine</geogName> his sullen course;</l>
+                    <l>Flash his waves with flamy red,</l>
+                    <l>Eddying o&#x02BC;er their <name type="geological" corresp="#BASALT">basalt</name> bed;&#x2014;</l>
+                    <l>Now with wide expanded breast,</l>
+                    <l>Now between the hills compressed;</l>
+                    <l>Ever noble, ever free,</l>
+                    <l>Flows his river majesty.</l>
+                    <l>Now upon the evening skies</l>
+                    <l><placeName corresp="#ANDERNACH">Andernacht</placeName>&#x20BC;s grey ruins rise,&#x2014;<ref type="gloss_contextual" target="andernacht_glosses_contextual.php#ANDERNACHTSGREYRUINSGLOSS"/></l>
+                    <l>Memorials of the Roman power;&#x2014;<ref type="gloss_contextual" target="andernacht_glosses_contextual.php#ROMANPOWERGLOSS"/></l>
+                    <l>Buttress and battlement and tower,</l>
+                    <l>Decaying, falling fast away,</l>
+                    <l>The monuments of C&#x00E6;sar&#x02BC;s sway,&#x2014;</l>
+                    <l>In heaps together loosely thrown,&#x2014;</l>
+                    <l>The sculptured head, inscriptioned stone:</l>
+                    <l>Unguarded now the bridge&#x02BC;s length,</l>
+                    <l>And failing fast its arches&#x02BC; strength;</l>
+                    <l>The green sod in the moat is growing,</l>
+                    <l>The cold wind in the chambers blowing,</l>
+                    <l>And, flapping through the thin night air,</l>
+                    <l>The owl and bat, the tenants there.</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

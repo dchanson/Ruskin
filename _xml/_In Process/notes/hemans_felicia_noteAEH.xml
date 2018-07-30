@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="hemans_felicia_note">
+            <titleStmt>
+                <title type="main">Felicia Hemans (1793-1835)</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2018-02-26">February 26, 2018</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="biographical">
+                <head type="title"> <persName corresp="#FDH">Felicia Hemans</persName> (<date notBefore="1793" notAfter="1835">1793&#x2013;1835</date>) </head>
+                <p> <persName corresp="#FDH">Hemans</persName>&#x02BC;s poem, <title type="poem" corresp="#HEMANSSOUNDOFTHESEA">&#x201C;The Sound of the Sea&#x201D;</title> (<date when="1826">1826</date>), is one of the very few works by a writer other than <persName corresp="#JR">Ruskin</persName> himself to be fair-copied in the early manuscripts.</p>
+                <p> <persName corresp="#FDH">Hemans</persName>&#x02BC;s career straddled the waning world of literary patronage and the emerging world of literary publishing, in which authors vied with publishers for control. In <date when="1821">1821</date>, 
+                    she received the first prize awarded by the <orgName corresp="#ROYALSOCIETY">Royal Society of Literture</orgName>, for her poem on <title type="poem" corresp="#HEMANSDARTMOOR">Dartmoor</title> (<persName corresp="#SJWOLFSON">Wolfson</persName>, <persName corresp="#FDH">Hemans</persName>, 485&#x2013;86; Merriam, <persName corresp="#EM">Edward Moxon</persName>, 19).</p>
+                
+            </div>
+        </body>
+    </text>
+</TEI>

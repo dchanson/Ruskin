@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="chamouni_prose_msxi">
+            <titleStmt>
+                <title type="main">"Chamouni" [essay]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS XI Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2017-12-31">31 December 2017</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS XI</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msxi/1229925.jpg msxi/1229926.jpg msxi/1229927.jpg msxi/1229928.jpg"></locus><!--Not sure where facsimiles are located-->
+
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msxi"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDUNIDENTIFIED" scribe="UNIDENTIFIED">
+                                <p>Unidentified hand.</p>
+                            </handNote>
+                            <handNote corresp="#HANDJJR" scribe="JJR">
+                                <p>John James Ruskin's hand.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="essay">
+                <pb facs="1229925"/>
+                <head type="title"><handShift new="#HANDUNIDENTIFIED" script="cursive" medium="ink"/><placeName corresp="#CHAMOUNI"><hi rend="underline">Chamouni</hi></placeName><ref type="gloss_textual" target="chamouni_prose_glosses_textual.php#HANDGLOSS" /></head>
+                <p>And this is our last excursion on <placeName corresp="#SWITZERLAND">Swiss</placeName> ground thought I scanning<lb/>
+                    the provoking clouds that ever rolled massively among the regions of<lb/>
+                    eternal snow, though far above the blue mountains that encircle their<lb/>
+                    mighty monarch.<ref type="gloss_contextual" target="chamouni_glosses_contextual.php#MCLIFFYDIADEMGLOSS"/> I have always a sort of kindred feeling for these<lb/>
+                    beautiful blue hills they ever look half <placeName corresp="#ENGLAND">English</placeName>, and I love them for it.<lb/>
+                    They may not be so wonderful, so majestic, so mighty, or so beautiful<lb/>
+                    but they are more like home, sweet home, &#x0026; it is pleasant very pleasant<lb/>
+                    to meet a friend in a foreign land. We are going to <placeName corresp="#CHAMOUNI">Chamouni</placeName>. C&#x02BC;est<lb/>
+                    vrai, but it seems exceeding strange. Before we left home, I had<lb/>
+                    read of <placeName corresp="#CHAMOUNI">Chamouni</placeName>, heard of <placeName corresp="#CHAMOUNI">Chamouni</placeName>, &#x0026; seen some few drawings<lb/>
+                    of <placeName corresp="#CHAMOUNI">Chamouni</placeName>, but never so much as dreamed of going to <placeName corresp="#CHAMOUNI">Chamouni</placeName>,<lb/>
+                    it seemed so uncome&#x2010;at&#x2010;able, and for the <geogName corresp="#MONTBLANC">Mont Blanc</geogName>, it seemed<lb/>
+                    in another world, in fairy&#x2010;land, and of course had a magic <add place="above"><space quantity="57" unit="chars"/>halo</add> thrown<lb/>
+                    round it, an (aetherialness,) that can never be joined with reality<lb/>
+                    That halo comes again on looking back. And this is our last excursion<lb/>
+                    on <placeName corresp="#SWITZERLAND">Swiss</placeName> ground thought I, the last, &#x0026; the wildest, &#x0026; the sweetest, because,<lb/>
+                    because, perhaps it <del rend="strikethrough">was</del><add place="above"><space quantity="22" unit="chars"/>is</add> the last. The day was exceedingly favourable<lb/>
+                    for the scenery of the lower mountains, not for the <geogName corresp="#ALPS">Alps</geogName>, they were<lb/>
+                    reserved for other times. The noon verged gradually from burning<lb/>
+                    shineshine,<ref type="gloss_textual" target="chamouni_prose_glosses_textual.php#SHINESHINEGLOSS" /> to thick thundery clouds, that rolled rapidly over the murky<lb/>
+                    heaven, as we entered a solitary mountain recess, a cliffy defile, leading<lb/>
+                    from the valley of <placeName corresp="#MAGLAND">Maglan</placeName>, to that of <placeName corresp="#SALLANCHES">Salenches</placeName>.<ref type="gloss_contextual" target="chamouni_glosses_contextual.php#MAGLANTOSALLANCHESGLOSS"/> Down they burst with<lb/>
+                    a fierce rattling turmoil &#x0026; headlong flash flash flashing, and the<lb/>
+                    bridleless clouds careered along the crags at such a wild rate, that their<lb/>
+                    <pb facs="1229926"/>
+                    own speed broke them into scattered <del rend="strikethrough">disorder</del><add place="above"><space quantity="38" unit="chars"/>confusion</add>, that the blue sky shone
+                    calmly through their openings, and the labouring sun struggled<lb/>
+                    strangely, now gleaming waterily on the red ribbed skeleton crags, now<lb/>
+                    mingling with the quiver of <add place="above"><space quantity="28" unit="chars"/>the</add> lightning, now again plunged into the<lb/>
+                    swift rack of the thunder clouds that seemed sweeping round the<lb/>
+                    mountain summits like lashed ocean waves round a labouring<lb/>
+                    vessel. The <geogName corresp="#ARVE">Arve</geogName> swelled on the instant and his turbid waves<lb/>
+                    tore madly down, trees, stones, rocks, all tost along the channel, by<lb/>
+                    the arrowy force of that resistless river, ever mighty but now<lb/>
+                    fearful. As the sun verged towards the horizon, the clouds swept
+                    partially away, the hills, the cliffs, the mountains the rocks, and the<lb/>
+                    blue vaulted sky glowed with his last rays for a moment, he sunk<lb/>
+                    &#x0026; the night came, his darkness made yet more visible by the thunder<lb/>
+                    gloom of the storm.<lb/></p>
+
+                <p>Voila les aiguilles quoth our char&#x2010;&#x00E0;&#x2010;banc driver. If any person<lb/>
+                    in the whole world is totally insensible to pain, knocks, aches, &#x0026; bruises,<lb/>
+                    it must be a <placeName corresp="#SWITZERLAND">Swiss</placeName> char&#x2010;&#x00E0;&#x2010;banc driver. The <placeName corresp="#SWITZERLAND">Swiss</placeName> char&#x2010;&#x00E0;&#x2010;banc is<lb/>
+                    a vehicle expressly built for the purpose of passing over those roads,<lb/>
+                    which no other species of conveyance can pass over twelve yards<lb/>
+                    of without immediate demolition<g type="terminal-comma">,</g><ref type="gloss_textual" target="chamouni_prose_glosses_textual.php#TERMINALCOMMA" /> It is a sort of large side<lb/>
+                    saddle, capable of containing, if well packed three &#x201C;pauvres<lb/>
+                    miserables&#x201D;, with a back &#x0026; roof to it, &#x0026; a board to put the feet on,<lb/>
+                    with a leather to keep you in, all which are of a most ancient<lb/>
+                    &#x0026; venerable description, this is fixed totally without springs or<lb/>
+                    any thing of the kind, as far as I could see, upon four wheels, et<lb/>
+                    voil&#x00E0; un char&#x2010;&#x00E0;&#x2010;banc. With this kind of vehicle upon roads, which<lb/>
+                    always resemble, &#x0026; are often carried through the beds of tumbling<lb/>
+                    <pb facs="1229927"/>
+                    mountain torrents.<ref type="gloss_textual" target="chamouni_prose_glosses_textual.php#FULLSTOP" /> Any one may easily imagine the sort of<lb/>
+                    pleasurable penance to which he is subjected who submits to be<lb/>
+                    driven from <placeName corresp="#SALLANCHES">Salenches</placeName> up to <placeName corresp="#CHAMOUNI">Chamouni</placeName> in a char&#x2010;&#x00E0;&#x2010;banc.<lb/></p>
+
+                <p>Voila les aiguilles quoth our char&#x2010;&#x00E0;&#x2010;banc driver.<ref type="gloss_contextual" target="chamouni_glosses_contextual.php#VOILAGLOSS"/> How I started<lb/>
+                    I believe I was dreaming of home at the time, it is odd you<lb/>
+                    always think it would be very pleasant, to be where you are not<lb/>
+                    it can&#x02BC;t be helped but it is very provoking, the charms of a<lb/>
+                    place always increase in geometrical ratio as you get farther<lb/>
+                    from it, &#x0026; therefore &#x02BC;tis a rich pleasure to look back on any thing<lb/>
+                    though it has a dash of regret. It is singular that almost all<lb/>
+                    pleasure is past, or coming. Well I looked up, &#x0026; lo! seven thousand<lb/>
+                    feet above me soared the needles of <geogName corresp="#MONTBLANC">Mont Blanc</geogName>, splintered, &#x0026;<lb/>
+                    crashed, &#x0026; shivered, the marks of the tempest for three score<lb/>
+                    centuries, yet they are here, shooting up, red, bare, scarcely even<lb/>
+                    lichened, entirely inaccessible, snowless, the very snow cannot cling<lb/>
+                    to the down plunging sheerness of these terrific flanks, that rise<lb/>
+                    pre&#x2010;eminently dizzying &#x0026; beetling above the sea of wreathed snow<lb/>
+                    that rolled its long surging waves over the summits of the lower<lb/>
+                    &#x0026; less precipitous mountains. Then came the stretching gloominess<lb/>
+                    of the pine forests jagging darkly upon the ridge of every crag<lb/>
+                    strangely contrasted with the cold blueness of the peaky glaciers<lb/>
+                    that filled the huge ravines between the hills descending like<lb/>
+                    the bursting billows of a chafed ocean&#x2010;tide from the desolate dominion<lb/>
+                    of the snow &#x0026; curling forward till they lay on the green fields of<lb/>
+                    <placeName corresp="#CHAMOUNI">Chamouni</placeName>, which stretched away one unbroken line of luxuriance<lb/>
+                    till bounded by the lonely desertness of the <placeName corresp="#COLDEBALME">Col de Balme</placeName>.<ref type="gloss_contextual" target="chamouni_glosses_contextual.php#COLDEBALMEGLOSS"/><lb/>
+                    There is not another scene like <placeName corresp="#CHAMOUNI">Chamouni</placeName> throughout all <placeName corresp="#SWITZERLAND">Switzerland</placeName>.<lb/>
+                    <pb facs="1229928"/>
+                    In no other spot, that I have seen is the rich luxuriance<lb/>
+                    of the cultivated valley, the flashing splendour of the eternal<lb/>
+                    snow, the impending magnificence of the bare spiry crag &#x0026;<lb/>
+                    the strange cold rigidity of the surgy glaciers, so dreadfully<lb/>
+                    &#x0026; beautifully combined. There is silence unbroken, no thunder<lb/>
+                    of the Avalanche comes crashing from the recesses of the hills<lb/>
+                    there is no voice from the chasmy glacier, no murmur from the<lb/>
+                    thousand mountain streams, you are in solitude, a strange<lb/>
+                    unearthly solitude, but you feel as if the air were full of<lb/>
+                    Spirits.<ref type="gloss_contextual" target="chamouni_glosses_contextual.php#SPIRITSMONTBLANCGLOSS"/><lb/></p>
+            </div>
+            <div type="date">
+                <dateline><space unit="chars" quantity="42"/><handShift new="#HANDJJR" script="cursive" medium="ink"/><persName type="pen_name" corresp="#JR">J.R.</persName><lb/>
+                    <space unit="chars" quantity="33"/>fragment from a Journal<lb/>
+                    <space unit="chars" quantity="56"/>1833.<ref type="gloss_textual" target="chamouni_prose_glosses_textual.php#DATELINEGLOSS" /></dateline>
+            </div>
+
+
+        </body>
+    </text>
+</TEI>

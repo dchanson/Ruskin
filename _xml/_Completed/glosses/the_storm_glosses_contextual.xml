@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="the_storm_glosses_contextual">
+            <titleStmt>
+                <title type="main">"The Storm"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses" subtype="textual">
+                <note xml:id="STORMCROSS" resp="#DCH"><p><hi rend="bold">Line 4&#x2014;</hi>The meaning and origin of the cross above &#x201C;pigs&#x201D; in line 4 are unknown. Evidently, the mark is a comment on the poem by somebody, 
+                    rather than a part of the poem itself. See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#METAMARKS">Editorial and Encoding Rationale and Methodology: Metamarks</ref>.</p></note>
+                
+                <note xml:id="BAD" resp="#DCH"><p><hi rend="bold">&#x201C;Bad&#x201D; (<title type="poem" corresp="#MSIII">MS III</title>)&#x2014;</hi>Although on the same line as the runover of line 10, 
+                    the word clearly is not meant to form part of that runover, as in that case it would intervene between the two syllables of the word, 
+                    <hi rend="italic">lightnings</hi>, which is divided by the runover. Rather, the term, which appears in <persName corresp="#JR">Ruskin</persName>&#x20BC;s hand, 
+                    functions as a metamark&#x2014;not as part of the poem, but as a comment on it.</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>

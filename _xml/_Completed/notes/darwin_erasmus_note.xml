@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <fileDesc xml:id="darwin_erasumus_note">
+            <titleStmt>
+                <title type="main">Erasmus Darwin (1731-1802)</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2018-02-06">February 6, 2018</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="biographical">
+                <head type="title">Erasmus Darwin (<date notBefore="1731" notAfter="1802">1731&#x2013;1802</date>)</head>
+                <p>Scientist and poet. In the juvenilia, <persName corresp="#JR">Ruskin</persName> shows his exposure to <persName corresp="#ED">Darwin</persName>&#x02BC;s poetry in 
+                    <ref type="apparatus" target="the_steam_engine_apparatus.php"><title type="poem" corresp="#THESTEAMENGINE">&#x201C;When furious up from mines the water pours&#x201D; [&#x201C;The Steam Engine&#x201D;]</title></ref>, 
+                    which he based on lines from <persName corresp="#ED">Darwin</persName>&#x02BC;s <title type="poem" corresp="BOTANICGARDEN"><hi rend="italic">The Botanic Garden</hi></title> 
+                    (<date notBefore="1789" notAfter="1791">1789&#x02BC;91</date>).</p>
+                <p>Apart from this early adaptation of <persName corresp="#ED">Darwin</persName>&#x02BC;s lines on the steam engine, <persName corresp="#JR">Ruskin</persName> 
+                    appears never again to have taken any interest in <persName corresp="#ED">Darwin</persName>&#x02BC;s writing. He may have inherited a prejudice against 
+                    <persName corresp="#ED">Darwin</persName> owing to opposition to his ideas by the philosopher and physician, <persName corresp="#TB">Thomas Brown</persName> 
+                    (<date notBefore="1778" notAfter="1820">1778&#x2013;1820</date>), who was a friend and mentor of both <persName corresp="#JJR">John James Ruskin</persName> and his 
+                    cousin, <persName corresp="#MR">Margaret</persName>, in their <placeName corresp="#EDINBURGH">Edinburgh</placeName> days. In <date when="1798">1798</date>, 
+                    <persName corresp="#TB">Brown</persName> challenged the &#x201C;materialist&#x201D; foundations of evolutionary theory in <persName corresp="#ED">Darwin</persName>&#x02BC;s 
+                    <title type="book" corresp="#ZOONOMIA"><hi rend="italic">Zoonomia</hi></title> (<date when="1794">1794</date>, <date when="1796">1796</date>)&#x2014;a book 
+                    that decisively turned the tide of critical opinion against <persName corresp="#ED">Darwin</persName> in the increasingly reactionary years 
+                    following the outbreak of the French Revolution and the rise of Napoleonic <placeName corresp="#FRANCE">France</placeName> 
+                    (<ref type="bibliography" target="bibliography.php#GARFINKLEDARWIN"><persName corresp="#NGARFINKLE">Garfinkle</persName>, <title type="essay" corresp="#GARFINKLEDARWIN">&#x201C;Critical Response to the Work of Erasmus Darwin&#x201D;</title></ref>; 
+                    <ref type="bibliography" target="bibliography.php#SCOTTISHHERITAGE"><persName corresp="#HGV">Viljoen</persName>, <title type="book" corresp="#SCOTTISHHERITAGE"><hi rend="italic">Ruskin&#x02BC;s Scottish Heritage</hi></title></ref>, 120&#x2013;22).</p>
+            </div>
+        </body>
+    </text>
+</TEI>

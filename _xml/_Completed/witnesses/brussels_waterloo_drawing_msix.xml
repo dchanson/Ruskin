@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="figure">
+        <fileDesc xml:id="brussels_waterloo_drawing_msix">
+            <titleStmt>
+                <title type="main">Brussels Waterloo [drawing]</title>
+                <title type="sub">Electronic text describing original drawing</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                       <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS IX</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msix/MSIX22v-23r.jpg">p. 23r</locus>
+
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msix"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>,
+                                    examples of which can be found in MS VIII and MS IX, pages <locus from="##" to="##">##-##</locus>, and MS IX.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="figure" subtype="drawing">
+                <figure>
+                    <head type="title"><title type="artwork" corresp="#JRBRUSSELSWATERLOOMSIX">Brussels Waterloo</title></head>
+                    <figDesc>Pen and ink, approx. ? &#x00D7; ? cm (image only). The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
+                        describe the image as &#x201C;a sketch of the field of <placeName corresp="#WATERLOO">Waterloo</placeName>; soldiers with cannon in the foreground; a general on his horse&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:347 n. 1). 
+                        While <persName corresp="#JR">Ruskin</persName> certainly intends the drawing to depict a scene from the <date when="1815-06-18">Battle of Waterloo</date>, 
+                        which is mentioned in <title type="composite" corresp="#JRBRUSSELSCOMP">&#x201C;Brussels&#x201D;</title>&#x2014;both in the prose section following 
+                        the drawing, and in the poem preceding it&#x2014;he based his drawing on <persName corresp="#JMWT">J. M. W. Turner</persName>&#x02BC;s vignette, 
+                        <title type="artwork" corresp="#TURNERMARENGO">&#x201C;Marengo&#x201D;</title>, 
+                        depicting the <date when="1800-06-14">Battle of Marengo</date>, which was engraved for and published in 
+                        <ref type="bibliography" target="bibliography.php#ROGERSITALY1830"><persName corresp="#SR">Samuel Rogers</persName>, <title type="poem" corresp="#ROGERSITALY1830"><hi rend="italic">Italy</hi> (1830)</title></ref> (p. 17; and 
+                        see no. 6 of catalog in <ref type="bibliography" target="bibliography.php#PIGGOTTTURNERSVIGNETTES"><persName corresp="#JPSCHOLAR">Piggott</persName>, <title type="book" corresp="#PIGGOTTTURNERSVIGNETTES"><hi rend="italic">Turner&#x02BC;s Vignettes</hi></title></ref>, 98). 
+                        <persName corresp="#JR">Ruskin</persName> omits the left side of <persName corresp="#JMWT">Turner</persName>&#x02BC;s original drawing, 
+                        copying only the general on his rearing horse and the group gathered around the cannon on the right. 
+                        In order to resituate the scene in <placeName corresp="#WATERLOO">Waterloo</placeName>, <persName corresp="#JR">Ruskin</persName> also omits 
+                        the <geogName corresp="#ALPS">Alps</geogName> that <persName corresp="#JMWT">Turner</persName> shows in the north above the <placeName corresp="#PIEDMONT">Piedmont</placeName> plain; 
+                        instead, he places a town in the distance, probably intended as <placeName corresp="#BRUSSELS">Brussels</placeName>, shown with its two large cathedral towers in silouette. 
+                        By adapting <persName corresp="#JMWT">Turner</persName>&#x02BC;s scene to <placeName corresp="#WATERLOO">Waterloo</placeName>, 
+                        <persName corresp="#JR">Ruskin</persName> intensifies <persName corresp="#JMWT">Turner</persName>&#x02BC;s irony. The <date when="1800-06-14">Battle of Marengo</date> 
+                        was a decisive victory for <persName corresp="#NBE">Napoleon</persName> in his second Italian campaign against the Austrians, 
+                        allegedly causing the British prime minister, <persName corresp="#WPY">William Pitt</persName> (<date notBefore="1759" notAfter="1806">1759&#x2013;1806</date>), 
+                        to declare with resignation, &#x201C;Fold up that map&#x201D;, meaning that the French general had effectively conquered all of Europe 
+                        (<ref type="bibliography" target="bibliography.php#PIGGOTTTURNERSVIGNETTES"><persName corresp="#JPSCHOLAR">Piggott</persName>, <title type="book" corresp="#PIGGOTTTURNERSVIGNETTES"><hi rend="italic">Turner&#x02BC;s Vignettes</hi></title></ref>, 38). 
+                        <persName corresp="#JMWT">Turner</persName> undermines this victory by placing this vignette above <persName corresp="#SR">Rogers</persName>&#x02BC;s poem, 
+                        <title type="poem" corresp="#ROGERSTHEDESCENT">&#x201C;The Descent&#x201D;</title>, referring literally to the descent from the mountains into <placeName corresp="#PIEDMONT">Piedmont</placeName>, 
+                        but gesturing figuratively at <persName corresp="#NBE">Napoleon</persName>&#x02BC;s eventual fall. 
+                        <persName corresp="#JR">Ruskin</persName> completes <persName corresp="#JMWT">Turner</persName>&#x02BC;s ironic narrative by bringing the image forward in time 
+                        to <placeName corresp="#WATERLOO">Waterloo</placeName>; and he may have meant the viewer to displace <persName corresp="#NBE">Napoleon</persName> as the equestrian figure 
+                        (which <persName corresp="#JMWT">Turner</persName> based on the portrait by <persName corresp="#JLD">Jacques&#x2013;Louis David</persName> [<date notBefore="1748" notAfter="1825">1748&#x2013;1825</date>], 
+                        <title type="artwork" corresp="#DAVIDNAPOLEONCROSSINGALPS"><hi rend="italic">Napoleon Crossing the Alps</hi></title> [<date notBefore="1802" notAfter="1805">1802&#x2013;5</date>]) 
+                        and to put the victorious <persName corresp="#AWW">Wellington</persName> in the saddle. The figure appears to wear his bicorne with the points &#x201C;fore and aft&#x201D; 
+                        in <persName corresp="#AWW">Wellington</persName>&#x02BC;s manner, rather than side to side and 
+                        parallel with the shoulders in <persName corresp="#NBE">Napoleon</persName>&#x02BC;s signature manner.
+                    </figDesc>
+                </figure>
+            </div>
+        </body>
+    </text>
+</TEI>

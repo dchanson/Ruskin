@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"as I was walking round by Peckham rye"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#LAL">Lauren A. Lambert</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>"MS XI"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msxi/1229937.jpg msxi/1229938.jpg msxi/1229939.jpg msxi/1229940.jpg msxi/1229941.jpg">pp. ##-##</locus>
+
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Verse. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>"as I was walking round by Peckham rye"</head>
+                <pb facs="1229937"/>   
+                <lg type="stanza" rhyme="abcbcbdbdde">
+                    <l>1</l>
+                    <l>My Dearest Father.</l>
+                    <l>As I was walking round by <geogName corresp="#PECKHAMRYE">Peckham rye</geogName></l>
+                    <l>Canvassing many dreamings in rotation,</l>
+                    <l>What varied theme, or subject I should try</l>
+                    <l>Novel indeed, yet fit for this occasion,</l>
+                    <l>I unto mine adviser says, _ says I</l>
+                    <l>Would &#x2014; Pooh, it does not matter what I said.</l> 
+                    <l>But counsel sage I did receive , whereby</l>
+                    <l>I was induced a beaten path to tread,</l>
+                    <l>And, following where whole multitudes have led,</l> 
+                    <l>To glean the gems wherewith that path is scattered.</l>
+                </lg>
+                <pb facs="1229938"/>
+                    <lg type="stanza" rhyme="ababacacdd">
+                     <l>2</l>
+                    <l>To much for simile, but t&#x02BC;would be rude</l>
+                    <l>To leave you any longer, Sir, in doubt.</l>
+                    <l>What sort of rhyme requires such strange prelude</l>
+                    <l>Or what my lyric is to be about.</l>
+                    <l>How to commence, what sing of, where conclude</l>
+                    <l>Or in what mad and mingled numbers run,</l>
+                    <l>Know, that I&#x02BC;ll try, with. Thalian fire imbued</l>
+                    <l><name type="fictional_person" corresp="#THALIA">Thalia</name>, yes, an&#x02BC;t that the funny one.</l>
+                    <l>To sing of years long past, and years to come</l>
+                    <l>A moralizing theme, much babbled of by some.</l>
+                 </lg>
+               
+                <lg type="stanza" rhyme="ababacaccc">
+                      <l>3</l>
+                    <l>You know, Sir, that I always aimed to be</l>
+                    <l>At least a something more than common rhymer:</l>
+                    <l>And therefore, that I never deigned to be </l>
+                    <l>A grovelling, annual, rapid flight of time_er.</l>
+                    <l>But always seized on what remained to me</l>
+                    <l>Of every theme, by other voice unsung.</l>
+                    <l>Nor brooked my rhyming spirit chained to be</l>
+                    <l>To song on which the changes have been rung.</l>
+                    <l>By mightier minds, or paths long raved among </l>
+                    <l>Or lyre, to one dull air by thousand fingers strung</l>
+                </lg>
+                
+                <lg type="stanza" rhyme="ababacaccc">
+                    <l>4</l>
+                    <l>Now, after such preamble, how you&#x02BC;ll stare</l>
+                    <l>To hear the subject I am going to write on</l>
+                    <l>Really, t&#x02BC;would make a minor poet&#x02BC;s hair</l>
+                    <l>His puzzled pericranium stand upright on,</l>
+                    <l>To dream of such a thing, that I should dare.</l>
+                    <l>To write on New year&#x02BC;s day. Choice theme, indeed</l>
+                    <l>There is a dry bone subject, one most bare</l>
+                    <l>Of all good matter; Hard, in very deed</l>
+                    <l>To put the life in&#x02BC;t. Would, I may succeed.</l>
+                    <l>All ye who wish me well, I pray you, wish me speed</l>
+                </lg>
+               
+                <lg type="stanza" rhyme="abacadaddd">
+                    <l>5</l>
+                    <l>But don&#x02BC;t imagine that I mean to say</l>
+                    <l>My subject, in itself, is despicable.</l>
+                    <l>But have been handled in so rude a way</l>
+                    <l>Theres many a one would think himself unable</l>
+                    <l>To make a new thing on&#x02BC;t, and take away,</l>
+                    <l>That musty, barrowed air so often found </l>
+                    <l>In many a moral ode on New&#x2010;year&#x02BC;s day</l>
+                    <l>Each like the other and the constant sound</l>
+                    <l>Of &#x201C;Lapse of years,&#x201D; and &#x201C;ages rolling round&#x201D;</l>
+                    <l>Is heard through every line with doubling din to sound</l>
+                </lg>
+                <pb facs="1229939"/>
+                <lg type="stanza" rhyme="ababacaccd">
+                    
+                    <l>6</l>
+                    <l>Yet it is worthy of a poet&#x02BC;s mood</l>
+                    <l>To moralize on pleasant years gone by,</l>
+                    <l>And as he sitteth in the solitude</l>
+                    <l>Of the veiled night, to converse with the sky.</l>
+                    <l>And think, (and in the thought find teaching good)</l>
+                    <l>How many, in the lapse of years, like him</l>
+                    <l>Beneath the red lights of the heaven have stood</l>
+                    <l>To meditate, and moralize within</l>
+                    <l>Upon whose grave the harebell now drinks in</l>
+                    <l>The dew&#x2010;drops that slide down along the star&#x2010;ray&#x02BC;s dim.</l>
+                </lg>
+                    
+                <lg type="stanza" rhyme="ababcdaccc">
+                    <l>7</l>
+                    <l>Methinkes I hear the voice of Morning cry</l>
+                    <l>&#x02BC;Kick out Melpowminny, she&#x02BC;s most unpleasant.&#x201D;</l>
+                    <l>Why, so I will, good Morning, by and by.</l>
+                    <l>&#x02BC;Nay, I&#x02BC;m peremptory,&#x201D; Well then, at present</l>
+                    <l>I bid good morrow to the company.</l>
+                    <l>And bid them smile, and be of excellent cheer</l>
+                    <l>I wont be babbling of the midnight sky</l>
+                    <l>Nor talk of graves, nor such like things of fear</l>
+                    <l>Nor bother them about the bygone year</l>
+                    <l>So let me sing, for I&#x02BC;m a stanza in arrear.</l>
+                </lg>
+                
+                <lg type="stanza" rhyme="abcbdeceee">
+                    <l>8</l>
+                    <l>Now, gentle Master Twelve&#x2010;month, good Monsieur</l>
+                    <l>Remember how we have rejoiced this day</l>
+                    <l>And held a feast upon&#x02BC;t, and all for you</l> 
+                    <l>How glad to see the old year pass away</l>
+                    <l>How wondrous glad, to welcome in the new</l>
+                    <l>We hold ourselves, and therefore smile, and shine</l>
+                    <l>Gladden thy month&#x02BC;s and stretch thy spring&#x2010;time through</l>
+                    <l>A cheery, jocund, sunny space of time.</l>
+                    <l>And cause to lighten us with lustre fine</l>
+                    <l>And kindly blaze, the stars of each solstitial sign.</l>
+                </lg>
+                <lg type="stanza" rhyme="ababcdbddd">
+                   <l>9</l>
+                    <l>And leave us not, good year, so rapidly</l>
+                    <l>Nor, when thou has tricked out the topmost twig</l>
+                    <l>Of every tree with green leaves gaudily,</l>
+                    <l>Breathing new life through every withered sprig</l>
+                    <l>And lifting every forest&#x02BC;s crest on high</l>
+                    <l>I pray thee, do not paint them brown and sere</l>
+                    <l>Nor pluck them from their boughs, nor make them fly</l>
+                    <l>At will of winds that whistle far and near</l>
+                    <l>Over the earth, when winters glance severe</l>
+                    <l>Freezes the waters cold, at dying of the year</l>
+                </lg>
+                <pb facs="1229940"/>
+                <lg type="stanza" rhyme="ababacaccc">
+                    
+                    <l>10</l>
+                    <l>Thou canst not check thy goings, nor delay</l>
+                    <l>The swing of earth in her eternal course</l>
+                    <l>Go then and bring us back this warning day,</l>
+                    <l>This knot upon the line, that must, perforce</l>
+                    <l>Teach us, how for the vessel on its way.</l>
+                    <l>Slides down the stream of time. Nay, I could be</l>
+                    <l>Exceeding serious, but I won&#x02BC;t betray</l>
+                    <l>My promise, for I alway&#x02BC;s love to see</l>
+                    <l>Most merry faces listening to me</l>
+                    <l>Round this our table. Father, drink your cup of tea.</l>
+                </lg>
+                <lg type="stanza" rhyme="ababacdccc">
+                    <l>11</l>
+                    <l>I hope the waters boiling. Stir the fire</l>
+                    <l>Till the white gas leaps blazing from the coals</l>
+                    <l>Till high on dusky wing the flames aspire</l>
+                    <l>Let not the winters cold freeze up our souls.</l>
+                    <l>I&#x02BC;m in the humour. I&#x02BC;ll myself inspire</l>
+                    <l>Myself with fury most poetical</l>
+                    <l>I&#x02BC;ll blaze abroad, and strike a lofty lyre</l>
+                    <l>With an Apollinean tone withal</l>
+                    <l>I sing the year. Ye months come listen all</l>
+                    <l>That is, if ye have any ears atall.</l>
+                </lg>
+                <lg type="stanza" rhyme="ababacbccc">
+                    <l>12</l>
+                    <l>From your high dwellings, in the realms of snow,</l>
+                    <l>And cloud, where many an avalanches fall</l>
+                    <l>Is heard resounding from the mountains brow</l>
+                    <l>Come, ye cold winds, at January&#x02BC;s call,</l>
+                    <l>On whistling wings, and with white flakes bestrow</l>
+                    <l>The earth, till February&#x02BC;s reign restore</l>
+                    <l>The race of torrents to their wanted flow,</l>
+                    <l>Whose waves shall stand in silent ice no more</l>
+                    <l>But, lashed by Marches maddened winds, shall roar,</l>
+                    <l>With voice of ire, and beat the rocks on every shore</l>
+                </lg>
+                <lg type="stanza" rhyme="ababacacdc">
+                    <l>13</l>
+                    <l>Bow down your heads ye flowers in gentle guise</l>
+                    <l>Before the dewy rain that April sheds</l>
+                    <l>Whose sun shines through her clouds with quick surprise</l>
+                    <l>Shedding soft influences on your heads,</l>
+                    <l>And wreath ye round the rosy warmth that flies</l>
+                    <l>To scatter perfumes in the path of June</l>
+                    <l>Till Julys sun upon the mountains rise</l>
+                    <l>Triumphant, and the wan and weary moon,</l>
+                    <l>Mingle her cold beams (large space) with the burning lume(this cant be right)</l>
+                    <l>That Sirius sheds throughout the dreary midnight gloom.</l>
+                    </lg>                           
+                <pb facs="1229941"/>
+                <lg type="stanza" rhyme="ababacaccc">
+                    <l>14</l>
+                    <l>Rejoice, ye fields, rejoice, and wave with gold</l>
+                    <l>When August round her precious gifts is flinging,</l>
+                    <l>Lo, the crushed wain(?) is slowly homewards rolled</l>
+                    <l>Through all the air the reapers songs are singing</l>
+                    <l>Septembers steps her juicy stares unfold</l>
+                    <l>If the spring blossoms have not blushed in vain</l>
+                    <l>Octobers foliage yellows with his cold</l>
+                    <l>In rattling show&#x02BC;rs November&#x02BC;s misty rain</l>
+                    <l>From every stormy cloud decends amain(???)</l>
+                    <l>Till dark Decembers snows chase up the year again</l>
+                    </lg>
+                <lg type="stanza" rhyme="ababacaccd">
+                    <l>15</l>
+                    <l>Again, again, and still again, for ever</l>
+                    <l>Hour after hour, successive changes show it:</l>
+                    <l>Why should we care, or why should we endeavour</l>
+                    <l>To stop your motion.  Go it, gemmen, go it.</l>
+                    <l>But all I ask is, that you&#x02BC;ll (???) together,</l>
+                    <l>In due proportion (large space) clear and cloudy sky</l>
+                    <l>Nor stop our pleasure by your dirty weather</l>
+                    <l>Then when your dance of twelve hath tripped it by</l>
+                    <l>I&#x02BC;ll take my measures up again, and I</l>
+                    <l>Will sing you out and in most merrily.</l>
+                                </lg>
+                  <lg type="stanza" rhyme="ababacaddd">
+                    <l>16</l>
+                    <l>I know not where I&#x02BC;ve gained the information</l>
+                    <l>That all the Ladie&#x02BC;s letters always are</l>
+                    <l>Most influential in ther termination.</l>
+                    <l>But these my final lines you&#x02BC;ll find by far</l>
+                    <l>The most appropriate for this occaision.</l>
+                    <l>For I have wrought this long and lazy poem</l>
+                    <l>That, almost in the way of conversation</l>
+                    <l>Yet, in a style and metre that looked knowing</l>
+                    <l>With copious idea, rhymes serenely flowing</l>
+                    <l>I might slip in some thoughts about the year that&#x02BC;s going</l>
+                    </lg> 
+                    <lg type="stanza" rhyme="ababacaccc">
+                    <l>17</l>
+                    <l>And wishes, that the coming one may be</l>
+                    <l>Fraught with all the pleasantness, and go before</l>
+                    <l>Scores upon scores, all dowried plenteously</l>
+                    <l>With Gods best blessings, an abundant store</l>
+                    <l>Oh, Mine own dearest Father, may you see</l>
+                    <l>The (letter A blurred) forties, fifties, sixties, seventies, go</l>
+                    <l>And though it is not given us to be free</l>
+                    <l>From every pain in this dark earth below,</l>
+                    <l>The final end of every ill we know</l>
+                    <l>And hail the Fathers smile that through his frown will show.</l>
+                                               
+                                                    
+                </lg>
+            </div>
+            
+        </body>
+    </text>
+</TEI>

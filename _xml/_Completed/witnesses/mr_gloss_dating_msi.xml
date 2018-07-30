@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="mr_gloss_dating_msi">
+            <titleStmt>
+                <title type="main">Margaret Ruskin's Gloss on the Dating of MS I</title>
+                <title type="sub">Electronic text generated from a transcription of the MS I gloss.</title>
+                <author>
+                    <persName corresp="#MR">Margaret Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName></principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName corresp="#CNW">Casey N. White</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing review, encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-06-27">June 27, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msi/1229146.jpg">p. 103</locus>
+                            <note>Ruskin's page numbering; see foliation of MS I.</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDMR" scribe="MR">
+                                <p>Additional description goes here, may include <date/> and <locus/>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="gloss">
+            <div>
+                <lb/>
+                <p><date when="1826-01">Jan<hi rend="superscript">y</hi> 1826</date></p>
+                <milestone unit="undeclared" rend="hr-threequarter"/>
+                <p><space quantity="2" unit="chars"/>This book begun about <date notBefore="1826-09" notAfter="1826-10">Sep<hi rend="superscript">t.</hi> or Oct 1826</date><lb type="runover"/>finished about <date when="1827-01">Jan<hi rend="superscript">y</hi> 1827</date></p>
+            </div>
+                </div>
+        </body>
+    </text>
+</TEI>

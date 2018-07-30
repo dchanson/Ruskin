@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="lago_maggiore_witness">
+            <titleStmt>
+                <title type="main">[Lago Maggiore]</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#">E. T. Cook and Alexander Wedderburn</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>E. T. Cook and Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <imprint>
+                            <biblScope type="vol">2</biblScope>
+                            <biblScope type="edition">Library<hi rend="superscript"></hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1903">1903</date>
+                            <biblScope type="pages">xxiii<!--I don't know what goes here?--></biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title">[<geogName corresp="#MAGGIORE">Lago Maggiore</geogName>]
+                   <name><persName corresp="#JR">by John Ruskin</persName></name></head> 
+                
+                <l>It was an eve of summer, mild </l>
+                <l>As ever looked the pale moon through, </l>
+                <l>That the deep waters were beguiled </l>
+                <l>Into such rest, that, as the blue,&#x2014;</l>
+                <l>The moveless blue of the high heaven,&#x2014; </l>
+                <l>Such sleep was to the low lake given </l>
+                <l>That, as in lethargy, it lay </l>
+                <l>Waveless and tideless, soft and grey </l>
+                <l>As chasmless glacier. Voicelessly </l>
+                <l>The little barks came gliding by </l>
+                <l>Apparently without a wind, </l>
+                <l>Leaving long ripply wakes behind. </l>
+                <l>It would have seemed a lifeless sea,</l>
+                <l>But there arose colossally, </l>
+                <l>Beyond the mist&#x2010;horizon, where </l>
+                <l>The waters mingled with the air, </l>
+                <l>The spirits of gigantic things,&#x2014;</l>
+                <l>Lords of the earth, and air, and sky. </l>
+                <l>Where, while heaven&#x02BC;s cloud around them flings </l>
+                <l>Concealment everlastingly, </l>
+                <l>The mountain&#x2010;snow, like scattered flocks, </l>
+                <l>Speckled on high the red ribbed rocks, </l>
+                <l>Or down the ravine&#x02BC;s rolling blue </l>
+                <l>Its crisped surge o&#x02BC;er the green fields threw, </l>
+                <l>Flinging the ice&#x2010;waves far and wide, </l>
+                <l>Like the tortured spray of the ocean tide </l>
+                <l>Breaking broad on the mountain side. </l>
+                <pb/>
+                <l>Yet was there such a softness shed </l>
+                <l>Upon the rude <geogName corresp="#ALPS">Alps</geogName>&#x02BC; stormy head, </l>
+                <l>On massive wood and russet brake, </l>
+                <l>Flashing river and polished lake </l>
+                <l>So broadly stretched in sapphire sheet,&#x2014;</l>
+                <l>Another heaven &#x02BC;neath our feet </l>
+                <l>Of deeper, darker, lovelier blue,&#x2014;</l>
+                <l>It seemed that we were looking through </l>
+                <l>Those &#x00E6;ther fields, so pure, so high, </l>
+                <l>Above the concave of the sky,</l>
+                <l>Where nor storm nor tempest cometh nigh,</l>
+                <l>And the moon she sits in her majesty.</l>
+           </div>
+        </body>
+    </text>
+</TEI>

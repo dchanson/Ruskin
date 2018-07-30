@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="on_the_rainbow_glosses_textual">
+            <titleStmt>
+                <title type="main">"On the Rainbow"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses" subtype="textual">
+                <note xml:id="GLYPHINSERTION1" resp="#DCH"><p><hi rend="bold">Line 2, end&#x2014;</hi>An insertion glyph points to a comma above the line; 
+                    see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#DELETIONANDADDITION">Editorial and Encoding Rationale and Methodology: Deletion and Addition</ref>.</p></note>
+                <note xml:id="GLYPHINSERTION2" resp="#DCH"><p><hi rend="bold">Line 3, end&#x2014;</hi>An insertion glyph points to a comma above the line; 
+                    see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#DELETIONANDADDITION2">Editorial and Encoding Rationale and Methodology: Deletion and Addition</ref>.</p></note>
+                <note xml:id="ERASUREBYBOLD1" resp="#DCH"><p><hi rend="bold">&#x201C;all reflect&#x201D;&#x2014;</hi>Because <persName corresp="#JR">Ruskin</persName> wrote the <hi rend="italic">r</hi> too close to the preceding word, 
+                    he erased it by printing a second <hi rend="italic">r</hi> with heavier strokes, as if in boldface; 
+                    see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#DELETIONANDADDITION">Editorial and Encoding Rationale and Methodology: Deletion and Addition</ref>.</p></note>
+                <note xml:id="PAUSEPERIOD" resp="#DCH"><p><hi rend="bold">Line 5,end&#x2014;</hi>Since <persName corresp="#JR">Ruskin</persName> is so definite about placing commas at the ends of lines 2&#x2013;4, 
+                    he presumably does not intend the punctuation closing line 5 as a pause&#x2010;period but as a terminal period, despite the lack of an independent clause in lines 2&#x2013;4; 
+                    see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Commas, Periods, and Other Punctuation</ref>. 
+                    Note the decided use of terminal periods in lines 1 and 8.</p></note>
+                <note xml:id="DOUBLELETTER" resp="#DCH"><p><hi rend="bold">&#x201C;And&#x201D;&#x2014;</hi>Double-letter capital; see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#HAND">Editorial and Encoding Rationale and Methodology: Handwriting and Special Characters</ref></p></note>
+                <note xml:id="ERASUREBYBOLD2" resp="#DCH"><p><hi rend="bold"><hi rend="italic">Line 12</hi>&#x2014;</hi>Because <persName corresp="#JR">Ruskin</persName> wrote the <hi rend="italic">n</hi> too close to the preceding word, 
+                    he erased it by printing a second <hi rend="italic">n</hi> with heavier strokes, as if in boldface; 
+                    see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#DELETIONANDADDITION">Editorial and Encoding Rationale and Methodology: Deletion and Addition</ref>.</p></note>
+                <note xml:id="LINE14ADDITION" resp="#DCH"><p><hi rend="bold">Line 14&#x2014;</hi>While the word <hi rend="italic">all</hi> has the appearance of a runover, it is positioned very close above line 14, and written unusually small; 
+                    and since the word makes clearer semantic sense as part of the prepositional phrase in line 14 than as part of the prepositional phrase in line 13, 
+                    we interpret it as an addition to line 14.</p></note>
+                <note xml:id="EXTRASPACE1" resp="#DCH"><p><hi rend="bold">Line 16&#x2014;</hi>The extra space following <hi rend="italic">it</hi> appears to function as terminal punctuation; 
+                    see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Commas, Periods, and Other Punctuation</ref>.</p></note>
+                <note xml:id="EXTRASPACE2" resp="#DCH"><p><hi rend="bold">Line 23&#x2014;</hi>The extra space following <hi rend="italic">The</hi>, along with the appearance of <hi rend="italic">upon</hi> 
+                    as an addition to the front of the line, suggests that Ruskin was playing with the sense of <hi rend="italic">reflect</hi> in line 22 as both a transitive and intransitive verb.</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>

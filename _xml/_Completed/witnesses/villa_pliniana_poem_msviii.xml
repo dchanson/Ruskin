@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="villa_pliniana_poem_msviii.xml">
+            <titleStmt>
+                <title type="main">"Villa Pliniana" [poem]</title>
+                <title type="sub">"Electronic Text Generated from a Transcription of the MS VIII Draft</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#ZSS">Zachary S. Slawson</persName>
+                    <resp>contributing encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#SEP">Steven Petite</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2017-12-30">30 December 2017</date>
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS VIII</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msviii/MSVIII80v-81r.jpg">p. 80v</locus>
+
+                            
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msviii"></ref></filiation><!-- return to this when apparatus for VIII completed (DCH) -->
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>,
+                                    examples of which can be found in MS IA and VIII, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb facs="MSVIII80v"/>
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="abbabaaacddeffegghfieie">
+                <head type="title"><handShift new="#HANDJR1833-34" script="cursive" medium="ink"/><placeName corresp="#VILLAPLINIANA">Villa Pliniana</placeName><ref type="gloss_textual" target="villa_pliniana_poem_glosses_textual.php#PUBLICATIONGLOSS" /></head>
+                <lg type="stanza">
+                    <l>I love to hear the names of those</l>
+                    <l>Who long ago have past away,<ref type="gloss_contextual" target="villa_pliniana_poem_glosses_contextual.php#PLINYVILLAGLOSS"/></l>
+                    <l>Though now those names be claimed by clay<ref type="gloss_textual" target="villa_pliniana_poem_glosses_textual.php#CLAIMEDGLOSS" /></l>
+                    <l>And who would stand where they repose<add rend="linenumber-right-JR">1465</add></l>
+                    <l>And look upon their dust, and say,</l>
+                    <l>That this was <persName corresp="#TRAJAN">Trajan</persName><g type="pause-period">.</g><ref type="gloss_textual" target="villa_pliniana_poem_glosses_textual.php#PAUSEPERIOD" /> and below</l>
+                    <l>This foot of mine, lies cold and low,</l>
+                    <l>Earth, which compounded long ago</l>
+                    <l>What held the soul of <persName corresp="#JULIUSCAESAR">Cesar</persName>.
+                        <add rend="linenumber-right-JR">14
+                        <subst><add>7</add><del rend="overwriting">6</del></subst>0</add></l>
+                    <l>How peaceful is the turbulence</l>
+                    <l>Of spirits, whose high deeds long hence</l>
+                    <l>Shall still be told as now,</l>
+                    <l>How strange those mighty powers that hurled</l>
+                    <l>Wide change and terror oer the world.<add rend="linenumber-right-JR">1475 <space quantity="1" unit="chars"/><handShift new="#HANDJR1833-34" script="cursive" medium="pencil"/><add rend="linenumber-right-JR">80</add></add></l>
+                    <l><handShift new="#HANDJR1833-34" script="cursive" medium="ink"/>Should pass away we know not how</l>
+                    <l>That one would wonder how a thing</l>
+                    <l>So temporary, perishing</l>
+                    <l>Should dare such deeds, or work such change</l>
+                    <l>I&#x02BC; the texture of the world.<add rend="linenumber-right-JR">1480</add></l>
+                    <l>There have been many mighty,</l>
+                    <l>And many more renowned,</l>
+                    <l>The ignoble and the glorious,</l>
+                    <l>Are underneath the ground</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

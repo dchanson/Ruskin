@@ -1,0 +1,1899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="account_of_a_tour_on_the_continent_toc_msviii.xml">
+            <titleStmt>
+                <title type="main">Plan for Continuation of the Account of a Tour on the Continent</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS IX Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KCM">Katie C. Moore</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS VIII</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msviii/MSVIIIback_flyleafv-back_flyleafr.jpg">back_flyleafv-back_flylefr</locus><!--Ruskin's page numbering.-->
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="bibliography_text">
+                <head type="title">List of Proposed Additional Contents for the &#x201C;Account&#x201D; [Account of a Tour on the Continent]</head>
+                <div type="tablespace" xml:id="account_toc_msviii_addictional_sections_table">
+                    <head type="section">[Table 1. Additional Sections and/or Works]</head>
+                    <table cols="3">
+                        <row role="label">
+                            <cell n="1">Metamark</cell>
+                            <cell n="2">Ruskin's Numbering</cell>
+                            <cell n="3">Title of Section or Work</cell>
+                        </row>
+                        <row role="data">
+                            <cell n="1"><metamark function="unknown">\</metamark></cell>
+                            <cell n="2">1</cell>
+                            <cell n="3"><title type="composite" corresp="#JRANDERNACHTCOMP"><placeName corresp="#ANDERNACH">Andernacht</placeName></title></cell>
+                        </row>
+                        <row role="data">
+                            <cell n="1"></cell>
+                            <cell n="2">2</cell>
+                            <cell n="3"><title type="composite" corresp="#JREHRENBREITSTEINCOMP"><geogName corresp="#EHRENBREISTEIN">Ehrenbreistein</geogName></title></cell>
+                        </row>
+                        <row role="data">
+                            <cell n="1"><metamark function="unknown">\</metamark></cell>
+                            <cell n="2">3</cell>
+                            <cell n="3"><title type="composite" corresp="#JRSTGOARCOMP"><placeName corresp="#STGOAR">St Goar</placeName></title></cell>
+                        </row>
+                        <row role="data">
+                            <cell n="1"></cell>
+                            <cell n="2">4</cell>
+                            <cell n="3" xml:id="ACCOUNTTOCFRANCFURT"><del rend="strikethrough"><title type="composite" corresp="#JRFRANKFURTCOMP"><placeName corresp="#FRANKFURT">Francfort</placeName></title></del><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#FRANCFORTGLOSS"/></cell>
+                        </row>
+                        <row role="data">
+                            <cell n="1"></cell>
+                            <cell n="2">5</cell>
+                            <cell n="3"><title type="composite" corresp="#JRHEIDELBERGCOMP"><placeName corresp="#HEIDELBERG">Heidelberg</placeName></title></cell>
+                        </row>
+                        <row role="data" xml:id="ACCOUNTTOCSTRASBURG">
+                            <cell n="1"></cell>
+                            <cell n="2">6</cell>
+                            <cell n="3"><title type="composite" corresp="#JRSTRASBURGCOMP"><placeName corresp="#STRASBOURG">Strasburg</placeName></title><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#STRASBURGGLOSS"/></cell>
+                        </row>
+                        <row role="data" xml:id="ACCOUNTTOCSWISSCOTTAGES">
+                            <cell n="1"><metamark function="unknown">\</metamark></cell>
+                            <cell n="2">7</cell>
+                            <cell n="3"><title type="composite" corresp="#JRSWISSCOTTAGESCOMP">The swiss cottages</title></cell>
+                        </row>
+                        <row role="data" xml:id="ACCOUNTTOCSCHAFFHAUSEN">
+                            <cell n="1"></cell>
+                            <cell n="2">8</cell>
+                            <cell n="3"><title type="composite" corresp="#JRSCHAFFHAUSENCOMP"><placeName corresp="#SCHAFFHAUSEN">Schaffhausen</placeName></title></cell>
+                        </row>
+                        <row role="data" xml:id="ACCOUNTTOCTHEALPS">
+                            <cell n="1"><metamark function="unknown">\</metamark></cell>
+                            <cell n="2">9</cell>
+                            <cell n="3"><title type="composite" corresp="#JRTHEALPSCOMP"><geogName corresp="#ALPS">The Alps</geogName></title></cell>
+                        </row>
+
+                        <row role="data" xml:id="ACCOUNTTOCFALLOFTHERHINE">
+                         <cell/>
+                         <cell>10</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRFALLOFTHERHINECOMP">
+                             <geogName corresp="#RHINEFALLS">The fall of the Rhine</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCCONSTANCE">
+                         <cell/>
+                         <cell>11</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRCONSTANCECOMP">
+                             <placeName corresp="#CONSTANCE">Constance</placeName>
+                           </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#CONSTANCEGLOSS"/>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCWERDENBERG">
+                         <cell/>
+                         <cell>12</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRWERDENBERGCOMP">
+                             <placeName corresp="#WERDENBERG">Werdenberg</placeName>
+                           </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#WERDENBERGGLOSS"/>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCPFAFFERS">
+                         <cell/>
+                         <cell>13</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRPFAFFERSCOMP">
+                             <placeName corresp="#PFAFFERS">Pfaffers</placeName>
+                           </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#PFAFFERSGLOSS"/>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCPASSINGTHEALPS">
+                         <cell><metamark function="unknown">\</metamark></cell>
+                         <cell>14</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRPASSINGTHEALPS">Passing the <geogName corresp="#ALPS">Alps</geogName></title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCVIAMALA">
+                         <cell><metamark function="unknown">\</metamark></cell>
+                         <cell>15</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRVIAMALACOMP">
+                             <geogName corresp="#VIAMALA">The via mala</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCSPLUGEN">
+                         <cell><metamark function="unknown">\</metamark></cell>
+                         <cell>16</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRSPLUGENCOMP">
+                             <placeName corresp="#SPLUGEN">Splugen</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTHESUMMIT">
+                         <cell>
+                           <metamark function="insertion">\</metamark>
+                         </cell>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRTHESUMMITCOMP">The Summit</title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTHEDESCENT">
+                         <cell><metamark function="unknown">\</metamark></cell>
+                         <cell>17</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRTHEDESCENTCOMP">The descent</title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCITALIA">
+                         <cell/>
+                         <cell>18</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRITALIACOMP">
+                             <placeName corresp="#ITALY">Italia, Italia</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCLAGODICOMO">
+                         <cell><metamark function="unknown">\</metamark></cell>
+                         <cell>19</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRLAGODICOMOCOMP">
+                             <geogName corresp="#LAKECOMO">Lago di Como</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCCADENABBIA">
+                         <cell/>
+                         <cell>20</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRCADENABBIACOMP">
+                             <placeName corresp="#CADENABBIA">Cadenabbia</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCVILLAPLINIANA">
+                         <cell/>
+                         <cell>21</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRVILLAPLINIANACOMP">
+                             <placeName corresp="#VILLAPLINIANA">Villa pliniana</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCMILAN">
+                         <cell/>
+                         <cell>22</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRMILANCOMP">
+                             <placeName corresp="#MILAN">Milan</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCDUOMO">
+                         <cell><metamark function="unknown">\</metamark></cell>
+                         <cell>23</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRDUOMOFMILANCOMP">
+                             <placeName type="building" corresp="#DUOMOMILAN">The duomo of Milan</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCCORSO">
+                         <cell/>
+                         <cell>24</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRCORSOMILANCOMP">
+                             <placeName corresp="#PORTAVENEZIA">The corso of Milan</placeName>
+                           </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#CORSOGLOSS"/>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCCERTOSA">
+                         <cell/>
+                         <cell>25</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRTHECERTOSACOMP">
+                             <placeName type="building" corresp="#CERTOSA">The certosa</placeName>
+                           </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#CERTOSAGLOSS"/>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCAPPENINES">
+                         <cell/>
+                         <cell>26</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRTHEAPPENINESCOMP">
+                             <geogName corresp="#APPENINES">The Appenines</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCGENOA">
+                         <cell/>
+                         <cell>27</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRGENOACOMP">
+                             <placeName corresp="#GENOA">Genoa</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                     <row role="data" xml:id="ACCOUNTTOCHOUSEOFBYRON">
+                         <cell></cell>
+                         <cell>28</cell>
+                         <cell><del rend="strikethrough">The <unclear resp="#DCH">house</unclear> of <persName corresp="#GGB">Byron</persName></del><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#HOUSEOFBYRONGLOSS"/></cell>
+                     </row>
+                       <row role="data" xml:id="ACCOUNTTOCMARENGO">
+                         <cell/>
+                         <cell>29</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRMARENGOCOMP">
+                             <placeName corresp="#MARENGO">Marengo</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTURIN">
+                         <cell/>
+                         <cell>30</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRTURINCOMP">
+                             <placeName corresp="#TURIN">Turin</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                         <row role="data" xml:id="ACACCOUNTTOCNOVARACOUNTTOCHOUSEOFBYRON">
+                             <cell></cell>
+                             <cell>31</cell>
+                             <cell><del rend="strikethrough"><geogName corresp="#MONTCENIS">Mont Cenis</geogName></del><placeName corresp="#NOVARA">Novora</placeName></cell>
+                         </row>
+                       <row role="data" xml:id="ACCOUNTTOCMAGGIORE">
+                         <cell/>
+                         <cell>32</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRMAGGIORECOMP">
+                             <geogName corresp="#LAKEMAGGIORE">Maggiore</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOMADONNADELMONTE">
+                         <cell/>
+                         <cell>33</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRTHEMADONNADELMONTECOMP">
+                             <geogName corresp="#MADONNADELMONTE">The Madonna del monte</geogName>
+                           </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#MADONNADELMONTEGLOSS"/>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCDOMODOSSOLA">
+                         <cell/>
+                         <cell>34</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRDOMODOSSOLACOMP">
+                             <placeName corresp="#DOMODOSSOLA">Domo dʼOssola</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCFAREWELLTOITALY">
+                         <cell/>
+                         <cell>35</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRITALYCOMP">Farewell to <placeName corresp="#ITALY">Italy</placeName></title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTHEGLACIERS">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRTHEGLACIERSCOMP">The Glaciers</title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCBRIEG">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRBRIGCOMP">
+                             <placeName corresp="#BRIG">Brieg</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTOURTMAN">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRTURTMANNCOMP">
+                             <placeName corresp="#TURTMANN">Tourtman</placeName>
+                           </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#TURTMANNGLOSS"/>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCMARTIGNY">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRMARTIGNYCOMP">
+                             <placeName corresp="#MARTIGNY">Martigny</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTHEASCENT">
+                         <cell/>
+                         <cell>36</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRTHEASCENTCOMP">36 The ascent</title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCSTBERNARD">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRTHEGRANDSTBERNARDCOMP">
+                             <geogName corresp="#STBERNARD">The Grand st Bernard</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCCOUNTTOCSAINTMAURICE">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRSAINTMAURICECOMP">
+                             <placeName corresp="#SAINTMAURICE">St Maurice</placeName>
+                           </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#STMAURICEGLOSS"/>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCLAKEOFGENEVA">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRTHELAKEOFGENEVACOMP">
+                             <geogName corresp="#LAKEGENEVA">The lake of Geneva</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCCHILLON">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRCHILLONCASTLECOMP">
+                             <placeName type="building" corresp="#CHILLONCASTLE">Chillon</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCLAUSANNE">
+                         <cell/>
+                         <cell>40</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRLAUSANNECOMP">
+                             <placeName corresp="#LAUSANNE">Lausanne</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCFRIBOURG">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRFRIBOURGCOMP">
+                             <placeName corresp="#FRIBOURG">Fribourg</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCBERNE">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRBERNECOMP">
+                             <geogName corresp="#BERNE">Berne</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTHUN">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRTHUNCOMP">
+                             <placeName corresp="#THUN">Thun</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCINTERLAKEN">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRINTERLAKENCOMP">
+                             <placeName corresp="#INTERLAKEN">Interlaken</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCJUNGFRAU">
+                         <cell/>
+                         <cell>45</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRJUNFRAUCOMP">
+                             <geogName corresp="#JUNGFRAU">The Jungfrau</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCGIESBACH">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRGIESSBACHFALLSCOMP">
+                             <geogName corresp="#GIESSBACHFALLS">The Giesbach</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCLUCERNE">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRLUCERNECOMP">
+                             <placeName corresp="#LUCERNE">Lucerne</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCAART">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRARTHCOMP">
+                             <placeName corresp="#ARTH">Aart</placeName>
+                           </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#AARTGLOSS"/>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCRIGI">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRRIGICOMP">
+                             <geogName corresp="MONTRIGI">Rigi</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCGOLDAU">
+                         <cell/>
+                         <cell>50</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRGOLDAUCOMP">
+                             <placeName corresp="#GOLDAU">Goldau</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCSCHWYTZ">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRSCHWYTZCOMP">
+                             <placeName corresp="#SCHWYZ">Schwytz</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTOCEINSIDELN">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JREINSIEDELNCOMP">
+                             <placeName corresp="EINSIEDELN">Einsideln</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCLAKEOFZURICH">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRLAKEOFZURICHCOMP">
+                             <geogName corresp="#LAKEZURICH">The lake of Zurich</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCBASLE">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRBASLECOMP">
+                             <placeName corresp="#BASLE">Basle</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTHERHINE">
+                         <cell/>
+                         <cell>55</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRTHERHINECOMP">
+                             <geogName corresp="#RHINE">The Rhine</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCBALSTALL">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRBALSTALLCOMP">
+                             <placeName corresp="#BALSTALL">Balstall</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCSOLEUR">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="JRSOLEURECOMP">
+                             <del type="strikethrough">
+                               <placeName corresp="#SOLEURE">Soleure</placeName>
+                             </del>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCNEUFCHATEL">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRNEUFCHATELCOMP">
+                             <placeName corresp="#NEUFCHATEL">Neufchatel</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCGENEVA">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRGENEVACOMP">
+                             <placeName corresp="#GENEVA">Geneva</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCCHAMOUNI">
+                         <cell/>
+                         <cell>60</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRCHAMOUNICOMP">
+                             <placeName corresp="#CHAMOUNI">Chamouni</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTHEMONTBLANC">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRTHEMONTBLANCCOMP">
+                             <geogName corresp="#MONTBLANC">The Mont Blanc</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCSOURCEOFTHEARVERON">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRSOURCEOFTHEARVERONCOMP">
+                             <geogName corresp="#ARVERON">The source of the Arveron</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTHEMORNING">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRTHEMORNINGCOMP">The morning</title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTHEMONTANVERT">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRTHEMONTANVERTCOMP">
+                             <geogName corresp="#MONTANVERT">The Montanvert</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTHEMERDEGLACE">
+                         <cell/>
+                         <cell>65</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRTHEMERDEGLACECOMP">
+                             <geogName corresp="#MERDEGLACE">The Mer de Glace</geogName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCOURLASTWALK">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JROURLASTWALKCOMP">Our last walk.</title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCFAREWELL">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRFAREWELLCOMP">Farewell.</title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCLYONS">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRLYONSCOMP">
+                             <placeName corresp="#LYONS">Lyons</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCDIJON">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRDIJONCOMP">
+                             <placeName corresp="#DIJON">Dijon</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCPARIS">
+                         <cell/>
+                         <cell>70</cell>
+                         <cell>
+                           <title type="composite" corresp="#JRPARISCOMP">
+                             <placeName corresp="#PARIS">Paris</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCPERELACHAISE">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRPERELACHAISECOMP">
+                             <placeName corresp="#PERELACHAISE">Pere la chaise</placeName>
+                           </title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCTHELASTNIGHTINFRANCE">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JRTHELASTNIGHTINFRANCECOMP">The last night in France</title>
+                         </cell>
+                       </row>
+                       <row role="data" xml:id="ACCOUNTTOCOLDENGLAND">
+                         <cell/>
+                         <cell/>
+                         <cell>
+                           <title type="composite" corresp="#JROLDENGLANDCOMP">Old England.</title>
+                         </cell>
+                       </row>
+                         <row role="data" xml:id="ACCOUNTTOCPEACETOTHEE">
+                             <cell></cell>
+                             <cell></cell>
+                             <cell><del rend="strikethrough">Peace to thee</del></cell>
+                         </row>
+                    </table>
+                    </div>
+
+
+              <div type="tablespace" xml:id="account_toc_msviii_table_2">
+                        <head type="section">[Table 2. List of Sections and/or Works "Wanted" with Associated Figures]</head>
+                        <table cols="3">
+                            <row role="label">
+                                <cell>Ruskin's Numbering (No. Items "Wanted"?)</cell>
+                                <cell>Title of Section or Work</cell>
+                                <cell>Associated Figures</cell>
+                            </row>
+                            <row role="data">
+                                <cell>0</cell>
+                                <cell><title type="composite" corresp="#JRHEIDELBERGCOMP"><placeName corresp="#HEIDELBERG">Heidelberg</placeName></title></cell>
+                                <cell>Begin with <del rend="strikethrough">mountain.</del>Tournament. Spectre.<del rend="strikethrough">He</del>Castle by moonlight. <persName corresp="#SP">Prout</persName> Old House <persName corresp="#SP">Prout</persName> on the <geogName corresp="#RHINE">Rhine</geogName>.<placeName corresp="#BRAUBACH">Braubach</placeName></cell>
+                            </row>
+                            <row role="data">
+                                <cell>0</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRSTGOARCOMP">
+                                    <placeName corresp="#STGOAR">St Goar</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>0</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JREHRENBREITSTEINCOMP"><placeName corresp="#COBLENZ">Coblentz</placeName> [“Ehrenbreitstein”]</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>0 2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRSTRASBURGCOMP">
+                                    <placeName corresp="#STRASBOURG">Strasburg</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>4</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRSCHAFFHAUSENCOMP"><placeName corresp="#SCHAFFHAUSEN">Schaffhaus</placeName> [“Schaffhausen”]</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHEALPSCOMP"><geogName corresp="#ALPS">The Alps</geogName>.</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRFALLOFTHERHINECOMP">
+                                    <geogName corresp="#RHINEFALLS">Fall of the Rhine</geogName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRCONSTANCECOMP">
+                                    <placeName corresp="#CONSTANCE">Constance</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRWERDENBERGCOMP">
+                                    <placeName corresp="#WERDENBERG">Werdenberg</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>1</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRPFAFFERSCOMP">
+                                    <placeName corresp="#PFAFFERS">Pfaffers</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRPASSINGTHEALPSCOMP">Passing <geogName corresp="#ALPS">Alps</geogName></title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>0</cell>
+                                <cell>
+                                  <title type="composite" corresp="JRVIAMALACOMP">
+                                    <geogName corresp="#VIAMALA">Via mala</geogName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>0</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRSPLUGENCOMP">
+                                    <geogName corresp="#SPLUGEN">Splugen</geogName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHESUMMITCOMP">The summit</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>0</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHEDESCENTCOMP">The descent</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRLAGODICOMOCOMP"><geogName corresp="#LAKECOMO">Como</geogName>.</title>
+                                </cell>
+                                <cell>2</cell>
+                              </row>
+                              <row role="data">
+                                <cell>1</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRCADENABBIACOMP">
+                                    <placeName corresp="#CADENABBIA">Cadenabia</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRVILLAPLINIANACOMP"><placeName corresp="#VILLAPLINIANINA">Villa plin</placeName> [“Villa pliniana”]</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>4</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRMILANCOMP">
+                                    <placeName corresp="#MILAN">Milan</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRDUOMOMILANCOMP">
+                                    <placeName type="building" corresp="#DUOMOMILAN">The duomo</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRCORSOMILANCOMP">
+                                    <placeName type="building" corresp="#PORTAVENEZIA">The corso</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>4</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHERCERTOSACOMP">
+                                    <placeName type="building" corresp="#CERTOSA">The certosa</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>0</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHEAPPENINESCOMP"><geogName corresp="#APPENINES">Appenines</geogName>.</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>1</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRGENOACOMP">
+                                    <placeName corresp="#GENOA">Genoa</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>1</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRMARENGOCOMP">
+                                    <placeName corresp="#MARENGO">Marengo</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTURINCOMP">
+                                    <placeName corresp="#TURIN">Turin</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRNOVARACOMP">
+                                    <placeName corresp="#NOVARA">Novara</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell><del rend="strikethrough">1</del></cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRMAGGIORECOMP">
+                                    <geogName corresp="#LAKEMAGGIORE">Maggiore</geogName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>4</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHEMADONNADELMONTECOMP"><geogName corresp="#MADONNADELMONTE">Madonna</geogName> [“Madonna del monte”]</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>0</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRDOMODOSSOLACOMP">
+                                    <placeName corresp="#DOMODOSSOLACOMP">Duomo dʼOssola</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>0</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRFAREWELLCOMP">Farewell</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHEGLACIERSCOMP">Glaciers</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>4</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRBRIEGCOMP">
+                                    <placeName corresp="#BRIEG">Brieg</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell><title type="composite" corresp="JRTURTMANNCOMP"><placeName corresp="#TURTMANN">Tourtman</placeName></title></cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRMARTIGNYCOMP">
+                                    <placeName corresp="#MARTIGNY">Martigny</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>1</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHEASCENTCOMP">Ascent</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>0</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRGRANDSTBERNARDCOMP"><geogName corresp="#STBERNARD">great St B</geogName> [“The Grand St. Bernard”]</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>1</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRSAINTMAURICECOMP">
+                                    <placeName corresp="#SAINTMAURICE">St. Maurice</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHELAKEOFGENEVACOMP"><geogName corresp="#LAKEGENEVA">lake of Gen</geogName> [“The Lake of Geneva”]</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRCHILLONCASTLECOMP">
+                                    <placeName type="building" corresp="#CHILLONCASTLE">Chillon</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRLAUSANNECOMP">
+                                    <placeName corresp="#LAUSANNE">Lausanne</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell><del rend="strikethrough">3</del></cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRFRIBOURGCOMP">
+                                    <placeName corresp="#FRIBOURG">Fribourg</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRBERNECOMP">
+                                    <placeName corresp="#BERNE">Berne</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHUNCOMP">
+                                    <placeName corresp="#THUN">Thun</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRINTERLAKENCOMP">
+                                    <placeName corresp="#INTERLAKEN">Interlaken</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRJUNGFRAUCOMP">
+                                    <placeName corresp="#JUNGFRAU">Jungfrau</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>0</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRGIESSBACHFALLSCOMP">
+                                    <geogName corresp="#GIESSBACHFALLS">The Giesbach</geogName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>0</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRLUCERNECOMP">
+                                    <placeName corresp="#LUCERNE">Lucerne</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRARTHCOMP">
+                                    <placeName corresp="#ARTH">Aart</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>1</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRRIGICOMP">
+                                    <geogName corresp="#MONTRIGI">Rigi</geogName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>4</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRGOLDAUCOMP">
+                                    <placeName corresp="#GOLDAU">Goldau</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell></cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRSCHWYTZCOMP">
+                                    <placeName corresp="#SCHWYZ">Schwytz</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JREINSIEDELNCOMP">
+                                    <placeName corresp="#EINSIEDELN">Einsideln</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>4</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRLAKEOFZURICHCOMP">
+                                    <geogName corresp="#LAKEZURICH">Lake of Zurich</geogName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRBASLECOMP">
+                                    <placeName corresp="#BASLE">Basle</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHERHINECOMP">
+                                    <geogName corresp="#RHINE">Rhine, The</geogName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRBALSTALLCOMP">
+                                    <placeName corresp="#BALSTALL">Balstall</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>4</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRNEUFCHATELCOMP">
+                                    <placeName corresp="#NEUFCHATEL">Neufchatel</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>1</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRGENEVACOMP">
+                                    <placeName corresp="#GENEVA">Geneva</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell></cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRCHAMOUNICOMP">
+                                    <placeName corresp="#CHAMOUNI">Chamouni</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>1</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRMONTBLANCCOMP">
+                                    <geogName corresp="#MONTBLANC">Mont Blanc</geogName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRSOURCEOFTHEARVERONCOMP">
+                                    <geogName corresp="#ARVERON">Source of the Arveron</geogName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>4</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHEMORNINGCOMP">The morning</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRMONTANVERTCOMP">
+                                    <placeName corresp="#MONTANVERT">Montanvert</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHEMERDEGLACECOMP">
+                                    <geogName corresp="#MERDEGLACE">Mer de Glace</geogName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>3</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JROURLASTWALKCOMP">Last walk</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>1</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRFAREWELLCOMP">Farewell</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>1</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRLYONSCOMP">
+                                    <placeName corresp="#LYONS">Lyons</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell>2</cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRDIJONCOMP">
+                                    <placeName corresp="#DIJON">Dijon</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell></cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRPARISCOMP">
+                                    <placeName corresp="#PARIS">Paris</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell></cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRPERELACHAISECOMP">
+                                    <placeName corresp="#PERELACHAISE">Perelachaise</placeName>
+                                  </title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell></cell>
+                                <cell>
+                                  <title type="composite" corresp="#JRTHELASTNIGHTINFRANCECOMP">Last night</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                              <row role="data">
+                                <cell></cell>
+                                <cell>
+                                  <title type="composite" corresp="#JROLDENGLANDCOMP">Old England</title>
+                                </cell>
+                                <cell></cell>
+                              </row>
+                            </table>
+                    </div>
+
+                <div>
+                    <list type="simple">
+                        <item n="1">Begin with</item>
+                    </list>
+                </div>
+            </div>
+<div type="section" >
+    <head>Table 1</head>
+  <div type="tablespace" xml:id="account_toc_msviii_table_1">
+            <head type="table">Table 1. Account of a Tour on the Continent: Table of Contents</head>
+        <table cols="3">
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRHEIDELBERGCOMP"><placeName corresp="#HEIDELBERG">Heidelberg</placeName></title></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRSTGOARCOMP"><placeName corresp="#STGOAR">St. Goar</placeName></title></cell>
+                <cell n="3" role="data">Whirlpool. <placeName corresp="#GODESBERG">Godesberg</placeName>. <placeName corresp="#RHEINFELS">Rheinfels</placeName>.<geogName corresp="#DRACHENFELS">Drachenfels</geogName>. &#x2014;0</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data">Coplentz.</cell>
+                <cell n="3" role="data">Vignette tower,<persName corresp="#SP">Prout</persName>.<del rend="strikethrough">Fortress.</del><del rend="strikethrough">Fortress my own.</del><del rend="strikethrough">Pines.</del>&#x2014;0</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">02</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRSTRASBURGCOMP"><placeName corresp="#STRASBOURG">Strasburg</placeName></title></cell>
+                <cell n="3" role="data"><persName corresp="#SP">Prout</persName>. The well. &#x007C; The <placeName corresp="#SWISSCOTTAGES">swiss cottages</placeName> &#x3008;&#x00D7; Un de les; <persName corresp="#WCW">William Tell</persName>...<title type="book" corresp="#BOYSOWNBOOK">Boy's Own Book, &#x2014;1</title></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">4</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRSCHAFFHAUSENCOMP"><placeName corresp="#SCHAFFHAUSEN">Schaffhaus</placeName></title></cell>
+                <cell n="3" role="data">&#x2014;4</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHEALPSCOMP"><placeName corresp="#THEALPS">The Alps</placeName></title></cell>
+                <cell n="3" role="data">My own &#x2014; 3</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHEFALLOFTHERHINE"><geogName corresp="#RHINEFALLS">Fall of the Rhine</geogName></title></cell>
+                <cell n="3" role="data">Tarnes &#x2014;3</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRCONSTANCECOMP"><geogName corresp="#LAKECONSTANCE">Constance</geogName></title></cell>
+                <cell n="3" role="data">Recollection &#x2014; 3</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRWERDENBERGCOMP"><placeName corresp="#WERDENBERG">Werdenberg</placeName></title></cell>
+                <cell n="3" role="data"><del rend="strikethrough">On the <geogName corresp="#RHINE">Rhine</geogName></del> near <!--??--> with thunder &#x2014;</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">1</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRPFAFFERSCOMP"><placeName corresp="#PFAFFERS">Pfaffers</placeName></title></cell>
+                <cell n="3" role="data">Ravine, on the <geogName corresp="#RHINE">Rhine</geogName> near Tussis,<placeName corresp="#COIRE">Coire</placeName> &#x2014; chartreuse</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRPASSINGTHEALPSCOMP">Passing <geogName corresp="#THEALPS">Alps</geogName></title></cell>
+                <cell n="3" role="data"><persName corresp="#HANNIBAL">Hannibal</persName><del rend="strikethrough">Alps at Daybreak</del> &#x2014;</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRVIAMALACOMP"><geogName corresp="#VIAMALA">Via Mala</geogName></title></cell>
+                <cell n="3" role="data"><persName corresp="#WBI">Brockedon</persName>, goats. Two from coloured plates</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRSPLUGENCOMP"><geogName corresp="#SPLUGEN">Splugen</geogName></title></cell>
+                <cell n="3" role="data">Covered bridge, <del rend="strikethrough">[Illegible]</del>Galleries coloured, Fountain. <geogName corresp="ROFLARAVINE">Ravine of Rofla</geogName>.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHESUMMITCOMP">The Summit</title></cell>
+                <cell n="3" role="data">Arch of snow with <del rend="strikethrough">[Illegible]</del><geogName corresp="#HELVELLYN">mount Helvellyn</geogName>&#x2014;</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHEDESCENTCOMP">The descent</title></cell>
+                <cell n="3" role="data"><persName corresp="#WBI">Brockedon</persName>. Passage of Cardinell coloured. Cascade. Vineyards of <placeName corresp="#CHIAVENNA">Chiavenna.</placeName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data">2<title type="composite" corresp="#JRLAGODICOMOCOMP"><placeName corresp="#COMO">Como</placeName></title>.</cell>
+                <cell n="3" role="data">Sketch on lake of Chiavenna with boat. <placeName corresp="#COMO">Como from</placeName>small part town &#x2014;1</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">1</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRCADENABBIACOMP"><placeName corresp="#CADENABBIA">Cadenabia</placeName></title></cell>
+                <cell n="3" role="data"><persName corresp="#SR">Rogers</persName> <placeName corresp="#ITALY">Italy</placeName>. Como from <persName corresp="#GGB">Lord Byron</persName>, Letto from <persName corresp="#WBI">Brockedon</persName>. <persName corresp="#JMWT">Turner</persName> beginning of<persName corresp="#SR">Rogers</persName> nunnery 0</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRVILLAPLINIANACOMP"><placeName corresp="#VILLIAPLINIANINA">Villa Pliniana</placeName></title></cell>
+                <cell n="3" role="data">Villa Poro. <geogName corresp="#CASCATADNESSO">Cascata di Nesso</geogName>. <persName corresp="#SP">Prouts</persName> port of como Come from Road to <placeName corresp="#ERBA">Erba</placeName>. <persName corresp="#WBI">Brockedon</persName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">4</cell>
+                <cell n="2" role ="data"><title type="composite" corresp="#JRMILANCOMP"><placeName corresp="Milan">Milan</placeName></title>.</cell>
+                <cell n="3" role="data"><del rend="strikethrough">the cathed</del></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRDUOMOMILAN"><name type="building" corresp="#DUOMOMILAN">The duomo of Milan</name></title></cell>
+                <cell n="3" role="data">2 of the cathedral</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRCORSOMILAN"><name type="building" corresp="#CORSOMILAN">The Corso</name></title></cell>
+                <cell n="3" role="data">The town with cathedral recollected</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">4</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHECERTOSACOMP"><name type="building" corresp="#CERTOSA">The Certosa</name></title></cell>
+                <cell n="3" role ="data"></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHEAPPENINESCOMP"><geogName corresp="#APPENINES">Appenines</geogName></title></cell>
+                <cell n="3" role="data">mediterranean. 3 among the appenines</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">1</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRGENOACOMP"><placeName corresp="#GENOA">Genoa</placeName></title>&#x2014;</cell>
+                <cell n="3" role="data"><persName corresp="#WBI">Brokedons</persName> Martello Tower.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">1</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRMARENGOCOMP"><placeName corresp="#MARENGO">Marengo</placeName></title></cell>
+                <cell n="3" role="data"><persName corresp="#SR">Rogers</persName>. view of <geogName corresp="#THEALPS">the Alps</geogName> near <placeName corresp="#TURIN">Turin</placeName> ditto of the <geogName corresp="#APPENINES">Appenines</geogName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTURINCOMP"><placeName corresp="#TURIN">Turin></placeName></title></cell>
+                <cell n="3" role="data"><persName corresp="#WBI">Brockedons</persName> <placeName corresp="#TURIN">Turin</placeName>. My view.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRNOVORACOMP">Novora</title></cell>
+                <cell n="3" role="data"><geogName corresp="#MONTEROSA">Mount Rosa</geogName>, From Baths of Vallegio,</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data"><del rend="strikethrough">1</del></cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRMAGGIORECOMP"><geogName corresp="#MAGGIORE">Maggiore</geogName></title></cell>
+                <cell n="3" role="data">On <geogName corresp="#LAKEMAGGIORE">Lake of Maggiore</geogName> [Illegible] my own <persName corresp="#WBI">Brockedon</persName> with Carlo <!--check this name-->.<del rend="strikethrough">???</del>Mary's <placeName corresp="#BORROMEANISLANDS">Borromean isles</placeName>. <geogName corresp="#MONTEROSA">Monte Rosa</geogName> from near Lou??. <persName corresp="#WBI">Brockedon</persName>.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">4</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHEMADONNADELMONTECOMP"><geogName corresp="#MADONAADELMONTE">Madonna</geogName></title></cell>
+                <cell n="3" role="data"></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRDOMODOSSOLACOMP"><placeName corresp="#DOMODOSSOLA">Domo d'Ossola</placeName></title></cell>
+                <cell n="3" role="data">.<placeName corresp="DOMODOSSOLA">Duomo d'Ossola</placeName><persName corresp="#SR">Rogers</persName>. <placeName corresp="DOMODOSSOLA">Duomo d'Ossola</placeName>. from <persName corresp="#WBI">Brockedon</persName>My own view with craigs.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRFAREWELLCOMP">Farewell</title></cell>
+                <cell n="3" role="data"><persName corresp="#WBI">Brockedon</persName> from [Illegible] with <placeName corresp="#DOMODOSSOLA">Duomo d'Ossola</placeName>my own too</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHEGLACIERSCOMP">glaciers</title></cell>
+                <cell n="3" role="data"><persName corresp="#WBI">Brockedon</persName>Dovedro looking back <geogName corresp="#BERNESEALPS">Bernese Alps</geogName> from simp an adventure rogue</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">4</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRBRIEGCOMP"><placeName corresp="#BRIEG">Brieg</placeName></title></cell>
+                <cell n="3" role="data">My recollection &#x2014;3. <geogName corresp="#RHONEGLACIER">The glaciers of the Rhone</geogName> &#x2014; 2</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><placeName corresp="#TURTMANN">Tourtmann</placeName></cell>
+                <cell n="3" role="data">Waterfall, my own volcano view</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRMARTIGNY"><placeName corresp="#MARTIGNY">Martigny</placeName></title></cell>
+                <cell n="3" role="data"><persName corresp="#SR">Rogers</persName>. The <geogName corresp="#RHONEVALLEY">valley of Rhone</geogName> shows, <placeName corresp="#MARTIGNY">Martigny</placeName> from <persName corresp="#WBI">Brockedon</persName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">1</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHEASCENTCOMP">ascent</title></cell>
+                <cell n="3" role="data"><persName corresp="#WBI">Brockedons</persName> [Illegible] of <placeName corresp="#SAINTPIERRE">St. Pierre</placeName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHEGRANDSTBERNARDCOMP"><geogName corresp="#STBERNARD">Grand St. B</geogName></title></cell>
+                <cell n="3" role="data"><persName corresp="#WBI">Brockedons</persName> forrest of <placeName corresp="#SAINTPIERRE">St. Pierre</placeName>. Gate of <placeName corresp="#SAINTPIERRE">St. Pierre</placeName> descent on <placeName corresp="#SAINTPIERRE">St. Pierre</placeName> <persName corresp="#SR">Rogers</persName> hospice Bernard Dog. <persName corresp="#SR">Rogers</persName> aosta.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">1</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRSAINTMAURICECOMP"><placeName corresp="#SAINTMAURICE">St. Maurice</placeName></title></cell>
+                <cell n="3" role="data">My own. <!--???--> <persName corresp="#WBI">Brockedons</persName> <persName corresp="SR">Rogers</persName> <placeName corresp="#SAINTMAURICE">St. Maurice</placeName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRLAKEGENEVACOMP"><geogName corresp="#LAKEGENEVA">Lake of Geneva</geogName></title></cell>
+                <cell n="3" role="data">My own ex view</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRCHILLONCASTLECOMP"><placeName corresp="#CHILLONCASTLE">Chillon</placeName></title>.</cell>
+                <cell n="3" role="data">my own ex and interior</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRLAUSANNECOMP"><placeName corresp="#LAUSANNE">Lausanne</placeName></title><!--???--></cell>
+                <cell n="3" role="data"><!--???--> <geogName corresp="#LAKEGENOA">lake of Geneva</geogName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data"><!--number is blacked out--></cell>
+                <cell n="2" role="data"><title type="compostie" corresp="#JRFRIBOURGCOMP"><placeName corresp="#FRIBOURG">Fribourg</placeName></title></cell>
+                <cell n="3" role="data">Near <placeName corresp="#FRIBOURG">Fribourg</placeName> my own</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRBERNESEALPS"><geogName corresp="#BERNESALPS">Berne</geogName></title></cell>
+                <cell n="3" role="data">View of <geogName corresp="#THEALPS">Alps</geogName>.Same lower with fresh snow</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHUNCOMPOSITE"><placeName corresp="#THUN">Thun</placeName></title>.</cell>
+                <cell n="3" role="data"><persName corresp="#GGB">Byrons</persName> <placeName corresp="#THUN">Thun</placeName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRINTERLAKENCOMP"><placeName corresp="#INTERLAKEN">Interlaken</placeName></title></cell>
+                <cell n="3" role="data">View on <geogName corresp="#LAKEGENOA">Lake of Genoa</geogName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRJUNGFRAUCOMP"><geogName corresp="#JUNGFRAU">The Jungfrau</geogName></title></cell>
+                <cell n="3" role="data">My own. <del rend="strikethrough">Ro</del><persName corresp="GGB">Byrons</persName><!--??-->.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRGIESSBACHFALLSCOMP"><geogName corresp="GIESSBACHFALLS">The Giesbach</geogName></title></cell>
+                <cell n="3" role="data"></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><!--???--></cell>
+                <cell n="3" role="data">The fall. 3 views on lake <!--??--></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">0</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRLUCERNECOMP"><placeName corresp="#LUCERNE">Lucerne</placeName></title></cell>
+                <cell n="3" role="data">Tells chapel from <persName corresp="#SR">Rogers</persName> tells tower from <persName corresp="#WBI">Brockedon</persName> view on lake view of town</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRARTHCOMP"><placeName corresp="#ARTH">Arth</placeName></title></cell>
+                <cell n="3" role="data"><!--???--><persName corresp="#SR">Rogers</persName><!--??--></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">1</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRRIGICOMP"><geogName corresp="#MONTRIGI">Rigi</geogName></title></cell>
+                <cell n="3" role="data">Other view on <placeName corresp="#LUCERNE">Lucerne</placeName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">4</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRGOLDAUDCOMP"><placeName corresp="#GOLDAU">Goldau</placeName></title></cell>
+                <cell n="3" role="data"><geogName corresp="#MONTRIGI">Rigi</geogName> from <placeName corresp="#LUCERNE">Lucerne</placeName> (Panorama.) Mount Pipltte my own from <geogName corresp="#MONTRIGI">Rigi</geogName>(from rasburg)<!--check--></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data"><!--number not legible--></cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRSCHWYTZCOMP"><placeName corresp="#SCHWYZ">Schwytz</placeName></title></cell>
+                <cell n="3" role="data">Lake of ??, <placeName corresp="#SCHWYZ">Schwytz</placeName>; View from <placeName corresp="#SCHWYZ">Schwytz</placeName>.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JREINSIEDELNCOMP"><placeName corresp="#EINSIEDELN">Einsiedeln</placeName></title></cell>
+                <cell n="3" role="data">St. Convent???</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">4</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRLAKEOFZURICHCOMP"><geogName corresp="#ZURICH">Lake of Zurich</geogName></title></cell>
+                <cell n="3" role="data"></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRBASLECOMP"><placeName corresp="#BASLE">Basle</placeName></title></cell>
+                <cell n="3" role="data"></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHERHINECOMP"><geogName corresp="#RHINE">Rhine River</geogName></title></cell>
+                <cell n="3" role="data"><persName corresp="#SP">Prout</persName>.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRBALSTALLCOMP"><placeName corresp="#BALSTALL">Balstall</placeName></title></cell>
+                <cell n="3" role="data">Fortress. View of <geogName corresp="#ALPS">Alps</geogName>.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">4</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRNEUFCHATELCOMP"><placeName corresp="#NEUFCHATEL">Neufchatel</placeName></title></cell>
+                <cell n="3" role="data"></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">1</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRGENEVACOMP"><placeName corresp="#GENEVA">Geneva</placeName></title></cell>
+                <cell n="3" role="data">View on <geogName corresp="#LAKEGENEVA">Lake of Geneva</geogName> my own. View on borders. <persName corresp="#GGB">Byrons</persName> <placeName corresp="#GENEVA">Geneva</placeName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data"></cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRCHAMOUNICOMP"><placeName corresp="#CHAMOUNI">Chamouni</placeName></title></cell>
+                <cell n="3" role="data"><persName corresp="#GGB">Byrons</persName> <placeName corresp="#CHAMOUNI">Chamouni</placeName>. <del rend="strikethrough">???</del><!--???--> to near <placeName corresp="#GENEVA">Geneva</placeName>.<persName corresp="#HBS">Saussures</persName> needles.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">1</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRMONTBLANCCOMP"><geogName corresp="#MONTBLANC">Mont Blanc</geogName></title></cell>
+                <cell n="3" role="data">From Saussers. My own, <del rend="strikethrough">???</del> <persName corresp="#WBI">Brockedons</persName> from Didier</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="1" role="data"><title type="composite" corresp="#JRSOURCEOFTHEAVERONCOMP"><geogName corresp="#ARVERON">Source of the Arveron</geogName></title></cell>
+                <cell n="2" role="data">Recollection</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">4</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHEMORNINGCOMP">The morning</title></cell>
+                <cell n="3" role="data">The aiguille du goute <persName corresp="#HBS">Saussure</persName> Vol 4<!--tag--></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><geogName corresp="#MONTANVERT">Montanvert</geogName></cell>
+                <cell n="3" role="data">My two needles &#x00D7;</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHEMERDEGLACECOMP"><geogName corresp="#MERDEGLACE">Merde Glace</geogName></title></cell>
+                <cell n="3" role="data">Gallee Blanche</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">3</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRTHELASTWALKCOMP"></title></cell>
+                <cell n="3" role="data"><geogName corresp="#MONTBLANC">Mont Blanc</geogName> <persName corresp="#HBS">Saussure</persName> small <geogName corresp="#BRENVA">Glacier de Brenva</geogName> Vol 3. Argentire. - 1</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">1</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRFAREWELLCOMP">Farewell</title></cell>
+                <cell n="3" role="data">Last view of <geogName corresp="#MONTBLANC">Mont Blanc</geogName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">1</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRLYONSCOMP"><placeName corresp="#LYONS">Lyons</placeName></title></cell>
+                <cell n="3" role="data"><!--???--> Lake among <geogName corresp="#JURA">Jura</geogName>, <placeName corresp="#LYONS">Lyons</placeName> <persName corresp="#WBI">Brockedon</persName>.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data">2</cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRDIJONCOMP"><placeName corresp="#DIJON">Dijon</placeName></title></cell>
+                <cell n="3" role="data">My view. Bridge <del rend="strikethrough">on</del><geogName corresp="#SEINE">seine</geogName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data"></cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRPARISCOMP"><placeName corresp="#PARIS">Paris</placeName></title></cell>
+                <cell n="3" role="data">Get 4 from historical views <geogName corresp="#SEINE">Seine</geogName></cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data"></cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRPERELACHAISECOMP"><placeName corresp="#PERELACHAISE">Perelachaise</placeName></title></cell>
+                <cell n="3" role="data">2 my own</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data"></cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRLASTNIGHTINFRANCECOMP">Last night</title></cell>
+                <cell n="3" role="data">2.</cell>
+            </row>
+            <row role="data">
+                <cell n="1" role="data"></cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JROLDENGLANDCOMP">Old England</title></cell>
+                <cell n="3" role="data">4 of <placeName corresp="#DOVERCASTLE">Dover Castle</placeName></cell>
+            </row>
+        </table>
+    </div>
+ <div type="section" xml:id="TOCTABLE2">
+     <head>Table 2</head>
+     <div type="tablespace">
+         <table rows="21" cols="5">
+             <head type="table"> Table 2. Account of a Tour on the Continent: Table of Contents Chart</head>
+             <row role="data">
+                 <cell n="1" role="data">7</cell>
+                 <cell n="2" role="data">50</cell>
+                 <cell n="3" role="data">96</cell>
+                 <cell n="4" role="data">136</cell>
+                 <cell n="5" role="data">69</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">4</cell>
+                 <cell n="2" role="data">2</cell>
+                 <cell n="3" role="data">1</cell>
+                 <cell n="4" role="data">1</cell>
+                 <cell n="5" role="data">56</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">4</cell>
+                 <cell n="2" role="data">1</cell>
+                 <cell n="3" role="data">1</cell>
+                 <cell n="4" role="data">1</cell>
+                 <cell n="5" role="data">125</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">2</cell>
+                 <cell n="2" role="data">4</cell>
+                 <cell n="3" role="data">2</cell>
+                 <cell n="3" role="data">1</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">2</cell>
+                 <cell n="2" role="data">1</cell>
+                 <cell n="3" role="data">1</cell>
+                 <cell n="4" role="data">3</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">1</cell>
+                 <cell n="2" role="data">3</cell>
+                 <cell n="3" role="data">1</cell>
+                 <cell n="4" role="data">2</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">1</cell>
+                 <cell n="2" role="data">2</cell>
+                 <cell n="2" role="data">2</cell>
+                 <cell n="4" role="data">4</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">1</cell>
+                 <cell n="2" role="data">2</cell>
+                 <cell n="3" role="data">4</cell>
+                 <cell n="4" role="data">4</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">3</cell>
+                 <cell n="2" role="data">4</cell>
+                 <cell n="3" role="data">4</cell>
+                 <cell n="4" role="data">4</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">1</cell>
+                 <cell n="2" role="data">4</cell>
+                 <cell n="3" role="data">1</cell>
+                 <cell n="4" role="data">156</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">4</cell>
+                 <cell n="2" role="data">4</cell>
+                 <cell n="3" role="data">3</cell>
+                 <cell n="4" role="data">125</cell>
+             </row>
+             <row>
+                 <cell n="1" role="data">4</cell>
+                 <cell n="2" role="data">2</cell>
+                 <cell n="3" role="data">3</cell>
+                 <cell n="4" role="data">281</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">2</cell>
+                 <cell n="2" role="data">2</cell>
+                 <cell n="3" role="data">1</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">4</cell>
+                 <cell n="2" role="data">2</cell>
+                 <cell n="3" role="data">1</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">41</cell>
+                 <cell n="2" role="data">3</cell>
+                 <cell n="3" role="data">2</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">2</cell>
+                 <cell n="2" role="data">4</cell>
+                 <cell n="3" role="data">3</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">3</cell>
+                 <cell n="2" role="data">3</cell>
+                 <cell n="3" role="data">4</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">4</cell>
+                 <cell n="2" role="data">1</cell>
+                 <cell n="3" role="data">3</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data">50</cell>
+                 <cell n="2" role="data">2</cell>
+                 <cell n="3" role="data">1</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data"></cell>
+                 <cell n="2" role="data">96</cell>
+                 <cell n="3" role="data">2</cell>
+             </row>
+             <row role="data">
+                 <cell n="1" role="data"></cell>
+                 <cell n="2" role="data"></cell>
+                 <cell n="3" role="data">136</cell>
+             </row>
+         </table>
+     </div>
+</div>
+</div>
+
+        </body>
+    </text>
+</TEI>

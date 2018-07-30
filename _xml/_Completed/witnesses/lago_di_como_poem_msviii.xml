@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="lago_di_como_poem_msviii">
+            <titleStmt>
+                <title type="main">"Lago di Como" [poem]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of MS VIII</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#EOK">Emily O. Klein</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#BGG">Brandon G. Guidry</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2017-06-04">4 June 2017</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Account of a Tour on the Continent"</idno>
+                        <msName>MS VIII</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msviii/MSVIII63v-64r.jpg">pp. 63-64</locus><!-- find p. nos. in IA -->
+
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msviii"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>,
+                                    examples of which can be found in MS IA and VIII, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                            <handNote corresp="#HANDWGC" scribe="WGC">
+                                <p>W. G. Collingwood, at the time of preparing the "Preliminary Note on the Original MSS. of the Poems" for Poems (1891).</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb facs="MSVII63v"/>
+            <div type="witness" subtype="poem" rhyme="aabcbcdcdeaaffgghhiiaajjklklmnmnhhiiaaoop" met= "-+|-+|-+|-+|"> <!--Not sure about form, if "where" is supposed to rhyme with "war" and if the form should be broken by the page break-->
+                <head type="title"><space quantity="16" unit="chars" /><placeName corresp="#LAKECOMO">Lago di Como</placeName></head>
+                <lg type="stanza" n="1">
+                    <l>It was a little peaceful bay<ref type="gloss_contextual" target="lago_di_como_glosses_contextual.php#PEACEFULBAY"/></l>
+                    <l>Beneath the precipices grey</l>
+                    <l>Lay deep, and blue, and calm, but clear,<add rend="linenumber-right-JR">825</add></l>
+                    <l>As is the sapphire, and you saw</l>
+                    <l>The precipices sharp and sheer</l>
+                    <l>And the white clouds careering war</l>
+                    <l>And the blue sky and the high hills</l>
+                    <l>Neath the cold waters <del rend="strikethrough">as</del> <add place="above"><space quantity="20"></space>where</add> they slept<add rend="linenumber-right-JR">830</add></l>
+                    <l>Seemed fed by thousand mountain rills</l>
+                    <l>Flowed upward from the crystal depth</l>
+                    <l>And all along that quiet bay<ref type="gloss_textual" target="lago_di_como_poem_glosses_textual.php#QUIETBAY" /></l>
+                    <l>A range of little shipping lay</l>
+                    <l>With their red flags drooped downward right<add rend="linenumber-right-JR">835</add></l>
+                    <l>And sheltered by their awnings white</l>
+                    <l>From the high suns red scorching look</l>
+                    <l>That oer the living waters shook</l>
+                    <l>A blaze of hot, and swarthy glow</l>
+                    <l>When we had launched from below<add rend="linenumber-right-JR">840</add></l>
+                    <l>The shade of the tall cliffs, and came</l>
+                    <l>Where <placeName corresp="#LAKECOMO">Como</placeName> rolled his breast of flame</l>
+                    <l>Down southward winding far away</l>
+                    <l>The olives tints of gentle gray</l>
+                    <pb facs="MSVII64r"/>
+                    <fw type="pageNum" place="top-right"><handShift new="#HANDWGC" medium="pencil"/>64</fw>
+                    <l><handShift new="#HANDJR1833-34" script="script" medium="ink"/>Stooped to his borders from between<add rend="linenumber-right-JR">845</add></l>
+                    <l>The hills uncultivated green</l>
+                    <l>And orange groves him girded round</l>
+                    <l>Blossoming oer him fragrantly</l>
+                    <l>And in the sleep of his profound</l>
+                    <l>White villages shone silently<ref type="gloss_textual" target="lago_di_como_poem_glosses_textual.php#WHITEVILLAGES" /><add rend="linenumber-right-JR">850</add></l>
+                    <l>And from our prow the ripples flash</l>
+                    <l>Threw forth its little sparkles paly</l>
+                    <l>The light sound of the oars dash</l>
+                    <l>Came dancing oer the waters gaily</l>
+                    <l>There was blue above, and blue below <add rend="linenumber-right-JR">855</add></l>
+                    <l>And the gleam of the eternal snow</l>
+                    <l>Forth from the fastnesses it came</l>
+                    <l>Of the high <geogName corresp="#ALPS">alps</geogName> retiring <del rend="strikethrough">th</del> chain<ref type="gloss_textual" target="lago_di_como_poem_glosses_textual.php#FASTNESSES" /></l>
+                    <l>And all along the shored whereer,</l>
+                    <l>The stormwinds wont to chafe the wave <add rend="linenumber-right-JR">860</add></l>
+                    <l><subst><add rend="overwriting">The</add><del>A</del></subst> <del rend="strikethrough">crucif</del> crucifix is shrined there</l>
+                    <l>That <name type="scriptural_person" corresp="#JESUSCHRIST">Christ</name> may hear the passioned prayer</l>
+                    <l>May hear, may <del rend="strikethrough">listen</del><add place="below"><space quantity="16"></space>pity</add>, and may save</l>
+                </lg>
+                <milestone unit="undeclared" rend="hr-threequarter"/>
+            </div>
+        </body>
+    </text>
+</TEI>
