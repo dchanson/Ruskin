@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#APW">Author of Printed Work</persName>
+                </author>
+                <editor>
+                    <persName corresp="#EPW">Editor of Printed Work</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#SEM">Sarah Elizabeth Montelepre</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>W. G. Collingwood</persName>
+                        </editor>
+                        <title type="main">The Poems of John Ruskin</title>
+                        <title type="sub">Volume I: Poems Written in Boyhood, 1826-1835</title>
+                        <imprint>
+                            <biblScope type="vol">1</biblScope>
+                            <biblScope type="edition">4<hi rend="superscript">o</hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1891">1891</date>
+                            <biblScope type="pages">xxiii</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="prose">
+                <head type="title">Sermon IX</head>
+                <div type="chapter">
+                    <pb facs="MS Sermon 001a"/>
+                    <head type="chapter">The delivery of the law.</head>
+                    <p>22 verse, of XX chapter. <title type="scripture" corresp="#EXODUS">Exodus</title>.  &#x201C;And
+                    <lb/>the <persName corresp="#GOD">Lord</persName> said unto <persName corresp="#MOSES">Moses</persName>, thus shalt
+                    <lb/>those say unto the children of <persName corresp="#ISRAEL">Israel</persName>
+                    <lb/>Ye have seen, that I have talked with 
+                    <lb/>you, from heaven&#x201D;.  Every mind that
+                    <lb/>thinks rightly of the character of the
+                    <lb/>law, and of the attributes of the <persName corresp="#GOD">God</persName>
+                    <lb/>who gave it, must be aware, that,
+                    <lb/>in considering the circumstances at
+                    <lb/>tendant upon the its delivery on the
+                    <lb/><geogName corresp="#SINAI">Mont Sinai</geogName>, and the general princi
+                    <lb/>ples upon which it is founded, we
+                    <lb/>are approaching a subject of the very
+                    <lb/>highest importance.  As erroneous
+                    <lb/>opinion has sometimes been enter&#x2010;
+                    <lb/>tained, that the <title type="scripture" corresp="#GOSPEL">Gospel</title> requires no&#x2010;
+                    <lb/>thing more to exempt us from the 
+                    <lb/>punishment attendant upon the 
+                    <lb/>violation of the law, than submis&#x2010;
+                    <lb/>sion to its ordinances, and acknow&#x2010;
+                    <lb/>ledgement of its truth, and indeed, 
+                    <lb/>it would at first appear, that the 
+                    <lb/>greatness of <persName corresp="#JESUSCHRIST">Christ</persName>s merits, and the per
+                    <lb/>fection of his atonement, are very
+                    <lb/>much exalted by this view of the 
+                    <lb/>subject.  But, we may be sure, that 
+                    <lb/>all homage is rejected, which confin
+                    <lb/>es the fulfilment of the law to a mere
+                    <lb/>trust in the merits of the blood of 
+                    <lb/><persName corresp="#JESUSCHRIST">Christ</persName>, We shall, at present place 
+                    <lb/>the <title type="scripture" corresp="#GOSPEL">Gospel</title> subordinately, for the law
+                    <lb/>was the first, and the highest consid
+                    <lb/>eration, and that is to be exalted.</p>
+                    <lb/><p>In the next place, let us see how far
+                    <lb/>this view of the immense impor&#x2010;
+                    <lb/>tance of the law, is supported by the
+                    <lb/>circumstances of its delivery, for much
+                    <lb/>useful information may always be 
+                    <lb/>gathered from a examination of 
+                    <lb/>particulars, which at the first glance,
+                    <lb/>appear but of little consequence.  The 
+                    <lb/>children of <persName corresp="#ISRAEL">Israel</persName>, a multitude whose 
+                    <lb/>number cannot be reckoned less, 
+                    <lb/>than three millions, had, it should
+                    <lb/>be remembered, but just escaped from
+                    <lb/>a humiliating state of slavery, cor
+                    <lb/>ruption, and Idolatry; They were 
+                    <lb/>shut out and separated from the 
+                    <lb/>whole world, by the desert ,and the 
+                    <lb/>sea, and in this solitude, they were 
+                    <lb/>left to commune visible with God 
+                    <lb/>and we find that <persName corresp="#GOD">the Deity</persName> did 
+                    <lb/>not come to dwell among his people 
+                    <lb/>until he had laid down the law, 
+                    <lb/>which was, to be their principle of
+                    <pb facs="MS Sermon 002a"/>
+                    <lb/>action, in a manner, which should
+                    <lb/>give importance both to the law its&#x2010;
+                    <lb/>elf, and to his servant <persName corresp="#MOSES">Moses</persName>. who 
+                    <lb/>was a mediator between <persName corresp="#GOD">God</persName> and the 
+                    <lb/>Israelites.  We find the <persName corresp="#GOD">Lord</persName> descen
+                    <lb/>ding upon <geogName corresp="#SINAI">Mount Sinai</geogName>, in fire to deli
+                    <lb/>ver his commandments, to this <!--???-->
+                    <lb/>ing assembly, We are told that <geogName corresp="#SINAI">Mont Sinai</geogName><!--Sinai on next line-->
+                    <lb/>was altogether on a smoke, and 
+                    <lb/>there were thunderings and lightenings
+                    <lb/>and the whole mount quaked greatly
+                    <lb/><persName corresp="#MOSES">Moses</persName> himself said that he ex
+                    <lb/>ceedingly feared, Nature was entire&#x2010;
+                    <lb/>ly overwhelmed by this wonderful
+                    <lb/>manifestation of the power of the 
+                    <lb/><persName corresp="#GOD">God</persName> of glory The invisibility of the 
+                    <lb/><persName corresp="#GOD">Almighty</persName><!--'Al' on previous line--> added to the mysterious ter
+                    <lb/>ror and grandeur of his descent
+                    <lb/>And can we suppose, that this 
+                    <lb/>was an introduction to anything 
+                    <lb/>of little moment, We must rather 
+                    <lb/>suppose, that something of the great
+                    <lb/>est importance was connected with
+                    <lb/>it, For when preparation is made 
+                    <lb/>in heaven, we may be sure, that
+                    <lb/><persName corresp="#GOD">God</persName> intends to show something wor
+                    <lb/>thy of the observation of men, and
+                    <lb/>of angels,  This is one of the very
+                    <lb/>grandest scenes that ever were
+                    <lb/>witnessed upon the earth or recor&#x2010;
+                    <lb/>ded in history, and, as such, we can
+                    <lb/>not expect that the subject which
+                    <lb/>it introduces, should likewise have
+                    <lb/>its grandeur consisting in outward
+                    <lb/>appearances,  For nature had alread
+                    <lb/>y done all that she could, she had
+                    <lb/>called together all her wonders, all her
+                    <lb/>terrors, all her majesty and its 
+                    <lb/>was impossible for her to have gone
+                    <lb/>beyond what she had already ac&#x2010;
+                    <lb/>complished, and we therefore do
+                    <lb/>not expect any thing of outward
+                    <lb/>visible grandeur, the subject then
+                    <lb/>to be introduced, must excel in
+                    <lb/>its moral worth which is infinitely
+                    <lb/>more impressive than any thing that
+                    <lb/>the mere concentrated phenomena of 
+                    <lb/>nature can show, or do.  <persName corresp="#GOD">God</persName> has al
+                    <lb/>ready, gathered together his thun&#x2010;
+                    <lb/>ders and his lightnings he has ar
+                    <lb/>rayed himself in clouds and fire,
+                    <lb/>he has caused the earth to quake from
+                    <lb/>its foundations, and has shaken the
+                    <lb/>stoutest heart of <persName corresp="#ISRAEL">Israel</persName>.  He then goes
+                    <lb/>into the other department, and brings
+                    <pb facs="MS Sermon 002a"/>
+                    <lb/>forward the world of morals,  It is
+                    <lb/>not my object at present to enter
+                    <lb/>into all the details of the law which was
+                    <lb/>introduced in such an awful manner
+                    <lb/>but rather to observe the general prin&#x2010;
+                    <lb/>ciple, the extent of its application, and the
+                    <lb/>manner of its fulfilment.</p>
+                    <lb/><p>First, the law was intended to be
+                    <lb/>of universal extent, and to promote
+                    <lb/>honesty, and purity of society among
+                    <lb/>creatures and supreme attachment
+                    <lb/>to the <persName corresp="#GOD">Creator</persName>.  For there is no being
+                    <lb/>that has been formed for insula&#x2010;
+                    <lb/>ted existence,  We find in all the
+                    <lb/>desire to escape from solitude, and
+                    <lb/>to enter into the social, pure, and hon
+                    <lb/>est intercourse for which we were
+                    <lb/>made. for impurity tends to debase
+                    <lb/>ment, and dishonesty to ruin.  Soc
+                    <lb/>iety would be the cause of its own an
+                    <lb/>nihilation, if it were impure.  No
+                    <lb/>shepherd was ever placed over placed
+                    <lb/>over flocks, who was unable to guide
+                    <lb/>and protect them, no judge was e
+                    <lb/>ver placed upon the bench, who was
+                    <lb/>not endued with powers to justice
+                    <lb/>impartially although he might pun
+                    <lb/>ish unwillingly, no sovereign has
+                    <lb/>ever attained to the throne, who
+                    <lb/>might not have been the protec
+                    <lb/>tor, the governor, the Father of his
+                    <lb/>people; I do not say these facul
+                    <lb/>ties have never been abused, I on
+                    <lb/>ly say that The <persName corresp="#GOD">Almighty</persName> has al&#x2010;
+                    <lb/>ways given them, in order to pro.
+                    <lb/>mote this pure, and honest society,?
+                    <lb/>But let us go still higher.  The an
+                    <lb/>gels have these faculties, and in a
+                    <lb/>much greater degree  They also are 
+                    <lb/>often set over us. and<!--'s' written over 'n' and 'd' crossed out--> governors and 
+                    <lb/>protectors,  He shall give his angels
+                    <lb/>charge governing thee<!--'e' written over 'y'--> lest at any time
+                    <lb/>thou dash thy foot against a stone.
+                    <lb/>They therefore, it is evident, must
+                    <lb/>have the same faculties. We are told
+                    <lb/>that it is one of the objects of <persName corresp="#JESUSCHRIST">Christ</persName>
+                    <lb/>to unite all these angels, and prin
+                    <lb/>cipalities, and powers,  This is another
+                    <lb/>proof of this intention of the law. A
+                    <lb/>gain we are to enter into an innum
+                    <lb/>merable company of angels, there are 
+                    <lb/>many other proofs which could be
+                    <lb/>deduced from scripture, and all show
+                    <lb/>ing that the principalities of the law
+                    <pb facs="MS Sermon 003a"/>
+                    <lb/>are all intended to purify this fellow&#x2010;
+                    <lb/>ship,  The injunction to which the whole
+                    <lb/>law was reduced by <persName corresp="#JESUSCHRIST">Christ</persName> is another
+                    <lb/>confirmation of the same opinion Thou 
+                    <lb/>shalt love the <persName corresp="#GOD">Lord</persName> thy <persName corresp="#GOD">God</persName> with all
+                    <lb/>thy heart, and soul, and strength, &#x0026;
+                    <lb/>thy neighbor as thyself.  But I shall
+                    <lb/>say that this same law is binding. e
+                    <lb/>ven upon the fallen angels, I say that
+                    <lb/>it is also binding upon the fallen an
+                    <lb/>gels, it is binding though it may not
+                    <lb/>be obeyed, and this, and this only is
+                    <lb/>the course of the eternality of punishment
+                    <lb/>because their refusal to obey this uni&#x2010;
+                    <lb/>versal law is a principle coeval with
+                    <lb/>their existence, with their immortality
+                    <lb/>of existence, and the punishment must
+                    <lb/>be coeval with their existence also.  For,
+                    <lb/>among those who have passed into a 
+                    <lb/>state where probation is at an end, in
+                    <lb/>iniquity, there never can be a prin
+                    <lb/>ciple of pure and honest fellowship
+                    <lb/>they must continue there, in the
+                    <lb/>same state in which they had been
+                    <lb/>while upon the earth, Every thing must
+                    <lb/>cling to them, their sins and iniquity
+                    <lb/>must be augmented tenfold.  There ne&#x2010;
+                    <lb/>ver can be a principle of good fel&#x2010;
+                    <lb/>lowship here, and therefore the pun
+                    <lb/>ishment must correspondingly be everlasting.</p>
+                    <lb/><p>But also this law, as well as uni
+                    <lb/>versally binding, is eternally bind&#x2010;
+                    <lb/>ing.  I repeat, that there are none
+                    <lb/>exempted from obedience to it, and
+                    <lb/>that obedience throughout all eter&#x2010;
+                    <lb/>nity although there nevertheless, may
+                    <lb/>be many who do not obey.  There
+                    <lb/>can be no period of impurity in hea
+                    <lb/>ven.  For in order to an eternity of
+                    <lb/><del rend="strikethrough">an</del> happiness, there must be an e&#x2010;
+                    <lb/>ternity of this pure and honest obed&#x2010;
+                    <lb/>ience.  It is useless to imagine that
+                    <lb/>happiness would be given by a mere
+                    <lb/>change into another situation, remain&#x2010;
+                    <lb/>ing there under the same circumstanc
+                    <lb/>es.  It is true. that in this life, a mon
+                    <lb/>otonous succession of the same objects, and
+                    <lb/>ideas would produce lassitude in the
+                    <lb/>mind, and fatigue to the body  This is
+                    <lb/>our every day experience, and we find
+                    <lb/>likewise that a change will always, stir
+                    <lb/>us <del rend="strikethrough">?</del>up into action, it will give a new
+                    <lb/>spring to the nerves, and call up all
+                    <lb/>the energies of the mind  But this sort
+                    <lb/>of excitement it should be remembered
+                    <lb/>can only exist for a limited period, with
+                    <lb/>a continual succession of changes, its
+                    <pb facs="MS Sermon 003a"/>
+                    <lb/>very nature is sufficient confirmation
+                    <lb/>of this, and it therefore is not a mere
+                    <lb/>change from one state to another, or one
+                    <lb/>situation to another, still retaining our
+                    <lb/>native depravity, that can, or will, con&#x2010;
+                    <lb/>stitute the happiness of heaven. No, there
+                    <lb/>must not only be a new scene, but also
+                    <lb/>a new eye to behold it, there must not
+                    <lb/>only be new pleasure, but new power 
+                    <lb/>of enjoyment. a power which must
+                    <lb/>be eternal, that is, eternal purity, is
+                    <lb/>what must constitute the everlasting
+                    <lb/>happiness of heaven.  And this is suff
+                    <lb/>icient proof, I think, that the law is
+                    <lb/>constantly binding, inasmuch as we
+                    <lb/>cannot enjoy such happiness as we
+                    <lb/>are told we shall enjoy, without a con
+                    <lb/>stant obedience to it.</p>
+                    <lb/><p>Again, I think the perpetuity of the
+                    <lb/>obligation must appear, if we only
+                    <lb/>consider the character of <persName corresp="#GOD">God</persName> the law
+                    <lb/>giver.  For men, continually change
+                    <lb/>Those who legislate on earth, even the
+                    <lb/>wisest of them cannot foresee every
+                    <lb/>thing, nor even imagine every ac&#x2010;
+                    <lb/>cidental circumstance, which might
+                    <lb/>at some future period, render an
+                    <lb/>alteration necessary even of the best
+                    <lb/>laws of men and, even if they could
+                    <lb/>do this, they are also limited in power
+                    <lb/>and if they could make such laws, have
+                    <lb/>not always power or opportunity to en
+                    <lb/>force them. even through a limited
+                    <lb/>period, much less to everlasting. But
+                    <lb/>if we take the law of <persName corresp="#GOD">God</persName> in connec&#x2010;
+                    <lb/>tion with his character, all these
+                    <lb/>obstacles, and numerous others, are at
+                    <lb/>once done away with  <persName corresp="#GOD">God</persName> is omni
+                    <lb/>scient and therefore knows everything
+                    <lb/>that can or will occur in heaven, or in
+                    <lb/>earth through the whole duration of eter
+                    <lb/>nity,  He knows the present circumstan
+                    <lb/>ces of every individual in existence, or
+                    <lb/>who will exist in future, and he likewise
+                    <lb/>knows all the different combination of 
+                    <lb/>these circumstances, and the effect which
+                    <lb/>they will produce upon the community
+                    <lb/>He is intimately acquainted with the
+                    <lb/>power, and the weakness, and<!--??--> thoughts
+                    <lb/>of every being in existence, In short he
+                    <lb/>exceeds us in every thing, We cannot
+                    <lb/>suppose any event which he would not
+                    <lb/>know, and besides all this, his wisdom
+                    <lb/>also is unerring, he knows how to do
+                    <lb/>every thing, as well as what is to be
+                    <pb facs="MS Sermon 004a"/>
+                    <lb/>done, he knows either how to turn away
+                    <lb/>or how to bring good out of, all evil,
+                    <lb/>and knowing all this, his power is also,
+                    <lb/>unlimited, and there can, therefore, be
+                    <lb/>no short coming.  The one single fact of
+                    <lb/>the formation of an atom out of nothing
+                    <lb/>is sufficient proof of this.  There was
+                    <lb/>never any man furnished with all
+                    <lb/>the advantages that earthly wisdom, pow
+                    <lb/>er and science could give him, who could
+                    <lb/>do this   Again, <persName corresp="#GOD">God</persName> has perfect purity
+                    <lb/>and, as we <del rend="strikethrough">have</del> <del rend="strikethrough">as</del> can find nothing
+                    <lb/>in the whole nature of <persName corresp="#GOD">God</persName> that would, in
+                    <lb/>the slightest degree, contribute to form a
+                    <lb/>change, we have the eternal duration of
+                    <lb/>that law which perfect purity and un
+                    <lb/>erring wisdom designed, and which pow&#x2010;
+                    <lb/>er will in future most certainly and fear
+                    <lb/>fully enforce.</p>
+                    <lb/><p>Having thus ascertained these two 
+                    <lb/>manners in which the law is bind&#x2010;
+                    <lb/>ing, that is, it<del rend="strikethrough">s</del> is universally binding
+                    <lb/>and it is eternally binding; the fact
+                    <lb/>which now remains to be considered,
+                    <lb/>is, that this law has been violated by
+                    <lb/>the whole world.  Now, this is not
+                    <lb/>a mere matter of intellectual specula&#x2010;
+                    <lb/>tion, we know that this is a fact, by
+                    <lb/>our own daily experience and this is
+                    <lb/>is a most tenfoldly appalling thought
+                    <lb/>We have violated that law which is
+                    <lb/>binding upon angels, and upon men,
+                    <lb/>which is binding throughout all eter
+                    <lb/>nity not only on the good angels, but
+                    <lb/>upon those who have fallen through
+                    <lb/>their weakness, from their high es&#x2010;
+                    <lb/>state.  We have sinned against the <persName corresp="#GOD">God</persName>
+                    <lb/>who gave it among the thunders of
+                    <lb/><geogName corresp="#SINAI">Mount Sinai</geogName> That <persName corresp="#GOD">God</persName> who made the
+                    <lb/>stoutest heart in Israel to tremble as his
+                    <lb/>presence, have we not wounded the
+                    <lb/>social principle of the law by out sel
+                    <lb/>fishness, and its chief command,&#x2014;
+                    <lb/>&#x201C;Thou shall love the <persName corresp="#GOD">Lord</persName> thy <persName corresp="#GOD">God</persName> with
+                    <lb/>all thy heart and soul and might,&#x201D; by
+                    <lb/>our worldly mindedness; We think 
+                    <lb/>it a most wonderful thing, that <persName corresp="#ISRAEL">Israel</persName><!--'el' on next line-->
+                    <lb/>, after having witnessed the descent of 
+                    <lb/><persName corresp="#GOD">God</persName> and all the wonders and terrors
+                    <lb/>of that descent, which made them fear
+                    <lb/>to such a degree that they prayed,
+                    <lb/>that <persName corresp="#GOD">God</persName> might not speak with
+                    <pb facs="MS Sermon 004a"/>
+                    <lb/>them lest they should die, we think
+                    <lb/>it most astonishing, that after all this, they
+                    <lb/>should so soon have again polluted 
+                    <lb/>themselves with Idols, and worshipped the 
+                    <lb/>golden calf, &#x0026;c. and so it was, but yet
+                    <lb/>when we condemn them, we are ourselv
+                    <lb/>es involved in the same judgement.  We
+                    <lb/>here find the law clothed in all its ma
+                    <lb/>jesty, we told that it was delivered by
+                    <lb/><persName corresp="#GOD">God</persName> on the <geogName corresp="#SINAI">Mount Sinai</geogName>, The truth of
+                    <lb/>the record which tells us so, cannot be
+                    <lb/>disputed, and we do not dispute it.  If
+                    <lb/>therefore we violate it, the violation is
+                    <lb/>equally culpable in us as it was in the 
+                    <lb/>Israelites.  But we have violated it
+                    <lb/>At this moment precisely, the same de
+                    <lb/>viations are found in us, which were be
+                    <lb/>fore detected in the Israelites, and they
+                    <lb/>it should be remembered were at this
+                    <lb/>period in a disjointed and ignorant
+                    <lb/>condition, knowing nothing perhaps of
+                    <lb/><persName corresp="#GOD">God</persName> but his terrors, and scarcely
+                    <lb/>yet entirely convinced of the weak
+                    <lb/>ness of their own Gods.  Considering
+                    <lb/>all these circumstances, and remem
+                    <lb/>bering how much more favoura
+                    <lb/>ble the condition in which we find
+                    <lb/>ourselves at present is, there will I
+                    <lb/>think be found enough to convict us
+                    <lb/>We may take each individual separ
+                    <lb/>ately, and ask how far his selfishness
+                    <lb/>or his worldly mindedness, may have
+                    <lb/>offended the principles of the law, and
+                    <lb/> made him subject to the punish&#x2010;
+                    <lb/>ment denounced by the law.  Cert
+                    <lb/>ain conviction must always foll&#x2010;
+                    <lb/>&#x003D;ow such candid examination, and 
+                    <lb/>the individual will find himself whol&#x2010;
+                    <lb/>&#x003D;ly guilty before <persName corresp="#GOD">God</persName></p>
+                    <lb/><p>Lastly.  What is the result of our
+                    <lb/>conviction of such a fatal crime.  We
+                    <lb/>cannot indulge ourselves with the hope
+                    <lb/> that we shall be forgiven.  The majes
+                    <lb/>ty and the truth of <persName corresp="#GOD">God</persName> himself, and
+                    <lb/>the principles of that law which we have
+                    <lb/>been considering, entirely forbid this The
+                    <lb/>pomp and the terror of <geogName corresp="#SINAI">Sinai</geogName> did not
+                    <lb/>not introduce a law which could be bro
+                    <lb/>ken with impunity  We are told that one
+                    <lb/>jot, or one title shall not pass away
+                    <lb/>till all be fulfilled  Nothing can help us
+                    <lb/>The angels cannot The good angels have
+                    <lb/>turned away from us and the bad are
+                    <pb facs="MS Sermon 005a"/>
+                    <lb/>waiting and seeking for us.  We cannot
+                    <lb/>have recourse to annihilation, the sen
+                    <lb/>tence pronounced on earth is ratified af
+                    <lb/>ter death, and all our corruption and sin
+                    <lb/>must go with us  The element in which
+                    <lb/>our spirit was shut up must meet
+                    <lb/>us there, and we must abide all the 
+                    <lb/>wrath of <persName corresp="#GOD">God</persName> if he has made no pro
+                    <lb/>vision for us to take hold of, but we
+                    <lb/>must have his warrant for it.  Now
+                    <lb/>every thing concurs in pointing out
+                    <lb/>the son as the way to the Father, He
+                    <lb/>presents himself to fulfil the law and
+                    <lb/>we find <persName corresp="#GOD">God</persName> acknowledging him in
+                    <lb/>circumstances the same as those under
+                    <lb/>which the law was delivered on Mount
+                    <lb/><geogName corresp="#SINAI">Sinai</geogName>, on <geogName corresp="#SINAI">Mount Tabor</geogName>.  We then have
+                    <lb/>the same authority for accepting 
+                    <lb/><persName corresp="#JESUSCHRIST">Christ</persName> as Mediator, and He has 
+                    <lb/>enabled us to meet the demand of e
+                    <lb/>ternal purity, universally, and entire
+                    <lb/>ly, and to find ourselves spotless 
+                    <lb/>before <persName corresp="#GOD">God</persName>.  We thus see the law is 
+                    <lb/>of vast importance, for a perfect com
+                    <lb/>pliance with it, would lay aside 
+                    <lb/>the <title type="scripture" corresp="#GOSPEL">Gospel</title>, but still without the <title type="scripture" corresp="#GOSPEL">Gospel</title><!--"pel" on next line-->
+                    <lb/>there is no possibility of our ful
+                    <lb/>filling the law. and escaping from 
+                    <lb/>the punishment attendant on its vio
+                    <lb/>lation.  Let us therefore receive the <title type="scripture" corresp="#GOSPEL">Gospel</title><!--"pel" on next line-->
+                    <lb/>that we may escape from the ter
+                    <lb/>rors of the law, and may we at least 
+                    <lb/>be found among those mansions the
+                    <lb/>which <persName corresp="#JESUSCHRIST">Christ</persName> has gone before us to 
+                    <lb/>prepare.<hi rend="underline">      </hi></p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

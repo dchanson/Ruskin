@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.html#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="poem" rhyme="ababbcbcc">
+                <head type="title"><handShift new="#HANDJR1833-34" script="cursive" medium="pencil"/><placeName corresp="#ATHENS">Athens</placeName></head>
+                <lg type="strophe">
+                    <l>Thou muse who once from <hi rend="underline">fair</hi> <placeName corresp="#PARNASSUS">Parnassus</placeName> height</l>
+                    <l>Fanned agèd <persName corresp="#HOMER">Homer</persName> with thy plumy wings</l>
+                    <l><hi rend="underline">Who</hi> told of <placeName corresp="#GREECE">Greece</placeName> and <placeName corresp="#TROY">Trojas</placeName> ancient might</l>
+                    <l><del rend="strikethrough">And fierce <name type="fictional" corresp="#ACHILLES">Achilles</name> anger! Thou, that</del><add place="below">&#x2038;</add> <add place="above">O thou whose lyre all wild resounding</add> sings</l>
+                    <l>Of the war field where the broad banner flings</l>
+                    <l>Its folds oer many a corse of heroes slain</l>
+                    <l><del rend="strikethrough">Sing</del>Now sing once more of ancient Græcias kings</l>
+                    <l>Who fought against a haughty tyrants chain</l>
+                    <l>Take up thy lyre, awake its <add place="below">&#x2038;</add><add place="above">slumbring</add> voice again</l></lg>
+                        
+                        <lg n="2" type="strophe">
+                        <subhead type="strophe_number">2</subhead>
+                        <l><add place="above">Oer the <unclear resp="#CJL">wide</unclear> fi</add>
+                            <delSpan rend="strikethrough"></delSpan>
+                            O ancient <placeName corresp="#ATHENS">Athens</placeName> thou who once didst reign</l>
+                        <l>Oer the wide fields of sea encircled <placeName corresp="#GREECE">Greece</placeName></l>
+                        <l>Ruler of <placeName corresp="#THEBES">Thebes</placeName> 
+                            and rugged <placeName corresp="#SPARTA">Spa</placeName></l>
+                            </delSpan>
+                            
+                        <l>Oer the wide fields of sea encircled <placeName corresp="#GREECE">Greece</placeName></l>
+                        <l>Oh ancient <placeName corresp="#ATHENS">Athens</placeName> thou who once didst reign</l>
+                        <l>In gory war or olive bearing peace</l>
+                        <l>Ruler of <placeName corresp="#THEBES">Thebes</placeName> and Rugged <placeName corresp="#SPARTA">Sparta's</placeName> bane</l>
+                        <l>I sing thee now in a less noble strain</l>
+                        <pb/>
+                        <l>Than formerly when white haired HOMER gave</l>
+                        <l>His living lay at bright Apollo’s fane</l>
+                        <l>That sung the dirges of thy young and brave,</l>
+                        <l>Who found at Trojas wide and sandy plain a grave</l></lg>
+                        
+                        <lg n="3" type="strophe">
+                        <subhead type="strophe_number">3</subhead>
+                        <l>Oh ruined Athens where thy glory now</l>
+                        <l>Ist hovering oer thy ruins stern and grey</l>
+                        <l>Thou who didst tear from Xerxes haughty brow</l>
+                        <l>The wreath that he so late had grasped of bay</l>
+                        <l>Spite of his golden crested stern array</l>
+                        <l>Where is thy glory that so dearly won</l>
+                        <l>And bought by blood upon that glorious day</l>
+                        <l>Where is thy might thy power thy grandeur gone</l>
+                        <l>Let their proud spirits tell who died at Marathon</l></lg>
+                        
+                        <lg n="4" type="strophe">
+                        <subhead type="strophe_number">4</subhead>
+                        <l>And art thou gone for ever  Oer the deep</l>
+                        <l>Echoes the voice of armies now no more</l>
+                        <l>Now only on the breezes sullen sweep</l>
+                        <l>The ocean which erst while those armies bore</l>
+                        <l>Pours forth its angry everlasting roar</l>
+                        <l>As to the rocks the sounding waters glide</l>
+                        <l>Not now their billows blush with heroes gore</l>
+                        <l>Now only beats in briny foam the tide</l>
+                        <l>And snowy crests upon its wild waves ride</l></lg>
+                        
+                        
+                        Oh ye wild winds that oer their watery grave
+                        In hoarse, and hollow soundings onwards sweep
+                            Howl not so loudly oer their bosoms brave
+                            Break not their slumber, that entrancing sleep
+                            That waits the dead when pillowed on the deep
+                            They rest, lulled softly by the oceans sigh
+                            The eagle circling round the seabeat steep
+                            May make the billows answer to its cry
+                            But wake not those below their foam who lie.
+                            
+                            O Persia they fell in fight with thee
+                            When first thy proud thy angry monarch came
+                            And Xerxes led his gallies oer the sea
+                            To make the Grecian glory but a name
+                            Then was not Greece forgetful of her fame
+                            And first thou haughty one began thy woes
+                            When thy unnumbered armament in vain
+                            Her heroes to their countrys battle fight arose [fight written above battle]
+                            And bent before <!--all--> old Greca her humbled foes
+                                
+                            VI
+                            Little the young and mighty Xerxes thought
+                            When first he counted all his myriads oer
+                            And scarcely told their sum, a time how short
+                            Should see him flying from the Grecian shore
+                            And him the same who once nor long before
+                            Had driven Scamander back unto his head
+                            And dried his channel now one galley bore
+                            His pride together with his power twas fled
+                            And where his pristine glory? With the dead
+                            VII
+                            And such the force that Persias king could boast
+                            Ay thousands millions myriads indeed
+                            He might be proud who looked on such a host
+                            And marked them for his own his eager steed
+                            Pawing the ground impatient he might lead
+                            That sea of plumes to battle  They were doomed
+                            On deep Salamis ocean fields to bleed
+                            And in its yawning gulph to be entombed
+                            While the relentless wave above them boomed
+                            VIII
+                            They came the plumes upon their helmets dancing
+                            Their young and eager monarch at their head
+                            Their golden armour in the sunbeams glancing
+                            A sea of bright translucent splendour shed
+                            And earth all trembling shook beneath their tread
+                            As when some gloomy vast and boundless deep
+                            Heaps wave on wave with all its murmurs dread
+                            Billow on billow with successive sweep
+                            So pressed the warriors on a plumy foaming sheet
+                            IX
+                            They past, but on their track behind them prest
+                            Riding upon the swift wings of the gale
+                            The demon desolation  Horrid guest
+                            Attending wars red footsteps. Famine pale
+                            Did follow. Shrouded in his cloudy veil
+                            Death like some lurking monster glaring down
+                            All in his fiery chariot seemed to sail
+                            And night back trembling started at the frown
+                            That marked his bony brow, seared by his lightning crown
+                            X
+                            And is it thus that pomp and pageantry
+                            Must leave behind them such a gloomy train
+                            And must it be that purple luxury
+                            And royal grandeur shall be all in vain
+                            Is this that kingly pomp  But neer again
+                            Shall Xerxes lead those legions  He shall mourn
+                            The time for ever past with grief and shame
+                            All oer the lonely deep from Graecia borne
+                            And like an exile king unpitied and forlorn
+                            XI
+                            But leave my muse this melancholy lay
+                            Full soon shalt thou resume the mournful knell
+                            Alas too quickly comes the blood stained day
+                            That weeps for heroes dead But take thy shell
+                            And all in softer mellower numbers tell
+                            Till flinty rocks shall list the flowing strain
+                            What forces Xerxes led what heroes fell
+                            Those chieftains birth and eke from whence they came
+                            Their fathers ancient deeds their lineage and their name
+                            XII
+                            And first thou young Hydaspes3  What although
+                            Thy parents came not of a kingly line
+                            For oh a long futurity shall show
+                            That natures proud nobility was thine
+                            And not ancestral honours drowned in time
+                            A mighty mind as innocent as pure
+                            That through the mists of lowliness would shine
+                            Humble not abject, rich although obscure
+                            He had a virtuous mind the riches of the poor4
+                            XIII
+                            He had a brother.5 They were kindred souls
+                            For they were twins in age and mind the same
+                            And where the wave of bright Hydaspes rolls
+                            The Indian stream that gave to him his name
+                            They learned the tigers savageness to tame
+                            Or the dread hooded serpents folds to press
+                            When hissed her head on high with eyes of flame
+                            And as before them fled the lioness
+                            Fearless and scatheless walked the wilderness
+                            XIV
+                            And they had trod the stormy mountains ridge
+                            To all the tribes of man a mighty bar
+                            Or on the cliffs upraised and giddy edge
+                            Looked down triumphant on the scene afar
+                            Where the proud battlements of many a scar
+                            Confusedly rising round them clove the sky
+                            Where nature seemed to wage a mountain war
+                            Long time they often lingered upon high
+                            Where the snow wreaths hung round eternally
+                            XV
+                            And hordes they led as swift as is the breeze
+                            That flies across the oceans foam so light
+                            Or as the mountain elk that challenges
+                            The Scythian arrow to outstrip his flight
+                            But firm and slow retreating from the fight
+                            Strong as their native lion bathed in gore
+                            Pawing the earth exulting in his might
+                            And the wide forest echoing to his roar
+                            Like sound of winter waves that bellow on the shore
+                            XVI
+                            And he the born upon the battle field
+                            Young Moriartes6 who upon a heap
+                            Of gory corses on a warriors shield
+                            Resting while war was raging round did sleep
+                            High pillowed on the crest of that famed steep
+                            That looks on Marathon with infant eye
+                            Saw the rude tide of battle onwards sweep
+                            As on the rugged mountain he did lie
+                            And born in Greece in Greece was doomed to die
+                            XVII
+                            (O Marathon thou field of victory
+                            If ever Greece should cease to be a slave
+                            Let her look back to ancient deeds and sigh
+                            For loss of glory which her fathers gave
+                            Bought with their noble lives or will her brave
+                            Burst from the fetters of the narrow bed
+                            Breaking the sods which clasp their gory grave
+                            And tell old Greece that they for her have bled
+                            And deep reproaching her forgetful of the dead7
+                            XVIII
+                            Oh if this sad and simple lay of mine
+                            Could give thee down unto posterity
+                            Thou should’st have ridden on the wings of time
+                            And only with creations self should die
+                            Let not thy parent oer thine ashes sigh
+                            For thou shalt live through many distant days
+                            Though neath the ocean now thy corse may lie
+                            Again thy name shall shine in future lays
+                            And harps of nobler string record a warriors praise
+                            XIX8
+                            His was a <!--mighty--> gloomy and sequestered mind
+                                Men say that on the night when he was born
+                                There was a strange sad sighing in the wind
+                                And many an ominous and awful form
+                                Rode the dark clouds that bore the bursting storm
+                                As the red lightning those wide heavens spanned 
+                                And sounds of wailing as of those that mourn
+                                Ever for the dead and many a spectre hand
+                                Seemed lifting high the [(?)] battle brand 
+                                20
+                                His was a soul of solitude His ear
+                                Liked not the hum of thousands He would pace
+                                (At midnight when the azure heavens were clear
+                                The paths of some wild desert wilderness
+                                As if his soul would haste to seek its place
+                                Winging its <!--way through--> vast and its aerial way
+                                    To that bright home of light and loveliness9
+                                    Breaking the bands of its confining clay
+                                    That shackled it on earth and haste to spring away
+                                    2110
+                                    There was a sad and settled gloominess
+                                    That brooded oer his features, and if eer
+                                    He smiled twas not <!--the--> a smile of happiness
+                                        He never could forget the secret care
+                                        That weighed upon his bosom rooted there
+                                        Too deep for consolation <!--One young boy [these(?) . . . wild(?)]--> One young <!--child--> boy
+                                            Had followed him from far and he would share
+                                            His [fits(?)] of grief<!--s--> with purest sympathy.11
+                                                He loved him much, <!--but loved none else save--> but none save him loved her
+                                                    [unnumbered stanza]12
+                                                    The sunset shone upon the isles of Greece
+                                                    And ocean where the heavens misty blue
+                                                    Was mingling with the deep which lay, in peace
+                                                    Far to the west its world of waters threw
+                                                    To those <!--[peace(?)]--> fair isles, that seemed as if they grew
+                                                    Each in itself one [or an] Oasis. the waste
+                                                    Stretching around, beyond them, and light<!--ly--> blew
+                                                        The evening zephyr on the deep and <!--[(?)]--> cast
+                                                        White foam upon the wave as murmuring it past.
+                    </l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
