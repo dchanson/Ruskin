@@ -18,7 +18,7 @@
         <span class="navigation-editor"><a href="mailto:ruskinproject@selu.edu">David C. Hanson, Editor</a></span>
         <br/>
         <br/>
-		<?php include('search/navbox.php'); ?>
+		<?php include(__DIR__.'/../search/navbox.inc.php'); ?>
         <span><a href="<?php echo r_get_base(); ?>">Home</a><span>
         <span>
             <br/><a href="<?php echo r_build_url("essays/indices_essay.php"); ?>">Indices</a>

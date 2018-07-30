@@ -165,12 +165,18 @@ if (isset($_GET['full_text_of_document']) AND $_GET['full_text_of_document'] == 
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	<title>The Early Ruskin Manuscripts, Advanced Search Results</title>
-	<link href="<?php echo r_build_url('css/styles.css'); ?>" rel="stylesheet" type="text/css">
-	<link href="searchStyle.css" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/png" href="<?php echo r_build_url('images/ruskin_icon.png'); ?>">
+	<?php require_once(__DIR__.'/../layout_includes/site_top.inc.php'); ?>
+	
+	<link href="<?php echo r_build_url("style.php?p=site_styles.scss"); ?>" 
+		rel="stylesheet"
+		type="text/css" />
+		<link href="<?php echo r_build_url("style.php?p=search_styles.scss"); ?>" 
+			rel="stylesheet"
+			type="text/css" />
+	
 </head>
 <body>
-	<?php include("../navigation.inc.php"); ?>
+	<?php include("../layout_includes/navigation.inc.php"); ?>
 		<form action="" method="get" style="background: white;">
 			<fieldset>
 				<legend>Advanced Search</legend>
