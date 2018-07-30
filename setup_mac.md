@@ -46,7 +46,7 @@ $ sudo bash -c "echo '127.0.0.1       ruskin.local' >> /etc/hosts"
 In file `/usr/local/etc/nginx/servers`,
 ```
 server {
-    listen 8080;
+    listen 8080 default_server;
 
     server_name ruskin.local;
 
@@ -58,22 +58,22 @@ server {
     location / {
         try_files $uri $uri/ =404;
     }
-
-    add_header X-root "$document_root";
+    
     add_header X-fc_script_name "$fastcgi_script_name";
-    location ~ \.php$ {
-        try_files      $uri = 404;
+    location ~ src/(.*\.php)$ {
+        try_files      /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 $uri =404;
         fastcgi_pass   127.0.0.1:9000;
         include        fastcgi_params;
         fastcgi_index  index.php;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         fastcgi_param DOCUMENT_ROOT $document_root;
+        # fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
     }
-    
     location ~ \.xml$ {
         add_header Content-disposition "attachment; filename=$uri";
     }
 }
+
 ```
 
 * Start services
