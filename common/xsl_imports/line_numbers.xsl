@@ -16,7 +16,7 @@
         <div class="tooltip">
           System generated line number
         </div>
-        <a href="javascript:void(0)">
+        <a href="#L{$lineNumber}" id="L{$lineNumber}">
           <xsl:value-of select="$lineNumber" />
         </a>
       </div>
