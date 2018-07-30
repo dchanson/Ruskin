@@ -168,11 +168,13 @@
       <xsl:choose>
 
         <xsl:when test="@type='runover' and following-sibling::*[1][self::tei:space]">
+          <xsl:call-template name="custom:printLineNumber" />
           <xsl:variable name="runoverVar">&#x003C;span class=&#x0022;runover&#x0022; style=&#x0022;left:<xsl:value-of select="(format-number((following-sibling::*[1][self::tei:space]/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
           <xsl:value-of select="$runoverVar" disable-output-escaping="yes"/>
         </xsl:when>
 
         <xsl:when test="@type='runover'">
+          <xsl:call-template name="custom:printLineNumber" />
           <xsl:variable name="runoverVar">&#x003C;span class=&#x0022;runover&#x0022;&#x003E;</xsl:variable>
           <xsl:value-of select="$runoverVar" disable-output-escaping="yes"/>
         </xsl:when>
