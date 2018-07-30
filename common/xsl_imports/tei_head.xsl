@@ -53,7 +53,7 @@
                 <div id="top" class="page-title">
                   <xsl:apply-templates/>
                 </div>
-                <xsl:variable name="phpVar">&#x003C;?php include(&#x022;../navigation-manuscript.inc.php&#x022;); ?&#x003E;</xsl:variable>
+                <xsl:variable name="phpVar">&#x003C;?php require_once(&#x022;../layout_includes/navigation-manuscript.inc.php&#x022;); ?&#x003E;</xsl:variable>
                 <xsl:value-of select="$phpVar" disable-output-escaping="yes"/>
               </xsl:when>
 
@@ -74,7 +74,7 @@
                 <div id="top" class="page-title">
                   <xsl:apply-templates/>
                 </div>
-                <xsl:variable name="phpVar">&#x003C;?php include(&#x022;../navigation-work.inc.php&#x022;); ?&#x003E;</xsl:variable>
+                <xsl:variable name="phpVar">&#x003C;?php require_once(&#x022;../layout_includes/navigation-work.inc.php&#x022;); ?&#x003E;</xsl:variable>
                 <xsl:value-of select="$phpVar" disable-output-escaping="yes"/>
               </xsl:otherwise>
 

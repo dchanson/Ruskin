@@ -1,25 +1,17 @@
-<?php require_once('header.inc.php'); ?>
+<?php require_once(__DIR__.'/../header.inc.php'); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional// EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"/>
-<meta name="apple-mobile-web-app-capable" content="yes"/>
-<link href="<?php echo r_build_url('style.php?p=witness_styles.scss'); ?>" rel="stylesheet" type="text/css" />
-<link rel="icon"
-	type="image/png"
-	href="../images/ruskin_icon.png">
-<title>Now Showcasing: <?php echo FILE_NAME;?></title>
-<!-- <script src="https://code.jquery.com/jquery-1.6.js"></script> -->
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-<script>
-	if(window.erm === undefined) window.erm = {};
-	window.erm.base_url = "<?php echo r_get_base(); ?>";
-	window.erm.facsimiles_file_names = "<?php echo FACS_FILE_NAMES; ?>";
-	window.erm.file_name = "<?php echo htmlspecialchars(FILE_NAME); ?>"
-</script>
+	<link href="<?php echo r_build_url('style.php?p=witness_styles.scss'); ?>" rel="stylesheet" type="text/css" />
+
+	<title>Now Showcasing: <?php echo FILE_NAME;?></title>
+	<?php require_once 'header_utils.inc.php'; ?>
+
+	<script>
+		window.erm.facsimiles_file_names = "<?php echo FACS_FILE_NAMES; ?>";
+		window.erm.file_name = "<?php echo htmlspecialchars(FILE_NAME); ?>"
+	</script>
 </head>
 <body>
 <div id="main">

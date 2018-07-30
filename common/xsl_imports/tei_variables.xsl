@@ -18,7 +18,7 @@ break;
 };
 }
 define('ROOT_PATH', $root_path);
-require($root_path."header.inc.php");
+require_once($root_path."header.inc.php");
 ?>]]></xsl:variable>
 
 <!--The <!DOCTYPE> below matches the default assigned by Adobe Dreamweaver CS4 and ensures that webpages created outside the application

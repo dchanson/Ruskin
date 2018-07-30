@@ -45,8 +45,8 @@
   <xsl:variable name="xtableVar">&#x003C;/table&#x003E;</xsl:variable>            <!--</table>    -->
   <xsl:variable name="xtrVar">&#x003C;/tr&#x003E;</xsl:variable>            <!--</table>    -->
   <xsl:variable name="xtdVar">&#x003C;/td&#x003E;</xsl:variable>            <!--</table>    -->
-  <xsl:variable name="navigationPhpVar">&#x003C;?php include(ROOT_PATH.&#x022;navigation.inc.php&#x022;); ?&#x003E;</xsl:variable>
-  <xsl:variable name="topBtnPhpVar">&#x003C;?php include(ROOT_PATH.&#x022;top_button.inc.php&#x022;); ?&#x003E;</xsl:variable>
-  <xsl:variable name="inactivePhpVar">&#x003C;?php include(ROOT_PATH.&#x022;inactive.inc.php&#x022;); ?&#x003E;</xsl:variable>
+  <xsl:variable name="navigationPhpVar">&#x003C;?php require_once(ROOT_PATH.&#x022;layout_includes/navigation.inc.php&#x022;); ?&#x003E;</xsl:variable>
+  <xsl:variable name="topBtnPhpVar">&#x003C;?php require_once(ROOT_PATH.&#x022;layout_includes/top_button.inc.php&#x022;); ?&#x003E;</xsl:variable>
+  <xsl:variable name="siteTopPhpVar">&#x003C;?php require_once(ROOT_PATH.&#x022;layout_includes/site_top.inc.php&#x022;); ?&#x003E;</xsl:variable>
 
 </xsl:stylesheet>
