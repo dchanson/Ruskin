@@ -6,7 +6,11 @@
 
 <link rel="icon"
 	type="image/png"
-	href="../images/ruskin_icon.png">
+	href="<?php echo r_get_base()."/favicon.ico"; ?>">
+	
+	<link rel="icon" 
+      type="image/png" 
+      href="http://example.com/myicon.png">
   
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script>
