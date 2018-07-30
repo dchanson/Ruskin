@@ -23,6 +23,7 @@
   <xsl:import href="xsl_imports/functions.xsl"/>
   <xsl:import href="xsl_imports/names.xsl"/>
   <xsl:import href="xsl_imports/table.xsl"/>
+  <xsl:import href="xsl_imports/line_numbers.xsl"/>
   <xsl:import href="xsl_imports/tei_bibliography.xsl"/>
   <xsl:import href="xsl_imports/tei_etc.xsl"/>
   <xsl:import href="xsl_imports/tei_head.xsl"/>
