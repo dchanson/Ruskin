@@ -237,7 +237,7 @@ $duplicate_tags = 0;
 echo '<h2>Ruskin XML parser</h2><h3>Parsing ' . $total_files . ' XML files</h3>';
 
 // Attempt to remove the documents table.
-if (mysqli_query($db_conn, "DROP TABLE `documents`;")) {
+if (mysqli_query($db_conn, "DROP TABLE if exists `documents`;")) {
 	echo "<br /><br /><span style='color: green; font-weight: bold;'>Successfully removed `documents` table.</span>";
 } else {
 	echo "<br /><br /><span style='color: red; font-weight: bold;'>There was an error removing the `documents` table: " . mysqli_error($db_conn) . "</span>";
@@ -266,7 +266,7 @@ PRIMARY KEY  (`id`)
 }
 
 // Attempt to remove the keywords table.
-if (mysqli_query($db_conn, "DROP TABLE `keywords`;")) {
+if (mysqli_query($db_conn, "DROP TABLE if exists `keywords`;")) {
 	echo "<br /><br /><span style='color: green; font-weight: bold;'>Successfully removed `keywords` table.</span>";
 } else {
 	echo "<br /><br /><span style='color: red; font-weight: bold;'>There was an error removing the `keywords` table: " . mysqli_error($db_conn) . "</span>";
