@@ -329,7 +329,7 @@
       </xsl:for-each>
 
       <xsl:for-each select="tei:biblStruct">
-        <li class="bib-item">
+        <li class="bib-item" id="{@xml:id}">
 
           <xsl:choose>
 
