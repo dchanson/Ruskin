@@ -1,9 +1,12 @@
 <?php
 
-// Load MySQL credentials from config file.
-require('config.php');
+require('../header.inc.php');
+$config = r_get_config();
+$config = $config['DB'];
 
-$db_conn = mysqli_connect($servername, $username, $password, $database);
+$database = $config['DATABASE_NAME'];
+
+$db_conn = mysqli_connect($config['HOST'], $config['USERNAME'], $config['PASSWORD'], $database);
 
 // Attempt to connect to the MySQL server.
 if (mysqli_connect_errno()) {
@@ -75,7 +78,7 @@ if (isset($_GET['autoComplete'])) {
 
 		$row['content_mapped'] = preg_replace('/&([#x1234567890ABCDEFabcdef])+;/', '', $row['content_mapped']);
 
-		echo "<span id=\"result" . $counter . "\" onclick=\"setAutoCompleteText('" . $row['content_mapped'] . "');\">" . $row['content_mapped'] . "</span>";
+		echo "<span id=\"result" . $counter . "\" onclick=\"setAutoCompleteText('" . $row['content_mapped'] . "');\">" . $row['content_mapped'] . "</span>\n";
 	}
 }
 
