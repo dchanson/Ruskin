@@ -31,7 +31,7 @@ $ git -C "$(brew --repo homebrew/core)" fetch --unshallow
 ```
 $ brew install nginx
 $ brew install mysql
-$ brew install --without-apache --with-fpm --with-mysql php71
+$ brew install --without-apache --with-fpm --with-mysql php
 $ brew install phpmyadmin
 $ brew install composer
 $ brew install imagemagick
@@ -43,12 +43,14 @@ $ sudo bash -c "echo '127.0.0.1       ruskin.local' >> /etc/hosts"
 ```
 
 * Create `nginx` configuration
-In file `/usr/local/etc/nginx/servers`,
+In file `/usr/local/etc/nginx/servers/ruskin.local.conf`,
 ```
 server {
     listen 8080 default_server;
 
     server_name ruskin.local;
+    
+    client_max_body_size 210M;
 
     autoindex on;
 
@@ -76,13 +78,38 @@ server {
 
 ```
 
-* Start services
+* Web server configuration
+  * Edit `/usr/local/share/phpmyadmin` to reflect the following changes:
+    * AllowNoPassword: true
+    * hostname: '127.0.0.1'
+    * blowfish_secret: <some_value>
+  * Edit `/usr/local/etc/php/<version>/php.ini` where `<version>`=`7.*`
+    * upload_max_filesize = 200M
+    * post_max_size = 205M
+  * Symlink phpmyadmin
+    ```
+    cd ~/Ruskin/src
+    ln -s /usr/local/share/phpmyadmin .
+    ```
 
+* Start services
 ```
 $ brew services start mysql
 $ brew services start nginx
-$ brew services start php@7.1
+$ brew services start php
 ```
+
+* Create config file, and if required, update it
+```
+$ cd ~/Ruskin/src
+$ cp config_template.json.php config.json.php
+```
+
+* Create database used in `config.json.php["DB"]["DATABASE_NAME"]`
+
+* Populate search database
+  * Goto `http://ruskin.local:8080/src/search/update.php`
+  * Use password used in `config.json.php["DB"]["UPDATE_TOOL_PASSWORD"]`
 
 * Install composer packages
 ```
@@ -90,27 +117,12 @@ $ cd ~/Ruskin
 $ composer install
 ```
 
-* Pre-run scripts
-
 * Maintenance
 ```
 $ cd ~/Ruskin
-
-$ cd src/
-$ sed -E "s/http[^\"]+/http\:\/\/ruskin\.local\:8080\/src/g" config_production.json > config.json
-
-$ cd ~/Ruskin
-$ mkdir -p "gen/_Completed/" "gen/_In%20Process"
-
-$ cd gen/_Completed/
-$ ln -s /Users/sluuser/Ruskin/src/*.php .
-$ cd ../_In*
-$ ln -s /Users/sluuser/Ruskin/src/*.php .
-
-$ ln -s /Users/sluuser/Ruskin/gen/_Completed/apparatuses .
-$ ln -s /Users/sluuser/Ruskin/gen/_Completed/glosses .
-$ ln -s /Users/sluuser/Ruskin/gen/_Completed/notes .
-$ ln -s /Users/sluuser/Ruskin/gen/_Completed/witnesses .
-$ ln -s /Users/sluuser/Ruskin/gen/_In%20Process/essays .
-$ ln -s /Users/sluuser/Ruskin/_Resources/images/ .
+$ mkdir -p gen/_xml/
+$ cd gen/_xml
+$ ln -s ../../src/header.inc.php .
+$ ln -s ../../src/search .
+$ ln -s ../../src/layout_includes .
 ```
