@@ -27,7 +27,7 @@ EOT
 );
       ?&#x003E;
     </xsl:value-of>
-    <xsl:value-of select="$showCaseTopPhpVar" />
+    <xsl:value-of select="$showCaseTopPhpVar" disable-output-escaping="yes" />
 
     <div id="content-left">
       <img id="facs_preview" src="" width="100%"/>
@@ -55,7 +55,7 @@ EOT
         <xsl:call-template name="tei:pb" />
       </xsl:for-each>
     </div>
-    <xsl:value-of select="$showCaseBottomPhpVar" />
+    <xsl:value-of select="$showCaseBottomPhpVar" disable-output-escaping="yes" />
 
 </xsl:template>
 
