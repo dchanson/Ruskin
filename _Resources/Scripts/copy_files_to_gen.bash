@@ -69,8 +69,8 @@ echo "Copying images"
 cp -r _Resources/images $OUT/
 
 echo "Copying XML transformations to $OUT"
-rsync -r gen/_Completed/. $OUT/ >/dev/null
-rsync -r "gen/_In%20Process/." $OUT/ >/dev/null
+rsync -r gen/_xml/_Completed/. $OUT/ >/dev/null
+rsync -r "gen/_xml/_In_Process/." $OUT/ >/dev/null
 
 echo "Handling config"
 if [ "$SYMLINK" -eq "0" ]; then
@@ -81,9 +81,7 @@ fi
 
 if [ "$SYMLINK" -eq "0" ]; then
     echo "Copying raw XML files"
-    mkdir -p "$OUT/xml"
-    cp -r _Completed "$OUT/xml"
-    cp -r "_In Process" "$OUT/xml"
+    cp -r _xml/. "$OUT/xml"
 fi
 
 if [ "$SYMLINK" -eq "0" ]; then
