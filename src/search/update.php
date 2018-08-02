@@ -1,13 +1,13 @@
 <?php
-require_once(__DIR__ . '/../header.inc.php');
-require_once __DIR__ . '/search_utils.inc.php';
-
 /**************************************************\
  * | Description: Extract keywords from XML files     |
  * |              and populate the SQL database.      |
  * |                                                  |
  * | Authors: Elena, Garth                            |
  * \**************************************************/
+ 
+require_once __DIR__ . '/../header.inc.php';
+require_once __DIR__ . '/search_utils.inc.php';
 
 
 $config = r_get_config();
@@ -219,8 +219,9 @@ foreach ($files AS $entry) {
         // Extract the tag name. EXAMPLE: persName
         $leftBracketLocation = rstrpos($text, '<', $correspLocation);
         $keywordEnd = strpos($text, ' ', $leftBracketLocation);
-        $tagName = substr($text, $leftBracketLocation, $keywordEnd - $leftBracketLocation);
-
+        $tagName = trim(substr($text, $leftBracketLocation, $keywordEnd - $leftBracketLocation));
+        
+        
         // Skip over handshift tags.
         if ($tagName == 'handShift') {
             $newStart = strpos($text, '>', $correspLocation);
@@ -284,7 +285,6 @@ foreach ($files AS $entry) {
 
         insertKeyword($docid, $tag, $type, $corresp, $content, $keyword);
     }
-    break;
 }
 
 // Show some stats about the parsed files.

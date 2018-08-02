@@ -22,7 +22,7 @@ function showLoginForm()
         echo '<br><br><span style="color: #FF660A;font-weight: bold;">Password incorrect!</span>';
     }
 
-    echo '<br><br><input type="text" name="password" placeholder="Password"><br><br>
+    echo '<br><br><input type="password" name="password" placeholder="Password"><br><br>
 		<input type="submit" name="submit" value=" Login ">
 	</form>
 </div>';
@@ -138,6 +138,7 @@ function insertKeyword($docid, $tag, $type, $corresp, $content, $keyword)
             $duplicate_tags++;
         } else {
             echo "<br /><span style='color: red; font-weight: bold;'>There was an error with the mysql query: " . mysqli_error($db_conn) . "</span>";
+            echo "<br /><span style='color: red; font-weight: bold;'>Query: ".$insertkeywords." end query</span>";
             $database_errors++;
         }
     }
@@ -205,11 +206,11 @@ CREATE TABLE IF NOT EXISTS `keywords` (
 `tag` VARCHAR(255) NOT NULL,
 `type` VARCHAR(255) NOT NULL,
 `corresp` TEXT NOT NULL,
-`content` VARCHAR(255) NOT NULL,
-`metaphone` VARCHAR(255) NOT NULL,
+`content` TEXT NOT NULL,
+`metaphone` TEXT NOT NULL,
 `keyword` TEXT NOT NULL,
 PRIMARY KEY  (`id`),
-UNIQUE KEY `docid` (`docid`,`tag`,`type`,`content`)
+UNIQUE KEY `docid` (`docid`,`tag`,`type`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;")) {
         echo "<br /><br /><span style='color: green; font-weight: bold;'>Successfully recreated `keywords` table.</span>";
     } else {
