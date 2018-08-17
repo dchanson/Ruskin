@@ -1136,16 +1136,20 @@
                                 &#x0040;type &#x201C;runover&#x201D;, thus:<lb/>
                                 <lb/>
                                 <hi rend="center">&#x3008;lb type&#x003D;&#x201C;runover&#x201D;/&#x3009;&#x3008;space quantity&#x003D;&#x201C;00&#x201D; unit&#x003D;&#x201C;chars&#x201D;/&#x3009;.</hi>
-                                <lb/>
-                                Here the &#x3008;space&#x3009; element quantifies the number of characters that the runover is indented from the left text margin. 
+                                <lb/></p>
+                                <p>Here the &#x3008;space&#x3009; element quantifies the number of characters that the runover is indented from the left text margin. 
                                 (In <title type="program" corresp="#XSLT">XSLT</title> transformation, the runover also renders as an interlineation.)</p>
-                            <p>In some cases of line runover in poetry, <persName corresp="#JR">Ruskin</persName> also signaled the runover with a mark apparently of his own 
-                                invention, which in some places resembles an opening square bracket, and in others a vertical bar. Usually, he placed this mark at the start of the runover line. 
-                                We tag this mark as a glyph element, &#x0040;type &#x201C;runover&#x201D;:<lb/>
-                                <lb/>
-                                <hi rend="center">&#x3008;g type&#x003D;&#x201C;runover&#x201D;&#x3009;[&#x3008;/g&#x3009;.</hi>
-                                <lb/>
-                                As an example of a runover using this mark, see the opening line of 
+                            <p>In some cases of line runover in poetry, <persName corresp="#JR">Ruskin</persName> also signaled the runover with a mark that, in some places, 
+                                resembles an opening square bracket and, in others, a vertical bar. Usually, he placed this mark at the start of the indented runover line. 
+                                One can find such a symbol in early nineteenth&#x2010;century periodicals using narrow columns, thus causing multiple runovers in printing of poetry; 
+                                however, printers appear to have reserved this punctuation to identify a runover that they were obliged to set <hi rend="italic">above</hi> its line, 
+                                and therefore needed to punctuate in order to distinguish from other runovers in the same poem set as usual below the line, 
+                                and without such a mark. Several examples can be found in the <title type="periodical" corresp="#LITERARYGAZETTEBELLESLETTRES"><hi rend="italic">London Literary Gazette, and Journal of Belles Lettres, Arts, Sciences, &#x0026;c.</hi></title>, 
+                                which uses the opening square bracket to mark a runover set above its line&#x2014;typically, a line that simultaneously carries a runover appearing below the preceding line of verse, 
+                                and therefore set without the mark 
+                                (see, e.g., <ref type="bibliography" target="bibliography.php#ALMOTHERSMORNINGKISS"><persName type="pen_name" corresp="#A.L.">A.L.</persName>, <title type="poem" corresp="#ALMOTHERSMORNINGKISS">&#x201C;A Mother&#x02BC;s Morning Kiss to Her Child&#x201D;</title></ref>. 
+                                <persName corresp="#JR">Ruskin</persName> does not necessarily reserve use of the mark for this specialized class of runovers, 
+                                but may apply it indiscriminately to any runover. As an example, see the opening line of 
                                 <ref type="witness" target="the_defiance_of_war_msi.php"><title type="poem" corresp="#JRTHEDEFIANCEOFWAR">&#x201C;The Defiance of War&#x201D;</title></ref>, 
                                 which is encoded as follows:<lb/>
                                 <lb/>
