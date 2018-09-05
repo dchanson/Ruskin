@@ -7044,7 +7044,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">Rural Architecture; Being a Series of Designs for Ornamental Cottages</hi></title>
-    <edition>3d ed.</edition>
+    <edition n="3">3</edition>
     <imprint>
       <pubPlace>London</pubPlace>
       <publisher>James Carpenter and Son</publisher>
@@ -7181,7 +7181,8 @@
       </persName>
     </author>
     <title level="m"><hi rend="italic">Selected Letters of William Michael Rossetti</hi></title>
-    <editor><persName corresp="RWPEATTIE">
+    <editor>
+      <persName corresp="RWPEATTIE">
       <forename>Roger W.</forename>
       <surname>Peattie</surname>
     </persName>
@@ -7238,17 +7239,21 @@
 
 <biblStruct xml:id="DEVELOPMENTBIBLIOGRAPHICALSTUDY">
   <analytic>
-    <author><persName corresp="MSS">
+    <author>
+      <persName corresp="MSS">
       <forename>Michael</forename>
       <surname>Sadleir</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;The Development during the Last Fifty Years of Bibliographical Study of Books of the <date notBefore="1801" notAfter="1900">XIXth Century</date>&#x201D;</title>
   </analytic>
   <monogr>
-    <editor><persName corresp="FCFRANCIS">
+    <editor>
+      <persName corresp="FCFRANCIS">
       <forename>F. C.</forename>
       <surname>Francis</surname>
-    </persName></editor>
+    </persName>
+    </editor>
     <title type="main" level="m"><hi rend="italic">The Bibliographical Society, <date notBefore="1892" notAfter="1942">1892&#x2013;1942</date>: Studies in Retrospect</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
@@ -7327,7 +7332,7 @@
     </author>
     <title level="m" type="main"><hi rend="italic">Voyages dans les Alpes: pr&#x00E9;c&#x00E9;d&#x00E9;s d&#x02BC;un essai sur l&#x02BC;histoire naturelle des environs de Gen&#x00E8;ve</hi></title>
     <imprint>
-      <biblScope type="vol">8 vols.</biblScope>
+      <biblScope type="vol" n="8">8</biblScope>
       <pubPlace>Geneva</pubPlace>
       <publisher>Barde, Manget</publisher>
       <pubPlace>Neuch&#x00E2;tel</pubPlace>
@@ -7339,10 +7344,12 @@
 
 <biblStruct xml:id="BLESSINGTONDNB">
   <analytic>
-    <author><persName corresp="WHSCEUERLE">
+    <author>
+      <persName corresp="WHSCEUERLE">
       <forename>William H.</forename>
       <surname>Scheuerle</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Gardiner [n&#x00E9;e Power; other married name, Farmer], Marguerite [Margaret], countess of Blessington (<date notBefore="1789" notAfter="1849">1789&#x2013;1849</date>)&#x201D;</title>
   </analytic>
   <monogr>
@@ -7350,9 +7357,9 @@
     <imprint>
       <publisher>Oxford University Press</publisher>
       <date when="2004">2004</date>
-      <pubPlace>http://www.oxforddnb.com/view/article/2640 (accessed <date when="2018-01-21">21 January 2018</date>)</pubPlace>
     </imprint>
   </monogr>
+  <note>http://www.oxforddnb.com/view/article/2640 (accessed <date when="2018-01-21">21 January 2018</date>)</note>
 </biblStruct>
 
 <biblStruct xml:id="SCHMIDTPICTURESQUE">
@@ -7398,7 +7405,7 @@
     </author>
     <title level="m" type="main"><hi rend="italic">The Abbot</hi></title>
     <imprint>
-      <biblScope type="vol" n="3">3 vols.</biblScope>
+      <biblScope type="vol" n="3">3</biblScope>
       <pubPlace>Edinburgh</pubPlace>
       <publisher>Archibald Constable, and John Ballantyne</publisher>
       <pubPlace>London</pubPlace>
@@ -7417,18 +7424,20 @@
       </persName>
     </author>
     <title level="m">&#x201C;Essay on Imitations of the Ancient Ballad&#x201D;</title>
-    <respStmt>
-      <resp>Edited by</resp>
-      <name>Douglass H. Thomson</name>
-    </respStmt>
+    <editor>
+      <persName corresp="DHTHOMSON">
+      <forename>Douglass H.</forename>
+      <surname>Thomson</surname>
+      </persName>
+    </editor>
   </analytic>
   <monogr>
     <title level="m" type="main"><hi rend="italic">The Walter Scott Digital Archive</hi></title>
     <imprint>
       <publisher>Edinburgh University Library</publisher>
-      <pubPlace>http://www.walterscott.lib.ed.ac.uk/works/poetry/apology/essay.html</pubPlace>
     </imprint>
   </monogr>
+  <note>http://www.walterscott.lib.ed.ac.uk/works/poetry/apology/essay.html</note>
 </biblStruct>
 
 <biblStruct xml:id="SCOTTMARMIONBAYNE">
@@ -7440,7 +7449,8 @@
       </persName>
     </author>
     <title level="m"><hi rend="italic">Marmion</hi></title>
-    <editor><persName corresp="TBAYNE">
+    <editor>
+      <persName corresp="TBAYNE">
       <forename>Thomas</forename>
       <surname>Bayne</surname>
     </persName>
@@ -7463,7 +7473,7 @@
     </author>
     <title level="m" type="main"><hi rend="italic">Miscellaneous Prose Works of Sir Walter Scott</hi></title>
     <imprint>
-      <biblScope type="vol" n="28">28 vols.</biblScope>
+      <biblScope type="vol" n="28">28</biblScope>
       <pubPlace>Edinburgh</pubPlace>
       <publisher>Robert Cadell</publisher>
       <pubPlace>London</pubPlace>
@@ -7482,12 +7492,14 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">Poetical Works of Sir Walter Scott, Bart.</hi></title>
-    <respStmt>
-      <resp>Edited by</resp>
-      <name>J.G.L. [John Gibson Lockhart]</name>
-    </respStmt>
+    <editor>
+      <persName corresp="JGL">
+      <forename>John Gibson</forename>
+      <surname>Lockhart</surname>
+      </persName>
+    </editor>
     <imprint>
-      <biblScope type="vol" n="12">12 vols.</biblScope>
+      <biblScope type="vol" n="12">12</biblScope>
       <pubPlace>Edinburgh</pubPlace>
       <publisher>Robert Cadell</publisher>
       <pubPlace>London</pubPlace>
@@ -7526,7 +7538,7 @@
     </author>
     <title level="m" type="main"><hi rend="italic">Works: Caledonian Edition</hi></title>
     <imprint>
-      <biblScope type="vol" n="50">50 vols.</biblScope>
+      <biblScope type="vol" n="50">50</biblScope>
       <pubPlace>Boston</pubPlace>
       <publisher>Houghton Mifflin</publisher>
       <date when="1913">1913</date>
@@ -7537,7 +7549,7 @@
 <biblStruct xml:id="SCOTTISHTOURIST">
   <monogr>
     <title level="m" type="main"><hi rend="italic">The Scottish Tourist, and Itinerary: Or, a Guide to the Scenery and Antiquities of Scotland and the Western Islands; with a Description of the Principal Steam&#x2010;boat Tours</hi></title>
-    <edition n="3">3d ed.</edition>
+    <edition n="3">3</edition>
     <imprint>
       <pubPlace>Edinburgh</pubPlace>
       <publisher>Stirling &#x0026; Kenney</publisher>
@@ -7559,7 +7571,7 @@
     </author>
     <title level="m" type="main"><hi rend="italic">Rambles in Germany and Italy, in <date when="1840">1840</date>, <date when="1842">1842</date>, and <date when="1843">1843</date></hi></title>
     <imprint>
-      <biblScope type="vol">2 vols.</biblScope>
+      <biblScope type="vol">2</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>Edward Moxon</publisher>
       <date when="1844">1844</date>
@@ -7583,7 +7595,7 @@
       </persName>
     </editor>
     <imprint>
-      <biblScope type="vol">2 vols.</biblScope>
+      <biblScope type="vol">2</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>Edward Moxon</publisher>
       <date when="1840">1840</date>
@@ -7616,7 +7628,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">The Bibliography of Ruskin: A Bibliographical List Arranged in Chronological Order of the Published Writings in Prose and Verse of John Ruskin, M.A. (from <date notBefore="1834" notAfter="1879">1834 to 1879</date>)</hi></title>
-    <edition>4th ed., revised and enlarged</edition>
+    <edition n="4">4th ed., revised and enlarged</edition>
     <imprint>
       <pubPlace>N.p.</pubPlace>
       <date when="1879">N.d. [1879?]</date>
@@ -7633,7 +7645,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">The Bibliography of Ruskin: A Bibliographical List Arranged in Chronological Order of the Published Writings in Prose and Verse of John Ruskin, M.A. (from <date notBefore="1834" notAfter="1881">1834 to 1881</date>)</hi></title>
-    <edition>5th ed., revised and enlarged</edition>
+    <edition n="5">5th ed., revised and enlarged</edition>
     <imprint>
       <pubPlace>London</pubPlace>
       <publisher>Elliot Stock</publisher>
@@ -7651,7 +7663,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">The Bibliography of Ruskin: A Bibliographical List Arranged in Chronological Order of the Published Writings in Prose and Verse of John Ruskin, M.A., from <date notBefore="1834" notAfter="1878-11">1834 to the Present Time (November 1878)</date></hi></title>
-    <edition>[3d ed.]</edition>
+    <edition n="3">3</edition>
     <imprint>
       <pubPlace>N.p.</pubPlace>
       <date when="1878">1878</date>
@@ -7668,7 +7680,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">The Bibliography of Ruskin: A Bibliographical List Arranged in Chronological Order of the Published Writings in Prose and Verse of John Ruskin, M.A., from <date notBefore="1834" notAfter="1878-10">1834 to the Present Time (October 1878)</date></hi></title>
-    <edition>[2d ed.]</edition>
+    <edition n="2">2</edition>
     <imprint>
       <pubPlace>N.p.</pubPlace>
       <date when="1878">1878</date>
@@ -7685,7 +7697,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">The Bibliography of Ruskin: A Bibliographical List Arranged in Chronological Order of the Published Writings in Prose and Verse of John Ruskin, M.A., from <date notBefore="1835" notAfter="1878-09">1835 to the Present Time (September 1878)</date></hi></title>
-    <edition>[1st ed.]</edition>
+    <edition n="1">1</edition>
     <imprint>
       <pubPlace>N.p.</pubPlace>
       <date when="1878">1878</date>
@@ -7719,7 +7731,7 @@
       </persName>
     </author>
     <title level="m"><hi rend="italic">Translations from Charles Baudelaire, with a Few Original Poems</hi></title>
-    <edition>New ed.</edition>
+    <edition>New ed.</edition><!--Not sure how to fix this without an edition number.-->
     <imprint>
       <pubPlace>London</pubPlace>
       <publisher>B. Robson</publisher>
@@ -7754,7 +7766,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">Scholarly Editing in the Computer Age: Theory and Practice</hi></title>
-    <edition>3d</edition>
+    <edition n="3">3</edition>
     <imprint>
       <pubPlace>Ann Arbor</pubPlace>
       <publisher>University of Michigan Press</publisher>
@@ -7765,23 +7777,25 @@
 
 <biblStruct xml:id="FIRSTPIRATEDEDITION">
   <analytic>
-    <author><persName corresp="DSINCLAIR">
+    <author>
+      <persName corresp="DSINCLAIR">
       <forename>David</forename>
       <surname>Sinclair</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;The First Pirated Edition of Tennyson&#x02BC;s Poems&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Book Collector</hi></title>
     <imprint>
-      <biblScope type="vol">22</biblScope>
+      <biblScope type="vol" n="22">22</biblScope>
       <date when="1973">1973</date>
       <biblScope type="pages">177&#x2013;88</biblScope>
     </imprint>
   </monogr>
 </biblStruct>
 
-<biblStruct xml:id="HOLMEPROUT">
+<biblStruct xml:id="HOLMEPROUT"><!--Will need to come back to this citation.-->
   <monogr>
     <editor>
       <persName corresp="CHOLME">
@@ -7882,9 +7896,9 @@
       </persName>
     </author>
     <title level="m"><hi rend="italic">The History of England, from the Revolution to the Death of George the Second</hi></title>
-    <edition>New ed.</edition>
+    <edition>New ed.</edition><!--How do I denote this with a number?-->
     <imprint>
-      <biblScope type="vol" n="5">5 vols.</biblScope>
+      <biblScope type="vol" n="5">5</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>T. Cadell</publisher>
       <date when="1785">1785</date>
@@ -7959,8 +7973,8 @@
   <monogr>
     <title level="j"><hi rend="italic">Bulletin of the John Rylands University Library</hi></title>
     <imprint>
-      <biblScope type="vol">82</biblScope>
-      <biblScope type="issue">1</biblScope>
+      <biblScope type="vol" n="82">82</biblScope>
+      <biblScope type="issue" n="1">1</biblScope>
       <date when="2000">Spring 2000</date>
       <biblScope type="pages">135&#x2013;91</biblScope>
     </imprint>
@@ -7969,16 +7983,18 @@
 
 <biblStruct xml:id="SPEARRUSKINSITALY">
   <analytic>
-    <author><persName corresp="JLSPEAR">
+    <author>
+      <persName corresp="JLSPEAR">
       <forename>Jeffrey L.</forename>
       <surname>Spear</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Ruskin&#x02BC;s Italy&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Browning Institute Studies</hi></title>
     <imprint>
-      <biblScope type="vol">12</biblScope>
+      <biblScope type="vol" n="12">12</biblScope>
       <date when="1984">1984</date>
       <biblScope type="pages">73&#x2013;92</biblScope>
     </imprint>
@@ -7993,8 +8009,8 @@
     <title  level="j" type="main"><hi rend="italic">Mirror of Literature, Amusement, and Instruction</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
-      <biblScope type="vol">10</biblScope>
-      <biblScope type="issue">288 (supplementary no.)</biblScope>
+      <biblScope type="vol" n="10">10</biblScope>
+      <biblScope type="issue" n="288">288 (supplementary no.)</biblScope>
       <date when="1828">1828</date>
       <biblScope type="pages">409&#x2013;24</biblScope>
     </imprint>
