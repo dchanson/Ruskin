@@ -109,20 +109,20 @@
                             <cell n="2">3</cell>
                             <cell n="3"><title type="composite" corresp="#JRSTGOARCOMP"><placeName corresp="#STGOAR">St Goar</placeName></title></cell>
                         </row>
-                        <row role="data">
+                      <row role="data" xml:id="ACCOUNTTOCFRANCFURT">
                             <cell n="1"></cell>
                             <cell n="2">4</cell>
-                            <cell n="3" xml:id="ACCOUNTTOCFRANCFURT"><del rend="strikethrough"><title type="composite" corresp="#JRFRANKFURTCOMP"><placeName corresp="#FRANKFURT">Francfort</placeName></title></del><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#FRANCFORTGLOSS"/></cell>
+                            <cell n="3"><del rend="strikethrough"><title type="composite" corresp="#JRFRANKFURTCOMP"><placeName corresp="#FRANKFURT">Francfort</placeName></title></del><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#FRANCFORTGLOSS"/></cell>
                         </row>
                         <row role="data">
                             <cell n="1"></cell>
                             <cell n="2">5</cell>
                             <cell n="3"><title type="composite" corresp="#JRHEIDELBERGCOMP"><placeName corresp="#HEIDELBERG">Heidelberg</placeName></title></cell>
                         </row>
-                        <row role="data" xml:id="ACCOUNTTOCSTRASBURG">
+                      <row role="data" xml:id="ACCOUNTTOCSTRASBURG">
                             <cell n="1"></cell>
                             <cell n="2">6</cell>
-                            <cell n="3"><title type="composite" corresp="#JRSTRASBURGCOMP"><placeName corresp="#STRASBOURG">Strasburg</placeName></title><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#STRASBURGGLOSS"/></cell>
+                          <cell n="3"><title type="composite" corresp="#JRSTRASBURGCOMP"><placeName corresp="#STRASBOURG">Strasburg</placeName></title><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#STRASBURGGLOSS"/></cell>
                         </row>
                         <row role="data" xml:id="ACCOUNTTOCSWISSCOTTAGES">
                             <cell n="1"><metamark function="unknown">\</metamark></cell>
@@ -139,14 +139,11 @@
                             <cell n="2">9</cell>
                             <cell n="3"><title type="composite" corresp="#JRTHEALPSCOMP"><geogName corresp="#ALPS">The Alps</geogName></title></cell>
                         </row>
-
                         <row role="data" xml:id="ACCOUNTTOCFALLOFTHERHINE">
                          <cell/>
                          <cell>10</cell>
                          <cell>
-                           <title type="composite" corresp="#JRFALLOFTHERHINECOMP">
-                             <geogName corresp="#RHINEFALLS">The fall of the Rhine</geogName>
-                           </title>
+                           <title type="composite" corresp="#JRFALLOFTHERHINECOMP"><geogName corresp="#RHINEFALLS">The fall of the Rhine</geogName></title>
                          </cell>
                        </row>
                        <row role="data" xml:id="ACCOUNTTOCCONSTANCE">
@@ -316,7 +313,7 @@
                      <row role="data" xml:id="ACCOUNTTOCHOUSEOFBYRON">
                          <cell></cell>
                          <cell>28</cell>
-                         <cell><del rend="strikethrough">The <unclear resp="#DCH">house</unclear> of <persName corresp="#GGB">Byron</persName></del><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#HOUSEOFBYRONGLOSS"/></cell>
+                         <cell><del rend="strikethrough"><title type="composite" corresp="#JRHOUSEOFBYRONCOMP">The <unclear resp="#DCH">house</unclear> of <persName corresp="#GGB">Byron</persName></title></del><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#HOUSEOFBYRONGLOSS"/></cell>
                      </row>
                        <row role="data" xml:id="ACCOUNTTOCMARENGO">
                          <cell/>
@@ -325,6 +322,7 @@
                            <title type="composite" corresp="#JRMARENGOCOMP">
                              <placeName corresp="#MARENGO">Marengo</placeName>
                            </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#MARENGOGLOSS"/>
                          </cell>
                        </row>
                        <row role="data" xml:id="ACCOUNTTOCTURIN">
@@ -334,12 +332,14 @@
                            <title type="composite" corresp="#JRTURINCOMP">
                              <placeName corresp="#TURIN">Turin</placeName>
                            </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#TURINGLOSS"/>
                          </cell>
                        </row>
-                         <row role="data" xml:id="ACACCOUNTTOCNOVARACOUNTTOCHOUSEOFBYRON">
+                         <row role="data" xml:id="ACCOUNTTOCNOVARA">
                              <cell></cell>
                              <cell>31</cell>
-                             <cell><del rend="strikethrough"><geogName corresp="#MONTCENIS">Mont Cenis</geogName></del><placeName corresp="#NOVARA">Novora</placeName></cell>
+                           <cell><del rend="strikethrough"><title type="composite" corresp="#JRMONTCENISCOMP"><geogName corresp="#MONTCENIS">Mont Cenis</geogName></title></del><title type="composite" corresp="#JRNOVARACOMP"><placeName corresp="#NOVARA">Novara</placeName></title><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#NOVARAGLOSS"/>
+                           </cell>
                          </row>
                        <row role="data" xml:id="ACCOUNTTOCMAGGIORE">
                          <cell/>
