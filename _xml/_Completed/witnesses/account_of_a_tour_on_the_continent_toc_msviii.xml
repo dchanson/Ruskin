@@ -365,8 +365,9 @@
                          <cell>34</cell>
                          <cell>
                            <title type="composite" corresp="#JRDOMODOSSOLACOMP">
-                             <placeName corresp="#DOMODOSSOLA">Domo dʼOssola</placeName>
+                             <placeName corresp="#DOMODOSSOLA">Domo d&#x02BC;Ossola</placeName>
                            </title>
+                           <ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_glosses_contextual.php#DOMODOSSOLAGLOSS"/> (see also <ref type="internal" target="#ACCOUNTTOCDOMODOSSOLAILLUS">Table 2</ref>)
                          </cell>
                        </row>
                        <row role="data" xml:id="ACCOUNTTOCFAREWELLTOITALY">
@@ -1008,14 +1009,14 @@
                                 </cell>
                                 <cell></cell>
                               </row>
-                              <row role="data">
+                          <row role="data" xml:id="ACCOUNTTOCDOMODOSSOLAILLUS">
                                 <cell>0</cell>
                                 <cell>
                                   <title type="composite" corresp="#JRDOMODOSSOLACOMP">
-                                    <placeName corresp="#DOMODOSSOLACOMP">Duomo dʼOssola</placeName>
+                                    <placeName corresp="#DOMODOSSOLA">Duomo d&#x02BC;Ossola</placeName> (see also <ref type="internal" target="#ACCOUNTTOCDOMODOSSOLA">Table 1</ref>)
                                   </title>
                                 </cell>
-                                <cell></cell>
+                            <cell><placeName corresp="ISOLABELLA">Isola bella</placeName>. <persName corresp="#SR">Rogers</persName>. <placeName corresp="DOMODOSSOLA">Domo d&#x02BC;ossola</placeName>. from <persName corresp="#WBI">Brockedon</persName> (not from defile of Simplon) My own view with crags<ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#DOMODOSSOLAILLUSGLOSS"/></cell>
                               </row>
                               <row role="data">
                                 <cell>0</cell>
@@ -1383,13 +1384,9 @@
                             </table>
                     </div>
 
-                <div>
-                    <list type="simple">
-                        <item n="1">Begin with</item>
-                    </list>
-                </div>
+                
             </div>
-<div type="section" >
+<!--<div type="section" >
     <head>Table 1</head>
   <div type="tablespace" xml:id="account_toc_msviii_table_1">
             <head type="table">Table 1. Account of a Tour on the Continent: Table of Contents</head>
@@ -1436,7 +1433,7 @@
             <row role="data">
                 <cell n="1" role="data">3</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRWERDENBERGCOMP"><placeName corresp="#WERDENBERG">Werdenberg</placeName></title></cell>
-                <cell n="3" role="data"><del rend="strikethrough">On the <geogName corresp="#RHINE">Rhine</geogName></del> near <!--??--> with thunder &#x2014;</cell>
+                <cell n="3" role="data"><del rend="strikethrough">On the <geogName corresp="#RHINE">Rhine</geogName></del> near  with thunder &#x2014;</cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">1</cell>
@@ -1531,7 +1528,7 @@
             <row role="data">
                 <cell n="1" role="data"><del rend="strikethrough">1</del></cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRMAGGIORECOMP"><geogName corresp="#MAGGIORE">Maggiore</geogName></title></cell>
-                <cell n="3" role="data">On <geogName corresp="#LAKEMAGGIORE">Lake of Maggiore</geogName> [Illegible] my own <persName corresp="#WBI">Brockedon</persName> with Carlo <!--check this name-->.<del rend="strikethrough">???</del>Mary's <placeName corresp="#BORROMEANISLANDS">Borromean isles</placeName>. <geogName corresp="#MONTEROSA">Monte Rosa</geogName> from near Lou??. <persName corresp="#WBI">Brockedon</persName>.</cell>
+                <cell n="3" role="data">On <geogName corresp="#LAKEMAGGIORE">Lake of Maggiore</geogName> [Illegible] my own <persName corresp="#WBI">Brockedon</persName> with Carlo .<del rend="strikethrough">???</del>Mary's <placeName corresp="#BORROMEANISLANDS">Borromean isles</placeName>. <geogName corresp="#MONTEROSA">Monte Rosa</geogName> from near Lou??. <persName corresp="#WBI">Brockedon</persName>.</cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">4</cell>
@@ -1541,7 +1538,7 @@
             <row role="data">
                 <cell n="1" role="data">0</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRDOMODOSSOLACOMP"><placeName corresp="#DOMODOSSOLA">Domo d'Ossola</placeName></title></cell>
-                <cell n="3" role="data">.<placeName corresp="DOMODOSSOLA">Duomo d'Ossola</placeName><persName corresp="#SR">Rogers</persName>. <placeName corresp="DOMODOSSOLA">Duomo d'Ossola</placeName>. from <persName corresp="#WBI">Brockedon</persName>My own view with craigs.</cell>
+                <cell n="3" role="data">.</cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">0</cell>
@@ -1581,7 +1578,7 @@
             <row role="data">
                 <cell n="1" role="data">1</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRSAINTMAURICECOMP"><placeName corresp="#SAINTMAURICE">St. Maurice</placeName></title></cell>
-                <cell n="3" role="data">My own. <!--???--> <persName corresp="#WBI">Brockedons</persName> <persName corresp="SR">Rogers</persName> <placeName corresp="#SAINTMAURICE">St. Maurice</placeName></cell>
+                <cell n="3" role="data">My own.  <persName corresp="#WBI">Brockedons</persName> <persName corresp="SR">Rogers</persName> <placeName corresp="#SAINTMAURICE">St. Maurice</placeName></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">3</cell>
@@ -1595,11 +1592,11 @@
             </row>
             <row role="data">
                 <cell n="1" role="data">3</cell>
-                <cell n="2" role="data"><title type="composite" corresp="#JRLAUSANNECOMP"><placeName corresp="#LAUSANNE">Lausanne</placeName></title><!--???--></cell>
-                <cell n="3" role="data"><!--???--> <geogName corresp="#LAKEGENOA">lake of Geneva</geogName></cell>
+                <cell n="2" role="data"><title type="composite" corresp="#JRLAUSANNECOMP"><placeName corresp="#LAUSANNE">Lausanne</placeName></title></cell>
+                <cell n="3" role="data"> <geogName corresp="#LAKEGENOA">lake of Geneva</geogName></cell>
             </row>
             <row role="data">
-                <cell n="1" role="data"><!--number is blacked out--></cell>
+                <cell n="1" role="data"></cell>
                 <cell n="2" role="data"><title type="compostie" corresp="#JRFRIBOURGCOMP"><placeName corresp="#FRIBOURG">Fribourg</placeName></title></cell>
                 <cell n="3" role="data">Near <placeName corresp="#FRIBOURG">Fribourg</placeName> my own</cell>
             </row>
@@ -1621,7 +1618,7 @@
             <row role="data">
                 <cell n="1" role="data">2</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRJUNGFRAUCOMP"><geogName corresp="#JUNGFRAU">The Jungfrau</geogName></title></cell>
-                <cell n="3" role="data">My own. <del rend="strikethrough">Ro</del><persName corresp="GGB">Byrons</persName><!--??-->.</cell>
+                <cell n="3" role="data">My own. <del rend="strikethrough">Ro</del><persName corresp="GGB">Byrons</persName>.</cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">0</cell>
@@ -1630,8 +1627,8 @@
             </row>
             <row role="data">
                 <cell n="1" role="data">0</cell>
-                <cell n="2" role="data"><!--???--></cell>
-                <cell n="3" role="data">The fall. 3 views on lake <!--??--></cell>
+                <cell n="2" role="data"></cell>
+                <cell n="3" role="data">The fall. 3 views on lake </cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">0</cell>
@@ -1641,7 +1638,7 @@
             <row role="data">
                 <cell n="1" role="data">3</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRARTHCOMP"><placeName corresp="#ARTH">Arth</placeName></title></cell>
-                <cell n="3" role="data"><!--???--><persName corresp="#SR">Rogers</persName><!--??--></cell>
+                <cell n="3" role="data"><persName corresp="#SR">Rogers</persName></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">1</cell>
@@ -1651,10 +1648,10 @@
             <row role="data">
                 <cell n="1" role="data">4</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRGOLDAUDCOMP"><placeName corresp="#GOLDAU">Goldau</placeName></title></cell>
-                <cell n="3" role="data"><geogName corresp="#MONTRIGI">Rigi</geogName> from <placeName corresp="#LUCERNE">Lucerne</placeName> (Panorama.) Mount Pipltte my own from <geogName corresp="#MONTRIGI">Rigi</geogName>(from rasburg)<!--check--></cell>
+                <cell n="3" role="data"><geogName corresp="#MONTRIGI">Rigi</geogName> from <placeName corresp="#LUCERNE">Lucerne</placeName> (Panorama.) Mount Pipltte my own from <geogName corresp="#MONTRIGI">Rigi</geogName>(from rasburg)</cell>
             </row>
             <row role="data">
-                <cell n="1" role="data"><!--number not legible--></cell>
+                <cell n="1" role="data"></cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRSCHWYTZCOMP"><placeName corresp="#SCHWYZ">Schwytz</placeName></title></cell>
                 <cell n="3" role="data">Lake of ??, <placeName corresp="#SCHWYZ">Schwytz</placeName>; View from <placeName corresp="#SCHWYZ">Schwytz</placeName>.</cell>
             </row>
@@ -1696,7 +1693,7 @@
             <row role="data">
                 <cell n="1" role="data"></cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRCHAMOUNICOMP"><placeName corresp="#CHAMOUNI">Chamouni</placeName></title></cell>
-                <cell n="3" role="data"><persName corresp="#GGB">Byrons</persName> <placeName corresp="#CHAMOUNI">Chamouni</placeName>. <del rend="strikethrough">???</del><!--???--> to near <placeName corresp="#GENEVA">Geneva</placeName>.<persName corresp="#HBS">Saussures</persName> needles.</cell>
+                <cell n="3" role="data"><persName corresp="#GGB">Byrons</persName> <placeName corresp="#CHAMOUNI">Chamouni</placeName>. <del rend="strikethrough">???</del> to near <placeName corresp="#GENEVA">Geneva</placeName>.<persName corresp="#HBS">Saussures</persName> needles.</cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">1</cell>
@@ -1711,7 +1708,7 @@
             <row role="data">
                 <cell n="1" role="data">4</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRTHEMORNINGCOMP">The morning</title></cell>
-                <cell n="3" role="data">The aiguille du goute <persName corresp="#HBS">Saussure</persName> Vol 4<!--tag--></cell>
+                <cell n="3" role="data">The aiguille du goute <persName corresp="#HBS">Saussure</persName> Vol 4</cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">2</cell>
@@ -1736,7 +1733,7 @@
             <row role="data">
                 <cell n="1" role="data">1</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRLYONSCOMP"><placeName corresp="#LYONS">Lyons</placeName></title></cell>
-                <cell n="3" role="data"><!--???--> Lake among <geogName corresp="#JURA">Jura</geogName>, <placeName corresp="#LYONS">Lyons</placeName> <persName corresp="#WBI">Brockedon</persName>.</cell>
+                <cell n="3" role="data"> Lake among <geogName corresp="#JURA">Jura</geogName>, <placeName corresp="#LYONS">Lyons</placeName> <persName corresp="#WBI">Brockedon</persName>.</cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">2</cell>
@@ -1764,7 +1761,7 @@
                 <cell n="3" role="data">4 of <placeName corresp="#DOVERCASTLE">Dover Castle</placeName></cell>
             </row>
         </table>
-    </div>
+    </div>-->
  <div type="section" xml:id="TOCTABLE2">
      <head>Table 2</head>
      <div type="tablespace">
@@ -1893,7 +1890,7 @@
          </table>
      </div>
 </div>
-</div>
+
 
         </body>
     </text>
