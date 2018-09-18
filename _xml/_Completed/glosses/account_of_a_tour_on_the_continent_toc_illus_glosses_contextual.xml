@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <fileDesc xml:id="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual">
+            <titleStmt>
+                <title type="main">Plan for Continuation of the Account of a Tour on the Continent&#x2014;Illustrations</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#xxx"></persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2018-01-23">January 23, 2018</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="DOMODOSSOLAILLUSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Domo d&#x02BC;Ossola&#x201D; (<title type="manuscript" corresp="#MSVIII">MS VIII</title>)&#x2014;</hi>The 
+                    illustration <title type="artwork" corresp="#JRISOLABELLA">"<placeName corresp="ISOLABELLA">Isola bella</placeName>"</title> is likely identical to the untitled drawing, 
+                    <ref type="figure" target="lakeside_with_terraced_villa_drawing_msix.php"><title type="artwork" corresp="#JRLAKESIDEWITHTERRACEDVILLAMSIX">Lakeside with Terraced Villa</title></ref>, 
+                    included in the gallery of drawings inserted at the end of the MS IX fair copy of the "Account", which appears to 
+                    depict this island's terraced gardens, viewed from the side of the island opposite its palace 
+                    (see <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus#account_of_a_tour_on_the_continent_pcs_corpus_domodossola"><title type="composite" corresp="#JRDOMODOSSOLACOMP">&#x201C;<placeName corresp="#DOMODOSSOLA">Domo d&#x02BC;Ossola</placeName>&#x201D;</title></ref> and gloss).
+                </p></note>
+
+                <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
+            </div>
+        </body>
+    </text>
+</TEI>

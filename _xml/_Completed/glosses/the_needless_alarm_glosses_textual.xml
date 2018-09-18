@@ -3,10 +3,12 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="glosses">
-        <fileDesc xml:id="aix_la_chapelle_prose_glosses_textual">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="the_needless_alarm_glosses_textual">
             <titleStmt>
-                <title type="main">"Aix la Chapelle" [prose]</title>
-                <title type="sub">Glosses [textual]</title>
+                <title type="main">"The Needless Alarm"</title>
+                <title type="sub">Glosses</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
                 </author>
@@ -18,7 +20,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -55,21 +57,21 @@
     </teiHeader>
     <text>
         <body>
-            <div type="glosses" subtype="textual">
-                <note xml:id="ATREATYGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;atreaty&#x201D; (MS VIII)&#x2014;</hi>In manuscript, the two words are run together.</p></note>
-
-                <note xml:id="PAUSEPERIOD" resp="#DCH"><p><hi rend="bold">Pause&#x2013;period (MS MS VIII)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</p></note>
+            <div type="glosses" subtype="contextual">
+                <note xml:id="RUNOVER" resp="#DCH"><p><hi rend="bold">Runover mark (MS I)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#JUSTIFICATION">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Justification, Runover, and Word Division</ref>.</p></note>
                 
-                <note xml:id="ORSO" resp="#DCH"><p><hi rend="bold">&#x201C;orso&#x201D; (MS VIII)&#x2014;</hi>The <hi rend="italic">s</hi> in <hi rend="italic">so</hi> is written over top of the tail of the <hi rend="italic">r</hi> of <hi rend="italic">or</hi>. 
-                    Followed by a terminal comma (see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</p></note>
-                
-                <note xml:id="TERMINALCOMMA" resp="#DCH"><p><hi rend="bold">Terminal comma (MS VIII)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</p></note>
-                
-                <note xml:id="TWILIGHTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Twili&#x201D; (MS VIII)&#x2014;</hi><persName corresp="#JR">Ruskin</persName> perhaps started to write <hi rend="italic">Twilight</hi>.</p></note>
-                
-                <note xml:id="JUSTIFICATION" resp="#DCH"><p><hi rend="bold">Justification mark (MS IX)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#JUSTIFICATION">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Justification, Runover, and Word Division</ref>.</p></note>
-                
-                <note xml:id="APOSTROPHE" resp="#DCH"><p><hi rend="bold">&#x201C;Return,d&#x201D; (MS IX)&#x2014;</hi>In MS VIII, <persName corresp="#JR">Ruskin</persName> correctly uses an apostrophe to form the contraction.</p></note>
+                <note xml:id="COLLINGWOODSSOGLOSS" resp="#CWB"><p><hi rend="bold">Line 9&#x2014;</hi><persName corresp="#WGC">Collingwood</persName>&#x02BC;s
+                decision to isolate the word <hi rend="italic">so</hi> on its own line here does not appear in keeping with
+                <persName corresp="#JR">Ruskin</persName>&#x02BC;s lineation of the original witness of the poem
+                fair&#x2010;copied in <ref type="apparatus" target="msi_apparatus.php">MS I</ref>, in which <hi rend="italic">so</hi> appears to have been indented as runover 
+                belonging to the line &#x201C;was better than our mouses so&#x201D; (&#x201C;his sight&#x201D; in the line &#x201C;of her
+                good wall for then his sight&#x201D; and &#x201C;dog just then&#x201D; in the line &#x201C;when frightened was the dog
+                just then&#x201D; are similarly indented in the <ref type="apparatus" target="msi_apparatus.php">MS I</ref> witness and, interestingly, <hi rend="italic">were</hi> apparently
+                interpreted by <persName corresp="#WGC">Collingwood</persName> as runover in this printed edition of the poem). Further
+                evidence that the <persName corresp="#JR">author</persName> intended <hi rend="italic">so</hi> to belong to the line
+                &#x201C;was better than our mouses so&#x201D; may be found in the fact that <persName corresp="#WGC">Collingwood</persName>&#x02BC;s
+                    decision to isolate the word disrupts the original aabbccddeeffgg coupleted rhyme scheme of the <ref type="apparatus" target="msi_apparatus.php">MS I</ref> witness&#x2014;imposing
+                a less elegant aabbccdd<hi rend="italic">e</hi>ffgg<hi rend="italic">hh</hi> rhyme scheme instead.</p></note>
             </div>
         </body>
     </text>

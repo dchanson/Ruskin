@@ -75,9 +75,20 @@
                     <institution>Lancaster University</institution>
                     <repository>Ruskin Library</repository>
                     <collection>Ruskin Foundation</collection>
-                    <collection>Ruskin Manuscript Letters</collection>
                     <idno>RF T 48</idno>
                     <msName>Richardson, Mary (1815&#x2013;49). Diary (1833). Typescript transcription by Gertrude Atthill, granddaughter of Mary Bolding (n&#x00E9;e Richardson)</msName>
+                  </msIdentifier>
+                </msDesc>
+                
+                <msDesc xml:id="RFMS13">
+                  <msIdentifier>
+                    <country>United Kingdom</country>
+                    <settlement>Lancaster, Lancashire</settlement>
+                    <institution>Lancaster University</institution>
+                    <repository>Ruskin Library</repository>
+                    <collection>Ruskin Foundation</collection>
+                    <idno>RF MS 13</idno>
+                    <msName>Ruskin, John (1819&#x2013;1900). Diary (1861, 1862, 1863, 1870)</msName>
                   </msIdentifier>
                 </msDesc>
                 
@@ -95,25 +106,13 @@
                     </msIdentifier>
                   </msDesc>
                   
-                  <msDesc xml:id="RFMS13">
-                    <msIdentifier>
-                      <country>United Kingdom</country>
-                      <settlement>Lancaster, Lancashire</settlement>
-                      <institution>Lancaster University</institution>
-                      <repository>Ruskin Library</repository>
-                      <collection>Ruskin Foundation</collection>
-                      <idno>RF MS 13</idno>
-                      <msName>Ruskin, John (1819&#x2013;1900). Diary (1861, 1862, 1863, 1870).</msName>
-                    </msIdentifier>
-                  </msDesc>
-                  
                   <msDesc xml:id="JRSIXVIEWS">
                     <msIdentifier>
                       <country>United States</country>
                       <settlement>Boston, Massachusetts</settlement>
                       <institution>Museum of Fine Arts</institution>
                       <collection>Gift of Mrs. H. Ropes Cabot</collection>
-                      <idno>52.361</idno>
+                      <idno>52.361 (https://www.mfa.org/collections/object/sheet-of-six-swiss-and-italian-views-255603)</idno>
                       <msName>Ruskin, John (1819&#x2013;1900). Sheet of Six Swiss and Italian Views (1833). Pen and ink on paper (23 &#x00D7; 29.4 cm)</msName>
                     </msIdentifier>
                   </msDesc>
@@ -162,6 +161,17 @@
               <div type="subsection">
                 <head type="subsection">Works in Manuscript by Authors Other Than the Ruskins</head>
                 
+                <msDesc xml:id="RUTGERSALS">
+                  <msIdentifier>
+                    <country>United States</country>
+                    <settlement>New Brunswick</settlement>
+                    <institution>Rutgers University</institution>
+                    <repository>Rutgers University Libraries, Special Collections and University Archives</repository>
+                    <collection>J. Alexander Symington Collection</collection>
+                    <msName>W. G. Collingwood (1854&#x2013;1932), Joan Severn (1846&#x2013;1924), and E. T. Cook (1857&#x2013;1919), ALS to Thomas J. Wise (1859&#x2013;1937)</msName>
+                  </msIdentifier>
+                </msDesc>
+                
                 <listBibl>
                   <msDesc xml:id="GOODSPEEDALSBEINECKEMSIA">
                     <msIdentifier>
@@ -170,18 +180,7 @@
                       <institution>Yale University</institution>
                       <repository>Beinecke Rare Book and Manuscript Library</repository>
                       <collection>MS Vault Ruskin</collection>
-                      <msName>ALS, Charles Goodspeed to Chauncey B. Tinker</msName>
-                    </msIdentifier>
-                  </msDesc>
-                  
-                  <msDesc xml:id="RUTGERSALS">
-                    <msIdentifier>
-                      <country>United States</country>
-                      <settlement>New Brunswick</settlement>
-                      <institution>Rutgers University</institution>
-                      <repository>Rutgers University Libraries, Special Collections and University Archives</repository>
-                      <collection>J. Alexander Symington Collection</collection>
-                      <msName>ALS, W. G. Collingwood, Joan Severn, and E. T. Cook, to Thomas J. Wise</msName>
+                      <msName>Charles E. Goodspeed (1867&#x2013;1950), ALS to Chauncey B. Tinker (1876&#x2013;1963)</msName>
                     </msIdentifier>
                   </msDesc>
                   
@@ -191,7 +190,7 @@
                       <region>New York</region>
                       <settlement>New York City</settlement>
                       <repository>Pierpont Morgan Library</repository>
-                      <msName>&#x201C;Helen Gill Viljoen Papers&#x201D;</msName>
+                      <msName>Helen Gill Viijoen (1899&#x2013;1974), &#x201C;Helen Gill Viljoen Papers&#x201D;</msName>
                     </msIdentifier>
                   </msDesc>
                 </listBibl>
@@ -217,9 +216,9 @@
                       <title level="m"><hi rend="italic">Poems</hi></title>
                       <imprint>
                         <date when="1850">1850</date>
-                        <note>Collected</note>
                       </imprint>
                     </monogr>
+                    <note>Collected.</note>
                   </biblStruct>
                   
                   <biblStruct xml:id="JRLINESCUMBERLAND1829">
@@ -280,7 +279,7 @@
                       <imprint>
                         <biblScope type="vol" n="3">3 vols.</biblScope>
                         <pubPlace>Oxford</pubPlace>
-                        <publisher>Clarendon</publisher>
+                        <publisher>Clarendon Press</publisher>
                         <date notBefore="1956" notAfter="1959">1956&#x2013;59</date>
                       </imprint>
                     </monogr>
@@ -432,6 +431,24 @@
                     </monogr>
                   </biblStruct>
                   
+                  <biblStruct xml:id="JRLETTERSTOACOLLEGEFRIEND1894">
+                    <monogr>
+                      <author>
+                        <persName corresp="JR">
+                          <forename>John</forename>
+                          <surname>Ruskin</surname>
+                        </persName>
+                      </author>
+                      <title type="main" level="m"><hi rend="italic">Letters Addressed to a College Friend, during the Years <date notBefore="1840" notAfter="1845">1840&#x2013;1845</date></hi></title>
+                      <imprint>
+                        <pubPlace>Orpington</pubPlace>
+                        <pubPlace>London</pubPlace>
+                        <publisher>George Allen</publisher>
+                        <date when="1894">1894</date>
+                      </imprint>
+                    </monogr>
+                  </biblStruct>
+                  
                   <biblStruct xml:id="JRLETTERS">
                     <analytic>
                       <author><persName corresp="JR">
@@ -478,24 +495,6 @@
                             <pubPlace>Boston</pubPlace>
                             <publisher>Houghton Mifflin</publisher>
                             <date when="1904">1904</date>
-                          </imprint>
-                        </monogr>
-                      </biblStruct>
-                      
-                      <biblStruct xml:id="JRLETTERSTOACOLLEGEFRIEND1894">
-                        <monogr>
-                          <author>
-                            <persName corresp="JR">
-                              <forename>John</forename>
-                              <surname>Ruskin</surname>
-                            </persName>
-                          </author>
-                          <title type="main" level="m"><hi rend="italic">Letters Addressed to a College Friend, during the Years <date notBefore="1840" notAfter="1845">1840&#x2013;1845</date></hi></title>
-                          <imprint>
-                            <pubPlace>Orpington</pubPlace>
-                            <pubPlace>London</pubPlace>
-                            <publisher>George Allen</publisher>
-                            <date when="1894">1894</date>
                           </imprint>
                         </monogr>
                       </biblStruct>
@@ -777,7 +776,7 @@
                           <title type="sub"><hi rend="italic">John Ruskin&#x02BC;s Correspondence with Margaret Alexis Bell and the Children at Winnington Hall</hi></title>
                           <imprint>
                             <pubPlace>Cambridge, Mass.</pubPlace>
-                            <publisher>Belknap Press, of Harvard University Press</publisher>
+                            <publisher>Belknap Press of Harvard University Press</publisher>
                             <date when="1969">1969</date>
                           </imprint>
                         </monogr>
@@ -839,7 +838,7 @@
                             <date when="1990">1990</date>
                           </imprint>
                         </monogr>
-                        <series>A. W. Mellon Lectures in the Fine Arts, National Gallery of Art, Washington, D.C., 1985; Bollingen Series no. 35, vol. 34</series>
+                        <note>A. W. Mellon Lectures in the Fine Arts, National Gallery of Art, Washington, D.C., 1985; Bollingen Series no. 35, vol. 34</note>
                       </biblStruct>
                       
                       <biblStruct xml:id="AIKINBARBAULDEVENINGS">
@@ -863,7 +862,6 @@
                             <biblScope type="vol" n="6">6 vols.</biblScope>
                             <pubPlace>London</pubPlace>
                             <publisher>Baldwin, Cradock, and Joy; R. Hunter</publisher>
-                            <publisher>R. Hunter</publisher>
                             <date when="1819">1819</date>
                           </imprint>
                         </monogr>
@@ -899,41 +897,22 @@
                         </monogr>
                       </biblStruct>
                       
-                      <biblStruct xml:id="ALEXANDERMCMASTERINTRODUCTION">
+                      <biblStruct xml:id="ALMOTHERSMORNINGKISS">
                         <analytic>
                           <author>
-                            <persName corresp="CAA">
-                              <forename>Christine</forename>
-                              <surname>Alexander</surname>
+                            <persName type="pen_name" corresp="A.L.">
+                              <surname>A.L.</surname>
                             </persName>
                           </author>
-                          <author>
-                            <persName corresp="JMCM">
-                              <forename>Juliet</forename>
-                              <surname>McMaster</surname>
-                            </persName>
-                          </author>
-                          <title>&#x201C;Introduction&#x201D;</title>
+                          <title level="a">&#x201C;A Mother&#x02BC;s Morning Kiss to Her Child&#x201D;</title>
                         </analytic>
                         <monogr>
-                          <author>
-                            <persName corresp="CAA">
-                              <forename>Christine</forename>
-                              <surname>Alexander</surname>
-                            </persName>
-                          </author>
-                          <author>
-                            <persName corresp="JMCM">
-                              <forename>Juliet</forename>
-                              <surname>McMaster</surname>
-                            </persName>
-                          </author>
-                          <title level="m"><hi rend="italic">The Child Writer from Austen to Woolf</hi></title>
+                          <title  level="j"><hi rend="italic">London Literary Gazette, and Journal of Belles Lettres, Arts, Sciences, &#x0026;c.</hi></title>
                           <imprint>
-                            <pubPlace>Cambridge</pubPlace>
-                            <publisher>Cambridge University Press</publisher>
-                            <date when="2005">2005</date>
-                            <biblScope type="pages">1&#x2013;7</biblScope>
+                            <pubPlace>London</pubPlace>
+                            <biblScope type="issue">254</biblScope>
+                            <date when="1821-12-01">1 December 1821</date>
+                            <biblScope type="pages">764</biblScope>
                           </imprint>
                         </monogr>
                       </biblStruct>
@@ -949,19 +928,19 @@
                           <title>&#x201C;Defining and Representing Literary Juvenilia&#x201D;</title>
                         </analytic>
                         <monogr>
-                          <author>
+                          <title level="m"><hi rend="italic">The Child Writer from Austen to Woolf</hi></title>
+                          <editor>
                             <persName corresp="CAA">
                               <forename>Christine</forename>
                               <surname>Alexander</surname>
                             </persName>
-                          </author>
-                          <author>
+                          </editor>
+                          <editor>
                             <persName corresp="JMCM">
                               <forename>Juliet</forename>
                               <surname>McMaster</surname>
                             </persName>
-                          </author>
-                          <title level="m"><hi rend="italic">The Child Writer from Austen to Woolf</hi></title>
+                          </editor>
                           <imprint>
                             <pubPlace>Cambridge</pubPlace>
                             <publisher>Cambridge University Press</publisher>
@@ -999,19 +978,19 @@
                           <title>&#x201C;Play and Apprenticeship: The Culture of Family Magazines&#x201D;</title>
                         </analytic>
                         <monogr>
-                          <author>
+                          <title level="m"><hi rend="italic">The Child Writer from Austen to Woolf</hi></title>
+                          <editor>
                             <persName corresp="CAA">
                               <forename>Christine</forename>
                               <surname>Alexander</surname>
                             </persName>
-                          </author>
-                          <author>
+                          </editor>
+                          <editor>
                             <persName corresp="JMCM">
                               <forename>Juliet</forename>
                               <surname>McMaster</surname>
                             </persName>
-                          </author>
-                          <title level="m"><hi rend="italic">The Child Writer from Austen to Woolf</hi></title>
+                          </editor>
                           <imprint>
                             <pubPlace>Cambridge</pubPlace>
                             <publisher>Cambridge University Press</publisher>
@@ -1058,6 +1037,46 @@
                         </monogr>
                       </biblStruct>
                       
+                      <biblStruct xml:id="ALEXANDERMCMASTERINTRODUCTION">
+                        <analytic>
+                          <author>
+                            <persName corresp="CAA">
+                              <forename>Christine</forename>
+                              <surname>Alexander</surname>
+                            </persName>
+                          </author>
+                          <author>
+                            <persName corresp="JMCM">
+                              <forename>Juliet</forename>
+                              <surname>McMaster</surname>
+                            </persName>
+                          </author>
+                          <title>&#x201C;Introduction&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">The Child Writer from Austen to Woolf</hi></title>
+                          <editor>
+                            <persName corresp="CAA">
+                              <forename>Christine</forename>
+                              <surname>Alexander</surname>
+                            </persName>
+                          </editor>
+                          <editor>
+                            <persName corresp="JMCM">
+                              <forename>Juliet</forename>
+                              <surname>McMaster</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Cambridge</pubPlace>
+                            <publisher>Cambridge University Press</publisher>
+                            <date when="2005">2005</date>
+                            <biblScope type="pages">1&#x2013;7</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      
                       <biblStruct xml:id="ALLENPAULMELLONSLEGACY">
                         <analytic>
                           <author><persName corresp="BALLEN">
@@ -1067,33 +1086,33 @@
                           <title level="a">&#x201C;Paul Mellon and Scholarship in the History of British Art&#x201D;</title>
                         </analytic>
                         <monogr>
-                          <editor><persName corresp="BALLEN"></persName>
-                          <forename>Brian</forename>
-                          <surname>Allen</surname>
-                        </editor>
-                        <editor><persName corresp="JBASKETT"></persName>
-                        <forename>John</forename>
-                        <surname>Baskett</surname>
-                      </editor>
-                      <editor><persName corresp="JDPROWN"></persName>
-                      <forename>Jules David</forename>
-                      <surname>Prown</surname>
-                    </editor>
-                    <editor><persName corresp="WJREESE"></persName>
-                    <forename>William</forename>
-                    <surname>Reese</surname>
-                  </editor>
-                  <editor><persName corresp="DROBINSON"></persName>
-                  <forename>Duncan</forename>
-                  <surname>Robinson</surname>
-                </editor>
                 <title level="m" type="main"><hi rend="italic">Paul Mellon&#x02BC;s Legacy</hi></title>
                 <title type="sub"><hi rend="italic">A Passion for British Art</hi></title>
+                          <editor><persName corresp="BALLEN"></persName>
+                            <forename>Brian</forename>
+                            <surname>Allen</surname>
+                          </editor>
+                          <editor><persName corresp="JBASKETT"></persName>
+                            <forename>John</forename>
+                            <surname>Baskett</surname>
+                          </editor>
+                          <editor><persName corresp="JDPROWN"></persName>
+                            <forename>Jules David</forename>
+                            <surname>Prown</surname>
+                          </editor>
+                          <editor><persName corresp="WJREESE"></persName>
+                            <forename>William</forename>
+                            <surname>Reese</surname>
+                          </editor>
+                          <editor><persName corresp="DROBINSON"></persName>
+                            <forename>Duncan</forename>
+                            <surname>Robinson</surname>
+                          </editor>
                 <imprint>
-                  <biblScope>43&#x2013;56</biblScope>
                   <pubPlace>New Haven, Conn.</pubPlace>
                   <publisher>Yale University Press</publisher>
                   <date when="2007">2007</date>
+                  <biblScope>43&#x2013;56</biblScope>
                 </imprint>
               </monogr>
             </biblStruct>
@@ -1194,13 +1213,13 @@
                 <title level="a">&#x201C;A Family Affair: Decimus Burton&#x02BC;s Designs for the Regent&#x02BC;s Park Villas&#x201D;</title>
               </analytic>
               <monogr>
-                <author>
+                <title level="m" type="main"><hi rend="italic">The Georgian Villa</hi></title>
+                <editor>
                   <persName corresp="#DA">
                     <forename>Dana</forename>
                     <surname>Arnold</surname>
                   </persName>
-                </author>
-                <title level="m" type="main"><hi rend="italic">The Georgian Villa</hi></title>
+                </editor>
                 <imprint>
                   <pubPlace>Stroud</pubPlace>
                   <publisher>Alan Sutton</publisher>
@@ -1257,14 +1276,14 @@
                 <title level="a">&#x201C;Gift Book and Annual Illustrations: Some Notes on Their Production&#x201D;</title>
               </analytic>
               <monogr>
-                <author>
+                <title level="m" type="main"><hi rend="italic">Literary Annuals and Gift Books</hi></title>
+                <title type="sub"><hi rend="italic">A Bibliography, <date notBefore="1823" notAfter="1903">1823&#x2013;1903</date></hi></title>
+                <editor>
                   <persName corresp="FWFAXON">
                     <forename>Frederick W.</forename>
                     <surname>Faxon</surname>
                   </persName>
-                </author>
-                <title level="m" type="main"><hi rend="italic">Literary Annuals and Gift Books</hi></title>
-                <title type="sub"><hi rend="italic">A Bibliography, <date notBefore="1823" notAfter="1903">1823&#x2013;1903</date></hi></title>
+                </editor>
                 <imprint>
                   <pubPlace>Pinner, Middlesex</pubPlace>
                   <publisher>Private Libraries Association</publisher>
@@ -1447,7 +1466,7 @@
             <imprint>
               <publisher>British Library Online Gallery</publisher>
               <date>n.d.</date>
-              <pubPlace>http://www.bl.uk/onlinegallery/onlineex/crace/g/007000000000014u00036000.html (accessed <date when="2017-05-19">19 May 2017</date></pubPlace>
+              <pubPlace>http://www.bl.uk/onlinegallery/onlineex/crace/g/007000000000014u00036000.html (accessed <date when="2017-05-19">19 May 2017)</date></pubPlace>
             </imprint>
           </monogr>
         </biblStruct>
@@ -1460,7 +1479,7 @@
                 <surname>Batten</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">Pleasurable Instruction</hi>:<hi rend="italic">Form and Convention in <date notBefore="1701" notAfter="1800">Eighteenth&#x2010;Century</date> Travel Literature</hi></title>
+            <title level="m" type="main"><hi rend="italic">Pleasurable Instruction</hi>: <hi rend="italic">Form and Convention in <date notBefore="1701" notAfter="1800">Eighteenth&#x2010;Century</date> Travel Literature</hi></title>
             <imprint>
               <pubPlace>Berkeley and Los Angeles</pubPlace>
               <publisher>University of California Press</publisher>
@@ -1477,7 +1496,7 @@
                 <surname>Beattie</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">Scotland Illustrated</hi>:<hi rend="italic">In a Series of Views Taken Expressly for This Work</hi></title>
+            <title level="m" type="main"><hi rend="italic">Scotland Illustrated</hi>: <hi rend="italic">In a Series of Views Taken Expressly for This Work</hi></title>
             <respStmt>
               <resp>Illustrated by</resp>
               <persName corresp="TALLOM">
@@ -1721,13 +1740,13 @@
             <title>&#x201C;&#x2018;Our Plays&#x2019;: The Bront&#x00EB; Juvenilia&#x201D;</title>
           </analytic>
           <monogr>
-            <author>
+            <title level="m"><hi rend="italic">The Cambridge Companion to the Bront&#x00EB;s</hi></title>
+            <editor>
               <persName corresp="HGLEN">
                 <forename>Heather</forename>
                 <surname>Glen</surname>
               </persName>
-            </author>
-            <title level="m"><hi rend="italic">The Cambridge Companion to the Bront&#x00EB;s</hi></title>
+            </editor>
             <imprint>
               <pubPlace>Cambridge</pubPlace>
               <publisher>Cambridge University Press</publisher>
@@ -1746,9 +1765,10 @@
             <imprint>
               <biblScope type="vol">42</biblScope>
               <date notBefore="1825-04" notAfter="1825-08">April&#x2013;August 1825</date>
-              <biblScope type="pages">1&#x2013;24 (separately paginated backmatter)</biblScope>
+              <biblScope type="pages">1&#x2013;24</biblScope>
             </imprint>
           </monogr>
+          <note>Separately paginated backmatter.</note>
         </biblStruct>
         
         <biblStruct xml:id="BRAYSTOTHARD">
@@ -1800,9 +1820,9 @@
             <imprint>
               <publisher>Oxford University Press</publisher>
               <date when="2004">2004</date>
-              <pubPlace>http://www.oxforddnb.com/view/article/23862 (accessed <date when="2012-03-30">22 April 2017</date>)</pubPlace>
-            </imprint>
+              </imprint>
           </monogr>
+          <note>http://www.oxforddnb.com/view/article/23862 (accessed <date when="2012-03-30">22 April 2017</date>)</note>
         </biblStruct>
         
         <biblStruct xml:id="BRISTOWVICTORIANPOETINTRO">
@@ -1816,13 +1836,13 @@
             <title level="a">&#x201C;Introduction&#x201D;</title>
           </analytic>
           <monogr>
+            <title level="m"><hi rend="italic">The Victorian Poet: Poetics and Persona</hi></title>
             <editor>
               <persName corresp="JBRISTOW">
                 <forename>Joseph</forename>
                 <surname>Bristow</surname>
               </persName>
             </editor>
-            <title level="m"><hi rend="italic">The Victorian Poet: Poetics and Persona</hi></title>
             <imprint>
               <pubPlace>Beckenham</pubPlace>
               <publisher>Croom Helm</publisher>
@@ -1929,6 +1949,30 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="BUDDEWALLRAFMUSEUM">
+                        <monogr>
+                          <author>
+                            <persName corresp="RBUDDE">
+                              <forename>Rainer</forename>
+                              <surname>Budde</surname>
+                            </persName>
+                          </author>
+                          <title level="m" type="main"><hi rend="italic">Wallraf&#x2010;Richartz Museum, Cologne</hi></title>
+                          <respStmt>
+                            <resp>Translated by</resp>
+                            <persName corresp="ETHUSSU">
+                              <forename>Elizabeth</forename>
+                              <surname>Thussu</surname>
+                            </persName>
+                          </respStmt>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Scala</publisher>
+                            <date when="1993">1993</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
         
         <biblStruct xml:id="BULWERLYTTONPILGRIMS">
           <monogr>
@@ -1964,19 +2008,19 @@
                 <surname>Ruskin</surname>
               </persName>
             </author>
+            <title type="main" level="m"><hi rend="italic">The Ruskin Family Letters:The Correspondence of John James Ruskin, His Wife, and Their Son, John, <date notBefore="1801" notAfter="1843">1801&#x2013;1843</date></hi></title>
             <editor>
               <persName corresp="VAB">
                 <forename>Van Akin</forename>
                 <surname>Burd</surname>
               </persName>
             </editor>
-            <title type="main" level="m"><hi rend="italic">The Ruskin Family Letters:The Correspondence of John James Ruskin, His Wife, and Their Son, John, <date notBefore="1801" notAfter="1843">1801&#x2013;1843</date></hi></title>
             <imprint>
               <biblScope type="vol" n="2">2 vols.</biblScope>
               <pubPlace>Ithaca, N.Y.</pubPlace>
               <publisher>Cornell University Press</publisher>
               <date when="1973">1973</date>
-              <biblScope type="pages">1&#x2013;??</biblScope>
+              <biblScope type="pages">1:xv&#x2013;xvli</biblScope>
             </imprint>
           </monogr>
         </biblStruct>
@@ -1998,6 +2042,7 @@
                 <surname>Ruskin</surname>
               </persName>
             </author>
+            <title type="main" level="m"><hi rend="italic">A Tour to the Lakes in Cumberland: John Ruskin&#x02BC;s Diary for <date when="1830">1830</date></hi></title>
             <editor>
               <persName corresp="VAB">
                 <forename>Van Akin</forename>
@@ -2010,7 +2055,6 @@
                 <surname>Dearden</surname>
               </persName>
             </editor>
-            <title type="main" level="m"><hi rend="italic">A Tour to the Lakes in Cumberland:John Ruskin&#x02BC;s Diary for <date when="1830">1830</date></hi></title>
             <imprint>
               <pubPlace>Aldershot</pubPlace>
               <publisher>Scolar</publisher>
@@ -2037,16 +2081,16 @@
                 <surname>Ruskin</surname>
               </persName>
             </author>
+            <title type="main" level="m"><hi rend="italic">The Winnington Letters:John Ruskin&#x02BC;s Correspondence with Margaret Alexis Bell and the Children at Winnington Hall</hi></title>
             <editor>
               <persName corresp="VAB">
                 <forename>Van Akin</forename>
                 <surname>Burd</surname>
               </persName>
             </editor>
-            <title type="main" level="m"><hi rend="italic">The Winnington Letters:John Ruskin&#x02BC;s Correspondence with Margaret Alexis Bell and the Children at Winnington Hall</hi></title>
             <imprint>
               <pubPlace>Cambridge, Mass.</pubPlace>
-              <publisher>Belknap Press, of Harvard University Press</publisher>
+              <publisher>Belknap Press of Harvard University Press</publisher>
               <date when="1969">1969</date>
               <biblScope type="pages">1&#x2013;??</biblScope>
             </imprint>
@@ -2064,13 +2108,13 @@
             <title level="a">&#x201C;Ruskin&#x02BC;s Testament of His Boyhood Faith: <hi rend="italic">Sermons on the Pentateuch</hi>&#x201D;</title>
           </analytic>
           <monogr>
+            <title level="m"><hi rend="italic">New Approaches to Ruskin</hi></title>
             <editor>
               <persName corresp="RHEWISON">
                 <forename>Robert</forename>
                 <surname>Hewison</surname>
               </persName>
             </editor>
-            <title level="m"><hi rend="italic">New Approaches to Ruskin</hi></title>
             <imprint>
               <pubPlace>London</pubPlace>
               <publisher>Routledge &#x0026; Kegan Paul</publisher>
@@ -2143,7 +2187,7 @@
                 <surname>Buzard</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">The Beaten Track:European Tourism, Literature, and the Ways to Culture, <date notBefore="1800" notAfter="1918">1800&#x2013;1918</date></hi></title>
+            <title level="m" type="main"><hi rend="italic">The Beaten Track: European Tourism, Literature, and the Ways to Culture, <date notBefore="1800" notAfter="1918">1800&#x2013;1918</date></hi></title>
             <imprint>
               <pubPlace>Oxford</pubPlace>
               <publisher>Clarendon Press</publisher>
@@ -2163,47 +2207,24 @@
             <title>&#x201C;Ruskin and the Alpine Ideal&#x201D;</title>
           </analytic>
           <monogr>
-            <author>
+            <title level="m"><hi rend="italic">Ruskin in Perspective: Contemporary Essays</hi></title>
+            <editor>
               <persName corresp="CCASALIGGI">
                 <forename>Carmen</forename>
                 <surname>Casaliggi</surname>
               </persName>
-            </author>
-            <author>
+            </editor>
+            <editor>
               <persName corresp="PMARCHRUSSELL">
                 <forename>Paul</forename>
                 <surname>March&#x2010;Russell</surname>
               </persName>
-            </author>
-            <title level="m"><hi rend="italic">Ruskin in Perspective: Contemporary Essays</hi></title>
+            </editor>
             <imprint>
               <pubPlace>Newcastle upon Tyne</pubPlace>
               <publisher>Cambridge Scholars Publishing</publisher>
               <date when="2007">2007</date>
               <biblScope type="pages">157&#x2013;76</biblScope>
-            </imprint>
-          </monogr>
-        </biblStruct>
-        
-        <biblStruct xml:id="CARTERPOLLARDENQUIRY">
-          <monogr>
-            <author>
-              <persName corresp="JC">
-                <forename>John</forename>
-                <surname>Carter</surname>
-              </persName>
-            </author>
-            <author>
-              <persName corresp="HGP">
-                <forename>Graham</forename>
-                <surname>Pollard</surname>
-              </persName>
-            </author>
-            <title level="m"><hi rend="italic">An Enquiry into the Nature of Certain <date notBefore="1801" notAfter="1900">Nineteenth&#x2010;Century</date> Pamphlets</hi></title>
-            <imprint>
-              <pubPlace>London</pubPlace>
-              <publisher>Constable</publisher><!-- simultaneously published New York: Charles Scribner’s Sons; how show this, using same pub year?-->
-              <date when="1934">1934</date>
             </imprint>
           </monogr>
         </biblStruct>
@@ -2233,14 +2254,38 @@
                 <surname>Carter</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">Taste and Technique in Book&#x2010;Collecting:A Study of Recent Developments in Great Britain and the United Statesc</hi></title>
+            <title level="m" type="main"><hi rend="italic">Taste and Technique in Book&#x2010;Collecting: A Study of Recent Developments in Great Britain and the United Statesc</hi></title>
             <imprint>
               <pubPlace>Cambridge</pubPlace>
               <publisher>Cambridge University Press</publisher>
-              <date when="1949">1949</date><!-- first pub date 1948, but I don't know how to tag this detail-->
+              <date when="1949">1948 [rpt. 1949]</date>
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="CARTERPOLLARDENQUIRY">
+                        <monogr>
+                          <author>
+                            <persName corresp="JC">
+                              <forename>John</forename>
+                              <surname>Carter</surname>
+                            </persName>
+                          </author>
+                          <author>
+                            <persName corresp="HGP">
+                              <forename>Graham</forename>
+                              <surname>Pollard</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">An Enquiry into the Nature of Certain <date notBefore="1801" notAfter="1900">Nineteenth&#x2010;Century</date> Pamphlets</hi></title>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Constable</publisher><!-- simultaneously published New York: Charles Scribner’s Sons; how show this, using same pub year?-->
+                            <date when="1934">1934</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
         
         <biblStruct xml:id="CERVANTESQUIXOTELOCKHART">
           <monogr>
@@ -2251,6 +2296,10 @@
               </persName>
             </author>
             <title level="m"><hi rend="italic">The History of the Ingenious Gentleman, Don Quixote of La Mancha</hi></title>
+            <editor corresp="JGL">
+              <forename>John Gibson</forename>
+              <surname>Lockhart</surname>
+            </editor>
             <respStmt>
               <resp>Translated by</resp>
               <persName corresp="PAM">
@@ -2258,12 +2307,8 @@
                 <surname> Motteux </surname>
               </persName>
             </respStmt>
-            <editor corresp="JGL">
-              <forename>John Gibson</forename>
-              <surname>Lockhart</surname>
-            </editor>
             <imprint>
-              <biblScope type="vol" n="7">5 vols.</biblScope>
+              <biblScope type="vol" n="5">5 vols.</biblScope>
               <pubPlace>Edinburgh</pubPlace>
               <publisher>Constable</publisher>
               <date when="1822">1822</date>
@@ -2288,24 +2333,6 @@
           </monogr>
         </biblStruct>
         
-        <biblStruct xml:id="CHANDLERNAPOLEON">
-          <monogr>
-            <author>
-              <persName corresp="DGC">
-                <forename>David G.</forename>
-                <surname>Chandler</surname>
-              </persName>
-            </author>
-            <title level="m"><hi rend="italic">Napoleon</hi></title>
-            <imprint>
-              <date when="1973">1973;</date>
-              <pubPlace>Barnsley, South Yorkshire</pubPlace>
-              <publisher>Leo Cooper</publisher>
-              <date when="2001">2001</date>
-            </imprint>
-          </monogr>
-        </biblStruct>
-        
         <biblStruct xml:id="CHANDLERSOUTHEYSGERMANSUBLIMITY">
           <analytic>
             <author><persName corresp="DCHANDLER">
@@ -2324,6 +2351,24 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="CHANDLERNAPOLEON">
+                        <monogr>
+                          <author>
+                            <persName corresp="DGC">
+                              <forename>David G.</forename>
+                              <surname>Chandler</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Napoleon</hi></title>
+                          <imprint>
+                            <pubPlace>Barnsley, South Yorkshire</pubPlace>
+                            <publisher>Leo Cooper</publisher>
+                            <date when="1973">1973 [rpt. 2001]</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
         
         <biblStruct xml:id="CHASEEROSANDPSYCHE">
           <monogr>
@@ -2352,7 +2397,7 @@
               <forename>Anita</forename>
               <surname>McConnell</surname>
             </persName></author>
-            <title level="a">&#x201C;Laurie, Robert (<date notBefore="1755" notAfter="1836">1755&#x2013;1836&#x201D;</date></title>
+            <title level="a">&#x201C;Laurie, Robert (<date notBefore="1755" notAfter="1836">1755&#x2013;1836&#x201D;)</date></title>
           </analytic>
           <monogr>
             <title level="m"><hi rend="italic">Oxford Dictionary of National Biography Online Edition</hi></title>
@@ -2397,7 +2442,7 @@
             <imprint>
               <publisher>The British Museum Collection Online</publisher>
               <date when="2012">2012</date>
-              <pubPlace>http://www.britishmuseum.org/research/search_the_collection_database/term_details.aspx?bioId=73561 (accessed <date when="2012-05-26">26 May 2012</date>)</pubPlace>
+              <pubPlace>http://www.britishmuseum.org/research/search_the_collection_database/ term_details.aspx?bioId=73561 (accessed <date when="2012-05-26">26 May 2012</date>)</pubPlace>
               
             </imprint>
           </monogr>
@@ -2411,7 +2456,7 @@
                 <surname>Colley</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">Britons:Forging the Nation, <date notBefore="1707" notAfter="1837">1707&#x2013;1837</date></hi></title>
+            <title level="m" type="main"><hi rend="italic">Britons: Forging the Nation, <date notBefore="1707" notAfter="1837">1707&#x2013;1837</date></hi></title>
             <imprint>
               <pubPlace>New Haven, Conn.</pubPlace>
               <publisher>Yale University Press</publisher>
@@ -2436,7 +2481,7 @@
               <date when="1893">1893</date>
             </imprint>
             <imprint>
-              <pubPlace>Cambridge,22 Mass.</pubPlace>
+              <pubPlace>Cambridge, Mass.</pubPlace>
               <publisher>Riverside</publisher>
               <date when="1893">1893</date>
             </imprint>
@@ -2491,7 +2536,7 @@
                 <surname>Collins</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">The Two Forgers:A Biography of Harry Buxton Forman and Thomas James Wise</hi></title>
+            <title level="m" type="main"><hi rend="italic">The Two Forgers: A Biography of Harry Buxton Forman and Thomas James Wise</hi></title>
             <imprint>
               <pubPlace>Aldershot</pubPlace>
               <publisher>Scolar</publisher>
@@ -2538,13 +2583,13 @@
         
         <biblStruct xml:id="CONTINENTALANNUAL1832">
           <monogr>
+            <title level="m"><hi rend="italic">The Continental Annual, and Romantic Cabinet, for <date when="1832">1832</date></hi></title>
             <editor>
               <persName corresp="WKENNEDY">
                 <forename>William</forename>
                 <surname>Kennedy</surname>
               </persName>
             </editor>
-            <title level="m"><hi rend="italic">The Continental Annual, and Romantic Cabinet, for <date when="1832">1832</date></hi></title>
             <respStmt>
               <resp>Illustrated by</resp>
               <persName corresp="SP">
@@ -2555,7 +2600,7 @@
             <imprint>
               <pubPlace>London</pubPlace>
               <publisher>Smith, Elder</publisher>
-              <date from="1831" to="1832">1831&#x2010;32</date>
+              <date from="1831" to="1832">1831&#x2013;32</date>
             </imprint>
           </monogr>
         </biblStruct>
@@ -2616,7 +2661,7 @@
           </monogr>
         </biblStruct>
         
-        <biblStruct xml:id="COWPERPOEMS2VOLS">
+        <biblStruct xml:id="COWPERPOEMS">
           <monogr>
             <author>
               <persName corresp="WCP">
@@ -2703,6 +2748,7 @@
             <title level="a">&#x201C;&#x2018;Wandering between Two Worlds&#x2019; The Victorian Afterlife of Thomas Chatterton&#x201D;</title>
           </analytic>
           <monogr>
+            <title type="main" level="m"><hi rend="italic">Romantic Echoes in the Victorian Era</hi></title>
             <editor><persName corresp="ARADFORD">
               <forename>Andrew</forename>
               <surname>Radford</surname>
@@ -2711,7 +2757,6 @@
               <forename>Mark</forename>
               <surname>Sandy</surname>
             </persName></editor>
-            <title type="main" level="m"><hi rend="italic">Romantic Echoes in the Victorian Era</hi></title>
             <imprint>
               <pubPlace>Aldershot</pubPlace>
               <publisher>Ashgate</publisher>
@@ -2729,7 +2774,7 @@
                 <surname>Currie</surname>
               </persName>
             </author>
-            <title>Introduction</title>
+            <title>&#x201C;Introduction&#x201D;</title>
           </analytic>
           <monogr>
             <author>
@@ -2738,6 +2783,7 @@
                 <surname>Hogg</surname>
               </persName>
             </author>
+            <title level="m"><hi rend="italic">Contributions to Annuals and Gift&#x2010;Books</hi></title>
             <editor>
               <persName corresp="JCURRIE">
                 <forename>Janette</forename>
@@ -2750,7 +2796,6 @@
                 <surname>Hughes</surname>
               </persName>
             </editor>
-            <title level="m"><hi rend="italic">Contributions to Annuals and Gift&#x2010;Books</hi></title>
             <imprint>
               <pubPlace>Edinburgh</pubPlace>
               <publisher>Edinburgh University Press</publisher>
@@ -2758,29 +2803,11 @@
               <biblScope type="pages">xiii&#x2013;xli</biblScope>
             </imprint>
           </monogr>
-          <series>
-            <title level="s">The Stirling / South Carolina Research Edition of the Collected Works of James Hogg</title>
-            <editor>
-              <persName corresp="DSMACK">
-                <forename>Douglas S.</forename>
-                <surname>Mack</surname>
-              </persName>
-            </editor>
-            <editor>
-              <persName corresp="GH">
-                <forename>Gillian</forename>
-                <surname>Hughes</surname>
-              </persName>
-            </editor>
-            <biblScope>
-              <date notBefore="1995">1995&#x2013;</date>
-            </biblScope>
-          </series>
         </biblStruct>
         
         <biblStruct xml:id="CURTISBOTANICALMAGAZINE">
           <monogr>
-            <title level="m" type="main"><hi rend="italic">Curtis&#x02BC;s Botanical Magazine; or, Flower&#x2010;Garden Displayed:In Which the Most Ornamental Foreign Plants, Cultivated in the Open Ground, the Green&#x2010;House, and the Stove, Are Accurately Represented in Their Natural Colours</hi></title>
+            <title level="m" type="main"><hi rend="italic">Curtis&#x02BC;s Botanical Magazine; or, Flower&#x2010;Garden Displayed: In Which the Most Ornamental Foreign Plants, Cultivated in the Open Ground, the Green&#x2010;House, and the Stove, Are Accurately Represented in Their Natural Colours</hi></title>
             <imprint>
               <pubPlace>London</pubPlace>
               <publisher>Sherwood, Neely, &#x0026; Jones</publisher>
@@ -2886,7 +2913,7 @@
                 <surname>Dearden</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">Ruskin, Bembridge, and Brantwood:The Growth of the Whitehouse Collection</hi></title>
+            <title level="m" type="main"><hi rend="italic">Ruskin, Bembridge, and Brantwood: The Growth of the Whitehouse Collection</hi></title>
             <imprint>
               <pubPlace>Staffordshire</pubPlace>
               <publisher>Ryburn</publisher>
@@ -2976,7 +3003,7 @@
                 <surname>Dickinson</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">John Carter:The Taste and Technique of a Bookman</hi></title>
+            <title level="m" type="main"><hi rend="italic">John Carter: The Taste and Technique of a Bookman</hi></title>
             <imprint>
               <pubPlace>New Castle, Del.</pubPlace>
               <publisher>Oak Knoll</publisher>
@@ -3011,7 +3038,7 @@
                 <surname>Dorfman</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">Blake in the <date notBefore="1801" notAfter="1900">Nineteenth Century</date>:His Reputation as a Poet from Gilchrist to Yeats</hi></title>
+            <title level="m" type="main"><hi rend="italic">Blake in the <date notBefore="1801" notAfter="1900">Nineteenth Century</date>: His Reputation as a Poet from Gilchrist to Yeats</hi></title>
             <imprint>
               <pubPlace>New Haven</pubPlace>
               <publisher>Yale University Press</publisher>
@@ -3066,7 +3093,9 @@
             <title level="m" type="main"><hi rend="italic">The Traveller&#x02BC;s Guide through Switzerland . . . with a Complete Atlas, Comprehending Keller&#x02BC;s Map, Panoramic Views of the Mountains, &#x0026;c.</hi></title>
             <respStmt>
               <resp>Arranged and Improved by</resp>
-              <persName>Daniel Wall</persName>
+              <persName>
+                <forename>Daniel</forename>
+                <surname>Wall</surname></persName>
             </respStmt>
             <imprint>
               <pubPlace>London</pubPlace>
@@ -3084,12 +3113,11 @@
                 <surname>Edgeworth</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">Harry and Lucy Concluded:Being the Last Part of Early Lessons</hi></title>
+            <title level="m" type="main"><hi rend="italic">Harry and Lucy Concluded: Being the Last Part of Early Lessons</hi></title>
             <imprint>
               <biblScope type="vol" n="4">4 vols.</biblScope>
               <pubPlace>London</pubPlace>
-              <publisher>R. Hunter</publisher>
-              <publisher>Baldwin, Cradock, and Joy</publisher>
+              <publisher>R. Hunter; Baldwin, Cradock, and Joy</publisher>
               <date when="1825">1825</date>
             </imprint>
           </monogr>
@@ -3153,7 +3181,7 @@
                 <surname>Emerson</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">Ruskin:The Genesis of Invention</hi></title>
+            <title level="m" type="main"><hi rend="italic">Ruskin: The Genesis of Invention</hi></title>
             <imprint>
               <pubPlace>Cambridge</pubPlace>
               <publisher>Cambridge University Press</publisher>
@@ -3181,19 +3209,18 @@
         
         <biblStruct xml:id="LIEBERENCYCLOPEDIAAMERICANA">
           <monogr>
-            <title level="m" type="main"><hi rend="italic">Encyclop&#x00E6;dia Americana:A Popular Dictionary of Arts, Sciences, Literature, History, Politics, and Biography, Brought Down to the Present Time; including a Copious Collection of Original Articles in American Biography; on the Basis of the Seventh Edition of the German Conversations&#x2010;Lexicon</hi></title>
-            <respStmt>
-              <resp>Edited by</resp>
+            <title level="m" type="main"><hi rend="italic">Encyclop&#x00E6;dia Americana: A Popular Dictionary of Arts, Sciences, Literature, History, Politics, and Biography, Brought Down to the Present Time; including a Copious Collection of Original Articles in American Biography; on the Basis of the Seventh Edition of the German Conversations&#x2010;Lexicon</hi></title>
+            <editor>
               <persName corresp="FL">
                 <forename>Francis</forename>
                 <surname>Lieber</surname>
               </persName>
-            </respStmt>
+            </editor>
             <respStmt>
               <resp>Assisted by</resp>
               <persName corresp="EWIGGLESWORTH">
-                <forename> E.</forename>
-                <surname> Wigglesworth </surname>
+                <forename>E.</forename>
+                <surname>Wigglesworth</surname>
               </persName>
               <persName corresp="TGBRADFORD">
                 <forename> T. G.</forename>
@@ -3217,7 +3244,7 @@
                 <surname>Enfield</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">The Speaker:Or, Miscellaneous Pieces, Selected from the Best English Writers, and Disposed under Proper Heads, with a View to Facilitate the Improvement of Youth in Reading and Speaking. To Which Are Prefixed Two Essays: I. On Elocution. II. On Reading Works of Taste</hi></title>
+            <title level="m" type="main"><hi rend="italic">The Speaker: Or, Miscellaneous Pieces, Selected from the Best English Writers, and Disposed under Proper Heads, with a View to Facilitate the Improvement of Youth in Reading and Speaking. To Which Are Prefixed Two Essays: I. On Elocution. II. On Reading Works of Taste</hi></title>
             <edition>New ed., corrected and enlarged</edition>
             <imprint>
               <pubPlace>London</pubPlace>
@@ -3235,7 +3262,7 @@
                 <surname>Erickson</surname>
               </persName>
             </author>
-            <title level="m" type="main"><hi rend="italic">The Economy of Literary Form:English Literature and the Industrialization of Publishing, <date notBefore="1800" notAfter="1850">1800&#x2013;1850</date></hi></title>
+            <title level="m" type="main"><hi rend="italic">The Economy of Literary Form: English Literature and the Industrialization of Publishing, <date notBefore="1800" notAfter="1850">1800&#x2013;1850</date></hi></title>
             <imprint>
               <pubPlace>Baltimore</pubPlace>
               <publisher>Johns Hopkins University Press</publisher>
@@ -3270,11 +3297,11 @@
             <title level="a">&#x201C;Chatterton&#x02BC;s Poetic Afterlife, <date notBefore="1770" notAfter="1794">1770&#x2013;1794</date>: A Context for Coleridge&#x02BC;s <hi rend="italic">Monody</hi>&#x201D;</title>
           </analytic>
           <monogr>
+            <title type="main" level="m"><hi rend="italic">Thomas Chatterton and Romantic Culture</hi></title>
             <editor><persName corresp="NGROOM">
               <forename>Nick</forename>
               <surname>Groom</surname>
             </persName></editor>
-            <title type="main" level="m"><hi rend="italic">Thomas Chatterton and Romantic Culture</hi></title>
             <imprint>
               <pubPlace>Basingstoke</pubPlace>
               <publisher>Palgrave Macmillan</publisher>
@@ -3383,13 +3410,13 @@
         
         <biblStruct xml:id="FORGETMENOT1827">
           <monogr>
+            <title level="m" type="main"><hi rend="italic">Forget Me Not: A Christmas and New Year&#x02BC;s Present for MDCCCXXVII</hi></title>
             <editor>
               <persName corresp="FS">
                 <forename>Frederic</forename>
                 <surname>Shoberl</surname>
               </persName>
             </editor>
-            <title level="m" type="main"><hi rend="italic">Forget Me Not: A Christmas and New Year&#x02BC;s Present for MDCCCXXVII</hi></title>
             <imprint>
               <pubPlace>London</pubPlace>
               <publisher>R. Ackermann</publisher>
@@ -3432,25 +3459,6 @@
           </monogr>
         </biblStruct>
         
-        <biblStruct xml:id="FRANKLINWELTER">
-          <analytic>
-            <author><persName corresp="WFRANKLIN">
-              <forename>Wayne</forename>
-              <surname>Franklin</surname>
-            </persName></author>
-            <title level="a">&#x201C;The &#x2018;Library of America&#x2019; and the Welter of American Books&#x201D;</title>
-          </analytic>
-          <monogr>
-            <title level="j"><hi rend="italic">Iowa Review</hi></title>
-            <imprint>
-              <biblScope type="vol">15</biblScope>
-              <biblScope type="issue">2</biblScope>
-              <date when="1985">Spring&#x2013;Summer 1985</date>
-              <biblScope type="pages">176&#x2013;94</biblScope>
-            </imprint>
-          </monogr>
-        </biblStruct>
-        
         <biblStruct xml:id="FRANCOISBELGIUM">
           <analytic>
             <author><persName corresp="PF">
@@ -3486,6 +3494,25 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="FRANKLINWELTER">
+                        <analytic>
+                          <author><persName corresp="WFRANKLIN">
+                            <forename>Wayne</forename>
+                            <surname>Franklin</surname>
+                          </persName></author>
+                          <title level="a">&#x201C;The &#x2018;Library of America&#x2019; and the Welter of American Books&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Iowa Review</hi></title>
+                          <imprint>
+                            <biblScope type="vol">15</biblScope>
+                            <biblScope type="issue">2</biblScope>
+                            <date when="1985">Spring&#x2013;Summer 1985</date>
+                            <biblScope type="pages">176&#x2013;94</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
         
         <biblStruct xml:id="FREDEMANBROWN">
           <analytic>
@@ -3507,13 +3534,13 @@
         
         <biblStruct xml:id="JENSENFRENCHEMPIRE">
           <monogr>
+            <title level="m" type="main"><hi rend="italic">The French Empire</hi></title>
             <editor>
               <persName corresp="#NDJ">
                 <forename>Nathan D.</forename>
                 <surname>Jensen</surname>
               </persName>
             </editor>
-            <title level="m" type="main"><hi rend="italic">The French Empire</hi></title>
             <imprint>
               <publisher>Nathan D. Jensen</publisher>
               <date notBefore="2005">2005&#x2013;</date>
@@ -3524,13 +3551,13 @@
         
         <biblStruct xml:id="FRIENDSHIPSOFFERING1835">
           <monogr>
+            <title level="m" type="main"><hi rend="italic">Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath: A Christmas and New Year&#x02BC;s Present, for <date when="1835">1835</date></hi></title>
             <editor>
               <persName corresp="TP">
                 <forename>Thomas</forename>
                 <surname>Pringle</surname>
               </persName>
             </editor>
-            <title level="m" type="main"><hi rend="italic">Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath: A Christmas and New Year&#x02BC;s Present, for <date when="1835">1835</date></hi></title>
             <imprint>
               <pubPlace>London</pubPlace>
               <publisher>Smith, Elder</publisher>
@@ -3541,13 +3568,13 @@
         
         <biblStruct xml:id="FRIENDSHIPSOFFERING1836">
           <monogr>
+            <title level="m" type="main"><hi rend="italic">Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath: A Christmas and New Year&#x02BC;s Present, for <date when="1836">1836</date></hi></title>
             <editor>
               <persName corresp="WHH">
                 <forename>W. H.</forename>
                 <surname>Harrison</surname>
               </persName>
             </editor>
-            <title level="m" type="main"><hi rend="italic">Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath: A Christmas and New Year&#x02BC;s Present, for <date when="1836">1836</date></hi></title>
             <imprint>
               <pubPlace>London</pubPlace>
               <publisher>Smith, Elder</publisher>
@@ -3558,13 +3585,13 @@
         
         <biblStruct xml:id="FRIENDSHIPSOFFERING1826">
           <monogr>
+            <title level="m"><hi rend="italic">Friendship&#x02BC;s Offering: A Literary Album</hi></title>
             <editor>
               <persName corresp="TKHERVEY">
                 <forename>Thomas K.</forename>
                 <surname>Hervey</surname>
               </persName>
             </editor>
-            <title level="m"><hi rend="italic">Friendship&#x02BC;s Offering: A Literary Album</hi></title>
             <imprint>
               <pubPlace>London</pubPlace>
               <publisher>Lupton Relfe</publisher>
@@ -3787,19 +3814,19 @@
           <title level="a">&#x201C;Smollett the Historian: A Reappraisal&#x201D;</title>
         </analytic>
         <monogr>
-          <author>
+          <title level="m" type="main"><hi rend="italic">Tobias Smollett: Bicentennial Essays Presented to Lewis M. Knapp</hi></title>
+          <editor>
             <persName corresp="GSROUSSEAU">
               <forename>G. S.</forename>
               <surname>Rousseau</surname>
             </persName>
-          </author>
-          <author>
+          </editor>
+          <editor>
             <persName corresp="PGBOUCE">
               <forename>P.&#x2010;G.</forename>
               <surname>Bouc&#x00E9;</surname>
             </persName>
-          </author>
-          <title level="m" type="main"><hi rend="italic">Tobias Smollett: Bicentennial Essays Presented to Lewis M. Knapp</hi></title>
+          </editor>
           <imprint>
             <pubPlace>New York</pubPlace>
             <publisher>Oxford University Press</publisher>
@@ -3886,6 +3913,8 @@
               <forename>Thomas</forename>
               <surname>Hake</surname>
             </persName>
+          </author>
+          <author>
             <persName corresp="ACOMPTONRICKETT">
               <forename>Arthur</forename>
               <surname>Compton&#x2010;Rickett</surname>
@@ -3893,7 +3922,7 @@
           </author>
           <title level="m"><hi rend="italic">The Life and Letters of Theodore Watts&#x2010;Dunton</hi></title>
           <imprint>
-            <biblScope>2 vols.</biblScope>
+            <biblScope type="vol" n="2">2 vols.</biblScope>
             <pubPlace>London</pubPlace>
             <publisher>T. C. &#x0026; E. C. Jack</publisher>
             <date when="1916">1916</date>
@@ -3999,27 +4028,27 @@
               <surname>Hanson</surname>
             </persName>
           </author>
-          <title>&#x201C;Ruskin in the 1830s: The Materiality of Travel Literature in &#x2018;Account of a Tour on the Continent&#x2019; and &#x2018;Saltzburg&#x2019;&#x201D;</title>
+          <title>&#x201C;Ruskin in the 1830s: Emerging Authorship and the Print Culture of Travel&#x201D;</title>
         </analytic>
         <monogr>
-          <author>
+          <title level="m"><hi rend="italic">Continental Tourism, Travel Writing, and the Consumption of Culture in the Nineteenth Century</hi></title>
+          <editor>
             <persName corresp="BCOLBERT">
               <forename>Benjamin</forename>
               <surname>Colbert</surname>
             </persName>
-          </author>
-          <author>
+          </editor>
+          <editor>
             <persName corresp="LMORRISON">
               <forename>Lucy</forename>
               <surname>Morrison</surname>
             </persName>
-          </author>
-          <title level="m"><hi rend="italic">Beyond the Grand Tour: Continental Travel Writing and Tourism, <date notBefore="1815" notAfter="1915">1815&#x2013;1915</date></hi></title>
+          </editor>
           <imprint>
             <pubPlace>Basingstoke</pubPlace>
             <publisher>Palgrave Macmillan</publisher>
             <date when="2015">forthcoming</date>
-            <biblScope type="pages">to come</biblScope>
+            <!--<biblScope type="pages">to come</biblScope>-->
           </imprint>
         </monogr>
       </biblStruct>
@@ -4093,11 +4122,11 @@
           <imprint>
             <biblScope type="vol">1</biblScope>
             <biblScope type="issue">1</biblScope>
-            <pubPlace>http://journals.tdl.org/paj/index.php/paj/article/view/23</pubPlace>
             <date when="2007">2007</date>
             <biblScope type="pages">1&#x2013;30</biblScope>
           </imprint>
         </monogr>
+        <note>http://journals.tdl.org/paj/index.php/paj/article/view/23</note>
       </biblStruct>
       
       <biblStruct xml:id="HARRISGENRESUCCEEDS">
@@ -4148,6 +4177,44 @@
           </imprint>
         </monogr>
       </biblStruct>
+                      
+                      <biblStruct xml:id="HASKELLITALIANPATRON">
+                        <monogr>
+                          <author>
+                            <persName corresp="FHASKELL">
+                              <forename>Francis</forename>
+                              <surname>Haskell</surname>
+                            </persName>
+                          </author>
+                          <title level="m" type="main"><hi rend="italic">An Italian Patron of French Neo&#x2010;Classic Art</hi></title>
+                          <imprint>
+                            <pubPlace>Oxford</pubPlace>
+                            <publisher>Clarendon Press</publisher>
+                            <date when="1972">1972</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="HASKELLMOREABOUTSOMMARIVA">
+                        <analytic>
+                          <author>
+                            <persName corresp="FHASKELL">
+                              <forename>Francis</forename>
+                              <surname>Haskell</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;More about Sommariva&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Burlington Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="vol">114</biblScope>
+                            <biblScope type="issue">835</biblScope>
+                            <date when="2015">October 1972</date>
+                            <biblScope type="pages">691&#x2013;95</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
       
       <biblStruct xml:id="HASKELLREDISCOVERIES">
         <monogr>
@@ -4157,7 +4224,7 @@
               <surname>Haskell</surname>
             </persName>
           </author>
-          <title level="m" type="main"><hi rend="italic">Rediscoveries in Art" Some Aspects of Taste, Fashion, and Collecting in England and France</hi></title>
+          <title level="m" type="main"><hi rend="italic">Rediscoveries in Art: Some Aspects of Taste, Fashion, and Collecting in England and France</hi></title>
           <imprint>
             <pubPlace>Ithaca, N.Y.</pubPlace>
             <publisher>Cornell University Press</publisher>
@@ -4181,10 +4248,9 @@
           <imprint>
             <publisher>University of Maryland</publisher>
             <date notBefore="1996">1996&#x2013;</date>
-            <pubPlace>https://www.rc.umd.edu/reference/chronologies/byronchronology/index.html (accessed <date when="2018-01-21">21 January 2018</date>)</pubPlace>
-            
           </imprint>
         </monogr>
+        <note>https://www.rc.umd.edu/reference/chronologies/byronchronology/index.html (accessed <date when="2018-01-21">21 January 2018</date>)</note> 
       </biblStruct>
       
       <biblStruct xml:id="HEALENGLISHWRITINGMASTERS">
@@ -4273,7 +4339,6 @@
         </monogr>
       </biblStruct>
       
-      
       <biblStruct xml:id="BACKHOUSEGRAVE">
         <analytic>
           <title level="a">&#x201C;Henry Fleetwood Backhouse&#x201D; (grave)</title>
@@ -4283,10 +4348,9 @@
           <imprint>
             <publisher>Jim Tipton</publisher>
             <date notBefore="1995">1995</date>
-            <pubPlace>http://www.findagrave.com (accessed <date when="2012-01-01">1 January 2012</date>)</pubPlace>
-            
           </imprint>
         </monogr>
+        <note>http://www.findagrave.com (accessed <date when="2012-01-01">1 January 2012</date>)</note>
       </biblStruct>
       
       <biblStruct xml:id="HERRMANNTURNERPRINTS">
@@ -4442,10 +4506,9 @@
           <imprint>
             <publisher>King Baudouin Foundation Company</publisher>
             <date>n.d.</date>
-            <pubPlace>http://belvue.be/en/history (accessed <date when="2014-11-14">14 November 2014</date>)</pubPlace>
-            
           </imprint>
         </monogr>
+        <note>http://belvue.be/en/history (accessed <date when="2014-11-14">14 November 2014</date>)</note>
       </biblStruct>
       
       <biblStruct xml:id="YALECOLLECTION">
@@ -4488,13 +4551,6 @@
             <date when="2008">2008</date>
           </imprint>
         </monogr>
-        <series>
-          <title level="s"><hi rend="italic">The Stirling / South Carolina Research Edition of the Collected Works of James Hogg</hi></title>
-          <editor>Douglas S. Mack and Gillian Hughes</editor>
-          <biblScope>
-            <date notBefore="1995">1995&#x2013;</date>
-          </biblScope>
-        </series>
       </biblStruct>
       
       <biblStruct xml:id="HOGGWORKSANNUALS">
@@ -4524,13 +4580,6 @@
             <date when="2006">2006</date>
           </imprint>
         </monogr>
-        <series>
-          <title level="s"><hi rend="italic">The Stirling / South Carolina Research Edition of the Collected Works of James Hogg</hi></title>
-          <editor>Douglas S. Mack and Gillian Hughes</editor>
-          <biblScope>
-            <date notBefore="1995">1995&#x2013;</date>
-          </biblScope>
-        </series>
       </biblStruct>
       
       <biblStruct xml:id="HOLCOMBCLASSICALTURNER">
@@ -4582,9 +4631,9 @@
           <imprint>
             <publisher>Oxford University Press</publisher>
             <date when="2004">2004</date>
-            <pubPlace>http://www.oxforddnb.com/view/article/57406 (accessed <date when="2012-03-30">30 March 2012</date>)</pubPlace>
-          </imprint>
+            </imprint>
         </monogr>
+        <note>http://www.oxforddnb.com/view/article/57406 (accessed <date when="2012-03-30">30 March 2012</date>)</note>
       </biblStruct>
       
       <biblStruct xml:id="HONANBROWNINGSTESTIMONY">
@@ -4643,13 +4692,6 @@
             <biblScope type="pages">xlii&#x2013;liv</biblScope>
           </imprint>
         </monogr>
-        <series>
-          <title level="s">The Stirling / South Carolina Research Edition of the Collected Works of James Hogg</title>
-          <editor>Douglas S. Mack and Gillian Hughes</editor>
-          <biblScope>
-            <date notBefore="1995">1995&#x2013;</date>
-          </biblScope>
-        </series>
       </biblStruct>
       
       <biblStruct xml:id="HUGHESINTROHOGGALTRIVE">
@@ -4683,13 +4725,6 @@
             <biblScope type="pages">xi&#x2013;lxvii</biblScope>
           </imprint>
         </monogr>
-        <series>
-          <title level="s"><hi rend="italic">The Stirling / South Carolina Research Edition of the Collected Works of James Hogg</hi></title>
-          <editor>Douglas S. Mack and Gillian Hughes</editor>
-          <biblScope>
-            <date notBefore="1995">1995&#x2013;</date>
-          </biblScope>
-        </series>
       </biblStruct>
       
       <biblStruct xml:id="HUGHESINTROHOGGLETTERSVOL3">
@@ -4723,13 +4758,6 @@
             <biblScope type="pages">xiii&#x2013;xlviii</biblScope>
           </imprint>
         </monogr>
-        <series>
-          <title level="s"><hi rend="italic">The Stirling / South Carolina Research Edition of the Collected Works of James Hogg</hi></title>
-          <editor>Douglas S. Mack and Gillian Hughes</editor>
-          <biblScope>
-            <date notBefore="1995">1995&#x2013;</date>
-          </biblScope>
-        </series>
       </biblStruct>
       
       <biblStruct xml:id="HUGHESINTROHOGGANNUALS">
@@ -4769,13 +4797,6 @@
             <biblScope type="pages">282&#x2013;361</biblScope>
           </imprint>
         </monogr>
-        <series>
-          <title level="s"><hi rend="italic">The Stirling / South Carolina Research Edition of the Collected Works of James Hogg</hi></title>
-          <editor>Douglas S. Mack and Gillian Hughes</editor>
-          <biblScope>
-            <date notBefore="1995">1995&#x2013;</date>
-          </biblScope>
-        </series>
       </biblStruct>
       
       <biblStruct xml:id="HUGHESHOGGLIFE">
@@ -4891,7 +4912,7 @@
           <title level="m" type="main"><hi rend="italic">Ireland in <date when="1834">1834</date>: A Journey throughout Ireland, during the Spring, Summer, and Autumn of <date when="1834">1834</date></hi></title>
           <edition>3d ed.</edition>
           <imprint>
-            <biblScope type="vol" n="2">2 vols.</biblScope>
+            <biblScope type="vol" n="2">2</biblScope>
             <pubPlace>London</pubPlace>
             <publisher>Whittaker</publisher>
             <date when="1835">1835</date>
@@ -4910,7 +4931,7 @@
           <title level="m" type="main"><hi rend="italic">The Tyrol; with a Glance at Bavaria</hi></title>
           <edition>2d ed.</edition>
           <imprint>
-            <biblScope type="vol" n="2">2 vols.</biblScope>
+            <biblScope type="vol" n="2">2</biblScope>
             <pubPlace>London</pubPlace>
             <publisher>Whittaker, Treacher</publisher>
             <date when="1834">1834</date>
@@ -4935,7 +4956,7 @@
               <surname>Smout</surname>
             </persName>
           </author>
-          <title level="m">Scotland and the Sea</title>
+          <title level="m"><hi rend="italic">Scotland and the Sea</hi></title>
           <imprint>
             <pubPlace>Edinburgh</pubPlace>
             <publisher>John Donald</publisher>
@@ -5022,7 +5043,7 @@
         <monogr>
           <title level="j"><hi rend="italic"><date notBefore="1701" notAfter="1800">Eighteenth&#x2010;Century</date> Studies</hi></title>
           <imprint>
-            <biblScope type="vol">24</biblScope>
+            <biblScope type="vol" n="24">24</biblScope>
             <biblScope type="issue">1</biblScope>
             <date when="1990">Autumn 1990</date>
             <biblScope type="pages">47&#x2013;68</biblScope>
@@ -5041,7 +5062,7 @@
           <title level="m" type="main"><hi rend="italic">Scientific Dialogues: Intended for the Instruction and Entertainment of Young People: In Which the First Principles of Natural and Experimental Philosophy Are Fully Explained</hi></title>
           <edition>New ed., corrected and improved</edition>
           <imprint>
-            <biblScope type="vol" n="3">3 vols.</biblScope>
+            <biblScope type="vol" n="3">3</biblScope>
             <pubPlace>Philadelphia</pubPlace>
             <publisher>M. Carey &#x0026; Son</publisher>
             <date when="1825">1825</date>
@@ -5060,7 +5081,7 @@
         <monogr>
           <title level="j"><hi rend="italic">Victorian Periodicals Review</hi></title>
           <imprint>
-            <biblScope type="vol">45</biblScope>
+            <biblScope type="vol" n="45">45</biblScope>
             <biblScope type="issue">1</biblScope>
             <date when="2012">Spring 2012</date>
             <biblScope type="pages">23&#x2013;48</biblScope>
@@ -5079,7 +5100,7 @@
         <monogr>
           <title level="j"><hi rend="italic">Studies in <date notBefore="1701" notAfter="1800">Eighteenth&#x2010;Century</date> Culture</hi></title>
           <imprint>
-            <biblScope type="vol">41</biblScope>
+            <biblScope type="vol" n="41">41</biblScope>
             <date when="2012">2012</date>
             <biblScope type="pages">27&#x2013;53</biblScope>
           </imprint>
@@ -5136,9 +5157,9 @@
                           <imprint>
                             <publisher>The New York Public Library Digital Collections</publisher>
                             <date>n.d.</date>
-                            <pubPlace>https://digitalcollections.nypl.org/items/b41097cf-1f22-ff08-e040-e00a180649a9 (accessed <date when="2018-07-30">30 July 2018)</date></pubPlace>
                           </imprint>
                         </monogr>
+                        <note>https://digitalcollections.nypl.org/items/b41097cf-1f22-ff08-e040-e00a180649a9 (accessed <date when="2018-07-30">30 July 2018)</date></note>
                       </biblStruct>
       
       <biblStruct xml:id="PICKERING">
@@ -5169,7 +5190,10 @@
           </author>
           <respStmt>
             <resp>Revised by</resp>
-            <persName corresp="RWMAUDE">R. W. Maude</persName>
+            <persName corresp="RWMAUDE">R. W. Maude
+              <forename>R. W.</forename>
+              <surname>Maude</surname>
+            </persName>
           </respStmt>
           <title level="m" type="main"><hi rend="italic">A Handbook for Travellers in Surrey, Hampshire, and the Isle of Wight</hi></title>
           <edition>4th ed.</edition>
@@ -5194,8 +5218,9 @@
         <monogr>
           <title  level="j"><hi rend="italic">Notes and Records of the Royal Society of London</hi></title>
           <imprint>
-            <biblScope type="vol">42, no. 2</biblScope>
-            <date when="1988-07">July 1988</date>
+            <biblScope type="vol" n="42">42.</biblScope>
+            <biblScope type="issue">2</biblScope>
+            <date when="1988-07">(July 1988).</date>
             <biblScope type="pages">149&#x2013;80</biblScope>
           </imprint>
         </monogr>
@@ -5211,7 +5236,7 @@
           </author>
           <title level="m" type="main"><hi rend="italic">The Architecture of Modern Italy</hi></title>
           <imprint>
-            <biblScope type="vol" n="2">2 vols.</biblScope>
+            <biblScope type="vol" n="2">2</biblScope>
             <pubPlace>Hudson, N.Y.</pubPlace>
             <publisher>Princeton Architectural Press</publisher>
             <date when="2005">2005</date>
@@ -5309,7 +5334,7 @@
         <monogr>
           <title level="j"><hi rend="italic">Victorian Review</hi></title>
           <imprint>
-            <biblScope type="vol">28</biblScope>
+            <biblScope type="vol" n="28">28</biblScope>
             <biblScope type="issue">2</biblScope>
             <date when="2002">2002</date>
             <biblScope type="pages">21&#x2013;30</biblScope>
@@ -5321,7 +5346,8 @@
         <monogr>
           <author>
             <persName corresp="JML">
-              <surname>[Leigh, James Mathews]</surname>
+              <forename>James Mathews</forename>
+              <surname>Leigh</surname>
             </persName>
           </author>
           <title level="m"><hi rend="italic">The Rhenish Album; Or, Scraps from the Rhine: The Journal of a Travelling Artist through Holland, Up the Rhine to Strasburg, and Returning through Belgium; with Notices of Public Edifices, Hotels, &#x0026;c., Tables of Expenses, and Other Information Useful to the Tourist</hi></title>
@@ -5356,7 +5382,7 @@
               <surname>Murphy</surname>
             </persName>
           </author>
-          <title level="m"><hi rend="italic">Anna Letitia Barbauld: New Perspectives</hi></title>
+          <title level="m"><hi rend="italic">Anna Laetitia Barbauld: New Perspectives</hi></title>
           <imprint>
             <pubPlace>Lewisburg</pubPlace>
             <publisher>Bucknell University Press</publisher>
@@ -5373,7 +5399,7 @@
         <monogr>
           <title level="j"><hi rend="italic">The Spiritual Times: A Monthly Magazine</hi></title>
           <imprint>
-            <biblScope type="vol">1</biblScope>
+            <biblScope type="vol" n="1">1</biblScope>
             <biblScope type="issue">5</biblScope>
             <date when="1829-09-01">1 September 1829</date>
             <biblScope type="pages">200&#x2013;201</biblScope>
@@ -5421,27 +5447,38 @@
           <title level="m"><hi rend="italic">The History of Rome</hi></title>
           <respStmt>
             <resp>Books 1&#x2010;8 literally translated with notes and illustrations by</resp>
-            <persName corresp="#DSPILLAN">D. Spillan</persName>
+            <persName corresp="#DSPILLAN">
+            <forename>D.</forename>
+            <surname>Spillan</surname>
+            </persName>
           </respStmt>
           <respStmt>
             <resp>Books nine to twenty&#x2010;six literally translated with notes and illustrations by</resp>
-            <persName corresp="#CEDMONDS">D. Spillan and Cyrus Edmonds</persName>
+            <persName corresp="#CEDMONDS">
+              <forename>D.</forename>
+              <surname>Spillan</surname>
+              <forename>Cyrus</forename>
+              <surname>Edmonds</surname>
+            </persName>
           </respStmt>
           <respStmt>
             <resp>Books thirty&#x2010;seven to the end, with the epitomes and fragments of the lost books, literally translated by</resp>
-            <persName corresp="#WAMD">William A. M&#x02BC;Devitte</persName>
+            <persName corresp="#WAMD">
+              <forename>William A.</forename>
+              <surname>M&#x02BC;Devitte</surname>
+            </persName>
           </respStmt>
           <imprint>
-            <biblScope type="vol" n="2">3 vols.</biblScope>
+            <biblScope type="vol" n="3">3</biblScope>
             <pubPlace>London</pubPlace>
             <publisher>Henry G. Bohn</publisher>
             <date notBefore="1849" notAfter="1850">1849&#x2013;50</date>
           </imprint>
           <imprint>
             <publisher>Perseus Digital Library</publisher>
-            <pubPlace>http://www.perseus.tufts.edu/hopper/</pubPlace>
           </imprint>
         </monogr>
+        <note>http://www.perseus.tufts.edu/hopper/</note>
       </biblStruct>
       
       <biblStruct xml:id="LOCKETTPROUT">
@@ -5470,12 +5507,14 @@
             </persName>
           </author>
           <title level="m"><hi rend="italic">The Complete Poetical Works</hi></title>
-          <editor corresp="JJM">
+          <editor>
+            <persName corresp="JJM">
             <forename>Jerome J.</forename>
             <surname>McGann</surname>
+            </persName>
           </editor>
           <imprint>
-            <biblScope type="vol" n="7">7 vols.</biblScope>
+            <biblScope type="vol" n="7">7</biblScope>
             <pubPlace>Oxford</pubPlace>
             <publisher>Clarendon Press</publisher>
             <date notBefore="1980" notAfter="1993">1980&#x2013;93</date>
@@ -5495,23 +5534,23 @@
           <respStmt>
             <resp>Illustrated by</resp>
             <persName corresp="EFF">
-              <forename> Edward Francis</forename>
-              <surname> Finden </surname>
+              <forename>Edward Francis</forename>
+              <surname>Finden</surname>
             </persName>
             <persName corresp="WF">
-              <forename> William</forename>
-              <surname> Finden </surname>
+              <forename>William</forename>
+              <surname>Finden</surname>
             </persName>
           </respStmt>
           <respStmt>
             <resp>Engravings introduced by</resp>
             <persName corresp="WBI">
-              <forename> William </forename>
-              <surname> Brockedon </surname>
+              <forename>William</forename>
+              <surname>Brockedon</surname>
             </persName>
           </respStmt>
           <imprint>
-            <biblScope type="vol" n="3">3 vols.</biblScope>
+            <biblScope type="vol" n="3">3</biblScope>
             <pubPlace>London</pubPlace>
             <publisher>John Murray</publisher>
             <date notBefore="1833" notAfter="1834">1833&#x2013;34</date>
@@ -5540,13 +5579,15 @@
             </persName>
           </author>
           <title level="m"><hi rend="italic">Letters and Journals of Lord Byron; with Notices of His Life</hi></title>
-          <editor corresp="TM">
+          <editor>
+            <persName corresp="TM">
             <forename>Thomas</forename>
             <surname>Moore</surname>
+          </persName>
           </editor>
           <edition>3d ed.</edition>
           <imprint>
-            <biblScope type="vol" n="3">3 vols.</biblScope>
+            <biblScope type="vol" n="3">3</biblScope>
             <pubPlace>Oxford</pubPlace>
             <publisher>Clarendon Press</publisher>
             <date notBefore="1980" notAfter="1993">1980&#x2013;93</date>
@@ -5564,10 +5605,13 @@
           <title level="m"><hi rend="italic">The Right Joyous and Pleasant History of the Feats, Gests, and Prowesses of the Chevalier Bayard, the Good Knight without Fear and without Reproach</hi></title>
           <respStmt>
             <resp>Translated by</resp>
-            <name>Sara Coleridge</name>
+            <persName corresp="SCOLERIDGE">
+              <forename>Sara</forename>
+              <surname>Coleridge</surname>
+            </persName>
           </respStmt>
           <imprint>
-            <biblScope type="vol" n="2">2 vols.</biblScope>
+            <biblScope type="vol" n="2">2</biblScope>
             <pubPlace>London</pubPlace>
             <publisher>John Murray</publisher>
             <date when="1825">1825</date>
@@ -5605,7 +5649,7 @@
         <monogr>
           <title level="j"><hi rend="italic">Durham University Journal</hi></title>
           <imprint>
-            <biblScope type="vol">63</biblScope>
+            <biblScope type="vol" n="63">63</biblScope>
             <biblScope type="issue">3</biblScope>
             <date when="1971-06">June 1971</date>
             <biblScope type="pages">196&#x2013;207</biblScope>
@@ -5660,7 +5704,7 @@
         <monogr>
           <title level="j"><hi rend="italic">Romanticism</hi></title>
           <imprint>
-            <biblScope type="vol">19</biblScope>
+            <biblScope type="vol" n="19">19</biblScope>
             <biblScope type="issue">2</biblScope>
             <date when="2013">2013</date>
             <biblScope type="pages">138&#x2013;52</biblScope>
@@ -5747,12 +5791,14 @@
             </persName>
           </author>
           <title level="m"><hi rend="italic">Billy Budd, Sailor</hi></title>
-          <editor><persName corresp="HMHAYFORD">
+          <editor>
+            <persName corresp="HMHAYFORD">
             <forename>Harrison</forename>
             <surname>Hayford</surname>
           </persName>
         </editor>
-        <editor><persName corresp="MMSEALTS">
+        <editor>
+          <persName corresp="MMSEALTS">
           <forename>Merton M.</forename>
           <surname>Sealts Jr.</surname>
         </persName>
@@ -5813,10 +5859,12 @@
   
   <biblStruct xml:id="METZLERSPRANGER">
     <monogr>
-      <author><persName corresp="SMETZLER">
+      <author>
+        <persName corresp="SMETZLER">
         <forename>Sally</forename>
         <surname>Metzler</surname>
-      </persName></author>
+      </persName>
+      </author>
       <title level="m" type="main"><hi rend="italic">Bartholomeus Spranger: Splendor and Eroticism in Imperial Prague</hi></title>
       <imprint>
         <pubPlace>New Haven, Conn.</pubPlace>
@@ -5854,9 +5902,9 @@
       </imprint>
       <imprint>
         <publisher>Liberty Fund, Online Library of Liberty</publisher>
-        <pubPlace>http://oll.libertyfund.org/titles/mill-the-collected-works-of-john-stuart-mill-volume-i-autobiography-and-literary-essays</pubPlace>
       </imprint>
     </monogr>
+    <note>http://oll.libertyfund.org/titles/mill-the-collected-works-of-john-stuart-mill-volume-i-autobiography-and-literary-essays</note>
   </biblStruct>
   
   <biblStruct xml:id="MILLERGROTTO">
@@ -5919,7 +5967,7 @@
         </persName>
       </author>
       <title level="m" type="main"><hi rend="italic">Mogg&#x02BC;s New Picture of London; or, Strangers&#x02BC; Guide to the British Metropolis</hi></title>
-      <edition n="11">11th ed.</edition>
+      <edition n="11">11</edition>
       <imprint>
         <pubPlace>London</pubPlace>
         <publisher>E. Mogg</publisher>
@@ -5964,13 +6012,13 @@
         </persName>
       </author>
       <title level="m" type="main"><hi rend="italic">The Unfortunate Tourist of Helvellyn and His Faithful Dog</hi></title>
-      <note>Published to accompany an exhibition by the Wordsworth Trust, Grasmere, <date notBefore="2003-01-24" notAfter="2003-04-25">24 January&#x2013;25 April 2003</date>.</note>
       <imprint>
         <pubPlace>Grasmere</pubPlace>
         <publisher>Wordsworth Trust; Utopia Press</publisher>
         <date when="2003">2003</date>
       </imprint>
     </monogr>
+    <note>Published to accompany an exhibition by the Wordsworth Trust, Grasmere, <date notBefore="2003-01-24" notAfter="2003-04-25">24 January&#x2013;25 April 2003</date>.</note>
   </biblStruct>
   
   <biblStruct xml:id="MORTENSENEUROPHOBIA">
@@ -6018,9 +6066,9 @@
       <imprint>
         <publisher>Oxford University Press</publisher>
         <date when="2004">2004</date>
-        <pubPlace>http://www.oxforddnb.com/view/article/13297 (accessed <date when="2016-01-03">3 January 2016</date>)</pubPlace>
       </imprint>
     </monogr>
+    <note>http://www.oxforddnb.com/view/article/13297 (accessed <date when="2016-01-03">3 January 2016</date>)</note>
   </biblStruct>
   
   <biblStruct xml:id="MURCHMRSBARBAULD">
@@ -6076,22 +6124,24 @@
   
   <biblStruct xml:id="NICOLLFIRSTPUBLISHEDWRITINGS">
     <analytic>
-      <author><persName corresp="WRN">
+      <author>
+        <persName corresp="WRN">
         <forename>W. Robertson</forename>
         <surname>Nicoll</surname>
-      </persName></author>
+      </persName>
+      </author>
       <title level="a">&#x201C;The First Published Writings of Mr. Ruskin&#x201D;</title>
     </analytic>
     <monogr>
       <title level="j"><hi rend="italic">The Bookman: An Illustrated Literary Journal</hi></title>
       <imprint>
-        <biblScope type="vol">8</biblScope>
+        <biblScope type="vol" n="8">8</biblScope>
         <biblScope type="issue">45</biblScope>
         <date when="1895-06">June 1895</date>
         <biblScope type="pages">77&#x2013;78 [British edition]</biblScope>
       </imprint>
       <imprint>
-        <biblScope type="vol">1</biblScope>
+        <biblScope type="vol" n="1">1</biblScope>
         <biblScope type="issue">5</biblScope>
         <date when="1895-06">June 1895</date>
         <biblScope type="pages">321 [American edition]</biblScope>
@@ -6139,7 +6189,7 @@
     <monogr>
       <title  level="j"><hi rend="italic">Yale University Library Gazette</hi></title>
       <imprint>
-        <biblScope type="vol">17</biblScope>
+        <biblScope type="vol" n="17">17</biblScope>
         <biblScope type="issue">3</biblScope>
         <date when="1943-10">January 1943</date>
         <biblScope type="pages">59</biblScope>
@@ -6154,7 +6204,7 @@
     <monogr>
       <title  level="j"><hi rend="italic">Yale University Library Gazette</hi></title>
       <imprint>
-        <biblScope type="vol">18</biblScope>
+        <biblScope type="vol" n="18">18</biblScope>
         <biblScope type="issue">2</biblScope>
         <date when="1943-10">October 1943</date>
         <biblScope type="pages">36</biblScope>
@@ -6173,7 +6223,7 @@
     <monogr>
       <title level="j"><hi rend="italic">United Reformed Church History Society</hi></title>
       <imprint>
-        <biblScope type="vol">5</biblScope>
+        <biblScope type="vol" n="5">5</biblScope>
         <biblScope type="issue">8</biblScope>
         <date when="1996-05">May 1996</date>
         <biblScope type="pages">477&#x2013;83</biblScope>
@@ -6229,13 +6279,6 @@
         <biblScope type="pages">lxxxvii&#x2013;&#x2013;cxiii</biblScope>
       </imprint>
     </monogr>
-    <series>
-      <title level="s"><hi rend="italic">The Stirling / South Carolina Research Edition of the Collected Works of James Hogg</hi></title>
-      <editor>Douglas S. Mack and Gillian Hughes</editor>
-      <biblScope>
-        <date notBefore="1995">1995&#x2013;</date>
-      </biblScope>
-    </series>
   </biblStruct>
   
   <biblStruct xml:id="OLSENCITY">
@@ -6264,9 +6307,9 @@
       <imprint>
         <publisher>National Museums, Liverpool</publisher>
         <date>n.d.</date>
-        <pubPlace>http://www.liverpoolmuseums.org.uk/walker/collections/research/documents/The-Oratory-and-St-James.pdf (accessed <date when="2012-05-26">25 May 2018</date>)</pubPlace>
       </imprint>
     </monogr>
+    <note>http://www.liverpoolmuseums.org.uk/walker/collections/research/documents/The-Oratory-and-St-James.pdf (accessed <date when="2012-05-26">25 May 2018</date>)</note>
   </biblStruct>
   
   <biblStruct xml:id="ORMONDLANDSEER">
@@ -6278,9 +6321,15 @@
         </persName>
       </author>
       <title level="m" type="main"><hi rend="italic">Sir Edwin Landseer</hi></title>
-      <respStmt><resp>With controbutions by</resp>
-      <persName>Joseph Rishel</persName>
-      <persName>Robin Hamlyn</persName>
+      <respStmt><resp>With contributions by</resp>
+      <persName>
+        <forename>Joseph</forename>
+        <surname>Rishel</surname>
+      </persName>
+      <persName>
+        <forename>Robin</forename>
+        <surname>Hamlyn</surname>
+      </persName>
     </respStmt>
     <imprint>
       <pubPlace>New York</pubPlace>
@@ -6318,7 +6367,7 @@
   <monogr>
     <title level="j"><hi rend="italic">Studies in Bibliography</hi></title>
     <imprint>
-      <biblScope type="vol">18</biblScope>
+      <biblScope type="vol" n="18">18</biblScope>
       <date when="1965">1965</date>
       <biblScope type="pages">111&#x2013;45</biblScope>
     </imprint>
@@ -6336,7 +6385,7 @@
   <monogr>
     <title level="j"><hi rend="italic">Studies in Bibliography</hi></title>
     <imprint>
-      <biblScope type="vol">34</biblScope>
+      <biblScope type="vol" n="34">34</biblScope>
       <date when="1981">1981</date>
       <biblScope type="pages">262&#x2013;67</biblScope>
     </imprint>
@@ -6345,10 +6394,12 @@
 
 <biblStruct xml:id="PARSONSWORTHTHEDETOUR">
   <monogr>
-    <author><persName corresp="NTP">
+    <author>
+      <persName corresp="NTP">
       <forename>Nicholas T.</forename>
       <surname>Parsons</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">Worth the Detour: A History of the Guidebook</hi></title>
     <imprint>
       <pubPlace>Stroud</pubPlace>
@@ -6394,10 +6445,12 @@
 
 <biblStruct xml:id="PATTENDICKENSANDBOZ">
   <monogr>
-    <author><persName corresp="RLPATTEN">
+    <author>
+      <persName corresp="RLPATTEN">
       <forename>Robert L.</forename>
       <surname>Patten</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">Charles Dickens and &#x201C;Boz&#x201D;</hi></title>
     <title type="sub"><hi rend="italic">The Birth of the Industrial Age&#x2010;Author</hi></title>
     <imprint>
@@ -6410,33 +6463,41 @@
 
 <biblStruct xml:id="PELTZFUNNELLLAWRENCE">
   <analytic>
-    <author><persName corresp="#LPELTZ">
+    <author>
+      <persName corresp="#LPELTZ">
       <forename>Lucy</forename>
       <surname>Peltz</surname>
-    </persName></author>
-    <author><persName corresp="#PFUNNELL">
+    </persName>
+    </author>
+    <author>
+      <persName corresp="#PFUNNELL">
       <forename>Peter</forename>
       <surname>Funnell</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Lawrence in Europe: International Career and Reputation&#x201D;</title>
   </analytic>
   <monogr>
-    <editor><persName corresp="ACALBINSON">
+    <editor>
+      <persName corresp="ACALBINSON">
       <forename>A. Cassandra</forename>
       <surname>Albinson</surname>
     </persName>
   </editor>
-  <editor><persName corresp="JBASKETT">
+  <editor>
+    <persName corresp="JBASKETT">
     <forename>John</forename>
     <surname>Baskett</surname>
   </persName>
 </editor>
-<editor><persName corresp="PFUNNEL">
+<editor>
+  <persName corresp="PFUNNEL">
   <forename>Peter</forename>
   <surname>Funnell</surname>
 </persName>
 </editor>
-<editor><persName corresp="LPELTZ">
+<editor>
+  <persName corresp="LPELTZ">
   <forename>Lucy</forename>
   <surname>Peltz</surname>
 </persName>
@@ -6461,7 +6522,7 @@
     </author>
     <title level="m"><hi rend="italic">A Journey from London to the Isle of Wight</hi></title>
     <imprint>
-      <biblScope type="vol">2 vols.</biblScope>
+      <biblScope type="vol" n="2">2</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>Oriental Press</publisher>
       <date when="1801">1801</date>
@@ -6480,7 +6541,7 @@
       </persName>
     </respStmt>
     <imprint>
-      <biblScope type="vol">27 vols.</biblScope>
+      <biblScope type="vol" n="27">27</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>Charles Knight</publisher>
       <date notBefore="1833" notAfter="1843">1833&#x2013;43</date>
@@ -6534,14 +6595,20 @@
     <title level="m"><hi rend="italic">Letters</hi></title>
     <respStmt>
       <resp>With an English translation [<date when="1746">1746</date>] by</resp>
-      <persName corresp="#WMELMOTH">William Melmoth</persName>
+      <persName corresp="#WMELMOTH">
+        <forename>William</forename>
+        <surname>Melmoth</surname>
+        </persName>
     </respStmt>
     <respStmt>
       <resp>Revised by</resp>
-      <persName corresp="#WMLH">W. M. L. Hutchinson</persName>
+      <persName corresp="#WMLH">
+        <forename>W. M. L.</forename>
+        <surname>Hutchinson</surname>
+      </persName>
     </respStmt>
     <imprint>
-      <biblScope type="vol" n="2">2 vols.</biblScope>
+      <biblScope type="vol" n="2">2</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>William Heinemann</publisher>
       <date when="1915">1915</date>
@@ -6551,30 +6618,34 @@
 
 <biblStruct xml:id="POETESSARCHIVE">
   <monogr>
-    <editor><persName corresp="LMANDELL">
+    <editor>
+      <persName corresp="LMANDELL">
       <forename>Laura</forename>
       <surname>Mandell</surname>
-    </persName></editor>
+    </persName>
+    </editor>
     <title level="j"><hi rend="italic">Poetess Archive</hi></title>
     <imprint>
-      <pubPlace>http://idhmc.tamu.edu/poetess/index.html</pubPlace>
       <date notBefore="2006">2006&#x2013;</date>
     </imprint>
   </monogr>
+  <note>http://idhmc.tamu.edu/poetess/index.html</note>
 </biblStruct>
 
 <biblStruct xml:id="POWELLONTHEWING">
   <analytic>
-    <author><persName corresp="CPOWELL">
+    <author>
+      <persName corresp="CPOWELL">
       <forename>Cecilia</forename>
       <surname>Powell</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;On the Wing through Space and Time: The Dynamics of Turner&#x02BC;s Italy&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Forum for Modern Language Studies</hi></title>
     <imprint>
-      <biblScope type="vol">39</biblScope>
+      <biblScope type="vol" n="39">39</biblScope>
       <biblScope type="issue">2</biblScope>
       <date when="2003-04">April 2003</date>
       <biblScope type="pages">190&#x2013;201</biblScope>
@@ -6601,23 +6672,26 @@
 
 <biblStruct xml:id="POWELLTURNERSVIGNETTES">
   <analytic>
-    <author><persName corresp="CPOWELL">
+    <author>
+      <persName corresp="CPOWELL">
       <forename>Cecilia</forename>
       <surname>Powell</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Turner&#x02BC;s Vignettes and the Making of Rogers&#x02BC; &#x2018;Italy&#x2019;&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Turner Studies</hi></title>
     <imprint>
-      <biblScope type="vol">3</biblScope>
+      <biblScope type="vol" n="3">3</biblScope>
       <biblScope type="issue">1</biblScope>
       <date when="1983">1983</date>
       <biblScope type="pages">2&#x2013;13</biblScope>
     </imprint>
   </monogr>
 </biblStruct>
-<biblStruct xml:id="BECKERPRACTICEOFLETTERS">
+
+ <biblStruct xml:id="BECKERPRACTICEOFLETTERS">
   <monogr>
     <editor>
       <persName corresp="DPBECKER">
@@ -6633,7 +6707,8 @@
     </imprint>
   </monogr>
 </biblStruct>
-<biblStruct xml:id="PRICEPERILOUSCROWN">
+
+ <biblStruct xml:id="PRICEPERILOUSCROWN">
   <monogr>
     <author>
       <persName corresp="MPRICE">
@@ -6666,16 +6741,18 @@
 
 <biblStruct xml:id="COMPLETEBIBLIOGRAPHER">
   <analytic>
-    <author><persName corresp="WFP">
+    <author>
+      <persName corresp="WFP">
       <forename>W. F.</forename>
       <surname>Prideaux</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;The Complete Bibliographer&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Notes and Queries</hi></title>
     <imprint>
-      <biblScope type="series">8</biblScope>
+      <biblScope type="vol">8</biblScope>
       <biblScope type="issue">126</biblScope>
       <date when="1894-05-26">26 May 1894</date>
       <biblScope type="pages">401&#x2013;3</biblScope>
@@ -6724,7 +6801,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">Letters, during a Tour through Some Parts of France, Savoy, Switzerland, Germany, and the Netherlands, in the Summer of <date when="1817">1817</date></hi></title>
-    <edition n="2">2d ed.</edition>
+    <edition n="2">2</edition>
     <imprint>
       <pubPlace>Liverpool</pubPlace>
       <publisher>Thomas Taylor</publisher>
@@ -6810,7 +6887,7 @@
     </editor>
     <title level="j"><hi rend="italic">Architectural Magazine</hi></title>
     <imprint>
-      <biblScope type="vol">2</biblScope>
+      <biblScope type="vol" n="2">2</biblScope>
       <date when="1835-03">March 1835</date>
       <biblScope type="pages">135&#x2013;36</biblScope>
     </imprint>
@@ -6827,7 +6904,7 @@
     </author>
     <title level="m"><hi rend="italic">The Works of Sir Joshua Reynolds, Knight, Late President of the Royal Academy: To Which Is Prefixed an Account of the Life and Writings of the Author, by Edmund Malone</hi></title>
     <imprint>
-      <biblScope type="vol" n="2">2 vols.</biblScope>
+      <biblScope type="vol" n="2">2</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>T. Cadell, Jun., and W. Davies</publisher>
       <date when="1797">1797</date>
@@ -6868,10 +6945,12 @@
     <title level="a">&#x201C;Memoirs of Thomas Pringle&#x201D;</title>
   </analytic>
   <monogr>
-    <author><persName corresp="TP">
+    <author>
+      <persName corresp="TP">
       <forename>Thomas</forename>
       <surname>Pringle</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title type="main" level="m"><hi rend="italic">The Poetical Works of Thomas Pringle; with a Sketch of His Life, by Leitch Ritchie: Studies in Retrospect</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
@@ -6884,16 +6963,18 @@
 
 <biblStruct xml:id="ROBERTSBRITISHARTPERIODICALS">
   <analytic>
-    <author><persName corresp="HEROBERTS">
+    <author>
+      <persName corresp="HEROBERTS">
       <forename>Helene E.</forename>
       <surname>Roberts</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;British Art Periodicals of the Eighteenth and Nineteenth Centuries&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Victorian Periodicals Newsletter</hi></title>
     <imprint>
-      <biblScope type="vol">9</biblScope>
+      <biblScope type="vol" n="9">9</biblScope>
       <date when="1970-07">July 1970</date>
       <biblScope type="pages">1&#x2013;183</biblScope>
     </imprint>
@@ -6919,16 +7000,18 @@
 
 <biblStruct xml:id="FIRSTEDITIONMANIA">
   <analytic>
-    <author><persName corresp="WR">
+    <author>
+      <persName corresp="WR">
       <forename>William</forename>
       <surname>Roberts</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;The First Edition Mania&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Fortnightly Review</hi></title>
     <imprint>
-      <biblScope type="vol">55, n.s.</biblScope>
+      <biblScope type="vol" n="55">55, n.s.</biblScope>
       <date when="1894">1894</date>
       <biblScope type="pages">347&#x2013;54</biblScope>
     </imprint>
@@ -6961,7 +7044,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">Rural Architecture; Being a Series of Designs for Ornamental Cottages</hi></title>
-    <edition>3d ed.</edition>
+    <edition n="3">3</edition>
     <imprint>
       <pubPlace>London</pubPlace>
       <publisher>James Carpenter and Son</publisher>
@@ -7098,7 +7181,8 @@
       </persName>
     </author>
     <title level="m"><hi rend="italic">Selected Letters of William Michael Rossetti</hi></title>
-    <editor><persName corresp="RWPEATTIE">
+    <editor>
+      <persName corresp="RWPEATTIE">
       <forename>Roger W.</forename>
       <surname>Peattie</surname>
     </persName>
@@ -7155,17 +7239,21 @@
 
 <biblStruct xml:id="DEVELOPMENTBIBLIOGRAPHICALSTUDY">
   <analytic>
-    <author><persName corresp="MSS">
+    <author>
+      <persName corresp="MSS">
       <forename>Michael</forename>
       <surname>Sadleir</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;The Development during the Last Fifty Years of Bibliographical Study of Books of the <date notBefore="1801" notAfter="1900">XIXth Century</date>&#x201D;</title>
   </analytic>
   <monogr>
-    <editor><persName corresp="FCFRANCIS">
+    <editor>
+      <persName corresp="FCFRANCIS">
       <forename>F. C.</forename>
       <surname>Francis</surname>
-    </persName></editor>
+    </persName>
+    </editor>
     <title type="main" level="m"><hi rend="italic">The Bibliographical Society, <date notBefore="1892" notAfter="1942">1892&#x2013;1942</date>: Studies in Retrospect</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
@@ -7244,7 +7332,7 @@
     </author>
     <title level="m" type="main"><hi rend="italic">Voyages dans les Alpes: pr&#x00E9;c&#x00E9;d&#x00E9;s d&#x02BC;un essai sur l&#x02BC;histoire naturelle des environs de Gen&#x00E8;ve</hi></title>
     <imprint>
-      <biblScope type="vol">8 vols.</biblScope>
+      <biblScope type="vol" n="8">8</biblScope>
       <pubPlace>Geneva</pubPlace>
       <publisher>Barde, Manget</publisher>
       <pubPlace>Neuch&#x00E2;tel</pubPlace>
@@ -7256,10 +7344,12 @@
 
 <biblStruct xml:id="BLESSINGTONDNB">
   <analytic>
-    <author><persName corresp="WHSCEUERLE">
+    <author>
+      <persName corresp="WHSCEUERLE">
       <forename>William H.</forename>
       <surname>Scheuerle</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Gardiner [n&#x00E9;e Power; other married name, Farmer], Marguerite [Margaret], countess of Blessington (<date notBefore="1789" notAfter="1849">1789&#x2013;1849</date>)&#x201D;</title>
   </analytic>
   <monogr>
@@ -7267,9 +7357,9 @@
     <imprint>
       <publisher>Oxford University Press</publisher>
       <date when="2004">2004</date>
-      <pubPlace>http://www.oxforddnb.com/view/article/2640 (accessed <date when="2018-01-21">21 January 2018</date>)</pubPlace>
     </imprint>
   </monogr>
+  <note>http://www.oxforddnb.com/view/article/2640 (accessed <date when="2018-01-21">21 January 2018</date>)</note>
 </biblStruct>
 
 <biblStruct xml:id="SCHMIDTPICTURESQUE">
@@ -7283,19 +7373,19 @@
     <title>&#x201C;From the Picturesque to the Genuine Vernacular: Nature and Nationhood in Ruskin&#x02BC;s Architectural Thought, <date notBefore="1830" notAfter="1860">1830&#x2013;60&#x201D;</date></title>
   </analytic>
   <monogr>
-    <author>
+    <title level="m"><hi rend="italic">Ruskin in Perspective: Contemporary Essays</hi></title>
+    <editor>
       <persName corresp="CCASALIGGI">
         <forename>Carmen</forename>
         <surname>Casaliggi</surname>
       </persName>
-    </author>
-    <author>
+    </editor>
+    <editor>
       <persName corresp="PMARCHRUSSELL">
         <forename>Paul</forename>
         <surname>March&#x2010;Russell</surname>
       </persName>
-    </author>
-    <title level="m"><hi rend="italic">Ruskin in Perspective: Contemporary Essays</hi></title>
+    </editor>
     <imprint>
       <pubPlace>Newcastle upon Tyne</pubPlace>
       <publisher>Cambridge Scholars Publishing</publisher>
@@ -7315,7 +7405,7 @@
     </author>
     <title level="m" type="main"><hi rend="italic">The Abbot</hi></title>
     <imprint>
-      <biblScope type="vol" n="3">3 vols.</biblScope>
+      <biblScope type="vol" n="3">3</biblScope>
       <pubPlace>Edinburgh</pubPlace>
       <publisher>Archibald Constable, and John Ballantyne</publisher>
       <pubPlace>London</pubPlace>
@@ -7334,18 +7424,20 @@
       </persName>
     </author>
     <title level="m">&#x201C;Essay on Imitations of the Ancient Ballad&#x201D;</title>
-    <respStmt>
-      <resp>Edited by</resp>
-      <name>Douglass H. Thomson</name>
-    </respStmt>
+    <editor>
+      <persName corresp="DHTHOMSON">
+      <forename>Douglass H.</forename>
+      <surname>Thomson</surname>
+      </persName>
+    </editor>
   </analytic>
   <monogr>
     <title level="m" type="main"><hi rend="italic">The Walter Scott Digital Archive</hi></title>
     <imprint>
       <publisher>Edinburgh University Library</publisher>
-      <pubPlace>http://www.walterscott.lib.ed.ac.uk/works/poetry/apology/essay.html</pubPlace>
     </imprint>
   </monogr>
+  <note>http://www.walterscott.lib.ed.ac.uk/works/poetry/apology/essay.html</note>
 </biblStruct>
 
 <biblStruct xml:id="SCOTTMARMIONBAYNE">
@@ -7357,7 +7449,8 @@
       </persName>
     </author>
     <title level="m"><hi rend="italic">Marmion</hi></title>
-    <editor><persName corresp="TBAYNE">
+    <editor>
+      <persName corresp="TBAYNE">
       <forename>Thomas</forename>
       <surname>Bayne</surname>
     </persName>
@@ -7380,7 +7473,7 @@
     </author>
     <title level="m" type="main"><hi rend="italic">Miscellaneous Prose Works of Sir Walter Scott</hi></title>
     <imprint>
-      <biblScope type="vol" n="28">28 vols.</biblScope>
+      <biblScope type="vol" n="28">28</biblScope>
       <pubPlace>Edinburgh</pubPlace>
       <publisher>Robert Cadell</publisher>
       <pubPlace>London</pubPlace>
@@ -7399,12 +7492,14 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">Poetical Works of Sir Walter Scott, Bart.</hi></title>
-    <respStmt>
-      <resp>Edited by</resp>
-      <name>J.G.L. [John Gibson Lockhart]</name>
-    </respStmt>
+    <editor>
+      <persName corresp="JGL">
+      <forename>John Gibson</forename>
+      <surname>Lockhart</surname>
+      </persName>
+    </editor>
     <imprint>
-      <biblScope type="vol" n="12">12 vols.</biblScope>
+      <biblScope type="vol" n="12">12</biblScope>
       <pubPlace>Edinburgh</pubPlace>
       <publisher>Robert Cadell</publisher>
       <pubPlace>London</pubPlace>
@@ -7443,7 +7538,7 @@
     </author>
     <title level="m" type="main"><hi rend="italic">Works: Caledonian Edition</hi></title>
     <imprint>
-      <biblScope type="vol" n="50">50 vols.</biblScope>
+      <biblScope type="vol" n="50">50</biblScope>
       <pubPlace>Boston</pubPlace>
       <publisher>Houghton Mifflin</publisher>
       <date when="1913">1913</date>
@@ -7454,7 +7549,7 @@
 <biblStruct xml:id="SCOTTISHTOURIST">
   <monogr>
     <title level="m" type="main"><hi rend="italic">The Scottish Tourist, and Itinerary: Or, a Guide to the Scenery and Antiquities of Scotland and the Western Islands; with a Description of the Principal Steam&#x2010;boat Tours</hi></title>
-    <edition n="3">3d ed.</edition>
+    <edition n="3">3</edition>
     <imprint>
       <pubPlace>Edinburgh</pubPlace>
       <publisher>Stirling &#x0026; Kenney</publisher>
@@ -7476,7 +7571,7 @@
     </author>
     <title level="m" type="main"><hi rend="italic">Rambles in Germany and Italy, in <date when="1840">1840</date>, <date when="1842">1842</date>, and <date when="1843">1843</date></hi></title>
     <imprint>
-      <biblScope type="vol">2 vols.</biblScope>
+      <biblScope type="vol">2</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>Edward Moxon</publisher>
       <date when="1844">1844</date>
@@ -7500,7 +7595,7 @@
       </persName>
     </editor>
     <imprint>
-      <biblScope type="vol">2 vols.</biblScope>
+      <biblScope type="vol">2</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>Edward Moxon</publisher>
       <date when="1840">1840</date>
@@ -7533,7 +7628,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">The Bibliography of Ruskin: A Bibliographical List Arranged in Chronological Order of the Published Writings in Prose and Verse of John Ruskin, M.A. (from <date notBefore="1834" notAfter="1879">1834 to 1879</date>)</hi></title>
-    <edition>4th ed., revised and enlarged</edition>
+    <edition n="4">4th ed., revised and enlarged</edition>
     <imprint>
       <pubPlace>N.p.</pubPlace>
       <date when="1879">N.d. [1879?]</date>
@@ -7550,7 +7645,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">The Bibliography of Ruskin: A Bibliographical List Arranged in Chronological Order of the Published Writings in Prose and Verse of John Ruskin, M.A. (from <date notBefore="1834" notAfter="1881">1834 to 1881</date>)</hi></title>
-    <edition>5th ed., revised and enlarged</edition>
+    <edition n="5">5th ed., revised and enlarged</edition>
     <imprint>
       <pubPlace>London</pubPlace>
       <publisher>Elliot Stock</publisher>
@@ -7568,7 +7663,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">The Bibliography of Ruskin: A Bibliographical List Arranged in Chronological Order of the Published Writings in Prose and Verse of John Ruskin, M.A., from <date notBefore="1834" notAfter="1878-11">1834 to the Present Time (November 1878)</date></hi></title>
-    <edition>[3d ed.]</edition>
+    <edition n="3">3</edition>
     <imprint>
       <pubPlace>N.p.</pubPlace>
       <date when="1878">1878</date>
@@ -7585,7 +7680,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">The Bibliography of Ruskin: A Bibliographical List Arranged in Chronological Order of the Published Writings in Prose and Verse of John Ruskin, M.A., from <date notBefore="1834" notAfter="1878-10">1834 to the Present Time (October 1878)</date></hi></title>
-    <edition>[2d ed.]</edition>
+    <edition n="2">2</edition>
     <imprint>
       <pubPlace>N.p.</pubPlace>
       <date when="1878">1878</date>
@@ -7602,7 +7697,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">The Bibliography of Ruskin: A Bibliographical List Arranged in Chronological Order of the Published Writings in Prose and Verse of John Ruskin, M.A., from <date notBefore="1835" notAfter="1878-09">1835 to the Present Time (September 1878)</date></hi></title>
-    <edition>[1st ed.]</edition>
+    <edition n="1">1</edition>
     <imprint>
       <pubPlace>N.p.</pubPlace>
       <date when="1878">1878</date>
@@ -7636,7 +7731,7 @@
       </persName>
     </author>
     <title level="m"><hi rend="italic">Translations from Charles Baudelaire, with a Few Original Poems</hi></title>
-    <edition>New ed.</edition>
+    <edition>New ed.</edition><!--Not sure how to fix this without an edition number.-->
     <imprint>
       <pubPlace>London</pubPlace>
       <publisher>B. Robson</publisher>
@@ -7671,7 +7766,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">Scholarly Editing in the Computer Age: Theory and Practice</hi></title>
-    <edition>3d</edition>
+    <edition n="3">3</edition>
     <imprint>
       <pubPlace>Ann Arbor</pubPlace>
       <publisher>University of Michigan Press</publisher>
@@ -7682,23 +7777,25 @@
 
 <biblStruct xml:id="FIRSTPIRATEDEDITION">
   <analytic>
-    <author><persName corresp="DSINCLAIR">
+    <author>
+      <persName corresp="DSINCLAIR">
       <forename>David</forename>
       <surname>Sinclair</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;The First Pirated Edition of Tennyson&#x02BC;s Poems&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Book Collector</hi></title>
     <imprint>
-      <biblScope type="vol">22</biblScope>
+      <biblScope type="vol" n="22">22</biblScope>
       <date when="1973">1973</date>
       <biblScope type="pages">177&#x2013;88</biblScope>
     </imprint>
   </monogr>
 </biblStruct>
 
-<biblStruct xml:id="HOLMEPROUT">
+<biblStruct xml:id="HOLMEPROUT"><!--Will need to come back to this citation.-->
   <monogr>
     <editor>
       <persName corresp="CHOLME">
@@ -7799,9 +7896,9 @@
       </persName>
     </author>
     <title level="m"><hi rend="italic">The History of England, from the Revolution to the Death of George the Second</hi></title>
-    <edition>New ed.</edition>
+    <edition>New ed.</edition><!--How do I denote this with a number?-->
     <imprint>
-      <biblScope type="vol" n="5">5 vols.</biblScope>
+      <biblScope type="vol" n="5">5</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>T. Cadell</publisher>
       <date when="1785">1785</date>
@@ -7876,8 +7973,8 @@
   <monogr>
     <title level="j"><hi rend="italic">Bulletin of the John Rylands University Library</hi></title>
     <imprint>
-      <biblScope type="vol">82</biblScope>
-      <biblScope type="issue">1</biblScope>
+      <biblScope type="vol" n="82">82</biblScope>
+      <biblScope type="issue" n="1">1</biblScope>
       <date when="2000">Spring 2000</date>
       <biblScope type="pages">135&#x2013;91</biblScope>
     </imprint>
@@ -7886,16 +7983,18 @@
 
 <biblStruct xml:id="SPEARRUSKINSITALY">
   <analytic>
-    <author><persName corresp="JLSPEAR">
+    <author>
+      <persName corresp="JLSPEAR">
       <forename>Jeffrey L.</forename>
       <surname>Spear</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Ruskin&#x02BC;s Italy&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Browning Institute Studies</hi></title>
     <imprint>
-      <biblScope type="vol">12</biblScope>
+      <biblScope type="vol" n="12">12</biblScope>
       <date when="1984">1984</date>
       <biblScope type="pages">73&#x2013;92</biblScope>
     </imprint>
@@ -7910,8 +8009,8 @@
     <title  level="j" type="main"><hi rend="italic">Mirror of Literature, Amusement, and Instruction</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
-      <biblScope type="vol">10</biblScope>
-      <biblScope type="issue">288 (supplementary no.)</biblScope>
+      <biblScope type="vol" n="10">10</biblScope>
+      <biblScope type="issue" n="288">288 (supplementary no.)</biblScope>
       <date when="1828">1828</date>
       <biblScope type="pages">409&#x2013;24</biblScope>
     </imprint>
@@ -7927,7 +8026,7 @@
       </persName>
     </author>
     <title level="m" type="main"><hi rend="italic">Travels in Europe: For the Use of Travellers on the Continent, and Likewise in the Island of Sicily, to which is added, An Account of the Remains of Ancient Italy, and Also of the Roads Leading to Those Remains</hi></title>
-    <edition>8th ed., considerably enlarged</edition>
+    <edition n="8">8th ed., considerably enlarged</edition>
     <imprint>
       <pubPlace>London</pubPlace>
       <publisher>John Murray</publisher>
@@ -7938,16 +8037,18 @@
 
 <biblStruct xml:id="STEARNSBRITISHINDUSTRY">
   <analytic>
-    <author><persName corresp="PSTEARNS">
+    <author>
+      <persName corresp="PSTEARNS">
       <forename>Peter</forename>
       <surname>Stearns</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;British Industry through the Eyes of French Industrialists (<date notBefore="1820" notAfter="1848">1820&#x2013;1848</date>)&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Journal of Modern History</hi></title>
     <imprint>
-      <biblScope type="vol">37</biblScope>
+      <biblScope type="vol" n="37">37</biblScope>
       <date when="1965-03">March 1965</date>
       <biblScope type="pages">50&#x2013;61</biblScope>
     </imprint>
@@ -8014,35 +8115,30 @@
       </persName>
     </author>
     <title level="m"><hi rend="italic">Architecture in Britain, <date notBefore="1530" notAfter="1830">1530&#x2013;1830</date></hi></title>
-    <edition>4th</edition>
+    <edition n="4">4</edition>
     <imprint>
       <pubPlace>Harmondsworth</pubPlace>
       <publisher>Penguin</publisher>
       <date when="1963">1963</date>
     </imprint>
   </monogr>
-  <series>
-    <title level="s"><hi rend="italic">The Pelican History of Art</hi></title>
-    <editor>Nikolaus Pevsner</editor>
-    <biblScope>
-      <date notBefore="1995">1995&#x2013;</date>
-    </biblScope>
-  </series>
 </biblStruct>
 
 <biblStruct xml:id="SWINBURNEUNKNOWNPOET">
   <analytic>
-    <author><persName corresp="ACS">
+    <author>
+      <persName corresp="ACS">
       <forename>Algernon C.</forename>
       <surname>Swinburne</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;An Unknown Poet&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Fortnightly Review</hi></title>
     <imprint>
-      <biblScope type="vol">17, n.s.</biblScope>
-      <biblScope type="issue">98</biblScope>
+      <biblScope type="vol" n="17">17</biblScope>
+      <biblScope type="issue" n="98">98</biblScope>
       <date when="1875-02-01">1 February 1875</date>
       <biblScope type="pages">217&#x2013;32</biblScope>
     </imprint>
@@ -8057,8 +8153,8 @@
     <title  level="j" type="main"><hi rend="italic">Mirror of Literature, Amusement, and Instruction</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
-      <biblScope type="vol">19</biblScope>
-      <biblScope type="issue">544</biblScope>
+      <biblScope type="vol" n="19">19</biblScope>
+      <biblScope type="issue" n="544">544</biblScope>
       <date when="1832-04-28">28 April 1832</date>
       <biblScope type="pages">257&#x2013;59</biblScope>
     </imprint>
@@ -8088,10 +8184,12 @@
 
 <biblStruct xml:id="TAYLORCASTLES">
   <monogr>
-    <author><persName corresp="RRT">
+    <author>
+      <persName corresp="RRT">
       <forename>Robert R.</forename>
       <surname>Taylor</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">The Castles of the Rhine: Recreating the Middle Ages in Modern Germany</hi></title>
     <imprint>
       <pubPlace>Waterloo, Ont.</pubPlace>
@@ -8110,18 +8208,20 @@
       </persName>
     </author>
     <title level="m"><hi rend="italic">The Letters of Alfred Lord Tennyson</hi></title>
-    <editor><persName corresp="CYLANG">
+    <editor>
+      <persName corresp="CYLANG">
       <forename>Cecil Y.</forename>
       <surname>Lang</surname>
     </persName>
   </editor>
-  <editor><persName corresp="EFSHANNON">
+  <editor>
+    <persName corresp="EFSHANNON">
     <forename>Edgar F.</forename>
     <surname>Shannon Jr.</surname>
   </persName>
 </editor>
 <imprint>
-  <biblScope type="vol" n="3">3 vols.</biblScope>
+  <biblScope type="vol" n="3">3</biblScope>
   <pubPlace>Oxford</pubPlace>
   <publisher>Clarendon</publisher>
   <date notBefore="1982" notAfter="1990">1982&#x2013;90</date>
@@ -8154,10 +8254,12 @@
 
 <biblStruct xml:id="THOMPSONHOXTON">
   <analytic>
-    <author><persName corresp="DTHOMPSON">
+    <author>
+      <persName corresp="DTHOMPSON">
       <forename>David</forename>
       <surname>Thompson</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Hoxton [Independent] Academy (<date notBefore="1791" notAfter="1826">1791&#x2013;1826</date>) and Highbury College (<date notBefore="1826" notAfter="1850">1826&#x2013;1850</date>)&#x201D;</title>
   </analytic>
   <monogr>
@@ -8165,17 +8267,19 @@
     <imprint>
       <publisher>Dr Williams&#x02BC;s Centre for Dissenting Studies</publisher>
       <date when="2012-03">March 2012</date>
-      <pubPlace>http://dissacad.english.qmul.ac.uk (accessed <date when="2015-11-20">20 November 2015</date>)</pubPlace>
     </imprint>
   </monogr>
+  <note>http://dissacad.english.qmul.ac.uk (accessed <date when="2015-11-20">20 November 2015</date>)</note>
 </biblStruct>
 
 <biblStruct xml:id="THORMAHLENBRONTESEDUCATION">
   <monogr>
-    <author><persName corresp="MT">
+    <author>
+      <persName corresp="MT">
       <forename>Marianne</forename>
       <surname>Thorm&#x00E4;hlen</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">The Bront&#x00EB;s and Education</hi></title>
     <imprint>
       <pubPlace>Cambridge</pubPlace>
@@ -8187,10 +8291,12 @@
 
 <biblStruct xml:id="TIMBSCURIOSITIES">
   <monogr>
-    <author><persName corresp="#JTA">
+    <author>
+      <persName corresp="#JTA">
       <forename>John</forename>
       <surname>Timbs</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">Curiosities of London: Exhibiting the Most Rare and Remarkable Objects of Interest in the Metropolis; with Nearly Fifty Years&#x02BC; Personal Recollections</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
@@ -8213,13 +8319,15 @@
 
 <biblStruct xml:id="TROLLOPEBELGIUM">
   <monogr>
-    <author><persName corresp="FMT">
+    <author>
+      <persName corresp="FMT">
       <forename>Mrs. [Frances]</forename>
       <surname>Trollope</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">Belgium and Western Germany in <date when="1833">1833</date>: Including Visits to Baden&#x2010;Baden, Wiesbaden, Cassel, Hanover, the Harz Mountains, &#x0026;c. &#x0026;c. </hi></title>
     <imprint>
-      <biblScope type="vol" n="2">2 vols.</biblScope>
+      <biblScope type="vol" n="2">2</biblScope>
       <pubPlace>Paris</pubPlace>
       <publisher>Baudry&#x02BC;s European Library</publisher>
       <date when="1834">1834</date>
@@ -8248,7 +8356,7 @@
     <title  level="j"><hi rend="italic">Athenaeum</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
-      <biblScope type="issue">2616</biblScope>
+      <biblScope type="issue" n="2616">2616</biblScope>
       <date when="1877-12-15">15 December 1877</date>
       <biblScope type="pages">765&#x2013;67</biblScope>
     </imprint>
@@ -8263,7 +8371,7 @@
     <title  level="j"><hi rend="italic">Athenaeum</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
-      <biblScope type="issue">2784</biblScope>
+      <biblScope type="issue" n="2784">2784</biblScope>
       <date when="1881-03-05">5 March 1881</date>
       <biblScope type="pages">328&#x2013;29</biblScope>
     </imprint>
@@ -8278,7 +8386,7 @@
     <title  level="j"><hi rend="italic">Athenaeum</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
-      <biblScope type="issue">2620</biblScope>
+      <biblScope type="issue" n="2620">2620</biblScope>
       <date when="1878-01-12">12 January 1878</date>
       <biblScope type="pages">47&#x2013;49</biblScope>
     </imprint>
@@ -8293,7 +8401,7 @@
     <title  level="j"><hi rend="italic">Athenaeum</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
-      <biblScope type="issue">2695</biblScope>
+      <biblScope type="issue" n="2695">2695</biblScope>
       <date when="1879-06-21">21 June 1879</date>
       <biblScope type="pages">785&#x2013;86</biblScope>
     </imprint>
@@ -8332,20 +8440,24 @@
 
 <biblStruct xml:id="VANDERMEULENTANSELLETRANSCRIPTION">
   <analytic>
-    <author><persName corresp="DLVM">
+    <author>
+      <persName corresp="DLVM">
       <forename>David L.</forename>
       <surname>Vander Meulen</surname>
-    </persName></author>
-    <author><persName corresp="GTT">
+    </persName>
+    </author>
+    <author>
+      <persName corresp="GTT">
       <forename>G. Thomas</forename>
       <surname>Tanselle</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;A System of Manuscript Transcription&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Studies in Bibliography</hi></title>
     <imprint>
-      <biblScope type="vol">52</biblScope>
+      <biblScope type="vol" n="52">52</biblScope>
       <date when="1999">1999</date>
       <biblScope type="pages">201&#x2013;12</biblScope>
     </imprint>
@@ -8362,17 +8474,20 @@
     </editor>
     <title level="m" type="main"><hi rend="italic">The Victorian Dictionary: Exploring Victorian London</hi></title>
     <imprint>
-      <pubPlace>http://www.victorianlondon.org/index-2012.htm</pubPlace>
+      <date when="2012">2012</date>
     </imprint>
   </monogr>
+  <note>http://www.victorianlondon.org/index-2012.htm</note>
 </biblStruct>
 
 <biblStruct xml:id="VIGNEPRINGLE">
   <monogr>
-    <author><persName corresp="RV">
+    <author>
+      <persName corresp="RV">
       <forename>Randolph</forename>
       <surname>Vigne</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">Thomas Pringle: South African Pioneer, Poet, and Abolitionist</hi></title>
     <imprint>
       <pubPlace>Woodbridge, Suffolk</pubPlace>
@@ -8384,10 +8499,12 @@
 
 <biblStruct xml:id="VILJOENRUSKINSBACKGROUNDS">
   <monogr>
-    <author><persName corresp="HGV">
+    <author>
+      <persName corresp="HGV">
       <forename>Helen Gill</forename>
       <surname>Viljoen</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">Ruskin&#x02BC;s Backgrounds, Friendships, and Interests, as Reflected in the F. J. Sharp Collection</hi></title>
     <imprint>
       <pubPlace>Flushing, N.Y.</pubPlace>
@@ -8399,10 +8516,12 @@
 
 <biblStruct xml:id="SCOTTISHHERITAGE">
   <monogr>
-    <author><persName corresp="HGV">
+    <author>
+      <persName corresp="HGV">
       <forename>Helen Gill</forename>
       <surname>Viljoen</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">Ruskin&#x02BC;s Scottish Heritage: A Prelude</hi></title>
     <imprint>
       <pubPlace>Urbana</pubPlace>
@@ -8423,10 +8542,13 @@
     <title level="m"><hi rend="italic">Works of Art and Artists in England</hi></title>
     <respStmt>
       <resp>Translated by</resp>
-      <name>H. E. Lloyd</name>
+      <persName corresp="HELLOYD">
+        <forename>H. E.</forename>
+        <surname>Lloyd</surname>
+      </persName>
     </respStmt>
     <imprint>
-      <biblScope type="vol" n="3">3 vols.</biblScope>
+      <biblScope type="vol" n="3">3</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>John Murray</publisher>
       <date when="1838">1838</date>
@@ -8436,17 +8558,19 @@
 
 <biblStruct xml:id="WALTONQUELQUE">
   <analytic>
-    <author><persName>
+    <author>
+      <persName>
       <forename>Benjamin</forename>
       <surname>Walton</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;&#x2018;Quelque peu th&#x00E9;&#x00E2;tral&#x2019;: The Operatic Coronation of Charles X&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic"><date notBefore="1801" notAfter="1900">Nineteenth&#x2010;Century</date> Music</hi></title>
     <imprint>
-      <biblScope type="vol">26</biblScope>
-      <biblScope type="issue">1</biblScope>
+      <biblScope type="vol" n="26">26</biblScope>
+      <biblScope type="issue" n="1">1</biblScope>
       <date when="2002">Summer 2002</date>
       <biblScope type="pages">3&#x2013;22</biblScope>
     </imprint>
@@ -8455,10 +8579,12 @@
 
 <biblStruct xml:id="WALTONDRAWINGS">
   <monogr>
-    <author><persName corresp="#PHW">
+    <author>
+      <persName corresp="PHW">
       <forename>Paul H.</forename>
       <surname>Walton</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">The Drawings of John Ruskin</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
@@ -8475,17 +8601,19 @@
 
 <biblStruct xml:id="WEEKSROGERS">
   <analytic>
-    <author><persName corresp="DWEEKS">
+    <author>
+      <persName corresp="DWEEKS">
       <forename>Donald</forename>
       <surname>Weeks</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Samuel Rogers: Man of Taste&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">PMLA</hi></title>
     <imprint>
-      <biblScope type="vol">62</biblScope>
-      <biblScope type="issue">2</biblScope>
+      <biblScope type="vol" n="62">62</biblScope>
+      <biblScope type="issue" n="2">2</biblScope>
       <date when="1947-06">June 1947</date>
       <biblScope type="pages">472&#x2013;86</biblScope>
     </imprint>
@@ -8494,17 +8622,19 @@
 
 <biblStruct xml:id="COLLECTIONRUSKINMANUSCRIPTS">
   <analytic>
-    <author><persName corresp="KGWEIHE">
+    <author>
+      <persName corresp="KGWEIHE">
       <forename>Kenneth G.</forename>
       <surname>Weihe</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;A Collection of Ruskin Manuscripts&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Yale University Library Gazette</hi></title>
     <imprint>
-      <biblScope type="vol">5</biblScope>
-      <biblScope type="issue">3</biblScope>
+      <biblScope type="vol" n="5">5</biblScope>
+      <biblScope type="issue" n="3">3</biblScope>
       <date when="1931-01">January 1931</date>
       <biblScope type="pages">47&#x2013;49</biblScope>
     </imprint>
@@ -8513,13 +8643,15 @@
 
 <biblStruct xml:id="WHITAKERHISTORYRICHMONDSHIRE">
   <monogr>
-    <author><persName corresp="TDWHITAKER">
+    <author>
+      <persName corresp="TDWHITAKER">
       <forename>Thomas Dunham</forename>
       <surname>Whitaker</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">History of Richmondshire, in the North Riding of the County of York</hi></title>
     <imprint>
-      <biblScope type="vol" n="2">2 vols.</biblScope>
+      <biblScope type="vol" n="2">2</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>Longman, Hurst, Rees, Orme, and Brown</publisher>
       <date when="1823">1823</date>
@@ -8529,10 +8661,12 @@
 
 <biblStruct xml:id="WHITERUBENSANDBRITISHART">
   <analytic>
-    <author><persName corresp="CWHITE">
+    <author>
+      <persName corresp="CWHITE">
       <forename>Christopher</forename>
       <surname>White</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Rubens and British Art, <date notBefore="1630" notAfter="1790">1630&#x2013;1790&#x201D;</date></title>
   </analytic>
   <monogr>
@@ -8552,17 +8686,19 @@
 
 <biblStruct xml:id="GOODSPEED">
   <analytic>
-    <author><persName corresp="WMWHITEHILL">
+    <author>
+      <persName corresp="WMWHITEHILL">
       <forename>Walter Muir</forename>
       <surname>Whitehill</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Charles Eliot Goodspeed&#x201D;</title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Proceedings of the Massachusetts Historical Society</hi></title>
     <imprint>
-      <biblScope type="series">3d</biblScope>
-      <biblScope type="vol">71</biblScope>
+      <biblScope type="vol">3d</biblScope>
+      <biblScope type="vol" n="71">71</biblScope>
       <date from="1953-10" to="1957-05">October 1953&#x2013;May 1957</date>
       <biblScope type="pages">362&#x2013;65</biblScope>
     </imprint>
@@ -8605,13 +8741,15 @@
 
 <biblStruct xml:id="WILLIAMSLIFEOFLAWRENCE">
   <monogr>
-    <author><persName corresp="#DEW">
+    <author>
+      <persName corresp="DEW">
       <forename>D. E.</forename>
       <surname>Williams</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">The Life and Correspondence of Sir Thomas Lawrence</hi></title>
     <imprint>
-      <biblScope type="vol" n="2">2 vols.</biblScope>
+      <biblScope type="vol" n="2">2</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>Henry Colburn and Richard Bentley</publisher>
       <date when="1831">1831</date>
@@ -8621,21 +8759,25 @@
 
 <biblStruct xml:id="WILLIAMSARMSTRONGSTEAM">
   <analytic>
-    <author><persName corresp="DMWILLIAMS">
+    <author>
+      <persName corresp="DMWILLIAMS">
       <forename>David M.</forename>
       <surname>Williams</surname>
-    </persName></author>
-    <author><persName corresp="JARMSTRONG">
+    </persName>
+    </author>
+    <author>
+      <persName corresp="JARMSTRONG">
       <forename>John</forename>
       <surname>Armstrong</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Steam Shipping and the Beginnings of Overseas Tourism: British Travel to North&#x2010;Western Europe, <date notBefore="1820" notAfter="1850">1820&#x2013;1850&#x201D;</date></title>
   </analytic>
   <monogr>
     <title level="j"><hi rend="italic">Journal of European Economic History</hi></title>
     <imprint>
-      <biblScope type="vol">35</biblScope>
-      <biblScope type="issue">1</biblScope>
+      <biblScope type="vol" n="35">35</biblScope>
+      <biblScope type="issue" n="1">1</biblScope>
       <date when="2006">2006</date>
       <biblScope type="pages">125&#x2013;48</biblScope>
     </imprint>
@@ -8644,17 +8786,21 @@
 
 <biblStruct xml:id="RUSKINBIBLIOGRAPHYWISE">
   <monogr>
-    <author><persName corresp="TJW">
+    <author>
+      <persName corresp="TJW">
       <forename>Thomas J.</forename>
       <surname>Wise</surname>
-    </persName></author>
-    <author><persName corresp="JPS">
+    </persName>
+    </author>
+    <author>
+      <persName corresp="JPS">
       <forename>James P.</forename>
       <surname>Smart</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">A Complete Bibliography of the Writings in Prose and Verse of John Ruskin, LL.D.: With a List of the More Important Ruskiniana</hi></title>
     <imprint>
-      <biblScope type="vol" n="2">2 vols.</biblScope>
+      <biblScope type="vol" n="2">2</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>Privately printed</publisher>
       <date when="1893">1893</date>
@@ -8664,17 +8810,22 @@
 
 <biblStruct xml:id="WOLK-SIMONNATURALISM">
   <analytic>
-    <author><persName corresp="LWOLKSIMON">
+    <author>
+      <persName corresp="LWOLKSIMON">
       <forename>Linda</forename>
       <surname>Wolk&#x2010;Simon</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Naturalism in Lombard Drawing from Leonardo to Cerano&#x201CD;</title>
   </analytic>
   <monogr>
     <title type="main" level="m"><hi rend="italic">Painters of Reality: The Legacy of Leonardo and Carravaggio in Lombardy</hi></title>
     <respStmt>
       <resp>Edited by</resp>
-      <persName corresp="ABAYER">Andrea Bayer</persName>
+      <persName corresp="ABAYER">
+        <forename>Andrea</forename>
+        <surname>Bayer</surname>
+      </persName>
     </respStmt>
     <imprint>
       <pubPlace>New Haven</pubPlace>
@@ -8695,7 +8846,7 @@
     </author>
     <title level="m"><hi rend="italic">The Poetical Works of William Wordsworth</hi></title>
     <imprint>
-      <biblScope type="vol" n="5">5 vols.</biblScope>
+      <biblScope type="vol" n="5">5</biblScope>
       <pubPlace>London</pubPlace>
       <publisher>Longman, Rees, Orme, Brown, and Green</publisher>
       <date when="1827">1827</date>
@@ -8705,10 +8856,12 @@
 
 <biblStruct xml:id="WORPOLELASTLANDSCAPES">
   <monogr>
-    <author><persName corresp="KWORPOLE">
+    <author>
+      <persName corresp="KWORPOLE">
       <forename>Ken</forename>
       <surname>Worpole</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="m" type="main"><hi rend="italic">Last Landscapes: The Architecture of the Cemetery in the West</hi></title>
     <imprint>
       <pubPlace>London</pubPlace>
@@ -8720,10 +8873,12 @@
 
 <biblStruct xml:id="BACKHOUSEDNB">
   <analytic>
-    <author><persName corresp="CYELDHAM">
+    <author>
+      <persName corresp="CYELDHAM">
       <forename>Charlotte</forename>
       <surname>Yeldham</surname>
-    </persName></author>
+    </persName>
+    </author>
     <title level="a">&#x201C;Backhouse, Margaret (bap. <date when="1818">1818</date>, d. <date when="1896">1896</date>)&#x201D;</title>
   </analytic>
   <monogr>
@@ -8731,9 +8886,9 @@
     <imprint>
       <publisher>Oxford University Press</publisher>
       <date when="2004">2004</date>
-      <pubPlace>http://www.oxforddnb.com/view/article/48922 (accessed <date when="2012-01-01">1 January 2012</date>)</pubPlace>
     </imprint>
   </monogr>
+  <note>http://www.oxforddnb.com/view/article/48922 (accessed <date when="2012-01-01">1 January 2012</date>)</note>
 </biblStruct>
 
 <!-- Axon, William E. A. “John Ruskin: A Bibliographical
