@@ -278,7 +278,10 @@
           <xsl:apply-templates/>
         </div>
       </xsl:when>
-
+      
+      <xsl:otherwise>
+        <xsl:message terminate="yes">&lt;lg&gt; needs the "type" attribute</xsl:message>
+      </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
 

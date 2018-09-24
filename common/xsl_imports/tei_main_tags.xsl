@@ -114,17 +114,15 @@ EOT
     </head>
   </xsl:template>
 
-  <!--<body> - Enable for Apparatuses, Essays, Notes, and Glosses. Disable for Anthologies, Manuscripts, and Witnesses.
-  The following uses the body of the XML docment as the body of the HTML document.-->
   <xsl:template match="tei:body">
+    
     <xsl:choose>
 
       <xsl:when test="ancestor::*[tei:floatingText]">
-        <body>
-          <div class="floating-text">
-            <xsl:apply-templates/>
-          </div>
-        </body>
+        <div class="floating-text">
+
+          <xsl:apply-templates/>
+        </div>
       </xsl:when>
       <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus']">
         <body>
