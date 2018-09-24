@@ -3,9 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="figure">
-        <fileDesc xml:id="aix_la_chapelle_cathedral_drawing_msix">
+        <fileDesc xml:id="calais_square_drawing_msix">
             <titleStmt>
-                <title type="main">Aix la Chapelle Cathedral [drawing]</title>
+                <title type="main">Calais [drawing]&#x2014;Town Square</title>
                 <title type="sub">Electronic text describing original drawing</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
@@ -61,7 +61,7 @@
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="msix/MSIX28v-29r.jpg">p. 29r</locus>
+                            <locus facs="msix/MSIX14v-15r.jpg">p. 15r</locus>
 
                             <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msix"></ref></filiation>
                         </msItem>
@@ -83,19 +83,27 @@
         <body>
             <div type="figure" subtype="drawing">
                 <figure>
-                    <head type="title"><title type="artwork" corresp="#JRAIXLACHAPELLEMSIX">Aix la Chapelle Cathedral</title></head>
-                    <figDesc>Pen and ink, approx. ? &#x00D7; ? cm (image only). The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
-                        describe the image as a &#x201C;nearly full&#x2010;page one of a large Continental church&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:350 n. 2). The 
-                        drawing is in the manner of <ref type="note" subtype="biographical" target="prout_samuel_note.php"><persName corresp="#SP">Samuel Prout</persName> (<date notBefore="1783" notAfter="1852">1783&#x2013;1852</date>)</ref>, 
-                        and seems clearly enough intended to depict <placeName type="building" corresp="#AACHENCATHEDRAL">Aachen Cathedral</placeName>, 
-                        although <persName corresp="#JR">Ruskin</persName> distorted the proportions of the building, making it seem more vertical than broad, 
-                        by over&#x2010;emphasizing the Gothic structures that encircle the Carolingian core of the building. 
-                        <persName corresp="#JR">Ruskin</persName> orients the viewer from the southwest. On the left of the drawing, rises the cathedral&#x02BC;s distinctive octagonal 
-                        <placeName type="building" corresp="#PALATINECHAPEL">Palatine Chapel</placeName> 
-                        (which <persName corresp="#JR">Ruskin</persName> represents as too narrow and spire&#x2010;like), capped by its baroque cupola. Outside the frame on the left, 
-                        he has omitted from view the cathedral&#x02BC;s west&#x2010;work (the neo&#x2010;Gothic tower that presently defines the western end was added to the 
-                        Carolingian base <date notBefore="1879" notAfter="1884">1879&#x2013;84</date>). On the right of the drawing extends the fifteenth&#x2010;century choir.</figDesc>
+                <head type="title"><title type="artwork" corresp="#CALAISSQUAREMSIX">Calais Town Square with Tourists</title></head>
+                    <figDesc>Pen and ink, approx. 11 &#x00D7; 10.3 cm (image only).</figDesc>
+                    <p>The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
+                        describe the image as &#x201C;a sketch of <placeName corresp="#CALAISSQUARE">Calais Square</placeName>, or market&#x2010;place, with two figures&#x2014;a man and woman, 
+                        and a child (? <persName corresp="#JJR">J.J.R.</persName>, <persName corresp="#MR">M.R.</persName>, and <persName corresp="#JR">J.R.</persName>)&#x2014;evidently 
+                        British, at whom a Frenchman, who is wheeling a barrow near them, looks in amazement. The child has its hands uplifted in wonder, 
+                        and is looking at the quaint buildings&#x201D; (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:342 n. 2). 
+                        In the editors&#x02BC; description, the second dash should be moved to follow &#x201C;woman&#x201D;, 
+                        as there are obviously three British family figures.</p>
+                    <p>The editors also gloss the poem and prose sections of &#x201C;Calais&#x201D; with the comparison of 
+                        <placeName corresp="#FRANCE">France</placeName> and <placeName corresp="#ENGLAND">England</placeName> in 
+                        <title type="book" corresp="#JRPOETRYOFARCHITECTURE1893"><hi rend="italic">The Poetry of Architecture</hi></title>, §16 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 1:14).</p>
+                    <p>As suggested by the editors&#x02BC; query, it seems unlikely that <persName corresp="#JR">Ruskin</persName> intended himself, at age 14, for the third figure, 
+                        the child, since the child wears skirts and a bonnet. The child figure might be meant as his cousin, 
+                        <ref type="note" subtype="biographical" target="richardson_mary_note.php"><persName corresp="#MRC">Mary Richardson</persName> (1815&#x2013;49)</ref>, 
+                        but she was a young woman at this date. More likely, while the drawing may contain some self&#x2010;mockery, it is meant to satirize national characteristics generally&#x2014;an English family, 
+                        rotund and naive, contrasted with the skinny Frenchman pushing the wheelbarrow, and thus drawing on such nationalistic tropes as found in 
+                        <persName corresp="#WHPAINTER">William Hogarth</persName>&#x02BC;s (<date notBefore="1697" notAfter="1764">1697&#x2013;1764</date>) 
+                        <title type="artwork" corresp="#HOGARTHGATEOFCALAIS"><hi rend="italic">The Gate of Calais; or, The Roast Beef of Old England</hi></title> (<date notBefore="1748" notAfter="1749">1748/49</date>).
+                    </p>
                 </figure>
             </div>
         </body>

@@ -3,9 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="figure">
-        <fileDesc xml:id="cassel_hill_drawing_msix">
+        <fileDesc xml:id="calais_pier_drawing_msix">
             <titleStmt>
-                <title type="main">Cassel Hill [drawing]</title>
+                <title type="main">Calais [drawing]&#x2014;Pier</title>
                 <title type="sub">Electronic text describing original drawing</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
@@ -61,7 +61,7 @@
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="msix/MSIX15v-16r.jpg">p. 15v</locus>
+                            <locus facs="msix/MSIX13v-14r.jpg">p. 14r</locus>
 
                             <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msix"></ref></filiation>
                         </msItem>
@@ -83,14 +83,15 @@
         <body>
             <div type="figure" subtype="drawing">
                 <figure>
-                <head type="title"><title type="artwork" corresp="#CASSELHILLMSIX">Cassel Hill</title></head>
-                    <figDesc>Pen and ink, approx. 8 &#x00D7; 12.9 cm (image only). The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
-                        describe the image as a &#x201C;sketch of trees in the foreground on either side, and a town with three windmills in the distance&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:342 n. 3). 
-                        Between the coulisses of the foreground foliage, the distant town sits atop an eminence, which suggests <geogName corresp="MONTCASSEL">Cassel Hill</geogName>, 
-                        mentioned in the poem following the illustration. 
-                        Two small figures occupy the foreground, one seated and one standing and pointing at the distant scene.
-                    </figDesc>
+                <head type="title"><title type="artwork" corresp="#JRCALAISPIER">Calais Pier, Figures Gazing out to Sea</title></head>
+                    <figDesc>Pen and ink, approx. 6.8 &#x00D7; 10.3 cm (image only).</figDesc>
+                    <p>The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
+                        describe the image as &#x201C;a sketch of the sea with a wooden pier and a ship sailing in&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:341 n. 4). 
+                        Two fisherman stand on the pier with their nets, one watching the ship coming in, and the other folding his net. 
+                        The roughness of the sea contrasts with the calm depicted in 
+                        <ref type="figure" target="calais_fishermen_drawing_msix.php">Calais Fishermen</ref>.
+                    </p>
                 </figure>
             </div>
         </body>

@@ -3,9 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="figure">
-        <fileDesc xml:id="andernacht_tower_drawing_msix">
+        <fileDesc xml:id="aix_la_chapelle_cathedral_drawing_msix">
             <titleStmt>
-                <title type="main">Andernacht Tower [drawing]</title>
+                <title type="main">Aix la Chapelle [drawing]</title>
                 <title type="sub">Electronic text describing original drawing</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
@@ -18,7 +18,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#SEP">Steven E. Petite</persName>
+                    <persName corresp="#YNH">Your Name Here</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -61,7 +61,7 @@
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="msix/MSIX35v-36r.jpg">p. 36r</locus>
+                            <locus facs="msix/MSIX28v-29r.jpg">p. 29r</locus>
 
                             <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msix"></ref></filiation>
                         </msItem>
@@ -82,16 +82,20 @@
     <text>
         <body>
             <div type="figure" subtype="drawing">
-                <figure><head type="title"><title type="artwork" corresp="#JRANDERNACHTTOWERMSIX">Andernacht Tower</title></head>
-                    <figDesc>Pen and ink, approx. 6.8 &#x00D7; 12.4 cm (image only). The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
-                        describe the image as &#x201C;a sketch of a wooded, high&#x2010;banked river, with towers and a church in the distance&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:354 n. 2). 
-                        The sketch shows a grouping of <placeName corresp="#ANDERNACH">Andernach</placeName>&#x02BC;s most familiar medieval buildings. 
-                        In the sketch, standing closest to the river, is the sixteenth&#x02010;century <placeName type="building" corresp="#ANDERNACHCRANE">crane</placeName>; 
-                        in the middle distance, the fifteenth&#x02010;century <placeName type="building" corresp="#ANDERNACHROUNDTOWER">round tower</placeName>; 
-                        and in the far distance, the towers of <placeName type="building" corresp="#STMARYASSUMPTIONANDERNACH">St. Mary Assumption Cathedral</placeName>. 
-                        In the drawing, <persName corresp="#JR">Ruskin</persName> has crowded these buildings closer together than they can in fact be seen in a single view.
-                    </figDesc>
+                <figure>
+                    <head type="title"><title type="artwork" corresp="#JRAIXLACHAPELLEMSIX">Aix la Chapelle Cathedral</title></head>
+                    <figDesc>Pen and ink, approx. ? &#x00D7; ? cm (image only). The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
+                        describe the image as a &#x201C;nearly full&#x2010;page one of a large Continental church&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:350 n. 2). The 
+                        drawing is in the manner of <ref type="note" subtype="biographical" target="prout_samuel_note.php"><persName corresp="#SP">Samuel Prout</persName> (<date notBefore="1783" notAfter="1852">1783&#x2013;1852</date>)</ref>, 
+                        and seems clearly enough intended to depict <placeName type="building" corresp="#AACHENCATHEDRAL">Aachen Cathedral</placeName>, 
+                        although <persName corresp="#JR">Ruskin</persName> distorted the proportions of the building, making it seem more vertical than broad, 
+                        by over&#x2010;emphasizing the Gothic structures that encircle the Carolingian core of the building. 
+                        <persName corresp="#JR">Ruskin</persName> orients the viewer from the southwest. On the left of the drawing, rises the cathedral&#x02BC;s distinctive octagonal 
+                        <placeName type="building" corresp="#PALATINECHAPEL">Palatine Chapel</placeName> 
+                        (which <persName corresp="#JR">Ruskin</persName> represents as too narrow and spire&#x2010;like), capped by its baroque cupola. Outside the frame on the left, 
+                        he has omitted from view the cathedral&#x02BC;s west&#x2010;work (the neo&#x2010;Gothic tower that presently defines the western end was added to the 
+                        Carolingian base <date notBefore="1879" notAfter="1884">1879&#x2013;84</date>). On the right of the drawing extends the fifteenth&#x2010;century choir.</figDesc>
                 </figure>
             </div>
         </body>

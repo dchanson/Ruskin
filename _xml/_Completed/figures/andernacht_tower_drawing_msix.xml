@@ -3,9 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="figure">
-        <fileDesc xml:id="cassel_saint_omer_corpus_christi_drawing_msix">
+        <fileDesc xml:id="andernacht_tower_drawing_msix">
             <titleStmt>
-                <title type="main">Cassel and Saint Omer Corpus Christi Procession [drawing]</title>
+                <title type="main">Andernacht [drawing]</title>
                 <title type="sub">Electronic text describing original drawing</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
@@ -18,7 +18,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#SEP">Steven E. Petite</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -61,7 +61,7 @@
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="msix/MSIX16v-17r.jpg">p. 16v</locus>
+                            <locus facs="msix/MSIX35v-36r.jpg">p. 36r</locus>
 
                             <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msix"></ref></filiation>
                         </msItem>
@@ -82,18 +82,19 @@
     <text>
         <body>
             <div type="figure" subtype="drawing">
-                <figure>
-                    <head type="title"><title type="artwork" corresp="#JRCASSELSAINTOMERCORPUSCHRISTIMSIX">Saint Omer Corpus Christi</title></head>
-                    <figDesc>Pen and ink, approx. 6.2 &#x00D7; 7 cm (image only). The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
-                        describe the image as a &#x201C;sketch of a bishop beneath a canopy, with other figures&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:343 n. 1). 
-                        The vignette refers to the <orgName corresp="#ROMANCATHOLICCHURCH">Roman Catholic</orgName> procession mentioned in the preceding poem, 
-                        <ref type="witness" target="cassel_poem_msix.php">&#x201C;The way was long, and yet &#x02BC;twas sweet&#x201D; [&#x201C;Cassel,&#x201D; poem]</ref>. 
-                        The procession that the Ruskins witnessed at <placeName corresp="#CASSEL">Cassel</placeName> celebrated Ascension Day, 
-                        but details in the drawing suggest that <persName corresp="#JR">Ruskin</persName> may have conflated this event with a procession of Corpus Christi, in which 
-                        the priest carries a monstrance beneath a canopy borne by attendants 
-                        (see glosses for <ref type="witness" target="cassel_poem_msix.php">&#x201C;Cassel&#x201D; [poem]</ref>).
-                    </figDesc>
+                <figure><head type="title"><title type="artwork" corresp="#JRANDERNACHTTOWERMSIX">Andernach Crane, Round Tower, and Cathedral</title></head>
+                    <figDesc>Pen and ink, approx. 6.8 &#x00D7; 12.4 cm (image only).</figDesc>
+                    <p>The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
+                        describe the image as &#x201C;a sketch of a wooded, high&#x2010;banked river, with towers and a church in the distance&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:354 n. 2). 
+                        The sketch shows a grouping of <placeName corresp="#ANDERNACH">Andernach</placeName>&#x02BC;s most familiar medieval buildings. 
+                        In the sketch, standing closest to the river, is the sixteenth&#x02010;century <placeName type="building" corresp="#ANDERNACHCRANE">crane</placeName>; 
+                        in the middle distance, the fifteenth&#x02010;century <placeName type="building" corresp="#ANDERNACHROUNDTOWER">round tower</placeName>; 
+                        and in the far distance, the towers of <placeName type="building" corresp="#STMARYASSUMPTIONANDERNACH">St. Mary Assumption Cathedral</placeName>. 
+                        In the drawing, <persName corresp="#JR">Ruskin</persName> would seem to have crowded these buildings closer together than they could in fact have been seen in a single view, 
+                        but <persName corresp="#CFS">Clarkson Stanfield</persName> grouped them similarly for the engraving, <title type="artwork" corresp="#CFSANDERNACH"><placeName corresp="#ANDERNACH">&#x201C;Andernach&#x201D;</placeName></title> 
+                        (<ref type="bibliography" target="bibliography.php#HEATHSANNUAL1833"><persName corresp="#LR">Ritchie</persName>, <title type="annual" corresp="#HEATHSANNUAL1833"><hi rend="italic">Travelling Sketches on the Rhine</hi> [<hi rend="italic">Heath&#x02BC;s Picturesque Annual for <date when="1833">1833</date></hi>]</title></ref>, 154 opp.).
+                    </p>
                 </figure>
             </div>
         </body>
