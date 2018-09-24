@@ -3,9 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="figure">
-        <fileDesc xml:id="cassel_windmills_drawing_msix">
+        <fileDesc xml:id="cassel_saint_omer_corpus_christi_drawing_msix">
             <titleStmt>
-                <title type="main">Cassel Windmills [drawing]</title>
+                <title type="main">Cassel [drawing]&#x2014;Procession</title>
                 <title type="sub">Electronic text describing original drawing</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
@@ -61,7 +61,7 @@
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="msix/MSIX16v-17r.jpg">p. 17r</locus>
+                            <locus facs="msix/MSIX16v-17r.jpg">p. 16v</locus>
 
                             <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msix"></ref></filiation>
                         </msItem>
@@ -83,15 +83,18 @@
         <body>
             <div type="figure" subtype="drawing">
                 <figure>
-                    <head type="title"><title type="artwork" corresp="#JRCASSELWINDMILLSMSIX">Cassel Windmills</title></head>
-                    <figDesc>Pen and ink, approx. 6.2 &#x00D7; 13.7 cm (image only). The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
-                        describe the image as a &#x201C;sketch of two windmills on an eminence, overlooking a wide plain&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:343 n. 2). 
-                        The vignette refers to the windmills on the hilltop, up which the speaker has struggled, according to the prose section following the drawing 
-                        (<ref type="witness" target="cassel_prose_msix.php">&#x201C;When shall we get up this hill&#x201D; [&#x201C;Cassel,&#x201D; prose]</ref>), 
-                        and from which the speaker surveys the plains of <placeName corresp="#FRANCE">France</placeName> beneath. 
-                        Two figures, one seated and one standing, gaze at the prospect.
-                    </figDesc>
+                    <head type="title"><title type="artwork" corresp="#JRCASSELSAINTOMERCORPUSCHRISTIMSIX">Corpus Christi Procession at Cassel</title></head>
+                    <figDesc>Pen and ink, approx. 6.2 &#x00D7; 7 cm (image only).</figDesc>
+                    <p>The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref> 
+                        describe the image as a &#x201C;sketch of a bishop beneath a canopy, with other figures&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:343 n. 1). 
+                        The vignette refers to the <orgName corresp="#ROMANCATHOLICCHURCH">Roman Catholic</orgName> procession mentioned in the preceding poem, 
+                        <ref type="witness" target="cassel_poem_msix.php">&#x201C;The way was long, and yet &#x02BC;twas sweet&#x201D; [&#x201C;Cassel&#x201D;, poem]</ref>. 
+                        The procession that the Ruskins witnessed at <placeName corresp="#CASSEL">Cassel</placeName> celebrated Ascension Day, 
+                        but details in the drawing suggest that <persName corresp="#JR">Ruskin</persName> may have conflated this event with a procession of Corpus Christi, in which 
+                        the priest carries a monstrance beneath a canopy borne by attendants 
+                        (see glosses for <ref type="witness" target="cassel_poem_msix.php">&#x201C;Cassel&#x201D; [poem]</ref>).
+                    </p>
                 </figure>
             </div>
         </body>
