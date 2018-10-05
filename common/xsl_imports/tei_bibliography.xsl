@@ -3,9 +3,8 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:custom="http://whatever">
 
   <xsl:function name="custom:printAuthors">
-
     <xsl:param name="root"/>
-
+    
     <xsl:choose>
 
       <xsl:when test="count($root) = 0"></xsl:when>
@@ -81,53 +80,49 @@
     </xsl:choose>
 
   </xsl:function>
-
-  <xsl:function name="custom:printRespStmt">
-
-    <xsl:param name="root"/>
-
+  <xsl:function name="custom:printRespPersons">
+    <xsl:param name="root" />
+    
     <xsl:for-each select="$root">
-
-      <xsl:apply-templates select="./tei:resp"/>
-
+      <xsl:apply-templates select="tei:forename" />
+      <xsl:value-of select="' '"/>
+      <xsl:apply-templates select="tei:surname"/>
+    </xsl:for-each>
+  </xsl:function>
+  
+  <xsl:function name="custom:printRespStmt">
+    <xsl:param name="root"/>
+    
+    <xsl:apply-templates select="$root/tei:resp"/>
+    
+    <xsl:for-each select="$root/tei:persName">
       <xsl:value-of select="' '"/>
 
       <xsl:choose>
-
         <xsl:when test="position() = last()">
-
-          <xsl:apply-templates select="./tei:persName/tei:forename"/>
-
-          <xsl:value-of select="' '"/>
-
-          <xsl:apply-templates select="./tei:persName/tei:surname"/>.
+          
+          <xsl:value-of select="custom:printRespPersons(.)" />.
         </xsl:when>
 
-        <xsl:when test="position() = 1">
-
-          <xsl:apply-templates select="./tei:persName/tei:forename"/>
-
-          <xsl:value-of select="' '"/>
-
-          <xsl:apply-templates select="./tei:persName/tei:surname"/></xsl:when>
-
-        <xsl:otherwise>, and
-
-          <xsl:apply-templates select="./tei:persName/tei:forename"/>
-
-          <xsl:value-of select="' '"/>
-
-          <xsl:apply-templates select="./tei:persName/tei:surname"/>
-
-          <xsl:value-of select="' '"/>
+        <xsl:otherwise>
+          <xsl:value-of select="custom:printRespPersons(.)" />
+          
+          <xsl:choose>
+            <xsl:when test="position() = last()-1" >
+              <xsl:value-of select="', and '" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="', '" />
+            </xsl:otherwise>
+          </xsl:choose>
         </xsl:otherwise>
+        
       </xsl:choose>
     </xsl:for-each>
 
   </xsl:function>
 
   <xsl:function name="custom:printEditors">
-
     <xsl:param name="root"/>
 
     <xsl:choose>
@@ -151,8 +146,11 @@
         </xsl:when>
 
         <xsl:otherwise>
+          <xsl:apply-templates select="./tei:editor/tei:surname"/>
+          <text> </text>
+          <xsl:apply-templates select="./tei:persName/tei:forename"/>
           
-          <xsl:choose>
+          <xsl:choose>            
             <xsl:when test="position() = count($root)" >, and </xsl:when>
             <xsl:otherwise>, </xsl:otherwise>
           </xsl:choose>
@@ -258,7 +256,162 @@
       <xsl:otherwise>.</xsl:otherwise>
     </xsl:choose>
   </xsl:function>
+  
+  <xsl:template match="tei:biblStruct">
+    <xsl:choose>
+
+      <xsl:when test="tei:analytic">
+        <!-- Analytic -->
+
+        <xsl:value-of select="custom:printAuthors(./tei:analytic/tei:author)"/>
+
+
+        <xsl:for-each select="./tei:analytic/tei:title">
+          <xsl:apply-templates/>
+          <xsl:choose>
+            <xsl:when test="position() = count(./tei:analytic/tei:title)">
+              <xsl:value-of select="'. '"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="', '"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:for-each>
+        
+        <xsl:value-of select="custom:printAuthors(./tei:monogr/tei:author)"/>
+        
+        
+        <xsl:for-each select="./tei:monogr/tei:title">
+          <xsl:apply-templates/>
+          <xsl:choose>
+            <xsl:when test="position() = last()" >
+              <xsl:value-of select="'. '"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="': '"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:for-each>
+        
+        <xsl:for-each select="./tei:monogr/tei:edition">
+          <xsl:apply-templates/><xsl:value-of select="'. '"/>
+        </xsl:for-each>
+
+        <xsl:value-of select="custom:printEditors(./tei:monogr/tei:editor)"/>
+
+        <xsl:for-each select="tei:monogr/tei:imprint">
+          <xsl:choose>
+            <xsl:when test="./tei:pubPlace">
+              <xsl:apply-templates select="./tei:pubPlace"/>,
+            </xsl:when>
+          </xsl:choose>
+          
+          <xsl:choose>
+            <xsl:when test="./tei:publisher">
+
+              <xsl:apply-templates select="./tei:publisher"/>.
+              
+            </xsl:when>
+          </xsl:choose>
+          
+          <xsl:choose>
+
+            <xsl:when test="./tei:biblScope[@type='vol']">
+              <xsl:apply-templates select="./tei:biblScope[@type='vol']"/>
+              <xsl:choose>
+                <xsl:when test="./tei:biblScope[@type='vol']/following-sibling::tei:biblScope[@type='issue']">
+                  <xsl:value-of select="'.'" />
+                </xsl:when>
+                <xsl:otherwise><xsl:value-of select="', '"/></xsl:otherwise>
+              </xsl:choose>
+            </xsl:when>
+          </xsl:choose>
+
+          <xsl:choose>
+
+            <xsl:when test="./tei:biblScope[@type='issue']">
+              <xsl:apply-templates select="./tei:biblScope[@type='issue']"/>
+            </xsl:when>
+          </xsl:choose>
+
+          <xsl:choose>
+            <xsl:when test="./tei:date">
+              (<xsl:apply-templates select="./tei:date"/>
+              <xsl:value-of select="')'" />
+              <xsl:choose>
+                <xsl:when test="./tei:biblScope[@type='pages']">
+                  <xsl:value-of select="': '" />
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="'. '" />
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:when>
+          </xsl:choose>
+
+          <xsl:choose>
+
+            <xsl:when test="./tei:biblScope[@type='pages']">
+
+              <xsl:apply-templates select="./tei:biblScope[@type='pages']"/>.
+            </xsl:when>
+          </xsl:choose>
+        </xsl:for-each>
+        
+
+      </xsl:when>
+
+      <xsl:otherwise>
+        <!-- Monogr -->
+        <xsl:value-of select="custom:printAuthors(./tei:monogr/tei:author)"/>
+
+        <xsl:for-each select="./tei:monogr/tei:title">
+          <xsl:apply-templates/>
+          <text>. </text>
+        </xsl:for-each>
+        
+        <xsl:for-each select="./tei:monogr/tei:edition">
+          <xsl:apply-templates/><xsl:value-of select="'. '"/>
+        </xsl:for-each>
+        
+        <xsl:for-each select="./tei:monogr/tei:respStmt">
+          <xsl:value-of select="custom:printRespStmt(.)"/>
+        </xsl:for-each>
+
+        <xsl:value-of select="custom:printEditors(./tei:monogr/tei:editor)"/>
+        
+        <xsl:for-each select="./tei:monogr/tei:imprint">
+          <xsl:value-of select="custom:printPublisher(.)"/>
+          <xsl:if test="not(position() = count(./tei:monogr/tei:imprint))">
+            <xsl:value-of select="' '" />
+          </xsl:if>
+        </xsl:for-each>
+
+      </xsl:otherwise>
+
+    </xsl:choose>
     
+    <xsl:for-each select="./tei:note">
+      <xsl:apply-templates />
+    </xsl:for-each>
+    
+    <xsl:for-each select="./tei:relatedItem">
+      <xsl:choose>
+        <xsl:when test="@type='reprintedFrom'">
+          Reprinted from <xsl:apply-templates select="./tei:bibl/tei:date" />.a
+        </xsl:when>
+        <xsl:when test="@type='revisedAs'">
+          Revised As 
+          <xsl:apply-templates select="./tei:biblStruct" />
+        </xsl:when>
+        <xsl:otherwise>
+          <!-- RI Type: <xsl:value-of select="@type" /> -->
+          <xsl:message terminate="yes">&lt;relatedItem&gt; needs a valid "type" attribute</xsl:message>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:for-each>
+  </xsl:template>
+  
   <xsl:template match="tei:listBibl">
     
     <xsl:value-of select="$brVar" disable-output-escaping="yes"/>
@@ -330,105 +483,7 @@
 
       <xsl:for-each select="tei:biblStruct">
         <li class="bib-item" id="{@xml:id}">
-
-          <xsl:choose>
-
-            <xsl:when test="tei:analytic">
-              <!-- Analytic -->
-
-              <xsl:value-of select="custom:printAuthors(./tei:analytic/tei:author)"/>
-
-
-              <xsl:for-each select="./tei:analytic/tei:title">
-
-                <xsl:apply-templates/><xsl:value-of select="'. '"/>
-              </xsl:for-each>
-              
-              <xsl:value-of select="custom:printAuthors(./tei:monogr/tei:author)"/>
-              
-              
-              <xsl:for-each select="./tei:monogr/tei:title">
-
-                <xsl:apply-templates/><xsl:value-of select="'. '"/>
-              </xsl:for-each>
-
-
-              
-              <xsl:for-each select="tei:monogr/tei:imprint">
-                <xsl:choose>
-
-                  <xsl:when test="./tei:pubPlace">
-                    <xsl:apply-templates select="./tei:pubPlace"/>,
-                  </xsl:when>
-                </xsl:choose>
-                
-                <xsl:choose>
-
-                  <xsl:when test="./tei:publisher">
-
-                    <xsl:apply-templates select="./tei:publisher"/>,
-                  </xsl:when>
-                </xsl:choose>
-                
-                <xsl:choose>
-
-                  <xsl:when test="./tei:biblScope[@type='vol']">
-                    Vol.
-
-                    <xsl:apply-templates select="./tei:biblScope[@type='vol']"/>,
-                  </xsl:when>
-                </xsl:choose>
-
-                <xsl:choose>
-
-                  <xsl:when test="./tei:biblScope[@type='issue']">
-                    Issue.
-
-                    <xsl:apply-templates select="./tei:biblScope[@type='issue']"/>,
-                  </xsl:when>
-                </xsl:choose>
-
-                <xsl:choose>
-
-                  <xsl:when test="./tei:date">
-
-                    <xsl:apply-templates select="./tei:date"/>.
-                  </xsl:when>
-                </xsl:choose>
-
-                <xsl:choose>
-
-                  <xsl:when test="./tei:biblScope[@type='pages']">
-
-                    <xsl:apply-templates select="./tei:biblScope[@type='pages']"/>.
-                  </xsl:when>
-                </xsl:choose>
-              </xsl:for-each>
-              
-
-            </xsl:when>
-
-            <xsl:otherwise>
-              <!-- Monogr -->
-              <xsl:value-of select="custom:printAuthors(./tei:monogr/tei:author)"/>
-
-              <xsl:for-each select="./tei:monogr/tei:title">
-                <xsl:apply-templates/>
-                <text>. </text>
-              </xsl:for-each>
-              
-              <xsl:value-of select="custom:printRespStmt(./tei:monogr/tei:respStmt)"/>
-
-              <xsl:value-of select="custom:printEditors(./tei:monogr/tei:editor)"/>
-              
-              <xsl:for-each select="./tei:monogr/tei:imprint">
-                <xsl:value-of select="custom:printPublisher(.)"/>
-              </xsl:for-each>
-
-            </xsl:otherwise>
-
-          </xsl:choose>
-
+          <xsl:apply-templates select="." />
         </li>
       </xsl:for-each>
 

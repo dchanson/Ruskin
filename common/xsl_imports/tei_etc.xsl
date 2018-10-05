@@ -304,6 +304,12 @@
             <xsl:apply-templates/>
           </span>
         </xsl:when>
+        
+        <xsl:otherwise>
+          <span class="date">
+            <xsl:apply-templates />
+          </span>
+        </xsl:otherwise>
 
       </xsl:choose>
     </xsl:template>
