@@ -102,7 +102,7 @@
                         <row role="data" xml:id="ACCOUNTTOCEHRENBREITSTEIN">
                             <cell n="1"></cell>
                             <cell n="2">2</cell>
-                            <cell n="3"><title type="composite" corresp="#JREHRENBREITSTEINCOMP"><geogName corresp="#EHRENBREISTEIN">Ehrenbreistein</geogName></title> (see also <ref type="internal" target="#ACCOUNTTOCEHRENBREITSTEINILLUS">Table 2</ref>)</cell>
+                          <cell n="3"><title type="composite" corresp="#JREHRENBREITSTEINCOMP"><geogName corresp="#EHRENBREISTEIN">Ehrenbreistein</geogName></title> (see also <ref type="internal" target="#ACCOUNTTOCCOBLENTZILLUS">Table 2 [<title type="composite" corresp="#JREHRENBREITSTEINCOMP"><placeName corresp="#COBLENZ">Coblentz</placeName></title>]</ref>)</cell>
                         </row>
                         <row role="data" xml:id="ACCOUNTTOCSTGOAR">
                             <cell n="1"><metamark function="unknown">\</metamark></cell>
@@ -829,7 +829,7 @@
                     </table>
                     </div>
 
-
+<!--HERE HERE-->
               <div type="tablespace" xml:id="account_toc_msviii_table_2">
                         <head type="section">[Table 2. List of Sections and/or Works "Wanted" with Associated Figures]</head>
                         <table cols="3">
@@ -841,7 +841,7 @@
                             <row role="data" xml:id="ACCOUNTTOCHEIDELBERGILLUS">
                                 <cell>0</cell>
                                 <cell><title type="composite" corresp="#JRHEIDELBERGCOMP"><placeName corresp="#HEIDELBERG">Heidelberg</placeName></title> (see also <ref type="internal" target="#ACCOUNTTOCHEIDELBERG">Table 1</ref>)</cell>
-                                <cell>Begin with <del rend="strikethrough">mountain.</del>Tournament. Spectre.<del rend="strikethrough">He</del>Castle by moonlight. <persName corresp="#SP">Prout</persName> Old House <persName corresp="#SP">Prout</persName> on the <geogName corresp="#RHINE">Rhine</geogName>.<placeName corresp="#BRAUBACH">Braubach</placeName></cell>
+                              <cell>Begin with <del rend="strikethrough">mountain.</del> Tournament. Spectre. <del rend="strikethrough">the</del> Castle by moonlight. <persName corresp="#SP">Prout</persName> Old House <persName corresp="#SP">Prout</persName> on the <geogName corresp="#RHINE">Rhine</geogName>. <placeName corresp="#BRAUBACH">Braubach</placeName><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#HEIDELBERGILLUSGLOSS"/></cell>
                             </row>
                             <row role="data" xml:id="ACCOUNTTOCSTGOARILLUS">
                                 <cell>0</cell>
@@ -851,13 +851,13 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCSTGOAR">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                              <cell>Whirlpool. <placeName corresp="#GODESBERG">Godesberg</placeName>. <placeName corresp="#RHEINFELS">Rheinfels</placeName>. <geogName corresp="#DRACHENFELS">Drachenfels</geogName>.<ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#STGOARILLUSGLOSS"/> &#x2014;0</cell>
                               </row>
-                              <row role="data" xml:id="ACCOUNTTOCEHRENBREITSTEINILLUS">
+                              <row role="data" xml:id="ACCOUNTTOCCOBLENTZILLUS">
                                 <cell>0</cell>
                                 <cell>
-                                  <title type="composite" corresp="#JREHRENBREITSTEINCOMP"><placeName corresp="#COBLENZ">Coblentz</placeName> [“Ehrenbreitstein”]</title>
-                                (see also <ref type="internal" target="#ACCOUNTTOCEHRENBREITSTEIN">Table 1</ref>)</cell>
+                                  <title type="composite" corresp="#JREHRENBREITSTEINCOMP"><placeName corresp="#COBLENZ">Coblentz</placeName></title>
+                                  (see also <ref type="internal" target="#ACCOUNTTOCEHRENBREITSTEIN">Table 1 [<title type="composite" corresp="#JREHRENBREITSTEINCOMP"><geogName corresp="#EHRENBREISTEIN">Ehrenbreistein</geogName></title></ref>])</cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCSTRASBURGILLUS">
@@ -1535,7 +1535,7 @@
             <row role="data">
                 <cell n="1" role="data">0</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRSTGOARCOMP"><placeName corresp="#STGOAR">St. Goar</placeName></title></cell>
-                <cell n="3" role="data">Whirlpool. <placeName corresp="#GODESBERG">Godesberg</placeName>. <placeName corresp="#RHEINFELS">Rheinfels</placeName>.<geogName corresp="#DRACHENFELS">Drachenfels</geogName>. &#x2014;0</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">0</cell>
