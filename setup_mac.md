@@ -44,6 +44,7 @@ $ sudo bash -c "echo '127.0.0.1       ruskin.local' >> /etc/hosts"
 
 * Create `nginx` configuration
 In file `/usr/local/etc/nginx/servers/ruskin.local.conf`,
+with proper username in `root` field, 
 ```
 server {
     listen 8080 default_server;
@@ -61,7 +62,7 @@ server {
         try_files $uri $uri/ =404;
     }
     
-    add_header X-fc_script_name "$fastcgi_script_name";
+    # add_header X-fc_script_name "$fastcgi_script_name";
     location ~ src/(.*\.php)$ {
         try_files      /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 $uri =404;
         fastcgi_pass   127.0.0.1:9000;
@@ -113,7 +114,7 @@ $ cp config_template.json.php config.json.php
 
 * Install composer packages
 ```
-$ cd ~/Ruskin
+$ cd ~/Ruskin/src
 $ composer install
 ```
 
@@ -126,3 +127,8 @@ $ ln -s ../../src/header.inc.php .
 $ ln -s ../../src/search .
 $ ln -s ../../src/layout_includes .
 ```
+
+* Compile everything
+> Note: Homepage will not render unless everything is transformed
+
+* Everything must be running now
