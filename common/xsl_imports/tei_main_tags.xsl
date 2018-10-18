@@ -126,7 +126,6 @@ EOT
       </xsl:when>
       <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus']">
         <body>
-
           <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
           <xsl:apply-templates/>
           <xsl:value-of select="$topBtnPhpVar" disable-output-escaping="yes"/>
