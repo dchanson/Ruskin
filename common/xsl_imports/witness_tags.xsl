@@ -306,7 +306,10 @@
         <xsl:otherwise>
           <span class="l">
             <xsl:apply-templates/>
-            <xsl:call-template name="custom:printLineNumber" />
+
+            <xsl:if test="not(ancestor::tei:floatingText)">
+              <xsl:call-template name="custom:printLineNumber" />
+            </xsl:if>
           </span>
           <xsl:value-of select="$brVar" disable-output-escaping="yes"/>
         </xsl:otherwise>
