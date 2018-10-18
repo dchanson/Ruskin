@@ -401,7 +401,7 @@
           Reprinted from <xsl:apply-templates select="./tei:bibl/tei:date" />.a
         </xsl:when>
         <xsl:when test="@type='revisedAs'">
-          Revised As 
+          Revised as 
           <xsl:apply-templates select="./tei:biblStruct" />
         </xsl:when>
         <xsl:otherwise>
