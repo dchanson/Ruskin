@@ -18,10 +18,9 @@
 
   <xsl:template match="tei:head">
     <xsl:choose>
-
+      
       <xsl:when test="@type='title'">
         <xsl:choose>
-
           <xsl:when test="child::*[1][self::tei:space]">
             <xsl:choose>
 
@@ -40,29 +39,26 @@
             </xsl:choose>
           </xsl:when>
 
-          <xsl:when test="ancestor::*[tei:teiHeader/@type='anthology' or tei:teiHeader/@type='manuscript' or tei:teiHeader/@type='witness']">
-            <div class="title" style="text-align:center">
+          <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus']">
+          
+            <div id="top" class="page-title">
               <xsl:apply-templates/>
+              <hr />
+              <ul class="mini-contents">
+                <xsl:for-each select="following-sibling::tei:div[@type='section']">
+                  <li>
+                    <a href="#{@xml:id}">
+                      <xsl:value-of select="./tei:head" />
+                    </a>
+                    <xsl:if test="position() &lt; last()">
+                      | 
+                    </xsl:if>
+                </li>
+                </xsl:for-each>
+              </ul>
             </div>
-          </xsl:when>
 
-          <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus' or @type='note' or @type='figure']">
-            <xsl:choose>
-
-              <xsl:when test="ancestor::*[@type='note']">
-                <div id="top" class="page-title">
-                  <xsl:apply-templates/>
-                </div>
-              </xsl:when>
-
-              <xsl:when test="ancestor::*[@type='figure']">
-                <div id="top" class="page-title">
-                  <xsl:apply-templates/>
-                </div>
-                <br />
-              </xsl:when>
-
-            </xsl:choose>
+          
           </xsl:when>
 
           <!--<xsl:when test="not(ancestor::*[tei:teiHeader/@type='witness'])">
