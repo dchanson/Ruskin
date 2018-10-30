@@ -42,7 +42,9 @@
           <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus']">
           
             <div id="top" class="page-title">
-              <xsl:apply-templates/>
+              <div class="title-text">
+                <xsl:apply-templates/>
+              </div>
               <hr />
               <ul class="mini-contents">
                 <xsl:for-each select="following-sibling::tei:div[@type='section']">
