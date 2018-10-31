@@ -21,6 +21,14 @@ if(!function_exists('r_build_url')){
 	}
 }
 
+if(!function_exists('r_build_search_url')){
+	function r_build_search_url($path){
+		global $r_config;
+
+		return $r_config['SEARCH_HOST'] . '/' . $path;
+	}
+}
+
 if(!function_exists('r_get_base')){
 	function r_get_base(){
 		global $r_config;
