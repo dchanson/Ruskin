@@ -26,8 +26,10 @@ require_once('./header.inc.php');
    
    <?php require_once(ROOT_PATH."layout_includes/navigation.inc.php"); ?>
    
+   
    <div class="main" id="">
-      <iframe src="<?php echo r_build_search_url('search?noNav'); ?>">Loading...</iframe>
+     
+      <iframe src="<?php echo r_build_search_url("search?".$_SERVER['QUERY_STRING']); ?>">Loading...</iframe>
       
       
    </div>
