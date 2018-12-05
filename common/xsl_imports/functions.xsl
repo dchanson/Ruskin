@@ -52,11 +52,25 @@
     <xsl:param name="href" />
     <xsl:param name="target" select="'_self'" />
     
-    <xsl:variable name="href">&lt;?php echo r_build_url(&quot;<xsl:value-of select="$href"/>&quot;);?&gt;</xsl:variable>
+    <xsl:choose>
+      <xsl:when test="not($contentOnly)">
+        <xsl:variable name="href">&lt;?php echo r_build_url(&quot;<xsl:value-of select="$href"/>&quot;);?&gt;</xsl:variable>
+        
+        <xsl:call-template name="custom:render_anchor">
+          <xsl:with-param name="href" select="$href" />
+          <xsl:with-param name="target" select="$target" />
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="href">/<xsl:value-of select="substring-before($href, '.php')"/></xsl:variable>
+        
+        <xsl:call-template name="custom:render_anchor">
+          <xsl:with-param name="href" select="$href" />
+          <xsl:with-param name="target" select="$target" />
+        </xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
     
-    <xsl:call-template name="custom:render_anchor">
-      <xsl:with-param name="href" select="$href" />
-      <xsl:with-param name="target" select="$target" />
-    </xsl:call-template>
   </xsl:template>
-      </xsl:stylesheet>
+  
+</xsl:stylesheet>

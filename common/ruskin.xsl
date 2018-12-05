@@ -6,6 +6,10 @@
   xmlns:teix="http://www.tei-c.org/ns/Examples"
   xmlns:custom="http://whatever"
   >
+  <xsl:param name="contentOnly" select="contentOnly"/>
+  
+  <xsl:output method="html" use-character-maps="uni-hex"/>
+  
   <!--A B O U T   T H I S   D O C U M E N T
   Filename:               ruskin.xsl
   Version:                2.0
@@ -32,5 +36,7 @@
   <xsl:import href="xsl_imports/tei_main_tags.xsl"/>
   <xsl:import href="xsl_imports/witness_tags.xsl"/>
   <xsl:import href="xsl_imports/tei_variables.xsl"/>
+  
+  
 
 </xsl:stylesheet>
