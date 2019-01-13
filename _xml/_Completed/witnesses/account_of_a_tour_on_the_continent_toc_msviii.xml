@@ -85,14 +85,14 @@
     <text>
         <body>
           <div type="witness" subtype="bibliography_text" xml:id="account_of_a_tour_on_the_continent_toc_msviii_main">
-                <head type="title">List of Proposed Additional Contents for the &#x201C;Account&#x201D; [Account of a Tour on the Continent]</head>
+            <head type="title">Lists of Proposed Additional Contents for the &#x201C;Account&#x201D;</head>
                 <div type="tablespace" xml:id="account_toc_msviii_addictional_sections_table">
-                    <head type="section">[Table 1. Additional Sections and/or Works]</head>
+                  <head type="section">Table 1. List of Proposed Additional Sections and/or Works<lb/>(See <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php#PROPOSEDCONTENTS">&#x201C;Account&#x201D; Apparatus: The Plan for Completion of the Work</ref>.)</head>
                     <table cols="3">
                         <row role="label">
-                            <cell n="1">Metamark</cell>
-                            <cell n="2">Ruskin's Numbering</cell>
-                            <cell n="3">Title of Section or Work</cell>
+                          <cell n="1">1.<hi rend="italic">a</hi>. Metamark</cell>
+                          <cell n="2">1.<hi rend="italic">b</hi>. Ruskin&#x02BC;s Numbering (Sequence of Sections and/or Works?)</cell>
+                          <cell n="3">1.<hi rend="italic">c</hi>. Title of Section or Work</cell>
                         </row>
                         <row role="data">
                             <cell n="1"><metamark function="unknown">\</metamark></cell>
@@ -830,13 +830,13 @@
 
 <!--HERE HERE-->
               <div type="tablespace" xml:id="account_toc_msviii_table_2">
-                        <head type="section">[Table 2. List of Sections and/or Works "Wanted" with Associated Figures]</head>
+                <head type="section">Table 2. List of Proposed Additional Sections and/or Works with Associated Illustrations<lb/>(See <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php#PROPOSEDCONTENTS">&#x201C;Account&#x201D; Apparatus: The Plan for Completion of the Work</ref>.)</head>
                         <table cols="4">
                             <row role="label">
-                                <cell>Ruskin's Numbering (No. Items "Wanted"?)</cell>
-                                <cell>Title of Section or Work</cell>
-                                <cell>Associated Figures</cell>
-                                <cell>Additional Numbering<!--Placeholder name--></cell>
+                              <cell>2.<hi rend="italic">a</hi>. Ruskin&#x02BC;s Numbering (Items &#x201C;Wanted&#x201D;)</cell>
+                              <cell>2.<hi rend="italic">b</hi>. Title of Section or Work</cell>
+                              <cell>2.<hi rend="italic">c</hi>. Identities and Sources of Illustrations</cell>
+                              <cell>2.<hi rend="italic">d</hi>. Ruskin&#x02BC;s Numbering (Illustrations Completed?)</cell>
                             </row>
                             <row role="data" xml:id="ACCOUNTTOCHEIDELBERGILLUS">
                                 <cell>0</cell>
@@ -864,14 +864,12 @@
                                 <cell>&#x2014; 0</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCSTRASBURGILLUS">
-                                <cell>0 2</cell>
+                                <cell>02</cell>
                                 <cell>
-                                  <title type="composite" corresp="#JRSTRASBURGCOMP">
-                                    <placeName corresp="#STRASBOURG">Strasburg</placeName>
-                                  </title>
+                                  <title type="composite" corresp="#JRSTRASBURGCOMP"><placeName corresp="#STRASBOURG">Strasburg</placeName></title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCSTRASBURG">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell><persName corresp="#SP">Prout</persName>. The well. &#x007C; The swiss cottages &#x007C; &#x00D7; Un de les; <persName corresp="#WCW">William Tell</persName> <title type="book" corresp="#CLARKEBOYSOWNBOOK">Boys Own Book</title>, &#x2014;1<ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#STRASBURGILLUSGLOSS"/></cell>
                                 <cell>&#x2014; 1</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCSCHAFFHAUSENILLUS">
@@ -1617,8 +1615,8 @@
             </row>
             <row role="data">
                 <cell n="1" role="data">02</cell>
-                <cell n="2" role="data"><title type="composite" corresp="#JRSTRASBURGCOMP"><placeName corresp="#STRASBOURG">Strasburg</placeName></title></cell>
-                <cell n="3" role="data"><persName corresp="#SP">Prout</persName>. The well. &#x007C; The <placeName corresp="#SWISSCOTTAGES">swiss cottages</placeName> &#x3008;&#x00D7; Un de les; <persName corresp="#WCW">William Tell</persName>...<title type="book" corresp="#BOYSOWNBOOK">Boy's Own Book, &#x2014;1</title></cell>
+                <cell n="2" role="data"></cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">4</cell>
