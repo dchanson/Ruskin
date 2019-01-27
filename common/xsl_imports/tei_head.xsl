@@ -70,9 +70,9 @@
       </xsl:when>-->
 
       <xsl:otherwise>
-        <div class="page-title">
+        <h1 class="page-title">
           <xsl:apply-templates/>
-        </div>
+        </h1>
       </xsl:otherwise>
 
     </xsl:choose>
