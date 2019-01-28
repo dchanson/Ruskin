@@ -73,6 +73,11 @@
 
 
 
+  <xsl:template match="tei:graphic">
+    <div class="p">
+      <img src="{$assetUrl}/{@url}" style="width: 100%"/>
+    </div>
+  </xsl:template>
   <!--<p>-->
   <xsl:template match="tei:p">
     <div class="p">

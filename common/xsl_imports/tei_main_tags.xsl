@@ -61,7 +61,7 @@ EOT
 
   <xsl:template match="/">
     
-    <xsl:if test="not($contentOnly)">
+    <xsl:if test="not($htmlForm)">
       <xsl:value-of select="$headerIncludeVar" disable-output-escaping="yes"/>
       <xsl:value-of select="$docVar" disable-output-escaping="yes"/>
     </xsl:if>
@@ -82,7 +82,7 @@ EOT
           </xsl:when>
           <xsl:otherwise>
             <xsl:choose>
-              <xsl:when test="not($contentOnly)">
+              <xsl:when test="not($htmlForm)">
                 <html>
                   <xsl:apply-templates />
                 </html>
@@ -114,7 +114,7 @@ EOT
   elements in the XML document are ignored.-->
 
   <xsl:template match="tei:teiHeader">
-    <xsl:if test="not($contentOnly)">
+    <xsl:if test="not($htmlForm)">
       <head>
 
         <xsl:for-each select="tei:fileDesc/tei:titleStmt/tei:title[@type='main']">
@@ -147,18 +147,18 @@ EOT
       </xsl:when>
       <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus']">
         <body>
-          <xsl:if test="not($contentOnly)">
+          <xsl:if test="not($htmlForm)">
             <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
           </xsl:if>
           <xsl:apply-templates/>
-          <xsl:if test="not($contentOnly)">
+          <xsl:if test="not($htmlForm)">
             <xsl:value-of select="$topBtnPhpVar" disable-output-escaping="yes"/>
           </xsl:if>
         </body>
       </xsl:when>
 
       <xsl:otherwise>
-        <xsl:if test="not($contentOnly)">
+        <xsl:if test="not($htmlForm)">
           <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
         </xsl:if>
         <xsl:apply-templates/>

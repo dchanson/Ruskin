@@ -53,7 +53,7 @@
     <xsl:param name="target" select="'_self'" />
     
     <xsl:choose>
-      <xsl:when test="not($contentOnly)">
+      <xsl:when test="not($htmlForm)">
         <xsl:variable name="href">&lt;?php echo r_build_url(&quot;<xsl:value-of select="$href"/>&quot;);?&gt;</xsl:variable>
         
         <xsl:call-template name="custom:render_anchor">

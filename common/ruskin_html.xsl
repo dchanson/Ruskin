@@ -7,7 +7,7 @@
   xmlns:custom="http://whatever"
   >
   <xsl:param name="assetUrl" select="'http://ruskin.local:8080/src/images'" />
-  <xsl:param name="htmlForm" select="0" />
+  <xsl:param name="htmlForm" select="1" />
     
   <xsl:output method="html" use-character-maps="uni-hex"/>
   
