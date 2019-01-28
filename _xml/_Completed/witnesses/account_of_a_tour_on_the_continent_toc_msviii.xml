@@ -85,14 +85,14 @@
     <text>
         <body>
           <div type="witness" subtype="bibliography_text" xml:id="account_of_a_tour_on_the_continent_toc_msviii_main">
-                <head type="title">List of Proposed Additional Contents for the &#x201C;Account&#x201D; [Account of a Tour on the Continent]</head>
+            <head type="title">Lists of Proposed Additional Contents for the &#x201C;Account&#x201D;</head>
                 <div type="tablespace" xml:id="account_toc_msviii_addictional_sections_table">
-                    <head type="section">[Table 1. Additional Sections and/or Works]</head>
+                  <head type="section">Table 1. List of Proposed Additional Sections and/or Works<lb/>(See <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php#PROPOSEDCONTENTS">&#x201C;Account&#x201D; Apparatus: The Plan for Completion of the Work</ref>.)</head>
                     <table cols="3">
                         <row role="label">
-                            <cell n="1">Metamark</cell>
-                            <cell n="2">Ruskin's Numbering</cell>
-                            <cell n="3">Title of Section or Work</cell>
+                          <cell n="1">1.<hi rend="italic">a</hi>. Meta&#x2010;textual Mark</cell>
+                          <cell n="2">1.<hi rend="italic">b</hi>. Ruskin&#x02BC;s Numbering (Sequence of Sections and/or Works)</cell>
+                          <cell n="3">1.<hi rend="italic">c</hi>. Title of Section or Work</cell>
                         </row>
                         <row role="data">
                             <cell n="1"><metamark function="unknown">\</metamark></cell>
@@ -830,13 +830,13 @@
 
 <!--HERE HERE-->
               <div type="tablespace" xml:id="account_toc_msviii_table_2">
-                        <head type="section">[Table 2. List of Sections and/or Works "Wanted" with Associated Figures]</head>
+                <head type="section">Table 2. List of Proposed Additional Sections and/or Works with Associated Illustrations<lb/>(See <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php#PROPOSEDCONTENTS">&#x201C;Account&#x201D; Apparatus: The Plan for Completion of the Work</ref>.)</head>
                         <table cols="4">
                             <row role="label">
-                                <cell>Ruskin's Numbering (No. Items "Wanted"?)</cell>
-                                <cell>Title of Section or Work</cell>
-                                <cell>Associated Figures</cell>
-                                <cell>Additional Numbering<!--Placeholder name--></cell>
+                              <cell>2.<hi rend="italic">a</hi>. Ruskin&#x02BC;s Numbering (Items &#x201C;Wanted&#x201D;)</cell>
+                              <cell>2.<hi rend="italic">b</hi>. Title of Section or Work</cell>
+                              <cell>2.<hi rend="italic">c</hi>. Identities and Sources of Illustrations</cell>
+                              <cell>2.<hi rend="italic">d</hi>. Ruskin&#x02BC;s Numbering (Illustrations Completed?)</cell>
                             </row>
                             <row role="data" xml:id="ACCOUNTTOCHEIDELBERGILLUS">
                                 <cell>0</cell>
@@ -864,20 +864,18 @@
                                 <cell>&#x2014; 0</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCSTRASBURGILLUS">
-                                <cell>0 2</cell>
+                                <cell>02</cell>
                                 <cell>
-                                  <title type="composite" corresp="#JRSTRASBURGCOMP">
-                                    <placeName corresp="#STRASBOURG">Strasburg</placeName>
-                                  </title>
+                                  <title type="composite" corresp="#JRSTRASBURGCOMP"><placeName corresp="#STRASBOURG">Strasburg</placeName></title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCSTRASBURG">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell><persName corresp="#SP">Prout</persName>. The well. &#x007C; The swiss cottages &#x007C; &#x00D7; Un de les; <persName corresp="#WCW">William Tell</persName> <title type="book" corresp="#CLARKEBOYSOWNBOOK">Boys Own Book</title><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#STRASBURGILLUSGLOSS"/></cell>
                                 <cell>&#x2014; 1</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCSCHAFFHAUSENILLUS">
                                 <cell>4</cell>
                                 <cell>
-                                  <title type="composite" corresp="#JRSCHAFFHAUSENCOMP"><placeName corresp="#SCHAFFHAUSEN">Schaffhaus</placeName> [“Schaffhausen”]</title>
+                                  <title type="composite" corresp="#JRSCHAFFHAUSENCOMP"><placeName corresp="#SCHAFFHAUSEN">Schaffhaus</placeName> [&#x201C;Schaffhausen&#x201D;]</title>
                                 (see also <ref type="internal" target="#ACCOUNTTOCSCHAFFHAUSEN">Table 1</ref>)
                                 </cell>
                                 <cell></cell>
@@ -889,7 +887,7 @@
                                   <title type="composite" corresp="#JRTHEALPSCOMP"><geogName corresp="#ALPS">The Alps</geogName>.</title>
                                 (see also <ref type="internal" target="#ACCOUNTTOCTHEALPS">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell>My own</cell>
                                 <cell>&#x2014; 3</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCFALLOFTHERHINEILLUS">
@@ -900,7 +898,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCFALLOFTHERHINE">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell>Turner<ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#FALLOFTHERHINEILLUSGLOSS"/></cell>
                                 <cell>&#x2014; 3</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCCONSTANCEILLUS">
@@ -911,7 +909,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCCONSTANCE">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell>Recollection<ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#CONSTANCEILLUSGLOSS"/></cell>
                                 <cell>&#x2014; 3</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCWERDENBERGILLUS">
@@ -922,8 +920,8 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCWERDENBERG">Table 1</ref>)
                                 </cell>
+                                <cell><del rend="strikethrough">On the <geogName corresp="#RHINE">Rhine</geogName></del> near <placeName corresp="#SARGENS">Sargans</placeName> with thunder &#x2014; Also &#x2014; Haymakers.<ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#WERDENBERGILLUSGLOSS"/></cell>
                                 <cell></cell>
-                                <cell>&#x2014;</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCPFAFFERSILLUS">
                                 <cell>1</cell>
@@ -933,7 +931,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCPFAFFERS">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell>Ravine, On the <geogName corresp="#RHINE">Rhine</geogName> near Tusis, <placeName corresp="#COIRE">Coire</placeName> &#x2014; Chateau of Trostberg<ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#PFAFFERSILLUSGLOSS"/></cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCPASSINGTHEALPSILLUS">
@@ -942,7 +940,7 @@
                                   <title type="composite" corresp="#JRPASSINGTHEALPSCOMP">Passing <geogName corresp="#ALPS">Alps</geogName></title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCPASSINGTHEALPS">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell><persName corresp="#HANNIBAL">Hannibal</persName> <del rend="strikethrough">Alps at Daybreak</del><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#PASSINGTHEALPSILLUSGLOSS"/></cell>
                                 <cell>&#x2014;</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCVIAMALAILLUS">
@@ -953,7 +951,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCVIAMALA">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell><persName corresp="#WBI">Brockedon</persName>, goats. Two from coloured plates<ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#VIAMALAILLUSGLOSS"/></cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCSPLUGENILLUS">
@@ -964,7 +962,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCSPLUGEN">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell>Covered bridge, <gap reason="illegible" extent="8" unit="chars"/> Galleries coloured, Fountain. <geogName corresp="ROFLARAVINE">Ravine of Rofla</geogName>.<ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#SPLUGENILLUSGLOSS"/></cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCTHESUMMITILLUS">
@@ -973,7 +971,7 @@
                                   <title type="composite" corresp="#JRTHESUMMITCOMP">The summit</title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCTHESUMMIT">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell>Arch of snow with <gap reason="illegible" extent="2" unit="chars"/> torrent <geogName corresp="#HELVELLYN">Helvellyn</geogName><ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#THESUMMITILLUSGLOSS"/></cell>
                                 <cell>&#x2014;</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCTHEDESCENTILLUS">
@@ -982,16 +980,16 @@
                                   <title type="composite" corresp="#JRTHEDESCENTCOMP">The descent</title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCTHEDESCENT">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell><persName corresp="#WBI">Brockedon</persName>. Passage of Cardinele coloured. Cascade. Vineyards of <placeName corresp="#CHIAVENNA">Chiavenna</placeName>.<ref type="gloss_contextual" target="account_of_a_tour_on_the_continent_toc_illus_glosses_contextual.php#THEDESCENTILLUSGLOSS"/></cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCLAGODICOMOILLUS">
                                 <cell>2</cell>
                                 <cell>
-                                  <title type="composite" corresp="#JRLAGODICOMOCOMP"><geogName corresp="#LAKECOMO">Como</geogName>.</title>
+                                  <title type="composite" corresp="#JRLAGODICOMOCOMP"><geogName corresp="#LAKECOMO">Como.</geogName>.</title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCLAGODICOMO">Table 1</ref>)
                                 </cell>
-                                <cell>2</cell>
+                                <cell>Sketch on lake of Chiavenna with boat. <placeName corresp="#COMO">Como</placeName> from <persName corresp="#CFS">Stanfield</persName>, Small part town</cell>
                                 <cell>&#x2014; 1</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCCADENABBIAILLUS">
@@ -1002,16 +1000,16 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCCADENABBIA">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell><persName corresp="#SR">Rogers</persName> <placeName corresp="#ITALY">Italy</placeName>. Como from <persName corresp="#GGB">Lord Byron</persName>, Lecco from <persName corresp="#WBI">Brockedon</persName>. <persName corresp="#JMWT">Turner</persName> beginning of <persName corresp="#SR">Rogers</persName> memory</cell>
                                 <cell>0</cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCVILLAPLINIANAILLUS">
                                 <cell>2</cell>
                                 <cell>
-                                  <title type="composite" corresp="#JRVILLAPLINIANACOMP"><placeName corresp="#VILLAPLINIANINA">Villa plin</placeName> [“Villa pliniana”]</title>
+                                  <title type="composite" corresp="#JRVILLAPLINIANACOMP"><placeName corresp="#VILLAPLINIANINA">Villa plin</placeName> [Villa pliniana]</title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCVILLAPLINIANA">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell>Villa Poro. <geogName corresp="#CASCATADNESSO">Cascata di Nesso</geogName>. <persName corresp="#SP">Prouts</persName> port of Como Come from Road to <placeName corresp="#ERBA">Erba</placeName>. <persName corresp="#WBI">Brockedon</persName></cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCMILANILLUS">
@@ -1022,7 +1020,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCMILAN">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell><del rend="strikethrough">the cathed</del></cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCDUOMOILLUS">
@@ -1033,7 +1031,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCDUOMO">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell>2 of the cathedral</cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCCORSOILLUS">
@@ -1044,7 +1042,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCCORSO">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell>The town with cathedral recollected</cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCCERTOSAILLUS">
@@ -1064,7 +1062,7 @@
                                   <title type="composite" corresp="#JRTHEAPPENINESCOMP"><geogName corresp="#APPENINES">Appenines</geogName>.</title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCAPPENINES">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell>mediterranean. 3 among the Appenines</cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCGENOAILLUS">
@@ -1075,7 +1073,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCGENOA">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell><persName corresp="#WBI">Brokedons</persName> Martello Tower.</cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCMARENGOILLUS">
@@ -1086,7 +1084,7 @@
                                   </title>
                                    (see also <ref type="internal" target="#ACCOUNTTOCMARENGO">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell><persName corresp="#SR">Rogers</persName>. view of <geogName corresp="#THEALPS">the Alps</geogName> near <placeName corresp="#TURIN">Turin</placeName> ditto of the <geogName corresp="#APPENINES">Appenines</geogName>.</cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCTURINILLUS">
@@ -1097,7 +1095,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCTURIN">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell><persName corresp="#WBI">Brockedons</persName> <placeName corresp="#TURIN">Turin</placeName>. My view.</cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCNOVARAILLUS">
@@ -1108,7 +1106,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCNOVARA">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell><geogName corresp="#MONTEROSA">Mont Rosa</geogName>, From Baths of Vallegio,</cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCMAGGIOREILLUS">
@@ -1119,7 +1117,7 @@
                                   </title>
                                   (see also <ref type="internal" target="#ACCOUNTTOCMAGGIORE">Table 1</ref>)
                                 </cell>
-                                <cell></cell>
+                                <cell>On <geogName corresp="#LAKEMAGGIORE">Lake of Maggiore</geogName> [Illegible] my own <persName corresp="#WBI">Brockedon</persName> with Carlo .<del rend="strikethrough">???</del> Mary's <placeName corresp="#BORROMEANISLANDS">Borromean isles</placeName>. <geogName corresp="#MONTEROSA">Monte Rosa</geogName> from near Lou??. <persName corresp="#WBI">Brockedon</persName>.</cell>
                                 <cell></cell>
                               </row>
                               <row role="data" xml:id="ACCOUNTTOCMADONNADELMONTEILLUS">
@@ -1617,8 +1615,8 @@
             </row>
             <row role="data">
                 <cell n="1" role="data">02</cell>
-                <cell n="2" role="data"><title type="composite" corresp="#JRSTRASBURGCOMP"><placeName corresp="#STRASBOURG">Strasburg</placeName></title></cell>
-                <cell n="3" role="data"><persName corresp="#SP">Prout</persName>. The well. &#x007C; The <placeName corresp="#SWISSCOTTAGES">swiss cottages</placeName> &#x3008;&#x00D7; Un de les; <persName corresp="#WCW">William Tell</persName>...<title type="book" corresp="#BOYSOWNBOOK">Boy's Own Book, &#x2014;1</title></cell>
+                <cell n="2" role="data"></cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">4</cell>
@@ -1628,82 +1626,82 @@
             <row role="data">
                 <cell n="1" role="data">3</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRTHEALPSCOMP"><placeName corresp="#THEALPS">The Alps</placeName></title></cell>
-                <cell n="3" role="data">My own &#x2014; 3</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">3</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRTHEFALLOFTHERHINE"><geogName corresp="#RHINEFALLS">Fall of the Rhine</geogName></title></cell>
-                <cell n="3" role="data">Tarnes &#x2014;3</cell>
+                <cell n="3" role="data"> &#x2014;3</cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">3</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRCONSTANCECOMP"><geogName corresp="#LAKECONSTANCE">Constance</geogName></title></cell>
-                <cell n="3" role="data">Recollection &#x2014; 3</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">3</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRWERDENBERGCOMP"><placeName corresp="#WERDENBERG">Werdenberg</placeName></title></cell>
-                <cell n="3" role="data"><del rend="strikethrough">On the <geogName corresp="#RHINE">Rhine</geogName></del> near  with thunder &#x2014;</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">1</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRPFAFFERSCOMP"><placeName corresp="#PFAFFERS">Pfaffers</placeName></title></cell>
-                <cell n="3" role="data">Ravine, on the <geogName corresp="#RHINE">Rhine</geogName> near Tussis,<placeName corresp="#COIRE">Coire</placeName> &#x2014; chartreuse</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">3</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRPASSINGTHEALPSCOMP">Passing <geogName corresp="#THEALPS">Alps</geogName></title></cell>
-                <cell n="3" role="data"><persName corresp="#HANNIBAL">Hannibal</persName><del rend="strikethrough">Alps at Daybreak</del> &#x2014;</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">0</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRVIAMALACOMP"><geogName corresp="#VIAMALA">Via Mala</geogName></title></cell>
-                <cell n="3" role="data"><persName corresp="#WBI">Brockedon</persName>, goats. Two from coloured plates</cell>
+                <cell n="3" role="data"><persName corresp="#WBI"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">0</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRSPLUGENCOMP"><geogName corresp="#SPLUGEN">Splugen</geogName></title></cell>
-                <cell n="3" role="data">Covered bridge, <del rend="strikethrough">[Illegible]</del>Galleries coloured, Fountain. <geogName corresp="ROFLARAVINE">Ravine of Rofla</geogName>.</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">2</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRTHESUMMITCOMP">The Summit</title></cell>
-                <cell n="3" role="data">Arch of snow with <del rend="strikethrough">[Illegible]</del><geogName corresp="#HELVELLYN">mount Helvellyn</geogName>&#x2014;</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">0</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRTHEDESCENTCOMP">The descent</title></cell>
-                <cell n="3" role="data"><persName corresp="#WBI">Brockedon</persName>. Passage of Cardinell coloured. Cascade. Vineyards of <placeName corresp="#CHIAVENNA">Chiavenna.</placeName></cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">2</cell>
                 <cell n="2" role="data">2<title type="composite" corresp="#JRLAGODICOMOCOMP"><placeName corresp="#COMO">Como</placeName></title>.</cell>
-                <cell n="3" role="data">Sketch on lake of Chiavenna with boat. <placeName corresp="#COMO">Como from</placeName>small part town &#x2014;1</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">1</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRCADENABBIACOMP"><placeName corresp="#CADENABBIA">Cadenabia</placeName></title></cell>
-                <cell n="3" role="data"><persName corresp="#SR">Rogers</persName> <placeName corresp="#ITALY">Italy</placeName>. Como from <persName corresp="#GGB">Lord Byron</persName>, Letto from <persName corresp="#WBI">Brockedon</persName>. <persName corresp="#JMWT">Turner</persName> beginning of<persName corresp="#SR">Rogers</persName> nunnery 0</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">0</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRVILLAPLINIANACOMP"><placeName corresp="#VILLIAPLINIANINA">Villa Pliniana</placeName></title></cell>
-                <cell n="3" role="data">Villa Poro. <geogName corresp="#CASCATADNESSO">Cascata di Nesso</geogName>. <persName corresp="#SP">Prouts</persName> port of como Come from Road to <placeName corresp="#ERBA">Erba</placeName>. <persName corresp="#WBI">Brockedon</persName></cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">4</cell>
                 <cell n="2" role ="data"><title type="composite" corresp="#JRMILANCOMP"><placeName corresp="Milan">Milan</placeName></title>.</cell>
-                <cell n="3" role="data"><del rend="strikethrough">the cathed</del></cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">2</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRDUOMOMILAN"><name type="building" corresp="#DUOMOMILAN">The duomo of Milan</name></title></cell>
-                <cell n="3" role="data">2 of the cathedral</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">3</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRCORSOMILAN"><name type="building" corresp="#CORSOMILAN">The Corso</name></title></cell>
-                <cell n="3" role="data">The town with cathedral recollected</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">4</cell>
@@ -1713,32 +1711,32 @@
             <row role="data">
                 <cell n="1" role="data">0</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRTHEAPPENINESCOMP"><geogName corresp="#APPENINES">Appenines</geogName></title></cell>
-                <cell n="3" role="data">mediterranean. 3 among the appenines</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">1</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRGENOACOMP"><placeName corresp="#GENOA">Genoa</placeName></title>&#x2014;</cell>
-                <cell n="3" role="data"><persName corresp="#WBI">Brokedons</persName> Martello Tower.</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">1</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRMARENGOCOMP"><placeName corresp="#MARENGO">Marengo</placeName></title></cell>
-                <cell n="3" role="data"><persName corresp="#SR">Rogers</persName>. view of <geogName corresp="#THEALPS">the Alps</geogName> near <placeName corresp="#TURIN">Turin</placeName> ditto of the <geogName corresp="#APPENINES">Appenines</geogName></cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">2</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRTURINCOMP"><placeName corresp="#TURIN">Turin></placeName></title></cell>
-                <cell n="3" role="data"><persName corresp="#WBI">Brockedons</persName> <placeName corresp="#TURIN">Turin</placeName>. My view.</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">2</cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRNOVORACOMP">Novora</title></cell>
-                <cell n="3" role="data"><geogName corresp="#MONTEROSA">Mount Rosa</geogName>, From Baths of Vallegio,</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data"><del rend="strikethrough">1</del></cell>
                 <cell n="2" role="data"><title type="composite" corresp="#JRMAGGIORECOMP"><geogName corresp="#MAGGIORE">Maggiore</geogName></title></cell>
-                <cell n="3" role="data">On <geogName corresp="#LAKEMAGGIORE">Lake of Maggiore</geogName> [Illegible] my own <persName corresp="#WBI">Brockedon</persName> with Carlo .<del rend="strikethrough">???</del>Mary's <placeName corresp="#BORROMEANISLANDS">Borromean isles</placeName>. <geogName corresp="#MONTEROSA">Monte Rosa</geogName> from near Lou??. <persName corresp="#WBI">Brockedon</persName>.</cell>
+                <cell n="3" role="data"></cell>
             </row>
             <row role="data">
                 <cell n="1" role="data">4</cell>
