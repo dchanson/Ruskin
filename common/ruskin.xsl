@@ -23,7 +23,11 @@
   Copyright Notice:       This document was created exclusively for The Early Works of John Ruskin (1826-42), a Digital Humanities project of
   Southeastern Louisiana University's Department of English. The contents of this document may not be used or reproduced in
   any form without the express permission of the Author and the Project Director.-->
-
+  
+  <xsl:variable name="newServerPath" select="'http://localhost:9001'" />
+  <!-- <xsl:variable name="newServerPath" select="'http://147.174.3.208:9001'" /> -->
+  
+  <xsl:import href="xsl_imports/third_party.xsl"/>
   <xsl:import href="xsl_imports/characters.xsl"/>
   <xsl:import href="xsl_imports/functions.xsl"/>
   <xsl:import href="xsl_imports/names.xsl"/>

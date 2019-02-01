@@ -238,6 +238,9 @@
     <!--<note>-->
 
     <xsl:template match="tei:note">
+      <xsl:if test="@xml:id">
+        <a id="{@xml:id}" class="anchor-control gloss-padding-fix" />
+      </xsl:if>
       <xsl:choose>
 
         <xsl:when test="@type='gloss'">
@@ -248,7 +251,7 @@
         </xsl:when>
 
         <xsl:otherwise>
-          <span id="{@xml:id}">
+          <span>
             <xsl:apply-templates/>
           </span>
           <br/>

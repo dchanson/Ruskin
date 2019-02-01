@@ -24,6 +24,10 @@
   Southeastern Louisiana University's Department of English. The contents of this document may not be used or reproduced in
   any form without the express permission of the Author and the Project Director.-->
 
+  <xsl:variable name="newServerPath" select="'http://localhost:9001'" />
+
+
+  <xsl:import href="xsl_imports/third_party.xsl"/>
   <xsl:import href="xsl_imports/characters.xsl"/>
   <xsl:import href="xsl_imports/functions.xsl"/>
   <xsl:import href="xsl_imports/names.xsl"/>

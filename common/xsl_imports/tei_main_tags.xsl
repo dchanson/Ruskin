@@ -39,8 +39,20 @@ EOT
 
 
       <div class="backToApparatusLink">
+        <xsl:variable name="justNameVar">
+          <xsl:for-each select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref[1]/@target">
+            <xsl:if test="position()=1">
+              <xsl:call-template name="string-replace-all">
+                <xsl:with-param name="text" select="." />
+                <xsl:with-param name="replace" select="'.php'" />
+                <xsl:with-param name="by" select="''" />
+              </xsl:call-template>
+            </xsl:if>
+          </xsl:for-each>
+        </xsl:variable>
+        
         <xsl:variable name="aVar">
-          &#x003C;a href=&#x022;&#x003C;?php echo r_build_url(&#x022;<xsl:value-of select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref[1]/@target" />&#x022;); ?&#x003E;&#x022; &#x003E;Back to apparatus&#x003C;/a&#x003E;
+          &#x003C;a href=&#x022;<xsl:value-of select="$newServerPath"/>/<xsl:value-of select="$justNameVar" />&#x022;&#x003E;Back to apparatus&#x003C;/a&#x003E;
         </xsl:variable>
         <xsl:value-of select="$aVar" disable-output-escaping="yes" />
         <div class="pb" />

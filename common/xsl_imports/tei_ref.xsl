@@ -33,7 +33,7 @@
 
       <xsl:when test="@type='figure'">
         <xsl:call-template name="custom:build_url_and_render_anchor">
-          <xsl:with-param name="href" select="concat('witnesses/',@target)" />
+          <xsl:with-param name="href" select="concat('figures/',@target)" />
         </xsl:call-template>
       </xsl:when>
 
@@ -45,7 +45,7 @@
 
       <xsl:when test="@type='drawing'">
         <xsl:call-template name="custom:build_url_and_render_anchor">
-          <xsl:with-param name="href" select="concat('drawings/',@target)" />
+          <xsl:with-param name="href" select="concat('figures/',@target)" />
         </xsl:call-template>
       </xsl:when>
 
@@ -77,9 +77,18 @@
 
 
         <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
-
+        
+        <xsl:variable name="justNameVar">
+          <xsl:call-template name="string-replace-all">
+            <xsl:with-param name="text" select="@target" />
+            <xsl:with-param name="replace" select="'.php'" />
+            <xsl:with-param name="by" select="''" />
+          </xsl:call-template>
+        </xsl:variable>
         <xsl:variable name="refVar">
-          &#x003C;a href=&#x0022;../glosses/<xsl:value-of select="@target"/>&#x0022; target=&#x022;_blank&#x022; class=&#x022;inactive&#x022;&#x003E;
+          &#x003C;a href=&#x0022;<xsl:value-of select="$newServerPath"/>/glosses/<xsl:value-of select="$justNameVar"/>&#x0022; target=&#x022;_blank&#x022; class=&#x022;inactive&#x022;&#x003E;
+          
+          
           <span>
             <xsl:choose>
               <xsl:when test="@type='gloss_textual'">

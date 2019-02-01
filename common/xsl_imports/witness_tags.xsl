@@ -279,8 +279,14 @@
         </div>
       </xsl:when>
       
+      <xsl:when test="@type='extract'">
+        <div class="lg-extract">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      
       <xsl:otherwise>
-        <xsl:message terminate="yes">&lt;lg&gt; needs the "type" attribute</xsl:message>
+        <xsl:message terminate="yes">The 'lg' tag needs the "type" attribute</xsl:message>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
