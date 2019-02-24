@@ -3,18 +3,16 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
-            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
         <fileDesc xml:id="jungfrau_from_interlaken_figure">
             <titleStmt>
-                <title type="main">The Jungfrau from Interlaken [drawing]</title>
+                <title type="main">&#x201C;The Jungfrau&#x201C; Drawing 1 of 1</title>
                 <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
                 <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
                 <author>
-                    <persName corresp="#APW">Author of Printed Work</persName>
+                    <persName corresp="#JR">John Ruskin</persName>
                 </author>
                 <editor>
-                    <persName corresp="#EPW">Editor of Printed Work</persName>
+                    <persName corresp="#WGC">W. G. Collingwood</persName>
                 </editor>
                 <principal>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -66,7 +64,7 @@
                             <pubPlace>London</pubPlace>
                             <publisher>George Allen</publisher>
                             <date when="1891">1891</date>
-                            <biblScope type="pages">xxiii</biblScope>
+                            <biblScope type="pages">140 opp.</biblScope>
                         </imprint>
                     </monogr>
                 </biblStruct>
@@ -76,8 +74,11 @@
     <text>
         <body>
             <div type="figure" subtype="photogravure">
-                <head type="title">Title of Prose Piece</head>
-                <div type="chapter">
+                <figure>
+                <head type="title">The <geogName corresp="#JUNGFRAU">Jungfrau</geogName> from <placeName corresp="#INTERLAKEN">Interlaken</placeName></head>
+                <figDesc>Pen and ink, approx. ? &#x00D7; ? cm (image only).</figDesc>
+                </figure>
+                
                     <head type="chapter">Title of Chapter</head>
                     <p><ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 38:227 [no. 83]; reproduced by photogravure in <ref type="bibliography" target="bibliography.php#POEMS4D1891"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#POEMS4D1891"><hi rend="italic">Poems</hi></title> [4<hi rend="superscript">o</hi>, 1891]</ref>, 1:128 opp., and in <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:354 opp.)</p>
                     <p>Body paragraph containing a list:
