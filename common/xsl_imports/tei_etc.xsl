@@ -74,9 +74,14 @@
 
 
   <xsl:template match="tei:graphic">
-    <div class="p">
-      <img src="{$assetUrl}/{@url}" style="width: 100%"/>
-    </div>
+    <xsl:choose>
+      <xsl:when test="@xml:id">
+        <img src="{$assetUrl}/{@url}" id="{@xml:id}"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <img src="{$assetUrl}/{@url}"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   <!--<p>-->
   <xsl:template match="tei:p">
