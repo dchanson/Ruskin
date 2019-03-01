@@ -101,10 +101,12 @@
   <xsl:template match="tei:item">
     <xsl:choose>
       <xsl:when test="@xml:id">
-        <li id="{@xml:id}">
+        <a class="id-holder" id="{@xml:id}">N</a>
+        <li class="id-holder-data">
           <xsl:apply-templates/>
         </li>
       </xsl:when>
+      
       <xsl:otherwise>
         <li>
           <xsl:apply-templates/>
