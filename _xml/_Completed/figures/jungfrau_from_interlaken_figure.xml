@@ -2,14 +2,13 @@
 <?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader type="witness">
+    <teiHeader type="figure">
         <fileDesc xml:id="jungfrau_from_interlaken_figure">
             <titleStmt>
                 <title type="main">&#x201C;The Jungfrau&#x201C; Drawing 1 of 1</title>
-                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
-                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <title type="sub">Electronic text describing original drawing</title>
                 <author>
-                    <persName corresp="#JR">John Ruskin</persName>
+                    <persName corresp="#DCH">David C. Hanson</persName>
                 </author>
                 <editor>
                     <persName corresp="#WGC">W. G. Collingwood</persName>
@@ -52,7 +51,6 @@
             <sourceDesc>
                 <biblStruct>
                     <monogr>
-                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
                         <editor>
                             <persName>W. G. Collingwood</persName>
                         </editor>
@@ -75,49 +73,17 @@
         <body>
             <div type="figure" subtype="photogravure">
                 <figure>
-                <head type="title">The <geogName corresp="#JUNGFRAU">Jungfrau</geogName> from <placeName corresp="#INTERLAKEN">Interlaken</placeName></head>
-                <figDesc>Pen and ink, approx. ? &#x00D7; ? cm (image only).</figDesc>
+                    <head type="title"><title type="artwork" corresp="#JRJUNGFRAUFROMINTERLAKEN">[&#x201C;The <geogName corresp="#JUNGFRAU">Jungfrau</geogName> from <placeName corresp="#INTERLAKEN">Interlaken</placeName>&#x201D;]</title></head>
+                    <figDesc>Pen and ink, approx. 3 &#x00D7; 3 1/2 inches, based on photogravure, said to be actual size.</figDesc>
                 </figure>
-                
-                    <head type="chapter">Title of Chapter</head>
-                    <p><ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 38:227 [no. 83]; reproduced by photogravure in <ref type="bibliography" target="bibliography.php#POEMS4D1891"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#POEMS4D1891"><hi rend="italic">Poems</hi></title> [4<hi rend="superscript">o</hi>, 1891]</ref>, 1:128 opp., and in <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:354 opp.)</p>
-                    <p>Body paragraph containing a list:
-                        <list type="ordered">
-                            <item n="1">First item in the list.</item>
-                            <item n="2">Second item.</item>
-                            <item n="3">Third item.</item>
-                        </list>
-                    </p>
-                    <!--Paragraphs containing dialogue.-->
-                    <p>
-                        <said who="#Lucy">oh is it raining</said> cried Lucy <said who="#Lucy">I am very sorry for I have so many things to do.
-                        but however I have plenty of things. to do in the house as well</said> said Lucy
-                    </p>
-                    <p>
-                        <said who="#mamma">yes you have</said> answered her mother.
-                    </p>
-                </div>
+                <p>The title presumably originated with <persName corresp="#WGC">W. G. Collingwood</persName>, editor of 
+                    <ref type="bibliography" target="bibliography.php#JRPOEMS4D1891"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRPOEMS4D1891"><hi rend="italic">Poems</hi></title> (4<hi rend="superscript">o</hi>, 1891)</ref>, 
+                    for which the drawing was photogravured (1:140 opp.). However, the title and/or identification of the subject of the drawing may have been known to &#x201C;<persName corresp="#ATAYLOR">Miss Agnes Taylor</persName>&#x201D;, 
+                    who is credited with possession of the drawing in <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 38:259 (no. 915). 
+                    The current location of the drawing is unknown.</p>
+                <p>The vignette is also reproduced by photogravure in <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:380 opp.</p>
             </div>
-            <!--Simple Verse. Delete this <div/> if not used.-->
-            <div type="poem">
-                <head type="title">Title of Poem</head>
-                <lg type="stanza" rhyme="aa">
-                    <l>Ruskin was a certainly a poet.</l>
-                    <l>Even his early work did show it.</l>
-                </lg>
-            </div>
-            <!--Simple Drama. Delete this <div/> if not used.-->
-            <div type="drama">
-                <head type="title">Title of Drama</head>
-                <div type="act">
-                    <head type="act">Act I</head>
-                    <sp>
-                        <speaker>Antony</speaker>
-                            <stage>(pacing anxiously)</stage>
-                            <l>I come to bury Caesar, not to praise him.</l>
-                    </sp>
-                </div>
-            </div>
+            
         </body>
     </text>
 </TEI>
