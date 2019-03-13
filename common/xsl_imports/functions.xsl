@@ -62,7 +62,7 @@
         </xsl:call-template>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:variable name="href">/<xsl:value-of select="substring-before($href, '.php')"/></xsl:variable>
+        <xsl:variable name="href"><xsl:value-of select="concat('/', substring-before($href, '.php'), substring-after($href, '.php'))"/></xsl:variable>
         
         <xsl:call-template name="custom:render_anchor">
           <xsl:with-param name="href" select="$href" />
