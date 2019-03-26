@@ -92,7 +92,6 @@ $(document).ready(function(){
 		$("#navbar-facs").css({"left":"296px", "top":"30px"});
 		$("#toggle-view").css("margin-left", "30px");
 		$("#navbar-enlarge").css({"left":"429px", "top":"30px"});
-		$("#toggle-transcription").css("margin-left", "30px");
 		$("#navbar-hand").css({"left":"524px", "top":"30px"});
 	}
 
@@ -224,40 +223,40 @@ $(document).ready(function(){
 		$('.smallcaps').css('font-size', sizes[1]);
 	});
 
-	$("#toggle-transcription").click(function(){
-		var allStates = ["composite", "original", "revised"];
-
-		var state = $(this).attr("data-current-state");
-		if(!state) state = allStates[0];
-		else{
-			state = allStates[(allStates.indexOf(state) +1)%allStates.length];
-		}
-
-		switch (state) {
-			case "original":
-				$("#toggle-transcription")
-				.attr("src", window.erm.base_url + "/images/navbar/text-original.jpg");
-
-				$(".s-subst.s-add").hide();
-				$(".s-subst.s-del").addClass("s-revision-original").show();
-				break;
-			case "revised":
-				$("#toggle-transcription")
-				.attr("src", window.erm.base_url + "/images/navbar/text-revised.jpg");
-
-				$(".s-subst.s-add").show();
-				$(".s-subst.s-del").removeClass("s-revision-original").hide();
-				break;
-			default: // composite
-				$("#toggle-transcription")
-				.attr("src", window.erm.base_url + "/images/navbar/text-composite.jpg");
-				
-				$(".s-subst.s-add").show();
-				$(".s-subst.s-del").show();
-		}
-
-		$(this).attr("data-current-state", state);
-	});
+	// $("#toggle-transcription").click(function(){
+	// 	var allStates = ["composite", "original", "revised"];
+	// 
+	// 	var state = $(this).attr("data-current-state");
+	// 	if(!state) state = allStates[0];
+	// 	else{
+	// 		state = allStates[(allStates.indexOf(state) +1)%allStates.length];
+	// 	}
+	// 
+	// 	switch (state) {
+	// 		case "original":
+	// 			$("#toggle-transcription")
+	// 			.attr("src", window.erm.base_url + "/images/navbar/text-original.jpg");
+	// 
+	// 			$(".s-subst.s-add").hide();
+	// 			$(".s-subst.s-del").addClass("s-revision-original").show();
+	// 			break;
+	// 		case "revised":
+	// 			$("#toggle-transcription")
+	// 			.attr("src", window.erm.base_url + "/images/navbar/text-revised.jpg");
+	// 
+	// 			$(".s-subst.s-add").show();
+	// 			$(".s-subst.s-del").removeClass("s-revision-original").hide();
+	// 			break;
+	// 		default: // composite
+	// 			$("#toggle-transcription")
+	// 			.attr("src", window.erm.base_url + "/images/navbar/text-composite.jpg");
+	// 
+	// 			$(".s-subst.s-add").show();
+	// 			$(".s-subst.s-del").show();
+	// 	}
+	// 
+	// 	$(this).attr("data-current-state", state);
+	// });
 
 	// Toggle Hand Drop-down //
 	$("#toggle-hand").click(function(){
