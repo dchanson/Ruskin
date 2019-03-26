@@ -12,28 +12,43 @@
                     <entry>
                         <String>scenario.associations</String>
                         <scenarioAssociation-array>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate (global)</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
+                          <scenarioAssociation>
+                              <field name="url">
+                                  <String>_xml/_Completed/witnesses</String>
+                              </field>
+                              <field name="scenarioIds">
+                                  <list>
+                                      <String>Generate (global)</String>
+                                  </list>
+                              </field>
+                              <field name="scenarioTypes">
+                                  <list>
+                                      <String>XSL</String>
+                                  </list>
+                              </field>
+                          </scenarioAssociation>
+                          <scenarioAssociation>
+                              <field name="url">
+                                  <String>_xml/_In_Process/witnesses</String>
+                              </field>
+                              <field name="scenarioIds">
+                                  <list>
+                                      <String>Generate (global)</String>
+                                  </list>
+                              </field>
+                              <field name="scenarioTypes">
+                                  <list>
+                                      <String>XSL</String>
+                                  </list>
+                              </field>
+                          </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>_xml/</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Generate and open (global)</String>
+                                        <String>Generate html</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -42,6 +57,7 @@
                                     </list>
                                 </field>
                             </scenarioAssociation>
+                            
                         </scenarioAssociation-array>
                     </entry>
                     <entry>
