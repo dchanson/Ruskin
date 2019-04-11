@@ -7,7 +7,7 @@ LOCAL_DIRECTORY="./deploy"
 # SERVER_USERNAME="humanitiesga"
 # SERVER="english.selu.edu"
 SERVER_USERNAME="webmaster"
-SERVER="147.174.3.208"
+SERVER="erm.selu.edu"
 
 
 if [[ $* == *--live-site* ]]; then
