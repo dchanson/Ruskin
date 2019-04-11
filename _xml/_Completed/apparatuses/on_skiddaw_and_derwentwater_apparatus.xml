@@ -20,6 +20,10 @@
                     <persName corresp="#KBV">Kyle B. Volkmann</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
+                <respStmt>
+                    <persName corresp="#BSP">Brianna S. Poch&#x00E9;</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
                     America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
@@ -63,13 +67,19 @@
                     <list n="1">
                         <item>Manuscript
                             <list n="1a">
-                                <item><ref type="witness" target="description_of_skiddaw_and_lake_derwent_msii.php"><title corresp="#JRONSKIDDAWANDDERWENTWATERMSII">&#x201C;description of skiddaw &#x0026; lake derwent&#x201D;</title></ref> 
-                                    (<ref type="apparatus" subtype="manuscript" target="msii_apparatus.php"><title type="manuscript" corresp="#MSII">MS II</title></ref>)</item>
-                                <item><ref type="witness" target="on_skiddaw_and_derwent_water_msv.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSV">&#x201C;On Skiddaw and Derwent Water&#x201D;</title></ref> 
-                                    (<ref type="apparatus" subtype="manuscript" target="msv_apparatus.php"><title type="manuscript" corresp="#MSV">MS V</title></ref>, i.e. 
-                                    <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title>&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref>)</item>
-                            </list>
-                        </item>
+                                <item><ref type="apparatus" subtype="manuscript" target="msii_apparatus.php"><title type="manuscript" corresp="#MSII">MS II</title></ref>
+                                    <list>
+                                        <item><ref type="witness" target="description_of_skiddaw_and_lake_derwent_msii.php"><title corresp="#JRONSKIDDAWANDDERWENTWATERMSII">&#x201C;description of skiddaw &#x0026; lake derwent&#x201D;</title></ref></item>
+                                      </list>
+                                    </item>
+                                
+                                <item><ref type="apparatus" subtype="manuscript" target="msv_apparatus.php"><title type="manuscript" corresp="#MSV">MS V</title></ref>, i.e.
+                                    <list>
+                                        <item><ref type="witness" target="on_skiddaw_and_derwent_water_msv.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSV">&#x201C;On Skiddaw and Derwent Water&#x201D;</title></ref></item>
+                                        <item><ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref></item>
+                                    </list>
+                                </item>
+                            
                         <item>Published
                             <list n="1b">
                                 <item>In <title type="periodical" corresp="#SPIRITUALTIMES"><hi rend="italic">Spiritual Times</hi></title>
@@ -97,7 +107,9 @@
                             </list>
                         </item>
                     </list>
-                </div>
+                </item>
+            </list>
+         </div>
                 
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
@@ -131,12 +143,12 @@
                     <head type="section">Manuscripts</head>
                     <p><ref type="apparatus" subtype="manuscript" target="msii_apparatus.php"><title type="manuscript" corresp="#MSII">MS II</title></ref>; 
                         <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref>.</p>
-                    <p><persName corresp="#WGC">W. G. Collingwood</persName> does not mention the the handmade booklet, 
+                    <p><persName corresp="#WGC">W. G. Collingwood</persName> does not mention the handmade booklet, 
                         <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref> 
                         in his <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTE">&#x201C;Preliminary Note on the Original MSS. of the Poems&#x201D;</title> appended to 
                         <ref type="note" subtype="bibliographical" target="poems_1891_note.php"><title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi> (1891)</title></ref>, 
-                        which explains why he did not use this fair copy as his copytext. At some point 
-                        <date notBefore="1891" notAfter="1893">between 1891 and 1903</date>, the pamphlet was discovered, since by <date when="1903">1903</date> 
+                        which explains why he did not use this fair copy as his copytext. The pamphlet must have been discovered at some point 
+                        <date notBefore="1891" notAfter="1893">between 1891 and 1903</date>, since by <date when="1903">1903</date> 
                         its leaves were separated and tipped into blank pages remaining in <ref type="apparatus" subtype="manuscript" target="msv_apparatus.php"><title type="manuscript" corresp="#MSV">MS V</title></ref>&#x2014;a bound stationer&#x02BC;s notebook 
                         with which the pamphlet has nothing to do, except that the contents of both items are miscellanies (as <persName corresp="#JR">Ruskin</persName> declares in his title for the anthology contained in 
                         <title type="manuscript" corresp="#MSV">MS V</title>, <title type="anthology" corresp="#MISCELLANEOUSPOETRY">&#x201C;Miscellaneous Poetry&#x201D;</title>).</p>
@@ -153,13 +165,13 @@
                         (<ref type="bibliography" target="bibliography.php#JRPOEMS4D1891"><title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [4<hi rend="superscript">o</hi>, 1891]</ref>, 1:11&#x2013;14, 262, and 
                         <ref type="bibliography" target="bibliography.php#JRPOEMS8D1891"><title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [8<hi rend="superscript">o</hi>, 1891]</ref>, 1:11&#x2013;14, 263; 
                         <ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 2:536).</p>
-                    <p>In his <date when="1829-05-10">10 May 1829</date> letter presenting the poem for his <persName corresp="#JJR">father</persName>&#x02BC;s birthday, 
+                    <p>In his <title type="letter" corresp="#jr_to_jjr_1829-05-10"><date when="1829-05-10">10 May 1829</date> letter</title> presenting the poem for his <persName corresp="#JJR">father</persName>&#x02BC;s birthday, 
                         <persName corresp="#JR">Ruskin</persName> says: &#x201C;I think I began it about three months ago&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi></ref>, 200)&#x2014;that is, counting backwards from this letter, 
+                        (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 200)&#x2014;that is, counting backwards from this letter, 
                         mid&#x2010;February. This estimate corresponds convincingly to the draft poem&#x02BC;s physical position in 
                         <ref type="apparatus" subtype="manuscript" target="msii_apparatus.php"><title type="manuscript" corresp="#MSII">MS II</title></ref>, in which the draft wraps around a fragment of a salutation 
-                        to a letter, closely resembling the beginning of a <date when="1829-02-13">13 February 1829</date> fair&#x2010;copy letter 
-                        in <ref type="bibliography" target="bibliography.php#RFL">Burd, ed., <hi rend="italic">Ruskin Family Letters</hi></ref>, 174. The draft is also sandwiched among sermon notes, 
+                        to a letter (<ref type="witness" target="hollo_papa_msii.php">&#x201C;Hollo Papa&#x201D;</ref>), which closely resembles the beginning of a <title type="letter" corresp="#jr_to_jjr_1829-02-13"><date when="1829-02-13">13 February 1829</date> fair&#x2010;copy letter</title> 
+                        in <ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 174. The draft is also sandwiched among sermon notes, 
                         <ref type="apparatus" subtype="work" target="a_theme_apparatus.php"><title type="essay" corresp="#JRATHEME">&#x201C;A Theme&#x201D;</title></ref>, and 
                         <ref type="apparatus" subtype="work" target="sermon_notes_christs_intercession_apparatus.php"><title type="sermon" corresp="#JRSERMONNOTESCHRISTS">Sermon Notes [&#x201C;christs intercession&#x201D;]</title></ref>, 
                         which may be identified with <persName corresp="#JR">Ruskin</persName>&#x02BC;s excited attention to the preaching of the clergyman, 
@@ -168,15 +180,15 @@
                         <ref type="note" subtype="biographical" target="richardson_mary_note.php"><persName corresp="#MRC">Mary Richardson</persName> (<date notBefore="1815" notAfter="1849">1815&#x2013;49</date>)</ref>, 
                         were star&#x2010;struck by <persName corresp="#EA">Andrews</persName>&#x02BC;s charisma, and in <date when="1829-03">March</date> <persName corresp="#JR">Ruskin</persName> 
                         started being tutored by <persName corresp="#EA">Andrews</persName> in classical languages  
-                        (<ref type="bibliography" target="bibliography.php#RFL">Burd, ed., <hi rend="italic">Ruskin Family Letters</hi></ref>, 173, 200).</p>
+                        (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 173, 200).</p>
                     <p>By the day of his father&#x02BC;s <date when="1829-05-10">10 May 1829</date> birthday celebration, <persName corresp="#JR">Ruskin</persName> must have fair&#x2010;copied the poem, 
                         either as a presentation copy, now untraced, that probably accompanied the birthday ode, <ref type="apparatus" subtype="work" target="may_apparatus.php"><title type="poem" corresp="#MAY">&#x201C;May&#x201D;</title></ref>, 
                         or as the fair&#x2010;copy surviving with other poems in 
-                        <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref>, 
+                        <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref> 
                         (see <ref type="internal" target="#COMPPUB">Composition and Publication: Composition</ref>; and 
                         <ref type="apparatus" subtype="manuscript" target="msii_apparatus.php#DATE"><title type="manuscript" corresp="#MSII">MS II</title>: Date</ref>; see also 
                         <ref type="bibliography" target="bibliography.php#HANSONPSYCHOLOGY"><persName corresp="#DCH">Hanson</persName>, <title type="essay" corresp="#HANSONPSYCHOLOGY">&#x201C;Psychology of Fragmentation&#x201D;</title></ref>, 242&#x2013;47, 254; and 
-                        <ref type="bibliography" target="bibliography.php#TOURLAKESINTRO"><persName corresp="#VAB">Burd</persName>, <title type="essay" corresp="#TOURLAKESINTRO">&#x201C;Introduction&#x201D;, Burd and Dearden, eds., <hi rend="italic">Tour to the Lakes in Cumberland</hi></title></ref>, 20 n. 20).</p>
+                        <ref type="bibliography" target="bibliography.php#TOURLAKESINTRO"><persName corresp="#VAB">Burd</persName>, <title type="essay" corresp="#TOURLAKESINTRO">&#x201C;Introduction&#x201D;</title>, in <persName corresp="#VAB">Burd</persName> and <persName corresp="#JHD">Dearden</persName>, eds., <title type="book" corresp="#TOURLAKES"><hi rend="italic">Tour to the Lakes in Cumberland</hi></title></ref>, 20 n. 20).</p>
                     <p>Some revision of the poem for publication must have taken place <date notBefore="1829-05-10" notAfter="1829-08">between 10 May and August 1829</date>, 
                         when <title type="poem" corresp="#JRLINESCUMBERLAND1829">&#x201C;Lines Written at the Lakes in Cumberland. &#x007C; <hi rend="italic">Derwentwater</hi>&#x201D;</title> was published. 
                         Further revision on the remaining unpublished portion of the poem could have taken place up until <date when="1830-02">February 1830</date>, 
@@ -188,82 +200,147 @@
                     <head type="section">Composition and Publication</head>
                     <div type="subsection" xml:id="COMPOSITION">
                         <head type="subsection">Composition</head>
-                        <p>The draft in <ref type="apparatus" subtype="manuscript" target="msii_apparatus.php"><title type="manuscript" corresp="#MSII">MS II</title></ref>, 
-                            <title corresp="#JRLINESCUMBERLAND1829">&#x201C;description of skiddaw &#x0026; lake derwent&#x201D;</title>, 
-                            was likely &#x201C;that blank verse upon Lake Derwent&#x201D; that <persName corresp="#JR">Ruskin</persName> admitted he had &#x201C;demurred at bringing&#x201D; 
-                            earlier to his father, as he recalled in the <title type="letter" corresp="jr_to_jjr_1829-05-10"><date when="1829-05-10">10 May 1829</date> birthday letter</title> 
-                            (not a posted letter, by any external evidence, but a cover letter inscribed on the outside, in <persName corresp="#JR">Ruskin</persName>&#x02BC;s hand, 
-                            as &#x201C;Birthday Odes &#x007C; To my dear Papa&#x201D;). On that earlier occasion, <persName corresp="#JR">Ruskin</persName> had temporized 
-                            because the poem &#x201C;was designed for your birthday and I did not wish you to see it beforehand&#x201D;. He goes on to explain that 
-                            there was even &#x201C;a line [in the draft] saying something about this happy day and I was afraid you would ask me what happy day and then the whole secret would 
-                            gradually have been hauled out of my unwilling mouth&#x201D; (<ref type="bibliography" target="bibliography.php#RFL">Burd, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 199). 
-                            The evasive maneuveur that <persName corresp="#JR">Ruskin</persName> was recalling may have occurred about <date when="1829-04">April 1829</date>, 
-                            when a gap in the surviving family letters possibly indicates that <persName corresp="#JJR">John James</persName> was at home and not traveling for wine orders.</p>
-                        <p>Such a line about a &#x201C;happy day&#x201D; is indeed contained in the <title type="manuscript" corresp="#MSII">MS II</title> draft, 
-                            <ref type="witness" target="description_of_skiddaw_and_lake_derwent_msii.php"><title corresp="#JRONSKIDDAWANDDERWENTWATERMSII">&#x201C;description of skiddaw &#x0026; lake derwent&#x201D;</title></ref>, 
-                            at the end of the first strophe, which describes <geogName corresp="#SKIDDAW">Skiddaw</geogName> (&#x201C;but no more . . . / on this sad subject on this happy day&#x201D; [line 36]). 
-                            The line recurs in the fair&#x2010;copy version, <ref type="witness" target="on_skiddaw_and_derwent_water_msv.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSV">&#x201C;On Skiddaw and Derwent Water&#x201D;</title></ref>, 
-                            which is found in <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref>. 
-                            On the occasion prior to <persName corresp="#JJR">John James</persName>&#x02BC;s birthday, to which <persName corresp="#JR">Ruskin</persName> refers, he apparently copied or recited a version that is not represented by extant copies, 
-                            since <persName corresp="#JR">Ruskin</persName> writes that he &#x201C;found a way of evading this line as I found that when it was missed the poem sounded quite well without it&#x201D; 
-                            (<ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi></ref>, 200).</p>
-                        <p>As <persName corresp="#VAB">Van Akin Burd</persName> remarks, &#x201C;the poem &#x2018;Derwentwater&#x2019;, which was apparently sent to [<persName corresp="#JJR">John James</persName>] as an enclosure with [Ruskin&#x02BC;s 10 May 1829] letter is no longer with it&#x201D; 
-                            (<ref type="bibliography" target="bibliography.php#RFL"><title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 200 n. 2). 
-                            However, since <persName corresp="#JR">Ruskin</persName> inscribed the letter as &#x201C;Birthday Odes&#x201D;&#x2014;using the plural&#x2014;the presentation copy may not have been devoted solely to the 
-                            topographical poem. Rather, the enclosure may have been the handmade booklet, 
-                            <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref>, 
-                            which contains the only surviving fair copy in <persName corresp="#JR">Ruskin</persName>&#x02BC;s hand. The description of the enclosure in <persName corresp="#JR">Ruskin</persName>&#x02BC;s letter matches this booklet more convincingly 
-                            if one omits <persName corresp="#VAB">Burd</persName>&#x02BC;s bracketed editorial insertion: &#x201C;On Newyearsday I prepared a small poem for you&#x201D;, 
-                            and therefore &#x201C;on your birthday it becomes me to have a much larger [one] for you&#x201D; 
-                            (<ref type="bibliography" target="bibliography.php#RFL">Burd, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 199). That is, by a &#x201C;larger&#x201D;, 
-                            <persName corresp="#JR">Ruskin</persName> may have meant, not just a single larger poem, but a larger project&#x2014;the handmade booklet, which he dated <date when="1829">1829</date> on its cover, and which contains 
-                            along with <title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSV">&#x201C;On Skiddaw and Derwent Water&#x201D;</title> several other poems and a play. The pamphlet also precisely meets the inscription on the letter, &#x201C;Birthday Odes&#x201D;, 
-                            since it includes a fair copy of another <date when="1829">1829</date> birthday poem, <ref type="apparatus" subtype="work" target="may_apparatus.php"><title type="poem" corresp="#MAY">&#x201C;May&#x201D;</title></ref>. 
-                            As a final scrap of evidence tying the pamphlet to the presentation letter, the rough draft, <title corresp="#JRONSKIDDAWANDDERWENTWATERMSII">&#x201C;description of skiddaw &#x0026; lake derwent&#x201D;</title>, 
-                            wraps around a fragment of text that may represent a brief idea for the play. 
-                            Despite all this, one cannot entirely discount the possibility that <persName corresp="#JR">Ruskin</persName>&#x02BC;s <title type="letter" corresp="jr_to_jjr_1829-05-10"><date when="1829-05-10">10 May 1829</date> letter</title> once accompanied a fair&#x2010;copy version, 
-                            presently unknown, which contained the topographical poem, perhaps paired with the second birthday ode, <title type="poem" corresp="#MAY">&#x201C;May&#x201D;</title>.</p>
-                        <p>The poem is composed in blank verse, except for the final ten lines, given the heading &#x201C;conclusion&#x201D; in the rough draft, which are formed from rhymed octosyllabic couplets. 
+                        <p><persName corresp="#JR">Ruskin</persName> composed the poem in blank verse, except for the final ten lines, which he headed &#x201C;conclusion&#x201D; in draft, 
+                            and which he formed as rhymed octosyllabic couplets, perhaps influenced by <persName corresp="#WS">Walter Scott</persName>. 
                             Structurally, the rough draft works by strophes being added one to the next, using explicit transitions, such as 
                             &#x201C;Ive treated of the clouds. now <geogName corresp="#SKIDDAW">skiddaw</geogName> come&#x201D; and &#x201C;Now <geogName corresp="#DERWENTWATER">derwent water</geogName> come&#x201D;. 
-                            Writing the the poem in stages, <persName corresp="#JR">Ruskin</persName> changed from pencil to pen, and from one color of ink to another. 
+                            Writing the poem in stages, <persName corresp="#JR">Ruskin</persName> changed from pencil to pen, and from one color of ink to another. 
                             Twice, he interrupted composition of the poem with other texts. Given this structure of built&#x2010;up units over time, 
-                            <persName corresp="#JR">Ruskin</persName> perceived the draft as easily expandable, yet also as contractible&#x2014;as suggested by a deleted ninth line, seemingly a relic of a premature ending, 
-                            &#x201C;Now hear my boyish moral.&#x201D; Yet the poem&#x02BC;s title indicates that, from the start, <persName corresp="#JR">Ruskin</persName> projected a complex poem. 
+                            <persName corresp="#JR">Ruskin</persName> perceived the draft as easily expandable. The shape of the poem was also contractible, 
+                            as suggested by a deleted ninth line, seemingly a relic of a premature ending, &#x201C;Now hear my boyish moral&#x201D;. 
+                            Yet the poem&#x02BC;s title suggests that, from the start, <persName corresp="#JR">Ruskin</persName> projected a complex, well&#x2010;formed poem. 
                             There is no evidence that he arrived seriatim at his compound subject of mountain and lake; rather, since the title shows no cramping on the page, 
-                            as if &#x201C;&#x0026; lake derwent&#x201D; had been added as an afterthought, he appears to have conceptualized the &#x201C;description&#x201D; of mountain and of lake as &#x201C;reechoed&#x201D; 
-                            and &#x201C;reflected&#x201D; in one another, as the final lines state the relation. Overall, the poem represents a sustained and ambitious effort.</p>
-                    </div>
+                            as if he added the phrase &#x201C;&#x0026; lake derwent&#x201D; as an afterthought, he appears to have conceptualized the poem in two strophes from the start&#x2014;strophes 
+                            describing the mountain and the lake, respectively, but also &#x201C;reechoing&#x201D; 
+                            and &#x201C;reflecting&#x201D; one another. Overall, the poem represents a sustained and sophisticated effort, 
+                            an advance in realized poetic ambition beyond anything <persName corresp="#JR">Ruskin</persName> had both attempted and completed previously; and although its composition worked 
+                            by accretion, compiling conventional picturesque tropes, the poem as a whole succeeds in conveying a singularly convincing charm.</p>
+                        
+                        <p>In the progress of drafting the poem in <title type="manuscript" corresp="#MSII">MS II</title>, <persName corresp="#JR">Ruskin</persName> interrupts 
+                            <ref type="witness" target="description_of_skiddaw_and_lake_derwent_msii.php"><title corresp="#JRLINESCUMBERLAND1829">&#x201C;description of skiddaw &#x0026; lake derwent&#x201D;</title></ref> 
+                            twice by pausing to insert fragments of other texts, which form no part of the topographical poem. As explained in <ref type="internal" target="#DATE">Date</ref>, 
+                            the positions and content of these intervening texts help to date <persName corresp="#JR">Ruskin</persName>&#x02BC;s progress on the draft, and they also provide clues about the poem&#x02BC;s social context, composition, 
+                            and eventual presentation as a birthday gift for <persName corresp="#JJR">John James</persName>.</p>
+                        
+                        <p>The second of these interruptions consists of texts connected with <persName corresp="#JR">Ruskin</persName>&#x02BC;s infatuation with <persName corresp="#EA">Edward Andrews</persName>&#x02BC;s preaching. One text is a fragmentary abstract of a sermon, 
+                            <ref type="apparatus" subtype="work" target="sermon_notes_christs_intercession_apparatus.php"><title type="sermon" corresp="#JRSERMONNOTESCHRISTS">Sermon Notes [&#x201C;christs intercession&#x201D;]</title></ref>, 
+                            and the other a draft fragment of a letter by <persName corresp="#JR">Ruskin</persName> to his father, which belongs to a cluster of <date when="1829-01-19">19 January</date> and <date notBefore="1829-01-13" notAfter="1829-01-14">13&#x2013;14</date>, <date when="1829-02-21">21 February</date> letters relating <persName corresp="#JR">John</persName>&#x02BC;s and his cousin <persName corresp="#MRC">Mary</persName>&#x02BC;s 
+                            attraction to the dynamic preacher, and their mixed success in transcribing his sermons. The letter fragment is probably a draft 
+                            specifically of a <date when="1829-02-13">13 February</date> letter, which <persName corresp="#JR">Ruskin</persName> did complete and send to his father; 
+                            and the sermon abstract is probably based on a Sunday, <date when="1829-02-20">February 20</date>, service, when &#x201C;<persName corresp="#EA">Doctor Andrews</persName> preached such a delightful sermon&#x201D;, 
+                            which &#x201C;<persName corresp="#MRC">Mary</persName> and I thought that we remembered a great deal&#x201D; of, &#x201C;but when we came to write it down we found that we did not remember so much as we thought&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 174, 179). 
+                            This intrusion of <persName corresp="#EA">Andrews</persName>, as it were, into <persName corresp="#JR">Ruskin</persName>&#x02BC;s manuscript is telling, since the clergyman would shortly enter the Ruskin home as <persName corresp="#JR">John</persName>&#x02BC;s tutor&#x2014;probably lending 
+                            ideas to the progress of <persName corresp="#JR">Ruskin</persName>&#x02BC;s topographical poem, as well.</p>
+                        
+                        <p>The sermon material falls between the two main strophes of the poem, the first describing <geogName corresp="#SKIDDAW">Mount Skiddaw</geogName>,
+                            and the second <geogName corresp="#DERWENTWATER">Lake Derwent</geogName>. The <geogName corresp="#SKIDDAW">Skiddaw</geogName> strophe closes with a line urging &#x201C;no more on this sad subject on this happy day&#x201D;, 
+                            referring to the topic of a shepherd&#x02BC;s death&#x2014;a &#x201C;white tomb&#x201D; on the mountainside awaiting a swain &#x201C;who wanders far from home&#x201D;. 
+                            This detail happens to open a window on a scene at <placeName type="building" corresp="#HERNE">Herne Hill</placeName>, an episode in the composition of the poem that <persName corresp="#JR">Ruskin</persName> recalled 
+                            in a <title type="letter" corresp="jr_to_jjr_1829-05-10"><date when="1829-05-10">10 May 1829</date> birthday letter</title> for his <persName corresp="#JJR">father</persName>, 
+                            which accompanied the presentation copy of <title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSV">&#x201C;On <geogName corresp="#SKIDDAW">Skiddaw</geogName> and <geogName corresp="#DERWENTWATER">Derwent Water</geogName>&#x201D;</title>. 
+                            (This letter was not posted, according to any external evidence; rather, it was a cover letter, inscribed on the outside in <persName corresp="#JR">Ruskin</persName>&#x02BC;s hand, 
+                            as containing &#x201C;Birthday Odes &#x007C; To my dear Papa&#x201D;.) In the letter, <persName corresp="#JR">Ruskin</persName> recalls being in the midst of the draft stage 
+                            of &#x201C;that blank verse upon <geogName corresp="#DERWENTWATER">Lake Derwent</geogName>&#x201D;, and reminds <persName corresp="#JJR">his father</persName> how he had 
+                            &#x201C;demurred at bringing&#x201D; the poem &#x201C;to read to you&#x201D; since it &#x201C;was designed for your birthday 
+                            and I did not wish you to see it beforehand&#x201D;. Sharing the poem at that stage was especially awkward, 
+                            since the draft contained &#x201C;a line saying something about this happy day&#x201D;&#x2014;the closing line of the first strophe&#x2014;&#x201C;and 
+                            I was afraid you would ask me what happy day and then the whole secret would gradually have been hauled out of my unwilling mouth&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 199). 
+                            As described here by <persName corresp="#JR">Ruskin</persName>, this stage of the poem&#x02BC;s development accords well with the first strophe 
+                            of the draft as found in <ref type="apparatus" subtype="manuscript" target="msii_apparatus.php"><title type="manuscript" corresp="#MSII">MS II</title></ref> 
+                            (i.e., there is no reason to suppose he may be referring to a different, presently unknown draft version of the poem). 
+                            Needing to find &#x201C;a way of evading&#x201D; the line about &#x201C;this happy day&#x201D; when reading the draft aloud to his father, 
+                            <persName corresp="#JR">Ruskin</persName> &#x201C;found that when it was missed the poem sounded quite well without it&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 200). 
+                            That is, falling at the end of <geogName corresp="#SKIDDAW">Skiddaw</geogName> strophe, and immediately preceding the <persName corresp="#EA">Andrews</persName> sermon material, the line could simply be lopped off in recitation.</p>
+                        
+                        <p>From this evidence, one can deduce that the timing of the second stage of composition, the <geogName corresp="#DERWENTWATER">Derwent</geogName> strophe, would probably have been contemporaneous 
+                            with <persName corresp="#EA">Andrews</persName>&#x02BC;s presence in the household&#x2014;now not as a distantly admired clergyman, 
+                            but as <persName corresp="#JR">Ruskin</persName>&#x02BC;s personal tutor with an interest in the youth&#x02BC;s writing. 
+                            <persName corresp="#JR">Ruskin</persName>&#x02BC;s recitation of the unfinished poem to his father, with its evasive maneuveur, 
+                            must have occurred sometime in the <date when="1829-04">last week of March or in April 1829</date>, 
+                            when a gap in the surviving family letters indicates that <persName corresp="#JJR">John James</persName> had returned home from traveling for wine orders. 
+                            <persName corresp="#EA">Andrews</persName> was engaged as a tutor starting early in <date when="1829-04">April</date> 
+                            (see <ref type="note" subtype="biographical" target="andrews_edward_note.php"><persName corresp="#EA">Reverend Edward Andrews</persName></ref>). <persName corresp="#JR">Ruskin</persName> may have been encouraged to recite his poem to his tutor, as well, 
+                            since the influence of <persName corresp="#EA">Andrews</persName>&#x02BC;s instruction is immediately evident in the poem&#x02BC;s second strophe, which introduces allusions to <persName corresp="#HOMER">Homer</persName>&#x02BC;s <title type="poem" corresp="#ODYSSEY"><hi rend="italic">Odyssey</hi></title>. 
+                            <persName corresp="#JR">Ruskin</persName> was responding to his tutor&#x02BC;s style of classical allusion, which consisted in &#x201C;always . . . relating 
+                            some droll anecdote as explaining . . . <persName corresp="#PVM">virgil</persName>&#x201D;, as <persName corresp="#JR">Ruskin</persName> remarked 
+                            in a <title type="letter" corresp="jr_to_monrorobertmrs_1829">letter to <persName corresp="#MONROROBERTMRS">Mrs. Monro</persName></title>, 
+                            which is also contained in <title type="manuscript" corresp="#MSII">MS II</title>. 
+                            <persName corresp="#EA">Andrews</persName> amused <persName corresp="#JR">Ruskin</persName> by &#x201C;comparing <persName type="fictional" corresp="#NEPTUNE">Neptune</persName>s 
+                            lifting up the wrecked ships of <persName type="fictional" corresp="#AENEAS">eenaes</persName> with his trident to my lifting up a potatoe with a fork 
+                            or taking a piece of bread out of a bowl of milk&#x201D;. While the poem was not so whimsical as these homely culinary analogies, 
+                            it charmingly compares <geogName corresp="#DERWENTWATER">Lake Derwent</geogName>&#x02BC;s &#x201C;polished surface&#x201D; to the &#x201C;fair and oft deceiving&#x201D; <persName type="fictional" corresp="#PENELOPE">Penelope</persName>, since the weaving of reflections on the lake&#x02BC;s surface 
+                            is undone when ruffled by &#x201C;bluff&#x201D; <persName type="fictional" corresp="#AEOLUS">Aeolus</persName>.</p>
+                        
+                        <p>The other intervening text, which occurred earlier, in the middle of the first strophe, also provides a clue about the circumstances of the poem&#x02BC;s 
+                            composition and presentation. <persName corresp="#VAB">Van Akin Burd</persName> comments that &#x201C;the poem <title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATER">&#x2018;Derwentwater&#x2019;&#x201D;</title> 
+                            (he is apparently thinking of <persName corresp="#WGC">Collingwood</persName>&#x02BC;s publication of the two strophes separately [see <ref type="internal" target="#PUBLICATION">Publication</ref>]), 
+                            &#x201C;which was apparently sent to [<persName corresp="#JJR">John James</persName>] as an enclosure with <title type="letter" corresp="#jr_to_jjr_1829-05-10">[<persName corresp="#JR">Ruskin</persName>&#x02BC;s <date when="1829-05-10">10 May 1829</date>] letter</title> is no longer with it [the letter]&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 200 n. 2). 
+                            However, since <persName corresp="#JR">Ruskin</persName> inscribed the letter as &#x201C;Birthday Odes&#x201D;&#x2014;using the plural&#x2014;the presentation copy evidently was not devoted solely to the 
+                            topographical poem. Rather, the enclosure may have been the handmade booklet, 
+                            <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of <placeName corresp="#WATERLOO">Waterloo</placeName>, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref>, 
+                            which contains the only surviving fair copy of the poem in <persName corresp="#JR">Ruskin</persName>&#x02BC;s hand, 
+                            <ref type="witness" target="on_skiddaw_and_derwent_water_msv.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSV">&#x201C;On <geogName corresp="#SKIDDAW">Skiddaw</geogName> and <placeName corresp="#DERWENTWATER">Derwent Water</placeName>&#x201D;</title></ref>. 
+                            <persName corresp="#JR">Ruskin</persName>&#x02BC;s own description given in the letter about its enclosure matches this booklet more convincingly 
+                            if one omits <persName corresp="#VAB">Burd</persName>&#x02BC;s bracketed editorial insertion: &#x201C;On Newyearsday I prepared a small poem for you&#x201D;, 
+                            and therefore &#x201C;on your birthday it becomes me to have a much larger [one] for you&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 199). 
+                            That is, by a &#x201C;larger&#x201D;, <persName corresp="#JR">Ruskin</persName> may have meant, not just a single larger poem, 
+                            but a larger project&#x2014;the handmade booklet, which he dated <date when="1829">1829</date> on its cover, and which contains 
+                            along with <title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSV">&#x201C;On <geogName corresp="#SKIDDAW">Skiddaw</geogName> and <geogName corresp="#DERWENTWATER">Derwent Water</geogName>&#x201D;</title> several other poems and a play. 
+                            The pamphlet also precisely meets the inscription on the letter, &#x201C;Birthday Odes&#x201D;, since it includes fair copies not only of the 
+                            topographical poem but also of another <date when="1829">1829</date> poem that is specifically a birthday ode, 
+                            <ref type="apparatus" subtype="work" target="may_apparatus.php"><title type="poem" corresp="#MAY">&#x201C;May&#x201D;</title></ref>. 
+                            This scenario of the birthday presentation is supported by the presence of an unrelated text that the draft wraps around, because that text consists of the word 
+                            <ref type="witness" target="play_msii.php">&#x201C;Play&#x201D;</ref>, which may be a title, and therefore an early witness of 
+                            <ref type="apparatus" subtype="work" target="battle_of_waterloo_a_play_msv_apparatus.php">&#x201C;Battle of <placeName corresp="#WATERLOO">Waterloo</placeName>: A Play in Two Acts&#x201D;</ref>. 
+                            The word is followed by a phrase that may be meant as a line of dialogue.</p>
+                        
+                        <p>Despite all this, one cannot entirely discount the possibility that the pamphlet 
+                            <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of <placeName corresp="#WATERLOO">Waterloo</placeName>, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref> 
+                            was a separate project from <persName corresp="#JJR">John James</persName>&#x02BC;s birthday, and that <persName corresp="#JR">Ruskin</persName>&#x02BC;s 
+                            <title type="letter" corresp="jr_to_jjr_1829-05-10"><date when="1829-05-10">10 May 1829</date> letter</title> accompanied a different fair&#x2010;copy version of 
+                            <title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSV">&#x201C;On Skiddaw and Derwent Water&#x201D;</title>, one which possibly 
+                            was paired solely with the birthday ode, <title type="poem" corresp="#MAY">&#x201C;May&#x201D;</title>, and no other work.</p>
+                        </div>
                     
                     <div type="subsection" xml:id="PUBLICATION">
                         <head type="subsection">Revision and First Publication</head>
                         <p>In <date notBefore="1829" notAfter="1830">1829&#x2013;30</date>, <persName corresp="#JR">Ruskin</persName>&#x02BC;s original poem was revised 
-                            and split into two poems for publication in the <title type="periodical" corresp="#SPIRITUALTIMES"><hi rend="italic">Spiritual Times</hi>: A Monthly Magazine</title>. 
+                            and split into two poems for publication in the <title type="periodical" corresp="#SPIRITUALTIMES"><hi rend="italic">Spiritual Times: A Monthly Magazine</hi></title>. 
                             Thus, <persName corresp="#JR">Ruskin</persName>&#x02BC;s first poem to appear in print, and his first publication of any kind, was 
                             <ref type="bibliography" target="bibliography.php#JRLINESCUMBERLAND1829"><title type="poem" corresp="#JRLINESCUMBERLAND1829">&#x201C;Lines Written at the Lakes in Cumberland. &#x007C; <hi rend="italic">Derwentwater</hi>&#x201D;</title></ref>, 
                             which was signed &#x201C;<persName type="pen_name" corresp="#JR">R&#x2014;</persName>&#x201D;, and which appeared in the <date when="1829-08-01">1 August 1829</date> (vol. 1, no. 4) issue. 
                             <persName corresp="#JR">Ruskin</persName>&#x02BC;s second publication was 
                             <ref type="bibliography" target="bibliography.php#JRONSKIDDAWANDDERWENTWATER1830"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATER1830">&#x201C;On Skiddaw and Derwent&#x2010;Water&#x201D;</title></ref>, 
-                            which likewise was signed &#x201C;<persName type="pen_name" corresp="#JR">R.</persName>&#x201D;, and which appeared in the <date when="1830-02">February 1830</date> (vol. 1, no. 10) issue. 
+                            which similarly was signed &#x201C;<persName type="pen_name" corresp="#JR">R.</persName>&#x201D;, and which appeared in the <date when="1830-02">February 1830</date> (vol. 1, no. 10) issue. 
                             The responsibility and authority for the splitting and revision of the poem are unknown. As the editors of the <title type="book" corresp="#JRWORKSLE">Library Edition</title> speculate, 
                             the revision presumably was guided either by the magazine&#x02BC;s editor, 
                             the <ref type="note" subtype="biographical" target="andrews_edward_note.php"><persName corresp="#EA">Reverend Edward Andrews (1787&#x2013;1841)</persName></ref>, 
                             or by <persName corresp="#JR">Ruskin</persName>&#x02BC;s father, <persName corresp="#JJR">John James Ruskin</persName>, or by both of them. 
                             Subsequent scholars have weighted the responsibility on the father&#x02BC;s side 
                             (see, e.g., <ref type="bibliography" target="bibliography.php#MAIDMENTONLYPRINT"><persName corresp="#BEM">Maidment</persName>, <title type="essay" corresp="#MAIDMENTONLYPRINT">&#x201C;&#x2018;Only Print&#x2019;&#x201D;</title></ref>, 196), 
-                            but in fact no evidence survives to document the process of revision.</p>
-                        <p>Whoever was responsible, the <title type="poem" corresp="#JRLINESCUMBERLAND1829">&#x201C;Lines Written at the Lakes in Cumberland&#x201D;</title> was formed by isolating 
-                            the final strophe of the original poem, which in the <ref type="apparatus" subtype="manuscript" target="msii_apparatus.php"><title type="manuscript" corresp="#MSII">MS II</title></ref> 
-                            draft was designated by <persName corresp="#JR">Ruskin</persName> as the &#x201C;conclusion&#x201D; (beginning &#x201C;sweet derwent on thy winding shore&#x201D;), 
-                            and which is distinct from main body of the poem for its rhymed couplets.
-                            (In the fair copy, contained in <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref>, 
-                            this concluding section is not subtitled, but it is marked by a horizontal bar above its first line.) 
-                            The choice of these ten concluding lines as the first, separate publication can be explained by the revised dating of the poem. 
-                            The Ruskins engaged <persName corresp="#EA">Andrews</persName> to tutor <persName corresp="#JR">Ruskin</persName> starting in <date when="1829-04">April 1829</date>, 
-                            only about five months prior to the <date when="1829-08">August</date> publication of <title type="poem" corresp="#JRLINESCUMBERLAND1829">&#x201C;Lines&#x201D;</title> 
-                            (<ref type="bibliography" target="bibliography.php#RFL">Burd, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 200); and presumably <persName corresp="#EA">Andrews</persName> 
+                            but in fact no handwriting other than <persName corresp="#JR">Ruskin</persName>&#x02BC;s appears in the 
+                            <ref type="witness" target="description_of_skiddaw_and_lake_derwent_msii.php"><title corresp="#JRONSKIDDAWANDDERWENTWATERMSII">MS II draft</title></ref> to attest directly others&#x02BC; participation in the drafting or revising process.</p>
+                        <p>Indirect evidence, however, suggests significant influence by <ref type="note" subtype="biographical" target="andrews_edward_note.php"><persName corresp="#EA">Andrews</persName></ref>. 
+                            The first stage of the two&#x2010;part publication in <title type="periodical" corresp="#SPIRITUALTIMES"><hi rend="italic">Spiritual Times</hi></title>&#x2014;the shorter poem, 
+                            <title type="poem" corresp="#JRLINESCUMBERLAND1829">&#x201C;Lines Written at the Lakes in Cumberland&#x201D;</title>&#x2014;was formed by isolating 
+                            the final strophe of the original poem, which in the <ref type="witness" target="description_of_skiddaw_and_lake_derwent_msii.php"><title corresp="#JRONSKIDDAWANDDERWENTWATERMSII">MS II draft</title></ref> 
+                            was designated by <persName corresp="#JR">Ruskin</persName> as the &#x201C;conclusion&#x201D; (beginning &#x201C;sweet derwent on thy winding shore&#x201D;).
+                            (In the fair copy, <ref type="witness" target="on_skiddaw_and_derwent_water_msv.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSV">&#x201C;On Skiddaw and Derwent Water&#x201D;</title></ref>, 
+                            contained in <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems&#x201D;</title></ref>, 
+                            this concluding section is not subtitled, but it is marked by a horizontal bar above its first line, as in the <title type="manuscript" corresp="#MSII">MS II</title> draft.) 
+                            The choice of these ten concluding lines as the first publication&#x2014;and even, one can speculate, the composition of those lines&#x2014;may be 
+                            closely aligned with the Ruskins&#x02BC; deepening relationship with <persName corresp="#EA">Andrews</persName>.</p>
+                       
+                        
+                           <p> only about five months prior to the <date when="1829-08">August</date> publication of <title type="poem" corresp="#JRLINESCUMBERLAND1829">&#x201C;Lines&#x201D;</title> 
+                            (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 200); and presumably <persName corresp="#EA">Andrews</persName> 
                             would not have seen <persName corresp="#JR">Ruskin</persName>&#x02BC;s original poem prior to its presentation to <persName corresp="#JJR">John James</persName> 
-                            on his <date when="1829-05-10">10 May</date> birthday. Thus, only a few months elapsed between when <persName corresp="#EA">Andrews</persName> 
+                            on his <date when="1829-05-10">10 May</date> birthday, unless the tutor helped the pupil with the poem. (Could <persName corresp="#EA">Andrews</persName> have introduc Thus, only a few months elapsed between when <persName corresp="#EA">Andrews</persName> 
                             likely first read the poem and when he would have needed to oversee its revision and printing. There was not enough time for revision of 
                             <persName corresp="#JR">Ruskin</persName>&#x02BC;s entire original poem for the <date when="1829-08">August</date> publication date, 
                             although <persName corresp="#EA">Andrews</persName> apparently was so struck by the work that he decided to hurry the brief &#x201C;Lines&#x201D; into the soonest available issue&#x2014;or 
@@ -561,7 +638,7 @@
                         <title corresp="#JRONSKIDDAWANDDERWENTWATERMSII">&#x201C;description of skiddaw &#x0026; lake derwent&#x201D;</title> is linked to <persName corresp="#EA">Andrews</persName>&#x02BC;s laughter. 
                         <persName corresp="#JR">Ruskin</persName> did not write the poem for the clergyman, of course, but its composition was contemporaneous with the advent of <persName corresp="#EA">Andrews</persName>&#x02BC;s 
                         tutelage, a &#x201C;most important aera of my life,&#x201D; <persName corresp="#JR">Ruskin</persName> felt 
-                        (<ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi></ref>, 200); and the teaching was delightfully entertaining. As 
+                        (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 200); and the teaching was delightfully entertaining. As 
                         <persName corresp="#JR">Ruskin</persName> characterizes <persName corresp="#EA">Andrews</persName> in <title type="manuscript" corresp="#MSII">MS II</title>, 
                         he &#x201C;makes me laugh almost but not quite to use one of his own expressions . . . he is so funny comparing <persName type="fictional" corresp="#NEPTUNE">Neptune</persName>s lifting up
                         the wrecked ships of <persName type="fictional" corresp="#AENEAS">eenaes</persName> with his trident to my lifting up a potato with a fork or taking a piece of bread out of a bowl of milk with a spoon&#x201D;
@@ -569,7 +646,7 @@
                         In <persName corresp="#JR">Ruskin</persName>&#x02BC;s birthday letter to his father accompanying <title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATER">&#x201C;On Skiddaw and Derwent Water&#x201D;</title>, 
                         he devotes a quarter of the space to celebrating the &#x201C;coming of the tutor&#x201D;&#x2014;&#x201C;What a nice face he has. . . . 
                         I do think to use one of his own expressions he looks best when he frowns next when he laughs and next when he neither frowns nor laughs  Every thing he does is nice&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi></ref>, 200).</p>
+                        (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 200).</p>
                     <p>As both proprietor and editor of the <title type="periodical" corresp="#SPIRITUALTIMES"><hi rend="italic">Spiritual Times</hi></title>, <persName corresp="#EA">Andrews</persName> 
                         could do as he liked, including publish writing by his own children&#x2014;so why not include verse by his merry and precocious new student, as well? 
                         (Reciprocally, <persName corresp="#JJR">John James Ruskin</persName> would later copy verses entitled <title type="poem" corresp="#ANDREWSELIZABRAVEHUSSAR">&#x201C;The Brave Hussar&#x201D;</title> 
@@ -709,7 +786,7 @@
                         <persName corresp="#EA">Andrews</persName> fell from grace. Perhaps the main discouragement to giving <persName corresp="#JR">Ruskin</persName>&#x02BC;s first 
                         publication its full due was the pronouncement by the elder Ruskins in <date when="1831">1831</date> that, while &#x201C;the Dr. has wonderful talents . . . 
                         he is certainly fighty&#x201D; and on his way to compromising &#x201C;his respectability and fortune and prevent[ing] his filling that place in society his talents entitle him to&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi></ref>, 200, 243; and see 
+                        (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 200, 243; and see 
                         <ref type="note" subtype="biographical" target="andrews_edward_note.php"><persName corresp="#EA">Reverend Edward Andrews</persName> [1787&#x2013;1841]</ref>). 
                         It must have seemed intolerable that the literary birth of <persName type="pen_name">&#x201C;J.R.&#x201D;</persName> could have been attended by anything less than 
                         the most solid assurances of success, much less the want of respectability.</p>
