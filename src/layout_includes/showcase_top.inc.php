@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-	<link href="<?php echo r_build_url('style.php?p=witness_styles.scss'); ?>" rel="stylesheet" type="text/css" />
+	<link href="<?php echo r_build_url('pages/style.php?p=witness_styles.scss'); ?>" rel="stylesheet" type="text/css" />
 
 	<title>Now Showcasing: <?php echo FILE_NAME;?></title>
 	<?php require_once 'header_utils.inc.php'; ?>
