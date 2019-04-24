@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
-        <fileDesc xml:id="on_skiddaw_and_derwent_water_msv">
+       <fileDesc xml:id="on_skiddaw_and_derwent_water_msv">
             <titleStmt>
                 <title type="main">"On Skiddaw and Derwent Water"</title>
                 <title type="sub">Electronic Text Generated from a Transcription of the MS V Fair Copy</title>
@@ -50,26 +50,26 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                    <country type="nation">United States of America</country>
-                        <region type="state">Connecticut</region>
+                    <region type="state">Connecticut</region>
                         <settlement type="city">New Haven</settlement>
                         <institution>Yale University</institution>
                         <repository>Beinecke Rare Book and Manuscript Library</repository>
                         <collection>MS Vault Ruskin</collection>
                         <msName>MS V</msName>
-                        </msIdentifier>
+                    </msIdentifier>
                     <msContents>
                         <msItem>
                             <locus facs="image.jpg image.jpg">pp. ##-##</locus>
-
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
                             <filiation><!--Entry needed here.--></filiation>
                         </msItem>
                     </msContents>
                     <physDesc>
                         <!--If additional entries are made below, the hands count must be increased.-->
                         <handDesc hands="1">
-                            <handNote corresp="#HANDJR1828-29" scribe="JR">
-                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1828" notAfter="1829">1828-29</date>.</p>
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
                         </handDesc>
                     </physDesc>
