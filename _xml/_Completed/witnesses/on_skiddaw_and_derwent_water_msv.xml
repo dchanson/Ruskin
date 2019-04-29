@@ -59,7 +59,7 @@
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <locus facs="MWBoWp10.jpg MWBoWp11.jpg MWBoWp12.jpg MWBoWp13.jpg">MS pamphlet (tipped into MS V) "Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father", pp. 10-13</locus>
                             <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
                             <filiation><!--Entry needed here.--></filiation>
                         </msItem>
@@ -68,8 +68,8 @@
                         <!--If additional entries are made below, the hands count must be increased.-->
                         <handDesc hands="1">
                             <handNote corresp="#HANDJR1826-27" scribe="JR">
-                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
-                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1829-30</date>,
+                                    examples of which can be found in MS V, including "double letter", pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -80,87 +80,82 @@
     <text>
         <body>
             <div type="witness" subtype="poem">
-                <head type="title"><handShift new="#HANDJR1828-29" script="print" medium="pencil"/><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSV">On Skiddaw and Derwent Water</title></head>
-                <lg type="stanza" rhyme="aa">
-                    <l>Ruskin was a certainly a poet.</l>
-                    <l>Even his early work did show it.</l>
-                </lg>
-                <l><geogName corresp="#SKIDDAW"><hi rend="small caps">SKIDDAW</hi></geogName>upon thy heights the sun shines</l>
-                <l>bright</l>
+                <head type="title"><handShift new="#HANDJR1829" script="print" medium="ink"/><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSV"><hi rend="caps, doubleletter">On Skiddaw and Derwent Water</hi></title></head>
+                <milestone unit="undeclared" rend="hr-quarter"/>
+                <lg type="stanza">    
+                    <l><hi rend="smallcaps, doubleletter"><geogName corresp="#SKIDDAW">SKIDDAW</geogName></hi><ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#DOUBLELETTER"/> upon thy heights the sun shines<lb type="runover"/><space quantity="13" unit="chars"/>bright</l>
                 <l>But only for a moment then gives place</l>
                 <l>Unto a playful cloud which on thy brow</l>
                 <l>Sports wantonly then floats away in air</l>
-                <!--[tipped-in p. 11, opposite p. 145, no extra space]-->
+                    <pb facs="MWBoWp11"/>
+                    <fw type="pageNum" place="top-right">11</fw>
                 <l>Throwing its shadow on thy towering height</l>
-                <l>And darkening for a moment they green side [ride?]</l>
+                <l>And darkening for a moment thy green side</l>
                 <l>But adds unto its beauty as it makes</l>
                 <l>The sun more bright when it again appears.</l>
-                <l>Then in the morning on thy brow those</l>
-                <l>clouds</l>
+                    <l>Then in the morning on thy brow those<lb type="runover"/><space quantity="12" unit="chars"/>clouds</l>
                 <l>Rest as upon a couch and give fair scope</l>
-                <l>For fancys play and airy fortresses <ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses2.php#FORTRESSESGLOSS"/></l>
+                    <l>For fa<subst><del>c</del><add rend="overwriting">n</add></subst>cys play, and airy fortresses</l>
                 <l>And towers battlements and all appear</l>
                 <l>Chasing each other off and in their turn</l>
                 <l>Are chased by the others. But enough</l>
-                <l>I've treated of the clouds <ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses2.php#PAUSEPERIOD"/> Now <geogName corresp="#SKIDDAW">Skiddaw</geogName> come</l>
-                <l>Noble and grand and beauteous clothed with</l>
-                <l>green</l>
+                    <l>I've treated of the clouds<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#PAUSEPERIOD2"/>  Now <geogName corresp="#SKIDDAW">Skiddaw</geogName> come<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#SKIDDAWCOMEGLOSS"/></l>
+                    <l>Noble and grand and beauteous clothed with<lb type="runover"/><space quantity="16" unit="chars"/>green</l>
                 <l>And yet but scantily. And in some parts</l>
                 <l>A bare terrific cliff precipitate</l>
                 <l>Descends with only here and there a bush</l>
                 <l>A straggler with its roots fixed in the stone</l>
-                <l>And bare a scraggy as befits the soil.</l>
+                    <l>And bare and scraggy as befits the soil.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#STRAGGLERGLOSS"/></l>
                 <l><geogName corresp="#SKIDDAW">Skiddaw</geogName> majestic giant natures work</l>
-                <l>Lower than <geogName corresp="#ALPS">Alps</geogName> or <geogName corresp="#ANDES">Andes</geogName>. Pyrenee=s</l>
-                <l>Are all much higher But those works of art</l>
-                <l>Those giant works of art <ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses.php#PYRAMIDSGLOSS"/> with thee compared</l>
-                <!--[@*@ above Aart@ referring to footnote: A* The Pyramids@]-->
-                <l>Sink into nothing. All that art can do</l>
-                <l>Is nothing beside thee. The touch of man</l>
-                <!--[tipped-in p. 12, opposite p. 145]-->
+                    <l>Lower than <geogName corresp="#ALPS">Alps</geogName> or <geogName corresp="#ANDES">Andes</geogName>. Pyrenee&#x02BC;s</l>
+                    <l>Are all much higher<ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses_contextual.php#HIGHERGLOSS"/> But those works of art</l>
+                    <l>Those giant works of art<add place="above"><space quantity="22" unit="chars"/>&#x002A;</add><ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses_contextual.php#PYRAMIDSGLOSS"/> with thee compared</l>
+                <l>sink into nothing. All that art can do</l>
+                <l>Is nothing beside thee The touch of man</l>
+                    <pb facs="MWBoWp12"/>
+                    <fw type="pageNum" place="top-left">12</fw>
                 <l>Raised pigmy mountains but gigantic tombs</l>
                 <l>The touch of nature raised the mountains brow</l>
                 <l>But made no tombs at all save where the snow</l>
                 <l>The fleecy locks of winter fall around</l>
-                <l>And form a frail memorial for the sain</l>
-                <l>Who wanders far from home and meets his</l>
-                <l>death</l>
+                <l>And form a frail memorial for the swain</l>
+                    <l>Who wanders far from home and meets his<lb type="runover"/><space quantity="11" unit="chars"/>death</l>
                 <l>Amidst the cold of Winter. But no more</l>
-                <l>On this sad subject on this happy day <ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses.php#HAPPYDAYGLOSS"/></l>
+                    <l>On this sad subject on this happy day<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#HAPPYDAYGLOSS"/></l>
                 <l>Now <geogName corresp="#DERWENTWATER">Derwent Water</geogName> come A looking glass</l>
-                <l>Wherein reflected are the mountains height</l>
+                    <l>Wherein refle<subst><del>e</del><add rend="overwriting">c</add></subst>ted are the mountains height</l>
                 <l>As in a mirror framed in rocks and woods.</l>
                 <l>So upon thee there is a seeming mount</l>
-                <l>A seeming tree a seming rivulet</l>
+                <l>A seeming tree a seeming rivulet</l>
                 <l>All upon thee are painted by a hand</l>
                 <l>Which not a critic can well criticise</l>
-                <l>But to disturb thee oft bluf <persName type="fictional" corresp="#AEOLUS">Eolus</persName></l>
-                <l>Descends upon the mountains With his</l>
-                <l>breath</l>
+                <l>But to disturb thee oft bluff <persName type="fictional" corresp="#AEOLUS">Eolus</persName></l>
+                    <l>Descends upon the mountains With his<lb type="runover"/><space quantity="12" unit="chars"/>breath</l>
                 <l>Thy polished surface is a boy at play</l>
                 <l>Who labours at the snow to make a man</l>
-                <l>And when he=s made it knocks it down</l>
-                <l>again</l>
-                <l>So when thou=st made a picture thou dost</l>
-                <l>play</l>
-                <!--[tipped-in p. 13, opposite p. 147]-->
+                    <l>And when he&#x02BC;s made it knocks it down<lb type="runover"/><space quantity="10" unit="chars"/>again</l>
+                    <l>So when thou&#x02BC;st made a picture thou dost<lb type="runover"/><space quantity="14" unit="chars"/>play</l>
+                    <pb facs="MWBoWp13"/>
+                    <fw type="pageNum" place="top-right">13</fw>
                 <l>At tearing it to pieces Trees do first</l>
-                <l>Tremble as if a monstrous heart of Oak</l>
-                <l>Were but an aspen leaf and then as if</l>
+                <l>Tremble as if a monstrous heart of <name type="botanical" corresp="#OAK">Oak</name></l>
+                    <l>Were but an <name type="botanical" corresp="#ASPEN">aspen</name> leaf and then as if</l>
                 <l>It were a cobweb in the tempests blow</l>
                 <l>Thus like <persName type="fictional" corresp="#PENELOPE">Penelope</persName> thou weavst a web</l>
-                <l>And then thou dost undo it. Thou=rt like her</l>
-                <l>Because thourt fair and oft deceiving too</l>
+                    <l>And then thou dost undo it Thou&#x02BC;rt like her</l>
+                    <l>Because thourt fair and oft deceiving too<ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses_contextual.php#PENELOPEGLOSS"/></l>
+                    <milestone unit="undeclared" rend="hr-quarter"/>
                 <l>Sweet <geogName corresp="#DERWENTWATER">Derwent</geogName> on thy winding shore</l>
                 <l>Beside thy mountain forests hoar</l>
                 <l>There would I like to wander still</l>
                 <l>And drink from out the rippling rill</l>
                 <l>Which from thy mountain head doth fall</l>
                 <l>And mingles with the eagles call</l>
-                <l>While on Helvellyn thunder roars</l>
-                <l>Re-echoed by all Derwents shores</l>
+                <l>While on <geogName corresp="#HELVELLYN">Helvellyn</geogName> thunder roars</l>
+                    <l>Re&#x2010;echoed by all <geogName corresp="#DERWENTWATER">Derwent</geogName>s shores</l>
                 <l>And where the lightning flashes still</l>
                 <l>Reflected in the mountain rill.</l>
+                </lg>
                 
             </div>
             
