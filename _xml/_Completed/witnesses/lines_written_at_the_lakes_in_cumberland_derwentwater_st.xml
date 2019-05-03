@@ -75,9 +75,9 @@
     <text>
         <body>
             <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="aa">
-                <head type="title"><hi rend="caps">LINES WRITTEN AT THE LAKES IN <placeName corresp="#CUMBERLAND">CUMBERLAND</placeName></hi>. <geogName corresp="#DERWENTWATER"><hi rend="italic">Derwentwater</hi></geogName>.</head>
+                <head type="title"><hi rend="caps">LINES WRITTEN AT THE LAKES IN <placeName corresp="#CUMBERLAND">CUMBERLAND</placeName></hi>. <hi rend="italic"><geogName corresp="#DERWENTWATER">Derwentwater</geogName></hi>.</head>
                 <lg type="stanza">
-                    <l>Sweet <geogName corresp="#DERWENTWATER">D<hi rend="smallcaps">erwent</hi></geogName>! on thy winding shore,</l>
+                    <l>Sweet <geogName corresp="#DERWENTWATER"><hi rend="caps">D</hi><hi rend="smallcaps">erwent</hi></geogName>! on thy winding shore,</l>
                     <l>Beside thy mountain forests hoar,</l>
                     <l>There would I love to wander still;</l>
                     <l>And drink from out the rippling rill,</l>
@@ -90,6 +90,12 @@
                     <l>Though such thy glories Earth, thy proudest whole,</l>
                     <l>Can never satiate the grasping soul!</l>
                 </lg>
+                <lb/>
+                <closer>
+                    <signed>
+                        <space quantity="44" unit="chars"/><persName type="pen_name">R&#x2014;</persName>
+                    </signed>
+                </closer>
             </div>
         </body>
     </text>

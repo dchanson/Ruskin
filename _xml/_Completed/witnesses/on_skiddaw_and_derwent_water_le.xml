@@ -4,16 +4,21 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
         <!--Library Edition pp 265-66.-->
-        <fileDesc xml:id="on_skiddaw_and_derwent_water_le"<!-- THIS NAME SHOULD BE FOR MS V, NOT ST AS BELOW -->
+        <fileDesc xml:id="on_skiddaw_and_derwent_water_le">
             <titleStmt>
-                <title type="main">"Title of Work"</title>
-                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
-                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <title type="main">"On Skiddaw and Derwent Water"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in Ruskin, <hi rend="italic">Works</hi> (1903)</title>
                 <author>
-                    <persName corresp="#APW">Author of Printed Work</persName>
+                    <persName corresp="#JR">John Ruskin</persName>
                 </author>
                 <editor>
-                    <persName corresp="#EPW">Editor of Printed Work</persName>
+                    <persName corresp="#EPW">Edward Andrews</persName>
+                </editor>
+                <editor>
+                    <persName corresp="#ETC">Edward Cook</persName>
+                </editor>
+                <editor>
+                    <persName corresp="#AW">Alexander Wedderburn</persName>
                 </editor>
                 <principal>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -56,15 +61,13 @@
                         <editor>
                             <persName>W. G. Collingwood</persName>
                         </editor>
-                        <title type="main">The Poems of John Ruskin</title>
-                        <title type="sub">Volume I: Poems Written in Boyhood, 1826-1835</title>
+                        <title type="main">The Works of John Ruskin</title>
+                        <title type="sub">Volume 2: Poems</title>
                         <imprint>
-                            <biblScope type="vol">1</biblScope>
-                            <biblScope type="edition">4<hi rend="superscript">o</hi></biblScope>
                             <pubPlace>London</pubPlace>
                             <publisher>George Allen</publisher>
-                            <date when="1891">1891</date>
-                            <biblScope type="pages">xxiii</biblScope>
+                            <date when="1891">1903</date>
+                            <biblScope type="pages">265-66</biblScope>
                         </imprint>
                     </monogr>
                 </biblStruct>
@@ -73,61 +76,78 @@
     </teiHeader>
     <text>
         <body>
-           
-            <!--BASED ON ST.-->
-            <div type="witness" subtype="poem" met="-+|-+|-+|-+|-+" rhyme="unrhymed">
-                <head type="title"><hi rend="caps">ON</hi> <geogName corresp="#SKIDDAW"><hi rend="caps">SKIDDAW</hi></geogName> <hi rend="caps">AND</hi> <geogName corresp="#DERWENTWATER"><hi rend="caps">DERWENT WATER</hi></geogName></head>
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+|-+">
+                <head type="title"><hi rend="caps">ON <geogName corresp="#SKIDDAW">SKIDDAW</geogName> AND <geogName corresp="#DERWENTWATER">DERWENT WATER</geogName></hi></head>
+                <lg type="stanza">    
+                    <l><geogName corresp="#SKIDDAW">Skiddaw</geogName>, upon thy heights the sun shines bright,</l>
+                    <l>But only for a moment: then gives place</l>
+                    <l>Unto a playful cloud which on thy brow</l>
+                    <l>Sports wantonly,&#x2014;then floats away in air,</l>
+                    <l>Throwing its shadow on thy towering height;</l>
+                    <l>And, darkening for a moment thy green side,</l>
+                    <l>But adds unto its beauty, as it makes</l>
+                    <l>The sun more bright when it again appears.</l>
+                    <l>Thus<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#THUSGLOSS"/> in the morning on thy brow those<lb type="runover"/><space quantity="12" unit="chars"/>clouds</l>
+                    <l>Rest as upon a couch, and give fair scope</l>
+                    <l>For fancy&#x02BC;s play, and airy fortresses,</l>
+                    <l>And towers, battlements, and all appear</l>
+                    <l>Chasing each other off, and in their turn</l>
+                    <l>Are chas&#x00E8;d by the others. But enough</l>
+                    <l>I&#x02BC;ve treated of the clouds.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#PAUSEPERIOD2"/> Now <geogName corresp="#SKIDDAW">Skiddaw</geogName> come,<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#SKIDDAWCOMEGLOSS"/></l>
+                    <l>Noble, and grand, and beauteous, clothed with green,</l>
+                    <l>And yet but scantily. And in some parts</l>
+                    <l>A bare, terrific cliff precipitate</l>
+                    <l>Descends, with only here and there a bush,</l>
+                    <l>A straggler with its roots fixed in the stone</l>
+                    <l>And bare and scraggy as befits the soil.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#STRAGGLERGLOSS"/></l>
+                    <l><geogName corresp="#SKIDDAW">Skiddaw</geogName>, majestic! Giant Nature&#x02BC;s work!</l>
+                    <l>Lower than <geogName corresp="#ALPS">Alps</geogName> or <geogName corresp="#ANDES">Andes</geogName>. Pyrenees</l>
+                    <l>Are all much higher.<ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses_contextual.php#HIGHERGLOSS"/> But those works of Art,</l>
+                    <l>Those giant works of Art,<ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses_contextual.php#PYRAMIDSGLOSS"/> with thee compared,</l>
+                    <l>Sink into nothing; all that Art can do</l>
+                    <l>Is nothing beside thee. The touch of man</l>
+                    <l>Raised pigmy mountains, but gigantic tombs.</l>
+                    <l>The touch of Nature raised the mountain&#x02BC;s brow,</l>
+                    <l>But made no tombs at all, save where the snow&#x2014;</l>
+                    <l>The fleecy locks of winter fall around</l>
+                    <l>And form a frail memorial for the swain</l>
+                    <l>Who wanders far from home, and meets his death</l>
+                    <l>Amidst the cold of winter. But no more</l>
+                    <l>On this sad subject on this happy day.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#HAPPYDAYGLOSS"/></l>
+                </lg>
                 <lg type="stanza">
-                    <l><geogName corresp="#SKIDDAW">S<hi rend="smallcaps">kiddaw</hi></geogName>! upon thy cliffs the sun shines bright;</l>
-                    <l>Yet only for a moment: then gives place</l>
-                    <l>Unto a playful cloud, which on thy brow</l>
-                    <l>Sports wantonly, soon melting into air;</l>
-                    <l>But shadowing first thy side of broken green</l>
-                    <l>And making more intense the sun's return.</l>
-                    <l>Then, in the morning, on thy head those clouds</l>
-                    <l>Rest, as upon a couch, and give fair scope</l>
-                    <l>To fancy&#x02BC;s play; and airy fortresses,</l>
-                    <l>Towers, banners, spears and battlements appear</l>
-                    <l>Chasing the others off; and in their turn</l>
-                    <l>Are vanquished too, dissolving like the mould</l>
-                    <l>That&#x02BC;s trampled by the foot of urchin boy;</l>
-                    <l>And, rolling down, through once so firmly bound</l>
-                    <l>By roots tenacious, while the upward spoiler</l>
-                    <l>Climbs on to invade the hidden eagle&#x02BC;s nest</l>
-                    <l><geogName corresp="#SKIDDAW">Skiddaw</geogName>! majestic, a giant&#x2010;nature&#x02BC;s work,</l>
-                    <l>Though less than <geogName corresp="#ANDES">Andes</geogName>, or the <geogName corresp ="#ALPS">Alpine</geogName> heights,</l>
-                    <l>Yet pyramids to thee are nothing, they at best</l>
-                    <l>Are but gigantic tombs,&#x2014;the work of art.</l>
-                    <l>Proud nature makes no tombs, save where the snow&#x2014;</l>
-                    <l>The fleecy locks of winter fall around,</l>
-                    <l>A mausoleum for the careless swain;</l>
-                    <l>Or where the ocean swallows navies down,</l>
-                    <l>Or yawning earthquke covers cities vast,</l>
-                    <l>Shroudless, engulfed, without a knell or tear;</l>
-                    <l>Or where another <placeName corresp="#HERCULANEUM">Herculaneum</placeName> falls;</l>
-                    <l>Or the great day of fire the general grave.</l>
-                    <l>These are the tombs she makes, and buries all</l>
-                    <l>Beneath them, but the soul; that, . . .scorns the dust.</l>
-                    <l>Now <geogName corresp="#DERWENTWATER">Derwent Water</geogName> come!&#x2014;a looking&#x2010;glass</l>
-                    <l>Wherein reflected are the mountain&#x02BC;s heights;</l>
-                    <l>For thou&#x02BC;rt a mirror, framed in rocks and woods.</l>
-                    <l>Upon thee, seeming mounts arise, and trees</l>
-                    <l>And seeming rivulets, that charm the eye;</l>
-                    <l>All on thee painted by a master hand,</l>
+                    <l>Now <geogName corresp="#DERWENTWATER">Derwent Water</geogName> come!&#x2014;A looking&#x2010;glass</l>
+                    <l>Wherein reflected are the mountain&#x02BC;s heights,</l>
+                    <l>As in a mirror, framed in rocks and woods;</l>
+                    <l>So upon thee there is a seeming mount,</l>
+                    <l>A seeming tree, a seeming rivulet.</l>
+                    <l>All upon thee are painted by a hand</l>
                     <l>Which not a critic can well criticise.</l>
                     <l>But to disturb thee oft, bluff <persName type="fictional" corresp="#AEOLUS">Eolus</persName></l>
-                    <l>Descends upon thy heath&#x2010;top with his breath;</l>
-                    <l>Thy polished surface is a boy at play,</l>
+                    <l>Descends upon the mountains, with his breath,</l>
+                    <l>Thy polished surface is a boy at play</l>
                     <l>Who labours at the snow to make a man,</l>
-                    <l>And when he&#x02BC;s made it, he strikes it into ruin.</l>
-                    <l>So when thou&#x02BC;st made a picture, thou dost play</l>
+                    <l>And when he&#x02BC;s made it, knocks it down again;&#x2014;</l>
+                    <l>So when thou&#x02BC;st made a picture thou dost play</l>
                     <l>At tearing it to pieces. Trees do first</l>
-                    <l>Tremble, as if a monstrous heart of oak</l>
-                    <l>Were but an aspen leaf, and then as if</l>
-                    <l>It were a cobweb in the tempest.</l>
-                    <l>Thus like <persName type="fictional" corresp="#PENELOPE">Penelope</persName> thou weav&#x02BC;st a web,</l>
-                    <l>And then thou dost undo it; thou&#x02BC;rt like her</l>
-                    <l>Because thou&#x02BC;rt fair and full of labour too.</l> 
+                    <l>Tremble, as if a monstrous heart of <name type="botanical" corresp="#OAK">oak</name></l>
+                    <l>Were but an <name type="botanical" corresp="#ASPEN">aspen</name> leaf; and then as if</l>
+                    <l>It were a cobweb in the tempest&#x02BC;s blow.</l>
+                    <l>Thus like <persName type="fictional" corresp="#PENELOPE">Penelope</persName> thou weav&#x02BC;st a web</l>
+                    <l>And then thou dost undo it. Thou&#x02BC;rt like her</l>
+                    <l>Because thou&#x02BC;rt fair, and oft deceiving too.<ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses_contextual.php#PENELOPEGLOSS"/></l>
+                </lg>
+                <lg>
+                    <l>Sweet <geogName corresp="#DERWENTWATER">Derwent</geogName>, on thy winding shore,</l>
+                    <l>Beside thy mountain forests hoar,</l>
+                    <l>There would I like to wander still.</l>
+                    <l>And drink from out the rippling rill,</l>
+                    <l>Which from thy mountain&#x2010;head doth fall</l>
+                    <l>And mingles with the eagles&#x02BC; call;</l>
+                    <l>While on <geogName corresp="#HELVELLYN">Helvellyn</geogName>&#x02BC;s thunder roars,</l>
+                    <l>Re&#x2010;echoed by all <geogName corresp="#DERWENTWATER">Derwent</geogName>&#x02BC;s shores;</l>
+                    <l>And where the lightning flashes still,</l>
+                    <l>Reflected in the mountain rill.</l>
                 </lg>
             </div>
         </body>
