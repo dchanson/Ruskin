@@ -3,25 +3,22 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
-        <fileDesc xml:id="on_skiddaw_and_derwent-water_st">
+        <fileDesc xml:id="on_skiddaw_and_derwent-water_bookman">
             <titleStmt>
-                <title type="main">"On Skiddaw and Derwent-Water"</title>
-                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Spiritual Times</hi> (1830)</title>
+                <title type="main">"On Skiddaw and Derwentwater"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Bookman</hi> (1895)</title>
                 <author>
                     <persName corresp="#APW">John Ruskin</persName>
                 </author>
                 <editor>
-                    <persName corresp="#EPW">Edward Andrews</persName>
+                    <persName corresp="#HRN">H. Robertson Nicoll</persName>
                 </editor>
                 <principal>
                     <persName corresp="#DCH">David C. Hanson</persName>
                 </principal>
                 <respStmt>
-                    <persName corresp="#TBO">Taylor Brooke Oakley</persName>
-                    <resp>contributing transcription/encoding/review</resp>
-                </respStmt>
-                <respStmt>
-                    <persName corresp="#SEP">Steven Eric Petite</persName>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -54,18 +51,17 @@
             <sourceDesc>
                 <biblStruct>
                     <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
                         <editor>
-                            <persName>Edward Andrews</persName>
+                            <persName corresp="#HRN">H. Robertson Nicoll</persName>
                         </editor>
-                        <title type="main">The Spiritual Times</title>
-                        <title type="sub">A Monthly Magazine</title>
+                        <title type="main">The Bookman</title>
                         <imprint>
                             <biblScope type="vol">1</biblScope>
-                            <biblScope type="issue">10</biblScope>
-                            <pubPlace>London</pubPlace>
-                            <publisher>D. Freeman</publisher>
-                            <date when="1830-02">February 1830</date>
-                            <biblScope type="pages">72-73</biblScope>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>Dodd, Mead, and Company</publisher>
+                            <date when="1895">1895</date>
+                            <biblScope type="pages">321</biblScope>
                         </imprint>
                     </monogr>
                 </biblStruct>
@@ -75,9 +71,8 @@
     <text>
         <body>
             <div type="witness" subtype="poem" met="-+|-+|-+|-+|-+">
-                <head type="title"><hi rend="caps">ON <geogName corresp="#SKIDDAW">SKIDDAW</geogName> AND <geogName corresp="#DERWENTWATER">DERWENT&#x2010;WATER</geogName></hi>.</head>
                 <lg type="stanza">
-                    <l><geogName corresp="#SKIDDAW"><hi rend="caps">S</hi><hi rend="smallcaps">kiddaw</hi></geogName>! upon thy cliffs the sun shines bright;</l> 
+                    <l><geogName corresp="#SKIDDAW"><hi rend="caps">S</hi>kiddaw</geogName>! upon thy cliffs the sun shines bright;</l> 
                     <l>Yet only for a moment; then gives place</l> 
                     <l>Unto a playful cloud, which on thy brow</l>
                     <l>Sports wantonly, soon melting into air;</l>
@@ -93,22 +88,22 @@
                     <l>And, rolling down, though once so firmly bound</l>
                     <l>By roots tenacious, while the upward spoiler</l>
                     <l>Climbs on to invade the hidden eagle&#x02BC;s nest.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#STRAGGLERGLOSS"/></l>
-                    <l><geogName corresp="#SKIDDAW"><hi rend="caps">S</hi><hi rend="smallcaps">kiddaw</hi></geogName>!<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#SKIDDAWCOMEGLOSS"/> majestic, giant&#x2010;nature&#x02BC;s work,</l>
+                    <l><geogName corresp="#SKIDDAW"><hi rend="caps">S</hi>kiddaw</geogName>!<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#SKIDDAWCOMEGLOSS"/> majestic, giant&#x2010;nature&#x02BC;s work,</l>
                     <l>Though less than <geogName corresp="#ANDES">Andes</geogName>, or the <geogName corresp="#ALPS">Alpine</geogName> heights,<ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses_contextual.php#HIGHERGLOSS"/></l>
                     <l>Yet pyramids<ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses_contextual.php#PYRAMIDSGLOSS"/> to thee are nothing, they at best</l> 
                     <l>Are but gigantic tombs,&#x2014;the work of art.</l>
                     <l>Proud nature makes no tombs, save where the snow</l>
                     <l>The fleecy locks of winter fall around,</l>
-                    <l>A mausoleum for the careless swain;</l>
+                    <l>A <hi rend="caps">M</hi>ausoleum<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#MAUSOLEUMGLOSS"/> for the careless swain;</l>
                     <l>Or where the ocean swallows navies down,</l>
                     <l>Or yawning earthquake covers cities vast,</l>
                     <l>Shroudless, engulfed, without a knell or tear;</l>
                     <l>Or where another <placeName corresp="#HERCULANEUM">Herculaneum</placeName> falls;</l>
                     <l>Or the great day of fire the general grave.</l>
                     <l>These are the tombs she makes, and buries all</l>
-                    <l>Beneath them, but the soul; that, . . . . scorns the dust.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#HAPPYDAYGLOSS"/></l>
-                    <l>Now <geogName corresp="#DERWENTWATER"><hi rend="caps">D</hi><hi rend="smallcaps">erwent</hi>&#x2010;<hi rend="smallcaps">water</hi></geogName> come, a looking glass</l>
-                    <l>Wherein reflected are the mountains heights;</l>
+                    <l>Beneath them, but the soul; that . . . scorns the dust.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#HAPPYDAYGLOSS"/></l>
+                    <l>Now <geogName corresp="#DERWENTWATER"><hi rend="caps">D</hi>erwentwater</geogName> comes,<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#COMESGLOSS"/> a looking&#x2010;glass</l>
+                    <l>Wherein reflected are the mountain&#x02BC;s heights;</l>
                     <l>For thou&#x02BC;rt a mirror framed in rocks and woods.</l>
                     <l>Upon thee, seeming mounts arise, and trees,</l>
                     <l>And seeming rivulets, that charm the eye;</l>
@@ -124,7 +119,7 @@
                     <l>Tremble as if a monstrous heart of <name type="botanical" corresp="#OAK">oak</name></l>
                     <l>Were but an <name type="botanical" corresp="#ASPEN">aspen</name> leaf, and then, as if</l>
                     <l>It were a cobweb in the tempest.</l>
-                    <l>Thus like <persName type="fictional" corresp="#PENELOPE">Penelope</persName> thou weav&#x02BC;st a web,</l>
+                    <l>Thus like <persName type="fictional" corresp="#PENELOPE">Penelope</persName> thou weav&#x02BC;st a web.</l>
                     <l>And then thou dost undo it; thou&#x02BC;rt like her</l>
                     <l>Because thou&#x02BC;rt fair and full of labour too.<ref type="gloss_contextual" target="on_skiddaw_and_derwentwater_glosses_contextual.php#PENELOPEGLOSS"/></l>
                 </lg>
