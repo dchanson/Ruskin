@@ -56,8 +56,8 @@
     <text>
         <body>
             <div type="glosses" subtype="textual">
-                <note xml:id="DOUBLELETTER" resp="#DCH">Doublee&#x2010;letter (MS V)&#x2014;See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#HAND">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Handwriting and Special Characters</ref>; 
-                    see also <ref type="note" subtype="bibliographical" target="hand_note.php#RUSKINSHANDEARLYPRINTPENCIL">The Ruskin Family Handwriting: Ruskin&#x02BC;s Handwriting&#x2014;Early Print Lettering in Pencil</ref>.</note>
+                <note xml:id="DOUBLELETTER" resp="#DCH"><p><hi rend="bold">Doublee&#x2010;letter (MS V)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#HAND">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Handwriting and Special Characters</ref>; 
+                    see also <ref type="note" subtype="bibliographical" target="hand_note.php#RUSKINSHANDEARLYPRINTPENCIL">The Ruskin Family Handwriting: Ruskin&#x02BC;s Handwriting&#x2014;Early Print Lettering in Pencil</ref>.</p></note>
                 
                 <note xml:id="THUSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Thus&#x201D; (<title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; 
                     <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>In <title type="manuscript" corresp="#MSII">MS II</title> 
@@ -75,26 +75,53 @@
                     In <title type="manuscript" corresp="#MSV">MS V</title>, extra space indicates a terminus or pause, and the following phrase is capitalized. In the <title type="book" corresp="#JRWORKSLE">Library Edition</title> transcription, 
                     <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn</persName> supply a period.</p></note>
                 
-                <note xml:id="SKIDDAWCOMEGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;But enough . . . skiddaw come&#x201D; (MS II; MS V; <hi rend="italic">Spiritual Times</hi>; 
+                <!--THIS NOTE NEEDS MARKUP--><note xml:id="CHASEGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;and towers battlements and all appear. / chasing the other off and in their turn / are chased by the others&#x201D; (MS II; MS V; <hi rend="italic">Spiritual Times</hi>; 
                     <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>In 
-                    his version, <title type="poem" corresp="#JRSKIDDAW1891">&#x201C;Skiddaw&#x201D;</title>, 
-                    although based on the <title type="manuscript" corresp="#MSII">MS II</title> draft, <persName corresp="#WGC">Collingwood</persName> omits this transition, 
+                    fair copy (MS V) of the second line, Ruskin maintained singular case from the draft, but altered "the other" to "each other" ("And towers battlements and all appear / 
+                    Chasing each other off and in their turn / Are chased by the others"). For the Spiritual Times, the second line was retained from Ruskin's fair copy, 
+                    but otherwise the lines were considerably revised.The illusory fortresses in the clouds are elaborated with armaments, and then the figure 
+                    of cloud watching launches a new simile ("Towers, banners, spears, and battlements appear, / Chasing each other off; and in their turn / 
+                    Are vanquished too, dissolving like the mould / That&#x02BC;s trampled by the foot of urchin boy").</p>
+                    
+                    <p>Collingwood, although following MS II, smoothes the grammar by changing the case to plural in the second line 
+                    ("And towers, and battlements, and all appear / Chasing the others off, and in their turn / Are chas&#x00E8;d by the others"). 
+                    In an example of Cook and Wedderburn's tendency to be influenced by Collingwood's version, the editors fold this grammatical correction ("the others") 
+                    into their transcription of the Spiritual Times version, even though the latter adheres to Ruskin's fair-copy "each other" ("Towers, banners, spears and battlements appear / Chasing the others off; and in their turn / 
+                    Are vanquished too . . ."). (In their transcription of the MS V version, Cook and Wedderburn do follow Ruskin's fair-copy "each other" faithfully.) 
+                    The Bookman version transcribes this passage in the Spiritual Times copytext accurately ("each other"), without inserting the alteration 
+                    originating in Collingwood's text.</p></note> 
+                
+                <note xml:id="SKIDDAWCOMEGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;But enough . . . skiddaw come&#x201D; (MS II; MS V; <hi rend="italic">Spiritual Times</hi>; 
+                    <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; <hi rend="italic">Bookman</hi>; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>In 
+                    <persName corresp="#WGC">Collingwood</persName>&#x02BC;s version, <title type="poem" corresp="#JRSKIDDAW1891">&#x201C;Skiddaw&#x201D;</title>, 
+                    although based on the <title type="manuscript" corresp="#MSII">MS II</title> draft, the editor omits this transition, 
                     &#x201C;But enough / Ive treated of the clouds&#x201D;; instead, he retains the end of the original line, but changes the verb tense&#x2014;from 
                     &#x201C;skiddaw come&#x201D; to &#x201C;Skiddaw came&#x201D;&#x2014;and runs this phrase into <persName corresp="#JR">Ruskin</persName>&#x02BC;s following line, 
                     &#x201C;noble and grand and beutious clothed with green&#x201D;. The <title type="periodical" corresp="#SPIRITUALTIMES"><hi rend="italic">Spiritual Times</hi></title> version 
-                    condenses, without eliminating, the invocation. In the <title type="manuscript" corresp="#MSV">MS V</title> fair copy (and in the <title type="book" corresp="#JRWORKSLE">Library Edition</title> transcription 
+                    eliminates this transition and invocation altogether, replacing it with the simile about the playful actions of the &#x201C;urchin boy!&#x201D; 
+                    (see following note). In the <title type="manuscript" corresp="#MSV">MS V</title> fair copy (and in the <title type="book" corresp="#JRWORKSLE">Library Edition</title> transcription 
                     based on it), <persName corresp="#JR">Ruskin</persName> retained the transition as originally composed.</p></note>
-                
-                <note xml:id="MAUSOLEUMGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Mausoleum&#x201D; (<hi rend="italic">Bookman</hi>)&#x2014;</hi>Capitalized only in <title type="periodical" corresp="#BOOKMAN"><hi rend="italic">Bookman</hi></title>.</p></note>
                 
                 <note xml:id="STRAGGLERGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;straggling . . . cliff&#x201D; (MS II; MS V; <hi rend="italic">Spiritual Times</hi>; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>At 
                     line 39 of the <title type="manuscript" corresp="#MSII">MS II</title> draft, there occurs a version of this line about the &#x201C;straggler&#x201D;, 
                     raising the possibility that the line here, which is overwritten in ink, represents a transposition of that image from later in the draft. Perhaps <persName corresp="#JR">Ruskin</persName> thought of this image 
                     at the later stage of composition, after he had resumed the text of the poem following the metadiscursive phrase &#x201C;skiddaw derwent water&#x201D; (between lines 36 and 37), 
                     and decided to transpose it here. In the fair&#x2010;copy version (<title type="manuscript" corresp="#MSV">MS V</title>, and the <title type="book" corresp="#JRWORKSLE">Library Edition</title> transcription based on it), 
-                    the description of the &#x201C;straggler&#x201D; occurs only in this place describing the cliff on <geogName corresp="#SKIDDAW">Skiddaw</geogName>. 
-                    In the <title type="periodical" corresp="#SPIRITUALTIMES"><hi rend="italic">Spiritual Times</hi></title> version, the &#x201C;straggler&#x201D; occurs only here also, but developed as part of an additional simile 
-                    about the &#x201C;urchin boy&#x201D; who tramples the &#x201C;mould&#x201D; and loosens the &#x201C;roots tenacious&#x201D;.<!-- CHECK LINE NUMBERS WHEN WITNESS PROCESSES CORRECTLY --></p></note>
+                    the description of the &#x201C;straggler&#x201D; occurs only in this place describing the cliff on <geogName corresp="#SKIDDAW">Skiddaw</geogName>.<!-- CHECK LINE NUMBERS WHEN WITNESS PROCESSES CORRECTLY --></p>
+                    
+                    <p>In the <title type="periodical" corresp="#SPIRITUALTIMES"><hi rend="italic">Spiritual Times</hi></title> version, the &#x201C;straggler&#x201D; occurs only here also, 
+                        and not later in the poem; however, what <persName corresp="#JR">Ruskin</persName> initially framed as an image of tenacity (&#x201C;a bush&#x201D; 
+                        clinging to the &#x201C;bare terrific cliff preciptate&#x201D;, discerned as &#x201C;A straggler with its roots fixed in the stone / And bare and scraggy as befits the soil&#x201D;) 
+                        is developed as part of a simile that connects this image with the preceding observation of changing cloud shapes: the &#x201C;dissolving&#x201D; shapes 
+                        are like the friable &#x201C;mould&#x201D; that is loosened by a mischievous &#x201C;urchin boy&#x201D;, who tramples the soil that had been 
+                        tenaciously &#x201C;bound&#x201D; by the &#x201C;roots tenacious&#x201D;. The root as &#x201C;spoiler&#x201D; is a figurative usage, 
+                        in the sense of a <hi rend="italic">despoiler</hi> invading the eagle nest.</p></note>
+                
+                <note xml:id="AGIANTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;a giant&#x2010;nature&#x02BC;s work&#x201D; 
+                    (<title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>The 
+                    article <hi rend="italic">a</hi> is used only in the <title type="book" corresp="#JRWORKSLE">Library Edition</title>.</p></note>
+                
+                <note xml:id="MAUSOLEUMGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Mausoleum&#x201D; (<hi rend="italic">Bookman</hi>)&#x2014;</hi>Capitalized only in <title type="periodical" corresp="#BOOKMAN"><hi rend="italic">Bookman</hi></title>.</p></note>
                 
                 <note xml:id="ARRETEZGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Play . . . arretez&#x201D; (MS II)&#x2014;</hi>The text of the poem is interrupted by a fragment of text, 
                     <ref type="witness" target="play_msii.php">&#x201C;Play&#x201D;</ref>, which could be interpreted as a metamark, a commentary on the act of composition 
@@ -133,6 +160,12 @@
                 <note xml:id="METAMARKGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;skiddaw derwent water&#x201D; (MS II)&#x2014;</hi>The phrase is not part of the poem but a metadiscursive signal that <persName corresp="#JR">Ruskin</persName> 
                     here resumes the text of the poem, having interrupted composition to inscribe two other texts on the preceding verso.</p></note>
                 
+                <!--THIS NOTE NEEDS MARKUP--><note xml:id="LOOKINGGLASSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Now <geogName corresp="#DERWENTWATER">Derwentwater</geogName> come!&#x2014;a looking glass&#x201D; 
+                    (<title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; 
+                    <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>In 
+                    the Library Edition version based on the Spiritual Times text, the editors depart from that copytext to insert a stanza break where Collingwood divides the text into two poems, 
+                    and they follow Collingwood's punctuation in this first line of the new stanza (although not his spelling of the proper name).</p></note>
+                
                 <note xml:id="ALLGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;all&#x201D; (MS II)&#x2014;</hi>While the word can be read as an adverbial intensifier (i.e., &#x201C;all as in&#x201D;), 
                     it is superfluous to the meter of the lines preceding and following it, and its position at the left margin suggests neither 
                     a runover of the preceding line nor an addition to the start of the following line. The word may be a relic of an abandoned line.</p></note>
@@ -141,10 +174,22 @@
                     across the full width of the page suggests four separate lines&#x2014;&#x201C;so upon thee there is / a seeming mount / a seeming tree a / seeming rivulet&#x201D;&#x2014;the 
                     meter is satisfied by treating the second and fourth as runover lines.</p></note>
                 
+                <!--THIS NOTE NEEDS MARKUP--><note xml:id="MADEITGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;And when he&#x02BC;s made it knocks it down again&#x201D; (MS II; MS V; <hi rend="italic">Spiritual Times</hi>; 
+                    <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi></title> [<date when="1891">1891</date>]; <hi rend="italic">Bookman</hi>; 
+                    <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title> [<date when="1903">1903</date>])&#x2014;</hi>Ruskin confirmed his 
+                    use of "it" twice in the object position by fair-copying the MS II line without alteration in MS V, and Collingwood let the line stand (except by adding punctuation) 
+                    in his version based on MS II. In the Spiritual Times version, the first "it" is omitted; rather than a mere error, however, the omission is supported by other alterations in the line 
+                    that shift the referent of the first "he" from the boy to the snowman: ""And when he's made, he strikes it into ruin" (i.e., "And when [the snowman]'s made, [the boy] strikes it into ruin").</p>
+                    
+                    <p>Nicoll transcribed the line from the Spiritual Times accurately for the Bookman. Cook and Wedderburn, however, reinserted Ruskin's first "it" into the Spiritual Times version of the line: 
+                        "Ane when he's made it, he strikes it into ruin". Thus, they shifted the referent of both instances of "he" back to the boy, while making the referent of the instances of "it" 
+                        (now, again, two instances, as in Ruskin's original) refer to the snowman.</p></note>
+                    
+                
                 <note xml:id="DOTHFALLGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Which . . . doth fall&#x201D; (MS II)&#x2014;</hi>As originally conceived, the line probably read: &#x201C;Which from thy highest mountain falls&#x201D;, 
-                    which was octosyllabic, but provided an imperfect rhyme of &#x201C;falls&#x201D; for &#x201C;call&#x201D; in the following line. Ruskin therefore revised the line 
+                    which was octosyllabic, but provided an imperfect rhyme of &#x201C;falls&#x201D; for &#x201C;call&#x201D; in the following line. <persName corresp="#JR">Ruskin</persName> therefore revised the line 
                     to the version found in the fair copy, &#x201C;Which from thy mountain head doth fall&#x201D;, which is also correctly octosyllabic, but the line appears confused in the draft. 
-                    Ruskin deleted &#x201C;highest&#x201D; and substituted &#x201C;head&#x201D; above, appearing to create the nonsense phrase, &#x201C;head mountain&#x201D;, 
+                    <persName corresp="#JR">Ruskin</persName> deleted &#x201C;highest&#x201D; and substituted &#x201C;head&#x201D; above, appearing to create the nonsense phrase, &#x201C;head mountain&#x201D;, 
                     but in fact intending &#x201C;head&#x201D; to follow &#x201C;mountain&#x201D; as an above&#x2010;the&#x2010;line runover, forming &#x201C;mountain head&#x201D;. Finally, at the end of the line, he deleted the <hi rend="italic">s</hi> on &#x201C;falls&#x201D; 
                     and squeezed &#x201C;doth&#x201D; in front of &#x201C;fall&#x201D;.</p></note>
                 
