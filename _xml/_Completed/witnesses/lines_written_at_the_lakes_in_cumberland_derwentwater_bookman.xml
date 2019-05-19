@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="lines_written_at_the_lakes_in_cumberland_bookman">
+            <titleStmt>
+                <title type="main">"On Skiddaw and Derwent-Water"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Spiritual Times</hi> (1830)</title>
+                <author>
+                    <persName corresp="#APW">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#EPW">Edward Andrews</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <editor>
+                            <persName corresp="#HRN">H. Robertson Nicoll</persName>
+                        </editor>
+                        <title type="main">The Bookman</title>
+                        <imprint>
+                            <biblScope type="vol">1</biblScope>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>Dodd, Mead, and Company</publisher>
+                            <date when="1895">1895</date>
+                            <biblScope type="pages">321</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="aa">
+                <head type="title">L<hi rend="smallcaps">INES</hi> W<hi rend="smallcaps">RITTEN AT THE</hi> L<hi rend="smallcaps">AKES IN</hi> <placeName corresp="#CUMBERLAND">C<hi rend="smallcaps">UMBERLAND</hi></placeName>. <geogName corresp="#DERWENTWATER">D<hi rend="smallcaps">erwentwater</hi>.</geogName>.</head>
+                <lg type="stanza">
+                    <l>Sweet <geogName corresp="#DERWENTWATER">Derwent</geogName>! on thy winding shore,</l>
+                    <l>Beside thy mountain forests hoar,</l>
+                    <l>There would I love<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#LOVEGLOSS"/> to wander still;</l>
+                    <l>And drink from out the rippling rill,</l>
+                    <l>Which from thy rocky head doth fall,<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#DOTHFALLGLOSS"/></l>
+                    <l>And mingles with the eagle&#x02BC;s call;</l>
+                    <l>While from <geogName corresp="#HELVELLYN">Helvellyn</geogName> thunders break,<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#BREAKGLOSS"/></l>
+                    <l>Re&#x2010;echoed from old <geogName corresp="#DERWENTWATER">Derwent</geogName>&#x02BC;s lake.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#FROMOLDGLOSS"/></l>
+                    <l>And where the lightning&#x02BC;s flaming dart</l>
+                    <l>Plays o&#x02BC;er the Poet&#x02BC;s eye, and warms his heart:</l>
+                    <l>Though such thy glories, Earth, thy proudest whole,</l>
+                    <l>Can never satiate the grasping soul!<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#DARTGLOSS"/></l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
