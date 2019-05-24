@@ -134,7 +134,6 @@
     
     <xsl:choose>
       <xsl:when test="count($root) = 1">
-        SINGLE
         <xsl:apply-templates select="$root[1]/tei:persName/tei:forename"/>
         <xsl:value-of select="' '"/>
         <xsl:apply-templates select="$root[1]/tei:persName/tei:surname"/>
