@@ -79,7 +79,7 @@
     </teiHeader>
     <text>
         <body>
-            <div type="witness" subtype="poem">
+            <div type="witness" subtype="poem" met="-+|-+|-+|-+|-+">
                 <head type="title"><handShift new="#HANDJR1828-29" script="cursive" medium="pencil"/><space quantity="7" unit="chars"/>description of <geogName corresp="#SKIDDAW">skiddaw</geogName> &#x0026;<lb/><space quantity="10" unit="chars"/><geogName corresp="#DERWENTWATER">lake derwent</geogName></head>
                 <ab>
                     <lg type="stanza">
@@ -98,14 +98,14 @@
                         <l>For fancys play. And airy for<lb type="runover"/><space quantity="12" unit="chars"/>tresses<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#FORTRESSESGLOSS"/></l>
                         <l><space quantity="1" unit="chars"/>and towers battlements and<lb type="runover"/><!--CWB: @quantity in the following <space> increased by 1 to include the space at the beginning of this line.--><space quantity="9" unit="chars"/>all appear.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#PAUSEPERIOD"/></l>
                         <l><space quantity="1" unit="chars"/>chasing the other off and in<lb type="runover"/><!--CWB: @quantity in the following <space> increased by 1 to include the space at the beginning of this line.--><space quantity="10" unit="chars"/>their turn</l>
-                        <l><space quantity="2" unit="chars"/>are chased by the others. But<lb type="runover"/><!--CWB: @quantity in the following <space> decreased by 1 to account for the apparent negative space (-1 space) at the beginning of the following runover.--><space quantity="1" unit="chars"/>enough</l>
-                        <l><space quantity="1" unit="chars"/>Ive treated of the clouds.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#PAUSEPERIOD"/> now<lb type="runover"/><!--CWB: @quantity in the following <space> increased by 1 to include the space at the beginning of this line.--><space quantity="12" unit="chars"/><geogName corresp="#SKIDDAW">skiddaw</geogName> come<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#SKIDDAWCOMEGLOSS"/></l>
+                        <l><space quantity="2" unit="chars"/>are chased by the others.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#CHASEGLOSS"/> But<lb type="runover"/><!--CWB: @quantity in the following <space> decreased by 1 to account for the apparent negative space (-1 space) at the beginning of the following runover.--><space quantity="1" unit="chars"/>enough</l>
+                        <l><space quantity="1" unit="chars"/>Ive treated of the clouds.<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#PAUSEPERIOD2"/> now<lb type="runover"/><!--CWB: @quantity in the following <space> increased by 1 to include the space at the beginning of this line.--><space quantity="12" unit="chars"/><geogName corresp="#SKIDDAW">skiddaw</geogName> come<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#SKIDDAWCOMEGLOSS"/></l>
                         <l>noble and grand and beutious<lb type="runover"/><space quantity="9" unit="chars"/>clothed with green</l>
                         <l>and yet but scantily and in<lb type="runover"/><space quantity="8" unit="chars"/>some parts</l>
                         <l>a bare terrific cliff precipitous</l>
                         <l>descends with only here &#x0026;<lb type="runover"/><space quantity="10" unit="chars"/>there a root</l>
                         <!--CWB: Original encoding was <l><del rend="overwritten">straggling as <unclear reason="illeglible" resp="#DCH">it push its tendons</unclear></del><add rend="overwriting"><handShift new="#HANDJR1828-29" script="cursive" medium="ink"/>a straggler there as tho grow with stone</add><lb type="runover"/><space quantity="12" unit="chars"/><del rend="overwritten"><handShift new="#HANDJR1828-29" script="cursive" medium="pencil"/>from the cliff</del><add rend="overwriting"><handShift new="#HANDJR1828-29" script="cursive" medium="ink"/>for earth</add></l>. I've re-encoded this <l> below:-->
-                        <l><subst><add rend="overwriting"><handShift medium="ink"/>a straggler. there as tho grow with stone<lb type="runover"/><space quantity="10"/>for earth</add><del rend="overwriting">straggling as <unclear reason="illeglible" resp="#DCH">it push its tendons</unclear><lb type="runover"/><space quantity="12" unit="chars"/>from the cliff</del></subst><ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#STRAGGLERGLOSS"/></l>
+                        <l><subst><add><handShift medium="ink"/>a straggler. there as tho grow with stone<lb type="runover"/><space quantity="10"/>for earth</add><del rend="overwriting">straggling as <unclear reason="illeglible" resp="#DCH">it push its branches</unclear><lb type="runover"/><space quantity="12" unit="chars"/>from the cliff</del></subst><ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#STRAGGLERGLOSS"/></l>
                         <l><!--CWB: A <handShift> is actually NOT needed here because the previous one - to ink - hasn't ended; but shouldn't the following be encoded as an addition - as I have encoded it here?--><add rend="overwriting">and bare and scraggy as befit the <lb type="runover"/><space quantity="8" unit="chars"/>cliff</add><ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#ARRETEZGLOSS"/></l>
                     </lg>
                 </ab>
@@ -135,7 +135,7 @@
                         <l>the touch of nature raised<lb type="runover"/><space quantity="9" unit="chars"/>the mountains<lb type="runover"/><space quantity="12" unit="chars"/>brow</l>
                         <l>But made no tombs at all save where<lb type="runover"/><space quantity="14" unit="chars"/>the snow</l>
                         <l>the fleecy locks of winter falls around</l>
-                        <l>and forms a <del rend="strikethrough">to</del> white tomb for<lb type="runover"/><space quantity="11" unit="chars"/><del rend="strikethrough">a</del><add place="above"><space quantity="10" unit="chars"/>the</add> careless swain</l>
+                        <l>and forms a <del rend="strikethrough">to</del> white tomb for<lb type="runover"/><space quantity="11" unit="chars"/><del rend="strikethrough">a</del><add place="above"><space quantity="10" unit="chars"/>the</add> careless swain<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#WHITETOMBGLOSS"/></l>
                 <pb facs="1229227v"/>
                         <l><!--CWB: <space> added.--><space quantity="1" unit="chars"/>Who wanders far from home and<lb type="runover"/><!--CWB: @quantity in the following <space> increased by 1 to include the space at the beginning of this line.--><space quantity="14" unit="chars"/>meets his death</l>
                         <l>amidst the cold of winter but<lb type="runover"/><space quantity="10" unit="chars"/>no more <del rend="strikethrough">on</del></l>
@@ -181,7 +181,7 @@
                         <l>thy polished surface is a boy at play</l>
                         <l><space quantity="4" unit="chars"/>who labours at the snow to<lb type="runover"/><space quantity="3" unit="chars"/>make a man</l>
                 <pb facs="1229228v"/>
-                        <l>And when he&#x02BC;s made it knocks it<lb type="runover"/><space quantity="15" unit="chars"/>down again</l>
+                        <l>And when he&#x02BC;s made it knocks it<lb type="runover"/><space quantity="15" unit="chars"/>down again<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#MADEITGLOSS"/></l>
                         <l>So when thou&#x02BC;st made a picture<lb type="runover"/><space quantity="10" unit="chars"/>thou dost play</l>
                         <l>At tearing it to pieces trees do<lb type="runover"/><space quantity="12" unit="chars"/>first</l>
                         <l>Tremble as if a monstrous heart of<lb type="runover"/><space quantity="14" unit="chars"/>oak</l>
@@ -193,7 +193,7 @@
                         <l><del rend="strikethrough">first seeming</del> to be calm then<lb type="runover"/><space quantity="12" unit="chars"/>turning rough</l>
                         <l><del rend="strikethrough">and now <persName type="fictional" corresp="#PENELOPE">penelope</persName> <unclear reason="illegible">an</unclear> all good bye</del></l>
                         <l><del rend="strikethrough">my muse I need no farther use of thee</del></l>
-                        <l>and thus deceiving as <persName type="fictional" corresp="#PENELOPE">penelope</persName></l>
+                        <l>and thus deceiving as <persName type="fictional" corresp="#PENELOPE">penelope</persName><ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#ROUGHGLOSS"/></l>
                     </lg>
                     <milestone unit="undeclared" rend="hr-full"/>
                 </ab>
@@ -208,7 +208,7 @@
                         <l>Which from thy <del rend="strikethrough">highest</del> <add place="above"><space quantity="19" unit="chars"/>head</add>mountain<lb type="runover"/><space quantity="7" unit="chars"/>doth fall<del rend="strikethrough">s</del><ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#DOTHFALLGLOSS"/></l>
                         <l>And mingles with the<lb type="runover"/><space quantity="7" unit="chars"/>eagles call</l>
                         <l>While on <geogName corresp="#HELVELLYN">helvellyn</geogName> thunder<lb type="runover"/><space quantity="6" unit="chars"/>roars</l>
-                        <l>reechoed from old <geogName corresp="#DERWENTWATER">derwent</geogName>s<lb type="runover"/><space quantity="13" unit="chars"/>shores</l>
+                        <l>reechoed from old<ref type="gloss_textual" target="on_skiddaw_and_derwentwater_glosses_textual.php#FROMOLDGLOSS"/> <geogName corresp="#DERWENTWATER">derwent</geogName>s<lb type="runover"/><space quantity="13" unit="chars"/>shores</l>
                         <l>and where the lightning<lb type="runover"/><space quantity="7" unit="chars"/>flashes still</l>
                         <l>reflected in the mountain<lb type="runover"/><space quantity="8" unit="chars"/>rill</l>
                     </lg>
