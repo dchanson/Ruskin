@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <fileDesc xml:id="monastery_glosses_contextual">
+            <titleStmt>
+                <title type="main">"The Monastery"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="WHITELADYWHITELADYGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;White lady white lady sing on in the glen, / . . . / of the people of thy race&#x201D; 
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>The opening six lines, an invocation of the White Lady to sing but not to harm, 
+                    is apparently original to Ruskin. The rhetorical disjunction of the apostrophe from the narrative voice, which begins in line 7, 
+                    perhaps had a precedent for Ruskin in the epigraphs that Scott introduces at the start of each chapter of his novels. The lines also suggest 
+                    the singing of the White Lady herself, which is in couplets.</p></note>
+
+                    <note xml:id="GLOSS" resp="#DCH"><p><hi rend="bold">"glen, / of glendarg" 
+                        (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Spelled <hi rend="italic">Glendearg</hi> 
+                        in Scott's novel. Ruskin's misspelling partly confirms his later statement in Praeterita that "I used to read the 
+                        <hi rend="italic">Abbot</hi> at Kinross, and the <hi rend="italic">Monastery</hi> in Glen Farg, which I confused with 'Glendearg', 
+                        and thought that the White Lady had as certainly lived by the streamlet in that glen of the Ochils, 
+                        as the Queen of Scots in the island of Loch Leven" (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 35:16). 
+                        That is, in the 1820s, when the Ruskins traveled to and from the city of Perth to visit Ruskin's Aunt Jessie and her family, 
+                        they passed through <ref type="note" subtype="geographical" target="glenfarg_place_note.php">Glenfarg</ref>, 
+                        which links Perthshire with Kinross and Loch Leven, where Mary, Queen of Scots, was imprisoned--the historical background 
+                        of <hi rend="italic">The Abbot</hi>, the sequel to <hi rend="italic">The Monastery</hi>. Ruskin's spelling, <hi rend="italic">Glendarg</hi>, 
+                        suggests, however, a willful conflation of Scott's fictional glen with the real <ref type="note" subtype="geographical" target="glenfarg_place_note.php">Glenfarg</ref>, 
+                        rather than a confusion of the two places.</p>
+                        
+                        <p>In the introduction to the Magnum Opus edition of <hi rend="italic">The Monastery</hi>, 
+                        Scott denied basing the fictional glen on a real place, although admitting to a superficial resemblance to the 
+                        Glen of Allan in the neighborhood of Melrose Abbey, on which he loosely based the Kennaquhair--the eponymous monastery of the novel 
+                        (<ref type="bibliography" target="bibliography.php#SCOTTWORKSCALEDONIAN">ALS, <persName corresp="#WS">Scott</persName>, <title type="book" corresp="#SCOTTWORKSCALEDONIAN"><hi rend="italic">Works</hi></title>, Caledonian Edition</ref>, 17:xii).
+                    </p></note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
+            </div>
+        </body>
+    </text>
+</TEI>
