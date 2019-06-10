@@ -154,8 +154,8 @@
                </xsl:when>
                <xsl:otherwise> <!--More than 2 editors -->
                  <xsl:choose>
-                   <xsl:when test="position() = count($root)-1" >, and </xsl:when>
-                   <xsl:when test="position() &lt; count($root)-1">, </xsl:when>
+                   <xsl:when test="position() = count($root)-1" >; and </xsl:when>
+                   <xsl:when test="position() &lt; count($root)-1">; </xsl:when>
                  </xsl:choose>
                </xsl:otherwise>
               
