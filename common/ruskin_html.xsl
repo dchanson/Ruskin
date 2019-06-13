@@ -6,7 +6,7 @@
   xmlns:teix="http://www.tei-c.org/ns/Examples"
   xmlns:custom="http://whatever"
   >
-  <xsl:param name="assetUrl" select="'http://erm.selu.edu/web/images'" />
+  <xsl:param name="assetUrl" select="'https://erm.selu.edu/web/images'" />
   <!-- <xsl:param name="assetUrl" select="'http://ruskin.english.selu.edu:8080/web/images'" /> -->
   <xsl:param name="htmlForm" select="1" />
     
@@ -25,7 +25,7 @@
   Southeastern Louisiana University's Department of English. The contents of this document may not be used or reproduced in
   any form without the express permission of the Author and the Project Director.-->
 
-  <xsl:variable name="newServerPath" select="'http://erm.selu.edu'" />
+  <xsl:variable name="newServerPath" select="'https://erm.selu.edu'" />
 
 
   <xsl:import href="xsl_imports/third_party.xsl"/>
