@@ -6,7 +6,7 @@
        <fileDesc xml:id="monastery_msiii">
             <titleStmt>
                 <title type="main">&#x201C;The Monastery&#x201D;</title>
-                <title type="sub">Electronic Text Generated from a Transcription of the MS Fair Copy</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS III Fair Copy</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
                 </author>
@@ -18,7 +18,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#MJF">Madeline Felps</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -70,7 +70,7 @@
                     <physDesc>
                         <!--If additional entries are made below, the hands count must be increased.-->
                         <handDesc hands="1">
-                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                            <handNote corresp="#HANDJR1829" scribe="JR">
                                 <p>John Ruskin's early boyhood hand, circa <date when="1829">1829</date>,
                                     examples of which can be found in MS III, pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
@@ -83,11 +83,11 @@
     <text>
         <body>
             
-            <pb facs="1229189"/>
             <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="aa">
             
-            <head type="title"><handShift new="#HANDJR1829" script="print" medium="ink"/>THE MONASTERY</head>
-            <head type="chapter">BOOK FIRST</head>
+            <head type="title"><handShift new="#HANDJR1829" script="print" medium="ink"/><hi rend="italic">THE MONASTERY</hi></head>
+            <div type="book" xml:id="book1">
+                <head type="book">BOOK FIRST</head>
                 <lg type="stanza" rhyme="aa">
                     
 
@@ -182,8 +182,10 @@
 <l>the monk obeyed and off he rode,</l>
 <l>before again the good cock crowed,</l>
 <l>and rode on speedily through the glen,</l>
-<l>oer river bog or ford or fen.</l></lg>
-                <lg type="stanza" rhyme="aa"><head type="chapter">BOOK SECOND2</head>
+<l>oer river bog or ford or fen.</l></lg></div>
+                <div type="book" xml:id="book2">
+                    <head type="book">BOOK SECOND2</head>
+                <lg type="stanza" rhyme="aa">
 <l>UP the glen a little way,</l>
 <l>where a pretty meadow lay,</l>
 <l>there was a tower upon the hill:</l>
@@ -292,9 +294,11 @@
 <l>oer river bog or ford or fen1</l>
 <l>END OF BOOK SECOND</l>
 <l>HERN HILL</l>
-<l>DULWICH</l></lg>
+<l>DULWICH</l></lg></div>
 
-                <lg type="stanza" rhyme="aa"><head type="chapter">BOOK THIRD</head>
+               <div type="book" xml:id="book3">
+                   <head type="book">BOOK THIRD</head>
+                   <lg type="stanza" rhyme="aa">
 <l>I MUST return to martin now</l>
 <l>whom I left standing in the bow</l>
 <l>window of his cottage sweet</l>
@@ -382,8 +386,10 @@
 <l>Upon a hill against the sky</l>
 <l>And taking them for his good guide</l>
 <l>And ever keeping by their side</l>
-<l>Very soon at the tower of glendarg they arrived</l></lg>
-                <lg type="stanza" rhyme="aa"><head type="chapter">BOOK 4</head>
+<l>Very soon at the tower of glendarg they arrived</l></lg></div>
+                <div type="book" xml:id="book4">
+                    <head type="book">BOOK 4</head>
+                    <lg type="stanza" rhyme="aa">
 <l>ONE night when all the winds combined</l>
 <l>To frighten een the strongest mind</l>
 <l>And halloween it was and all</l>
@@ -440,6 +446,7 @@
                     
                     
                 </lg>
+                </div>
             </div>
         
             
