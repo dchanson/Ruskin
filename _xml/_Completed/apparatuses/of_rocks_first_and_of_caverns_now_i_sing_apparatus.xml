@@ -5,9 +5,9 @@
     <teiHeader type="apparatus">
         <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
             "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
-        <fileDesc xml:id="title_of_work_apparatus">
+        <fileDesc xml:id="of_rocks_first_and_of_caverns_now_i_sing_apparatus">
             <titleStmt>
-                <title type="main">"Title of Work"</title>
+                <title type="main">&#x201c;Of rocks first and of caverns now I sing&#x201d;</title>
                 <title type="sub">Apparatus</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -20,7 +20,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#MJF">Madeline J. Felps</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -74,15 +74,32 @@
                 </div>
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p><date when="1829-03-09">March 9</date> (or <date notBefore="1830-06-21" notAfter="1830-09-22">summer 1830</date>?). Misdated <date when="1828">1828</date> (and first line misquoted) in Works, 2:536.</p>
+                    <p><date when="1829-03-09">March 9</date> (or <date notBefore="1830-06-21" notAfter="1830-09-22">summer 1830</date>?). Misdated <date when="1828">1828</date> (and first line misquoted) in <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:536.</p>
                 </div>
                 <div type="section" xml:id="COMPPUB">
                     <head type="section">Composition &#x0026; Publication</head>
-                    <p>In a letter of <date when="1829-03-10">March 10, 1829</date>, <persName corresp="#JR">Ruskin</persName> refers to completing a red book, <title type="manuscript" corresp="#MSIII">MS III</title>, 
+                    <p>In a <title type="letter" corresp="#jr_to_jjr_1829-03-10">letter of <date when="1829-03-10">March 10, 1829</date></title>, <persName corresp="#JR">Ruskin</persName> refers to completing a <ref type="note" subtype="bibliographical" target="red_book_note.php">red book</ref>, <title type="manuscript" corresp="#MSIII">MS III</title>, 
                         by gathering together several poems: &#x201C;I am putting in the shipwreck altogether 
-                        and the adventures of an ant &#x0026;c&#x201D; (RFL, 192; see nos. 38 and 49, and see note to no. 46). 
+                        and the adventures of an ant &#x0026;c&#x201D; (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 192; see <ref type="apparatus" subtype="work" target="the_shipwreck_apparatus"><title type="poem" corresp="#JRTHESHIPWRECK">&#x201c;The Shipwreck&#x201d;</title></ref> and <title type="story" corresp="#JRTHEADVENTURESOFANANT">&#x201c;The Adventures of an Ant: A Tale&#x201d;</title> <!-- revisit to add reference tag -->, and see <ref type="apparatus" subtype="work" target="monastery_apparatus.php"><title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title></ref> <!--DCH-->nos. 38 and 49, and see note to no. 46). 
                         In <title type="manuscript" corresp="#MSIII">MS III</title>, several poems, including these lines, are dated <date when="1829-03-09">9 March 1829</date>, the day before <persName corresp="#JR">Ruskin</persName>&#x02bc;s promise to <persName corresp="#JJR">John James</persName>. 
-                        The poems, in the sequential order they appear in <title type="manuscript" corresp="#MSIII">MS III</title> (not necessarily reflecting order of composition), are nos. 47, 28, 48&#x2013;51, 38, 52&#x2013;55, 39. 
+                        The poems, in the sequential order they appear in <title type="manuscript" corresp="#MSIII">MS III</title> (not necessarily reflecting order of composition), are <title type="poem" corresp="#JROFROCKSFIRST">&#x201c;Of rocks first and of caverns now I sing&#x201d;</title>, <ref type="apparatus" target="the_ship_apparatus.php"><title type="poem" corresp="#JRTHESHIP182829">&#x201c;The Ship&#x201d; [1828-29]</title></ref>, <title type="poem" corresp="#JRSONNETTOTHESUN">&#x201c;Sonnet to the Sun&#x1201d;</title><!--revisit to add ref tag-->, <title type="story" corresp="#JRTHEADVENTURESOFANANT">&#x201c;The Adventures of an Ant: A Tale&#x201d;</title><!--revisit for ref tag-->, <ref type="apparatus" target="on_the_appearance_apparatus.php"><title type="poem" corresp="#JRONTHEAPPEARANCE">&#x201c;On the Appearance of a Sudden Cloud of Yellow Fog Covering Everything with Darkness&#x201d;</title></ref>, 
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!--pick up here-->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!--DCH-->nos. 47, 28, 48&#x2013;51, 38, 52&#x2013;55, 39. 
                         Throughout the group, <persName corresp="#JR">Ruskin</persName> distributed &#x201c;<date when="1829-03-09">March 9th 1829</date>,&#x201d; &#x201c;<date when="1829-03-09">March 1829</date>,&#x201d; or just &#x201c;<date when="1829-03-09">9th 1829</date>.&#x201d;
                         This flurry of fair&#x2010;copying must have been instigated by <persName corresp="#MR">Margaret</persName>&#x02bc;s complaint to <persName corresp="#JJR">John James</persName> on <date when="1829-03-04">March 4</date>: 
                         &#x201c;If you think of writing <persName corresp="#JR">John</persName> would you impress on him the propriety of not beginning too eagerly and becoming careless towards the end of his works as he calls them  I think in a letter from you it would have great weight.&#x201d; On <date when="1829-03-10">March 10</date>, <persName corresp="#JJR">John James</persName> complied with the remark to <persName corresp="#JR">John</persName>, &#x201c;You have been at your Works with great Spirit &#x0026; they commence so well that the end rather disappoints that is if they get to an end&#x201d; (RFL, 187, 192). <persName corresp="#JR">Ruskin</persName> appears to have outmaneuvered his mother and forestalled criticism, however, by already completing <title type="manuscript" corresp="#MSIII">MS III</title> on <date when="1829-03-09">March 9</date>; or, at least, he created the fiction of having done so, by gathering together poems written at widely different times, composing some new ones, and peppering the little anthology with the <date when="1829-03-09">March 9</date> date. He then tried to turn the issue into a joke in a letter of <date when="1829-03-10">March 10</date>: &#x201c;I believe my discourse has a conclusion, and a beginning too,&#x201d; though his manner may not be analyzable in &#x201c;the learned terms of Rhetoric&#x201d; (RFL, 193).
