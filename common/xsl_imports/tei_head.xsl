@@ -25,7 +25,7 @@
             <xsl:choose>
 
               <xsl:when test="child::*[self::tei:handShift]">                 <!-- Placeholder until <handShift> processing is determined. -->
-                <div class="title">
+                <div class="title" id="@{xml:id}">
                   <xsl:apply-templates/>
                 </div>
               </xsl:when>
@@ -97,19 +97,19 @@
   </xsl:when>
 
   <xsl:when test="@type='table'">
-    <div class="head-table">
+    <div class="head-table" id="{@xml:id}">
       <xsl:apply-templates/>
     </div>
   </xsl:when>
 
   <xsl:when test="@type">
-    <span class="head-{@type}">
+    <span class="head-{@type}" id="{@xml:id}">
       <xsl:apply-templates/>
     </span>
   </xsl:when>
 
   <xsl:otherwise>
-    <span class="head">
+    <span class="head" id="{@xml:id}">
       <xsl:apply-templates/>
     </span>
   </xsl:otherwise>
