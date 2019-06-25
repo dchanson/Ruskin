@@ -6,15 +6,6 @@
   xmlns:teix="http://www.tei-c.org/ns/Examples"
   xmlns:custom="http://whatever"
   >
-  <!--<head>
-  child::*[1][self::tei:space] is used here to test whether the first child element of the <head> is a <space>. If it is, speacial processing (see
-  <space>) of the <head> is performed before its content is output to a <div>.
-
-  ancestor::*[tei:teiHeader/@type='witness'] is used here to test wether the the ancestor element <teiHeader> is of the @type witness. If it is
-  not, normal processing is performed. Otherwise, the content of the <head> is centered within a <div> before normal processing is performed. This
-  enables the title of an apparatus, essay, or note to be rendered according to styles.css and the title of a witness to be centered by default.
-
-  Normal processing is also performed for <head>s with the @types section and subsection.-->
 
   <xsl:template match="tei:head">
     <xsl:choose>
@@ -62,12 +53,6 @@
 
           
           </xsl:when>
-
-          <!--<xsl:when test="not(ancestor::*[tei:teiHeader/@type='witness'])">
-          <div class="title">
-          <xsl:apply-templates/>
-        </div>
-      </xsl:when>-->
 
       <xsl:otherwise>
         <h1 class="page-title">

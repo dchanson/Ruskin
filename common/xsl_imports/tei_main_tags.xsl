@@ -86,7 +86,7 @@ EOT
       </xsl:when>
       <xsl:otherwise>
         <xsl:choose>
-          <xsl:when test="tei:TEI/tei:teiHeader[@type='witness' or @type='figure']">
+          <xsl:when test="tei:TEI/tei:teiHeader[@type='witness' or @type='figure' or @type='letter']">
             <xsl:call-template name="custom:renderWitness">
               <xsl:with-param name="root" select = "tei:TEI" />
             </xsl:call-template>
