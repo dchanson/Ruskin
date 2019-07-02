@@ -7,7 +7,7 @@
             The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="richardson_william_note">
             <titleStmt>
-                <title type="main">William Richardson (1811-75)</title>
+                <title type="main">William Richardson (1811&#x2013;75)</title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -20,7 +20,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#MJF">Madeline J Felps</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -59,24 +59,24 @@
         <body>
             <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
             <div type="note" subtype="biographical">
-                <head type="title">William Richardson (1811-75)</head>
-                <p>Along with his sister, Mary Richardson (1815-49)<!-- CITE NOTE -->, William Richardson was educated at John James Ruskin's 
-                    expense, especially from the time when they were orphaned by the death of their mother, Jessie Richardson (1783-1828) of Perth, 
-                    John James's sister. Unlike Mary, he did not live at Herne Hill with the Ruskins. 
-                    William trained as a physician, later becoming the Ruskin family medical advisor; 
-                    and he established a prominent practice in Tunbridge Wells, ultimately leaving a mark on diabetes research, 
-                    according to Van Akin Burd's biographical note (RFL 51-52 n. 3).</p>
-                <p>In Ruskin's youth, William seemed less promising to the Ruskins, Margaret wondering, "will he ever do for a Doctor", 
-                    skeptical that "he could get thro the latin classes" considering the limited "knowledge of the english" contained 
-                    in one of his letters: "he must be thoroughly stupid but he may be the reverse of King Charles and we may hope 
-                    may never do a stupid thing tho' he never either writes or says a wise one" (referring to the quip about Charles II 
-                    by the earl of Rochester<!-- Laurence Hyde -->, "He never says a foolish thing, / Nor ever does a wise one"). 
-                    Margaret admitted, however, that William "is certainly goodnatured and obliging", 
-                    and hoped he "may come to the use of his understanding in time" 
-                    (letter to John James Ruskin, 8 May 1827 [RFL 163, and see 165 n. 6])<!-- let's go with this form, thanks -->. 
-                    Later, she decided that the "very dullness of his faculties in childhood has induced such habits of constant 
-                    laborious study as will at least place him on an equality if he does not go beyond many of far higher genius" 
-                    (letter to John James Ruskin, 17 March 1831 [RFL 251]).</p>
+                <head type="title"><persName corresp="#JRPSONWILLIAM">William Richardson</persName> (<date notBefore="1811-07-26" notAfter="1875-09-18">1811&#x2013;75</date>)</head> <!--DCH, you may need to double check me on William, Mary, and Jessie's birth/death dates - MJF-->
+                <p>Along with his sister, <ref type="note" subtype="biographical" target="richardson_mary_note.php"><persName corresp="#MRC">Mary Richardson</persName> (<date notBefore="1815-01-01" notAfter="1849-06">1815&#x2013;49</date>)</ref>, <persName corresp="#JRPSONWILLIAM">William Richardson</persName> was educated at <persName corresp="#JJR">John James Ruskin</persName>&#x02bc;s 
+                    expense, especially from the time when they were orphaned by the death of their mother, <persName corresp="#JRP">Jessie Richardson (<date notBefore="1783-11-20" notAfter="1828-05-18">1783&#x2013;1828</date>) of <placeName corresp="#PERTH">Perth</placeName></persName>, 
+                    <persName corresp="#JJR">John James</persName>&#x02bc;s sister. Unlike <persName corresp="#MRC">Mary</persName>, he did not live at <placeName type="building" corresp="#HERNE">Herne Hill</placeName> with the Ruskins. 
+                    <persName corresp="#JRPSONWILLIAM">William</persName> trained as a physician, later becoming the Ruskin family medical advisor; 
+                    and he established a prominent practice in <placeName corresp="#TUNBRIDGEWELLS">Tunbridge Wells</placeName>, ultimately leaving a mark on diabetes research, 
+                    according to <persName corresp="#VAB">Van Akin Burd</persName>&#x02bc;s biographical note (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref> 51&#x2013;52 n. 3).</p>
+                <p>In <persName corresp="#JR">Ruskin</persName>&#x02bc;s youth, <persName corresp="#JRPSONWILLIAM">William</persName> seemed less promising to the Ruskins, <persName corresp="#MR">Margaret</persName> wondering, &#x201c;will he ever do for a Doctor&#x201d;, 
+                    skeptical that &#x201c;he could get thro the latin classes&#x201d; considering the limited &#x201c;knowledge of the english&#x201d; contained 
+                    in one of his letters: &#x201c;he must be thoroughly stupid but he may be the reverse of <persName corresp="#KC2">King Charles</persName> and we may hope 
+                    may never do a stupid thing tho&#x02bc; he never either writes or says a wise one&#x201d; (referring to the quip about <persName corresp="#KC2">Charles II</persName> 
+                    by the <persName corresp="#LHEARL">earl of <placeName corresp="#ROCHESTER">Rochester</placeName></persName><!-- Laurence Hyde -->, &#x201c;He never says a foolish thing, / Nor ever does a wise one&#x201d;). 
+                    <persName corresp="#MR">Margaret</persName> admitted, however, that <persName corresp="JRPSONWILLIAM">William</persName> &#x201c;is certainly goodnatured and obliging&#x201d;, 
+                    and hoped he &#x201c;may come to the use of his understanding in time&#x201d; 
+                    (<title type="letter" corresp="mr_to_jjr_1827-05-08">letter to <persName corresp="#JJR">John James Ruskin</persName>, <date when="1827-05-08">8 May 1827</date></title> [<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref> 163, and see 165 n. 6])<!-- let's go with this form, thanks -->. 
+                    Later, she decided that the &#x201c;very dullness of his faculties in childhood has induced such habits of constant 
+                    laborious study as will at least place him on an equality if he does not go beyond many of far higher genius&#x201d; 
+                    (<title type="letter" corresp="mr_to_jjr_1831-03-17">letter to <persName corresp="#JJR">John James Ruskin</persName>, <date when="1831-03-17">17 March 1831</date></title> [<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref> 251]).</p>
             </div>
         </body>
     </text>
