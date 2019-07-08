@@ -3,8 +3,6 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="richardson_william_note">
             <titleStmt>
                 <title type="main">William Richardson (1811&#x2013;75)</title>
@@ -19,7 +17,6 @@
                     <persName corresp="#DCH">David C. Hanson</persName>
                 </principal>
                 <respStmt>
-                    <!--For corresp, enter your first, middle, and last intials.-->
                     <persName corresp="#MJF">Madeline J Felps</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
@@ -57,7 +54,6 @@
     </teiHeader>
     <text>
         <body>
-            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
             <div type="note" subtype="biographical">
                 <head type="title"><persName corresp="#JRPSONWILLIAM">William Richardson</persName> (<date notBefore="1811-07-26" notAfter="1875-09-18">1811&#x2013;75</date>)</head> <!--DCH, you may need to double check me on William, Mary, and Jessie's birth/death dates - MJF-->
                 <p>Along with his sister, <ref type="note" subtype="biographical" target="richardson_mary_note.php"><persName corresp="#MRC">Mary Richardson</persName> (<date notBefore="1815-01-01" notAfter="1849-06">1815&#x2013;49</date>)</ref>, <persName corresp="#JRPSONWILLIAM">William Richardson</persName> was educated at <persName corresp="#JJR">John James Ruskin</persName>&#x02bc;s 
@@ -70,7 +66,8 @@
                     skeptical that &#x201c;he could get thro the latin classes&#x201d; considering the limited &#x201c;knowledge of the english&#x201d; contained 
                     in one of his letters: &#x201c;he must be thoroughly stupid but he may be the reverse of <persName corresp="#KC2">King Charles</persName> and we may hope 
                     may never do a stupid thing tho&#x02bc; he never either writes or says a wise one&#x201d; (referring to the quip about <persName corresp="#KC2">Charles II</persName> 
-                    by the <persName corresp="#LHEARL">earl of <placeName corresp="#ROCHESTER">Rochester</placeName></persName><!-- Laurence Hyde -->, &#x201c;He never says a foolish thing, / Nor ever does a wise one&#x201d;). 
+                    by <persName corresp="#JWEARLROCHESTER2">John Wilmot, the earl of Rochester</persName>, that the king &#x201c;never said a foolish thing, / Nor ever did a wise one&#x201d; 
+                    [<ref type="bibliography" target="bibliography.php#JWEARLROCHESTER2WORKS"><persName corresp="FWELLIS">Ellis</persName>, ed., <title type="book" corresp="#JWEARLROCHESTER2WORKS"><hi rend="italic">Complete Works</hi></title></ref>, 197]). 
                     <persName corresp="#MR">Margaret</persName> admitted, however, that <persName corresp="JRPSONWILLIAM">William</persName> &#x201c;is certainly goodnatured and obliging&#x201d;, 
                     and hoped he &#x201c;may come to the use of his understanding in time&#x201d; 
                     (<title type="letter" corresp="mr_to_jjr_1827-05-08">letter to <persName corresp="#JJR">John James Ruskin</persName>, <date when="1827-05-08">8 May 1827</date></title> [<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref> 163, and see 165 n. 6])<!-- let's go with this form, thanks -->. 
