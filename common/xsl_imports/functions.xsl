@@ -35,9 +35,9 @@
         &#x003C;a href=&#x022;<xsl:value-of select="$newServerPath"/>/<xsl:value-of select="$justNameVar" />&#x022;&#x003E;<xsl:value-of select='.' />&#x003C;/a&#x003E;
       </xsl:variable>
       <xsl:value-of select="$aVar" disable-output-escaping="yes" />
-      <div class="pb" />
-      
+      <xsl:value-of select="$brVar" />
     </xsl:for-each>
+    
   </xsl:function>
   
   <!-- Generate alphabetic indices-->
