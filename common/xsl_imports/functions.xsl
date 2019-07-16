@@ -18,6 +18,28 @@
       <xsl:value-of select="custom:printLetterRecursively($character, $num_times)" />
     </xsl:if>
   </xsl:function>
+  
+  <xsl:function name="custom:printFiliations">
+    <xsl:param name="refs" />
+    
+    <xsl:for-each select="$refs">
+      <xsl:variable name='justNameVar'>
+        <xsl:call-template name="string-replace-all">
+          <xsl:with-param name="text" select="./@target" />
+          <xsl:with-param name="replace" select="'.php'" />
+          <xsl:with-param name="by" select="''" />
+        </xsl:call-template>
+      </xsl:variable>
+      
+      <xsl:variable name="aVar">
+        &#x003C;a href=&#x022;<xsl:value-of select="$newServerPath"/>/<xsl:value-of select="$justNameVar" />&#x022;&#x003E;<xsl:value-of select='.' />&#x003C;/a&#x003E;
+      </xsl:variable>
+      <xsl:value-of select="$aVar" disable-output-escaping="yes" />
+      <div class="pb" />
+      
+    </xsl:for-each>
+  </xsl:function>
+  
   <!-- Generate alphabetic indices-->
   <xsl:function name="custom:getAlphabeticIndex">
     <xsl:param name="number"/>
