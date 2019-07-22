@@ -3,8 +3,6 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="glosses">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="monastery_glosses_textual">
             <titleStmt>
                 <title type="main">&#x201c;The Monastery&#x201d;</title>
@@ -58,8 +56,12 @@
     <text>
         <body>
             <div type="glosses">
-                <note xml:id="WHITELADYWHITELADYGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<persName type="fictional" corresp="#WHITELADY">White lady white lady</persName> sing on in the glen, / . . . / of the people of thy race&#x201D; 
-                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>The
+                <note xml:id="UNKNOWNMARKGLOSS" resp="#DCH"><p><hi rend="bold">Vertical mark (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>The 
+                    purpose of this mark is unknown. It may be a deletion.</p></note>
+                
+                <note xml:id="INVERTEDSEMICOLONGLOSS" resp="#DCH"><p><hi rend="bold">Inverted semicolon (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>In 
+                    this fair copy of the "The Monastery", Ruskin consistently forms a semicolon with the comma above the point.</p></note>
+                
                 <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
             </div>
         </body>
