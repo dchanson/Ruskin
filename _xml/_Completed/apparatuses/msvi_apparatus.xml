@@ -5,9 +5,9 @@
     <teiHeader type="apparatus">
         <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject MANUSCRIPT followed by "apparatus", for example,
             "msi_apparatus". The xml:id also corresponds with its XML file's name, for example, "msi_apparatus.xml".-->
-        <fileDesc xml:id="title_of_manuscript_apparatus">
+        <fileDesc xml:id="msvi_apparatus">
             <titleStmt>
-                <title type="main">Title of Manuscript</title>
+                <title type="main">MS VI</title>
                 <title type="sub">Apparatus</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -58,7 +58,7 @@
     <text>
         <body>
             <div type="apparatus">
-                <head type="title">Title of Manuscript</head>
+                <head type="title">MS VI</head>
                 <!--A manuscript apparatus may contain all or only some of the following sections.-->
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
