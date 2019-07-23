@@ -19,26 +19,14 @@
     </xsl:if>
   </xsl:function>
   
-  <xsl:function name="custom:printFiliations">
-    <xsl:param name="refs" />
+  <xsl:template name="custom:printFiliations">
+    <xsl:param name="elems" />
     
-    <xsl:for-each select="$refs">
-      <xsl:variable name='justNameVar'>
-        <xsl:call-template name="string-replace-all">
-          <xsl:with-param name="text" select="./@target" />
-          <xsl:with-param name="replace" select="'.php'" />
-          <xsl:with-param name="by" select="''" />
-        </xsl:call-template>
-      </xsl:variable>
-      
-      <xsl:variable name="aVar">
-        &#x003C;a href=&#x022;<xsl:value-of select="$newServerPath"/>/<xsl:value-of select="$justNameVar" />&#x022;&#x003E;<xsl:value-of select='.' />&#x003C;/a&#x003E;
-      </xsl:variable>
-      <xsl:value-of select="$aVar" disable-output-escaping="yes" />
-      <xsl:value-of select="$brVar" />
+    <xsl:for-each select="$elems">
+      <xsl:apply-templates select='.' />
     </xsl:for-each>
-    
-  </xsl:function>
+    <xsl:value-of select="$brVar" disable-output-escaping="yes" />
+  </xsl:template>
   
   <!-- Generate alphabetic indices-->
   <xsl:function name="custom:getAlphabeticIndex">
@@ -73,9 +61,10 @@
   <xsl:template name="custom:build_url_and_render_anchor">
     <xsl:param name="href" />
     <xsl:param name="target" select="'_self'" />
+    <xsl:param name="withoutPhp" select="0" /> <!--use /web/pages if this is set to 0 -->
     
     <xsl:choose>
-      <xsl:when test="not($htmlForm)">
+      <xsl:when test="not($withoutPhp) and not($htmlForm)">
         <xsl:variable name="href">&lt;?php echo r_build_url(&quot;<xsl:value-of select="$href"/>&quot;);?&gt;</xsl:variable>
         
         <xsl:call-template name="custom:render_anchor">

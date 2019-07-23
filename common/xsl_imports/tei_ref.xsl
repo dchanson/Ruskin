@@ -20,14 +20,25 @@
 
   
   <xsl:template match="tei:ref">
-
     <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(./@target, '.php')"/>.xml</xsl:variable>
-
+    
+    <xsl:if test='not(@type)'>
+      <xsl:message terminate="yes">"ref" must have a "type" attribute</xsl:message>
+    </xsl:if>
+        
+    <xsl:variable name="justNameVar">
+      <xsl:call-template name="string-replace-all">
+        <xsl:with-param name="text" select="@target" />
+        <xsl:with-param name="replace" select="'.php'" />
+        <xsl:with-param name="by" select="''" />
+      </xsl:call-template>
+    </xsl:variable>
+    
     <xsl:choose>
-
       <xsl:when test="@type='apparatus'">
         <xsl:call-template name="custom:build_url_and_render_anchor">
           <xsl:with-param name="href" select="concat('apparatuses/',@target)" />
+          <xsl:with-param name="withoutPhp" select="1" />
         </xsl:call-template>
       </xsl:when>
 
@@ -40,6 +51,7 @@
       <xsl:when test="@type='bibliography'">
         <xsl:call-template name="custom:build_url_and_render_anchor">
           <xsl:with-param name="href" select="concat('notes/',@target)" />
+          <xsl:with-param name="withoutPhp" select="1" />
         </xsl:call-template>
       </xsl:when>
 
@@ -52,6 +64,7 @@
       <xsl:when test="@type='essay'">
         <xsl:call-template name="custom:build_url_and_render_anchor">
           <xsl:with-param name="href" select="concat('essays/',@target)" />
+          <xsl:with-param name="withoutPhp" select="1" />
         </xsl:call-template>
       </xsl:when>
 
@@ -70,24 +83,14 @@
       <xsl:when test="@type='note'">
         <xsl:call-template name="custom:build_url_and_render_anchor">
           <xsl:with-param name="href" select="concat('notes/',@target)" />
+          <xsl:with-param name="withoutPhp" select="1" />
         </xsl:call-template>
       </xsl:when>
 
       <xsl:when test="@type='gloss_contextual' or @type='gloss_textual'">
-
-
-        <xsl:variable name="xmlVar"><xsl:value-of select="substring-before(@target, '.php')"/>.xml</xsl:variable>
         
-        <xsl:variable name="justNameVar">
-          <xsl:call-template name="string-replace-all">
-            <xsl:with-param name="text" select="@target" />
-            <xsl:with-param name="replace" select="'.php'" />
-            <xsl:with-param name="by" select="''" />
-          </xsl:call-template>
-        </xsl:variable>
         <xsl:variable name="refVar">
           &#x003C;a href=&#x0022;<xsl:value-of select="$newServerPath"/>/glosses/<xsl:value-of select="$justNameVar"/>&#x0022; target=&#x022;_blank&#x022; class=&#x022;inactive&#x022;&#x003E;
-          
           
           <span>
             <xsl:choose>
@@ -137,6 +140,7 @@
       <xsl:when test="@type='webpage'">
         <xsl:call-template name="custom:build_url_and_render_anchor">
           <xsl:with-param name="href" select="concat('webpages/',@target)" />
+          <xsl:with-param name="withoutPhp" select="1" />
         </xsl:call-template>
       </xsl:when>
 

@@ -43,14 +43,20 @@ EOT
           <xsl:when test="name(/*)='teiCorpus'">
             <xsl:for-each select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref[1]">
               <xsl:if test="position()=1">
-                <xsl:value-of select="custom:printFiliations(.)" disable-output-escaping="yes"/>
+                <xsl:call-template name="custom:printFiliations">
+                  <xsl:with-param name='elems' select='.' />
+                </xsl:call-template>
+                <!-- <xsl:value-of select="custom:printFiliations(.)" disable-output-escaping="yes"/> -->
               </xsl:if>
             </xsl:for-each>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:value-of 
+            <!-- <xsl:value-of 
               select="custom:printFiliations(//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref)"
-              disable-output-escaping="yes" />
+              disable-output-escaping="yes" /> -->
+              <xsl:call-template name="custom:printFiliations">
+                <xsl:with-param name='elems' select='//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref' />
+              </xsl:call-template>
           </xsl:otherwise>
         </xsl:choose>
 
