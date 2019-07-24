@@ -399,6 +399,9 @@
         <xsl:when test="@type='reprintedFrom'">
           Reprinted from <xsl:apply-templates select="./tei:bibl/tei:date" />.a
         </xsl:when>
+        <xsl:when test="@type='reprintedIn'">
+          <xsl:apply-templates select="./tei:bibl" />
+        </xsl:when>
         <xsl:when test="@type='revisedAs'">
           Revised as 
           <xsl:apply-templates select="./tei:biblStruct" />
