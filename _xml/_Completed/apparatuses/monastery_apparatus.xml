@@ -56,6 +56,22 @@
         <body>
             <div type="apparatus">
                 <head type="title">&#x201C;The Monastery&#x201D;</head>
+                
+                <div type="section" xml:id="WITNESSES">
+                    <head type="section">Witnesses</head>
+                    <list>
+                        <item><ref type="apparatus" subtype="manuscript" target="msia_apparatus.php"><title type="manuscript" corresp="#MSII">MS IA</title></ref></item>
+                        <item><list>
+                            <item><ref type="witness" target="now_must_we_leave_poor_martin_there_msia.php">&#x201c;now must we leave poor martin there&#x201d;</ref></item>
+                            <item><ref type="witness" target="come_on_good_horse_and_let_us_see_msia.php">&#x201c;come on good horse and let us see&#x201d;</ref></item>
+                        </list></item>
+                        <item><ref type="apparatus" subtype="manuscript" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSV">MS III</title></ref></item>
+                        <item><list>
+                            <item><ref type="witness" target="monastery_msiii.php"><title type="poem" corresp="#JRMONASTERY">&#x201c;The Monastery&#x201d;</title></ref></item>
+                        </list></item>
+                    </list>
+                </div>
+                
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
                     <p>Entitled <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> in the <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref> fair copy, 
@@ -72,7 +88,8 @@
                 </div>
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p>A range of <date notBefore="1827-01-01" notAfter="1829-12-31">1827&#x2013;29</date> is possible. &#x201c;Book I&#x201d; and &#x201c;Book II&#x201d; may have been composed as early as <date notBefore="1827-01-01" notAfter="1828-12-31">1827&#x2013;28</date>; 
+                    <p>A range of <date notBefore="1827-01-01" notAfter="1829-12-31">1827&#x2013;29</date> is possible. &#x201c;Book I&#x201d; and &#x201c;Book II&#x201d; may have been composed as early as <date notBefore="1827-01-01" notAfter="1828-12-31">1827&#x2013;28</date>, 
+                        but more likely in <date when="1828">1828</date>; 
                         &#x201c;Book III&#x201d; and &#x201c;Book IV&#x201d; may have been completed by <date when="1829-03">March 1829</date>.</p>
                     
                     <p><persName corresp="#WGC">W. G. Collingwood</persName> dated the work from the <date notBefore="1828-01" notAfter="1828-06">&#x201C;early part of 1828&#x201D; or &#x201C;first half of 1828&#x201D;</date>. 
@@ -90,27 +107,47 @@
                         for correcting <persName corresp="#WGC">Collingwood</persName>&#x02bc;s date of <date when="1828">1828</date> 
                         (<ref type="bibliography" target="bibliography.php#VILJOENPAPERS">&#x201C;Helen Gill Viljoen Papers&#x201D;</ref>, box F, transcription of <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title>).</p>
                     
-                    <p>The reasoning by the editors of the Library Edition does seem to stand on the most speculative evidence, 
-                        dependent solely on <persName corresp="#JR">Ruskin</persName>&#x02bc;s comment in <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title> 
+                    <p>The reasoning by the editors of the Library Edition seems to stand on the most speculative evidence&#x2014;namely, 
+                        <persName corresp="#JR">Ruskin</persName>&#x02bc;s comment in <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title> 
                         that he &#x201c;used to read the <title type="book" corresp="#SCOTTABBOT"><hi rend="italic">Abbot</hi></title> at <placeName corresp="#KINROSS">Kinross</placeName>, 
                         and the <title type="book" corresp="#SCOTTMONASTERY"><hi rend="italic">Monastery</hi></title> in <geogName corresp="#GLENFARG">Glen Farg</geogName>&#x201d; 
                         (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:260 n. 1; 35:16). 
-                        While <persName corresp="#JR">Ruskin</persName> may well have associated <persName corresp="#WS">Walter Scott</persName>&#x02bc;s novels with landmarks along the Ruskins&#x02bc; routes to <placeName corresp="#SCOTLAND">Scotland</placeName> in the <date notBefore="1820-01-01" notAfter="1829-12-31">1820s</date>, 
-                        why should these associations be tied so specifically to the journey of <date when="1827">1827</date>? It is not known when <persName corresp="#JR">Ruskin</persName> first read <persName corresp="#WS">Scott</persName>&#x02bc;s <title type="book" corresp="#SCOTTMONASTERY"><hi rend="italic">Monastery</hi></title> 
-                        or heard it read to him. That journey did result, however, in the writing that immediately precedes <persName corresp="#JR">Ruskin</persName>&#x02bc;s <title type="poem" corresp="#JRMONASTERY">&#x201c;The Monastery&#x201d;</title>
-                        in <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>&#x2014;the anthology, <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref> 
-                        (see also <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php">Tours of <date notBefore="1826" notAfter="1827">1826&#x2013;27</date></ref>). 
-                        Whether <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>&#x2014;or at least its first Book&#x2014;should be considered a contemporaneous part of that <date when="1827">1827</date> poetry project, 
-                        or, as <persName corresp="#WGC">Collingwood</persName> contends, an insertion in that place from a later time, the poem&#x02bc;s juxtaposition with an anthology of poems 
-                        describing <placeName type="building" corresp="#LOCHLEVENCAS">Lochleven</placeName> and <geogName corresp="#GLENFARG">Glenfarg</geogName>, among other places, does appear to confirm the associations that <persName corresp="#JR">Ruskin</persName> commemorated in <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title>.</p>
-                    
-                    <p>As explained in <ref type="internal" target="#COMPPUB">Composition and Publication</ref>, the only documented record 
-                        of <persName corresp="#JR">Ruskin</persName>&#x02bc;s labor on <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> dates from <date when="1829-03">March 1829</date>, 
-                        and even that passing reference in a letter is ambiguous. The statement might mean that he was returning to composition and/or fair copy of the poem itself, 
-                        or simply that he was working on something in <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>, which he identified by its contents&#x2014;that is, the <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Book</ref> that contains 
-                        his versification, <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>. Based on the concatenation of evidence in <ref type="internal" target="#COMPPUB">Composition and Publication</ref>, 
-                        it appears likely that, in <date when="1829-03">March 1829</date>, he did compose and/or fair&#x2010;copy Books III&#x2013;IV or a portion of them (which he left incomplete), 
-                        while Books I&#x2013;II of the poem dated from <date when="1827">1827</date> or (more likely) <date when="1828">1828</date>.</p>
+                        While <persName corresp="#JR">Ruskin</persName> may well have associated <persName corresp="#WS">Walter Scott</persName>&#x02bc;s novels with landmarks along the Ruskins&#x02bc; route to <placeName corresp="#SCOTLAND">Scotland</placeName> in the <date notBefore="1820-01-01" notAfter="1829-12-31">1820s</date>, 
+                        the editors neglect to explain why these associations should be tied so specifically to the journey of <date when="1827">1827</date>. It is not known when <persName corresp="#JR">Ruskin</persName> first read <persName corresp="#WS">Scott</persName>&#x02bc;s <title type="book" corresp="#SCOTTMONASTERY"><hi rend="italic">Monastery</hi></title> 
+                        or heard it read to him. The case is strengthened, however, by the contents of <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>, 
+                        the manuscript containing the fair copy of <title type="poem" corresp="#JRMONASTERY">&#x201c;The Monastery&#x201d;</title>. Immediately preceding 
+                        <persName corresp="#JR">Ruskin</persName>&#x02bc;s poem occurs the anthology, <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>, 
+                        which includes poems describing <placeName type="building" corresp="#LOCHLEVENCAS">Loch Leven Castle</placeName> and <geogName corresp="#GLENFARG">Glen Farg</geogName>&#x2014;the 
+                        points along the journey to <placeName corresp="#PERTH">Perth</placeName> that, according to <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title>, 
+                        <persName corresp="#JR">Ruskin</persName> connected with his reading of <persName corresp="#WS">Scott</persName>&#x02bc;s novels. (In fact, it may have been this evidence in 
+                        <title type="manuscript" corresp="#MSIII">MS III</title> that originally prompted <persName corresp="#JR">Ruskin</persName>&#x02bc;s comment in the autobiography, 
+                        rather than this evidence independently documenting his memory.) In using this statement in <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title> 
+                        to link <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> to the family journey to <placeName corresp="#PERTH">Perth</placeName> in <date when="1827">1827</date>, 
+                        the editors of the <title type="book" corresp="#JRWORKSLE">Library Edition</title> evidently did not base their conclusion on the juxtaposition of the poem with 
+                        <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>, 
+                        since they believed the latter to date from <date when="1826">1826</date> 
+                        (see <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:260 n. 1, and see 535). 
+                        But the poems in <title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title> do in fact belong to the family tour of <date when="1827">1827</date>, tending to confirm <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn</persName>&#x02bc;s speculations. 
+                        <persName corresp="#HGV">Viljoen</persName>&#x02bc;s qualms about a date this early can be resolved by evidence that this tour fell unusually late in <date when="1827">1827</date>&#x2014;primarily 
+                        in <date notBefore="1827-08" notAfter="1827-11">September and October, with departure sometime in August, and return sometime in November</date> 
+                        (see <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php">Tours of <date notBefore="1826" notAfter="1827">1826&#x2013;27</date></ref>).</p>
+                        
+                    <p>The evidence is more indirect regarding whether <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>&#x2014;or at least its first one or two books&#x2014;should be considered a contemporaneous 
+                        with the <date when="1827">1827</date> <title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title> project, 
+                        or, as <persName corresp="#WGC">Collingwood</persName> contends, an insertion in that place from a later time. As explained in 
+                        <ref type="internal" target="#COMPPUB">Composition and Publication</ref>, the only documented record of <persName corresp="#JR">Ruskin</persName>&#x02bc;s labor 
+                        on <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> dates from <date when="1829-03">March 1829</date>, 
+                        and even that passing reference in a letter is ambiguous. The statement might mean that, at that time, he was returning to composition and/or fair copy of the poem itself, 
+                        or that he was working on something in <title type="manuscript" corresp="#MSIII">MS III</title>, which he meant to simply identify by its contents&#x2014;that is, 
+                        the <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Book</ref> known in the family for its containing 
+                        <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>. Based on the concatenation of evidence 
+                        in <ref type="internal" target="#COMPPUB">Composition and Publication</ref>, it appears likely that, in <date when="1829-03">March 1829</date>, 
+                        he did compose and/or fair&#x2010;copy some portion of <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>&#x2014;probably, 
+                        Books III&#x2013;IV (which he left incomplete)&#x2014;while Books I&#x2013;II date from an earlier period. This period may be as early as 
+                        <date notBefore="1827-09" notAfter="1827-12">between September and December 1827</date>, but more likely from some time in <date when="1828">1828</date>. 
+                        The poem&#x02bc;s associations with travel to Scotland may not derive from the <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php"><date when="1827">Tour of 1827</date></ref>, 
+                        but from the sadder occasion of mourning the loss of <persName corresp="#JR">Ruskin</persName>&#x02BC;s <ref type="note" subtype="biographical" target="richardson_jessie_note.php"></ref><persName corresp="#JRP">Aunt Jessie</persName>, 
+                        who died in <placeName corresp="#PERTH">Perth</placeName> in <date when="1828-05">May 1828</date>.</p>
                     
                      <!--   <ref type="bibliography" target="bibliography.php#POEMS4D1891"><title type="book" corresp="#POEMS4D1891"><hi rend="italic">Poems</hi> [4<hi rend="superscript">o</hi></title>, 1891]</ref>, <ref type="bibliography" target="bibliography.php#POEMS8D1891"><title type="book" corresp="#POEMS8D1891"><hi rend="italic">Poems</hi> [8<hi rend="superscript">o</hi>, 1891]</title></ref> 263, 273; see also, however, part 1, <ref type="apparatus" subtype="manuscript" target="msia_apparatus.php#content"><title type="manuscript" corresp="#MSIA">MS IA</title>, &#x201C;Content&#x201D;</ref>, a, 
                         Earlier editors&#x02BC; assignment of <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> to <date when="1827">1827</date> or <date when="1828">1828</date> seems based on merely impressionistic and circumstantial evidence. 
@@ -131,20 +168,27 @@
                     <p>In a <ref type="apparatus" target="mr_to_jjr_1829-03-04_al_apparatus.php"><title type="letter" corresp="mr_to_jjr_1829-03-04"><date when="1829-03-04">4 March 1829</date> letter</title></ref> to her <persName corresp="#JJR">husband</persName>, 
                         <persName corresp="#MR">Margaret Ruskin</persName> referred to <persName corresp="#JR">John</persName>&#x02BC;s writing &#x201C;a novel&#x201D; 
                         (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 185)&#x2014;presumably 
-                        referring to this versification of scenes from the first four chapters of <persName corresp="#WS">Walter Scott</persName>&#x02BC;s novel, <title type="book" corresp="SCOTTMONASTERY"><hi rend="italic">Monastery</hi></title> (<date when="1820">1820</date>). 
+                        referring to this versification of scenes from <persName corresp="#WS">Walter Scott</persName>&#x02BC;s novel, <title type="book" corresp="SCOTTMONASTERY"><hi rend="italic">Monastery</hi></title> (<date when="1820">1820</date>). 
                         In a <ref type="apparatus" target="jr_to_jjr_1829-03-10_al_apparatus.php"><title type="letter" corresp="jr_to_jjr_1829-03-10"><date when="1829-03-10">10 March</date> letter</title></ref> to his <persName corresp="#JJR">father</persName>, 
                         <persName corresp="#JR">John</persName> confirmed: &#x201C;I am trying to get that <ref type="note" subtype="bibliographical" target="red_book_note.php">red book</ref> of mine 
                         which has <title type="poem" corresp="#JRTHEMONASTERY">the Monastery</title> in it finished, by the time you come home&#x201D; 
                         (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 192). 
                         Of the surviving <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Books</ref>, only <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref> contains any portion of this work; 
                         and while <persName corresp="#JR">Ruskin</persName>&#x02bc;s statement is ambiguous, as remarked in <ref type="internal" target="#DATE">Date</ref>, respecting whether he was working <hi rend="italic">on</hi> the poem 
-                        or simply in the <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Book</ref> containing the poem, <persName corresp="#MR">Margaret</persName> indicated to <persName corresp="#JJR">John James</persName> that she saw definite progress on the poem itself: 
+                        or simply in the <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Book</ref> containing the poem, <persName corresp="#MR">Margaret</persName> indicated to <persName corresp="#JJR">John James</persName> that she saw definite progress on <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> itself: 
                         &#x201c;he has commenced writing a novel &#x0026; a Sermon both as far as they have gone very tolerable I assure you&#x201d; 
-                        (<ref type="apparatus" target="mr_to_jjr_1829-03-04_al_apparatus.php"><title type="letter" corresp="mr_to_jjr_1829-03-04">letter of <date when="1829-03-04">4 March 1829</date></title></ref> [<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 185]). 
-                        The &#x201c;Sermon&#x201d; corresponds well in date with <ref type="apparatus" subtype="work" target="a_theme_apparatus.php"><title type="essay" corresp="#JRATHEME">&#x201C;A Theme&#x201D;</title></ref> and 
-                        <ref type="apparatus" subtype="work" target="sermon_notes_christs_intercession_apparatus.php"><title type="sermon" corresp="#JRSERMONNOTESCHRISTS">Sermon Notes [&#x201C;christs intercession&#x201D;]</title></ref>, 
-                        fragments that are embedded in the midst of draft of <ref type="apparatus" subtype="work" target="on_skiddaw_and_derwentwater_apparatus.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATER">&#x201C;On Skiddaw and Derwent Water&#x201D;</title></ref> 
-                            (i.e., the <ref type="apparatus" target="msii_apparatus.php"><title type="manuscript" corresp="#MSII">MS II</title></ref> draft witness, <ref type="witness" target="description_of_skiddaw_and_lake_derwent_msii.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSII">&#x201c;description of skiddaw &#x0026; lake derwent&#x201d;</title></ref>).</p>                  
+                        (<ref type="apparatus" target="mr_to_jjr_1829-03-04_al_apparatus.php"><title type="letter" corresp="mr_to_jjr_1829-03-04">letter of <date when="1829-03-04">4 March 1829</date></title></ref> [<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 185]).</p>
+                    
+                    <p><persName corresp="#MR">Margaret</persName>&#x02bc;s term <hi rend="italic">commenced</hi> is also ambiguous, suggesting that <persName corresp="#JR">Ruskin</persName> 
+                        began his &#x201C;novel&#x201D; at this time; however, in his <ref type="apparatus" target="jr_to_jjr_1829-03-10_al_apparatus.php"><title type="letter" corresp="jr_to_jjr_1829-03-10"><date when="1829-03-10">10 March 1829</date> letter</title></ref> to his father, 
+                        <persName corresp="#JR">Ruskin</persName> implies that <persName corresp="#JJR">John James</persName> was already familiar with some portion of the versified novel. 
+                        Initial composition may therefore have significantly predated <persName corresp="#JR">Ruskin</persName>&#x02BC;s &#x201c;finishing&#x201d; of <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>. 
+                        Physical evidence in the <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref> fair copy 
+                        can be interpreted as reflecting two distinct stages of labor on the poem&#x2014;a first stage comprising books 1&#x2013;2, and a second (uncompleted) stage comprising books 3&#x2013;4.</p></div>
+                
+                <div type="subsection" xml:id="COMPPUB1">
+                    <head type="subsection">Stage One of Composition, circa 1828</head>
+                    
                     <p>In <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>, <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> 
                         immediately follows a group of poems entitled 
                         <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>, 
@@ -153,99 +197,160 @@
                         <ref type="apparatus" target="poetry_discriptive_apparatus.php#DATE"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title>: Date</ref>). 
                         There is no physical break between the anthology and the &#x201c;novel&#x201d; to indicate a change in genre or project, 
                         so it is possible that <persName corresp="#JR">Ruskin</persName> considered <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> to be a continuation of the <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>. 
-                        Thus, with travel poems about <geogName corresp="#GLENFARG">Glenfarg</geogName> and <placeName type="building" corresp="#LOCHLEVENCAS">Loch Leven</placeName> adjoined to the versification of the novel, this passage  
-                        bears witness to <persName corresp="#JR">Ruskin</persName>&#x02bc;s autobiographical recollection that he &#x201c;used to read the <title type="book" corresp="#SCOTTABBOT"><hi rend="italic">Abbot</hi></title> at <placeName corresp="#KINROSS">Kinross</placeName>, 
+                        Given the inclusion in <title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title> of travel poems 
+                        about <geogName corresp="#GLENFARG">Glenfarg</geogName> and <placeName type="building" corresp="#LOCHLEVENCAS">Loch Leven</placeName>, 
+                        and the juxtaposition of these poems with the verse novel, this portion of <title type="manuscript" corresp="#MSIII">MS III</title> 
+                        bears witness to (and may even have inspired) <persName corresp="#JR">Ruskin</persName>&#x02bc;s autobiographical recollection that he 
+                        &#x201c;used to read the <title type="book" corresp="#SCOTTABBOT"><hi rend="italic">Abbot</hi></title> at <placeName corresp="#KINROSS">Kinross</placeName>, 
                         and the <title type="book" corresp="#SCOTTMONASTERY"><hi rend="italic">Monastery</hi></title> in <geogName corresp="#GLENFARG">Glen Farg</geogName>, 
                         which I confused with &#x2018;<geogName type="fictional" corresp="#GLENDEARG">Glendearg</geogName>&#x2019; [the fictional setting of the novel; see <ref type="internal" target="#DISCUSSION">Discussion</ref>, and see also 
                         <ref type="note" subtype="geographical" target="glenfarg_place_note.php"><placeName corresp="#GLENFARG">Glenfarg</placeName> (place)</ref>], 
-                        and thought that the <persName type="fictional" corresp="#WHITELADY">White Lady</persName> had as certainly lived by the streamlet [the Farg] in that glen of the <geogName corresp="#OCHILS">Ochils</geogName>, 
+                        and thought that the <persName type="fictional" corresp="#WHITELADY">White Lady</persName> had as certainly lived by the streamlet [the <geogName corresp="#FARG">Farg</geogName>] in that glen of the <geogName corresp="#OCHILS">Ochils</geogName>, 
                         as the <persName corresp="#MQS">Queen of Scots</persName> in the island of <geogName corresp="#LOCHLEVEN">Loch Leven</geogName>&#x201d; 
-                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 35:16).</p>
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 35:16). 
+                        As further evidence shows, however, while <title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title> establishes a lower limit 
+                        in the time of composition for <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title>, the two projects were distinct.</p>
                     
-                    <p>When the editors of the Library Edition associated this sentence in <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title> with <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> as proof that <persName corresp="#JR">Ruskin</persName>&#x02bc;s verse novel must be be associated 
-                        with the family journey to <placeName corresp="#PERTH">Perth</placeName>, <placeName corresp="#SCOTLAND">Scotland</placeName>, in <date when="1827">1827</date> (see <ref type="internal" target="#DATE">Date</ref>; and see also 
-                        <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php">Tours of <date notBefore="1826" notAfter="1827">1826&#x2013;27</date></ref>), 
-                        they evidently did not draw this conclusion from the juxtaposition of <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> with <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>, 
-                        since they believed the latter to date from <date when="1826">1826</date> 
-                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:260 n. 1, and see 535). 
-                        Although the editors were mistaken in dating the anthology, its corrected dating supports their premise that the <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php"><date when="1827">1827</date> <placeName corresp="#SCOTLAND">Scotland</placeName> tour</ref> forms a terminus a quo 
-                        for <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>. But how much time separated the verse novel from the tour poem anthology? For this question, the only evidence is handwriting.</p>
-                    
-                    <p>The hand for the verse novel uses print lettering similar to that for <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>, but smaller. 
+                    <p>If <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref> and the 
+                        <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php"><date when="1827">Tour of 1827</date> to <placeName corresp="#SCOTLAND">Scotland</placeName></ref> form a terminus a quo 
+                        for composition of <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>, how much time separated the verse novel from the tour poem anthology? For this question, the only evidence is handwriting. 
+                        The hand for the verse novel uses print lettering similar to that for <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>, but smaller. 
                         Size of lettering in fact varies considerably within the anthology, as well, the smallest being used for its first poem, 
-                        <ref type="apparatus" target="ragland_castle_apparatus.php"><title type="poem" corresp="#JRRAGLANDCASTLE">&#x201c;Ragland Castle&#x201d;</title></ref>; still, regardless of size, and despite the similarity in formation of letters, there is greater affinity between the lettering throughout the poems in <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref> 
-                        and that used for the original versions of two of its poems, <ref type="apparatus" target="wales_apparatus.php"><title type="poem" corresp="#JRWALES">&#x201c;Wales&#x201d;</title></ref> and <ref type="apparatus" target="spring_blank_verse_apparatus.php"><title type="poem" corresp="#JRSPRINGBLANKVERSE">&#x201c;Spring: Blank Verse&#x201d;</title></ref>, as fair&#x2010;copied in a <ref type="apparatus" target="jr_to_jjr_1827-05_al_apparatus.php"><title type="letter" corresp="jr_to_jjr_1827-05"><date when="1827-05">May 1827</date> letter</title></ref> by <persName corresp="#JR">Ruskin</persName> to his father. 
-                        By comparison, the lettering for <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> is distinctive for its studied attention to punctuation, which is largly neglected in the <date when="1827">1827</date> fair copies 
+                        <ref type="apparatus" target="ragland_castle_apparatus.php"><title type="poem" corresp="#JRRAGLANDCASTLE">&#x201c;Ragland Castle&#x201d;</title></ref>. Still, regardless of size, and despite the similarity in formation of letters, 
+                        there is greater affinity between the lettering throughout the poems in <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref> 
+                        and the lettering used for the original versions of two of its poems, <ref type="apparatus" target="wales_apparatus.php"><title type="poem" corresp="#JRWALES">&#x201c;Wales&#x201d;</title></ref> and 
+                        <ref type="apparatus" target="spring_blank_verse_apparatus.php"><title type="poem" corresp="#JRSPRINGBLANKVERSE">&#x201c;Spring: Blank Verse&#x201d;</title></ref> 
+                        (as first fair&#x2010;copied in a <ref type="apparatus" target="jr_to_jjr_1827-05_al_apparatus.php"><title type="letter" corresp="jr_to_jjr_1827-05"><date when="1827-05">May 1827</date> letter</title></ref> by <persName corresp="#JR">Ruskin</persName> to his father), 
+                        than between the respective hands for the poetry anthology and for <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>.</p>
+                    
+                    <p>The orthography of <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> is distinctive for its studied attention to punctuation, which is largly neglected in the <date when="1827">1827</date> fair copies 
                         of <ref type="apparatus" target="wales_apparatus.php"><title type="poem" corresp="#JRWALES">&#x201c;Wales&#x201d;</title></ref>, <ref type="apparatus" target="spring_blank_verse_apparatus.php"><title type="poem" corresp="#JRSPRINGBLANKVERSE">&#x201c;Spring: Blank Verse&#x201d;</title></ref>, and the poems in <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>. 
                         Almost every line of <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> ends with a prominent comma, formed to look like book print, with a dot and a curl, although the commas 
-                        hover above the baseline like a swimming tadpole. There are also semicolons, which are consistently formed upside down, with the comma above the point. 
-                        Similarly carefully formed but eccentric punctuation can be found in <ref type="apparatus" target="eudosia_apparatus.php"><title type="poem" corresp="#JREUDOSIA">&#x201c;Eudosia&#x201d;</title></ref> in <ref type="apparatus" target="msiv_apparatus.php"><title type="manuscript" corresp="#MSIV">MS IV</title></ref>. The typeface&#x2010;like commas are continued, 
-                        though they now fall on the baseline; there are no upside&#x2010;down semicolons, but a new oddity turns up in the form of a two&#x2010;point ellipsis, like a colon on its side, its function unclear. 
-                        What most tellingly links the punctuation practice in <ref type="apparatus" target="eudosia_apparatus.php"><title type="poem" corresp="#JREUDOSIA">&#x201c;Eudosia&#x201d;</title></ref> with that in <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> is not just its careful drawing combined with eccentric formation and meaning, 
-                        but the fact that its prominent use abruptly gives out altogether after several pages of fair&#x2010;copying, suggesting that <persName corresp="#JR">Ruskin</persName> added the marks all at once, 
+                        hover above the baseline like a swimming tadpole. There are also semicolons, which are almost consistently formed upside down, with the comma above the point. 
+                        The eccentricity of the punctuation resembles the usage in <ref type="apparatus" target="eudosia_apparatus.php"><title type="poem" corresp="#JREUDOSIA">&#x201c;Eudosia&#x201d;</title></ref> in <ref type="apparatus" target="msiv_apparatus.php"><title type="manuscript" corresp="#MSIV">MS IV</title></ref>. Here, too, the commas are typeface&#x2010;like, 
+                        though they now fall on the baseline; there are no upside&#x2010;down semicolons, although a new oddity turns up in the form of a two&#x2010;point ellipsis, like a colon on its side, its function unclear. 
+                        (<title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> is also punctuated with colons, but their rhetorical or grammatical function is obscure.) 
+                        Most tellingly linking the punctuation practice in <ref type="apparatus" target="eudosia_apparatus.php"><title type="poem" corresp="#JREUDOSIA">&#x201c;Eudosia&#x201d;</title></ref> with that in <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>, 
+                        in both cases the dense but confusing marks abruptly give out altogether after several pages of fair&#x2010;copying, suggesting that <persName corresp="#JR">Ruskin</persName> added the punctuation all at once, 
                         layering over top of the already fair&#x2010;copied text. Evidently, he had not yet learned to integrate punctuation as a rhetorical and grammatical element of writing, 
                         but treated it as effectively a decorative feature to enhance the imitation of typeface.</p>
                     
-                    <p><ref type="apparatus" target="eudosia_apparatus.php"><title type="poem" corresp="#JREUDOSIA">&#x201c;Eudosia&#x201d;</title></ref> supplies a benchmark date of <date when="1828-09-28">28 September 1828</date>, 
-                        which <persName corresp="#JR">Ruskin</persName> incorportated into the half&#x2010;title and first page of Book I (the same divisions used for <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>). Accordingly, a timeline falls into place, 
-                        starting with <persName corresp="#JR">Ruskin</persName>&#x02bc;s use of pen and ink, documented by his mother in <date when="1827-04">April 1827</date> (see <ref type="note" subtype="bibliographical" target="hand_note.php">The Ruskin Family Handwriting</ref>). 
-                        The neglect of a physical separation does not necessarily imply, moreover, that <persName corresp="#JR">Ruskin</persName> misunderstood the difference 
-                        between the brief lyric mode of descriptive verse and a long narrative poem: from the outset of the fair copy, 
-                        he divided <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> into numbered &#x201c;books&#x201d; 
-                        that corresponded to chapters in <persName corresp="#WS">Scott</persName>&#x02bc;s novel&#x2014;a sequence that <persName corresp="#JR">Ruskin</persName> could have extended to the end of the original story, 
-                        but that he never carried beyond <persName corresp="#WS">Scott</persName>&#x02bc;s chapter four, so far as the record shows.</p>
+                    <p>Since <persName corresp="#JR">Ruskin</persName> himself dated <ref type="apparatus" target="eudosia_apparatus.php"><title type="poem" corresp="#JREUDOSIA">&#x201c;Eudosia&#x201d;</title></ref> as <date when="1828-09-28">28 September 1828</date> 
+                        (whether he meant the beginning or end of that project), a timeline takes shape starting with <persName corresp="#JR">Ruskin</persName>&#x02bc;s first use of pen and ink, 
+                        which his <persName corresp="#MR">mother</persName> documented in <date when="1827-04">April 1827</date> (see <ref type="note" subtype="bibliographical" target="hand_note.php">The Ruskin Family Handwriting</ref>). This is the period when <persName corresp="#JR">Ruskin</persName> 
+                        composed <ref type="apparatus" target="wales_apparatus.php"><title type="poem" corresp="#JRWALES">&#x201c;Wales&#x201d;</title></ref> and 
+                        <ref type="apparatus" target="spring_blank_verse_apparatus.php"><title type="poem" corresp="#JRSPRINGBLANKVERSE">&#x201c;Spring: Blank Verse&#x201d;</title></ref>, 
+                        and sent the poems in a <ref type="apparatus" target="jr_to_jjr_1827-05_al_apparatus.php"><title type="letter" corresp="jr_to_jjr_1827-05"><date when="1827-05">May 1827</date> letter</title></ref> to his father, 
+                        in anticipation of the <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php"><date when="1827">tour of 1827</date></ref>. 
+                        While that tour was delayed until <date notBefore="1827-08" notAfter="1827-11">August&#x2013;November</date>, its product in 
+                        <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref> is 
+                        orthographically and thematically more akin to <title type="poem" corresp="#JRWALES">&#x201c;Wales&#x201d;</title> and 
+                        <title type="poem" corresp="#JRSPRINGBLANKVERSE">&#x201c;Spring: Blank Verse&#x201d;</title> than to <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>, 
+                        which shares a style of punctuation and other features with <title type="poem" corresp="#JREUDOSIA">&#x201c;Eudosia&#x201d;</title>. (The latter two works are also alike in being divided into &#x201c;books&#x201d;.) 
+                        This suggests that, despite the lack of a physical separation between the poetry anthology and <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> 
+                        in <title type="manuscript" corresp="#MSIII">MS III</title>, the projects were separated by a number of months, falling between the Ruskins&#x02BC; return to <placeName type="building" corresp="#HERNE">Herne Hill</placeName> 
+                        from <placeName corresp="#SCOTLAND">Scotland</placeName> in <date when="1827-11">November 1827</date> and the composition of <title type="poem" corresp="#JREUDOSIA">&#x201c;Eudosia&#x201d;</title> in <date when="1828-09">September 1828</date>.</p>
                     
-                    <p><persName corresp="#JR">Ruskin</persName>&#x02BC;s <ref type="apparatus" target="jr_to_jjr_1829-03-10_al_apparatus.php"><title type="letter" corresp="jr_to_jjr_1829-03-10"><date when="1829-03-10">10 March 1829</date> letter</title></ref> to his father implies 
-                        that <persName corresp="#JJR">John James</persName> was already familiar with some portion of the versified novel, 
-                        so the first book or books may have significantly predated his &#x201c;finishing&#x201d; <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>. In fact, <persName corresp="#JR">Ruskin</persName>&#x02bc;s promise 
-                        &#x201c;to get that <ref type="note" subtype="bibliographical" target="red_book_note.php">red book</ref> of mine 
-                        which has <title type="poem" corresp="#JRTHEMONASTERY">the Monastery</title> in it finished&#x201d; does not necessarily include a commitment 
-                        to work on <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> itself, which is certainly not complete in any obvious sense. However, the physical disposition of the fair copy in <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref> 
-                        can be interpreted as reflecting two distinct stages of labor on the poem, with a break in time possibly occurring between books 1&#x2013;2 and 3&#x2013;4.</p>
+                    <p>This first stage of composition and fair&#x2010;copying appears clearly demarcated in <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>, 
+                        with books 1&#x2013;2 extending from the title, <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;THE MONASTERY&#x201D;</title>,  to almost the end of the notebook (pp. 70&#x2013;80). 
+                        On p. 80, <persName corresp="#JR">Ruskin</persName> concludes with a colophon, &#x201c;<hi rend="caps">END OF BOOK SECOND</hi> / <hi rend="smallcaps">HERNE HILL</hi> / <hi rend="smallcaps">DULWICH</hi>&#x201d;. 
+                        Inserted above the &#x201c;<hi rend="caps">END OF BOOK SECOND</hi>&#x201d; is a direction to the reader to &#x201c;go back to page 52&#x201d; 
+                        (since <persName corresp="#JR">Ruskin</persName> had run out of available space at the end of the notebook), 
+                        and on that earlier page the poem resumes with book 3, and extends through book 4, which breaks off incomplete on p. 58, after 52 lines of verse.</p>
                     
-                    <p>In <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>, books 1&#x2013;2 run from the last poem fair&#x2010;copied in <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref> to almost the end of the notebook (pp. 70&#x2013;80), 
-                        concluding with a colophon, &#x201c;<hi rend="caps">END OF BOOK SECOND</hi> / <hi rend="smallcaps">HERNE HILL</hi> / <hi rend="smallcaps">DULWICH</hi>&#x201d;; 
-                        and then, with the direction &#x201c;go back to page 52&#x201d; inserted as part of the colophon, the poem resumes on page 52 with book 3, and extending through book 4, which seems uncompleted. 
-                        The pages occupied by the latter two books (pp. 52&#x2013;58, plus three blank pages, 59&#x2013;61) take up the available leaves 
-                        that fall between those containing a group of poems dated <date when="1829-03-09">9 March 1829</date> (pp. 36&#x2013;50, plus the blank p. 51) 
-                        and the leaves containing the <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref> (pp. 62&#x2013;70). 
-                        In <persName corresp="#JR">Ruskin</persName>&#x02bc;s process of filling these interstitial leaves with books 3&#x2013;4, the space occupied by <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref> 
-                        unquestionably presented a terminus ad quem of available space, while a terminus a quo was likely already present 
-                        in the form of the <date when="1829-03-09">March 9</date> poetry group. While the latter inference cannot be proven, since <persName corresp="#JR">Ruskin</persName> could have decided arbitrarily 
-                        to resume with book 3 on p. 52, with nothing in particular framing that space, the physical evidence does suggest 
-                        that he composed and/or fair&#x2010;copied at least books 3 and 4 of <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> 
-                        at about the same time that he was filling a preceding set of pages with a group of poems that he prominently and repeatedly dated <date when="1829-03-09">9 March 1829</date>. 
-                        This frenzy of activity was meant to demonstrate, as he announced to his father on <date when="1829-03-10">10 March</date>, that he would 
-                        &#x201C;get that <ref type="note" subtype="bibliographical" target="red_book_note.php">red book</ref> of mine [<ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>] 
-                        which has <title type="poem" corresp="#JRTHEMONASTERY">the Monastery</title> in it finished, by the time you come home&#x201D;. (For the <date when="1829-03-09">March 9</date> group, see its last&#x2010;copied poem, 
-                        <ref type="apparatus" subtype="work" target="of_rocks_first_and_of_caverns_now_i_sing_apparatus.php"><title type="poem" corresp="#JROFROCKSFIRST">&#x201C;Of rocks first and of caverns now i sing&#x201D;</title></ref>).</p>
+                    <!-- START TAGGING HERE -->
+                    <p>While a hiatus in composition would not have corresponded necessarily with the end of fair-copying book 2, since the fair-copying was delimited in any case 
+                        by the physical end of the red book, it seems probable that Ruskin signaled a more significant break by adding the "publication" information 
+                        &#x201c;<hi rend="smallcaps">HERNE HILL</hi> / <hi rend="smallcaps">DULWICH</hi>&#x201d;. No evidence proves when he inserted the direction to &#x201c;go back to page 52&#x201d;, 
+                        but handwriting evidence in book 3 suggests that he created that extension at a different time and under other circumstances. This division in the stages 
+                        of composition is further supported by two separate surviving witnesses of rough draft in <ref type="apparatus" target="msia_apparatus.php"><title type="manuscript" corresp="#MSIA">MS IA</title></ref>, 
+                        <ref type="witness" target="now_must_we_leave_poor_martin_there_msia.php">&#x201c;now must we leave poor martin there&#x201d;</ref> and 
+                        <ref type="witness" target="come_on_good_horse_and_let_us_see_msia.php">&#x201c;come on good horse and let us see&#x201d;</ref>. 
+                        The first, which is a draft of a portion of book 2, is written in cursive with pencil; the second, which is a draft of a portion of book 3, 
+                        is written in cursive with pen and ink. When Ruskin first began to use pen and ink in 1827, he restricted his penmanship to fair-copy printing, 
+                        while continuing to rely on pencil for cursive script. Later, he transitioned to pen and ink for both fair-copy print and cursive draft 
+                        (see <ref type="note" subtype="bibliographical" target="hand_note.php">The Ruskin Family Handwriting</ref>). 
+                        An example of the former is <persName corresp="#JR">Ruskin</persName>'s 
+                        <ref type="apparatus" target="jr_to_jjr_1827-05_al_apparatus.php"><title type="letter" corresp="jr_to_jjr_1827-05"><date when="1827-05">May 1827</date> letter</title></ref> to his father, 
+                        in which he fair-copied the poems <ref type="apparatus" target="wales_apparatus.php"><title type="poem" corresp="#JRWALES">&#x201c;Wales&#x201d;</title></ref> and 
+                        <ref type="apparatus" target="spring_blank_verse_apparatus.php"><title type="poem" corresp="#JRSPRINGBLANKVERSE">&#x201c;Spring: Blank Verse&#x201d;</title></ref>, in ink print lettering, 
+                        but wrote the body text of the letter in pencil cursive. An example of the latter is the 1828-29 handmade pamphlet, <ref type="apparatus" target="msii_apparatus.php"><title type="manuscript" corresp="#MSIA">MS II</title></ref>, 
+                        which includes ink cursive draft of <ref type="apparatus" subtype="work" target="eudosia_apparatus.php"><title type="poem" corresp="#JREUDOSIA">&#x201C;Eudosia&#x201d;</title></ref> and 
+                        <ref type="apparatus" subtype="work" target="on_skiddaw_and_derwentwater_apparatus.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATER">&#x201C;On Skiddaw and Derwent Water&#x201D;</title></ref>, 
+                        which are fair-copied in ink print lettering elsewhere.</p>
                     
-                    <p><ref type="apparatus" target="msia_apparatus.php"><title type="manuscript" corresp="#MSIA">MS IA</title></ref> includes a one&#x2010;sheet, ink, longhand set of lines that forms part of the <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref> poem&#x02BC;s &#x201C;book third&#x201D;, 
-                        as well as a one&#x2010;sheet pencil version of part of the <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref> poem&#x02BC;s &#x201C;book second&#x201D; (see part 2, <ref type="apparatus" subtype="manuscript" target="msia_apparatus.php#content"><title type="manuscript" corresp="#MSIA">MS IA</title>, &#x201C;Content&#x201D;</ref>, a). 
-                        It is possible that the <ref type="apparatus" target="msia_apparatus.php"><title type="manuscript" corresp="#MSIA">MS IA</title></ref> pencil version of part of &#x201C;book second&#x201D; is earlier than 1829, 
-                        since the fair copy of &#x201C;book third&#x201D; is the portion positioned following the <date when="1829-03-09">March 9</date> group in the <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>, 
-                        while &#x201C;book second&#x201D; runs continuously to the end of <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>. Even the <ref type="apparatus" target="msia_apparatus.php"><title type="manuscript" corresp="#MSIA">MS IA</title></ref> ink version of part of &#x201C;book third&#x201D;, conceivably, 
-                        could significantly predate its <date when="1829-03">March 1829</date> fair&#x2010;copying.</p>
-                    
-                    <p>The <ref type="apparatus" target="msia_apparatus.php"><title type="manuscript" corresp="#MSIA">MS IA</title></ref> copies, then, do hold open the possibility of a starting date perhaps up to a year prior to the project&#x02BC;s termination in <date when="1829">1829</date>. 
-                        Moreover, given <persName corresp="#JR">Ruskin</persName>&#x02BC;s hectic pace of writing and fair&#x2010;copying for <date when="1828-01-01">New Year&#x02BC;s 1828</date> and for <persName corresp="#JJR">his father</persName>&#x02BC;s <date when="1829-05-10">1829 birthday</date> (see <!--nos. 32&#x2013;33, 57 DCH--><ref type="apparatus" subtype="work" target="harry_and_lucy_apparatus.php"><title type="lesson" corresp="#JRHARRYANDLUCYVOL3">&#x201C;Harry and Lucy&#x201D;, Vol. III</title></ref>, <ref type="apparatus" subtype="work" target="a_battle_irregular_measure_apparatus"><title type="poem" corresp="#JRABATTLEIRREGULARMEASURE">&#x201C;A Battle: Irregular Measure&#x201D;</title></ref>, <ref type="apparatus" target="battle_of_waterloo_a_play_msv_apparatus.php"><title type="drama" corresp="#JRBATTLEOFWATERLOOPLAY">&#x201C;Battle of Waterloo: A Play in Two Acts&#x201D;</title></ref>), 
-                        it seems barely credible that even <persName corresp="#JR">Ruskin</persName> could have produced all of his &#x201C;novel&#x201D; during the same period. 
-                        If these indications are sound, I believe the onset of composition is unlikely to have been much earlier than the <date notBefore="1828-05" notAfter="1828-08">middle of 1828</date>, however, 
-                        since the handwriting and punctuation in the first two books is reminiscent of <ref type="apparatus" subtype="work" target="eudosia_apparatus.php"><title type="poem" corresp="#JREUDOSIA">&#x201C;Eudosia&#x201d;</title></ref>. <!-- (no. 27) DCH--></p>
-                    
-                    
-                    <p>Since the extant manuscript evidence places books 3&#x2013;4 of the poem (or, at least, their fair&#x2010;copying) squarely in <date when="1829">1829</date>, 
-                        while only permitting an earlier date for books 1&#x2013;2, the case for assigning an earlier date to some portion of the poem must depend on internal evidence&#x2014;the events 
-                        captured from <title type="book" corresp="#SCOTTMONASTERY"><persName corresp="#WS">Scott</persName>&#x02BC;s novel</title>, and the order in which <persName corresp="#JR">Ruskin</persName> set them to verse. See Discussion: since book 1 lifts events out of their order in <title type="book" corresp="#SCOTTMONASTERY">Scott</title>, 
-                        the poem could represent an earlier, isolated versification, which <persName corresp="#JR">Ruskin</persName> only later in <date when="1829">1829</date> decided to develop&#x2014;&#x201C;commenc[ing] writing a novel&#x201D;, as <persName corresp="#MR">his mother</persName> said.</p>
-                        
-                        <p>(so far, that is, as <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> ever did reach completion).</p>
+                    <p>Since the first stage of composition probably comprised books 1-2 in 1828, what occasioned the work? A conjecture based on internal evidence, 
+                        and in keeping with the physical evidence for dating and composition, is the death of Janet ("Jessie") Richardson, the sister of John James Ruskin, in Perth 
+                        on 18 May 1828. As internal evidence of this connection, Ruskin condensed and rearranged opening episodes of Scott's novel to emphasize its supernatural aspects. In addition, 
+                        as an internal reflection of the immediate consequence of Jessie's death--the Ruskins' adoption of the only surviving Richardson daughter, Mary, into the Herne Hill household--Ruskin's 
+                        book 2 is a detailed rendering of an episode that tangentially concerns adoption. In the novel, a benign captain of an English raiding party, Stawarth Bolton, 
+                        confronts Elspet Glendinning and her two sons, and half-jokingly offers to adopt either the "blue eyed" and reverential younger brother, Edward, 
+                        or the "black eyed" and feisty older brother, Halbert. For Scott, the purpose of the episode was primarily to dramatize the English policy, following their 
+                        victory at the Battle of Pinkie Cleuch, of balancing assurances of protection for compliant Scots, especially Protestants, with threats of destruction against defiant 
+                        Scots patriots (see Discussion: The Historical Context of <persName corresp="#WS">Scott</persName>&#x02bc;s Novel and <persName corresp="#JR">Ruskin</persName>&#x02bc;s Arrangement of His Selections). 
+                        While the version in Ruskin's MS III fair copy does play out details connected these political and military themes, the text in the MS IA pencil draft, 
+                        <ref type="witness" target="now_must_we_leave_poor_martin_there_msia.php">"now must we leave poor martin there"</ref>, is condensed around the theme of adoption. 
+                        For more conjecture about the family events underlying stage one of composition, see Discussion: The Family Context of Composition".</p>
                 </div>
+                <!-- continue tagging please; though you've already done some of the following, sections have been shifted around and revised -->
+                <div type="subsection" xml:id="COMPPUB2">
+                    <head type="subsection">Stage Two of Composition, ca. March 1829</head>
+                    <p>To return to <persName corresp="#MR">Margaret Ruskin</persName>'s observation on 4 March 1829 that 
+                        <persName corresp="#JR">John</persName> had &#x201c;commenced writing a novel &#x0026; a Sermon&#x201d; 
+                        (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 185), 
+                        the second stage of composition--a resumption of "The Monastery", although Margaret could reasonably perceive it as a commencement--can indeed be correlated 
+                        with sermon materials composed between <date notBefore="1829-02" notAfter="1829-05">February&#x2013;May 1829</date>: the fragments, 
+                        <ref type="apparatus" subtype="work" target="a_theme_apparatus.php"><title type="essay" corresp="#JRATHEME">&#x201C;A Theme&#x201D;</title></ref> and 
+                        <ref type="apparatus" subtype="work" target="sermon_notes_christs_intercession_apparatus.php"><title type="sermon" corresp="#JRSERMONNOTESCHRISTS">Sermon Notes [&#x201C;christs intercession&#x201D;]</title></ref>, 
+                        are embedded in the midst of draft of <ref type="apparatus" subtype="work" target="on_skiddaw_and_derwentwater_apparatus.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATER">&#x201C;On Skiddaw and Derwent Water&#x201D;</title></ref> 
+                        (i.e., the <ref type="apparatus" target="msii_apparatus.php"><title type="manuscript" corresp="#MSII">MS II</title></ref> draft witness, <ref type="witness" target="description_of_skiddaw_and_lake_derwent_msii.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATERMSII">&#x201c;description of skiddaw &#x0026; lake derwent&#x201d;</title></ref>). 
+                        These writings are associated with John's infatuation with the <!-- ref note -->Reverend Edward Andrews, which he shared with his cousin Mary Richardson, 
+                        now very much at home in Camberwell.</p>
+                    
+                    <p>The hypothesis that this second stage of composition of "The Monastery" comprises books 3 and 4 accords well with physical evidence in MS III. 
+                        The pages occupied by these latter two books (pp. 52&#x2013;58, plus three blank pages, 59&#x2013;61) 
+                        take up the available leaves in MS III that fall between pages containing a group of poems dated <date when="1829-03-09">9 March 1829</date> (pp. 36&#x2013;50, plus a blank p. 51) 
+                        and the leaves containing the <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref> (pp. 62&#x2013;70). 
+                        When <persName corresp="#JR">Ruskin</persName> turned to these interstitial leaves to continue with books 3&#x2013;4 
+                        (having used up the leaves at the end of the notebook to fair-copy books 1-2), the space occupied by <title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title> 
+                        unquestionably presented him with a terminus ad quem for available space, while a terminus a quo was likely already present 
+                        in the form of the <date when="1829-03-09">9 March 1829</date> poetry group--or that group was at least underway.</p>
+                    
+                    <p>The inference that the March 9 group must have been in place or underway cannot now be proven, but that scenario is more persuasive than <persName corresp="#JR">Ruskin</persName> having decided in 1829 
+                        to resume book 3 on p. 52 arbitrarily, with nothing in particular framing that space. Rather, "The Monastery" can be regarded as part of the 
+                        project that Ruskin reported to his father on <date when="1829-03-10">10 March 1829</date>, his determination to &#x201C;get that <ref type="note" subtype="bibliographical" target="red_book_note.php">red book</ref> of mine 
+                        [<ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>] 
+                        which has <title type="poem" corresp="#JRTHEMONASTERY">the Monastery</title> in it finished, by the time you come home&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 192). 
+                        By prominently and repeatedly inditing the date <date when="1829-03-09">9 March 1829</date> among that group of poems, 
+                        Ruskin was evidently concerned to demonstrate his success in meeting this deadline 
+                        (see the commentary on the last&#x2010;copied <date when="1829-03-09">March 9</date> poem, 
+                        <ref type="apparatus" subtype="work" target="of_rocks_first_and_of_caverns_now_i_sing_apparatus.php"><title type="poem" corresp="#JROFROCKSFIRST">&#x201C;Of rocks first and of caverns now i sing&#x201D;</title></ref>). 
+                        However, he left the "The Monastery" unfinished, with marginal line numbering trailing into unfilled space on p. 58 and three available pages left blank. 
+                        By this time, Ruskin's attention must have been diverted from the narrative poem--which, in any case, conceptually presented an endless drudgery, especially 
+                        since Scott's novel had a sequel, The Abbot--and he was now absorbed in composing a major loco-descriptive poem for his father's 10 May 1829 birthday, 
+                        <ref type="apparatus" subtype="work" target="on_skiddaw_and_derwentwater_apparatus.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATER">&#x201C;On Skiddaw and Derwent Water&#x201D;</title></ref>. 
+                        Whether Ruskin achieved a form of closure in "The Monastery" is another question. He turned aside from a gothic narrative, which for him was coded with the severing of connections in Scotland, 
+                        in exchange for a poem in the picturesque mode that reopened a thwarted desire for the Lake District.</p>
+                    
+                    <p>There is no surviving draft from the second stage of composing "The Monastery" that Ruskin neglected to fair-copy. 
+                        The <ref type="apparatus" target="msia_apparatus.php"><title type="manuscript" corresp="#MSIA">MS IA</title></ref> ink, longhand lines, 
+                        <ref type="witness" target="come_on_good_horse_and_let_us_see_msia.php">&#x201c;come on good horse and let us see&#x201d;</ref>, is fair-copied as part of &#x201C;book third&#x201D; 
+                        in <title type="manuscript" corresp="#MSIII">MS III</title>.</p>
+                    
+                    <p>The <title type="manuscript" corresp="#MSIII">MS III</title> fair copy of book 3 shares some handwriting features with Ruskin's <date when="1829-01-01">New Year&#x02BC;s 1829</date> productions, 
+                        <ref type="apparatus" subtype="work" target="harry_and_lucy_apparatus.php"><title type="lesson" corresp="#JRHARRYANDLUCYVOL3">&#x201C;Harry and Lucy&#x201D;, Vol. III</title></ref>, and 
+                        <ref type="apparatus" subtype="work" target="a_battle_irregular_measure_apparatus"><title type="poem" corresp="#JRABATTLEIRREGULARMEASURE">&#x201C;A Battle: Irregular Measure&#x201D;</title></ref>. 
+                        There are also similarities in presentation with a production probably meant for his <persName corresp="#JJR">his father</persName>&#x02BC;s <date when="1829-05-10">10 May 1829 birthday</date>, the pamphlet 
+                        <ref type="apparatus" subtype="manuscript" target="battle_of_waterloo_ms_apparatus.php"><title type="manuscript" corresp="#BATTLEOFWATERLOOMS">&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</title></ref>. . . . 
+                        </p><!-- double letter in page numbers and marginal line numbering -->
+                </div>
+                <!-- skip tagging the first two paragraphs of Discussion, which are completed -->
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
                     <div type="subsection" xml:id="HISTORICALCONTEXT">
-                        <head type="subsection">The Historical Context of <persName corresp="#WS">Scott</persName>&#x02bc;s Novel versus <persName corresp="#JR">Ruskin</persName>&#x02bc;s Arrangement of His Selections</head>
-                        <p>The political context of the novel is set in motion prior to its opening by the &#x201c;rough wooing&#x201d; of <date notBefore="1544-01-01" notAfter="1545-12-31">1544&#x2013;45</date>, 
+                        <head type="subsection">The Historical Context of <persName corresp="#WS">Scott</persName>&#x02bc;s Novel and <persName corresp="#JR">Ruskin</persName>&#x02bc;s Arrangement of His Selections</head>
+                        <p>The political context of <persName corresp="#WS">Scott</persName>&#x02bc;s <title type="book" corresp="#SCOTTMONASTERY"><hi rend="italic">The Monastery</hi></title> is set in motion prior to its opening by the &#x201c;rough wooing&#x201d; of <date notBefore="1544-01-01" notAfter="1545-12-31">1544&#x2013;45</date>, 
                             whereby <persName corresp="#KH8">Henry VIII</persName> sought to force a union between his son and heir, <persName corresp="KE6">Edward</persName> (<date notBefore="1537-10-12" notAfter="1553-07-06">1537&#x2013;53</date>), and the infant <persName corresp="#MQS">Mary Stewart</persName> 
                             (<date notBefore="1542-12-08" notAfter="1587-02-08">1542&#x2013;87</date>), daughter of the late <persName corresp="#KJ5">James V of Scotland</persName> (<date notBefore="1512-04-10" notAfter="1542-12-14">1512&#x2013;42</date>) and <persName corresp="#MG">Mary of Guise</persName> (<date notBefore="1515-11-22" notAfter="1560-06-11">1515&#x2013;60</date>). 
                             <persName corresp="#KH8">Henry</persName> hoped to break <placeName corresp="#SCOTLAND">Scotland</placeName>&#x02bc;s traditional alliance with <placeName corresp="#FRANCE">France</placeName> and annex the country as part of assuring the Tudor succession. 
@@ -268,8 +373,8 @@
                         <p>After <persName corresp="#KH8">Henry</persName>&#x02bc;s death in <date when="1547-01">January 1547</date>, <persName corresp="#ESEH">Hertford</persName>, now duke of Somerset and lord protector under <persName corresp="#KE6">Edward VI</persName>, 
                             sought a new approach to <placeName corresp="#SCOTLAND">Scotland</placeName>. Temporary raids would give way to a campaign for permanent occupation, 
                             while compliant Scots would be offered assurances, with a view to establishing a Protestant Britain. <persName corresp="#ESEH">Somerset</persName> marched an army north in <date when="1547-09">September 1547</date> 
-                            and won a decisive victory at the <date when="1547-09-10">Battle of Pinkie Cleugh</date>, 
-                            near <placeName corresp="#EDINBURGH">Edinburgh</placeName>. This battle, along with the English raids surrounding it, forms the historical reference point at the start of <persName corresp="#WS">Scott</persName>&#x02bc;s <title type="book" corresp="#SCOTTMONASTERY"><hi rend="italic">Monastery</hi></title>, 
+                            and won a decisive victory at the <date when="1547-09-10">Battle of Pinkie Cleuch</date>, 
+                            near <placeName corresp="#EDINBURGH">Edinburgh</placeName>. This battle, along with the English raids surrounding it, forms the historical reference point at the start of <persName corresp="#WS">Scott</persName>&#x02bc;s <title type="book" corresp="#SCOTTMONASTERY"><hi rend="italic">The Monastery</hi></title>, 
                             the conflict that made widows of both <persName type="fictional" corresp="#LADYAVENEL">Lady Avenel</persName> and her neighboring yeoman&#x02bc;s wife, <persName type="ficitonal" corresp="#ELSPETGLENDINNING">Elspet Glendinning</persName>. 
                             As dramatized by the novel&#x02bc;s opening encounter between an occupying English soldier and <persName type="fictional" corresp="#ELSPETGLENDINNING">Elspet</persName> and her two sons&#x2014;the 
                             lads barely able to contain their defiance of the &#x201c;heretic&#x201d; Englishman&#x2014;the military victory not only failed to quell Scottish resistance, 
@@ -278,8 +383,8 @@
                             hatred of the English invaders and the reaffirmation of the <orgName corresp="#AULDALLIANCE">Auld Alliance</orgName> put Scottish <orgName corresp="#PROTESTANTISM">Protestants</orgName> on the defensive, 
                             hesitant to look to <placeName corresp="#ENGLAND">England</placeName> for support&#x2014;a hope that soon turned even less tenable with the accession of the English Catholic queen, <persName corresp="#QM1">Mary I</persName> 
                             (ruled <date notBefore="1553" notAfter="1558">1553&#x2013;58</date>). <persName corresp="#ESEH">Somerset</persName>&#x02bc;s program of winning over the Scots with assurances 
-                            declined, with influence shifting back to <placeName corresp="#FRANCE">France</placeName>; and the contending interests of the <orgName corresp="#AULDALLIANCE">Auld Alliance</orgName> 
-                            and the Auld Enemy, along with the religious divisions in <placeName corresp="#SCOTLAND">Scotland</placeName>, and the fortunes of <persName corresp="MQS">Mary Stewart</persName> awaited new developments 
+                            declined, with influence shifting back to <placeName corresp="#FRANCE">France</placeName>. The contending interests of the <orgName corresp="#AULDALLIANCE">Auld Alliance</orgName> 
+                            and the Auld Enemy, along with the religious divisions in <placeName corresp="#SCOTLAND">Scotland</placeName> and the fortunes of <persName corresp="MQS">Mary Stewart</persName>, awaited new developments 
                             with the accession of <persName corresp="#QE1">Elizabeth I</persName>&#x2014;the context of <persName corresp="#WS">Scott</persName>&#x02bc;s <title type="book" corresp="#SCOTTABBOT"><hi rend="italic">The Abbot</hi></title> 
                             (<ref type="bibliography" target="bibliography.php#MITCHISONHISTORYOFENGLAND"><persName corresp="#RMITCHISON">Mitchison</persName>, <title type="book" corresp="#MITCHISONHISTORYOFENGLAND"><hi rend="italic">History of Scotland</hi></title></ref>, 107&#x2013;8; 
                             <ref type="bibliography" target="bibliography.php#KINGETTYENGLANDANDSCOTLAND"><persName corresp="#AKING">King</persName> and <persName corresp="#CETTY">Etty</persName>, <title type="book" corresp="#KINGETTYENGLANDANDSCOTLAND"><hi rend="italic">England and Scotland</hi></title></ref>, 113&#x2013;17).</p>
@@ -287,46 +392,84 @@
                         <!-- START HERE -->                 <p>In his selection of episodes, <persName corresp="#JR">Ruskin</persName> lifts events out of <persName corresp="#WS">Scott</persName>&#x02bc;s narrative sequence, 
                             and begins with an episode centered on the <persName type="fictional" corresp="#WHITELADY">White Lady</persName>. The apparition is the spectral protector 
                             of the Avenel family, and she is particularly watchful over <persName type="fictional" corresp="#LADYAVENEL">Lady Avenel</persName>&#x02bc;s vernacular bible--the 
-                            novel's recurring metonymic sign of forbidden Protestant worship within the monastery's "halidome". Overall, Ruskin's selections de&#x2010;emphasize the novel&#x02bc;s staging of complex political conflict surrounding the Scottish Reformation, 
+                            novel's recurring metonymic sign of forbidden Protestant worship within the monastery's sacred sphere, its "halidome". Overall, Ruskin's selections de&#x2010;emphasize the novel&#x02bc;s staging of complex political conflict surrounding the Scottish Reformation, 
                             and instead favor the story&#x02bc;s supernatural elements. The focus seems chosen in part for the sake of the supernaturalism in itself, 
-                            although the selectiveness also carries a bias toward Scottish Protestantism, which is cruder than Scott's purpose. 
-                            (Ruskin includes the confrontation between the English soldier, Stawarth Bolton, and the Glendinning widow and her sons.) As summarized in Scott's Magnum Opus preface to the novel, 
-                            the novel's aim is latitudinarian, "conjoin[ing] two characters [the monastery Sub-Prior Eustace and the Reform preacher Henry Warden] 
+                            although the choice effectively favors Scottish Protestantism at the cost of Scott's latitudinarian purpose. As summarized in Scott's Magnum Opus preface to the novel, 
+                            the novel's aim is "to conjoin two characters [i.e., the monastery Sub-Prior Eustace and the Reform preacher Henry Warden] 
                             in that bustling and contentious age who, thrown into situations which gave them different views on the subject of the Reformation, 
                             should, with the same sincerity and purity of intention, dedicate themselves, the one to the support of the sinking fabric of the Catholic Church, 
-                            the other to the establishment of the Reformed doctrines" (Caledonian Edition, 17:ix). 
-                            For example, with one exception, Ruskin omits the names of the monastery fathers, referring to them only (and sometimes confusingly) as &#x201c;the monk&#x201d;, 
-                            &#x201c;the abbot&#x201d;, and so on, as if to avoid personalizing the <orgName corresp="#ROMANCATHOLICCHURCH">Roman Catholic</orgName> characters.</p>
+                            the other to the establishment of the Reformed doctrines" (Caledonian Edition, 17:ix). As commented in contextual glosses on the text, 
+                            Ruskin tips the scales of Scott's ecumenical aim by coloring particular passages with Protestant discourse and by foregrounding in the overall arrangement the supernatural interventions 
+                            of White Lady in defense of the Protestant vernacular bible.</p>
+                        
+                        <p>Ruskin omits the names of the monastery fathers, with the exception of Eustace, referring to them only (and sometimes confusingly) as &#x201c;the monk&#x201d;, 
+                            &#x201c;the abbot&#x201d;, and so on. The neglect may suggest that he avoided personalizing the <orgName corresp="#ROMANCATHOLICCHURCH">Roman Catholic</orgName> characters, 
+                            especially since he names each of the Scottish characters. Confusion may also have arisen, however, from his unfamiliarity with monastic titles, which he gets wrong in places. 
+                            He also mistakes the military rank of the English soldier, Stawarth Bolton.</p>
                         
                         <p><persName corresp="#JR">Ruskin</persName>&#x02bc;s episodes correspond to <persName corresp="#WS">Scott</persName>&#x02bc;s chapters as follows:</p>
                         <p>
-                            <list type="ordered">
-                                <item><hi rend="bold">Book 1. <title type="book" corresp="SCOTTMONASTERY"><hi rend="italic">The Monastery</hi></title>, from chapters 5, 7.</hi></item>
-                                <item><list><item>Invocation to <persName type="fictional" corresp="#WHITELADY">White Lady</persName> (original to <persName corresp="#JR">Ruskin</persName>?). A monk (<persName type="fictional" corresp="#FATHERPHILIP">Father Philip</persName>, 
-                                    the sacristan of the <placeName type="fictional" corresp="#SAINTMARYMONASTERY">Monastery of Saint Mary</placeName>) is denied passage over the <geogName corresp="#TWEEDRIVER">Tweed</geogName> by the warder of the drawbridge. 
-                                    Preparing to ford the river on his mule, he encounters the <persName type="fictional" corresp="#WHITELADY">White Lady</persName> and offers to carry her across the stream, 
-                                    only to be thrown from his mount by the lady. While <persName type="fictional" corresp="#FATHERPHILIP">the monk</persName> grasps &#x201c;a black volume&#x201d;&#x2014;<persName type="fictional" corresp="#LADYAVENEL">Lady Avenel</persName>&#x02bc;s vernacular bible, 
-                                    which he has confiscated&#x2014;<persName corresp="#JR">Ruskin</persName> omits the explanation earlier in <persName corresp="#WS">Scott</persName>&#x02bc;s chapter of <persName type="fictional" corresp="#FATHERPHILIP">the monks</persName>&#x02bc; zeal to crush heretical 
-                                    Reform ideas spreading in the region, and <persName type="fictional" corresp="#FATHERPHILIP">Philip</persName>&#x02bc;s discovery of the forbidden book on a pastoral visit to the <placeName type="fictional" corresp="#GLENDEARGTOWER">Tower of Glendearg</placeName>, 
-                                    where <persName type="fictional" corresp="#LADYAVENEL">Lady Avenel</persName> and her daughter are residing. Skipping to <persName corresp="#WS">Scott</persName>&#x02bc;s chapter seven, <persName corresp="#JR">Ruskin</persName> follows <persName type="fictional" corresp="#FATHERPHILIP">Philip</persName> home to the monastery, 
-                                    where, still amazed and gibbering snatches of the <persName type="fictional" corresp="#WHITELADY">White Lady</persName>&#x02bc;s song. <persName corresp="#JR">Ruskin</persName> curtails <persName type="fictional" corresp="#FATHERPHILIP">Philip</persName>&#x02bc;s interview with 
-                                    <persName type="fictional" corresp="#ABBOTBONIFACE">Abbot</persName> and <persName type="fictional" corresp="#FATHEREUSTACE">Father Eustace</persName>, 
-                                    cutting to the latter&#x02bc;s resolve to visit <geogName type="fictional" corresp="#GLENDEARG">Glendearg</geogName> themselves.</item>
+                            <list>
+                                <item><hi rend="bold">Book 1, based on <title type="book" corresp="SCOTTMONASTERY"><hi rend="italic">The Monastery</hi></title>, chapters 5, 7.</hi></item>
+                                <item><list><item><persName corresp="#JR">Ruskin</persName> establishes a context by inventing a brief invocation to the <persName type="fictional" corresp="#WHITELADY">White Lady</persName>. 
+                                    The action begins with a monk (<persName type="fictional" corresp="#FATHERPHILIP">Father Philip</persName>, the sacristan of 
+                                    the <placeName type="fictional" corresp="#SAINTMARYMONASTERY">Monastery of Saint Mary</placeName>) being 
+                                    denied passage over the <geogName corresp="#TWEEDRIVER">Tweed</geogName> by the warder of the drawbridge. 
+                                    Preparing to ford the river on his mule, he encounters the <persName type="fictional" corresp="#WHITELADY">White Lady</persName>. 
+                                    Supposing her to be a woman stranded on the bank by the churlish bridge-ward, he offers to carry her across the stream, 
+                                    only to be thrown from his mount by the spirit, when they reach deep water. While Ruskin's poem mentions that 
+                                    <persName type="fictional" corresp="#FATHERPHILIP">the monk</persName> grasps &#x201c;a black volume&#x201d;&#x2014;<persName type="fictional" corresp="#LADYAVENEL">Lady Avenel</persName>&#x02bc;s vernacular bible, 
+                                    which he has confiscated&#x2014;the poem omits explanation of <persName type="fictional" corresp="#FATHERPHILIP">Philip</persName>&#x02bc;s discovery 
+                                    of the forbidden book on a pastoral visit to the <placeName type="fictional" corresp="#GLENDEARGTOWER">Tower of Glendearg</placeName>, 
+                                    where <persName type="fictional" corresp="#LADYAVENEL">Lady Avenel</persName> and her daughter are residing. 
+                                    The poem also passes over the monks&#x02bc; expressions of zeal (in <persName corresp="#WS">Scott</persName>&#x02bc;s chapters 5, 6, and 7) 
+                                    to crush heretical Reform ideas infiltrating the halidome. Cutting to the end of chapter 7, 
+                                    <persName corresp="#JR">Ruskin</persName> follows <persName type="fictional" corresp="#FATHERPHILIP">Philip</persName> home to the monastery, 
+                                    where, still amazed and gibbering snatches of the <persName type="fictional" corresp="#WHITELADY">White Lady</persName>&#x02bc;s song, he is interviewed by 
+                                    <persName type="fictional" corresp="#ABBOTBONIFACE">Abbot Boniface</persName> and <persName type="fictional" corresp="#FATHEREUSTACE">Father Eustace</persName>, 
+                                    who resolve that <persName type="fictional" corresp="#FATHEREUSTACE">Eustace</persName> shall visit <geogName type="fictional" corresp="#GLENDEARG">Glendearg</geogName> to investigate for himself.</item>
                                 </list></item>
+                                <item><hi rend="bold">Book 2, based on <title type="book" corresp="SCOTTMONASTERY"><hi rend="italic">The Monastery</hi></title>, chapters 2, 3.</hi></item>
+                                <item><list><item><persName corresp="#JR">Ruskin</persName> efficiently condenses the introduction of the main Scottish characters. 
+                                    He touches on the Battle of Pinkie to explain conditions at the Tower of Glendearg, which is bereft of its master, the yeoman Simon Glendinning; 
+                                    and (skipping to the opening of <persName corresp="#WS">Scott</persName>&#x02BC;s chapter 3), he draws a parallel with the estate of Avenel, 
+                                    likewise absent of its baron, Walter Avenel, who has been killed "for the good of his country in battle". Still continuing with Scott's chapter 3, 
+                                    Ruskin introduces the widow, <persName type="fictional" corresp="#LADYAVENEL">Alice, Lady Avenel</persName> 
+                                    and her daughter, <persName type="fictional" corresp="#MARYAVENEL">Mary Avenel</persName>. Thus, he reverses the order of Scott's introduction of characters, 
+                                    which begins in chapter two with the yeoman's widow, Elspet Glendinning, and her two sons--Halbert, the elder; and Edward, the younger--in chapter 2. 
+                                    By beginning with the knighted class of characters, Ruskin maintains a connection with the "avenel haunt" that he introduces in book 1, 
+                                    though at the cost of some confusion over what "foe" drives Lady Avenel and Mary to seek refuge in the farmer&#x02BC;s cottage 
+                                    of <persName type="fictional" corresp="#MTACKET">Martin</persName> and <persName type="fictional" corresp="#TTACKET">Tibb Tacket</persName>, 
+                                    whom Ruskin introduces here, as does Scott in chapter 3. The threat that alarms them, of "english barbarians that plunder the land", 
+                                    refers to Somerset's occupation of the Border after Pinkie Cleuch, 
+                                    and his attempt to win over Scottish Protestants by combining the coercion of raids with the persuasion of assurances. 
+                                    This context is supplied as Ruskin swings back to <persName corresp="#WS">Scott</persName>&#x02BC;s chapter two, 
+                                    and the confrontation between the English captain, <persName type="fictional" corresp="#STAWARTHBOLTON">Stawarth Bolton</persName>, 
+                                    and <persName type="fictional" corresp="#ELSPETGLENDINNING">Dame Glendinning</persName> and her two sons. Ruskin dwells on this episode in considerable detail, 
+                                    clearly finding great interest in the boys' contrasting personalities and their respective responses to Bolton's bestowal of his protection and 
+                                    his half-joking offer to adopt either of the boys.</item>
+                                </list></item>
+                                <item><hi rend="bold">Book 3, based on <title type="book" corresp="SCOTTMONASTERY"><hi rend="italic">The Monastery</hi></title>, chapter 3.</hi></item>
+                                <item><list><item>Ruskin returns the focus to the White Lady and the Avenels, by narrating the journey to the Tower of Glendearg by 
+                                    <persName type="fictional" corresp="#LADYAVENEL">Lady Avenel</persName> and <persName type="fictional" corresp="#MARYAVENEL">Mary</persName>, 
+                                    led by <persName type="fictional" corresp="#MTACKET">Martin</persName> and <persName type="fictional" corresp="#TTACKET">Tibb Tacket</persName>. 
+                                    Losing their way, the party is stranded in a dangerous bog. As the pony <persName type="fictional" corresp="#PONYSHAGRAM">Shagram</persName>, who is carrying 
+                                    <persName type="fictional" corresp="#MARYAVENEL">Mary</persName>, shies from moving forward, the girl observes 
+                                    a fair lady, whom no one else can see--the <persName type="fictional" corresp="#WHITELADY">White Lady</persName>--signaling 
+                                    to the party to follow her on a path safety. Tibb and Martin exchange apprehensions about fairies.</item>
+                                </list></item>
+                                <item><hi rend="bold">Book 4, based on <title type="book" corresp="SCOTTMONASTERY"><hi rend="italic">The Monastery</hi></title>, chapter 4.</hi></item>
+                                <item><list><item>Establishing the day as All-Hallow's Eve (in Scott's novel, the anniversary of the All-Hallow's Eve three years earlier, 
+                                    when the party crossed the bog to the Tower of Glendearg), <persName corresp="#JR">Ruskin</persName> prefaces the action 
+                                    with his own catalogue of Scottish spirits. On this evening, <persName type="fictional" corresp="#ELSPETGLENDINNING">Dame Glendinning</persName> 
+                                    and the servants work by the fire, as Lady Avenel reads from her bible. The children--Halbert, Edward, and Mary--have been playing in 
+                                    adjacent rooms, when the boys rush to the elders to report sighting a "ghost like fame", an armed man. All return to the room 
+                                    but find no one, and Dame Glendinning upbraids the boys for their fright. The episode breaks off, unfinished, 
+                                    just short of explaining that, on Halloween night, <persName type="fictional" corresp="#MARYAVENEL">Mary Avenel</persName> has witnessed the apparition of her dead father.</item></list></item>
                             </list></p>
-                        
-                        
-                        <p><persName corresp="#JR">Ruskin</persName>&#x02BC;s book 2 begins with the opening of <persName corresp="#WS">Scott</persName>&#x02BC;s chap. 3, the widowing of the <persName type="fictional" corresp="#LADYAVENEL">Lady of Avenel</persName> and her removal with <persName type="fictional" corresp="#MARYAVENEL">her daughter</persName> 
-                            to the shepherd&#x02BC;s cottage of <persName type="fictional" corresp="#MTACKET">Martin</persName> and <persName type="fictional" corresp="#TTACKET">Tibb Tacket</persName>; and book 2 then moves to <persName corresp="#WS">Scott</persName>&#x02BC;s chap. 2, 
-                            the confrontation between <persName type="fictional" corresp="#CAPTAINBOLTON">Captain Stawarth Bolton</persName> and <persName type="fictional" corresp="#ELSPETGLENDINNING">Dame Glendinning</persName> and her two sons of <geogName type="fictional" corresp="#GLENDEARG">Glendearg</geogName>.</p>
-                        
-                        <p><persName corresp="#JR">Ruskin</persName>&#x02BC;s book 3 versifies the remainder of <persName corresp="#WS">Scott</persName>&#x02BC;s chap. 3&#x2014;<persName type="fictional" corresp="#MTACKET">Martin</persName>, <persName type="fictional" corresp="#TTACKET">Tibb</persName>, <persName type="fictional" corresp="#MARYAVENEL">Mary</persName>, and the <persName type="fictional" corresp="#LADYAVENEL">Lady of Avenel</persName>&#x02BC;s journey 
-                            to <persName type="fictional" corresp="#ELSPETGLENDINNING">Dame Glendinning</persName>&#x02BC;s residence in <geogName type="fictional" corresp="#GLENDEARG">Glendearg</geogName> (which <persName corresp="#JR">Ruskin</persName> calls <geogName corresp="#GLENFARG">&#x201C;Glenfarg&#x201D;</geogName> and <geogName type="fictional" corresp="#GLENDARG">&#x201C;Glendarg&#x201D;</geogName> [see <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 35:16]), 
-                            and their attempted passage across a bog, when <persName type="fictional" corresp="#MARYAVENEL">Mary</persName> and the pony <persName type="fictional" corresp="#PONYSHAGRAM">Shagram</persName> see the <persName type="fictional" corresp="#WHITELADY">White Lady</persName> signaling them to safety.</p>
-                        
-                        <p><persName corresp="#JR">Ruskin</persName>&#x02BC;s book 4 is from <persName corresp="#WS">Scott</persName>&#x02BC;s chap. 4, the apparition of her dead father to <persName type="fictional" corresp="#MARYAVENEL">Mary Avenel</persName> on Halloween night.</p>
                     </div>
-                    <div type="subsection" xml:id="CRITICALCONTEXT">
+                        
+                         <div type="subsection" xml:id="CRITICALCONTEXT">
                         <head type="subsection">The Critical Context of <persName corresp="#WS">Scott</persName>&#x02bc;s Novel versus <persName corresp="#JR">Ruskin</persName>&#x02bc;s Supernatural Emphasis</head>
                         
                         <p><persName corresp="#JR">Ruskin</persName>'s favoring the supernatural episodes, and the White Lady in particular, 
@@ -355,6 +498,44 @@
                             "induced . . . to linger so very near home" in the novel's Border setting, and "to luxuriate over the silence of his own pastoral glens, 
                             the music of his own haunted mountain-brooks--and the calm domestic magnificence of that unrivalled landscape" and "stately beauty of Melrose" 
                             (<title type="essay" corresp="#REVIEWSCOTTMONASTERYBLACKWOODS">Unsigned review of <hi rend="italic">The Monastery: A Romance</hi></title>, 693).</p>
+                    </div>
+                    
+                    <div type="subsection" xml:id="FAMILYCONTEXT">
+                        <head type="subsection">The Family Context of Composition</head>
+                        <p>As proposed in Composition and Publication: Stage One of Composition, circa 1828, Ruskin's composition of "The Monastery" 
+                            may have been prompted by the death his Aunt Jessie in May 1828, and the adoption of his cousin, 
+                            <!-- ref note -->Mary Richardson (1815-49), into the household in July 1828. 
+                            (John James also committed to financial support of the three surviving sons; see <!-- ref note --> Jessie Richardson [1783-1828].) 
+                            These events can be seen reflected in the outcome of 
+                            stage one of composition, books 1 and 2 of "The Monastery", especially if these two books are considered 
+                            as constituting a work in itself, finished off with a colophon on p. 80. Book 1 narrates a haunting by a supernatural spirit of Scottish lore, 
+                            followed by book 2 and its banter about possible adoption--the latter being almost the sole theme represented in the MS IA draft fragment of book 2 
+                            (in MS III, developed with additional details from the Scott novel). Even the comedy in book 1, 
+                            the White Lady's fording the river with Father Philip after he was denied passage across the bridge, 
+                            suggests uncanny connections with family history. The Richardsons lived at Bridge End on the east end of Perth Bridge, 
+                            before moving across the river to Rose Terrace, on the North Inch. In Praeterita, 
+                            Aunt Jessie is credited with a "foresight dream" of river crossings, foreboding her own death as well as the deaths 
+                            of Ruskin's younger cousin, Jessie (1820-27), and an old servant, Mause 
+                            (Ruskin, Works, 35:70-71; for more on the thematic resonance of Scott's Monastery throughout Ruskin's career, see 
+                            Sawyer, Ruskin's Poetic Argument, 17-19).</p>
+                        
+                        <p>Aunt Jessie's death interrupted a family tour to the west country and the Lake District. The family was in Plymouth when the news 
+                            reached them on 24 May 1828. Ruskin recalls in Praeterita returning from a walk with his nurse, Anne Strachan, "on the hill east of the town 
+                            [Plymouth Hoe], looking out on the bay and breakwater, and came in to find my father, for the first time I had ever seen him, 
+                            in deep distress of sobbing tears" (Ruskin, Works, 35:71). The Ruskins abbreviated but did not immediately terminate their tour, 
+                            continuing to visit sites in the southwest: there is no evidence that they traveled to Scotland (see Tour of 1828).</p>
+                        
+                        <p>More enigmatic is how the spirit of that deceased cousin, Jessie, may also hover over Ruskin's adaptation of the novel. 
+                            In Praeterita, Ruskin memorializes Jessie as an inseperable playmate, both in their exhibitions of precocious infant piety 
+                            and in their unhindered romps among streams and fields (Ruskin, Works, 35:63, 66, 69). Three years passed after her death in 1827, 
+                            before Ruskin directly acknowledged her passing in "On the Death of My Cousin Jessy". The exact date of her death at age eight is not recorded 
+                            by Viljoen in Ruskin's Scottish Heritage, presumably because the date is not discoverable (157, 182, 185), but one wonders if this loss 
+                            contributed to delaying the Ruskins' Scotland journey in 1827, and then solemnized the long two-month visit in September and October 
+                            (see <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php"><date when="1827">Tour of 1827</date></ref>). 
+                            This death too, then, would have contributed to Ruskin's feelings in choosing to summarize Scott's novel in the next year.</p>
+                        
+                        <p>Intriguingly, however, Ruskin abandoned his project (so far as we know) just short of bearing witness, not to the death of a mother or daughter, 
+                            but of a father--Mary Avenel's haunting by the spirit of Sir Walter Avenel.</p>
                         
                         <p>For Ruskin, the mystery of the <persName type="fictional" corresp="#WHITELADY">White Lady</persName> 
                             seems to have been further deepened by association with <persName corresp="#GGB">Byron</persName>&#x02BC;s Witch of the Alps. 
@@ -401,6 +582,7 @@
                         but she might have encouraged <persName corresp="#JR">Ruskin</persName>&#x02BC;s reading of <title type="book" corresp="#SCOTTMONASTERY"><hi rend="italic">The Monastery</hi></title>, owing to her opposition to <orgName corresp="#ROMANCATHOLICCHURCH">Cathotic</orgName> Emancipation, 
                         being debated at the time (see <ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 177). <persName corresp="#WS">Scott</persName>&#x02BC;s novel makes heroes of the Reformers and satirizes monastic failings, 
                         although <persName corresp="#JR">Ruskin</persName>&#x02BC;s poem largely neglects these themes.</p>
+                    
                 </div>
                 <div type="section" xml:id="TEXTUALNOTE">
                     <head type="section">Textual Note</head>

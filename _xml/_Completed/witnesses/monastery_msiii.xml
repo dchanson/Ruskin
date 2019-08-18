@@ -62,7 +62,7 @@
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="1229189.jpg 1229190.jpg 1229191.jpg">pp. ##-##</locus>
+                            <locus facs="1229189.jpg 1229190.jpg 1229191.jpg 1229192.jpg 1229193.jpg 1229194.jpg 1229179.jpg 1229180.jpg 1229181.jpg 1229182.jpg">pp. ##-##</locus>
                             <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
                             <filiation><!--Entry needed here.--></filiation>
                         </msItem>
@@ -83,17 +83,17 @@
     <text>
         <body>
             <div type="witness" subtype="poem" met="-+|-+|-+|-+" rhyme="aa">
-                <head type="title"><handShift new="#HANDJR1829" script="print" medium="ink"/><hi rend="caps">THE MONASTERY</hi></head>
+                <head type="title"><handShift new="#HANDJR1829" script="print" medium="ink"/><space unit="chars" quantity="10"/><hi rend="caps">THE MONASTERY</hi></head>
                 <div type="book" xml:id="book1">
-                    <head type="book"><hi rend="smallcaps">BOOK FIRST<ref type="gloss_textual" target="monastery_glosses_textual.php#BOOKSGLOSS"/></hi></head>
+                    <head type="book"><space unit="chars" quantity="16"/><hi rend="smallcaps">BOOK FIRST</hi><ref type="gloss_textual" target="monastery_glosses_textual.php#BOOKSGLOSS"/></head>
                     <lg type="stanza" rhyme="aa">
                         <l><hi rend="caps">WHITE</hi> lady <persName type="fictional" corresp="#WHITELADY">white lady</persName> sing on in the glen,</l>
-    <l>of <geogName type="fictional" corresp="#GLENDARG">glendarg</geogName><ref type="gloss_contextual" target="monastery_glosses_contextual.php#GLENDEARGGLOSS"/> but do not do ill to men,</l>
+    <l>of <geogName type="fictional" corresp="#GLENDEARG">glendarg</geogName><ref type="gloss_contextual" target="monastery_glosses_contextual.php#GLENDEARGGLOSS"/> but do not do ill to men,</l>
 <l>many a haunt and many a nook,</l>
 <l>many a thought and many a look,</l>
                         <pb/><!-- no facs="xxx" needed -->
                         <fw type="head" place="top"><space quantity="11" unit="chars"/><hi rend="smallcaps">BOOK FIRST</hi></fw>
-                        <fw type="pageNam" place="top"><space quantity="17" unit="chars"/>71</fw>                       
+                        <fw type="pageNum" place="top"><space quantity="17" unit="chars"/>71</fw>                       
                         <l><add rend="linenumber-left-JR">5</add>has been reported of that place,</l>
                         <l>of the people of thy race.<ref type="gloss_contextual" target="monastery_glosses_contextual.php#WHITELADYWHITELADYGLOSS"/></l>
 <l>there was a river called the <placeName corresp="#TWEEDRIVER">tweed</placeName>,</l>
@@ -117,7 +117,7 @@
                         <l><add rend="linenumber-left-JR">25</add>where his mule was to go in,</l>
 <pb facs="1229190"/>
                         <fw type="head" place="top"><space quantity="15" unit="chars"/><hi rend="smallcaps">BOOK FIRST</hi></fw>
-                        <fw type="pageNam" place="top"><space quantity="18" unit="chars"/>72</fw>
+                        <fw type="pageNum" place="top"><space quantity="18" unit="chars"/>72</fw>
                         <l><add rend="linenumber-left-JR"><del rend="strikethrough">30</del></add>he saw a figure in great grief:</l>
 <l>the monk resolved to give her relief,</l>
 <l>she seemed as if to pass the water,</l>
@@ -141,7 +141,7 @@
 <l>the mule attempted on to go,</l>
                         <pb/>
                         <fw type="head" place="top"><space quantity="13" unit="chars"/><hi rend="smallcaps">BOOK FIRST</hi></fw>
-                        <fw type="pageNam" place="top"><space quantity="14" unit="chars"/>73</fw>
+                        <fw type="pageNum" place="top"><space quantity="14" unit="chars"/>73</fw>
                         <l>the abbot now was in great woe,</l>
                         <l>upon a black volume<ref type="gloss_contextual" target="monastery_glosses_contextual.php#BLACKVOLUMEGLOSS"/> his hand he laid;</l>
 <l>because he was much much afraid:</l>
@@ -165,7 +165,7 @@
 <l>his head upon his pillow then,</l>
                         <pb facs="1229191"/>
                         <fw type="head" place="top"><space quantity="12" unit="chars"/><hi rend="smallcaps">BOOK FIRST</hi></fw>
-                        <fw type="pageNam" place="top"><space quantity="16" unit="chars"/>74</fw>
+                        <fw type="pageNum" place="top"><space quantity="16" unit="chars"/>74</fw>
 <l>we must return to the haunted glen.</l>
 <l>the abbot when he first arose</l>
                         <l><add rend="linenumber-left-JR">80</add>which was when first the good cock crows,</l>
@@ -177,7 +177,7 @@
 <l>lest open wide mouthed tattling fame:</l>
 <l>should spread these curious news abroad,</l>
 <l>and for the people pave the road,</l>
-<l>to superstitions house to go:</l>
+                        <l>to superstitions house to go:<ref type="gloss_contextual" target="monastery_glosses_contextual.php#SUPERSTITIONGLOSS"/></l>
                         <l><add rend="linenumber-left-JR">90</add>and plunge them in a sea of woe.</l>
 <l>now brother <persName type="fictional" corresp="#FATHEREUSTACE">eustace</persName> go to the glen,</l>
 <l>oer river bog or ford or fen,</l>
@@ -189,276 +189,303 @@
 <l>before again the good cock crowed,</l>
                     <pb/>
                         <fw type="head" place="top"><space quantity="11" unit="chars"/><hi rend="smallcaps">BOOK SECOND</hi></fw>
-                        <fw type="pageNam" place="top"><space quantity="13" unit="chars"/>75</fw>
+                        <fw type="pageNum" place="top"><space quantity="13" unit="chars"/>75</fw>
 <l>and rode on speedily through the glen,</l>
                         <l><add rend="linenumber-left-JR">100</add>oer river bog or ford or fen.</l></lg></div>
-                <div type="book" xml:id="book2"><!-- HERE -->
-                    <head type="book">BOOK SECOND2</head>
+                <figure><figDesc>[Diamond&#x2010;shaped ornament]</figDesc></figure><!--REVIEW MARKUP  -->
+                <milestone unit="undeclared" rend="hr-half"/>
+                <div type="book" xml:id="book2">
+                    <head type="book"><space unit="chars" quantity="9"/><hi rend="caps">BOOK SECOND</hi></head>
                 <lg type="stanza" rhyme="aa">
-<l><hi rend="italic">UP</hi> the glen a little way,</l>
+<l><hi rend="caps"><hi rend="doubleletter-fill">UP</hi></hi> the glen a little way,</l>
 <l>where a pretty meadow lay,</l>
-<l>there was a tower upon the hill:</l>
+                    <l>there was a <placeName type="building" corresp="#TOWEROFGLENDEARG">tower</placeName> upon the hill:</l>
 <l>close beside the pretty rill.</l>
-<l>at the battle of pinkie where,</l>
-<l>the scotch fled like the frig{h}tened hare:</l>
-<l>the owner of this tower expired,</l>
+                    <l><add rend="linenumber-left-JR">5</add>at the <date when="1547-09-10">battle of pinkie</date> where,</l>
+                    <l>the scotch fled like the frigtened hare:<ref type="gloss_contextual" target="monastery_glosses_contextual.php#BATTLEOFPINKIEGLOSS"/></l>
+                    <l>the owner of this <placeName type="building" corresp="#TOWEROFGLENDEARG">tower</placeName> expired,</l>
 <l>rushed on his fate by anger fired:</l>
 <l>the grey goose shaft did pierce him through,</l>
-<l>to the rejoicing of the foe.</l>
+                    <l><add rend="linenumber-left-JR">10</add>to the rejoicing of the foe.</l>
 <l>far from this tow&#x02BC;r there was a barons seat,</l>
 <l>and woods and landscapes at its feet:</l>
-<l>and the name of this baron was great avenel,</l>
+                    <l>and the name of this baron was great <persName type="fictional" corresp="#WALTERAVENEL">avenel</persName>,</l>
 <l>for the good of his country in battle he fell:</l>
-<l>and <persName type="fictional" corresp="#LADYAVENEL">his widow</persName> was left to provide for <persName type="fictional" corresp="#MARYAVENEL">her child</persName>,</l>
+                    <l><add rend="linenumber-left-JR">15</add>and <persName type="fictional" corresp="#LADYAVENEL">his widow</persName> was left to provide for <persName type="fictional" corresp="#MARYAVENEL">her child</persName>,</l>
 <l>and beautiful was she and still more mild.</l>
+                    <pb facs="1229192"/>
+                    <fw type="pageNum" place="top"><space quantity="17" unit="chars"/>76</fw>
 <l>and farther on there was some land,</l>
 <l>alotted to a farmers hand:</l>
 <l>and the farmers name that did live there,</l>
-<l>was <persName type="fictional" corresp="#MTACKET">martin</persName> and though they had but poor fare:</l>
+                    <l><add rend="linenumber-left-JR">20</add>was <persName type="fictional" corresp="#MTACKET">martin</persName> and though they had but poor fare:</l>
 <l>they were happy and good <persName type="fictional" corresp="#TTACKET">tibb tacket</persName> his consort,</l>
 <l>would do every thing for her husbands comfort.</l>
 <l>and the <persName type="fictional" corresp="#LADYAVENEL">widow of avenel the baron</persName> did go,</l>
-<l>away to this farmers for fear of the foe.</l>
-<l>but shortly she staid there for soon came a band,</l>
+                    <l>away to this farmers for fear of the foe.</l>
+                    <l><add rend="linenumber-left-JR">25</add>but shortly she staid there for soon came a band,</l>
 <l>of english barbarians that plunder the land:</l>
 <l>and they robbed the poor farmer of cow and of sheep,</l>
-<l>and hardly would leave him poor <persName type="fictional" corresp="#PONYSHAGRAM">shagram</persName> to keep.</l>
+                    <l>and hardly would leave him poor <name type="fictional" corresp="#SHAGRAMSCOTTMONASTERY">shagram</name> to keep.<ref type="gloss_contextual" target="monastery_glosses_contextual.php#FOEGLOSS"/></l>
 <l>now must we leave poor <persName type="fictional" corresp="#MTACKET">martin</persName> there,</l>
-<l>while we relate the towers fare.</l>
+                    <l><add rend="linenumber-left-JR">30</add>while we relate the <placeName type="building" corresp="#TOWEROFGLENDEARG">tower</placeName>s fare.</l>
 <l>a band of english soldiers marched,</l>
-<l>close by the tower and as they passed[:]</l>
+                    <l>close by the <placeName type="building" corresp="#TOWEROFGLENDEARG">tower</placeName> and as they passed;<ref type="gloss_textual" target="monastery_glosses_textual.php#INVERTEDSEMICOLONGLOSS"/></l>
                     <l>good <persName type="fictional" corresp="#ELSPETGLENDINNING">dame glendinning</persName> her sons led,</l>
 <l>out from the gate and thus she said.</l>
-<l>no means of fighting have I on this land,</l>
+                    <l><add rend="linenumber-left-JR">35</add>no means of fighting have I on this land,</l>
 <l>and I am at the mercy of your hand.</l>
-<l>the serjeant of the troop replied,</l>
+                    <l>the <persName type="fictional" corresp="#STAWARTHBOLTON">serjeant of the troop</persName> replied,<ref type="gloss_contextual" target="monastery_glosses_contextual.php#SERJEANTGLOSS"/></l>
+                    <pb/>
+                    <fw type="pageNum" place="top"><space quantity="11" unit="chars"/>77</fw>
 <l>though I have means of fighting on my side:</l>
 <l>I scorn with women now to strive,</l>
-<l>go to your tower again and live.</l>
+                    <l><add rend="linenumber-left-JR">40</add>go to your <placeName type="building" corresp="#TOWEROFGLENDEARG">tower</placeName> again and live.</l>
 <l>yet dame I own I envy you,</l>
-<l>that little rogue with eyes so blue.</l>
+                    <l>that <persName type="fictional" corresp="#EDWARDGLENDINNING">little rogue with eyes so blue</persName>.</l>
 <l>and will you come with me my lad,</l>
-<l>the serjeant of the troop he said.</l>
-                    <l>no said the blue eyed <persName type="fictional" corresp="#EDWARDGLENDINNING">edward</persName> no,</l>
+                    <l>the <persName type="fictional" corresp="#STAWARTHBOLTON">serjeant of the troop</persName> he said.</l>
+                    <l><add rend="linenumber-left-JR">45</add>no said the blue eyed <persName type="fictional" corresp="#EDWARDGLENDINNING">edward</persName> no,</l>
 <l>because you are to us a foe:</l>
 <l>not only that but then you are,</l>
 <l>a heretic and fond of war.</l>
-                    <l>why god a mercy <persName type="fictional" corresp="#CAPTAINBOLTON">old stawarth</persName> did say,</l>
-<l>I see that alone I must go my way.</l>
-<l>but stay thou black eyed come with me,</l>
+                    <l>why god a mercy <persName type="fictional" corresp="#STAWARTHBOLTON">old stawarth</persName> did say,</l>
+                    <l><add rend="linenumber-left-JR">50</add>I see that alone I must go my way.</l>
+                    <l>but stay <persName type="fictional" corresp="#HALBERTGLENDINNING">thou black eyed</persName> come with me,</l>
 <l>and many a fine sight thou shalt see.</l>
                     <l>no cried the furious <persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName> no,</l>
 <l>because thou art to us a foe:</l>
-<l>and when Im older thou shalt see,</l>
+                    <l><add rend="linenumber-left-JR">55</add>and when Im older thou shalt see,</l>
 <l>the effects of my fathers sword on thee.</l>
-                    <l>why again god a mercy <persName type="fictional" corresp="#CAPTAINBOLTON">old stawarth</persName> did say,</l>
+                    <l>why again god a mercy <persName type="fictional" corresp="#STAWARTHBOLTON">old stawarth</persName> did say,</l>
 <l>I see that alone I must go my way:</l>
+                    <pb facs="1229193"/>
+                    <fw type="pageNum" place="top"><space quantity="16" unit="chars"/>78</fw>
 <l>but stay heres a token that if some men,</l>
-<l>come riding down this narrow glen:</l>
+                    <l><add rend="linenumber-left-JR">60</add>come riding down this narrow glen:</l>
 <l>they may know that you are under my,</l>
 <l>protection then I say goodbye.</l>
 <l>so saying from his bonnet he,</l>
-<l>took a red cross and said dost see[:]</l>
-<l>this token, here thou blackeyed boy,</l>
+                    <l>took a red cross<ref type="gloss_contextual" target="monastery_glosses_contextual.php#REDCROSSGLOSS"/> and said dost see;<ref type="gloss_textual" target="monastery_glosses_textual.php#INVERTEDSEMICOLONGLOSS"/></l>
+                    <l><add rend="linenumber-left-JR">65</add>this token, here <persName type="fictional" corresp="#HALBERTGLENDINNING">thou blackeyed boy</persName>,</l>
 <l>take it and may it give thee joy:</l>
 <l>give me thy bonnet off thy head,</l>
-<l>the commander of the troop he said.</l>
+                    <l>the <persName type="fictional" corresp="#STAWARTHBOLTON">commander of the troop</persName> he said.</l>
                     <l><persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName> was silent and would not stir,</l>
-<l>more than the lofty towering fir:</l>
+                    <l><add rend="linenumber-left-JR">70</add>more than the lofty towering fir:</l>
 <l>command it to stir from the place where it stands,</l>
 <l>and it will not without the help of hands:</l>
 <l>but yet its green branches do wave in the wind,</l>
-                    <l>and even so was proud <persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName>s mind:</l>
-<l>but from his head the mother snatched,</l>
+                    <l>and even so was proud <persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName>s mind:<ref type="gloss_contextual" target="monastery_glosses_contextual.php#TOWERINGFIRGLOSS"/></l>
+                    <l><add rend="linenumber-left-JR">75</add>but from his head the <persName type="fictional" corresp="#ELSPETGLENDINNING">mother</persName> snatched,</l>
                     <l>his cap at which young <persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName> catched:</l>
-<l>but missed his aim the mother then,</l>
+                    <l>but missed his aim the <persName type="fictional" corresp="#ELSPETGLENDINNING">mother</persName> then,</l>
 <l>gave it to the serjeant when:</l>
 <l>he stuck the cross into the band</l>
-                    <l>and put it in young <persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName>s hand</l>
+                    <pb/>
+                    <fw type="pageNum" place="top"><space quantity="17" unit="chars"/>79</fw>
+                    <l><add rend="linenumber-left-JR">80</add>and put it in young <persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName>s hand</l>
 <l>no sooner had he done so but</l>
                     <l>young <persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName> with a furious look</l>
 <l>took the cross and threw it in</l>
 <l>the very pretty murmuring stream</l>
-                    <l>young <persName type="fictional" corresp="#EDWARDGLENDINNING">edward</persName> was instantly in the water</l>
+                    <l><add rend="linenumber-left-JR">85</add>young <persName type="fictional" corresp="#EDWARDGLENDINNING">edward</persName> was instantly in the water</l>
 <l>and brought it out safe to its rightful owner</l>
-<l>why how now said the serjeant with some surprise</l>
+                    <l>why how now said the <persName type="fictional" corresp="#STAWARTHBOLTON">serjeant</persName> with some surprise</l>
 <l>whats the reason of this my good blue eyes</l>
 <l>that young rogue there throws it into the stream</l>
-<l>and when he&#x02BC;s done so you leap in</l>
+                    <l><add rend="linenumber-left-JR">90</add>and when he&#x02BC;s done so you leap in</l>
 <l>and fetch it out and I demand</l>
 <l>why you did throw it off the land</l>
-<l>st georges cross and why did you</l>
-<l>st Georges cross so soon pursue</l>
-                    <l>because st george said <persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName> is</l>
+<l><persName corresp="#STGEORGE">st george</persName>s cross and why did you</l>
+                    <l><persName corresp="#STGEORGE">st George</persName>s cross so soon pursue</l>
+                    <l><add rend="linenumber-left-JR">95</add>because <persName corresp="#STGEORGE">st george</persName> said <persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName> is</l>
 <l>a southern saint, and the cross thats his</l>
 <l>I will not wear in my bonnet or hat</l>
                     <l>why now said old <persName type="fictional" corresp="#CAPTAINBOLTON">stawarth</persName> I think that that</l>
 <l>is a very good reason and why did you</l>
-<l>st Georges cross so soon pursue</l>
+                    <l><add rend="linenumber-left-JR">100</add>st Georges cross so soon pursue</l>
+                    <pb facs="1229194"/>
+                    <fw type="pageNum" place="top"><space quantity="20" unit="chars"/>80</fw>
 <l>because the cross is the sign of our lord</l>
-<l>and not only that but his blessed word</l>
+                    <l>and not only that but his blessed word</l>
                     <l>well good bye said old <persName type="fictional" corresp="#CAPTAINBOLTON">stawarth</persName> but theres the cross</l>
-<l>if you lose it twill be a very great loss</l>
+                    <l>if you lose it twill be a very great loss<ref type="gloss_contextual" target="monastery_glosses_contextual.php#BLESSEDWORDGLOSS"/></l>
 <l>so saying he rode down the glen</l>
-<l>oer river bog or ford or fen1</l>
-<l>END OF BOOK SECOND</l>
-<l>HERN HILL</l>
-<l>DULWICH</l></lg></div>
+                    <l><add rend="linenumber-left-JR">106</add>oer river bog or ford or fen</l></lg>
+                    <byline>
+                        <milestone unit="undeclared" rend="hr-half"/><lb/>
+                        <space unit="chars" quantity="8"/><metamark function="insertion">go back to page 52</metamark><lb/>
+                        <space unit="chars" quantity="5"/><hi rend="caps">END OF BOOK SECOND</hi>
+                        <milestone unit="undeclared" rend="hr-half"/><lb/></byline></div>
+                <div type="colophon">
+                    <p><placeName type="building" corresp="#HERNE"><hi rend="caps">HERN HILL</hi></placeName><lb/>
+                        <placeName corresp="#DULWICH"><hi rend="caps">DULWICH</hi></placeName></p></div><!-- REVIEW MARKUP -->
 
                <div type="book" xml:id="book3">
-                   <head type="book">BOOK THIRD</head>
+                   <pb facs="1229179"/>
+                   <fw type="pageNum" place="top"><space quantity="15" unit="chars"/><hi rend="doubleletter">52</hi></fw>
+                   <head type="book"><space quantity="14" unit="chars"/><hi rend="caps">BOOK THIRD</hi></head>
                    <lg type="stanza" rhyme="aa">
-                       <l><hi rend="italic">I MUST</hi> return to <persName type="fictional" corresp="#MTACKET">martin</persName> now</l>
+                       <l><hi rend="caps">I</hi> <hi rend="smallcaps">MUST</hi> return to <persName type="fictional" corresp="#MTACKET">martin</persName> now</l>
 <l>whom I left standing in the bow</l>
-<l>window of his cottage sweet</l>
-<l>well to this tower they sped their feet</l>
-                       <l>and <persName type="fictional" corresp="#MTACKET">martin</persName> and <persName type="fictional" corresp="#TTACKET">tibb tack</persName> did go</l>
-<l>away to this tower for fear of the foe</l>
+                       <l>window of his cottage sweet<ref type="gloss_contextual" target="monastery_glosses_contextual.php#COTTAGESWEETGLOSS"/></l>
+                       <l>well to this <placeName type="building" corresp="#TOWEROFGLENDEARG">tower</placeName> they sped their feet</l>
+                       <l><add rend="linenumber-left-JR">5</add>and <persName type="fictional" corresp="#MTACKET">martin</persName> and <persName type="fictional" corresp="#TTACKET">tibb tack</persName> did go</l>
+<l>away to this <placeName type="building" corresp="#TOWEROFGLENDEARG">tower</placeName> for fear of the foe</l>
                        <l>and the <persName type="fictional" corresp="#LADYAVENEL">widow of avenel</persName> with them did go</l>
-<l>but between the tower and them</l>
-<l>on the way to <geogName type="fictional" corresp="#GLENDARG">glendarg</geogName> glen</l>
-<l>there was a bog and oer this part</l>
+                       <l>but between the <placeName type="building" corresp="#TOWEROFGLENDEARG">tower</placeName> and them</l>
+                       <l>on the way to <geogName type="fictional" corresp="#GLENDEARG">glendarg glen</geogName></l>
+                       <l><add rend="linenumber-left-JR"><hi rend="doubleletter">1</hi>0</add>there was a bog and oer this part</l>
 <l>where even the lightfooted hart</l>
-<l>go could not for his feet in clay</l>
+<l>go could <add place="above" unit="chars" quantity="9">not</add> for his feet in clay</l>
 <l>sunk as he sped him on his way</l>
                        <l>not only <persName type="fictional" corresp="#MTACKET">martin</persName> had to pass</l>
-                       <l>but een good <persName type="fictional" corresp="#PONYSHAGRAM">shagram</persName> with the lass</l>
+                       <l><add rend="linenumber-left-JR">15</add>but een good <name type="animal" corresp="#SHAGRAMSCOTTMONASTERY">shagram</name> with the lass</l>
                        <l>named <persName type="fictional" corresp="#MARYAVENEL">mary avenel</persName> and when</l>
-<l>they had come nearer to the glen</l>
-<l>it was so bad that there they stuck3</l>
+                       <l>they had come nearer to the <geogName type="fictional" corresp="#GLENDEARG">glen</geogName></l>
+                       <l>it was so bad that their<ref type="gloss_textual" target="monastery_glosses_textual.php#THEIRGLOSS"/> they stuck</l>
 <l>for stir they could not een a foot</l>
-                       <l>so <persName type="fictional" corresp="#MTACKET">martin</persName> took his task as guide</l>
+                       <l><add rend="linenumber-left-JR">20</add>so <persName type="fictional" corresp="#MTACKET">martin</persName> took his task as guide</l>
+                       <pb facs="1229180"/>
+                       <fw type="pageNum" place="top"><space quantity="14" unit="chars"/>53</fw>
 <l>and all the women did in him confide</l>
                        <l><persName type="fictional" corresp="#MTACKET">martin</persName> then did look about</l>
 <l>to see where he could spy an out</l>
-<l>let. then selecting the safest way</l>
-                       <l>he to <persName type="fictional" corresp="#PONYSHAGRAM">shagram</persName> began to say</l>
+                       <l>let.<ref type="gloss_textual" target="monastery_glosses_textual.php#OUTLETGLOSS"/> then selecting the safest way</l>
+                       <l><add rend="linenumber-left-JR">25</add>he to <name type="animal" corresp="#SHAGRAMSCOTTMONASTERY">shagram</name> began to say</l>
 <l>come on good horse and let us see</l>
-<l>whether thou wilt obey thy master me</l>
-                       <l>come on but <persName type="fictional" corresp="#PONYSHAGRAM">shagram</persName> would not go</l>
+                       <l>whether thou wilt obey thy master me<ref type="gloss_contextual" target="monastery_glosses_contextual.php#GOODHORSEGLOSS"/></l>
+                       <l>come on but <name type="animal" corresp="#SHAGRAMSCOTTMONASTERY">shagram</name> would not go</l>
 <l>though mute he very well said no</l>
-                       <l>for <persName type="fictional" corresp="#PONYSHAGRAM">shagram</persName> snorted laid his paws4</l>
-<l>As if he encountered a great bears jaws</l>
-<l>And would not go, Een tak your ain</l>
-<l>Way said the shepherd I would fain</l>
-<l>Get o&#x02BC;er to t&#x02BC;other side and be</l>
-<l>Safe on our way so let us see</l>
-<l>What you can do for us and when</l>
-<l>We are safe at <geogName type="fictional" corresp="#GLENDARG">glendarg</geogName> glen</l>
-<l>Safe in stable you shall stand</l>
-<l>With plenty hay and fodder at your hand</l>
-                       <l>Just at this moment <persName type="fictional" corresp="#MARYAVENEL">mary</persName> saw</l>
-                       <l>Just as good <persName type="fictional" corresp="#PONYSHAGRAM">shagram</persName> raised his paw</l>
+                       <l><add rend="linenumber-left-JR">30</add>for <name type="animal" corresp="#SHAGRAMSCOTTMONASTERY">shagram</name> snorted laid his paws</l>
+                       <l><hi rend="doubleletter-fill">A</hi>s if he encountered a great bears jaws<ref type="gloss_contextual" target="monastery_glosses_contextual.php#BEARSJAWSGLOSS"/></l>
+                       <l>And would not go, <hi rend="doubleletter-fill">E</hi>en tak your ain</l>
+                       <l><hi rend="doubleletter-fill">W</hi>ay said the shepherd I would fain</l>
+                       <l><hi rend="doubleletter-fill">G</hi>et o&#x02BC;er to t&#x02BC;other side and be</l>
+                       <l><add rend="linenumber-left-JR">35</add><hi rend="doubleletter-fill">S</hi>afe on our way so let us see</l>
+                       <l><hi rend="doubleletter-fill">W</hi>hat you can do for us and when</l>
+                       <l><hi rend="doubleletter-fill">W</hi>e are safe at <geogName type="fictional" corresp="#GLENDEARG">glendarg glen</geogName></l>
+                       <l><hi rend="doubleletter-fill">S</hi>afe in stable you shall stand</l>
+                       <l><hi rend="doubleletter-fill">W</hi>ith plenty hay and fodder at your hand</l>
+                       <l><add rend="linenumber-left-JR">40</add><hi rend="doubleletter-fill">J</hi>ust at this moment <persName type="fictional" corresp="#MARYAVENEL">mary</persName> saw</l>
+                       <l><hi rend="doubleletter-fill">J</hi>ust as good <name type="animal" corresp="#SHAGRAMSCOTTMONASTERY">shagram</name> raised his paw</l>
+                       <pb/>
+                       <fw type="pageNum" place="top"><space quantity="12" unit="chars"/>54</fw>
                        <l>A <persName type="fictional" corresp="#WHITELADY">beauteous lady far away</persName></l>
 <l>And seeing her she thus did say</l>
 <l>I see a lady just up there</l>
-<l>And I must say exceeding fair</l>
+                       <l><add rend="linenumber-left-JR">45</add>And I must say exeeding<ref type="gloss_textual" target="monastery_glosses_textual.php#EXCEEDINGGLOSS"/> fair</l>
 <l>Where where cried the whole of the family then</l>
-<l>Why very near to <geogName type="fictional" corresp="#GLENDARG">glendarg</geogName> glen</l>
+<l>Why very near to <geogName type="fictional" corresp="#GLENDEARG">glendarg glen</geogName></l>
 <l>She signs to us to come yon gate</l>
-<l>But it was great avenels fate</l>
-<l>To have a spirit in their line</l>
+                       <l><hi rend="doubleletter-fill">B</hi>ut it was great <orgName corresp="#AVENEL">avenel</orgName>s fate</l>
+                       <l><add rend="linenumber-left-JR">50</add><hi rend="doubleletter">T</hi>o have a spirit in their line</l>
 <l>And so it was in this odd time</l>
-                       <l>This <persName type="fictional" corresp="#TTACKET">tibb tacket</persName> thought it then</l>
-<l>For twas near to <geogName type="fictional" corresp="#GLENDARG">glendarg</geogName> glen</l>
-<l>And her haunt was near this part</l>
-<l>Where oft the very slender hart</l>
-<l>Had drank at this place but was neer5</l>
+                       <l><hi rend="doubleletter-fill">T</hi>his <persName type="fictional" corresp="#TTACKET">tibb tacket</persName> thought it then</l>
+                       <l><hi rend="doubleletter-fill">F</hi>or twas near to <geogName type="fictional" corresp="#GLENDEARG">glendarg glen</geogName></l>
+                       <l><hi rend="doubleletter-fill">A</hi>nd her haunt was near this part</l>
+                       <l><add rend="linenumber-left-JR">55</add><hi rend="doubleletter-fill">W</hi>here oft the very slender hart</l>
+<l>Had drank at this place but was ne<unclear reason="smudged" resp="#DCH">a</unclear>r</l>
 <l>Frightened by her very fair</l>
-                       <l><persName type="fictional" corresp="#WHITELADY">Form appearing like a fog</persName></l>
-<l>And this I suspect was that seen in the bog.</l>
-                       <l><persName type="fictional" corresp="#PONYSHAGRAM">Shagram</persName> at his own free will</l>
+                       <l>Form appearing like a fog</l>
+                       <l>And this I suspect was that seen in the bog.<ref type="gloss_contextual" target="monastery_glosses_contextual.php#WHITELADYSHAUNTGLOSS"/></l>
+                       <l><add rend="linenumber-left-JR">60</add><name type="animal" corresp="#SHAGRAMSCOTTMONASTERY">shagram</name> at his own free will</l>
 <l>Did no longer stand stock still</l>
-<l>But set off at [a or so]6 good rate</l>
-                       <l>And then it was good <persName type="fictional" corresp="#PONYSHAGRAM">shagram</persName>s fate</l>
+                       <l>But set off at ao<ref type="gloss_textual" target="monastery_glosses_textual.php#AOGLOSS"/> good rate</l>
+                       <l>And then it was good <name type="animal" corresp="#SHAGRAMSCOTTMONASTERY">shagram</name>s fate</l>
+                       <pb facs="1229181"/>
+                       <fw type="pageNum" place="top"><space quantity="20" unit="chars"/>55</fw>
 <l>To take them safely through the bog</l>
-<l>Indeed he did so though a fog</l>
+                       <l><add rend="linenumber-left-JR">65</add><hi rend="doubleletter-fill">I</hi>ndeed he did so though a fog</l>
 <l>Oerspread the land. But worthy tis</l>
-<l>Of remark that the little miss</l>
+<l>OF remark that <persName type="fictional" corresp="#MARYAVENEL">the little miss</persName></l>
 <l>Oft mentioned to the servants round</l>
 <l>While they were still on boggy ground</l>
-<l>The lady and her signals and</l>
+                       <l><add rend="linenumber-left-JR">70</add>The lady and her signals and</l>
 <l>When they were off the boggy land</l>
 <l>The servants changed expressive looks</l>
 <l>With each other, for the nooks</l>
 <l>Of fairies were supposed to be</l>
-<l>Just in the glen and they thought they&#x02BC;d see</l>
+                       <l><add rend="linenumber-left-JR">75</add>Just in the glen and they thought they&#x02BC;d see</l>
 <l>A fairy peeping out from moss</l>
 <l>Or perhaps it might peep from a great morass</l>
                        <l>All halloween said <persName type="fictional" corresp="#TTACKET">tibby</persName> to</l>
                        <l><persName type="fictional" corresp="#MTACKET">Martin</persName>. Woman you are too</l>
-                       <l>Said <persName type="fictional" corresp="#MTACKET">martin</persName> or you would not dare</l>
+                       <l><add rend="linenumber-left-JR">80</add>Said <persName type="fictional" corresp="#MTACKET">martin</persName> or you would not dare</l>
 <l>To speak of fairies ony mair.</l>
 <l>When once more on firm ground they were</l>
 <l>And had rid themselves of fear</l>
                        <l><persName type="fictional" corresp="#MTACKET">Martin</persName> saw some landmarks high</l>
-<l>Upon a hill against the sky</l>
+                       <pb/>
+                       <fw type="pageNum" place="top"><space quantity="24" unit="chars"/>56</fw>
+                       <l><add rend="linenumber-left-JR">85</add>Upon a hill against the sky</l>
 <l>And taking them for his good guide</l>
 <l>And ever keeping by their side</l>
-<l>Very soon at the tower of <geogName type="fictional" corresp="#GLENDARG">glendarg</geogName> they arrived</l></lg></div>
+                       <l><add rend="linenumber-left-JR">88</add>Very soon at the <placeName type="building" corresp="#TOWEROFGLENDEARG">tower of glendarg</placeName> they arrived</l></lg></div>
                 <div type="book" xml:id="book4">
+                    <milestone unit="undeclared" rend="hr-half"/>
                     <head type="book">BOOK 4</head>
+                    <milestone unit="undeclared" rend="hr-half"/>
                     <lg type="stanza" rhyme="aa">
-<l><hi rend="italic">ONE</hi> night when all the winds combined</l>
+<l><hi rend="caps">O</hi><hi rend="smallcaps">NE</hi> night when all the winds combined</l>
 <l>To frighten een the strongest mind</l>
 <l>And halloween it was and all</l>
 <l>The fairies seemed and elves to call</l>
-<l>In the loud wind that roared round</l>
-<l>The tower with its awful sound</l>
+                        <l><add rend="linenumber-left-JR">5</add>In the loud wind that roared round</l>
+                        <l>The <placeName type="building" corresp="#TOWEROFGLENDEARG">tower</placeName> with its awful sound</l>
 <l>And when in gambols mongst the trees</l>
 <l>The brownies used themselves to please</l>
 <l>And when the kelpies liked to take</l>
-<l>The careless traveller to the lake</l>
+                        <l><add rend="linenumber-left-JR">10</add>The careless traveller to the lake</l>
 <l>And plunge him in and hear his cry</l>
-<l>Ascending to the stormy sky</l>
+                        <l>Ascending to the stormy sky</l>
 <l>Well on this night of spirits power</l>
-<l>Thats greatest at the midnight hour</l>
-                        <l><persName type="fictional" corresp="#TTACKET">Tibb</persName> and the rest sat round the fire</l>
+                        <pb facs="1229182"/>
+                        <fw type="pageNum" place="top"><space quantity="22" unit="chars"/>57</fw>                        
+                        <l>Thats greatest at the midnight hour<ref type="gloss_contextual" target="monastery_glosses_contextual.php#HALLOWEENGLOSS"/></l>
+                        <l><add rend="linenumber-left-JR">15</add><persName type="fictional" corresp="#TTACKET">Tibb</persName> and the rest sat round the fire</l>
 <l>Unmindful of the tempest dire</l>
                         <l>While from the bible <persName type="fictional" corresp="#LADYAVENEL">alice</persName> read</l>
 <l>Stories of saints that long were dead</l>
                         <l><persName type="fictional" corresp="#MTACKET">Martin</persName> hammered bored or sawed</l>
-<l>The substance of the hardy board</l>
+                        <l><add rend="linenumber-left-JR">20</add>The substance of the hardy board</l>
                         <l><persName type="fictional" corresp="#TTACKET">Tibb</persName> watched the process of scalding the whey</l>
                         <l>While <persName type="fictional" corresp="#MTACKET">martin</persName> sawed or bored away</l>
                         <l><persName type="fictional" corresp="#ELSPETGLENDINNING">Dame elspeth</persName> pulling the thread sate</l>
-<l>From her distaff near her mate</l>
-                        <l><persName type="fictional" corresp="#MARYAVENEL">Mary of avenel</persName> <persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName> and all</l>
+                        <l>From her distaff near her mate<ref type="gloss_contextual" target="monastery_glosses_contextual.php#HERMATE"/></l>
+                        <l><add rend="linenumber-left-JR">25</add><persName type="fictional" corresp="#MARYAVENEL">Mary of avenel</persName> <persName type="fictional" corresp="#HALBERTGLENDINNING">halbert</persName> and all</l>
 <l>Were allowed to run up and down the hall</l>
 <l>There were some rooms adjacent to</l>
 <l>The hall where sometimes they would go</l>
 <l>I mean the children and at length</l>
-<l>Into these rooms they all were sent</l>
+                        <l><add rend="linenumber-left-JR">30</add>Into these rooms they all were sent</l>
 <l>But from them openmouthed there came</l>
 <l>To spread abroad the ghost like fame</l>
 <l>The boys and they indeed did tell</l>
-<l>That a man like he of the clinthill</l>
-                        <l>Was in the spence. then <persName type="fictional" corresp="#LADYAVENEL">Alice</persName> said</l>
+                        <l>That a man like <persName type="fictional" corresp="#CHRISTIEOFCLINTHILL">he of the clinthill</persName><ref type="gloss_contextual" target="monastery_glosses_contextual.php#CLINTHILLGLOSS"/></l>
+                        <pb/>
+                        <fw type="pageNum" place="top"><space quantity="19" unit="chars"/>58</fw>
+                        <l><add rend="linenumber-left-JR">35</add>Was in the spence. then <persName type="fictional" corresp="#LADYAVENEL">Alice</persName> said</l>
 <l>Where is my child and so she led</l>
                         <l><persName type="fictional" corresp="#HALBERTGLENDINNING">Halbert glendinning</persName> first to arm</l>
 <l>With an old sword his open palm</l>
                         <l>And <persName type="fictional" corresp="#EDWARDGLENDINNING">Edward</persName> seized the ladys book</l>
-<l>And the ladys fear they all then took</l>
+                        <l><add rend="linenumber-left-JR">40</add>And the ladys fear they all then took</l>
 <l>And then unto the spence they went</l>
 <l>When their alarm soon from them went</l>
 <l>For no man armed there appeared</l>
 <l>And what made you ye false misleard</l>
-                        <l>Said good <persName type="fictional" corresp="#ELSPETGLENDINNING">dame elspeth</persName> to her bairns</l>
+                        <l><add rend="linenumber-left-JR">45</add>Said good <persName type="fictional" corresp="#ELSPETGLENDINNING">dame elspeth</persName> to her bairns</l>
 <l>And what made you ye misleard loons</l>
 <l>Come there yon gate into the hall</l>
 <l>Roaring I am sure like a bull</l>
 <l>And could ye find nae night for daffing</l>
-<l>Save halloween when the leddy was reading</l>
+                        <l><add rend="linenumber-left-JR">50</add>Save halloween when <persName type="fictional" corresp="#LADYAVENEL">the leddy</persName> was reading</l>
 <l>The elder boy bent eyes on ground</l>
-<l>With the youngest tears their access found.7</l>
-
-                    
-                    
-                </lg>
+<l>With the youngest tears their access found.</l></lg>
                 </div>
             </div>
-        
-            
         </body>
     </text>
 </TEI>
