@@ -3,9 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
-        <fileDesc xml:id="monastery_msia">
+        <fileDesc xml:id="come_on_good_horse_and_let_us_see_msia">
             <titleStmt>
-                <title type="main">&#x201C;The Monastery&#x201D;</title>
+                <title type="main">&#x201c;come on good horse and let us see&#x201d;</title>
                 <title type="sub">Electronic Text Generated from a Transcription of the MS IA Rough Draft</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
@@ -58,11 +58,11 @@
                         <institution>Yale University</institution>
                         <repository>Beinecke Rare Book and Manuscript Library</repository>
                         <collection>MS Vault Ruskin</collection>
-                        <msName>MS III</msName>
+                        <msName>MS IA</msName>
                         </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <locus facs="MSIAsheet1.jpg">pp. ##-##</locus>
                             <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
                             <filiation><!--Entry needed here.--></filiation>
                         </msItem>
@@ -84,46 +84,47 @@
         <body>
             
             <div type="poem">
-                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Poem</head>
                 <lg type="stanza" rhyme="aa">
-                    <l>come on good horse and let us see</l>
-                        <l>whether thou wilt obey thy master me</l>
-                            <l>come on but shagram would not go</l>
-                                <l>though mute he very well said no</l>
-                                    f<l>or shagram snorted laid his paws4</l>
-                                        <l>As if he encountered a great bears jaws</l>
-                                            <l>And would not go, Een tak your ain</l>
-                                                <l>Way said the shepherd I would fain</l>
-                                                    <l>Get o’er to t’other side and be</l>
-                                                        <l>Safe on our way so let us see</l>
-                                                            <l>What you can do for us and when</l>
-                                                                <l>We are safe at glendarg glen</l>
-                                                                    <l>Safe in stable you shall stand</l>
-                                                                        <l>With plenty hay and fodder at your hand</l>
-                                                                            <l><l>Just at this moment mary saw</l>
-                                                                                <l>Just as good shagram raised his paw</l>
-                                                                                    <l>A beauteous lady far away</l>
-                                                                                        <l>And seeing her she thus did say</l>
-                                                                                            <l>I see a lady just up there</l>
-                                                                                                <l>And I must say exceeding fair</l>
-                                                                                                    <l>Where where cried the whole of the family then</l>
-                                                                                                        <l>Why very near to glendarg glen</l>
-                                                                                                            <l>She signs to us to come yon gate</l>
-                                                                                                                <l>But it was great avenels fate</l>
-                                                                                                                    <l>To have a spirit in their line</l>
-                                                                                                                        <l>And so it was in this odd time</l>
-                                                                                                                            <l>This tibb tacket thought it then</l>
-                                                                                                                                <l>For twas near to glendarg glen</l>
-                                                                                                                                    <l>And her haunt was near this part</l>
-                                                                                                                                        <l>Where oft the very slender hart</l>
-                                                                                                                                            <l>Had drank at this place but was neer5</l>
-                                                                                                                                                <l>Frightened by her very fair</l>
-                                                                                                                                                    <l>Form appearing like a fog</l>
-                                                                                                                                                        <l>And this I suspect was that seen in the bog.</l>
-                                                                                                                                                            <l>Shagram at his own free will</l>
-                                                                                                                                                                <l>Did no longer stand stock still</l>
-                                                                                                                                                                    <l>But set off at [a or so]6 good rate<
-                    </l>
+                    <l><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>come on good horse and let us see</l>
+                    <l>whether thou wilt obey thy master me</l>
+                    <l>come on but shagram would not go</l>
+                    <l>though mute he very well said no</l>
+                    <l>for shagram snorted laid his paws</l>
+                    <l>as if he encountered a great bears jaws</l>
+                    <l>and would not go. een tak your ain</l>
+                    <l>way said the shepherd I would fain</l>
+                    <l>get oer to tother side and be<del rend="strikethrough">e</del></l>
+                    <l>upon our way so let us see</l>
+                    <l>what you can do for us and when</l>
+                    <l>we are safe at glendarg glen</l>
+                    <l>safe in stable you shall stand</l>
+                    <l>with plenty hay and fodder at your hand</l>
+                    <l>just at this moment mary saw</l>
+                    <l>just as good shagram raised his paw</l>
+                    <l>a beauteous lady far away</l>
+                    <l>and seeing her she thus did say</l>
+                    <l>I see a lady just up there</l>
+                    <l>and I must say <del rend="strikethrough"><unclear reason="smudged" resp="#DCH">exedding</unclear></del><add place="above"><space quantity="16" unit="chars"/>exeeding</add> fair</l>
+                    <l>where where cried the whole of the family then</l>
+                    <l>why very near to glendarg glen</l>
+                    <l>she signs to us to come yon gate</l>
+                    <l>but it was <del rend="strikethrough"><unclear reason="smudged" resp="#DCH">gay</unclear></del> avenels fate<metamark function="insertion" change="insertion2" target="#zone2">&#x002A;</metamark><mod type="subst" change="#insertion1"><add>great</add></mod></l>
+                    <l><del rend="strikethrough">to see things that nobody</del> saw</l>
+                    <l><del rend="strikethrough">except themselves and would say pshaw</del></l>
+                    <l>so it was in this old time</l>
+                    <l><del rend="strikethrough">for a spirit haunted avenels line</del></l>
+                    <l>this tibb tackett thought it <del rend="strikethrough"><unclear reason="smudged" resp="#DCH">up</unclear></del><add place="above"><space quantity="30" unit="chars"/>then</add></l>
+                    <l>for twas near to glendarg glen</l>
+                    <l>and her haunt was near this part</l>
+                    <l>where oft the very <del rend="strikethrough">sp</del> slender hart</l>
+                    <l>had drank at this place but was<lb type="runover"/><space quantity="29" unit="chars"/>neer</l><!-- BELOW -->
+                    <l>frightened by her very fair</l>
+                    <milestone unit="undeclared" rend="hr-full"/><lb/>
+                    <l>form appearing like a fog</l>
+                    <l>and this I suspect was that seen in the bog.</l>
+                    <l>shagram at his own free will</l>
+                    <l>did no longer stand stock still</l>
+                    <l>but set off at [a or so]6 good rate</l>
                     <l>martin took his task as guide
                         d all the women did in him confide
                         __________________________________
@@ -144,46 +145,7 @@
                     
                 </lg>
             </div>
-            <div>
-                <lg>
-                    <l>now must we leave poor martin there
-                        while we relate the towers fare [sic]
-                        a band of english soldiers marched
-                        close by the tower and as they passed
-                        good dame glendinning her sons led
-                        out from the gate and thus she said
-                        no means of fighting have I on this land
-                        and I am at the mercy of your hand
-                        the serjeant of the troop replied
-                        though I have means of fighting on my side
-                        I scorn with women now to strive
-                        go to your tower again and live
-                        yet dame I own I envy you
-                        that little rogue with eyes so blue
-                        and will you come with me my lad
-                        the serjeant of the troop he said
-                        no said the blue eyed edward no
-                        because you are to us a foe
-                        not only that but then you are
-                        a heretic and fond of war
-                        why god a mercy old [starwa]rth did say
-                        I see alone I must go my way
-                        [here begins the other side]
-                        but stay thou black eyed come with me
-                        and many a fine sight thou shalt see
-                        no cried the furious halbert no
-                        b[e]cause thou art to us a foe
-                        and when Im older thou shalt see
-                        the effects of my fathers sword on thee
-                        why again god a mercy old stawarth did say
-                        I see that alone I must go my way
-                        but stay heres a token that if some men
-                        come riding down this narrow glen
-                        they may know that you are under my
-                        protection then I say goodbye
-                    </l>
-                </lg>
-            </div>
+            
         </body>
     </text>
 </TEI>
