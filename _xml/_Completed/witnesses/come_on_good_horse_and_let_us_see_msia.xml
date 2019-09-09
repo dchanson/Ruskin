@@ -108,20 +108,23 @@
                 <l>where where cried the whole of the family then</l>
                 <l>why very near to glendarg glen</l>
                 <l>she signs to us to come yon gate</l>
-                <l>but it was <del rend="strikethrough"><unclear reason="smudged" resp="#DCH">gay</unclear></del> avenels fate<metamark function="insertion" change="insertion2" target="#zone2">&#x002A;</metamark><mod type="subst" change="#insertion1"><add>great</add></mod></l>
-                <l><del rend="strikethrough">to see things that nobody</del> saw</l>
-                <l><del rend="strikethrough">except themselves and would say pshaw</del></l>
-                <l>so it was in this old time</l>
-                <l><del rend="strikethrough">for a spirit haunted avenels line</del></l>
+                <l>but it was <del rend="strikethrough" xml:id="deletion1"><unclear reason="smudged" resp="#DCH">gay</unclear></del> avenels fate <metamark function="insertion" target="#substitution2">&#x002A;</metamark><space unit="chars" quantity="4"/><add xml:id="substitution1">great</add><substJoin target="#deletion1 #substitution1"/></l>
+                <l><delSpan spanTo="#delEnd1" xml:id="deletion2" seq="1"/><del rend="strikethrough">to see things that nobody</del> saw</l>
+                <l><del rend="strikethrough">except themselves, and would say pshaw</del><anchor xml:id="delEnd1"/></l>
+                <l><add place="above"><space unit="chars" quantity="-2"/></add>so it was in this old time</l>
+                <l><del rend="strikethrough" xml:id="deletion3" seq="2">for a spirit haunted avenels line</del></l>
                 <l>this tibb tackett thought it <del rend="strikethrough"><unclear reason="smudged" resp="#DCH">up</unclear></del><add place="above"><space quantity="30" unit="chars"/>then</add></l>
                 <l>for twas near to glendarg glen</l>
                 <l>and her haunt was near this part</l>
                 <l>where oft the very <del rend="strikethrough">sp</del> slender hart</l>
                 <l>had drank at this place but was<lb type="runover"/><space quantity="29" unit="chars"/>neer</l><!-- BELOW -->
                 <l>frightened by her very fair</l>
-                <milestone unit="undeclared" rend="hr-full"/><lb/>
+                <milestone unit="change" rend="hr-full"/><lb/>
+                <l><add xml:id="substitution2" seq="3">to have a spirit in their line<metamark function="insertion">&#x002A;</metamark></add><ref type="gloss_textual" target="monastery_glosses_textual.php#AVENELSFATEGLOSS"/></l>
+                <substJoin target="#deletion2 #deletion3 #substitution2"/>
                 <l>form appearing like a fog</l>
-                <l>and this I suspect was that seen in the bog.</l>
+                <l>and this I suspect was that seen in the bog</l>
+                <pb/>
                 <l>shagram at his own free will</l>
                 <l>did no longer stand stock still</l>
                 <l>but set off at [a or so]6 good rate</l>
