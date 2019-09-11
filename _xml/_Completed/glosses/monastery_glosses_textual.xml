@@ -83,7 +83,8 @@
                 <note xml:id="WRONGLINENUMBERGLOSS" resp="#DCH"><p><hi rend="bold">Erroneous line number (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#JR">Ruskin</persName> omitted ten lines by writing 
                     <hi rend="italic">50</hi> where he should have written <hi rend="italic">40</hi>.</p></note>
                 
-                <note xml:id="THEIRGLOSS" resp="#DCH"><p><hi rend="bold">&#x201c;their&#x201d; (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Misspelling for <hi rend="italic">there</hi>.</p></note>
+                <note xml:id="THEIRGLOSS" resp="#DCH"><p><hi rend="bold">&#x201c;their&#x201d; (<title type="manuscript" corresp="#MSIA">MS IA</title>, <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Misspelling for <hi rend="italic">there</hi>, which is spelled correctly in 
+                    <title type="manuscript" corresp="#MSIA">MS IA</title> draft, <title type="manuscript" corresp="MSIAA1">&#x201c;come on good horse and let us see&#x201d;</title>.</p></note>
     
                 <note xml:id="OUTLETGLOSS" resp="#DCH"><p><hi rend="bold">&#x201c;let.&#x201d; (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Having divided <hi rend="italic">outlet</hi> with a line break for the sake of the rhyme, 
                     <persName corresp="#JR">Ruskin</persName> adds punctuation, perhaps in part to compensate for the confusion he introduces with the possibility of reading <hi rend="italic">let</hi> as a word, 
@@ -91,7 +92,7 @@
                     he rarely used punctuation as an ongoing rhetorical and grammatical feature, reserving punctuation marks as a separate overlay on the already fair&#x2010;copied text. 
                     See <ref type="apparatus" subtype="work" target="monastery_apparatus.php#COMPPUB1"><title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title> Apparatus: Stage One of Composition, circa 1828</ref>.</p></note>
                 
-                <note xml:id="EXEEDINGGLOSS" resp="#DCH"><p><hi rend="bold">&#x201c;exeeding&#x201d; (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Misspelling for <hi rend="italic">exceeding</hi>. 
+                <note xml:id="EXEEDINGGLOSS" resp="#DCH"><p><hi rend="bold">&#x201c;exeeding&#x201d; (<title type="manuscript" corresp="#MSIA">MS IA</title>, <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Misspelling for <hi rend="italic">exceeding</hi>. 
                     <persName corresp="#JR">Ruskin</persName> had trouble with the word. In a rare instance in the early manuscripts of his visibly working out spelling, <persName corresp="#JR">Ruskin</persName> sounded out the syllables on the margin of the <title type="manuscript" corresp="#MSIA">MS IA</title> sheet containing 
                     <title type="manuscript" corresp="MSIAA1">&#x201c;come on good horse and let us see&#x201d;</title>, writing first <hi rend="italic">eceede</hi>, 
                     then <hi rend="italic">exx</hi>, and finally and still incorrectly <hi rend="italic">exeeding</hi>.</p></note>
@@ -99,51 +100,69 @@
                 <note xml:id="AVENELSFATEGLOSS" resp="#DCH"><p><hi rend="bold">&#x201c;but it was great avenels fate / . . . / to have a spirit in their line&#x201d; 
                     (<title type="manuscript" corresp="#MSIA">MS IA</title>, <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>This 
                     passage underwent considerable revision in the <title type="manuscript" corresp="#MSIA">MS IA</title> draft, <title type="manuscript" corresp="MSIAA1">&#x201c;come on good horse and let us see&#x201d;</title>. 
-                    In ERM, the passage is interpreted in documentary XML markup as two substitutions, one simple and a second complex&#x2014;the latter subdivided into three actions. 
+                    In <hi rend="italic">ERM</hi>, the passage is interpreted in documentary XML markup as two substitutions, one simple and a second complex&#x2014;the latter subdivided into three actions. 
                     This note comments on possible interpretations of the sequence of those actions.</p>
                     
-                    <p>In the first substitution, contained in the line &#x201c;but it was great <orgName corresp="#AVENEL">avenel</orgName>s fate&#x201d;, <persName corresp="#JR">Ruskin</persName> 
+                    <p>In the first substitution, contained in the line &#x201c;but it was great <orgName type="fictional" corresp="#AVENEL">avenel</orgName>s fate&#x201d;, <persName corresp="#JR">Ruskin</persName> 
                         replaced a deleted word with &#x201c;great&#x201d;, which he wrote in the right margin. The deleted word is nearly illegible but appears to be &#x201c;gay&#x201d;.</p>
                     
                     <p>The second, more complex substitution involves several rejected and substituted lines. The sequence of this process of revision 
                         is open to at least three variable interpretations, though the documentary evidence of the component deletions and additions is clear, and 
-                        can be subdivided into distinct actions, which lead clearly to the outcome in the <title type="manuscript" corresp="#MSIII">MS III</title> fair copy of the <title type="poem" corresp="#JRMONASTERY">&#x201c;The Monastery&#x201d;</title>.</p>
+                        can be subdivided into distinct actions, which lead clearly to the outcome in the <title type="manuscript" corresp="#MSIII">MS III</title> fair&#x2010;copy passage of the <title type="poem" corresp="#JRMONASTERY">&#x201c;The Monastery&#x201d;</title>.</p>
                     
-                    <p>Following &#x201c;but it was great <orgName corresp="#AVENEL">avenel</orgName>s fate&#x201d;, <persName corresp="#JR">Ruskin</persName> composed two lines, 
-                        &#x201c;to see things that nobody saw / except themselves, and would say pshaw&#x201d;. To obtain this account of the haunting of the <orgName type="fictional" corresp="#HOUSEOFAVENEL">House of Avenel</orgName>, 
+                    <p>Following &#x201c;but it was great <orgName type="fictional" corresp="#AVENEL">avenel</orgName>s fate&#x201d;, <persName corresp="#JR">Ruskin</persName> composed two lines, 
+                        &#x201c;to see things that nobody saw / except themselves, and would say pshaw&#x201d;. To obtain this account of the haunting of the <orgName type="fictional" corresp="#AVENEL">House of Avenel</orgName>, 
                         <persName corresp="#JR">Ruskin</persName> temporarily departed from the Halloween episode in <persName corresp="#WS">Scott</persName>&#x02bc;s chapter 3 that he was mainly summarizing, in order to draw from a gossipy exchange 
                         between <persName type="fictional" corresp="#ELSPETGLENDINNING">Elspet Glendinning</persName> and <persName type="fictional" corresp="#TTACKET">Tibb Tacket</persName> in chapter 4, in which <persName type="fictional" corresp="#TTACKET">Tibb</persName> boasts about spirits like the <persName type="fictional" corresp="#WHITELADY">White Maiden of Avenel</persName> that are peculiarly attached 
                         to &#x201c;&#x2018;great ancient families&#x2019;&#x201d; like the <orgName type="fictional" corresp="#AVENEL">Avenels</orgName>. From this exchange, <persName corresp="#JR">Ruskin</persName> borrowed dialogue that can be recognized, somewhat altered, 
-                        in the couplet about &#x201c;<orgName corresp="#AVENEL">avenel</orgName>s fate&#x201d;: for example, <persName type="fictional" corresp="#TTACKET">Tibb</persName> observes that <persName type="fictional" corresp="#MARYAVENEL">Mary Avenel</persName>, having been born on Halloween, 
+                        in the couplet about &#x201c;<orgName type="fictional" corresp="#AVENEL">avenel</orgName>s fate&#x201d;: for example, <persName type="fictional" corresp="#TTACKET">Tibb</persName> observes that <persName type="fictional" corresp="#MARYAVENEL">Mary Avenel</persName>, having been born on Halloween, 
                         is able to &#x201c;&#x2018;see mair than ither folk&#x2019;&#x201d;; and the gruff &#x201c;pshaw&#x201d; is characteristic of <persName type="fictional" corresp="#ELSPETGLENDINNING">Elspet</persName>, 
                         although in <persName corresp="#JR">Ruskin</persName>&#x02bc;s couplet the expression is suspended without a clear agent&#x2014;ambiguously applicable either to the <orgName type="fictional" corresp="#AVENEL">Avenel</orgName> family or to outsiders 
                         (see <ref type="bibliography" target="bibliography.php#SCOTTMONASTERYFIELDING"><persName corresp="#WS">Scott</persName>, <title type="book" corresp="#SCOTTMONASTERY"><hi rend="italic">The Monastery</hi></title>, ed. <persName corresp="#PFIELDING">Fielding</persName></ref>, 
                         55&#x2013;56 [vol. 1, chap. 4]; and see also 40 [vol. 1, chap. 2]).</p>
                     
                     <p>The documentary evidence for next step in the process is open to multiple interpretations of the sequence of composition. <persName corresp="#JR">Ruskin</persName> may have composed the next couplet, 
-                        &#x201c;so it was in this old time / for a spirit haunted avenels line&#x201d;, with or without having made the deletion shown by strikethrough of the preceding couplet, 
+                        &#x201c;so it was in this old time / for a spirit haunted <orgName type="fictional" corresp="#AVENEL">avenel</orgName>s line&#x201d;, with or without having made the deletion shown by strikethrough of the preceding couplet, 
                         &#x201c;to see things that nobody saw / except themselves, and would say pshaw&#x201d;. The two couplets read coherently in sequence if no lines are deleted&#x2014;&#x201c;but 
-                        it was great <orgName corresp="#AVENEL">avenel</orgName>s fate / to see things that nobody saw / except themselves, and would say pshaw / 
+                        it was great <orgName type="fictional" corresp="#AVENEL">avenel</orgName>s fate / to see things that nobody saw / except themselves, and would say pshaw / 
                         so it was in this old time / for a spirit haunted <orgName type="fictional" corresp="#AVENEL">avenels</orgName> line&#x201d;. In fact, the flow is improved by <persName corresp="#JR">Ruskin</persName>&#x02bc;s insertion of &#x201c;and&#x201d; above the beginning of the line, 
                         &#x201c;so it was in this old time&#x201d; (the conjunction appears also in the fair copy). But the second couplet also flows coherently, if awkwardly, 
-                        from &#x201c;but it was great <orgName corresp="#AVENEL">avenel</orgName>s fate&#x201d; with the intervening couplet omitted. Finally, a third possibility 
+                        from &#x201c;but it was great <orgName type="fictional" corresp="#AVENEL">avenel</orgName>s fate&#x201d; with the intervening couplet omitted. Finally, a third possibility 
                         can be drawn from the deletion of the line, &#x201c;for a spirit haunted <orgName type="fictional" corresp="#AVENEL">avenels</orgName> line&#x201d;, in the manuscript: it is possible that <persName corresp="#JR">Ruskin</persName> never intended that line 
                         to form a couplet with the preceding line &#x201c;and so it was in this old time&#x201d;; rather, the latter can be interpreted as a subtitution above the line, 
                         replacing &#x201c;for a spirit haunted <orgName type="fictional" corresp="#AVENEL">avenels</orgName> line&#x201d;. (While the interlinear spacing in the manuscript does not appear crowded, 
                         the line &#x201c;so it was in this old time&#x201d; does appear compacted relative to the cursive hand in the other lines.)</p>
                     
-                    <p>In the simplest reconstruction of the process, <persName corresp="#JR">Ruskin</persName> can be imagined as composing the two couplets following &#x201c;but it was great <orgName corresp="#AVENEL">avenel</orgName>s fate&#x201d; 
+                    <p>In the simplest reconstruction of the process, <persName corresp="#JR">Ruskin</persName> can be imagined as composing the two couplets following &#x201c;but it was great <orgName type="fictional" corresp="#AVENEL">avenel</orgName>s fate&#x201d; 
                         without making any deletions. Then he deleted the first, second, and fourth lines of the two couplets, leaving just &#x201c;and so it was this old time&#x201d;. 
-                        As part of this change, he inserted an asterisk to serve as a metamark following &#x201c;but it was great <orgName corresp="#AVENEL">avenel</orgName>s fate&#x201d;. 
+                        As part of this change, he inserted an asterisk to serve as a metamark following &#x201c;but it was great <orgName type="fictional" corresp="#AVENEL">avenel</orgName>s fate&#x201d;. 
                         The metamark directs the reader to a line near the bottom of the page, &#x201c;to have a spirit in their line&#x201d;, which is marked by corresponding asterisk, 
-                        and set off by a horizontal rule. The metamark signals that this line is to be inserted following &#x201c;but it was great <orgName corresp="#AVENEL">avenel</orgName>s fate&#x201d;, 
+                        and set off by a horizontal rule. The metamark signals that this line is to be inserted following &#x201c;but it was great <orgName type="fictional" corresp="#AVENEL">avenel</orgName>s fate&#x201d;, 
                         thus substituting for the three deleted lines, and forming a completed couplet with the remaining line, &#x201c;to have a spirit in their line&#x201d;. 
-                        The resulting revised passage reads, as in the fair copy, &#x201c;but it was great <orgName corresp="#AVENEL">avenel</orgName>s fate / 
+                        The resulting revised passage reads, as in the fair copy, &#x201c;but it was great <orgName type="fictional" corresp="#AVENEL">avenel</orgName>s fate / 
                         to have a spirit in their line / and so it was this old time&#x201d;. This outcome involving the insertion of the substitute line, as directed by the metamark, 
                         unquestionably formed the final action of the change, regardless of the process of deletion and substitution that <persName corresp="#JR">Ruskin</persName> followed with respect to the preceding pair of couplets.</p>
                     
-                <note xml:id="AOGLOSS" resp="#DCH"><p><hi rend="bold">&#x201c;at ao&#x201d; (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Presumably 
-                    <hi rend="italic">ao</hi> is a misspelling for <hi rend="italic">so</hi>, <persName corresp="#JR">Ruskin</persName> accidentally repeating the initial letter of <hi rend="italic">at</hi>.</p></note>
+                    <note xml:id="AOGLOSS" resp="#DCH"><p><hi rend="bold">&#x201c;at ao&#x201d; (<title type="manuscript" corresp="#MSIA">MS IA</title>, <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Perhaps a misspelling of <hi rend="italic">so</hi>, 
+                    or perhaps Scots dialect <hi rend="italic">ae</hi> for <hi rend="italic">one</hi> is intended, as in <persName type="fictional" corresp="#ELSPETGLENDINNING">Elspet Glendinning</persName>&#x02bc;s remark, 
+                    &#x201c;I was mair beholden to ae Southron, and that was <persName type="fictional" corresp="#STAWARTHBOLTON">Stawarth Bolton</persName>&#x201d; 
+                    (<ref type="bibliography" target="bibliography.php#SCOTTMONASTERYFIELDING"><persName corresp="#WS">Scott</persName>, <title type="book" corresp="#SCOTTMONASTERY"><hi rend="italic">The Monastery</hi></title>, ed. <persName corresp="#PFIELDING">Fielding</persName></ref>, 
+                    53 [vol. 1, chap. 4], 490).</p></note>
+                    <!-- TAG STARTING HERE-->
+                    <note xml:id="TOOKHISTASKGLOSS" resp="#DCH"><p><hi rend="bold">&#x201c;<persName type="fictional" corresp="#MTACKET">martin</persName> took his task as guide&#x201d; 
+                        (<title type="manuscript" corresp="#MSIA">MS IA</title>)&#x2014;</hi>With this line, the pencil draft on the verso 
+                        of the manuscript, <title type="manuscript" corresp="MSIAA1">&#x201c;come on good horse and let us see&#x201d;</title>, 
+                        skips backward from line numbered 62 by Ruskin in the MS III fair copy of book 3 (i.e., "but set off at . . . good rate") 
+                        to lines 20-21 (i.e., "so <persName type="fictional" corresp="#MTACKET">martin</persName> took his task as guide / 
+                        and all the women did in him confide"). Next occurs a horizontal rule followed by lines numbered 14-19 and 22-? 
+                        by Ruskin in the MS III fair copy of book 3.</p>
+                        
+                        <p>The displacement of lines 21-22 from the order in which they are found in fair copy cannot fully be explained 
+                            owing to the damage to this manuscript. In the manuscript's original state, Ruskin may have indicated 
+                            that lines 20-21 were to be inserted in the place they occupy in fair copy, or he may have decided on this change 
+                            during the process of fair copying. The former hypothesis might explain the presence of the horizontal rule 
+                            in this passage of draft, a mark that Ruskin used along with a metamark on the recto side of this manuscript 
+                            to indicate that a verse line adjacent to the rule was to be inserted in another place.</p></note>
 
                 <note xml:id="SERJEANTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201c;serjeant&#x201d; (<title type="manuscript" corresp="#MSIA">MS IA</title>)&#x2014;</hi>Interlinearly 
                     and above this line, &#x201c;serjeant&#x201d; is written in pencil print. The hand appears to be <persName corresp="#JR">Ruskin</persName>&#x02bc;s. Presumably, he was copying the word 
