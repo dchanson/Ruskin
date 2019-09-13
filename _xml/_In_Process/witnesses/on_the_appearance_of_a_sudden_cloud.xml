@@ -20,7 +20,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#EAH">Eva Hoffmann</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -60,13 +60,11 @@
                         <institution>Yale University</institution>
                         <repository>Beinecke Rare Book and Manuscript Library</repository>
                         <collection>MS Vault Ruskin</collection>
-                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
-                        <msName>MS I</msName>
-                        <msName>"Red book No. 3"</msName>
+                        <msName>MS III</msName>
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <locus facs="1229175.jpg 1229176.jpg">pp. ##-##</locus>
                             <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
                             <filiation><!--Entry needed here.--></filiation>
                         </msItem>
@@ -74,9 +72,9 @@
                     <physDesc>
                         <!--If additional entries are made below, the hands count must be increased.-->
                         <handDesc hands="1">
-                            <handNote corresp="#HANDJR1826-27" scribe="JR">
-                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
-                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            <handNote corresp="#HANDJR1828-29" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1828" notAfter="1829">1828-29</date>,
+                                    examples of which can be found in MS III, pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -89,10 +87,9 @@
             
             <div type="poem">
                 <fw type="pageNum" place="top"><space quantity="20" unit="chars"/>44</fw>
-                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>ON THE APPEARANCE OF A SUDDEN CLOUD OF</head>
-                    <head type="title">YELLOW FOG COVERING EVERY THING WITH DARKNESS</head>
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>ON THE APPEARANCE OF A SUDDEN CLOUD OF<lb/><space unit="chars" quantity="-3"/>YELLOW FOG COVERING EVERY THING WITH DARKNESS</head>
                 <lg type="stanza" rhyme="aa">
-                    <l>It lowred upon the earth It lay</l>
+                    <l>I<hi rend="smallcaps">t</hi> lowred upon the earth It lay</l>
                        <l>A champion in the face of day.</l>
                         <l>It darkened all the air around</l>
                        <l>It let not free a single sound</l>
