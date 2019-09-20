@@ -5,9 +5,9 @@
     <teiHeader type="witness">
         <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
             The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
-        <fileDesc xml:id="on_the_appearance_of_a_sudden_cloud.xml">
+        <fileDesc xml:id="title_of_work_witness">
             <titleStmt>
-                <title type="main">"On the Appearance of a Sudden Cloud of Yellow Fog Covering Everything with Darkness"</title>
+                <title type="main">"Of Rocks First And of Caverns Now I Sing"</title>
                 <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
@@ -60,21 +60,23 @@
                         <institution>Yale University</institution>
                         <repository>Beinecke Rare Book and Manuscript Library</repository>
                         <collection>MS Vault Ruskin</collection>
-                        <msName>MS III</msName>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="1229175.jpg 1229176.jpg">pp. ##-##</locus>
-                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Of Rocks First And Of Caverns Now I Sing": Manuscripts</ref>.</note>
                             <filiation><!--Entry needed here.--></filiation>
                         </msItem>
                     </msContents>
                     <physDesc>
                         <!--If additional entries are made below, the hands count must be increased.-->
                         <handDesc hands="1">
-                            <handNote corresp="#HANDJR1828-29" scribe="JR">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
                                 <p>John Ruskin's early boyhood hand, circa <date notBefore="1828" notAfter="1829">1828-29</date>,
-                                    examples of which can be found in MS III, pages <locus from="##" to="##">##-##</locus>.</p>
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -84,48 +86,39 @@
     </teiHeader>
     <text>
         <body>
-            
             <div type="poem">
-                <fw type="pageNum" place="top"><space quantity="20" unit="chars"/>44</fw>
-                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>ON THE APPEARANCE OF A SUDDEN CLOUD OF<lb/><space unit="chars" quantity="-3"/>YELLOW FOG COVERING EVERY THING WITH DARKNESS</head>
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Of Rocks First and of Caverns Now I Sing</head>
                 <lg type="stanza" rhyme="aa">
-                    <l>I<hi rend="smallcaps">t</hi> lowred upon the earth It lay</l>
-                       <l>A champion in the face of day.</l>
-                        <l>It darkened all the air around</l>
-                       <l>It let not free a single sound</l>
-                        <l>A leaf stirred not, the trees stood still</l>
-                       <l> The wind obeyed the darkness will </l>
-                       <l> Not a thing moved, twas like the night</l>
-                        <l>The darkness faced the warrior, light</l>
-                        <l>They fought the darkness conquered still</l>
-                        <l>Light obeyed not the conquerors will</l>
-                        <l><hi rend="doubleletter-fill">B</hi>ut yet kept up a twilight day</l>
-                        <l>Though he below the darkness lay</l>
-                        <l>And now big drops of rain fell round</l>
-                        <l>And soon unloosed the chains of sound</l>
-                        <l>Sudden advanced the giant king</l>
-                        <l>Who conquered light I darkness mean</l>
-                        <l>Again they fought now light arose</l>
-                        <l>And joined to fight with darkness foes</l>
-                        <l>Darkness fought well but could not stand</l>
-                        <l>He cried I want a helping hand</l>
-                        <pb facs="1229176"/>  
-                        <fw type="pageNum" place="top"><space quantity="20" unit="chars"/>45</fw>
-                        <l>He sunk and then he cried I yield</l>
-                        <l>I yield this well contested field</l>
-                        <l>And now the birds began to sing</l>
-                        <l>Because now sound became a king </l>
-                        <l>And now the twilight went away</l>
-                        <l>At length arose the wished for day</l>
-                        <l>All now became as twas before</l>
-                        <l>And now I am not able to say more</l>
-                    </lg>
+                    <l>OF rocks first and of Caverns now I sing</l>
+                    <l>And of a stream that seems upon the wing</l>
+                    <l>Of rocks that have height of a cave that is deep</l>
+                    <l>Of ariver That hath many a beautiful sweep</l>
+                    <l>Now then of Matlock's rocks. They're white as <add place="above">snow<space quantity="41" unit="chars"></space></add></l>
+                    <l>And as white as the foam of the stream thats below</l> 
+                    <pb facs="1229172"/>
+                    <fw type="pageNum" place="top"><space quantity="12" unit="chars"/>38</fw>
+                    <l>Their craggy sides will hardly e'en give leave </l>
+                    <l>The trees to grow that all their clothing weave</l>
+                    <l>For the long fibres on the bare white crag</l>
+                    <l>Take root and up the tree iteself doth doth drag</l>
+                    <l>And now of mountain rivers the white crest</l>
+                    <l>Dances upon the waves and is their vest</l>
+                    <l>The stream doth foam and rush upon its way</l>
+                    <l>Seeming a haunt for many an elf and fay</l>
+                    <l>In anger great it rushes against the rocks</l>
+                    <l>The rocks receive its insignificant shocks</l>
+                    <l>And now of the deep dark and dismal cave</l>
+                    <l>You think no doubt its sides the waters lave</l>
+                    <l>Tis no such thing tis high upon a hill</l>
+                    <l>And then beside it flows no kind of drill</l>
+                    <l>It is entirely then composed of spar</l>
+                    <l>Its rocks are all so bright. Indeed they <add place="above">[are<space quantity="37" unit="chars"></space></add></l>
+                    <l>And so now having nothing more to say</l>
+                    <l>And my subject exhausted I must go away</l>
                     
                     
-                    
-                
+                </lg>
             </div>
-            
         </body>
     </text>
 </TEI>
