@@ -7,7 +7,7 @@
             The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
         <fileDesc xml:id="title_of_work_witness">
             <titleStmt>
-                <title type="main">"Of Rocks First And of Caverns Now I Sing"</title>
+                <title type="main">"Of rocks first and of caverns now I sing"</title>
                 <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
@@ -59,14 +59,13 @@
                         <settlement type="city">New Haven</settlement>
                         <institution>Yale University</institution>
                         <repository>Beinecke Rare Book and Manuscript Library</repository>
-                        <collection>MS Vault Ruskin</collection>
-                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
-                        <msName>MS I</msName>
-                        <msName>"Red book No. 3"</msName>
+                        <collection>John Ruskin Collection</collection>
+                        <idno>GEN MSS 1168 Series II</idno>
+                        <msName>MS III</msName>
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <locus facs="1229171.jpg 1229172.jpg">pp. ##-##</locus>
                             <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Of Rocks First And Of Caverns Now I Sing": Manuscripts</ref>.</note>
                             <filiation><!--Entry needed here.--></filiation>
                         </msItem>
@@ -74,7 +73,7 @@
                     <physDesc>
                         <!--If additional entries are made below, the hands count must be increased.-->
                         <handDesc hands="1">
-                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                            <handNote corresp="#HANDJR1828-29" scribe="JR">
                                 <p>John Ruskin's early boyhood hand, circa <date notBefore="1828" notAfter="1829">1828-29</date>,
                                     examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
@@ -87,17 +86,16 @@
     <text>
         <body>
             <div type="poem">
-                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Of Rocks First and of Caverns Now I Sing</head>
                 <lg type="stanza" rhyme="aa">
-                    <l>OF rocks first and of Caverns now I sing</l>
+                    <l><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>OF rocks first and of caverns now I sing</l>
                     <l>And of a stream that seems upon the wing</l>
                     <l>Of rocks that have height of a cave that is deep</l>
                     <l>Of ariver That hath many a beautiful sweep</l>
-                    <l>Now then of Matlock's rocks. They're white as <add place="above">snow<space quantity="41" unit="chars"></space></add></l>
+                    <l>Now then of <placeName corresp="#MATLOCK">Matlock</placeName>&#x02BC;s rocks. They&#x02BC;re white<del type="scratchout"><unclear resp="EAH">s</unclear></del> as <lb type="runover"/><space quantity="41" unit="chars"/> snow</l>
                     <l>And as white as the foam of the stream thats below</l> 
                     <pb facs="1229172"/>
                     <fw type="pageNum" place="top"><space quantity="12" unit="chars"/>38</fw>
-                    <l>Their craggy sides will hardly e'en give leave </l>
+                    <l>Their craggy sides will hardly e&#x02BC;en give leave </l>
                     <l>The trees to grow that all their clothing weave</l>
                     <l>For the long fibres on the bare white crag</l>
                     <l>Take root and up the tree iteself doth doth drag</l>
@@ -106,13 +104,13 @@
                     <l>The stream doth foam and rush upon its way</l>
                     <l>Seeming a haunt for many an elf and fay</l>
                     <l>In anger great it rushes against the rocks</l>
-                    <l>The rocks receive its insignificant shocks</l>
+                    <l>The rocks receive its insignif&#x02BC;cant shocks</l>
                     <l>And now of the deep dark and dismal cave</l>
                     <l>You think no doubt its sides the waters lave</l>
                     <l>Tis no such thing tis high upon a hill</l>
                     <l>And then beside it flows no kind of drill</l>
                     <l>It is entirely then composed of spar</l>
-                    <l>Its rocks are all so bright. Indeed they <add place="above">[are<space quantity="37" unit="chars"></space></add></l>
+                    <l>Its rocks are all so bright. Indeed they are</l>
                     <l>And so now having nothing more to say</l>
                     <l>And my subject exhausted I must go away</l>
                     
