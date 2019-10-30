@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <fileDesc xml:id="provenance_sothebys_1830_note">
+        <fileDesc xml:id="provenance_sothebys_1930_note">
             <titleStmt>
                 <title type="main"><orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> Sale of <persName corresp="#JR">Ruskin</persName> Manuscripts and Library, <date when="1930">1930</date></title>
                 <title type="sub">Note</title>
@@ -84,7 +84,7 @@
                             <orgName corresp="#MAGGS">Bernard Quaritch</orgName>, acquired a few of the manuscript volumes and modern illustrated volumes, 
                             while other lots either were left unsold or their buyers unrecorded by the annotator. The <orgName corresp="#BEINECKE">Beinecke</orgName> copy of the catalogue 
                             fails to note, for example, two items of incunabula as well as two lots of Walter Scott novels that, 
-                            according to James S. Dearden, were purchased by J. H. Whitehouse 
+                            according to James S. Dearden, were purchased by <ref type="note" subtype="biographical" target="whitehouse_j_h_note.php"><persName corresp="#JHW">J. H. Whitehouse</persName></ref> 
                             (Dearden, Ruskin, Bembridge and Brantwood, 49; and see 
                             <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1930"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1930"><hi rend="italic">Catalogue of the Manuscripts and Remaining Library of <persName corresp="#JR">John Ruskin</persName></hi></title></ref>, 14, 15-16 
                             [lots 84, 89; and of the five available lots of Scott novels, 96-100, apparently only lots 96 and 100,
@@ -191,8 +191,9 @@
                             <item n="5">Lot 114, <title type="story" corresp="#JRTHEKINGOFTHEGOLDENRIVER">&#x201C;The King of the Golden River&#x201D;</title>.<!-- describe slipcase --></item>
                         </list>
                     </div>
+                </div>
                     
-                    <div type="section">
+                    <div type="section"><!-- START HERE -->
                         <head type="section">The Buyers</head>
                         <p>While the <title type="archive" corresp="#GREENAWAYBRANTWOOD">Greenaway collection</title> and some of the rarer library items caught buyers&#x02BC; interest, 
                             it was the <persName corresp="#JR">Ruskin</persName> manuscripts reserved for the second half of the sale that commanded the highest prices, 
@@ -209,11 +210,11 @@
                             who had long been supplying American collectors with Ruskin first editions, had previously "found no competition" in London 
                             for the hundreds of Ruskin items beyond the typical antiquarian dealer's core of first-edition (or earlier edition) volumes of 
                             Modern Painters, Seven Lamps, and Stones (Goodspeed, Yankee Bookseller, 263; 
-                            and see <persName corresp="#CG">Charles E. Goodspeed</persName> [<date notBefore="1867" notAfter="1950">1867&#x2013;1950</date>]). 
+                            and see <ref type="note" subtype="biographical" target="goodspeed_charles_note.php"><persName corresp="#CG">Charles E. Goodspeed</persName> [<date notBefore="1867" notAfter="1950">1867&#x2013;1950</date>]</ref>). 
                             Goodspeed took the same approach at the 1930 Sotheby's sale, assisted by B. F. Stevens and Brown as his agent. 
                             Whereas Whitehouse's manuscript acquisitions were canonical by the standards of the time--the diaries, 
                             the Stones manuscript, and lot 119, which was headed by manuscript for Ruskin's Turner Catalogue--Goodspeed 
-                            targeted very early and very late works: for example, manuscripts of The King of the Golden River (lot 114, &#x00A3;155), 
+                            targeted very early and very late works: for example, manuscripts of <title type="story" corresp="#JRTHEKINGOFTHEGOLDENRIVER"><hi rend="italic">King of the Golden River</hi></title> (lot 114, &#x00A3;155), 
                             a portion of Fors Clavigera (lot 118, &#x00A3;50), and Praeterita (&#x00A3;155). His strategy is consistent with the biographical bias 
                             animating collectors of the late nineteenth and early twentieth centuries, who aspired to comprehensive ownership 
                             of every published item by their modern authors of choice, from juvenilia to last works (see 
@@ -235,12 +236,24 @@
                             <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02BC;s catalogue as sold to <orgName corresp="#BFSTEVENSBROWN">B. F. Stevens &#x0026; Brown</orgName>, 
                             Goodspeed's agent; and the purchase of the <title type="periodical" corresp="#CURTISBOTANICALMAGAZINE"><hi rend="italic">Botanical Magazine</hi></title> 
                             is credited to <orgName corresp="#BFSTEVENSBROWN">Stevens &#x0026; Brown</orgName> by <persName corresp="#JSD">James Dearden</persName> in 
-                            <ref type="bibliography" target="bibliography.php#RUSKINBEMBRIDGEBRANTWOOD"><title type="book" corresp="#DEARDENRUSKINBB"><hi rend="italic">Ruskin, Bembridge, and Brantwood</hi></title></ref>, 48.)
-                    <!-- STOP HERE --></p>
+                            <ref type="bibliography" target="bibliography.php#RUSKINBEMBRIDGEBRANTWOOD"><title type="book" corresp="#DEARDENRUSKINBB"><hi rend="italic">Ruskin, Bembridge, and Brantwood</hi></title></ref>, 48.)</p>
                         
-                        <p>The Beinecke at Yale also holds the contents of lots 110 and 112, the Ruskin family letters and the collection of juvenilia. 
-                            How did these items come to Yale? According to the annotated sale catalogue at the <orgName corresp="#BEINECKE">Beinecke</orgName>, 
-                            the successful bids for these two lots were placed by <persName corresp="#ALLENH">&#x201C;Allen&#x201D;</persName> (lot 110, &#x00A3;520; lot 112, &#x00A3;260). 
+                        <p><persName corresp="#CG">Goodspeed</persName> turned these items around to <orgName corresp="#YALE">Yale</orgName> for a total of &#x0024;3,000. 
+                            Curiously, in what appears to be the earliest published report describing acquisitions by <orgName corresp="#YALE">Yale</orgName> 
+                            from the <date when="1930-07">July 1930</date> sale, these documented items sold by <persName corresp="#CG">Goodspeed</persName> 
+                            are not mentioned. Instead, in a detailed <date when="1931-01">January 1931</date> report, it was lots 110 and 112, 
+                            the six bound volumes of Ruskin family letters and the six slipcases containing juvenilia, that are celebrated as forming 
+                            &#x201C;a considerable portion of the Brantwood collection of Ruskin manuscripts&#x201D; that is "now preserved for all time against sale and spoliation" 
+                            It is possible that the writer meant to comprise more acquisitions--including the Goodspeed purchase--within the "considerable portion of the Brantwood collection" that had come to Yale 
+                            than just these two lots, which would have stood out from the rest, set apart not only by their contents relating to <persName corresp="#JR">Ruskin</persName>&#x02BC;s youth, 
+                            but also by their striking blue&#x2010;morocco casings. Still, the focus on "this noteworthy group" of juvenilia and letters--represented 
+                            as "an impressive addition to the Library's collection of Ruskiniana", which had been grounded in "the completeness of its first editions and rarity of its items" 
+                            donated in 1929 as the R. B. Adam Collection--begs the question of how these two lots come to Yale, since they were not included in the November 1930 Goodspeed purchase 
+                            (<ref type="bibliography" target="bibliography.php#COLLECTIONRUSKINMANUSCRIPTS"><persName corresp="#KGWEIHE">Weihe</persName>, <title type="essay" corresp="#WEIHERUSKINMANUSCRIPTS">&#x201C;A Collection of Ruskin Manuscripts&#x201D;</title></ref>, 47; 
+                            and see <ref type="bibliography" target="bibliography.php#FRENCHADAMCOLLECTION"><persName corresp="#RDFRENCH">French</persName>, <title type="essay" corresp="#FRENCHADAMCOLLECTION">&#x201C;The R. D. Adam Collection of Ruskin&#x201D;</title></ref>).</p>
+                        
+                        <p>According to the annotated sale catalogue at the <orgName corresp="#BEINECKE">Beinecke</orgName>, 
+                            the successful bids for lots 110 and 112 were placed by <persName corresp="#ALLENH">&#x201C;Allen&#x201D;</persName> (lot 110, &#x00A3;520; lot 112, &#x00A3;260). 
                             This member of the George Allen family was probably <persName corresp="#ALLENH">Hugh Allen</persName>, whose role in the sale 
                             can be gathered from a letter by <persName corresp="#RBROWN">Ralph Brown</persName> of <orgName corresp="#BFSTEVENSBROWN">B. F. Stevens &#x0026; Brown</orgName> 
                             to <persName corresp="#JHW">J. H. Whitehouse</persName> on the occasion of the <ref type="note" subtype="bibliographical" target="provenance_severn_1931_note.php">Severn Sale of Ruskin Effects, <date when="1931">1931</date></ref>: 
@@ -261,73 +274,40 @@
                             by a footnote specifying that "other items that came from Brantwood, through Sotheby and Goodspeed" have been "marked 
                             with an asterisk". Hogan does not attach an asterisk to "the magnificent assemblage of Ruskin's letters" at Yale, 
                             leading one to the conclusion that Yale acquired the letters, lot 110, directly through the agency of Hugh Allen, 
-                            while lot 112 came roundabout to Yale, from Allen to Goodspeed to the university library. Confidence in this chain of reasoning 
-                            is shaken by Hogan's careless writing, however, since he also attributes "volumes" of Ruskin letters at Yale 
-                            to an "auction at Sotheby's in 1936", leaving unclear whether he means that this sale accounted for all the bound volumes of letters 
-                            or solely "five further volumes containing transcribed and typewritten copies that were collected by Messrs. Cook and Wedderburn during the preparation of their great edition of Ruskin's works" 
-                            (<ref type="bibliography" target="bibliography.php#YALECOLLECTION"><persName corresp="#CBHOGAN">Hogan</persName>, <title type="essay" corresp="#YALECOLLECTION">&#x201C;Yale Collection of the Manuscripts of John Ruskin&#x201D;</title></ref>, 62, 63).</p>
+                            while lot 112 came roundabout to Yale, from Allen to Goodspeed to the university library 
+                            (<ref type="bibliography" target="bibliography.php#YALECOLLECTION"><persName corresp="#CBHOGAN">Hogan</persName>, <title type="essay" corresp="#YALECOLLECTION">&#x201C;Yale Collection of the Manuscripts of John Ruskin&#x201D;</title></ref>, 62, 63). 
+                            In the <ref type="bibliography" target="bibliography.php#KEOGHREPORT_1930-31">"Report of the Librarian, July 1, 1930-June 30, 1931"</ref>, 
+                            published 1 April 1932, the purchase of "a large mass of Ruskin material" 
+                            is reported, listing "letters written by him to his father" (but not the juvenilia) along with the items that formed the Goodspeed purchase. 
+                            Perhaps accounting for some of the obscurity surrounding these purchases, they occurred during "the great event of the year--the 
+                            greatest since the founding of the Library"--announced at start of the Report, "the transfer of the books and of the functions of the Library 
+                            to the Sterling Memorial building (pp. 8, 3).</p>
                         
-                        <p>
-                            
-                            
-                            
-                            as described in the catalogue with their slipcases and bindings, are now held by the <orgName corresp="#BEINECKE">Beinecke Rare Book and Manuscript Library</orgName>, <orgName corresp="#YALE">Yale University</orgName>.  
-                    When first acquired, these lots, in the eyes of the <orgName corresp="#YALE">Yale</orgName> curators, would have formed a unit tied together not only by their contents, which all relate to <persName corresp="#JR">Ruskin</persName>&#x02BC;s youth, but even by their blue&#x2010;morocco casings, 
-                    which appear to be unique to these manuscripts. Whoever was originally responsible for this choice of bindings probably did perceive the manuscripts as forming a group, 
-                    a perception likely founded in <persName corresp="#WGC">Collingwood</persName>&#x02BC;s bibliographical preparation for the <title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi> (<date when="1891">1891</date>)</title> 
-                    (see <ref type="note" subtype="bibliographical" target="provenance_brantwood_note_php.php">Provenance of Early Manuscripts at Denmark Hill and Brantwood</ref>.</p>
-                <p> 
-                    
-                    
-                     
+                        <p>While his name does not appear in connection with Yale's boon from the 1930 sale, Chauncey Brewster Tinker is likely to have taken a keen interest 
+                            in the Ruskin materials, and perhaps advised about their acquisition, whether or not he had an active role. 
+                            Sources differ whether Tinker was appointed keeper of rare books at Yale University Library in 1930 or 1931, 
+                            but he had long been an advocate for building up the library's collection, and he was a legendary teacher 
+                            of eighteenth- and nineteenth-century literature, known for giving students access to manuscripts and rare books 
+                            from his extensive personal collection. In 1929, the year prior to the Sotheby's sale, Tinker's close friend and fellow collector, 
+                            R. B. Adam, donated his meticulously curated Ruskin collection to Yale; and it is notable how felicitously lots 110 and 112, 
+                            the letters and juvenilia, complement Adam's bequest, which includes the run of early poems published in annuals 
+                            (<ref type="bibliography" target="bibliography.php#PATHAKTINKER"><persName corresp="#SBPATHAK">Pathak</persName>, <title type="essay" corresp="PATHAKTINKER">&#x201C;Chauncey Brewster Tinker&#x201D;</title></ref>, 278-80; 
+                            <ref type="bibliography" target="bibliography.php#METZDORFTINKERLIBRARY"><persName corresp="RFMETZDORF">Metzdorf</persName>, <title type="book" corresp="METZDORFTINKERLIBRARY"><hi rend="italic">The Tinker Library</hi></title></ref>, viii; 
+                            <ref type="bibliography" target="bibliography.php#FRENCHADAMCOLLECTION"><persName corresp="#RDFRENCH">French</persName>, <title type="essay" corresp="#FRENCHADAMCOLLECTION">&#x201C;The R. D. Adam Collection of Ruskin&#x201D;</title></ref>, 3-4).</p>
                         
-                        , Oxford lectures (lot 116), 
-                         (lot 116); 13 &#x201C;miscellaneous notebooks&#x201D;, grouped as lot 122, and an &#x201C;architectural notebook&#x201D; (lot 116);.  
-                        The <title type="story" corresp="#JRTHEKINGOFTHEGOLDENRIVER"><hi rend="italic">King of the Golden River</hi></title> manuscript cost this buyer almost as much as the rest, at &#x00A3;155. 
-                        <persName corresp="#CG">Goodspeed</persName> turned all this around to <orgName corresp="#YALE">Yale</orgName> for &#x0024;3,000&#x2014;throwing in, apparently as a kind of bonus, a collection of 47 autograph <persName corresp="#JR">Ruskin</persName> letters, chiefly to <persName corresp="#BJOWETT">Benjamin Jowett</persName>. 
-                        The latter had no connection to the <orgName corresp="#SOTHEBYS">Sotheby</orgName> sale that is detectable in the catalogue. 
-                    These items acquired by <orgName corresp="#YALE">Yale</orgName> in November were sold at auction, according to the annotated sale catalogue at the <orgName corresp="#BEINECKE">Beinecke</orgName>, to <orgName corresp="#BFSTEVENSBROWN">&#x201C;Stevens B. F.&#x201D;</orgName> This is the firm of <orgName corresp="#BFSTEVENSBROWN">B. F. Stevens &#x0026; Brown</orgName>. 
-                    <persName corresp="#CG">Goodspeed</persName> mentions that this firm served as his agent in the <date when="1931">1931</date> sales 
-                    (<ref type="bibliography" target="bibliography.php#YANKEEBOOKSELLER"><persName corresp="#CG">Goodspeed</persName>, <title type="book" corresp="#GOODSPEEDYANKEEBOOKSELLER"><hi rend="italic">Yankee Bookseller</hi></title></ref>, 268), and 
-                    the <orgName corresp="#BEINECKE">Beinecke</orgName> holds correspondence between the proprietor, <persName corresp="#RBROWN">Ralph Brown</persName>, and <persName corresp="#CG">Goodspeed</persName> starting in that year; as the evidence shows, however, the relationship reached back farther to the <date when="1930">1930</date> sale, 
-                    if not earlier.</p>
-                <p>It was only a few years earlier, in <date when="1927">1927</date>, that <persName corresp="#RBROWN">Ralph Brown</persName> had established what would prove a thirty&#x2010;year relationship with the important English Ruskin collector, 
-                    <ref type="note" subtype="biographical" target="whitehouse_j_h_note.php"><persName corresp="#JHW">J. H. Whitehouse</persName></ref> 
-                    (<ref type="bibliography" target="bibliography.php#RUSKINBEMBRIDGEBRANTWOOD"><persName corresp="#JSD">Dearden</persName>, <title type="book" corresp="#DEARDENRUSKINBB"><hi rend="italic">Ruskin, Bembridge, and Brantwood</hi></title></ref>, 43&#x2013;44). 
-                    In <date when="1930">1930</date>, <persName corresp="#JHW">Whitehouse</persName> himself attended the <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02BC;s sale and bid in his own name 
-                    (<ref type="bibliography" target="bibliography.php#RUSKINBEMBRIDGEBRANTWOOD"><persName corresp="#JSD">Dearden</persName>, <title type="book" corresp="#DEARDENRUSKINBB"><hi rend="italic">Ruskin, Bembridge, and Brantwood</hi></title></ref>, 49), 
-                    and so <orgName corresp="#BFSTEVENSANDBROWN">Stevens &#x0026; Brown</orgName> would have been free to work on commission for <persName corresp="#CG">Goodspeed</persName>, if such was the arrangement. While there was doubtless rivalry between <persName corresp="#CG">Goodspeed</persName>, <persName corresp="#JHW">Whitehouse</persName>, and other collectors, 
-                    however, <orgName corresp="#BFSTEVENSANDBROWN">B. F. Stevens &#x0026; Brown</orgName> appears to have been bound to them by respect for <persName corresp="#JR">Ruskin</persName>. A key figure in these relationships was <persName corresp="#ALLENH">Hugh Allen</persName>, who, on his death in <date when="1931-08">August 1931</date>, 
-                    <orgName corresp="#BFSTEVENSANDBROWN">Brown</orgName> remembered to <persName corresp="#CG">Goodspeed</persName> as &#x201C;our friend&#x201D; and &#x201C;a sad loss to <persName corresp="#JR">Ruskin</persName> lovers as his knowledge and kindly interest was always at the disposal of those, who like himself, admired the great Victorian&#x201D; 
-                    (AL, <orgName corresp="#BFSTEVENSANDBROWN">Brown</orgName> to <persName corresp="#CG">Goodspeed</persName>, <date when="1931-08-29">29 August 1931</date>).</p><!-- don't know what this collection is named -->
-                <p>It was  who acquired lot 112, the juvenilia, at the <date when="1930">1930</date> sale. <note>The provenance of lot 112 is not <persName corresp="#CBHOGAN">Hogan</persName>&#x02BC;s only error; he also declares that the <title type="book" corresp="#JRPROSERPINA"><hi rend="italic">Proserpina</hi></title> 
-                        manuscript and studies &#x201C;were sold at <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02BC;s on <date when="1931-05-18">May 18, 1931</date>, and came to <orgName corresp="#YALE">Yale</orgName> by purchase from Mr. <persName corresp="#CG">Goodspeed</persName>&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#YALECOLLECTION"><persName corresp="#CBHOGAN">Hogan</persName>, <title type="essay" corresp="#YALECOLLECTION">&#x201C;Yale Collection of the Manuscripts of John Ruskin&#x201D;</title></ref>, 67 n. 4). 
-                        A part of this manuscript did come from the <ref type="note" subtype="bibliographical" target="provenance_sothebys_1931.php"><title type="catalogue" corresp="#SOTHEBYCAT1930"><orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02BC;s Sale of Ruskin Manuscripts, <date when="1931">1931</date></title></ref> via <persName corresp="#CG">Goodspeed</persName>,
-                        but the holding started with lot 117 from the <date when="1930">1930</date> sale, as explained above.</note> the <title type="manuscript" corresp="#JRREDBOOK">Red Books</title>, from <persName corresp="#CG">Goodspeed</persName>, it is possible that <persName corresp="#CG">Goodspeed</persName> served as a conduit between <orgName corresp="#YALE">Yale</orgName> and <persName corresp="#ALLENH">Allen</persName>, 
-                    in supplying the university library with both lots 112 and 110 from the <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02BC;s sale. 
-                    Whatever <persName corresp="#CG">Goodspeed</persName>&#x02BC;s involvement, if any, the lots came to <orgName corresp="#YALE">Yale</orgName> from <persName corresp="#ALLENH">Allen</persName> as a unit, as they are treated together 
-                    in the earliest published report on <orgName corresp="#YALE">Yale</orgName>&#x02BC;s acquisitions from the <date when="1930-07">July 1930</date> sale. Appearing in <date when="1931-01">January 1931</date>, the report 
-                    treats the juvenilia along with the letters as a single &#x201C;collection&#x201D; (<ref type="bibliography" target="bibliography.php#COLLECTIONRUSKINMANUSCRIPTS"><persName corresp="#KGWEIHE">Weihe</persName>, <title type="essay" corresp="#WEIHERUSKINMANUSCRIPTS">&#x201C;A Collection of Ruskin Manuscripts&#x201D;</title></ref>). 
-                    What remains enigmatic is that this published report makes no mention of the several items, including the <title type="story" corresp="#JRTHEKINGOFTHEGOLDENRIVER"><hi rend="italic">King of the Golden River</hi></title> manuscript, 
-                    which <persName corresp="#CG">Goodspeed</persName> certainly did sell to the library the previous November.</p>
-                <p>Whomever or whatever interest <persName corresp="#ALLENH">Allen</persName> represented, his expenditure on lots 110 and 112 was significant, attesting to the value placed on these early manuscripts, 
-                    presumably for their biographical interest. At &#x00A3;520, 
-                    the letters fetched the second highest price of the manuscript lots after the &#x00A3;1,600 for the diaries, higher even than the &#x00A3;440 paid for the <title type="book" corresp="#JRSTONESOFVENICE"><hi rend="italic">Stones of Venice</hi></title> 
-                    materials. The &#x00A3;260 for the <title type="manuscript" corresp="#JRREDBOOK">Red Books</title> was significantly more than what <orgName corresp="#BFSTEVENSANDBROWN">B. F. Stevens</orgName> paid for the <title type="story" corresp="#JRTHEKINGOFTHEGOLDENRIVER"><hi rend="italic">King of the Golden River</hi></title> and the 
-                    <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title> manuscripts, at &#x00A3;155 and &#x00A3;166, respectively. Insofar as prices serve as a measure, manuscripts related to <persName corresp="#JR">Ruskin</persName>&#x02BC;s youth that the author referenced 
-                    in the autobiography were valued more than 
-                    the manuscript of the autobiography itself. (<persName corresp="#CG">Goodspeed</persName> clung to the <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title> manuscript, and treasured it, however; and it is interesting that, 
-                    while prices for the late works were, not surprisingly, comparatively low, <persName corresp="#CBHOGAN">Hogan</persName>&#x02BC;s <date when="1942">1942</date> article treated &#x201C;the possession of the manuscripts of the <title type="book" corresp="#JRFORS"><hi rend="italic">Fors Clavigera</hi></title> 
-                    and the <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title>&#x201D; as what &#x201C;makes the <orgName corresp="#YALE">Yale</orgName> collection truly rich&#x201D; 
-                    [<ref type="bibliography" target="bibliography.php#YALECOLLECTION"><persName corresp="#CBHOGAN">Hogan</persName>, <title type="essay" corresp="#YALECOLLECTION">&#x201C;Yale Collection of the Manuscripts of John Ruskin&#x201D;</title></ref>, 68].) It is possible, moreover, that the comparatively high prices 
-                    for the early manuscripts was the effect not only of the interest in <persName corresp="#JR">Ruskin</persName>&#x02BC;s youth that the author himself had encouraged through his autobiographical writing, but also of the broader 
-                    phenomenon of <ref type="note" subtype="bibliographical" target="collecting_of_modern_authors_note.php">The Collecting of Modern Authors in the Late Nineteenth and Early Twentieth
-                        Centuries</ref>.</p>
+                        <p>Whatever the circumstances determining the roles of these buyers during the 1930 sale, they shared a perception of themselves as watchful for the proper custodianship 
+                            of the Ruskin archive. In his autobiography, <persName corresp="#CG">Goodspeed</persName> quoted 
+                            Ruskin's intentions for his estate as stated in his will, implying that the Severn family may have acted in bad faith 
+                            by authorizing the Sotheby's auctions. And when <persName corresp="#ALLENH">Hugh Allen</persName> died 
+                            in <date when="1931-08">August 1931</date>, Ralph Brown of <orgName corresp="#BFSTEVENSANDBROWN">B. F. Stevens and Brown</orgName> 
+                            wrote to <persName corresp="#CG">Goodspeed</persName> to eulogize &#x201C;our friend&#x201D; as 
+                            &#x201C;a sad loss to <persName corresp="#JR">Ruskin</persName> lovers as his knowledge and kindly interest 
+                            was always at the disposal of those, who like himself, admired the great Victorian&#x201D; 
+                            (<title type="letter" corresp="brown_to_goodspeed_1931-08-29"><persName corresp="#RBROWN">Brown</persName> to <persName corresp="#CG">Goodspeed</persName>, <date when="1931-08-29">29 August 1931</date></title>, <ref type="bibiography" target="bibliography.php#BROWNALSTOGOODSPEEDBEINECKE">Stevens, B. F., and Brown. Letters, telegrams, and other materials to Charles Goodspeed</ref>).</p>
+                        
+                        
+                    </div>
                 </div>
-                </div>
-                
-            </div>
         </body>
     </text>
 </TEI>
