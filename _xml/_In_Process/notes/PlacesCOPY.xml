@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
 <?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="places">
@@ -18,6 +18,11 @@
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
                     <persName corresp="#KBT">Katrina Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <!--EAH-->
+                    <persName corresp="#EAH">Eva Hoffmann</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -215,7 +220,7 @@
                         </note>
                     </place>
                     <place type="settlement" xml:id="STOMER">
-                        <placeName>St. Omer</placeName>
+                        <placeName>St. Om&#0233;re</placeName>
                         <location>
                             <bloc type="continent">Europe</bloc>
                             <country>France</country>
@@ -312,8 +317,8 @@
                             <p></p>
                         </note>
                     </place>
-                    <place type="settlement" xml:id="TOURNAI">
-                        <placeName>Tournai</placeName>
+                    <place type="settlement" xml:id="TOURNAY">
+                        <placeName>Tournay</placeName>
                         <location>
                             <bloc type="continent">Europe</bloc>
                             <country>Belgium</country>
@@ -821,22 +826,6 @@
                             <p></p>
                         </note>
                     </place>
-                    <place type="settlement" xml:id="FRANKFURT">
-                        <placeName>Frankfurt</placeName>
-                        <location>
-                            <bloc type="continent">Europe</bloc>
-                            <country>Germany</country>
-                            <region type="state">Hesse</region>   
-                            <geo></geo>
-                        </location>
-                        <terrain>
-                            <desc>Length: 95.87 sq mi</desc>
-                            <desc>West of Wiesbaden&#x002C; with the Main running through its center.</desc>
-                        </terrain>
-                        <note>
-                            <p></p>
-                        </note>
-                    </place>
                     <place type="settlement" xml:id="LANGEN">
                         <placeName>Langen</placeName>
                         <location>
@@ -1094,22 +1083,6 @@
                             <p>Visited before returning to Kehl, Germany.</p>
                         </note>
                     </place>
-                    <place type="settlement" xml:id="KEHL">
-                        <placeName>Weinheim</placeName>
-                        <location>
-                            <bloc type="continent">Europe</bloc>
-                            <country>Germany</country>
-                            <region type="state">Baden-Württemberg</region>   
-                            <geo></geo>
-                        </location>
-                        <terrain>
-                            <desc></desc>
-                            <desc></desc>
-                        </terrain>
-                        <note>
-                            <p></p>
-                        </note>
-                    </place>
                     <place type="settlement" xml:id="OFFENBURG">
                         <placeName>Offenburg</placeName>
                         <location>
@@ -1272,22 +1245,6 @@
                     </place>
                     <place type="settlement" xml:id="RORSCHACH">
                         <placeName>Rorschach</placeName>
-                        <location>
-                            <bloc type="continent">Europe</bloc>
-                            <country>Switzerland</country>
-                            <region type="canton">St. Gallen</region>   
-                            <geo></geo>
-                        </location>
-                        <terrain>
-                            <desc></desc>
-                            <desc></desc>
-                        </terrain>
-                        <note>
-                            <p>Pass-through.</p>
-                        </note>
-                    </place>
-                    <place type="settlement" xml:id="SARGANS">
-                        <placeName>Sargans</placeName>
                         <location>
                             <bloc type="continent">Europe</bloc>
                             <country>Switzerland</country>
@@ -1622,6 +1579,7 @@
                             <p>Pass-through.</p>
                         </note>
                     </place>
+                    <!---Returned to this place, second notiation-->
                     <place type="settlement" xml:id="ARONA">
                         <placeName>Arona</placeName>
                         <location>
