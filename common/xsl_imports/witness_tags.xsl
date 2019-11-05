@@ -284,9 +284,14 @@
           <xsl:apply-templates/>
         </div>
       </xsl:when>
-      
+
+      <!-- <xsl:otherwise>
+        <xsl:message terminate="yes">&lt;lg&gt; needs the "type" attribute</xsl:message>
+      </xsl:otherwise> -->
       <xsl:otherwise>
-        <xsl:message terminate="yes">The 'lg' tag needs the "type" attribute</xsl:message>
+        <div class="lg-stanza">
+          <xsl:apply-templates/>
+        </div>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>

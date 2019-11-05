@@ -277,6 +277,19 @@
               <div type="subsection">
                 <head type="subsection">Works in Manuscript by Authors Other Than the Ruskins</head>
                 
+                <listBibl>
+                  <msDesc xml:id="BROWNALSTOGOODSPEEDBEINECKE">
+                    <msIdentifier>
+                      <country>United States</country>
+                      <settlement>New Haven</settlement>
+                      <institution>Yale University</institution>
+                      <repository>Beinecke Rare Book and Manuscript Library</repository>
+                      <collection>John Ruskin Collection GEN MSS 1168 Series I</collection>
+                      <idno>box 13</idno>
+                      <msName>Stevens, B. F., and Brown. Letters, telegrams, and other materials to Charles Goodspeed, relating to his purchases of John Ruskin material (4 May 1931&#x2013;16 May 1933)</msName>
+                    </msIdentifier>
+                  </msDesc>
+
                 <msDesc xml:id="RUTGERSALS">
                   <msIdentifier>
                     <country>United States</country>
@@ -295,11 +308,13 @@
                       <settlement>New Haven</settlement>
                       <institution>Yale University</institution>
                       <repository>Beinecke Rare Book and Manuscript Library</repository>
-                      <collection>MS Vault Ruskin</collection>
-                      <msName>Charles E. Goodspeed (1867&#x2013;1950), ALS to Chauncey B. Tinker (1876&#x2013;1963)</msName>
+                      <collection>John Ruskin Collection GEN MSS 1168 Series II, Unbound MSS</collection>
+                      <idno>&#x201C;&#x2018;The Monastery&#x2019;, manuscript, in an unidentified hand, of passages of verse, undated&#x201D; (box 31)</idno>
+                      <msName>Charles E. Goodspeed (1867&#x2013;1950), AL to Chauncey B. Tinker (1876&#x2013;1963), 4 November 1942</msName>
                     </msIdentifier>
                   </msDesc>
-                  
+                </listBibl>
+
                   <msDesc xml:id="VILJOENPAPERS">
                     <msIdentifier>
                       <country>United States</country>
@@ -690,7 +705,8 @@
                           </imprint>
                         </monogr>
                       </biblStruct>
-                      
+
+
                       <!--Entry for National Trust Carriage Museum Guidebook
                         
                         <biblStruct xml:id="NTCARRIAGEMUSEUMGUIDEBOOK">
@@ -895,7 +911,28 @@
                           </imprint>
                         </monogr>
                       </biblStruct>
-                      
+
+                  <biblStruct xml:id="JRSELECTIONSTINKER">
+                    <monogr>
+                      <author>
+                        <persName corresp="JR">
+                          <forename>John</forename>
+                          <surname>Ruskin</surname>
+                        </persName>
+                      </author>
+                      <title level="m"><hi rend="italic">Selections from the Works of John Ruskin</hi></title>
+                      <editor><persName corresp="CEN">
+                        <forename>Chauncey Brewster</forename>
+                        <surname>Tinker</surname>
+                      </persName></editor>
+                      <imprint>
+                        <pubPlace>Boston</pubPlace>
+                        <publisher>Houghton Mifflin</publisher>
+                        <date when="1908">1908</date>
+                      </imprint>
+                    </monogr>
+                  </biblStruct>
+
                       <biblStruct xml:id="RUSKINTHREELAKELANDPOEMS">
                         <monogr>
                           <author>
@@ -2022,7 +2059,25 @@
             </imprint>
           </monogr>
         </biblStruct>
-        
+
+                      <biblStruct xml:id="BOLTONTILLINGHAST">
+                        <analytic>
+                          <author><persName corresp="CKBOLTON">
+                            <forename>Charles Knowles</forename>
+                            <surname>Bolton</surname>
+                          </persName></author>
+                          <title level="a">&#x201C;Memoir of <persName corresp="#CT">Caleb Benjamin Tillinghast</persName>, Litt.D&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <imprint>
+                            <pubPlace>Cambridge, Mass.</pubPlace>
+                            <publisher>John Wilson and Son, The University Press</publisher>
+                            <date when="1910">1910</date>
+                          </imprint>
+                        </monogr>
+                        <note>Reprinted from the Publications of the Colonial Society of Massachusetts, vol. 12</note>
+                      </biblStruct>
+
         <biblStruct xml:id="OLIVERBOYDADVERTISEMENT">
           <analytic>
             <title level="a">&#x201C;Books Published by Oliver &#x0026; Boyd, Edinburgh&#x201D;</title>
@@ -4155,7 +4210,26 @@
             </imprint>
           </monogr>
         </biblStruct>
-        
+
+                      <biblStruct xml:id="FRENCHADAMCOLLECTION">
+                        <analytic>
+                          <author><persName corresp="RDFRENCH">
+                            <forename>Robert D.</forename>
+                            <surname>French</surname>
+                          </persName></author>
+                          <title level="a">&#x201C;The R. B. Adam Collection of Ruskin&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Yale University Gazette</hi></title>
+                          <imprint>
+                            <biblScope type="vol">4</biblScope>
+                            <biblScope type="issue">1</biblScope>
+                            <date when="1929-07">July 1929</date>
+                            <biblScope type="pages">1&#x2013;7</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+
         <biblStruct xml:id="JENSENFRENCHEMPIRE">
           <monogr>
             <title level="m" type="main"><hi rend="italic">The French Empire</hi></title>
@@ -4518,7 +4592,7 @@
             <forename>Nick</forename>
             <surname>Groom</surname>
           </persName></author>
-          <title level="a">&#x201C;Chatterton, Thomas (<date notBefore="1752" notAfter="1770">1752&#x02BC;70</date>)&#x201D;</title>
+          <title level="a">&#x201C;Chatterton, Thomas (<date notBefore="1752" notAfter="1770">1752&#x2013;70</date>)&#x201D;</title>
         </analytic>
         <monogr>
           <title level="m"><hi rend="italic">Oxford Dictionary of National Biography Online Edition</hi></title>
@@ -4529,7 +4603,26 @@
           </imprint>
         </monogr>
       </biblStruct>
-      
+
+                      <biblStruct xml:id="GRUBIAKSTERLINGLIBRARY">
+                        <analytic>
+                          <author><persName corresp="#MMGRUBIAK">
+                            <forename>Margaret M.</forename>
+                            <surname>Grubiak</surname>
+                          </persName></author>
+                          <title level="a">&#x201C;Reassessing Yale&#x02BC;s Cathedral Orgy: The Ecclesiastical Metaphor and the Sterling Memorial Library&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Winterthur Portfolio</hi></title>
+                          <imprint>
+                            <biblScope type="vol">43</biblScope>
+                            <biblScope type="issue">2&#x2013;3</biblScope>
+                            <date when="2009">2009</date>
+                            <biblScope type="pages">159&#x2013;84</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+
       <biblStruct xml:id="WATTSDUNTONLIFE">
         <monogr>
           <author>
@@ -5598,7 +5691,50 @@
           </imprint>
         </monogr>
       </biblStruct>
-      
+                      <biblStruct xml:id="HYDEADAMTINKERNEWTON1">
+                        <analytic>
+                            <author><persName corresp="MHYDE">
+                              <forename>Mary</forename>
+                              <surname>Hyde</surname>
+                            </persName></author>
+                          <title level="a">&#x201C;Adam, Tinker, and Newton&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m" type="main"><hi rend="italic">Johnson and His Age</hi></title>
+                          <editor>
+                            <persName corresp="JENGELL">
+                              <forename>James</forename>
+                              <surname>Engell</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Cambridge, Mass.</pubPlace>
+                            <publisher>Harvard University Press</publisher>
+                            <date when="1984">1984</date>
+                            <biblScope type="pages">285&#x2013;307</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+
+                      <biblStruct xml:id="HYDEADAMTINKERNEWTON2">
+                        <analytic>
+                          <author><persName corresp="MHYDE">
+                            <forename>Mary</forename>
+                            <surname>Hyde</surname>
+                          </persName></author>
+                          <title level="a">&#x201C;Adam, Tinker, and Newton, 1909&#x2013;1948&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Modern Philology</hi></title>
+                          <imprint>
+                            <biblScope type="vol">85</biblScope>
+                            <biblScope type="issue">4</biblScope>
+                            <date when="1988">1988</date>
+                            <biblScope type="pages">558&#x2013;68</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+
       <biblStruct xml:id="HYDECOLOSSEUM">
         <monogr>
           <author>
@@ -6004,7 +6140,61 @@
                         </monogr>
                         <note>https://digitalcollections.nypl.org/items/b41097cf-1f22-ff08-e040-e00a180649a9 (accessed <date when="2018-07-30">30 July 2018)</date></note>
                       </biblStruct>
-      
+
+                      <biblStruct xml:id="KEOGHREPORT_1928-29">
+                        <analytic>
+                          <author><persName corresp="AKEOGH">
+                            <forename>Andrew</forename>
+                            <surname>Keogh</surname>
+                          </persName></author>
+                          <title level="a">&#x201C;Report of the Librarian, <date notBefore="1928-07-01" notAfter="1929-06-30">July 1, 1928&#x2013;June 30, 1929&#x201D;</date></title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Bulletin of Yale University</hi></title>
+                          <imprint>
+                            <biblScope type="vol" n="26">26</biblScope>
+                            <biblScope type="issue" n="6">6</biblScope>
+                            <date when="1929-12-01">1 December 1929</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+
+                      <biblStruct xml:id="KEOGHREPORT_1930-31">
+                        <analytic>
+                          <author><persName corresp="AKEOGH">
+                            <forename>Andrew</forename>
+                            <surname>Keogh</surname>
+                          </persName></author>
+                          <title level="a">&#x201C;Report of the Librarian, <date notBefore="1930-07-01" notAfter="1931-06-30">July 1, 1930&#x2013;June 30, 1931&#x201D;</date></title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Bulletin of Yale University</hi></title>
+                          <imprint>
+                            <biblScope type="vol" n="28">28</biblScope>
+                            <biblScope type="issue" n="4">4</biblScope>
+                            <date when="1932-04-01">1 April 1932</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+
+                      <biblStruct xml:id="KEOGHREPORT_1934-35">
+                        <analytic>
+                          <author><persName corresp="AKEOGH">
+                            <forename>Andrew</forename>
+                            <surname>Keogh</surname>
+                          </persName></author>
+                          <title level="a">&#x201C;Report of the Librarian, <date notBefore="1934-07-01" notAfter="1935-06-30">July 1, 1934&#x2013;June 30, 1935&#x201D;</date></title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Bulletin of Yale University</hi></title>
+                          <imprint>
+                            <biblScope type="vol" n="32">32</biblScope>
+                            <biblScope type="issue" n="7">7</biblScope>
+                            <date when="1935-12-15">15 December 1935</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+
       <biblStruct xml:id="PICKERING">
         <monogr>
           <author>
@@ -6265,7 +6455,35 @@
                           </imprint>
                         </monogr>
                       </biblStruct>
-      
+
+                      <biblStruct xml:id="LEHMANNHAUPTBOOKINAMERICA">
+                        <monogr>
+                          <author>
+                            <persName corresp="HLH">
+                              <forename>Hellmut</forename>
+                              <surname>Lehmann&#x2010;Haupt</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">The Book in America: A History of the Making, the Selling, and the Collecting of Books in the United States</hi></title>
+                          <respStmt>
+                            <resp>In collaboration with</resp>
+                            <persName corresp="#RSGRANNISS">
+                              <forename>Ruth Shephard</forename>
+                              <surname>Granniss</surname>
+                            </persName>
+                            <persName corresp="#LCWROTH">
+                              <forename>Lawrence C.</forename>
+                              <surname>Wroth</surname>
+                            </persName>
+                          </respStmt>
+                          <imprint>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>R. R. Bowker</publisher>
+                            <date when="1939">1939</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+
       <biblStruct xml:id="LEIGHRHENISHALBUM">
         <monogr>
           <author>
@@ -6441,7 +6659,36 @@
           </imprint>
         </monogr>
       </biblStruct>
-      
+
+                      <biblStruct xml:id="LOOSADAM">
+                        <analytic>
+                          <author>
+                            <persName corresp="WHLOOS">
+                              <forename>William H.</forename>
+                              <surname>Loos</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Robert Borthwick Adam II&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">American Book&#x2010;Collectors and Bibliographers: Second Series</hi></title>
+                          <editor>
+                            <persName corresp="JROSENBLUM">
+                              <forename>Joseph</forename>
+                              <surname>Rosenblum</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Detroit, Mich.</pubPlace>
+                            <publisher>Gale Research Company</publisher>
+                            <publisher>Bruccoli Clark</publisher>
+                            <date when="1997">1997</date>
+                            <biblScope>3&#x2013;11</biblScope>
+                          </imprint>
+                        </monogr>
+                        <note>Vol. 187 of the <hi rend="italic">Dictionary of Literary Biography</hi>.</note>
+                      </biblStruct>
+
       <biblStruct xml:id="BYRONWORKS">
         <monogr>
           <author>
@@ -6617,7 +6864,36 @@
           </imprint>
         </monogr>
       </biblStruct>
-      
+
+                      <biblStruct xml:id="MAHONEYGOODSPEED">
+                        <analytic>
+                          <author>
+                            <persName corresp="MMAHONEY">
+                              <forename>Mary</forename>
+                              <surname>Mahoney</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;C. E. Goodspeed and Company (Boston, <date notBefore="1898" notAfter="1932">1898&#x2013;1932</date>)&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">American Literary Publishing Houses, 1638&#x2013;1899</hi></title>
+                          <editor>
+                            <persName corresp="PDZWONKOSKI">
+                              <forename>Peter</forename>
+                              <surname>Dzwonkoski</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Detroit, Mich.</pubPlace>
+                            <publisher>Gale Research Company</publisher>
+                            <publisher>Bruccoli Clark</publisher>
+                            <date when="1986">1986</date>
+                            <biblScope>180</biblScope>
+                          </imprint>
+                        </monogr>
+                        <note>Vol. 49, pt. 1 (A&#x2013;M) of the <hi rend="italic">Dictionary of Literary Biography</hi>.</note>
+                      </biblStruct>
+
       <biblStruct xml:id="MAIDMENTONLYPRINT">
         <analytic>
           <author>
@@ -6931,7 +7207,24 @@
       </imprint>
     </monogr>
   </biblStruct>
-  
+
+                      <biblStruct xml:id="METZDORFTINKERLIBRARY">
+                        <monogr>
+                          <author>
+                            <persName corresp="RFMETZDORF">
+                              <forename>Robert F.</forename>
+                              <surname>Metzdorf</surname>
+                            </persName>
+                          </author>
+                          <title level="m" type="main"><hi rend="italic">The Tinker Library</hi></title>
+                          <imprint>
+                            <pubPlace>New Haven, Conn.</pubPlace>
+                            <publisher>Yale University Library</publisher>
+                            <date when="1959">1959</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+
   <biblStruct xml:id="METZLERSPRANGER">
     <monogr>
       <author>
@@ -7592,6 +7885,35 @@
   </monogr>
 </biblStruct>
 
+                      <biblStruct xml:id="PATHAKTINKER">
+                        <analytic>
+                          <author>
+                            <persName corresp="SBPATHAK">
+                              <forename>Susanna Bartmann</forename>
+                              <surname>Pathak</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Chauncey Brewster Tinker&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">American Book&#x2010;Collectors and Bibliographers: First Series</hi></title>
+                          <editor>
+                            <persName corresp="JROSENBLUM">
+                              <forename>Joseph</forename>
+                              <surname>Rosenblum</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Detroit, Mich.</pubPlace>
+                            <publisher>Gale Research Company</publisher>
+                            <publisher>Bruccoli Clark</publisher>
+                            <date when="1994">1994</date>
+                            <biblScope>273&#x2013;81</biblScope>
+                          </imprint>
+                        </monogr>
+                        <note>Vol. 140 of the <hi rend="italic">Dictionary of Literary Biography</hi>.</note>
+                      </biblStruct>
+
 <biblStruct xml:id="PATTENDICKENSANDBOZ">
   <monogr>
     <author>
@@ -7653,10 +7975,10 @@
 </editor>
 <title level="m" type="main"><hi rend="italic">Thomas Lawrence: Regency Power and Brilliance</hi></title>
 <imprint>
-  <biblScope>217&#x2013;20</biblScope>
   <pubPlace>New Haven, Conn.</pubPlace>
   <publisher>Yale University Press</publisher>
   <date when="2010">2010</date>
+  <biblScope>217&#x2013;20</biblScope>
 </imprint>
 </monogr>
 </biblStruct>
@@ -9798,7 +10120,28 @@
     </imprint>
   </monogr>
 </biblStruct>
-                      
+
+                      <biblStruct xml:id="TINKERREFLECTIONS">
+                        <analytic>
+                          <author>
+                            <persName corresp="CBT">
+                              <forename>Chauncey Brewster</forename>
+                              <surname>Tinker</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Reflections of a Curator: An Address Delivered to the Staff of the Library on January 13, 1948&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Yale University Library Gazette</hi></title>
+                          <imprint>
+                            <biblScope type="vol" n="23">23</biblScope>
+                            <biblScope type="issue" n="1">1</biblScope>
+                            <date when="1948-07">July 1948</date>
+                            <biblScope type="pages">8&#x2013;18</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+
                       <biblStruct xml:id="TOOKEDIVERSIONS">
                         <monogr>
                           <author>
@@ -10311,7 +10654,7 @@
   </monogr>
 </biblStruct>
 
-<biblStruct xml:id="GOODSPEED">
+<biblStruct xml:id="WHITEHILLGOODSPEED">
   <analytic>
     <author>
       <persName corresp="WMWHITEHILL">
@@ -10587,10 +10930,7 @@ and Brian Harrison. 60 vols. Oxford: Oxford University Press, 2004. 3:6–7.
 Howatt, Henry R. “Glasgow Ruskin Society—No. 1.” Ruskin Reading Guild
 Journal, no. 1 (January 1889): 16–18. Howatt, Henry R. “Glasgow Ruskin
 Society—No. 3.” Ruskin Reading Guild Journal, no. 3 (March 1889): 87–90.
-.  Lehmann-Haupt, Hellmut. The Book in
-America: A History of the Making, the Selling, and the Collecting of Books
-in the United States. In collaboration with Ruth Shephard Granniss and
-Lawrence C. Wroth. New York: R. R. Bowker, 1939.  Memorabilia
+.    Memorabilia
 of the City of Perth. . . . Perth: William Morison, 1806. Margetson, Stella.
 Regency London. New York: Praeger, 1971. Moss, W. G. The History and
 Antiquities of the Town and Port of Hastings, Illustrated by a Series of
