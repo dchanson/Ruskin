@@ -14,7 +14,22 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>_xml/_Completed/witnesses</String>
+                                    <String>_xml/</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_In_Process/witnesses</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -44,21 +59,6 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>_xml/</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>_xml/_Completed/figures</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -74,7 +74,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>_xml/_Completed/letters/</String>
+                                    <String>_xml/_Completed/witnesses</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -89,7 +89,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>_xml/_In_Process/witnesses</String>
+                                    <String>_xml/_Completed/letters/</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
