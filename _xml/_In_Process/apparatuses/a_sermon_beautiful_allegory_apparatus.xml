@@ -20,7 +20,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#EAH">Eva Hoffmann</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -32,7 +32,7 @@
             <editionStmt>
                 <edition n="1.0">
                     <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
-                    <date when="2011-08-01">August 1, 2011</date>
+                    <date when="2019-12-04">December 4, 2019</date>
                     <!--The apparatus version for all first passes is 1.0.-->
                     <title>Apparatus Version 1.0</title>
                 </edition>
@@ -72,14 +72,15 @@
                 
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
-                    <p>MS II.</p>
+                    <p><title type="manuscript" corresp="#MSII">MS II</title>.</p>
                 </div>
                 
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p>February to March 1829.</p>
+                    <p><date notBefore="1829-02" notAfter="1829-03">February to March 1829</date>.</p>
                     
-                    <p>Since "A Sermon" ["beautiful allegory"] follows the draft of “May”, it can be dated somewhat later than "A Sermon" ["shut him up"].</p>
+                    <p>Since &#x201C;A Sermon&#x201D; [&#x201C;beautiful allegory&#x201D;] follows the draft of &#x201C;May&#x201D;, it can be dated somewhat later than 
+                        <ref type="apparatus" target="a_sermon_shut_him_up.php">&#x201C;A Sermon&#x201D; [&#x201C;shut him up&#x201D;]</ref>.</p>
                 </div>
                 
                 <div type="section" xml:id="COMPPUB">
@@ -89,7 +90,7 @@
                 
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
-                    <p>See the discussion of "A Sermon" ["shut him up"].</p>
+                    <p>See the discussion of <ref type="apparatus" target="a_sermon_shut_him_up.php#DISCUSSION">&#x201C;A Sermon&#x201D; [&#x201C;shut him up&#x201D;]</ref>.</p>
                 </div>
                 
             </div>
