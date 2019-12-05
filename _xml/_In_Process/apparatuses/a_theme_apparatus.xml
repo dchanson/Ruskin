@@ -18,7 +18,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#EAH">YEva Hoffmann</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -30,7 +30,7 @@
             <editionStmt>
                 <edition n="1.0">
                     <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
-                    <date when="2011-08-01">August 1, 2011</date>
+                    <date when="2019-12-04">December 4, 2019</date>
                     <!--The apparatus version for all first passes is 1.0.-->
                     <title>Apparatus Version 1.0</title>
                 </edition>
@@ -70,13 +70,13 @@
                 
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
-                    <p>MS II.</p>
+                    <p><title type="manuscript" corresp="#MSII">MS II</title> .</p>
                 </div>
                 
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p>February to March 1829.</p>
-                    <p>So dated by its position between "A Sermon" ["beautiful allegory"] and "On Skiddaw and Derwent Water" in MS II.</p>
+                    <p><date notBefore="1829-02" notAfter="1829-03">February to March 1829</date>.</p>
+                    <p>So dated by its position between <title type="sermon">A Sermon" ["beautiful allegory"]</title> and <title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATER">On Skiddaw and Derwent Water"</title> in <title type="manuscript" corresp="#MSII">MS II</title> .</p>
                 </div>
                 
                 <div type="section" xml:id="COMPPUB">
@@ -86,9 +86,9 @@
                 
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
-                    <p> Ruskin calls this piece “a theme”, rather than a “sermon”, 
+                    <p> <persName corresp="#JR">Ruskin</persName> calls this piece <title type="sermon">“a theme”</title>, rather than a “sermon”, 
                         possibly because he did not hear the text in church. The discourse reads like notes on an address to a missionary society. 
-                        Ruskin’s handwriting is unusually illegible for this piece.</p>
+                        <persName corresp="#JR">Ruskin</persName>’s handwriting is unusually illegible for this piece.</p>
                 </div>
             </div>
         </body>
