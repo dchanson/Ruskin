@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
-        <fileDesc xml:id="tite_of_work_note">
+        <fileDesc xml:id="provenance_sothebys_1931_note">
             <titleStmt>
-                <title type="main">Title of Work</title>
+                <title type="main"><orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> Sale of <persName corresp="#JR">Ruskin</persName> Manuscripts and Library, <date when="1931">1931</date></title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -19,7 +17,7 @@
                 </principal>
                 <respStmt>
                     <!--For xml:id, enter your first, middle, and last intials.-->
-                    <persName xml:id="YNH">Your Name Here</persName>
+                    <persName corresp="#LAL">Lauren A. Lambert</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -55,72 +53,367 @@
     </teiHeader>
     <text>
         <body>
-            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
-            <div type="note" subtype="subtype">
-                <head type="title">Sotheby's Sale of Ruskin Manuscripts and Library, 1931</head>
-                <p>On 18 May 1931, Sotheby &#x0026; Co. held a second sale of Ruskin's literary remains, 
-                    ten months following on the first, the <ref type="note" subtype="bibliographical" target="provenance_sothebys_1930_note.html">Sotheby's Sale of Ruskin Manuscripts and Library, 1930</ref>. 
-                    As described in the title of the catalogue, the sale represented 
-                    <ref type="bibliography" target="bibliography.html#SOTHEBYCAT1931"><hi rend="italic">The Final Portion of the Manuscripts &#x0026; Library of John Ruskin, 
-                        Removed from His Residence, Brantwood, Coniston, Which Is about To Be Offered for Sale, and the Property of the Late Joseph Arthur Palliser Severn, Esq., 
-                        Removed from 9, Warwick Square, S.W.; and . . . a Small Library, Principally of Modern Authors and of Finely Printed and Illustrated Books, the Property of Mrs. Mander, 
-                    Blacketts, Chorley Wood, Herts.</hi></ref>. 
-                    The 1930 sale had been the more consequential event, and neither of the Sotheby's sales was the sole occasion when Ruskin manuscripts were sold or given away 
-                    (see <ref type="essay" target="provenance_essay.html">Essay on Provenance</ref>), but the 1931 sale was nonetheless significant for the continuing dispersal of early manuscripts.</p>
-                <p>In the Ruskin manuscript portion of the sale, lot 27 included 7 items, of which 5 were early manuscripts 
-                    (<ref type="bibliography" target="bibliography.html#SOTHEBYCAT1931">Sotheby &#x0026; Co., <hi rend="italic">Catalogue of the Final Portion of the Manuscripts &#x0026; Library of John Ruskin</hi></ref>, 6). 
-                    The catalogue, unlike that for the 1930 sale, does not identify these manuscripts using the roman-numeral designations that Collingwood established in 
-                    &#x201C;Preliminary Note on the Original MSS. of the Poems&#x201D; for the <hi ref="italic">Poems</hi> (1891). That source may have supplied summary descriptions of the contents of two manuscripts 
-                    (MS VI, MS X), but the other three early manuscripts in this lot are not found in the &#x201C;Preliminary Note,&#x201D; since they probably did not exist as a bound compilation at that time.</p>
-                <p>In fact, if in the 1930 sale the lots containing early manuscripts were presented as if stamped with the scholarly imprimatur of Collingwood's <hi rend="italic">Poems</hi> (1891)&#x2014;and 
-                    with no reference to the <ref type="note" subtype="bibliographical" target="library_edition_note.xml">Library Edition</ref> (see 
-                    <ref type="note" subtype="bibliographical" target="provenance_sothebys_1930_note.html">Sotheby's Sale of Ruskin Manuscripts and Library, 1930</ref>)&#x2014;the lots 
-                    in the 1931 sale seem associated more with Cook and Wedderburn's activities. 
-                    Instead of the elegant blue-morocco bindings and slipcases, which had been constructed for most of the early manuscripts gathered for the 1930 sale, 
-                    and at least some of which bindings had probably been made when Collingwood was editing <hi rend="italic">Poems</hi> (1891), 
-                    most of the manuscripts in the 1931 sale were bound in "cloth"&#x2014;that is, the red buckram used when the editors were working through the editing of the Library Edition 
-                    (see <ref type="note" subtype="bibliographical" target="provenance_brantwood_note.php">Provenance of Early Manuscripts at Brantwood</ref>).</p>
-                <p>Of the seven items in lot 27, the following five pertain to <hi rend="italic">ERM</hi>:
-                    <list type="ordered">
-                        <item n="1">Item I, <ref type="ms" target="msvi.html">MS VI</ref>, limp roan, 12.75 &#x00D7; 4.5 in. The catalogue describes the contents as: 
-                            "First drafts of the Iteriad and other Poems. Essay on the Comparative Advantages of Music and Painting (1838); Macbeth (prose)." This description of the contents could have been summarized 
-                            from Collingwood, &#x201C;Preliminary Note,&#x201D; or from the revised version of the &#x201C;Preliminary Note,&#x201D; in the Library Edition.</item>
-                        <item n="2">Item II, <ref type="apparatus" target="msia_apparatus.html">MS IA</ref></item>
-                        <item n="3">Lot 112, "Early Poems and Juvenilia," consisting of six blue-morocco slipcases containing early manuscripts, as follows.</item>
-                        <item>
-                            <list>
-                                <item>A slipcase, <ref type="note" subtype="bibliographical" target="harry_lucy_poems_c_note.html">HARRY &#x0026; LUCY &#x007C; POEMS &#x007C; &#x0026;c</ref>, 
-                                    containing <ref type="apparatus" target="msi_apparatus.html">MS I</ref>, 
-                                    <ref type="apparatus" target="msii_apparatus.html">MS II</ref>, 
-                                    <ref type="apparatus" target="msiii_apparatus.html">MS III</ref>, 
-                                    <ref type="apparatus" target="msiiia_apparatus.html">MS IIIA</ref>, and 
-                                    <ref type="apparatus" target="msiv_apparatus.html">MS IV</ref>.</item>
-                                <item>A slipcase, <ref type="note" subtype="bibliographical" target="juvenilia_note.html">RUSKIN &#x007C; MS. &#x007C; JUVENILIA</ref>, 
-                                    containing <ref type="apparatus" target="msja_apparatus.html">MS Juvenilia A</ref>, 
-                                    <ref type="apparatus" target="msjb_apparatus.html">MS Juvenilia B</ref>, 
-                                    <ref type="apparatus" target="msjc_apparatus.html">MS Juvenilia C</ref>.</item>
-                                <item>A slipcase, RUSKIN &#x007C; MS. &#x007C; POEMS &#x007C; 1829&#x2013;32 &#x007C; 1902, containing <ref type="apparatus" target="msv_apparatus.html">MS V</ref>.</item>
-                                <item>A slipcase, RUSKIN &#x007C; MS. &#x007C; ITERIAD &#x007C; &#x0026;c &#x007C; 1902, containing <ref type="apparatus" target="msvii_apparatus.html">MS VII</ref>.</item>
-                                <item>A slipcase, RUSKIN &#x007C; MS. &#x007C; POEMS &#x007C; ETC. &#x007C; 1831&#x2013;38, containing <ref type="apparatus" target="msviii_apparatus.html">MS VIII</ref>.</item>
-                                <item>A slipcase, RUSKIN &#x007C; MS. &#x007C; POEMS &#x007C; 1833, containing <ref type="apparatus" target="msix_apparatus.html">MS IX</ref>.</item>
-                            </list>
-                        </item>
-                        <item n="4">Lot 113, "The Poetry of Architecture and Modern Painters."</item>
-                        <item n="5">Lot 114, "The King of the Golden River."<!-- describe slipcase --></item>
-                    </list>
-                </p>
-                <p>Sotheby’s 1931.—Much clearer documentation traces juvenilia included in lot 27 of the second Sotheby’s sale, 18 May 1931. Item I of lot 27 is MS VI; item II is MS IA; item III is MS X; item IV is MS XB; and item V is MS IVD (Sotheby Cat. 1931, 6). (A significant item formerly in MS X, the 1830 diary, had been separated prior to the sale. See TLC, 4; RBB, 49; and Sharp below.) In his memoirs, Goodspeed mentions purchasing the items in this lot (YB 267–68), and he later issued an undated catalog of Goodspeed’s Book Shop listing the entirety of lot 27 as “manuscripts 1825–1840” (Goodspeed, Cat., items 79–83, pp. 18–22). Goodspeed was a major bidder at the 18 May sale, buying not just “one or two more manuscripts” (RBB, 138) but at the very least lots 27–29 and 31, with each of these lots comprising numerous and varied manuscripts.
-                    Three of the early manuscripts that came into Goodspeed’s possession (MSS IVD, VI, XB) were sold in 1939 to the Princeton University Library, along with several other items that he had acquired at the 1931 sale—a quite ambitious purchase by the library.	The final item in Thorp’s description consists of six notebooks, including two containing studies for The Seven Lamps of Architecture. I have not been able to examine these, and they are difficult to trace in the published accounts. I find no such specific listing in Goodspeed, Cat., unless the six were included in item 40, sixteen “Sketch Books” (p. 11); however, only eight of the sixteen were known to have remained to Goodspeed in 1933, when the dealer offered them along with all his Ruskin drawings to Whitehouse, and Whitehouse is believed to have acquired this lot in 1936 (RBB 138–39). I am also unable to find a listing specifically matching the Princeton notebooks in the Sotheby’s catalogs. They might have formed part of lot 122, “Miscellaneous Note Books,” from the 1930 sale, of which Hogan lists only nine as coming to Yale through Goodspeed (pp. 67–68; and see n. 31, above). The notebooks might also have derived from the 20 May 1931 Sotheby’s sale of Ruskin drawings, at which Goodspeed was represented by Ralph Brown (RBB, 138; and see, e.g., Sotheby & Co., Catalogue of the Collection of Pictures and Drawings, formerly the property of the late Professor John Ruskin . . . , 20 May 1931, item 9). Prior to the Princeton purchase, Goodspeed had offered all his Ruskin drawings to Whitehouse, who finally agreed to a purchase in 1936 (RBB, 136–39). Although the correspondence suggests that Goodspeed sent all the drawings in his possession for Whitehouse’s approval and that Whitehouse retained the entire lot, in 1944 Goodspeed was still able to donate fourteen “drawings and paintings” to Yale, following the dealer’s 1941 fire.
-                    A decade after the Sotheby sale, the items remaining from lot 27 that were not sold to Princeton remained in Goodspeed’s house when it caught fire in February 1941 (Hogan, 69). Having rescued many books and manuscripts from the catastrophe, Goodspeed began making gifts of Ruskin manuscripts to Yale, starting in March 1941 with the manuscript of Praeterita. The items remaining from the 1931 purchase of juvenilia (MSS IA, X) were also fortunately rescued, and these were donated to Yale in 1942 and 1943. The contents of MSS IA and X had been disassembled from Wedderburn’s bindings, many individual items had been charred around the edges, and a few may have been destroyed completely.	These acquisition notices in YULG mention only one other manuscript, the Laws of Fiesole, of those that Goodspeed purchased in 1931 and that have not been otherwise accounted for in the preceding discussion (see also part 2, MS IA, “Description”). . . . [information to come] The reconstruction of the contents of MSS IA and X, before and after Goodspeed’s fire, requires detailed discussion, which is provided in part 2.
-                    Throughout this edition, the preceding discussion is designated in shorthand as Sotheby’s 1931.</p>
-                <p>Body paragraph containing a list:
-                    <list type="ordered">
-                        <item n="1">First item in the list.</item>
-                        <item n="2">Second item.</item>
-                        <item n="3">Third item.</item>
-                    </list>
-                </p>
-                <p>Body paragraph.</p>
+            <div type="note" subtype="bibliographical">
+                <head type="title"><orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> Sale of <persName corresp="#JR">Ruskin</persName> Manuscripts and Library, <date when="1931">1931</date></head>
+                <p>On <date when="1931-05-18">18 May 1931</date>, <orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName> held a second sale of <persName corresp="#JR">Ruskin</persName>&#x02BC;s literary remains, 
+                    ten months following on the first, the <ref type="note" subtype="bibliographical" target="provenance_sothebys_1930_note.php"><orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> Sale of <persName corresp="#JR">Ruskin</persName> Manuscripts and Library, <date when="1930">1930</date></ref>. 
+                    As described in the title of the <date when="1931">1931</date> catalogue, the sale represented 
+                    <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">The Final Portion of the Manuscripts &#x0026; Library of <persName corresp="#JR">John Ruskin</persName>, 
+                        Removed from His Residence, <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName>, <placeName corresp="#CONISTON">Coniston</placeName>, Which Is about To Be Offered for Sale, and the Property of the Late <persName corresp="#AS">Joseph Arthur Palliser Severn</persName>, Esq., 
+                        Removed from <placeName type="building" corresp="#9WARWICKSQ">9, Warwick Square</placeName>, S.W.</hi></title>. The auction also included a 
+                        <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Small Library, Principally of Modern Authors and of Finely Printed and Illustrated Books, the Property of Mrs. Mander, Blacketts, Chorley Wood, Herts</hi></title></ref>. 
+                    On balance, the <date when="1930">1930</date> sale had been the more significant of the two <orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> sales of <persName corresp="#JR">Ruskin</persName> manuscripts, 
+                    but the <date when="1931">1931</date> sale is important to <hi rend="italic">ERM</hi> for the continuing dispersal of early manuscripts.</p>
+                
+                <div type="section" xml:id="CONTENTS">
+                    <head type="section">The Contents of the Sale</head>
+                    
+                    <p>The catalogue for the <persName corresp="#JR">Ruskin</persName> portion of the sale is subdivided into two sections: (1) &#x201c;Books and Manuscripts 
+                        (Principally from the Collection of John Ruskin), the Property of the Late <persName corresp="#AS">Joseph Arthur Palliser Severn</persName>, Esq., 
+                        removed from <placeName type="building" corresp="#9WARWICKSQ">9, Warwick Square</placeName>, S.W.&#x201d;; and 
+                        (2) &#x201c;The Final Portion of the Manuscripts and Library of <persName corresp="#JR">John Ruskin</persName>, 
+                        removed from his residence, <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName>, <placeName corresp="#CONISTON">Coniston</placeName>, 
+                        which is about to be offered for sale&#x201d;. The latter, advertised as the &#x201c;final portion&#x201d;, was therefore a continuation of the 
+                        <ref type="note" subtype="bibliographical" target="provenance_sothebys_1930_note.php"><orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> Sale of <persName corresp="#JR">Ruskin</persName> Manuscripts and Library, <date when="1930">1930</date></ref>, 
+                        removed from <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName> with the consent of <persName corresp="#AS">Arthur Severn</persName> and <persName corresp="#JR">Ruskin</persName>&#x02bc;s trustees, 
+                        as opposed to the sale of items conceived as belonging the <orgName corresp="#SEVERNFAMILY">Severns</orgName>, removed the their town residence, though some of those items originated in the <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName> library. 
+                        <ref type="note" subtype="biographial" target="severn_arthur_note.php">Arthur Severn</ref> died in <date when="1931">1931</date>.</p>
+                    
+                    <p>The <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName> portion of the sale was further subdivided, like the <date when="1930">1930</date> sale, between &#x201c;Autograph Manuscripts of <persName corresp="#JR">John Ruskin</persName>&#x201d; and &#x201c;Books&#x201d; 
+                        as well as some &#x201c;Drawings by <persName corresp="#CKG">Kate Greenaway</persName>&#x201d;&#x2014;the latter, though a small group compared to the <persName corresp="#CKG">Greenaway</persName> lots disposed of in the <date when="1930">1930</date> sale, 
+                        deemed deserving of a representative plate in the catalogue, 
+                        just as the <title type="archive" corresp="#GREENAWAYBRANTWOOD">Greenaway collection</title> had featured prominently in the <date when="1930">1930</date> sale 
+                        and was generously illustrated in the catalogue.</p>
+                    
+                    <p>Of particular relevance to <hi rend="italic">ERM</hi> was the first lot in the &#x201c;Autograph Manuscripts&#x201d; portion of the sale&#x2014;lot 27, 
+                        &#x201c;Early Poetry and Prose Writings, <date when="1830">1830</date>, etc.&#x201d;. The lot consisted of seven items, five of which are comprised within <hi rend="italic">ERM</hi>. The following list compiles the items  
+                        with their respective descriptions as found in the <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName> <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref> (p. 6), 
+                        along with links to their manuscript descriptions as found in <hi rend="italic">ERM</hi>.</p>
+                    
+                    <p>The <date when="1931">1931</date> <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title>, unlike the <date when="1930">1930</date> <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1930"><title type="catalogue" corresp="#SOTHEBYCAT1930"><hi rend="italic">Catalogue</hi></title></ref>, 
+                        does not identify the items of early manuscripts by referring explicitly to the roman&#x2010;numeral designations that <persName corresp="#WGC">W. G. Collingwood</persName> established in 
+                        <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTE">&#x201C;Preliminary Note on the Original MSS. of the Poems&#x201D;</title> for the <ref type="note" subtype="bibliographical" target="poems_1891_note.php"><title type="book" corresp="#JRPOEMS1891"><hi rend="italic">Poems</hi> (<date when="1891">1891</date>)</title></ref>, 
+                        although the compilers may have consulted the <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTE">&#x201C;Note&#x201D;</title>. 
+                        They appear to have relied more heavily on <persName corresp="#AW">Alexander Wedderburn</persName>&#x02bc;s holograph table of contents pages that were bound with the respective items.</p>
+                    
+                        <list type="ordered">
+                            <item n="1" xml:id="ITEM1">Item I; known in <hi rend="italic">ERM</hi>, and in <persName corresp="#WGC">Collingwood</persName>, <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTE">&#x201C;Note&#x201D;</title>, 
+                                as <ref type="apparatus" target="msvi_apparatus.php"><title type="manuscript" corresp="#MSVI">MS VI</title></ref>.
+                                <list><item>Described in <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 
+                                    as limp roan, 12.75 &#x00D7; 4.5 in.; contents: &#x201C;First drafts of the 
+                                    <title type="poem" corresp="#JRITERIAD">Iteriad</title> and other Poems. 
+                                    <title type="essay" corresp="#JRMUSICANDPAINTING">Essay on the Comparative Advantages of Music and Painting</title> (<date when="1838">1838</date>); 
+                                    <title type="story" corresp="#JRMACBETH">Macbeth</title> (prose)&#x201D;. The <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title> description may have been derived without acknowledgment from 
+                                    <persName corresp="#WGC">Collingwood</persName>, <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTE">&#x201C;Note&#x201D;</title> 
+                                    (<ref type="bibliography" target="bibliography.php#POEMS4D1891"><title type="book" corresp="#POEMS4D1891"><hi rend="italic">Poems</hi> [4<hi rend="superscript">o</hi></title>, <date when="1891">1891</date>]</ref>, 1:263; 
+                                    <ref type="bibliography" target="bibliography.php#POEMS8D1891"><title type="book" corresp="#POEMS8D1891"><hi rend="italic">Poems</hi> [8<hi rend="superscript">o</hi>, 1891]</title></ref>, 1:264&#x2013;65).</item></list></item>
+                            <item n="2" xml:id="ITEM2">Item II; known in <hi rend="italic">ERM</hi>, and in <persName corresp="#WGC">Collingwood</persName>, <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTEREV">&#x201C;Note&#x201D;</title> 
+                                (as updated for the Library Edition), as <ref type="apparatus" target="msia_apparatus.php"><title type="manuscript" corresp="#MSIA">MS IA</title></ref>.
+                                <list><item>Contents described in <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 
+                                    as &#x201C;Early Poems. Birthday Poems to his Father, <date when="1827">1827</date>, etc. <title type="drama" corresp="#JRASCENTSTBERNARD">The Hospice of St. Bernard</title>, 24 pp.; and other poems". 
+                                    The <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title> description was probably <hi rend="italic">not</hi> based on the updated <persName corresp="#WGC">Collingwood</persName> <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTEREV">&#x201C;Note&#x201D;</title> 
+                                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:530), 
+                                    which was the sole published description available at the time, but which does not mention <title type="drama" corresp="#JRASCENTSTBERNARD">&#x201c;The Hospice of St. Bernard&#x201d;</title>; 
+                                    rather, the description was likely based on <persName corresp="#AW">Alexander Wedderburn</persName>&#x02bc;s holograph <title type="bibliography_text" corresp="#WEDDERBURNMSIACONTENTS">table of contents</title> 
+                                    bound with <title type="manuscript" corresp="#MSIA">MS IA</title>.</item></list></item>
+                            <item n="3" xml:id="ITEM3">Item III, known in <hi rend="italic">ERM</hi>, and in <persName corresp="#WGC">Collingwood</persName>, <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTE">&#x201C;Note&#x201D;</title>, 
+                                as <ref type="apparatus" target="msx_apparatus.php"><title type="manuscript" corresp="#MSX">MS X</title></ref>.
+                                <list><item>Contents described in <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 
+                                    as &#x201C;<title type="poem" corresp="#JRPOETICALTOUR1835">The Poetical Tour of 1835</title>, 
+                                    <ref type="note" target="jr_to_jjr_1836-03-31_al_apparatus.php"><title type="letter" corresp="#jr_to_jjr_1836-03-31">Letter to his Father in verse, 31 <hi rend="italic">March</hi>, 1836</title></ref>, 
+                                    and much later in date <title type="poem" corresp="#JRPEACESONG">The Peace Song</title> and <title type="poem" corresp="#JRZODIACSONG">The Zodiac Song</title>, and others [<hi rend="italic">sic</hi>] pieces&#x201d; 
+                                    The <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title> description could not have been based on the original <persName corresp="#WGC">Collingwood</persName>, <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTE">&#x201C;Note&#x201D;</title>, 
+                                    since only the revised version of the <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTE">&#x201C;Note&#x201D;</title> 
+                                    (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:534), 
+                                    mentions <title type="poem" corresp="#JRPEACESONG">&#x201c;The Peace Song&#x201d;</title> and <title type="poem" corresp="#JRZODIACSONG">&#x201c;The Zodiac Song&#x201d;</title>, 
+                                    which were added to this collection after <persName corresp="#WGC">Collingwood</persName> first described it. The description may also have been based on a 
+                                    holograph title page made for <title type="manuscript" corresp="#MSX">MS X</title> by <persName corresp="#AW">Alexander Wedderburn</persName>, but this page appears not to have survived, if it ever existed.</item></list></item>
+                            <item n="4" xml:id="ITEM4">Item IV, <ref type="apparatus" target="early_prose_writings_apparatus.php"><title type="manuscript" corresp="#EARLYPROSEWRITINGS">&#x201c;Early Prose Writings&#x201d;</title></ref>.
+                                <list><item>Contents described in <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 
+                                    as &#x201C;<title type="composite" corresp="#JRCHRONICLESOFSTBERNARD">Chronicles of St. Bernard</title>, <title type="story" corresp="#JRVELASQUEZ">Velasquez</title>, 
+                                    <title type="essay" corresp="#JRMUSICANDPAINTING">Essay on Music and Painting&#x201d;</title>.</item></list></item>
+                            <item n="5" xml:id="ITEM5">Item V, <ref type="apparatus" target="early_geology_apparatus.php"><title type="manuscript" corresp="#EARLYGEOLOGY">&#x201c;Early Geology&#x201d;</title></ref>.</item>
+                            <item n="6" xml:id="ITEM6">Item VI, <title type="essay" corresp="#JRESSAYONBAPTISM">&#x201c;Essay on Baptism&#x201d;</title> 
+                                (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 12:573&#x2013;89).</item>
+                            <item n="7" xml:id="ITEM7">Item VII, corrected proof, <title type="essay" corresp="#JRREVLINDSAYSKETCHES">&#x201c;Lord Lindsay on the History of Christian Art&#x201d; (review, <title type="book" corresp="#LINDSAYPROGRESSIONBYANTAGONISM"><hi rend="italic">Progression by Antagonism</hi></title> and <title type="book" corresp="#LINDSAYSKETCHES"><hi rend="italic">Sketches of the History of Christian Art</hi></title> by <persName corresp="#LLINDSAY">Lord Lindsay [Alexander William Crawford, earl of Crawford and earl of Balcarres</persName> (<date notBefore="1812" notAfter="1880">1812&#x2013;80</date>)]</title>) 
+                                (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 12:167&#x2013;248).</item>
+                        </list>
+                    
+                    <p>Items II&#x2013;VII, as a group, are described in <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 
+                        as &#x201c;all bound in cloth&#x201d;, with Item IV further specified as a &#x201c;folio&#x201d;. The &#x201C;cloth&#x201D; is the red buckram binding that was typically employed by <persName corresp="#ETC">E. T. Cook</persName> and <persName corresp="#AW">Alexander Wedderburn</persName> 
+                        as they arranged <persName corresp="#JR">Ruskin</persName>&#x02bc;s papers and worked through the editing of the <ref type="note" subtype="bibliographical" target="library_edition_note.php"><title type="book" corresp="#JRWORKSLE">Library Edition</title></ref> 
+                        (see <ref type="note" subtype="bibliographical" target="provenance_brantwood_note.php">Provenance of Early Manuscripts at <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName></ref>).</p>
+                    
+                    <p>A significant item formerly in <title type="manuscript" corresp="#MSX">MS X</title>, the <date when="1830">1830</date> diary, 
+                        had been separated prior to the sale. See <ref type="bibliography" target="bibliography.php#TOURLAKES"><persName corresp="#JR">Ruskin</persName>, <title type="diary" corresp="#TOURLAKES"><hi rend="italic">A Tour to the Lakes in Cumberland</hi></title>, ed. <persName corresp="#VAB">Burd</persName></ref>, 4; 
+                        <ref type="bibliography" target="bibliography.php#DEARDENRUSKINBB"><persName corresp="#JSD">Dearden</persName>, <title type="book" corresp="#DEARDENRUSKINBB"><hi rend="italic"><persName corresp="#JR">Ruskin</persName>, <orgName corresp="#BEMBRIDGESCHOOL">Bembridge</orgName>, and <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName></hi></title></ref>, 49; 
+                        and see <ref type="note" subtype="biographical" target="sharp_f_j_note.php"><persName corresp="#FJS">F. J. Sharp (1880&#x2013;1957)</persName></ref>.</p>
+                </div>
+                
+                <div type="section" xml:id="BUYERS">
+                    <head type="section">The Buyers</head>
+                    
+                    <div type="subsection" xml:id="GOODSPEED">
+                        <head type="subsection"><persName corresp="#CG">Charles Eliot Goodspeed</persName></head>
+                    
+                        <p>Lot 27 found a ready buyer in 
+                            <ref type="note" subtype="biographical" target="goodspeed_charles_note.php"><persName corresp="#CG">Charles E. Goodspeed</persName> [<date notBefore="1867" notAfter="1950">1867&#x2013;1950</date>]</ref>. 
+                            He acquired, not just &#x201C;one or two more manuscripts&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#DEARDENRUSKINBB"><persName corresp="#JSD">Dearden</persName>, <title type="book" corresp="#DEARDENRUSKINBB"><hi rend="italic"><persName corresp="#JR">Ruskin</persName>, <orgName corresp="#BEMBRIDGESCHOOL">Bembridge</orgName>, and <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName></hi></title></ref>, 138), 
+                            but the seven bound volumes of manuscript in lot 27, as well as the substantial lots 17, 25, 28, 29, and 31&#x2014;manuscripts 
+                            dating from the <date notBefore="1856" notAfter="1889">late 1850s through the 1880s</date>, as well as autograph letters, the entire purchase totaling &#x00A3;150. 
+                            He wanted, but did not obtain, lot 30 (<orgName corresp="#OXFORDU">Oxford</orgName> lectures, which would have complemented items in lots 28 and 29); 
+                            and he missed out on <persName corresp="#JKEATS">Keats</persName>&#x2010;related materials in lots 18, 23, and 26b
+                            (<title type="letter" corresp="#b_f_stevens_firm_to_goodspeed_1931-05-21">telegram, <orgName corresp="BFSTEVENSBROWN">B. F. Stevens &#x0026; Brown</orgName> to <persName corresp="#CG">Goodspeed</persName>, <date when="1931-05-21">21 May 1931</date></title>, 
+                            <title type="letter" corresp="#b_f_stevens_firm_to_goodspeed_1931-05-19">telegram, <orgName corresp="BFSTEVENSBROWN">B. F. Stevens &#x0026; Brown</orgName> to <persName corresp="#CG">Goodspeed</persName>, <date when="1931-05-19">19 May 1931</date></title>, 
+                            in <ref type="bibiography" target="bibliography.php#BROWNALSTOGOODSPEEDBEINECKE"><persName corresp="#BFSTEVENS">Stevens, B. F.</persName>, and <persName corresp="RBROWN">Brown</persName>. Letters, telegrams, and other materials to <persName corresp="#CG">Charles Goodspeed</persName></ref>). 
+                            The purchase is consistent with <persName corresp="#CG">Goodspeed</persName>&#x02bc;s strategy of pursuing materials related especially 
+                            to the earlier and later <persName corresp="#JR">Ruskin</persName>, which invited less competition than did materials related to the familiar central core of <persName corresp="#JR">Ruskin</persName>&#x02bc;s work, 
+                            <title type="book" corresp="#JRMODERNPAINTERS"><hi rend="italic">Modern Painters</hi></title>, <title type="book" corresp="#JRSEVENLAMPS"><hi rend="italic">Seven Lamps</hi></title>, and <title type="book" corresp="#JRSTONESOFVENICE"><hi rend="italic">Stones</hi></title>.</p>
+                        
+                        <p>Whereas <persName corresp="#CG">Goodspeed</persName> had been able to re&#x2010;sell most of his acquistions from the  
+                            <ref type="note" subtype="bibliographical" target="provenance_sothebys_1930_note.php"><date when="1930">1930</date> <orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> sale</ref> to <orgName corresp="#YALE">Yale</orgName> almost immediately, 
+                            in <date when="1931">1931</date> apparently a first option to <orgName corresp="#YALE">Yale</orgName> resulted in the sale of only two items 
+                            (see <ref type="internal" corresp="#YALE1931"><persName corresp="#CG">Goodspeed</persName>, the <date when="1931">1931</date> Acquisitions, and <orgName corresp="#YALEUNIVLIBRARY">Yale University Library</orgName></ref>; 
+                            and for items that came to <orgName corresp="#YALE">Yale</orgName> later as gifts from <persName corresp="#CG">Goodspeed</persName>, see
+                            <ref type="internal" corresp="#YALE1941">The Damage by Fire to <persName corresp="#CG">Goodspeed</persName>&#x02BC;s <date when="1931">1931</date> Acquisitions and Their Donation to <orgName corresp="#YALEUNIVLIBRARY">Yale University Library</orgName></ref>). 
+                            Accordingly, <persName corresp="#CG">Goodspeed</persName> prepared a catalogue, 
+                            <ref type="bibliography" target="bibliography.php#GOODSPEEDCAT"><orgName corresp="#GOODSPEEDSBOOKSHOP">Goodspeed&#x02BC;s Book Shop</orgName>, <title type="catalogue" corresp="#GOODSPEEDCAT"><hi rend="italic">A Catalogue of Paintings, Drawings, and Manuscripts by <persName corresp="#JR">John Ruskin</persName>; To which is added a description of <persName corresp="#JR">Ruskin</persName>&#x02bc;s Celestial Globe and of a few Books from his Library at <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName></hi></title></ref> 
+                            (undated, but <persName corresp="#JSD">J. S. Dearden</persName> believes it was issued and a copy sent to <persName corresp="#JHW">J. H. Whitehouse</persName> &#x201c;either <date notBefore="1931-07" notAfter="1932-06">late in 1931 or early in 1932</date>&#x201d; 
+                            [<ref type="bibliography" target="bibliography.php#DEARDENRUSKINBB"><persName corresp="#JSD">Dearden</persName>, <title type="book" corresp="#DEARDENRUSKINBB"><hi rend="italic"><persName corresp="#JR">Ruskin</persName>, <orgName corresp="#BEMBRIDGESCHOOL">Bembridge</orgName>, and <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName></hi></title></ref>, 138]). 
+                            The catalogue was not only handsomely designed and printed, and generously illustrated with reproductions of drawings, photographs, and manuscripts; 
+                            it was also a worthy scholarly achievement. The <date when="1931">1931</date> 
+                            <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 
+                            described the lots sketchily and in briefest terms, making no effort to reference <persName corresp="#WGC">Collingwood</persName>&#x02bc;s 
+                            <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTE">&#x201C;Preliminary Note on the Original MSS. of the Poems&#x201D;</title> 
+                            in either the <title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTEREV">&#x201C;Note&#x201D;</title>&#x02bc;s original or updated version&#x2014;a 
+                            basic scholarly responsibility that the <date when="1930">1930</date> catalogue had observed. Many of the items in lots 27&#x2013;30 were miscellanies of manuscripts, assembled and bound in red buckram 
+                            in the course of <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn</persName>&#x02bc;s labor on the <title type="book" corresp="#JRWORKSLE">Library Edition</title>. The <title type="catalogue" corresp="#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02bc;s catalogue</title> described these compilations by citing a few titles of individual manuscripts apparently at random. 
+                            In <title type="catalogue" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>&#x02bc;s catalogue</title>, while the red&#x2010;buckram&#x2010;bound compilations were maintained in their integrity 
+                            as they had come from <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName>, each of the items contained therein are separately and accurately described with their respective titles, 
+                            dates of composition, number of pages, medium, and in some cases dimensions. Many of the items&#x02bc; descriptions are enhanced, moreover, with sample transcriptions 
+                            from a manuscript, or with substantial quotations from <persName corresp="#JR">Ruskin</persName>&#x02bc;s works to contextualize an item. While <persName corresp="#CG">Goodspeed</persName> must have found the time for such meticulous care 
+                            owing to slow sales&#x2014;the <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02bc;s <persName corresp="#JR">Ruskin</persName> sales fell at the start of the Great Depression&#x2014;the dealer far exceeded his basic responsibility and lavished his extensive understanding of and affection for <persName corresp="#JR">Ruskin</persName>&#x02bc;s work on the catalogue.</p>
+                        
+                        <p><persName corresp="#CG">Goodspeed</persName>&#x02bc;s affection is especially marked in his descriptions of the juvenilia. For example, the catalogue provides detailed description of &#x201c;four very early MSs&#x201d;, 
+                            including the <title type="manuscript" corresp="#MSIA">MS IA</title> draft fragments of <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>. The item is illustrated by 23 lines of verse, which <persName corresp="#JR">Goodspeed</persName> would have to have transcribed himself, 
+                            and contextualized with the relevant passage in <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title> describing how <persName corresp="#JR">Ruskin</persName> read <persName corresp="#WS">Scott</persName> during boyhood travels to <placeName corresp="#PERTH">Perth</placeName> 
+                            (<ref type="bibliography" target="bibliography.php#GOODSPEEDCAT"><title type="catalogue" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, <hi rend="italic">Catalogue</hi></title></ref>, no. 79 [p. 18]). 
+                            The enthusiasm for these early manuscripts carried over to <persName corresp="#CG">Goodspeed</persName>&#x02bc;s memoir: although his wide&#x2010;ranging acquisitions from the <date when="1931">1931</date> sale take up more than ten pages 
+                            of description in his catalogue, his account of the sale in <title type="book" corresp="#GOODSPEEDYANKEEBOOKSELLER"><hi rend="italic">Yankee Bookseller</hi></title> focuses on only &#x201c;two examples of early writings in prose and verse&#x201d;&#x2014;namely, 
+                            two other pieces from the &#x201c;four very early MSs&#x201d;, the <title type="manuscript" corresp="#MSIA">MS IA</title> version of 
+                            <ref type="witness" target="time_blank_verse_msia.php"><title type="poem" corresp="#JRTIMEBLANKVERSE">&#x201c;Time: Blank Verse&#x201d;</title></ref>, 
+                            &#x201c;written when <persName corresp="#JR">Ruskin</persName> was eight years old&#x201d;; and the 
+                            <ref type="apparatus" target="essay_on_painting_and_music_apparatus.php"><title type="essay" corresp="#JRMUSICANDPAINTING">&#x201c;Essay on the Relative Dignity of the Studies of Painting and Music&#x201d;</title></ref>, 
+                            described (as in the catalogue) using <persName corresp="#JR">Ruskin</persName>&#x02bc;s ironic remarks in <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title> about his boyhood proclivity for deploying such treatises by way of courtship 
+                            (<ref type="bibliography" target="bibliography.php#GOODSPEEDYANKEEBOOKSELLER"><title type="book" corresp="#GOODSPEEDYANKEEBOOKSELLER"><hi rend="italic">Yankee Bookseller</hi></title></ref>, 267&#x2013;68). (Still later, <persName corresp="#CG">Goodspeed</persName> would again recommend the &#x201c;particular interest&#x201d; of the <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;Monastery&#x201d;</title> manuscript&#x2014;calling it 
+                            &#x201c;with one possible exception, . . . I imagine the earliest example known of <persName corresp="#JR">Ruskin</persName>&#x02BC;s handwriting&#x201d;&#x2014;though 
+                            in this context, a cover letter to <persName corresp="#CBT">Chauncey Brewster Tinker</persName> donating the manuscript to <orgName corresp="#YALE">Yale</orgName>, his enthusiasm was tempered by sadness mixed with relief 
+                            over the recovery of this manuscript from the fire&#x2010;damaged ruin of his personal library. 
+                            See <ref type="apparatus" target="msia_apparatus.php#PROVENANCE"><title type="manuscript" corresp="#MSIA">MS IA</title>: Provenance</ref>.)</p>
+                    </div>
+                    
+                    <div type="subsection" xml:id="PRINCETON">
+                        <head type="subsection"><persName corresp="#CG">Goodspeed</persName> and <orgName corresp="#PRINCETONLIBRARY">Princeton University Library</orgName></head>
+                        
+                        <p>In <date when="1939">1939</date>, prior to his house fire, <persName corresp="#CG">Goodspeed</persName> sold three of the early <persName corresp="#JR">Ruskin</persName> manuscripts comprising lot 27 
+                            to <orgName corresp="#PRINCETONLIBRARY">Princeton University Library</orgName>: <ref type="apparatus" target="msvi_apparatus.php"><title type="manuscript" corresp="#MSVI">MS VI</title></ref> 
+                            (<ref type="internal" target="#ITEM1">Contents of the Sale: Item I</ref>), <ref type="apparatus" target="early_prose_writings_apparatus.php"><title type="manuscript" corresp="#EARLYPROSEWRITINGS">&#x201c;Early Prose Writings&#x201d;</title></ref> 
+                            (<ref type="internal" target="#ITEM4">Contents of the Sale: Item IV</ref>), and <ref type="apparatus" target="early_geology_apparatus.php"><title type="manuscript" corresp="#EARLYGEOLOGY">&#x201c;Early Geology&#x201d;</title></ref> 
+                            (<ref type="internal" target="#ITEM5">Contents of the Sale: Item V</ref>) 
+                            (<title type="catalogue" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, <hi rend="italic">Catalogue</hi></title>, nos. 80&#x2013;82 [pp. 20&#x2013;21]).</p>
+                        
+                        <p>The sale also included later manuscripts, items from lots 28 and 29 that <persName corresp="#CG">Goodspeed</persName> had acquired in <date when="1931">1931</date>. These two lots were described respectively in 
+                            the <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Sotheby&#x02bc;s Catalogue</hi></title> 
+                            as &#x201c;Prose Writings, <date notBefore="1867" notAfter="1879">1867&#x2013;79</date>&#x201d; (items I, III&#x2013;VI, IX&#x2013;XI) and &#x201c;Prose Writings, <date notBefore="1881" notAfter="1885">1881&#x2013;85</date>&#x201d; (items III, VI&#x2013;VII), the items described as &#x201c;autograph manuscripts, corrected proofs, etc.&#x201d;, 
+                            each item &#x201c;interleaved and bound in cloth&#x201d; (i.e., <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn</persName>&#x02bc;s red buckram) and containing &#x201c;manuscript descriptions . . . in the handwriting of <persName corresp="#AW">Arthur [<hi rend="italic">sic</hi>] Wedderburn</persName>&#x201d; 
+                            (<ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>).</p>
+                        
+                        <p>These later manuscripts included in the <orgName corresp="#PRINCETONLIBRARY">Princeton</orgName> sale included various lectures, either published as parts of the <orgName corresp="#OXFORDU">Oxford</orgName> lectures, 
+                            <title type="book" corresp="#JRARATRAPENTELICI"><hi rend="italic">Aratra Pentelici</hi></title> 
+                            and <title type="book" corresp="#JREAGLESNEST"><hi rend="italic">The Eagle&#x02bc;s Nest</hi></title>, or otherwise connected with those teachings, 
+                            such as the unpublished lecture, <title type="essay" corresp="#JRSCHOOLOFFLORENCE">&#x201c;The School of Florence&#x201d;</title> (lot 28, Items III, VI). 
+                            Other lecture manuscripts included portions of <title type="essay" corresp="#JRVERONARIVERS">&#x201c;Verona and Its Rivers&#x201d;</title> (lot 28, Item IV), 
+                            and <title type="book" corresp="#JRSTORMCLOUD"><hi rend="italic">The Storm Cloud of the Nineteenth Century</hi></title> (lot 29, Item V; see <ref type="internal" target="#YALE1931"><persName corresp="#CG">Goodspeed</persName>, the 1931 Acquisitions, and <orgName corresp="#YALEUNIVLIBRARY">Yale University Library</orgName></ref>). 
+                           There were also reading notes on the <title type="book" corresp="#CARLYLEFREDERICK"><hi rend="italic">History of . . . Frederick the Great</hi></title> by <persName corresp="#TC">Thomas Carlyle</persName> 
+                            (lot 28, Item XI); and materials connected with <title type="book" corresp="#JRDEUCALION"><hi rend="italic">Deucalion</hi></title> (lot 28, Item X); 
+                            the <title type="essay" corresp="#JRESSAYONBAPTISM">&#x201c;Essay on Baptism&#x201d;</title> (lot 27, Item VI; <ref type="internal" target="#ITEM5">Contents of the Sale: Item VI</ref>); 
+                            <title type="book" corresp="#JRKNIGHTSFAITH"><hi rend="italic">A Knight&#x02bc;s Faith</hi></title> (part of <title type="book" corresp="#JRBIBLIOTHECAPASTORUM"><hi rend="italic">Bibliotheca Pastorum</hi></title>) (lot 29, Item VI); 
+                            <title type="book" corresp="#JRMORNINGSINFLORENCE"><hi rend="italic">Mornings in Florence</hi></title> (lot 28, Item V); 
+                            <title type="catalogue" corresp="#JRNOTESONPROUTANDHUNT"><hi rend="italic">Notes . . . on Samuel Prout and William Hunt</hi></title> (lot 28, Item IX); 
+                            <title type="book" corresp="#JROURFATHERS"><hi rend="italic">Our Fathers Have Told Us</hi></title> (including 
+                            <title type="essay" corresp="#JRBIBLEOFAMIENS"><hi rend="italic">&#x201c;The Bible of Amiens&#x201d;</hi></title> and <title type="essay" corresp="#JRVALLECRUCIS">&#x201c;Valle Crucis&#x201d;</title>) (lot 29, Items III, VII); 
+                            and <title type="book" corresp="#JRSTMARKSREST"><hi rend="italic">St. Mark&#x02bc;s Rest</hi></title> (lot 28, Item I). In 
+                            <title type="catalogue" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, <hi rend="italic">Catalogue</hi></title>, the items correspond to 
+                            nos. 84&#x2013;86, 89&#x2013;90, 92&#x2013;93, 96&#x2013;98, 100&#x2013;103 (pp. 22&#x2013;29). See also 
+                            <ref type="bibliography" target="bibliography.php#THORPRUSKINMANUSCRIPTS"><persName corresp="#WT">Thorp</persName>, <title type="essay" corresp="#THORPRUSKINMANUSCRIPTS">&#x201c;The Ruskin Manuscripts&#x201d;</title></ref>, 3&#x2013;9).</p>
+                        
+                        <p>Describing this collection in <date when="1940">1940</date>, 
+                            <ref type="note" subtype="biographical" target="thorp_willard_note.php"><persName corresp="#WT">Willard Thorp</persName> (<date notBefore="1111" notAfter="1111">0000&#x2013;0000</date>)</ref>, 
+                            professor of English at <orgName corresp="#PRINCETON">Princeton</orgName>, called the acquisition 
+                            &#x201c;notable for its spread, containing, as it does, examples of <persName corresp="#JR">Ruskin</persName>&#x02bc;s work from his boyish compositions 
+                            to the last efforts of his literary life when he was laying out projects which illness prevented him from completing&#x201d;. 
+                            The range of manuscripts, <persName corresp="#WT">Thorp</persName> explained, would afford <orgName corresp="#PRINCETON">Princeton</orgName> scholars the &#x201c;opportunity 
+                            to study <persName corresp="#JR">Ruskin</persName>&#x02bc;s manner of working . . . in all states from rough notes and first drafts to corrected proofs&#x201d;. 
+                            By emphasizing the scope and variety af the collection, <persName corresp="#WT">Thorp</persName> challenged the preeminence of &#x201c;the <orgName corresp="#MORGANLIBRARY">Morgan</orgName> and <orgName corresp="#HUNTINGTON">Huntington</orgName> libraries 
+                            and the university libraries of <orgName corresp="#HARVARDLIBRARY">Harvard</orgName> and <orgName corresp="#YALEUNIVLIBRARY">Yale</orgName> [which] are rich in <persName corresp="#JR">Ruskin</persName> materials&#x201d;, since <orgName corresp="#PRINCETON">Princeton</orgName> could also show &#x201c;reason to be proud 
+                            of its share of the <persName corresp="#JR">Ruskin</persName> treasures now in <placeName corresp="#USA">America</placeName>&#x201d;. As one of <persName corresp="#WWILSON">Woodrow Wilson</persName>&#x02bc;s fifty original college &#x201c;preceptors&#x201d;, 
+                            <persName corresp="#WT">Thorp</persName> considered &#x201c;most enheartening&#x201d; how &#x201c;students have moved in and taken over&#x201d; the special collections department of the library, 
+                            taking their place &#x201c;among the elder scholars&#x201d;, and &#x201c;hunched over some rare edition and absorbed in creating a thesis or report&#x201d; on <persName corresp="#JR">Ruskin</persName> or some other topic 
+                            (<ref type="bibliography" target="bibliography.php#THORPRUSKINMANUSCRIPTS"><persName corresp="#WT">Thorp</persName>, <title type="essay" corresp="#THORPRUSKINMANUSCRIPTS">&#x201c;The Ruskin Manuscripts&#x201d;</title></ref>, 2; 
+                            <ref type="bibliography" target="bibliography.php#THORPCONFRATERNITYOFBOOKS"><persName corresp="#WT">Thorp</persName>, <title type="essay" corresp="#THORPRUSKINMANUSCRIPTS">&#x201c;The Confraternity of Books&#x201d;</title></ref>, 191&#x2013;92).</p> 
+                        <p>While these items had lingered unsold in <persName corresp="#CG">Goodspeed</persName>&#x02bc;s catalogue for eight years after their purchase, 
+                            their significance for <orgName corresp="#PRINCETON">Princeton</orgName> lay in supplying the library with a ready&#x2010;made substantial and representative collection of <persName corresp="#JR">Ruskin</persName>, 
+                            when the library found itself in a position to buy. In <date when="1930">1930</date>, when news broke of the first <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02bc;s sale of <persName corresp="#JR">Ruskin</persName>, 
+                            <orgName corresp="#YALEUNIVLIBRARY">Yale University Library</orgName> had arrived at a fortuitous, if hectic moment, when the library was preparing to move into the nearly completed <placeName type="building" corresp="#STERLINGMEM">Sterling Memorial Building</placeName>&#x2014;a Gothic cathedral among American libraries, if not quite a Ruskinian one. Among its carefully purpose&#x2010;designed facilities was a rare book reading and storage space, appointed to the care 
+                            of <ref type="note" subtype="biographical" target="tinker_c_b_note.php"><persName corresp="#CBT">Chauncey Brewster Tinker</persName> (<date notBefore="1876" notAfter="1963">1876&#x2013;1963</date>)</ref>, 
+                            professor of English and now also keeper of rare books. <persName corresp="#CBT">Tinker</persName> was a tireless advocate for collection building; and thanks to his friendship with the book collector 
+                            <ref type="note" subtype="biographical" target="adam_r_b_note.php">R. B. Adam II (<date notBefore="1863" notAfter="1940">1863&#x2013;1940</date>)</ref>, in <date when="1929">1929</date> <orgName corresp="#YALE">Yale</orgName> had gained the foundation 
+                            of a comprehensive collection of published <persName corresp="#JR">Ruskin</persName>, which presented a strong case for extending the <persName corresp="#JR">Ruskin</persName> holdings with manuscript materials. 
+                            <orgName corresp="#PRINCETON">Princeton University</orgName> Library had not been so fortunate. Nonetheless, <date when="1930">1930</date> was a significant year for <orgName corresp="#PRINCETON">Princeton</orgName> to begin organizing future efforts, 
+                            since in that year the <orgName corresp="#FPUL">Friends of Princeton University Library</orgName> was founded, which proved crucial to raising the status 
+                            of <orgName corresp="#PRINCETON">Princeton</orgName>&#x02bc;s special collections (<ref type="bibliography" target="bibliography.php#AXTELLMAKINGOFPUL"><persName corresp="#JAXTELL">Axtell</persName>, <title type="essay" corresp="#AXTELLMAKINGOFPUL">&#x201C;The Making of the Princeton University Library&#x201D;</title></ref>, 513). 
+                            On the early years of the <orgName corresp="#FPUL">Friends</orgName> leading to the <persName corresp="#JR">Ruskin</persName> purchase, see <ref type="note" subtype="biographical" target="thorp_willard_note.php"><persName corresp="#WT">Willard Thorp</persName> (<date notBefore="1111" notAfter="1111">0000&#x2013;0000</date>)</ref>; 
+                            and on the context of <persName corresp="#JR">Ruskin</persName> collecting at <orgName corresp="#PRINCETON">Princeton</orgName> and other American institutions, see 
+                            <ref type="note" subtype="contextual" target="provenance_american_research_libraries_note.php">Early Ruskin Manuscript Collecting by American Research Libraries</ref></p>
+                    </div>
+                    
+                    <div type="subsection" xml:id="YALE1931">
+                        <head type="subsection"><persName corresp="#CG">Goodspeed</persName>, the <date when="1931">1931</date> Acquisitions, and <orgName corresp="#YALEUNIVLIBRARY">Yale University Library</orgName></head>
+                        
+                        <p>At the <placeName type="building" corresp="#BEINECKELIBRARY">Beinecke Library</placeName>, a typescript itemized quotation by <persName corresp="#CG">Goodspeed</persName> of items from the <date when="1931">1931</date> sale 
+                            (&#x201c;Quotation on Collection of <persName corresp="#JR">Ruskin</persName> Manuscripts sold from the material removed from <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName> at <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02bc;s <date when="1931-05">May 1931</date> and by order of the Executors of the Estate of <persName corresp="#AS">Arthur Severn</persName>&#x201d;) 
+                            suggests that he offered his acquisitions to <orgName corresp="#YALEUNIVLIBRARY">Yale University Library</orgName> 
+                            very soon after receiving them, as he had done in the previous year (see 
+                            <ref type="note" subtype="bibliographical" target="provenance_sothebys_1930_note.php#BUYERS"><orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> Sale of <persName corresp="#JR">Ruskin</persName> Manuscripts and Library, <date when="1930">1930</date>: The Buyers</ref>). 
+                            At this time, <orgName corresp="#YALE">Yale</orgName> did acquire a manuscript of <title type="book" corresp="#JRPROSERPINA"><hi rend="italic">Proserpina</hi></title>, which complemented its manuscript materials related to that work that <orgName corresp="#YALE">Yale</orgName> 
+                            had acquired from <persName corresp="#CG">Goodspeed</persName> in <date when="1930">1930</date>. The <date when="1931">1931</date> acquisition is described in the <date when="1931">1931</date> 
+                            <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 
+                            as &#x201c;107 pp. with corrected proof, a few pen&#x2010;and&#x2010;ink drawings&#x201d; (p. 7 [&#x201c;Prose Writings, 1881&#x2013;85&#x201d;, Item II]), 
+                            and in <persName corresp="#CG">Goodspeed</persName>&#x02bc;s typescript quotation as a &#x201c;volume containing much of the second vol. with page proof, etc., also a few drawings by <persName corresp="#JR">Ruskin</persName> in the text&#x201d;. 
+                            This purchase in <date when="1931">1931</date> is confirmed both in the current <placeName type="building" corresp="#BEINECKELIBRARY">Beinecke Library</placeName> 
+                            <ref type="bibliography" target="bibliography.php#BEINECKERUSKINFINDINGAID">&#x201C;Guide to the John Ruskin Collection&#x201D;</ref> (p. 40, although listed there as a gift, not purchase, from <persName corresp="#CG">Goodspeed</persName>), 
+                            and in a <date when="1942">1942</date> article, <ref type="bibliography" target="bibliography.php#YALECOLLECTION"><title type="essay" corresp="#YALECOLLECTION">&#x201C;The Yale Collection of the Manuscripts of John Ruskin&#x201D;</title></ref>, 
+                            by <persName corresp="#CBHOGAN">Charles Beecher Hogan</persName> (p. 67 n. 4). This manuscript of <title type="book" corresp="#JRPROSERPINA"><hi rend="italic">Proserpina</hi></title> is not listed in 
+                            <title type="catalogue" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, <hi rend="italic">Catalogue</hi></title>, having been sold prior to the catalogue&#x02bc;s printing.</p>
+                        
+                        <p><persName corresp="#CBHOGAN">Hogan</persName>&#x02bc;s bibliographical article mentions some holdings by <orgName corresp="#YALE">Yale</orgName>, which cause confusion because seeming to overlap 
+                            with <orgName corresp="#PRINCETON">Princeton</orgName>&#x02bc;s <date when="1939">1939</date> acquisitions, but they are distinct. One is &#x201c;a long sketch on the subject of Infant Baptism, which was later elaborated into the 
+                            <hi rend="italic">Essay on Baptism</hi>&#x201d; 
+                            (<ref type="bibliography" target="bibliography.php#YALECOLLECTION"><title type="essay" corresp="#YALECOLLECTION">&#x201C;The Yale Collection of the Manuscripts of John Ruskin&#x201D;</title></ref>, 64). 
+                            This is a draft of the essay contained in the &#x201c;Architectural Note Book&#x201d;, <date notBefore="1850" notAfter="1851">1850&#x2013;51</date>, acquired from <persName corresp="#CG">Goodspeed</persName> in <date when="1930">1930</date> 
+                            (see <ref type="note" subtype="bibliographical" target="provenance_sothebys_1930_note.php#YALE"><orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> Sale of <persName corresp="#JR">Ruskin</persName> Manuscripts and Library, <date when="1930">1930</date>: <persName corresp="#CG">Goodspeed</persName>, the <date when="1930">1930</date> Acquisitions, and <orgName corresp="#YALEUNIVLIBRARY">Yale University Library</orgName></ref>). 
+                            It is distinct from the 39&#x2010;folio page holograph of the essay, bound in red buckram, which <persName corresp="#CG">Goodspeed</persName> sold to <orgName corresp="#PRINCETON">Princeton</orgName>.</p>
+                        
+                        <p>A second, more puzzling overlapping pair of acquisitions is <orgName corresp="#PRINCETON">Princeton</orgName>&#x02bc;s and <orgName corresp="#YALE">Yale</orgName>&#x02bc;s holdings of manuscript and proofs related to 
+                            <title type="book" corresp="#JRSTORMCLOUD"><hi rend="italic">The Storm Cloud of the Nineteenth Century</hi></title>. 
+                            The <orgName corresp="#PRINCETON">Princeton</orgName> holding clearly corresponds to <persName corresp="#CG">Goodspeed</persName>&#x02bc;s catalogue description of the &#x201c;MS. and proof sheets of the principal part of the work in <persName corresp="#JR">Ruskin</persName>&#x02bc;s autograph, 
+                            comprising 43 folio pp. (with 3 pp. in the hand of <persName corresp="#JR">Ruskin</persName>&#x02bc;s cousin, <persName corresp="#JSAR">Mrs. Severn</persName>), bound in red cloth&#x201d; 
+                            (<title type="catalogue" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, <hi rend="italic">Catalogue</hi></title>, no. 101 [p. 28]). 
+                            It is disconcerting, therefore, that <persName corresp="#CBHOGAN">Hogan</persName> notes the <orgName corresp="#YALE">Yale</orgName> <title type="book" corresp="#JRSTORMCLOUD"><hi rend="italic">Storm Cloud</hi></title> bound item of manuscript and proofs as having been 
+                            &#x201c;sold at <orgName corresp="#SOTHEBYS">Sotheby&#x02bc;s</orgName> on <date when="1931-05-18">May 18, 1931</date>&#x201d; and brought &#x201c;to <orgName corresp="#YALE">Yale</orgName> by purchase from Mr. <persName corresp="#CG">Goodspeed</persName>&#x201d;  
+                            (<ref type="bibliography" target="bibliography.php#YALECOLLECTION"><title type="essay" corresp="#YALECOLLECTION">&#x201C;The Yale Collection of the Manuscripts of John Ruskin&#x201D;</title></ref>, 67 n. 4). 
+                            The <placeName type="building" corresp="#BEINECKELIBRARY">Beinecke Library</placeName> does presently own the item to which <persName corresp="#CBHOGAN">Hogan</persName> was apparently referring, but it is quite different from <orgName corresp="#PRINCETON">Princeton</orgName>&#x02bc;s. The <placeName type="building" corresp="#BEINECKELIBRARY">Beinecke</placeName> record describes: 
+                            &#x201c;Wrappers and separate title pages for each lecture bound in; wrapper for 1st lecture bound in before general t.p. 32 cm. Binder&#x02bc;s stamp: Bound by Zaehnsdorf. Bound with mounted corrected proof (7 leaves) for pages 48&#x2013;63, and approximately 14 pages of manuscript additions. 
+                            These are inserted after Part I of the printed text&#x201d;. This description corresponds to an item in the &#x201c;Quotation&#x201d; from the <date when="1931">1931</date> sale that <persName corresp="#CG">Goodspeed</persName> provided to <orgName corresp="#YALE">Yale</orgName>: 
+                            &#x201c;&#x2018;<title type="book" corresp="#JRSTORMCLOUD">Storm Cloud of 19th Century</title>&#x2019;. Galleys with corrections. Fourteen pp. in author&#x02bc;s ms&#x201d;. The description is also consistent with <persName corresp="#CBHOGAN">Hogan</persName>&#x02bc;s less precise description, 
+                            &#x201c;part of the manuscript and some proof&#x201d;. According to Sara Powell, research librarian at the <placeName type="building" corresp="#BEINECKELIBRARY">Beinecke</placeName>, this item has not heretofore been easily locatable in the <placeName type="building" corresp="#BEINECKELIBRARY">Beinecke</placeName>&#x02bc;s catalogue, 
+                            because classified as a printed work (BEIN Ruskin &#x002b;884ta) rather than as a manuscript (email communication to <persName corresp="#DCH">David C. Hanson</persName>, <date when="2019-11-19">19 November 2019</date>). 
+                            What remains baffling are the respective provenances of of the <orgName corresp="#YALE">Yale</orgName> and <orgName corresp="#PRINCETON">Princeton</orgName> holdings. It seems clear that, 
+                            since the description of a <title type="book" corresp="#JRSTORMCLOUD"><hi rend="italic">Storm Cloud</hi></title> item in <persName corresp="#CG">Goodspeed</persName>&#x02bc;s &#x201c;Quotation&#x201d; for <orgName corresp="#YALE">Yale</orgName> closely corresponds to the current <placeName type="building" corresp="#BEINECKELIBRARY">Beinecke</placeName> description, 
+                            and since <persName corresp="#CG">Goodspeed</persName> offered his <date when="1931">1931</date> <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02bc;s acquisitions to <orgName corresp="#YALE">Yale</orgName> eight years before selling to <orgName corresp="#PRINCETON">Princeton</orgName>, 
+                            the provenance of the <orgName corresp="#YALE">Yale</orgName> <title type="book" corresp="#JRSTORMCLOUD"><hi rend="italic">Storm Cloud</hi></title> bound manuscript and proofs can reasonably be traced to the <date when="1931">1931</date> <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02bc;s auction. 
+                            The original description in the <date when="1931">1931</date> <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 
+                            is unhelpfully vague: &#x201c;<title type="book" corresp="#JRSTORMCLOUD">Storm Cloud of the XIX Century</title>. Corrected proofs with long autograph additions, <date when="1884">1884</date>&#x201d; (lot 29, item V [p. 7]). 
+                            The characterization of the manuscript portion as &#x201c;additions&#x201d;, however, appears to line up with the descriptions in <persName corresp="#CG">Goodspeed</persName>&#x02bc;s &#x201c;Quotation&#x201d; and in the current <placeName type="building" corresp="#BEINECKELIBRARY">Beinecke</placeName> catalogue. 
+                            Unless the <orgName corresp="#PRINCETON">Princeton</orgName> <title type="book" corresp="#JRSTORMCLOUD"><hi rend="italic">Storm Cloud</hi></title> item also formed part of the original <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02bc;s <date when="1931">1931</date> lot, therefore, its provenance prior to <persName corresp="#CG">Goodspeed</persName>&#x02bc;s possession is in doubt. 
+                            Yet this tentative conclusion is unsettled by the items&#x02bc; respective bindings. The <orgName corresp="#YALE">Yale</orgName> item is encased in a decorated Zaehnsdorf binding, 
+                            whereas the <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02bc;s <date when="1931">1931</date> catalogue description of lot 29 ascribes &#x201c;folio cloth&#x201d; bindings to each of its items. The <persName corresp="#CG">Goodspeed</persName> <title type="book" corresp="#JRSTORMCLOUD"><hi rend="italic">Storm Cloud</hi></title> catalogue item 
+                            is likewise described as bound in &#x201c;red cloth&#x201d;&#x2014;the binding that was typically used for the <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName> manuscripts 
+                            (<ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 7; 
+                            <title type="catalogue" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, <hi rend="italic">Catalogue</hi></title>, no. 101 [p. 28]).</p>
+                    </div>
+                    
+                    <div type="subsection" xml:id="YALE1941">
+                        <head type="subsection">The Damage by Fire to <persName corresp="#CG">Goodspeed</persName>&#x02BC;s <date when="1931">1931</date> Acquisitions and Their Donation to <orgName corresp="#YALEUNIVLIBRARY">Yale University Library</orgName></head>
+                        
+                        <p>For <persName corresp="#CG">Goodspeed</persName>&#x02bc;s disastrous house fire and damage to his collection generally, see 
+                            <ref type="note" subtype="biographical" target="goodspeed_charles_note.php#YALE1941"><persName corresp="#CG">Charles E. Goodspeed</persName> (<date notBefore="1867" notAfter="1950">1867&#x2013;1950</date>): The Damage by Fire to the <persName corresp="#CG">Goodspeed</persName> Ruskin Collection and Its Donation to <orgName corresp="#YALEUNIVLIBRARY">Yale University Library</orgName></ref></p>
+                        
+                        <p>Of items remaining in <persName corresp="#CG">Goodspeed</persName>&#x02bc;s hands from the <date when="1931">1931</date> <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02bc;s purchase, 
+                            the juvenilia contained in <ref type="apparatus" target="msia_apparatus.php"><title type="manuscript" corresp="#MSIA">MS IA</title></ref> 
+                            (<ref type="internal" target="#ITEM2">Contents of the Sale: Item II</ref>) and <ref type="apparatus" target="msx_apparatus.php"><title type="manuscript" corresp="#MSX">MS X</title></ref> 
+                            (<ref type="internal" target="#ITEM3">Contents of the Sale: Item III</ref>) were rescued along with the 
+                            <title type="essay" corresp="#JRREVLINDSAYSKETCHES">review of &#x201c;Lord Lindsay on the History of Christian Art&#x201d;</title> 
+                            (<ref type="internal" target="#ITEM7">Contents of the Sale: Item VII</ref>). These items are recognizably but very sketchily reported 
+                            as <persName corresp="#CG">Goodspeed</persName> donations to <orgName corresp="#YALE">Yale</orgName> in &#x201C;Notes on Recent Acquisitions&#x201D; for 
+                            <ref type="bibliography" target="bibliography.php#RECENTACQUISITIONSYALEJAN43"><date when="1943-01">January 1943</date></ref> and for 
+                            <ref type="bibliography" target="bibliography.php#RECENTACQUISITIONSYALEOCT43"><date when="1943-10">October 1943</date></ref> 
+                            of the <title type="periodical" corresp="#YALEGAZETTE"><hi rend="italic">Yale University Library Gazette</hi></title>.</p>
+                        
+                        <p>The contents of <ref type="apparatus" target="msia_apparatus.php"><title type="manuscript" corresp="#MSIA">MS IA</title></ref> 
+                            and <ref type="apparatus" target="msx_apparatus.php"><title type="manuscript" corresp="#MSX">X</title></ref> were disassembled 
+                            from their respective cloth bindings; and individual items that had been charred around the edges, were protected for preservation. 
+                            A few items may have been destroyed completely, as discussed along with details about condition 
+                            in the apparatuses for both the individual items and the original bound collections.</p>
+                        
+                        <p>Also reported as a <persName corresp="#CG">Goodspeed</persName> donation in the &#x201C;Acquisitions&#x201D; for the <ref type="bibliography" target="bibliography.php#RECENTACQUISITIONSYALEJAN43"><date when="1943-01">January 1943</date></ref> issue 
+                            was manuscript of <title type="book" corresp="#JRLAWSOFFESOLE"><hi rend="italic">Laws of Fesol&#x00E9;</hi></title>. In the <date when="1931">1931</date> <orgName corresp="#SOTHEBYS">Sotheby</orgName>&#x02bc;s sale, 
+                            this had been Item VII of lot 28 (&#x201c;Prose Writings, 1867&#x2013;79&#x201d;, <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 7), 
+                            one of the three items from this lot that <orgName corresp="#PRINCETON">Princeton</orgName> did not purchase from <persName corresp="#CG">Goodspeed</persName> 
+                            (see <title type="catalogue" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, <hi rend="italic">Catalogue</hi></title>, no. 95 [p. 26]). 
+                            The other two unsold items from lot 28&#x2014;Item II, manuscript of &#x201c;Lecture on Modern Art&#x201d; (British Institution, <date when="18767">1867</date>), and Item VIII, manuscript of <hi rend="italic">The Three Colours of Pre&#x2010;Raphaelitism</hi> 
+                            (<ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 7;
+                            <title type="catalogue" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, <hi rend="italic">Catalogue</hi></title>, nos. 88 [p. 24], 94 [p. 26])&#x2014;are not identifiable 
+                            in the current catalogues of either the <placeName type="building" corresp="#BEINECKELIBRARY">Beinecke Library</placeName> or the <orgName corresp="#PRINCETON">Princeton</orgName> University Library and therefore can be presumed to have been lost in <persName corresp="#CG">Goodspeed</persName>&#x02bc;s fire, 
+                            pending further discovery and identification.</p>
+                        
+                        <p>One item, lecture 5 of <title type="book" corresp="#JRARTOFENGLAND"><hi rend="italic">The Art of England</hi></title>, 
+                            which is described as &#x201c;page proofs&#x201d; and attributed to <persName corresp="#CG">Goodspeed</persName>&#x02bc;s gift in 
+                            <ref type="bibliography" target="bibliography.php#BEINECKERUSKINFINDINGAID"><orgName corresp="#BEINECKE">Beinecke Library</orgName>, &#x201C;Guide to the John Ruskin Collection&#x201D;</ref>, 
+                            notes that &#x201c;the edges of the pages are charred, affecting the text&#x201d;, so this manuscript obviously came through the fire (p. 41). 
+                            This item may have formed part of lot 17 in the <date when="1931">1931</date> <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 
+                            which describes, however, a &#x201c;reading copy . . . with corrections and additions in the Author&#x02bc;s handwriting&#x201d; (p. 5). 
+                            The item is not listed in <title type="catalogue" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, <hi rend="italic">Catalogue</hi></title>.</p>
+                        
+                        <p>Two items of lot 29 (&#x201c;Prose Writings, <date notBefore="1881" notAfter="1885">1881&#x2013;85</date>&#x201d;), which <persName corresp="#CG">Goodspeed</persName> sold neither to <orgName corresp="#PRINCETON">Princeton</orgName> nor <orgName corresp="#YALE">Yale</orgName>, also are not identifiable in the current catalogues of either library 
+                            and therefore likewise can be presumed lost, pending further discovery and identification: Item I, manuscript, notes, and proofs of 
+                            <title type="book" corresp="#JRLOVESMEINIE"><hi rend="italic">Loves Meinie</hi></title>, and Item IV, manuscript and notes on the <title type="essay" corresp="#JRLAWSOFPLATO"><title type="book" corresp="#PLATOLAWS"><hi rend="italic">Laws</hi></title> of <persName corresp="#PLATO">Plato</persName></title> 
+                            (<ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue</hi></title></ref>, 7;
+                            <title type="catalogue" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, <hi rend="italic">Catalogue</hi></title>, nos. 91 [pp. 24&#x2013;25], 99 [p. 27]).</p>
+                      
+                        <p>Further reserarch is pending regarding the whereabouts of the 150 letters from various correspondents to <persName corresp="#JR">Ruskin</persName> that formed part of lot 17, 
+                            the 6 letters (<date when="1858">1858</date>) to <persName corresp="#JR">Ruskin</persName>&#x02bc;s father that formed lot 31, and the artwork that formed lot 25.</p>
+                        
+                        
+                    <!--<p>, along with several other items that he had acquired 
+                    at the <date when="1931">1931</date> sale&#x2010;a quite ambitious purchase by the library.	The final item in Thorp&#x02BC;s description 
+                    consists of six notebooks, including two containing studies for <title type="manuscript" corresp="#JRSEVENLAMPS">The Seven Lamps of Architecture</title>. 
+                    I have not been able to examine these, and they are difficult to trace in the published accounts. 
+                    I find no such specific listing in <title type="catalog_auction" corresp="#GOODSPEEDCAT"><persName corresp="#CG">Goodspeed</persName>, Cat.</title>, 
+                    unless the six were included in item 40, sixteen &#x201C;Sketch Books&#x201D; (p. 11); 
+                    however, only eight of the sixteen were known to have remained to <persName corresp="#CG">Goodspeed</persName> in <date when="1933">1933</date>, 
+                    when the dealer offered them along with all his <persName corresp="#JR">Ruskin</persName> drawings to <persName corresp="#JHW">Whitehouse</persName>, 
+                    and <persName corresp="#JHW">Whitehouse</persName> is believed to have acquired this lot in <date when="1936">1936</date> (RBB 138&#x2013;39). 
+                    I am also unable to find a listing specifically matching the <orgName corresp="#PRINCETONLIBRARY">Princeton</orgName> notebooks 
+                    in the <orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> catalogs. They might have formed part of lot 122, 
+                    <title type="manuscript" corresp="#SOTHEBY1931MISCELLANEOUSNOTEBOOKS">&#x201C;Miscellaneous Note Books&#x201D;</title>, 
+                    from the <date when="1930">1930</date> sale, of which <persName corresp="#CBHOGAN">Hogan</persName> lists only nine as coming to <orgName corresp="#YALE">Yale</orgName> 
+                    through <persName corresp="#CG">Goodspeed</persName> (pp. 67&#x2013;68; and see n. 31, above). 
+                    The notebooks might also have derived from the <date when="1931-05-20">20 May 1931</date> <orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> sale 
+                    of <persName corresp="#JR">Ruskin</persName> drawings, at which <persName corresp="#CG">Goodspeed</persName> was represented by 
+                    <persName corresp="#RBROWN">Ralph Brown</persName> (RBB, 138; and see, e.g., <orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, 
+                    Catalogue of the Collection of Pictures and Drawings, formerly the property of the late Professor <persName corresp="#JR">John Ruskin</persName> . . . , 
+                    <date when="1931-05-20">20 May 1931</date>, item 9). Prior to the <orgName corresp="#PRINCETONLIBRARY">Princeton</orgName> purchase, 
+                    <persName corresp="#CG">Goodspeed</persName> had offered all his <persName corresp="#JR">Ruskin</persName> drawings to <persName corresp="#JHW">Whitehouse</persName>, 
+                    who finally agreed to a purchase in <date when="1936">1936</date> (RBB, 136&#x2013;39). Although the correspondence suggests 
+                    that <persName corresp="#CG">Goodspeed</persName> sent all the drawings in his possession for <persName corresp="#JHW">Whitehouse</persName>&#x02BC;s approval 
+                    and that <persName corresp="#JHW">Whitehouse</persName> retained the entire lot, 
+                    in <date when="1944">1944</date> <persName corresp="#CG">Goodspeed</persName> was still able to donate fourteen &#x201C;drawings and paintings&#x201D; 
+                    to <orgName corresp="#YALE">Yale</orgName>, following the dealer&#x02BC;s <date when="1941">1941</date> fire.</p>-->
+                </div>
+                </div>
+                
             </div>
         </body>
     </text>
