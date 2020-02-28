@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="harry_and_lucy_vol1_msi">
+            <titleStmt>
+                <title type="main">"Harry and Lucy," Vol. 1</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS I Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName></principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName corresp="#WRW">William R. Woodard</persName>
+                    <resp>contributing transcription</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing encoding, review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America, Blossman Foundation, Huntington Library,
+                    Louisiana Board of Regents, National Endowment for the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language
+                    Association, and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-09-07">September 7, 2011</date>
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>
+                    <name type="institution">Southeastern Louisiana University Department of English</name>
+                </distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Shelves Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="1229104.jpg-1229143.jpg">Inside Front Endboard + pp. 1-96</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="harry_and_lucy_vol1_apparatus.html#MAJORMS">"Harry and Lucy," Vol. 1: Manuscripts</ref>.</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc hands="1">
+                            <handNote xml:id="HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-7</date>, examples of which can
+                                    be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                            <handNote xml:id="HANDJR1870" scribe="JR">
+                                <p>John Ruskin's adult hand, circa <date when="1870">1870</date>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage xml:id="TITLEPAGE">
+                <pb facs="1229104v"/>
+                <docTitle>
+                    <titlePart type="main"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/><space quantity="5" unit="chars"/><hi rend="caps">Harry</hi> <hi rend="smallcaps">and</hi> <hi rend="caps">Lucy</hi><add place="below"><milestone unit="undeclared" rend="hr-full"/></add>
+                        <lb/><space quantity="9" unit="chars"/><hi rend="smallcaps">Concluded</hi>
+                    </titlePart>
+                    <titlePart type="sub"><space quantity="7" unit="chars"/><hi rend="smallcaps">Being the Last</hi>
+                        <lb/><space quantity="10" unit="chars"/><hi rend="smallcaps">Part of</hi><lb/>
+                        <lb/>
+                        <lb/><space quantity="5" unit="chars"/><hi rend="caps">Early Lessons</hi><add place="below"><space quantity="10" unit="chars"/><!--<figure><figDesc>[diamond-shaped ornament]</figDesc></figure>--></add>
+                    </titlePart>
+                    <titlePart type="desc"><space quantity="10" unit="chars"/>in four volumes<lb/>
+                        <space quantity="12" unit="chars"/>vol I<lb/>
+                        <space quantity="10" unit="chars"/>with copper<add place="below"><milestone unit="undeclared" rend="hr-quarter"/></add><lb/>
+                        <space quantity="11" unit="chars"/>plates<add place="below"><!--<figure><figDesc>[diamond-shaped ornament]</figDesc></figure>--></add>
+                        <lb/>
+                        <lb/>
+                    </titlePart>
+                </docTitle>
+                <docImprint><space quantity="5" unit="chars"/><hi rend="smallcaps">Printed</hi> and composed by a little boy<lb/>
+                    <space quantity="10" unit="chars"/>and also drawn</docImprint>   
+            </titlePage>
+            <titlePage>
+                <pb facs="1229104r"/>
+                <docTitle>
+                    <titlePart type="main"><space quantity="5" unit="chars"/><hi rend="caps">Harry</hi> <hi rend="smallcaps">and</hi> <hi rend="caps">Lucy</hi><lb/>
+                        <space quantity="3" unit="chars"/><hi rend="caps">I</hi><space quantity="11" unit="chars"/>concluded<add place="below"><milestone unit="undeclared" rend="hr-full"/></add></titlePart>
+                </docTitle>
+            </titlePage>
+                <div type="frontispiece" xml:id="FRONTISPIECE">
+                    <!--<figure>
+                        <head type="figure"><space quantity="7" unit="chars"/>frontispiece</head>
+                        <figDesc>[Lined up left to right, a four&#x2010;legged animal (a horse?); a (stone?) house, two stories with symmetrically placed mullioned windows, 
+                            a central entrance set in a roofed porch, and a gable roof with a central dormer and a chimney; a tree; and an arched bridge. 
+                            The sun is shining through clouds, from which slanting rain is still pouring, producing a rainbow (labeled as such).]</figDesc>
+                    </figure>-->
+                </div>
+            <div>
+                <p><gloss><handShift new="#HANDJR1870" script="cursive" medium="ink"/><space quantity="5" unit="chars"/>Red book. No 3. <date when="1870-09-08">Sept 8<hi rend="superscript">th</hi> 1870</date><handShift new="#HANDJR1826-27" script="print" medium="pencil"/></gloss></p>
+            </div>    
+        </front>
+        <body>
+            <div type="chapter" n="1">
+                <pb facs="1229105v"/>
+                <fw type="pageNum" place="top"><space quantity="12" unit="chars"/>page I</fw>
+                <head type="chapter"><space quantity="10" unit="chars"/>chap I</head>
+                <p>
+                    <said who="#LUCY"><name type="fictional" corresp="#MAMMA">mamma</name></said> said <name type="fictional" corresp="#LUCY">Lucy</name> <said who="#LUCY"><name type="fictional" corresp="#PAPA">papa</name> has gone out to<lb/>
+                    town earlyer than usual.<note n="n" type="gloss" resp="#DCH">Lucy is speaking; i.e., &#x201C;&#x2018;Mamma,&#x2019; said Lucy, &#x2018;papa has gone out.&#x2019;&#x201D;</note> Has he any<g type="justification">-</g><lb/>
+                    bu<subst><del>i</del><add rend="overwriting">s</add></subst>iness more to do.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#MAMMA">Yes <name type="fictional" corresp="#LUCY">Lucy</name> he has more to do because<lb/>
+                    he has got to go to town and then into<lb/>
+                    the city and then to the docks and you<lb/>
+                    know that that takes up more time than<lb/>
+                    plain going to town.</said><!--<note n="n" type="gloss" place="botwin" resp="#DCH">See <ref type="note" subtype="geographical" target="london_city_note.html">City of London</ref>, and <ref type="note" subtype="geographical" target="london_docks_note.html">London Docks</ref>.</note>Unidentified mark here.-->
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es <name type="fictional" corresp="#MAMMA">mamma</name>. But I wonder what my white<lb/>
+                    rabbit<del rend="scratchout"><unclear resp="#CWB">t</unclear></del> is doing all this while.</said>
+                </p>
+                <p>
+                    <said who="#MAMMA">I should think it is wondering what is<lb/>
+                    become of you</said> said her <name type="fictional" corresp="#MAMMA">mother</name>.&#x201D; <del rend="erasure">I</del>
+                </p>
+                <p>
+                    <said who="#LUCY">I&#x02BC;ll go and see it</said> said <name type="fictional" corresp="#LUCY">Lucy</name>.
+                </p>
+                <p>
+                    <said who="#MAMMA">you cannot in the rain</said> said her<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#MAMMA">mother</name>.
+                </p>
+                <p>
+                    <said who="#LUCY">oh is it raining</said> cried <name type="fictional" corresp="#LUCY">Lucy</name> <said who="#LUCY">I am very<lb/>
+                    sorry for I have so many things to do.
+                <pb facs="1229105r"/>
+                <fw type="pageNum" place="top"><space quantity="10" unit="chars"/>page 2</fw>
+                    but howeve<subst><del><unclear resp="#CWB">e</unclear></del><add rend="overwriting">r</add></subst> I have plenty of<lb/>
+                    things<unclear resp="#CWB">.</unclear> to do in the house as well</said><lb/>
+                    said <name type="fictional" corresp="#LUCY">Lucy</name><unclear resp="#DCH">!</unclear>&#x201D;
+                </p>
+                <p>
+                    <said who="#MAMMA">yes you have</said> answered her <name type="fictional" corresp="#MAMMA">mother</name>.
+                </p>
+                <p>
+                    <said who="#LUCY">But may I draw that head which<lb/>
+                    I was drawing last night</said> said<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#LUCY">Lucy</name><unclear resp="#DCH">?</unclear>.&#x201D;
+                </p>
+                <p>
+                    <said who="#MAMMA">yes but had not you better go on<lb/>
+                    with that landscape which<g type="justification">-</g><lb/>
+                    you were doing last week <del><unclear resp="#CWB">s</unclear></del><add rend="overwrting">d</add>o<lb/>
+                    one thing at once.</said>
+                </p>
+                <p>
+                    <said who="#LUCY">Yes <name type="fictional" corresp="#MAMMA">mamma</name></said> said <name type="fictional" corresp="#LUCY">Lucy</name> <said who="#LUCY">but<g type="justification">-</g><lb/>
+                    how comes this pencils are<lb/>
+                    lost.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#MAMMA">That is very odd indeed for<lb/>
+                    I know that from your <sic>your</sic><g type="justification">-</g><lb/>
+                    youth you never lost any thing</said>
+                <pb facs="1229106v"/>
+                <fw type="pageNum" place="top"><space quantity="10" unit="chars"/>page 3</fw>
+                    said her <name type="fictional" corresp="#MAMMA">mother</name>.
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> said <name type="fictional" corresp="#LUCY">Lucy</name>. <said who="#LUCY">but they are<lb/>
+                    certainly gone for where could<lb/>
+                    <del rend="strikethrough">it</del><add place="above">they</add> have gone but in the sideboard<lb/>
+                    and they are not there<unclear resp="#DCH">?</unclear>&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#MAMMA">but I have found them</said> cried<g type="justification">-</g><lb/>
+                    her <name type="fictional" corresp="#MAMMA">mother</name>
+                </p>
+                <p>
+                    <said who="#LUCY">have you</said> cried <name type="fictional" corresp="#LUCY">Lucy</name> <said who="#LUCY">where were they</said>
+                </p>
+                <p>
+                    <said who="#MAMMA">in the oddest thing</said> said her <name type="fictional" corresp="#MAMMA">mother</name>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">B</hi>ut where</said> said <name type="fictional" corresp="#LUCY">Lucy</name>.
+                </p>
+                <p>
+                    <said who="#MAMMA">in my workbox<unclear resp="#DCH">!</unclear>&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#LUCY">well done you think that this is<lb/>
+                    pretty well done</said> said <name type="fictional" corresp="#LUCY">Lucy</name><unclear resp="#DCH">?</unclear>
+                </p>
+                <p>
+                    <said who="#MAMMA"><hi rend="doubleletter-fill">Y</hi>es.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#LUCY">Now I will run out and refresh<g type="justification">-</g>
+                    myself a little now it has done raining</said><lb/>
+                    said <name type="fictional" corresp="#LUCY">Lucy</name>.&#x201D;
+                </p>
+                <pb facs="1229106r"/>
+                <fw type="pageNum" place="top"><space quantity="11" unit="chars"/>page 4</fw>
+                <p>
+                    <said who="#MAMMA"><hi rend="doubleletter-fill">Y</hi>es my dear</said> said her <name type="fictional" corresp="#MAMMA">mother</name>.
+                </p>
+                <p>
+                    <said who="#LUCY">and I will go and see my white<lb/>
+                        rabbit<del rend="scratchout">s</del></said> said <name type="fictional" corresp="#LUCY">Lucy</name>.<!--<note n="n" type="gloss" place="botwin" resp="#CWB">Some passage of time appears to be indicated between this and the following statement.</note>-->
+                </p>
+                <p>
+                    <said who="#LUCY"><subst><del>w</del><add rend="overwriting">W</add></subst>ell I think I have been<!--<g type="justification">&#x2014;</g>-->ou<g type="justification">-</g>t<lb/>
+                    en<del rend="erasure">g</del><add>o</add>ugh</said> said <name type="fictional" corresp="#LUCY">Lucy</name><unclear resp="#DCH">!</unclear>&#x201D;<unclear resp="#CWB"><!--<g type="justification">|-</g>--></unclear>
+                </p>
+                <p>
+                    <said who="#MAMMA"><hi rend="doubleletter-fill">Y</hi>es my dear</said> said her <name type="fictional" corresp="#MAMMA">mother</name>
+                </p>
+                <p>
+                    <said who="#LUCY">Now <name type="fictional" corresp="#MAMMA">mamma</name> here is dinner.<lb/><!--<note n="n" type="gloss" place="botwin" resp="#DCH">We are left to speculate about the time of day that this &#x201C;dinner&#x201D; is actually served.</note>-->
+                    <name type="fictional" corresp="#MAMMA">mamma</name> my white rabbit has got<g type="justification">-</g><lb/>
+                    young ones</said> said <name type="fictional" corresp="#LUCY">Lucy</name> <said who="#LUCY">and they are such<lb/>
+                    pretty ones one black and white and<lb/>
+                    another red and white and another<lb/>
+                    quite white in<unclear resp="#CWB">&#x2014;</unclear>short of all colours<unclear resp="#DCH">!</unclear>&#x201D;</said><unclear resp="#CWB"><!--<g type="justification">|-</g>--></unclear>
+                </p>
+                <p>
+                    <said who="#MAMMA">and how many in number</said> said her<lb/>
+                    <name type="fictional" corresp="#MAMMA">mother</name>.</p>
+                <p>
+                    <said who="#LUCY">ten</said> said <name type="fictional" corresp="#LUCY">Lucy</name>.
+                </p>
+                <p>
+                    <said who="#MAMMA"><hi rend="doubleletter-fill">A</hi>nd eleven in all</said> sai<subst><del><unclear resp="#CWB">i</unclear></del><add rend="overwriting">d</add></subst> her <name type="fictional" corresp="#MAMMA">mother</name><g type="justification">-</g></p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> said <name type="fictional" corresp="#LUCY">Lucy</name> <said who="#LUCY">eleven.&#x201D;</said>
+                </p>
+                <pb facs="1229107v"/>
+                <fw type="pageNum" place="top"><space quantity="9" unit="chars"/>page 5</fw>
+                <p>
+                    <said who="#MAMMA">Well you are <hi rend="overwriting">g</hi>etting a fine stock<g type="justification">-</g><lb/>
+                    plainly</said>said her <name type="fictional" corresp="#MAMMA">mother</name>.
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es <name type="fictional" corresp="#MAMMA">mamma</name> I am.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#MAMMA">But we ought to break off this<g type="justification">-</g><lb/>
+                        discourse<!--<note n="n" type="gloss" place="botwin" resp="#DCH">The use of <hi rend="italic">discourse</hi> here is striking&#x2014;perhaps, suggesting a connection to the <ref type="note" subtype="bibliographical" target="lesson_note.html">Edgeworth lessons</ref>.</note>--> about your rabbits<g type="justification">-</g><lb/>
+                    and get that of your silkworms</said><g type="justification">-</g><lb/>
+                    said her <name type="fictional" corresp="#MAMMA">moth<subst><del>o</del><add rend="overwriting">e</add></subst>r</name>. <said who="#MAMMA">How are they
+                    getting on.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#LUCY">very well</said> said <name type="fictional" corresp="#LUCY">Lucy</name> <said who="#LUCY">one of them<lb/>
+                    has spun a great deal of silk.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#MAMMA">have any of them spun all they<lb/>
+                    are going to spin</said> sa<subst><del>d</del><add rend="overwriting">i</add></subst>d her <name type="fictional" corresp="#MAMMA">mothe<hi rend="overwriting">r</hi></name>
+                </p>
+                <p>
+                    <said who="#LUCY">Yes</said> said <name type="fictional" corresp="#LUCY">Lucy</name> <said who="#LUCY">three of them<unclear resp="#DCH">!</unclear>&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#MAMMA">thats a great deal</said> said her <name type="fictional" corresp="#MAMMA">mother</name><lb/>
+                    <said who="#MAMMA">let us go and wind it all on<g type="justification">-</g><lb/>
+                    winders.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> said <name type="fictional" corresp="#LUCY">Lucy</name> <said who="#LUCY">so we will.&#x201D;</said>
+                </p>
+                <pb facs="1229107r"/>
+                <fw type="pageNum" place="top"><space quantity="8" unit="chars"/>page 6<add place="below"><milestone unit="undeclared" rend="hr-full"/></add></fw>
+                <p>
+                    <said who="#MAMMA">how long do you think it will<lb/>
+                    take to wind one ball</said> said her<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#MAMMA">mother</name>.&#x201D;
+                </p>
+                <p>
+                    <said who="#LUCY">two hours</said> said <name type="fictional" corresp="#LUCY">Lucy</name>.
+                </p>
+                <p>
+                    <said who="#MAMMA">three</said> said her <name type="fictional" corresp="#MAMMA">mother</name> <said who="#MAMMA">and how<lb/>
+                    many will three threes make</said><lb/>
+                    said her <name type="fictional" corresp="#MAMMA">mother</name>
+                </p>
+                <p>
+                    <said who="#LUCY">nine</said> said <name type="fictional" corresp="#LUCY">Lucy</name>.
+                </p>
+                <p>
+                    <said who="#MAMMA">so nine whole hours must<g type="justification">-</g><lb/>
+                    be spent upon these <del rend="scratchout">hours</del><add place="above">balls</add></said> said<g type="justification">-</g><lb/>
+                    her <name type="fictional" corresp="#MAMMA">mother</name>.
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> said <name type="fictional" corresp="#LUCY">Lucy</name>.
+                    <!--<note n="n" type="gloss" place="botwin" resp="#DCH">In <ref type="note" subtype="bibliographical" target="lesson_note.html">Edgeworth</ref>, everyday experiences are frequently exploited for
+                        arithmetical exercises, such as in Early Lessons, Part 2, when Harry and Lucy count the strawberries they gather for dessert and,
+                        then, learn the meaning of the suffixes <hi rend="italic">teen</hi> and <hi rend="italic">ty</hi> (Maria Edgeworth, Frank, 1:117–20).</note>-->
+                </p>
+                <p>
+                    <said who="#MAMMA">Well these are very large<g type="justification">-</g><lb/>
+                    balls</said> said her <name type="fictional" corresp="#MAMMA">mother</name><unclear resp="#DCH">!</unclear>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> said <name type="fictional" corresp="#LUCY">Lucy</name><unclear resp="#DCH">!</unclear>&#x201D;<g type="justification">-</g>
+                </p>
+                <p>
+                    <said who="#LUCY"><name type="fictional" corresp="#MAMMA">mamma</name> when <hi rend="overwriting">w</hi>e were at the
+                <pb facs="1229108v"/>
+                <fw type="pageNum" place="top"><space quantity="7" unit="chars"/>page 7</fw>
+                    sea&#x2010;side we were told that the thread<lb/>
+                    of the silk worms was two or three<lb/>
+                    miles in length.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#MAMMA"><hi rend="doubleletter-fill">Y</hi>es</said> said her <name type="fictional" corresp="#MAMMA">mother</name> <said who="#MAMMA">and is not that<lb/>
+                    a good length<unclear resp="#DCH">?</unclear>&#x201D;<!--Correction needed here?--></said><g type="jusification">-</g>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> said <name type="fictional" corresp="#LUCY">Lucy</name>.&#x201D;
+                </p>
+                <p>
+                    <said who="#MAMMA"><hi rend="doubleletter-fill">W</hi>ell I think we have had thought<g type="justification">-</g><lb/>
+                    enough for the present</said> said her<lb/>
+                    <name type="fictional" corresp="#MAMMA">mother</name>.&#x201D;
+                </p>
+                <p>
+                    <said who="#LUCY">I have just two or three questions<lb/>
+                    to ask you more</said> said <subst><del>her<space quantity="1" unit="chars"/></del><add rend="overwriting"><name type="fictional" corresp="#LUCY">Lucy</name></add><del rend="scratchout">mother</del></subst>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter">W</hi>ell</said> said <name type="fictional" corresp="#LUCY">Lucy</name> <said who="#LUCY">how thin is the<g type="justification">-</g><lb/>
+                    thinnest of the threads which<lb/>
+                    <del rend="strikethrough">spin</del> <del rend="scratchout">s<unclear resp="#CWB">a</unclear></del> silkworms spin.</said>
+                </p>
+                <p>
+                    <said who="#MAMMA">I do not my dear know</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><subst><del>w</del><add rend="overwriting">V</add></subst>ery well</said> said <name type="fictional" corresp="#LUCY">Lucy</name>
+                </p>
+                <p>
+                    <said who="#MAMMA">What is your next question my
+                <pb facs="1229108r"/>
+                <fw type="pageNum" place="top">dear<space quantity="5" unit="chars"/>page 8</fw>
+                <milestone unit="undeclared" rend="hr-full"/>
+                    </said>
+                </p>
+                <p>
+                    <del rend="scratchout">dear</del> <said who="#LUCY">what is the size of the<lb/>
+                    thickest thread<del rend="scratchout"><unclear resp="#CWB">e</unclear></del> as thin as a<g type="justification">-</g><lb/>
+                    <del rend="strikethrough"><add place="above">spid</add></del>spiders</said>&#x007C;chap II
+                </p>
+            </div>
+            <div type="chapter" n="2">
+                <head type="chapter">
+                    <add place="above"><milestone unit="undeclared" rend="hr-quarter"/></add>Chap II<lb/>
+                    <milestone unit="undeclared" rend="hr-quarter"/>
+                </head>
+                <p><name type="fictional" corresp="#PAPA"><hi rend="caps">P</hi><hi rend="smallcaps">apa</hi></name> by this time had come<g type="justification">-</g><lb/>
+                    home and <name type="fictional" corresp="#LUCY">Lucy</name> then marched up<lb/>
+                    to him and said <said who="#LUCY"><name type="fictional" corresp="#PAPA">papa</name> would you be so good as to hear me my<lb/>
+                    lessons.&#x201D;</said></p>
+                <p>
+                    <said who="#PAPA">I will if I have time my dear<lb/>
+                    but I fear I shall not have time.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#LUCY">Very well</said> said <name type="fictional" corresp="#LUCY">Lucy</name>. <said who="#LUCY"><subst><del>n</del><add rend="overwriting">N</add></subst>ot in the<g type="justification">-</g><lb/>
+                    mor<subst><del>m</del><add rend="overwriting">ni</add></subst>ngs. <hi rend="doubleletter">B</hi>ut in the evenings you<lb/>
+                    will. <subst><del>a</del><add rend="overwriting">A</add></subst>nd would you be so good as<lb/>
+                    to hear me my lesson now.</said>
+                </p>
+                <pb facs="1229109v"/>
+                <fw type="pageNum" place="top"><space quantity="10" unit="chars"/>page 9</fw>
+                <p>
+                    <said who="#PAPA"><hi rend="doubleletter">Y</hi>es I will <name type="fictional" corresp="#LUCY">Lucy</name></said> answered her <name type="fictional" corresp="#PAPA">father</name>.&#x201D;<!--<note n="n" type="gloss" place="botwin" resp="#DCH">The <name type="fictional" corresp="#PAPA">father</name> is speaking: i.e. &#x201C;&#x2018;Yes, I will, Lucy,&#x2019; answered her <name type="fictional" corresp="#PAPA">father</name>.&#x201D;</note>-->
+                </p>
+                <p><name type="fictional" corresp="#LUCY">Lucy</name> said her lesson very well<lb/>
+                    and after that her <name type="fictional" corresp="#MAMMA">mother</name> said<unclear resp="#DCH">:</unclear> &#x201D;<lb/>
+                    <said who="#MAMMA">I was wondering what made <name type="fictional" corresp="#LUCY">Lucy</name><lb/>
+                    not come to say her lesson to me and<lb/>
+                    now I find out the cause.&#x201D;</said></p>
+                <p>
+                    <said who="#PAPA"><hi rend="doubleletter-fill">Y</hi>es</said> said her <name type="fictional" corresp="#PAPA">father</name>.
+                </p>
+                <p>
+                    <said who="#MAMMA">Well <name type="fictional" corresp="#LUCY">Lucy</name> you have said your<lb/>
+                    lesson very well and in reward<lb/>
+                    for so doing after church you<lb/>
+                    shall take a very pleasant walk<lb/>
+                    with me</said> said her <name type="fictional" corresp="#MAMMA">mother</name>.
+                </p>
+                <p>and now <name type="fictional" corresp="#LUCY">Lucy</name> has gone to bed<lb/>
+                    and we shall have time to<g type="justification">-</g><lb/>
+                    attend to <name type="fictional" corresp="#HARRY">harry</name> whose history<lb/>
+                    we have hitherto forgot.&#x201D;</p>
+                <pb facs="1229109r"/>
+                <fw type="pageNum" place="top"><space quantity="7" unit="chars"/>page I0</fw>
+                <p>in the last volumes of harry<lb/>
+                    and Lucy my young readers<g type="justification">-</g><lb/>
+                    may recollect that <name type="fictional" corresp="#HARRY">harry</name>s <name type="fictional" corresp="#PAPA">father</name><lb/>
+                    said he would take him into<lb/>
+                    town<!--Is this London as well?--> to see the apparatus for<lb/>
+                    making ice and <name type="fictional" corresp="#HARRY">harry</name> had been<lb/>
+                    with his <name type="fictional" corresp="#PAPA">father</name> to see this app&#x2010;<lb/>
+                    arratus.&#x201D;</p>
+                <p>the apparatus was a very large<lb/>
+                    airpump and <name type="fictional" corresp="#HARRY">harry</name> looking<lb/>
+                    in saw large pieces of ice<lb/>
+                    in it. He said he could not<lb/>
+                    explain it to <name type="fictional" corresp="#LUCY">Lucy</name> because<lb/>
+                    he did not see that part<lb/>
+                    of the apparatus which made<lb/>
+                    the ice.&#x201D;</p>
+                <p><name type="fictional" corresp="#LUCY">Lucy</name> said she did not mind Losing
+                <pb facs="1229110v"/>
+                <fw type="pageNum" place="top"><space quantity="10" unit="chars"/>II</fw>
+                    that only that she wished<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#HARRY">harry</name> would go on with <del rend="scratchout">scienec</del><lb/>
+                    science.</p>
+                <p><name type="fictional" corresp="#HARRY">harry</name> said he wou<subst><del>d</del><add rend="overwriting">l</add></subst>d and <said who="#HARRY">the<lb/>
+                    moment that I have time</said> added he <said who="#HARRY">so Ill do that <name type="fictional" corresp="#LUCY">Lucy</name></said>.<g type="justification">-</g></p>
+                <p>
+                    <said who="#LUCY"><subst><del>w</del><add rend="overwriting">W</add></subst>hen will you <name type="fictional" corresp="#HARRY">brother</name></said>
+                </p>
+                <p>
+                    <said who="#HARRY"><subst><del>t</del><add rend="overwriting">T</add></subst>o morrow.</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><subst><del>h</del><add rend="overwriting">H</add></subst>ave you not time to day<lb/>
+                    <name type="fictional" corresp="#HARRY">brother</name>.</said>
+                </p>
+                <p>
+                    <said who="#HARRY">No <name type="fictional" corresp="#LUCY">Lucy</name>.</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><subst><del>w</del><add rend="overwriting">W</add></subst>ell I can easily wa<subst><del>t</del><add rend="overwriting">i</add></subst>t can I not <name type="fictional" corresp="#HARRY">brother</name>.</said>
+                </p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter">Y</hi>es <name type="fictional" corresp="#LUCY">Lucy</name>.</said>
+                </p>
+                <p><subst><del>a</del><add rend="overwriting">A</add></subst>nd said her <name type="fictional" corresp="#PAPA">father</name> <said who="#PAPA">now I<lb/>
+                    will show you some experi&#x2010;<lb/>
+                    ments on sound.</said></p>
+                <pb facs="1229110r"/>
+                <fw type="pageNum" place="top"><space quantity="7" unit="chars"/>I2</fw>
+                <p>
+                    <said who="#LUCY">That will do nicely <name type="fictional" corresp="#PAPA">papa</name></said><lb/>
+                    said <name type="fictional" corresp="#LUCY">Lucy</name>
+                </p>
+                <p>
+                    <said who="#PAPA">Then come upstairs to the<g type="justification">-</g><lb/>
+                    workshop</said> said her <name type="fictional" corresp="#PAPA">father</name>.
+                </p>
+                <p><name type="fictional" corresp="#HARRY">Harry</name> and <name type="fictional" corresp="#LUCY">Lucy</name> followed<lb/>
+                    him quic<subst><del>ly</del><add rend="overwriting">kl</add></subst>y</p>
+                <p><subst><del>a</del><add rend="overwriting">A</add></subst>s so<subst><del>n</del><add rend="overwriting">o</add></subst>n as they came to<lb/>
+                    the wor<subst><del><unclear resp="#CWB">m</unclear></del><add rend="overwriting">k</add></subst>shop <del rend="scratchout">took</del> their<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#PAPA">father</name> took a little balloon<lb/>
+                    filled it with gunpowder<g type="justification">-</g><lb/>
+                    and hung it up at a pole<lb/>
+                    in the room. <subst><del>t</del><add rend="overwriting">T</add></subst>hen he set<lb/>
+                    fire to it and the noise<lb/>
+                    was so much that it was<lb/>
+                    near dea<subst><del>v</del><add rend="overwriting">f</add></subst>ing <name type="fictional" corresp="#HARRY">harry</name> and <name type="fictional" corresp="#LUCY">Lucy</name>
+                    Afterwards he took another<lb/>
+                    and hung it up at such a
+                <pb facs="1229111v"/>
+                <fw type="pageNum" place="top"><space quantity="8" unit="chars"/>I3</fw>
+                <!--<figure>
+                    <head type="drawing">harry and Lucys<lb/>house<lb/><add place="margin-left">2</add>Check hand.</head>
+                    <figDesc>From left, drawings of one of the balloons at the center of Papa's experiments, a tree, and a squarish, two&#x2010;story, brick house.</figDesc>
+                </figure>-->
+                <pb facs="1229111r"/>
+                <fw type="pageNum" place="top"><space quantity="7" unit="chars"/>I4</fw>
+                    height that it was hardly<lb/>
+                    perceptible then he set fire<lb/>
+                    to it by setting fire to a rod<lb/>
+                    that commu<subst><del>i</del><add rend="overwriting">n</add></subst>icated with it and<lb/>
+                    the noise could not be heard.&#x201D;</p>
+                <p>
+                    <said who="#PAPA">Now</said> said her <name type="fictional" corresp="#PAPA">father</name> <said who="#PAPA"><subst><del>w</del><add rend="overwriting">h</add></subst>ow<g type="justification">-</g><lb/>
+                    much <subst><del>t</del><add rend="overwriting">d</add></subst>o you think was <unclear reason="faded" resp="#DCH">the</unclear><lb/>
+                    distance between the heigh<lb/>
+                    <del rend="strikethrough"><unclear resp="#CWB">t</unclear></del>of these two <hi rend="doubletter-fill">b</hi>alloons.</said>
+                </p>
+                <p>they answered half a mile</p>
+                <p>
+                    <said who="#PAPA">Right</said> said her <name type="fictional" corresp="#PAPA">father</name>.<lb/>
+                    <said who="#PAPA"><hi rend="doubleletter">A</hi>nd did you not observe that<lb/>
+                    you did not hear the noise<g type="justification">-</g><lb/>
+                    the very moment that I<g type="justification">-</g><lb/>
+                    set fire to the balloon<g type="justification">-</g><lb/>
+                    but in a few moments af&#x2010;<lb/>
+                    terwards. And you o<subst><del>e</del><add rend="overwriting">b</add></subst>served
+                <pb facs="1229112v"/>
+                <fw type="pageNum" place="top"><space quantity="4" unit="chars"/>I5</fw>
+                    that you did not hear<lb/>
+                    the noise so quickly in<lb/>
+                    the higher one as in<lb/>
+                    the <del rend="scratchout">sm</del><subst><add rend="overwriting">low</add><del rend="scratchout">all</del></subst>er one.</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> answered <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name>. <said who="#LUCY">what<lb/>
+                    was the cause of that</said>
+                </p>
+                <p>
+                    <said who="#PAPA">The cause was that sound<lb/>
+                    travels slowly and the<lb/>
+                    distance between the lower<lb/>
+                    balloon and the higher one<lb/>
+                    being great the sound<g type="justification">-</g><lb/>
+                    had to travel over that<g type="justification">-</g><lb/>
+                    height of the larger pole<lb/>
+                    and that sound was longer<lb/>
+                    in coming down the higher pole<lb/>
+                    than the lower one<g type="justification">-</g><lb/>
+                    because of their height</said>
+                </p>
+                <pb facs="1229112r"/>
+                <fw type="pageNum" place="top"><space quantity="1" unit="chars"/><del rend="erasure">I6</del><space quantity="3" unit="chars"/>I6</fw>
+                <p>
+                    <said who="#LUCY">I understand you perfectly</said><lb/>
+                    said <name type="fictional" corresp="#LUCY">Lucy</name>.
+                </p>
+                <p>
+                    <said who="#PAPA">Now I will show you one<g type="justification">-</g><lb/>
+                    other experiment</said> said her<lb/>
+                    <name type="fictional" corresp="#PAPA">father</name>.
+                </p>
+                <p><hi rend="overwriting">T</hi>hen he took a pipe of<g type="justification">-</g><lb/>
+                    gunpowder and one of water<lb/>
+                    commu<subst><del>i<unclear resp="#CWB">n</unclear></del><add rend="overwriting">nic</add></subst>ated them together<lb/>
+                    and bid <name type="fictional" corresp="#HARRY">harry</name> apply his ear<lb/>
+                    to the end of the one of<lb/>
+                    water and having set<lb/>
+                    fire to the gunpowder the<lb/>
+                    noise was as loud as a<g type="justification">-</g><lb/>
+                    cannon. This then proved that<lb/>
+                    water is a good conductor<lb/>
+                    Next day <name type="fictional" corresp="#HARRY">harry</name> took <name type="fictional" corresp="#LUCY">Lucy</name><lb/>
+                    and took her into his gar<lb/>
+                    <del rend="scratchout">den</del>
+                <pb facs="1229113v"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/>I7</fw>
+                    den and then showed her<lb/>
+                    a little canal he had made<g type="justification">-</g><lb/>
+                    and a little boat with some<lb/>
+                    blocks fastened together by<lb/>
+                    wedges then he placed a<lb/>
+                    great many shores<!--<note n="n" type="gloss" place="botwin" resp="#DCH"><hi rend="italic">Shore</hi>&#x2014;&#x201C;a piece of timber or iron set obliquely against the side . . . of a ship in dock . . . as a support&#x201D; (OED).</note>--> or bits<lb/>
+                    s of wood under the blocks<lb/>
+                    and giving t<subst><del>o</del><add rend="overwriting">w</add></subst>o or th<subst><del><unclear resp="#CWB">e</unclear></del><add rend="overwriting">r</add></subst>ee<g type="justification">-</g><lb/>
+                    blows on the wedges out they<lb/>
+                    flew the blocks sunk and<lb/>
+                    the boat hung on the shores</p>
+                <p><name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name> now recollected a<lb/>
+                    promise <name type="fictional" corresp="#HARRY">harry</name> had made<lb/>
+                    her to show her how<lb/>
+                    ships were floated into<g type="justification">-</g><lb/>
+                    docks to be repaired.</p>
+                <p><name type="fictional" corresp="#HARRY"><subst><del>h</del><add rend="overwriting">H</add></subst>arry</name> told her she w<unclear resp="#DCH">a</unclear>s
+                <pb facs="1229113r"/>
+                <fw type="pageNum" place="top"><space quantity="7" unit="chars"/>I8</fw>
+                    right.</p>
+                <p>
+                    <said who="#LUCY">But how did you manage<lb/>
+                    to make these shores so<lb/>
+                    that they would hold<!--<g type="justification">=</g>--><lb/>
+                    the vessel so firmly and<g type="justification">-</g><lb/>
+                    upright.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#HARRY">That would take us up<lb/>
+                    too long a time stand&#x2010;<lb/>
+                    ing here</said> said <name type="fictional" corresp="#HARRY">harry</name>.
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter">W</hi>ell then come into the<lb/>
+                    house if you will.</said>
+                </p>
+                <p>
+                    <said who="#HARRY">No</said> said <name type="fictional" corresp="#HARRY">harry</name>. <said who="#HARRY">We can<g type="justification">-</g><lb/>
+                    walk about the garden<lb/>
+                    and then I can tell you.</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> answered <name type="fictional" corresp="#LUCY">Lucy</name>.
+                </p>
+                <p>
+                    <said who="#HARRY"><hi rend="overwriting">T</hi>hey are just plainly<g type="justification">-</g><lb/>
+                    sticks of wood but I man
+                <pb facs="1229114v"/>
+                <fw type="pageNum" place="top"><space quantity="8" unit="chars"/>I9</fw>
+                    &#x2010;aged to set them so as<lb/>
+                    to cross each other so that<lb/>
+                        the ship went in betw<subst><del>een</del><add rend="overwriting">een</add></subst><lb/><!--<note n="n" type="gloss" place="botwin" resp="#CWB">Here, Ruskin appears to have initially attempted to squeeze a smaller <hi rend="italic">een</hi> into the line before realizing that he had enough room to fit the letters in at their full size.</note>-->
+                    the shores and so was<lb/>
+                    held up by them.</said>
+                </p>
+                <p><name type="fictional" corresp="#LUCY"><hi rend="overwriting">L</hi>ucy</name> now reminded <name type="fictional" corresp="#HARRY">harry</name><lb/>
+                    of his promise about sci<lb/>
+                    ence. <hi rend="doubleletter">B</hi>ut he said he must<lb/>
+                    learn his latin<g type="justification">-</g><lb/>
+                    lessons first so they parted.&#x201D;</p>
+                <p><name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name> ran about the gar<lb/>
+                    den a little while. <hi rend="doubleletter">T</hi>hen<g type="justification">-</g><lb/>
+                    recollec&#x2010;ting her <name type="fictional" corresp="#HARRY">brother</name><lb/>
+                    she ran in to him to<lb/>
+                    ask him if he was<g type="justification">-</g><lb/>
+                    ready he was ready and<lb/>
+                    then <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name> went to the work&#x2010;
+            <pb facs="1229114r"/>
+            <fw type="pageNum" place="top"><space quantity="9" unit="chars"/>20</fw>
+                    shop with <name type="fictional" corresp="#HARRY">harry</name>.&#x201D;<g type="jusification">-</g></p>
+            </div>
+            <div type="chapter" n="3">
+                <head type="chapter"><space quantity="3" unit="chars"/>chapter III<add place="below"><milestone unit="undeclared" rend="hr-half"/></add></head>
+                <p><hi rend="doubleletter, caps">H</hi><hi rend="smallcaps">a</hi><hi rend="doubleletter, smallcaps">rry</hi> now took a cane<lb/>
+                    and bent it and then<lb/>
+                    letting go it flew with<lb/>
+                    such force that it broke<lb/>
+                    the window.</p>
+                <!--The paragraph that follows contains an exemplar of the use of <certainty/> followed by a corresponding explanatory note, as should be typical when <certainty/> is used.-->
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter">H</hi>a ha</said> says<add place="above"><name type="fictional" corresp="#HARRY">harry</name></add> <said who="#HARRY">this is not<lb/>
+                    such a very good thing is it<lb/>
+                    <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name>.</said> <said who="#LUCY">No it is not</said> <subst><del><unclear resp="#CWB">an</unclear></del><add rend="overwriting">sa</add></subst>id<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name>. <said who="#HARRY">But we will not let<lb/>
+                    o<subst><del>o</del><add rend="overwriting">u</add></subst>r spirits go b<subst><del>e</del><add rend="overwriting">y</add></subst> this let us<lb/>
+                        run and tell <name type="fictional" corresp="#MAMMA">mamma</name>.&#x201D;</said><certainty match="@who" locus="value" degree="0.5"/><!--<note n="n" type="gloss" place="botwin" resp="#CWB">It is unclear whether both of these sentences&#x2014;that is &#x201C;But we will not let our spirits go by this&#x201D; and &#x201C;let us run an tell mamma&#x201D;&#x2014;are spoken by <name type="fictional" corresp="#HARRY">Harry</name>; the first could be read as spoken by <name type="fictional" corresp="#LUCY">Lucy</name>.</note>-->
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> said <name type="fictional" corresp="#LUCY">Lucy</name>
+                </p>
+                <p>They both <subst><del>a</del><add rend="overwriting">r</add></subst>an to her.</p>
+                <p>
+                    <said who="#HARRY #LUCY"><name type="fictional" corresp="#MAMMA">mamma</name> we have <del rend="scratchout">b<subst><del>o</del><add rend="overwriting">r</add></subst><unclear resp="#CWB">k</unclear></del> broke<g type="justification">-</g><lb/>
+                        the window.</said><certainty match="@who" locus="value" degree="0.5"/><!--<note n="n" type="gloss" place="botwin" resp="#CWB">That both <name type="fictional" corresp="#HARRY">Harry</name> and <name type="fictional" corresp="#LUCY">Lucy</name> are speaking here is suggested by the <hi rend="italic">they</hi> in the preceding paragraph.</note>-->
+                </p>
+                <pb facs="1229115v"/>
+                <fw type="pageNum" place="top"><space quantity="8" unit="chars"/><del rend="erasure"><del rend="scratchout">I9</del></del><space quantity="3" unit="chars"/>2I</fw>
+                <p>She took out two balls<lb/>
+                    f<subst><del>o</del><add rend="overwriting">r</add></subst>om her worktable. <said who="mamma"><hi rend="doubleletter">Y</hi>ou<lb/>
+                    shall have these in reward</said>
+                </p>
+                <p>
+                    <said who="#HARRY #LUCY"><subst><del>i</del><add rend="overwriting">I</add></subst>n reward</said> interrupted<g type="justification">-</g><lb/>
+                    both <name type="fictional" corresp="#HARRY">harry</name> and <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name> at<g type="justification">-</g><lb/>
+                    once <said who="#HARRY #LUCY"><subst><del><hi rend="doubletter, smallcaps">i</hi></del><add rend="overwriting">i</add></subst>n reward for breaking<lb/>
+                    the window what can you<lb/>
+                        mean <name type="fictional" corresp="#MAMMA">mother</name><unclear resp="#CWB">!</unclear>&#x201D;</said><certainty match="@who" locus="value" degree="0.5"/><!--<note n="n" type="gloss" place="botwin" resp="#CWB">It is unclear whether&#x2014;and, in fact, unlikely in reality that&#x2014;both of these sentences&#x2014;&#x201C;in reward for breaking the window&#x2010D; and &#x201C;what can you mean mother&#x201D;&#x2014;are spoken by both children; one child may be speaking one or both.</note>-->
+                </p>
+                <p>
+                    <said who="#MAMMA"><hi rend="doubleletter">N</hi>o not in reward for<lb/>
+                    breaking the <hi rend="overwriting">w</hi>indow <del rend="scratchout">but</del><add place="above">not</add>
+                    in reward for break&#x2010;<lb/>
+                    ing the window but<g type="justification">-</g><lb/>
+                    in <hi rend="overwriting">r</hi>eward for coming<lb/>
+                    and telling me of it.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#HARRY #LUCY"><hi rend="doubleletter">H</hi>o h<hi rend="overwriting">o</hi> so that <hi rend="overwriting">i</hi>s the<lb/>
+                        reason <name type="fictional" corresp="#MAMMA">mamma</name>.&#x201D;</said><certainty match="@who" locus="value" degree="0.5"/><!--<note n="n" type="gloss" place="botwin" resp="#CWB">It is unclear whether&#x2014;and, in fact, unlikely in reality that&#x2014;this sentence is spoken by both children; the masculinity of the &#x201C;Ho ho&#x201D; that precedes it <hi rend="italic">may</hi> suggest that the sentence is spoken by <name type="fictional" corresp="#HARRY">Harry</name>.</note>-->
+                </p>
+                <p>
+                    <said who="#MAMMA"><hi rend="doubleletter-fill">Y</hi>es <hi rend="overwriting">t</hi>hat is it my dears.</said>
+                    <!--<note n="n" type="gloss" place="botwin" resp="#DCH">Rewards for honesty are frequent in the Edgeworth stories. Frank, like <persName corresp="#JR">Ruskin</persName>’s <name type="fictional" corresp="#HARRY">Harry</name>, is given two balls
+                        in reward for telling the truth about breaking a window. One of the balls is soft for more prudent play near glass. Unlike <persName corresp="#JR">Ruskin</persName>’s children, however,
+                        Frank must also punish himself by throwing away the horse chestnut that had cracked the window (Edgeworth, <hi rend="italic">Frank</hi>, 1:38&#x2013;40).</note>-->
+                </p>
+                <pb facs="1229115r"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/><del rend="erasure">20</del><space quantity="2" unit="chars"/>22</fw>
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> and <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name> then<g type="justification">-</g><lb/>
+                    went out in search of<g type="justification">-</g><lb/>
+                    the cane but they could<lb/>
+                    not find it do what<g type="justification">-</g><lb/>
+                    they would. <hi rend="doubleletter-fill">A</hi>t last <name type="fictional" corresp="#LUCY">Lucy</name><lb/>
+                    suggested it might have<g type="justification">-</g><lb/>
+                    stuck in a tree and as they<lb/>
+                    went home they found it<lb/>
+                    up in a large oak tree. The<lb/>
+                    next t<subst><del>o</del><add rend="overwriting">h</add></subst>ing to settle was<lb/>
+                    how to get it down they<g type="justification">-</g><lb/>
+                    first <add place="above">they</add> thought of shaking it<lb/>
+                    but then they could not shake<lb/>
+                    it because it was too firm<lb/>
+                    <hi rend="doubleletter">N</hi>ext they thought of climb&#x2010;<lb/>
+                    ing but the <del rend="scratchout">the</del> tree was<lb/>
+                    too rugged for that <hi rend="doubleletter">N</hi>ext
+                <pb facs="1229116v"/>
+                    <fw type="pageNum" place="top"><space quantity="6" unit="chars"/><del rend="erasure"><del rend="strikethrough">21</del></del><space quantity="1" unit="chars"/>23</fw>
+                    they thought of felling<lb/>
+                    it but they remembered<lb/>
+                    that the tree was not<g type="justification">-</g><lb/>
+                    theirs and they must not<lb/>
+                    fell it so they were in a<lb/>
+                    great perplexity.</p>
+                <p><hi rend="doubleletter">A</hi>t last they saw a man<lb/>
+                    passing by and they<g type="justification">-</g><lb/>
+                    asked him whether it<lb/>
+                    might be felled.</p>
+                <p><hi rend="doubleletter">H</hi>e said that it was<g type="justification">-</g><lb/>
+                    his and they might cut<lb/>
+                    it down.</p>
+                <p><hi rend="doubleletter">H</hi>e went and got a man<lb/>
+                    who would cut it for<g type="justification">-</g><lb/>
+                    them. <hi rend="doubleletter">A</hi>nd they got the cane<lb/>
+                    and went merril<lb/>
+                    <unclear resp="#CWB">l</unclear>
+                <pb facs="1229116r"/>
+                <fw type="pageNum" place="top-left"><del rend="erasure">24</del><add rend="overwriting">3</add> p<subst><del>2</del><add rend="overwriting">24</add></subst> <del rend="erasure">3</del><space quantity="2" unit="chars"/><del rend="erasure">22</del> Lucy hutch of rabbits<lb/>
+                    plate<space quantity="3" unit="chars"/>and her silkworms</fw>
+                <!--<figure>
+                    <figDesc>From left, drawings of a rabbit cage (with a rabbit inside), a small table with silkworms crawling up its legs, and a tree.</figDesc>
+                </figure>-->
+                <pb facs="1229117v"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/><del rend="erasure">23</del> 25</fw>
+                <!--Remainder of page is blank.-->
+                <pb facs="1229117r"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/><del rend="erasure">24</del><add rend="overwriting">26</add><space quantity="2" unit="chars"/><del rend="erasure">2<unclear resp="#CWB">9</unclear></del></fw>
+                ly home.</p>
+                <p><name type="fictional" corresp="#HARRY">Harry</name> did not dare<lb/>
+                    to do that again but as<lb/>
+                    soon as they came home<lb/>
+                    he took a tube bent it<lb/>
+                    filled it with water<lb/>
+                    place<add place="above">ed</add> it upright in a<lb/>
+                    pond and disturbing<lb/>
+                    the water the water in<lb/>
+                    the pipe flew up in<lb/>
+                    the a<subst><del>r</del><add rend="overwriting">i</add></subst>r and down as<lb/>
+                    if it was a fountain</p>
+                <p><name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name> asked <name type="fictional" corresp="#HARRY">harry</name> to<lb/>
+                    leave the pipe in the<g type="justification">-</g><lb/>
+                    pond and he did.</p>
+                <p><hi rend="doubleletter-fill">I</hi>t just now hap&#x2010;<lb/>
+                    penned that <name type="fictional" corresp="#LUCY">Lucy</name>s<g type="justification">-</g><lb/>
+                <pb facs="1229118v"/>
+                <fw type="pageNum" place="top"><space quantity="4" unit="chars"/><del rend="erasure">25</del>27<del rend="erasure">26</del></fw>
+                    <name type="fictional" corresp="#MAMMA">mother</name> wanted her <name type="fictional" corresp="#LUCY">Lucy</name><lb/>
+                    did not <subst><del>n</del><add rend="overwriting">k</add></subst>now <subst><del>v</del><add rend="overwriting">f</add></subst>or what<lb/>
+                    only her <name type="fictional" corresp="#MAMMA">mother</name> wanted<lb/>
+                    her</p>
+            </div>
+            <div type="chapter" n="4">
+                <head type="chapter"><hi rend="doubleletter">H</hi><milestone unit="undeclared" rend="hr-half"/><add place="above">chap 4</add></head>
+                <p><hi rend="doubleletter, caps">H</hi><hi rend="doubleletter, smallcaps">a</hi><hi rend="smallcaps">rr</hi><hi rend="doubleletter, smallcaps">y</hi> launched his<lb/>
+                    little boat but the water<lb/>
+                    flowed into it. <hi rend="doubleletter">T</hi>he <del rend="strikethrough">p</del><lb/>
+                    pumps were sounded but<lb/>
+                    all in vain the <subst><del>w</del><add rend="overwriting">ve</add></subst>ssel sunk<lb/>
+                    it went quite down the<g type="justification">-</g><lb/>
+                    <hi rend="pverwriting">c</hi>anal was too deep to get<lb/>
+                    it up again <name type="fictional" corresp="#HARRY">harry</name> was<lb/>
+                    in a puzzle.</p>
+                <p><hi rend="doubleletter">A</hi>t last <name type="fictional" corresp="#LUCY">lucy</name> came t<subst><del>o</del><add rend="overwriting">h</add></subst>ey<lb/>
+                    entangled a rope in all<lb/>
+                    sorts of knots and bows
+                <pb facs="1229118r"/>
+                    <fw type="pageNum" place="top"><space quantity="7" unit="chars"/><del rend="erasure"><unclear resp="#CWB">27</unclear></del><add rend="overwriting">28</add><space quantity="2" unit="chars"/><del rend="erasure">27</del></fw>
+                    and let it down into<lb/>
+                    the water it entangled<g type="justification">-</g><lb/>
+                    the <subst><del>w</del><add rend="overwriting">ve</add></subst>ssel and brought<lb/>
+                    it up again.</p>
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter">H</hi>arry</name> set to work to<lb/>
+                    stop the leak and in<g type="justification">-</g><lb/>
+                    a day did it. <hi rend="doubleletter">N</hi>ext he<g type="justification">-</g><lb/>
+                    put it into the water<lb/>
+                    and it swam.</p>
+                <p><hi rend="doubleletter">N</hi>ow <name type="fictional" corresp="#HARRY">harry</name> want&#x2010;<lb/>
+                    ed a kite and at last<lb/>
+                    his <handShift script="cursive"/><name type="fictional" corresp="#MAMMA">mother</name> <handShift script="print"/>gave him<lb/>
+                    one. <hi rend="doubleletter">O</hi>ne day when<lb/>
+                    he was flying it<!--<g type="justification">=</g>--><lb/>
+                    <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name> came to him<lb/>
+                    and told him that<!--<g type="justification">=</g>--><lb/>
+                    she had lost his<!--<g type="justification">=</g>-->
+                    <pb facs="1229119v"/><!--Page 29-->
+                    <fw type="pageNum" place="top"><space quantity="5" unit="chars"/><del rend="erasure">27</del><space quantity="2" unit="chars"/>2<subst><del>8</del><add rend="overwriting">9</add></subst></fw>
+                    boat<unclear resp="#DCH">,</unclear> and that it had<g type="justification">-</g><lb/>
+                    had some water in it.</p>
+                <p><hi rend="doubleletter">T</hi>his let <name type="fictional" corresp="#HARRY">harry</name> know<g type="justification">-</g><lb/>
+                    that he had not com&#x2010;<lb/>
+                    <hi rend="doubleletter">p</hi>letely stop<add place="below">&#x2304;</add><add place="above">p</add>ped the leak but<lb/>
+                    in half a day he stopped<lb/>
+                    it but they had a good<lb/>
+                    search for it first. <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name><lb type="runvoer"/>
+                    thought that it might<lb/>
+                    have been thrown into<lb/>
+                    a certain closet which<lb/>
+                    she knew and there<g type="justification">-</g><lb/>
+                    it was <name type="fictional" corresp="#HARRY">harry</name> poured<lb/>
+                    out the water and was<lb/>
+                    done with it<unclear resp="#DCH">!</unclear>&#x201D;<g type="justification">-</g></p>
+                <p><hi rend="doubleletter">N</hi>ow <name type="fictional" corresp="#HARRY">harry</name> <hi rend="overwriting">h</hi>ad a long<lb/>
+                    while<unclear resp="#DCH">,</unclear> been thinking</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">Exactly what <name type="fictional" corresp="#HARRY">Harry</name> had been thinking&#x2014;along with what immediately follows&#x2014;is lost with a missing leaf containing pp. 30&#x2013;31 (see <ref type="apparatus" target="msi_apparatus.html#DESCRIPTION">MS I: Description</ref>). In the next extant text, <name type="fictional" corresp="#HARRY">Harry</name> and <name type="fictional" corresp="#LUCY">Lucy</name> are in the process of guessing riddles. It is possible that the missing pages included [Plate 4, &#x201C;Harry and Lucy,&#x201D; Vol. 1]. See MS I Drawings.</note>-->
+                    <gap extent="2" unit="pages"/>
+                <pb facs="1229119r"/><!--Page 32-->
+                <fw type="pageNum" place="top"><space quantity="5" unit="chars"/>32</fw>
+                <p>this but at last she<lb/>
+                    did. She said<unclear resp="#DCH">,</unclear><lb/>
+                    <said who="#LUCY">a mans finger is for a child<lb/>
+                    too large</said></p>
+                <p>
+                    <said who="#HARRY">right</said> said <name type="fictional" corresp="#HARRY">harry</name>.&#x201D;<lb/>
+                    <said who="#HARRY">a lea<subst><del>v</del><add rend="overwriting">f</add></subst>e is a Leaf but it<g type="justification">-</g><lb/>
+                    grows on a <hi rend="overwriting">root</hi>.&#x201D;</said>
+                </p>
+                <p><name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name> found out this<g type="justification">-</g><lb/>
+                    too again she said<unclear resp="#DCH">,</unclear><lb/>
+                    <said who="#LUCY">a tree grows on a root<g type="justification">-</g><lb/>
+                    and the leaf on a tree.</said></p>
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter">H</hi>arry</name> said she was<lb/>
+                    right.</p>
+                <p>
+                    <said who="#LUCY">a little book is made<lb/>
+                    of paste.&#x201D;</said>
+                </p>
+                <p><hi rend="doubleletter">T</hi>he answer was<unclear resp="#DCH">,</unclear><lb/>
+                    <said who="#HARRY"><hi rend="doubleletter">T</hi>he side of a book is<g type="justification">-</g>
+                <!--Facsimile 1229120, if it exists, was not included the set of facsimiles that we received.-->
+                <pb facs="1229121v"/>
+                <fw type="placeNum" place="top"><space quantity="3" unit="chars"/>33</fw>
+                    made of paste.&#x201D;</said></p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter">A</hi>lls right we have <hi rend="doubleletter">d</hi>one<lb/>
+                    with <hi rend="overwriting">o</hi>ur riddles.</said>
+                </p>
+                <p>
+                    <said who="#HARRY">What only three.&#x201D;</said>
+                </p>
+                <p>
+                    <said who="#LUCY">threes enough.</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter">W</hi>e will have some more<lb/>
+                    ridde<del rend="erasure"><del rend="strikethrough">l</del></del>s some other time.</said>
+                </p>
+                <p>
+                    <said who="#HARRY">So we will.&#x201D;</said>
+                </p>
+                <p><hi rend="doubleletter">T</hi>he first thing <name type="fictional" corresp="#HARRY">Harry</name><lb/>
+                    and <name type="fictional" corresp="#LUCY">Lucy</name> did when the<g type="justification">-</g><lb/>
+                    morning came was to<lb/>
+                    make some grand scheme<lb/>
+                    It was settled thus<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#LUCY">Lucy</name> was appointed<g type="justification">-</g><lb/>
+                    to go into a bush by<lb/>
+                    which her <name type="fictional" corresp="#MAMMA">mother</name> always<g type="justification">-</g><lb/>
+                    passed, while <name type="fictional" corresp="#HARRY">harry</name><g type="justification">-</g>
+                <pb facs="1229121r"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/><del rend="erasure">32</del><add rend="overwriting">34</add></fw>
+                    made a ca<subst><del>w</del><add rend="overwriting">v</add></subst>e. <hi rend="overwriting">T</hi>his<g type="justification">-</g><lb/>
+                    cave had holes in the<lb/>
+                    top and had a chair in<g type="justification">-</g><lb/>
+                    it</p>
+            </div>
+            <div type="chapter" n="5">
+                <head type="chapter"><milestone unit="undeclared" rend="hr-half"/><add place="above">chap 5</add></head>
+                <p><hi rend="doubleletter">N</hi><subst><del>ow</del><add rend="overwriting">OW</add></subst> <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name> waited till<lb/>
+                    her <name type="fictional" corresp="#MAMMA">mother</name> passed the<g type="justification">-</g><lb/>
+                    bush and then suddenly<lb/>
+                    <hi rend="overwriting">d</hi>arting out seized her<lb/>
+                    and carried her away<lb/>
+                    to <name type="fictional" corresp="#HARRY">harry</name>s cave where<g type="justification">-</g><lb/>
+                    she sat quietly and<g type="justification">-</g><lb/>
+                    read.</p>
+                <p>But besides r<handShift script="cursive"/>eading<handShift script="print"/><g type="justification">-</g><lb/>
+                    her <name type="fictional" corresp="#MAMMA">mother</name> had other<g type="justification">-</g><lb/>
+                    amusements prepared<lb/>
+                    for her. <name type="fictional" corresp="#HARRY">Harry</name> had taken
+                <pb facs="1229122v"/>
+                <fw type="pageNum" place="top"><space quantity="7" unit="chars"/>35</fw>
+                    one of <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name><hi rend="overwriting">s</hi> rabbi<hi rend="overwriting">t</hi>s a<lb/>
+                    parro<hi rend="overwriting">t</hi> canary finch bull<lb/>
+                    finch sparrow and rob<lb/>
+                    in redbreas<hi rend="overwriting">t</hi> and had<g type="justification">-</g><lb/>
+                    put them in<hi rend="overwriting">t</hi>o a<g type="justification">-</g><lb/>
+                    little hole in <hi rend="overwriting">t</hi>he bottom<lb/>
+                    of <hi rend="overwriting">t</hi>he ca<subst><del>w</del><add rend="overwriting">ve</add></subst> and then<g type="justification">-</g><lb/>
+                    opening i<hi rend="overwriting">t</hi> all of them<lb/>
+                    marched out the rabbit<lb/>
+                    munching parrot talk<lb/>
+                    ing canary singing<g type="justification">-</g><lb/>
+                    bully cheaping robin<g type="justification">-</g><lb/>
+                    hopping and went<g type="justification">-</g><lb/>
+                    dancing <del rend="scratchout">h<unclear resp="#CWB"><space quantity="1" unit="chars"/>a</unclear></del>and flying<lb/>
+                    and eating and hop&#x2010;<lb/>
+                    ping and jumping<g type="justification">-</g><lb/>
+                    all over the green.</p>
+                <pb facs="1229122r"/>
+                <fw type="pageNum" place="top"><space quantity="5" unit="chars"/>3<del rend="erasure"><unclear resp="#CWB">4</unclear></del><add rend="overwriting">6</add></fw>
+                <p><name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name>s <name type="fictional" corresp="#MAMMA">mother</name> laughed<g type="justification">-</g><lb/>
+                    heartil<subst><del>l</del><add rend="overwriting">y</add></subst> at this a<subst><del>d</del><add rend="overwriting">n</add></subst>d<g type="justification">-</g><lb/>
+                    so did <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name> for <name type="fictional" corresp="#HARRY">harry</name><g type="justification">-</g><lb/>
+                    had kept it a secret even<lb/>
+                    from her.</p>
+                <p><hi rend="doubleletter">N</hi>ow they went in and<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#HARRY">harry</name> was dressing him<lb/>
+                    self when he was inter&#x2010;<lb/>
+                    rupted by <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name> running<lb/>
+                    jumping and cutting ca&#x2010;<lb/>
+                    pers.</p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter">W</hi>hy whats the mat&#x2010;<lb/>
+                    ter my dear.</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><name type="fictional" corresp="#HARRY">Harry</name> do you know<lb/>
+                    we are going to the seaside again.</said>
+                </p>
+                <p><said who="#HARRY"><subst><del>i</del><add rend="overwriting">I</add></subst>s this true</said> cried<g type="justification">-</g>
+                <pb facs="1229123v"/>
+                <fw type="pageNum" place="top"><space quantity="5" unit="chars"/>3<del rend="erasure">5</del><add rend="overwriting">7</add></fw>
+                <!--<figure>
+                    <head type="drawing" rend="left"><del rend="scratchout">4</del> 5 Lucys drawing room</head>
+                    <figDesc>From left, in the background, drawings of a door and a drawing/painting (possibly of Harry and Lucy) hung upon the wall and, in the foreground, a table at which a person (possibly Lucy) is seated in a chair drawing/painting and another drawing/painting (possibly of a ship), hung on a perpendicual wall.</figDesc>
+                </figure>-->
+                <pb facs="1229123r"/>
+                    <fw type="pageNum" place="top"><space quantity="4" unit="chars"/>3<subst><del><unclear resp="#CWB">6</unclear></del><add rend="overwriting">8</add></subst></fw>
+                    <name type="fictional" corresp="#HARRY">harry</name>.</p>
+                <p>
+                    <said who="#LUCY">it is t<hi rend="overwriting">r</hi>ue we a<hi rend="overwriting">r</hi>e to set<lb/>
+                    off this afte<hi rend="overwriting">r</hi><add place="below">&#x2304;&#x2304;&#x2304;</add><add place="above">noon</add> <hi rend="overwrting">dr</hi>ess your<lb/>
+                    self as fast as you can<lb/>
+                    be ready.</said>
+                </p>
+                <p><name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name> prounounced the<g type="justification">-</g><lb/>
+                    words as fast as she<lb/>
+                    could that was the why<lb/>
+                    that she forgot the part<lb/>
+                    of speech<!--<note n="n" type="gloss" place="botwin" resp="#DCH"><persName corresp="#JR">Ruskin</persName>&#x02BC;s meaning is unclear, since the narrator, not <name type="fictional" corresp="#LUCY">Lucy</name>, drops a word: &#x201C;that was the {reason} why.&#x201D; In <name type="fictional" corresp="#LUCY">Lucy</name>&#x02BC;s preceding speech, however, <hi rend="italic">noon</hi> is inserted above the line, over <hi rend="italic">after</hi>.</note>--><unclear resp="#CWB">.</unclear> and<unclear resp="#CWB">;</unclear> <name type="fictional" corresp="#HARRY"><hi rend="doubleletter">H</hi>arry</name><lb/>
+                    got <del rend="scratchout"><unclear resp="#CWB">h</unclear></del> ready as fast<g type="justification">-</g><lb/>
+                    as he could and in<lb/>
+                    a few minutes<lb/>
+                    was seated opposite to<g type="justification">-</g><lb/>
+                    his <name type="fictional" corresp="#PAPA">father</name> withe <name type="fictional" corresp="#LUCY">Lucy</name><lb/>
+                    away <hi rend="overwriting"/>hey went.</p>
+                <p><hi rend="doubleletter">P</hi><hi rend="overwriting">r</hi>esent&#x2010;ly they saw
+                <pb facs="1229124v"/>
+                    <fw type="pageNum" place="top"><space quantity="4" unit="chars"/>3<del rend="erasure">7</del><add rend="overwriting">9</add></fw>
+                    such a beauti<hi rend="overwriting">f</hi>ul<g type="justification">-</g><lb/>
+                    chain of mountains<lb/><!--Identify mountains.-->
+                    that they thought they<lb/>
+                    had been made by<lb/>
+                    mens hands.</p>
+                <p><hi rend="doubleletter">A</hi>fter a little <del rend="scratchout">w</del><lb/>
+                    while they came to<g type="justification">-</g><lb/>
+                    a wood a league<g type="justification">-</g><lb/><!--Identify forest.-->
+                    every way in size<lb/>
+                    but so beautiful<lb/>
+                    they quite wondered<g type="justification">-</g><lb/>
+                    <hi rend="doubleletter">N</hi>ext they came to<lb/>
+                    a river and they<g type="justification">-</g><lb/><!--Identify forest.-->
+                    were to ride along<lb/>
+                    the side of it. It was<lb/>
+                    beautiful the wat<lb/>
+                    er curling so nice
+                <pb facs="1229124r"/>
+                <fw type="pageNum" place="top"><space quantity="4" unit="chars"/><del rend="erasure">38</del><add rend="overwriting">40</add></fw>
+                    and dashing against<lb/>
+                    rocks and now<g type="justification">-</g><lb/>
+                    they got to the inn.</p>
+            </div>
+            <div type="chapter" n="6">
+                <head type="chapter">chap 6<add place="above"><milestone unit="undeclared" rend="hr-quarter"/></add><add place="below"><milestone unit="undeclared" rend="hr-quarter"/></add></head>
+                <p><hi rend="doubleletter, caps">T</hi><hi rend="smallcaps">he</hi> inn was close by<lb/>
+                    the bank of the river<lb/>
+                    to <name type="fictional" corresp="#HARRY">harry</name> and <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name>s <hi rend="overwriting">j</hi>oy<lb/>
+                    but there was more<lb/>
+                    joy for them they were<lb/>
+                    to go to the sea now<lb/>
+                    all in one stage only<lb/>
+                    stopp<add place="below">&#x2304;</add><add place="above">ing</add> to change horses<lb/>
+                    after having had a<lb/>
+                    little wi<subst><del><unclear resp="#CWB">i</unclear></del><add rend="overwriting">n</add></subst>e they set<lb/>
+                    out again on their<g type="justification">-</g><lb/>
+                    journey first of all<lb/>
+                    they came to a house<g type="justification">-</g><lb/>
+                <pb facs="1229125v"/>
+                <fw type="pageNum" place="top"><space quantity="5" unit="chars"/><del rend="erasure">36</del><add rend="overwriting">4I</add></fw>
+                    whe<hi rend="overwriting">r</hi>e <hi rend="overwriting"/>hey saw a very<lb/>
+                    large white cat even<g type="justification">-</g><lb/>
+                    they could not see one<lb/>
+                    spot of black upon it.<lb/></p>
+                <p>
+                    <said who="#LUCY">just like the froth<lb/>
+                    of the sea</said> said <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name>
+                </p>
+                <p>
+                    <said who="#HARRY">Nonsense Mrs hic<g type="justification">-</g><lb/>
+                    hae<unclear resp="#CWB">c</unclear> hoc<!--DCH: What does this mean?  CWB: hic, haec, hoc - in Latin, the nominative singlur masculine, feminine, and neuter equivalents of the pronoun "this."--></said> said <name type="fictional" corresp="#HARRY">harry</name>.
+                </p>
+                <p>
+                    <said who="#LUCY">Ha ha thats an odd<lb/>
+                    allusion</said> said <name type="fictional" corresp="#LUCY">Lucy</name></p>
+                <p>
+                    <said who="#HARRY">a T as crooked as an o.</said>
+                </p>
+                <p>
+                    <said who="#LUCY">Ha ha ha ha you will<lb/>
+                    come to nonsense at<lb/>
+                    last <name type="fictional" corresp="#HARRY">harry</name>.</said>
+                </p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter">N</hi>o</said> said <name type="fictional" corresp="#HARRY">harry</name> <said who="#HARRY">youll<lb/>
+                    get to nonsense.</said>
+                </p>
+                <pb facs="1229125r"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/><del rend="erasure">40</del><add rend="overwriting">42</add></fw>
+                <!--<figure>
+                    <head type="drawing" rend="left"><del rend="scratchout">5</del> 6 harry seeing a ship<lb/><space quantity="4" unit="chars"/>launch</head>
+                    <figDesc>Drawing of a masted ship being launched.</figDesc>
+                </figure>-->
+                <pb facs="1229126v"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/>43</fw>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter">T</hi>ots nonsense.<!--CWB: "Tots nonsense" - "It will still add up to nonsense." See tot, an "abbreviation of 'total' or of Latin 'totum' [meaning] ‘the whole.'" (OED).--> What a<g type="justification">-</g><lb/>
+                    gr<hi rend="overwriting">e</hi><subst><del><unclear resp="#CWB">t</unclear></del><add rend="overwriting">a</add></subst>t many words ab&#x2010;<lb/>
+                    out one thing</said> said <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name>.
+                </p>
+                <p>
+                    <said who="#HARRY"><subst><del>s</del><add rend="overwriting">S</add></subst>o m<subst><del>o</del><add rend="overwriting">u</add></subst>ch the better</said> said<lb/>
+                    <name type="fictional" corresp="#HARRY">harry</name>.
+                </p>
+                <p>
+                    <said who="#LUCY">So much the worse</said> said <name type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</name>
+                </p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter">L</hi>ook look look <name type="fictional" corresp="#PAPA">father</name></said> cried<lb/>
+                    <name type="fictional" corresp="#HARRY">harry</name> <said who="#HARRY">do you see that.</said>
+                </p>
+                <p>
+                    <said who="#PAPA"><hi rend="doubleletter-fill">N</hi>o I do not what is it.</said>
+                </p>
+                <p><hi rend="doubleletter">T</hi>he fact was that <name type="fictional" corresp="#HARRY">harry</name> had<lb/>
+                    seen a waggon strike a<g type="justification">-</g><lb/>
+                    spark from the road and<g type="justification">-</g><lb/>
+                    that set fire to a tree<g type="justification">-</g><lb/>
+                    and <name type="fictional" corresp="#HARRY">harry</name> had seen it<g type="justification">-</g><lb/>
+                    blazing.</p>
+                <p>
+                    <said who="#PAPA"><hi rend="doubleletter">T</hi>hats a bad job indeed</said><g type="justification">-</g><lb/>
+                    said his <name type="fictional" corresp="#PAPA">father</name> <said who="#PAPA">dont you
+                <pb facs="1229126r"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/>4<del rend="erasure">2</del><add rend="overwriting">4</add></fw>
+                    observe it is close to<lb/>
+                    a l<hi rend="overwriting">i</hi>ttle cottage and it<g type="justification">-</g><lb/>
+                    may set fire to it.</said>
+                </p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">N</hi>o <name type="fictional" corresp="#PAPA">papa</name></said> said <name type="fictional" corresp="#HARRY">harry</name><lb/>
+                    <said who="#HARRY">no because though I see<lb/>
+                    the cottage I also ob<lb/>
+                    serve it is sheltered<lb/>
+                    by a ditch which is wet<lb/>
+                    and if the flames come<lb/>
+                    to it they will quickly<lb/>
+                    be quenched</said></p>
+                <p>
+                    <said who="#PAPA"><hi rend="doubleletter-fill">B</hi>ut remember <name type="fictional" corresp="#HARRY">harry</name><lb/>
+                    that littl<hi rend="overwriting">e</hi> <hi rend="doubleletter">w</hi>ater will<g type="justification">-</g><lb/>
+                    not quench much fire</said>
+                </p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">B</hi>ut theres a great<g type="justification">-</g><lb/>
+                    deal of wate<hi rend="overwriting">r</hi> i<hi rend="overwriting">n</hi> the<lb/>
+                    ditch.</said>
+                </p>
+                <pb facs="1229127v"/>
+                <fw type="pageNum" place="top"><space quantity="3" unit="chars"/>4<subst><del>3</del><add rend="overwriting">5</add></subst></fw>
+                <p>
+                    <said who="#PAPA">Oh then I am not so<lb/>
+                    much concerned.</said>
+                </p>
+                <p>
+                    <said who="#HARRY">No <name type="fictional" corresp="#PAPA">papa</name> look the flames<lb/>
+                    are fast quenching and<lb/>
+                    now they are out.</said>
+                </p>
+                <p>
+                    <said who="#PAPA"><hi rend="doubleletter">Y</hi>es</said> said his <name type="fictional" corresp="#PAPA">father</name><g type="justification">-</g><lb/>
+                </p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter">L</hi>ook look what is<g type="justification">-</g><lb/>
+                    that gently mo<subst><del>w</del><add rend="overwriting">vi</add></subst>ng up<lb/>
+                    and down sometimes a<g type="justification">-</g><lb/>
+                    <add place="above">little froth</add>appearing</said>
+                </p>
+                <p>
+                    <said who="#PAPA">give me my telescope<lb/>
+                    <name type="fictional" corresp="#HARRY">harry</name> and I&#x02BC;ll tell<!--<g type="justification">&#x00F7;</g>--><lb/>
+                    you.</said>
+                </p>
+                <p>
+                    <said who="#PAPA">its the sea.</said>
+                </p>
+                <p>
+                    <said who="#HARRY"><subst><del>s</del><add rend="overwriting">t</add></subst>he sea</said>
+                </p>
+                <p>
+                    <said who="#PAPA"><hi rend="overwriting">Y</hi>es the sea</said>
+                </p>
+                <p>a shout of joy followed</p>
+                <pb facs="1229127r"/>
+                <fw type="pageNum" place="top"><space quantity="3" unit="chars"/>44</fw>
+                <p>
+                    <said who="#HARRY">What is that town</said>
+                </p>
+                <p>
+                    <said who="#PAPA">hastings</said>
+                </p>
+                <p>
+                    <said who="#HARRY">Wheres hastings</said>
+                </p>
+                <p>
+                    <said who="#PAPA">by the sea side</said>
+                </p>
+                <p>
+                    <said who="#HARRY">Are we going to hast<del rend="scratchout">i</del><lb/>
+                    ngs.</said>
+                </p>
+                <p>
+                    <said who="#PAPA"><hi rend="doubleletter-fill">Y</hi>es.</said>
+                </p>
+                <p><hi rend="doubleletter-fill">B</hi>y this time they had<lb/>
+                    got to the entrance of<lb/>
+                    hastings and went to<g type="justification">-</g><lb/>
+                    a hotel where they had<lb/>
+                    a full view of the sea<lb/>
+                    and <name type="fictional" corresp="#HARRY">harry</name> sa<subst><del>w</del><add rend="overwriting">aw</add></subst> a<g type="justification">-</g><lb/>
+                    two master which<lb/>
+                    he showed to&#x2038;<add place="above"><name type="fictional" corresp="#LUCY">Lucy</name></add><!--<note n="n" type="gloss" place="botwin" resp="#CWB">The line is crowded by the introduction of &#x201C;chap 7.&#x201D;</note>-->
+                </p>
+            </div>
+            <div type="chapter" n="7">
+                <head type="chapter">chap 7</head>
+                <p><hi rend="doubleletter">N</hi><hi rend="smallcaps">ext</hi> day their <name type="fictional" corresp="#PAPA">father</name><lb/>
+                    took <del rend="scratchout">took</del>them out in
+                <pb facs="1229128v"/><fw type="pageNum" place="top"><space quantity="6" unit="chars"/>4<del rend="erasure">5</del><add rend="overwriting">7</add></fw>
+                    a pleasure boat which<lb/>
+                    <name type="fictional" corresp="#HARRY">harry</name> and <name type="fictional" corresp="#LUCY">Lucy</name> liked very<lb/>
+                    <subst><del>i</del><add rend="overwriting">m</add></subst>uch <name type="fictional" corresp="#HARRY">harry</name> now got a little<lb/>
+                    dog and he used to take<g type="justification">-</g><lb/>
+                    great pleasure in giving<g type="justification">-</g><lb/>
+                    him a swim by throw<del rend="scratchout"><unclear resp="#CWB"><!--<g type="justification">=</g>--></unclear></del>
+                    a stick into the water<lb/>
+                    and making him swim after<lb/>
+                    it. one day as <name type="fictional" corresp="#HARRY">harry</name> was<lb/>
+                    sailing his boat <del rend="scratchout">with</del> without<lb/>
+                    a string a surge lifting it<lb/>
+                    high aloft threw it upon<lb/>
+                    the beach and <subst><del><unclear resp="#CWB">a</unclear></del><add rend="overwriting">i</add></subst>mmediately<g type="justification">-</g><lb/>
+                    fell upon it when it again<lb/>
+                    was afloat as it turned<lb/>
+                    its sides to the sun it<g type="justification">-</g><lb/>
+                    looked as if it were<g type="justification">-</g><lb/>
+                <pb facs="1229128r"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/>48</fw>
+                    made of diamonds. <name type="fictional" corresp="#HARRY">harry</name>s<g type="justification">-</g><lb/>
+                    littl<subst><del>d</del><add rend="overwriting">e</add></subst> dog then came prancing in<lb/>
+                    and seeing the boat <subst><del>s</del><add rend="overwriting">j</add></subst>umped into<g type="justification">-</g><lb/>
+                    the water caught it <hi rend="overwriting">in</hi> his mouth and<lb/>
+                    before <name type="fictional" corresp="#HARRY">harry</name> co<subst><del>l</del><add rend="overwriting">u</add></subst>ld pre<subst><del>w</del><add rend="overwriting">ve</add></subst>ent him<lb/>
+                    gnawed it to peices <name type="fictional" corresp="#HARRY">Harry</name>find&#x2010;<lb/>
+                    ing that amusement stopped am<lb/>
+                    used himself for some time<g type="justification">-</g><lb/>
+                    with his dog <del rend="erasure"><unclear resp="#CWB">for</unclear></del><add rend="overwriting">and</add> then went in<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#PAPA">Papa</name> and he then went out for<g type="justification">-</g><lb/>
+                    a walk and after having climbed<lb/>
+                    a high hill they came on a sort<lb/>
+                    of <del rend="erasure"><gap extent="1" unit="chars"/>o<gap extent="several characters"/>d</del><add rend="overwriting">plain composed</add> of a great<g type="justification">-</g><lb/>
+                    many fields only separated by<lb/>
+                    hedges and where they had a<lb/>
+                    full v<subst><del>e</del><add rend="overwriting">i</add></subst>ew of the sea a<subst><del><unclear resp="#CWB">a</unclear></del><add rend="overwriting">n</add></subst>d <name type="fictional" corresp="#HARRY">harry</name><lb/>
+                    got a large nosegay of wildflow
+                <pb facs="1229129v"/>
+                <fw type="pageNum" place="top"><space quantity="8" unit="chars"/>4<del rend="erasure">7</del><add rend="overwriting">9</add></fw>
+                    er<subst><del><unclear resp="#CWB">.</unclear></del><add rend="overwriting">s</add></subst> <name type="fictional" corresp="#HARRY">Harry</name> then went home<lb/>
+                    with his
+                    <name type="fictional" corresp="#PAPA">father</name> and after<g type="justification">-</g><lb/>
+                    dinner went out again upon<lb/>
+                    the beach and coming in<g type="justification">-</g><lb/>
+                    took tea and went to bed.</p>
+                <p><hi rend="doubleletter">N</hi>ext morning they were<g type="justification">-</g><lb/>
+                    awakened by their <name type="fictional" corresp="#PAPA">father</name>s<g type="justification">-</g><lb/>
+                    calling <said who="#PAPA">come h<del rend="erasure">arry</del><add rend="overwriting">ere</add> <name type="fictional" corresp="#HARRY">harry</name></said> he<lb/>
+                    ran to his <name type="fictional" corresp="#PAPA">father</name> and they saw<lb/>
+                    a great light about a mile<g type="justification">-</g><lb/>
+                    from the shore but they<g type="justification">-</g><lb/>
+                    soon saw what it was for<lb/>
+                    a great many beams rafters<lb/>
+                    and bits of wood on fire<g type="justification">-</g><lb/>
+                    blew up in the air with a<lb/>
+                    tremendous explosion<!--<note n="n" type="gloss" place="botwin" resp="#DCH">For more exploding ships, see Entry needed here.</note>--> and<lb/>
+                    i<subst><del>t</del><add rend="overwriting">n</add></subst> an instant all the fire     
+                <pb facs="1229129r"/>
+                <fw type="pageNum" place="top"><space quantity="9" unit="chars"/>48</fw>
+                <!--<figure>
+                    <head type="drawing" rend="left"><del rend="scratchout"><unclear resp="#CWB">8</unclear></del> 7<lb/><del rend="erasure">harrys new road</del><add rend="overwriting">harr<subst><del>s</del><add rend="overwriting">y</add></subst>s new road</add></head>
+                    <figDesc>Drawing of a road winding its way up the right side of a hill/mountain.</figDesc>
+                </figure>-->
+                <pb facs="1229130v"/>
+                <fw type="pageNum" place="top"><space quantity="8" unit="chars"/>49</fw>
+                    was out.</p>
+                <p><name type="fictional" corresp="#HARRY">Harry</name>s <name type="fictional" corresp="#PAPA">father</name> now said that<lb/>
+                    it was a ship on fire and on<lb/>
+                    looking through his telescope<lb/>
+                    observed a board floating on to<lb/>
+                    the shore that bore evident<g type="justification">-</g><lb/>
+                    marks of being thoroughly burnt<lb/>
+                    and <name type="fictional" corresp="#HARRY"><hi rend="doubleletter">H</hi>arry</name> agreed in his opinion<lb/>
+                    <hi rend="doubleletter">N</hi>ow <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> went to <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name> to<lb/>
+                    remind her of riddles and he<lb/>
+                    began.</p>
+                <p>
+                    <space quantity="6" unit="chars"/><said who="#HARRY">three parts of a cross<lb/>
+                    <space quantity="6" unit="chars"/>and a circle complete<lb/>
+                    <space quantity="6" unit="chars"/>two semicircles<lb/>
+                    <space quantity="6" unit="chars"/>perpendicular meet<lb/>
+                    <space quantity="6" unit="chars"/>an angle standing on two feet<lb/>
+                    <space quantity="6" unit="chars"/>two semicircles and a circle complet<supplied reason="runoff" resp="#CWB">e</supplied></said></p>
+                <pb facs="1229130r"/>
+                <fw type="pageNum" place="top"><space quantity="7" unit="chars"/>50</fw>
+                <p>
+                    <said who="#LUCY">I know that riddle it&#x02BC;s tobacco</said><lb/>
+                    said <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name>.
+                </p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">Y</hi>es it is</said> said <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> <said who="#HARRY">but how<lb/>
+                    does it make tobacco.</said></p>
+                <p>
+                    <said who="#LUCY">three parts of a cross make <hi rend="doubleletter-fill">T</hi><lb/>
+                    and a circle complete <hi rend="doubleletter-fill">O</hi><g type="justification">-</g><lb/>
+                    two semicircles perpendicular<lb/>
+                    meet <hi rend="doubleletter-fill">B</hi> an angle standing on two<lb/>
+                    feet <hi rend="doubleletter-fill">A</hi> two semicircles and<lb/>
+                    a circle complete double <hi rend="doubleletter-fill">C</hi><lb/>
+                    and <hi rend="doubleletter-fill">O</hi></said> <said who="#HARRY"><hi rend="doubleletter-fill">Y</hi>es</said> said <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> <said who="#HARRY">but<lb/>
+                    I will give you another</said></p>
+                <p>
+                    <space quantity="8" unit="chars"/><said who="#HARRY">two letter s each<lb/>
+                    <space quantity="8" unit="chars"/>and each a half<lb/>
+                    <space quantity="8" unit="chars"/>of w<subst><del>a</del><add rend="overwriting">h</add></subst>at the beach<lb/>
+                    <space quantity="8" unit="chars"/>was involved in</said>
+                </p>
+                <p>
+                    <said who="#LUCY">fire</said> said <name type="fictional" corresp="#LUCY">Lucy</name>
+                </p>
+                <pb facs="1229131v"/>
+                <fw type="pageNum" place="top"><space quantity="8" unit="chars"/>5I</fw>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">Y</hi>es it is fire and we have<g type="justification">-</g><lb/>
+                    done</said>
+                </p>
+            </div>
+            <div type="chapter" n="8">
+                <head type="chapter"><space quantity="2" unit="chars"/>chap 8</head>
+                <space quantity="2" unit="chars"/><milestone unit="undeclared" rend="hr-half"/>
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> went out upon the<g type="justification">-</g><lb/>
+                    beach with his dog and<g type="justification">-</g><lb/>
+                    broug<del rend="erasure">t<unclear resp="#CWB">h</unclear></del><add rend="overwriting">h</add>t in to <name type="fictional" corresp="#LUCY"><del rend="erasure"><unclear resp="#CWB">l</unclear>u</del><add rend="doubleletter-fill">L</add>ucy</name> such<lb/>
+                    a store of shells that she<g type="justification">-</g><lb/>
+                    wondered how he could<g type="justification">-</g><lb/>
+                    pick up so many without<lb/>
+                    his back aching <hi rend="doubleletter-fill">B</hi>ut <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-letter">H</hi>arry</name><lb/>
+                    told her that he had quite<lb/>
+                    changed since that time<lb/>
+                    and was counting all the<lb/>
+                    shells o<subst><del>w</del><add rend="overwriting">ve</add></subst>r when he was<lb/>
+                    interr<del rend="erasure"><unclear resp="#CWB">o</unclear></del><add rend="overwriting">u</add>pted by dinner after<lb/>
+                    <name type="fictional" corresp="#HARRY">Harry</name><add place="above">dinner</add> learned all his les
+                <pb facs="1229131r"/>
+                    <fw type="pageNum" place="top"><space quantity="8" unit="chars"/>5<subst><del>I</del><add rend="overwriting">2</add></subst></fw>
+                    sons drew a little took tea<g type="justification">-</g><lb/>
+                    and went to bed.</p>
+                <p>Next morning <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> went<g type="justification">-</g><lb/>
+                    out upon the beach for the 4<hi rend="superscript">th</hi><lb/>
+                    time and this time he brought<g type="justification">-</g><lb/>
+                    spars and pieces of ore to <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name><g type="justification">-</g><lb/>
+                    instead of shells. <hi rend="doubleletter-fill">B</hi>ut here he<g type="justification">-</g><lb/>
+                    was stopped by going out for<g type="justification">-</g><lb/>
+                    a walk they climbed a high hill<g type="justification">-</g><lb/>
+                    and went on sometimes by the<g type="justification">-</g><lb/>
+                    sides of rivulets at other<add place="above">times</add> half<g type="justification">-</g><lb/>
+                    rubbing against he<del rend="erasure">g<gap extent="2" unit="chars"/>e</del><add rend="overwriting">dges</add><del rend="erasure">s</del>but<g type="justification">-</g><lb/>
+                    oftenest so attracted by the<g type="justification">-</g><lb/>
+                    bubbling of a pure clear<g type="justification">-</g><lb/>
+                    stream that they were like to jump<g type="justification">-</g><lb/>
+                    <handShift script="cursive"/>into<handShift script="print"/> it they went<lb/>
+                    through dark avenues and
+                <pb facs="1229132v"/>
+                <fw type="pageNum" place="top"><space quantity="8" unit="chars"/>53</fw>
+                    between hedges forming a<g type="justification">-</g><lb/>
+                    sort of foot&#x2010;path sometimes<lb/>
+                    a full view of the sea some&#x2010;<lb/>
+                    times none at all till unexpected<lb/>
+                    ly they arrived at home.</p>
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> sat down to draw and<g type="justification">-</g><lb/>
+                    had just done part of the trunk of<g type="justification">-</g><lb/>
+                    a tree when a carriage drove<g type="justification">-</g><lb/>
+                    to the door.</p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">W</hi>ho is<add place="above">it</add></said> said <name type="fictional" corresp="#HARRY">Harry</name> look&#x2010;<lb/>
+                    ing out.</p>
+                <p><hi rend="doubleletter-fill">I</hi>t was only an arrival.</p>
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> sat down again<g type="justification">-</g><lb/>
+                    and finished his tree but<g type="justification">-</g><lb/>
+                    they were soon turned out of<lb type="runoveor"/>
+                    their apartment and put in&#x2010;<lb/>
+                    to another for they were<g type="justification">-</g>    
+                <pb facs="1229132r"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/>54</fw>
+                <!--<figure>
+                    <head type="drawing" rend="left"><del rend="scratchout">7</del> 8<lb/>harrys dock</head>
+                    <figDesc>Drawing of a stone and/or brick, arched, bridge&#x2010;like structure.</figDesc>
+                </figure>-->
+                <pb facs="1229133v"/>
+                    <fw type="pageNum" place="top"><space quantity="7" unit="chars"/>5<subst><del><unclear resp="#CWB">3</unclear></del><add rend="overwriting">5</add></subst></fw>
+                    told that the person who<lb/>
+                    had just come in wanted<lb/>
+                    their apartments.</p>
+                <p><hi rend="doubleletter-fill">A</hi>fter dinner it being the<lb/>
+                    longest day tea came in<g type="justification">-</g><lb/>
+                    s<handShift script="cursive"/>eemingly<handShift script="print"/> at three o&#x2010;clock<g type="justification">-</g><lb/>
+                    when it was seven <name type="fictional" corresp="#HARRY">harry</name><lb/>
+                    going to bed at nine had<g type="justification">-</g><lb/>
+                    only two hours to play<g type="justification">-</g><lb/>
+                    which he spent in draw&#x2010;<lb/>
+                    ing and went to bed.</p>
+                <p><hi rend="doubleletter-fill">N</hi>ext morning after break<lb/>
+                    fast <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> determined<g type="justification">-</g><lb/>
+                    to go on with science and<lb/>
+                    told <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name> he must be&#x2010;<lb/>
+                    gin with pneumatics he<g type="justification">-</g><lb/>
+                    said that this science<g type="justification">-</g><lb/>
+                <pb facs="1229133r"/>
+                <fw type="pageNum" place="top"><space quantity="9" unit="chars"/>56</fw>
+                    treated of the pressure and<lb/>
+                    springiness of the air.</p>
+                <p><hi rend="doubleletter-fill">R</hi>emembering that <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name><g type="justification">-</g><lb/>
+                    wanted to see the guinea and<lb/>
+                    feather fall with equal velocities<g type="justification">-</g><lb/>
+                    he took a guinea and a feather<g type="justification">-</g><lb/>
+                    set them on a brass flap and<g type="justification">-</g><lb/>
+                    put the flap under the receiver<g type="justification">-</g><lb/>
+                    of his air pump shut it up in<g type="justification">-</g><lb/>
+                    a little notch and exhausting<g type="justification">-</g><lb/>
+                    the air turned a little wire<g type="justification">-</g><lb/>
+                    and the flap slipped down<g type="justification">-</g><lb/>
+                    and the guinea and feather<g type="justification">-</g><lb/>
+                    fell with equal velocities<g type="justification">-</g><lb/>
+                    and no noise. <del rend="erasure">9</del></p>
+                <p><name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name> was surprised at this<g type="justification">-</g><lb/>
+                    but <name type="fictional" corresp="#HARRY">harry</name> said that it was<g type="justification">-</g>
+                <pb facs="1229134v"/>
+                <fw type="pageNum" place="top"><space quantity="9" unit="chars"/>57</fw>
+                    only because the air was taken<g type="justification">-</g><lb/>
+                    away</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">Taken from <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, Conversation 24, &#x201C;Of the Air&#x2010;Pump&#x201D; (2:141&#x2013;48, esp. 147), the second of the conversations on pneumatics.
+                        The experiment is designed to illustrate part of the proposition that the resistance of air is proportional to the surface opposed to it. The description is graced with quotations from Lofft, <hi rend="italic">Eudosia</hi> and from
+                        <hi rend="italic">The Botanic Garden</hi> in <ref type="bibliography" target="bibliography.html#DARWINWORKS">Darwin, <hi rend="italic">Poetical Works</hi></ref>, the latter making a point about the soundlessness of a vacumn that <persName corresp="#JR">Ruskin</persName> has
+                        <name type="fictional" corresp="#HARRY">Harry</name> demonstrate to <name type="fictional" corresp="#LUCY">Lucy</name>, below: &#x201C;Rare and more rare
+                        expands the fluid thin / And silence dwells with vacancy within.&#x201D; <persName corresp="#JR">Ruskin</persName> is indebted to <persName corresp="#ED">Darwin</persName> also for the term spring of air,
+                        <persName corresp="#JJ">Joyce</persName> preferring the more pedantic elasticity. In context of the industrial revolution, however, such terms
+                        as elasticity conjured the science supporting the development of the steam engine; see, e.g., <ref type="bibliography" target="bibliography.html#DARWINWORKS">Darwin, <hi rend="italic">Poetical Works</hi></ref>, 1:283. 
+                        SEE EMERSON ON WHAT HE COPIES VERBATIM FROM JOYCE AND WHAT HE DOESN'T 23</note>-->
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> now said he would des<lb/>
+                    cribe the airgun to <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name>.</p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">W</hi>hat is an airgun</said> said <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">F</hi>ucy</name></p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">I</hi>t is a sort of musket that acts<g type="justification">-</g><lb/>
+                    by air instead of gunpowder.</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">H</hi>ow does it act by air instead<lb/>
+                    of gunpowder.</said>
+                </p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">T</hi>here is a ball of condensed<g type="justification">-</g><lb/>
+                    air which is <hi rend="overwriting">s</hi><subst><del>e</del><add rend="overwriting">c</add></subst><hi rend="overwriting">r</hi>ewed to the<g type="justification">-</g><lb/>
+                    barrel of the gun and there is<g type="justification">-</g><lb/>
+                    a valve in the ball open<del rend="erasure">e</del><add rend="overwriting">i</add>ng in&#x2010;<lb/>
+                    wards and when the ball is<g type="justification">-</g><lb/>
+                    screwed on and the bullet in<g type="justification">-</g><lb/>
+                    the trigger is pulled back<g type="justification">-</g><lb/>
+                    which forces down a<del rend="erasure">h</del>hook upon
+                <pb facs="1229134r"/>
+                <fw type="pageNum" place="top"><space quantity="7" unit="chars"/>58</fw>
+                    a pin connected with the <subst><del><unclear resp="#CWB">w</unclear></del><add rend="overwriting">v</add></subst>alve<lb/>
+                    and liberates a portion of the<lb/>
+                    condensed air this rushing<g type="justification">-</g><lb/>
+                    through a hole in the lock into<lb/>
+                    the barrel will impel the bull<lb/>
+                        et to a great distance.</said><!--<note n="n" type="gloss" place="botwin" resp="#DCH">Condensed and with verbatim portions from <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, Conversation 32, &#x201C;Of the Air&#x2010;Gun, and Sound&#x201D; (2:183&#x2013;84).</note>-->
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">W</hi>hat is the <handShift script="cursive"/>eolian harp</said> <handShift script="print"/>said<lb/>
+                    <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name>.</p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">I</hi>t is a sort of harp that acts<lb/>
+                    by air instead of the hands<lb/>
+                    for the air sweep<subst><del>e</del><add rend="overwriting">i</add></subst>ng along<lb/>
+                    the strings of the harp makes<lb/>
+                    them vibrate and produces the<lb/>
+                    sound.</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">W</hi>hat are the principal con<g type="justification">-</g><lb/>
+                    ductors of com<subst><del>o</del><add rend="overwriting">m</add></subst>on sound</said> said<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#LUCY"><hi rend="doubleletter=fill">L</hi>ucy</name>.</p>
+                <pb facs="1229135v"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/>59</fw>
+                <!--<figure>
+                    <head type="drawing" rend="left"><del rend="scratchout">8</del> 9<lb/><space quantity="4" unit="chars"/>harrys ship</head>
+                    <figDesc>Drawing of a masted ship, its sails unfurled at sea.</figDesc>
+                </figure>-->
+                <pb facs="1229135r"/>
+                <fw type="pageNum" place="top"><space quantity="6" unit="chars"/>80<space quantity="10" unit="chars"/><del rend="erasure">8</del></fw><!--<note n="n" type="gloss" place="botwin" resp="#CWB">The page number should be &#x201C;60.&#x201D; <persName corresp="#JR">Ruskin</persName> mistakenly writes an &#x2010C;8&#x201D; instead of a &#x201C;6&#x201D; in the page number; the mistake affects his page&#x2010;numbering of the rest of &#x201C;Harry and Lucy&#x201D;, Vol. 1.</note>-->
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">T</hi>hey are flannel water air<lb/>
+                    which last is absolutely neces&#x2010;<lb/>
+                    sary to sound.</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">W</hi>ill you prove<add place="above">that</add> to me</said> said <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name></p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">Y</hi>es <hi rend="doubleletter-fill">I</hi> will</said> said <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name>.
+                </p>
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> then took a bell and<g type="justification">-</g><lb/>
+                    put <del rend="erasure">in the</del><add rend="overwriting">it in the</add> receiver exhausting<lb/>
+                    the air and bidding <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name> look<lb/>
+                    at the clapper of the bell he<g type="justification">-</g><lb/>
+                    shook the air pump.</p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">I</hi> see plainly the clapper knocks<lb/>
+                    the side of the bell but <hi rend="doubleletter-fill">I</hi> hear<lb/>
+                    no noise</said> said <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name>.</p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">T</hi>hat is because there is<lb/>
+                    no air inside listen again.</said>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">I</hi> hear the bell very plainly<lb/>
+                    now</said> said <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name>.</p>
+                <pb facs="1229136v"/>
+                <fw type="pageNum" place="top"><space quantity="9" unit="chars"/>8I</fw>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">T</hi>hat is because <hi rend="doubleletter-fill">I</hi> admitted the<g type="justification">-</g><lb/>
+                    air</said> said <name type="fictional" corresp="#HARRY">harry</name>
+                </p>
+                <p>
+                    <said who="#LUCY"><hi rend="doubleletter-fill">B</hi>ut why did you shake the air pump<lb/>
+                    could not you shake the reciever</said><lb/>
+                    said <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name>
+                </p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">N</hi>o I could not for the air<g type="justification">-</g><lb/>
+                    was pressing it firmly down<lb/>
+                        to the bottom of the airpump<!--<note n="n" type="gloss" place="botwin" resp="#DCH">In this section on the conductors of sound and the bell experiment,
+                        <persName corresp="#JR">Ruskin</persName> intelligently rearranges parts of the second half of Conversation 32, &#x201C;Of the Air&#x2010;Gun, and Sound&#x201D;
+                        (<ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, 2:186&#x2010;88). The caution about shaking the pump rather than the receiver is
+                        <persName corresp="#JR">Ruskin</persName>&#x02BC;s own addition, possibly drawn from <persName corresp="#JJ">Joyce</persName>&#x02BC;s earlier experiments
+                        with the apparatus, text that the boy may have imperfectly understood (see <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, 2:142&#x2010;43, 154).</note>-->
+                    <hi rend="doubleletter-fill">B</hi>ut</said> said <name type="fictional" corresp="#HARRY">harry</name> looking at<g type="justification">-</g><lb/>
+                    his watch <said who="#HARRY"><hi rend="doubleletter-fill">I</hi> must leave<g type="justification">-</g><lb/>
+                    you now or I shall not have<lb/>
+                    time for my lessons</said></p>
+            </div>
+            <div type="chapter" n="9">
+                <milestone unit="undeclared" rend="hr-quarter"/>
+                <head type="chapter"><del rend="erasure">chapter I0</del><add rend="overwriting">chap 9</add><add place="below"><milestone unit="undeclared" rend="hr-quarter"/></add></head>
+                <p><hi rend="doubleletter-fill">H</hi><hi rend="doubleletter-fill, smallcaps">ar</hi>r<hi rend="doubleletter-fill, smallcaps">y</hi> now determined to have<lb/>
+                    another grand scheme so he took<lb/>
+                    a handfull of earth moistened<g type="runover">-</g>
+                <pb facs="1229136r"/>
+                <fw type="pageNum" place="top"><space quantity="11" unit="chars"/>82</fw>
+                    <g type="runover">-</g>it with water and stuck it<g type="justification">-</g><lb/>
+                    onto the green. <hi rend="doubleletter-fill">H</hi>e then took<lb/>
+                    another handfull<add place="above">and</add> treated it in<lb/>
+                    the same manner till he had<lb/>
+                    formed a large ball of the<lb/>
+                    shape of an orange he then<lb/>
+                    divided it into divisions and<lb/>
+                    wrote upon some of the<subst><del>i</del><add rend="overwriting">m</add></subst><lb/>
+                    africa on others <hi rend="smallcaps">america</hi> ice<lb/>
+                    land <hi rend="smallcaps">spitzbergen novazem</hi>bla<lb/><!--<note n="n" type="gloss" place="botwin" resp="#DCH"><ref type="bibliography" target="bibliography.html#SANDFORDANDMERTON">Day, <hi rend="italic">Sandford and Merton</hi></ref>, includes a story
+                        of four Russian sailors cast away on the desert island of East Spitzbergen. Edgeworth&#x02BC;s Frank appreciates Day&#x02BC;s story, because it is true and instructive
+                        (<hi rend="italic">Frank</hi>, part 4, in <ref type="bibliography" target="bibliography.html#FRANK">Edgeworth, <hi rend="italic">Frank</hi></ref>, 1:210).</note>-->
+                    and all the countries he<g type="justification">-</g><lb/>
+                    could rem<del rend="erasure">ber</del><add rend="overwriting">em</add>ber and when his <name type="fictional" corresp="#MAMMA">mamma</name> and <name type="fictional" corresp="#PAPA">papa</name> saw<lb/>
+                    this whenever they were at<lb/>
+                    a loss for the situation of<lb/>
+                    any country they went to<lb/>
+                    <name type="fictional" corresp="#HARRY">harry</name>s globe for satisfaction</p>
+                <pb facs="1229137v"/>
+                <fw type="pageNum" place="top-left"><hi rend="underline">83</hi></fw>
+                <p><hi rend="doubleletter-fill">T</hi>his scheme being finished<lb/>
+                    <name type="fictional" corresp="#HARRY">harry</name> went on with science<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> said he would show<lb/>
+                    <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name> a very entertaining exper<lb/>
+                    iment so he took a strong cop<lb/>
+                    per vessel filled it half full of<lb/>
+                    water and took a syringe and<lb/>
+                    screwed <del rend="erasure">and so</del><add rend="overwriting">it to a</add> pipe with this<lb/>
+                    he forced a considerable quan<lb/>
+                    tity of air into the vessel so<lb/>
+                    that the<add place="above">air</add> was very much con<lb/>
+                    densed he then turned a<g type="justification">-</g><lb/>
+                    stop&#x2010;cock while he took off<g type="justification">-</g><lb/>
+                    the syringe and no water<g type="justification">-</g><lb/>
+                    could escape but putting<lb/>
+                    a jet instead of a syringe<lb/>
+                    and turning the stop&#x2010;cock<g type="justification">-</g>
+                <pb facs="1229137r"/>
+                <fw type="pageNum" place="top-left">84</fw>
+                    the a<hi rend="overwriting">ir</hi> in the vessel forced<g type="justification">-</g><lb/>
+                    the water through the jet<lb/>
+                    to a great height.</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">In <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, Conversation 30, this apparatus demonstrates
+                        &#x201C;The Compression of Air&#x201D; (2:176), an experiment involving the same principle as that governing the air gun. <persName corresp="#JJ">Joyce</persName>,
+                        however, intends these demonstrations of air compression to follow from experiments explaining the pressure and elasticity of air, experiments that
+                        <persName corresp="#JR">Ruskin</persName>&#x02BC;s <name type="fictional" corresp="#HARRY">Harry</name> takes up subsequently. <persName corresp="#JR">Ruskin</persName>
+                        is generally working backwards through the conversations on pneumatics. He also omits <persName corresp="#JJ">Joyce</persName>&#x02BC;s more detailed discussion,
+                        which calculates the height of the fountain&#x02BC;s jet of water proportional to the compression of air, and which elaborates on the mechanics of the syringe.</note>-->
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> then took a little<g type="justification">-</g><lb/>
+                    s<del rend="erasure"><unclear resp="#CWB">v</unclear></del><add rend="overwriting">q</add>uare bottle<add place="above">and</add> he <hi rend="overwriting">c</hi>emented<lb/>
+                    to it a screw*&#x2010;valve by which<lb/>
+                    he fixed it on the pla<hi rend="overwriting">t</hi>e of the<lb/>
+                    air pump and exhausted the<lb/>
+                    air and the pressure of the at<lb/>
+                    mosphere <subst><del>o</del><add rend="overwriting">u</add></subst>pon the glass broke<lb/>
+                    it into a thousand pieces.</p>
+                <p><name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name> asked why he had<g type="justification">-</g><lb/>
+                    chosen a <handShift script="cursive"/>square<handShift script="print"/> bottle instead<lb/>
+                    of a <handShift script="cursive"/>round<handShift script="print"/> one.</p>
+                <p>
+                    <said who="#HARRY"><hi rend="doubleletter-fill">B</hi>ecause one of that shape<lb/>
+                    would have sustained the<lb/>
+                        pressure like an arch.</said><!--<note n="n" type="gloss" place="botwin" resp="#DCH">Taken nearly verbatim from <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, Conversation 27, &#x201C;Of the Pressure of the Air&#x201D; (2:160).</note>-->
+                </p>
+                <pb facs="1229138v"/>
+                <fw type="pageNum" place="top-left"><del rend="erasure">85</del><space quantity="8" unit="chars"/>85</fw>
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> then took a jar<g type="justification">-</g><lb/>
+                    of water and put in some<g type="justification">-</g><lb/>
+                    pieces of iron zinc and stone<lb/>
+                    <g type="runover">-</g>&#x0026;c then he exhausted<g type="justification">-</g><lb/>
+                    the air and the elastic<g type="justification">-</g><lb/>
+                    spring of air contained in<g type="justification">-</g><lb/>
+                    the stone forced the water<g type="justification">-</g><lb/>
+                    out of it in a multitude of<g type="justification">-</g><lb/>
+                    globules forming a very pleasing<g type="justification">-</g><lb/>
+                    spectacle</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">This and the next two experiments come from <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, Conversation 31, &#x201C;Miscellaneous Experiments on the Air&#x2010;Pump,&#x201D;
+                        in which the <name type="fictional" corresp="#PAPA">father</name> crowds several demonstrations &#x201C;without any regard to the particular subjects under which they might be arranged&#x201D; (2:179). In this experiment,
+                        <name type="fictional" corresp="#HARRY">Harry</name> should say that he forces out the air, not the water, from the minerals.</note>-->
+                <p><hi rend="doubleletter-fill">A</hi>fter that <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> took a p<del rend="erasure"><unclear resp="#CWB">ece</unclear></del><add rend="overwriting">iece</add><g type="justification">-</g><lb/>
+                    of cork and tied a piece of lead<g type="justification">-</g><lb/>
+                    to it just en<del rend="erasure">g</del><add rend="overwriting">o</add>ugh to make it<g type="justification">-</g><lb/>
+                    sink he then removed the air<g type="justification">-</g><lb/>
+                    and <handShift script="cursive"/>then<handShift script="print"/> the cork brought the<lb/>
+                    lead up to the surface.</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">One of the miscellaneous experiments. In <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, Emma reasons that, &#x201C;when the pressure is taken off,
+                        the substance of the cork expands, and becomes specifically lighter than it was before&#x201D; (2:180). Specific gravity has been discussed in earlier chapters on hydrostatics, which <persName corresp="#JR">Ruskin</persName>
+                        may not have read attentively, much less comprehended, with their fairly sophisticated mathematics.</note>-->
+                <p><hi rend="doubleletter-fill">T</hi>hen <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> took a pie<unclear resp="#CWB">c</unclear>e
+                <pb facs="1229138r"/>
+                <fw type="pageNum" place="top-right">pag 86</fw>
+                <!--<figure>
+                    <head type="drawing" rend="left">pla I0<space quantity="2" unit="chars"/>harrys <del rend="scratchout">canal</del><lb/><space quantity="8" unit="chars"/>river</head>
+                    <figDesc>Drawing of a river winding its way through hills and/or mountains.</figDesc>
+                </figure>-->
+                <pb facs="1229139v"/>
+                    <fw type="pageNum" place="top-left">88<space quantity="3" unit="chars"/><del rend="erasure">9</del></fw><!--<note n="n" type="gloss" place="botwin" resp="#CWB"><persName corresp="#JR">Ruskin</persName> misnumbers the page &#x201C;88&#x201D; when, following his previous mistake, the page should be numbered &#x201C;87&#x201D;; the mistake affects his page&#x2010;numbering of the rest of &#x201C;Harry and Lucy&#x201D;, Vol. 1.</note>-->
+                    of cork and a piece of lead and<lb/>
+                    balanced the<hi rend="overwriting">m</hi> on a scale&#x2010;beam<g type="justification">-</g><lb/>
+                    and exhausting the air the cork<g type="justification">-</g><lb/>
+                    was heavier than the lead.</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">Another of the miscellaneous experiments: &#x201C;In air each body lost a weight proportional to its bulk, but when the air is taken away,
+                        the weight lost will be restored: but as the lead lost least, it will now retrieve the least, consequently the cork will preponderate with the difference of the weights restored by taking away the air. Thus you see that in vacuo,
+                        a pound of cork, or feathers, would be heavier than a pound of lead&#x201D; (<ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, 2:183). Again, the relationship of weight to bulk and the differentials of pressure is a concept advanced in
+                        earlier chapters on specific gravity, which <persName corresp="#JR">Ruskin</persName> may not have mastered.</note>-->
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> then took a poker and<g type="justification">-</g><lb/>
+                    tied a strip of flannel round<g type="justification">-</g><lb/>
+                    the middle of it but leaving<lb/>
+                    both the ends untied he tied<g type="justification">-</g><lb/>
+                    the two ends round <del rend="erasure">Lucy</del><add rend="overwriting"><name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name></add>s<lb/>
+                    first finger of ea<hi rend="overwriting">c</hi>h hand<g type="justification">-</g><lb/>
+                    and then bid <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>u<hi rend="overwriting">c</hi>y</name> put<g type="justification">-</g><lb/>
+                    these fingers into each of<lb/>
+                    her ears and strike the<g type="justification">-</g><lb/>
+                    poker against the fender<g type="justification">-</g><lb/>
+                    and the sound returned was<lb/>
+                    astonishing that made by a<lb/>
+                    loud church bell was not
+                <pb facs="1229139r"/>
+                <fw type="pageNum" place="top-right"><space quantity="23" unit="chars"/>89</fw>
+                    to be compared with it.</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">Here, <persName corresp="#JR">Ruskin</persName> returns to the second half of Conversation 32, &#x201C;Of the Air&#x2010;Gun, and Sound&#x201D; (<ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, 2:188),
+                        from which he earlier adapted the bell experiment and discussion of the best conductors of sound.</note>-->
+                <p><hi rend="doubleletter-fill">A</hi>fter that <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> took a<del rend="erasure"><unclear resp="#CWB">n</unclear></del>very<lb/>
+                    shrivelled apple and put it<del rend="erasure">u</del><del rend="erasure">n</del><add rend="overwriting">u</add>n<lb/>
+                    der the receiver and it <del rend="erasure"><gap extent="1" unit="chars"/>pp<unclear resp="#CWB">er</unclear></del><add rend="overwriting">appear</add>ed<g type="justification">-</g><lb/>
+                    as fine an apple as it was when<lb/>
+                    first taken from the tree but<g type="justification">-</g><lb/>
+                    admitting the air it was as<lb/>
+                    shrivelled as ever.</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">In <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, Conversation 29, &#x201C;Of the Elasticity of Air&#x201D; (2:170), this experiment immediately follows one involving floating images.
+                        In neither of these adaptations does <persName corresp="#JR">Ruskin</persName> explain that the experiments are meant to demonstrate the elasticity of air. See also the experiment with the egg.</note>-->
+                <p><hi rend="doubleletter-fill">T</hi>hen <name type="fictional" corresp="#HARRY">harry</name> took a marble<lb/>
+                    and shot it against the wain<lb/>
+                    scot and it returned to his<g type="justification">-</g><lb/>
+                    hand he told <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name> that the<lb/>
+                    line it described in coming<lb/>
+                    from the wainscot was called<g type="justification">-</g><lb/>
+                    the line of <handShift script="cursive"/>reflection<handShift script="print"/> and the<lb/>
+                    line in going <handShift script="cursive"/>to it<handShift script="print"/>
+                    the line of <handShift script="cursive"/>incidence<handShift script="print"/>.</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">In <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, these definitions and the analogy of the shooting marble are used to explain the action
+                        of sound waves in producing echoes (2:202). <persName corresp="#JR">Ruskin</persName> has again abruptly leapt forward, now to Conversation 35, &#x201C;Of the Echo.&#x201D; (The same analogy is used again in vol. 3 of <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES"><hi rend="italic">Dialogues</hi></ref>, on optics, 
+                        Conversation 2, &#x201C;Of Rays of Light&#x2014;Of Reflection and Refraction&#x201D; [3:18].) See also &#x201C;Harry and Lucy,&#x201D; Vol. 2, in which <name type="fictional" corresp="#HARRY">Harry</name> hears an echo.</note>-->
+                <pb facs="1229140v"/>
+                <p><fw type="pageNum">90</fw><hi rend="doubleletter-fill">A</hi>fter that <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> took a<lb/>
+                    new laid egg and made a<lb/>
+                    hole in the <handShift script="cursive"/>small<handShift script="print"/> end of it<g type="justification">-</g><lb/>
+                    putting it under the reciever<lb/>
+                    of <subst><del><unclear resp="#CWB">e</unclear></del><add rend="overwriting">t</add></subst>he airpump in an aleglass<lb/>
+                    and the pressure of the bub<lb/>
+                    ble<add place="above">of air</add> found in the b<del rend="erasure">o</del><add rend="overwriting">r</add>oad<g type="justification">-</g><lb/>
+                    end of new laid eggs<lb/>
+                    forced all the contents<lb/>
+                    of the egg out into the<lb/>
+                    aleglass.</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">The concluding experiment in <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, Conversation 29, &#x201C;Of the Elasticity of Air&#x201D; (2:173), the chapter containing also the experiments.</note>-->
+                <p><hi rend="doubleletter-fill">T</hi>hen <name type="fictional" corresp="#HARRY"><subst><del>h</del><add rend="overwriting">H</add></subst>arry</name> took a <del rend="erasure">sm</del><add rend="overwriting">small</add><lb/>
+                    glass can filled with wa<lb/>
+                    ter and three little im<subst><del>g</del><add rend="overwriting">a</add></subst>&#x2010;<lb/>
+                    ges flo<del rend="erasure">o</del><add rend="overwriting">a</add>ting at the top<g type="justification">-</g><lb/>
+                    he then tied little weights<lb/>
+                    to them so that they<g type="justification">-</g>
+                <pb facs="1229140r"/>
+                <fw type="pageNum" place="top-right">9I</fw>
+                    des<del rend="erasure"><unclear resp="#CWB">e</unclear></del><add rend="overwriting">c</add>ended to the bottom<del rend="erasure"><g type="justification">-</g></del><add rend="overwriting">but</add><lb/>
+                    on removing the air they<lb/>
+                    ascended to the top dragg&#x2010;<lb/>
+                    ing the weights after them<lb/><!--<note n="n" type="gloss" place="botwin" resp="#DCH">In <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, Conversation 29, &#x201C;Of the Elasticity of Air,&#x201D; the floating images are explained as containing a small amount of air.
+                        When the jar of water suspending the images is placed inside the air&#x2010;pump receiver and the air exhausted, the air inside the images expands, forces out water, and raises the images with their attached weights to the top of the vessel. The expansion of air
+                        demonstrates its elasticity (2:169).</note>-->
+                    <hi rend="doubleletter-fill">T</hi>he time had been so<g type="justification">-</g><lb/>
+                    pleasantly taken up by these<lb/>
+                    experiments that <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> did<g type="justification">-</g><lb/>
+                    not hear his <name type="fictional" corresp="#MAMMA">mother</name> call<lb/>
+                    him and he staid away<lb/>
+                    a whole hour later than<g type="justification">-</g><lb/>
+                    he should have done for<lb/>
+                    he always went to his les<lb/>
+                    sons at twelve and he staid<lb/>
+                    till one but now he went to<g type="justification">-</g><lb/>
+                    them <del rend="erasure">chap I0</del></p>
+            </div>
+            <div type="chapter" n="10">
+                <head type="chapter">chap I0</head>
+                <p><hi rend="doubleletter-fill">H</hi><hi rend="doubleletter-fill, smallcaps">a</hi><hi rend="smallcaps">rr</hi><hi rend="doubleletter-fill, smallcaps">y</hi> now went out
+                <pb facs="1229141v"/>
+                <fw type="pageNum" place="top-left">92</fw>
+                    upon the beach and<g type="justification">-</g><lb/>
+                    dug a deep hole in it which<lb/>
+                    to his surprise he found<g type="justification">-</g><lb/>
+                    full of different coloured sea<lb/>
+                    shells and what made it<g type="justification">-</g><lb/>
+                    the more wonder<add place="above">ful</add> was that<lb/>
+                    the further he dug the more<lb/>
+                    shells he found. He <del rend="erasure">tho</del><add rend="overwriting">thou</add>ght<lb/>
+                    this would be a fine mine<lb/>
+                    to <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name> if she <del rend="erasure">wo</del><add rend="overwriting">co</add>uld get<g type="justification">-</g><lb/>
+                    at the shells without<g type="justification">-</g><lb/>
+                    dirtying her frock but he<g type="justification">-</g><lb/>
+                    was afraid she would not he<lb/>
+                    led her to the place but he<lb/>
+                    found she could not so that<lb/>
+                    he was obliged to pick up<lb/>
+                    as many as he could reach
+                <pb facs="1229141r"/>
+                <fw type="pageNum" place="top-right">93</fw>
+                    and go home.</p>
+                <p><name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> sat down to draw<lb/>
+                    and had just said <said who="#HARRY"><hi rend="doubleletter-fill">H</hi>ow<lb/>
+                    very f<del rend="erasure"><unclear resp="#CWB">ewe</unclear></del><add rend="overwriting">ew</add><del rend="erasure">p</del><del rend="erasure"><gap extent="several characters"/><unclear resp="#CWB">l</unclear><gap extent="1" unit="chars"/></del><add rend="overwriting">peop</add>le come to<g type="justification">-</g><lb/>
+                    this inn</said> when another<lb/>
+                    carriage drove to the door.<lb/>
+                    <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> knew very well<g type="justification">-</g><lb/>
+                    what it was and went<g type="justification">-</g><lb/>
+                    on with his drawing but<g type="justification">-</g><lb/>
+                    <name type="fictional" corresp="#LUCY"><hi rend="doubleletter-fill">L</hi>ucy</name> soon called him aw&#2010;<lb/>
+                    ay and bid him observe<lb/>
+                    a great b<del rend="erasure">a</del><add rend="overwriting">l</add>ack cloud from<g type="justification">-</g><lb/>
+                    the north which seemed ra<lb/>
+                    ther electrical <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> ran<lb/>
+                    for an electrical apparatus which<lb/>
+                    his <name type="fictional" corresp="#PAPA">father</name> had given him and the<g type="justification">-</g><lb/>
+                    cloud electrified his apparatus positively
+                <pb facs="1229142v"/>
+                <fw type="pageNum" place="top-left"><lb/>94</fw>
+                <!--<figure>
+                    <head type="drawing" rend="left"><space quantity="7" unit="chars"/><del rend="scratchout">I0</del>plat II<lb/><space quantity="5" unit="chars"/>harrys garden</head>
+                    <figDesc>Drawing of an enclosed, flowering garden being tended by a figure with a shovel.</figDesc>
+                </figure>-->
+                <pb facs="1229142r"/>
+                <fw type="pageNum" place="top-right">95</fw>
+                    after that another cloud came which<lb/>
+                    electrified his apparatus negatively<lb/>
+                    <add place="above">and</add>then a long train of smaller<g type="justification">-</g><lb/>
+                    ones but before this cloud came<lb/>
+                    a great cloud of dust rose from<lb/>
+                    the ground and followed the pos<lb/>
+                    itive cloud and at length seemed<lb/>
+                    to come in contact with it and<lb/>
+                    whe<subst><del><unclear resp="#CWB">i</unclear></del><add rend="overwriting">n</add></subst> the other cloud came<g type="justification">-</g><lb/>
+                    a flash of lightning was seen<lb/>
+                    to dart through the cloud of<g type="justification">-</g><lb/>
+                    dust upon which the negative<lb/>
+                    clouds spread very much and<lb/>
+                    dissolved in rain which pres<lb/>
+                    ently cleared the sky</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">In <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, <persName corresp="#JR">Ruskin</persName> has overleapt the remainder of pneumatics, as well as optics and the basic experiments in magnetism
+                        and electricity, to borrow from the much later Conversation 39, &#x201C;On Atmospheric Electricity&#x2014;Of Falling Stars&#x2014;Of the Aurora Borealis&#x2014;Of Water&#x2010;spouts, and Whirlwinds&#x2014;Of Earthquakes.&#x201D; The topics under discussion in
+                        the passage <persName corresp="#JR">Ruskin</persName> is quoting are the waterspout and the tornado, which were believed also to involve atmospheric exchanges of &#x201C;electric fluid.&#x201D; A whirlwind phenomenon is reported second&#x2010;hand from a source
+                        by <persName corresp="#BF">Benjamin Franklin</persName>: a Mr. Wilke &#x201C;observed a great quantity of dust rising from the ground, and covering a field, and part of the town in which he then was. There was no wind, and the dust moved gently towards the east,
+                        where there appeared a great black cloud, which electrified his apparatus positively to a very high degree. This cloud went towards the west, the dust followed it, and continued to rise higher and higher, till it composed a thick pillar, in the form of a sugar
+                        loaf, and at length it seemed to be in contact with the cloud. At some distance from this, there came another great cloud, with a long stream of smaller ones, which electrified his apparatus negatively, and when they came near the positive cloud, a flash of
+                        lightning was seen to dart through the cloud of dust, upon which the negative clouds spread very much, and dissolved in rain, which presently cleared the atmosphere&#x201D; (3:221).</note>-->
+                <p><hi rend="doubleletter">A</hi>fter this phenomeno<del rend="erasure">m</del><add rend="overwriting">n</add> was over<g type="justification">-</g><lb/>
+                    and also the surprise <name type="fictional" corresp="#HARRY">Harry</name> began<lb/>
+                    to wonder<!--<note n="n" type="gloss" place="botwin" resp="#DCH"><persName corresp="#JR">Ruskin</persName> repeated &#x201C;to wonder&#x201D; at the bottom of p. 95 and the top of p. 96.</note>--> <unclear resp="#CWB">h</unclear>
+                <pb facs="1229143v"/>
+                <fw type="pageNum" place="top-left">96</fw>
+                    <space quantity="3" unit="chars"/>to wonder how electricity<lb/>
+                    could get where there was<g type="justification">-</g><lb/>
+                    so much water but he soon<g type="justification">-</g><lb/>
+                    observed a rainbow and a<g type="justification">-</g><lb/>
+                    rising mist under it which<g type="justification">-</g><lb/>
+                    his fancy soon transfo<subst><del>r</del><add rend="overwriting">n</add></subst>m<lb/>
+                    ed into a female form. He<lb/>
+                    then remembered the witch of<lb/>
+                    the waters at the Alps who<lb/>
+                    was raised from them by<g type="justification">-</g><lb/>
+                    takeing some water in the<g type="justification">-</g><lb/>
+                    hand and throwing it into<lb/>
+                    the air pronouncin<subst><del><unclear resp="#CWB">d</unclear></del><add rend="overwriting">g</add></subst> some<lb/>
+                    unintellig<subst><del>b</del><add rend="overwriting">a</add></subst>b<subst><del>a</del><add rend="overwriting">l</add></subst>e words<!--<note><ref type="bibliography" target="bibliography.html#FRANK"></ref>n="n" type="gloss" place="botwin" resp="#DCH">The chapter in <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref> on these terrific phenomena
+                        ends with a verse quotation from the Scottish poet <persName corresp="#DM">David Mallet</persName> (Entry needed here) on the inscrutable providence of natural catastrophe, but <persName corresp="#JR">Ruskin</persName> is put in mind of a gentler and more
+                        magical verse passage&#x2014;<persName corresp="#GGB">Byron</persName>’s Manfred standing by an Alpine cataract and invoking the Witch of the Alps. If Manfred’s imaginings are equally as apocalyptic as <persName corresp="#DM">Mallet</persName>&#x02BC;s at first, the
+                        torrent with its rainbow makes a &#x201C;sweet solitude,&#x201D; and Manfred decides to summon the &#x201C;Spirit of the place&#x201D;: &#x201C;Manfred takes some of the water into the palm of his hand, and flings it in the air, muttering the adjuration. After a pause,
+                        the Witch of the Alps rises beneath the arch of the sunbow of the torrent&#x201D; (<hi rend="italic">Manfred</hi>, act 2, scene 2, in Byron, <hi rend="italic">Poetical Works</hi>, Entry needed here). <persName corresp="#JR">Ruskin</persName>&#x02BC;s
+                        &#x201C;frontispiece&#x201D; for MS I, which depicts a rainbow, might refer to this episode, but no other details in the drawing seem very specific to the setting or the apparition in the sky (see <ref type="apparatus" target="msi_apparatus.html#DESCRIPTION">MS I: Description</ref>).</note>--><hi rend="doubleletter-fill">A</hi>nd<lb/>
+                    though it was a tale it<g type="justification">-</g><lb/>
+                    affected <name type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</name> now when<lb/>
+                    he saw in the clouds some&#x2010;<lb/><space quantity="21" unit="chars"/>thing<lb/><space quantity="21" unit="chars"/>like i<supplied reason="runoff" resp="#CWB">t</supplied></p>
+                <fw type="close" place="bottom">end of harry<lb/>and Lucy</fw>
+            </div>
+        </body>
+    </text>
+</TEI>
