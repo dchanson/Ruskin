@@ -5,7 +5,7 @@
     <teiHeader type="glosses">
         <fileDesc xml:id="harry_and_lucy_vol1_glosses_contextual">
             <titleStmt>
-                <title type="main">"Title of Work"</title>
+                <title type="main">&#x201C;Harry and Lucy . . . Vol I&#x201D;</title>
                 <title type="sub">Glosses</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -56,9 +56,18 @@
     <text>
         <body>
             <div type="glosses">
-                <note xml:id="MAMMASAIDLUCYGLOSS" resp="#DCH">Lucy is speaking; i.e., &#x201C;&#x2018;Mamma&#x2019;, said Lucy, &#x2018;papa has gone out to town&#x2019;&#x201D;</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#SOMETHINGUNIQUEGLOSS"/>.-->
+                <note xml:id="MAMMASAIDLUCYGLOSS" resp="#DCH">Lucy is speaking (i.e., &#x201C;&#x2018;Mamma&#x2019;, said Lucy, &#x2018;papa has gone out to town&#x2019;&#x201D;). 
+                    Note that Ruskin's first story begins with the father's absence. For the transportation John James Ruskin probably used to commute to his business in London, 
+                    see <ref type="note" subtype="contextual" target="camberwell_note.php#COMMUTER">Camberwell: London Commuter Transport</ref>.</note>
 
-                <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
+                <note xml:id="TOWNCITYDOCKSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;to go to town and then into the city and then to the docks&#x201D; 
+                    (<title type="manuscript" corresp="#MSI">MS I</title>)&#x2014;</hi>For the business center of London that had come to be called "the City", 
+                    where John James Ruskin's counting house was located, see 
+                    <ref type="note" subtype="contextual" target="london_city_note.php#BILLITERST">City of London: Billiter Street and the Premises of <orgName corresp="#RUSKINETAL">Ruskin, Telford, and Domecq</orgName></ref>; 
+                    and for the docks, see 
+                    <ref type="note" subtype="contextual" target="london_city_note.php#DOCKS">City of London: The London Docks</ref>. By "town", Mamma might refer to <ref type="note" subtype="contextual" target="camberwell_note.php">Camberwell</ref>
+                    
+                </p></note>
             </div>
         </body>
     </text>
