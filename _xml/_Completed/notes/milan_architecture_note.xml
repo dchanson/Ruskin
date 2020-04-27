@@ -5,9 +5,9 @@
     <teiHeader type="note">
         <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
             The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
-        <fileDesc xml:id="tite_of_work_note">
+        <fileDesc xml:id="milan_architecture_note">
             <titleStmt>
-                <title type="main">Title of Work</title>
+                <title type="main">Neoclassical and Napoleonic&#x2010;Era Architecture in Milan and Northern Italy</title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -58,7 +58,7 @@
     <text>
         <body>
             <div type="note" subtype="contextual">
-                <head type="title">Neoclassical and Napoleonic&#x2010;Era Architecture in Milan and Northern Italy</head>
+                <head type="title">Neoclassical and Napoleonic&#x2010;Era Architecture in <placeName corresp="#MILAN">Milan</placeName> and Northern Italy</head>
                 <p>When the Ruskins visited <placeName corresp="#MILAN">Milan</placeName> in <date when="1833">1833</date>, <persName corresp="#JR">Ruskin</persName>&#x02BC;s cousin, 
                     <persName corresp="#MRC">Mary Richardson</persName>, took note especially of Napoleonic monuments in the city. In <persName corresp="#JR">Ruskin</persName>&#x02BC;s extant writing about the city 
                     for the <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php"><title type="composite" corresp="#JRACCOUNTTOUR">Account of a Tour on the Continent</title></ref>&#x2014;the poem 
@@ -69,6 +69,14 @@
                     consists only of the enigmatic direction &#x201C;The town with cathedral recollected&#x201D;) 
                     (<ref type="bibliography" target="bibliography.php#RFT48">Diary of Mary Richardson, 1833</ref>, 46&#x2013;51; 
                     <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php"><title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan for the Continuation of the Account of a Tour on the Continent</title></ref>).</p>
+                
+                <p>For other contexts in which the young <persName corresp="#JR">Ruskin</persName> encountered neoclassical architecture&#x2014;particularly, the transformative Greek Revival &#x201C;improvements&#x201d; that altered the style and experience of urban settings in the early nineteenth century&#x2014;see 
+                    <ref type="note" subtype="contextual" target="colosseum_note.php">The <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName>, <title type="artwork" corresp="#HORNORSLONDONPANORAMA"><persName corresp="#THP">Hornor</persName>&#x02BC;s London Panorama</title>, and the <placeName type="building" corresp="#LONDONDIORAMA">London Diorama</placeName> in <placeName type="building" corresp="#REGENTSPARK">Regent&#x02BC;s Park</placeName></ref>; 
+                    <ref type="note" subtype="contextual" target="london_city_note.php">City of London</ref>; 
+                    <ref type="note" subtype="contextual" target="cemetery_architecture_note.php">Early Victorian Cemetery Architecture</ref>.</p>
+                    
+                <div type="section">
+                    <head type="section">Neoclassicism in Milan</head>
                 <p>During the Enlightenment, under the administration of the <orgName corresp="#HAPSBURG">Hapsburgs</orgName>, urban planning in neoclassical style for <placeName corresp="#MILAN">Milan</placeName> 
                     was overseen by the architect <persName corresp="#GPIERMARINI">Giuseppe Piermarini</persName> (<date notBefore="1734" notAfter="1808">1734&#x2013;1808</date>). The Ruskins 
                     visited his most famous building, the <placeName type="building" corresp="#TEATROALLASCALA">Teatro alla Scala</placeName> (<date notBefore="1776" notAfter="1778">1776&#x2013;78</date>), 
@@ -90,6 +98,9 @@
                     Another place where <persName corresp="#JR">Ruskin</persName> encountered a modern neoclassical propylaeum in Doric style was the entrance to the 
                     <placeName type="building" corresp="#FRANKFURTNEWCEMETERY">New Cemetery</placeName> in <placeName corresp="#FRANKFURT">Frankfurt am Main</placeName>; see &#x201C;Francfort&#x201D; in the 
                     <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php#ACCOUNTTOCFRANCFURT"><title type="bibliography_text" corresp="JRPROPOSEDTABLEOFCONTENTS">List of Proposed Additional Contents for the &#x201C;Account&#x201D;</title></ref>.</p>
+                </div>
+                <div type="section">
+                    <head type="section">Napoleonic Monuments in <placeName corresp="#MILAN">Milan</placeName></head>
                 <p>By the <date notBefore="1830" notAfter="1839">1830s</date>, however, the Enlightenment <orgName corresp="#HAPSBURG">Hapsburg</orgName> project in <placeName corresp="#MILAN">Milan</placeName> 
                     had been overlain by <persName corresp="#NBE">Napoleon</persName>&#x02BC;s appropriation of the Enlightenment neoclassical program to impress the stamp of republican and imperial ideals 
                     on the principal cities of his Italian kingdom. This symbolism was often expressed using a columnar, Doric vocabulary associated with <placeName corresp="#PAESTUM">Paestum</placeName>. 
@@ -115,7 +126,7 @@
                     which followed&#x201D; were &#x201C;allowed to remain unharmed&#x201D;, the panels were &#x201C;surmounted with others of equal execution, setting forth the <date when="1815-06-18">battle of <placeName corresp="#WATERLOO">Waterloo</placeName></date> 
                     and the abdication of <persName corresp="#NBE">Bonaparte</persName>. The triumphal chariot, and bronze horses, which were to support the statue of <persName corresp="#NBE">Napoleon</persName> 
                     upon the top&#x201D; were planned to &#x201C;be occupied by an allegorical figure representing Peace&#x201D; 
-                    (<ref type="bibliography" target="bibliography.php#BIGELOWALPS"><persName>Bigelow</persName>, <title type="essay" corresp="#BIGELOWALPS">&#x201C;The Alps&#x201D;</title></ref>, 412). This program was completed in <date when="1838">1838</date> for the <placeName corresp="#MILAN">Milan</placeName> coronation 
+                    (<ref type="bibliography" target="bibliography.php#BIGELOWALPS"><persName corresp="JBIGELOW">Bigelow</persName>, <title type="essay" corresp="#BIGELOWALPS">&#x201C;The Alps&#x201D;</title></ref>, 412). This program was completed in <date when="1838">1838</date> for the <placeName corresp="#MILAN">Milan</placeName> coronation 
                     of the Austrian emperor, <persName corresp="#FERDINAND">Ferdinand I</persName>.
                     (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKNORTHERNITALY1847"><persName corresp="#GBMAULE">Maule</persName>, <title type="book" corresp="#MURRAYSHANDBOOKNORTHERNITALY1847"><hi rend="italic">Hand&#x2010;book for Travellers in Northern Italy</hi></title></ref>, 147; 
                     <ref type="bibliography" target="bibliography.php#GREGORYNAPOLEONSITALY"><persName corresp="#DGREGORY">Gregory</persName>, <title type="book" corresp="#GREGORYNAPOLEONSITALY"><hi rend="italic">Napoleon&#x02BC;s Italy</hi></title></ref>, 75&#x2013;76; 
@@ -126,6 +137,9 @@
                     entered after the <date when="1800-06-14">battle of <placeName corresp="#MARENGO">Marengo</placeName></date>&#x201D;, according to <persName corresp="#JM">Murray</persName>&#x02BC;s 
                     <date when="1847">1847</date> guidebook (<ref type="bibliography" target="bibliography.php#RFT48">Diary of Mary Richardson, 1833</ref>, 50; 
                     <ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKNORTHERNITALY1847"><persName corresp="#GBMAULE">Maule</persName>, <title type="book" corresp="#MURRAYSHANDBOOKNORTHERNITALY1847"><hi rend="italic">Hand&#x2010;book for Travellers in Northern Italy</hi></title></ref>, 146).</p>
+                </div>
+                <div type="section">
+                    <head type="section">Neoclassicism in Northern Italian Villas</head>
                 <p>Another exposure to Italian and French&#x2010;influenced neoclassicism for the Ruskins in <date when="1833">1833</date> lay in the villas they visited on <geogName corresp="#LAKECOMO">Lake Como</geogName>, prior to arriving in <placeName corresp="#MILAN">Milan</placeName>. 
                     <persName corresp="#MRC">Mary Richardson</persName> records that, near <placeName corresp="#BELLAGIO">Bellagio</placeName>, they visited 
                     <placeName type="building" corresp="#VILLAMELZI">Villa Melzi</placeName>, designed by <persName corresp="#GALBERTOLLI">Giocondo Albertolli</persName> (<date notBefore="1743" notAfter="1839">1743&#x2013;1839</date>), 
@@ -168,6 +182,7 @@
                     (<ref type="bibliography" target="bibliography.php#HASKELLMOREABOUTSOMMARIVA"><persName corresp="#FHASKELL">Haskell</persName>, &#x201C;More about Sommariva&#x201D;</ref>, 692, 691, 695; 
                     <ref type="bibliography" target="bibliography.php#MAZZONIMILAN"><persName corresp="#MMAZZONI">Mazzoni</persName>, <title type="book" corresp="#MAZZONIMILAN"><hi rend="italic">The Traveller&#x02BC;s Guide of Milan</hi></title></ref>, 116; 
                     and see <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_pcs_corpus_cadenabbia"><title type="composite" corresp="#JRCADENABBIACOMP">&#x201C;<placeName corresp="#CADENABBIA">Cadenabbia</placeName>&#x201C;</title></ref>).</p>
+                </div>
             </div>
         </body>
     </text>

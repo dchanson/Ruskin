@@ -2,11 +2,11 @@
 <?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
+    <teiHeader type="note">
+        <fileDesc xml:id="london_city_note">
             <titleStmt>
                 <title type="main">City of London</title>
-                <title type="sub">Notes</title>
+                <title type="sub">Note</title>
                 <author>
                     <persName xml:id="DCH">David C. Hanson</persName>
                 </author>
@@ -73,6 +73,12 @@
                     (<ref type="bibliography" target="bibliography.php#ACKROYDLONDON"><persName corresp="#PACKROYD">Ackroyd</persName>, <title type="book" corresp="#ACKROYDLONDON"><hi rend="italic">London: The Biography</hi></title></ref>, 519). Thus, in <title type="lesson" corresp="#JRHARRYANDLUCYVOL1">&#x201C;Harry and Lucy . . . Vol 1&#x201D;</title> (chap. 1), 
                     when Mamma mentions that Papa has gone to the <placeName corresp="#LONDONCITY">&#x201C;city&#x201D;</placeName>, she refers to this financial center, 
                     where <persName corresp="#JJR">John James Ruskin</persName> and his partners maintained their business premises.</p>
+                
+                <p>For other contexts in which the young <persName corresp="#JR">Ruskin</persName> encountered neoclassical architecture&#x2014;particularly, the transformative Greek Revival &#x201C;improvements&#x201d; that altered the style and experience of urban settings in the early nineteenth century&#x2014;see 
+                    <ref type="note" subtype="contextual" target="colosseum_note.php">The <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName>, <title type="artwork" corresp="#HORNORSLONDONPANORAMA"><persName corresp="#THP">Hornor</persName>&#x02BC;s London Panorama</title>, and the <placeName type="building" corresp="#LONDONDIORAMA">London Diorama</placeName> in <placeName type="building" corresp="#REGENTSPARK">Regent&#x02BC;s Park</placeName></ref>; 
+                    <ref type="note" subtype="contextual" target="cemetery_architecture_note.php">Early Victorian Cemetery Architecture</ref>; 
+                    <ref type="note" subtype="contextual" target="milan_architecture_note.php">Neoclassical and Napoleonic&#x2010;Era Architecture in Milan and Northern Italy</ref>.</p>
+                
                 <div xml:id="BILLITERST">
                     <head type="section"><placeName type="BUILDING" corresp="#BILLITERST">Billiter Street</placeName> and the Premises of <orgName corresp="#RUSKINETAL">Ruskin, Telford, and Domecq</orgName></head>
                     <p>For <persName corresp="#WBESANT">Walter Besant</persName> writing at the end of the nineteenth century, 
@@ -120,8 +126,9 @@
                         new docks had been recently completed or were under construction to service the enormous increase in trade. 
                         Over the course of the eighteenth and early nineteenth centuries, rapidly growing congestion at the quays had become untenable, 
                         causing damage to ships, and creating conditions of lax control that resulted in huge losses due to thievery and smuggling. 
-                        Consequently, the legislative and engineering feat of constructing new wetdocks within the first decade of the nineteenth century was celebrated as a
-                        testimonial to <placeName corresp="#ENGLAND">England</placeName>&#x02BC;s commercial might (though the new docks would soon be made obsolete by growing size of ships powered by steam). 
+                        Consequently, within the first decade of the nineteenth century, a legislative and engineering feat was undertaken to construct extensive new wetdocks, 
+                        an accomplishment was celebrated as a testimonial to <placeName corresp="#ENGLAND">England</placeName>&#x02BC;s commercial might 
+                        (though the new docks would soon be made obsolete by growing size of ships powered by steam). 
                         To manage trade with <placeName corresp="#INDIA">India</placeName>, the new <placeName type="building" corresp="#WESTINDIADOCKS">West India Docks</placeName> were built in the <placeName corresp="#ISLEOFDOGS">Isle of Dogs</placeName>, 
                         and the new <placeName type="building" corresp="#EASTINDIADOCKS">East India docks</placeName> arose at <placeName corresp="#BLACKWALL">Blackwall</placeName>. Closer to the City, 
                         the new <placeName corresp="#LONDONDKS">London Docks</placeName> were built at <placeName corresp="#WAPPING">Wapping</placeName>. As <persName corresp="#JR">Ruskin</persName> was writing his first 
