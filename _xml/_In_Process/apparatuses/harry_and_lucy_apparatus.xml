@@ -5,7 +5,7 @@
     <teiHeader type="apparatus">
         <fileDesc xml:id="harry_and_lucy_apparatus">
             <titleStmt>
-                <title type="main">"Harry and Lucy Concluded, Being the Last Part of Early Lessons, in Four Volumes"</title>
+                <title type="main">&#x201C;Harry and Lucy Concluded, Being the Last Part of Early Lessons, in Four Volumes&#x201d;</title>
                 <title type="sub">Apparatus</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -66,12 +66,12 @@
     <text>
         <body>
             <div type="apparatus">
-                <head type="title">Harry and Lucy Concluded, Being the Last Part of Early Lessons, in Four Volumes</head>
+                <head type="title"><title type="lesson" corresp="#JRHARRYANDLUCY">Harry and Lucy Concluded, Being the Last Part of Early Lessons, in Four Volumes</title></head>
                 
                 <div type="section" xml:id="WITNESSES">
                     <head type="section">Witnesses</head>
                     
-                    <p><ref type="witness" target="harry_and_lucy_vol1_msi.php">"Harry and Lucy Concluded, Being the Last Part of Early Lessons, in Four Volumes, Vol 1"</ref></p>
+                    <p><ref type="witness" target="harry_and_lucy_vol1_msi.php"><title type="lesson" corresp="#JRHARRYANDLUCYVOL1">Harry and Lucy Concluded, Being the Last Part of Early Lessons, in Four Volumes, Vol 1"</title></ref></p>
                 </div>
                     
                 <div type="section" xml:id="TITLE">
@@ -79,13 +79,13 @@
                     <p>For volume 1 in <ref type="apparatus" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref>, 
                         volume 2 in <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSI">MS III</title></ref>, and 
                         volume 3 in <ref type="apparatus" target="msiiia_apparatus.php"><title type="manuscript" corresp="#MSI">MS IIIA</title></ref>, <persName corresp="#JR">Ruskin</persName> 
-                        lettered the title pages in imitation of printed type. Compare the <ref type="images" target="hlc_edgeworth_title_page.jpg">printed title page</ref>
+                        lettered the title pages in imitation of printed type. Compare the <ref type="figure" target="hlc_edgeworth_title_page.jpg">printed title page</ref>
                         of <ref type="bibliography" target="bibliography.php#HARRYANDLUCYCONCLUDED">Edgeworth, <hi rend="italic">Harry and Lucy Concluded</hi></ref>. 
                         <persName corresp="#JR">Ruskin</persName>&#x02BC;s title pages appear, respectively, as follows:</p>
                     <p>
                         <list>
-                            <item><hi rend="caps">HARRY AND LUCY</hi> &#x007C; <hi rend="smallcaps">CONCLUDED</hi> &#x007C; <hi rend="caps">BEING THE LAST</hi> &#x007C; 
-                                <hi rend="smallcaps">PART OF</hi> &#x007C; <hi rend="caps">EARLY LESSONS</hi> &#x007C; [ornament] &#x007C; 
+                            <item><title type="lesson" corresp="#JRHARRYANDLUCYVOL1"><hi rend="caps">HARRY AND LUCY</hi> &#x007C; <hi rend="smallcaps">CONCLUDED</hi> &#x007C; <hi rend="caps">BEING THE LAST</hi> &#x007C; 
+                                <hi rend="smallcaps">PART OF</hi> &#x007C; <hi rend="caps">EARLY LESSONS</hi></title> &#x007C; [ornament] &#x007C; 
                                 in four volumes &#x007C; vol I &#x007C; with copper &#x007C; [horizontal bar] &#x007C; plates &#x007C; [ornament] &#x007C; 
                                 <hi rend="smallcaps">PRINTED</hi> and composed by a little boy &#x007C; and also drawn</item>
                             <item>MS II TO COME</item>
@@ -113,7 +113,8 @@
                 
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p>Volume 1, <date notBefore="1826-09" notAfter="1827-01">September or October 1826 through the end of the year, possibly extending into January 1827</date>. 
+                    <p>Volume 1, <date notBefore="1826-09" notAfter="1827-01">September or October 1826 through the end of the year, possibly extending into January 1827</date>, 
+                        although the opening portion of the work may have been composed, but not fair&#x2010;copied, during an earlier period. 
                         Volume 2, TO COME. Volume 3, TO COME.</p>
                     <p>See <ref type="note" subtype="bibliographical" target="date_citation_note.php">System of Date Citation</ref>.</p>
                     
@@ -121,57 +122,66 @@
                         <head type="subsection">Date of Composition: Volume 1</head>
                         <p><persName corresp="#MR">Margaret Ruskin</persName> dated <ref type="apparatus" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref> 
                             as having been &#x201C;begun about <date notBefore="1826-09" notAfter="1826-10">Sep<hi rend="superscript">t</hi> or Oct 1826</date>&#x201D; 
-                            and as having been &#x201C;finished about <date when="1827-01">Jan<hi rend="superscript">y</hi> 1827</date>.&#x201D; Since she inserted this notation within 
+                            and as having been &#x201C;finished about <date when="1827-01">Jan<hi rend="superscript">y</hi> 1827</date>&#x201D;. Since she inserted this notation within 
                             <ref type="apparatus" target="msi_poetry_anthology_apparatus.php">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</ref> toward the end of the manuscript, 
                             it seems likely that <persName corresp="#JR">Ruskin</persName> had devoted the latter part of this period&#x2014;perhaps, 
                             <date notBefore="1826-12-01" notAfter="1827-01-01">December through January</date>&#x2014;to fair&#x2010;copying and/or composing the poetry anthology, 
-                            while he had spent <date notBefore="1826-09-01" notAfter="1826-11-30">the fall of 1826</date> on &#x201C;Harry and Lucy&#x201D; 
+                            while he had spent <date notBefore="1826-09-01" notAfter="1826-11-30">the fall of 1826</date> on <title type="lesson" corresp="#JRHARRYANDLUCY">&#x201C;Harry and Lucy&#x201D;</title> 
                             (see also <ref type="apparatus" target="the_needless_alarm_apparatus.php#DATE"><title type="poem" corresp="#THENEEDLESSALARM">&#x201C;The Needless Alarm&#x201D;</title>: Date</ref>; 
-                            <ref type="apparatus" target="on_papas_leaving_home_apparatus#DATE.php"><title type="poem" corresp="#ONPAPASLEAVINGHOME">&#x201C;On Papa&#x02BC;s Leaving Home&#x201D;</title>: Date;</ref> 
-                            and <ref type="apparatus" target="msi_apparatus.php#DATE"><title type="manuscript" corresp="#MSI">MS I</title>: Date</ref>).</p>
-                        <p>According to the narrative of Volume 1, while Harry and Lucy are visiting <ref type="note" subtype="geographical" target="hastings_note.php"><placeName corresp="#HASTINGS">Hastings</placeName></ref>, 
-                            Harry identifies the fourth day of their visit as &#x201C;the longest day,&#x201D; a remark that <persName corresp="#HGV">Helen Gill Viljoen</persName> interprets 
+                            <ref type="apparatus" target="on_papas_leaving_home_apparatus.php#DATE"><title type="poem" corresp="#ONPAPASLEAVINGHOME">&#x201C;On Papa&#x02BC;s Leaving Home&#x201D;</title>: Date;</ref> 
+                            and <ref type="apparatus" target="msi_apparatus.php#DATE"><title type="manuscript" corresp="#MSI">MS I</title>: Date</ref>). 
+                            It is also possible that, as suggested by a change in narrative style midway in the text of <title type="lesson" corresp="#JRHARRYANDLUCY">&#x201C;Harry and Lucy&#x201D;</title>, 
+                            <persName corresp="#JR">Ruskin</persName> may have drafted the opening portion at an earlier period (see <ref type="internal" target="#SOURCES">Discussion: Sources</ref>).</p>
+                        
+                        <p>According to the narrative of Volume 1, while <persName type="fictional" corresp="#HARRY">Harry</persName> and <persName type="fictional" corresp="#LUCY">Lucy</persName> 
+                            are visiting the seaside resort of <placeName corresp="#HASTINGS">Hastings</placeName>, <persName type="fictional" corresp="#HARRY">Harry</persName> 
+                            identifies the fourth day of their visit as &#x201C;the longest day&#x201D;, a remark that <persName corresp="#HGV">Helen Gill Viljoen</persName> interprets 
                             as referring to the summer solstice (which fell on <date when="1826-06-21">June 21 in 1826</date> and on <date when="1827-06-21">June 22 in 1827</date>). 
-                            <persName corresp="#HGV">Viljoen</persName> infers that <persName corresp="#JR">Ruskin</persName>&#x02BC;s composition date for Volume 1 must be extended well past 
+                            <persName corresp="#HGV">Viljoen</persName> infers that <persName corresp="#JR">Ruskin</persName>&#x02BC;s composition date for Volume 1 must therefore be extended well past 
                             the terminus a quo of <date when="1827-01">January 1827</date> established by <persName corresp="#MR">Margaret</persName>&#x02BC;s gloss on 
                             <ref type="apparatus" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref> to some time after <date when="1827-06">June 1827</date> 
-                            (&#x201C;Dating MSS. of Boyhood,&#x201D; in <ref type="bibliography" target="bibliograph.php#VILJOENPAPERS">Viljoen Papers</ref>, boxes D.V, E.IX). 
-                            She discounts the possibility that Harry&#x02BC;s remark refers to a holiday that had already occurred, in <date when="1826-06">June 1826</date>, 
+                            (&#x201C;Dating MSS. of Boyhood&#x201D;, in <ref type="bibliography" target="bibliograph.php#VILJOENPAPERS"><title type="archive" corresp="#VILJOENPAPERS">Viljoen Papers</title></ref>, boxes D.V, E.IX).</p>
+                        
+                        <p><persName corresp="#HGV">Viljoen</persName> discounts the possibility that <persName type="fictional" corresp="#HARRY">Harry</persName>&#x02BC;s remark 
+                            refers to a holiday that, in real life, had already occurred, in <date when="1826-06">June 1826</date>, 
                             before <persName corresp="#JR">Ruskin</persName> started work on <ref type="apparatus" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref> 
                             according to <persName corresp="#MR">Margaret</persName>&#x02BC;s gloss. 
                             She rejects this interpretation presumably on the grounds that the family could not have holidayed at the seaside in <placeName corresp="#HASTINGS">Hastings</placeName> 
-                            during <date when="1826-06">June 1826</date>, if, as <persName corresp="#WGC">W. G. Collingwood</persName> likewise assumed, they had already departed for 
+                            during <date when="1826-06">June 1826</date>, if they had already departed for 
                             <ref type="note" subtype="geographical" target="perth_note.php"><placeName corresp="#PERTH">Perth</placeName>, <placeName corresp="#SCOTLAND">Scotland</placeName></ref>, 
-                            shortly after <persName corresp="#JJR">John James</persName>&#x02BC;s birthday 
-                            on <date when="1826-05-10">May 10</date>. It is now known, however, that the family must have delayed a vacation that year, as <persName corresp="#JJR">John James</persName> 
+                            shortly after <persName corresp="#JJR">John James</persName>&#x02BC;s birthday on <date when="1826-05-10">May 10</date>. 
+                            (<persName corresp="#WGC">W. G. Collingwood</persName>, not having noticed the clue about a &#x201C;longest day&#x201D;, assumed that the holiday must have preceded <date when="1826-05-10">May 10</date> 
+                            and occurred in &#x201C;the spring of 1826&#x201d; [<ref type="bibliography" target="bibliography.php#WGCLIFEOFJR1893"><persName corresp="#WGC">Collingwood</persName>, <title type="book" corresp="#WGCLIFEOFJR1893"><hi rend="italic">The Life and Work of John Ruskin</hi> [1893]</title></ref>, 1:25; 
+                            <ref type="bibliography" target="bibliography.php#WGCLIFEOFJR1900"><title type="book" corresp="#WGCLIFEOFJR1900"><hi rend="italic">The Life of John Ruskin</hi> [1900]</title></ref>, 21].)
+                            It is now known, however, that the family must have delayed a vacation that year, since <persName corresp="#JJR">John James</persName> 
                             traveled for customer orders well past his birthday (see <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php">Tours of 1826&#x2013;27</ref>). 
-                            It is thus entirely plausible that <persName corresp="#JR">Ruskin</persName> would have recounted events at <placeName corresp="#HASTINGS">Hastings</placeName> 
-                            as part of his tale, without contradicting <persName corresp="#MR">Margaret</persName>&#x02BC;s date for 
+                            It is thus more plausible that, insofar as <persName corresp="#JR">Ruskin</persName> drew on actual events that occurred at <placeName corresp="#HASTINGS">Hastings</placeName> 
+                            to help form his tale, he referred to a trip in the few months prior to when <persName corresp="#MR">Margaret</persName> notes that he began work on 
                             <ref type="apparatus" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref>. 
-                            In fact, in chapter 1, in which Harry and Lucy are still situated at home, prior to the journey described in chapter 8, Lucy mentions an event 
+                            <!--DCH ERRONEOUS REFERENCE? In fact, in chapter 1, in which Harry and Lucy are still situated at home, prior to the journey described in chapter 8, Lucy mentions an event 
                             &#x201C;when we were at the seaside&#x201D;&#x2014;<persName corresp="#JR">Ruskin</persName> having evidently having confused the real time of his composition 
                             with the characters&#x02BC; fictional time. (Of course, it is possible, too, that the narrative refers to <hi rend="italic">two</hi> seaside holidays, 
                             with Lucy&#x02BC;s comment in chapter 1 hearkening back to a <date notBefore="1825-06-21" notAfter="1825-09-22">summer 1825</date> journey, 
                             and Harry&#x02BC;s narration in chapter 8 reflecting events in <date when="1826-06">June 1826</date>. What seems least warranted by the evidence 
                             is that <persName corresp="#MR">Margaret</persName>&#x02BC;s date for the completion of 
                             <ref type="apparatus" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref> is incorrect, 
-                            and that <persName corresp="#JR">Ruskin</persName> composed its principal work months afterward.)</p>
-                        <p>Even more uncertainty surrounds an alleged association of Volume 1 with a family journey north to <placeName corresp="#SCOTLAND">Scotland</placeName> 
+                            and that <persName corresp="#JR">Ruskin</persName> composed its principal work months afterward.)--></p>
+                        <p>Greater uncertainty surrounds an alleged association of Volume 1 with a family journey north to <placeName corresp="#SCOTLAND">Scotland</placeName> 
                             in the autumn of <date when="1826">1826</date>, an event that <persName corresp="#WGC">W. G. Collingwood</persName> drew from his reading of 
                             <ref type="apparatus" target="on_scotland_apparatus.php"><title type="poem" corresp="#ONSCOTLAND">&#x201C;On Scotland&#x201D;</title></ref> 
                             in <ref type="apparatus" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref> and of 
-                            <ref type="apparatus" target="glen_of_glenfarg_apparatus.php#DATE"><title type="poem" corresp="#GLENOFGLENFARG">&#x201C;Glen of Glenfarg&#x201D; (&#x201C;Glen of Glenfarg thy beauteous rill&#x201D;)</title></ref>) 
+                            <ref type="apparatus" target="glen_of_glenfarg_apparatus.php"><title type="poem" corresp="#GLENOFGLENFARG">&#x201C;Glen of Glenfarg&#x201D; (&#x201C;Glen of Glenfarg thy beauteous rill&#x201D;)</title></ref>) 
                             in <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref> 
                             (see <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php">Tours of 1826&#x2013;27</ref>). 
-                            While such a scenario can be dovetailed with <persName corresp="#MR">Margaret</persName>&#x02BC;s dating of MS I by imagining 
+                            While such a scenario can be dovetailed with <persName corresp="#MR">Margaret</persName>&#x02BC;s dating of <title type="manuscript" corresp="#MSI">MS I</title> by imagining 
                             <persName corresp="#JR">Ruskin</persName>&#x02BC;s starting the first volume of &#x201C;Harry and Lucy&#x201D; in 
                             &#x201C;about <date notBefore="1826-09" notAfter="1826-10">Sep<hi rend="superscript">t</hi> or Oct 1826</date>&#x201D; during the 
-                            journey itself or shortly following the family&#x02BC;s return to <placeName corresp="#CAMBERWELL">Camberwell</placeName>, it seems odd that the volume&#x02BC;s sole purported witness to a Scottish journey is a single poem, 
+                            journey itself or shortly following the family&#x02BC;s return to <ref type="note" subtype="geographical"><placeName corresp="#CAMBERWELL">Camberwell</placeName></ref>, it seems odd that the volume&#x02BC;s sole purported witness to a Scottish journey is a single poem, 
                             while Volume 2 of &#x201C;Harry and Lucy,&#x201D; written the following year in <ref type="apparatus" target="msiii_apparatus.php"><title type="manuscript" corresp="#MSIII">MS III</title></ref>, 
                             contains an extensive account of a visit to <placeName corresp="#PERTH">Perth</placeName>. It is possible, of course, that <persName corresp="#JR">Ruskin</persName> 
                             merely saved that material for the second volume. It is also possible that, as proposed in <ref type="note" subtype="contextual" target="tours_of_1826-27_note.php">Tours of 1826&#x2013;27</ref>, 
                             the family journeyed to <placeName corresp="#SCOTLAND">Scotland</placeName> only in <date when="1827">1827</date>, not in <date when="1826">1826</date>, 
-                            and that the only travel available to them in <date when="1826">1826</date> was that described in Volume 1&#x2014;the seaside visit that lay in the opposite direction, 
+                            and that the only recent travel available to <persName corresp="#JR">Ruskin</persName> to describe in Volume 1 was the seaside visit that lay in the opposite direction, 
                             southward to <placeName corresp="#HASTINGS">Hastings</placeName>.</p>
                     </div>
                     
@@ -191,35 +201,74 @@
                     <div type="subsection" xml:id="PUBLICATION">
                         <head type="subsection">Publication</head>
                         <p>Previously unpublished in entirety.</p>
-                        <p>For his autobiography <title type="book" corresp="#PRAETERITA"><hi rend="italic">Praeterita</hi></title>, <persName corresp="#JR">Ruskin</persName> 
-                        ordered to be reproduced the conclusion of &#x201C;Harry and Lucy,&#x201D; Volume 1 (in chap. 10), 
-                        along with a drawing, <ref type="drawing" target="D2.php"><!--Target needed here.-->&#x201C;Harry&#x02BC;s New Road,&#x201D; [Plate] &#x201C;7,&#x201D; [&#x201C;Harry and Lucy,&#x201D; Vol. 1]</ref>. These were
+                        <p>For his autobiography <title type="book" corresp="#JRPRAETERITA"><hi rend="italic">Praeterita</hi></title> (chap. 10), <persName corresp="#JR">Ruskin</persName> 
+                            ordered to be reproduced the conclusion of <title type="lesson" corresp="#JRHARRYANDLUCYVOL1">&#x201C;Harry and Lucy . . . Vol I&#x201D;</title>, 
+                        along with a drawing, <ref type="witness" target="harry_and_lucy_vol1_msi.php#HARRYSROADFIG"><title type="artwork" corresp="#JRHARRYSNEWROADMSI">&#x201C;Harry&#x02BC;s New Road&#x201D;</title></ref>. These were
                         reproduced in facsimile using type and engraving, in <ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>,
-                        35:52&#x2013;55 (see Textual Note).</p>
-                        <p>Other prose excerpts from &#x201C;Harry and Lucy,&#x201D; Vol. 1, quoted in 
-                        <ref type="bibliography" target="bibliography.php#WGCLIFEOFJR1893">Collingwood, <hi rend="italic">Life and Work of John Ruskin</hi> (1893)</ref>, 24&#x2013;25; 
-                        <ref type="bibliography" target="bibliography.php#WGCLIFEOFJR1900">Collingwood, <hi rend="italic">Life of John Ruskin</hi> (1900)</ref>, 21; 
-                        <ref type="bibliography" target="bibliography.php#WIDERSEA">Hunt, <hi rend="italic">Wider Sea</hi></ref>, 34.</p>
-                        <p>Selected drawings from &#x201C;Harry and Lucy,&#x201D; Vol. 1, reproduced in 
-                        <ref type="bibliography" target="bibliography.php#GENESISOFINVENTION">Emerson, <hi rend="italic">Genesis of Invention</hi></ref>, pl. 2; 
-                        and <ref type="bibliography" target="bibliography.php#DRAWINGSOFJR">Walton, <hi rend="italic">Drawings of John Ruskin,</hi></ref> 6.</p>
+                        35:52&#x2013;55.</p>
+                        <p>Other prose excerpts from <title type="lesson" corresp="#JRHARRYANDLUCYVOL1">&#x201C;Harry and Lucy . . . Vol I&#x201D;</title>, quoted in 
+                            <ref type="bibliography" target="bibliography.php#WGCLIFEOFJR1893"><persName corresp="#WGC">Collingwood</persName>, <title type="book" corresp="#WGCLIFEOFJR1893"><hi rend="italic">The Life and Work of John Ruskin</hi> (1893)</title></ref>, 1:24&#x2013;25; 
+                            <ref type="bibliography" target="bibliography.php#WGCLIFEOFJR1900"><persName corresp="#WGC">Collingwood</persName>, <title type="book" corresp="#WGCLIFEOFJR1900"><hi rend="italic">The Life of John Ruskin</hi> (1900)</title></ref>, 21; 
+                        <ref type="bibliography" target="bibliography.php#WIDERSEA"><persName corresp="#JDHUNT">Hunt</persName>, <title type="book" corresp="#HUNTWIDERSEA"><hi rend="italic">Wider Sea</hi></title></ref>, 34.</p>
+                        <p>Selected drawings from <title type="lesson" corresp="#JRHARRYANDLUCYVOL1">&#x201C;Harry and Lucy . . . Vol I&#x201D;</title> reproduced in 
+                        <ref type="bibliography" target="bibliography.php#GENESISOFINVENTION"><persName corresp="#SE">Emerson</persName>, <title type="book" corresp="#EMERSONGENESISOFINVENTION"><hi rend="italic">Genesis of Invention</hi></title></ref>, pl. 2; 
+                            and <ref type="bibliography" target="bibliography.php#WALTONDRAWINGS"><persName corresp="#PHW">Walton</persName>, <title type="book" corresp="#WALTONDRAWINGS"><hi rend="italic">Drawings of John Ruskin</hi></title></ref>, 6.</p>
+                    </div>
+                    <!--START TAGGING HERE-->
+                    <div type="subsection" xml:id="COMPOSITION">
+                        <head type="subsection">Volume 1: Composition and Sources</head>
+                        <p>No draft survives of volume 1 of "Harry and Lucy", but the text in MS I shows indications that it is a fair copy based on a lost draft.
+                            Given Ruskin's obsessive attention to the physical appearance of his text, it is not credible that he could have composed and fair-copied the text simultaneously 
+                            in this <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Book</ref>, MS I. 
+                            His printing was modeled on the serif typefaces used by Baldwin, Cradock, and Joy's printer for 
+                            Edgeworth's Harry and Lucy Concluded and Frank; A Sequel; and he not only imitated the title page of Edgeworth's Harry and Lucy Concluded 
+                            for his own title page, but also adapted characters in that display typeface as at least one of the models for decorative capitals used throughout his text. 
+                            Some of Ruskin's insertions in the text, moreover, are most readily explained as correcting errors of transcription, not composition 
+                            (see textual glosses appended to the text; and see also 
+                            <ref type="note" subtype="contextual" target="hand_note.php#RUSKINSHANDEARLYPRINTPENCIL">The Ruskin Family Handwriting: <persName corresp="#JR">Ruskin</persName>&#x02bc;s Early Print Lettering in Pencil</ref>).</p>
+                        
+                        <p>The four or five months comprised by Margaret Ruskin's dating of the manuscript (see <ref target="#DATEOFCOMPOSITIONVOL1">Date of Composition: Volume 1</ref>) 
+                            could account for simultaneous drafting elsewhere alongside fair-copying in MS I, but at the start of chapter 2 the narrative exhibits a significant shift 
+                            that may reflect the exhange of an earlier drafted text for a newer one. On this page occurs the first instance of third-person narration, 
+                            the story until this point having consisted solely of direct exchange of dialogue. Now appears the tags "answered her <persName type="fictional" corresp="#PAPA">father</persName>" 
+                            and "said her <persName type="fictional" corresp="#MAMMA">mother</persName>", and on the same page a narrator addresses the reader. One might suppose that it was at this point that 
+                            Ruskin learned to use such discourse--his use and understanding of punctuation evolves over the course of the manuscript, as well--but the abruptness 
+                            of the innovation brings other changes immediately in train. Heretofore, the dialogue has been limited to Lucy and Mamma, Papa being away from home in the City; 
+                            but when Papa comes home, he has a brief exchange with Lucy and then, the narrator informs us, "<persName type="fictional" corresp="#LUCY">Lucy</persName> has gone to bed 
+                            and we shall have time to attend to <persName type="fictional" corresp="#HARRY">harry</persName> whose history we have hitherto forgot". 
+                            At this point, also, in the exchange between Papa and Lucy at the start of chapter 2, Ruskin draws identifiably on a passage in Edgeworth's Frank: A Sequel--a 
+                            possible borrowing from that text in chapter 1 being less definitive in source.</p>
+                        
+                        
+                        
                     </div>
                     <div type="subsection" xml:id="COMPOSITE">
                         <head type="subsection">A Composite Work</head>
-                        <p><persName corresp="#JR">Ruskin</persName>&#x02BC;s &#x201C;Harry and Lucy Concluded&#x201D; is a composite work, in the sense that, from inception, 
-                            he divided the project into volumes; and he allowed the conception of <hi rend="italic">volume</hi> to expand and become flexibly inclusive of several 
-                            genres of writing, illustration, and material forms of communication. From the start, as his title page shows, 
+                        <p><persName corresp="#JR">Ruskin</persName>&#x02BC;s <title type="lesson" corresp="#JRHARRYANDLUCY">&#x201C;Harry and Lucy Concluded&#x201D;</title> is a composite work in two senses: 
+                            from the start, he parsed the project into volumes, although the three existing volumes seem discontinuous from one another; 
+                            and he treated the idea of a <hi rend="italic">volume</hi> as a composite in itself, capable of expanding to include other genres of writing besides the Edgeworthian lesson 
+                            (poetry, travelogue, emblem) as well as illustration. According to the <ref type="witness" target="harry_and_lucy_vol1_msi.php#TITLEPAGE">title page of volume 1</ref>, 
+                            the illustrations were not an afterthought, at least at the fair-copying stage: "printed and composed by a little boy &#x007C; and also drawn", 
+                            volume 1 promises "copper plates", as does the <ref type="witness" target="harry_and_lucy_vol2_msiii.php#TITLEPAGE">title page of volume 2</ref>. 
+                            The indecisive placement of a colophon in volume 1 suggests that a further accretion may have been conceived more belatedly--a collection of verse, 
+                            <ref type="apparatus" target="msi_poetry_anthology_apparatus.php"><title type="anthology" corresp="#MSIPOETRYANTHOLOGY">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</title></ref>--but 
+                            the calculated placement of the anthology, <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>, 
+                            in volume 2, allowing sufficient space for the ocmpletion of "Harry and Lucy . . . Vol 2", indicates that this feature had become standard.</p>
+                        
+                        <p>Like a later work, Account of a Tour on the Continent, Ruskin's Harry and Lucy both takes its cue of comnposite genres from its model and elaborates the possibilites. 
+                            In the Account, Ruskin tops Samuel Rogers's illustrated tour poem, Italy, by pairing the topographical poems with prose travelogues, and he enhances the prose pieces with their own graphic vignettes, 
+                            doubling the expected complement of illustrations to be found in Rogers. Maria Edgeworth's Harry and Lucy Concluded was published without any illustrations at all; 
+                            and while the book does quote snatches of verse, its four volumes lace a complete poem, much less an anthology.
+                            
                             <persName corresp="#JR">Ruskin</persName> intended a volume to comprise not only a division of a lengthier prose work, 
                             but also illustration. Unlike Maria Edgeworth's original four-volume work, Ruskin's is illustrated, the title page declaring 
-                            (without any evidence of a later change or addition) that the book was "printed and composed by a little boy &#x007C; and also drawn,"
-                            so that Volume 1 and presumably forthcoming volumes promise to feature "copper &#x007C; plates." Volume 1 comes to include, moreover, 
-                            a collection of verse, <ref type="apparatus" target="msi_poetry_anthology_apparatus.php"><title type="anthology" corresp="#MSIPOETRYANTHOLOGY">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</title></ref>; 
+                             Volume 1 comes to include, moreover, 
                             and while Ruskin may or may not originally have stretched his idea a volume of lessons in dialogue form to comprise a verse anthology, 
                             the indecisive treatment of a colophon at the end of this Red Book suggests that the generic and material boundaries had sprung wide open 
                             (see <ref type="apparatus" target="msi_apparatus.php#DISCUSSION"><title type="manuscript" corresp="#MSI">MS I</title>: Discussion</ref>.</p>
                         <p>Regardless of whether <persName corresp="#JR">Ruskin</persName> intended from the start of composition that Volume 1 of &#x201C;Harry and Lucy Concluded&#x201D; 
                             would include a poetry anthology, evidence is strong that he started Volume 2 on this plan, by estimating the number of leaves he would require for the second installment of "Harry and Lucy Concluded" 
-                            to close with the anthology, <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>, 
+                            to close with , 
                             which he composed roughly simultaneously with the prose work. 
                             When he failed to compose sufficient "Harry and Lucy" material to fill the intervening leaves, 
                             he substituted another anthology, "Poetry" [MS III Second Poetry Anthology] 
