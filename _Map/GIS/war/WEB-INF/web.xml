@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>projectManagerServlet</servlet-name>
+    <servlet-class>com.ruskin.project.server.ServiceImpl</servlet-class>
+ 
+	<init-param>
+	    <param-name>wmsBaseLayer</param-name>
+			<param-value>http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/${z}/${y}/${x}</param-value>
+			<description> A url leading to a map layer. </description>
+	</init-param>	
+	
+	<init-param>	
+		<param-name>wmsLayerNames</param-name>
+			<param-value>ArcGIS</param-value>
+			<description> A comma separated list of layer names. Default is 'bluemarble'. </description>
+	</init-param>
+	
+	<init-param>	
+		<param-name>maryPlaces</param-name>
+			<param-value>data/places_visited_by_mary.xml</param-value>
+			<description> The xml file with Mary's data. </description>
+	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>projectManagerServlet</servlet-name>
+    <url-pattern>/ruskin/pm</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Ruskin.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

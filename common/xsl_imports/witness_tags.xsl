@@ -14,7 +14,7 @@
   and <[div/span] class="subst-add-[above/below][-][overwriting][-][SUBSTITUTOR]"[ style="left:_em"]> for additions, where the substitutor is
   identified by the <subst>'s @hand (<subst>s without a @hand are assumed to be Salthows) and _ is calculated as the product of an included
   <space>'s @quantity and 0.4. Where the substVar is not used, the following output is possible: <span class="subst-del[-erasure/expunction/
-  strikethrough]">...</span> for deletions and <span class="subst-add[-overwriting]">...</span> for additions. Note that, while the following will
+  strikethrough]">...</spaAn> for deletions and <span class="subst-add[-overwriting]">...</span> for additions. Note that, while the following will
   transform a <del> or an <add> without a @rend, the XML should be considered suspect.-->
 
   <xsl:template match="tei:subst/tei:del">
@@ -24,7 +24,7 @@
         <!-- <span class="subst-del-erasure">
           <xsl:apply-templates/>
         </span> -->
-        <xsl:variable name="substVar">&#x003C;div 
+        <xsl:variable name="substVar">&#x003C;div
           class=&#x0022;subst-del-<xsl:value-of select="@rend"/> s-subst s-del s-<xsl:value-of select="@rend"/>&#x0022; &#x003E;</xsl:variable>
         <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
         <xsl:apply-templates/>
@@ -32,7 +32,7 @@
       </xsl:when>
 
       <xsl:otherwise>
-        <xsl:variable name="substVar">&#x003C;div 
+        <xsl:variable name="substVar">&#x003C;div
           class=&#x0022;subst-del s-subst s-del&#x0022; &#x003E;</xsl:variable>
         <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
         <xsl:apply-templates/>
@@ -46,8 +46,8 @@
     <xsl:choose>
 
       <xsl:when test="@rend='overwriting' and @place='above' or @place='below'">
-        <xsl:variable name="substVar">&#x003C;div 
-          class=&#x0022;subst-add-<xsl:value-of select="@place"/>-overwriting s-subst s-add s-overwrite s-<xsl:value-of select="@place"/>&#x0022; 
+        <xsl:variable name="substVar">&#x003C;div
+          class=&#x0022;subst-add-<xsl:value-of select="@place"/>-overwriting s-subst s-add s-overwrite s-<xsl:value-of select="@place"/>&#x0022;
           style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
         <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
         <xsl:apply-templates/>
@@ -55,8 +55,8 @@
       </xsl:when>
 
       <xsl:when test="@place='above' or @place='below'">
-        <xsl:variable name="substVar">&#x003C;div 
-          class=&#x0022;subst-add-<xsl:value-of select="@place"/> s-subst s-add s-<xsl:value-of select="@place"/>&#x0022; 
+        <xsl:variable name="substVar">&#x003C;div
+          class=&#x0022;subst-add-<xsl:value-of select="@place"/> s-subst s-add s-<xsl:value-of select="@place"/>&#x0022;
           style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
         <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
         <xsl:apply-templates/>
@@ -64,7 +64,7 @@
       </xsl:when>
 
       <xsl:when test="@rend='overwriting'">
-        <xsl:variable name="substVar">&#x003C;div 
+        <xsl:variable name="substVar">&#x003C;div
           class=&#x0022;s-subst s-add s-overwrite s-inline&#x0022;&#x003E;</xsl:variable>
         <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
         <xsl:apply-templates/>
@@ -72,7 +72,7 @@
       </xsl:when>
 
       <xsl:otherwise>
-        <xsl:variable name="substVar">&#x003C;div 
+        <xsl:variable name="substVar">&#x003C;div
           class=&#x0022;s-subst s-add s-inline&#x0022;&#x003E;</xsl:variable>
         <xsl:value-of disable-output-escaping="yes" select="$substVar"/>
         <xsl:apply-templates/>
@@ -120,7 +120,7 @@
           </xsl:otherwise>
 
         </xsl:choose>
-          
+
       </xsl:when>
 
       <xsl:when test="@rend='underline'">
@@ -200,8 +200,8 @@
         <xsl:choose>
 
           <xsl:when test="@place='above' or @place='below'">
-            <xsl:variable name="addVar">&#x003C;div 
-              class=&#x0022;add-<xsl:value-of select="@place"/>&#x0022; 
+            <xsl:variable name="addVar">&#x003C;div
+              class=&#x0022;add-<xsl:value-of select="@place"/>&#x0022;
               style=&#x0022;left:<xsl:value-of select="(format-number((tei:space/@quantity * 0.4), '0.0'))"/>em&#x0022;&#x003E;</xsl:variable>
             <xsl:value-of disable-output-escaping="yes" select="$addVar"/>
             <xsl:apply-templates/>
@@ -261,7 +261,7 @@
   <xsl:template match="tei:anchor">
     <span id="{string(@xml:id)}"></span>
   </xsl:template>
-  
+
   <!--<lg>
   Normal processing differentiates between <lg>s with the @types strophe and stanza.-->
   <xsl:template match="tei:lg">
@@ -278,22 +278,46 @@
           <xsl:apply-templates/>
         </div>
       </xsl:when>
-      
+
+
+
+
+
+
+ <!--
+      <xsl:otherwise>
+        <xsl:message terminate="yes">&lt;lg&gt; needs the "type" attribute</xsl:message>
+      </xsl:otherwise>
+  </xsl:choose>
+  </xsl:template>
+ -->
+
+      <!-- <xsl:otherwise>
+
+      </xsl:otherwise> -->
+
+
+
+      <!-- <xsl:otherwise>
+        <xsl:message terminate="yes">&lt;lg&gt; needs the "type" attribute</xsl:message>
+      </xsl:otherwise> -->
+
       <xsl:otherwise>
         <xsl:message terminate="yes">&lt;lg&gt; needs the "type" attribute</xsl:message>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
 
+
+
+
   <!--<l>
   child is used here to test whether the a <l> contains a <lb> with a @type of runover. If it does, special processing (see <lb>) of the <l> is
   performed before its content is output to a <span>.
-
   brVar inserts <br/> before each <span> to ensure that proper lineation.
-
   xdivVar inserts a </div> before the </span> when a <l> contains a <lb>.-->
   <xsl:template match="tei:l">
-    
+
     <xsl:choose>
 
       <xsl:when test="child::tei:lb/@type='runover'">
