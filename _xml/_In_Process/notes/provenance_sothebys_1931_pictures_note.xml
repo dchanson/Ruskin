@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <fileDesc xml:id="provenance_sothebys_1931_pictures_note">
+            <titleStmt>
+                <title type="main"><orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> Sale of <persName corresp="#JR">Ruskin</persName> Pictures and Drawings, <date when="1931">1931</date></title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="bibliographical">
+                <head type="title"><orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> Sale of <persName corresp="#JR">Ruskin</persName> Pictures and Drawings, <date when="1931">1931</date></head>
+                <p>On <date when="1931-05-20">20 May 1931</date>, <orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName> held a sale of paintings and drawings by or belonging to <persName corresp="#JR">Ruskin</persName>, 
+                    two days following the <ref type="note" subtype="bibliographical" target="provenance_sothebys_1931_note.php"><orgName corresp="#SOTHEBYS">Sotheby&#x02BC;s</orgName> Sale of <persName corresp="#JR">Ruskin</persName> Manuscripts and Library, <date when="1931">1931</date></ref>. 
+                    As described in the title of the 1931 catalogue, the sale represented 
+                    <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931PICTURES"><title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">The Collection of Pictures and Drawings, Formerly the Property of the Late <persName corresp="#JR">Professor John Ruskin</persName>, 
+                        Removed from <placeName type="building" corresp="#BRANTWOOD">Brantwood</placeName>, <placeName corresp="#CONISTON">Coniston</placeName> (Sold by Order of the Trustees), and the Property of the Late <persName corresp="#AS">Joseph Arthur Palliser&#x2010;Severn</persName>, R.I., R.O.I., 
+                        Removed from <placeName type="building" corresp="#9WARWICKSQ">9, Warwick Square</placeName>, <placeName corresp="#LONDON">London</placeName>, S.W.</hi></title></ref>.</p>
+                
+                <p>On 21 May, the day following the sale, the B. F. Stevens &#x0026; Brown firm cabled Goodspeed that they had "secured cream collection comprising about seventy framed items". 
+                    The firm specified that they "bought all lots specially wanted except onefourfour [lot 144]". The especially desired items included George Richmond's two portraits of Ruskin--the 
+                    1857 chalk head portrait (lot 29) for &#x00A3;33, and the 1842 full-length portrait (lot 30) for &#x00A3;82. The total was 25 purchases for a little over &#x00A3;700 
+                    (<title type="letter" corresp="brown_to_goodspeed_1931-05-21">telegram, <orgName corresp="BFSTEVENSBROWN">B. F. Stevens &#x0026; Brown</orgName> to <persName corresp="#CG">Goodspeed</persName>, <date when="1931-05-21">21 May 1931</date></title>, 
+                    in <ref type="bibiography" target="bibliography.php#BROWNALSTOGOODSPEEDBEINECKE">Stevens, B. F., and Brown. Letters, telegrams, and other materials to Charles Goodspeed</ref>; and see 
+                    <ref type="bibliography" target="bibliography.php#SOTHEBYCAT1931PICTURES"><orgName corresp="#SOTHEBYS">Sotheby &#x0026; Co.</orgName>, <title type="catalogue" corresp="#SOTHEBYCAT1931"><hi rend="italic">Catalogue of the Collection of Pictures and Drawings . . . of the Late <persName corresp="#JR">Professor John Ruskin</persName></hi></title></ref>). 
+                </p>
+                
+                
+                <p>Body paragraph containing a list:
+                    <list type="ordered">
+                        <item n="1">First item in the list.</item>
+                        <item n="2">Second item.</item>
+                        <item n="3">Third item.</item>
+                    </list>
+                </p>
+                <p>Body paragraph.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

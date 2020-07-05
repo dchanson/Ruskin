@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="harry_and_lucy_vol1_glosses_textual">
+            <titleStmt>
+                <title type="main">&#x201C;Harry and Lucy . . . Vol I&#x201D;</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            
+            <div type="glosses" subtype="textual">
+                <note xml:id="CHAPDIVISION" resp="#DCH"><p><hi rend="bold">Chapter divisions (MS I)&#x2014;</hi>Chapter divisions are Ruskin's addition to his imitation 
+                    of the physical and design features of Edgeworth's text, as are his "frontispiece" and "plates". In the first edition (1825) of Harry and Lucy Concluded, 
+                    which Ruskin owned (see <ref type="note" subtype="bibliographical" target="boyhood_books_note.php">Physical Descriptions of Some Books Used by Ruskin in Youth</ref>), 
+                    episodes are divided simply by a horizontal bar, and no pictures or diagrams embellish the text. Beginning in chapter III, 
+                    Ruskin does adopt the typographical treatment used to highlight the start of section divisions in Edgeworth's text.</p></note>
+                
+                <note xml:id="JUSTIFICATION" resp="#DCH"><p><hi rend="bold">Justification mark (MS I)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#JUSTIFICATION">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Justification, Runover, and Word Division</ref>. 
+                    In the transcription, end-of-line horizontal marks that are not notated as justification marks are hyphens connecting syllables of words broken between lines, 
+                    as will be evident where they occur. Occasionally, Ruskin drops word-break hyphens to the beginning of the line following the beginning of the word division. 
+                    More often, he breaks words without using a hyphen at all.</p></note>
+                
+                <note xml:id="CAPY" resp="#DCH"><p><hi rend="bold">&#x201C;<hi rend="doubleletter-fill">Y</hi>es&#x201d; (MS I)&#x2014;</hi>Ruskin appears to have modeled his decorative capital <hi rend="italic">Y</hi> 
+                    on the font of large capitals used on the title page of Maria Edgeworth, Harry and Lucy Concluded (1825). See the <hi rend="italic">Y</hi> in "<hi rend="caps">EARLY</hi>". 
+                    See also <ref type="note" subtype="contextual" target="hand_note.php#RUSKINSHANDEARLYPRINTPENCIL">The Ruskin Family Handwriting: <persName corresp="#JR">Ruskin</persName>&#x02bc;s Early Print Lettering in Pencil</ref>.</p></note>
+                
+                <note xml:id="QUERYOREXCLAMATION" resp="#DCH"><p><hi rend="bold">Question mark or exclamation mark (MS I)&#x2014;</hi>Throughout 
+                    his dialogue, Ruskin writes an ambiguously shaped mark that might be taken for a question mark or an exclamation mark. 
+                    We have interpreted the mark as one or the other, depending on context, but its meaning is unclear.</p></note>                    
+                
+                <note xml:id="THISPENCILS" resp="#DCH"><p><hi rend="bold">&#x201C;this pencils are lost&#x201D; (MS I)&#x2014;</hi>In the continuation of this exchange on the next page, 
+                    Ruskin corrected the pronoun <hi rend="italic">it</hi> to <hi rend="italic">they</hi> but neglected to correct the pointer <hi rend="italic">this</hi>.</p></note>
+                
+                <note xml:id="PAUSEPERIOD" resp="#DCH"><p><hi rend="bold">Pause&#x2013;period (MS I)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</p></note>
+                
+                <note xml:id="CAPB" resp="#DCH"><p><hi rend="bold">&#x201C;<hi rend="doubleletter-fill">B</hi>ut&#x201d; (MS I)&#x2014;</hi>Ruskin now begins to 
+                    decorate initial capitals other than <hi rend="italic">Y</hi>, as well.</p></note>
+                
+                <note xml:id="JUSTIFICATION2" resp="#DCH"><p><hi rend="bold">&#x201C;I have been<g type="justification">&#x2013;</g>ou<g type="justification">-</g>t<g type="justification">-</g>&#x201d; (MS I)&#x2014;</hi>These 
+                    two horizontal marks might be interpreted as two successive justification marks (an unprecedented use between two words, much less one between two letters within a word), 
+                    or the longer mark might be interpreted as a dash and only the second as a justification mark 
+                    (see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#JUSTIFICATION">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Justification, Runover, and Word Division</ref>). 
+                    In Harry and Lucy Concluded, Edgeworth does use a dash to express a speaker's pause for emphasis.</p></note>
+                
+                <note xml:id="DASHENDQUOTE" resp="#DCH"><p><hi rend="bold">Ending quotation mark above horizontal line (MS I)&#x2014;</hi>This 
+                    mark may be Ruskin's attempt to imitate Edgeworth's use of a dash <hi rend="italic">followed by</hi> a closing quotation mark, 
+                    which is used in Harry and Lucy Concluded to represent a pause or speech broken off, although Ruskin's usage does not appear to conform with this meaning.</p></note>
+                
+                <note xml:id="DEAFING" resp="#DCH"><p><hi rend="bold">&#x201C;deafing&#x201d; (MS I)&#x2014;</hi>Probably a misspelling rather than a dialect usage 
+                    for <hi rend="italic">deafening</hi>.</p></note>
+                
+                <note xml:id="FIG2" resp="#DCH"><p><hi rend="bold">&#x201C;2&#x201d; (MS I)&#x2014;</hi>The numeral probably signifies "plate 2", the first being the 
+                    <title type="artwork" corresp="#JRFRONTISPIECEMSI">"frontispiece"</title>.</p></note>
+                
+                <note xml:id="HEIGHT" resp="#DCH"><p><hi rend="bold">&#x201C;heigh&#x201d; (MS I)&#x2014;</hi>Ruskin ran out of space to write the closing <hi rend="italic">t</hi> of <hi rend="italic">height</hi>.</p></note>
+                
+                <note xml:id="LETTERS" resp="#DCH"><p><hi rend="bold">&#x201C;s&#x201d; (MS I)&#x2014;</hi>The letter <hi rend="italic">s</hi> by itself at the start of the line 
+                    apparently is meant to compensate for the squeezing of the closing <hi rend="italic">s</hi> of <hi rend="italic">bits</hi> at the end of the line above.</p></note>
+                
+                <note xml:id="EENGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;between&#x201d; (MS I)&#x2014;</hi>Ruskin initially attempted to keep the letters <hi rend="italic">een</hi> inside the right-justified margin 
+                    by reducing the size of the letters, but then apparently decided to sacrifice right-justification to clarity by overwriting the syllable with larger letters.</p></note>
+                
+                <note xml:id="TERMINALCOMMA" resp="#DCH"><p><hi rend="bold">Terminal comma (MS I)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</p></note>
+                
+                <note xml:id="CAPSMALLCAPS" resp="#DCH"><p><hi rend="bold">Decorative chapter openings (MS I)&#x2014;</hi>While the first edition (1825) of Edgeworth's 
+                    Harry and Lucy Concluded contains no chapter divisions, sections are separated by a horizontal bar, and initial words are highlighted 
+                    typographically with a capital and small capitals--a treatment that, beginning with this chapter, Ruskin imitates and further embellishes 
+                    with his "double letter" style.</p></note>
+                
+                <note xml:id="LETTERL" resp="#DCH"><p><hi rend="bold">&#x201C;l&#x201d; (MS I)&#x2014;</hi>This mark is possibly the letter <hi rend="italic">l</hi>, 
+                    Ruskin having started to complete the word <hi rend="italic">merrilly</hi> on this line, but instead placed the suffix at the top of p. 26.</p></note>
+                
+                <note xml:id="COMMA" resp="#DCH"><p><hi rend="bold">Non-terminal comma (MS I)&#x2014;</hi>In "Harry and Lucy . . . Vol I", 
+                    Ruskin has once previously used a carefully drawn comma as terminal punctuation. Here for the first time he uses a comma 
+                    as nonterminal punctuation, and does so a second time in the line at the bottom of this page. 
+                    More or less correct usage of commas--at least, in the middle of sentences, rather than at the end--remains rare 
+                    in "Harry and Lucy . . . Vol I", next occurring on pp. 29, 33.</p></note>
+                
+                <note xml:id="CARET" resp="#DCH"><p><hi rend="bold">Caret (MS I)&#x2014;</hi>For the first time, Ruskin uses a caret to signify 
+                    where an insertion above the line belongs; however, he has drawn it upside down.</p></note>
+                
+                <note xml:id="MENDEDTEAR" resp="#DCH"><p><hi rend="bold">Torn leaf (MS I)&#x2014;</hi>This leaf, pp. 36-37, 
+                    has been torn out and reattached, using a gummed strip (see MS I: Description). 
+                    Since the tear line fits the remaining stub, the leaf evidently was not moved here from elsewhere. 
+                    Gummed strips can be found put to a similar use in W. G. Collingwood’s proof sheets for Poems (1891) (RF MS 70), 
+                    so he may have been responsible for this crude but effective mending.</p></note>
+                
+                <note xml:id="PLATENUMBER" resp="#DCH"><p><hi rend="bold">Plate numbering (MS I)&#x2014;</hi>In numbering this "plate" (as the drawings are named, starting with plate 3), 
+                    Ruskin scored through "4" and replaced the number with "5". The number <hi rend="italic">4</hi> would have been correct 
+                    in the current condition of MS I, with its missing leaf, pp. 30-31. Changed to <hi rend="italic">5</hi>, 
+                    the plate numbering suggests that the missing leaf contained a plate, numbered plate 4. Taking speculation further afield, 
+                    another possibility is opened up by Ruskin's having left p. 25 blank, the verso of the page containing plate 3. 
+                    Did he mean to add a plate to this space, which would have been plate 4?</p></note>
+                
+                <note xml:id="CARETS" resp="#DCH"><p><hi rend="bold">Caret (MS I)&#x2014;</hi>For a second time, Ruskin uses the caret symbol, 
+                    again drawn upside down, and multiplied three in a row apparently in order to extend the width of the insertion, which is set above the line.</p></note>
+                
+                <note xml:id="JUSTIFICATIONCARET" resp="#DCH"><p><hi rend="bold">Justification mark(?) andn caret (MS I)&#x2014;</hi>The horizontal mark before the suffix <hi rend="italic">ly</hi> 
+                    may be meant as a justification mark, but the function of the (upside-down) caret can only be guessed. Possibly, having stretched out the word 
+                    <hi rend="italic">Presently</hi> using a justification mark to fill the line, Ruskin felt he needed to tie the suffix securely to the base word.</p></note>
+                
+                <note xml:id="APOSTROPHE" resp="#DCH"><p><hi rend="bold">&#x201C;l.ll&#x201d; (MS I)&#x2014;</hi>A centered dot does service for an apostrophe in <hi rend="italic">I'll</hi>.</p></note>
+                
+                <note xml:id="SHOWEDTOLUCY" resp="#DCH"><p><hi rend="bold">&#x201C;he showed to Lucy&#x201d; (MS I)&#x2014;</hi>This phrase appears to have been crowded onto this line 
+                    after the centered "chap 7" heading was already in place. Since the insertion is necessary to complete the dependent clause begun on the line above, 
+                    and not an afterthought extending the sentence, it serves as evidence that Ruskin fair-copied the text in MS I from a draft (not extant). Only an omission 
+                    in copying, not in composition, explains the insertion logically.</p></note>
+                
+                <note xml:id="DINNER" resp="#DCH"><p><hi rend="bold">&#x201C;dinner&#x201d; (MS I)&#x2014;</hi>The insertion of the word <hi rend="italic">dinner</hi> 
+                    above the line makes a run-on sentence: ". . . he was interrupted by dinner after dinner Harry learned. . . ."</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>

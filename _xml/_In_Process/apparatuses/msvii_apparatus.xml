@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject MANUSCRIPT followed by "apparatus", for example,
+            "msi_apparatus". The xml:id also corresponds with its XML file's name, for example, "msi_apparatus.xml".-->
+        <fileDesc xml:id="msvii_apparatus">
+            <titleStmt>
+                <title type="main">MS VII</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#TPD">Isaiah Thomas</persName>
+                    <resp>conributing transcription/encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>            
+    <text>
+        <body>
+            <div type="apparatus">
+            <head type="title">MS VII</head>
+                <!--A manuscript apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>BMS VII</p>
+                </div>
+                <div type="section" xml:id="LOCATION">
+                    <head type="section">Location</head>
+                    <p>Body paragraph.</p>
+                    <p><orgName corresp="#YALE">Yale</orgName> (cataloged as <title type="poem" corresp="#JRITERIAD">Iteriad</title> &#x0026;c ).</p> 
+                </div>
+                <div type="section" xml:id="PROVENANCE">
+                    <head type="section">Provenance</head>
+                    <p>Body paragraph.</p>
+                    <p>Sotheby’s <date when="1930">1930</date>. This is one of the manuscripts, along with <title type="manuscript" corresp="#MSSIX">MSS IX</title> and <title type="manuscript" corresp="#MSSX">X</title>, that <persName corresp="#WGC">Collingwood</persName> listed as  in the possession of Mrs. Arthur Severn.  On the inside front flyleaf, she inscribed:  <persName corresp="#JSAR">Joan R. Severn</persName>--given to me by Di Pa in <date when="1887">1887</date> at <placeName corresp="#BRANTWOOD">Brantwood</placeName>.</p>
+                </div>
+                <div type="section" xml:id="DESCRIPTION">
+                    <head type="section">Description</head>
+                    <p>Body paragraph.</p>
+                    <p>Notebook, greenish marbled paper boards, three-quarter-bound in dark blue morocco; 25 × 21 cm; marbled endpapers, and edges; 144 original leaves (not including endpapers), of which <persName corresp="#JR">Ruskin</persName> numbered only pp. 1-57 (with p. 47 given twice, but, in compensation, no p. 48). A later hand numbered the leaves but included in this numbering the leaves of a dismembered copybook that was later tipped in to the back of <title type="manuscript" corresp="#MSVII">MS VII</title> (see below), bringing the total to 162 leaves. The year <date when="1830">1830</date> is visible in the watermark.</p>
+                    <!--The subsection that follows, Collation, is common to all manuscript apparatuses and was, accordingly, assigned an xml:id by
+                        the Ruskin Project Team during work on the "First Twenty."-->
+                    <div type="subsection" xml:id="COLLATION">
+                    <head type="subsection">Collation</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+                <div type="section" xml:id="CONTENTS">
+                    <head type="section">Contents</head>
+                    <!--Typically, this section will begin:-->
+                    <p>
+                        <hi rend="italic">From front of book, the sequential order of contents:</hi>
+                    </p>
+                    <!--and continue with a list, which may group items according to type (e.g. prose, poetry) or other similiarity. Note: drawings
+                        may be included as items in this list.-->
+                    <list xml:id="LIST" type="ordered">
+                        <item n="a">Item belonging to Group A.</item>
+                        <item n="b.1">First item belonging to Group B.</item>
+                        <item n="b.2">Second item belonging to Group B.</item>
+                        <item n="b.3">Third item belonging to Group B.</item>
+                        <item n="c">Item belonging to Group C.</item>
+                    </list>
+                    <p>Body paragraph.</p>
+                    <p>Content
+                    Forward from front of book:
+                    a)  <title type="poem" corresp="#JRITERIAD">Iteriad</title>,  no. 91 (pp. 1r-58r; or, in other terms, 1r-v [title page and argument] + pp. 1-57 [as numbered by <persName corresp="#JR">Ruskin</persName>, with inaccuracies already mentioned] + 30v-58r).
+                    b)  Athens,  no. 135 (59r-61v), with the poem itself (six stanzas only) appearing on 60r-61v; incomplete fair copy (see no. 135).
+                    c) Blank leaves, 62r-113r.
+                    Forward from end of book (see "Account" apparatus, draft of composite):
+                    d) Blank inside flyleaf and 162v-r.
+                    e) Poem,  <ref type="apparatus" subtype="work" target="account_of_a_tour_on_the_continent_apparatus.php#JRTHERHINE"><title type="composite" corresp="#JRTHERHINE"><placeName corresp="#RHINE">The Rhine</placeName></title></ref> 
+                        (161v, dated <date when="1833">1833</date>; Works, 2:368-69), and poem,  
+                        <ref type="apparatus" subtype="work" target="account_of_a_tour_on_the_continent_apparatus.php#JRCHAMOUNI"><title type="poem" corresp="#JRCHAMOUNI"><placeName corresp="#CHAMOUNI">Chamouni</placeName></title></ref>  (161r-59v, dated <date when="1833">1833</date>; Works, 2:382-84), both of them sections of no. 180. Copied by another hand, probably Margaret’s. Items e-h have the appearance of having all been fair-copied at around the same time, as if these pieces were being anthologized for some reason.
+                    f) No. 244, untitled, copied in the same hand (probably Margaret’s), and dated  October 1st <date when="1836">1836</date>  (159v-55r).
+                    g) No. B, Undatable, partial copy in the same hand, probably Margaret’s (154v-r).
+                    h) No. 204, copied in the same hand, probably Margaret’s (153v-50v).
+                    i) As noted above ( Description ) and in the Library Edition (Works 2:27 n. 1, 45 n. 2a; not mentioned, however, in the description of <title type="manuscript" corresp="#MSVII">MS VII</title>, Works, 2:532), a copybook was dismembered and tipped in to the back, starting between leaves 149 and 147 and continuing until between leaves 115 and 113. This booklet contains no. 251 (a copy probably by <persName corresp="#JJR">John James</persName>, with annotations attributed to <persName corresp="#WHH">W. H. Harrison</persName>), and no. 256 (also a copy probably by <persName corresp="#JJR">John James</persName>). There are a total of 18 leaves. It can no longer be positively confirmed that these leaves once formed a single  thin copybook  (see  Description  above)--as opposed, say, to two separate booklets, one for each poem. There is no reason to doubt the claim, however, since all leaves measure the same size, 19 x 22.8 cm.
+                    Title page:  The Gipsies / a Poem / by / <persName corresp="#JR">John Ruskin</persName> Aetat 18 / <date when="1837">1837</date>  (1r, verso blank); 9 leaves, following the title-page leaf, which are numbered pp. 1-17 in the copyist’s hand, and written on both sides (except for the final page).
+                    Title page:  The Exile of St. Helena / by <persName corresp="#JR">John Ruskin</persName> / Aetat 19 / <date when="1838">1838</date>  (11r, and 11v blank, if one counts these leaves continuously from  The Gipsies ); 7 leaves, following the title-page leaf, written on both sides (except for the final page). These leaves were not numbered by the copyist, but the lines of poetry were numbered and, on that basis, nothing appears to be missing.</p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Body paragraph.</p>
+                    <p>Date of composition probably <date when="183132">1831-32</date> for fair copy of  <title type="poem" corresp="#JRITERIAD">Iteriad</title>  (draft begun in <date when="1830">1830</date>); <date when="183536">1835 (?) 36 </date>. Tipped-in manuscripts composed <date when="1837">1837</date> and <date when="1838">1838</date>. On inside front flyleaf (beneath <persName corresp="JSAR">Joan Severn's</persName> inscription):  Begun 28 Novr <date when="1830">1830</date> / Finished 11 Jany <date when="1832">1832</date>  (written in ink over top of the same words in pencil). The earlier date refers to the start of composition and the latter to the final fair-copying (see note to no. 91).</p>
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <p>In its initial use, this was a fair-copy notebook used primarily for  <title type="poem" corresp="#JRITERIAD">Iteriad</title>,  no. 91, and  Athens,  no. 135, which are fair-copied in a hand similar to, but larger than, that used for <title type="manuscript" corresp="#MSSIIA-E">MSS IIA-E</title>.
+                        Title page (1r):  <title type="poem" corresp="#JRITERIAD">ITERIAD</title> / or / THREE WEEKS / AMONG / the / LAKES / <date when="1831">1831</date>. The title page, which <persName corresp="#JR">Ruskin</persName> displayed in fancy lettering drawn from Butterworth’s Young Arithmetician’s Instructor: Containing Specimens of Writing with Directions (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref> 259, 261 n. 17) is reproduced in <title type="poem" corresp="#JRITERIAD">Iteriad</title>, or Three Weeks among the Lakes, ed. <persName corresp="#JSD">James S. Dearden</persName>(Newcastle upon Tyne: Frank Graham, <date when="1969">1969</date>), among the illustrations between pp. 32 and 33. Similar lettering occurs in some of <persName corresp="#JR">Ruskin's</persName> letters to his father in <title type="manuscript" corresp="#MSXI">MS XI</title>.
+                    On the verso of the title page, <persName corresp="#JR">Ruskin</persName> drew another fancily lettered  <title type="poem" corresp="#JRITERIAD">Iteriad</title>,  followed by  Book First / The argument  and a prose summary of the first book’s contents. Each of the three remaining books begins much the same way, without  <title type="poem" corresp="#JRITERIAD">Iteriad</title>  repeated, but with a fancy ornament separating the text of the argument from the poem.
+                    Title page (59r):  ATHE[NS / OR THE]  and on the verso (59v)  [Canto First],  with the bracketed letters representing what <persName corresp="#JR">Ruskin</persName> only sketched in pencil from his orthography primer, without finishing the letters in ink. At the top of the following page, halfway down on which begins the poem, <persName corresp="#JR">Ruskin</persName> penciled  [THE ARGUMENT]  and left a space for a prose summary, like those that begin the books of <title type="poem" corresp="#JRITERIAD">Iteriad</title>. 
+                    Tipped in between the front marbled flyleaves, <persName corresp="#AW">Wedderburn(?)</persName> added a page on which is pasted a description of <title type="manuscript" corresp="#MSVII">MS VII</title> clipped from PJR, as was done for other manuscripts that <persName corresp="#WGC">Collingwood</persName> had already described. On this sheet, <persName corresp="#AW">Wedderburn(?)</persName> provides information about material tipped in at the back of <title type="manuscript" corresp="#MSVII">MS VII</title>:  His father’s copy of ‘The Gipsies’ &#x0026; ‘The Exile of St Helena,’ formerly in one thin copybook have now been inserted in this book.</p>
+                    <!--The Discussion section may contain all or only some of the following subsections.-->
+                    <div type="subsection">
+                        <head type="subsection">Hand</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Composition &#x0026; Sources</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Domestic Scene</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

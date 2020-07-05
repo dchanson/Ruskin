@@ -25,11 +25,6 @@
                     <persName corresp="#EAH">Eva Hoffmann</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
-                <respStmt>
-                    <!--EAH-->
-                    <persName corresp="#EAH">Eva Hoffmann</persName>
-                    <resp>contributing transcription/encoding/review</resp>
-                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
                     Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
@@ -731,7 +726,7 @@
                             <desc>Length: 40.55 sq mi</desc>
                             <desc>South of Andernach&#x002C; with the Rhine running through.</desc>
                         </terrain>
-                        <note>Visited Ehrenbreitstein, junction of the Moselle and Rhine.
+                        <note>Visited Ehrenbreitstein, junction of the Moselle and Rhine. 
                             <p></p>
                         </note>
                     </place>
@@ -767,12 +762,13 @@
                             <p></p>
                         </note>
                     </place>
+                    <!--Pass through not originally marked-->
                     <place type="settlement" xml:id="BACHARAH">
                         <placeName>Bacharah</placeName>
                         <location>
                             <bloc type="continent">Europe</bloc>
                             <country>Germany</country>
-                            <region type="state">Rhineland-Palatinate</region>
+                            <region type="state">Rhineland-Palatinate</region>   
                             <geo></geo>
                         </location>
                         <terrain>
@@ -783,12 +779,13 @@
                             <p>Pass-through</p>
                         </note>
                     </place>
+                    <!--Pass through not originally marked-->
                     <place type="settlement" xml:id="NIEDERINGELHEIM">
                         <placeName>Nieder Ingelheim</placeName>
                         <location>
                             <bloc type="continent">Europe</bloc>
                             <country>Germany</country>
-                            <region type="state">Rhineland-Palatinate</region>
+                            <region type="state">Rhineland-Palatinate</region>   
                             <geo></geo>
                         </location>
                         <terrain>
@@ -852,7 +849,7 @@
                         <location>
                             <bloc type="continent">Europe</bloc>
                             <country>Germany</country>
-                            <region type="state">Hesse</region>
+                            <region type="state">Hesse</region>    
                             <geo></geo>
                         </location>
                         <terrain>
@@ -1312,6 +1309,22 @@
                             <p>Pass-through.</p>
                         </note>
                     </place>
+                    <place type="settlement" xml:id="SARGANS">
+                        <placeName>Sargans</placeName>
+                        <location>
+                            <bloc type="continent">Europe</bloc>
+                            <country>Switzerland</country>
+                            <region type="canton">St. Gallen</region>   
+                            <geo></geo>
+                        </location>
+                        <terrain>
+                            <desc></desc>
+                            <desc></desc>
+                        </terrain>
+                        <note>
+                            <p>Pass-through.</p>
+                        </note>
+                    </place>
                     <place type="settlement" xml:id="COIRE">
                         <placeName>Coire</placeName>
                         <location>
@@ -1618,6 +1631,7 @@
                     </place>
                     <!---Returned to this place, second notiation-->
                     <place type="settlement" xml:id="ARONA.2">
+                        <!--Place name marked .2 denotes place mentioned twice-->
                         <placeName>Arona</placeName>
                         <location>
                             <bloc type="continent">Europe</bloc>
@@ -1792,6 +1806,7 @@
                         </note>
                     </place>
                     <place type="settlement" xml:id="SALLENCHE.2">
+                        <!--Place name marked .2 denotes place mentioned twice-->
                         <placeName>Sallanches</placeName>
                         <location>
                             <bloc type="continent">Europe</bloc>
@@ -1808,6 +1823,7 @@
                         </note>
                     </place> 
                     <place type="settlement" xml:id="GENEVA.2">
+                        <!--Place name marked .2 denotes place mentioned twice-->
                         <placeName>Geneva</placeName>
                         <location>
                             <bloc type="continent">Europe</bloc>

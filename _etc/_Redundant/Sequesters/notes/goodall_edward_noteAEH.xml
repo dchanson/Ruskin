@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="goodall_edward_note">
+            <titleStmt>
+                <title type="main">Edward Goodall (1795&#x2013;1870)</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
+            <div type="note" subtype="biographical">
+                <head type="title"> <persName corresp="#EG">Edward Goodall</persName> (<date notBefore="1795" notAfter="1870">1795-1870</date>)</head>
+                <p>Engraver, based in <placeName corresp="#LONDON">London</placeName>. <persName corresp="#EG">Goodall</persName> specialized in landscape, and he was closely associated with <persName corresp="#JMWT">Turner</persName>. 
+                    Important projects included the vignettes after <persName corresp="#JMWT">Turner</persName> for <persName corresp="#SR">Samuel Rogers</persName>&#x02BC;s <hi rend="italic"> <title type="book" corresp="#ROGERSITALY">Italy</title></hi> (<date when="1830">1830</date>) 
+                    and <persName corresp="#SR">Rogers</persName>&#x02BC;s <hi rend="italic"> <title type="book" corresp="#ROGERSPOEMS1834">Poems</title></hi> (<date when="1834">1834</date>), complementing <persName corresp="#WF">William Finden</persName>&#x02BC;s figure engravings for those books after <persName corresp="#TSP">Stothard</persName>. 
+                    Other collaborations with the artist in steel engraving include the illustrations to the Poetical Works of <persName corresp="#TCAMPBELL">Thomas Campbell</persName>.
+                </p>
+                <p><ref type="bibliography" target="bibliography.html#HUNNISETTSTEELENGRAVED">Hunnisett, <hi rend="italic">Steel&#x2010;Engraved Book Illustration in England</hi></ref>, 
+                    101&#x2013;2. 
+                </p>
+                
+            </div>
+        </body>
+    </text>
+</TEI>
