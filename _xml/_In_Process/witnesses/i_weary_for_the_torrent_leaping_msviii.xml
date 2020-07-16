@@ -6,7 +6,7 @@
         <fileDesc xml:id="i_weary_for_the_torrent_leaping_msviii">
             <titleStmt>
                 <title type="main">&#x201C;I weary for the torrent leaping&#x201D;</title>
-                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS VIII Draft</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
                 </author>
@@ -70,9 +70,9 @@
                     <physDesc>
                         <!--If additional entries are made below, the hands count must be increased.-->
                         <handDesc hands="1">
-                            <handNote corresp="#HANDJR1826-27" scribe="JR">
-                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
-                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            <handNote corresp="#HANDJR1832-33" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1832" notAfter="1833">1832-33</date>,
+                                    examples of which can be found in MS VIII, pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -82,66 +82,67 @@
     </teiHeader>
     <text>
         <body>
-            <div type="poem">
-                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Poem</head>
-                <lg type="stanza" rhyme="aa">
+            <pb facs="MSVIII43"/>
+            <fw type="pageNum" place="top-left"><handShift new="#HANDJR1832-33" medium="ink"/>43</fw>
+            <div type="poem"> 
+                <lg type="stanza" rhyme="aa" xml:id="STZ1">
                     <l>I weary for the torrent leaping</l>
-                    <l>from off the <del rend="strikethrough">mountain</del><add place="below"><space quantity="14" unit="chars"/>scars rough</add> crest</l>
-                    <l>My muse is on the mountain sleeping</l>
+                    <l>from off the <del rend="strikethrough">mountain</del><add place="below"><space quantity="14" unit="chars"/>scars rough</add> crest</l><metamark place="margin" function="reorder" target="#STZ1"><handShift new="#HANDJJR" medium="pencil"/>1</metamark>
+                    <l><handShift new="#HANDJR1832-33" medium="ink"/>My muse is on the mountain sleeping</l>
                     <l>My harp is sunk to rest</l>
                 </lg>
-                <lg>
+                <lg xml:id="STZ2">
                     <l>I weary for the fountain foaming</l>
-                    <l>for shady holme &#x0026; hill</l>
-                    <l>My mind is on the mountain roaming</l>
+                    <l>for shady holme &#x0026; hill</l><metamark place="margin" function="reorder" target="#STZ2"><handShift new="#HANDJJR" medium="pencil"/>2</metamark>
+                    <l><handShift new="#HANDJR1832-33" medium="ink"/>My mind is on the mountain roaming</l>
                     <l>My lyres voice is still.</l>
                 </lg>
-                <lg>
+                <lg xml:id="STZ3">
                     <l>I weary for the woodland brook</l>
-                    <l>that wanders through the vale</l>
-                    <l><del rend="strikethrough">That</del> I weary for the heights that look</l>
+                    <l>that wanders through the vale</l><metamark place="margin" function="reorder" target="#STZ3"><handShift new="#HANDJJR" medium="pencil"/>3</metamark>
+                    <l><handShift new="#HANDJR1832-33" medium="ink"/><del rend="strikethrough">That</del> I weary for the heights that look</l>
                     <l>adown upon the dale</l>
                 </lg>
-                <lg>
+                <lg xml:id="STZ4">
                     <l>The crags are lone on Conistone</l>
                     <l>&#x0026; <del rend="strikethrough"><geogName corresp="#GLARAMARA">Glaramara</geogName>s</del> <geogName corresp="#LOWESWATER">Loweswater</geogName>s dell</l>
-                    <l>And dreary on the mighty one</l>
-                    <l>The cloud enwreathed Scawfell</l>
+                    <l>And dreary on the mighty one</l><metamark place="margin" function="reorder" target="#STZ4"><handShift new="#HANDJJR" medium="pencil"/>4</metamark>
+                    <l><handShift new="#HANDJR1832-33" medium="ink"/>The cloud enwreathed Scawfell</l>
                 </lg>
-                <lg>
+                <lg xml:id="STZ5">
                     <l>Oh what although the crags be stern</l>
-                    <l>Their craggy peaks that sever</l>
-                    <l>Fresh flies the breeze on mountain fern</l>
+                    <l>Their craggy peaks that sever</l><metamark place="margin" function="reorder" target="#STZ5"><handShift new="#HANDJJR" medium="pencil"/>5</metamark>
+                    <l><handShift new="#HANDJR1832-33" medium="ink"/>Fresh flies the breeze on mountain fern</l>
                     <l>And free on mountain heather</l>
                 </lg>
-                <lg>
+                <lg xml:id="STZ6">
                     <l>There is a<del type="strikethrough"><unclear resp="#DCH">t</unclear></del> thrill of strange delight</l>
-                    <l>That passeth quivering oer me</l>
-                    <l>When blue hills fade upon the sight</l>
+                    <l>That passeth quivering oer me</l><metamark place="margin" function="reorder" target="#STZ6"><handShift new="#HANDJJR" medium="pencil"/>9</metamark>
+                    <l><handShift new="#HANDJR1832-33" medium="ink"/>When blue hills fade upon the sight</l>
                     <l>Like summer clouds before</l>
                 </lg>
-                <pb/>
-                <lg>
+                <pb facs="MSVIII45"/>
+                <lg xml:id="STZ7"><metamark function="deletion"><handShift new="#HANDJJR" medium="pencil"/><delSpan spanTo="#endDel" rend="strikethrough"/></metamark>
                     <l>Tis transient, as the <del rend="strikethrough">winters</del><add place="below"><space quantity="23" unit="chars"/>snowy</add> drift</l>
                     <l>That passeth away</l>
                     <l>Tis like the blush of morn that swift</l>
-                    <l>Doth melt into the day</l>
+                    <l>Doth melt into the day<anchor xml:id="endDel"/></l>
                 </lg>
-                <lg>
+                <lg xml:id="STZ8">
                     <l>I long to tread the mountain head</l>
-                    <l>Above the valley swelling</l>
-                    <l>I long to feel the breeze fled</l>
-                    <l>From grey &#x0026; gaunt <geogName corresp="#HELVELLYN">Helvellyn</geogName>.</l>
+                    <l>Above the valley swelling</l><metamark place="margin" function="reorder" target="#STZ8"><handShift new="#HANDJJR" medium="pencil"/>6</metamark>
+                    <l><handShift new="#HANDJR1832-33" medium="ink"/>I long to feel the breeze fled <add><handShift new="#HANDJJR" medium="pencil"/>sped</add></l>
+                    <l><handShift new="#HANDJR1832-33" medium="ink"/>From grey &#x0026; gaunt <geogName corresp="#HELVELLYN">Helvellyn</geogName>.</l>
                 </lg>
-                <lg>
+                <lg xml:id="STZ9">
                     <l>I love the eddying circling sweep</l>
-                    <l>The mantling and the foam</l>
-                    <l>Of murmuring waters dark and deep</l>
+                    <l>The mantling and the foam</l><metamark place="margin" function="reorder" target="#STZ9"><handShift new="#HANDJJR" medium="pencil"/>7</metamark>
+                    <l><handShift new="#HANDJR1832-33" medium="ink"/>Of murmuring waters dark and deep</l>
                     <l>Amid the valleys lone</l>
                 </lg>
-                <lg>
-                    <l>It is a terror, yet tis sweet</l>
-                    <l>Upon some broken brow</l>
+                <lg xml:id="STZ10">
+                    <l>It is a terror, yet tis sweet</l><metamark place="margin" function="reorder" target="#STZ10"><handShift new="#HANDJJR" medium="pencil"/>8</metamark>
+                    <l><handShift new="#HANDJR1832-33" medium="ink"/>Upon some broken brow</l>
                     <l>To look upon the distant sweep</l>
                     <l>Of <del corresp="strikethrough">lake or</del>> ocean spread below</l>
                 </lg>
