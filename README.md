@@ -246,7 +246,7 @@ So the correct Nginx configuration is:
 
 To Restart Nginx Server
 
-    sudo nginx -s reload
+    nginx -s reload
     
     
 
