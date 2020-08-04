@@ -85,7 +85,7 @@ should show:
 
 
 ### Following is ruskin.local.conf for nginx configuration
-    server {
+     server {
     
      listen 8080;
      server_name ruskin.local;
@@ -104,11 +104,11 @@ should show:
        proxy_buffer_size 1024k;
        add_header 'X-1' '$1' always;
      }
+
      location ~* ^/web/pages/(.+)$ {
-    
+
        location ~ /web/pages/(.*\.php)$ {
-    
-         try_files /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri =404;
+         try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri=404;
          add_header 'X-Script_Filename' '$document_root$fastcgi_script_name' always;
          add_header 'X-DocumentRoot' '$document_root' always;
          add_header 'X-1' '$1' always;
@@ -120,16 +120,17 @@ should show:
          fastcgi_param DOCUMENT_ROOT $document_root;
     
        }
-    
-    
-       location ~* ^/web/pages/(.+)$ {
-    
-         try_files gen/_xml/$1 =404;
-    
+
+       location ~* ^/web/pages/(.+)$ {    
+     try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 $uri=404;
          add_header 'X-DocumentRoot' '$document_root' always;
          add_header 'X-1' '$1' always;
          add_header 'X-URI' '$uri' always;
        }
+
+
+   
+
      }
     }
 
