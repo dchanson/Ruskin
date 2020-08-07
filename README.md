@@ -199,7 +199,6 @@ To open conf file in text editor
     
 
 So the correct Nginx configuration is:
-
   server {
     
      listen 8080;
@@ -210,6 +209,7 @@ So the correct Nginx configuration is:
      index index.php index.html index.html;
     
      location / {
+    
        proxy_pass http://localhost:9001;
        proxy_set_header Host $host;
        proxy_set_header X-Real-IP $remote_addr;
@@ -218,10 +218,11 @@ So the correct Nginx configuration is:
        proxy_buffer_size 1024k;
        add_header 'X-1' '$1' always;
      }
-     
+
      location ~* ^/web/pages/(.+)$ {
+
        location ~ /web/pages/(.*\.php)$ {
-         try_files /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri =404;
+         try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri=404;
          add_header 'X-Script_Filename' '$document_root$fastcgi_script_name' always;
          add_header 'X-DocumentRoot' '$document_root' always;
          add_header 'X-1' '$1' always;
@@ -233,15 +234,16 @@ So the correct Nginx configuration is:
          fastcgi_param DOCUMENT_ROOT $document_root;
     
        }
-       
-       location ~* ^/web/pages/(.+)$ {
-         try_files /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri =404;
+
+       location ~* ^/web/pages/(.+)$ {    
+     try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 $uri=404;
          add_header 'X-DocumentRoot' '$document_root' always;
          add_header 'X-1' '$1' always;
          add_header 'X-URI' '$uri' always;
        }
      }
     }
+
 
  
 
@@ -257,3 +259,15 @@ Migration work
 Php removal
 
 
+
+
+#Deployment Procedure:
+Remain on the root project of node app
+###Compile Node App
+     run `./scripts/build.sh` (obtain Node.js production code)
+   
+###Make Assets of all the pages in Ruskin
+    run `./scripts/make-assets.bash`
+    
+###Deploy the changes to the server
+    run `./scripts/deploy.bash`
