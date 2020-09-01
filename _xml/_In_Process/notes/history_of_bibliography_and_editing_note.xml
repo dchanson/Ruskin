@@ -3,8 +3,6 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="history_of_bibliography_and_editing_note">
             <titleStmt>
                 <title type="main">History of Bibliography and Editing of the Early Manuscripts</title>
@@ -60,16 +58,16 @@
             <div type="note" subtype="bibliographical">
                 <head type="title">History of the Bibliography and Editing of the Early Ruskin Manuscripts</head>
                 <p>The editorial rationale of <hi rend="italic">ERM</hi> is grounded in the history of editing <persName corresp="#JR">Ruskin</persName>&#x02BC;s early writing. 
-                    This history began in <persName corresp="#JR">Ruskin</persName>&#x02BC;s lifetime, first with the anthologizing of his poems in <ref type="note" subtype="bibliographical" target="poems_1850_note.php"><hi rend="italic">Poems</hi> (1850)</ref>, 
+                    This history began in <persName corresp="#JR">Ruskin</persName>&#x02BC;s lifetime, first with the anthologizing of his poems in <ref type="note" subtype="bibliographical" target="poems_1850_note.php"><title type="book" corresp="#POEMS1850"><hi rend="italic">Poems</hi> (1850)</title></ref>, 
                     selected and edited by <persName corresp="#JJR">John James Ruskin</persName> and <ref type="note" subtype="biographical" target="harrison_w_h_note.php">W. H. Harrison (ca. 1792&#x2013;1878)</ref>. 
                     The history was resumed toward the end of <persName corresp="#JR">Ruskin</persName>&#x02BC;s life, with the more extensive selection and scholarly editing of his poems 
-                    in <ref type="note" subtype="bibliographical" target="poems_1891_note.php"><hi rend="italic">Poems</hi> (1891)</ref> by 
+                    in <ref type="note" subtype="bibliographical" target="poems_1891_note.php"><title type="book" corresp="#POEMS1891"><hi rend="italic">Poems</hi> (1891)</title></ref> by 
                     <ref type="note" subtype="biographical" target="collingwood_w_g_note.php"><persName corresp="#WGC">W. G. Collingwood</persName> (<date notBefore="1854" notAfter="1932">1854&#x2013;1932</date>)</ref>. 
                     <persName corresp="#WGC">Collingwood</persName>&#x02BC;s editing of the poems was absorbed and extended in the second volume of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref>, edited by 
                     by <ref type="note" subtype="biographical" target="wedderburn_note.php"><persName corresp="#AW">Alexander Wedderburn</persName> (<date notBefore="1854" notAfter="1931">1854&#x2013;1931</date>)</ref> and 
                     <ref type="note" subtype="biographical" target="cook_e_t_note.php"><persName corresp="#ETC">E. T. Cook</persName> (1857&#x2013;1919)</ref>. That volume was paired one devoted to early prose, 
                     the first volume of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref>&#x2014;a 
-                    project that <persName corresp="#WGC">Collingwood</persName> originally contemplated as a scholarly edition complementing the <ref type="note" subtype="bibliographical" target="poems_1891_note.php"><hi rend="italic">Poems</hi> (1891)</ref>, 
+                    project that <persName corresp="#WGC">Collingwood</persName> originally contemplated as a scholarly edition complementing the <ref type="note" subtype="bibliographical" target="poems_1891_note.php"><title type="book" corresp="#POEMS1891"><hi rend="italic">Poems</hi> (1891)</title></ref>, 
                     but that was ultimately preempted by <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn</persName>&#x02BC;s volume, 
                     in which they for most part merely gathered together texts that <ref type="note" subtype="biographical" target="allen_george_note.php"><persName corresp="#GA">George Allen</persName> (<date notBefore="1849" notAfter="1907">1849&#x2013;1907</date>)</ref> had previously published as collectors&#x02BC; items in the <date notBefore="1890" notAfter="1899">1890s</date>.
                     Through these two stages separated by a half century, the history of editing the early <persName corresp="#JR">Ruskin</persName> was shaped by two overlapping constituencies&#x2014;one 
@@ -80,9 +78,10 @@
                     <head type="section">John James Ruskin, W. H. Harrison, and Poems (1850)</head>
                     <p>In the late 1840s, Ruskin's father, John James Ruskin, compiled the earliest known bibliography of Ruskin, 
                         the <ref type="apparatus" target="published_poems_1830-46_note.php">List of Published Poems, 1830&#x2013;46</ref> in <ref type="apparatus" target="msiv_apparatus.php">MS IV</ref>. 
-                        The list was prepatory to the editing and private publication by John James and his friend, 
-                        <ref type="note" subtype="biographical" target="harrison_w_h_note.php"><persName>W. H. Harrison</persName></ref> of the
-                        <ref type="note" subtype="bibliographical" target="poems_1850_note.php"><hi rend="italic">Poems</hi> (1850)</ref> by &#x201C;J.R.&#x201D; Ruskin himself made no contribution to this early project.</p>
+                        Presumably, John James compiled the list prepatory to editing 
+                        <ref type="note" subtype="bibliographical" target="poems_1850_note.php"><title type="book" corresp="#POEMS1850"><hi rend="italic">Poems</hi> by &#x201C;J.R.&#x201D; (1850)</title></ref> with the assistance of his friend, 
+                        <ref type="note" subtype="biographical" target="harrison_w_h_note.php"><persName>W. H. Harrison</persName></ref>. 
+                        Ruskin's own part, if any, in compiling this list is unknown.</p>
                         
                 </div>
                 <div type="section">
