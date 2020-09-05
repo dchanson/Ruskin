@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="19.1">
+<project version="22.1">
     <meta>
         <filters directoryPatterns="" filePatterns="ruskin.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="19.1" xml:space="preserve">
+            <serialized version="22.1" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>enable.project.master.files.support</String>
@@ -25,6 +25,9 @@
                                     <list>
                                         <String>XSL</String>
                                     </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list/>
                                 </field>
                             </scenarioAssociation>
                         </scenarioAssociation-array>
@@ -75,9 +78,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <File>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</File>
-                                </field>
                                 <field name="outputResource">
                                     <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</String>
                                 </field>
@@ -125,6 +125,9 @@
                                                 <String>1</String>
                                             </field>
                                             <field name="hasXPathValue">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="isStatic">
                                                 <Boolean>false</Boolean>
                                             </field>
                                         </transformationParameter>
@@ -183,9 +186,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>true</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <File>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</File>
-                                </field>
                                 <field name="outputResource">
                                     <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</String>
                                 </field>
@@ -235,6 +235,9 @@
                                             <field name="hasXPathValue">
                                                 <Boolean>false</Boolean>
                                             </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
                                         </transformationParameter>
                                     </list>
                                 </field>
@@ -261,6 +264,7 @@
             <file name="common/ruskin.xsl"/>
         </folder>
         <folder path="."/>
+        <file name="_xml/_Completed/apparatuses/account_of_a_tour_on_the_continent_apparatus.xml"/>
         <file name="_xml/_Completed/witnesses/brussels_waterloo_drawing_msix.xml"/>
         <file name="_xml/_Completed/witnesses/brussels_wayside_shrine_drawing_msix.xml"/>
         <file name="_xml/_Completed/witnesses/buildings_on_water_with_boats_drawing_msviii.xml"/>
