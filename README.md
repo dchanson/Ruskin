@@ -75,14 +75,38 @@ You are in the wrong branch.
 ##use homebrew 
 to install` nginx and composer`
 
-    brew services list
+    brew install nginx  
+    brew install php@7.2    
     
+    brew services list
+
+    brew services stop --all     ====> Stop all brew services
+    brew services start --all    ====> Start all brew services
+    brew services restart --all  ====> Restart all brew services
+
+Any way brew service should show following
+           
 should show:
 
     Name    Status  User Plist
     nginx   started root /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
     php@7.2 started root /Library/LaunchDaemons/homebrew.mxcl.php@7.2.plist
 
+
+### Add nginx route to local host
+   vim /etc/hosts
+   add following:
+   
+    127.0.0.1       ruskin.local
+
+this will redirect the trafic to your particular local machine
+   
+   cat /etc/hosts should print following
+
+    127.0.0.1       localhost
+    255.255.255.255 broadcasthost
+    ::1             localhost  
+    127.0.0.1       ruskin.local
 
 ### Following is ruskin.local.conf for nginx configuration
      server {
@@ -199,6 +223,10 @@ To open conf file in text editor
     
 
 So the correct Nginx configuration is:
+##But remeber to change the root, 
+just right click on the Ruskin folder, then get info to get the folder location then copy it from /Users
+and paste it in following root
+
   server {
     
      listen 8080;
