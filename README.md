@@ -75,6 +75,7 @@ You are in the wrong branch.
 ##use homebrew 
 to install` nginx and composer`
 
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     brew install nginx  
     brew install php@7.2    
     
