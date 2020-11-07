@@ -228,8 +228,7 @@ So the correct Nginx configuration is:
 just right click on the Ruskin folder, then get info to get the folder location then copy it from /Users
 and paste it in following root
 
-  server {
-    
+  server { 
      listen 8080;
      server_name ruskin.local;
      client_max_body_size 210M;
