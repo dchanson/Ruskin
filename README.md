@@ -104,14 +104,43 @@ this will redirect the trafic to your particular local machine
    
    cat /etc/hosts should print following
 
+To change permission to write in the file     
+
+   sudo chmod 755 /etc/hosts 
+   sudo vim /etc/hosts
+   
+Add following    
+    
+    127.0.0.1       ruskin.local
+
+    cat /etc/hosts 
+    
+Should print following
+
     127.0.0.1       localhost
     255.255.255.255 broadcasthost
     ::1             localhost  
     127.0.0.1       ruskin.local
 
 ### Following is ruskin.local.conf for nginx configuration
-     server {
+
+Go to the root directory
+
+    cd //
+
+ Get inside nginx server configuration
+ 
+    cd usr/local/etc/nginx/servers
     
+ Create a configuration file
+    
+    touch ruskin.local.conf
+    vim ruskin.local.conf
+    
+ Add following into the configuration
+             
+
+     server {
      listen 8080;
      server_name ruskin.local;
      client_max_body_size 210M;
@@ -272,6 +301,11 @@ and paste it in following root
      }
     }
 
+Be aware of the line 
+    
+       root /Users/prashantbasnet/Ruskin/;
+        
+change it depending upon where your Ruskin folder is placed
 
  
 
@@ -280,6 +314,22 @@ To Restart Nginx Server
     nginx -s reload
     
     
+Setting up php part:
+    
+    cd gen/_xml
+    $ ln -s ../../src/header.inc.php .
+    $ ln -s ../../src/style.php .
+    $ ln -s ../../src/layout_includes .
+
+installing composer
+
+    brew install composer
+    cd src/
+    composer install
+
+Noew go to src folder and dublicate the config_template_json.php to config.json.php
+and paste in in /gen/_xml along with the headers
+        
 
     
 On oxygen you 
