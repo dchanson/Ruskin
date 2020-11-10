@@ -30,9 +30,9 @@
 
 <img id="toggle-view" src="<?php echo r_build_url('images/navbar/facsimile-transcription_ro.jpg'); ?>" alt="Toggle Views Button" title="Toggle Views" width="26" height="20" />
 <div id="toggle-magnify-holder">
-	<img id="toggle-magnify-img" 
-		src="<?php echo r_build_url('images/navbar/magnify_ro.jpg'); ?>" 
-		alt="Magnification Button" 
+	<img id="toggle-magnify-img"
+		src="<?php echo r_build_url('images/navbar/magnify_ro.jpg'); ?>"
+		alt="Magnification Button"
 		title="Increase the Magnification of the Facsimile" /> <span id="toggle-magnify-text">100%</span>
 </div>
 <div id="toggle-enlarge-holder">
@@ -52,7 +52,7 @@
 				</span>
 	</div>
 </div>
-<img id="toggle-transcription" src="<?php echo r_build_url('images/navbar/text-composite.jpg'); ?>" alt="Transcription Button" title="Toggle Transcriptions" width="26" height="20" />
+ <img id="toggle-transcription" src="<?php echo r_build_url('images/navbar/text-composite.jpg'); ?>" alt="Transcription Button" title="Toggle Transcriptions" width="26" height="20" />
 <img id="toggle-hand" src="<?php echo r_build_url('images/navbar/scribe_ro.jpg'); ?>" alt="Hands Button" title="Toggle Hands On/Off" width="26" height="20" />
 <img id="toggle-info" src="<?php echo r_build_url('images/navbar/info_ro.jpg'); ?>" alt="Info Button" title="Learn about Showcase" width="26" height="20" style="float:right" />
 <div id="navbar-facsimile" title="Select a Facsimile">

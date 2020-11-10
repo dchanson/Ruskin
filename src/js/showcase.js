@@ -28,19 +28,19 @@ if(window.erm.facsimiles.length){
 }
 
 $(document).ready(function(){
-	
+
 	var toggleZoom=function(){
 
 		var zoomLevels = [100, 200, 400];
-		
+
 		var handle = $('#toggle-magnify-holder');
-		
+
 		var state = handle.attr('data-zoom');
-		
+
 		state = (!!state)?parseInt(state):zoomLevels[0];
-		
+
 		state = zoomLevels[(zoomLevels.indexOf(state) +1)%zoomLevels.length];
-		
+
 		handle.attr('data-zoom', state);
 		$('#facs_preview, #facs').css('width', state+'%');
 		$("#toggle-magnify-text").text(state+'%');
@@ -92,7 +92,6 @@ $(document).ready(function(){
 		$("#navbar-facs").css({"left":"296px", "top":"30px"});
 		$("#toggle-view").css("margin-left", "30px");
 		$("#navbar-enlarge").css({"left":"429px", "top":"30px"});
-		$("#toggle-transcription").css("margin-left", "30px");
 		$("#navbar-hand").css({"left":"524px", "top":"30px"});
 	}
 
@@ -251,7 +250,7 @@ $(document).ready(function(){
 			default: // composite
 				$("#toggle-transcription")
 				.attr("src", window.erm.base_url + "/images/navbar/text-composite.jpg");
-				
+
 				$(".s-subst.s-add").show();
 				$(".s-subst.s-del").show();
 		}
@@ -312,6 +311,6 @@ $(document).ready(function(){
 			updateCurrentViewMode();
 		}
 	});
-	
+
 	$("#toggle-transcription").click();
 });
