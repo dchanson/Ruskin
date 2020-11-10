@@ -39,27 +39,11 @@ EOT
 
 
       <div class="backToApparatusLink">
-        <xsl:choose>
-          <xsl:when test="name(/*)='teiCorpus'">
-            <xsl:for-each select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref[1]">
-              <xsl:if test="position()=1">
-                <xsl:call-template name="custom:printFiliations">
-                  <xsl:with-param name='elems' select='.' />
-                </xsl:call-template>
-                <!-- <xsl:value-of select="custom:printFiliations(.)" disable-output-escaping="yes"/> -->
-              </xsl:if>
-            </xsl:for-each>
-          </xsl:when>
-          <xsl:otherwise>
-            <!-- <xsl:value-of 
-              select="custom:printFiliations(//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref)"
-              disable-output-escaping="yes" /> -->
-              <xsl:call-template name="custom:printFiliations">
-                <xsl:with-param name='elems' select='//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref' />
-              </xsl:call-template>
-          </xsl:otherwise>
-        </xsl:choose>
-
+        <xsl:variable name="aVar">
+          &#x003C;a href=&#x022;&#x003C;?php echo r_build_url(&#x022;<xsl:value-of select="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:filiation/tei:ref[1]/@target" />&#x022;); ?&#x003E;&#x022; &#x003E;Back to apparatus&#x003C;/a&#x003E;
+        </xsl:variable>
+        <xsl:value-of select="$aVar" disable-output-escaping="yes" />
+        <div class="pb" />
       </div>
 
       <xsl:for-each select="//tei:TEI">
@@ -77,10 +61,8 @@ EOT
 
   <xsl:template match="/">
     
-    <xsl:if test="not($htmlForm)">
-      <xsl:value-of select="$headerIncludeVar" disable-output-escaping="yes"/>
-      <xsl:value-of select="$docVar" disable-output-escaping="yes"/>
-    </xsl:if>
+    <xsl:value-of select="$headerIncludeVar" disable-output-escaping="yes"/>
+    <xsl:value-of select="$docVar" disable-output-escaping="yes"/>
     
     <xsl:choose>
       <xsl:when test="tei:teiCorpus">
@@ -90,34 +72,17 @@ EOT
       </xsl:when>
       <xsl:otherwise>
         <xsl:choose>
-          <xsl:when test="tei:TEI/tei:teiHeader[@type='witness' or @type='figure' or @type='letter']">
+          <xsl:when test="tei:TEI/tei:teiHeader[@type='witness' or @type='figure']">
             <xsl:call-template name="custom:renderWitness">
               <xsl:with-param name="root" select = "tei:TEI" />
             </xsl:call-template>
 
           </xsl:when>
           <xsl:otherwise>
-            <xsl:choose>
-              <xsl:when test="not($htmlForm)">
-                <html>
-                  <xsl:apply-templates />
-                </html>
-              </xsl:when>
-              <xsl:otherwise>
-                <main>
-                  <title id="mainTitle">
-                    <xsl:for-each select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']">
-                        <xsl:apply-templates/>
-                    </xsl:for-each>
-                  </title>
-                  <body id="mainBody">
-                    <div>
-                      <xsl:apply-templates/>
-                    </div>
-                  </body>
-                </main>
-              </xsl:otherwise>
-            </xsl:choose>
+            
+            <html>
+              <xsl:apply-templates/>
+            </html>
           </xsl:otherwise>
         </xsl:choose>
       </xsl:otherwise>
@@ -130,25 +95,23 @@ EOT
   elements in the XML document are ignored.-->
 
   <xsl:template match="tei:teiHeader">
-    <xsl:if test="not($htmlForm)">
-      <head>
+    <head>
 
-        <xsl:for-each select="tei:fileDesc/tei:titleStmt/tei:title[@type='main']">
-          <title>
-            <xsl:apply-templates/>
-          </title>
+      <xsl:for-each select="tei:fileDesc/tei:titleStmt/tei:title[@type='main']">
+        <title>
+          <xsl:apply-templates/>
+        </title>
 
-          <xsl:value-of select="$siteTopPhpVar" disable-output-escaping="yes"/>
+        <xsl:value-of select="$siteTopPhpVar" disable-output-escaping="yes"/>
 
-        </xsl:for-each>
+      </xsl:for-each>
 
-        <xsl:variable name="cssVar">
-          &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;style.php?p=site_styles.scss&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
-        </xsl:variable>
-        <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
-        
-      </head>
-    </xsl:if>
+      <xsl:variable name="cssVar">
+        &#x003C;link href=&#x022;&#x003C;?php echo r_build_url(&#x022;style.php?p=site_styles.scss&#x022;); ?&#x003E;&#x022; rel=&#x022;stylesheet&#x022; type=&#x022;text/css&#x022;&#x003E;
+      </xsl:variable>
+      <xsl:value-of select="$cssVar" disable-output-escaping="yes"/>
+      
+    </head>
   </xsl:template>
 
   <xsl:template match="tei:body">
@@ -163,20 +126,14 @@ EOT
       </xsl:when>
       <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus']">
         <body>
-          <xsl:if test="not($htmlForm)">
-            <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
-          </xsl:if>
+          <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
           <xsl:apply-templates/>
-          <xsl:if test="not($htmlForm)">
-            <xsl:value-of select="$topBtnPhpVar" disable-output-escaping="yes"/>
-          </xsl:if>
+          <xsl:value-of select="$topBtnPhpVar" disable-output-escaping="yes"/>
         </body>
       </xsl:when>
 
       <xsl:otherwise>
-        <xsl:if test="not($htmlForm)">
-          <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
-        </xsl:if>
+        <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
         <xsl:apply-templates/>
       </xsl:otherwise>
 

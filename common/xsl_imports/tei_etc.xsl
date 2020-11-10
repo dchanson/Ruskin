@@ -73,16 +73,6 @@
 
 
 
-  <xsl:template match="tei:graphic">
-    <xsl:choose>
-      <xsl:when test="@xml:id">
-        <img src="{$assetUrl}/{@url}" id="{@xml:id}"/>
-      </xsl:when>
-      <xsl:otherwise>
-        <img src="{$assetUrl}/{@url}"/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
   <!--<p>-->
   <xsl:template match="tei:p">
     <div class="p">
@@ -101,12 +91,10 @@
   <xsl:template match="tei:item">
     <xsl:choose>
       <xsl:when test="@xml:id">
-        <a class="id-holder" id="{@xml:id}">N</a>
-        <li class="id-holder-data">
+        <li id="{@xml:id}">
           <xsl:apply-templates/>
         </li>
       </xsl:when>
-      
       <xsl:otherwise>
         <li>
           <xsl:apply-templates/>
@@ -245,9 +233,6 @@
     <!--<note>-->
 
     <xsl:template match="tei:note">
-      <xsl:if test="@xml:id">
-        <a id="{@xml:id}" class="anchor-control gloss-padding-fix" />
-      </xsl:if>
       <xsl:choose>
 
         <xsl:when test="@type='gloss'">
@@ -258,7 +243,7 @@
         </xsl:when>
 
         <xsl:otherwise>
-          <span>
+          <span id="{@xml:id}">
             <xsl:apply-templates/>
           </span>
           <br/>
