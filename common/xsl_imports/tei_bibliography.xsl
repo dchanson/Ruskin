@@ -131,40 +131,39 @@
         Ed.
       </xsl:when>
     </xsl:choose>
+    
+    <xsl:choose>
+      <xsl:when test="count($root) = 1">
+        <xsl:apply-templates select="$root[1]/tei:persName/tei:forename"/>
+        <xsl:value-of select="' '"/>
+        <xsl:apply-templates select="$root[1]/tei:persName/tei:surname"/>
+      </xsl:when>
+      
+      <xsl:otherwise> <!-- >1 editors -->
+        
+        <xsl:for-each select="$root">
+            <xsl:apply-templates select="./tei:persName/tei:surname"/>
+            <xsl:if test="./tei:persName/tei:surname">
+              <xsl:value-of select="', '"/>
+            </xsl:if>
+            <xsl:apply-templates select="./tei:persName/tei:forename"/>
+            
+            <xsl:choose>
+              <xsl:when test="count($root) = 2"> <!--if 2 editors -->
+                <xsl:if test="position() = 1"> and </xsl:if>
+               </xsl:when>
+               <xsl:otherwise> <!--More than 2 editors -->
+                 <xsl:choose>
+                   <xsl:when test="position() = count($root)-1" >; and </xsl:when>
+                   <xsl:when test="position() &lt; count($root)-1">; </xsl:when>
+                 </xsl:choose>
+               </xsl:otherwise>
+              
+            </xsl:choose>
 
-    <xsl:for-each select="$root">
-
-      <xsl:choose>
-
-        <xsl:when test="position() = 1">
-
-          <xsl:apply-templates select="./tei:persName/tei:forename"/>
-
-          <xsl:value-of select="' '"/>
-
-          <xsl:apply-templates select="./tei:persName/tei:surname"/>
-        </xsl:when>
-
-        <xsl:otherwise>
-          <xsl:apply-templates select="./tei:editor/tei:surname"/>
-          <text> </text>
-          <xsl:apply-templates select="./tei:persName/tei:forename"/>
-          
-          <xsl:choose>            
-            <xsl:when test="position() = count($root)" >, and </xsl:when>
-            <xsl:otherwise>, </xsl:otherwise>
-          </xsl:choose>
-          <!-- </xsl:if> -->
-          <!-- <xsl:value-of select="', and '"/> -->
-
-          <xsl:apply-templates select="./tei:persName/tei:forename"/>
-
-          <xsl:value-of select="' '"/>
-
-          <xsl:apply-templates select="./tei:persName/tei:surname"/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:for-each>
+        </xsl:for-each>
+      </xsl:otherwise>
+    </xsl:choose>
 
     <xsl:choose>
 
@@ -399,6 +398,9 @@
       <xsl:choose>
         <xsl:when test="@type='reprintedFrom'">
           Reprinted from <xsl:apply-templates select="./tei:bibl/tei:date" />.a
+        </xsl:when>
+        <xsl:when test="@type='reprintedIn'">
+          <xsl:apply-templates select="./tei:bibl" />
         </xsl:when>
         <xsl:when test="@type='revisedAs'">
           Revised as 

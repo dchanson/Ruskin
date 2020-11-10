@@ -18,6 +18,16 @@
       <xsl:value-of select="custom:printLetterRecursively($character, $num_times)" />
     </xsl:if>
   </xsl:function>
+  
+  <xsl:template name="custom:printFiliations">
+    <xsl:param name="elems" />
+    
+    <xsl:for-each select="$elems">
+      <xsl:apply-templates select='.' />
+    </xsl:for-each>
+    <xsl:value-of select="$brVar" disable-output-escaping="yes" />
+  </xsl:template>
+  
   <!-- Generate alphabetic indices-->
   <xsl:function name="custom:getAlphabeticIndex">
     <xsl:param name="number"/>
@@ -51,12 +61,27 @@
   <xsl:template name="custom:build_url_and_render_anchor">
     <xsl:param name="href" />
     <xsl:param name="target" select="'_self'" />
+    <xsl:param name="withoutPhp" select="0" /> <!--use /web/pages if this is set to 0 -->
     
-    <xsl:variable name="href">&lt;?php echo r_build_url(&quot;<xsl:value-of select="$href"/>&quot;);?&gt;</xsl:variable>
+    <xsl:choose>
+      <xsl:when test="not($withoutPhp) and not($htmlForm)">
+        <xsl:variable name="href">&lt;?php echo r_build_url(&quot;<xsl:value-of select="$href"/>&quot;);?&gt;</xsl:variable>
+        
+        <xsl:call-template name="custom:render_anchor">
+          <xsl:with-param name="href" select="$href" />
+          <xsl:with-param name="target" select="$target" />
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="href"><xsl:value-of select="concat('/', substring-before($href, '.php'), substring-after($href, '.php'))"/></xsl:variable>
+        
+        <xsl:call-template name="custom:render_anchor">
+          <xsl:with-param name="href" select="$href" />
+          <xsl:with-param name="target" select="$target" />
+        </xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
     
-    <xsl:call-template name="custom:render_anchor">
-      <xsl:with-param name="href" select="$href" />
-      <xsl:with-param name="target" select="$target" />
-    </xsl:call-template>
   </xsl:template>
-      </xsl:stylesheet>
+  
+</xsl:stylesheet>

@@ -25,8 +25,6 @@
   alphanumerically; character names appear in the associated comment to the right. PUA character references are marked with an asterisk (*).
   Characters known not to exist in Andron Scripto Web are marked with a double asterisk (**).-->
 
-  <xsl:output method="html" use-character-maps="uni-hex"/>
-
   <xsl:character-map name="uni-hex">
 
     <!--SPECIAL CHARACTER REFERENCES

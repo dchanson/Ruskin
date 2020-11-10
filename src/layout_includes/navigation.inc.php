@@ -19,11 +19,6 @@
         <br/>
         <br/>
 
-				<form action="<?php echo r_build_search_url('search'); ?>" method="get">
-					<input type="text" name="text" placeholder="Search..." style="width: 80px;" />
-					<input type="submit" value="Go" style="width:35px;" />
-				</form>
-				<span><a class="subnavigation" href="<?php echo r_build_search_url('search'); ?>">Advanced Search</a></span>
 				<br>
 
         <span><a href="<?php echo r_get_base(); ?>">Home</a><span>
