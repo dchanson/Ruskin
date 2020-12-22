@@ -3,12 +3,10 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
-            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
-        <fileDesc xml:id="title_of_work_witness">
+        <fileDesc xml:id="harry_and_lucy_vol2_msiii">
             <titleStmt>
-                <title type="main">"Title of Work"</title>
-                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <title type="main">&#x201C;Harry and Lucy . . . Vol 2&#x201D;</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Fair Copy</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
                 </author>
@@ -19,7 +17,6 @@
                     <persName corresp="#DCH">David C. Hanson</persName>
                 </principal>
                 <respStmt>
-                    <!--For corresp, enter your first, middle, and last intials.-->
                     <persName corresp="#HRB">Hannah R. Bourgeois</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
@@ -61,8 +58,8 @@
                         <repository>Beinecke Rare Book and Manuscript Library</repository>
                         <collection>MS Vault Ruskin</collection>
                         <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
-                        <msName>MS I</msName>
-                        <msName>"Red book No. 3"</msName>
+                        <msName>MS III</msName>
+                        <msName>"Red book No. 2"</msName>
                     </msIdentifier>
                     <msContents>
                         <msItem>
@@ -75,8 +72,8 @@
                         <!--If additional entries are made below, the hands count must be increased.-->
                         <handDesc hands="1">
                             <handNote corresp="#HANDJR1826-27" scribe="JR">
-                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
-                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1827-28</date>,
+                                    examples of which can be found in MS III, pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -85,6 +82,45 @@
         </fileDesc>
     </teiHeader>
     <text>
+        <front>
+            <titlePage xml:id="TITLEPAGE">
+                <pb facs="1229151v"/>
+                <docTitle>
+                    <titlePart type="main"><handShift new="#HANDJR1827-28" script="print" medium="pencil"/><space quantity="5" unit="chars"/><hi rend="caps">Har<hi rend="doubleletter">r</hi><hi rend="doubleletter-fill">y a</hi><hi rend="doubleletter">nd</hi> <hi rend="doubleletter-fill">Lucy</hi></hi><lb/>
+                        <lb/><space quantity="9" unit="chars"/><hi rend="smallcaps">Concluded</hi>
+                    </titlePart>
+                    <titlePart type="sub"><space quantity="7" unit="chars"/><hi rend="smallcaps">Being the Last</hi>
+                        <lb/><space quantity="10" unit="chars"/><hi rend="smallcaps">Part of</hi><lb/>
+                        <lb/>
+                        <lb/><space quantity="5" unit="chars"/><hi rend="caps">Early Lessons</hi><add place="below"><space quantity="10" unit="chars"/><figure><figDesc>[diamond-shaped ornament]</figDesc></figure></add>
+                    </titlePart>
+                    <titlePart type="desc"><space quantity="10" unit="chars"/>in four volumes<lb/>
+                        <space quantity="12" unit="chars"/>vol I<lb/>
+                        <space quantity="10" unit="chars"/>with copper<add place="below"><milestone unit="undeclared" rend="hr-quarter"/></add><lb/>
+                        <space quantity="11" unit="chars"/>plates<add place="below"><figure><figDesc>[diamond-shaped ornament]</figDesc></figure></add>
+                        <lb/>
+                        <lb/>
+                    </titlePart>
+                </docTitle>
+                <docImprint><space quantity="5" unit="chars"/><hi rend="smallcaps">Printed</hi> and composed by a little boy<lb/>
+                    <space quantity="10" unit="chars"/>and also drawn</docImprint>   
+            </titlePage>
+            <titlePage>
+                <pb facs="1229104r"/>
+                <docTitle>
+                    <titlePart type="main"><space quantity="5" unit="chars"/><hi rend="caps">Harry</hi> <hi rend="smallcaps">and</hi> <hi rend="caps">Lucy</hi><lb/>
+                        <space quantity="3" unit="chars"/><hi rend="caps">I</hi><space quantity="11" unit="chars"/>concluded<add place="below"><milestone unit="undeclared" rend="hr-full"/></add></titlePart>
+                </docTitle>
+            </titlePage>
+            <div type="frontispiece" xml:id="FRONTISPIECE">
+                <figure>
+                    <head type="title"><space quantity="7" unit="chars"/><title type="artwork" corresp="#JRFRONTISPIECEMSI">frontispiece</title></head>
+                    <figDesc>[<hi rend="italic">Pencil drawing</hi>.&#x2014;Lined up left to right, a four&#x2010;legged animal (a horse?); a (stone?) house, two stories with symmetrically placed mullioned windows, 
+                        a central entrance set in a roofed porch, and a gable roof with a central dormer and a chimney; a tree; and an arched bridge. 
+                        The sun is shining through clouds, from which slanting rain is still pouring, producing a rainbow (labeled as such).]</figDesc>
+                </figure>
+            </div>
+            </front>
         <body>
             <div type="prose">
                 <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Prose Piece</head>
