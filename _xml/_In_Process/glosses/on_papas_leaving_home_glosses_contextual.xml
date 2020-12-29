@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <fileDesc xml:id="on_papas_leaving_home_glosses_contextual">
+            <titleStmt>
+                <title type="main">&#x201c;On Papa&#x02bc;s Leaving Home&#x201d;</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="TRAVELGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Papas leaving home was a moment of sorrow / because he was not to come back to&#x2010;morrow / 
+                    but we thought that the whole was a travel and now / he might come back in days&#x201D; (MS I)&#x2014;</hi>Read as a commentary on real life, 
+                    the poem means that John James Ruskin has departed on a business journey that is not a day's commute, 
+                    such as Papa's early-morning departure for London at the start of 
+                    <ref type="witness" target="harry_and_lucy_vol1_msi.php"><title type="lesson" corresp="#JRHARRYANDLUCY">&#x201C;Harry and Lucy . . . Vol I&#x201D;</title></ref>, 
+                    but that is a longer "travel" through the country, collecting orders for wine from clients. However, the second couplet suggests, 
+                    plans have changed, and he may return home in a matter of days instead of weeks. None of the extant letters between John James and Margaret Ruskin 
+                    for 1826-27 suggest an unexpected curtailment of a business trip.
+                </p></note>
+
+                <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
+            </div>
+        </body>
+    </text>
+</TEI>
