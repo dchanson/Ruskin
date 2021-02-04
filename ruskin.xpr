@@ -14,11 +14,56 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>_xml/_Completed/witnesses</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate (global)</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>_xml/_Completed/apparatuses/account_of_a_tour_on_the_continent_apparatus.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Generate html</String>
+                                        <String>Generate and open html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/witnesses/calais_poem_msia_g1.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate and open (global)</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/webpages/homepage.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate and open html</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -45,21 +90,6 @@
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>_xml/_Completed/corpuses</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate (global)</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/witnesses</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -405,7 +435,7 @@
                                     <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
-                                    <Boolean>true</Boolean>
+                                    <Boolean>false</Boolean>
                                 </field>
                                 <field name="locationToOpenInBrowserURL">
                                     <String>http://ruskin.local:8080/src/ruskin_redir_file.php?open=${cf}&amp;new=1</String>

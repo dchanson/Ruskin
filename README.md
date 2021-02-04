@@ -349,3 +349,18 @@ Remain on the root project of node app
     
 ###Deploy the changes to the server
     run `./scripts/deploy.bash`
+
+
+##Transfomration configuration:
+    Generate and open (global)
+    
+    Xml url: ${currentFileURL}
+    XSL url: ${pdu}/common/ruskin.xsl
+    
+    Output:
+    Save as:
+    ${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php
+    
+    open in browser check
+    http://ruskin.local:8080/src/ruskin_redir_file.php?open=${cf}
+    
