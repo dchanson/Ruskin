@@ -257,7 +257,9 @@ So the correct Nginx configuration is:
 just right click on the Ruskin folder, then get info to get the folder location then copy it from /Users
 and paste it in following root
 
+
   server { 
+  
      listen 8080;
      server_name ruskin.local;
      client_max_body_size 210M;
@@ -314,6 +316,7 @@ To Restart Nginx Server
     nginx -s reload
     
     
+#Php Part    
 Setting up php part:
     
     cd gen/_xml
@@ -322,14 +325,12 @@ Setting up php part:
     $ ln -s ../../src/layout_includes .
 
 installing composer
-
     brew install composer
     cd src/
     composer install
-
-Noew go to src folder and dublicate the config_template_json.php to config.json.php
-and paste in in /gen/_xml along with the headers
-        
+    cp config_template_json.php ../gen/_xmlconfig.json.php
+    
+         
 
     
 On oxygen you 
@@ -349,18 +350,3 @@ Remain on the root project of node app
     
 ###Deploy the changes to the server
     run `./scripts/deploy.bash`
-
-
-##Transfomration configuration:
-    Generate and open (global)
-    
-    Xml url: ${currentFileURL}
-    XSL url: ${pdu}/common/ruskin.xsl
-    
-    Output:
-    Save as:
-    ${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php
-    
-    open in browser check
-    http://ruskin.local:8080/src/ruskin_redir_file.php?open=${cf}
-    
