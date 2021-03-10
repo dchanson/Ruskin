@@ -259,7 +259,6 @@ and paste it in following root
 
 
   server { 
-  
      listen 8080;
      server_name ruskin.local;
      client_max_body_size 210M;
@@ -316,7 +315,7 @@ To Restart Nginx Server
     nginx -s reload
     
     
-#Php Part    
+### Php Part    
 Setting up php part:
     
     cd gen/_xml
@@ -340,13 +339,13 @@ Php removal
 
 
 
-#Deployment Procedure:
+# Deployment Procedure:
 Remain on the root project of node app
 ###Compile Node App
      run `./scripts/build.sh` (obtain Node.js production code)
    
-###Make Assets of all the pages in Ruskin
+###M ake Assets of all the pages in Ruskin
     run `./scripts/make-assets.bash`
     
-###Deploy the changes to the server
+### Deploy the changes to the server
     run `./scripts/deploy.bash`
