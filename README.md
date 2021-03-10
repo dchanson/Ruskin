@@ -68,26 +68,28 @@ You are in the wrong branch.
 
 `Generate Html => renders html`
 
-####Developer works on php removal
+ 
+# Setting dev server at ruskin.local:8080
 
-#Dev server at ruskin.local:8080
-
-##use homebrew 
-to install` nginx and composer`
+## use homebrew 
+to install ` nginx and composer`
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-    brew install nginx  
-    brew install php@7.2    
     
-    brew services list
+    brew install nginx  
+    
+    brew install php@7.2    
 
+    
+### Useful cmd for brew:
+
+    brew services list
     brew services stop --all     ====> Stop all brew services
     brew services start --all    ====> Start all brew services
     brew services restart --all  ====> Restart all brew services
 
-Any way brew service should show following
-           
-should show:
+Any way brew service should print: 
+
 
     Name    Status  User Plist
     nginx   started root /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
@@ -95,25 +97,27 @@ should show:
 
 
 ### Add nginx route to local host
-   vim /etc/hosts
-   add following:
+   
+    vim /etc/hosts
+    
+ add following:
    
     127.0.0.1       ruskin.local
 
 this will redirect the trafic to your particular local machine
    
-   cat /etc/hosts should print following
+     cat /etc/hosts should print following
 
 To change permission to write in the file     
 
-   sudo chmod 755 /etc/hosts 
-   sudo vim /etc/hosts
+     sudo chmod 755 /etc/hosts 
+     sudo vim /etc/hosts
    
 Add following    
     
     127.0.0.1       ruskin.local
-
-    cat /etc/hosts 
+    
+## cat /etc/hosts 
     
 Should print following
 
@@ -122,129 +126,12 @@ Should print following
     ::1             localhost  
     127.0.0.1       ruskin.local
 
-### Following is ruskin.local.conf for nginx configuration
-
-Go to the root directory
-
-    cd //
-
- Get inside nginx server configuration
- 
-    cd usr/local/etc/nginx/servers
-    
- Create a configuration file
-    
-    touch ruskin.local.conf
-    vim ruskin.local.conf
-    
- Add following into the configuration
-             
-
-     server {
-     listen 8080;
-     server_name ruskin.local;
-     client_max_body_size 210M;
-     autoindex on;
-     root /Users/prashantbasnet/Ruskin/;
-     index index.php index.html index.html;
-    
-     location / {
-    
-       proxy_pass http://localhost:9001;
-       proxy_set_header Host $host;
-       proxy_set_header X-Real-IP $remote_addr;
-       proxy_set_header http_version 1.1;
-       proxy_buffers 8 1024k;
-       proxy_buffer_size 1024k;
-       add_header 'X-1' '$1' always;
-     }
-
-     location ~* ^/web/pages/(.+)$ {
-
-       location ~ /web/pages/(.*\.php)$ {
-         try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri=404;
-         add_header 'X-Script_Filename' '$document_root$fastcgi_script_name' always;
-         add_header 'X-DocumentRoot' '$document_root' always;
-         add_header 'X-1' '$1' always;
-         add_header 'X-URI' '$uri' always;
-         fastcgi_pass 127.0.0.1:9000;
-         include fastcgi_params;
-         fastcgi_index index.php;
-         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-         fastcgi_param DOCUMENT_ROOT $document_root;
-    
-       }
-
-       location ~* ^/web/pages/(.+)$ {    
-     try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 $uri=404;
-         add_header 'X-DocumentRoot' '$document_root' always;
-         add_header 'X-1' '$1' always;
-         add_header 'X-URI' '$uri' always;
-       }
-
-
-   
-
-     }
-    }
-
-  #`location /  {} `
- Looks for project running in proxy_pass http://localhost:9001;
- 
- 
-   #`location ~* ^/web/pages/(.+)$ `
- 
- #` location ~* ^/web/pages/(.+)$
-    {try_files gen/_xml/$1 =404;}
-
-This goes and find a file name located at route after /web/pages/:name
- 
- For Example:
- 
-     http://ruskin.local:8080/web/pages/apparatuses/account_of_a_tour_on_the_continent_apparatus.html
- 
- Nginx will take all the route after web/pages/..... i.e `apparatuses/account_of_a_tour_on_the_continent_apparatus.html`
- 
- so it goes in the folder  gen/xml/ by default as defined in ` {try_files gen/_xml/$1 =404;}`
- 
- since files are nested inside either` _Completed` || `_In_Process` || `images` || `layout_includes` along with the other `header` and `style.php`
- it will not be able to find and apply those files.
- 
-## As a result:
-
-https://ibb.co/4pvpyBc
- 
-https://ibb.co/NL7bNhL
-
-##So the correct route format and try file is:
-
-    location ~* ^/web/pages/(.+)$ {
-    try_files /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri =404;
-    
-result:
-
-https://ibb.co/Lg7JQPM
-
-https://ibb.co/9bDzC48
-
-https://ibb.co/hKHWgFB
-    
- 
- then go after
- 
-      location ~ /web/pages/(.*\.php)$ {
-          try_files /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri =404;
-        }
-
-
-
-##To find the folder where nginx is:
+## Following is ruskin.local.conf for nginx configuration
 
     mdfind kind:folder "nginx"
-
     cd usr/local/etc/nginx
     cd servers
-    ls 
+    ls  
     ruskin.local.conf
     
 To open conf file in text editor
@@ -253,60 +140,64 @@ To open conf file in text editor
     
 
 So the correct Nginx configuration is:
-##But remeber to change the root, 
+## But remeber to change the root directory, 
 just right click on the Ruskin folder, then get info to get the folder location then copy it from /Users
 and paste it in following root
 
 
-  server { 
-     listen 8080;
-     server_name ruskin.local;
-     client_max_body_size 210M;
-     autoindex on;
-     root /Users/prashantbasnet/Ruskin/;
-     index index.php index.html index.html;
-    
-     location / {
-    
-       proxy_pass http://localhost:9001;
-       proxy_set_header Host $host;
-       proxy_set_header X-Real-IP $remote_addr;
-       proxy_set_header http_version 1.1;
-       proxy_buffers 8 1024k;
-       proxy_buffer_size 1024k;
-       add_header 'X-1' '$1' always;
-     }
 
-     location ~* ^/web/pages/(.+)$ {
-
-       location ~ /web/pages/(.*\.php)$ {
-         try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri=404;
-         add_header 'X-Script_Filename' '$document_root$fastcgi_script_name' always;
-         add_header 'X-DocumentRoot' '$document_root' always;
-         add_header 'X-1' '$1' always;
-         add_header 'X-URI' '$uri' always;
-         fastcgi_pass 127.0.0.1:9000;
-         include fastcgi_params;
-         fastcgi_index index.php;
-         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-         fastcgi_param DOCUMENT_ROOT $document_root;
-    
+      server { 
+      
+        listen 8080;
+        server_name ruskin.local;
+        client_max_body_size 210M;
+        autoindex on;
+        root /Users/prashantbasnet/Ruskin/;
+        index index.php index.html index.html;
+       
+        location / {
+       
+          proxy_pass http://localhost:9001;
+          proxy_set_header Host $host;
+          proxy_set_header X-Real-IP $remote_addr;
+          proxy_set_header http_version 1.1;
+          proxy_buffers 8 1024k;
+          proxy_buffer_size 1024k;
+          add_header 'X-1' '$1' always;
+        }
+   
+        location ~* ^/web/pages/(.+)$ {
+   
+          location ~ /web/pages/(.*\.php)$ {
+            try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri=404;
+            add_header 'X-Script_Filename' '$document_root$fastcgi_script_name' always;
+            add_header 'X-DocumentRoot' '$document_root' always;
+            add_header 'X-1' '$1' always;
+            add_header 'X-URI' '$uri' always;
+            fastcgi_pass 127.0.0.1:9000;
+            include fastcgi_params;
+            fastcgi_index index.php;
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            fastcgi_param DOCUMENT_ROOT $document_root;
+       
+          }
+   
+          location ~* ^/web/pages/(.+)$ {    
+        try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 $uri=404;
+            add_header 'X-DocumentRoot' '$document_root' always;
+            add_header 'X-1' '$1' always;
+            add_header 'X-URI' '$uri' always;
+          }
+        }
        }
+       
 
-       location ~* ^/web/pages/(.+)$ {    
-     try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 $uri=404;
-         add_header 'X-DocumentRoot' '$document_root' always;
-         add_header 'X-1' '$1' always;
-         add_header 'X-URI' '$uri' always;
-       }
-     }
-    }
+### Be aware of the line 
 
-Be aware of the line 
-    
+       //change it where your Ruskin folder is placed
        root /Users/prashantbasnet/Ruskin/;
         
-change it depending upon where your Ruskin folder is placed
+        
 
  
 
@@ -315,7 +206,7 @@ To Restart Nginx Server
     nginx -s reload
     
     
-### Php Part    
+## Php     
 Setting up php part:
     
     cd gen/_xml
@@ -323,28 +214,21 @@ Setting up php part:
     $ ln -s ../../src/style.php .
     $ ln -s ../../src/layout_includes .
 
-installing composer
+### installing composer
+
     brew install composer
     cd src/
     composer install
     cp config_template_json.php ../gen/_xmlconfig.json.php
     
-         
-
-    
-On oxygen you 
-Migration work
-Php removal
-
-
-
-
+  
 # Deployment Procedure:
 Remain on the root project of node app
-###Compile Node App
+
+### Compile Node App
      run `./scripts/build.sh` (obtain Node.js production code)
    
-###M ake Assets of all the pages in Ruskin
+### Make Assets of all the pages in Ruskin
     run `./scripts/make-assets.bash`
     
 ### Deploy the changes to the server
