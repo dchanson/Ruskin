@@ -1,0 +1,265 @@
+<?php
+$paths = array('./', '../', '../../');
+$root_path = './';
+
+foreach ($paths  as $path){
+$filename = $path.'header.inc.php';
+
+if (file_exists($filename)){
+$root_path = $path;
+break;
+};
+}
+define('ROOT_PATH', $root_path);
+require_once($root_path."header.inc.php");
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:custom="http://whatever">
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset&#x003D;UTF-8">
+      <title><i>Poems</i> (1891)
+      </title><?php require_once(ROOT_PATH."layout_includes/site_top.inc.php"); ?>
+        <link href="<?php echo r_build_url("style.php?p=site_styles.scss"); ?>" rel="stylesheet" type="text/css">
+      
+   </head>
+   
+   <?php require_once(ROOT_PATH."layout_includes/navigation.inc.php"); ?>
+   
+   <div class="note">
+      <div class="bibliographical" id="">
+         
+         <div class="page-title"><i>Poems</i> (1891)
+         </div>
+         
+         <div class="p"><span class="title-book-JRPOEMS1891"><i>The Poems of John Ruskin</i></span>, edited by <a href="<?php echo r_build_url("notes/collingwood_w_g_note.php");?>" target="_self"><span class="persName-WGC">W. G. Collingwood</span></a>, 
+      was published by <a href="<?php echo r_build_url("notes/allen_george_note.php");?>" target="_self"><span class="persName-GA">George Allen</span></a> in <span class="date-1891">1891</span>. The two&#x2010;volume edition was released in the two forms that, by then, 
+      <span class="persName-GA">Allen</span> had established on a plan that was profitable while remaining responsive to <span class="persName-JR">Ruskin</span>&#x02BC;s standards of quality for bookmaking and to his ideas of fair trade in selling and distributing books. 
+                    That is, for modest consumers, <span class="persName-GA">Allen</span> made the two volumes available for ten shillings net, in the sturdy and serviceable <a href="<?php echo r_build_url("notes/uniform_edition_note.php");?>" target="_self"><span class="title-book-JRWORKSUNIFORMEDITION">Uniform Edition</span></a>. 
+                    For collectors, <span class="persName-GA">Allen</span> produced a deluxe edition, lavishing his craftsman&#x02BC;s love of fine bookmaking on what a <span class="date-1900">1900</span> advertisement described as 
+      &#x201C;a Large Edition, with 23 Illustrations in Photogravure from Drawings by the Author and Facsimiles of MSS. Medium 4to&#x201D;, priced at thirty shillings for the two volumes 
+      (reproduced in <a href="<?php echo r_build_url("notes/bibliography.php#DAWSONPEOPLESRUSKIN");?>" target="_self"><span class="persName-PDAWSON">Dawson</span>, <span class="title-book-DAWSONPEOPLESRUSKIN"><i>The People&#x02BC;s Ruskin</i></span></a>, ii). 
+                    Even in the less expensive <a href="<?php echo r_build_url("notes/uniform_edition_note.php");?>" target="_self"><span class="title-book-JRWORKSUNIFORMEDITION">Uniform Edition</span></a> format, a few plates were bound into volume 1, which facsimiled samples of <span class="persName-JR">Ruskin</span>&#x02BC;s boyhood handwriting&#x2014;embellishments 
+                    that <span class="persName-WGC">Collingwood</span> and <span class="persName-GA">Allen</span> likely deemed essential to all readers&#x02BC; experience of the materiality of the boyhood manuscripts as well as key to <span class="persName-WGC">Collingwood</span>&#x02BC;s arguments for dating the poems 
+                    (see <a href="<?php echo r_build_url("notes/hand_note.php");?>" target="_self"><span class="persName-JR">Ruskin</span>&#x02BC;s Handwriting</a>).
+         </div>
+         
+         
+         <div id="" class="section">
+            <span class="head-section">The Provocation of American Literary Piracy</span>
+            
+            <div class="p">Sporadic evidence suggests that plans for publication of the poems developed over a number of years. 
+                            Presumably, from <span class="persName-JR">Ruskin</span>&#x02BC;s standpoint, his father&#x02BC;s private publication of <a href="<?php echo r_build_url("notes/poems_1850_note.php");?>" target="_self"><span class="title-book-JRPOEMS1850"><i>Poems</i></span> by <span class="persName-JR">J. R.</span> (<span class="date-1850">1850</span>)</a> had long ago brought to a close 
+                            any perceived need for further collecting of the poems. Ironically, it was the existence of that private publication that, 
+                            because of its rarity and increasing interest as a collector&#x02BC;s item in the final third of the century, prompted the American publisher 
+                            John Wiley &#x0026; Sons to release an unauthorized edition, 
+                            <span class="title-book-JRPOEMS1886"><i>Poems by John Ruskin</i></span>, in <span class="date-1882">1882</span>. 
+                            The volume was &#x201C;collected and edited&#x201D; by <span class="persName-JOWRIGHT">John Osborne Wright</span>, 
+                            basing his copytext on poems published in the <a href="<?php echo r_build_url("notes/annuals_note.php");?>" target="_self">literay annuals</a>. 
+                            The wording of the title page, <i>collected and edited</i>, was clearly designed to evoke the sought&#x2010;after 
+                            <span class="title-book-JRPOEMS1850"><i>Poems</i></span> by <span class="persName-JR">J. R.</span> &#x201C;collected &#x007C; <span class="date-1850">1850</span>&#x201D;; 
+                            and <span class="persName-JOWRIGHT">Wright</span>&#x02BC;s preface highlighted the rising desirability of the <span class="date-1850">1850</span> volume, 
+                            while pretending to scoff at the rare&#x2010;book market in which &#x201C;copies have become virtually inaccessible except to the most rabid bibliomaniac, 
+                            whose heavy purse enables him to successfully outbid competitors in the auction room and bookstore&#x201D;. 
+                            A footnote pointed to the sale of a copy in <span class="placeName-LONDON">London</span> two years earlier for 41 guineas 
+                            (<a href="<?php echo r_build_url("notes/bibliography.php#JRPOEMS1886");?>" target="_self"><span class="title-book-JRPOEMS1886"><i>Poems by John Ruskin</i></span>, ed. <span class="persName-JOWRIGHT">Osborne</span></a>, i, iv). 
+                            While the <span class="persName-JOWRIGHT">Osborne</span> edition capitalized on the phenomenon of 
+                            <a href="<?php echo r_build_url("notes/collecting_of_modern_authors_note.php");?>" target="_self">Collecting of Modern Authors in the Late Nineteenth and Early Twentieth Centuries</a>, 
+                            the book&#x02BC;s preface conveys an impression, however disingenuously, that its piracy was justified as a democratic public service, 
+                            by bringing a rare and expensive resource within reach of the common reader.
+            </div>
+            
+            
+            <div class="p"><span class="persName-JR">Ruskin</span> reacted aggressively to counter what he recognized as piracy, but his reaction was complicated by his ambivalence toward his early writings. 
+                            Writing in <span class="date-1882">1882</span> to <a href="<?php echo r_build_url("notes/wedderburn_note.php");?>" target="_self"><span class="persName-AW">Alexander Wedderburn</span></a>, he fumed perhaps less about piratical practices by American publishers or about an opportunistic reprint trade 
+                            that was simultaneousy pursued by British publishers&#x2014;issues that increasingly worried <a href="<?php echo r_build_url("notes/allen_george_note.php");?>" target="_self"><span class="persName-GA">George Allen</span></a> 
+                            (see <a href="<?php echo r_build_url("notes/bibliography.php#DAWSONGEORGEALLENOFSUNNYSIDE");?>" target="_self"><span class="persName-PDAWSON">Dawson</span>, <span class="title-book-DAWSONGEORGEALLENOFSUNNYSIDE"><i>George Allen of Sunnyside</i></span></a>, 22, 25&#x2013;26). 
+                            Rather, <span class="persName-JR">Ruskin</span> at least pretended to be outraged more about English law, 
+                            half&#x2010;playfully holding <span class="persName-AW">Wedderburn</span> personally responsible for his profession as a barrister: &#x201C;what a beast British law is! 
+                            I&#x02BC;m obliged to print these&#x2014;at least a lot out of&#x2014;these idiotisms&#x2014;because another fellow&#x2014;a blackguard&#x2014;called Wily! &#x005B;punning on Wiley&#x02BC;s name&#x005D;&#x2014;has 
+                            published them without my leave&#x2014;copyright of &#x005B;the literary annual&#x005D; <span class="title-annual-FRIENDSHIPSOFFERING"><i>Friendship&#x02BC;s Offering</i></span> being out! Theft &#x0026; libel in one!&#x201D; 
+                            To <span class="persName-JR">Ruskin</span>, literary piracy was mere theft, whether at home or abroad, another way in which authors were denied 
+                            fair pay in the tangled system of book dealing, from which he had attempted to extricate his work by setting up <span class="persName-GA">Allen</span> as his personal publisher. 
+                            As <span class="persName-BEM">Brian Maidment</span> has argued, however, <span class="persName-JR">Ruskin</span>&#x02BC;s seemingly personalized complaints were more broadly polemical 
+                            than the anger or resignation expressed by other British writers toward American piracy 
+                            (<a href="<?php echo r_build_url("notes/bibliography.php#MAIDMENTPIRATEDBOOKS");?>" target="_self"><span class="persName-BEM">Maidment</span>, <span class="title-MAIDMENTPIRATEDBOOKS">&#x201C;John Ruskin, George Allen, and American Pirated Books&#x201D;</span></a>, 7&#x2013;8). 
+                            What especially piqued <span class="persName-JR">Ruskin</span> about the Wiley edition was that, as he states in his letter to <span class="persName-AW">Wedderburn</span>, 
+                            the publication combined theft with a &#x201C;libel&#x201D;, meaning that he disowned the poems as &#x201C;idiotisms&#x201D;, 
+                            even as he was compelled to protect his property as a writer, since English copyright law failed to do so on his behalf 
+                            (<span class="title-letter-jr_to_aw_1882-02-07">Ruskin to A. Wedderburn</span>, <span class="date-1882-02-07">7 February 1882</span>, 
+                            in <a href="<?php echo r_build_url("notes/bibliography.php#ALSJRTOAW");?>" target="_self">Ruskin ALS to Alexander Dundas Ogilvy Wedderburn, <span class="date-1874-1888">1874&#x2013;1888</span></a>; 
+                            an unknown hand docketed this letter &#x201C;83&#x201D; in pencil above <span class="persName-JR">Ruskin</span>&#x02BC;s &#x201C;82&#x201D; for the year).
+            </div>
+            
+            
+            <div class="p">With only seeming irrelevance, the letter goes on to call out <span class="persName-AW">Wedderburn</span> 
+                            for &#x201C;your profession&#x201D;, &#x201C;mak&#x005B;ing&#x005D; <u>me</u> pay 300 pounds for calling <span class="persName-JAMW">Whistler</span> a coxcomb!&#x201D;&#x2014;referring 
+                            to <span class="persName-JAMW">J. A. M. Whistler</span>&#x02BC;s <span class="date-1878">1878</span> libel case against <span class="persName-JR">Ruskin</span> for the critic&#x02BC;s disparaging comments about 
+                            the painter&#x02BC;s <span class="title-artwork-WHISTLERNOCTURNEINBLACKANDGOLD"><i>Nocturne in Black and Gold: The Falling Rocket</i></span> (<span class="date-1875">1875</span>). 
+                            (Although <span class="persName-JAMW">Whistler</span> won his suit, the victory was pyrrhic, since he was awarded only a farthing in damages, 
+                            while the plaintiff and defendant had to split court costs, which amounted to ??? on Ruskin's part &#x005B;see  
+                            (<span class="title-letter-jr_to_aw_1882-02-07">Ruskin to A. Wedderburn</span>, <span class="date-1882-02-07">7 February 1882</span>, 
+                            in <a href="<?php echo r_build_url("notes/bibliography.php#ALSJRTOAW");?>" target="_self">Ruskin ALS to Alexander Dundas Ogilvy Wedderburn, <span class="date-1874-1888">1874&#x2013;1888</span></a>).
+                            <span class="persName-JR">Ruskin</span>&#x02BC;s analogy equates what he sees as parallel cases of American chicanery from which English law 
+                            failed to protect him&#x2014;the painter&#x02BC;s coxcomb &#x201C;impudence&#x201D; of charging high prices for &#x201C;flinging a pot of paint in the public face&#x201D;, 
+                            and the &#x201C;blackguard&#x201D; wiliness of the American publisher scooping up <span class="persName-JR">Ruskin</span>&#x02BC;s unprotected property and tossing it 
+                            into an overheated book market, which the editor pretends to disparage while capitalizing on the exaggerated prices surrounding <span class="persName-JR">Ruskin</span>&#x02BC;s poems. 
+                            <span class="persName-JR">Ruskin</span> leaves unsaid, however, whether it is the edition or the poems themselves that constitute a &#x201C;libel&#x201D; on his reputation. 
+                            Would he have conceded the logic of <span class="persName-JAMW">Whistler</span>&#x02BC;s self&#x2010;defense that the pricing of any portion of his work ought to be calibrated according to the artist&#x02BC;s 
+                            &#x201C;knowledge of a lifetime𠄭? It would seem that <span class="persName-WGC">Collingwood</span> ought to have allowed the point, 
+                            given the biographical approach that he later adopted in his preface to his own edition, the <span class="title-book-JRPOEMS1891"><i>Poems</i></span>, 
+                            attributing a &#x201C;peculiar interest&#x201D; to the seemingly worthless juveniia as a witness to <span class="persName-JR">Ruskin</span>&#x02BC;s &#x201C;development&#x201D; and &#x201C;growth&#x201D; 
+                            (<a href="<?php echo r_build_url("notes/bibliography.php#JRPOEMS4D1891");?>" target="_self"><i>Poems</i> &#x005B;4<sup>o</sup>, 1891&#x005D;</a>, 1:xix; 
+                            <a href="<?php echo r_build_url("notes/bibliography.php#JRPOEMS8D1891");?>" target="_self"><i>Poems</i> &#x005B;8<sup>o</sup>, 1891&#x005D;</a>, 1:v).
+            </div>
+            
+            
+            <div class="p"><a href="<?php echo r_build_url("notes/allen_george_note.php");?>" target="_self"><span class="persName-GA">George Allen</span></a> persisted in the struggle against American piracy for fair legal protections, 
+                            but <a href="<?php echo r_build_url("notes/collingwood_w_g_note.php");?>" target="_self"><span class="persName-WGC">Collingwood</span></a>&#x02BC;s edition played little part. Although published in the year of the <span class="title-law-CHACEACT">International Copyright Act (&#x201C;Chace Act&#x201D;)</span>, 
+                            the <span class="date-1891">1891</span> <span class="title-book-JRPOEMS1891"><i>Poems</i></span> did not profit by the agreement, which applied only to new works published after <span class="date-1891">1891</span>. 
+                            Nonetheless, <span class="persName-WGC">Collingwood</span>&#x02BC;s edition was published in the <span class="placeName-USA">United States</span> legally, as part of the <span class="title-book-JRWORKSBRANTWOODEDITION">Brantwood Edition</span> of <span class="persName-JR">Ruskin</span>&#x02BC;s works, 
+                            which was produced under an agreement with the <span class="placeName-NYC">New York</span> firm, Charles E. Merrill &#x0026; Company. While the 
+                            <span class="title-book-JRWORKSBRANTWOODEDITION">Brantwood Edition</span> did not prove very profitable, it did pay royalties to the author 
+                            while upholding <span class="persName-JR">Ruskin</span>&#x02BC;s expectations for quality of bookmaking. This venture provided the foundation 
+                            for <span class="persName-GA">Allen</span>&#x02BC;s subsequent attempts to arrive at mutually satisfactory terms with the Merrill Company 
+                            for producing and marketing an &#x201C;honest Ruskin&#x201D; edition in the <span class="placeName-USA">United States</span>, although in the end the agreement seems to have led only to suspicion and grievance on both sides 
+                            (see <a href="<?php echo r_build_url("notes/bibligraphy.php#MAIDMENTPIRATEDBOOKS");?>" target="_self"><span class="persName-BEM">Maidment</span>, <span class="title-MAIDMENTPIRATEDBOOKS">&#x201C;John Ruskin, George Allen, and American Pirated Books&#x201D;</span></a>).
+            </div>
+            
+            
+            <div class="p">As <span class="persName-JSD">Dearden</span> remarks, each of the <span class="title-book-JRWORKSBRANTWOODEDITION">Brantwood Edition</span> volumes carried an introduction by <span class="persName-CEN">Charles Eliot Norton</span>, 
+                            with the sole exception of <span class="title-book-JRWORKSBRANTWOODEDITION_POEMS"><i>Poems</i></span> (<a href="<?php echo r_build_url("notes/bibliography.php#DEARDENLIBRARYEDITION");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-DEARDENLIBRARYEDITION">&#x201C;The Library Edition&#x201D;</span></a>, 52). Probably, no prefatory remarks were needed, 
+                            since <span class="persName-WGC">Collingwood</span>&#x02BC;s edition was a new work with an introduction of its own, as opposed to the older works making up 
+                            most of the twenty&#x2010;two volumes of the <span class="title-book-JRWORKSBRANTWOODEDITION">Brantwood Edition</span>&#x2014;works that, it was hoped, would gain renewed interest through <span class="persName-CEN">Norton</span>&#x02BC;s commentary. 
+                            It was also hoped that <span class="persName-CEN">Norton</span>&#x02BC;s name on the title pages would persuade consummers to justify the price of the edition, compared with the cheap and widely available American piracies.
+            </div>
+            
+            
+            <div class="p">According to <span class="persName-BEM">Maidment</span>, the first book by <span class="persName-JR">Ruskin</span> that <span class="persName-GA">Allen</span> succeeded in bringing out in full compliance with the strenuous regulations 
+                            of the <span class="title-law-CHACEACT">Chace Act</span> was <span class="title-book-JRVERONARIVERS"><i>Verona and Its Rivers</i></span>, 
+                            published in the <span class="placeName-USA">United States</span> and <span class="placeName-BRITAIN">Britain</span> simultaneously in <span class="date-1893">1893</span> (<a href="<?php echo r_build_url("notes/bibliography.php#MAIDMENTPIRATEDBOOKS");?>" target="_self"><span class="title-MAIDMENTPIRATEDBOOKS">&#x201C;John Ruskin, George Allen, and American Pirated Books&#x201D;</span></a>, 15&#x2013;16). 
+                            While protection specifically under the <span class="title-law-CHACEACT">Chace Act</span> eluded the <span class="date-1891">1891</span> <span class="title-book-JRPOEMS1891">Poems</span>, <span class="persName-GA">Allen</span> and Merrill and Company were at least able to use the inclusion of <a href="<?php echo r_build_url("notes/collingwood_w_g_note.php");?>" target="_self"><span class="persName-WGC">Collingwood</span></a>&#x02BC;s edition 
+                            in the <span class="title-book-JRWORKSBRANTWOODEDITION">Brantwood Edition</span> to help advertise the case for honesty in <span class="persName-JR">Ruskin</span> publishing. In an <span class="date-1892-08">August 1892</span> 
+                            full&#x2010;page &#x201C;important announcementȍ in the <span class="placeName-NYC">New York</span> magazine <span class="title-periodical-THECRITIC"><i>The Critic</i></span>, Merrill and Company placed an &#x201C;important announcement&#x201D;, which laid out the terms whereby it was to be understood that
+                            &#x201C;<span class="persName-JR">Ruskin</span>&#x02BC;s Works will hereafter be published in America by Messrs. CHARLES E. MERRILL &#x0026; CO., of <span class="placeName-NYC">New York</span>, 
+                            who will issue the only authorized editions&#x201D;; and for whatever reason, this notice included a claim that the <span class="title-book-JRPOEMS1891">Poems</span> were copyrighted under the &#x201C;new law&#x201D;:
+            </div>
+            
+            
+            <div class="floating-text">
+               
+               <div class="prose" id="">
+                  
+                  <div class="p">In accordance with a contract with Mr. <span class="persName-JR">Ruskin</span>&#x02BC;s English publishers, . . . we have the pleasure of announcing 
+                                                the publication of the <span class="title-book-JRWORKSBRANTWOODEDITION">Brantwood Edition</span> of <span class="persName-JR">Ruskin</span>&#x02BC;s Works in 21 volumes. <i>This is the only 
+                                                    edition published in this country with Mr. <span class="persName-JR">Ruskin</span>&#x02BC;s consent, and from the sale of which he derives a profit.</i> 
+                                                The illustrations have been prepared under the author&#x02BC;s personal supervision, and the type, paper and style of binding 
+                                                are in accordance with his suggestions. Each of the prose works contains a special introduction by Prof. <span class="persName-CEN">Charles Eliot Norton</span>, 
+                                                of Harvard College, explaining the purposes for, and the conditions under which it was written. These introductions from the pen 
+                                                of Mr. <span class="persName-JR">Ruskin</span>&#x02BC;s most intimate friend and most acute and sympathetic critic, many of them containing extracts from personal letters written 
+                                                while the works were in preparation, give to this edition a rare and unique value. The two volumes of poetry written between the ages 
+                                                of seven and twenty&#x2010;six, with an appendix of later poems now first collected from original manuscript and printed sources, 
+                                                are edited in chronological order, with notes biographical and critical, by Mr. <span class="persName-JR">Ruskin</span>&#x02BC;s secretary, <a href="<?php echo r_build_url("notes/collingwood_w_g_note.php");?>" target="_self"><span class="persName-WGC">William G. Collingwood</span>, M.A.</a> 
+                                                The chronological arrangement of the poems&#x2014;the author&#x02BC;s age at the time of writing being printed at the top of each page&#x2014;illustrates 
+                                                in a most interesting manner the development of his mind and style. The two volumes of poems have been copyrighted in this country under the new law, 
+                                                and the attention of the public is called to the fact that, by virtue of this copyright, we shall hereafter be 
+                                                <i>the only publishers in this country able to supply <span class="persName-JR">Ruskin</span>&#x02BC;s works in a uniform style of binding</i>. 
+                                                This edition is intended to include what Mr. <span class="persName-JR">Ruskin</span> and his literary advisers regard as the essential and permanent part of his writings.
+                  </div>
+                  
+                  <div class="p">The unillustrated volumes, bound in dark green cloth, will be sent by mail, postpaid, on receipt of &#x0024;1.50 each, 
+                                                and the illustrated volumes for &#x0024;2.75.</div>
+                  
+                  <div class="p">All English editions of <span class="persName-JR">Ruskin</span> now in print are kept in stock or will be imported at short notice.
+                  </div>
+                  
+                  <div class="p"><a href="<?php echo r_build_url("notes/bibliography.php#ADCRITICMERRILLCOBRANTWOODEDITION");?>" target="_self"><span class="title-advertisement-ADCRITICMERRILLCOBRANTWOODEDITION">&#x201C;Charles E. Merrill &#x0026; Co.&#x02BC;s Authorized (Brantwood) Edition of <span class="persName-JR">Ruskin</span>&#x02BC;s Works&#x201D;</span></a>)
+                  </div>
+                  
+               </div>
+               
+            </div>
+            
+            
+            <div class="p">The same issue of <span class="title-periodical-THECRITIC"><i>The Critic</i></span> carried a brief commentary claiming that &#x201C;wily travellers&#x201D; from <span class="placeName-BRITAIN">Britain</span> come to <span class="placeName-USA">America</span> to &#x201C;buy the Wiley reprints&#x201D; 
+                            of &#x201C;<span class="placeName-ENGLAND">England</span>&#x02BC;s highly&#x2010;prized but higher&#x2010;priced Apostle of High Art&#x201D;, and return to &#x201C;smuggle them into the right little, tight little island where the writer lived&#x201D;, 
+                            since &#x201C;&#x2018;We can&#x02BC;t afford to buy <span class="persName-JR">Ruskin</span> at home, you know&#x2019;&#x201D;. While cheekily asserting that &#x201C;&#x005B;o&#x005D;ur laws permitted the American publisher 
+                            to appropriate the work of any foreign author&#x201D;, and that &#x201C;the Messrs. Wiley might have reprinted Mr. <span class="persName-JR">Ruskin</span>&#x02BC;s books as long as they liked 
+                            without asking any one&#x02BC;s consent&#x201D;, the notice nonetheless self&#x2010;righteously alleged that Wiley &#x0026; Sons &#x201C;had tried to get the author&#x02BC;s consent 
+                            and had even sent him a check as a matter of business courtesy. But Mr. <span class="persName-JR">Ruskin</span> withheld his approval and rejected the proffered payment&#x201D; 
+                            (<a href="<?php echo r_build_url("notes/bibliography.php#THELOUNGERCRITIC");?>" target="_self"><span class="title-essay-THELOUNGERCRITIC">&#x201C;The Lounger&#x201D;</span></a>).
+            </div>
+            
+         </div>
+         
+         <div id="" class="section">
+            <span class="head-section">The Editing of <span class="title-book-JRPOEMS1891"><i>The Poems of John Ruskin</i></span></span>
+            
+            <div class="p">See <a href="<?php echo r_build_url("notes/history_of_bibliography_and_editing_note.php");?>" target="_self">History of Bibliography and Editing of the Early Manuscripts</a>).</div>
+            
+            <div class="p">Collectors. See <a href="<?php echo r_build_url("notes/collecting_of_modern_authors_note.php");?>" target="_self">Collecting of Modern Authors in the Late Nineteenth and Early Twentieth Centuries</a>. 
+                        By the <span class="date-1890-1899">1890s</span>, the privately printed and distributed <span class="date-1850">1850</span> edition of the <i>Poems</i> had taken on a talismanic aura for rare book collectors, 
+                        and <span class="persName-WGC">Collingwood</span>inevitably justified the purposes of the <span class="date-1891">1891</span> edition in part by appealing to the &#x201C;no idle curiosity . . .  that prompts the admirers 
+                        of Mr. <span class="persName-JR">Ruskin</span>&#x02BC;s works to collect his boyish writings and to learn the story of his youth.&#x201D;. But he also denies playing to this audience, 
+                        arguing that Ruskin is "misunderstood by the casual reader" etc. (v-vi).
+                    
+            </div>
+            
+            <div class="p">In his editorial rationale, <span class="persName-WGC">Collingwood</span>, admitted that the poems&#x02BC; &#x201C;author himself has never brought them forward,&#x201D; 
+                        it being &#x201C;impossible for him to offer his own juvenile productions as examples of the lofty ideal he preached&#x201D; in his attempt to elevate 
+                        &#x201C;the public taste in poetry as well as art&#x201D; (a half truth, since <span class="persName-JR">Ruskin</span> did occasionally quote from his juvenilia, 
+                        with precisely the purpose of showing that they adumbrated his ideals). <span class="persName-WGC">Collingwood</span>, however, was determined to shape the corpus 
+                        of early writing in favor of the &#x201C;sonorous line and noble thought&#x201D;, the &#x201C;genuine feeling and fine, enthusiastic description&#x201D;. 
+                        Without expurgating irony and fun, <span class="persName-WGC">the editor</span> felt obliged to present the consistency of <span class="persName-JR">Ruskin</span>&#x02BC;s 
+                        &#x201D;ways, and aims, and attitude&#x201D;&#x2014;conditions that &#x201D;in his case, more than with&#x201D; other writers, were &#x201D;determined at an early age, 
+                        and illustrated in his early writings. That is the recurrent burden of his autobiography:&#x2014;&#x2018;I find in myself nothing whatsoever <i>changed</i>&#x2019;&#x201D; 
+                        (<a href="<?php echo r_build_url("notes/bibliography.php#JRPOEMS4D1891");?>" target="_self"><i>Poems</i> &#x005B;4<sup>o</sup>, 1891&#x005D;</a>, 1:xx&#x2013;xxi, xxviii, xx; and 
+                        <a href="<?php echo r_build_url("notes/bibliography.php#JRPOEMS8D1891");?>" target="_self"><i>Poems</i> &#x005B;8<sup>o</sup>, 1891&#x005D;</a>, 1:vii, xv, vi; and see 
+                        <a href="<?php echo r_build_url("notes/bibliography.php#JRWORKSLE");?>" target="_self">Ruskin, <i>Works</i></a>, 35:00).
+            </div>
+            
+            <div class="p">Although printed in the back of volume 1 like an appendix, the &#x201C;Preliminary Note on the Original MSS. of the Poems&#x201D; 
+                        (<a href="<?php echo r_build_url("notes/bibliography.html#JRPOEMS8D1891");?>" target="_self">Ruskin, <i>Poems</i> &#x005B;8, 1891&#x005D;</a>, 1:261&#x2013;67; 
+                        <a href="<?php echo r_build_url("notes/bibliography.html#JRPOEMS4D1891");?>" target="_self">Ruskin, <i>Poems</i> &#x005B;4, 1891&#x005D;</a>, 1:???) 
+                        probably reflects in its title the accurate relation of the "Note" to the remainder of the edition. As a "preliminary" effort, the descriptive bibliography dates at least in part to 1889 or earlier, 
+                        on the evidence of the binding history of MS XI. In the "Note," Collingwood describes MS XI as "an envelope containing loose papers," 
+                        whereas in its present state this manuscript is bound in several volumes. These bindings originated in 1889 at the latest, although the physical and documentary evidence is obscured and somewhat muddled 
+                        (see MS XI: Description). Thus, while Collingwood apparently failed to revise his "Note" to reflect ongoing efforts respecting the manuscripts' preservation and provenance--efforts that may 
+                        have been beyond his ken (see Provenance of Early Manuscripts at Denmark Hill and Brantwood)--the "Note" does record a "preliminary" stage of the editorial project. And this makes sense, 
+                        as the note's stated purpose is to justify the chronology that Collingwood used to arrange the edition: "After some study of these ancient Codices, . . . the Editor has been able to disentangle their contents 
+                        and to arrange them in chronological order; which it may be worth while to note here, both for the assistance of future students, and in jusification of the hypothetical dates assigned to some of the poems" 
+                        (<a href="<?php echo r_build_url("notes/bibliography.html#JRPOEMS8D1891");?>" target="_self">Ruskin, <i>Poems</i> &#x005B;8, 1891&#x005D;</a>, 1:???; 
+                        <a href="<?php echo r_build_url("notes/bibliography.html#JRPOEMS4D1891");?>" target="_self">Ruskin, <i>Poems</i> &#x005B;4, 1891&#x005D;</a>, 1:261).
+            </div>
+            
+            <div class="p">"I am happy in the permission to print this and other early unpublished prose writings in a companion volume to these Poems" (1:265).</div>
+            
+            <div class="p">Wise. In particular, <span class="persName-WGC">Collingwood</span> was indebted to the collector, <a href="<?php echo r_build_url("notes/wise_t_j_note.php");?>" target="_self">Thomas J. Wise (1859&#x2013;1937)</a>, 
+                        of whose &#x201C;full account of the published poems&#x201D; in the 
+                        <a href="<?php echo r_build_url("notes/bibliography_of_ruskin_wise_note.php");?>" target="_self"><i>Complete Bibliography of . . . Ruskin</i> (1889&#x2013;93)</a> 
+               <span class="persName-WGC">Collingwood</span> &#x201C;gladly availed&#x201D; himself (<a href="<?php echo r_build_url("notes/bibliography.php#JRPOEMS4D1891");?>" target="_self"><i>Poems</i> &#x005B;4<sup>o</sup>, 1891&#x005D;</a>, 
+                        1:267; and <a href="<?php echo r_build_url("notes/bibliography.php#JRPOEMS8D1891");?>" target="_self"><i>Poems</i> &#x005B;8<sup>o</sup>, 1891&#x005D;</a>, 
+                        1:268). <span class="persName-WGC">Collingwood</span> was therefore to some degree influenced by <span class="persName-TJW">Wise</span>&#x02BC;s manipulation of the bibliographical record in favor of juvenile poems 
+                        that <span class="persName-TJW">Wise</span> could forge in the form of &#x201C;rare&#x201D; pamphlets (see <a href="<?php echo r_build_url("notes/bibliography.php#WISERUSKINI");?>" target="_self">Dearden, &#x201C;Wise and Ruskin I&#x201D;</a>, 46&#x2013;47; 
+                        and <a href="<?php echo r_build_url("notes/forgery_and_piracy_note.php");?>" target="_self">Forgery and Piracy</a>).
+            </div>
+            
+            <div class="p">In this instance, <span class="persName-WGC">Collingwood</span> avows his responsibility&#x2014;&#x201C;the very few emendations I have presumed to make 
+                        are marked by square brackets&#x201D;&#x2014;and while he tended to be much more casual than a twenty&#x2010;first&#x2010;century editor would be 
+                        about what emendations needed flagging, we probably can safely assume that these aesthetic &#x201C;emendations&#x201D; were his, and not specifically authorized 
+                        by the elderly <span class="persName-JR">Ruskin</span>. In his notes and prefaces to the edition, <span class="persName-WGC">Collingwood</span> always refers 
+                        to the author&#x02BC;s investment in the edition in the past tense, as having authorized the editor&#x02BC;s judgments but resigned his own responsibility, 
+                        consistent with <span class="persName-WGC">Collingwood</span>&#x02BC;s general statement that closes his 
+                        <span class="title-bibliography_text-COLLINGWOODPREFATORYNOTESPLATES">&#x201C;Prefatory Notes on the Plates&#x201D;</span>: &#x201C;this publication 
+                        is in no sense my own enterprise, . . . it had been long contemplated by <span class="persName-JR">Mr. Ruskin</span>, and . . . it was put into my hands 
+                        in default of better, with instructions which I have endeavoured to carry out faithfully. But as the selection and arrangement have been left entirely to me, 
+                        it is only just to the author that I should avow the responsibility&#x201D; (<a href="<?php echo r_build_url("notes/bibliography.php#JRPOEMS4D1891");?>" target="_self"><i>Poems</i> &#x005B;4<sup>o</sup>, 1891&#x005D;</a>, 1:281, xi; 
+                        <a href="<?php echo r_build_url("notes/bibliography.php#JRPOEMS8D1891");?>" target="_self"><i>Poems</i> &#x005B;8<sup>o</sup>, 1891&#x005D;</a>, 1:282)
+            </div>
+            
+         </div>
+         
+      </div>
+   </div>
+   
+   
+   
+</html>
