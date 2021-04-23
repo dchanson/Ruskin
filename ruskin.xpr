@@ -14,7 +14,52 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>_xml/</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>_xml/_Completed/witnesses</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate (global)</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_In_Process/witnesses</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate (global)</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/corpuses</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -33,67 +78,7 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Generate and open html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/witnesses/calais_poem_msia_g1.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate and open (global)</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/webpages/homepage.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate and open html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
                                         <String>Generate html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/corpuses</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate (global)</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -124,21 +109,6 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>Generate html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_In_Process/witnesses</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate (global)</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -435,7 +405,7 @@
                                     <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="locationToOpenInBrowserURL">
                                     <String>http://ruskin.local:8080/src/ruskin_redir_file.php?open=${cf}&amp;new=1</String>
@@ -618,5 +588,6 @@
         </folder>
         <folder path="."/>
         <file name="_xml/_Completed/witnesses/andernacht_prose_le.xml"/>
+        <file name="_xml/_Completed/witnesses/calais_prose_msix.xml"/>
     </projectTree>
 </project>

@@ -233,3 +233,19 @@ Remain on the root project of node app
     
 ### Deploy the changes to the server
     run `./scripts/deploy.bash`
+    
+    
+    
+![alt text](https://i.ibb.co/WnSR19c/Screen-Shot-2021-04-23-at-11-31-25-AM.png)
+
+    XML URL: ${currentFileURL}
+    XSL URL : ${pdu}/common/ruskin_html.xsl
+
+
+![alt text](https://i.ibb.co/568tCWc/Screen-Shot-2021-04-23-at-11-31-36-AM.png)
+
+
+![alt text](https://i.ibb.co/2j68mbd/Screen-Shot-2021-04-23-at-11-31-47-AM.png)
+
+    save as: ${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html
+    open in browswer: http://ruskin.local:8080/src/ruskin_redir_file.php?open=${cf}&new=1
