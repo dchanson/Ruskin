@@ -169,18 +169,18 @@ and paste it in following root
         location ~* ^/web/pages/(.+)$ {
    
           location ~ /web/pages/(.*\.php)$ {
-            try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri=404;
-            add_header 'X-Script_Filename' '$document_root$fastcgi_script_name' always;
-            add_header 'X-DocumentRoot' '$document_root' always;
-            add_header 'X-1' '$1' always;
-            add_header 'X-URI' '$uri' always;
-            fastcgi_pass 127.0.0.1:9000;
-            include fastcgi_params;
-            fastcgi_index index.php;
-            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-            fastcgi_param DOCUMENT_ROOT $document_root;
-       
-          }
+                try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri=404;
+                add_header 'X-Script_Filename' '$document_root$fastcgi_script_name' always;
+                add_header 'X-DocumentRoot' '$document_root' always;
+                add_header 'X-1' '$1' always;
+                add_header 'X-URI' '$uri' always;
+                fastcgi_pass 127.0.0.1:9000;
+                include fastcgi_params;
+                fastcgi_index index.php;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                fastcgi_param DOCUMENT_ROOT $document_root;
+           
+              }
    
           location ~* ^/web/pages/(.+)$ {    
         try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 $uri=404;
@@ -216,10 +216,10 @@ Setting up php part:
 
 ### installing composer
 
-    brew install composer
     cd src/
+    brew install composer
     composer install
-    cp config_template_json.php ../gen/_xmlconfig.json.php
+    cp config_template.json.php ../gen/_xml/config.json.php
     
   
 # Deployment Procedure:
