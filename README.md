@@ -217,6 +217,7 @@ Setting up php part:
 ### installing composer
 
     cd src/
+    brew composer install
     composer install
     cp config_template.json.php config.json.php
     
