@@ -217,9 +217,8 @@ Setting up php part:
 ### installing composer
 
     cd src/
-    brew install composer
     composer install
-    cp config_template.json.php ../gen/_xml/config.json.php
+    cp config_template.json.php config.json.php
     
   
 # Deployment Procedure:

@@ -3,10 +3,9 @@ require_once 'header.inc.php';
 
 if(!isset($_REQUEST['open']))die;
 
-$new = $_REQUEST['new'];
 $open = $_REQUEST['open'];
 $open = preg_replace("/(\.\.\/)/","", $open);
-$open = preg_replace("/\.xml$/", $new==="1"?".html":".php", $open);
+$open = preg_replace("/\.xml$/", ".php", $open);
 
 $path = dirname(__DIR__)."/_xml/";
 
