@@ -89,30 +89,33 @@
             <titlePage xml:id="TITLEPAGE">
                 <pb facs="1229104v"/>
                 <docTitle>
-                    <titlePart type="main"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/><space quantity="5" unit="chars"/><hi rend="caps">Harry</hi> <hi rend="smallcaps">and</hi> <hi rend="caps">Lucy</hi><add place="below"><milestone unit="undeclared" rend="hr-full"/></add>
+           
+                    <titlePart type="main"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/><space quantity="5" unit="chars"/><hi rend="caps">Harry</hi> <hi rend="smallcaps">and</hi> <hi rend="caps">Lucy</hi><add><milestone unit="undeclared" rend="hr-full"/></add>
                         <lb/><space quantity="9" unit="chars"/><hi rend="smallcaps">Concluded</hi><lb/>
                     </titlePart>
                     <titlePart type="sub"><space quantity="7" unit="chars"/><hi rend="smallcaps">Being the Last</hi>
                         <lb/><space quantity="10" unit="chars"/><hi rend="smallcaps">Part of</hi><lb/>
                         <lb/>
-                        <lb/><space quantity="5" unit="chars"/><hi rend="caps">Early Lessons</hi><add place="below"><space quantity="10" unit="chars"/><figure><figDesc>[diamond-shaped ornament]</figDesc></figure></add><lb/>
+                        <lb/><space quantity="2" unit="chars"/><hi rend="caps">Early<space quantity="6" unit="chars"/> Lessons</hi><lb/>
+                        <add><space quantity="7" unit="chars"/><figure><figDesc>[diamond-shaped ornament]</figDesc></figure></add><lb/>
                     </titlePart>
                     <titlePart type="desc"><space quantity="10" unit="chars"/>in four volumes<lb/>
                         <space quantity="12" unit="chars"/>vol I<lb/>
-                        <space quantity="10" unit="chars"/>with copper<add place="below"><milestone unit="undeclared" rend="hr-quarter"/></add><lb/>
-                        <space quantity="11" unit="chars"/>plates<add place="below"><figure><figDesc>[diamond-shaped ornament]</figDesc></figure></add>
+                        <space quantity="10" unit="chars"/>with copper<lb/><add><milestone unit="undeclared" rend="hr-quarter"/></add><lb/>
+                        <space quantity="11" unit="chars"/>plates<lb/><add><figure><figDesc>[diamond-shaped ornament]</figDesc></figure></add>
                         <lb/>
                         <lb/>
                     </titlePart>
                 </docTitle>
-                <docImprint><space quantity="5" unit="chars"/><hi rend="smallcaps">Printed</hi> and composed by a little boy<lb/>
-                    <space quantity="10" unit="chars"/>and also drawn</docImprint>   
+                <docImprint><space quantity="2" unit="chars"/><hi rend="smallcaps">Printed</hi> and composed by a little boy<lb/>
+                    <space quantity="13" unit="chars"/>and also drawn</docImprint>   
             </titlePage>
             <titlePage>
                 <pb facs="1229104r"/>
                 <docTitle>
                     <titlePart type="main"><space quantity="5" unit="chars"/><hi rend="caps">Harry</hi> <hi rend="smallcaps">and</hi> <hi rend="caps">Lucy</hi><lb/>
-                        <space quantity="3" unit="chars"/><hi rend="caps">I</hi><space quantity="11" unit="chars"/>concluded<add place="below"><milestone unit="undeclared" rend="hr-full"/></add></titlePart>
+                        <space quantity="3" unit="chars"/><hi rend="caps">I</hi><space quantity="9" unit="chars"/>concluded<lb/>
+                        <add><milestone unit="undeclared" rend="hr-full"/></add></titlePart>
                 </docTitle>
             </titlePage>
                 <div type="frontispiece" xml:id="FRONTISPIECE">
@@ -185,7 +188,7 @@
                 
                 <p><said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> said <persName type="fictional" corresp="#LUCY">Lucy</persName><g type="pause-period">.</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#PAUSEPERIOD"/> <said who="#LUCY">but they are<lb/>
                     certainly gone for where could<lb/>
-                    <del rend="strikethrough">it</del><add place="above">they</add> have gone but in the sideboard<lb/>
+                    <del rend="strikethrough">it</del><add place="above"><space quantity="1" unit="chars"/>they</add> have gone but in the sideboard<lb/>
                     and they are not there<unclear resp="#DCH">?</unclear>&#x201D;</said><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#QUERYOREXCLAMATION"/></p>
                 
                 <p><said who="#MAMMA">but I have found them</said> cried<g type="justification">-</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#JUSTIFICATION"/><lb/>
@@ -331,7 +334,8 @@
             
             <div type="chapter" n="2">
                 <head type="chapter">
-                    <add place="above"><milestone unit="undeclared" rend="hr-quarter"/></add>Chap II<lb/>
+                    <milestone unit="undeclared" rend="hr-quarter"/>
+                    Chap II<lb/>
                     <milestone unit="undeclared" rend="hr-quarter"/>
                 </head>
                 <p><persName type="fictional" corresp="#PAPA"><hi rend="caps">P</hi><hi rend="smallcaps">apa</hi></persName> by this time had come<g type="justification">-</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#JUSTIFICATION"/><lb/>
@@ -723,7 +727,9 @@
                     her</p>
             </div>
             <div type="chapter" n="4">
-                <head type="chapter"><hi rend="doubleletter">H</hi><milestone unit="undeclared" rend="hr-half"/><add place="above"><space quantity="5" unit="chars"/>chap 4</add></head>
+                <head type="chapter"><add><space quantity="5" unit="chars"/>chap 4</add>
+                    <milestone unit="undeclared" rend="hr-half"/>
+                    <hi rend="doubleletter">H</hi></head>
                 <p><hi rend="doubleletter-fill">H</hi><hi rend="doubleletter"><hi rend="smallcaps">a</hi></hi><hi rend="smallcaps">rr</hi><hi rend="doubleletter-fill"><hi rend="smallcaps">y</hi></hi> launched his<lb/>
                     little boat but the water<lb/>
                     flowed into it. <hi rend="doubleletter">T</hi>he <del rend="strikethrough">p</del><lb/>
@@ -841,7 +847,8 @@
                     it</p>
             </div>
             <div type="chapter" n="5">
-                <head type="chapter"><milestone unit="undeclared" rend="hr-half"/><add place="above">chap 5</add></head>
+                <head type="chapter"><add><space quantity="9" unit="chars"/>chap 5</add>
+                    <milestone unit="undeclared" rend="hr-half"/></head>
                 <p><hi rend="doubleletter">N</hi><subst><del>ow</del><add rend="overwriting">OW</add></subst> <persName type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</persName> waited till<lb/>
                     her <persName type="fictional" corresp="#MAMMA">mother</persName> passed the<g type="justification">-</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#JUSTIFICATION"/><lb/>
                     bush and then suddenly<lb/>
@@ -958,7 +965,9 @@
                 
             </div>
             <div type="chapter" n="6">
-                <head type="chapter">chap 6<add place="above"><milestone unit="undeclared" rend="hr-quarter"/></add><add place="below"><milestone unit="undeclared" rend="hr-quarter"/></add></head>
+                <milestone unit="undeclared" rend="hr-quarter"/>
+                <head type="chapter">chap 6
+                    <milestone unit="undeclared" rend="hr-quarter"/></head>
                 <p><hi rend="doubleletter, caps">T</hi><hi rend="smallcaps">he</hi> inn was close by<lb/>
                     the bank of the river<lb/>
                     to <persName type="fictional" corresp="#HARRY">harry</persName> and <persName type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</persName>s joy<lb/>
@@ -1414,7 +1423,7 @@
             </div>
             <div type="chapter" n="9">
                 <milestone unit="undeclared" rend="hr-quarter"/>
-                <head type="chapter"><del rend="erasure">chapter I0</del><add rend="overwriting">chap 9</add><add place="below"><milestone unit="undeclared" rend="hr-quarter"/></add></head>
+                <head type="chapter"><del rend="erasure">chapter I0</del><add rend="overwriting">chap 9</add><add><milestone unit="undeclared" rend="hr-quarter"/></add></head>
                 <p><hi rend="doubleletter-fill">H</hi><hi rend="doubleletter-fill, smallcaps">ar</hi>r<hi rend="doubleletter-fill, smallcaps">y</hi> now determined to have<lb/>
                     another grand scheme so he took<lb/>
                     a handfull of earth moistened<g type="runover">-</g><milestone unit="undeclared" rend="hr-quarter"/><lb/>
