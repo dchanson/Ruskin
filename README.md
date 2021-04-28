@@ -130,9 +130,8 @@ Should print following
 
     mdfind kind:folder "nginx"
     cd usr/local/etc/nginx
-    cd servers
-    ls  
-    ruskin.local.conf
+    cd servers  
+    touch ruskin.local.conf
     
 To open conf file in text editor
     
@@ -220,7 +219,25 @@ Setting up php part:
     brew composer install
     composer install
     cp config_template.json.php config.json.php
+
+
+###  config.json.php   
     
+    <?php
+    $r_config = array(
+    	"BASE"=> "https://erm.selu.edu/web/pages",
+    	"SCSS_DIRECTORY"=> "../_Resources/css_styles",
+    	"SEARCH_HOST"=> "http://localhost:9001",
+    	"DB"=> array(
+    		"HOST"=> "localhost",
+    		"DATABASE_NAME"=> "ruskin",
+    		"USERNAME"=> "root",
+    		"PASSWORD"=> "",
+    		"XML_FOLDER"=> "../../_Completed/",
+    		"UPDATE_TOOL_PASSWORD"=> "password"
+    	)
+    );
+        
   
 # Deployment Procedure:
 Remain on the root project of node app
