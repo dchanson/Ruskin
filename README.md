@@ -130,9 +130,8 @@ Should print following
 
     mdfind kind:folder "nginx"
     cd usr/local/etc/nginx
-    cd servers
-    ls  
-    ruskin.local.conf
+    cd servers  
+    touch ruskin.local.conf
     
 To open conf file in text editor
     
@@ -169,18 +168,18 @@ and paste it in following root
         location ~* ^/web/pages/(.+)$ {
    
           location ~ /web/pages/(.*\.php)$ {
-            try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri=404;
-            add_header 'X-Script_Filename' '$document_root$fastcgi_script_name' always;
-            add_header 'X-DocumentRoot' '$document_root' always;
-            add_header 'X-1' '$1' always;
-            add_header 'X-URI' '$uri' always;
-            fastcgi_pass 127.0.0.1:9000;
-            include fastcgi_params;
-            fastcgi_index index.php;
-            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-            fastcgi_param DOCUMENT_ROOT $document_root;
-       
-          }
+                try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri=404;
+                add_header 'X-Script_Filename' '$document_root$fastcgi_script_name' always;
+                add_header 'X-DocumentRoot' '$document_root' always;
+                add_header 'X-1' '$1' always;
+                add_header 'X-URI' '$uri' always;
+                fastcgi_pass 127.0.0.1:9000;
+                include fastcgi_params;
+                fastcgi_index index.php;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                fastcgi_param DOCUMENT_ROOT $document_root;
+           
+              }
    
           location ~* ^/web/pages/(.+)$ {    
         try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 $uri=404;
@@ -216,11 +215,29 @@ Setting up php part:
 
 ### installing composer
 
-    brew install composer
     cd src/
+    brew composer install
     composer install
-    cp config_template_json.php ../gen/_xmlconfig.json.php
+    cp config_template.json.php config.json.php
+
+
+###  config.json.php   
     
+    <?php
+    $r_config = array(
+    	"BASE"=> "https://erm.selu.edu/web/pages",
+    	"SCSS_DIRECTORY"=> "../_Resources/css_styles",
+    	"SEARCH_HOST"=> "http://localhost:9001",
+    	"DB"=> array(
+    		"HOST"=> "localhost",
+    		"DATABASE_NAME"=> "ruskin",
+    		"USERNAME"=> "root",
+    		"PASSWORD"=> "",
+    		"XML_FOLDER"=> "../../_Completed/",
+    		"UPDATE_TOOL_PASSWORD"=> "password"
+    	)
+    );
+        
   
 # Deployment Procedure:
 Remain on the root project of node app
@@ -233,3 +250,19 @@ Remain on the root project of node app
     
 ### Deploy the changes to the server
     run `./scripts/deploy.bash`
+    
+    
+    
+![alt text](https://i.ibb.co/WnSR19c/Screen-Shot-2021-04-23-at-11-31-25-AM.png)
+
+    XML URL: ${currentFileURL}
+    XSL URL : ${pdu}/common/ruskin_html.xsl
+
+
+![alt text](https://i.ibb.co/568tCWc/Screen-Shot-2021-04-23-at-11-31-36-AM.png)
+
+
+![alt text](https://i.ibb.co/2j68mbd/Screen-Shot-2021-04-23-at-11-31-47-AM.png)
+
+    save as: ${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html
+    open in browswer: http://ruskin.local:8080/src/ruskin_redir_file.php?open=${cf}&new=1
