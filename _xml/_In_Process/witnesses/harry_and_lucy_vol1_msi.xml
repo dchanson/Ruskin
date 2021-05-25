@@ -2,7 +2,7 @@
 <?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
+    <teiHeader type="witness">
         <fileDesc xml:id="harry_and_lucy_vol1_msi">
             <titleStmt>
                 <title type="main">&#x201C;Harry and Lucy . . . Vol I&#x201D;</title>
@@ -65,7 +65,7 @@
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="1229104.jpg-1229143.jpg">Inside Front Endboard + pp. 1-96</locus>
+                            <locus facs="msi/1229104.jpg">Inside Front Endboard + pp. 1-96</locus>
                             <note>For a discussion of foliation, see <ref type="apparatus" target="harry_and_lucy_vol1_apparatus.html#MAJORMS">"Harry and Lucy," Vol. 1: Manuscripts</ref>.</note>
                         </msItem>
                     </msContents>
@@ -85,48 +85,51 @@
         </fileDesc>
     </teiHeader>
     <text>
-        <front>
+     <front>
             <titlePage xml:id="TITLEPAGE">
                 <pb facs="1229104v"/>
                 <docTitle>
-                    <titlePart type="main"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/><space quantity="5" unit="chars"/><hi rend="caps">Harry</hi> <hi rend="smallcaps">and</hi> <hi rend="caps">Lucy</hi><add place="below"><milestone unit="undeclared" rend="hr-full"/></add>
-                        <lb/><space quantity="9" unit="chars"/><hi rend="smallcaps">Concluded</hi>
+                    
+                    <titlePart type="main"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/><space quantity="5" unit="chars"/><hi rend="caps">Harry</hi> <hi rend="smallcaps">and</hi> <hi rend="caps">Lucy</hi><add><milestone unit="undeclared" rend="hr-full"/></add>
+                        <lb/><space quantity="9" unit="chars"/><hi rend="smallcaps">Concluded</hi><lb/>
                     </titlePart>
                     <titlePart type="sub"><space quantity="7" unit="chars"/><hi rend="smallcaps">Being the Last</hi>
                         <lb/><space quantity="10" unit="chars"/><hi rend="smallcaps">Part of</hi><lb/>
                         <lb/>
-                        <lb/><space quantity="5" unit="chars"/><hi rend="caps">Early Lessons</hi><add place="below"><space quantity="10" unit="chars"/><figure><figDesc>[diamond-shaped ornament]</figDesc></figure></add>
+                        <lb/><space quantity="2" unit="chars"/><hi rend="caps">Early<space quantity="6" unit="chars"/> Lessons</hi><lb/>
+                        <add><space quantity="7" unit="chars"/><figure><figDesc>[diamond-shaped ornament]</figDesc></figure></add><lb/>
                     </titlePart>
                     <titlePart type="desc"><space quantity="10" unit="chars"/>in four volumes<lb/>
                         <space quantity="12" unit="chars"/>vol I<lb/>
-                        <space quantity="10" unit="chars"/>with copper<add place="below"><milestone unit="undeclared" rend="hr-quarter"/></add><lb/>
-                        <space quantity="11" unit="chars"/>plates<add place="below"><figure><figDesc>[diamond-shaped ornament]</figDesc></figure></add>
+                        <space quantity="10" unit="chars"/>with copper<lb/><add><milestone unit="undeclared" rend="hr-quarter"/></add><lb/>
+                        <space quantity="11" unit="chars"/>plates<lb/><add><figure><figDesc>[diamond-shaped ornament]</figDesc></figure></add>
                         <lb/>
                         <lb/>
                     </titlePart>
                 </docTitle>
-                <docImprint><space quantity="5" unit="chars"/><hi rend="smallcaps">Printed</hi> and composed by a little boy<lb/>
-                    <space quantity="10" unit="chars"/>and also drawn</docImprint>   
+                <docImprint><space quantity="2" unit="chars"/><hi rend="smallcaps">Printed</hi> and composed by a little boy<lb/>
+                    <space quantity="13" unit="chars"/>and also drawn</docImprint>  
             </titlePage>
             <titlePage>
                 <pb facs="1229104r"/>
                 <docTitle>
                     <titlePart type="main"><space quantity="5" unit="chars"/><hi rend="caps">Harry</hi> <hi rend="smallcaps">and</hi> <hi rend="caps">Lucy</hi><lb/>
-                        <space quantity="3" unit="chars"/><hi rend="caps">I</hi><space quantity="11" unit="chars"/>concluded<add place="below"><milestone unit="undeclared" rend="hr-full"/></add></titlePart>
+                        <space quantity="3" unit="chars"/><hi rend="caps">I</hi><space quantity="9" unit="chars"/>concluded<lb/>
+                        <add><milestone unit="undeclared" rend="hr-full"/></add></titlePart>
                 </docTitle>
             </titlePage>
-                <div type="frontispiece" xml:id="FRONTISPIECE">
-                    <figure>
-                        <head type="title"><space quantity="7" unit="chars"/><title type="artwork" corresp="#JRFRONTISPIECEMSI">frontispiece</title></head>
-                        <figDesc>[<hi rend="italic">Pencil drawing</hi>.&#x2014;Lined up left to right, a four&#x2010;legged animal (a horse?); a (stone?) house, two stories with symmetrically placed mullioned windows, 
-                            a central entrance set in a roofed porch, and a gable roof with a central dormer and a chimney; a tree; and an arched bridge. 
-                            The sun is shining through clouds, from which slanting rain is still pouring, producing a rainbow (labeled as such).]</figDesc>
-                    </figure>
-                </div>
+            <div type="frontispiece" xml:id="FRONTISPIECE">
+                <figure>
+                    <head type="title"><space quantity="7" unit="chars"/><title type="artwork" corresp="#JRFRONTISPIECEMSI">frontispiece</title></head>
+                    <figDesc>[<hi rend="italic">Pencil drawing</hi>.&#x2014;Lined up left to right, a four&#x2010;legged animal (a horse?); a (stone?) house, two stories with symmetrically placed mullioned windows,
+                        a central entrance set in a roofed porch, and a gable roof with a central dormer and a chimney; a tree; and an arched bridge.
+                        The sun is shining through clouds, from which slanting rain is still pouring, producing a rainbow (labeled as such).]</figDesc>
+                </figure>
+            </div>
             <div>
-                <p><gloss><handShift new="#HANDJR1870" script="cursive" medium="ink"/><space quantity="5" unit="chars"/>Red book. No 3. <date when="1870-09-08">Sept 8<hi rend="superscript">th</hi> 1870</date><handShift new="#HANDJR1826-27" script="print" medium="pencil"/></gloss></p>
-            </div>    
-        </front>
+                <p><gloss><handShift new="#HANDJR1870" script="print-italic" medium="ink"/><space quantity="5" unit="chars"/>Red book. No 3. <date when="1870-09-08">Sept 8<hi rend="superscript">th</hi> 1870</date><handShift new="#HANDJR1826-27" script="print" medium="pencil"/></gloss></p>
+            </div>   
+     </front>
         <body>
             <div type="chapter" n="1">
                 <pb facs="1229105v"/>
@@ -185,7 +188,7 @@
                 
                 <p><said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> said <persName type="fictional" corresp="#LUCY">Lucy</persName><g type="pause-period">.</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#PAUSEPERIOD"/> <said who="#LUCY">but they are<lb/>
                     certainly gone for where could<lb/>
-                    <del rend="strikethrough">it</del><add place="above">they</add> have gone but in the sideboard<lb/>
+                    <l><del rend="strikethrough">it</del><add place="below">they</add> have gone but in the sideboard<lb/></l>
                     and they are not there<unclear resp="#DCH">?</unclear>&#x201D;</said><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#QUERYOREXCLAMATION"/></p>
                 
                 <p><said who="#MAMMA">but I have found them</said> cried<g type="justification">-</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#JUSTIFICATION"/><lb/>
@@ -232,7 +235,7 @@
                 
                 <p><said who="#LUCY">ten</said> said <persName type="fictional" corresp="#LUCY">Lucy</persName></p>
                 
-                <p><said who="#MAMMA"><hi rend="doubleletter-fill">A</hi>nd eleven in all</said> sai<subst><del><unclear resp="#CWB">i</unclear></del><add rend="overwriting">d</add></subst> her <persName type="fictional" corresp="#MAMMA">mother</persName><g type="justification">-</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#JUSTIFICATION"/></p>
+                <p><said who="#MAMMA"><hi rend="doubleletter-fill">A</hi>nd eleven in all</said> sai<subst><del><unclear resp="#CWB">i</unclear></del><add rend="overwrite">d</add></subst> her <persName type="fictional" corresp="#MAMMA">mother</persName><g type="justification">-</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#JUSTIFICATION"/></p>
                 
                 <p><said who="#LUCY"><hi rend="doubleletter-fill">Y</hi>es</said> said <persName type="fictional" corresp="#LUCY">Lucy</persName> <said who="#LUCY">eleven.&#x201D;</said><ref type="gloss_contextual" target="harry_and_lucy_vol1_glosses_contextual.php#NUMBERGLOSS"/></p>
                 
@@ -326,7 +329,7 @@
                 
                 <p><del rend="scratchout">dear</del> <said who="#LUCY">what is the size of the<lb/>
                     thickest thread<del rend="scratchout"><unclear resp="#CWB">e</unclear></del> as thin as a<g type="justification">-</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#JUSTIFICATION"/><lb/>
-                    <del rend="strikethrough"><add place="above">spid</add></del>spiders</said>&#x007C;chap II</p>
+                    <l><del rend="strikethrough" hand="#dhl"><add place="above">spid</add></del></l>spiders</said>&#x007C;chap II</p>
             </div>
             
             <div type="chapter" n="2">
@@ -592,7 +595,7 @@
                     shop with <persName type="fictional" corresp="#HARRY">harry</persName>.&#x201D;<ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#DASHENDQUOTE"/></p>
             </div>
             <div type="chapter" n="3">
-                <head type="chapter"><space quantity="3" unit="chars"/>chapter III<add place="below"><milestone unit="undeclared" rend="hr-half"/></add></head>
+                <head type="chapter"><space quantity="3" unit="chars"/>chapter III<milestone unit="undeclared" rend="hr-half"/></head>
                 <p><hi rend="doubleletter">H</hi><hi rend="smallcaps">a</hi><hi rend="doubleletter"><hi rend="smallcaps">rry</hi></hi><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#CAPSMALLCAPS"/> now took a cane<lb/>
                     and bent it and then<lb/>
                     letting go it flew with<lb/>
@@ -627,7 +630,7 @@
                         mean <persName type="fictional" corresp="#MAMMA">mother</persName>.&#x201D;</said><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#DASHENDQUOTE"/><certainty match="@who" locus="value" degree="0.5"/></p>
                 
                 <p><said who="#MAMMA"><hi rend="doubleletter">N</hi>o not in reward for<lb/>
-                    breaking the window <del rend="scratchout">but</del><add place="above">not</add>
+                    breaking the window <l><del rend="scratchout">but</del><add place="above">not</add></l>
                     in reward for break&#x2010;<lb/>
                     ing the window but<g type="justification">-</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#JUSTIFICATION"/><lb/>
                     in reward for coming<lb/>
@@ -651,7 +654,7 @@
                     up in a large oak tree. The<lb/>
                     next t<subst><del>o</del><add rend="overwriting">h</add></subst>ing to settle was<lb/>
                     how to get it down they<g type="justification">-</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#JUSTIFICATION"/><lb/>
-                    first <add place="above"><space quantity="6" unit="chars"/>they</add> thought of shaking it<lb/>
+                    first <add place="below"><space quantity="6" unit="chars"/>they</add>thought of shaking it<lb/>               
                     but then they could not shake<lb/>
                     it because it was too firm<lb/>
                     <hi rend="doubleletter">N</hi>ext they thought of climb&#x2010;<lb/>
@@ -723,7 +726,7 @@
                     her</p>
             </div>
             <div type="chapter" n="4">
-                <head type="chapter"><hi rend="doubleletter">H</hi><milestone unit="undeclared" rend="hr-half"/><add place="above"><space quantity="5" unit="chars"/>chap 4</add></head>
+                <head type="chapter"><hi rend="doubleletter">H</hi><milestone unit="undeclared" rend="hr-half"/><add place="margin"><space quantity="5" unit="chars"/>chap 4</add></head>
                 <p><hi rend="doubleletter-fill">H</hi><hi rend="doubleletter"><hi rend="smallcaps">a</hi></hi><hi rend="smallcaps">rr</hi><hi rend="doubleletter-fill"><hi rend="smallcaps">y</hi></hi> launched his<lb/>
                     little boat but the water<lb/>
                     flowed into it. <hi rend="doubleletter">T</hi>he <del rend="strikethrough">p</del><lb/>
@@ -841,7 +844,7 @@
                     it</p>
             </div>
             <div type="chapter" n="5">
-                <head type="chapter"><milestone unit="undeclared" rend="hr-half"/><add place="above">chap 5</add></head>
+                <head type="chapter"><milestone unit="undeclared" rend="hr-half"/><add place="margin">chap 5</add></head>
                 <p><hi rend="doubleletter">N</hi><subst><del>ow</del><add rend="overwriting">OW</add></subst> <persName type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</persName> waited till<lb/>
                     her <persName type="fictional" corresp="#MAMMA">mother</persName> passed the<g type="justification">-</g><ref type="gloss_textual" target="harry_and_lucy_vol1_glosses_textual.php#JUSTIFICATION"/><lb/>
                     bush and then suddenly<lb/>
@@ -958,8 +961,8 @@
                 
             </div>
             <div type="chapter" n="6">
-                <head type="chapter">chap 6<add place="above"><milestone unit="undeclared" rend="hr-quarter"/></add><add place="below"><milestone unit="undeclared" rend="hr-quarter"/></add></head>
-                <p><hi rend="doubleletter, caps">T</hi><hi rend="smallcaps">he</hi> inn was close by<lb/>
+                <head type="chapter">chap 6<add><milestone unit="undeclared" rend="hr-quarter"/></add><add><milestone unit="undeclared" rend="hr-quarter"/></add></head>
+                <p><hi rend="doubleletter case(Allcaps)">T</hi><hi rend="smallcaps">he</hi> inn was close by<lb/>
                     the bank of the river<lb/>
                     to <persName type="fictional" corresp="#HARRY">harry</persName> and <persName type="fictional" corresp="#LUCY"><hi rend="doubleletter">L</hi>ucy</persName>s joy<lb/>
                     but there was more<lb/>
@@ -1285,7 +1288,7 @@
                     their apartments.</p>
                 <p><hi rend="doubleletter-fill">A</hi>fter dinner it being the<lb/>
                     longest day tea came in<g type="justification">-</g><lb/>
-                    s<handShift script="cursive"/>eemingly<handShift script="print"/> at three o&#x2010;clock<g type="justification">-</g><lb/>
+                    s<handShift script="secretary"/>eemingly<handShift script="print"/> at three o&#x2010;clock<g type="justification">-</g><lb/>
                     when it was seven <persName type="fictional" corresp="#HARRY">harry</persName><lb/>
                     going to bed at nine had<g type="justification">-</g><lb/>
                     only two hours to play<g type="justification">-</g><lb/>
@@ -1433,7 +1436,7 @@
             <div type="chapter" n="9">
                 <milestone unit="undeclared" rend="hr-quarter"/>
                 <head type="chapter"><del rend="erasure">chapter I0</del><add rend="overwriting">chap 9</add><add place="below"><milestone unit="undeclared" rend="hr-quarter"/></add></head>
-                <p><hi rend="doubleletter-fill">H</hi><hi rend="doubleletter-fill, smallcaps">ar</hi>r<hi rend="doubleletter-fill, smallcaps">y</hi> now determined to have<lb/>
+                <p><hi rend="doubleletter-fill">H</hi><hi rend="doubleletter-fill"><hi rend="smallcaps">ar</hi></hi>r<hi rend="smallcaps">y</hi> now determined to have<lb/>
                     another grand scheme so he took<lb/>
                     a handfull of earth moistened<g type="runover">-</g>
                 <pb facs="1229136r"/>
@@ -1525,7 +1528,7 @@
                         may not have read attentively, much less comprehended, with their fairly sophisticated mathematics.</note>-->
                 <p><hi rend="doubleletter-fill">T</hi>hen <persName type="fictional" corresp="#HARRY"><hi rend="doubleletter-fill">H</hi>arry</persName> took a pie<unclear resp="#CWB">c</unclear>e
                 <pb facs="1229138r"/>
-                <fw type="pageNum" place="top-right">pag 86</fw>
+                <fw type="pageNum" place="top-right">page 86</fw>
                 <!--<figure>
                     <head type="drawing" rend="left">pla I0<space quantity="2" unit="chars"/>harrys <del rend="scratchout">canal</del><lb/><space quantity="8" unit="chars"/>river</head>
                     <figDesc>Drawing of a river winding its way through hills and/or mountains.</figDesc>
@@ -1615,7 +1618,7 @@
             </div>
             <div type="chapter" n="10">
                 <head type="chapter">chap I0</head>
-                <p><hi rend="doubleletter-fill">H</hi><hi rend="doubleletter-fill, smallcaps">a</hi><hi rend="smallcaps">rr</hi><hi rend="doubleletter-fill, smallcaps">y</hi> now went out
+                <p><hi rend="doubleletter-fill">H</hi><hi rend="doubleletter-fill"><hi rend="smallcaps">a</hi></hi><hi rend="smallcaps">rr</hi><hi rend="doubleletter-fill"><hi rend="smallcaps">y</hi></hi> now went out
                 <pb facs="1229141v"/>
                 <fw type="pageNum" place="top-left">92</fw>
                     upon the beach and<g type="justification">-</g><lb/>
@@ -1674,7 +1677,7 @@
                     a flash of lightning was seen<lb/>
                     to dart through the cloud of<g type="justification">-</g><lb/>
                     dust upon which the negative<lb/>
-                    clouds spread very much and<lb/>
+                    clouds spread very much and<lb/> 
                     dissolved in rain which pres<lb/>
                     ently cleared the sky</p><!--<note n="n" type="gloss" place="botwin" resp="#DCH">In <ref type="bibliography" target="bibliography.html#SCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Dialogues</hi></ref>, <persName corresp="#JR">Ruskin</persName> has overleapt the remainder of pneumatics, as well as optics and the basic experiments in magnetism
                         and electricity, to borrow from the much later Conversation 39, &#x201C;On Atmospheric Electricity&#x2014;Of Falling Stars&#x2014;Of the Aurora Borealis&#x2014;Of Water&#x2010;spouts, and Whirlwinds&#x2014;Of Earthquakes.&#x201D; The topics under discussion in
@@ -1712,6 +1715,7 @@
                     he saw in the clouds some&#x2010;<lb/><space quantity="21" unit="chars"/>thing<lb/><space quantity="21" unit="chars"/>like i<supplied reason="runoff" resp="#CWB">t</supplied></p>
                 <fw type="close" place="bottom">end of harry<lb/>and Lucy</fw>
             </div>
+            <milestone unit="undeclared" rend="hr-half"/>
         </body>
     </text>
 </TEI>
