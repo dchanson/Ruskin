@@ -78,8 +78,7 @@ to install ` nginx and composer`
     
     brew install nginx  
     
-    brew install php@7.2    
-
+    brew install php@7.2   
     
 ### Useful cmd for brew:
 
@@ -94,7 +93,6 @@ Any way brew service should print:
     Name    Status  User Plist
     nginx   started root /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
     php@7.2 started root /Library/LaunchDaemons/homebrew.mxcl.php@7.2.plist
-
 
 ### Add nginx route to local host
    
@@ -266,3 +264,42 @@ Remain on the root project of node app
 
     save as: ${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html
     open in browswer: http://ruskin.local:8080/src/ruskin_redir_file.php?open=${cf}&new=1
+    
+### To resolve PHP services `error` :
+
+If you get any Error while running:
+    
+    brew services list
+    
+    Displays ->
+    
+    Name    Status  User Plist
+    nginx   started root /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
+    php@7.2 error root /Library/LaunchDaemons/homebrew.mxcl.php@7.2.plist
+    
+    1. brew update
+    2.  brew upgrade
+    3.  brew cleanup
+    
+    Double check the current installed PHP package :
+    
+    4. brew list | grep php
+    
+    Remove everything:
+    
+    brew uninstall --force php56 php56-apcu php56-opcache php56-xdebug php56-yaml
+    brew uninstall --force php70 php70-apcu php70-opcache php70-xdebug php70-yaml
+    brew uninstall --force php71 php71-apcu php71-opcache php71-xdebug php71-yaml
+    brew uninstall --force php72 php72-apcu php72-opcache php72-xdebug php72-yaml
+    brew cleanup
+    
+    Re-check if anything PHP-related is left:
+    
+    brew list | grep php
+    
+    If something is still left, you can uninstall those individually using the same
+    run brew uninstall --force <@phpVersionNumber>
+
+    Clean out the old configuration options for PHP:
+    
+    rm -rf /usr/local/etc/php/*
