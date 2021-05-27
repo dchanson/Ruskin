@@ -428,7 +428,7 @@
                         </list></p>
                     
                     <div type="subsection">
-                        <title type="subsection">Bibliographical Notes</title>
+                        <head type="subsection">Bibliographical Notes</head>
                         <list> 
                             <item><ref type="note" subtype= "bibliographical" target="bibliography_of_ruskin_shepherd_note.php"><hi rend="italic">Bibliography of Ruskin</hi>(1878&#x2013;81)</ref></item>
                             <item><ref type="note" subtype= "bibliographical" target="editorial_rationale_note.php">Editorial and Encoding Rationale and Methodology</ref></item>
@@ -441,7 +441,7 @@
                     
                     
                     <div type="subsection">
-                        <title type="subsection">Biographical Notes</title>
+                        <head type="subsection">Biographical Notes</head>
                         <list>
                             <item><ref type="note" subtype="biographical" target="adam_r_b_note.php"><persName corresp="#RBA">Adam II, R. B.</persName> (<date notBefore="1863" notAfter="1940">1863&#x2013;1940</date>)</ref></item>
                             <item><ref type="note" subtype="biographical" target="backhouse_h_f_note.php"><persName corresp="#HFB">Backhouse, Henry Fleetwood</persName> (<date notBefore="1818" notAfter="1901">1818/19&#x2013;1901</date>)</ref></item>
@@ -463,7 +463,7 @@
                     </div>
                     
                     <div type="subsection">
-                        <title type="subsection">Geographical Notes</title>
+                        <head type="subsection">Geographical Notes</head>
                         <list>
                             <item><ref type="note" subtype="geographical" target="glenfarg_place_note.php"><geogName corresp="#GLENFARG">Glenfarg (Place)</geogName></ref></item>
                             <item><ref type="note" subtype="geographical" target="hill_of_kinnoull_place_note.php"><geogName corresp="#KINNOULLHL">Hill of Kinnoull (Place)</geogName></ref></item>  
@@ -471,7 +471,7 @@
                     </div>
                     
                     <div type="subsection">
-                        <title type="subsection">Contextual Notes</title>
+                        <head type="subsection">Contextual Notes</head>
                         <list>
                             <item><ref type="note" subtype= "contextual" target="annuals_note.php">Annuals and Other Illustrated Books</ref></item>
                             <item><ref type="note" subtype= "contextual" target="collecting_of_modern_authors_note.php">The Collecting of Modern Authors in the Late Nineteenth and Early Twentieth Centuries</ref></item>
@@ -482,7 +482,7 @@
                         </list>
                     </div>
                     
-                    
+                <!--    
                 </div>
                 <div type="section" xml:id="ESSAYS">
                     <head type="section">Essays</head>
@@ -502,13 +502,33 @@
                             <item>Travel</item>
                         </list>
                     </p>
-                </div>
+                </div>-->
+                  
                 <div type="section" xml:id="DRAWINGS">
                     <head type="section">Drawings</head>
-                    <p>
-
-                    </p>
-                </div> 
+                    </div>
+                    
+                <div type="section" xml:id="BIBLIOGRAPHY">
+                     <head type="section">Bibliography</head>
+                        <list>
+                             <item><ref type="apparatus" target="bibliography_note.php">Bibliography</ref></item>
+                        </list>
+                    <div type="subsection">
+                    <head type="subsection">Manuscript Sources</head>
+                    <list>
+                        <item><ref type="bibliography" target="bibliography.php#MSSANDDRAWINGSBYJR"> Manuscripts and Drawings by Ruskin and the Ruskin Family Other Than Those Constituting This Edition</ref></item>
+                        <item><ref type="bibliography" target="bibliography.php#WORKSINMSBYOTHERS">Works in Manuscript by Authors Other Than the Ruskins</ref></item>
+                    </list>
+                        </div>
+                    <div type="subsection">
+                    <head type="subsection">Published Sources</head>
+                    <list>
+                        <item><ref type="bibliography" target="bibliography.php#WORKSBYJRINPUB">Works by Ruskin in Published Editions</ref></item>
+                        <item><ref type="bibliography" target="bibliography.php#SECONDARYSOURCES">Secondary Sources, along with Primary Sources in Published Editions of Authors Other Than Ruskin</ref></item>
+                    </list>
+                        </div> 
+                  </div> 
+               </div>
             </div>
         </body>
     </text>
