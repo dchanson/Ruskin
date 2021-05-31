@@ -14,22 +14,7 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>_xml/_Completed/figures/lille_battlement_drawing_msix.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate (global)</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/figures</String>
+                                    <String>_xml/_Completed/apparatuses/lochleven_apparatus.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -64,6 +49,36 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>Generate html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/figures/lille_battlement_drawing_msix.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate (global)</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/figures</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate (global)</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -253,7 +268,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="outputResource">
                                     <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</String>
