@@ -48,13 +48,11 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Generate html</String>
-                                        <String>Generate (global)</String>
+                                        <String>Generate and open html</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
-                                        <String>XSL</String>
                                         <String>XSL</String>
                                     </list>
                                 </field>
@@ -471,7 +469,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html</String>
+                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>true</Boolean>
@@ -579,7 +577,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html</String>
+                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>true</Boolean>
@@ -652,6 +650,7 @@
     <projectTree name="ruskin.xpr">
         <folder masterFiles="true" name="Master Files">
             <file name="common/ruskin.rnc"/>
+            <file name="../Documents/ruskin.ste"/>
             <file name="common/ruskin.ste"/>
             <file name="common/ruskin.xsl"/>
         </folder>
