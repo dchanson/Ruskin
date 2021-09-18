@@ -3,8 +3,6 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="annuals_note">
             <titleStmt>
                 <title type="main">Annuals and Other Illustrated Books</title>
@@ -67,7 +65,7 @@
     </teiHeader>
     <text>
         <body>
-            <div type="note" subtype="contextual">
+            <div type="note" subtype="bibliographical">
                 <head type="title">Annuals and Other Illustrated Books</head>
                 <p>Annuals were anthologies of verse, short fiction, and pictures&#x2014;the latter typically reproduced by engraving&#x2014;which were intended to serve as gifts and tokens of friendship. 
                     Combining literary and pictorial interest, the annuals were essentially ekphrastic collections, 

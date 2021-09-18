@@ -3,8 +3,6 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="pringle_thomas_note.xml">
             <titleStmt>
                 <title type="main">Thomas Pringle (1789&#x2013;1834)</title>
@@ -72,9 +70,9 @@
     <text>
         <body>
             <div type="note" subtype="biographical">
-                <head type="title">Thomas Pringle (<date notBefore="1789" notAfter="1835">1789&#x2013;1834</date>)</head>
+                <head type="title"><persName corresp="#TP">Thomas Pringle</persName> (<date notBefore="1789" notAfter="1835">1789&#x2013;1834</date>)</head>
                 <p>Poet, editor, and abolitionist. As editor of the <ref type="note" subtype="bibliographical" target="annuals_note.php">literary annual</ref>, 
-                    <ref type="note" target="friendships_offering_note.php"><title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title></ref>, 
+                    <ref type="note" subtype="bibliographical" target="friendships_offering_note.php"><title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title></ref>, 
                     <persName corresp="#TP">Pringle</persName> was a key figure in arranging for <persName corresp="#JR">Ruskin</persName>&#x02BC;s most significant 
                     early professional publication as a poet. (Technically, <persName corresp="#JR">Ruskin</persName>&#x02BC;s public debut as a poet occurred earlier, but less auspiciously, under the editorship of 
                     his tutor and clergyman, <ref type="note" subtype="biographical" target="andrews_edward_note.php"><persName corresp="#EA">Edward Andrews</persName> (<date notBefore="1787" notAfter="1841">1787&#x2013;1841</date>)</ref>, 
