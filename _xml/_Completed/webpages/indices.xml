@@ -51,6 +51,18 @@
         <body>
             <div type="webpage">
                 <head type="title">Indices</head>
+                <div type="section">
+                    <list>
+                        <item><ref type="internal" target="#WORKS">Works</ref></item>
+                        <item><ref type="internal" target="#CORPORA">Corpora</ref></item>
+                        <item><ref type="internal" target="#DRAWINGS">Drawings</ref></item>
+                        <item><ref type="internal" target="#WORKSBYOTHERS">Works by Others</ref></item>
+                        <item><ref type="internal" target="#MANUSCRIPTS">Manuscripts</ref></item>
+                        <item><ref type="internal" target="#COMMENTARY">Commentary</ref></item>
+                        <item><ref type="internal" target="#BIBLIOGRAPHY">Bibliography</ref></item>
+                    </list>
+                </div>
+                    
                 <div type="section" xml:id="WORKS">
                     <head type="section">Works</head>
                     <p>In <hi rend="italic">ERM</hi>, a <hi rend="italic">work</hi> consists of a discrete text by Ruskin, 
@@ -310,14 +322,112 @@
                         <item><ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_pcs_sourceofthearveron_prose"><title type="essay" corresp="#JRSOURCEOFTHEARVERON">&#x201C;What a delicious thing is a reverie&#x201D; [&#x201C;Source of the Arveron&#x201D;]</title> [&#x201C;Account&#x201D;, essay]</ref></item>
                         <item><ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_pcs_andernacht_prose"><title type="essay" corresp="#JRANDERNACHTPROSE">&#x201C;What is it that makes the very heart leap within you&#x201D; [&#x201C;Andernacht&#x201D;]</title> [&#x201C;Account&#x201D;, essay]</ref></item>
                         <item><ref type="apparatus" target="the_steam_engine_apparatus.php"><title type="poem" corresp="#JRTHESTEAMENGINE">&#x201C;When furious up from mines the water pours&#x201D; [&#x201C;The Steam Engine&#x201D;]</title> [poem]</ref></item>
-                    </list>    
-                    </div>    
+                    </list> 
+                        <!-- X --> 
+                        <!-- Y -->
+                        <!-- Z -->
+                        <!--<p>Manuscripts and Corpuses Indices by Title</p>
+                        <list>
+                            <item>Alphabetically</item>
+                            <item>Chronologically</item> 
+                        </list>
+                    <p>The position of a manuscript in chronological sequence is based on its earliest date of use. However, because Ruskin reused some manuscripts, such as the 
+                        <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Books</ref> at various times, in some cases over a range of years, 
+                        placement in the chronological index can be only approximate. Access to the archive through chronology is available with greater precision through the Works Indices.
+                    </p>-->
+                    </div>
+                    </div>
+                    
+                    <div type="section" xml:id="CORPORA">
+                        <head type="section">Corpora</head>
+                        <p>Ruskin often formed texts into groups, by compiling anthologies of texts or organizing texts into a single composite work. 
+                            In <hi rend="italic">ERM</hi>, this kind of group is encoded as a <hi rend="italic">corpus</hi>. Our aim in encoding and describing corpora is 
+                            to express the textual forms resulting from Ruskin&#x02BC;s impulse to anthologize, 
+                            while complying with the TEI standards for XML 
+                            (see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php">Editorial and Encoding Rationale and Methodology</ref>).
+                        </p>
+                        <p>Listed in the Corpora Index are titles of projects that Ruskin clearly developed as distinct corpora. The list includes titles that overlap with some 
+                            found in the Works Indices, since Ruskin conceived of some groups of texts as a single composite <hi rend="italic">work</hi>. Other titles in the Corpora Index are nearly coterminous 
+                            with titles found in the Manuscripts Index, Ruskin sometimes using the physical boundaries of a major manuscript to help define a corpus. 
+                            Indeed, in the encoding procedures of <hi rend="italic">ERM</hi>, 
+                            any major manuscript forms a kind of corpus, albeit a miscellaneous one, and can itself be made up of other corpora. Listed here, however, 
+                            are manuscripts that Ruskin identified as distinct anthologies or composites.
+                        </p>
+                        <p>Titles of copora default to an Apparatus Page, which in some cases is identical to a Work Apparatus, but which in other cases such as poetry anthologies assembles 
+                            information unique to a collection (e.g., title, contents, date, organizing themes, and other discussion). The Apparatus Page links to the corpus witness, or in some cases 
+                            to multiple witnesses or corpora that constitute a version or versions of the collection.
+                        </p>
                         
-         <!-- X --> 
-         <!-- Y -->
-         <!-- Z -->  
+                        <list>
+                            <item><ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent</ref></item>
+                            <item><ref type="apparatus" target="msi_poetry_anthology_apparatus.php">MS I Poetry Anthology</ref></item>
+                            <item><ref type="apparatus" target="poetry_discriptive_apparatus.php">MS III &#x201C;Poetry Discriptive&#x201D;</ref></item>
+                            <item>MS III Poetry Anthology 2</item>
+                            <item>MS III Poetry Anthology 3</item>
+                        </list>
+                        
+                    </div>
+                    
+                    <div type="section" xml:id="DRAWINGS">
+                        <head type="section">Drawings</head>
+                        <div type="subsection">
+                            <head type="subsection">Drawings</head>
+                            <list>
+                                <item><ref type="figure" subtype="drawing" target="aix_la_chapelle_cathedral_drawing_msix.php">Aachen Cathedral</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="andernacht_tower_drawing_msix.php">Andernach</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="mountain_gorge_drawing_msix.php">Entrance to Gondo Gallery</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="lake_building_on_piers_drawing_msix.php">Lake Scene with Building on Piers</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="lakeside_with_terraced_villa_drawing_msix.php">Lakeside with Terraced Villa Drawing (Isola Bella?)</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="the_meuse_liege_drawing_msix.php">Li&#x00E8;ge</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="mountain_aiguilles_drawing_msix.php">Mountain Aiguilles Drawing</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="mountain_boulder_drawing_msix.php">Mountain Scene with Boulder Drawing</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="mountain_chalet_drawing_msix.php">Mountain Scene (Alps?) with Chalet</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="mountain_drawing_msviii.php">Mountain Sketch</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="ragland_castle_drawing_msiii.php">&#x201C;Ragland Castle when newly built&#x201D;</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="river_drawing_msix.php">River Drawing</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="balstall_drawing_msix.php">Vignette after &#x201C;Ancient Fortress and Rocky peak / Above the vale of Balstall&#x201D;</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="calais_fishermen_drawing_msix.php">Vignette, Calais Fishermen</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="calais_fishermen_with_telescope_drawing_msix.php">Vignette, Calais Fishermen with Telescope</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="calais_square_drawing_msix.php">Vignette, Calais Town Square with British Tourists</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="cassel_hill_drawing_msix.php">Vignette, Vista of Cassel Hill</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="cassel_market_square_drawing_msix.php">Vignette, Cassel H&#x00F4;tel de Ville and Market Square</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="cologne_bayenturm_drawing_msix.php">Vignette, Cologne Bayenturm and Wharf</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="cassel_saint_omer_corpus_christi_drawing_msix.php">Vignette, Corpus Christi Procession at Cassel</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="ehrenbreitstein_fortress_drawing_msix.php">Vignette, Ehrenbreitstein Hill and Fortress at Confluence of Rhine and Moselle</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="calais_pier_drawing_msix.php">Vignette, Fishermen on Pier, One Gazing out to Sea</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="lille_battlement_drawing_msix.php">Vignette, Lille Battlement</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="lille_street_with_wagon_drawing_msix.php">Vignette, Lille Street with Wagon</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="heidelberg_drawing_msix.php">Vignette, Mountain Prospect Drawing [<geogName corresp="#HEILIGENBERG">Heiligenberg</geogName>?]</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="brussels_waterloo_drawing_msix.php">Vignette, <persName corresp="#NBE">Napoleon</persName> (or <persName corresp="#AWW">Wellington</persName>?) at the <date when="1815-06-18">Battle of Waterloo</date>, adapted from <persName corresp="#JMWT">Turner</persName>,</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="ehrenbreitstein_river_drawing_msix.php">Vignette, Pines on Bank of the Rhine</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="the_meuse_river_drawing_msix.php">Vignette, the Meuse River and Cliffs</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="brussels_wayside_shrine_drawing_msix.php">Wayside Shrine and Worshiper</ref></item>
+                                <item><ref type="figure" subtype="drawing" target="cassel_windmills_drawing_msix.php">Vignette, Windmills on Cassel Hill</ref></item>
+                            </list>
+                        
+                        <div type="sub-subsection">
+                            <head type="sub-subsection">Photogravures</head>
+                            <list>
+                                <item><ref type="figure" subtype="photogravure" target="brussels_hotel_de_ville_drawing_msix.php"><placeName type="building" corresp="#HOTELDEVILLEBRUSSELS">H&#x00F4;tel de Ville</placeName>, <placeName corresp="#BRUSSELS">Brussels</placeName></ref></item>
+                                <item><ref type="figure" subtype="photogravure" target="jungfrau_from_interlaken_figure.php">[&#x201C;The <geogName corresp="#JUNGFRAU">Jungfrau</geogName> from <placeName corresp="#INTERLAKEN">Interlaken</placeName>&#x201D;]</ref></item>
+                                
+                            </list>
+                        </div>
+                        </div>
+                        </div>
+                    
+                    <div type="section" xml:id="WORKSBYOTHERS">
+                        <head type="section">Works by Others</head>
+                        <p>If, in the encoding of the early manuscripts, we discover an intervention by a writer other than <persName corresp="#JR">Ruskin</persName>
+                            or if we find that <persName corresp="#JR">Ruskin</persName> transcribed without substantially altering a text by another writer, we
+                            encode and class these texts as <hi rend="italic">works by others</hi>. Just as for works by <persName corresp="#JR">Ruskin</persName>, these links default to an Apparatus
+                            Page.</p>
+                        <list>
+                            <item><ref type="apparatus" target="mr_gloss_dating_msi_apparatus.php">Margaret Ruskin&#x02BC;s Gloss on the Dating of MS I</ref></item>
+                            <item>&#x201C;The Sound of the Sea&#x201D; by Mrs. Hemans</item>
+                        </list>
+                    </div>
                   
-              
                 <div type="section" xml:id="MANUSCRIPTS">
                     <head type="section">Manuscripts</head>
                     <p>Manuscripts are physical documents manifesting Ruskin&#x02BC;s texts&#x2014;that is, they consist of various physical witnesses of works. 
@@ -370,76 +480,27 @@
                     </list>
                 </div>
                     
-                <div type="section" xml:id="CORPORA">
-                    <head type="section">Corpora</head>
-                    <p>Ruskin often formed texts into groups, by compiling anthologies of texts or organizing texts into a single composite work. 
-                        In <hi rend="italic">ERM</hi>, this kind of group is encoded as a <hi rend="italic">corpus</hi>. Our aim in encoding and describing corpora is 
-                        to express the textual forms resulting from Ruskin&#x02BC;s impulse to anthologize, 
-                        while complying with the TEI standards for XML 
-                        (see <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php">Editorial and Encoding Rationale and Methodology</ref>).
-                    </p>
-                    <p>Listed in the Corpora Index are titles of projects that Ruskin clearly developed as distinct corpora. The list includes titles that overlap with some 
-                        found in the Works Indices, since Ruskin conceived of some groups of texts as a single composite <hi rend="italic">work</hi>. Other titles in the Corpora Index are nearly coterminous 
-                        with titles found in the Manuscripts Index, Ruskin sometimes using the physical boundaries of a major manuscript to help define a corpus. 
-                        Indeed, in the encoding procedures of <hi rend="italic">ERM</hi>, 
-                        any major manuscript forms a kind of corpus, albeit a miscellaneous one, and can itself be made up of other corpora. Listed here, however, 
-                        are manuscripts that Ruskin identified as distinct anthologies or composites.
-                    </p>
-                    <p>Titles of copora default to an Apparatus Page, which in some cases is identical to a Work Apparatus, but which in other cases such as poetry anthologies assembles 
-                        information unique to a collection (e.g., title, contents, date, organizing themes, and other discussion). The Apparatus Page links to the corpus witness, or in some cases 
-                        to multiple witnesses or corpora that constitute a version or versions of the collection.
-                    </p>
-                    <list>
-                        <item><ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent</ref></item>
-                        <item><ref type="apparatus" target="msi_poetry_anthology_apparatus.php">MS I Poetry Anthology</ref></item>
-                        <item><ref type="apparatus" target="poetry_discriptive_apparatus.php">MS III &#x201C;Poetry Discriptive&#x201D;</ref></item>
-                        <item>MS III Poetry Anthology 2</item>
-                        <item>MS III Poetry Anthology 3</item>
-                    </list>
-                    
-                    <!--<p>Manuscripts and Corpuses Indices by Title</p>
-                        <list>
-                            <item>Alphabetically</item>
-                            <item>Chronologically</item> 
-                        </list>
-                    <p>The position of a manuscript in chronological sequence is based on its earliest date of use. However, because Ruskin reused some manuscripts, such as the 
-                        <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Books</ref> at various times, in some cases over a range of years, 
-                        placement in the chronological index can be only approximate. Access to the archive through chronology is available with greater precision through the Works Indices.
-                    </p>-->
-                </div>
-                <div type="section" xml:id="WORKSBYOTHERS">
-                    <head type="section">Works by Others</head>
-                    <p>If, in the encoding of the early manuscripts, we discover an intervention by a writer other than <persName corresp="#JR">Ruskin</persName>
-                        or if we find that <persName corresp="#JR">Ruskin</persName> transcribed without substantially altering a text by another writer, we
-                        encode and class these texts as <hi rend="italic">works by others</hi>. Just as for works by <persName corresp="#JR">Ruskin</persName>, these links default to an Apparatus
-                        Page.</p>
-                        <list>
-                            <item><ref type="apparatus" target="mr_gloss_dating_msi_apparatus.php">Margaret Ruskin&#x02BC;s Gloss on the Dating of MS I</ref></item>
-                            <item>&#x201C;The Sound of the Sea&#x201D; by Mrs. Hemans</item>
-                		</list>
-                </div>
+                                
                 <div type="section" xml:id="COMMENTARY">
                     <head type="section">Commentary</head>
                     <!--<p><hi rend="italic">ERM</hi> supplies commentary in a number of forms, which are too varied to be listed here in the indices, 
                         and which </p>-->
-                
-                    
                     <p>
                         The Notes Indices list titles of topical notes that are free-standing and hyperlinked throughout the archive. 
                         Other forms of commentary, which cannot be indexed because they are not free-standing, include <hi rend="italic">glosses</hi> 
                         or editorial annotations that hang from specific passages in transcriptions of text witnesses. 
                         These annotations cannot be accessed through the indices, but their topics can be discovered via the site&#x02BC;s Search function.</p>
                     
-                    <p>The notes fall into the following categories:<lb/>
+                    <p>The notes fall into the following categories:<lb/></p>
                         <list>
-                            <item>Bibliographical</item>
-                            <item>Biographical</item>
-                            <item>Geographical</item>
-                            <item>Contextual</item>
-                        </list></p>
+                            <item><ref type="internal" target="#BIBLIOGRAPHICAL">Bibliographical</ref></item>
+                            <item><ref type="internal" target="#BIOGRAPHICAL">Biographical</ref></item>
+                            <item><ref type="internal" target="#GEOGRAPHICAL">Geographical</ref></item>
+                            <item><ref type="internal" target="#CONTEXTUAL">Contextual</ref></item>
+                        </list>
                     
-                    <div type="subsection">
-                        <head type="subsection">Bibliographical Notes</head>
+                    <div type="sub-subsection" xml:id="BIBLIOGRAPHICAL">
+                        <head type="sub-subsection">Bibliographical Notes</head>
                         <list>
                             <item><ref type="note" subtype="bibliographical" target="annuals_note.php">Annuals and Other Illustrated Books</ref></item>
                             <item><ref type="note" subtype="bibliographical" target="widow_of_roseneath_note.php">Anonymous, <title type="book" corresp="#ANONWIDOWOFROSENEATH"><hi rend="italic">The Widow of Roseneath</hi></title> (<date when="1822">1822</date>)</ref></item>
@@ -462,8 +523,8 @@
                     </div>
                     
                     
-                    <div type="subsection">
-                        <head type="subsection">Biographical Notes</head>
+                    <div type="sub-subsection" xml:id="BIOGRAPHICAL">
+                        <head type="sub-subsection">Biographical Notes</head>
                         <list>
                             <item><ref type="note" subtype="biographical" target="adam_r_b_note.php"><persName corresp="#RBA">R. B. Adam II</persName> (<date notBefore="1863" notAfter="1940">1863&#x2013;1940</date>)</ref></item>
                             <item><ref type="note" subtype="biographical" target="andrews_edward_note.php"><persName corresp="#EA">Edward Andrews</persName> (<date notBefore="1787" notAfter="1841">1787&#x2013;1841</date>)</ref></item>
@@ -502,8 +563,8 @@
                            </list>
                     </div>
                     
-                    <div type="subsection">
-                        <head type="subsection">Geographical Notes</head>
+                    <div type="sub-subsection" xml:id="GEOGRAPHICAL">
+                        <head type="sub-subsection">Geographical Notes</head>
                         <list>
                             <item><ref type="note" subtype="geographical" target="camberwell_note.php"><placeName corresp="#CAMBERWELL">Camberwell</placeName></ref></item>
                             <item><ref type="note" subtype="geographical" target="london_city_note.php"><placeName corresp="#LONDONCITY">City of London</placeName></ref></item>
@@ -512,8 +573,8 @@
                         </list>
                     </div>
                     
-                    <div type="subsection">
-                        <head type="subsection">Contextual Notes</head>
+                    <div type="sub-subsection" xml:id="CONTEXTUAL">
+                        <head type="sub-subsection">Contextual Notes</head>
                         <list>
                             <item><ref type="note" subtype= "contextual" target="colosseum_note.php">The <placeName type="building" corresp="#COLOSSEUM">Colosseum</placeName>, <title type="artwork" corresp="#HORNORSLONDONPANORAMA"><persName corresp="#THP">Hornor</persName>&#x02BC;s London Panorama</title>, and the <placeName type="building" corresp="#LONDONDIORAMA">London Diorama</placeName> in <placeName type="building" corresp="#REGENTSPARK">Regent&#x02BC;s Park</placeName></ref></item>
                             <item><ref type="note" subtype= "contextual" target="cemetery_architecture_note.php">Early Victorian Cemetery Architecture</ref></item>
@@ -531,6 +592,7 @@
                             <item><ref type="note" subtype= "contextual" target="tours_of_1826-27_note.php">Tours of <date notBefore="1826" notAfter="1827">1826&#x2013;27</date></ref></item>
                         </list>
                     </div>
+                </div>
                     
                 <!--    
                 </div>
@@ -554,59 +616,8 @@
                     </p>
                 </div>-->
                   
-                <div type="section" xml:id="DRAWINGS">
-                    <head type="section">Drawings</head>
-                    <div type="subsection">
-                        <head type="subsection">Drawings</head>
-                    <list>
-                        <item><ref type="figure" subtype="drawing" target="aix_la_chapelle_cathedral_drawing_msix.php">Aachen Cathedral</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="andernacht_tower_drawing_msix.php">Andernach</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="mountain_gorge_drawing_msix.php">Entrance to Gondo Gallery</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="lake_building_on_piers_drawing_msix.php">Lake Scene with Building on Piers</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="lakeside_with_terraced_villa_drawing_msix.php">Lakeside with Terraced Villa Drawing (Isola Bella?)</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="the_meuse_liege_drawing_msix.php">Li&#x00E8;ge</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="mountain_aiguilles_drawing_msix.php">Mountain Aiguilles Drawing</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="mountain_boulder_drawing_msix.php">Mountain Scene with Boulder Drawing</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="mountain_chalet_drawing_msix.php">Mountain Scene (Alps?) with Chalet</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="mountain_drawing_msviii.php">Mountain Sketch</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="ragland_castle_drawing_msiii.php">&#x201C;Ragland Castle when newly built&#x201D;</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="river_drawing_msix.php">River Drawing</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="balstall_drawing_msix.php">Vignette after &#x201C;Ancient Fortress and Rocky peak / Above the vale of Balstall&#x201D;</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="calais_fishermen_drawing_msix.php">Vignette, Calais Fishermen</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="calais_fishermen_with_telescope_drawing_msix.php">Vignette, Calais Fishermen with Telescope</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="calais_square_drawing_msix.php">Vignette, Calais Town Square with British Tourists</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="cassel_hill_drawing_msix.php">Vignette, Vista of Cassel Hill</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="cassel_market_square_drawing_msix.php">Vignette, Cassel H&#x00F4;tel de Ville and Market Square</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="cologne_bayenturm_drawing_msix.php">Vignette, Cologne Bayenturm and Wharf</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="cassel_saint_omer_corpus_christi_drawing_msix.php">Vignette, Corpus Christi Procession at Cassel</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="ehrenbreitstein_fortress_drawing_msix.php">Vignette, Ehrenbreitstein Hill and Fortress at Confluence of Rhine and Moselle</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="calais_pier_drawing_msix.php">Vignette, Fishermen on Pier, One Gazing out to Sea</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="lille_battlement_drawing_msix.php">Vignette, Lille Battlement</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="lille_street_with_wagon_drawing_msix.php">Vignette, Lille Street with Wagon</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="heidelberg_drawing_msix.php">Vignette, Mountain Prospect Drawing [<geogName corresp="#HEILIGENBERG">Heiligenberg</geogName>?]</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="brussels_waterloo_drawing_msix.php">Vignette, <persName corresp="#NBE">Napoleon</persName> (or <persName corresp="#AWW">Wellington</persName>?) at the <date when="1815-06-18">Battle of Waterloo</date>, adapted from <persName corresp="#JMWT">Turner</persName>,</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="ehrenbreitstein_river_drawing_msix.php">Vignette, Pines on Bank of the Rhine</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="the_meuse_river_drawing_msix.php">Vignette, the Meuse River and Cliffs</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="brussels_wayside_shrine_drawing_msix.php">Wayside Shrine and Worshiper</ref></item>
-                        <item><ref type="figure" subtype="drawing" target="cassel_windmills_drawing_msix.php">Vignette, Windmills on Cassel Hill</ref></item>
-                    </list>
-                    </div>
-                    
-                    <div type="subsection">
-                        <head type="subsection">Photogravures</head>
-                        <list>
-                            <item><ref type="figure" subtype="photogravure" target="brussels_hotel_de_ville_drawing_msix.php"><placeName type="building" corresp="#HOTELDEVILLEBRUSSELS">H&#x00F4;tel de Ville</placeName>, <placeName corresp="#BRUSSELS">Brussels</placeName></ref></item>
-                            <item><ref type="figure" subtype="photogravure" target="jungfrau_from_interlaken_figure.php">[&#x201C;The <geogName corresp="#JUNGFRAU">Jungfrau</geogName> from <placeName corresp="#INTERLAKEN">Interlaken</placeName>&#x201D;]</ref></item>
-                            
-                    </list>
-                    </div>
-                   
-                    
                     <div type="section" xml:id="BIBLIOGRAPHY">
                      <head type="section">Bibliography</head>
-                        <list>
-                             <item><ref type="apparatus" target="bibliography_note.php">Bibliography</ref></item>
-                        </list>
                     <div type="subsection">
                     <head type="subsection">Manuscript Sources</head>
                     <list>
@@ -622,9 +633,9 @@
                     </list>
                         </div> 
                        </div>
-                     </div>
-                  </div> 
-               </div>
+                     
+                  
+               
             </div>
         </body>
     </text>

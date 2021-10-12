@@ -62,7 +62,7 @@
       <body>
         <div type="note">
           <head type="title">Bibliography</head>
-          <div type="section">
+          <div type="section" xml:id="MANUSCRIPTSOURCES">
             <head type="section">Manuscript Sources</head>
             <div type="subsection" xml:id="MSSANDDRAWINGSBYJR">
               <head type="subsection"><hi rend="bold">Manuscripts and Drawings by Ruskin and the Ruskin Family Other Than Those Constituting This Edition</hi></head>
@@ -2066,6 +2066,27 @@
           </monogr>
         </biblStruct>
                       
+                      <biblStruct xml:id="BENTLEYHUNTSLITERARYPOCKETBOOK">
+                        <analytic>
+                          <author>
+                            <persName corresp="GEBJR">
+                              <forename>G. E., Jr.</forename>
+                              <surname>Bentley</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Leigh Hunt&#x02BC;s &#x2018;Literary Pocket&#x2010;Book&#x2019;, 1818&#x2013;22: A Romantic Source Book&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Victorian Periodicals Newsletter</hi></title>
+                          <imprint>
+                            <biblScope type="vol">8</biblScope>
+                            <biblScope type="issue">4</biblScope>
+                            <date when="1975-12">December 1975</date>
+                            <biblScope type="pages">125&#x2013;28</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
                       <biblStruct xml:id="BESANTLONDONCITY">
                         <monogr>
                           <author>
@@ -3857,6 +3878,26 @@
                           </imprint>
                         </monogr>
                       </biblStruct>
+                      
+                      <biblStruct xml:id="JWOODDNB">
+                        <analytic>
+                          <author>
+                            <persName corresp="SFCOOPER">
+                              <forename>Suzanne Fagence</forename>
+                              <surname>Cooper</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Wood, John (<date notBefore="1801" notAfter="1870">1801&#x2013;70</date>)&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Oxford Dictionary of National Biography Online Edition</hi></title>
+                          <imprint>
+                            <publisher>Oxford University Press</publisher>
+                            <date when="2004">2004</date>
+                          </imprint>
+                        </monogr>
+                        <note>http://www.oxforddnb.com/view/article/29880 (accessed <date when="2021-10-06">6 October 2021</date>).</note>
+                      </biblStruct>
         
         <biblStruct xml:id="COPEEARLYANALYSIS">
           <analytic>
@@ -4919,6 +4960,26 @@
           </monogr>
         </biblStruct>
                       
+                      <biblStruct xml:id="FELDMANINSCRIPTIONS">
+                        <analytic>
+                          <author>
+                            <persName corresp="PRF">
+                              <forename>Paula R.</forename>
+                              <surname>Feldman</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Women, Literary Annuals, and the Evidence of Inscriptions&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Keats&#x2010;Shelley Journal</hi></title>
+                          <imprint>
+                            <biblScope type="vol">55</biblScope>
+                            <date when="2006">2006</date>
+                            <biblScope type="pages">54&#x2013;62</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+                      
                       <biblStruct xml:id="JFELTHAM">
                         <monogr>
                           <author>
@@ -5189,23 +5250,7 @@
           </monogr>
           <note>www.orgs.muohio.edu/anthologies/fmn/ (accessed <date when="2014-02-26">26 February 2014</date>).</note>
         </biblStruct>
-                      
-                      <biblStruct xml:id="HARRISFORGETMENOT2015">
-                        <monogr>
-                          <editor>
-                            <persName corresp="KDH">
-                              <forename>Katherine D.</forename>
-                              <surname>Harris</surname>
-                            </persName>
-                          </editor>
-                          <title level="m"><hi rend="italic">Forget Me Not: The Rise of the British Literary Annual, <date notBefore="1823" notAfter="1835">1823&#x2013;1835</date></hi></title>
-                          <imprint>
-                            <publisher>Ohio University Press</publisher>
-                            <date when="2015">2015</date>
-                            </imprint>
-                        </monogr>
-                      </biblStruct>
-        
+                     
         <biblStruct xml:id="FRAISTATPOEMANDTHEBOOK">
           <monogr>
             <author>
@@ -5344,7 +5389,24 @@
                           <imprint>
                             <pubPlace>London</pubPlace>
                             <publisher>Lupton Relfe</publisher>
-                            <date when="1826">1826</date>
+                            <date notBefore="1825-10-01" notAfter="1826-01-01">1826 [ca. 1825]</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="FRIENDSHIPSOFFERING1829">
+                        <monogr>
+                          <title level="m"><hi rend="italic">Friendship&#x02BC;s Offering: A Literary Album, and Christmas and New Year&#x02BC;s Present, for <date when="1835">MDCCCXXIX</date></hi></title>
+                          <editor>
+                            <persName corresp="TP">
+                              <forename>Thomas</forename>
+                              <surname>Pringle</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Smith, Elder</publisher>
+                            <date notBefore="1828-10-01" notAfter="1829-01-01">1829 [ca. 1828]</date>
                           </imprint>
                         </monogr>
                       </biblStruct>
@@ -5361,7 +5423,7 @@
                           <imprint>
                             <pubPlace>London</pubPlace>
                             <publisher>Smith, Elder</publisher>
-                            <date notBefore="1834-10-01" notAfter="1835-01-01">1830 [ca. 1829]</date>
+                            <date notBefore="1829-10-01" notAfter="1830-01-01">1830 [ca. 1829]</date>
                           </imprint>
                         </monogr>
                       </biblStruct>
@@ -6207,6 +6269,41 @@
         </monogr>
         <note>http://journals.tdl.org/paj/index.php/paj/article/view/23</note>
       </biblStruct>
+                      
+                      <biblStruct xml:id="HARRISFEMINIZING">
+                        <analytic>
+                          <author><persName corresp="KDH">
+                            <forename>Katherine D.</forename>
+                            <surname>Harris</surname>
+                          </persName></author>
+                          <title level="a">&#x201C;Feminizing the Textual Body: Female Readers Consuming the Literary Annual&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Papers of the Bibliographical Society of America</hi></title>
+                          <imprint>
+                            <biblScope type="vol">99</biblScope>
+                            <biblScope type="issue">4</biblScope>
+                            <date when="2005-12">December 2005</date>
+                            <biblScope type="pages">573&#x2013;622</biblScope>
+                          </imprint>
+                        </monogr>
+                        </biblStruct>
+                      
+                      <biblStruct xml:id="HARRISFORGETMENOT2015">
+                        <monogr>
+                          <author>
+                            <persName corresp="KDH">
+                              <forename>Katherine D.</forename>
+                              <surname>Harris</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Forget Me Not: The Rise of the British Literary Annual, <date notBefore="1823" notAfter="1835">1823&#x2013;1835</date></hi></title>
+                          <imprint>
+                            <publisher>Ohio University Press</publisher>
+                            <date when="2015">2015</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
       
       <biblStruct xml:id="HARRISGENRESUCCEEDS">
         <analytic>
@@ -8342,6 +8439,27 @@
         </monogr>
       </biblStruct>
                       
+                      <biblStruct xml:id="LODGEROMANTICRELIQUARIES">
+                        <analytic>
+                          <author>
+                            <persName corresp="SLODGE">
+                              <forename>Sara</forename>
+                              <surname>Lodge</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Romantic Reliquaries: Memory and Irony in the Literary Annuals&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Romanticism: The Journal of Romantic Culture and Criticism</hi></title>
+                          <imprint>
+                            <biblScope type="vol">10</biblScope>
+                            <biblScope type="issue">1</biblScope>
+                            <date when="2004">2004</date>
+                            <biblScope type="pages">23&#x2013;40</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+                      
                       <biblStruct xml:id="LOFFTEUDOSIA">
                         <monogr>
                           <author>
@@ -9311,6 +9429,27 @@
                           </imprint>
                         </monogr>
                       </biblStruct>
+                      
+                      <biblStruct xml:id="MOURAOREMEMBRANCE">
+                        <analytic>
+                          <author>
+                            <persName corresp="MMOURAO">
+                              <forename>Manuel</forename>
+                              <surname>Mour&#x00E3;o</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Remembrance of Things Past: Literary Annuals&#x02BC; Self&#x2010;Historicization&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Victorian Poetry</hi></title>
+                          <imprint>
+                            <biblScope type="vol">50</biblScope>
+                            <biblScope type="issue">1</biblScope>
+                            <date when="2012">Spring 2012</date>
+                            <biblScope type="pages">107&#x2013;23</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
                       
                       <biblStruct xml:id="PARRISHSTROLLOPEBIBLIA">
                         <analytic>
@@ -12844,6 +12983,20 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      <biblStruct xml:id="REVIEWKEEPSAKE1828">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">The Keepsake for 1828</hi>; <hi rend="italic">Friendship&#x02BC;s Offering . . . for 1828</hi>; <hi rend="italic">The Christmas&#x2010;Box</hi></title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Monthly Review</hi> (London)</title>
+                          <imprint>
+                            <biblScope type="vol">7</biblScope>
+                            <biblScope type="issue">29</biblScope>
+                            <date when="1828-01">January 1828</date>
+                            <biblScope type="pages">66&#x2013;78</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
                       
                       <biblStruct xml:id="REVIEWSCOTTMONASTERYEDINBURGHMAG">
                         <analytic>
