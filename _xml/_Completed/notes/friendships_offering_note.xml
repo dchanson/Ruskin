@@ -3,9 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
-        <fileDesc xml:id="friendships_offering_note">
+       <fileDesc xml:id="friendships_offering_note">
             <titleStmt>
                 <title type="main">Friendship&#x02bc;s Offering</title>
                 <title type="sub">Note</title>
@@ -65,193 +63,556 @@
     </teiHeader>
     <text>
         <body>
-            <div type="note" subtype="contextual">
+            <div type="note" subtype="bibliographical">
                 <head type="title"><title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title></head>
-                <p>Illustrated literary annual, published by <ref type="note" subtype="biographical" target="smith_elder_note.php"><orgName corresp="#SMITHELDER">Smith, Elder, &#x0026; Company</orgName></ref>, 
-                    18??-??. 
+                <!-- Clean up starting here --><p>Illustrated literary annual. The first four volumes, 1824-27, were published by Lupton Relfe. Another seventeen volumes, for the years 1828-44 
+                    (i.e., published "for" the New Year's holiday seasons 1828-44, the volumes themselves produced and released late in the previous year, 1827-43), were published by 
+                    <ref type="note" subtype="biographical" target="smith_elder_note.php"><orgName corresp="#SMITHELDER">Smith, Elder &#x0026; Company</orgName></ref> 
+                    (<ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT2015"><persName corresp="#KDH">Harris</persName>, <title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title></ref>, 124-26, 323-34;
+                    <ref type="bibliography" target="bibliography.php#FAXONLITERARYANNUALS">Faxon, <title type="bibliography" corresp="FAXONLITERARYANNUALS"><hi rend="italic">Literary Annuals</hi></title></ref>, 93-95). 
                     While not the first publication to sponsor <persName corresp="#JR">Ruskin</persName>&#x02bc;s writing, <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> was the first widely distributed venue 
-                    for his poetry, beginning with &#x201c;Saltzburg&#x201d; and &#x201c;Fragments from a Metrical Journal&#x201d;, which appeared in the annual volume for <date when="1835">1835</date>
-                    (released in October or November <date when="1834">1834</date>, for the holiday season). Thereafter, <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> remained a reliable showcase for <persName corresp="#JR">Ruskin</persName>&#x02bc;s verse, 
-                    which appeared in nearly every volume: debutfeatured some of <persName corresp="#JR">Ruskin</persName>&#x02BC;s earliest published poetry.</p>
+                    for his poetry, beginning with <!-- title tags + refs to apparatuses -->&#x201c;Saltzburg&#x201d; and &#x201c;Fragments from a Metrical Journal&#x201d;, included in the volume for <date when="1835">1835</date>
+                    (released in October or November <date when="1834">1834</date>). Thereafter, <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> remained a reliable showcase for <persName corresp="#JR">Ruskin</persName>&#x02bc;s verse, 
+                    which appeared in each annual volume until the series' demise.</p>
+                <p>See also <ref type="note" subtype="bibliographical" target="annuals_note.php">Annuals and Other Illustrated Books</ref>; 
+                    <!-- note ref -->Samuel Rogers: The Publication History of <persName corresp="#SR">Rogers</persName>&#x02BC;s <title type="poem" corresp="#ROGERSITALY"><hi rend="italic">Italy</hi></title>.<!-- point to this section in Rogers note --></p>
+                
                 <div type="section" xml:id="DEVELOPMENT">
-                    <head type="section">Development and Characteristics</head>
-                    <p>The first volume of <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> was published with the date <date when="1824">1824</date>, 
-                        released perhaps in <date when="1823">1823</date> in time for the holiday season of <date notBefore="1823-11" notAfter="1824-02">1823&#x2013;24</date> 
-                        (<title type="bibliography_text" corresp="#HARRISINDEXANNUALS">&#x201C;Chronological Index of British and American Literary Annual Titles&#x201D;</title>, in 
-                            <ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT2015"><persName corresp="#KDH">Harris</persName>, <title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title></ref>, 280; 
-                        <ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT"><persName corresp="#KDH">Harris</persName>, ed., <title type="archive" corresp="#HARRISFORGETMENOT"><hi rend="italic">&#x201C;Forget Me Not&#x201D; Archive</hi></title></ref>). 
-                        Thus, the title appeared only one year after the very first of the British annuals, 
-                        <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi> (<date when="1823">1823</date>)</title>, was released by the firm of <orgName corresp="#ACKERMANN">Rudolf Ackermann</orgName> in <date when="1822">1822</date> for the holiday season of <date notBefore="1822-11" notAfter="1823-02">1822&#x2013;23</date> 
-                        (see <ref type="note" subtype="bibliographical" target="annuals_note.php">Annuals and Other Illustrated Books</ref>). 
-                        According to a bibliography of the annuals, 
-                        <ref type="bibliography" target="bibliography.php#FAXONLITERARYANNUALS"><title type="book" corresp="#FAXONLITERARYANNUALS"><hi rend="italic">Literary Annuals</hi></title></ref> by <persName corresp="#FWFAXON">Faxon</persName>, 
-                        <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> kept up annual publication through the volume for <date when="1844">1844</date> (p. 95).
-                    </p>
-                    <p>In the wake of <orgName corresp="#ACKERMANN">Ackermann</orgName>&#x02BC;s outstanding success, <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> was published 
-                        by <persName corresp="#LRPUBLISHER">Lupton Relfe</persName>, a bookseller in <placeName type="building" corresp="#CORNHILL">Cornhill Street</placeName>. According to an <date when="1858">1858</date> reflection on the heyday of annuals, 
-                        <persName corresp="#LRPUBLISHER">Relfe</persName>&#x02BC;s product was &#x201C;unpromising&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#ANNUALSOFFORMERDAYS"><title type="annual" corresp="#ANNUALSOFFORMERDAYS">&#x201C;The Annuals of Former Days&#x201D;</title></ref>, 496). 
-                        In retrospect, <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> was struggling to escape the paraphernalia that attached it to the annual&#x02BC;s origins in the eighteenth&#x2010;century almanac and &#x201C;pocket book&#x201D; 
-                        (see <ref type="note" subtype="bibliographical" target="annuals_note.php">Annuals and Other Illustrated Books</ref>). 
-                        This effort was acknowledged by the editor, <persName corresp="#TKH">T. K. Hervey</persName> (<date notBefore="1799" notAfter="1859">1799&#x2013;1859</date>), 
-                        in his prefatory remarks for the <date when="1826">1826</date> volume: while &#x201C;difficulties&#x201D; had arisen from the publication having, &#x201C;very recently, come into the present Editor&#x02BC;s hands 
-                        with a view to an entire change in its character and plan&#x201D; (<persName corresp="#TKH">Hervey</persName> had in fact edited the title since <date when="1824">1824</date>), 
-                        he only now succeeded in making &#x201C;alterations . . . consist[ing] in the removal of all those features which marked it as more peculiarly adapted for one season of the year than another&#x201d;, 
-                        with the aim instead of &#x201C;combining, with the increased beauty of its embellishments, a high literary character&#x201d; 
-                        (<ref type="bibliography" target="bibliography.php#FRIENDSHIPSOFFERING1826"><persName corresp="#TKH">Hervey</persName>, ed., <title type="annual" corresp="#FRIENDSHIPSOFFERING1826"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> [<date when="1826">1826</date>]</ref>, v, vi). 
-                        According to <persName corresp="#KDH">Katherine D. Harris</persName>, the hodgepodge of calendar pages, informational charts, and sheet music did fall away in the <date when="1826">1826</date> volume, 
-                        but <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> under the supervision of its founders remained derivative and imitative 
-                        (<ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT2015"><persName corresp="#KDH">Harris</persName>, <title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title></ref>, 124&#x2013;26). 
-                        The annual became a distinctive contribution to the early Victorian type only when, in <date when="1827">1827</date>, the publication was taken over by the relatively young stationery and bookselling firm of 
-                        <ref type="note" subtype="biographical" target="smith_elder_note.php"><orgName corresp="#SMITHELDER">Smith, Elder, &#x0026; Company</orgName></ref>, 
-                        which was recently moved to no. 65 <placeName type="building" corresp="#CORNHILL">Cornhill</placeName>, near <persName corresp="#LRPUBLISHER">Relfe</persName>, 
-                        and which had so far undertaken only modest publishing ventures.</p>
+                    <head type="section">History and Development</head>
+                    <div type="subsection">
+                        <head type="subsection" xml:id="RELFEFOUNDING">The Founding of the Annual by <orgName corresp="#RELFE">Lupton Relfe</orgName></head>
+                    <p>The first volume of <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> appeared with the date <date when="1824">1824</date>, 
+                        published by a bookseller in <placeName type="building" corresp="#CORNHILL">Cornhill Street</placeName>, <orgName corresp="#RELFE">Lupton Relfe</orgName>. 
+                        The Ruskin family had some awareness of this early stage of the annual, since the volume for 1825, Relfe's second volume in the series, entered the family library 
+                        with an inscription to <!-- TAG FOR BIO NOTE -->Mary Richardson (1815-49), Ruskin's cousin who first came to Camberwell to live with the family in 1827 
+                        (Dearden, Library of John Ruskin, 122 [no. 953]; and for specific features of the 1825 Friendship's Offering, see Harris, "Feminizing the Textual Body", 601-2, 611).</p>
+                        
+                        <div type="sub-subsection" xml:id="RELFENICHE">
+                            <head type="sub-subsection">Searching for a Niche</head>
+                        
+                        <p>As <persName corresp="#KDH">Katherine D. Harris</persName> remarks, Relfe's first volume, for 1824, appeared only one year after the very first of the British annuals, 
+                        <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi> (<date when="1823">1823</date>)</title>, 
+                        was released by the firm of <orgName corresp="#ACKERMANN">Rudolf Ackermann</orgName> in <date when="1822">1822</date> for the holiday season of <date notBefore="1822-11" notAfter="1823-02">1822&#x2013;23</date>. 
+                        Harris transcribes the preface of this debut volume of Friendship's Offering and details the volume's contents, revealing a derivative and miscellaneous assemblage that exposes <persName corresp="#LRPUBLISHER">Relfe</persName> 
+                        as aspiring only to mimic and capitalize on Ackermann's achievement. He had formed no distinctive conception of his production, which mixes features of the German literary annual, on which Ackermann modeled Forget Me Not, with traditional elements of the English eighteenth&#x2010;century almanac and &#x201C;pocket book&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT2015"><persName corresp="#KDH">Harris</persName>, <title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title></ref>, 124-25, 280; 
+                        see also <ref type="note" subtype="bibliographical" target="annuals_note.php">Annuals and Other Illustrated Books</ref>).<!-- check Harris pages / point to what section of "Annuals"?--></p>
+                             
+                            <p>Relfe's inclusion of pocket-book features such as blank diary pages did not necessarily suggest incoherence: as Sara Lodge has noted, during the post-Waterloo period Leigh Hunt 
+                        produced an item, the <hi rend="italic">Literary Pocket-Book</hi> (1818-22), which invited the consumer to inscribe poetic effusions on a blank "Calendar of Nature", thus activating the reader to put literary response to use in constructing, as Hunt put it, 
+                                "a sort of Court Calendar" of one's own (Lodge, &#x201C;Romantic Reliquaries&#x201D;, 25). Nonetheless, Relfe initially seems to have had trouble positioning his annual to respond to the conflicting audience demands of the transitional, post-Waterloo period. 
+                                In <date when="1858">1858</date>, when the history of the annuals began to be written following their decline in popularity, an article in the <hi rend="italic">Bookseller</hi> settled on the opinion that <persName corresp="#LRPUBLISHER">Relfe</persName>&#x02BC;s Friendship's Offering 
+                            was characterized by an &#x201C;unpromising&#x201D; mix of "ruled pages for memoranda" with "indifferent views of Continental cities", "poor verses", and the occasional "tale by Mrs. Opie" (i.e., Amelia Opie [1769-1853]) 
+                            (<ref type="bibliography" target="bibliography.php#ANNUALSOFFORMERDAYS"><title type="annual" corresp="#ANNUALSOFFORMERDAYS">&#x201C;The Annuals of Former Days&#x201D;</title></ref>, 496).</p>
+                        
+                    <p>According to the Bookseller article, the fortunes of <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> were turned around by 
+                        by the editorship of <persName corresp="#TKH">T. K. Hervey</persName> (<date notBefore="1799" notAfter="1859">1799&#x2013;1859</date>). 
+                        In his prefatory remarks for Relfe's <date when="1826">1826</date> volume, <persName corresp="#TKH">Hervey</persName> did announce "a view to an entire change in . . . [the annual's] character and plan&#x201D;, 
+                        shifting emphasis from the transience of an annual to the permanence of a keepsake: the &#x201C;alterations" were to "consist in the removal of all those features which marked it as more peculiarly adapted for one season of the year than another&#x201d; 
+                        (directly echoing an 1825 Monthly Review article that praised British annuals over their Continental precursors for "exclud[ing] every feature which would seem to attach them to one year more than to another" 
+                        [REVIEWLITERARYSOUVENIR1825 Unsigned review of Literary Souvenir (1825), 279]; see also 
+                        <ref type="note" subtype="bibliographical" target="annuals_note.php#CHARACTER">Annuals and Other Illustrated Books: The Character and Reception of the Annuals</ref>). 
+                        Instead, Friendship's Offering would become a more permanent, treasurable item, &#x201C;combining, with the increased beauty of its embellishments, a high literary character&#x201d; 
+                        (<ref type="bibliography" target="bibliography.php#FRIENDSHIPSOFFERING1826"><persName corresp="#TKH">Hervey</persName>, ed., <title type="annual" corresp="#FRIENDSHIPSOFFERING1826"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> [<date when="1826">1826</date>]</ref>, vi). 
+                        Thus, according to <persName corresp="#KDH">Harris</persName>, the pocket-book features of Relfe's earlier volumes such as blank calendar pages, informational charts, and even notated music fell away 
+                        (<ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT2015"><persName corresp="#KDH">Harris</persName>, <title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title></ref>, 126); and 
+                        while these earlier "album-like qualities" did have the merit of allowing the giver and the recipient to personalize the volume with their own inscriptions, 
+                        a "more marketable" item emerged for the period, one that required the annual to became a "completely prefabricated book of printed memories" 
+                        (Harris, "Feminizing the Textual Body", 607).</p>
+                        </div>
+                        
+                        <div type="sub-subsection" xml:id="HERVEY">
+                            <head type="sub-subsection">The Hervey Editorship: Improving the Literary Character</head>
+                        
+                        <p>What signaled the improved "literary character" promised by Hervey? 
+                            As star material for the <date when="1826">1826</date> volume, Maria Edgeworth (1769-1849) supplied an essay by her father, 
+                            Richard Lovell Edgeworth (1744-1817); 
+                            Washington Irving (1783-1859) and Lady Caroline Lamb (1785-1828) 
+                            released scraps of verse by Lord Byron (1788-1824); 
+                            and juvenilia were recovered by James Thomson (1700-1748). 
+                            Otherwise, the roster of contributors for the <date when="1826">1826</date> volume proved similar to those for 1827.
+                            One or both volumes included poet/churchmen such as the Reverend Thomas Dale (1797-1870), Ruskin's future Camberwell schoolmaster, and 
+                            the Reverend George Croly (1780-1860), Ruskin's future mentor. This class of writers also included the Reverend John Moultrie (1799-1874), the Rugby rector; 
+                            and James Montgomery (1771-1854), the hymn writer. Among "poetesses" appeared L.E.L. (Letitia Landon, 1802-38) and--a poetess 
+                            especially favored in the Ruskin household--Felicia Hemans (1793-1835). Among women writers of tales and sketches appeared 
+                            Mary Russell Mitford (1787-1855) and Emma Roberts (1791-1840).</p>
+                            
+                        <p>These and other contributors to the 1826 and 1827 volumes of Friendship's Offering were, as reviewers commented, almost invariable presences in other annuals, as well--writers 
+                            who supplied mainly verse, but who could also be relied on for a variety of commissions: Bernard Barton (1784-1849), John Clare (1793-1864), 
+                            Allan Cunningham (1784-1842), Hervey, William Jerdan (1782-1869), 
+                            Henry Neele (1798-1828), D. Lester Richardson (1801-65), and the translator John Bowring (1792-1872). 
+                            Relief from the sentiments of such verse came from humorists like John Galt (1779-1839), Thomas Hood (1799-1845), and Horace Smith (1779-1849). 
+                            Many of these contributors themselves labored as editors of other annuals, magazines, and newspapers, including Ruskin's future personal editor, 
+                            <!-- link note -->W. H. Harrison (1792-1878), who appeared the for the first time in the Friendship's Offering for 1827.</p>
+                            
+                            <p>Thus the "improved literary character" of Friendship's Offering succeeded in rendering the volume more predictable. 
+                                The Monthly Review commented about the 1826 volume: "Wher e the character of this volume so closely corresponds to that of the '[Literary] Souvenir'", reviewed in a previous issue for that year, 
+                                "our general remarks may apply to either" (REVIEWANNUALS1826MONTHLY Unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> [1826] and <hi rend="italic">Janus</hi> [1826], 161). 
+                                Regarding the following year's volume, that journal judged the "prose matter . . . [to be] upon the whole, the best that we have seen in any of these annual volumes", 
+                                but "after three or four pieces from the pens of Miss Landon, Mrs. Hemans, the Rev. Mr. Dale, and Mr. Hervey, 
+                                we find nothing in the shape of verse, that rises above mediocrity" 
+                                (REVIEWANNUALS1827MONTHLY Unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> [1827], 87). 
+                                The contributors represented cultures of England, Scotland, Wales, and Ireland, 
+                                as well as lived experience from abroad, sometimes writing in dialect. They wrote from a variety of religious and ideological stances, 
+                                though never so aggressively as to perturb the unifying script of friendship, sentiment, and memory.</p>
+                            
+                            <p>When reviewers found little to distinguish Friendship's Offering from other annuals, they turned to the "embellishments" 
+                                of illustration for comparisons, usually considered overall to be to the disadvantage of Relfe's volume 
+                                (see MISC1826BELLEASSEMBLEE &#x201C;Miscellaneous&#x201D; [Unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> (1827)], 300; 
+                                REVIEWANNUALS1826MONTHLY Unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> [1826] and <hi rend="italic">Janus</hi> [1826], 161; 
+                                REVIEWANNUALS1827MONTHLY Unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> [1827], 87). 
+                                The annual was in fact typical of the period in highlighting the shared "poetry" of the Sister Arts 
+                                (see <ref type="internal" target="#POETRYOFSISTERARTS">Illustration: The Poetry of the Sister Arts in the <orgName corresp="#RELFE">Relfe</orgName> Annual</ref>); 
+                                and the 1826 volume stands out for its sampling of contemporary French art, but reviews at the time were mixed 
+                                (see <ref type="internal" target="#RELFEFRENCHILLUSTRATI0N">Illustration: A Reflection of the Contest between the British Picturesque Aesthetic and French Neoclassweicism in the 1826 <orgName corresp="#RELFE">Relfe</orgName> Annual</ref>). 
+                                The future success of Friendship's Offering depended on finding a niche that made the annual distinctive in an increasingly crowded field, 
+                                but without disturbing the superficially various yet predictable offering of memory and friendship.</p></div>
+                    </div>
+                    <!-- CLEANUP STOPS HERE. more below -->
                     
-                    <p><persName corresp="#LRPUBLISHER">Relfe</persName>&#x02BC;s final volume was <date when="1827">1827</date> 
-                        (released presumably in <date notBefore="1826-10" notAfter="1826-12">late 1826</date>), edited by <persName corresp="#TKH">Hervey</persName> and <persName corresp="#BEPOTE">B. E. Pote</persName> 
+                    <div type="subsection">
+                        <head type="subsection">The Takeover of the Annual by <orgName corresp="#SMITHELDER">Smith, Elder, &#x0026; Company</orgName></head>
+                    <p><persName corresp="#LRPUBLISHER">Relfe</persName>&#x02BC;s final volume of <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> was for <date when="1827">1827</date> (presumably released in <date notBefore="1826-10" notAfter="1826-12">late 1826</date>), 
+                        edited by <persName corresp="#TKH">Hervey</persName> and <persName corresp="#BEPOTE">B. E. Pote</persName> 
                         (<title type="bibliography_text" corresp="#HARRISINDEXANNUALS">&#x201C;Editors and Publishers of British Literary Annuals, <date notBefore="1823" notAfter="1831">1823&#x2013;31</date>&#x201D;</title>, in 
                         <ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT2015"><persName corresp="#KDH">Harris</persName>, <title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title></ref>, 324). 
-                        In <date when="1827">1827</date>, <orgName corresp="#SMITHELDER">Smith, Elder</orgName> released their first volume of <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> &#x201C;for&#x201D; <date when="1828">1828</date>, under the editorship of <persName corresp="#CK">Charles Knight</persName> (<date notBefore="1791" notAfter="1873">1791&#x2013;1873</date>), 
-                        the future publisher for the <orgName corresp="#SDUK">Society for the Diffusion of Useful Knowledge</orgName>, who was then struggling to establish himself in <placeName corresp="#LONDON">London</placeName> publishing. 
-                        <persName corresp="#CK">Knight</persName> was succeeded in the following year by <ref type="note" subtype="biographical" target="pringle_thomas_note.php"><persName corresp="#TP">Thomas Pringle</persName></ref>, 
-                        recently returned from disappointed hopes of advancement in <placeName corresp="#SOUTHAFRICA">South Africa</placeName>, but gaining recognition as a poet and as an activist in the <orgName corresp="#ANTISLAVERYSOCIETY">Anti&#x2010;Slavery Society</orgName>. 
-                        It was <persName corresp="#TP">Pringle</persName> who would later introduce <persName corresp="#JR">Ruskin</persName> to the fashionable literary world as the author, &#x201C;<persName type="pen_name" corresp="#JR">J.R.</persName>&#x201D; 
-                        Under <orgName corresp="#SMITHELDER">Smith, Elder</orgName>&#x02BC;s custodianship, <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> 
-                        (its subtitle expanded to <hi rend="italic">A Literary Album, and Christmas and New Year&#x02BC;s Present</hi>)
-                        improved strikingly in its material appeal. Sales rose, eventually peaking at ten thousand copies per year, assuring the fortunes of <orgName corresp="#SMITHELDER">Smith, Elder</orgName> as a publisher. 
-                        (By comparison, <orgName corresp="#ACKERMANN">Ackermann</orgName>&#x02BC;s <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title> in some years achieved twenty thousand.) 
-                        See <ref type="bibliography" target="bibliography.php#SMITHDNB"><persName corresp="#BBELL">Bell</persName>, <title type="dictionary_entry" corresp="#SMITHDNB">&#x201C;Smith, George Murray</title> (<date notBefore="1824" notAfter="1901">1824&#x2013;1901</date>)&#x201D;</ref>; 
-                        <ref type="bibliography" target="bibliography.php#FORDACKERMANN"><persName corresp="#JFORD">Ford</persName>, <title type="book" corresp="#FORDACKERMANN"><hi rend="italic">Ackermann</hi></title></ref>, 65.</p>
+                        In <date when="1827">1827</date>, the publication was taken over by the relatively young stationery and bookselling firm of 
+                        <ref type="note" subtype="biographical" target="smith_elder_note.php"><orgName corresp="#SMITHELDER">Smith, Elder, &#x0026; Company</orgName></ref>, 
+                        which had recently moved to no. 65 <placeName type="building" corresp="#CORNHILL">Cornhill</placeName>, near <persName corresp="#LRPUBLISHER">Relfe</persName>.</p>
+                        
+                        <p>By <date when="1827">1827</date>, <ref type="note" subtype="biographical" target="smith_elder_note.php"><orgName corresp="#SMITHELDER">Smith, Elder</orgName>&#x02BC;s</ref> publishing ventures in engravings and aquatints were already ambitiously refined, 
+                        but with the acquisition of <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> the company made a bid for an expanded share of the burgeoning illustrated book market. 
+                        Under their custodianship, <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> gained a measure of distinction in the growing field of annuals, 
+                        owing most immediately to its more striking material appeal. Sales rose, eventually peaking at ten thousand copies per year, assuring the fortunes of <orgName corresp="#SMITHELDER">Smith, Elder</orgName> as a publisher. 
+                        (As a comparison, <orgName corresp="#ACKERMANN">Ackermann</orgName>&#x02BC;s <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title> in some years achieved twenty thousand. 
+                        See the account of <orgName corresp="#SMITHELDER">Smith, Elder, &#x0026; Company</orgName> in <ref type="bibliography" target="bibliography.php#SMITHDNB"><persName corresp="#BBELL">Bell</persName>, <title type="dictionary_entry" corresp="#SMITHDNB">&#x201C;Smith, George Murray</title> [<date notBefore="1824" notAfter="1901">1824&#x2013;1901</date>]&#x201D;</ref>, 
+                        the <title type="dictionary" corresp="#DNB"><hi rend="italic">DNB</hi></title> biography of the son of <persName corresp="#GS">George Smith</persName> (<date notBefore="1789" notAfter="1846">1789&#x2013;1846</date>), who founded the firm along with <persName corresp="#AE">Alexander Elder</persName> (<date notBefore="1790" notAfter="1876">1790&#x2013;1876</date>); 
+                        see also <ref type="bibliography" target="bibliography.php#FORDACKERMANN"><persName corresp="#JFORD">Ford</persName>, <title type="book" corresp="#FORDACKERMANN"><hi rend="italic">Ackermann</hi></title></ref>, 65.)</p>
+                        
+                        <!-- RESUME TAGGING --> <p><orgName corresp="#SMITHELDER">Smith, Elder</orgName> released their first volume of the annual in time for the <date notBefore="1827-11" notAfter="1828-01">1827&#x2013;28</date> holiday season. 
+                            The volume for <date when="1828">1828</date> was edited by <persName corresp="#CK">Charles Knight</persName> (<date notBefore="1791" notAfter="1873">1791&#x2013;1873</date>), 
+                            the future publisher for the <orgName corresp="#SDUK">Society for the Diffusion of Useful Knowledge</orgName>, who was then struggling to establish himself in <placeName corresp="#LONDON">London</placeName> publishing. 
+                            Slightly readjusting the balance that Hervey had tipped from annual to keepsake, the publisher expanded the subtitle from <hi rend="italic">A Literary Album</hi> to acknowledge the season with <hi rend="italic">A Literary Album, and Christmas and New Year&#x02BC;s Present</hi>; 
+                            at the same time, the keepsake element was enhanced with redesign of the presentation plate, which, as the Monthly Review appreciated, in some annuals "scarcely allowed" space "for the names of the 'donor' and 'donee' 
+                            . . . [b]ut here [gave] full room even for a verse or two of compliment" 
+                            (REVIEWANNUALS1828MONTHLY Unsigned review of <hi rend="italic">The Keepsake</hi> [1828], <hi rend="italic">Friendship&#x02BC;s Offering</hi> [1828], and <hi rend="italic">The Christmas Box</hi> [1828], 71). 
+                            The most striking change in the immediate impression made by the annual was effected by its <ref type="internal" target="#SMITHELDERBINDING">binding</ref>.</p>
+                        
+                        <p>The reviewer for the Monthly Review was impressed by the quality of illustration in Smith, Elder's first volume, 
+                            suggesting that the company had already earned its reputation for high-quality art reproduction: 
+                            the plates were "really very creditable to the publishers", their "subjects . . . selected with great judgment" and "engraved in a chaste, artist-like style" 
+                            (REVIEWANNUALS1828MONTHLY Unsigned review of The Keepsake [1828]; Friendship's Offering [1828]; and The Christmas-Box [1828], 71; see 
+                            <ref type="internal" target="#SMITHELDERILLUSTRATI0N">"Made Expressly for the Work": The Art Scene in the <orgName corresp="#SMITHELDER">Smith, Elder</orgName> Annual</ref>).</p>
+                        
+                        <div type="sub-subsection" xml:id="KNIGHT">
+                            <head type="sub-subsection">Charles Knight and the First <orgName corresp="#SMITHELDER">Smith, Elder</orgName> Volume</head>
+                              
+                        <p>The London Magazine praised the 1828 Friendship's Offering for its collective "cheerful gaiety", identifying its contributors as 
+                            "chiefly formed from a <hi rend="italic">set</hi> known to the world as the writers of the Etonian, one of the best books ever written by young men, 
+                            . . . their talents . . . of a calibre well adapted for an annual, brisk, painted, and polished". 
+                            The reviewer apparently referred to a short-lived school magazine, the <hi rend="italic">Etonian</hi> (1820-21), 
+                            which Knight had published, and which strictly applied only to a handful of the 1828 annual's male contributors--the poet 
+                            W. M. Praed (1802-39), who founded the Etonian, along with the Reverend John Moultrie (1799-1874). 
+                            Perhaps the reviewer meant to characterize the model of friendship that informed the anthology, 
+                            although another writer for the Monthly Review wanted to know who Moultrie was, and why the volume contained so many of his poems, "as bad as a dose of opium"
+                            (ANONTHEANNUALS &#x201C;The Annuals&#x201D; [unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> (1828), <hi rend="italic">The Winter&#x02BC;s Wreath</hi> (1828), <hi rend="italic">The Pledge of Friendship</hi> (1828), and <hi rend="italic">The Christmas Box</hi> (1828)], 56; 
+                            REVIEWANNUALS1828MONTHLY Unsigned review of <hi rend="italic">The Keepsake</hi> [1828], <hi rend="italic">Friendship&#x02BC;s Offering</hi> [1828], and <hi rend="italic">The Christmas Box</hi> [1828], 72; 
+                            and for expressions of collective schoolboy identification in Rugby and Eton magazines, including the Etonian, 
+                            in relation to pedagogy and Romantic poetry, see Weaver, "'A School-Boy's Story'").</p>  
+                            
+                        <p>If Knight took advantage of his connection with the Etonian "set", the larger roster of contributors suggests 
+                            that the editor and proprietors made a substantial investment in order to lure readers with celebrated names--Maria Edgeworth (1769-1849), 
+                            Thomas de Quincey (1785-1859), and the poet laureate, Robert Southey (1774-1843) <!--Other contributors to that maiden volume were well known to consumers of annuals, 
+                            but their range extended well beyond a "set" and represented of a diversity of readers' interests in the 1820s. 
+                            Besides the contributors already noted
+                            Reverend Lisle Bowles (1762-1850), poet and Pope editor; John Bowring, translator (1792-1872); 
+                        J. S. Buckingham (1786-1855) and J. A. St. John (1795-1875), travel writers; 
+                        Crofton Croker (1798-1854), antiquarian; Thomas Gaspey (1788-1871), political writer and novelist; 
+                        Barbara Hofland (1770-1844), children's writer; Thomas Hood (1799-1845), humorist; 
+                        Mary Russell Mitford (1787-1855), dramatist and story writer; D. Lester Richardson (1801-65) and Emma Roberts (1791-1840), writers on life in colonial India; and 
+                        poets Bernard Barton (1784-1849) John Clare (1793-1864), Allan Cunningham (1784-1842), 
+                        Felicia Hemans (1793-1835), L.E.L. (1802-38), and 
+                        Henry Neele (1798-1828), and C. F. Webbe (1789-1858)-->(<title type="advertisement" corresp="#SMITHELDERFRIENDSHIPSOFFERINGAD1828">"The Friendship&#x02BC;s Offering, for 1828" [advertisement]</title>). 
+                            For the illustration of this volume, which it seems likely that the proprietors managed, rather than Knight, see 
+                            <ref type="internal" target="#SMITHELDERILLUSTRATI0N">"Made Expressly for the Work": The Art Scene in the <orgName corresp="#SMITHELDER">Smith, Elder</orgName> Annual</ref>.</p></div>
+                    </div>
+                </div>
+            
+            
+            <div type="section">
+                <head type="section">Ruskin's Editors</head>
+                        
+                        <div type="subsection" xml:id="PRINGLE">
+                            <head type="subsection">The <persName corresp="#TP">Pringle</persName> Editorship</head>
+                        <p><persName corresp="#CK">Knight</persName> was succeeded by <ref type="note" subtype="biographical" target="pringle_thomas_note.php"><persName corresp="#TP">Thomas Pringle</persName></ref>, 
+                            who within five years would undertake editing of <persName corresp="#JR">Ruskin</persName>'s poetry and introduce him to the fashionable literary world as the author &#x201C;<persName type="pen_name" corresp="#JR">J.R.</persName>&#x201D; 
+                            in the Friendship's Offering for 1835 (see "Saltzburg": Discussion). Apparently before this time, Pringle had become a regular dinner guest of the Ruskins at Herne Hill, 
+                            though in what year is unknown; the acquaintance may have been struck as early as autumn 1829, the season of Pringle's second volume of Friendship's Offering, 
+                            when Ruskin's cousin, <!-- link to bio note -->Charles Richardson, was employed as a shop boy for Smith, Elder 
+                            (see also <ref type="note" subtype="bibliographical" target="annuals_note.php#PERSONALCONNECTIONS">Annuals and Other Illustrated Books: The Annuals and the Ruskin Family</ref>).</p>
+                            
+                            <div type="sub-subsection" xml:id="SCOTTISHNESS">
+                                <head type="sub-subsection">Pringle and Scottishness</head>
+                                <p>Pringle was a native Scot like John James Ruskin as well as the publishers of Friendship's Offering, 
+                                    George Smith and Alexander Elder. When Pringle took over the editorship of the annual, 
+                                    he was recently returned from <placeName corresp="#SOUTHAFRICA">South Africa</placeName>, 
+                                    where, with a party of other Scots, he had emigrated in search of opportunities in the Cape Colony, 
+                                    which Britain had acquired as a possession in the Congress of Vienna. 
+                                    He returned to England with disappointed hopes, but with exotic experience to be made into poetry as well as a passion for the abolitionist cause. 
+                                    It was doubtless his earlier literary connections in Edinburgh, however, with figures no less auspicious than Walter Scott, 
+                                    <!-- link to bio note -->James Hogg, and others, that made him a welcome guest at Herne Hill.</p>
+                                
+                                <p>Pringle brought to his first volume of Friendship's Offering a noticeable Caledonian emphasis. 
+                                    Under Knight, the annual for 1828 featured a handful of Scottish contributors. 
+                                    Under Pringle, the volume for 1829 presented over thirty contributions by Scots--more than a third of the total--including such poems as 
+                                    <title type="poem" corresp="GIBSONCORONACH">"The Highland Hunter's Coronach"</title>, <title type="poem" corresp="KENNEDYLEAVINGSCOTLAND">"On Leaving Scotland"</title>, and 
+                                    "Auld Joe Nicholson's Bonny Nannie: A Sang"; and such tales as "The Covenanters: A Scottish Traditionary Tale". 
+                                    Scottish landscapes are also prominent among the engravings (see 
+                                    <ref type="internal" target="#SCOTTISHLANDSCAPES">Pringle's Scottish Landscapes</ref>.</p>
+                                
+                                <p>The Scotch emphasis was given contrasting reception by some reviewers in North Britain and South Britain. 
+                                    The Edinburgh Literary Journal proudly highlighted two annuals for 1829--Friendship's Offering 
+                                    and the Anniversary--that were "edited by Scotchmen" and showcased Scotch "names . . . shin[ing] most conspicuously in their tables of contents". 
+                                    Of the two, the Anniversary stood out most prominently for making "peculiar claims on the people of Scotland". 
+                                    Edited by the poet Allan Cunningham, and making its debut that year, the Anniversary presented what the reviewer admitted may be considered 
+                                    "an over degree of nationality" by "[o]ur Southern friends" (ANNUALS1829EDINBURGLITJNL "The Annuals for 1829", 5).</p>
+                                
+                                <p>Some southern journals did object, like La Belle Assembl&#x00E9;e, "that too many of the pieces" 
+                                    in Pringle's 1829 Friendship's Offering "derive their origin north of the Tweed", 
+                                    as well as presenting "somewhat too large proportion of what may be termed religious matter", which "can seldom be amalgamated successfully with the lighter effusions 
+                                    of the <hi rend="italic">Belles Lettres</hi>" (ANNUALS1829BELLEASSEMBLEE &#x201C;The Annuals for 1829&#x201D;, 197). 
+                                    Those two objections were connected more straightforwardly and stridently by the Monthly Review, 
+                                    which advised the Anniversary to rein in Scotch contributions since "a beautiful work of art" requires that 
+                                    "all the parts shall be in unison"; and without "mean[ing] to insinuate any dislike of the true Doric dialect, 
+                                    as it has been called, of Scotland", the reviewer urged that "in every instance the current language of England . . . prevail in the literature of the Annuals" 
+                                    (REVIEWANNUALS1829MONTHLY Unsigned review of The Anniversary [1829], The Amulet [1829], The Juvenile Forget Me Not [1829], and The Juvenile Keepsake [1829], 527, 530). 
+                                    From the first emergence of the annuals, the Monthly had treated these publications as "ministers of taste" from the metropolis to the provinces, 
+                                    and from England to the empire, conveying a unifying standard of taste 
+                                    (see <ref type="note" subtype="bibliographical" target="annuals_note.php#CHARACTER">Annuals and Other Illustrated Books: The Character and Reception of the Annuals</ref>).</p>
+                                
+                                <p>Historically, the Monthly Review historically set itself up as a gatekeeper not only of taste but also of prescriptive diction and grammar--a 
+                                    prescriptiveness that, from the journal's eighteenth-century beginnings, had taken aim especially at Scottish dialect, and all the more keenly so if the reviewer was himself a Scot 
+                                    (Percy, "Periodical Reviews and the Rise of Prescriptivism"). The journal was also known for a longstanding prejudice against religious "enthusiasm", 
+                                    an animus that, in the eighteenth century, was directed against Methodism (McInelly, "When Worlds Collide"). 
+                                    In 1829, the Monthly Review linked what it perceived as linguistic and religious parochialism in the Anniversary, singling out a contribution 
+                                    by the Church of Scotland clergyman, Edward Irving (1792-1834), which the reviewer characterized as given to a 
+                                    "'puritanic . . . phraseology, which literary persons belonging to that sect are too much in the habit of using on all occasions". 
+                                    In contrast, as an example of "neatly written essays on popular subjects", reviewer quoted at length from another piece in the volume 
+                                    "on the Female Beauty of the Three Kingdoms", which discovers ecumenically that female beauty is independent of nation, being found wherever 
+                                    "gentleness of . . . [woman's] nature and the kindliness of her heart throw a household halo around her person" 
+                                    (REVIEWANNUALS1829MONTHLY Unsigned review of The Anniversary (1829), The Amulet (1829), The Juvenile Forget Me Not (1829), and The Juvenile Keepsake (1829), 526, 528; 
+                                    and see M., "English, Scotch, and Irish Beauty", in Cunningham, ed., The Anniversary, 201-5, 205).</p>
+                                
+                                <p>Editors of annuals faced risks in presenting any perceivable excess that reviewers might argue as deranging the aesthetic 
+                                    that the Monthly's reviewer characterized as a "beautiful . . . unison". At the same time, reviewers complained routinely 
+                                    about the overall blandness and uniformity of the annuals, especially as the market grew increasingly competitive with new titles added each year (see the 
+                                    <title type="bibliography_text" corresp="#HARRISINDEXANNUALS">&#x201C;Chronological Index of British and American Literary Annual Titles&#x201D;</title> in 
+                                    <ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT2015"><persName corresp="#KDH">Harris</persName>, <title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title></ref>, 280-85). 
+                                    Cunningham, or his publisher, ceased publication of the Anniversary in the midst of compiling only its second volume (Cunningham's 
+                                    biographer blamed the publisher's unsettled plans [Hogg, Life of Allan Cunningham, 332]), but Pringle survived criticism 
+                                    of the lopsided Scottish contributions to Friendship's Offering. Although recognized as "one of Scotland's true tuneful sons" by 
+                                    Blackwood's Edinburgh Magazine--the reviewer admitting that the Scotch emphasis that Pringle imparted to Friendship's Offering (for 1830) 
+                                    brought out, "of all our critical qualities, nationality . . . [as] the chief" (MONOLOGUEONANNUALS "Monologue", 967)--Pringle himself 
+                                    avoided any such direct credit or imputation, claiming in his preface to the annual (for 1829) 
+                                    to have "promote[d] . . . a sound and liberal national taste". Alongside the many pieces about Scotland, 
+                                    he took care to include an "Irish Tale", "A German Legend", a tale of "an old Frenchman of the time of Louis XIV", 
+                                    and--in a broadly unifying spirit--an "Ode on the Death of Queen Charlotte" by Southey, the English poet laureate. 
+                                    In 1829, George III's queen had been dead for a decade, but her image retained its currency for the annuals in the same spirit 
+                                    with which the Monthly Review admired the Anniversary's essay on the universality of female virtues: 
+                                    all "future Queens [shall] to her / As to their best exemplar look", the poet predicted, 
+                                    since, thanks to Charlotte, "At Court, the Household Virtues had their place" 
+                                    (<ref type="bibliography" target="bibliography.php#FRIENDSHIPSOFFERING1829"><persName corresp="#TP">Pringle</persName>, ed., <title type="annual" corresp="#FRIENDSHIPSOFFERING1829"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> [<date when="1826">1829</date>]</ref>, vi, 191, 93, 56, 106-7; 
+                                    and for more on British nationalism in reviews of the annuals, see <title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title>, 211-14).</p>
+                                
+                            <p>Perhaps as a result of these precautions, even the Monthly, for all its militancy for unifying the empire under English taste, 
+                                could allow Pringle the compliment of exerting "the influence of an individual mind" over his annual. The reviewer did not refer 
+                                to the annual's Caledonian flavor specifically but to a warmth that lives up to the annual's title--a "pervading spirit . . . of a deep and heart-stirring benevolence; 
+                                not wanting an occasional mixture of deeper passion, but for the most part breathing of freedom, and of the all-glorious sentiment of devotion to the cause of universal happiness"
+                                (REVIEWANNUALS1830MONTHLY Unsigned review of Friendship's Offering [1830], etc., 437).
+                                The boon of Scottishness that Pringle brought to the annual was a perception that it could be played into memory which was upheld by poesy. Barton, Epistle.</p></div>
+                        </div>
+                        
+                                <div type="subsection" xml:id="HARRISON">
+                            <head type="subsection">The <persName corresp="#WHH">Harrison</persName> Editorship</head>
+                            <p>[To come.]</p></div>
+                    </div>
+                
+            <div type="section" xml:id="ILLUSTRATION">
+                <head type="section">Illustration</head>
+                <p>The pictorial "embellishments" of the annuals were as significant as their literary content, if not more so. As the Monthly Review remarked, 
+                                critical scrutiny of the annuals was justified by their literary content, which, although "fugitive and trifling . . . in some instances", was worth 
+                                "the attention of a journal which professes to watch the intellect of the country"; however, it was the annuals' pictorial content that 
+                                placed the annuals in "a class by themselves, which enables us to judge . . . of the progress made amongst us, not only in literary composition, but in the arts" 
+                                (REVIEWANNUALS1829MONTHLY Unsigned review of <hi rend="italic">Forget Me Not</hi> [1829], <hi rend="italic">The Winter&#x02BC;s Wreath</hi> [1829], <hi rend="italic">The Gem</hi> [1829], <hi rend="italic">The Literary Souvenir</hi> [1829], and <hi rend="italic">Friendship&#x02BC;s Offering</hi> [1829], 377-78; and see 
+                    <ref type="note" subtype="bibliographical" target="annuals_note.php#STEELENGRAVING">Annuals and Other Illustrated Books: Steel Engraving</ref>).</p>
+                
+                <p>In Friendship's Offering, from Relfe's volumes to Smith, Elder's, the number of "embellishments" per volume remained twelve or thirteen, including the frontispiece and presentation plate, 
+                            which form part of the frontmatter. (A <hi rend="italic">presentation plate</hi> is an engraved title page with a blank cartouche, in which the giver or owner could 
+                                inscribe a name or brief message.) Although some annuals competed by offering more embellishments, a dozen or so was typical of other annuals besides Friendship's Offering, 
+                                presumably because the number of plates was limited not only by the expense of commissioning artists and engravers but also by the availability of space between text signatures for insertion of plates. 
+                            While the number of plates remained steady over the life of Friendship's Offering, some differing phases can be detected in approaches to the Sister Arts, 
+                            and in tastes of the times and editors. (The following account remains in process.)</p>
+                <div type="subsection" xml:id="POETRYOFSISTERARTS">
+                    <head type="subsection">The Poetry of the Sister Arts in the <orgName corresp="#RELFE">Relfe</orgName> Annual</head>
+                                
+                                <p>Relfe's 1826 volume is instructive in its pairings of picture and poem, 
+                                    which reflect the English Romantic-era transformation of the <hi rend="italic">ut pictura poesis</hi> aesthetic, 
+                                    when the worn pictorialism of the eighteenth century was abandoned 
+                                    in favor of a view of the Sister Arts as "twin facets of a unified poetic experience" 
+                                    (Park, "'Ut Pictura Poesis': The Nineteenth-Century Aftermath", 156). 
+                                    A shared poetic experience is testified by ekphrastic poems in volume 26, 
+                                    as in a poem accompanying a Claude's 
+                                    Landscape with the Marriage of Isaac and Rebecca (1648, 
+                                    acquired for the National Gallery in 1824, as part of the Angerstein Collection). 
+                                    The speaker declines to engage in rivalry with the painter--the contest of the Renaissance paragone--instead proffering a shared poetic language: 
+                                    "I feel / No envy of thy noble art, / . . . which, unto outward sense, / Speaks in a language so refined" 
+                                    (Bernard Barton, "'Am I, Too, in Arcadia?'", in 
+                                    <ref type="bibliography" target="bibliography.php#FRIENDSHIPSOFFERING1826"><persName corresp="#TKH">Hervey</persName>, ed., <title type="annual" corresp="#FRIENDSHIPSOFFERING1826"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> [<date when="1826">1826</date>]</ref>, 47-48).</p>
+                                
+                                <p>In the same volume, an engraving evoking the art of painting--<title type="artwork" corresp="BERGERETRAPHAELONHISDEATHBED"><hi rend="italic">Honors Rendered to Raphael on his Deathbed</hi></title> (1806), 
+                                    based on a work by the French painter in the Troubadour style, Pierre Nolasque Bergeret (1782-1863)--called 
+                                    for a response unifying the Sister Arts by the poet, L.E.L: 
+                                    despite the "face of death" imprinted on the figure of Raphael, which is "paler and colder than the marble bust", 
+                                    the poet looks to the artist's "soul", which remains undiminished, "leav[ing] its influence on the heart!" 
+                                    (L.E.L., "Raphael's Death-Bed", 
+                                    in <ref type="bibliography" target="bibliography.php#FRIENDSHIPSOFFERING1826"><persName corresp="#TKH">Hervey</persName>, ed., <title type="annual" corresp="#FRIENDSHIPSOFFERING1826"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> [<date when="1826">1826</date>]</ref>, 73-75). 
+                                    The shared poetic emotion plays into the memorializing that is stock-in-trade of the literary and artistic annual </p>
+                                
+                                <p>The unifying poetic emotion  of the Sister Arts was especially associated with the artist commissioned for the frontispiece, 
+                                    Richard Westall (1765-1836), known for his illustrations of Romantic-era poetry 
+                                    and his evocative portraits of Byron. As an 1824 tribute to Westall effused, 
+                                    he was an ideal portraitist of Byron since "Thou saw'st the poet, with a poet's eye, / 
+                                    And hence a poet's mind could well descry, / For thou, to graphic genius not confin'd, / Can'st boast the pow'rs of a poetic mind" 
+                                    (John Taylor [1757-1832], "Lines on the Portrait of the Late Lord Byron, Painted by Richard Westall, Esq. RA", 
+                                    quoted in Westall, "Richard Westall's Labours of Love", 60). 
+                                    In this case, the artist's poetic reputation perhaps counted for more with readers than the intrinsic merit of his illustrations, which were feeble for this volume.</p>
                     
-                    <p>The success of <orgName corresp="#SMITHELDER">Smith, Elder</orgName>&#x02BC;s venture appears to have hinged on a striking physical presentation of binding and printing and on the appeal of the illustrations.
-                        The first volume of <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> under the new proprietorship received a complimentary notice in  
-                        <title type="periodical" corresp="#MIRROROFLITERATURE"><hi rend="italic">The Mirror of Literature, Amusement, and Instruction</hi></title>, 
-                        the review focusing first on the &#x201C;exterior, which is somewhat novel in taste, . . . by substituting for the usual paper covering 
-                        [i.e., like the printed paper boards then covering the <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title>], an elegantly embossed leather binding. 
-                        This is altogether an improvement on the original plan, since the slight coverings of silk or paper is scarcely safe out of the drawing&#x2010;room or boudoir, 
-                        and some of the contributions to the &#x2018;annuals&#x2019; entitle them to a higher stand&#x201D;
-                        (<ref type="bibliography" target="bibliography.php#SPIRITOFTHEANNUALS"><title type="periodical" corresp="#MIRROROFLITERATURE">&#x201C;Spirit of &#x2018;The Annuals&#x2019; for 1828&#x201D;</title></ref>, 418). 
-                        By the &#x201C;original plan&#x201D;, the writer refers apparently to the binding used by <persName corresp="#LRPUBLISHER">Relfe</persName>, 
-                        which consisted of glazed paper boards, printed with a decorative and typographic cover, in imitation of the binding for the <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title> 
-                        (the latter already moving to silk; see <ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT2015"><persName corresp="#KDH">Harris</persName>, <title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title></ref>, 133).
-                        The new binding of <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> featured an arabesque design that was blind embossed into the full surface of the dark leather cover, 
-                        with a lyre design blocked in gilt in the center of the front cover. As <persName corresp="#EJ">Eleanore Jamieson</persName> remarks in 
-                        <ref type="bibliography" target="bibliography.php#JAMIESONBINDINGSTYLES"><title type="essay"  corresp="#JAMIESONBINDINGSTYLES">&#x201C;The Binding Styles of the Gift Books and Annuals&#x201D;</title></ref>, 
-                        the arabesque pattern was regarded as a revival style hearkening to the early book, 
-                        and the style was associated with Continental models
-                        (p. 11; and see <ref type="note" subtype="bibliographical" target="annuals_note.php">Annuals and Other Illustrated Books</ref>).</p>
+                    <!--<p>For later treatments of the poetry of the Sister Arts, see James Montgomery, "The First Leaf of an Album" 
+                        <ref type="bibliography" target="bibliography.php#FRIENDSHIPSOFFERING1829"><persName corresp="#TP">Pringle</persName>, ed., <title type="annual" corresp="#FRIENDSHIPSOFFERING1829"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> [<date when="1829">1829</date>]</ref>, 1-2).</p>-->
+                </div>
+                
+                <div type="subsection" xml:id="RELFEFRENCHILLUSTRATI0N">
+                    <head type="subsection">A Reflection of the Contest between the British Picturesque Aesthetic and French Neoclassicism</head>
+                
+                                
+                                <p>Besides participating in the "poetic" discourse of the Sister Arts that was typical of the period, 
+                                    the volume for 1826 also reflects the division at the time between British and French aesthetics. 
+                                    While the influence of this debate over the annual's commissions may have been adventitious, 
+                                    a signal outcome was the valume's beautiful final plate, 
+                                    based on <title type="artwork" corresp="#BONINGTONROUENFROMBONSECOURS"><hi rend="italic">Rouen, View from Bon-Secours</hi></title> 
+                                    by Richard Parkes Bonington (1802-28) 
+                                    (see Noon, Richard Parkes Bonington: The Complete Paintings, 121 [no. 57]). Not only was this picturesque view a reflection of current debate in the art world; 
+                                    it was also, as advertised on the plate, engraved on steel, placing Friendship's Offering in the vanguard of a development that had 
+                                    been introduced only in the previous year by Ackermann's Forget Me Not for 1825, 
+                                    and in the current year by Alaric Watts's Literary Souvenir for 1826 
+                                    (see <ref type="note" subtype="bibliographical" target="annuals_note.php#STEELENGRAVING">Annuals and Other Illustrated Books: Steel Engraving</ref>). 
+                                    Watts's volume featured a landscape by Turner, Richmond Hill, which, like Bonington's, presented a river prospect from a high vantage. 
+                                    The rivalry between the annuals thus reflected the aspirations of the young French Romantic artists who, at this time, were visiting London 
+                                    to study the modern British landscape school.</p>
                     
-                    <p>The annuals dueled to be judged by their covers, the <orgName corresp="#ACKERMANN">Ackermann</orgName> firm&#x02BC;s <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title> having set an initial standard with its printed and glazed paper boards, 
-                        cloth spine, and slipcase, later replaced by a silk cover 
-                        (<ref type="bibliography" target="bibliography.php#FORDACKERMANN"><persName corresp="#JFORD">Ford</persName>, <title type="biography" corresp="#FORDACKERMAN"><hi rend="italic">Ackermann</hi></title></ref>, 65).  
-                        Innovation and extravagance&#x2014;or at least the appearance of extravagance&#x2014;in bindings and engraved or lithographed front matter became characteristic of annuals, 
-                        which used this immediate source of appeal to compete in a crowded market 
-                        (see <ref type="bibliography" target="bibliography.php#FAXONLITERARYANNUALS">Faxon, <title type="bibliography" corresp="FAXONLITERARYANNUALS"><hi rend="italic">Literary Annuals</hi></title></ref>, xiv&#x2013;xvi). 
-                        Mechanization brought these material appeals within reach of the ordinary consumer; and mass-produced fancy bindings in particular 
-                        shifted traditional division of labor, since publishers took on this burden, which conventionally was borne by the consumer.
-                        <persName corresp="#KDH">Harris</persName> also speculates that the annuals&#x02BC; elaborately embossed leather covers echoed the only other expensively 
-                        bound stock that retailers typically offered over the counter (as opposed to cheap temporary bindings, to be replaced by the consumer)&#x2014;prayer books and bibles&#x2014;and 
-                        therefore these &#x201C;gospel&#x2010;like bindings&#x201D; may have been meant &#x201C;to convince the reading public of the wholesome value of the literature and engravings within&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT2015"><title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title></ref>, 131, 133&#x2013;34). 
-                        Perhaps the <title type="periodical" corresp="#MIRROROFLITERATURE"><hi rend="italic">Mirror of Literature</hi></title>&#x02BC;s comment that the sturdier cover 
-                        of <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> matched its more substantial content inside, capable of subsisting beyond the boudoir, 
-                        gestured at an audience that included, not just male readers, but the entire family gathered in the parlor.</p>
+                    <p>R. P. Bonington, the son of an &#x00E9;migr&#x00E9; British artist living in France, received his training in the atelier 
+                                    of Baron Antoine-Jean Gros (1771-1835). To a neoclassicist such as Gros and the influential artist and critic &#x00C9;tienne Del&#x00E9;cluze (1781-1863), 
+                                    the coastal scenery of Normandy and the Gothic architecture of Rouen, which possessed a special attraction for Bonington, 
+                                    seemed random and meaningless when scaled against the traditional ordering of the Sister Arts, 
+                                    which elevated historical and religious subjects above classical landscape--much less above the local, provincial scenes that attracted British artists. 
+                                    Yet, to the alarm of those who defended the tradition of Jacques-Louis David (1748-1825), these picturesque subjects then growing in popularity also in France. 
+                                    French critics also associated the picturesque with the loose style of British artists, 
+                                    such as the textured brushstrokes of John Constable's landscapes and the broken lines <!-- link to note -->Samuel Prout's architectural drawing. 
+                                    (Prout likewise sketched in Normandy.) 
+                                    The seeming disregard for finish by British painters violated the priority that neoclassicism awarded to disegno, 
+                                    the conceptual emphasis on design, line, and form 
+                                    (Noon, Richard Parkes Bonington: The Complete Paintings, 14-18).</p>
+                                
+                                <p>Nonetheless, English style had recently gained impetus in France from the success of Constable, Copley Fielding, and other British painters 
+                                    at the Paris Salon of 1824. Fired by enthusiasm for British landscape art and for the naturalistic approach it represented, 
+                                    Bonington visited London in 1825, in the company of Alexandre-Marie Colin (1798-1875), 
+                                    Eug&#x00E8;ne Delacroix (1798-1863), and other young French artists in the vanguard of French Romanticism. 
+                                    As contacts in London, Bonington relied on engravers, including the <!--link to note-->Cooke family, known for their reproduction of work by J. M. W. Turner 
+                                    (Noon, Richard Parkes Bonington: The Complete Paintings, 34-35).  
+                                    It was a younger member of that family, William John Cooke (1796-1865), 
+                                    who was responsible for engraving Bonington's Rouen on steel--the technology that made mass production of pictures in the annuals practicable. 
+                                    Cooke brought state-of-the-art skill to the commission, 
+                                    earning a medal in 1826 for his improvements in etching steel 
+                                    (Hunnisett, Steel-engraved Book Illustration in England, 48-49; Munday, Edward William Cooke, 37-38).</p>
+                                
+                                <p>Figure compositions by French artists in volume 26 likewise reflected the current tensions between neoclassicism and Romanticism. 
+                                    In two plates based on paintings by Horace Vernet (1789-1863), 
+                                    The Dog of the Regiment and The Dead Trumpeter, 
+                                    battlefield scenes combine with genre, featuring the loyalty of domestic animals amid the carnage of war. 
+                                    In poems paired with the scenes, T. K. Hervey constructs memories of home for the animals' fallen masters. 
+                                    For Del&#x00E9;cluze, Vernet's Salon pictures, on which engravings like these were based, represented a confusion of genre and history painting, 
+                                    which threatened the conceptual basis of grande peinture (Doyle, "Bad Manners vs. Good <hi rend="italic">Maniera</hi>", 140). 
+                                    Worse, Vernet disseminated a taste for such mixed subjects by embracing contemporary forms of art reproduction, 
+                                    such as lithography and aquatint, which challenged the authority given to line engraving by the French Academy 
+                                    (Bann, "Horace Vernet and Paul Delaroche", 230-31; and on the broader context of these debates see 
+                                    Noon, Richard Parkes Bonington: The Complete Paintings, 24-30).</p>
                     
-                    <p>The other notable source of <orgName corresp="#SMITHELDER">Smith, Elder</orgName>&#x02BC;s success, the quality of illustration, 
-                        was the special care of one partner in the young firm, <persName corresp="#AE">Alexander Elder</persName> (<date notBefore="1790" notAfter="1876">1790&#x2013;1876</date>). 
-                        According to <ref type="bibliography" target="bibliography.php#HUXLEYHOUSEOFSMITHELDER"><persName corresp="#LHUXLEY">Huxley</persName>, <title type="book" corresp="#HUXLEYHOUSEOFSMITHELDER"><hi rend="italic">House of Smith Elder</hi></title></ref>, 
-                        <persName corresp="#AE">Elder</persName> was interested in art, and aspired to produce elegantly illustrated publications (p. 10). 
-                        Illustration was key to the popularity of the annuals, as <persName corresp="#AE">Elder</persName> would have realized from the precedent set by <orgName corresp="#ACKERMANN">Ackermann</orgName>&#x02BC;s success. 
-                        The first issue of <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title> had featured a series of emblematic treatments of the twelve months, rendered in copper etching, 
-                        along with verses by <persName corresp="#WC">William Combe</persName> (<date notBefore="1742" notAfter="1823">1742&#x2013;1823</date>). 
-                        <persName corresp="#WC">Combe</persName> was well known as the author of 
-                        <title type="poem" corresp="#TOUROFDOCTORSYNTAX"><hi rend="italic">The Tour of Doctor Syntax, in Search of the Picturesque</hi></title> (<date when="1812">1812</date>, <date when="1820">1820</date>, <date when="1821">1821</date>), 
-                        a spoof illustrated by <persName corresp="#TR">Thomas Rowlandson</persName> (<date notBefore="1757" notAfter="1827">1757&#x2013;1827</date>). 
-                        This illustrated work ranked among the <orgName corresp="#ACKERMANN">Ackermann</orgName> firm&#x02BC;s greatest best&#x2010;sellers 
-                        (<ref type="bibliography" target="bibliography.php#FORDACKERMANN"><persName corresp="#JFORD">Ford</persName>, <title type="book" corresp="#FORDACKERMANN"><hi rend="italic">Ackermann</hi></title></ref>, 52&#x2013;60); 
-                        and by employing <persName corresp="#WC">Combe</persName> along with an illustrator on the new publication, <persName corresp="#RAP">Rudolph Ackermann</persName> 
-                        was probably striving to maintain this popularity.
-                    </p>
-                    <p>In some respects, however, the illustrated emblems of the months in <orgName corresp="#ACKERMANN">Ackermann</orgName>&#x02BC;s <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title> 
-                        looked backward to an <date notBefore="1701" notAfter="1800">eighteenth&#x2010;century</date> tradition, rather than forward to new fashions. Copper engraving 
-                        was soon to be displaced by more durable steel engraving, which would allow for much larger press runs; and the very inclusion of a monthly calendar hearkened 
-                        to the gift annual&#x02BC;s beginnings in the eighteenth&#x2010;century &#x201C;pocket book&#x201D; 
-                        (see <ref type="note" subtype="bibliographical" target="annuals_note.php">Annuals and Other Illustrated Books</ref>). 
-                        The second volume of <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title>, featured much more varied pictorial scenes (albeit with mausoleums predominating), 
-                        which were highlighted in the front matter by a list of plates 
-                        that stood separately from the literary table of contents. The dual tables of contents&#x2014;emblematic of the growing importance of visual culture in the early Victorian period&#x2014;remained typical of annuals thereafter 
-                        (see the facsimiles of <title type="archive" corresp="#HARRISFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title> available in 
-                        <ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT"><persName corresp="#KDH">Harris</persName>, ed., <title type="archive" corresp="#HARRISFORGETMENOT"><hi rend="italic">&#x201C;Forget Me Not&#x201D; Archive</hi></title></ref>).
-                    </p>
-                    <p>This is how <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title> stood in <date notBefore="1826" notAfter="1827">1826&#x2013;27</date>, when <persName corresp="#JR">Ruskin</persName>&#x02BC;s 
-                        aunt, <ref type="note" subtype="biographical" target="richardson_bridget_note.php"><persName corresp="#BR">Bridget Richardson</persName> (<date notBefore="1783" notAfter="1830">1783&#x2013;1830</date>)</ref>, 
-                        of <placeName corresp="#CROYDON">Croydon</placeName>, presented him with the volume for <date when="1827">1827</date>, containing <title type="artwork" corresp="#PROUTMONUMENTATVERONAIMAGE"><hi rend="italic">Monument at Verona</hi></title>, 
-                        by <ref type="note" subtype="biographical" target="prout_samuel_note.php"><persName corresp="#SP">Samuel Prout</persName> (<date notBefore="1783" notAfter="1852">1783&#x2013;1852</date>)</ref> 
-                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 35:91). 
-                        Engraved by <persName corresp="#EFF">Edward Finden</persName> (<date notBefore="1791" notAfter="1857">1791&#x2013;1857</date>), 
-                        this plate would have numbered among the early steel engravings produced by the <ref type="note" subtype="biographical" target="finden_brothers_note.php">Finden brothers</ref> 
-                        (see <ref type="bibliography" target="bibliography.php#HUNNISETTSTEELENGRAVED">Hunnisett, <title type="essay" corresp="#HUNNISETTSTEELENGRAVED"><hi rend="italic">Steel&#x2010;Engraved Book Illustration in England</hi></title></ref>, 84&#x2013;85). 
-                        <orgName corresp="#ACKERMANN">Ackermann</orgName>&#x02BC;s annual had now caught up with the technology of steel engraving for book illustration, 
-                        which proved key to the success of all the annuals. As compared with softer copper, which soon lost its edge in repeated impressions, 
-                        steel engraving made possible the mass production of images, and helped to satisfy the craving for pervasive, but affordable visual culture by the early&#x2010;Victorian middle class. 
-                        These developments coincided with <persName corresp="#AE">Alexander Elder</persName>&#x02BC;s ambitions for <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title>.
-                    </p>
+                                <p>Overall, volume 26 of Friendship's Offering would have been regarded by a traditionalist French critic as representative 
+                                    of how the commercialization of art through book illustration, and through such popular spectacles as the diorama, 
+                                    threatened a degeneration of the ideology propping up the traditional ordering of the arts.  
+                                    Even the volume's single example approaching Davidian neoclassicism (softened by color and eroticism), 
+                                    Aeneas Tells Dido the Misfortunes of the City of Troy, originated with 
+                                    Pierre-Narcisse Gu&#x00E9;rin (1774-1833), Vernet's friend and predecessor 
+                                    as director of the Acad&#x00E9;mie de France &#x00E0; Rome. 
+                                    The English writer for the Monthly Review considered Gu&#x00E9;rin's Aeneas "cold and stiff", 
+                                    but singled out Vernet's genre vignettes as "really . . . beautiful little piece[s]", 
+                                    which did "great credit" to the engraver, Edward Finden, 
+                                    as did the "clever" plate of Rouen engraved by Cooke 
+                                    (REVIEWANNUALS1826MONTHLY Unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> [1826] and <hi rend="italic">Janus</hi> [1826], 165). 
+                                    Fixated on print technologies, the Monthly Review sometimes identified <hi rend="italic">only</hi> the engravers, and not the artists, of plates in the annuals, as in the 
+                                    REVIEWANNUALS1827MONTHLY review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> for 1827 (p. 87).</p>
+                    
+                                <!--<p>1827 all English artists: Danby, Eastlake, J. M. Wright, Harding, W. Haines, DAvis, Martin, Meeting of Alexander and Diogenes, but engr by E Finden, reviewer says inferior to same picture in Souvenir. Overall superior to last year's but not equal to other annuals. Belle Assemble, 300, in "Miscellaneous" 296-304, Vol. 4 (July-Dec 1826), supplement issue</p>-->
+                            </div>
+                
+                            
+                            <div type="subsection" xml:id="SMITHELDERILLUSTRATI0N">
+                                <head type="subsection">"Made Expressly for the Work": The Art Scene in the <orgName corresp="#SMITHELDER">Smith, Elder</orgName> Annual</head>
+                            
+                                <p>See <ref type="note" subtype="biographical" target="smith_elder_note.php"><orgName corresp="#SMITHELDER">Smith, Elder, &#x0026; Company</orgName></ref> 
+                                    for the firm's ambitious early publications in engraving and aquatint. According to an early biographer of the firm, 
+                                    <persName corresp="#LHUXLEY">Leonard Huxley</persName>, art reproduction was the special care of <persName corresp="#AE">Alexander Elder</persName> (<date notBefore="1790" notAfter="1876">1790&#x2013;1876</date>), who was interested in art 
+                                    (<ref type="bibliography" target="bibliography.php#HUXLEYHOUSEOFSMITHELDER"><title type="book" corresp="#HUXLEYHOUSEOFSMITHELDER"><hi rend="italic">House of Smith Elder</hi></title></ref>, 10). 
+                                    Presumably, Elder would have been anxious to showcase the firm's expertise in their selection and presentation of the new annual's embellishments. 
+                                    The firm would also have needed to extend their expertise beyond engraving and aquatint to commission steel engraving (see 
+                                    <ref type="note" subtype="bibliographical" target="annuals_note.php#STEELENGRAVING">Annuals and Other Illustrated Books: Steel Engraving</ref>).</p>
+                            
+                            <p>As at least an appearance of shift in emphasis, Smith, Elder advertised that their debut volume would feature engravings taken from recently exhibited British paintings, 
+                                including art "painted expressly for the Work". The frontispiece for 1828, 
+                                <title type="artwork" corresp="#WOODSYLPH"><hi rend="italic">A Sylph</hi></title>, 
+                                reproduced a painting "exhibited at Somerset House, in 1827"--that is in the Royal Academy exhibiting rooms 
+                                (engraved by William Humphrys [1794-1865]; Knight, ed., <title type="advertisement" corresp="#SMITHELDERFRIENDSHIPSOFFERINGAD1828">"The Friendship&#x02BC;s Offering, for 1828" [advertisement]</title>). 
+                                The artist was a history painter, John Wood (1801-70), who had recently gained recognition at the Royal Academy for such works as 
+                                <title type="artwork" corresp="#WOODPSYCHECONVEYED"><hi rend="italic">Psyche Conveyed by Zephyrs to the Valley of Pleasure</hi></title> 
+                                (1826; Sir John Soane's Museum, London; see Cooper, "Wood, John [1801-1870]"). 
+                                In the following volume, for 1829, Wood created a frontispiece "expressly for this work",
+                                <title type="artwork" corresp="#WOODPSYCHEANDCUPID"><hi rend="italic">Psyche and Cupid</hi></title>
+                                (engraved by Edward Finden;<!-- bio note --> <ref type="bibliography" target="bibliography.php#FRIENDSHIPSOFFERING1829"><persName corresp="#TP">Pringle</persName>, ed., <title type="annual" corresp="#FRIENDSHIPSOFFERING1829"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> [<date when="1829">1829</date>]</ref>, viii).</p>
+                                
+                                <p>Wood's mildly erotic fancy pictures of classical subjects were not exclusive to Friendship's Offering, 
+                                    and his work continued to occupy frontispieces and other placements in Friendship's Offering for 1830 and afterward, 
+                                    without necessarily being puffed as "made expressly". Albeit an exaggeration, the decision by Smith, Elder 
+                                    to feature pictures from recent London exhibitions spoke to the attention that reviewers gave to annuals as a measure of 
+                                    "the intellect of the country". The same justification, it seems, lay behind the decision to give equal weight, 
+                                    in the list of embellishments for 1830, to the identification "in the collection of" as to "made expressly for" 
+                                    and "as exhibited at"--the patronage of collectors standing also as a measure of nation's intellect and wealth. 
+                                    For consumers like the Ruskins, studying the plates and their accompanying ekphrastic poems and essays 
+                                    raised their awareness of London exhibiting institutions and poetic tropes for responding to modern works.</p>
+                            </div>
+                
+                <div type="subsection" xml:id="SCOTTISHLANDSCAPES">
+                    <head type="subsection">Pringle's Scottish Landscapes</head>
+                    
+                    <p>For 1829, several embellishments reflect the Scottish emphasis that Pringle summmoned in the literary contributions 
+                        (see <ref type="internal" target="#PRINGLE">The Pringle Editorship</ref>). Following Wood's frontispiece, which both dignifies and feminizes the volume using a classical subject, 
+                        other plates pivot to landscape, introduced early and prominently with 
+                        <title type="artwork" corresp="#MARTINGLENLYNDEN"><hi rend="italic">Glen-Lynden</hi></title>, 
+                        a "landscape with ruins, designed and engraved for this work by John Martin". In 1829, Martin (1789-1854) 
+                        stood at the height of his fame for his panoramic paintings of apocalyptic biblical events; and since 1826, 
+                        he had been producing from his own studio the large mezzotints on steel that extended the audience for his popular paintings, 
+                        such as the prints Joshua Commanding the Sun to Stand Still (1827; painting first exhibited 1816); 
+                        and The Deluge (1828; painting first exhibited 1826). At the same time, 
+                        Martin was designing and producing small mezzotints for the annuals, publishing over twenty plates between 1826 and 1837 
+                        in the Amulet, the Literary Souvenir, and other annuals. Among the earliest of these small prints was 
+                        <title type="artwork" corresp="#MARTINGLENLYNDEN"><hi rend="italic">Glen-Lynden</hi></title> for Friendship's Offering 
+                        (Wees, "Darkness Visible", 3, 29-30, 33 [cat. no. 24]).</p>
+                    
+                    <p>Rendered in Martin's sublime style, <title type="artwork" corresp="#MARTINGLENLYNDEN"><hi rend="italic">Glen-Lynden</hi></title> 
+                        overwhelms its homely pairing, the poem "Glen-Lynden: A Tale of Teviotdale" by the volume editor, 
+                        whose persona humbles himself as the "last and lowliest of the train" of poets to pay "pious tribute" to "haunted Teviot", 
+                        "the loved mother he has left behind". Since his early "Autumnal Excursion" (1819), 
+                        Pringle preferred the traditional name <hi rend="italic">Teviotdale</hi> for the valley of the Teviot River near Kelso in Roxburghshire, 
+                        where he was born. The name <hi rend="italic">Glen Lynden</hi>, although used here for a fictional Border glen, 
+                        was in real life the name Pringle bestowed on the settlement in Cape Colony (Vigne, Thomas Pringle, 79). 
+                        In the posthumous edition of Pringle's poems, "Glen-Lynden" would be re-presented as a fragment of "The Emigrants" intended to incorporate 
+                        a fictionalized account of the immigration to South Africa. Standing alone, "Glen Lynden" could "call to mind / The scenes that Scottish hearts to their dear country bind" 
+                        even for those in "foreign lands" only as far as England like the Ruskins 
+                        (<ref type="bibliography" target="bibliography.php#FRIENDSHIPSOFFERING1829"><persName corresp="#TP">Pringle</persName>, ed., <title type="annual" corresp="#FRIENDSHIPSOFFERING1829"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> [<date when="1829">1829</date>]</ref>, 19).</p>
+                    
+                    <p>As if designed as a melancholy reminder specifically for the Ruskin family, the theme of Scottish landscape with ruins 
+                        continues in volume 29 with Campbell Castle, drawn by George Arnald (1763-1841), 
+                        supported by a poem by David Macbeth Moir ("Delta", 1798-1851) 
+                        (<ref type="bibliography" target="bibliography.php#FRIENDSHIPSOFFERING1829"><persName corresp="#TP">Pringle</persName>, ed., <title type="annual" corresp="#FRIENDSHIPSOFFERING1829"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> [<date when="1826">1829</date>]</ref>, 143-44). 
+                        The castle is located in the Ochil Hills, which the Ruskins passed through in their journeys north to visit the family of 
+                        John James's sister, Jessie Richardson, in Perth--journeys now curtailed by the deaths of Jessie and two of her children in 1826-28. 
+                                    <!-- place name plus link to note Glenfarg--></p>
+                                
+                           <!-- <p>however, the frontmatter seems designed to assure continuity with the genre of the literary album, highlighting the same Romantic-era adaptation of <hi rend="italic">ut pictura poesis</hi> 
+                            as found in Relfe's volume 26.  The frontispiece, "painted . . . expressly for this work", is a classical subject, 
+                            , just as volume 26 had gravitated to Old Masters. 
+                            The artist, "J. Wood", was probably the history painter . This gateway to the volume's sister-arts experience appears consistent with Smith, Elder's debut volume, for 1828, 
+                            which opened with "A Sylph <title type="periodical" corresp="#MIRROROFLITERATURE"><hi rend="italic">The Mirror of Literature, Amusement, and Instruction</hi></title> 
+                                described as "a chaste and classical specimen of a kind of gold enamel engraving" along with a figure entitled "A Sylph
+                            </p>-->
+                            
+                           <!-- <p>Beyond this initial staging of contemporary Academic art, a Scottish thread runs through the annual's engravings,</p> 
+                                
+                            <p>A figure piece on the Scottish theme is also a landscape</p>
+                            <p>1830 Pringle using South Africa material to protest slavery 30-39</p>
+                            
+                            <p>Turner in 1830 (between 26 and 29, with story Il Vesuviana</p>
+                            <p>Purser, "Spoleto" 1830 to accompany Pringle, "Spoleto", pastiche of travel accounts, but featuring extracts from travel notes by Rogers</p>-->
+                        </div>
+                        </div>
+                        
+                        <div type="section" xml:id="SMITHELDERBINDING">
+                            <head type="section">Binding</head>
+                      
+                            <p>The success of <ref type="note" subtype="biographical" target="smith_elder_note.php"><orgName corresp="#SMITHELDER">Smith, Elder</orgName>&#x02BC;s</ref> takeover 
+                                of <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> hinged in part on a daring innovation in binding, 
+                                which substituted full calf for the printed paper-covered boards that was typical of many annuals, including Forget-Me-Not. 
+                                The calf binding was blind-embossed on the full surface of both front and back covers with an arabesque design, 
+                                and with a lyre design blocked in gilt in the center of the front cover. As <persName corresp="#EJ">Eleanore Jamieson</persName> explains in 
+                                <ref type="bibliography" target="bibliography.php#JAMIESONBINDINGSTYLES"><title type="essay"  corresp="#JAMIESONBINDINGSTYLES">&#x201C;The Binding Styles of the Gift Books and Annuals&#x201D;</title></ref> (p. 11), 
+                                the <hi rend="italic">arabesque</hi> pattern was regarded as a revival style hearkening to incunabula, and the style was associated with Continental models 
+                                (see also <ref type="note" subtype="bibliographical" target="annuals_note.php#BINDING">Annuals and Other Illustrated Books: Bindings</ref>).</p>
+                            
+                            <p>The annuals dueled to be judged by their covers, the <orgName corresp="#ACKERMANN">Ackermann</orgName> firm&#x02BC;s <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title> having set an initial standard with its printed and glazed paper boards, 
+                                cloth spine, and slipcase, later replaced by a silk cover 
+                                (<ref type="bibliography" target="bibliography.php#FORDACKERMANN"><persName corresp="#JFORD">Ford</persName>, <title type="biography" corresp="#FORDACKERMAN"><hi rend="italic">Ackermann</hi></title></ref>, 65).  
+                                Innovation and extravagance&#x2014;or at least the appearance of extravagance&#x2014;in bindings and engraved or lithographed front matter became characteristic of annuals, 
+                                which used this immediate source of appeal to compete in a crowded market 
+                                (see <ref type="bibliography" target="bibliography.php#FAXONLITERARYANNUALS">Faxon, <title type="bibliography" corresp="FAXONLITERARYANNUALS"><hi rend="italic">Literary Annuals</hi></title></ref>, xiv&#x2013;xvi). 
+                                Mechanization brought these material appeals within reach of the ordinary consumer; and mass&#x2010;produced fancy bindings in particular 
+                                shifted traditional division of labor, since publishers took on the economic burden of bookbinding, which conventionally had been borne by the consumer.</p>
+                            
+                            <p><persName corresp="#KDH">Harris</persName> also speculates that the annual&#x02BC;s elaborately embossed leather covers suggested the bindings of prayer books and bibles&#x2014;the only other expensively 
+                                bound stock that retailers typically offered over the counter (as opposed to cheap temporary bindings, to be replaced by the consumer). 
+                                These &#x201C;gospel&#x2010;like bindings&#x201D; may have been meant &#x201C;to convince the reading public of the wholesome value of the literature and engravings within&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT2015"><persName corresp="#KDH">Harris</persName>, <title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title></ref>, 131, 133&#x2013;34). 
+                                A perception of wholesomeness may be borne out by a favorable notice of the 1829 volume in 
+                                <title type="periodical" corresp="#MIRROROFLITERATURE"><hi rend="italic">The Mirror of Literature, Amusement, and Instruction</hi></title>, 
+                                which focused first on the &#x201C;exterior, which is somewhat novel in taste, . . . by substituting for the usual paper covering 
+                                [i.e., like the printed paper boards then covering the <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title>], 
+                                an elegantly embossed leather binding. This is altogether an improvement on the original plan, since the slight coverings of silk or paper 
+                                is scarcely safe out of the drawing&#x2010;room or boudoir, and some of the contributions to the &#x2018;annuals&#x2019; entitle them to a higher stand&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#SPIRITOFTHEANNUALS"><title type="periodical" corresp="#MIRROROFLITERATURE">&#x201C;Spirit of &#x2018;The Annuals&#x2019; for 1828&#x201D;</title></ref>, 418). 
+                                By the &#x201C;original plan&#x201D;, the writer refers apparently to the binding used by <persName corresp="#LRPUBLISHER">Relfe</persName>, 
+                                which consisted of glazed paper boards, printed with a decorative and typographic cover, in imitation of the binding used for the <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title>, 
+                                but he also refers to the silk covering already being adopted by <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title> 
+                                (see <ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT2015"><persName corresp="#KDH">Harris</persName>, <title type="book" corresp="#HARRISFORGETMENOT2015"><hi rend="italic">Forget Me Not</hi></title></ref>, 133). 
+                                The comment apparently gestures at an audience expanded beyond the "boudoir" to include male readers along with the entire family.</p>
+                            
+                            <p>According to a review of the first <orgName corresp="#SMITHELDER">Smith, Elder</orgName> volume, for 1828, it was "for the gratification of different tastes", however, 
+                                that "the colour . . . [was] varied" (ANNUALS1828BELLEASSEMBLEE "The Annuals for 1828", 193). Maroon is the most common color found among surviving copies today, 
+                                suggesting that most consumers chose an appearance of respectability; however, a brighter red and possibly a green can still be found as well.</p>
+
+                    <!--
                     <p><orgName corresp="#SMITHELDER">Smith, Elder</orgName>&#x02BC;s <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> benefited by these early, rapid developments in the annual as a commodity. 
-                        Its binding was more sumptuous, and the engraving sharper and more consistent. At the same time, 
-                        a comparison of <orgName corresp="#SMITHELDER">Smith, Elder</orgName>&#x02BC;s product with the volumes published by the annual&#x02BC;s creator, <persName corresp="#LRPUBLISHER">Relfe</persName>, 
-                        suggests that the new firm attempted to keep the interior uniform with earlier volumes, at least initially. 
-                        <orgName corresp="#SMITHELDER">Smith, Elder</orgName> did expand the title, however, from <orgName corresp="#RELFE">Relfe</orgName>&#x02BC;s <title type="anthology" corresp="RELFEFRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering: A Literary Album</hi></title> to 
+                        Its binding was more sumptuous, and the engraving sharper and more consistent. To mark these improvements, <orgName corresp="#SMITHELDER">Smith, Elder</orgName> expanded the subtitle, 
+                        from <orgName corresp="#RELFE">Relfe</orgName>&#x02BC;s <title type="annual" corresp="RELFEFRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering: A Literary Album</hi></title> to 
                         <hi rend="italic">Friendship&#x02BC;s Offering: A Literary Album and Annual Remembrancer</hi> and <hi rend="italic">A Literary Album, and Christmas and New Year&#x02BC;s Present</hi>.  
                         In <date when="1833">1833</date>, the title changed again, the annual having absorbed another existing publication, <hi rend="italic">Winter&#x02BC;s Wreath</hi>, 
                         which had been published in <placeName corresp="#LIVERPOOL">Liverpool</placeName> since <date when="1828">1828</date>. This merger resulted in the title, 
                         <hi rend="italic">Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath</hi> (so the title appears on the typeset title page; 
                         for a time, the engraved frontispiece with the earlier title remained in production). 
                         This latest title was in use when <persName corresp="#JR">Ruskin</persName> first appeared in the annual, in the issue, 
-                        <title type="annual" corresp="#FRIENDSHIPSOFFERING1835"><hi rend="italic">Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath: A Christmas and New Year&#x02BC;s Present for <hi rend="smallcaps">MDCCCXXXV</hi></hi></title>.
-                    </p>
-                </div>
-                <!--DCH start here -->
-                <div type="section" xml:id="PERSONALCONNECTIONS">
-                    <head type="section">Early Personal Connections with the Ruskin Family and the Editorship of <persName corresp="#TP">Thomas Pringle</persName></head>
-                    <p>The founders of <ref type="note" subtype="biographical" target="smith_elder_note.php"><orgName corresp="#SMITHELDER">Smith, Elder, &#x0026; Company</orgName></ref>, 
-                        <persName corresp="#GS">George Smith</persName> (<date notBefore="1789" notAfter="1846">1789&#x2013;1846</date>) and <persName corresp="#AE">Alexander Elder</persName> (<date notBefore="1790" notAfter="1876">1790&#x2013;1876</date>), were Scotsmen;               <p>It is interesting that an eighteen&#x2010;year&#x2010;old youth, <persName corresp="#JR">Ruskin</persName>&#x02BC;s cousin, <persName corresp="#CTR">Charles</persName>, deemed it appropriate to present a younger boy, aged ten, with <hi rend="italic">Friendship&#x02BC;s Offering</hi> as a gift. 
-                        It is even more surprising that <persName corresp="#JR">Ruskin</persName>&#x02BC;s aunt made him a gift of <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title> when he was only eight. Annuals were usually characterized as an appropriate gift for women, 
-                        whereas the so&#x2010;called &#x201C;juvenile&#x201D; annuals formed a distinct commodity for children. <persName corresp="#JR">Ruskin</persName>&#x02BC;s mother, <persName corresp="#MR">Margaret</persName>, 
-                        reacted to <persName corresp="#CTR">Charles</persName>&#x02BC;s gift with disapproval of the publication&#x02BC;s poor educational influences: &#x201C;The plates are well done but they are not interesting[;] 
-                        the tales are horrible enough[;] the poetry very so so I think[;]<!-- stet repeated "so" -->
-                            upon the whole it does not improve&#x201D; (<ref type="apparatus" target="mr_to_jjr_1829-10-31_al_apparatus.php"><title type="letter" corresp="mr_to_jjr_1829-10-31">letter of <date when="1829-10-31">31 October 1829</date></title></ref> [<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 208]). 
-                        In <title type="book" corresp="#PRAETERITA"><hi rend="italic">Praeterita</hi></title>, <persName corresp="#JR">Ruskin</persName> read the gift as prompted by <persName corresp="#CTR">Charles</persName>&#x02BC;s pride 
-                        in the material sumptuousness that his employers had bestowed on their newly acquired title: <persName corresp="#CTR">Charles</persName> 
-                        &#x201C;took personal pride in everything produced by the firm,&#x201D; as Ruskin believed &#x201C;all right&#x2010;minded apprentices and good shopmen do&#x201D;; 
-                        and it was in keeping with the reputation of <orgName corresp="#SMITHELDER">Smith, Elder</orgName> 
-                        for producing fine illustrated books that <persName corresp="#CTR">Charles</persName> &#x201C;on Sundays always brought a volume or two in his pocket 
-                        to show us the character of . . . [the firm&#x02BC;s] most ambitious publications; especially choosing, on my behalf, any which chanced to contain good engravings&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 35:91). It was the up&#x2010;to&#x2010;date materiality of <title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title> 
-                        that could make this adult annual appealing to young people; and <persName corresp="#JR">Ruskin</persName> would demonstrate his engagement with modern technology of reproducible imagery in his 
-                            <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php"><title type="composite" corresp="#JRACCOUNTTOUR">Account of a Tour on the Continent</title></ref> (see <ref type="bibliography" target="bibliography.php#HANSONRUSKIN1830S"><persName corresp="#DCH">Hanson</persName>, <title type="essay" corresp="#HANSONRUSKIN1830S">&#x201C;Ruskin in the 1830s;&#x201D;</title></ref>).
-                    </p><!-- pick up info about 1830 FO from Smith Elder note--></p>
-                    <p>As later in the &#x201C;Account,&#x201D; <persName corresp="#JR">Ruskin</persName>&#x02BC;s own handmade version of an illustrated book, <persName corresp="#CTR">Charles</persName>&#x02BC;s gift 
-                        may also have testified to his young <persName corresp="#JR">cousin</persName>&#x02BC;s precocity, for there appears to be no evidence that <persName corresp="#JR">Ruskin</persName> 
-                        condescended to be a consumer of the &#x201C;juvenile&#x201D; annuals, which were designed for his age group, 
-                        and which began appearing between <date when="1828">1828</date> and <date when="1830">1830</date>&#x2014;precisely when he was presented with the more adult <hi rend="italic">Friendship&#x02BC;s Offering</hi> 
-                        (see <ref type="bibliography" target="bibliography.php#RENIERFRIENDSHIPSOFFERING"><persName corresp="#AR">Renier</persName>, <title type="book" corresp="#RENIERFRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title></ref>, 17). 
-                        We can only guess at gift&#x2010;givers&#x02BC; motives, however. <persName corresp="#JR">Ruskin</persName>&#x02BC;s <persName corresp="#BR">aunt</persName>&#x02BC;s present, 
-                        the <date when="1827">1827</date> <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title>, seems particularly marked by the Victorian sentiment of mourning. 
-                        Its frontispiece, &#x201C;<title type="engraving" corresp="#FINDENMOTHERSGRAVEIMAGE">The Mother&#x02BC;s Grave</title>&#x201D; (likewise engraved by <persName corresp="#EFF">Edward Finden</persName>) features a trio of children sweetly gazing at a churchyard tombstone; 
-                        the contents include &#x201C;<title type="poem" corresp="#ADIRGE">A Dirge</title>&#x201D; by <ref type="note" subtype="biographical" target="croly_george_note.php"><persName corresp="#GCREV">George Croly</persName> (<date notBefore="1780" notAfter="1860">1780&#x2013;1860</date>)</ref>, 
-                        who would later become an impressive guest at <placeName corresp="#HERNE">Herne Hill</placeName> dinners; 
-                        and <persName corresp="#JR">Ruskin</persName>&#x02BC;s beloved plate by <persName corresp="#SP">Prout</persName> depicts, as <persName corresp="#JR">Ruskin</persName> emphasizes in <title type="book" corresp="#PRAETERITA"><hi rend="italic">Praeterita</hi></title>, 
-                        a &#x201C;sepulchral&#x201D; monument 
-                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 35:91; 
-                        <ref type="bibliography" target="bibliography.php#FORGETMENOT1827"><persName corresp="#FS">Shoberl</persName>, ed., <title type="book" corresp="#FORGETMENOT1827"><hi rend="italic">Forget Me Not: A Christmas and New Year&#x02bc;s Present for MDCCCXXVII</hi></title></ref>; and see 
-                        <ref type="bibliography" target="bibliography.php#HARRISFORGETMENOT">Harris, ed., <title type="archive" corresp="#HARRISFORGETMENOT"><hi rend="italic">&#x201C;Forget Me Not&#x201D; Archive</hi></title></ref> 
-                        for facsimiles of the plates, list of plates, and table of contents for the <date when="1827">1827</date> <title type="annual" corresp="#RAPFORGETMENOT"><hi rend="italic">Forget Me Not</hi></title>).
-                        It is possible that <persName corresp="#JR">Ruskin</persName>&#x02BC;s <persName corresp="#BR">Aunt Bridget</persName> meant the gift as a mourning momento 
-                        for his <placeName corresp="#PERTH">Perth</placeName> cousins, <ref type="note" subtype="biographical" target="richardson_jessie_note.php"><persName corresp="#JRPDAUGHTER">Jessie Richardson</persName> (<date notBefore="1820" notAfter="1827">1820&#x2013;27</date>)</ref>, 
-                        who died in <date when="1827">1827</date>, and <ref type="note" subtype="biographical" target="richardson_james_note.php"><persName corresp="#JRPSON">James Richardson</persName> (<date notBefore="1808" notAfter="1826">1808&#x2013;26</date>)</ref>, who died in <date when="1826">1826</date>.
-                    </p>
-                </div>
+                        <title type="annual" corresp="#FRIENDSHIPSOFFERING1835"><hi rend="italic">Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath: A Christmas and New Year&#x02BC;s Present for <hi rend="smallcaps">MDCCCXXXV</hi></hi></title>.</p>-->
+                    
+                     </div>
             </div>
+       
+                
         </body>
     </text>
 </TEI>
