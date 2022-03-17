@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Poem</head>
+                <lg type="stanza" rhyme="aa">
+                    <l>DOST thou see proud venus there</l>
+                    <l>Glittering in the evening air
+                        The belt of orion beside it is seen
+                        A glorious sight for all sky loving men
+                        And then red mars appeareth high
+                        On his throne upon the sky
+                        Then the greater bear is seen
+                        Then charles’s wain with his bright team
+                        Next the dragon doth appear
+                        Next berenices golden hair
+                        After that the northern crown
+                        Then the very fiery swan
+                        Next comes starry charles’s heart
+                        After that the telescope
+                        Next doth come the little horse
+                        After that the stupid goose
+                        Then the very timid hare
+                        After that the lesser bear
+                        Then doth come the cunning fox
+                        Then appears the blessed cross
+                        Then we see great charles’s oak
+                        Next I’ll call it juno’s cup
+                        Hercules appeareth high
+                        Next cerberus in the sky
+                        The lizard next to them appears
+                        High the pouncing eagle soars
+                        Cepheus and bootes now1
+                        After that sweet hirundo
+                        Maenalus mountain next
+                        Then the furious keen-eyed lynx
+                        High up there is scorpio
+                        After that the generous leo
+                        The cameleopard appeareth high
+                        Next to it the little fly
+                        The serpent serpent bearer then2
+                        Next to it the butting ram
+                        Sobieski’s shield up there
+                        After it the charioteer
+                        The bull of poniatowski then
+                        Next the very longbilled crane
+                        Antinous and arrow down
+                        far below the southern crown
+                        The dolphin swimming through the air
+                        Next to it the gods fire altar
+                        The hounds the bull are seen up there
+                        Then doth come great euclids square
+                        The lesser lion next we see
+                        Next to it the armed bee
+                        Perseus pegasus then
+                        After it the chamelion
+                        Andromeda is seen on high
+                        Then the virgin in the sky
+                        Ten starred triangle doth appear
+                        The horn the unicorn doth bear
+                        Shining in golden light he’s drest
+                        With a horn instead of a towering crest
+                        The scales in which twas vainly said
+                        The crimes and virtues of men were weighed
+                        The archer with his flying dart
+                        I should not think it would pierce the heart
+                        The crab and the twins with their clothes of fire
+                        After them doth come the lyre3
+                        The little triangle appears on high
+                        And the goat that is formed in the arched sky
+                        But oh that wonder of them all
+                        Which milky way europeans call
+                        And which the ancients thought the road
+                        Which all their best and bravest trod
+                        Unto great Jupiters blest abode
+                        Bright these stars are beauteous gold
+                        But let history unfold
+                        Her page of learning let us see
+                        Whether that is not more bright than thee
+                        Een thou O beauteous mercury
+                        Much better than the brightest star
+                        Virtue I will say you are
+                        Better than knowledge yes indeed
+                        Virtue you should have the lead
+                    </l>
+                    
+                    
+                </lg>
+            </div>
+            <!--Simple Drama. Delete this <div/> if not used.-->
+            <div type="drama">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Drama</head>
+                <div type="act">
+                    <head type="act">Act I</head>
+                    <sp>
+                        <speaker>Antony</speaker>
+                            <stage>(pacing anxiously)</stage>
+                            <l>I come to bury Caesar, not to praise him.</l>
+                    </sp>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
