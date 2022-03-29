@@ -14,7 +14,7 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>_xml/_Completed/apparatuses/account_of_a_tour_on_the_continent_apparatus.xml</String>
+                                    <String>_xml/_Completed/notes/boyhood_books_note.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -23,6 +23,42 @@
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/notes/smith_elder_note.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate html</String>
+                                        <String>Generate and open html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/notes/bibliography.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate (global)</String>
+                                        <String>Generate html</String>
+                                        <String>Generate and open html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
                                         <String>XSL</String>
                                     </list>
                                 </field>
@@ -59,19 +95,15 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>_xml/_Completed/notes/bibliography.xml</String>
+                                    <String>_xml/_Completed/apparatuses/account_of_a_tour_on_the_continent_apparatus.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
                                         <String>Generate (global)</String>
-                                        <String>Generate html</String>
-                                        <String>Generate and open html</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
-                                        <String>XSL</String>
-                                        <String>XSL</String>
                                         <String>XSL</String>
                                     </list>
                                 </field>
@@ -215,23 +247,6 @@
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/notes/smith_elder_note.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate html</String>
-                                        <String>Generate and open html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
                                         <String>XSL</String>
                                     </list>
                                 </field>
@@ -493,21 +508,6 @@
                                     <list>
                                         <String>XSL</String>
                                         <String>XSL</String>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/notes/boyhood_books_note.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate (global)</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
                                         <String>XSL</String>
                                     </list>
                                 </field>
