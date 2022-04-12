@@ -3,8 +3,6 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="apparatus">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
-            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
         <fileDesc xml:id="the_sun_apparatus">
             <titleStmt>
                 <title type="main">“The Sun”</title>
@@ -66,10 +64,12 @@
                         and in <title type="manuscript" corresp="#MSIII">MS III</title>, he wrote the title in capitals without emphasis, as <title type="poem" corresp="#JRTHESUN">&#x201C;THE SUN&#x201D;</title>.</p>
                     <p>See <ref type="note" subtype="bibliographical" target="title_citation_note.php">System of Title Citation for Works</ref>.</p>
                 </div>
+                
                 <div type="section" xml:id="GENRE">
                     <head type="section">Genre</head>
                     <p><!-- ADD NOTE REF -->New Year&#x02019;s Poem.</p>
                 </div>
+                
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
                     <p><title type="manuscript" corresp="#MSIX">MS XI</title>; <title type="manuscript" corresp="#MSIII">MS III</title>.</p>
@@ -81,7 +81,6 @@
                         as the fourth poem&#x2014;the same sequence in which they are printed in the presentation copy. <title type="poem" corresp="#JRTHESUN">&#x201C;The Sun&#x201D;</title> is preceded in the anthology by the New Year&#x02BC;s poem for <date when="1827">1827</date>, 
                         <title type="poem" corresp="#JRTIMEBLANKVERSE">&#x201C;Time: Blank Verse&#x201D;</title>; and both are preceded by the first poem in the anthology, <title type="poem" corresp="#JRTHECONSTELLATIONS">&#x201C;The Constellations&#x201D;</title>.</p>
                     <p>Facsimiles by permission of <title type="archive" corresp="#BEINECKERUSKINCOLLECTION">John Ruskin Collection</title>, General Collection, <orgName corresp="#BEINECKE">Beinecke Rare Book and Manuscript Library</orgName>, <orgName corresp="#YALE">Yale University</orgName>. Transcriptions of texts and commentary &#x00A9; <persName corresp="#DCH">David C. Hanson</persName>.</p>
-                    
                     
                 </div>
                 <div type="section" xml:id="DATE">
@@ -99,6 +98,7 @@
                         <ref type="bibliography" target="bibliography.php#POEMS8D1891"><title type="book" corresp="#POEMS8D1891"><hi rend="italic">Poems</hi> (8<hi rend="superscript">o</hi>, <date when="1891">1891</date>)</title></ref>, 1:5&#x02013;6; and in full in 
                         <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:260&#x02013;61.</p>
                 </div>
+                
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
                     <div type="subsection" xml:id="SOURCES">
@@ -111,6 +111,7 @@
             <floatingText>
                 <body>
                     <div type="poem">
+                        <lg type="blank_verse">
                         <l>Thou Sun, of this great World both Eye and Soul,</l>
                         <l>Acknowledge him thy Greater, sound his praise</l>
                         <l>In thy eternal course, both when thou climb&#x02BC;st,</l>
@@ -120,7 +121,7 @@
                         <l>And yee five other wand&#x02BC;ring Fires that move</l>
                         <l>In mystic Dance not without Song, resound</l>
                         <l>His praise, who out of Darkness call&#x02BC;d up Light.</l>
-                        <l>Air, and ye Elements the eldest birth                                  180</l>
+                        <l>Air, and ye Elements the eldest birth</l>
                         <l>Of Nature&#x02BC;s Womb, that in quaternion run</l>
                         <l>Perpetual Circle, multiform, and mix</l>
                         <l>And nourish all things, let your ceaseless change</l>
@@ -130,7 +131,7 @@
                         <l>Till the Sun paint your fleecy skirts with Gold,</l>
                         <l>In honor to the World&#x02BC;s great Author rise,</l>
                         <l>Whether to deck with Clouds th&#x02BC; uncolor&#x02BC;d sky,</l>
-                        <l>Or wet the thirsty Earth with falling showers,                          190</l>
+                        <l>Or wet the thirsty Earth with falling showers,</l>
                         <l>Rising or falling still advance his praise.</l>
                         <l>His praise ye Winds, that from four Quarters blow,</l>
                         <l>Breathe soft or loud; and wave your tops, ye Pines,</l>
@@ -140,7 +141,7 @@
                         <l>Join voices all ye living Souls;  ye Birds,</l>
                         <l>That singing up to Heaven Gate ascend,</l>
                         <l>Bear on your wings and in your notes his praise;</l>
-                        <l>Yee that in Waters glide, and yee that walk                               200</l>
+                        <l>Yee that in Waters glide, and yee that walk</l>
                         <l>The Earth, and stately tread, or lowly creep;</l>
                         <l>Witness if I be silent, Morn or Even,</l>
                         <l>To Hill, or Valley, Fountain, or fresh shade</l>
@@ -149,8 +150,11 @@
                         <l>To give us only good; and if the night</l>
                         <l>Have gather&#x02BC;d aught of evil or conceal&#x02BC;d,</l>
                         <l>Disperse it, as now light dispels the dark.</l>
-                            
-                    </div>        
+                        </lg>
+                    </div>
+                    <div>
+                        <p>(Milton, Paradise Lost, 5:171-208, in Complete Poems and Major Prose, ed. Hughes, 306-7)</p>
+                    </div>
                 </body>            
             </floatingText>                
                         </p>
