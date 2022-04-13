@@ -3,8 +3,6 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="apparatus">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
-            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
         <fileDesc xml:id="glenfarg_apparatus">
             <titleStmt>
                 <title type="main"><title type="poem" corresp="#GLENFARG">&#x201C;Glenfarg&#x201D; <hi rend="italic">and</hi> &#x201C;Glen of Glenfarg&#x201D; (&#x201C;Papa how pretty those icicles are&#x201D;)</title></title>
@@ -62,24 +60,33 @@
                 
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
-                    <p><title type="poem" corresp="#GLENFARG">&#x201C;Glenfarg&#x201D; <hi rend="italic">and</hi> &#x201C;Glen of Glenfarg&#x201D; (&#x201C;Papa how pretty those icicles are&#x201D;)</title></p>
+                    <p>For a presentation copy now contained in MS XI, Ruskin entitled the poem 
+                        <title type="poem" corresp="#GLENFARG">&#x201C;Glen of Glenfarg&#x201D;</title> 
+                        (beginning with the line &#x201C;Papa how pretty those icicles are&#x201D;). For a copy in MS III, 
+                        perhaps because he noticed that he had already used that title for another poem in the same Red Book, 
+                        <title type="poem" corresp="#GLENOFGLENFARG">&#x201C;Glen of Glenfarg&#x201D;</title> 
+                        (beginning with the line &#x201C;Glen of Glenfarg thy beauteous rill&#x201D;), 
+                        he titled the MS III copy of the present poem <title type="poem" corresp="#GLENFARG">&#x201C;Glenfarg&#x201D;</title>. 
+                        He wrote both titles in all capital letters.</p>
                     <p>See <ref type="note" subtype="bibliographical" target="title_citation_note.php">System of Title Citation for Works</ref>.</p>
                 </div>
+                
                 <div type="section" xml:id="GENRE">
                     <head type="section">Genre</head>
                     <p>Body paragraph.</p>
                 </div>
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
-                    <p>Body paragraph.</p>
+                    <p>MS XI; MS III.</p>
                 </div>
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p>Body paragraph.</p>
+                    <p>January 1.</p>
+                    <p>Collingwood questions Ruskin’s 1828 dating of the poem in Queen of the Air, reascribing it to 1 January 1827, “as proved by a copy in No. XI” (PJR [1891], 1:?; PJR [8o], 1:269). Cook and Wedderburn accept Collingwood’s conclusions somewhat vaguely, identifying no. 22 as clearly the 1828 New Year’s poem, while imagining no. 23 as having “been selected by the young author as the best specimen of his stock in hand”--a scenario that they then present as justification for their selecting no other work from 1827 for publication (Works 2:260 n. 1). All of this is mistaken, however. The copy in MS XI as presently bound (see part 2, MS XI, “Description” and “Content,” b) is clearly dated “January 1 1828” in Ruskin’s hand. Collingwood may have been confused by Ruskin’s entitling the MS XI copy as “Glen of Glenfarg,” the same title as no. 2, instead of “Glenfarg” as in MS III. All copies now available of no. 23 confirm a New Year’s presentation of 1828.</p>
                 </div>
                 <div type="section" xml:id="COMPPUB">
                     <head type="section">Composition &#x0026; Publication</head>
-                    <p>Body paragraph.</p>
+                    <p>Printed in PJR (1891, 8o), 1:3-4; Works, 2:262, 19:396-97; and RGI, 31.</p>
                 </div>
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
