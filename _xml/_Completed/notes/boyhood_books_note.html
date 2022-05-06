@@ -1,0 +1,875 @@
+<?php
+$paths = array('./', '../', '../../');
+$root_path = './';
+
+foreach ($paths  as $path){
+$filename = $path.'header.inc.php';
+
+if (file_exists($filename)){
+$root_path = $path;
+break;
+};
+}
+define('ROOT_PATH', $root_path);
+require_once($root_path."header.inc.php");
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:custom="http://whatever">
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset&#x003D;UTF-8">
+      <title>Books Used by Ruskin in His Youth</title><?php require_once(ROOT_PATH."layout_includes/site_top.inc.php"); ?>
+        <link href="<?php echo r_build_url("style.php?p=site_styles.scss"); ?>" rel="stylesheet" type="text/css">
+      </head>
+   
+   <?php require_once(ROOT_PATH."layout_includes/navigation.inc.php"); ?>
+   
+   <div class="note">
+      <div class="bibliographical" id="">
+         
+         <div class="page-title">Books Used by Ruskin in His Youth</div>
+         
+         <div class="p">The aim of this note is not to attempt an exhaustive listing of books that <span class="persName-JR">Ruskin</span> read or consulted in his youth. 
+                    Information about <span class="persName-JR">Ruskin</span>&#x02BC;s reading and its influences is available throughout <i>ERM</i>, 
+                    in the apparatuses and glosses of works containing specific allusions to and borrowings from publications to which he was exposed. 
+                    Especially influential authors and published sources, moreover, are discussed in notes of their own. 
+                    This information can be accessed using the site&#x02BC;s search engine.</div>
+         
+         
+         <div class="p">The purpose of the present note is, rather, to centralize <a href="#RESOURCES">Resources</a> for researching the Ruskin family reading, 
+                    by extending and enhancing existing research sources. Included are <a href="#ANNUALLISTS">Lists of Annual Book Purchases by the Ruskin Family</a>, 
+                    and <a href="#DESCRIPTIONS">Physical Descriptions of Some Books Used by Ruskin in Youth</a>. 
+                    These resources build on the enumerative bibliographies compiled by <span class="persName-VAB">Van Akin Burd</span> in <a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>The Ruskin Family Letters</i></span></a> 
+                    (i.e., lists of annual book purchases drawn from <span class="persName-JJR">John James Ruskin</span>&#x02BC;s <a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book, RF MS 28, <span class="date-1827-1845">1827&#x2013;45</span></span></a>); 
+                    and by <span class="persName-JSD">James S. Dearden</span> in <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>. Those sources remain a starting point for all investigations of the Ruskin family reading. 
+                    The resources provided here to supplement those bibliographies are prefaced by some remarks, <a href="#RESEARCHING">On Researching <span class="persName-JR">Ruskin</span>&#x02BC;s Reading in His Youth</a>.</div>
+         
+         
+         <div id="RESEARCHING" class="section">
+            <span class="head-section">On Researching Ruskin&#x02BC;s Reading in His Youth</span>
+            
+            
+            <div class="p">Regarding the Ruskin family&#x02BC;s ownership or consultation of a given title at a given time, a measure of uncertainty will always be attached to 
+                        documentable evidence of its presence in the family library&#x2014;or for that matter, to the absence of such evidence. 
+                        For example, the fact that <span class="persName-JJR">John James</span> purchased a book designed for youth does not necessarily mean it was intended for <span class="persName-JR">John</span>; 
+                        some purchases may have been intended as gifts for <span class="persName-JR">John</span>&#x02BC;s cousins, especially for 
+                        <a href="<?php echo r_build_url("notes/richardson_mary_note.php");?>" target="_self"><span class="persName-MRC">Mary Richardson</span> (<span class="date-1815-1849">1815&#x2013;49</span>)</a>, 
+                        who lived with the Ruskin family from <span class="date-1828">1828</span> to her marriage in <span class="date-1848">1848</span>. While <span class="persName-JSD">James S. Dearden</span> comments about the family library that 
+                        &#x201C;the books owned by all three Ruskins must be considered to be part of &#x2018;Ruskin&#x02BC;s Library&#x2019; because he ultimately inherited his parents&#x02BC; possessions, 
+                        as well as having the use of them during their lifetimes&#x201D;, one wonders how far the availability, much less the inheritance, 
+                        extended in the case of <span class="persName-MRC">Mary</span>&#x02BC;s books. <span class="persName-JSD">Dearden</span> is right to conclude with the caveat that, 
+                        &#x201C;although <span class="persName-JR">Ruskin</span>&#x02BC;s lifetime&#x02BC;s library was much greater than it was at any <i>one</i> time, 
+                        we do not know its total extent&#x201D; (<a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="title-book-DEARDENRUSKINLIBRARY"><i>Library of John Ruskin</i></span></a>, xv, xxiv). The most valuable evidence that <i>ERM</i> can contribute to the question of <span class="persName-JR">Ruskin</span>&#x02BC;s reading lies 
+                        in the edited texts, which can reveal lexical traces of readings that may have left no material trace in the family record.</div>
+            
+            
+            <div class="p">As <span class="persName-JSD">Dearden</span> remarks, in adulthood <span class="persName-JR">Ruskin</span> &#x201C;was essentially . . . a book&#x2010;buyer rather than a book borrower or library user&#x201D; 
+                        (<a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="title-book-DEARDENRUSKINLIBRARY"><i>Library of John Ruskin</i></span></a>, xix), a habit that appears to have been inherited from his father, 
+                        who was generous with purchases of books for his family&#x02BC;s education and entertainment. Still, there is no way of knowing 
+                        whether publications that left their influence in the early manuscripts were borrowed or owned, 
+                        if otherwise unrecorded as part of the family library in the <span class="date-1820-1839">1820s&#x2013;30s</span>. For example, 
+                        <span class="persName-FDH">Felicia Hemans</span> was sufficiently admired for <span class="persName-JR">Ruskin</span> to have transcribed her poem, <span class="title-poem-HEMANSSOUNDOFTHESEA">&#x201C;The Sound of the Sea&#x201D;</span> (<span class="date-1826">1826</span>) in <span class="title-manuscript-MSIVB">MS IVB</span>, 
+                        probably based on the text as published in the <span class="title-periodical-NEWMONTHLYMAGAZINE"><i>New Monthly Magazine</i></span>. He also adapted passages from <span class="persName-FDH">Hemans</span>&#x02BC;s long poem, 
+                        <span class="title-poem-HEMANSRESTORATIONWORKSOFART"><i>The Restoration of the Works of Art to Italy</i></span>, published by Murray in <span class="date-1816">1816</span>, for use in his own poem, <span class="title-poem-JRSALTZBURG">&#x201C;Saltzburg&#x201D;</span>. 
+                        Yet <span class="persName-FDH">Mrs. Hemans</span> is curiously absent from records of the Ruskins&#x02BC; book ownership, 
+                        apart from poems included in literary annuals that the Ruskins are known to have owned. 
+                        How publications by <span class="persName-FDH">Hemans</span> passed through their hands&#x2014;whether by purchase, borrowing, or just casually encountering a periodical outside the house&#x2014;will probably remain a mystery.</div>
+            
+            
+            <div class="p">Borrowing could have provided a means for <span class="persName-MR">Margaret Ruskin</span> to control what books entered the house. 
+                        She appears to refer to borrowing, for example, when she writes to <span class="persName-JJR">John James</span> about the novel, 
+                        <span class="title-book-BROOKEFOOLOFQUALITY"><i>The Fool of Quality</i></span> (<span class="date-1766-1772">1766&#x2013;72</span>) by <span class="persName-HBROOKE">Henry Brooke</span> (<span class="date-1703-1783">1703&#x2013;83</span>). Since she &#x201C;did not like&#x201D; the novel, 
+                        she &#x201C;got the first volume merely to read the History of the three little fishes to <span class="persName-JR">John</span>&#x201D;. 
+                        In this instance, <span class="persName-MR">Margaret</span>&#x02BC;s renewed encounter with the novel led to &#x201C;the Almighty open&#x005B;ing&#x005D; the understanding&#x201D;, 
+                        and she decided to &#x201C;read it together&#x201D; with <span class="persName-JJR">John James</span>. Perhaps only then was the full work acquired for the household, 
+                        perhaps in the abridgement of the novel by <span class="persName-JWESLEY">John Wesley</span> 
+                        (<a href="<?php echo r_build_url("apparatuses/mr_to_jjr_1826-05-15_al_apparatus.php");?>" target="_self"><span class="title-letter-mr_to_jjr_1826-05-15">Margaret to John James Ruskin, 15 May 1826</span></a>, <a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>Ruskin Family Letters</i></span></a> 145; <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, 51 &#x005B;no. 336&#x005D;; 
+                        see <a href="<?php echo r_build_url("notes/bibliography.php#PEACEWESLEYSBROOKE");?>" target="_self"><span class="persName-MPEACE">Peace</span>, <span class="title-essay-PEACEWESLEYSBROOKE">&#x201C;Sentimentality in the Service of Methodism&#x201D;</span></a>).</div>
+            
+            
+            <div class="p">On travels, the Ruskins supplemented books they brought with them by tapping resources along the way; for example, 
+                        during the tour of <span class="placeName-SWITZERLAND">Switzerland</span> in <span class="date-1833">1833</span>, when <span class="persName-JR">John</span> fell ill, his father and cousin <span class="persName-MRC">Mary</span> cheered him up by finding 
+                        &#x201C;some English books from a library&#x201D; along with &#x201C;2 or 3 volumes of <span class="title-periodical-GALIGNANISMAGAZINE">Gagliani&#x02BC;s Magazine</span>&#x201D;&#x2014;that is, 
+                        one of the periodicals issued by Librairie Galignani, the Paris&#x2010;based English&#x2010;language publisher, bookseller, and circulating library, 
+                        which published two monthly journals, the <span class="title-periodical-GALIGNANIREPERTORY"><i>Repertory</i></span> (ca. <span class="date-1807-1825">1807&#x2013;25</span>), and 
+                        <span class="title-periodical-GALIGNANISMAGAZINE"><i>Galignani&#x02BC;s Monthly Review and Magazine</i></span> (ca. <span class="date-1822-1825">1822&#x2013;25</span>), 
+                        as well as a daily, the <span class="title-periodical-GALIGNANIMESSENGER"><i>Messenger</i></span> (ca. <span class="date-1814-1904">1814&#x2013;1904</span>). 
+                        Galignani also published a series, <span class="title-series-STANDARDMODERNNOVELS"><i>Standard Modern Novels and Romances</i></span>, 
+                        which supplied English travelers and expatriates with contemporary British poetry and prose. 
+                        The editions were issued in duodecimo, a size convenient for travel, but printed using excellent type and engravings, 
+                        and edited for correct and complete text&#x2014;in some cases, text more complete and reliable than what could be found in <span class="placeName-LONDON">London</span> editions. 
+                        As piracies, the volumes were priced significantly cheaper than corresponding <span class="placeName-LONDON">London</span> editions, 
+                        and sold in paper&#x2010;covered boards&#x2014;volumes that could be shared among travelers at a hotel and left behind for others&#x02BC; enjoyment. 
+                        <span class="persName-JR">Ruskin</span> did retain from boyhood one of Galignani&#x02BC;s outstanding volumes in the series 
+                        (possibly obtained from a <span class="placeName-LONDON">London</span> seller rather than from abroad)&#x2014;<span class="title-book-POETICALWORKSETAL"><i>The Complete Poetical Works of Coleridge, Shelley, and Keats</i></span> (<span class="date-1829">1829</span>), 
+                        an edition that, at the time of publication, was superior to any British edition of <span class="persName-PBS">Percy Shelley</span>, 
+                        and the only edition of <span class="persName-JKEATS">Keats</span> available in collected form 
+                        (<a href="<?php echo r_build_url("notes/bibliography.php#RFT48");?>" target="_self"><span class="title-transcript-RFT48">Diary of Mary Richardson, 1833</span></a>, 106; 
+                        <a href="<?php echo r_build_url("notes/bibliography.php#BARBERGALIGNANI");?>" target="_self"><span class="persName-GBARBER">Barber</span>, <span class="title-essay-BARBERGALIGNANI">&#x201C;Galignani&#x02BC;s and the Publication of English Books in France&#x201D;</span></a>, 269, 284, 272&#x2013;74;
+                        <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, 76 &#x005B;no. 556&#x005D;).</div>
+            
+            
+            <div class="p">Besides the possibility that books were borrowed, another kind of caveat should be applied to <span class="persName-JR">Ruskin</span>&#x02BC;s retrospective accounts of his boyhood reading. 
+                        The authors and titles he mentions in the opening chapters of <span class="title-book-JRPRAETERITA"><i>Praeterita</i></span> are not untrue to his early reading, 
+                        but his account of how he both loved certain books and resisted others has charmed readers 
+                        into fixating on a short list of titles that is potentially misleading. First, the list is highly selective&#x2014;contrasting, 
+                        for dramatic effect, the enforced Sunday reading of <span class="persName-JBUNYAN">John Bunyan</span>&#x02BC;s <span class="title-book-BUNYANPILGRIMSPROGRESS"><i>Pilgrim&#x02BC;s Progress</i></span> and <span class="persName-DDEFOE">Daniel Defoe</span>&#x02BC;s <span class="title-book-DEFOEROBINSONCRUSOE"><i>Robinson Crusoe</i></span> 
+                        with weekday &#x201C;reading of my own election&#x201D; of <span class="persName-WS">Walter Scott</span>&#x02BC;s novels and <span class="persName-HOMER">Homer</span> (<span class="persName-APOPE">Alexander Pope</span>&#x02BC;s translation of the <span class="title-poem-ILIAD">&#x201C;Iliad&#x201D;</span>)&#x2014;but, as shown in 
+                        <a href="#DESCRIPTIONS">Physical Descriptions of Some Books Used by Ruskin in Youth</a>, these classics were mixed in <span class="persName-JR">Ruskin</span>&#x02BC;s juvenile library 
+                        with works both secular and Sabbatarian that now seem much more ephemeral. Second, <span class="persName-JR">Ruskin</span>&#x02BC;s retrospection 
+                        flattens these readings in time, suggesting that his study even of favored works was both simultaneous and compartmentalized. In fact, even if true that his reading was subject to this weekly division, 
+                        his reading was also regulated by competing programs. Moreover, the books themselves and <span class="persName-JR">Ruskin</span>&#x02BC;s responses to them did not necessarily adhere to the categories assigned to them. 
+                        As shown in <i>ERM</i> commentary and in the <a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>Ruskin Family Letters</i></span></a>, the Ruskins, no less than other middle&#x2010;class families, attempted to follow 
+                        the program of graduated, age&#x2010;appropriate reading for children as recommended by educationists like the Barbaulds and Edgeworths. 
+                        Yet <span class="persName-JR">Ruskin</span>&#x02BC;s writings in <i>ERM</i> also reflect his tendency to buck the program, by reading texts above his years 
+                        (e.g., <span class="persName-JJ">Joyce</span>&#x02BC;s <span class="title-book-JOYCESCIENTIFICDIALOGUES"><i>Scientific Dialogues</i></span>, which he copied verbatim in <span class="title-lesson-JRHARRYANDLUCYVOL1">&#x201C;Harry and Lucy . . . Vol I&#x201D;</span>, but which are too advanced for that context). 
+                        Moreover, <span class="persName-JR">Ruskin</span> and his mother shared weekday reading, in which the religious influences were likely more powerful and memorable to him 
+                        (e.g., the <span class="persName-fictional-WHITELADY">White Lady</span> as a protector of Protestantism in <span class="persName-WS">Walter Scott</span>&#x02BC;s <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>) than the Sunday sermons he attempted to copy.</div>
+            
+            </div>
+         
+         <div id="RESOURCES" class="section">
+            <span class="head-section">Resources</span>
+            
+            <div id="ANNUALLISTS" class="subsection">
+               <span class="head-subsection">Lists of Annual Book Purchases by the Ruskin Family</span>
+               
+               
+               <div class="p">In <a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>The Ruskin Family Letters</i></span></a>, <span class="persName-VAB">Van Akin Burd</span> transcribes <span class="persName-JJR">John James</span>&#x02BC;s brief notations of authors and/or titles that he 
+                        purchased each month of every year, from <span class="date-1827-1845">1827 through 1845</span>, in his <a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>. In the ledger, 
+                        book purchases are included among many other miscellaneous items on the pages devoted to &#x201C;Sundries&#x201D; for each year. 
+                        Because <span class="persName-JJR">John James</span> notes the amounts spent, <span class="persName-VAB">Burd</span> is able in many cases to identify the authors/titles 
+                        with specific editions available at the time from publishers at those prices. <span class="persName-VAB">Burd</span>&#x02BC;s transcriptions and annotations are very reliable, 
+                        but should nonetheless be revisited and compared against the manuscript of the <a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 
+                        since <span class="persName-JJR">John James</span>&#x02BC;s entries are sometimes ambiguous. Where appropriate, original entries in <a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a> are referenced throughout <i>ERM</i>. 
+                        Here, for convenience of reference, are listed the page numbers in <a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>Ruskin Family Letters</i></span></a> of <span class="persName-VAB">Burd</span>&#x02BC;s transcribed lists, 
+                        along with the corresponding pages of &#x201C;Sundries&#x201D; in the <a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>. Here also are expansions and suggested corrections of <span class="persName-VAB">Burd</span>&#x02BC;s lists.</div>
+               
+               
+               <div class="p"><span class="persName-VAB">Burd</span> omitted one year of sundry book purchases, those for <span class="date-1830">1830</span>, from <a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>Ruskin Family Letters</i></span></a>, 
+                        presumably because no letters are extant from that year, thus giving no occasion for annotation. 
+                        <span class="persName-JSD">Dearden</span> has incorporated the <span class="date-1830">1830</span> purchases into the alphabetized entries in <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>; however, 
+                        since <span class="persName-JJR">John James</span>&#x02BC;s book lists organized chronologically by year form a helpful comparison 
+                        with the discussions of dating works and manuscripts in <i>ERM</i>, the <span class="date-1830">1830</span> book list is compiled in its entirety, 
+                        cross&#x2010;referenced with entries in <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>. This list and others from <span class="date-1827-1845">1827&#x2013;45</span> will be updated 
+                        as new information comes to light. More speculatively, annual lists are also compiled 
+                        for years prior to the start of <span class="persName-JJR">John James</span>&#x02BC;s <a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a> in <span class="date-1827">1827</span>. These identifications are ongoing.</div>
+               
+               
+               <div class="p">Some names are transcribed from <span class="persName-JJR">John James</span>&#x02BC;s &#x201C;Sundries&#x201D; that may or may not refer to books or authors. 
+                        <span class="persName-JJR">John James</span> often listed names of vendors as shorthand for the wares they supplied, 
+                        as well as naming recipients of gifts or purchases. In many cases, it is mere speculation whether a proper name 
+                        refers to purchase of a book or of some other kind of item, and these names are flagged as &#x201C;unidentified&#x201D;. 
+                        Yet the occurence of some names can sometimes be aligned with other information to identify book titles and authors 
+                        at least tentatively. Again, these identifications are ongoing.</div>
+               
+               
+               <div class="p">
+                  <ul>
+                     
+                     <li>Books purchased in <span class="date-1827">1827</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="persName-VAB">Burd</span>, ed., <span class="title-book-RFL"><i>Ruskin Family Letters</i></span></a> &#x005B;hereafter, RFL&#x005D;, 168 n. 1</li>
+                           
+                           <li><span class="persName-JJR">John James Ruskin</span>, <a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book (RF MS 28, 1827&#x2013;45)</span></a> &#x005B;hereafter, Account Book&#x005D;, 2r</li>
+                           </ul>
+                        </li>
+                     
+                     <li>Books purchased in <span class="date-1828">1828</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 188 n. 4</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 6r</li>
+                           </ul>
+                        </li>
+                     
+                     <li>Books purchased in <span class="date-1829">1829</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 187&#x2013;88 n. 4</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 12r</li>
+                           </ul>
+                        </li>
+                     
+                     <li>Books purchased in <span class="date-1830">1830</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 17r
+                                    
+                              <ul>
+                                 
+                                 <li>January
+                                    
+                                    <ul>
+                                       
+                                       <li>Jones 16/8 (unidentified)</li>
+                                       
+                                       <li>St. Pierre 10/ (possibly a work by <span class="persName-SAINTPIERRE">Jacques&#x2010;Henri Bernardin de Saint&#x2010;Pierre</span>; earliest purchase cited by <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, is a copy of <span class="title-book-STPIERREPAULETVIRGINIE"><i>Paul et Virginie</i></span>, bought in <span class="date-1840">1840</span> &#x005B;28, no. 194&#x005D;</li>
+                                       </ul>
+                                 </li>
+                                 
+                                 <li>February
+                                    
+                                    <ul>
+                                       
+                                       <li>Burrell 42/ (unidentified)</li>
+                                       
+                                       <li>Museums 10/ (unidentified)</li>
+                                       </ul>
+                                 </li>
+                                 
+                                 <li>April
+                                    
+                                    <ul>
+                                       
+                                       <li>Newspaper &#x00A3;1.5/</li>
+                                       
+                                       <li>West 4/</li>
+                                       </ul>
+                                 </li>
+                                 
+                                 <li>May
+                                    
+                                    <ul>
+                                       
+                                       <li>Horace 9/6 (edition unidentified)</li>
+                                       
+                                       <li>Cowpers &#x00A3;1./ (possibly <span class="persName-WCP">William Cowper</span>, <i>Poems</i> &#x005B;<span class="date-1811">1811</span>&#x005D;, cited by <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, 82 &#x005B;no. 614&#x005D;, or another work by the poet)</li>
+                                       
+                                       <li>Greek 11/ (unidentified)</li>
+                                       
+                                       <li>Colours John 34/ (watercolors for <span class="persName-JR">John</span>?)</li>
+                                       
+                                       <li>Every day Book 38/ (possibly <span class="persName-WHONE">William Hone</span> &#x005B;<span class="date-1780-1842">1780&#x2013;1842</span>&#x005D;, <i>The Every&#x2010;day Book; or, the Guide to the Year</i>, illustrated by <span class="persName-GC">George Cruikshank</span> et al. &#x005B;first published <span class="date-1825">1825</span>, revised annually?&#x005D;)</li>
+                                       
+                                       <li>Rutter &#x00A3;8.7/. (unidentified)</li>
+                                       </ul>
+                                 </li>
+                                 
+                                 <li>June
+                                    
+                                    <ul>
+                                       
+                                       <li>Newspaper &#x00A3;1.4/4</li>
+                                       </ul>
+                                 </li>
+                                 
+                                 <li>August
+                                    
+                                    <ul>
+                                       
+                                       <li>Newspaper 22/9</li>
+                                       </ul>
+                                 </li>
+                                 
+                                 <li>December
+                                    
+                                    <ul>
+                                       
+                                       <li>Tam O&#x02BC;Shanter 10/ (see <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, 58 &#x005B;no. 399&#x005D;, which does not specify an edition; 
+                                            possibly <span class="persName-RBURNS">Robert Burns</span>, <span class="title-book-BURNSTAMOSHANTER1829"><i>Tam O&#x02BC;Shanter, a Tale; to which are added Observations on the Statues of Tam O&#x02BC;Shanter and Souter Johnny, now Exhibiting . . .</i></span> &#x005B;<span class="placeName-LONDON">London</span>: John Murray, <span class="date-1829">1829</span>&#x005D;, 
+                                            compiled along with occasional poems to commemorate these sculptures by the self&#x2010;taught Scottish stone carver, <span class="persName-JTHOM">James Thom</span> (<span class="date-1802-1850">1802&#x2013;50</span>), 
+                                            whose statues toured <span class="placeName-GLASGOW">Glasgow</span>, <span class="placeName-EDINBURGH">Edinburgh</span>, and <span class="placeName-LONDON">London</span> in <span class="date-1829">1829</span>; see <a href="<?php echo r_build_url("notes/bibliography.php#GIBSONBURNSBIBLIOGRAPHY");?>" target="_self"><span class="persName-JGIBSON">Gibson</span>, <span class="title-bibliography_text-GIBSONBURNSBIBLIOGRAPHY"><i>Bibliography of Robert Burns</i></span></a>, 147&#x2013;48)</li>
+                                       
+                                       <li>Tales Grand 10/6 (an edition of <span class="persName-WS">Walter Scott</span>, <span class="title-series-SCOTTTALESOFAGRANDFATHER"><i>Tales of a Grandfather</i></span>, of which the fourth series was published in <span class="date-1830-12">December 1830</span>; 
+                                            see <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, 310 &#x005B;no. 2435&#x005D;)</li>
+                                       
+                                       <li>Clark 10/6 (possibly <span class="persName-JCLARKE">John Clarke</span>, <span class="title-lesson-CLARKELATIN">An Introduction to the Making of Latin</span>; see <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, 73 &#x005B;no. 530&#x005D;)</li>
+                                       
+                                       <li>Latin Gr 30/ (possibly a Latin grammar or a Latin&#x2010;Greek dictionary)</li>
+                                       
+                                       <li>Parnell 9/6 (<a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, identifies as <span class="persName-HPARNELL">Sir Henry Parnell</span>, <span class="title-book-HPARNELLFINANCIALREFORM"><i>On Financial Reform</i></span> (p. 250 &#x005B;no. 1957&#x005D;)</li>
+                                       
+                                       <li>Nat<sup>t</sup> 15/ (possibly <span class="persName-JCL">John Claudius Loudon</span>, <span class="title-periodical-MAGAZINEOFNATURALHISTORY"><i>Magazine of Natural History</i></span>)</li>
+                                       
+                                       <li>Greek Test<sup>t</sup> &#x00A3;2.2 (i.e., <span class="title-scripture-GREEKTESTAMENT">Greek Testament</span>; see <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, 39 &#x005B;no. 237&#x005D;)</li>
+                                       
+                                       <li>2 Anacreons 30/ (i.e., two editions of <span class="persName-ANACREON">Anacreon</span>; see <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, 11 &#x005B;no. 55&#x005D;)</li>
+                                       
+                                       <li>Northcote 10/6 (possibly <span class="persName-WH">Hazlitt</span>, <span class="title-book-HAZLITTCONVERSATIONS"><i>Conversations with James Northcote RA</i></span>, published at this price by Colburn in <span class="date-1830">1830</span>; 
+                                            see <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, 152 &#x005B;no.1207&#x005D;, which does not connect a copy with this notation in the <a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>)</li> 
+                                       
+                                       <li>Loudon 21/ (possibly a work by <span class="persName-JCL">John Claudius Loudon</span>; see <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, 208, which does not connect any copies with this notation in the <a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>)</li>
+                                       
+                                       <li>Scott 12/ (possibly a work by <span class="persName-WS">Walter Scott</span>; <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>The Library of John Ruskin</i></span></a>, 306&#x2013;11, connects no copies with this notation)</li>
+                                       </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1831">1831</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 229&#x2013;30 n. 2</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 19v&#x2013;20r</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1832">1832</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 260 n. 2</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 24v&#x2013;25r</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1833">1833</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 286 n. 1</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 29v&#x2013;30r</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1834">1834</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 286 n. 1</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 34v</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1835">1835</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 300&#x2013;301 n. 12</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 39v</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1836">1836</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 393&#x2013;94 n. 1</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 44v&#x2013;45r</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1837">1837</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 413 n. 2</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 49v&#x2013;50r</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1838">1838</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 489&#x2013;90 n. 8</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 54v&#x2013;55r</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1839">1839</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 563&#x2013;64 n. 7</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 59v&#x2013;60r</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1840">1840</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 636 n. 2</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 64v&#x2013;65r</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1841">1841</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 685 n. 4</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 69v</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1842">1842</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 726 n. 2</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 74v</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1843">1843</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="title-book-RFL"><i>RFL</i></span></a>, 744&#x2013;46 n. 2</li>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 79v</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1844">1844</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 85v</li>
+                           </ul>
+                     </li>
+                     
+                     <li>Books purchased in <span class="date-1845">1845</span>
+                        
+                        <ul>
+                           
+                           <li><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="title-manuscript-RFMS28">Account Book</span></a>, 90v</li>
+                           </ul>
+                     </li>
+                     </ul>
+               </div>
+               </div>
+            
+            
+            <div id="DESCRIPTIONS" class="subsection">
+               <span class="head-subsection">Physical Descriptions of Some Books Used by Ruskin in Youth</span>
+               
+               
+               <div id="" class="sub-subsection">
+                  <span class="head-sub-subsection">Books held by the Beinecke Library, Yale University</span>
+                  
+                  <div class="p">
+                     
+                     <ul>
+                        
+                        <li id="FAIRYTALES"><span class="title-binding_slipcase-FAIRYTALESSHARPCOLL">Fairy Tales</span> &#x005B;title on binding; three separately published items bound together&#x005D;.
+                            
+                           <ul>
+                              
+                              <li><i>Provenance:</i> <span class="persName-FJS">Sharp</span>. <span class="persName-HGV">Viljoen</span>. Bookplate of <span class="persName-JR">John Ruskin</span>, type 2 (<a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-DEARDENRUSKINLIBRARY"><i>Library of John Ruskin</i></span></a>, xcv&#x2013;xcvi).</li>
+                              </ul>
+                           
+                           <ul>
+                              
+                              <li><i>Location:</i> Beinecke Library, <span class="placeName-NEWHAVEN">New Haven, Conn.</span>; call no. 2000 1638.</li>
+                              </ul>
+                           
+                           <ul>
+                              
+                              <li id="FAIRYTALESDISCUSSION"><i>Documentation and discussion:</i> For the three items in the binding, see <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-"><i>Library of John Ruskin</i></span></a>, 
+                                    13 &#x005B;no. 74&#x005D;, 19 &#x005B;no. 115&#x005D;, 321 &#x005B;no. 2527&#x005D;, respectively. 
+                                    The responsibility for and circumstances of binding these three items as &#x201C;Fairy Tales&#x201D; are unknown. 
+                                    This title on the spine applies most legitimately to the first of the items, <span class="title-anthology-MOTHERBUNCHSFAIRYTALES"><i>Mother Bunch&#x02BC;s Fairy Tales</i></span>, 
+                                    whereas the other two items belong only marginally, each containing just one or two stories that feature a fairy or fantastical events. 
+                                    Regardless of the consistency of the collection, however, an implicit rationale becomes apparent by comparing the contents of another bound collection, 
+                                    <a href="#WIDOWDISCUSSION"><span class="title-binding_slipcase-WIDOWOFROSENEATHCOMP">&#x005B;The Widow of Roseneath etc.&#x005D;</span></a>, 
+                                    which appears to be a complementary volume.<br/><br/>
+                                    
+                                    Besides their contents, the three items in <span class="title-binding_slipcase-FAIRYTALESSHARPCOLL">&#x201C;Fairy Tales&#x201D;</span> also notably have in common their publication by J. Lumsden and Son of Glasgow. 
+                                    Now highly regarded among collectors, Lumsden&#x02BC;s children&#x02BC;s books are distinguished by 
+                                    &#x201C;a certain trimness (primness one might almost call it) in the covers, the quality of the paper used, 
+                                    the excellent type&#x2010;face, the occasional use of coloured inks for text and illustrations, 
+                                    usually bistre or sanguine, occasionally green, and a few hand&#x2010;coloured illustrations&#x201D;. 
+                                    In their own time, however, the books were apparently little known outside of <span class="placeName-SCOTLAND">Scotland</span>; 
+                                    and even in their own country, they were not widely popular, because their prices were considered 
+                                    rather dear, even at two pence or six pence per copy&#x2014;cheaper and less elegant chapbooks by this publisher 
+                                    being more commonly found 
+                                    (<a href="<?php echo r_build_url("notes/bibliography.php#ROSCOEANDBRIMMELLJAMESLUMSDEN");?>" target="_self"><span class="persName-SROSCOE">Roscoe</span> and <span class="persName-RABRIMMELL">Brimmell</span>, <span class="title-book-ROSCOEBRIMMELLJAMESLUMSDEN"><i>James Lumsden and Son of Glasgow</i></span></a>, xi, xiii)
+                                    <br/><br/>
+                                    
+                                    The Lumsden firm produced children&#x02BC;s books ca. <span class="date-1790-1850">1790&#x2013;1850</span>, but seldom printed dates on title pages 
+                                        (<a href="<?php echo r_build_url("notes/bibliography.php#ROSCOEANDBRIMMELLJAMESLUMSDEN");?>" target="_self"><span class="persName-SROSCOE">Roscoe</span> and <span class="persName-RABRIMMELL">Brimmell</span>, <span class="title-book-ROSCOEBRIMMELLJAMESLUMSDEN"><i>James Lumsden and Son of Glasgow</i></span></a>, xv). The three books bound together here are all undated. 
+                                    <span class="persName-JSD">Dearden</span>, without explanation, dates them tentatively as <span class="date-1814">1814</span>, presumably because that date is the lower limit 
+                                    suggested by <span class="persName-SROSCOE">Roscoe</span> and <span class="persName-RABRIMMELL">Brimmell</span> in each of their analytical descriptions of of these books, as follows.
+                                </li>
+                              </ul>
+                           
+                           <ul>
+                              
+                              <li><span class="title-anthology-MOTHERBUNCHSFAIRYTALES">Mother Bunch&#x02BC;s &#x007C; Fairy Tales. &#x007C; 
+                                    Published for the &#x007C; Amusement &#x007C; of all those &#x007C; Little Masters and Misses &#x007C; who, &#x007C; 
+                                    by Duty to their Parents, and Obedience &#x007C; to their Superiors, &#x007C; Aim at Becoming &#x007C; 
+                                    Great Lords and Ladies.</span> &#x007C; Embellished with Engravings. &#x007C; <span class="placeName-GLASGOW">Glasgow</span>: &#x007C; Published by J. Lumsden and Son. &#x007C; 
+                                    &#x005B;Price Sixpence.&#x005D;
+                                    
+                                 <ul>
+                                    
+                                    <li><i>Discussion:</i> Most of the stories in this anthology originated in fairy tales by 
+                                            <span class="persName-COUNTESSDAULNOY">Marie&#x2010;Catherine Le Jumel de Barneville, Comtesse d&#x02BC;Aulnoy</span> (ca. <span class="date-1650-1705">1650&#x2013;1705</span>), written for the sophisticated <span class="placeName-PARIS">Paris</span> literary salons 
+                                            in the <span class="date-1643-1715">age of Louis XIV</span>. The texts translated into English from <span class="persName-COUNTESSDAULNOY">Countess d&#x02BC;Aulnoy</span>&#x02BC;s originals have a complex history. 
+                                            <span class="persName-JR">Ruskin</span>&#x02BC;s copy matches the bibliographical description of an edition published ca. <span class="date-1817">1817</span> by the firm J. Lumsden and Son 
+                                            (<a href="<?php echo r_build_url("notes/bibliography.php#ROSCOEANDBRIMMELLJAMESLUMSDEN");?>" target="_self"><span class="persName-SROSCOE">Roscoe</span> and <span class="persName-RABRIMMELL">Brimmell</span>, <span class="title-book-ROSCOEBRIMMELLJAMESLUMSDEN"><i>James Lumsden and Son of Glasgow</i></span></a>, 68&#x2013;69 &#x005B;no. 102&#x005D;; 
+                                            see <a href="#FAIRYTALESDISCUSSION">Fairy Tales: Documentation and Discussion</a>). 
+                                            The Lumsden edition was a piracy and abridgement of an English edition 
+                                            published in <span class="date-1802">1802</span> and <span class="date-1817">1817</span> by the <span class="placeName-LONDON">London</span> publisher of children&#x02BC;s books, John Harris; 
+                                            and the Harris editions were in turn based on editions (ca. <span class="date-1773-1799">1773&#x2013;99</span>) published by the firm of John Newbery 
+                                            (<a href="<?php echo r_build_url("notes/bibliography.php#BLAMIRESMOTHERBUNCH");?>" target="_self"><span class="persName-DBLAMIRES">Blamires</span>, <span class="title-essay-BLAMIRESMOTHERBUNCH">&#x201C;From Madame d&#x02BC;Aulnoy to Mother Bunch&#x201D;</span></a>, 75; and see 
+                                            , 72 &#x005B;nos. 470&#x2013;71).<br/><br/>
+                                       Newbery originated the title, <span class="title-anthology-MOTHERBUNCHSFAIRYTALES"><i>Mother Bunch&#x02BC;s Fairy Tales</i></span>, and adapted an earlier English translation 
+                                            (<span class="date-1721">1721</span>, reprinted frequently through <span class="date-1817">1817</span>, and including tales by other French salon writers). 
+                                            This early eighteenth&#x2010;century English translation, according to <span class="persName-DBLAMIRES">David Blamires</span>, 
+                                            was faithful to the original, sophisticated French tales and intended for adult readers. 
+                                            The Newbery edition and its descendents simplified the texts for child readers, 
+                                            and reassigned the authorship from <span class="persName-COUNTESSDAULNOY">Madame d&#x02BC;Aulnoy</span> to the fictitious Mother Bunch, 
+                                            an English folklore figure whom children could imagine as a storyteller 
+                                            similar to Mother Goose. Through these successive adaptations of the English texts 
+                                            by Newbery, Harris, and Lumsden for an audience of middle&#x2010;class children&#x2014;as well as 
+                                            through issues of individual tales in chapbook form for a working&#x2010;class audience&#x2014;the 
+                                            French salon fairy tales came be regarded as English and traditional 
+                                            (<a href="<?php echo r_build_url("notes/bibliography.php#BLAMIRESMOTHERBUNCH");?>" target="_self"><span class="persName-DBLAMIRES">Blamires</span>, <span class="title-essay-BLAMIRESMOTHERBUNCH">&#x201C;From Madame d&#x02BC;Aulnoy to Mother Bunch&#x201D;</span></a>, 75&#x2013;78).<br/><br/>
+                                            
+                                            In the subtitle, first applied by Newbery and carried through the adaptations by Harris and Lumsden, 
+                                            the specification that the tales were meant to amuse &#x201C;little masters and misses&#x201D; signals that the tales 
+                                            were meant for younger children. For Newbery in the eighteenth century, the purpose of such books was 
+                                            to teach children basic reading, as compared with books designated for &#x201C;young gentlemen and ladies&#x201D;, 
+                                            which contained &#x201C;lessons of life&#x201D; (<a href="<?php echo r_build_url("notes/bibliography.php#TOWNSENDNEWBERYTELESCOPE");?>" target="_self"><span class="persName-JRT">Townsend</span>, <span class="title-essay-TOWNSENDNEWBERYTELESCOPE">&#x201C;John Newbery and Tom Telescope&#x201D;</span></a>, 82&#x2013;83). 
+                                        
+                                        </li>
+                                    </ul>
+                                 </li>
+                              
+                              <li><span class="title-anthology-SOBERSIDESCHRISTMASTALES">Christmas &#x007C; Tales &#x007C; For the Instruction &#x007C; of &#x007C; 
+                                    Good Boys and Girls,</span> &#x007C; by &#x007C; M<sup>r</sup>. <span class="persName-fictional-SOBERSIDES">Solomon Sobersides</span>. &#x007C; Embellished with Engravings &#x007C; 
+                                    <span class="placeName-GLASGOW">Glasgow</span>. &#x007C; Published by J. Lumsden &#x0026; Son. &#x007C; &#x0026; Sold by Stoddart &#x0026; Craggs. Hull &#x007C; Price Sixpence
+                                    
+                                 <ul>
+                                    
+                                    <li><i>Discussion:</i> The copy is consistent with a bibliographical description in 
+                                            <a href="<?php echo r_build_url("notes/bibliography.php#ROSCOEANDBRIMMELLJAMESLUMSDEN");?>" target="_self"><span class="persName-SROSCOE">Roscoe</span> and <span class="persName-RABRIMMELL">Brimmell</span>, <span class="title-book-ROSCOEANDBRIMMELLJAMESLUMSDEN"><i>James Lumsden and Son of Glasgow</i></span></a>, 44 (no. 57), which cites a watermark date of <span class="date-1814">1814</span>.<br/><br/>
+                                            
+                                            As pointed out in the &#x201C;Introductory Essay&#x201D; on the copy in the <span class="title-archive-SOBERSIDESCHRISTMASTALESHOCKLIFFE">Hockliffe Archive</span>, 
+                                            the tales have no connection with Christmas, despite the anthology&#x02BC;s title, which presumably was a marketing ploy. 
+                                            The text, which in some copies includes a description of the Seven Wonders of the World, 
+                                            was apparently based on a collection first published in <span class="placeName-LONDON">London</span>, ca. <span class="date-1780">1780</span> 
+                                            (<a href="<?php echo r_build_url("notes/bibliography.php#SOBERSIDESCHRISTMASTALESHOCKLIFFE");?>" target="_self"><span class="title-archive-SOBERSIDESCHRISTMASTALESHOCKLIFFE">&#x201C;Stories before 1850. 0220: Anon. &#x005B;&#x2018;Solomon Sobersides&#x2019;&#x005D;, Christmas Tales&#x201D;</span></a>).<br/><br/> 
+                                            
+                                            The first story in the collection opens with commentary on the neglect of religion and morality in childhood education, 
+                                            but the stories in themselves do little to redress this supposed failing. The collection is miscellaneous, 
+                                            some tales teaching prudent and moral conduct, some adopting an oriental flavor, and only a few entailing magic or fairies. 
+                                            Two of the latter sort feature dervises (i.e., dervishes), who reward hospitality with magical riches, but retract the reward and punish 
+                                            characters who overstep boundaries owing to greed or excess curiosity.<br/><br/>
+                                            
+                                            The frontispiece contains an emblem of a child choosing between folly and wisdom, 
+                                            which may have contributed to <span class="persName-JR">Ruskin</span>&#x02BC;s own use of visual emblems, such as 
+                                            <a href="<?php echo r_build_url("witnesses/heights_of_wisdom_drawing_msi.php");?>" target="_self">&#x201C;Heights of Wisdom, Depth of Fools&#x201D; &#x005B;Miscellaneous Drawing, <span class="title-manuscript-MSI">MS I</span>&#x005D;</a>.</li>
+                                    </ul>
+                                 </li>
+                              
+                              <li><span class="title-anthology-SELECTIONOFSTORIES">A &#x007C; Selection of Stories; &#x007C; containing the history &#x007C; of the &#x007C; Two Sisters, &#x007C; The Fisherman, &#x007C; 
+                                    The King and Fairy Ring, &#x007C; and &#x007C; Honesty Rewarded.</span> &#x007C; Embellished with copperplates. &#x007C; <span class="placeName-GLASGOW">Glasgow</span>, &#x007C; 
+                                    Published and sold by J. Lumsden &#x0026; Son. &#x007C; Price Sixpence.
+                                    
+                                 <ul>
+                                    
+                                    <li><i>Discussion:</i> The copy is consistent with a bibliographical description in 
+                                            <a href="<?php echo r_build_url("notes/bibliography.php#ROSCOEANDBRIMMELLJAMESLUMSDEN");?>" target="_self"><span class="persName-SROSCOE">Roscoe</span> and <span class="persName-RABRIMMELL">Brimmell</span>, <span class="title-book-ROSCOEANDBRIMMELLJAMESLUMSDEN"><i>James Lumsden and Son of Glasgow</i></span></a>, 78&#x2013;79 (no. 118), which cites watermarks of <span class="date-1814">1814</span> and <span class="date-1816">1816</span>.<br/><br/>
+                                            
+                                            The collection consists of moral tales enjoining contentment with one&#x02BC;s lot, prudence, and trust in <span class="persName-scriptural-CREATOR">God</span>&#x02BC;s providence. 
+                                            (<span class="persName-SROSCOE">Roscoe</span> and <span class="persName-RABRIMMELL">Brimmell</span> remark that &#x201C;The Two Sisters&#x201D; is not the story of that title by <span class="persName-MMS">Mrs. Sherwood</span>.)
+                                            Only &#x201C;The King and Fairy Ring&#x201D; qualifies as a fairy story.</li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        
+                        <li id="WIDOW"><span class="title-binding_slipcase-WIDOWOFROSENEATHCOMP">&#x005B;The Widow of Roseneath etc.&#x005D;</span> &#x005B;description of binding to come; eight separately titled published items bound together&#x005D;.
+                           
+                           <ul>
+                              
+                              <li><i>Provenance:</i> <span class="persName-FJS">Sharp</span>. <span class="persName-HGV">Viljoen</span>. Bookplate of <span class="persName-JR">John Ruskin</span>, type 2 (<a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-"><i>Library of John Ruskin</i></span></a>, xcv&#x2013;xcvi).</li>
+                              </ul>
+                           
+                           <ul>
+                              
+                              <li><i>Location: <span class="placeName-building-BEINECKELIBRARY">Beinecke Library</span>, <span class="placeName-NEWHAVEN">New Haven, Conn.</span>; call no.:</i> 2000 1641.</li>
+                              </ul>
+                           
+                           <ul>
+                              
+                              <li id="WIDOWDISCUSSION"><i>Documentation and discussion:</i> For the eight items in the binding, see <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-"><i>Library of John Ruskin</i></span></a>, 
+                                    respectively 14 &#x005B;no. 77&#x005D;, 12 &#x005B;no. 67&#x005D;, 13 &#x005B;no, 70&#x005D;, 13 &#x005B;no. 69&#x005D;, 227 &#x005B;no. 1775&#x005D;, 345 &#x005B;no. 2736&#x005D;, 315 &#x005B;no 2475&#x005D;, 23 &#x005B;no. 151&#x005D;. 
+                                    The responsibility for binding these items together is unknown. A rationale, if not the specific occasion for the collection 
+                                    can be inferred, however, if the binding of these eight items was made in concert with the binding of <a href="#FAIRYTALESDISCUSSION">Fairy Tales</a>. 
+                                    As compared with the latter, the items collected here share an emphasis on &#x201C;cautionary&#x201D; tales (to draw on the subtitle of <span class="title-book-TURNERTHECOWSLIP"><i>The Cowslip</i></span>). 
+                                    Since the early nineteenth century, such Romantic writers as <span class="persName-CLE">Charles Lamb</span>, <span class="persName-STC">S. T. Coleridge</span>, and <span class="persName-WW">William Wordsworth</span> 
+                                    had polemically argued in favor of appealing to children&#x02BC;s imagination with fairy tales as opposed to training their reason and morals 
+                                    with &#x201C;instructive&#x201D; and &#x201C;cautionary&#x201D; tales and dialogues by the &#x201C;cursed <span class="persName-ALB">Barbauld</span> Crew&#x201D;, as <span class="persName-CLE">Lamb</span> anathematized this group largely of women writers. 
+                                    In our time, critics have exposed the politics underpinning these divisions, but in the late nineteenth or early twentieth century, 
+                                    which was probably when a number of <span class="persName-JR">Ruskin</span>&#x02BC;s childhood books were divided between these two collections, the reputation of 
+                                    <span class="persName-ALB">Anna Letitia Barbauld</span> had been disassociated from her politics and reduced to bland high&#x2010;mindedness&#x2014;a &#x201C;valuation&#x201D; 
+                                    of this writing that suggests, as <span class="persName-WMCCARTHY">William McCarthy</span> complains, &#x201C;that it entirely lacked humor, irony, or wit&#x201D; 
+                                    (<a href="<?php echo r_build_url("notes/bibliography.php#MCCARTHYBARBAULDRECEPTION");?>" target="_self"><span class="persName-WMCCARTHY">McCarthy</span>, <span class="title-essay-MCCARTHYBARBAULDRECEPTION">&#x201C;&#x2018;A High&#x2010;Minded Christian Lady&#x2019;&#x201D;</span></a>, 179; and see 
+                                    <a href="<?php echo r_build_url("notes/bibliography.php#CLARKEBARBAULDCREW");?>" target="_self"><span class="persName-NCLARKE">Clarke</span>, <span class="title-essay-CLARKEBARBAULDCREW">&#x201C;&#x2018;The Cursed Barbauld Crew&#x2019;&#x201D;</span></a>, 91&#x2013;93). 
+                                    Such a valuation was perhaps implicitly placed on these eight items by binding them together.<br/><br/>
+                                    
+                                    The reductive valuation would not have been <span class="persName-JR">Ruskin</span>&#x02BC;s, but it seems unlikely that he could have been responsible for binding this collection 
+                                    since, as noted in the following descritions, he annotated some of the items separately, 
+                                    bequeathing them to <span class="persName-JSAR">Joan Severn</span> and her children. One of the annotations is dated &#x201C;<span class="date-1889">1889</span>&#x201D;, and another &#x201C;<span class="date-1889-1890">1889&#x2013;1890</span>&#x201D;, 
+                                    clues that the binding was ordered after <span class="date-1890">1890</span> by someone other than <span class="persName-JR">Ruskin</span>&#x2014;perhaps by <span class="persName-JSAR">Joan Severn</span>&#x2014;since by that time, 
+                                    <span class="persName-JR">Ruskin</span> himself would not have been in a mental state to take such an initiative.
+                                    
+                                    
+                                </li>
+                              </ul>
+                           
+                           <ul>
+                              
+                              <li><span class="title-book-ANONWIDOWOFROSENEATH">The &#x007C; Widow of Roseneath; &#x007C; A &#x007C; Lesson of Piety: &#x007C; Affectionately &#x007C; 
+                                    Dedicated to the Young.</span> &#x007C; <span class="placeName-GLASGOW">Glasgow</span>: &#x007C; Printed for Chalmers &#x0026; Collins; &#x007C; Waugh &#x0026; Innes, 
+                                    W. Oliphant, and W. Whyte &#x0026; Co. <span class="placeName-EDINBURGH">Edinburgh</span>; &#x007C; R. M. Tims, <span class="placeName-DUBLIN">Dublin</span>; &#x007C; J. Nisbet, W. Whittemore, 
+                                    and F. Westley, <span class="placeName-LONDON">London</span>. &#x007C; <span class="date-1822">1822</span>.&#x007C;
+                                    
+                                 <ul>
+                                    
+                                    <li><i>Discussion:</i> The tale relates the fate of a Scottish widow who, reduced in circumstances by the death of her husband, 
+                                            must part with her two sons. One son emigrates to <span class="placeName-USA">America</span> and prospers, and the other son resorts to crime. 
+                                            As <span class="title-book-ANONWIDOWOFROSENEATH">&#x201C;A Lesson of Piety Affectionately Dedicated to the Young&#x201D;</span>, the tale may well have been acquired 
+                                            to help <span class="persName-JR">John</span> contemplate the consequences of the death of his <a href="<?php echo r_build_url("notes/richardson_patrick_note.php");?>" target="_self"><span class="persName-PR">Uncle Patrick</span></a> in <span class="placeName-PERTH">Perth, Scotland</span>, in <span class="date-1824">1824</span>, 
+                                            and its effect on his <a href="<?php echo r_build_url("notes/richardson_jessie_note.php");?>" target="_self"><span class="persName-JRP">Aunt Jessie</span></a> and his cousins.<br/><br/>
+                                            
+                                            The Ruskins regularly traveled to <span class="placeName-PERTH">Perth</span>, until <span class="persName-JR">John</span>&#x02BC;s <a href="<?php echo r_build_url("notes/richardson_jessie_note.php");?>" target="_self"><span class="persName-JRP">Aunt Jessie</span></a> died in <span class="date-1828">1828</span>.
+                                                By the time of her death, <a href="<?php echo r_build_url("notes/richardson_jessie_note.php");?>" target="_self"><span class="persName-JRP">Jessie</span></a> had lost six of her ten children, two of whom were especially dear as companions 
+                                            to <span class="persName-JR">Ruskin</span> in his childhood&#x2014;<a href="<?php echo r_build_url("notes/richardson_james_note.php");?>" target="_self"><span class="persName-JRPSON">James</span></a>, who lived with the Ruskins at <span class="placeName-building-HERNE">Herne Hill</span> after his father&#x02BC;s death, 
+                                            and who himself died in <span class="date-1826">1826</span>; and <span class="persName-JRPDAUGHTER">Jessie</span>, who died in <span class="date-1827">1827</span>. The four surviving children&#x2014;three sons 
+                                            and the daughter, <a href="<?php echo r_build_url("notes/richardson_mary_note.php");?>" target="_self"><span class="persName-MRC">Mary</span></a>, who lived with the Ruskins until her marriage&#x2014;were 
+                                            generously supported by <span class="persName-JJR">John James</span>. Just so, in <span class="title-book-ANONWIDOWOFROSENEATH"><i>The Widow of Roseneath</i></span>, the successful son is supported 
+                                            in <span class="placeName-USA">America</span> by his uncle, a kindly and prudent merchant. The book might even have been shared between 
+                                            <span class="persName-JR">John</span> and his cousins living at <span class="placeName-building-HERNE">Herne Hill</span> who depended on <span class="persName-JJR">John James</span>&#x02BC;s charity. 
+                                            For a plot summary of the tale and brief commentary from an <span class="date-1823">1823</span> review, see 
+                                            <a href="<?php echo r_build_url("notes/widow_of_roseneath_note.php#WIDOW");?>" target="_self">Anonymous, <span class="title-book-ANONWIDOWOFROSENEATH"><i>The Widow of Roseneath</i> (<span class="date-1822">1822</span>)</span></a>.<br/><br/>
+                                            
+                                            At a later time, <span class="persName-JR">Ruskin</span> wrote on the frontispiece and title page: &#x201C;New and Old mine my beloved Joanna and her children. SABRINA&#x201D;. 
+                                            He refers to his cousin <span class="persName-JSAR">Joan Agnew Severn</span> and her children. Sabrina was . . .
+                                        
+                                        </li>
+                                    </ul>
+                                 </li>
+                              
+                              
+                              <li><span class="title-book-ANONHISTORYOFJOSIAHRUMBOLD">Sketches &#x007C; of &#x007C; the &#x007C; History &#x007C; of Mr &#x007C; Josiah Rumbold &#x007C; and &#x007C; 
+                                    His Family.</span> &#x007C; Intended for the Benefit of &#x007C; Sabbath Evening School. &#x007C; Founded on Facts. &#x007C; 
+                                    Second Edition. &#x007C; <span class="placeName-EDINBURGH">Edinburgh</span>: &#x007C; Printed by William Aitchison, &#x007C; for A. Johnstone, Gran&#x2010;Market; &#x007C; 
+                                    and Sold by M. Ogle, <span class="placeName-GLASGOW">Glasgow</span>; and W. Whittimore, 62, &#x007C; <span class="placeName-PATERNOSTER">Paternoster Row</span>, <span class="placeName-LONDON">London</span>. &#x007C; <span class="date-1820">1820</span>.</li>
+                              
+                              
+                              <li><span class="title-book-ANONNICOLGRAY">Nicol Gray: &#x007C; or, &#x007C; Scenes in the Country. &#x007C; A Tale &#x007C; for the Cottar&#x02BC;s Ingle Neuk.</span> &#x007C; 
+                                    &#x201C;Let not ambition mock their useful toil, &#x007C; Their homely joys and destiny obscure; &#x007C; Nor grandeur hear with a 
+                                    disdainful smile, &#x007C; The short and simple annals of the poor.&#x201D; &#x007C; <span class="placeName-EDINBURGH">Edinburgh</span>: &#x007C; Printed for Alexander Johnstone, &#x007C; 
+                                    <span class="placeName-building-WESTBOW">West Bow</span>; &#x007C; Chalmers and Collins, and Lang, <span class="placeName-GLASGOW">Glasgow</span>; &#x007C;and Whittemore, <span class="placeName-LONDON">London</span>. &#x007C; <span class="date-1823">1823</span>.
+                                    
+                                 <ul>
+                                    
+                                    <li>The tale contains Scottish dialect. In periodicals, the work is found among listings of Sabbath School &#x201C;reward books for young persons&#x201D; by Waugh &#x0026; Innes, 
+                                            where attributed to the &#x201C;author of &#x2018;Jacob Newman&#x2019;&#x201D;. The author was also responsible for The Run&#x2010;away; or, I Would Be a Sailor: A Narrative. 
+                                            </li>
+                                    </ul>
+                                 </li>
+                              
+                              <li><span class="title-book-ANONMEMOIROFANOLDSOLDIER">Memoir &#x007C; of &#x007C; An Old Soldier.</span> &#x007C; Written &#x007C; for the Instruction of Youth. &#x007C; 
+                                    <span class="placeName-EDINBURGH">Edinburgh</span>: &#x007C; Printed for Alexander Johnstone, &#x007C; <span class="placeName-building-WESTBOW">West Bow</span>; &#x007C; Ogle, Chalmers and Collins, and Lang, &#x007C; 
+                                    <span class="placeName-GLASGOW">Glasgow</span>; and Whittemore, <span class="placeName-LONDON">London</span>. &#x007C; <span class="date-1823">1823</span>.</li>
+                              
+                              <li><span class="title-book-">Active Goodness &#x007C; Beautifully Exemplified, &#x007C; in the &#x007C; 
+                                    Life and Labours &#x007C; of the &#x007C;&#x007C; Rev. Thomas Gouge, A.M.</span> &#x007C; By a Minister of the Church of Scotland. 
+                                    &#x007C; <span class="placeName-GLASGOW">Glasgow</span>: &#x007C; Printed for Chalmers &#x0026; Collins; &#x007C; 
+                                    Waugh &#x0026; Innes, William Oliphant, and W. Whyte &#x0026; Co. &#x007C; 
+                                    <span class="placeName-EDINBURGH">Edinburgh</span>; &#x007C; R. M. Tims, <span class="placeName-DUBLIN">Dublin</span>; &#x007C; J. Nisbet, W. Whittemore,  J. Offer, and F. Westley, <span class="placeName-LONDON">London</span>. &#x007C; <span class="date-1822">1822</span>.
+                                    
+                                 <ul>
+                                    
+                                    <li><i>Discussion:</i> The author is identified as the <span class="persName-RBURNSREV">Rev. Robert Burns</span> (<span class="date-1789-1869">1789&#x2013;1869</span>), Minister of <span class="placeName-building-STGEORGES">St. George</span>&#x02BC;s, <span class="placeName-PAISLEY">Paisley</span>, 
+                                            in the second edition (<span class="date-1825">1825</span>), and in <span class="persName-RFBURNS">Burns</span>, <span class="title-book-BURNSLIFEANDTIMES">Life and Times of the Rev. Robert Burns by the Rev. R. F. Burns</span>, 120. 
+                                            <span class="persName-TGOUGE">Thomas Gouge</span> (<span class="date-1605-1681">1605&#x2013;81</span>) was an English clergyman who, although ejected from his living for nonconformist sympathies, 
+                                            continued to preach and was revered for his &#x201C;active goodness&#x201D;&#x2014;his extensive good works of practical Christianity. 
+                                            His collected works were published in <span class="placeName-KILMARNOCK">Kilmarnock</span> in <span class="date-1815">1815</span>.</li>
+                                    </ul>
+                                 </li>
+                              
+                              <li><span class="title-book-TURNERTHECOWSLIP">The &#x007C; Cowslip; &#x007C; or, &#x007C; More Cautionary Stories, &#x007C; in Verse. &#x007C; by the Author of that Much&#x2010;Admired &#x007C; 
+                                    Little Work Entitled &#x007C; the Daisy</span>. &#x007C; the Seventh Edition. &#x007C; <span class="placeName-LONDON">London</span>: &#x007C; Printed for J. Harris and Son, &#x007C; 
+                                    Corner of <span class="placeName-building-STPAULCHURCHYARD">St. Paul&#x02BC;s Church&#x2010;Yard</span>; and Baldwin, Cradock, and Joy, &#x007C; <span class="placeName-PATERNOSTER">Paternoster&#x2010;Row</span>. &#x007C; <span class="date-1820">1820</span>.
+                                    
+                                 <ul>
+                                    
+                                    <li><i>Discussion:</i> The author is <span class="persName-ETURNER">Elizabeth Turner</span> (<span class="date-1775-1846">1775&#x2013;1846</span>); <span class="persName-JR">Ruskin</span>&#x02BC;s copy matches the bibliographical description in 
+                                            <a href="<?php echo r_build_url("notes/bibliography.php#MOONHARRIS");?>" target="_self"><span class="persName-MMOON">Moon</span>, <span class="title-book-MOONHARRIS"><i>John Harris&#x02BC;s Books for Youth</i></span></a>, 129 (no. 932 &#x005B;7&#x005D;). 
+                                            The &#x201C;more cautionary stories&#x201D; constituting <span class="title-book-TURNERTHECOWSLIP"><i>The Cowslip</i></span> were first published by Harris in <span class="date-1811">1811</span>, following the 
+                                            &#x201C;cautionary stories in verse adapted to the ideas of children from four to eight years old&#x201D; constituting 
+                                            <span class="title-book-TURNERTHEDAISY"><i>The Daisy</i></span>, first published in <span class="date-1807">1807</span>. <span class="title-book-TURNERTHEDAISY"><i>The Daisy</i></span> was originally &#x201C;illustrated with thirty engravings on copper&#x2010;plate&#x201D;, 
+                                            but <span class="title-book-TURNERTHECOWSLIP"><i>The Cowslip</i></span> was illustrated with thirty woodcuts, which formed headpieces to the poems 
+                                            (<a href="<?php echo r_build_url("notes/bibliography.php#MOONHARRIS");?>" target="_self"><span class="persName-MMOON">Moon</span>, <span class="title-book-MOONHARRIS"><i> John Harris&#x02BC;s Books for Youth</i></span></a>, 129 &#x005B;nos. 933 (1), 932 (1)&#x005D;).<br/><br/>
+                                            
+                                            In <span class="persName-JR">Ruskin</span>&#x02BC;s copy, the signature was written by his father, as <span class="persName-JR">Ruskin</span> notes in a later hand, perhaps because he was too young to have 
+                                            signed the copy for himself when first presented with the book. The primitiveness of drawings scattered throughout the book 
+                                            suggest a very early age. In a later hand, it appears that <span class="persName-JR">Ruskin</span> re&#x2010;dedicated the book to &#x201C;My <span class="persName-JSAR">Joanna</span>, and her children&#x201D; on &#x201C;<span class="date-1889-01-01">New Years Day. 1889</span>&#x201D;. 
+                                            Later, he wrote &#x201C;Deeper and deeper still. / <span class="date-1889-04-02">2<sup>nd</sup> April 1889&#x2013;1890</span>&#x201D;; also a date, &#x201C;<span class="date-1822"><u>1822</u></span>&#x201D; underlined, 
+                                            and the comment, &#x201C;<u>Now</u> in Heaven&#x201D;.
+                                        </li>
+                                    </ul>
+                                 </li>
+                              
+                              <li><span class="title-book-SHERWOODADRIVEINTHECOACH">A &#x007C; Drive in the Coach &#x007C; through the &#x007C; Streets of London. &#x007C; 
+                                    A Story founded on Fact.</span> &#x007C; By <span class="persName-MMS">Mrs. Sherwood</span>, &#x007C; Author of &#x201C;Little Henry and his Bearer,&#x201D; &#x0026;c. &#x0026;c. &#x007C; &#x007C; 
+                                    Seventh Edition. &#x007C; <span class="placeName-SHROPSHIRE">Wellington, Salop</span>: &#x007C; printed by and for F. Houlston and Son. &#x007C; 
+                                    And sold by &#x007C; Scatcherd and Letterman, <span class="placeName-building-AVEMARIALN">Ave&#x2010;Maria Lane</span>, <span class="placeName-LONDON">London</span>. &#x007C; <span class="date-1822">1822</span>. &#x007C; &#x005B;Entered at <span class="placeName-building-STATIONERSHALL">Stationer&#x02BC;s Hall</span>.&#x005D;
+                                    
+                                 <ul>
+                                    
+                                    <li>During a drive through <span class="placeName-LONDON">London</span> with her mother, a &#x201C;self&#x2010;pleasing&#x201D; girl is allowed to write down what she would like to buy 
+                                            at each shop they pass. When they encounter a coffin&#x2010;maker&#x02BC;s establishment, representing the end of all worldly pleasures, 
+                                            the girl of course balks at adding that item to her list. Her mother instead buys the girl a bible, 
+                                            so she can learn to contemplate death without fear.</li>
+                                    </ul>
+                                 </li>
+                              
+                              <li><span class="title-book-BARBAULDHYMNSINPROSE">Hymns in Prose &#x007C; for &#x007C; Children</span>. &#x007C; by the Author of &#x007C; Lessons for Children. &#x007C; 
+                                    Twenty&#x2010;Second Edition, &#x007C; Much Enlarged. &#x007C; I will praise God with my voice, though I am &#x007C; but a little child. &#x007C; 
+                                    <span class="placeName-LONDON">London</span>: &#x007C; Printed for Baldwin, Cradock, and Joy, &#x007C; <span class="placeName-PATERNOSTER">Paternoster&#x2010;Row</span>; &#x007C; and R. Hunter, Successor to <span class="persName-JJPUBLISHER">J. Johnson</span>, &#x007C; 
+                                    <span class="placeName-building-STPAULCHURCHYARD">St Paul&#x02BC;s Church&#x2010;Yard</span>. &#x007C; <span class="date-1821">1821</span>.
+                                    
+                                 <ul>
+                                    
+                                    <li>By <span class="persName-ALB">Anna Letitia Barbauld</span>.</li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           
+                           <ul>
+                              
+                              <li><span class="title-book-AIKINBARBAULDEVENINGS">Evenings at Home; &#x007C; or the &#x007C; Juvenile Budget Opened. &#x007C; 
+                                    consisting of &#x007C; a Variety of Miscellaneous Pieces &#x007C; for the &#x007C; Instruction and Amusement &#x007C; of &#x007C; Young Persons</span> &#x007C; 
+                                    by <span class="persName-JAIKIN">Dr. Aikin</span> and <span class="persName-ALB">Mrs. Barbauld</span> &#x007C; 
+                                    <span class="placeName-LONDON">London</span> &#x007C; Printed and Published by J. F. Dove, <span class="placeName-STJOHNSSQLONDON">St. John&#x02BC;s Square</span>.
+                                    
+                                 <ul>
+                                    
+                                    <li><i>Discussion:</i> See <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-"><i>Library of John Ruskin</i></span></a>, 8 (no. 34). 
+                                            It is not clear that this copy was used by <span class="persName-JR">Ruskin</span> in boyhood, although the collector who obtained it, <a href="<?php echo r_build_url("notes/sharp_f_j_note.php");?>" target="_self"><span class="persName-FJS">F. J. Sharp</span></a>, appears to have assumed that was the case 
+                                            (see the exhibition catalogue, <a href="<?php echo r_build_url("notes/bibliography.php#VILJOENRUSKINSBACKGROUNDS");?>" target="_self"><span class="title-catalogue-VILJOENRUSKINSBACKGROUNDS"><i>Ruskin&#x02BC;s Backgrounds, Friendships, and Interests, as Reflected in the F. J. Sharp Collection</i></span></a>, 8 &#x005B;5.<i>f</i>&#x005D;; see also 
+                                            <a href="<?php echo r_build_url("notes/bibliography.pho#LIGHTMANDEBTTOBARBAULD");?>" target="_self"><span class="persName-NLIGHTMAN">Lightman</span>, <span class="title-essay-LIGHTMANDEBTTOBARBAULD">&#x201C;&#x2018;No Man Could Owe More&#x2019;&#x201D;</span></a>, 260&#x2013;61, 264). 
+                                            While the copy has a <span class="placeName-building-BRANTWOOD">Brantwood</span> bookplate&#x2014;type 2, a type that <span class="persName-JR">Ruskin</span> himself never used, as <span class="persName-JSD">Dearden</span> explains (<a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="title-book-"><i>Library of John Ruskin</i></span></a>, xcvi&#x2013;xcvii)&#x2014;and while the copy contains 
+                                            a holograph note in <span class="persName-JR">Ruskin</span>&#x02BC;s mature hand, this is a single&#x2010;volume edition of <span class="title-book-AIKINBARBAULDEVENINGS"><i>Evenings at Home</i></span> (vi&#x002B;479 pp.), whereas the edition that <span class="persName-JR">Ruskin</span> preserved as his boyhood copy was divided into six volumes. 
+                                            That number of volumes is documented by <span class="persName-JR">Ruskin</span> in a <span class="title-letter-"><span class="date-1885-02-04">4 February 1885</span> letter to Simpson &#x0026; Co.</span>, arranging to rebind three of the volumes remaining from his boyhood set, 
+                                            emphasizing that his youthful markings were to be retained, and to number the volumes 1, 2, and 3, since he had &#x201C;lost the rest&#x201D; of the volumes (quoted in <a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="persName-JSD">Dearden</span>, <span class="title-book-"><i>Library of John Ruskin</i></span></a>, 8 &#x005B;no. 34&#x005D;). 
+                                            The remaining volumes sent for binding would have been the original volumes 1, 2, and 5, with volumes 3, 4, and 6 gone missing, 
+                                            according to details in an <span class="date-1868">1868</span> partial catalogue of <span class="persName-JR">Ruskin</span>&#x02BC;s books, as cited by <span class="persName-JSD">Dearden</span>. On this evidence, 
+                                            <span class="persName-JSD">Dearden</span> suggests that, since the <span class="persName-FJS">Sharp</span>/<span class="persName-HGV">Viljoen</span> copy at the <span class="placeName-building-BEINECKELIBRARY">Beinecke Library</span> &#x201C;is not bound in the style specified in the letter to Simpson &#x0026; Co.&#x201D;, this volume 
+                                            &#x201C;may be one of the volumes which <span class="persName-JR">Ruskin</span> mentioned he had lost&#x201D; (<a href="<?php echo r_build_url("notes/bibliography.php#DEARDENRUSKINLIBRARY");?>" target="_self"><span class="title-book-"><i>Library of John Ruskin</i></span></a>, 8 &#x005B;no. 34&#x005D;, and see cviii&#x2013;cxii). 
+                                            This possibility is ruled out, however, since the <span class="persName-FJS">Sharp</span>/<span class="persName-HGV">Viljoen</span> copy, which is a six&#x2010;volumes&#x2010;in&#x2010;one edition, complete in itself, cannot have formed a part of <span class="persName-JR">Ruskin</span>&#x02BC;s original set.<br/><br/>
+                                       
+                                       <span class="persName-JSD">Dearden</span> gives <span class="date-1792">1792</span> as the year of publication for the <span class="persName-FJS">Sharp</span>/<span class="persName-HGV">Viljoen</span> copy, but this date is not supported by the title page, which is undated. 
+                                            Its publication by J. F. Dove places it, rather, as a reprint in a series conceived by <span class="persName-JFDOVE">John Fowler Dove</span> (<span class="date-1787-1866">1787&#x2013;1866</span>), <span class="placeName-building-STJOHNSQLONDON">St. John&#x02BC;s Square</span>, <span class="placeName-building-CLERKENWELL">Clerkenwell</span>, <span class="placeName-LONDON">London</span>. 
+                                            Starting in the first half of the <span class="date-1820-1825">1820s</span>, <span class="persName-JFDOVE">Dove</span>&#x02BC;s printing house issued the <span class="title-series-DOVESENGLISHCLASSICS">&#x201C;Dove&#x02BC;s English Classics&#x201D;</span> series, which played a part in the early history of books illustrated by steel engraving, which contributed to the success of annuals and gift books 
+                                            (see <a href="<?php echo r_build_url("notes/annuals_note.php#COLLECTEDEDITIONS");?>" target="_self">Annuals and Other Illustrated Books: Collected Editions</a>). 
+                                            At first, Dove produced these reprints as &#x201C;Printed for the Proprietors of the English Classics by J. F. Dove&#x201D;&#x2014;the &#x201C;proprietors&#x201D; being comprised of 
+                                            a long list of publishers, including <a href="<?php echo r_build_url("notes/smith_elder_note.php");?>" target="_self">Smith, Elder &#x0026; Co.</a> from the time when the company was located on <span class="placeName-building-FENCHURCHST">Fenchurch Street</span>. Two books in this series held an important place in <span class="persName-JR">Ruskin</span>&#x02BC;s boyhood library, 
+                                            his <span class="date-1824">1824</span> copy of <span class="persName-APOPE">Pope</span>&#x02BC;s translation of the <span class="title-poem-HOMERILIAD"><i>Iliad</i></span>, and his <span class="date-1825">1825</span> copy of <span class="persName-JDRYDEN">Dryden</span>&#x02BC;s translation of the <span class="title-poem-VIRGILAENEID"><i>Aeneid</i></span> and other works. 
+                                            According to <span class="title-program-WORLDCAT">WorldCat</span>, in <span class="date-1827">1827</span> Dove published <span class="title-book-AIKINBARBAULDEVENINGS"><i>Evenings at Home</i></span> as a volume in this series, with a frontispiece and title page engraved 
+                                            by <span class="persName-CTH">Charles Heath</span> (<span class="date-1785-1848">1785&#x2013;1848</span>) 
+                                            after a drawing by <span class="persName-HCORBOULD">Henry Corbould</span> (<span class="date-1787-1844">1787&#x2013;1844</span>), and with the series title <span class="title-series-DOVESENGLISHCLASSICS">&#x201C;English Classics&#x201D;</span> on the &#x201C;cover&#x201D;. 
+                                            (As inclusive evidence supporting a publication date of <span class="date-1827">1827</span>, an <a href="<?php echo r_build_url("notes/bibliography.php#ENGLISHCLASSICSADVERTISEMENT");?>" target="_self">advertisement for the <span class="title-series-DOVESENGLISHCLASSICS">&#x201C;English Classics&#x201D;</span></a>, which is undated 
+                                            but included with the Google Books reproduction of an <span class="date-1825">1825</span> <span class="persName-JFDOVE">Dove</span> reprint of <span class="persName-IWALTON">Walton</span>&#x02BC;s <span class="title-book-WALTONCOMPLETEANGLER"><i>Complete Angler</i></span>, 
+                                            <span class="title-book-AIKINBARBAULDEVENINGS"><i>Evenings at Home</i></span> is not included in the lists 
+                                            of titles either &#x201C;Now Ready&#x201D; or &#x201C;In the Press&#x201D;. The &#x201C;Ready&#x201D; list does include the <span class="date-1824">1824</span> <span class="persName-APOPE">Pope</span>&#x02BC;s <span class="title-poem-HOMERILIAD">Iliad</span> and <span class="date-1825">1825</span> <span class="persName-JDRYDEN">Dryden</span>&#x02BC;s <span class="title-poem-VIRGILAENEID">Virgil</span>.)
+                                            While the <span class="title-program-WORLDCAT">WorldCat</span> description does not make clear whether this <span class="date-1827">1827</span> publication was printed for the &#x201C;proprietors&#x201D; of the series, 
+                                            the details do not match the <span class="persName-JFS">Sharp</span>/<span class="persName-HGV">Viljoen</span> copy, which lacks a publication date as well as the series title, <span class="title-series-DOVESENGLISHCLASSICS">&#x201C;English Classics&#x201D;</span>, on the title page. 
+                                            Instead, the <span class="persName-FJS">Sharp</span>/<span class="persName-HGV">Viljoen</span> copy identifies itself as &#x201C;Printed and Published by <span class="persName-JFDOVE">J. F. Dove</span>, <span class="placeName-building-STJOHNSSQLONDON">St. John&#x02BC;s Square</span>&#x201D;.<br/><br/>
+                                            
+                                            According to <span class="persName-LWORMS">Laurence Worms</span>, this imprint, &#x201C;Printed and Published by <span class="persName-JFDOVE">J. F. Dove</span>&#x201D;, took the place of the &#x201C;Printed for the Proprietors of English Classics&#x201D; 
+                                            &#x201C;within a couple of years&#x201D; of the <span class="date-1823-1826">mid&#x2010;1820s</span> series but no later than <span class="date-1833">1833</span> when <span class="persName-JFDOVE">Dove</span> retired 
+                                            (<a href="<?php echo r_build_url("notes/bibliography.php#WORMSDOVESENGLISHCLASSICS");?>" target="_self"><span class="persName-LWORMS">Worms</span>, <span class="title-website-WORMSDOVESENGLISHCLASSICS">&#x201C;Dove&#x02BC;s English Classics&#x201D;</span></a>, accessed <span class="date-2022-03-27">27 March 2022</span>). Perhaps the &#x201C;Published and Printed&#x201D; imprint&#x2014;accompanied by a device of a dove bearing an olive branch, 
+                                            and the motto &#x201C;perseverantia et amicis &#x005B;perseverance and friendship&#x005D;&#x201D;&#x2014;represented an advance beyond acting only as a printer for large shareholding publisher groups. 
+                                            In any case, even if the <span class="persName-JFS">Sharp</span>/<span class="persName-HGV">Viljoen</span> copy were the <span class="date-1827">1827</span> <span class="title-series-DOVESENGLISHCLASSICS">&#x201C;English Classics&#x201D;</span> version of <span class="title-booK-AIKINBARBAULDEVENINGS"><i>Evenings at Home</i></span>, 
+                                            and not a later edition under <span class="persName-JFDOVE">Dove</span>&#x02BC;s house imprint, a publication date of <span class="date-1827">1827</span> is in itself too late for a book 
+                                            assumed to have served as <span class="persName-JR">Ruskin</span>&#x02BC;s foundational boyhood reading, preceding his study of <span class="persName-ME">Edgeworth</span>&#x02BC;s <span class="title-book-EDGEWORTHFRANK"><i>Frank</i></span> and <span class="title-book-EDGEWORTHHARRYANDLUCYCONCLUDED"><i>Harry and Lucy Concluded</i></span>. 
+                                            As <span class="persName-NLIGHTMAN">Naomi Lightman</span> comments, &#x201C;as <span class="persName-JR">Ruskin</span>&#x02BC;s copy has no date, we cannot know when it was purchased&#x201D; 
+                                            (<a href="<?php echo r_build_url("notes/bibliography.php#LIGHTMANDEBTTOBARCAULD");?>" target="_self"><span class="title-essay-LIGHTMANDEBTTOBARBAULD">&#x201C;&#x2018;No Man Could Owe More&#x2019;&#x201D;</span></a>, 264); however, an edition published after <span class="date-1827">1827</span>&#x2014;as the undated edition presumably was, 
+                                            if not presented as a volume in the <span class="title-series-DOVESENGLISHCLASSICS">&#x201C;English Classics&#x201D;</span> series&#x2014;would have postdated <span class="persName-JR">Ruskin</span>&#x02BC;s writing that <span class="persName-ALB">Barbauld</span> most directly inspired, 
+                                            such as <a href="<?php echo r_build_url("apparatuses/the_needless_alarm_apparatus.php");?>" target="_self"><span class="title-poem-JRTHENEEDLESSALARM">&#x201C;The Needless Alarm&#x201D;</span></a> and <a href="<?php echo r_build_url("apparatuses/harry_and_lucy_apparatus.php");?>" target="_self"><span class="title-lesson-JRHARRYANDLUCYVOL1">&#x201C;Harry and Lucy . . . Vol I&#x201D;</span></a>, which date from <span class="date-1826">1826</span>.<br/><br/>
+                                            
+                                            In an analysis of the publishing history of <span class="title-book-AIKENBARBAULDEVENINGS"><i>Evenings at Home</i></span>, 
+                                            <span class="persName-AFYFE">Aileen Fyfe</span> explains that, <span class="date-1792-1823">from 1792 until 1823</span>, the text of the first edition was controlled by the first publisher, <span class="persName-JJPUBLISHER">Joseph Johnson</span>, 
+                                            his successor Rowland Hunter, and other publishers to whom Hunter sold shares. In <span class="date-1823">1823</span>, to maintain copyright, the shareholders solicited 
+                                            a corrected and slightly expanded edition from <span class="persName-JAIKIN">John Aikin</span>&#x02BC;s son, <span class="persName-AAIKIN">Arthur Aikin</span>, which was published as the thirteenth edition, apparently in six volumes; 
+                                            and in <span class="date-1826">1826</span>, an edition rearranged by <span class="persName-JAIKIN">John Aikin</span>&#x02BC;s daughter, <span class="persName-LAIKIN">Lucy Aikin</span>, was published in four volumes. Despite these new editions descending from the original,
+                                            &#x201C;from the <span class="date-1823-1826">mid&#x2010;1820s</span>&#x201D;, <span class="persName-AFYFE">Fyfe</span> notes, &#x201C;any publisher could print the original text of <span class="title-book-AIKENBARBAULDEVENINGS"><i>Evenings at Home</i></span>, and a number did so&#x201D;, including 
+                                            provincial and Scottish publishers (<span class="persName-AFYFE">Fyfe</span>, <span class="title-essay-FYFECOPYRIGHTS">&#x201C;Copyrights and Competition&#x201D;</span>, 40). If <span class="persName-JFDOVE">Dove</span> waited until <span class="date-1827">1827</span> to reprint <span class="title-book-AIKINBARBAULDEVENINGS"><i>Evenings</i></span>, even in its original text, 
+                                            he already lagged behind some other publishers.<br/><br/>
+                                            
+                                            The Ruskins would have entered the market for <span class="persName-JR">John</span>&#x02BC;s initial copy of <span class="title-book-AIKINBARBAULDEVENINGS"><i>Evenings at Home</i></span> 
+                                            during the transitional period in the book&#x02BC;s publishing history, between the <span class="date-1820-1826">early&#x2010; and mid&#x2010;1820s</span>, when the Aikins were revising the text in order to extend copyright, 
+                                            and when other publishers were issuing reprints of the first edition. At this point, the Ruskins would likely have acquired either the new edition of <span class="date-1823">1823</span> or afterward, 
+                                            whose shareholder publishers included (since <span class="date-1815">1815</span>) Baldwin, Cradock, and Joy, who also published the Ruskins&#x02BC; editions of <span class="persName-ME">Maria Edgeworth</span>&#x02BC;s <span class="title-series-EDGEWORTHEARLYLESSONS">&#x201C;Early Lessons&#x201D;</span> series; 
+                                            or they would have purchased a first&#x2010;edition reprint available from non&#x2010;shareholder publishers. At that time, those non&#x2010;shareholder reprints 
+                                            would not have included <span class="persName-JFDOVE">Dove</span>&#x02BC;s, since available evidence shows him coming late to the game. Consequently, putting aside the <span class="persName-FJS">Sharp</span>/<span class="persName-HGV">Viljoen</span> <span class="persName-JFDOVE">Dove</span> edition&#x2014;undated, but probably after <span class="date-1827">1827</span>&#x2014;we 
+                                            cannot determine what state of the text of <span class="title-book-AIKINBARBAULDEVENINGS"><i>Evenings at Home</i></span> was availble to <span class="persName-JR">Ruskin</span> in his boyhood six&#x2010;volume version, whether the revised edition by <span class="persName-AAIKIN">Arthur Aikin</span> or the original descended from the <span class="persName-JJPUBLISHER">Johnson</span>/Hunter shareholders (or even as originally published by <span class="persName-JJPUBLISHER">Johnson</span>/Hunter). 
+                                            A good bet may be the revised text of <span class="date-1823">1823</span>, since the shareholders carrying that text, including Baldwin, Cradock, and Joy,produced substantial print runs that sold well 
+                                                (see <a href="<?php echo r_build_url("notes/bibliography.php#FYFECOPYRIGHTS");?>" target="_self"><span class="persName-AFYFE">Fyfe</span>, <span class="title-essay-FYFECOPYRIGHTS">&#x201C;Copyrights and Competition&#x201D;</span></a>, 43); and the Ruskins were familiar with Baldwin, Cradock, and Joy 
+                                                from their purchase of <span class="persName-ME">Edgeworth</span>&#x02BC;s <span class="title-book-EDGEWORTHFRANK"><i>Frank</i></span> and <span class="title-book-EDGEWORTHHARRYANDLUCYCONCLUDED"><i>Harry and Lucy Concluded</i></span>. 
+                                                Definitive evidence, however, must await recovery of <span class="persName-JR">Ruskin</span>&#x02BC;s three stray volumes, as rebound by Simpson.<br/><br/>
+                                            
+                                            As for the <span class="persName-FJS">Sharp</span>/<span class="persName-HGV">Viljoen</span> copy, since it contains annotations by <span class="persName-JR">Ruskin</span> from later years, a logical conclusion may be that he acquired this <span class="persName-JFDOVE">Dove</span> edition at some point to replace the lost volumes of his boyhood set, 
+                                            at or before the time of sending the surviving copies for rebinding; or, if the <span class="persName-JFDOVE">Dove</span> reprint was a more youthful acquisition, it should be treated as an additional household copy, circa <span class="date-1830">1830</span>. 
+                                            While the front endpaper contains illegible scrawls, one of which <span class="persName-HGV">Viljoen</span> was tempted to make out to be the letter <i>J</i> and interpret as <span class="persName-JR">Ruskin</span>&#x02BC;s earliest signature, 
+                                            all the legible marginalia is in <span class="persName-JR">Ruskin</span>&#x02BC;s mature hand. 
+                                            The back endpaper has the note: &#x201C;p 315. Earth &#x0026; Stones &#x2014; 331&#x201D;, referring to 
+                                            pages comprising the twenty&#x2010;first evening, which is connected with mineralogy. That chapter is heavily marked in ink throughout, 
+                                            especially the passages on siliceous minerals.<br/><br/>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           
+                           </li>
+                        </ul>
+                     </div>
+                  
+                  </div>
+               
+               
+               <div id="" class="sub-subsection">
+                  <span class="head-sub-subsection">Untraced Books</span>
+                  
+                  <div class="p">
+                     
+                     <ul>
+                        
+                        <li>Children in the Wood; Sinbad the Sailor: In <span class="date-1823">1823</span>, to mollify <span class="persName-JR">John</span> during an illness, <span class="persName-MR">Margaret Ruskin</span> 
+                            was &#x201C;obliged to buy I don&#x02BC;t know how many books&#x201D;. Worried that <span class="persName-JJR">John James</span> might duplicate a purchase, 
+                            she recommended he bring home these traditional tales (<span class="title-letter-">Margaret to John James Ruskin, <span class="date-1823-03-11">11 March 1823</span></span>, <a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="persName-VAB">Burd</span>, ed., <span class="title-book-RFL"><i>Ruskin Family Letters</i></span></a>, 126&#x2013;27 and see 127l no. 1).
+                        </li>
+                        
+                        <li>&#x005B;More to come&#x005D;</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </div>
+   
+   
+   </html>

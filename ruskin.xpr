@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="21.1">
+<project version="22.0">
     <meta>
         <filters directoryPatterns="" filePatterns="ruskin.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="21.1" xml:space="preserve">
+            <serialized version="22.0" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>enable.project.master.files.support</String>
@@ -14,13 +14,36 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>_xml/_Completed/notes/bibliography.xml</String>
+                                    <String>_xml/_Completed/notes/hand_note.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate and open html</String>
+                                        <String>Generate html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/notes/boyhood_books_note.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
                                         <String>Generate (global)</String>
-                                        <String>Generate html</String>
                                         <String>Generate and open html</String>
+                                        <String>Generate html</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -28,6 +51,39 @@
                                         <String>XSL</String>
                                         <String>XSL</String>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/notes/bibliography.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate and open html</String>
+                                        <String>Generate html</String>
+                                        <String>Generate (global)</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -37,119 +93,20 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Generate (global)</String>
                                         <String>Generate and open html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_In_Process/witnesses/constellations_msia.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/webpages/indices.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate and open html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_In_Process/witnesses</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate and open html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/apparatuses/msiii_apparatus.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
                                         <String>Generate (global)</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/figures</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate (global)</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
                                         <String>XSL</String>
                                     </list>
                                 </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_In_Process/apparatuses/look_at_that_ship_apparatus.xml</String>
-                                </field>
-                                <field name="scenarioIds">
+                                <field name="scenarioStorageLocations">
                                     <list>
-                                        <String>Generate and open html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/apparatuses/saltzburg_apparatus.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate and open html</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -167,6 +124,251 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/apparatuses/harry_and_lucy_apparatus.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate and open html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>gen/_xml/_Completed/apparatuses/harry_and_lucy_apparatus.html</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate and open html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_In_Process/witnesses</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate and open html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/webpages/indices.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate and open html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_In_Process/apparatuses/look_at_that_ship_apparatus.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate and open html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/apparatuses/account_of_a_tour_on_the_continent_apparatus.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_In_Process/apparatuses/a_sermon_beautiful_allegory_apparatus.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_In_Process/apparatuses/account_of_a_tour_on_the_continent_10-07-18_apparatus.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/apparatuses/msiii_apparatus.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate (global)</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_In_Process/witnesses/constellations_msia.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/figures</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate (global)</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>_xml/_Completed/apparatuses/saltzburg_apparatus.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate and open html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -180,6 +382,11 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -197,6 +404,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -210,6 +422,11 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -227,6 +444,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -234,14 +456,20 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Generate html</String>
                                         <String>Generate and open html</String>
+                                        <String>Generate html</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -251,14 +479,20 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Generate html</String>
                                         <String>Generate and open html</String>
+                                        <String>Generate html</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -276,6 +510,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -289,6 +528,11 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -306,6 +550,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -319,6 +568,11 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -336,6 +590,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -349,6 +608,11 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -366,6 +630,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -379,6 +648,11 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -396,6 +670,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -409,6 +688,11 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -426,6 +710,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -439,6 +728,11 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -456,6 +750,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -469,6 +768,11 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -486,34 +790,9 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/apparatuses/account_of_a_tour_on_the_continent_apparatus.xml</String>
-                                </field>
-                                <field name="scenarioIds">
+                                <field name="scenarioStorageLocations">
                                     <list>
-                                        <String>Generate (global)</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>_xml/_Completed/notes/boyhood_books_note.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate (global)</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -531,6 +810,11 @@
                                         <String>XSL</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
@@ -538,9 +822,9 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Generate (global)</String>
                                         <String>Generate and open html</String>
                                         <String>Generate html</String>
+                                        <String>Generate (global)</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -548,6 +832,13 @@
                                         <String>XSL</String>
                                         <String>XSL</String>
                                         <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -600,7 +891,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</String>
+                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>true</Boolean>
@@ -666,7 +957,82 @@
                             </scenario>
                             <scenario>
                                 <field name="advancedOptionsMap">
-                                    <null/>
+                                    <serializableOrderedMap>
+                                        <entry>
+                                            <String>Saxon-EE</String>
+                                            <xsltSaxonSAAdvancedOptions>
+                                                <field name="sourceValidation">
+                                                    <String>saxon.source.no.schema.based.validation</String>
+                                                </field>
+                                                <field name="schemaVersion">
+                                                    <String>1.0</String>
+                                                </field>
+                                                <field name="treatResultValidationErrorsAsWarnings">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="addCommentsForValidationErrors">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="streamingEnabled">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="isJITEnabled">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="allowCallsOnExtensionFunctions">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="registerSaxonCEExtensions">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="enableAssertions">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="showVersionWarnings">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="dtdSourceValidation">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="dtdSourceValidationRecover">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="lineNumbering">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="initialMode">
+                                                    <null/>
+                                                </field>
+                                                <field name="initialTemplate">
+                                                    <null/>
+                                                </field>
+                                                <field name="traceXPathExpression">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="expandAttributeDefaults">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="errorRecoverPolicy">
+                                                    <String>saxon.recover.with.warning</String>
+                                                </field>
+                                                <field name="stripWS">
+                                                    <String>saxon.strip.ws.none</String>
+                                                </field>
+                                                <field name="optimizationEnabled">
+                                                    <Boolean>true</Boolean>
+                                                </field>
+                                                <field name="useConfigFile">
+                                                    <Boolean>false</Boolean>
+                                                </field>
+                                                <field name="configSystemID">
+                                                    <null/>
+                                                </field>
+                                                <field name="initializer">
+                                                    <String></String>
+                                                </field>
+                                            </xsltSaxonSAAdvancedOptions>
+                                        </entry>
+                                    </serializableOrderedMap>
                                 </field>
                                 <field name="name">
                                     <String>Generate and open html</String>
@@ -708,7 +1074,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</String>
+                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>true</Boolean>
@@ -822,7 +1188,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="locationToOpenInBrowserURL">
-                                    <String>http://ruskin.local:8080/${cf}</String>
+                                    <String>http://ruskin.local:8080${cf}</String>
                                 </field>
                                 <field name="openInEditor">
                                     <Boolean>false</Boolean>
