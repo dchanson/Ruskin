@@ -3,8 +3,6 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="pringle_thomas_note.xml">
             <titleStmt>
                 <title type="main">Thomas Pringle (1789&#x2013;1834)</title>
@@ -72,21 +70,21 @@
     <text>
         <body>
             <div type="note" subtype="biographical">
-                <head type="title">Thomas Pringle (<date notBefore="1789" notAfter="1835">1789&#x2013;1834</date>)</head>
+                <head type="title"><persName corresp="#TP">Thomas Pringle</persName> (<date notBefore="1789" notAfter="1835">1789&#x2013;1834</date>)</head>
                 <p>Poet, editor, and abolitionist. As editor of the <ref type="note" subtype="bibliographical" target="annuals_note.php">literary annual</ref>, 
-                    <ref type="note" target="friendships_offering_note.php"><title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title></ref>, 
+                    <ref type="note" subtype="bibliographical" target="friendships_offering_note.php"><title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title></ref>, 
                     <persName corresp="#TP">Pringle</persName> was a key figure in arranging for <persName corresp="#JR">Ruskin</persName>&#x02BC;s most significant 
                     early professional publication as a poet. (Technically, <persName corresp="#JR">Ruskin</persName>&#x02BC;s public debut as a poet occurred earlier, but less auspiciously, under the editorship of 
                     his tutor and clergyman, <ref type="note" subtype="biographical" target="andrews_edward_note.php"><persName corresp="#EA">Edward Andrews</persName> (<date notBefore="1787" notAfter="1841">1787&#x2013;1841</date>)</ref>, 
                     who split <persName corresp="#JR">Ruskin</persName>&#x02BC;s <date when="1829">1829</date> poem, 
                     <ref type="witness" target="description_of_skiddaw_and_lake_derwent_msii.php"><title type="poem" corresp="#JRSKIDDAWANDLAKEDERWENT">&#x201C;Description of Skiddaw and Lake Derwent&#x201D;</title></ref>, into two poems, 
                     <ref type="witness" target="on_skiddaw_and_derwent_water_st.php"><title type="poem" corresp="#JRONSKIDDAWANDDERWENT1830">&#x201C;On Skiddaw and Dewent&#x2010;Water&#x201D;</title></ref> and 
-                    <ref type="witness" target="lines_written_at_the_lakes_in_cumberland_st.php"><title type="poem" corresp="#JRLINESCUMBERLAND1829">&#x2010;Lines Written at the Lakes in Cumberland&#x2013;<hi rend="italic">Derwentwater</hi>&#x2010;</title></ref>, 
+                    <ref type="witness" target="lines_written_at_the_lakes_in_cumberland_st.php"><title type="poem" corresp="#JRLINESCUMBERLAND1829">&#x201C;Lines Written at the Lakes in Cumberland&#x201D;<hi rend="italic">Derwentwater</hi>&#x2010;</title></ref>, 
                     and published them, respectively, in the <date when="1829-08">August 1829</date> and <date when="1830-02">February 1830</date> issues of the short&#x2010;lived journal, 
                     <title type="periodical" corresp="#SPIRITUALTIMES"><hi rend="italic">The Spiritual Times</hi></title>.)
                     In <ref type="bibliography" target="bibliography.php#FRIENDSHIPSOFFERING1835"><title type="annual" corresp="#FRIENDSHIPSOFFERING1835"><hi rend="italic">Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath . . . for 1835</hi></title></ref>, 
                     published in <date when="1834-11">November 1834</date>, 
-                    <persName corresp="#TP">Pringle</persName> published two poems from <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent</ref>, 
+                    <persName corresp="#TP">Pringle</persName> printed two poems from <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent</ref>, 
                     <ref type="witness" target="andernacht_poem_fo.php"><title type="poem" corresp="#JRANDERNACHT">&#x201C;Andernacht&#x201D;</title></ref> and 
                     <ref type="witness" target="st_goar_poem_fo.php"><title type="poem" corresp="#JRSTGOAR">&#x201C;St. Goar&#x201D;</title></ref>, 
                     which were revised and yoked together under the title, <ref type="witness" target="account_of_a_tour_on_the_continent_fo.php"><title type="poem" corresp="#JRFRAGMENTS">&#x201C;Fragments from a Metrical Journal&#x201D;</title></ref>. 
@@ -106,7 +104,7 @@
                     <persName corresp="#TP">Pringle</persName> became editor of <ref type="note" subtype="bibliographical" target="friendships_offering_note.php"><title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title></ref>  
                     in <date when="1828">1828</date>, starting his responsibilities with the volume for <date when="1829">1829</date> 
                     (that is, the volume that became available for purchase in <date notBefore="1828-10" notAfter="1828-11">October or Novemeber 1828</date>, intended for <date notBefore="1828-12" notAfter="1829-01">the holiday season of 1828&#x2013;29</date>). 
-                    The annual had been acquired in <date when="1827">1827</date> by the young publishing firm of <orgName corresp="#SMITHELDER">Smith, Elder</orgName>, from its founding publisher; 
+                    The annual had been acquired in <date when="1827">1827</date> by the young publishing firm of <ref type="note" subtype="biographical" target="smith_elder_note.php"><orgName corresp="#SMITHELDER">Smith, Elder</orgName></ref>, from its founding publisher; 
                     and <orgName corresp="#SMITHELDER">Smith, Elder</orgName> released their first issue (the volume for <date when="1828">1828</date>, published in <date when="1827-11">November 1827</date>) 
                     under the editorship of <persName corresp="#CK">Charles Knight</persName>. When <persName corresp="#TP">Pringle</persName> took over, he remained editor until his death in <date when="1834-12">December 1834</date>, 
                     having already prepared the volume for <date when="1835">1835</date>&#x2014;the volume in which <persName corresp="#JR">Ruskin</persName>&#x02BC;s poems appeared&#x2014;and  
@@ -119,7 +117,7 @@
                     and therefore the Ruskins may have had some contact with this writer and editor, as well, in preparing <persName corresp="#JR">John</persName>&#x02BC;s first poems for a widely distributed public venue.
                 </p>
                 <p>Precisely how <persName corresp="#TP">Pringle</persName>&#x02BC;s acquaintance with the Ruskins came about is unknown. 
-                    <persName corresp="#JR">Ruskin</persName>&#x02BC;s later reminiscences of <persName corresp="#TP">Pringle</persName> are subordinated to wry rhetorical purposes. First, in the <date when="1878">1878</date> <title type="essay" corresp="#RUSKINMYFIRSTEDITOR">&#x201C;My First Editor: An Autobiographical Reminiscence,&#x201D;</title> 
+                    <persName corresp="#JR">Ruskin</persName>&#x02BC;s later reminiscences of <persName corresp="#TP">Pringle</persName> are subordinated to wry rhetorical purposes. First, in the <date when="1878">1878</date> <title type="essay" corresp="#RUSKINMYFIRSTEDITOR">&#x201C;My First Editor: An Autobiographical Reminiscence&#x201D;</title>, 
                     <persName corresp="#TP">Pringle</persName> appears as prelude to <persName corresp="#JR">Ruskin</persName>&#x02BC;s tribute to 
                     <ref type="note" subtype="biographical" target="harrison_w_h_note.php"><persName corresp="#WHH">W. H. Harrison</persName> (ca. <date notBefore="1792" notAfter="1878">1792&#x2013;1878</date>)</ref>, 
                     the poet and editor with whom <persName corresp="#JR">Ruskin</persName> maintained a much longer professional relationship, 
@@ -153,14 +151,14 @@
                     and who concluded that &#x201C;upon the whole [the publication] does not improve&#x201D; the mind: &#x201C;the plates are well done but they are not interesting&#x201D;, 
                     and &#x201C;the tales are horrible enough&#x201D;, and &#x201C;the poetry very so I think&#x201D; 
                     (<ref type="apparatus" target="mr_to_jjr_1829-10-31_al_apparatus.php"><title type="letter" corresp="mr_to_jjr_1829-10-31">letter of <date when="1829-10-31">31 October 1829</date></title></ref> [<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 208]).</p>
-                <p>This copy of the annual presented by <persName corresp="#CTR">Charles</persName> in <date notBefore="1829-10-21" notAfter="1829-10-31">late October 1829</date> would probably have been the recently published volume &#x201C;for <date when="1830">1830</date>,&#x201D; one of the volumes edited by <persName corresp="#TP">Pringle</persName> 
+                <p>This copy of the annual presented by <persName corresp="#CTR">Charles</persName> in <date notBefore="1829-10-21" notAfter="1829-10-31">late October 1829</date> would probably have been the recently published volume &#x201C;for <date when="1830">1830</date>&#x201D;, one of the volumes edited by <persName corresp="#TP">Pringle</persName> 
                     (see <ref type="note" subtype="bibliographical" target="friendships_offering_note.php"><title type="annual" corresp="#FRIENDSHIPSOFFERING"><hi rend="italic">Friendship&#x02BC;s Offering</hi></title></ref>). 
                     It contained contributions by his longtime friend, 
-                    <ref type="note" subtype="biographical" target="hogg_james_note.php"><persName>James Hogg</persName> (ca. <date notBefore="1770" notAfter="1835">1770&#x2013;1835</date>)</ref>, 
+                    <ref type="note" subtype="biographical" target="hogg_james_note.php"><persName corresp="#JH">James Hogg</persName> (ca. <date notBefore="1770" notAfter="1835">1770&#x2013;1835</date>)</ref>, 
                     whom <persName corresp="#TP">Pringle</persName> was likely responsible for introducing personally to the Ruskins at <placeName corresp="#HERNE">Herne Hill</placeName>, 
                     sometime between <date notBefore="1832-01-14" notAfter="1832-02-19">14 January and 19 February 1832</date>. 
                     In <date when="1834">1834</date>, this connection proved significant for the Ruskins&#x2014;at least as significant as another great man with whom 
-                    <persName corresp="#TP">Pringle</persName> remained more closely associated in <persName corresp="#JR">Ruskin</persName>&#x02BC;s memory&#x2014;namely, 
+                    <persName corresp="#TP">Pringle</persName> remained more closely associated in <persName corresp="#JR">Ruskin</persName>&#x02BC;s memory, 
                     <ref type="note" subtype="biographical" target="rogers_samuel_note.php"><persName corresp="#SR">Samuel Rogers</persName> (<date notBefore="1763" notAfter="1855">1763&#x2013;1855</date>)</ref>, to whom 
                     <persName corresp="#TP">Pringle</persName> introduced <persName corresp="#JR">Ruskin</persName> as a prodigy 
                     (see <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 35:93, 34:96&#x2013;97).</p>
@@ -170,7 +168,7 @@
                     Accordingly, <persName corresp="#TP">Pringle</persName> chided his charge for failing to attend to the conversation of great men.
                     The anecdote may or may not be plausible, but a more significant and fundamental question concerns the motivation and outcome of <persName corresp="#TP">Pringle</persName>&#x02BC;s introduction of the fourteen&#x2010; or fifteen&#x2010;year old boy wonder 
                     to <persName corresp="#SR">Rogers</persName>&#x02BC;s famous palace of art, <placeName corresp="#STJAMESPLACE">St. James Place</placeName>, where the poet had entertained the literati of Regency and early Victorian <placeName corresp="#LONDON">London</placeName> 
-                    (see <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus#MENTORS.php">Account of a Tour on the Continent: Discussion&#x2014;Mentors</ref>, and 
+                    (see <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php#MENTORS">Account of a Tour on the Continent: Discussion&#x2014;Mentors</ref>, and 
                     <ref type="note" subtype="biographical" target="rogers_samuel_note.php"><persName corresp="#SR">Samuel Rogers</persName> (<date notBefore="1763" notAfter="1855">1763&#x2013;1855</date>)</ref>).
                 </p>
             </div>

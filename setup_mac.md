@@ -72,10 +72,6 @@ server {
         fastcgi_param DOCUMENT_ROOT $document_root;
         # fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
     }
-    location ~ src/(.*\.html)$ {
-         try_files /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 $uri =404;
-     }
-     
     location ~ \.xml$ {
         add_header Content-disposition "attachment; filename=$uri";
     }

@@ -6,11 +6,6 @@
   xmlns:teix="http://www.tei-c.org/ns/Examples"
   xmlns:custom="http://whatever"
   >
-  <xsl:param name="assetUrl" select="'https://erm.selu.edu/web/images'" />
-  <xsl:param name="htmlForm" select="0" />
-    
-  <xsl:output method="html" use-character-maps="uni-hex"/>
-  
   <!--A B O U T   T H I S   D O C U M E N T
   Filename:               ruskin.xsl
   Version:                2.0
@@ -23,10 +18,7 @@
   Copyright Notice:       This document was created exclusively for The Early Works of John Ruskin (1826-42), a Digital Humanities project of
   Southeastern Louisiana University's Department of English. The contents of this document may not be used or reproduced in
   any form without the express permission of the Author and the Project Director.-->
-  
-  <xsl:variable name="newServerPath" select="'https://erm.selu.edu'" />
-  
-  <xsl:import href="xsl_imports/third_party.xsl"/>
+
   <xsl:import href="xsl_imports/characters.xsl"/>
   <xsl:import href="xsl_imports/functions.xsl"/>
   <xsl:import href="xsl_imports/names.xsl"/>
@@ -40,7 +32,5 @@
   <xsl:import href="xsl_imports/tei_main_tags.xsl"/>
   <xsl:import href="xsl_imports/witness_tags.xsl"/>
   <xsl:import href="xsl_imports/tei_variables.xsl"/>
-  
-  
 
 </xsl:stylesheet>

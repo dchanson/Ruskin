@@ -7,7 +7,7 @@
             The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="tite_of_work_note">
             <titleStmt>
-                <title type="main">Hypothyroidism</title>
+                <title type="main"></title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -20,7 +20,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#YNH">GMS</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -58,16 +58,9 @@
     <text>
         <body>
             <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
-            <div type="note" subtype="subtype">
-                <head type="title">Title of Note</head>
-                <p>Body paragraph.</p>
-                <p>Body paragraph containing a list:
-                    <list type="ordered">
-                        <item n="1">First item in the list.</item>
-                        <item n="2">Second item.</item>
-                        <item n="3">Third item.</item>
-                    </list>
-                </p>
+            <div type="note" subtype="">
+                <head type="title"></head>
+                
                 <p>Body paragraph.</p>
             </div>
         </body>

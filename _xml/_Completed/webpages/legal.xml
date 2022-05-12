@@ -3,9 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="webpage">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
-        <fileDesc xml:id="tite_of_work_note">
+        <fileDesc xml:id="legal">
             <titleStmt>
                 <title type="main">Legal</title>
                 <title type="sub">Webpage</title>
@@ -61,23 +59,24 @@
     <text>
         <body>
             <div type="webpage">
-                <head type="title">Legal</head>
+                <head type="title">Conditions of Use</head>
                     <div type="section">
                     <head type="section"><hi rend="italic">Early Ruskin Manuscripts, 1826&#x2013;1842</hi></head>
-                        <p>The <hi rend="italic">Early Ruskin Manuscripts, 1826&#x2013;1842</hi> is a project of Southeastern Louisiana University
-                            and Humanities Online, both under the direction of the university's Department of English.</p>
-                        <p>All commentary in <hi rend="italic">ERM</hi>, including apparatuses, glosses, notes transcripts, and other editorial
+                        <p>The <hi rend="italic">Early Ruskin Manuscripts, 1826&#x2013;1842</hi> (<hi rend="italic">ERM</hi>) is produced at Southeastern Louisiana University 
+                            with the support of the Department of English.</p>
+                        <p>All commentary in <hi rend="italic">ERM</hi>, including apparatuses, glosses, notes, transcripts, and other editorial
                             treatments of the manuscripts is &#x00A9; by David C. Hanson. If quoting from <hi rend="italic">ERM</hi>, please
                             identify the title of the work or commentary quoted, the date that you accessed <hi rend="italic">ERM</hi>, and the
                             following credit line and url: <hi rend="italic">The Early Ruskin Manuscripts, 1826&#x2013;1842</hi>. Ed. David C.
-                            Hanson, 2016-2018. &#x3008;english.selu.edu/ruskin&#x3009;.</p>
-                        <p>This site is powerd by the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0). 
+                            Hanson, 2016&#x2013;. &#x3008;https://erm.selu.edu/&#x3009;.</p>
+                        <p>Materials in the site are made available under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license. 
                           The license is available <ref type="external" target="https://creativecommons.org/licenses/by-nc/4.0/legalcode">here</ref>. 
-                          The license can also be found at the root of [this](https://github.com/GarthKiepper/Ruskin) git repository.
-                        </p>
-                        <p>The early Ruskin manuscripts are divided among several archives. For any given work or manuscript, permission to reproduce a
-                            facsimile and/or transcribe text is credited to the relevant archive in the Apparatus Pages for both works and manuscripts, in
-                            the section of a given apparatus describing &#x201C;Manuscripts&#x201D;; and in Notes Pages, at the end of a note.</p>
+                            The license can also be found at the root of the GitHub repository <ref type="external" target="https://github.com/GarthKiepper/Ruskin">here</ref>.</p>
+                        <p>The originals of the manuscripts facsimiled in <hi rend="italic">ERM</hi> are divided among several collections. 
+                            For any given work or manuscript, permission to exhibit a
+                            facsimile and/or transcribe text from a manuscript will be found credited to the relevant collection in the Apparatus Pages for both works and manuscripts (specifically, in
+                            the section of a given apparatus describing &#x201C;Manuscripts&#x201D;), and in Notes Pages at the end of a note. 
+                            Permission to use a facsimile of a manuscript should be sought from the institution that holds the manuscript.</p>
                     </div>
                     <div type="section">
                     <head type="section">Andron Scriptor Web</head>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="title_of_work_glosses">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="SOMETHINGUNIQUEGLOSS" resp="#DCH">This is a gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#SOMETHINGUNIQUEGLOSS"/>.-->
+
+                <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
+                
+                1Ruskin wrote “seme.”
+                2Ruskin wrote “new.”
+                3In these early printed (as opposed to longhand) texts, Ruskin occasionally imitates the appearance of italic type, and this appears his intention here—unless he is merely squeezing the word into its space at the end of the line. The second e is missing in the original.
+                4Ruskin frequently makes the error of using apostrophes to signify plurals.
+                In manuscript, “butterfly” is divided across pages 6 and 7—i.e., “butter fly like pea’s”—with no hyphen, but, at this time, Ruskin uses hyphens mainly to fill out and “justify” his lines, and not necessarily to signify word division. Thus, nothing disproves reading “butterfly” as one word. If read as two words, “butter fly” renders an already obscure passage into gibberish.
+                5Two framed plates follow this text on p. 8, one a diagram of the constellation Charles’s Wain, and the second a house labeled “harry and lucys friends house.”
+                Harry might have learned to regard Charles’s Wain as “an introduction to astronomy” from Joyce, Dialogues, which takes up the constellations starting from the second conversation on astronomy, and which supplies a diagram of Charles’s Wain that might well have served as the source of Ruskin’s drawing—both Joyce’s diagram and Ruskin’s drawing including not only Charles’s Wain but also the pole star and Arcturus. Joyce’s Tutor uses Charles’s Wain to orient his boys to the north pole star and other stars in the night sky and on the celestial globe. He also points to the many names of this constellation as indicating the arbitrariness of the sky’s mapping from ancient times  (Conversation 23, “Of the Fixed Stars,” 1:121-25; and pl. v, fig. 1).
+                6See “Harry and Lucy,” vol. 1 (no. 3), e.g., chaps. 2, 8, and 9.
+                7The frontispiece of this volume of “Harry and Lucy” (see part 2, MS III, “Description”) shows “harry going across the sea in a steamboat,” a drawing of a sidewheeler under full steam at sea and crowded with people.
+                8The missing e is clearly visible in light pencil, Ruskin having failed to trace the letter in ink. This, along with pencil text visible beneath the ink throughout this “Harry and Lucy,” tells us that, at this time, Ruskin’s use of the pen was limited to tracing (see no. 12).
+                9At the bottom of the page, “picture of the Bristol channel,” in which a three-master pulls a smaller boat by a rope, a steamboat approaches from the edge of the frame, and distant vessels are visible on the horizon.
+                10This very common experiment appears in an early chapter on hydrostatics in Joyce, Dialogues, Conversation 2, “Of the Weight and Pressure of Fluids” (2:21-22); however, Ruskin’s language very closely—too closely for coincidence—matches the opening of Conversation 19 on hydrostatics, “Of the Diver’s Bell.” A description of the machine is given with embellishments from Erasmus Darwin’s poem The Botanical Garden, e.g., to the effect that “Britannia [shall] rule the wealthy realms, / Which Ocean’s wide, insatiate wave o’erwhelms” (2:115-19).
+                
+            </div>
+        </body>
+    </text>
+</TEI>

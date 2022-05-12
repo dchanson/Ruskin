@@ -22,6 +22,11 @@
                     <resp>contributing encoding</resp>
                 </respStmt>
                 <respStmt>
+                    <!--For XML:ID, enter your intials.-->
+                    <persName corresp="#MJF">Madeline J. Felps</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <respStmt>
                     <persName corresp="#CWB">Charles W. Borchers, IV</persName>
                     <resp>contributing review, encoding</resp>
                 </respStmt>
@@ -73,7 +78,7 @@
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
                     <p><title type="poem" corresp="#THEDEFIANCEOFWAR">&#x201C;The Defiance of War&#x201D;</title></p>
-                    <p><persName corresp="#JR">Ruskin</persName> wrote the title as <title type="poem" corresp="#THEDEFIANCEOFWAR">&#x201C;The defiance of war&#x201D;</title>; he also designated the poem as &#x201C;poem III&#x201D; in the
+                    <p><persName corresp="#JR">Ruskin</persName> wrote the title as <title type="poem" corresp="#THEDEFIANCEOFWAR">&#x201C;The defiance of war&#x201D;</title>; he also designated the poem as &#x201C;poem III&#x201D; in 
                         <ref type="apparatus" subtype="manuscript" target="msi_poetry_anthology_apparatus.php"><title type="anthology" corresp="#MSIPOETRYANTHOLOGY">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</title></ref>. See
                         <ref type="note" subtype="bibliographical" target="title_citation_note.php">System of Title Citation for Works</ref>.</p>
                 </div>
@@ -84,7 +89,7 @@
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
                     <p><ref type="apparatus" subtype="manuscript" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref> (pp. 101&#x2013;2), a <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Book</ref> devoted
-                        primarily to <ref type="apparatus" subtype="manuscript" target="harry_and_lucy_vol1_apparatus.php"><title type="poem" corresp="#HARRYANDLUCYVOL1">&#x201C;Harry and Lucy,&#x201D; Vol. 1</title></ref>. <title type="poem" corresp="#THEDEFIANCEOFWAR">&#x201C;The Defiance of War&#x201D;</title> is
+                        primarily to <ref type="apparatus" subtype="manuscript" target="harry_and_lucy_vol1_apparatus.php"><title type="lesson" corresp="#JRHARRYANDLUCYVOL1">&#x201C;Harry and Lucy . . . Vol 1&#x201D;</title></ref>. <title type="poem" corresp="#THEDEFIANCEOFWAR">&#x201C;The Defiance of War&#x201D;</title> is
                         the second poem in the <ref type="apparatus" subtype="manuscript" target="msi_poetry_anthology_apparatus.php"><title type="anthology" corresp="#MSIPOETRYANTHOLOGY">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</title></ref>.</p>
                     <p>Facsimiles by permission of <title type="archive" corresp="#BEINECKERUSKINCOLLECTION">John Ruskin Collection</title>, General Collection, <orgName corresp="#BEINECKE">Beinecke Rare Book and Manuscript Library</orgName>, <orgName corresp="#YALE">Yale University</orgName>. Transcriptions of texts and commentary &#x00A9; <persName corresp="#DCH">David C. Hanson</persName>.</p>
                 </div>
@@ -95,67 +100,207 @@
                         <ref type="apparatus" subtype="work" target="the_needless_alarm_apparatus.php#DATE"><title type="poem" corresp="#THENEEDLESSALARM">&#x201C;The Needless Alarm&#x201D;</title>: Date</ref>.</p>
                     <p>This poem, with its exhortation to guard &#x201C;our peaceful home&#x201D; from suffering and death, could allude to the removal of
                         <persName corresp="#JR">Ruskin</persName>&#x02BC;s dying cousin, <ref type="note" subtype="biographical" target="richardson_james_note.php"><persName corresp="#JRPSON">James Richardson</persName></ref>, from
-                        <ref type="note" subtype="geographical" target="herne_hill_note.php">Herne Hill</ref> in <date when="1826-04">April 1826</date>. If so, the poem might have
+                        <ref type="note" subtype="contextual" target="herne_hill_note.php"><placeName type="building" corresp="#HERNE">Herne Hill</placeName></ref> in <date when="1826-04">April 1826</date>. If so, the poem might have
                         been composed, or at least refer to a period, earlier than <date when="1827-01">January 1827</date> (see <ref type="internal" target="#DISCUSSION">Discussion</ref>;
-                        <ref type="apparatus" subtype="work" target="on_scotland_apparatus.php"><title type="poem" corresp="#ONSCOTLAND">&#x201C;On Scotland&#x201D;</title></ref>; and <ref type="apparatus" subtype="manuscript" target="harry_and_lucy_vol2_apparatus.php"><title type="lesson" corresp="#HARRYANDLUCYVOL2">&#x201C;Harry and Lucy,&#x201D; Vol. 2</title></ref>).</p>
+                        <ref type="apparatus" subtype="work" target="on_scotland_apparatus.php"><title type="poem" corresp="#ONSCOTLAND">&#x201C;On Scotland&#x201D;</title></ref>; and <ref type="apparatus" subtype="work" target="harry_and_lucy_vol2_apparatus.php"><title type="lesson" corresp="#JRHARRYANDLUCYVOL2">&#x201C;Harry and Lucy . . . Vol. 2&#x201D;</title></ref>).</p>
                     <p>See <ref type="note" subtype="bibliographical" target="date_citation_note.php">System of Date Citation</ref>.</p>
                 </div>
                 <div type="section" xml:id="COMPPUB">
                     <head type="section">Composition and Publication</head>
                     <p>Previously unpublished.</p>
-                    <p>Hand is pencil, print; see <ref type="note" subtype="bibliographical" target="hand_note.php">Ruskin&#x02BC;s Hand</ref>.</p>
+                    <p>Hand is pencil, print; see <ref type="note" subtype="bibliographical" target="hand_note.php">The Ruskin Family Handwriting</ref>.</p>
                 </div>
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
-                    <p>The oddly belligerent pacifist message of this poem, combined with its placement alongside poems celebrating both <placeName corresp="#SCOTLAND">Scotland</placeName> and British pride of manufacture, appears to support <persName corresp="#LC">Linda Colley</persName>&#x02BC;s 
+                    <div type="subsection" xml:id="PACIFISM">
+                        <head type="subsection">Pacifism in Britain after Waterloo</head>
+                        <p>The latest credible threat of invasion of British shores had ended, of course, in <date when="1815">1815</date> 
+                            with the <date when="1815-06-18">Battle of Waterloo</date>, which closed the <date notBefore="1799-11-09" notAfter="1815-06-18">Napoleonic Wars</date>. 
+                            Soon thereafter, in <placeName corresp="#LONDON">London</placeName> in <date when="1816">1816</date>, the <orgName corresp="#PEACESOCIETY">Peace Society</orgName> was founded as a coalition of <orgName corresp="#SOCIETYOFFRIENDS">Quakers</orgName> and other <orgName corresp="#DISSENTER">Dissenters</orgName>, 
+                            such as <orgName corresp="#CONGREGATIONALISM">Congregationalists</orgName>&#x2014;the Ruskins&#x02bc; church at this time&#x2014;<orgName corresp="#BAPTISM">Baptists</orgName>, and <orgName corresp="#UNITARIANISM">Unitarians</orgName>, as well as 
+                            <orgName corresp="#EVANGELICALANGLICANISM">Anglican Evangelicals</orgName>. <persName corresp="#PBROCK">Peter Brock</persName> characterizes the society as marking the emergence of an organized peace movement 
+                            as compared with earlier, sporadic assertions of <orgName corresp="#CHRISTIANITY">Christian</orgName> pacifism by individuals, and as partaking of the reform optimism 
+                            of the <date notBefore="1820" notAfter="1839">1820s&#x2013;30s</date> generally. A middle&#x2010;class movement, and never a broadly populist one, the society was intent initially on converting British opinion 
+                            through pamphleteering. As the flush of optimism surrounding the <date notBefore="1814-11" notAfter="1815-06">Vienna Settlement</date> gave way to rising nationalism on the <geogName corresp="#CONTINENT">Continent</geogName>, accompanied by friction 
+                            between reactionary state policies and republican movements, the <orgName corresp="#PEACESOCIETY">Peace Society</orgName> advocated nonintervention. It finally found a political platform 
+                            through alliance with free&#x2010;trade internationalists (<ref type="bibliography" target="bibliography.php#BROCKPACIFISM"><persName corresp="#PBROCK">Brock</persName>, <title type="book" corresp="#BROCKPACIFISM"><hi rend="italic">Pacifism in Europe</hi></title></ref>, 376&#x2013;86).</p>
+                        
+                        <p>In <date notBefore="1826-09" notAfter="1826-12">late 1826</date>, near the time of <persName corresp="#JR">Ruskin</persName>&#x02BC;s poem, an international incident that had the potential to affect trade 
+                            occurred in the East, in connection with the <date notBefore="1821-03-06" notAfter="1832-05-07">Greek War for Independence</date> from Turkish domination. 
+                            While no threat to <placeName corresp="#BRITAIN">Britain</placeName>, the war would have interested the Ruskins for its associations with 
+                            <ref type="note" subtype="biographical" target="byron_noteAEH.php"><persName corresp="#GGB">Lord Byron</persName></ref>, who had died in <placeName corresp="#MISSOLONGHI">Missolonghi</placeName> in
+                            <date when="1824">1824</date>. In the <date notBefore="1821-03-06" notAfter="1832-05-07">Greek conflict</date>, <placeName corresp="#BRITAIN">Britain</placeName> was striving to avoid an outbreak 
+                            between <placeName corresp="#TURKEY">Turkey</placeName> and <placeName corresp="#RUSSIA">Russia</placeName>, whose new tsar, <persName corresp="#TS1">Nicholas I</persName>, was willing
+                            to push hostilities. In <date when="1826-10">October 1826</date>, <placeName corresp="#BRITAIN">Britain</placeName> pressured <placeName corresp="#TURKEY">Turkey</placeName> to accept Russian conditions in the <date when="1826-10-07">Convention of Akkerman</date>. This assured Russian influence in the
+                            <geogName corresp="#CAUCASUS">Caucasus</geogName> and the opening of the <geogName corresp="#BOSPHORUSSTRT">Straits of Bosphorus</geogName> to trade, which might have interested the Ruskins&#x02BC; mercantile household.
+                            As it turned out, <placeName corresp="#RUSSIA">Russia</placeName> continued to press hostilities in the name of the Greek cause, and <placeName corresp="#BRITAIN">Britain</placeName> joined <placeName corresp="#FRANCE">France</placeName> and <placeName corresp="#RUSSIA">Russia</placeName> to declare
+                            joint mediation, according to a treaty signed in <placeName corresp="#LONDON">London</placeName> in <date when="1827-07">July 1827</date>. (In the subsequent history, the Turks refused mediation but were defeated by
+                            allied fleets at <placeName corresp="#NAVARINO">Navarino</placeName> in <date when="1827-10">October 1827</date>. The <date when="1829-09-14">Treaty of Adrianople</date>, rendering <placeName corresp="#GREECE">Greece</placeName> autonomous, was signed
+                            two years later, in <date when="1829-09">September 1829</date>.)</p>
+                    </div>
+                    <div type="subsection" xml:id="PACIFISMANDDOMESTICITY">
+                        <head type="subsection">Pacifism and Domesticity</head>
+                        <p>While <persName corresp="#JR">Ruskin</persName> may have heard his parents discusss these international affairs or listened to a clergyman defend the <orgName corresp="#CHRISTIANITY">Christian</orgName> ethics of pacifism, 
+                            he was perhaps most influenced by attitudes toward war expressed in poetry and tales by women writers of the period whose message, like his, was centered on protection of the home. 
+                            Children who grew up in <placeName corresp="#BRITAIN">Britain</placeName> during the <date notBefore="1799-11-09" notAfter="1815-06-18">Napoleonic</date> and immediately post&#x2010;Napoleonic eras 
+                            were exposed to the anxieties of women who, as <persName corresp="#LC">Linda Colley</persName> remarks, 
+                            &#x201C;seem to have believed that their own security and the security of the family unit were at stake in this 
+                            <date notBefore="1789-05-05" notAfter="1815-06-18">French war</date> as they had not been in earlier conflicts. 
+                            In part, this was because the risk of a French invasion of <placeName corresp="#BRITAIN">Britain</placeName> was so much greater in this war than ever before. 
+                            But crucial, too, as an ingredient in female anxiety was the destruction of <persName corresp="#MAJ">Marie&#x2010;Antoinette</persName> and the rest of the French Royal Family&#x201D;&#x2014;a regicide that 
+                            <persName corresp="#EB">Edmund Burke</persName>&#x02BC;s <title type="essay" rend="italic" corresp="#BURKEREFLECTIONS">Reflections on the Revolution in France</title> 
+                            (<date when="1790">1790</date>) taught the elder Ruskins&#x02BC; generation to stigmatize specifically in terms &#x201C;of a queen who was also a wife and mother being driven by force from her home&#x201D;
+                            (<ref type="bibliography" target="bibliography.php#BRITONS"><persName corresp="#LC">Colley</persName>, <title type="book" corresp="#BRITONS"><hi rend="italic">Britons</hi></title></ref>, 254, 253).</p>
+                        
+                        <p>One source of women&#x02bc;s anti&#x2010;war writing to which <persName corresp="#JR">Ruskin</persName> had access was <title type="book" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title> by the <orgName corresp="#UNITARIANISM">Unitarian</orgName> educationalists, 
+                            <ref type="note" subtype="biographical" target="barbauld_anna_laetitia_note.php"><persName corresp="#ALB">Mrs. Barbauld</persName></ref> and her brother <persName corresp="#JAIKIN">John Aikin</persName>. 
+                            While it is impossible to specify when and with what extent of supervision <persName corresp="#JR">Ruskin</persName> dipped into this miscellaneous &#x201c;juvenile budget&#x201d; 
+                            of dialogues, fables, and poems, its anti&#x2010;war pieces were vividly prominent. For example, the dialogue 
+                            <title type="lesson" corresp="#BARBAULDTHINGSBYTHEIRRIGHTNAMES">&#x201c;Things by Their Right Names&#x201d;</title> (traditionally ascribed to <persName corresp="#ALB">Barbauld</persName>&#x02bc;s authorship rather than <persName corresp="#JAIKIN">Aikin</persName>&#x02bc;s), 
+                            a Father obliges the wish of his son, Charles, for a story about &#x201c;bloody murder&#x201c;; however, 
+                            in place of the generic props and characters of romance that Charles anticipates, 
+                            the father substitutes unexpected &#x201c;right names&#x201d; for elements in the story. 
+                            As Charles pieces together these words, he realizes his father is not relating a thriller but describing a battle: 
+                            &#x201c;&#x2018;I do not know any <hi rend="italic">murders</hi> half so bloody&#x2019;&#x201d;, the Father concludes. 
+                            Implicit in the father&#x02bc;s lesson is the real threat that war poses to the English home, 
+                            as the family has gathered &#x201c;&#x2018;round the fire quite ready to hear&#x201d;&#x2019; a good story, 
+                            only to find their expectations invaded by graphic images of violence 
+                            (<ref type="bibliography" target="bibliography.php#AIKINBARBAULDEVENINGS"><persName corresp="#ALB">Barbauld</persName> and <persName corresp="#JAIKIN">Aikin</persName>, <title type="book" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title></ref>, 1:154&#x2013;56).</p>
+                        
+                        <p>Other anti&#x2010;war dialogues and tales in <ref type="bibliography" target="bibliography.php#AIKINBARBAULDEVENINGS"><title type="book" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title></ref>&#x2014;probably by <persName corresp="#JAIKIN">Aikin</persName>, or perhaps by <persName corresp="#JAIKIN">Aikin</persName> and <persName corresp="#ALB">Barbauld</persName> collaboratively&#x2014;include 
+                            the dramatic sketch <title type="drama" corresp="#BARBAULDTWOROBBERS">&#x201c;The Two Robbers&#x201d;</title>, 
+                            which uses a strategy similar to that of <title type="lesson" corresp="#BARBAULDTHINGSBYTHEIRRIGHTNAMES">&#x201c;Things by Their Right Names&#x201d;</title> of substituting blunt definitions for the evasions of self&#x2010;glorifying warriors. 
+                            The pretensions of <persName corresp="#KA3">Alexander the Great</persName> are mocked by a lowly Thracian, who has been captured for stealing. 
+                            <persName corresp="#KA3">Alexander</persName>&#x02bc;s conquests, the Thracian explains, are no better than the robberies committed by the captive (2:152&#x2013;56). Later, 
+                            in <title type="lesson" corresp="#BARBAULDTRUEHEROISM">&#x201c;True Heroism&#x201d;</title>, the actions of <persName corresp="#KA3">Alexander</persName> and other alleged heroes are attributed to mere selfishness, while true heroism is bestowed 
+                            on a common lad who protects his family from the abuse and neglect of his father&#x2014;&#x201c;of all the tyranny and cruelty exercised in the world, 
+                            . . . that of bad husbands and fathers [being] by much the most frequent and worst&#x201d; (5:85&#x2013;90, 88).</p>
+                        
+                        <p>Another dialogue that deflates the gains of war, <title type="lesson" corresp="#BARBAULDPRICEOFAVICTORY">&#x201c;The Price of a Victory&#x201d;</title>, 
+                            opens with a boy bursting into &#x201c;his father&#x02bc;s house&#x201d; to proclaim the &#x201c;glorious news&#x201d; of &#x201c;a complete victory&#x201d;, 
+                            only to be cross&#x2010;examined by his father. Rationally, the father unpacks the news by weighing the illusory benefits of the victory against its hugely painful costs. 
+                            The father closes his case with a story illustrating the sufferings of a soldier, who returns home from battle grotesquely wounded, 
+                            and whose death causes the decline of his fiance and parents. Again, the greatest cost of war is pictured as the fall of the peaceful and prosperous home (4:52&#x2013;63). 
+                            In a sequel dialogue, <title type="lesson" corresp="#BARBAULDCOSTOFAWAR">&#x201c;The Cost of a War&#x2014;</title>, the father describes the notorious destruction of the <placeName corresp="#PALATINATE">German Palatinate</placeName> by <persName corresp="#KL14">Louis XIV</persName> of <placeName corresp="#FRANCE">France</placeName> 
+                            to reveal the effects of imperial aggression on unoffending villagers whose homes and crops are burned (5:54&#x2013;63; and see, 
+                            in <title type="composite" corresp="#JRACCOUNTTOUR">Account of a Tour on the Continent</title>, the essay 
+                            <ref type="witness" target="heidelberg_prose3_msviii.php"><title type="essay" corresp="#JRHEIDELBERGPROSE3_MSVIII">&#x201C;All has yielded to it from time immemorial&#x201D; [&#x201C;Heidelberg&#x201D;]</title></ref> and associated glosses).</p>
+                        
+                        <p><persName corresp="#ALB">Barbauld</persName> and <persName corresp="#JAIKIN">Aikin</persName>&#x02bc;s anti&#x2010;war rhetoric in <title type="book" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title> has been shown to be consistent with discourse shared among Radical reformers 
+                            during the <date notBefore="1789-05-05" notAfter="1799-11-09">Revolutionary period</date>. The language for the children&#x02bc;s lessons is simpler, and their ironies less biting than what <persName corresp="#ALB">Barbauld</persName> indulged in her anti&#x2010;war political pamphlets. 
+                            The simplicity, however, potentially increased the risk of censure for sedition during the height of the government&#x02bc;s alarm in the <date notBefore="1790" notAfter="1799">1790s</date>, 
+                            since the arguments could be construed as leading unsophisticated folk astray 
+                            (<ref type="bibliography" target="bibliography.php#TRETHEWAYBARBAULDAMONGRADICALS"><persName corresp="#RTRETHEWAY">Trethewey</persName>, <title type="essay" corresp="#TRETHEWAYBARBAULDAMONGRADICALS">&#x201c;Lady Defender of the Revolution&#x201d;</title></ref>, 163&#x2013;65, 161). 
+                            Certainly, <persName corresp="#ALB">Barbauld</persName>&#x02bc;s mastery of a shared Radical discourse drew censure because her rhetoric was indistinguishable from that of male writers. 
+                            In her own time, she was accused of having &#x201c;unsexed&#x201d; herself. Famously, <persName corresp="#JWCROKER">John Wilson Croker</persName> attacked her in his review of her poem, 
+                            <title type="poem" corresp="BARBAULD1811"><hi rend="italic">Eighteen Hundred and Eleven</hi></title>, for 
+                            &#x201c;wander[ing] from the course in which she was respectable and useful&#x201d;&#x2014;as an educator and writer for children&#x2014;and 
+                            mistaking &#x201c;her power and her duty&#x201d; as a &#x201c;lady&#x2010;author&#x201d; by presuming to comment on the affairs of empire (<!-- SOURCE -->). 
+                            (see <ref type="bibliography" target="bibliography.php#MAHONSERMONANDSTORY"><persName corresp="#PMAHON">Mahon</persName>, <title type="essay" corresp="#MAHONSERMONANDSTORY">&#x201c;Sermon and Story&#x201d;</title></ref>, 29&#x2013;30; <ref type="bibliography" target="bibliography.php#MCCARTHYBARBAULDRECEPTION"><persName corresp="#WMCCARTHY">McCarthy</persName>, <title type="essay" corresp="#MCCARTHYBARBAULDRECEPTION">&#x201c;&#x2018;A High&#x2010;Minded Christian Lady&#x2019;&#x201d;</title></ref>, 179&#x2013;80).</p>
+                        
+                        <p>The anti&#x2010;war pieces for children in <title type="book" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title> avoided scrutiny as subversive perhaps because, as <persName corresp="#AFYFE">Aileen Fyfe</persName> has found, 
+                            the book was initially well received primarily among liberal <orgName corresp="#DISSENTER">Dissenter</orgName> families. The book proved objectionable to <orgName corresp="#EVANGELICALANGLICANISM">Anglican Evangelical</orgName> readers, 
+                            but primarily for what it did not say, such as connecting scientific topics explicitly with religious commentary. 
+                            In any case, controversy had waned by the <date notBefore="1820" notAfter="1829">1820s</date>, 
+                            when <persName corresp="#JR">Ruskin</persName> encountered the work, and <title type="book" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title> achieved the status of a classic, 
+                            reprinted in thousands of copies (<ref type="bibliography" target="bibliography.php#FYFETRACTS"><persName corresp="#AFYFE">Fyfe</persName>, <title type="essay" corresp="#FYFETRACTS">&#x201C;Tracts, Classics and Brands&#x201D;</title></ref>, 220&#x2013;21). 
+                            <persName corresp="#JAIKIN">Aikin</persName> and <persName corresp="#ALB">Barbauld</persName> may also have steered clear of sedition by confining the anti&#x2010;war pieces to historical examples&#x2014;the ancient <placeName corresp="#MACEDONIA">Macedonia</placeName> 
+                            of <persName corresp="#KA3">Alexander the Great</persName>, the seventeenth&#x2010;century <geogName corresp="#EUROPE">Europe</geogName> of <persName corresp="#KL14">Louis XIV</persName>. However the implications of the anti&#x2010;war arguments were apprently muted for most readers, 
+                            in <persName corresp="#JR">Ruskin</persName>&#x02bc;s <title type="poem" corresp="#JRTHEDEFIANCEOFWAR">&#x201c;The Defiance of War&#x201d;</title> <persName corresp="#ALB">Barbauld</persName> and <persName corresp="#JAIKIN">Aikin</persName>&#x02bc;s discourse appears largely ignored in details. One can perhaps glimpse the Radical contention 
+                            that only the ruling class benefits by war in <persName corresp="#JR">Ruskin</persName>&#x02bc;s remark that war &#x201c;like[s] better a king to be&#x201d;. Overwhelmingly, however, 
+                            the poem&#x02bc;s pacifist message is not only unsupported by argument but even contradicted by a discordant militarism, such as the threat 
+                            that any invading army &#x201c;here shall suffering die&#x201d;. Moreover, the gender positioning seems aggressively masculine, 
+                            with the promise that war will in its turn be conquered by &#x201c;he&#x201d; who is &#x201c;the strongest of us&#x201d;&#x2014;presumably referring to the patriarch of the household, 
+                            or to a military hero of the nation.</p>
+                        
+                        <p>This contradiction in the poem&#x02bc;s tone might be categorized with the conflict in work by women writers who ventured to raise their voices against war, 
+                            while confessing themselves drawn to the glamour of the military 
+                            (see <ref type="bibliography" target="bibliography.php#SAUNDERSCOSTELLO"><persName corresp="#CBSAUNDERS">Saunders</persName>, <title type="essay" corresp="#SAUNDERSCOSTELLO">&#x201c;Louisa Stuart Costello and Women&#x02bc;s War Poetry&#x201d;</title></ref>).
+                            <persName corresp="#JR">Ruskin</persName>&#x02bc;s imagination was keenly fixed on the romance of <date when="1815-06-18">Waterloo</date>, 
+                            just as <persName corresp="#CBW">Charlotte</persName> and <persName corresp="#PBB">Branwell</persName> Bront&#x00EB; made <persName corresp="#AWW">Wellington</persName> the hero of their sagas. 
+                            The hero worship had its origin at least a year earlier than his compiling <title type="poem" corresp="#JRTHEDEFIANCEOFWAR">&#x201c;The Defiance of War&#x201d;</title> along with other poems in 
+                            <ref type="apparatus" subtype="manuscript" target="msi_poetry_anthology_apparatus.php"><title type="anthology" corresp="#MSIPOETRYANTHOLOGY">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</title></ref>, 
+                            when the Ruskins visited <placeName corresp="#WATERLOO">Waterloo Field</placeName> 
+                            during the <ref type="note" subtype="contextual" target="tour_of_1825_note.php">Tour of 1825</ref> to the <geogName corresp="#CONTINENT">Continent</geogName>. 
+                            He returned to the theme throughout the <date notBefore="1826" notAfter="1829">late 1820s</date>, 
+                            in works such as <ref type="apparatus" subtype="work" target="the_british_battles_apparatus.php"><title type="poem" corresp="#THEBRITISHBATTLES">&#x201C;The British Battles&#x201D;</title></ref>, 
+                            <ref type="apparatus" subtype="work" target="battle_of_waterloo_apparatus.php"><title type="drama" corresp="#BATTLEOFWATERLOOPLAY">&#x201C;Battle of Waterloo: A Play in Two Acts&#x201D;</title></ref>,
+                            <ref type="apparatus" subtype="work" target="ballad_on_waterloo_apparatus.php"><title type="poem" corresp="#BALLADONWATERLOO">&#x201C;Ballad on Waterloo&#x201D;</title></ref>, and 
+                            <ref type="apparatus" subtype="work" target="trafalgar_apparatus.php" ><title type="poem" corresp="#TRAFALGAR">&#x201C;Trafalgar&#x201D;</title></ref>.</p>
+                        
+                        <p>War poetry that was more conflicted than <persName corresp="#ALB">Barbauld</persName> and <persName corresp="#JAIKIN">Aikin</persName>&#x02bc;s rational dialogues may have been available to <persName corresp="#JR">Ruskin</persName> in work by <ref type="note" subtype="biographical" target="hemans_felicia_noteAEH.php"><persName corresp="#FDH">Felicia Hemans</persName></ref>, 
+                            which he certainly knew to some extent at this time. In <persName corresp="#FDH">Hemans</persName>&#x02bc;s early poems about the <date notBefore="1799-11-09" notAfter="1815-06-18">Napoleonic Wars</date>, the idea of a peaceful British home, 
+                            which stands invulnerable to warfare that <placeName corresp="#BRITAIN">Britain</placeName> itself wages, appears as a trope with specific uses within a larger argument. 
+                            In <title type="poem" corresp="#HEMANSWARANDPEACE">&#x201c;War and Peace&#x2014;A Poem, Written at the Age of Fifteen&#x201d;</title>, 
+                            published in <date when="1812">1812</date> when the poet was still Felicia Dorothea Browne, the nation, &#x201c;Albion&#x201d;, is figured as the invulnerable home.</p>
+                        
+                        <floatingText>
+                            <body>
+                                <div type="poem">
+                                    <lg type="stanza">
+                                        <l>Oh! Albion! Liberty&#x02bc;s immortal fane,</l>
+                                        <l>Empress of isles! palladium of the main!</l>
+                                        <l>Tho&#x02bc; thy loud thunders thro&#x02bc; the world resound,</l>
+                                        <l>Tho&#x02bc; thy red lightnings flash victorious round;</l>
+                                        <l>Tho&#x02bc; nations own, in many a distant clime,</l>
+                                        <l>Thy arm triumphant, as thy name sublime;</l>
+                                        <l>Rock of the waves! tho&#x02bc; proud, from zone to zone,</l>
+                                        <l>Extend the pillars of thy naval throne;</l>
+                                        <l>Around thy coast tho&#x02bc; wild destruction roars,</l>
+                                        <l>Yet calm and fertile smile thy favor&#x02bc;d shores;</l>
+                                        <l>In emerald verdure blooms thy sunny plain,</l>
+                                        <l>And the dark war&#x2010;blast rolls without&#x2010;in vain!</l>
+                                        <l>Tho&#x02bc; flames of valor, kindling in thine eye,</l>
+                                        <l>Brave every storm, and every foe defy;</l>
+                                        <l>Yet soft, beneath its milder beam, serene,</l>
+                                        <l>Luxuriance blossoms o&#x02bc;er the glowing scene;</l>
+                                        <l>Fair laugh thy vales! no deathful sounds assail,</l>
+                                        <l>Mirth warbles free, and music swells the gale;</l>
+                                        <l>While firm in might, thy victor&#x2010;arm extends,</l>
+                                        <l>Death to thy foes, and succour to thy friends!</l>
+                                    </lg>
+                                    <lb/>
+                                    <p>(<ref type="bibliography" target="bibliography.php#HEMANSDOMESTICAFFECTIONSANDOTHERPOEMS"><persName corresp="#FDH">Hemans</persName>, <title type="book" corresp="#HEMANSDOMESTICAFFECTIONSANDOTHERPOEMS"><hi rend="italic">&#x201c;The Domestic Affections&#x201d; and Other Poems</hi></title></ref>, 96&#x2013;97 [lines ??])</p>
+                                </div>
+                            </body>
+                        </floatingText>
+                        <p>In <persName corresp="#EGOTTLIEB">Evan Gottlieb</persName>&#x02bc;s analysis of another juvenile war poem by <persName corresp="#FDH">Hemans</persName>, 
+                            <title type="poem" corresp="#HEMANSENGLANDANDSPAIN"><hi rend="italic">England and Spain; or, Valour and Patriotism</hi></title> (<date when="1808">1808</date>), 
+                            which he reads against <persName corresp="#ALB">Barbauld</persName>&#x02bc;s <title type="poem" corresp="#BARBAULD1811"><hi rend="italic">Eighteen Hundred and Eleven</hi></title>, 
+                            <persName corresp="#FDH">Hemans</persName> seeks in the end to privilege peace over warfare; however, in order to do so, 
+                            she puts &#x201c;herself in the awkward position of anticipating the end of freedom&#x2010;loving violence . . . for the sake of perpetual peace&#x201d;, despite 
+                            having all along valorized <placeName corresp="#BRITAIN">Britain</placeName>&#x02bc;s imperial aggression as the means to prosperity and spread of democracy. 
+                            <persName corresp="#ALB">Barbauld</persName> perceives the contradiction in this oblivious optimism and predicts that <placeName corresp="#BRITAIN">Britain</placeName>&#x02bc;s paradoxical pursuit of peace and prosperity through imperioalistic aggression&#x2014;regardless 
+                            of particular, seemingly justifying circumstances&#x2014;will ultimately collapse (<ref type="bibliography" target="bibliography.php#GOTTLIEBFIGHTINGWORDS"><persName corresp="#EGOTTLIEB">Gottlieb</persName>, <title type="essay" corresp="#GOTTLIEBFIGHTINGWORDS">&#x201c;Fighting Words&#x201d;</title></ref>, 334, 338).</p>
+                        
+                        <p>The near&#x2010;eschatological terms with which <persName corresp="#FDH">Hemans</persName> needs to represent the peaceful English home at the end of <title type="poem" corresp="#HEMANSENGLANDANDSPAIN"><hi rend="italic">England and Spain</hi></title>, 
+                            as well as in the paean to Albion in <title type="poem" corresp="#HEMANSWARANDPEACE">&#x201c;War and Peace&#x201d;</title>, may explain the gap between military aggression and desire for a peaceful sanctuary 
+                            that <persName corresp="#JR">Ruskin</persName> fails to bridge in <title type="poem" corresp="#JRDEFIANCEOFWAR">&#x201c;The Defiance of War&#x201d;</title>. Even when <persName corresp="#FDH">Hemans</persName> at least acknowledges a contradiction in her somewhat maturer poem, 
+                            <title type="poem" corresp="#HEMANSDOMESTICAFFECTIONS">&#x201c;The Domestic Affections&#x201d;</title> (<date when="1812">1812</date>), by asking rhetorically whether &#x201c;war&#x02bc;s dread scenes [can] the hallow&#x02bc;d ties efface&#x201d; and 
+                            whether &#x201c;fields of carnage, days of toil, [can] destroy / The lov&#x02bc;d impressions of domestic joy?&#x201d; (lines 111&#x2013;14), she still insists 
+                            that home is an &#x201c;ark of refuge&#x201d; and a &#x201c;fane of rest [that] <hi rend="italic">no</hi> raging storms invade&#x201d; (lines 76, 61). 
+                            Triumphantly, the poem asserts the &#x201c;mystic power&#x201d; of domestic affections (line 252) to overcome all trials of adversity, 
+                            just as domestic joy will outlast any competing sources of joy such as fame and genius. 
+                            Doubt emerges only when evocation of &#x201c;maternal love&#x201d; prompts the question of &#x201c;who may charm <hi rend="italic">her</hi> sleepless pang to rest&#x201d; (lines 341, 343) 
+                            (<ref type="bibliography" target="bibliography.php#HEMANSELECTEDPOEMS"><persName corresp="#FDH">Hemans</persName>, <title type="book" corresp="#HEMANSELECTEDPOEMS"><hi rend="italic">Selected Poems</hi></title>, ed. <persName corresp="#SJWOLFSON">Wolfson</persName></ref>, 4&#x2013;15).</p>
+                        
+                        
+                        <!--    
+                        <p> Hence,the martial twist given to domestic feeling in this poem is not at all out of keeping with a feminine and domestic emphasis&#x2014;an emphasis that is strong throughout 
+                            <ref type="apparatus" subtype="manuscript" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref>, in domestic scenes depicted in <ref type="apparatus" subtype="manuscript" target="harry_and_lucy_vol1_apparatus.php"><title type="lesson" corresp="#HARRYANDLUCYVOL1">&#x201C;Harry and Lucy,&#x201D; Vol. 1</title></ref>, 
+                            the most realistic of which center on the children&#x02BC;s interaction with the Mama character, and in the stamp 
+                            that <persName corresp="#MR">Margaret</persName> herself puts on the manuscript with her <ref type="apparatus" subtype="work" target="mr_gloss_dating_msi_apparatus.php">glosses</ref>.
+                            
+                            placement alongside poems celebrating both <placeName corresp="#SCOTLAND">Scotland</placeName> and British pride of manufacture, appears to support <persName corresp="#LC">Linda Colley</persName>&#x02BC;s 
                         argument that British identity, <placeName corresp="#NBRITAIN">North</placeName> and <placeName corresp="#ENGLAND">South</placeName>, was forged &#x201C;not so much [by] consensus or homogeneity or centralisation at home, as [by] a strong sense of dissimilarity from those without.&#x201D; 
                         Fear of the <orgName corresp="#ROMANCATHOLICCHURCH">Catholic other</orgName> dominated over divisions between <orgName corresp="#CHURCHOFENGLAND">Anglicanism</orgName> and Dissent, and Old and New Dissent, so that Britons defended above all a &#x201C;pluralist yet aggressively Protestant polity&#x201D;; 
                         and recurrent wars with <placeName corresp="#FRANCE">France</placeName>, along with worries about Jacobite restoration, had kept alive the fear &#x201C;that the old popish enemy was still at the gates, more threatening than ever before&#x201D; 
                         (<ref type="bibliography" target="bibliography.php#BRITONS">Colley, <hi rend="italic">Britons</hi></ref>, 17, 19, 25, and see p. 18). The 
                         primary function of the fears expressed in <persName corresp="#JR">Ruskin</persName>&#x02BC;s poem may well have been to help to forge identity in this Scottish&#x2010;English and, at this time, Dissenter household.
                     </p> 
-                    <p><persName corresp="#JR">Ruskin</persName> presumably picked up on these alarms in his parents, each 
-                        of whom is likely to have communicated them, perhaps <persName corresp="#MR">Margaret</persName> even more so than <persName corresp="#JJR">John James</persName>. As <persName corresp="#LC">Colley</persName> remarks, during the <date notBefore="1789-05-05" notAfter="1799-11-09">Revolutionary</date>
-                        and <date notBefore="1799-11-09" notAfter="1815-06-18">Napoleonic</date> Era, &#x201C;many women . . . seem to have believed that their own security and the security of the family unit 
-                        were at stake in this <date notBefore="1789-05-05" notAfter="1815-06-18">French war</date> as they had not been in earlier conflicts. In part, this was because the risk of a French invasion of <placeName corresp="#BRITAIN">Britain</placeName> was so much greater in this war than ever before. 
-                        But crucial, too, as an ingredient in female anxiety was the destruction of <persName corresp="#MAJ">Marie&#x2010;Antoinette</persName> and the rest of the French Royal Family&#x201D;&#x2014;a regicide that 
-                        <persName corresp="#EB">Edmund Burke</persName>&#x02BC;s <title type="essay" rend="italic" corresp="#BURKEREFLECTIONS">Reflections on the Revolution in France</title> 
-                        (<date when="1790">1790</date>) taught the elder Ruskins&#x02BC; generation to stigmatize specifically in terms &#x201C;of a queen who was also a wife and mother being driven by force from her home&#x201D;
-                        (<ref type="bibliography" target="bibliography.php#BRITONS">Colley, <hi rend="italic">Britons</hi></ref>, 254, 253). Hence, 
-                        the martial twist given to domestic feeling in this poem is not at all out of keeping with a feminine and domestic emphasis&#x2014;an emphasis that is strong throughout 
-                        <ref type="apparatus" subtype="manuscript" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref>, in domestic scenes depicted in <ref type="apparatus" subtype="manuscript" target="harry_and_lucy_vol1_apparatus.php"><title type="lesson" corresp="#HARRYANDLUCYVOL1">&#x201C;Harry and Lucy,&#x201D; Vol. 1</title></ref>, 
-                        the most realistic of which center on the children&#x02BC;s interaction with the Mama character, and in the stamp 
-                        that <persName corresp="#MR">Margaret</persName> herself puts on the manuscript with her <ref type="apparatus" subtype="work" target="mr_gloss_dating_msi_apparatus.php">glosses</ref>.
-                    </p>
-                    <p>It is far more probable that the poem functions in this way, as a reflector of Britons&#x02BC; self&#x2010;defining fears of the Other, than that it 
-                        records an actual threat at the time of its composition. The latest credible threat of invasion of British shores had ended 
-                        in <date when="1815">1815</date> with the <date when="1815-06-18">Battle of Waterloo</date>, which closed the <date notBefore="1799-11-09" notAfter="1815-06-18">Napoleonic Wars</date>. 
-                        <date when="1815-06-18">Waterloo</date> captured <persName corresp="#JR">Ruskin</persName>&#x02BC;s imagination throughout the <date notBefore="1826" notAfter="1829">late 1820s</date>, in works such as <ref type="apparatus" subtype="work" target="the_british_battles_apparatus.php"><title type="poem" corresp="#THEBRITISHBATTLES">&#x201C;The British Battles&#x201D;</title></ref>, 
-                        <ref type="apparatus" subtype="work" target="battle_of_waterloo_apparatus.php"><title type="drama" corresp="#BATTLEOFWATERLOOPLAY">&#x201C;Battle of Waterloo: A Play in Two Acts&#x201D;</title></ref>,
-                        <ref type="apparatus" subtype="work" target="ballad_on_waterloo_apparatus.php"><title type="poem" corresp="#BALLADONWATERLOO">&#x201C;Ballad on Waterloo&#x201D;</title></ref>, and <ref type="apparatus" subtype="work" target="trafalgar_apparatus.php" ><title type="poem" corresp="#TRAFALGAR">&#x201C;Trafalgar&#x201D;</title></ref>. 
-                        Just so, <persName corresp="#CBW">Charlotte</persName> and <persName corresp="#PBB">Branwell</persName> Bront&#x00EB; made <persName corresp="#AWW">Wellington</persName> the hero of their sagas, 
-                        but <persName corresp="#JR">Ruskin</persName>&#x02BC;s fascination with the <date when="1815-06-18">Battle of Waterloo</date> was not drawn just from books. 
-                        A year earlier than compiling the <ref type="apparatus" subtype="manuscript" target="msi_poetry_anthology_apparatus.php"><title type="anthology" corresp="#MSIPOETRYANTHOLOGY">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</title></ref>, 
-                        during the <ref type="note" subtype="contextual" target="tour_of_1825_note.php">Tour of 1825</ref> to the <geogName corresp="#CONTINENT">Continent</geogName>, 
-                        the Ruskins visited <placeName corresp="#WATERLOO">Waterloo Field</placeName>.
-                    </p>
-                    <p>Although composed nine years after <date when="1815-06-18">Waterloo</date>, <title type="poem" corresp="#THEDEFIANCEOFWAR">&#x201C;The Defiance of War&#x201D;</title> was more likely prompted by the <date when="1825">1825</date> 
-                        tour along with the national anxieties analyzed by <persName corresp="#LC">Colley</persName> 
-                        than to have reflected some more recent conflict. Nonetheless, one cannot discount the possibility that a conflict contemporary with composition of the poem caught the 
-                        <persName corresp="#JR">Ruskin</persName>&#x02BC;s imagination. In <date notBefore="1826-09" notAfter="1826-12">late 1826</date>, 
-                        a skirmish occurred in the East, in connection with the <date notBefore="1821-03-06" notAfter="1832-05-07">Greek War for Independence</date> from Turkish domination. 
-                        While no threat to <placeName corresp="#BRITAIN">Britain</placeName>, the war would have interested the Ruskins for its associations with 
-                        <ref type="note" subtype="biographical" target="byron_note.php"><persName corresp="#GGB">Lord Byron</persName></ref>, who had died in <placeName corresp="#MISSOLONGHI">Missolonghi</placeName> in
-                        <date when="1824">1824</date>. In the <date notBefore="1821-03-06" notAfter="1832-05-07">Greek conflict</date>, <placeName corresp="#BRITAIN">Britain</placeName> was striving to avoid an outbreak 
-                        between <placeName corresp="#TURKEY">Turkey</placeName> and <placeName corresp="#RUSSIA">Russia</placeName>, whose new tsar, <persName corresp="#TS1">Nicholas I</persName>, was willing
-                        to push hostilities. In <date when="1826-10">October 1826</date>, which would accord well with a probable date for <persName corresp="#JR">Ruskin</persName>&#x02BC;s
-                        poem, <placeName corresp="#BRITAIN">Britain</placeName> pressured <placeName corresp="#TURKEY">Turkey</placeName> to accept Russian conditions in the <date when="1826-10-07">Convention of Akkerman</date>. This assured Russian influence in the
-                        <geogName corresp="#CAUCASUS">Caucasus</geogName> and the opening of the <geogName corresp="#BOSPHORUSSTRT">Straits of Bosphorus</geogName> to trade, which might have interested the Ruskins&#x02BC; mercantile household.
-                        As it turned out, <placeName corresp="#RUSSIA">Russia</placeName> continued to press hostilities in the name of the Greek cause, and <placeName corresp="#BRITAIN">Britain</placeName> joined <placeName corresp="#FRANCE">France</placeName> and <placeName corresp="#RUSSIA">Russia</placeName> to declare
-                        joint mediation, according to a treaty signed in <placeName corresp="#LONDON">London</placeName> in <date when="1827-07">July 1827</date>, but this event would certainly have
-                        occurred too late to have occasioned <persName corresp="#JR">Ruskin</persName>&#x02BC;s poem. (In the subsequent history, the Turks refused mediation but were defeated by
-                        allied fleets at <placeName corresp="#NAVARINO">Navarino</placeName> in <date when="1827-10">October 1827</date>. The <date when="1829-09-14">Treaty of Adrianople</date>, rendering <placeName corresp="#GREECE">Greece</placeName> autonomous, was signed
-                        two years later, in <date when="1829-09">September 1829</date>.)</p>
+                    
+                   
+                    
                     <p>For a threat closer to home, one returns to the Catholic Other, even in <date when="1826">1826</date>. The <orgName corresp="#ROMANCATHOLICCHURCH">Catholic</orgName> fear was kept alive in the years running up to the <date when="1829-03-24">Catholic Emancipation Act of 1829</date>, perhaps all the more so in households 
                         like the Ruskins&#x02BC; that had to strain to forge together competing loyalties to form a British identity. In those post&#x2010;<date when="1815-06-18">Waterloo</date> years, <persName corresp="#LC">Colley</persName> points out, 
                         anti&#x2010;Catholic agitation was sustained by &#x201C;an abundance of women&#x201D; (<ref type="bibliography" target="bibliography.php#BRITONS"><hi rend="italic">Britons</hi></ref>, 333). 
@@ -166,8 +311,9 @@
                         cousin, <ref type="note" subtype="biographical" target="richardson_james_note.php"><persName corresp="#JRPSON">James Richardson</persName></ref> (see
                         <ref type="apparatus" subtype="work" target="on_scotland_apparatus.php#DISCUSSION"><title type="poem" corresp="#ONSCOTLAND">&#x201C;On Scotland&#x201D;</title>: Discussion</ref>). If so, the poem shows how <persName corresp="#JR">the boy</persName>&#x02BC;s
                         grief for his <persName corresp="#JRPSON">cousin</persName> might have mixed with alarm over the threat that disease posed to the peace of the household. As an intriguing clue, 
-                        <persName corresp="#CWB">Charles W. Borchers, IV</persName> has discovered beneath the title an erased word that appears to be <hi rend="italic">woe</hi>.</p>
+                        <persName corresp="#CWB">Charles W. Borchers, IV</persName> has discovered beneath the title an erased word that appears to be <hi rend="italic">woe</hi>.</p>-->
                 </div>
+            </div>
             </div>
         </body>
     </text>

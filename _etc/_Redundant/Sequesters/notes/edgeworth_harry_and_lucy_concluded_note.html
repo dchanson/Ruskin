@@ -1,0 +1,42 @@
+<?php
+$paths = array('./', '../', '../../');
+$root_path = './';
+
+foreach ($paths  as $path){
+$filename = $path.'header.inc.php';
+
+if (file_exists($filename)){
+$root_path = $path;
+break;
+};
+}
+define('ROOT_PATH', $root_path);
+require_once($root_path."header.inc.php");
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:custom="http://whatever">
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset&#x003D;UTF-8">
+      <title>Edgeworth "Harry and Lucy Concluded" Title Page</title><?php require_once(ROOT_PATH."layout_includes/site_top.inc.php"); ?>
+        <link href="<?php echo r_build_url("style.php?p=site_styles.scss"); ?>" rel="stylesheet" type="text/css">
+      
+   </head>
+   
+   <?php require_once(ROOT_PATH."layout_includes/navigation.inc.php"); ?>
+   
+   <div class="note">
+      <div class="bibliographical" id="">
+         
+         <div class="page-title">Maria Edgeworth, Harry and Lucy Concluded, Title Page (1825)</div>
+         
+         
+         Title page of Maria Edgeworth's Harry and Lucy Concluded, in the 1825 first edition as owned by Ruskin in boyhood. 
+                        Ruskin modeled his print lettering on this tupography when fair-copying his own Harry and Lucy Concluided.
+                    
+         
+         
+      </div>
+   </div>
+   
+   
+   
+</html>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="title_of_work_glosses">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#GMS">Gabriella M. Smith</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="VENUSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;proud <name type="astronomical" corresp="#VENUSPLANET">venus</name> there / Glittering in the evening air&#x201D;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><!-- TAG -->A favorite adjective of <persName corresp="#JR">Ruskin</persName>&#x02BC;s,
+                    <hi rend="italic">glittering</hi> is found applied several times to stars and constellations in one of his sources for information about astronomy, <title type="book" corresp="#DAYSANDFORDANDMERTON"><hi rend="italic">Sandford and Merton</hi></title>,
+                    as in &#x201C;glorious, glittering bodies . . . now above us&#x201D; (<ref type="bibliography" target="bibliography.php#DAYSANDFORDANDMERTON"><persName corresp="#TD">Day</persName>, <title type="book" corresp="#DAYSANDFORDANDMERTON"><hi rend="italic">History of Sandford and Merton</hi></title></ref>, 165).<!-- END TAG -->
+                    However, <persName corresp="#JR">Ruskin</persName>&#x02BC;s other epithet for <name type="astronomical" corresp="#VENUSPLANET">Venus</name>, <hi rend="italic">proud</hi>, is not typical.
+                    In poetry, <name type="astronomical" corresp="#VENUSPLANET">Venus</name> is more commonly admired for its beauty than for its pride. In volume 2, &#x201C;On Astronomy&#x201D;,
+                    of <title type="book" corresp="#JOYCESCIENTIFICDIALOGUES"><hi rend="italic">Scientific Dialogues</hi></title> by <persName corresp="#JJ">Jeremiah Joyce</persName>,
+                    the <persName type="fictional" corresp="#TUTORJJ">Tutor</persName> begins the conversation, <title type="lesson" corresp="#JOYCESCIENTIFICDIALOGUESVENUS">&#x201C;Of Venus&#x201D;</title>,
+                    by glossing &#x201C;the most beautiful&#x201D; of planets with <persName corresp="#JMILTON">Milton</persName>&#x02BC;s hymn to the Creator&#x02BC;s &#x201C;glorious works&#x201D;
+                    in <title type="poem" corresp="#MILTONPARADISE"><hi rend="italic">Paradise Lost</hi></title>:</p>
+                    <floatingText>
+                        <body>
+                            <div type="poem">
+                                <lg type="blank_verse">
+                                    <l>Fairest of Stars, last in the train of Night</l>
+                                    <l>If better thou belong not to the dawn,</l>
+                                    <l>Sure pledge of day, that crown&#x02BC;st the smiling Morn</l>
+                                    <l>With thy bright Circlet, praise him in thy Sphere</l>
+                                    <l>While day arises, that sweet hour of Prime.</l>
+                                </lg>
+                            </div>
+                            <div type="prose">
+                                <p>(bk. 5, lines 166&#x2013;70, in <ref type="bibliography" target="bibliography.php#MILTONPOEMSPROSEHUGHES"><persName corresp="#JMILTON">Milton</persName>, <title type="book" corresp="#MILTONPOEMSPROSEHUGHES"><hi rend="italic">Complete Poems and Major Prose</hi></title>, ed. <persName corresp="#MYH">Hughes</persName></ref>, 306)</p>
+                            </div>
+                        </body>
+                    </floatingText>
+                    <p><persName corresp="#JR">Ruskin</persName> does draw on <persName corresp="#JMILTON">Milton</persName>&#x02BC;s hymn to frame his earlier poem,
+                        <ref type="apparatus" target="the_sun_apparatus.php"><title type="poem" corresp="#JRTHESUN">&#x201C;The Sun&#x201D;</title></ref>, but his sources for the astronomical knowledge in
+                        <title type="poem" corresp="#JRTHECONSTELLATIONS">&#x201C;The Constellations&#x201d;</title> remain to be identified.</p>
+
+                    <p>In <persName corresp="#JJ">Joyce</persName>&#x02BC;s <title type="lesson" corresp="#JOYCESCIENTIFICDIALOGUESVENUS">&#x201C;Of Venus&#x201D;</title>,
+                        the <persName type="fictional" corresp="#TUTORJJ">Tutor</persName> goes on to explain how <name type="astronomical" corresp="#VENUSPLANET">Venus</name> appears as the &#x201C;Evening Star&#x201D; when positioned east of the sun,
+                        and as the &#x201C;Morning Star&#x201D; when west of the sun&#x2014;appearances resulting from the planet&#x02BC;s orbit as viewed from the Earth.
+                        To illustrate these more scientific astronomical observations, here and elsewhere the <persName type="fictional" corresp="#TUTORJJ">Tutor</persName> quotes lines from <title type="poem" corresp="#MALLETEXCURSION"><hi rend="italic">The Excursion</hi></title> (<date when="1728">1728</date>)
+                        by <persName corresp="#DM">David Mallet</persName> (<date notBefore="1701" notAfter="1765">1701/2&#x2013;65</date>) (bk. 2, lines 77&#x2013;81, quoted in
+                        <ref type="bibliography" target="bibliography.php#JOYCESCIENTIFICDIALOGUES"><persName corresp="#JJ">Joyce</persName>, <title type="book" corresp="#JOYCESCIENTIFICDIALOGUES"><hi rend="italic">Scientific Dialogues</hi></title>, <title type="lesson" corresp="#JOYCESCIENTIFICDIALOGUESVENUS">vol. 2, &#x201C;Of Astronomy&#x201D;, conversation 19</title></ref>, 2:198, 202).</p>
+                </note>
+
+                <note xml:id="ORIONGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;belt of <name type="astronomical" corresp="#ORION">orion</name>&#x201D;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#ORION">Orion (the Hunter)</name>. According to <persName corresp="#JR">Ruskin</persName>&#x02BC;s geography text,
+                    &#x201C;<name type="astronomical" corresp="#ORION"><hi rend="italic">Orion</hi></name>, containing his Sword and luminous Belt&#x201D;, is considered
+                    one of the &#x201C;most remarkable&#x201D; constellations &#x201C;to the naked eye or telescope&#x201D;, along with &#x201C;<name type="astronomical" corresp="#TAURUS"><hi rend="italic">Taurus</hi></name>, containing the <name type="astronomical" corresp="#PLEIADES">Pleiades</name>;
+                    and <name type="astronomical" corresp="#URSAMAJOR"><hi rend="italic">Ursa Major</hi></name>, containing the <hi rend="italic">Pointers</hi> to the <name type="astronomical" corresp="#POLARIS">North Star</name>: all visible in our winter evenings&#x201D;
+                    (<ref type="bibliography" target="#GOLDSMITHGEOGRAPHY"><persName corresp="#JGOLDSMITH">Goldsmith</persName>, <title type="book" corresp="#GOLDSMITHGEOGRAPHY"><hi rend="italic">Grammar of General Geography</hi></title></ref>, 8).
+                    Situated south of <name type="astronomical" corresp="#TAURUS">Taurus (the Bull)</name> and <name type="astonomical" corresp="#GEMINI">Gemini (the Twins, <persName type="fictional" corresp="#CASTOR">Castor</persName> and <persName type="fictional" corresp="#POLLUX">Pollux</persName>)</name>,
+                    which are constellations in the zodiac, <name type="astronomical" corresp="#ORION">Orion</name> is viewed along the celestial equator, below the ecliptic. In the northern hemisphere, it rises low on the eastern horizon during winter evenings and transits westward.</p>
+
+                    <p><!-- TAG -->Among the most ancient named constellations, <name type="astronomical" corresp="#ORION">Orion</name> is mentioned, for example, in <persName corresp="#HOMER">Homer</persName>&#x02BC;s <title type="poem" corresp="#ODYSSEY"><hi rend="italic">Odyssey</hi></title> as one of the constellations that guide <persName type="fictional" corresp="#ULYSSES">Odysseus</persName> (bk. 5),
+                        and he also appears to <persName type="fictional" corresp="#ULYSSES">Odysseus</persName> among the dead in the underworld (bk. 11).
+                        In mythology, <name type="astronomical" corresp="#ORION">Orion</name> is a great hunter; in the sky, he wields a mighty club in one hand and a lion skin as a shield in the other.
+                        His belt, the most noticeable visible feature of the constellation, is formed by three equidistant stars in a straight row. In one version of his story, as recounted in an American illustrated book about the constellations published in <date when="1824">1824</date>:
+                        &#x201C;<name type="astronomical" corresp="#ORION">Orion</name> was a man of gigantic stature and greatly celebrated as a hunter. In the island of <placeName corresp="#CRETE">Crete</placeName>
+                        he accompanied <persName type="fictional" corresp="#DIANA">Diana</persName> and <persName type="fictional" corresp="#LATONA">Latona</persName> to the chase, and there died by the bite of a scorpion which the earth produced under his feet,
+                        he was placed among the stars, in a situation directly opposite to that of the <name type="astronomical" corresp="#SCORPIO">Scorpion</name>&#x201D; <!-- END TAG -->
+                        (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 69;
+                        for other tales about the death of <name type="astronomical" corresp="#ORION">Orion</name>, see <ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 135).</p></note>
+
+                <note xml:id="MARSGLOSS" resp="#DCH">p><hi rend="bold">&#x201C;red <name type="astronomical" corresp="#MARS">mars</name> . . . / On his throne&#x201D;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>The &#x201C;dusky red appearance&#x201D; of the planet <name type="astronomical" corresp="#MARS">Mars</name>
+                    is commonly remarked (<ref type="bibliography" target="bibliography.php#JOYCESCIENTIFICDIALOGUES">coversation 20, <title type="lesson" corresp="#JOYCESCIENTIFICDIALOGUESMARS">&#x201C;Of Mars&#x201D;</title>, in <persName corresp="#JJ">Joyce</persName>, <title type="book" corresp="#JOYCESCIENTIFICDIALOGUES"><hi rend="italic">Scientific Dialogues</hi></title></ref>, 2:207). The iconography of seating
+                    the Olympian gods on thrones may have been most familiar to <persName corresp="#JR">Ruskin</persName> from the synod of the gods in book 15 of <persName corresp="#HOMER">Homer</persName>&#x02BC;s <title type="poem" corresp="#HOMERILIAD"><hi rend="italic">Iliad</hi></title>
+                    (in <persName corresp="#APOPE">Pope</persName>&#x02BC;s translation), after <persName type="fictional" corresp="#JUPITERGOD">Jupiter</persName> has rebuked <persName type="fictional" corresp="#JUNO">Juno</persName> for assisting the Trojans. <persName type="fictional" corresp="#JUNO">Juno</persName> provokes <persName type="fictional" corresp="#MARSGOD">Mars</persName> to resentful rage
+                    for the loss of his son, <persName type="fictional" corresp="#ASCALAPHUS">Ascalaphus</persName>. <persName type="fictional" corresp="#MINERVA">Minerva</persName> &#x201C;[s]tarts from her azure throne to calm the god&#x201D;, reminding him of the futility
+                    of striving against <persName type="fictional" corresp="#JUPITERGOD">Jove</persName>, and &#x201C;[t]his menace fix&#x02BC;d the warrior to his throne; / Sullen he sat, and curb&#x02BC;d the rising groan&#x201D;
+                    (bk. 15, lines 141, 160&#x2013;61). This passage also pertains to the association of <persName type="fictional" corresp="#MARSGOD">Mars</persName> and <persName type="fictional" corresp="#VENUS">Venus</persName>, <persName type="fictional" corresp="#JUNO">Juno</persName> having conspired with <persName type="fictional" corresp="#VENUS">Venus</persName> in book 14
+                    to distract <persName type="fictional" corresp="#JUPITERGOD">Jupiter</persName> from the battlefield with love&#x2010;making and sleep
+                    (<persName corresp="#HOMER">Homer</persName>, <title type="poem" corresp="#HOMERILIAD"><hi rend="italic">Iliad</hi></title>, trans. <persName corresp="#APOPE">Pope</persName>, 307, and see 303&#x2013;7, 292&#x2013;97). For <persName corresp="#JR">Ruskin</persName>&#x02BC;s <date when="1824">1824</date> edition of <persName corresp="#APOPE">Pope</persName>&#x02BC;s <title type="poem" corresp="#HOMERILIAD">Iliad</title>, see
+                    <ref type="note" subtype="bibliographical" target="boyhood_books_note.php#DESCRIPTIONS">Books Used by Ruskin in His Youth: Physical Descriptions</ref>. <!-- TAG -->For the possibility that the poem&#x02BC;s configuration of <name type="astronomical" corresp="#VENUSPLANET">Venus</name>, <name type="astronomical" corresp="#MARS">Mars</name>, and <name type="astronomical" corresp="#ORION">Orion</name> could have been based on real&#x2010;life observation,
+                    see the <ref type="apparatus" target="constellations_apparatus.php#REAL-LIFE">&#x201C;The Constellations&#x201D; apparatus: Discussion&#x2014;Real&#x2010;life Observations</ref>.<!-- END TAG -->
+                </note>
+
+                <note xml:id="URSAMAJORGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the <name type="astronomical" corresp="#URSAMAJOR">greater bear</name> is seen / Then <name type="astronomical" corresp="#CHARLESSWAIN">charles&#x02BC;s wain</name> with his bright team&#x201D;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Turning back from a planet to the constellations, <persName corresp="#JR">Ruskin</persName> begins with the largest circumpolar constellation,
+                    <name type="astronomical" corresp="#URSAMAJOR">Ursa Major (the Great Bear)</name>, which contains the oblong configuration of four stars also known as the <name type="astronomical" corresp="#PLOUGH"><hi rend="italic">Plough</hi></name> or <name type="astronomical" corresp="#CHARLESSWAIN"><hi rend="italic">Charles&#x02BC;s Wain</hi></name>, with another three stars forming its &#x201C;team&#x201D; of horses.
+                    In both <persName corresp="#TD">Day</persName>&#x02BC;s <title type="book" corresp="#DAYSANDFORDANDMERTON"><hi rend="italic">History of Sandford and Merton</hi></title> and <persName corresp="#JJ">Joyce</persName>&#x02BC;s <title type="book" corresp="#JOYCESCIENTIFICDIALOGUES"><hi rend="italic">Scientific Dialogues</hi></title>,
+                    the pupils are shown stars in the <name type="astronomical" corresp="#PLOUGH"><hi rend="italic">Plough</hi></name> or <name type="astronomical" corresp="#CHARLESSWAIN"><hi rend="italic">Wain</hi></name> that serve as &#x201C;pointers&#x201D; to the <name type="astronomical" corresp="#POLARIS">North Star</name>,
+                    enabling the boys to determine compass bearings in the dark. As <persName corresp="#JJ">Joyce</persName>&#x02BC;s <persName type="fictional" corresp="#TUTORJJ">Tutor</persName> explains,
+                    &#x201C;if you wish to be a young astronomer&#x201D;, a youth &#x201C;must learn to find these [cardinal compass] points without the assistance of the sun&#x201D;;
+                    and he directs their eyes to &#x201C;those seven stars which are in the constellation of the <name type="astronomical" corresp="#URSAMAJOR"><hi rend="italic">Great Bear</hi></name>&#x201D;<!--, which
+                    &#x201c;some people have supposed . . . aptly represent a <name type="astronomical" corresp="#PLOUGH"><hi rend="italic">plough</hi></name>;
+                    others say, that they are more like a <hi rend="italic">waggon and horses;</hi>&#x2014;the four stars representing the body of the waggon, and the other three the horses&#x201D;-->
+                    (<ref type="bibliography" target="bibliography.php#JOYCESCIENTIFICDIALOGUES"><persName corresp="#JJ">Joyce</persName>, <title type="book" corresp="#JOYCESCIENTIFICDIALOGUES"><hi rend="italic">Scientific Dialogues</hi></title>, <title type="lesson" corresp="#JOYCESCIENTIFICDIALOGUESFIXEDSTARS">&#x201C;Of Astronomy&#x201D;, conversation 2, &#x201C;Of the Fixed Stars&#x201D;</title></ref>, 2:15&#x2013;16).</p>
+
+                    <!-- AFTER THE NEW TAGGING ABOVE, RESEUME IN FULL HERE -->
+                    <p>Considered as part of the larger constellation, the seven stars &#x201C;form a quadrilateral figure in the back of the Bear;
+                        the other three stars project from one of the angles in a curved line, and constitute the tail&#x201D;; however, the seven stars
+                        &#x201C;occupy but a small part of the whole constellation, which is one of the most extensive in the heavens&#x201D;
+                        (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 23).
+                        Among the oldest named constellations in classical sources familiar to <persName corresp="#JR">Ruskin</persName>, the <name type="astronomical" corresp="#URSAMAJOR">Great Bear</name> is mentioned along <name type="astronomical" corresp="#ORION">Orion</name> by <persName corresp="#HOMER">Homer</persName> in the <title type="poem" corresp="#ODYSSEY"><hi rend="italic">Odyssey</hi></title> (bk. 5), and as ever&#x2010;present in the sky, never bathing in the sea.
+                        The best&#x2010;known story in western classical poetry about the <name type="astronomical" corresp="#URSAMAJOR">Great Bear</name> is told by <persName corresp="#OVID">Ovid</persName> in <title type="poem" corresp="#METAMORPHASES"><hi rend="italic">Metamorphoses</hi></title>. The nymph <persName type="fictional" corresp="#CALLISTO">Callisto</persName>,
+                        a companion of the huntress, <persName type="fictional" corresp="#DIANA">Artemis [Diana]</persName>, is raped by <persName type="fictional" corresp="#JUPITERGOD">Zeus [Jupiter]</persName>. Unable to conceal her pregnancy, <persName type="fictional" corresp="#CALLISTO">Callisto</persName> is shunned by <persName type="fictional" corresp="#DIANA">Artemis</persName>&#x02BC;s chaste band,
+                        and she becomes prey to the revenge of <persName type="fictional" corresp="#JUNO">Hera [Juno]</persName>. She is saved by metamorphosis into a bear, only to be hunted by <persName type="fictional" corresp="#DIANA">Artemis</persName> as well as by <persName type="fictional" corresp="#CALLISTO">Callisto</persName>&#x02BC;s own unwitting son by <persName type="fictional" corresp="#JUPITERGOD">Zeus</persName>, <persName type="fictional" corresp="#ARCAS">Arcas</persName>.
+                        <persName type="fictional" corresp="#JUPITERGOD">Zeus</persName> rescues <persName type="fictional" corresp="#CALLISTO">Callisto</persName> from this predicament by setting her in heaven as a constellation
+                        (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 172&#x2013;74, and see 174&#x2013;75 for other stories; see also <ref type="internal" target="#URSAMINORGLOSS"><name type="astronomical" corresp="#URSAMINOR">Ursa Minor</name></ref>, below).</p></note>
+
+                <note xml:id="DRACOGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the <name type="astronomical" corresp="#DRACO">dragon</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Also a circumpolar constellation, <name type="astronomical" corresp="#DRACO">Draco (the Dragon)</name>
+                    winds around the <name type="astronomical" corresp="#POLARIS">North Star (Polaris)</name> between <name type="astronomical" corresp="#URSAMAJOR">Ursa Major (the Great Bear)</name> and <name type="astronomical" corresp="#CEPHEUSCONSTELLATION">Cepheus</name>. It is among the forty&#x2010;eight constellations listed by <persName corresp="#PTOLEMY">Ptolemy</persName>.</p>
+
+                    <p>In mythology, &#x201C;[b]y some writers the Dragon is represented as the monster which protected the golden apples in the garden of <placeName type="fictional" corresp="#HESPERIDES">Hesperides</placeName>,
+                        and which was slain by <persName type="fictional" corresp="#HERCULES">Hercules [Heracles]</persName>. <persName type="fictional" corresp="#JUNO">Juno [Hera]</persName>, who presented these apples to <persName type="fictional" corresp="#JUPITER">Jupiter [Zeus]</persName> on their nuptials, took <name type="astronomical" corresp="#DRACO">Draco</name> up into heaven,
+                    and made of it this constellation, as a reward for its faithful services. It has since become an emblem of vigilance.
+                    Others maintain, that in a war with the Giants, this Dragon was brought into the combat,
+                    and opposed to <persName type="fictional" corresp="#MINERVA">Minerva [Athena]</persName>, who threw it round the axis of the earth before it had time to uncoil, where it remains to this day&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 23).
+                    <persName type="fictional" corresp="#HERCULES">Hercules</persName>, who slew the dragon as one of his labors, has his own constellation nearby.
+                    <persName corresp="#IRIDPATH">Ridpath</persName> draws on <persName corresp="#HESIOD">Hesiod</persName> and the <title type="book" corresp="#APOLLODORUSBIBLIOTHECA"><hi rend="italic">Bibliotheca</hi></title> of <persName corresp="#APOLLODORUS">Apollodorus</persName> for versions of the story (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 92).</p></note>
+
+                <note xml:id="BERENICESHAIRGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<name type="astronomical" corresp="#COMABERENICES">berenices golden hair</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#COMABERENICES">Coma Berenices (Berenice&#x02BC;s Hair)</name> is situated between <name type="astronomical" corresp="#URSAMAJOR">Ursa Major</name> and <name type="astronomical" corresp="#BOOTES">Bo&#x00F6;tes</name>
+                    and south of <name type="astronomical" corresp="#CANESVENATICI">Canes Venatici (the Hunting Dogs)</name>&#x2014;or, as <persName corresp="#JGREEN">Green</persName> specifies, referring to a star in <name type="astronomical" corresp="#CANESVENATICI">Canes Venatici</name>,
+                    &#x201C;[a] little to the south of <name type="astronomical" corresp="#CHARLESSHEART">Cor Caroli [Charles&#x02BC;s Heart]</name>&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 52).
+                    <persName corresp="#ERATOSTHANES">Eratosthanes</persName> and <persName corresp="#PTOLEMY">Ptolemy</persName> represented the asterism as the hair of famous women, but counted its stars among the constellation <name type="astronomical" corresp="#LEO">Leo (the Lion)</name>,
+                    and it was not treated as a separate constellation until the <date notBefore="1500" notAfter="1599">sixteenth century</date> (<ref type="bibliography" corresp="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 78).</p>
+
+                    <p><persName corresp="#JGREEN">Green</persName> describes &#x201C;[t]his remarkable cluster of minute stars&#x201D; as &#x201C;shine[ing] with a light somewhat like that of the <name type="astronomical" corresp="#MILKYWAY">Milky Way</name>&#x201D;;
+                        and he goes on to relay the story as told by the Latin writer, <persName corresp="#HYGINUS">Hyginus</persName>, about a historical, third&#x2010;century B.C. Egyptian woman,
+                        <persName corresp="#BERENICE">Berenice</persName>. She was &#x201C;married her own brother, <persName corresp="#EVERGESTES">Evergestes</persName>, one of the kings of <placeName corresp="#EGYPT">Egypt</placeName>, whom she loved with much tenderness.
+                    Upon an important occasion, having left her to engage in a dangerous enterprise, she vowed to dedicate to <persName type="fictional" corresp="#VENUS">Venus [Aphrodite]</persName> her hair,
+                    which was extremely beautiful, if he should be restored to her in safety. Some time after his victorious return,
+                    the locks which had been deposited in the temple of <persName type="fictional" corresp="#VENUS">Venus</persName>, according to her oath, disappeared. The king expressing great regret for their loss,
+                    <persName corresp="#CONNON">Connon</persName>, his astronomer, publicly reported that <persName type="fictional" corresp="#JUPITERGOD">Jupiter [Zeus]</persName> had taken them away and placed them among the stars.
+                    Being sent for by <persName corresp="#EVERGESTES">Evergestes</persName>, <persName corresp="#CONNON">Connon</persName> pointed out this constellation, saying,
+                    &#x2018;There, behold the locks of the queen&#x2019;. As this group was not before on the maps,
+                    being among the unformed stars until that time, this satisfied the king of the truth of <persName corresp="#CONNON">Connon</persName>&#x02BC;s declaration&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 52).
+                    <persName corresp="#IRIDPATH">Ridpath</persName> clarifies that the historical <persName corresp="#BERENICE">Berenice</persName> of <placeName corresp="#EGYPT">Egypt</placeName> married her cousin, <persName corresp="#PTOLEMYIII">Ptolemy III</persName>, not her brother
+                    (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 79).</p></note>
+
+          <note xml:id="CORONABOREALISGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the <name type="astronomical" corresp="#CORONABOREALIS">northern crown</name>&#x201C;
+              (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#CORONABOREALIS">Corona Borealis (the Northern Crown)</name> appears between <name type="astronomical" corresp="#BOOTES">Bo&#x00F6;tes</name> and <name type="astronomical" corresp="#HERCULESCONSTELLATION">Hercules</name>.
+              It was included in <persName corresp="#PTOLEMY">Ptolemy</persName>&#x02BC;s list of forty&#x2010;eight constellations, and &#x201C;may very easily be known by the circular form of its principal stars,
+              which are six in number. A crown or garland may readily be imagined from the striking arrangement of the whole group&#x201D;
+              (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 49).</p>
+
+              <p>The mythology, according to <persName corresp="#JGREEN">Green</persName>, commemorates &#x201C;a crown presented by <persName type="fictional" corresp="#BACCHUS">Bacchus [Dionysius]</persName> to <persName type="fictional" corresp="#ARIADNE">Ariadne</persName>, the daughter of <persName corresp="#MINOS">Minos</persName>, second king of <placeName corresp="#CRETE">Crete</placeName>.
+                    <persName type="fictional" corresp="#THESEUS">Theseus</persName>, king of <placeName corresp="#ATHENS">Athens</placeName>, was shut up in the celebrated labyrinth of <placeName corresp="#CRETE">Crete</placeName>, erected by <persName type="fictional" corresp="#DAEDALUS">Daedalus</persName>,
+                    to be devoured by <persName type="fictional" corresp="#MINOTAUR">Minotaur</persName>; but he slew the monster, and being furnished with a clew by <persName type="fictional" corresp="#ARIADNE">Ariadne</persName>, who was passionately attached to him,
+                    made his escape from the intricate windings of his place of confinement. He afterwards married <persName type="fictional" corresp="#ARIADNE">Ariadne</persName>, but soon treated her in the most cruel manner,
+                    so that she was induced, according to some writers, to commit suicide. After her death the crown of stars given by <persName type="fictional" corresp="#BACCHUS">Bacchus</persName> was made this constellation&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 49).
+                  <persName type="fictional" corresp="#THESEUS">Theseus</persName>&#x02BC;s mistreatment consisted in abandoning her on the island of <placeName corresp="#NAXOS">Naxos</placeName>. According to other versions of the story, <persName type="fictional" corresp="#BACCHUS">Bacchus</persName> rescues and marries her
+              (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 82).
+          </p></note>
+
+                <note xml:id="CYGNUSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the very fiery <name type="astronomical" corresp="#CYGNUS">swan</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#CYGNUS">Cygnus (the Swan)</name>, or Northern Cross, lies south of <name type="astronomical" corresp="#DRACO">Draco</name>,
+                    between <name type="astronomical" corresp="#CEPHEUSCONSTELLATION">Cepheus</name> and <name type="astronomical" corresp="#HERCULESCONSTELLATION">Hercules</name>. It was included in the forty&#x2010;eight constellations listed by <persName corresp="#PTOLEMY">Ptolemy</persName>.
+                    The constellation &#x201C;may very easily be recognised&#x201D;, <persName corresp="#JGREEN">Green</persName> says, &#x201C;as its principal stars form a large and regular cross in the <name type="astronomical" corresp="#MILKYWAY">Milky Way</name>,
+                    from which circumstance the whole group is often called the <hi rend="italic">Cross</hi>&#x201D;. Perhaps because the stars forming <name type="astronomical" corresp="#CYGNUS">Cygnus</name> occur
+                    within an area of the <name type="astronomical" corresp="#MILKYWAY">Milky Way</name> that <persName corresp="#JGREEN">Green</persName> describes as &#x201C;remarkably brilliant&#x201D;, <persName corresp="#JR">Ruskin</persName> calls the <name type="astronomical" corresp="#CYGNUS">Swan</name> &#x201C;fiery&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 43).</p>
+
+                    <p>The constellation&#x02BC;s mythology is surrounded by &#x201C;considerable doubt&#x201D;, <persName corresp="#JGREEN">Green</persName> says.
+                        &#x201C;According to the Poets, <persName corresp="#ORPHEUS">Orpheus</persName>, the celebrated musician of antiquity, having been murdered by the cruel priestess of <persName type="fictional" corresp="#BACCHUS">Bacchus</persName>,
+                        was after his death changed into this swan and placed near his harp&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 44).
+                        <persName corresp="#JGREEN">Green</persName> does not mention the myths identifying the swan as <persName type="fictional" corresp="#JUPITER">Zeus</persName>&#x02BC;s disguise for committing rape,
+                        in some stories pursuing the nymph <persName type="fictional" corresp="#NEMESIS">Nemesis</persName>, in others the queen of <placeName corresp="#SPARTA">Sparta</placeName>, <persName type="fictional" corresp="#LEDA">Leda</persName>.
+                        The story of <persName type="fictional" corresp="#NEMESIS">Nemesis</persName> is also connected with the nearby constellation, <name type="astronomical" corresp="#AQUILACONSTELLATION">Aquila (the Eagle)</name> (see below),
+                        which was the shape taken by <persName type="fictional" corresp="#VENUS">Aphrodite</persName> while pretending to chase <persName type="fictional" corresp="#JUPITERGOD">Jupiter [Zeus]</persName>
+                        disguised as <name type="astronomical" corresp="#CYGNUS">the Swan</name> into the arms of the nymph
+                        (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 86&#x2013;87, 44).</p></note>
+
+                <note xml:id="CHARLESSHEARTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;starry <name type="astronomical" corresp="#CHARLESSHEART">charles&#x02BC;s heart</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#CHARLESSHEART">Cor Caroli (Charles&#x02BC;s Heart)</name> is a star in the constellation
+                    <name type="astronomical" corresp="#CANESVENATICI">Canes Venatici (the Hunting Dogs)</name>. The constellation, which lies between <name type="astronomical" corresp="#BOOTES">Bo&#x00F6;tes</name> and <name type="astronomical" corresp="#URSAMAJOR">Ursa Major</name>,
+                    was introduced by the Polish astronomer <persName corresp="#JHEVELIUS">Johannes Hevelius</persName> in <date when="1687">1687</date> (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 59).</p>
+
+                    <p>Prior to the invention of the constellation, its prominent star was named Cor Caroli Regis Martyris
+                        &#x201C;in honour of <persName corresp="#KC1">Charles I</persName>&#x201D; by &#x201C;<persName corresp="#CSCARBOROUGH">Sir Charles Scarborough</persName> [<date notBefore="1615" notAfter="1694">1615&#x2013;94</date>], physician to <persName corresp="#KC2">Charles II</persName>&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 31).
+                        A legend held that the star blazed brightly on the day in <date when="1660-05">May 1660</date> when <persName corresp="#KC2">Charles II</persName> rode into <placeName corresp="#LONDON">London</placeName> to restore the Stuart monarchy.
+                        <date notBefore="1800" notAfter="1803">Early in the nineteenth century</date>, a German astronomer, <persName corresp="#JBODE">Johann Bode</persName> (<date notBefore="1747" notAfter="1826">1747&#x2013;1826</date>), misattributed the naming of the star to the English astronomer,
+                        <persName corresp="#EHALLEY">Edmond Halley</persName> (<date notBefore="1656" notAfter="1742">1656&#x2013;1742</date>), and moved its invention forward into the <date notBefore="1700" notAfter="1799">eighteenth century</date>; independently,
+                        another error identified the star&#x02BC;s namesake as <persName corresp="#KC2">Charles II</persName>. The star&#x02BC;s proper origin, however, lies in the <date notBefore="1600" notAfter="1699">seventeenth century</date>
+                        with those who regarded <persName corresp="#KC1">Charles I</persName> as a martyr (<ref type="bibliography" target="bibliography.php#WARNERLETTER"><persName corresp="#DJW">Warner</persName>, letter to the editor</ref>;
+                        <ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 60). See also <ref type="internal" corresp="#CHARLESSOAKGLOSS">Charles&#x02BC;s Oak</ref>, below, which <persName corresp="#EHALLEY">Halley</persName> did name after <persName corresp="#KC2">Charles II</persName>.</p></note>
+
+                <note xml:id="TELESCOPIUMGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the <name type="astronomical" corresp="#TELESCOPIUM">telescope</name>&#x201D;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#TELESCOPIUM">Telescopium Herschelii (<persName corresp="#WHERSCHEL">Herschell</persName>&#x02BC;s telescope)</name> is now an obsolete constellation,
+                    but <persName corresp="#JGREEN">Green</persName> acknowledged it in <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title>, published in <date when="1824">1824</date>. The constellation was created in <date when="1789">1789</date> by the
+                    Hungarian astronomer, <persName corresp="#MHELL">Maximilian Hell</persName> (<date notBefore="1720" notAfter="1782">1720&#x2013;92</date>), who devised it from &#x201C;a few of the stars of <name type="astronomical" corresp="#AURIGA">Auriga [the Charioteer]</name>. . . .
+                    It is intended to perpetuate the name of <persName corresp="#WHERSCHEL">Herschell [William Herschel, <date notBefore="1738" notAfter="1822">1738&#x2013;1822</date>]</persName> and the form of the instrument by which he discovered the planet <name type="astronomical" corresp="#URANUS">Uranus</name> in the year <date when="1781">1781</date>&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 33).
+                    <persName corresp="#IRIDPATH">Ridpath</persName> explains that <persName corresp="#MHELL">Hell</persName> originally created two constellations commemorating <persName corresp="#WHERSCHEL">Herschel</persName> telescopes, which were reduced to one by <persName corresp="#JBODE">Johann Bode</persName> in <date when="1801">1801</date>
+                    (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 205&#x2013;6).</p></note>
+
+                <note xml:id="EQUUlEUSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the <name type="astronomical" corresp="#EQUULEUS">little horse</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#EQUULEUS">Equuleus (Little Horse)</name>, is positioned south of <name type="astronomical" corresp="#CYGNUS">Cygnus (the Swan)</name> and <name type="astronomical" corresp="#DELPHINUS">Delphinus (the Dolphin)</name>,
+                    and next to its vastly larger and more famous relative, <name type="astronomical" corresp="#PEGASUSCONSTELLATION">Pegasus</name>.
+                    <name type="astronomical" corresp="#EQUULEUS">Equuleus</name> was included in <persName corresp="#PTOLEMY">Ptolemy</persName>&#x02BC;s list of forty&#x2010;eight constellations.</p>
+
+                    <p>This very small constellation represents only the head of a horse named, &#x201C;according to the Poets, . . . Celeris,
+                        given by <persName type="fictional" corresp="#MERCURYGOD">Mercury</persName> to <persName type="fictional" corresp="#CASTOR">Castor</persName>, who was celebrated for his skill in the management of this noble animal&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 59).</p></note>
+
+                <note xml:id="ANSERGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the stupid goose&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#JR">Ruskin</persName> lists <name type="astronomical" corresp="#ANSER">Anser (the Goose)</name> singly, separated from
+                    its predator in the paired constellation, <name type="astronomical" corresp="#VULPECULAETANSER">Vulpecula et Anser (Fox and Goose)</name>; see <ref type="internal" target="#VULPECULAGLOSS"><name type="astronomical" corresp="#VULPECULA">Vulpecula</name></ref>, below.
+                    <name type="astronomical" corresp="#VULPECULAETANSER">Vulpecula et Anser</name> &#x201C;crosses the <name type="astronomical" corresp="#MILKYWAY">Milky Way</name> a littie to the south of <name type="astronomical" corresp="#CYGNUS">Cygnus</name>,
+                    and to the north of the <name type="astronomical" corresp="#SAGITTA">Arrow [Sagitta]</name>&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 48).</p>
+
+                    <p><name type="astronomical" corresp="#VULPECULAETANSER">Vulcepula et Anser</name> was introduced by the Polish astronomer, <persName corresp="#JHEVELIUS">Johannes Hevelius</persName> (<date notBefore="1611" notAfter="1687">1611&#x2013;87</date>),
+                        who depicted it as a fox with a goose captured in its jaws. The haplessness of the bird may account for <persName corresp="#JR">Ruskin</persName>&#x02BC;s epithet of &#x201C;stupid&#x201D;,
+                        but by dividing the constellation in two <persName corresp="#JR">Ruskin</persName> also avoids drawing attention to the goose&#x02BC;s fate.
+                        A precedent for separating the fox from the goose extends back to <persName corresp="#JHEVELIUS">Hevelius</persName> himself,
+                        who named the constellation both as a single entity, <name type="astronomical" corresp="#VULPECULAETANSER">Vulpecula <hi rend="italic">cum</hi>Anser</name>,
+                        and as two distinct entities, which were afterward sometimes reunited as <name type="astronomical" corresp="#VULPECULAETANSER">Vulpecula <hi rend="italic">et</hi> Anser</name>.
+                        Nowadays, the goose is omitted altogether, leaving only <name type="astronomical" corresp="#VULPECULA">Vulpecula</name> (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 182&#x2013;83).</p>
+
+                    <p>Perhaps a predatory and carnivorous fox offended nineteenth&#x2010;century sensibility,
+                        since <persName corresp="#JGREEN">Green</persName> omits any mention of what is happening to the goose, <persName corresp="#JR">Ruskin</persName> not only separates the constellations,
+                        but also places <name type="astronomical" corresp="#LEPUS">Lepus (the Hare)</name> between them. If he intended to shield the goose from the fox,
+                        he undercut the effort by giving the hare the epithet &#x201C;timid&#x201D;.</p></note>
+
+                <note xml:id="LEPUSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the very timid <name type="astronomical" corresp="#LEPUS">hare</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#LEPUS">Lepus (the Hare)</name> is south of <name type="astronomical" corresp="#ORION">Orion</name>, just below the celestial equator,
+                    and therefore counts among &#x201C;some of the southern&#x201D; constellations declared in <persName corresp="#JR">Ruskin</persName>&#x02BC;s title of his poem.
+                    <name type="astronomical" corresp="#LEPUS">Lepus</name> is one of the forty&#x2010;eight constellations listed by <persName corresp="#PTOLEMY">Ptolemy</persName>.</p>
+
+                    <p>&#x201C;The Hare seems to have been placed at the feet of <name type="astronomical" corresp="#ORION">Orion</name> in compliment to his skill in the chase&#x201D;
+                        (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 98).
+                        <persName corresp="#IRIDPATH">Ridpath</persName> adds that some mythographers viewed the nearby dog constellations, <name type="astronomical" corresp="#CANISMAJOR">Canis Major</name> and <name type="astronomical" corresp="#CANISMINOR">Canis Minor</name>, as helping in <name type="astronomical" corresp="#ORION">Orion</name>&#x02BC;s chase of the hare.
+                        The stories that <persName corresp="#IRIDPATH">Ridpath</persName> summarizes about the hare suggest that it was read less with mythological associations than with moral and animal tales
+                        (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 115&#x2013;16).
+                    .</p></note>
+
+                <note xml:id="URSAMINORGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the <name type="astronomical" corresp="#URSAMINOR">lesser bear</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#URSAMINOR">Ursa Minor (the Lesser Bear)</name> is a circumpolar constellation containing <name type="astronomical" corresp="#POLARIS">Polaris (the Pole Star)</name> itself, which forms the tip of his tail.
+                    It was one of the forty&#x2010;eight constellations listed by <persName corresp="#PTOLEMY">Ptolemy</persName>.</p>
+
+                    <p>&#x201C;<name type="astronomical" corresp="#URSAMINOR">Ursa Minor</name>, according to ancient Greek tradition, became a constellation in memory of <persName type="fictional" corresp="#ARCAS">Arcas</persName>,
+                        the son of <persName type="fictional" corresp="#CALLISTO">Callisto</persName> and grandson of the cruel <persName type="fictional" corresp="#LYCAON">Lycaon</persName>, king of <placeName type="fictional" corresp="#ARCADIA">Arcadia</placeName>. The current opinion is,
+                        that <persName type="fictional" corresp="#ARCAS">Arcas</persName> was changed by <persName type="fictional" corresp="#JUPITERGOD">Jupiter [Zeus]</persName> into a bear, and placed here in the heavens;
+                        but it is thought by others, with more probability we think, that this was done by <persName type="fictional" corresp="#JUNO">Juno [Hera]</persName>
+                        (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 21&#x2013;22; see also <ref type="internal" target="#URSAMAJORGLOSS"><name type="astronomical" corresp="#URSAMAJOR">Ursa Major</name></ref>, above).
+                        According to another myth, <name type="astronomical" corresp="#URSAMINOR">Ursa Minor</name> is one of the nymphs who nursed the infant <persName type="fictional" corresp="#JUPITERGOD">Zeus</persName>
+                        (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 177).</p></note>
+
+                <note xml:id="VULPECULAGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the cunning <name type="astronomical" corresp="#VULPECULA">fox</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>For the invention and location of <name type="astronomical" corresp="#VULPECULA">Vulpecula (the Fox)</name>, see <ref type="internal" target="#ANSERGLOSS"><name type="astronomical" corresp="#ANSER">Anser (the Goose)</name></ref>, above.</p></note>
+
+                <note xml:id="CRUXGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the blessed <name type="astronomical" corresp="#CRUX">cross</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#CRUX">Crux (the Cross or Southern Cross)</name> is a southern constellation,
+                    made up of &#x201C;four fine stars near the hind feet of the <name type="astronomical" corresp="#CENTAURUS">Centaur [Centaurus]</name>, . . . which are among the most brilliant in southern latitudes&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><persName corresp="#JGREEN">Green</persName>, <title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 102).
+                    The stars were known to <persName corresp="#PTOLEMY">Ptolemy</persName>, but he considered them as part of <name type="astronomical" corresp="#CENTAURUS">Centaurus</name> in his catalogue of forty&#x2010;eight constellations.
+                    As <persName corresp="#IRIDPATH">Ridpath</persName> explains, although visible to the ancient Mediterranean world, the stars were lost to view in the north owing to precession in the Earth&#x02BC;s rotational axis.
+                    The stars were rediscovered and charted by European explorers sailing south in the <date notBefore="1500" notAfter="1599">sixteenth century</date>, and it came to be used by navigators since its axis points to the southern pole
+                    (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 84&#x2013;85). The <name type="astronomical" corresp="#CRUX">Southern Cross</name> would never have been visible to <persName corresp="#JR">Ruskin</persName>.</p></note>
+
+                <note xml:id="CHARLESSOAKGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;great <name type="astronomical" corresp="#CHARLESSOAK">charles&#x02BC;s oak</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#CHARLESSOAK">Rober Carolinum (Charles&#x02BC;s Oak)</name> was also a southern constellation, which would never have been visible to <persName corresp="#JR">Ruskin</persName>.
+                    The constellation is now obsolete. According to <persName corresp="#IRIDPATH">Ridpath</persName>, its obsolescence was caused by the star survey undertaken from the <placeName corresp="#CAPEOFGOODHOPE">Cape of Good Hope</placeName> by the French astronomer,
+                    <persName corresp="#NLL">Nicolas&#x2010;Louis de Lacaille</persName> (<date notBefore="1713" notAfter="1762">1713&#x2013;62</date>). The catalogue was published in <date when="1763">1763</date>, but <persName corresp="#JBODE">Johann Bode</persName> retained it in <date when="1801">1801</date> (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 202&#x2013;3).</p>
+
+                    <p><name type="astronomical" corresp="#CHARLESSOAK">Charles&#x02BC;s Oak</name> was also treated as an existing constellation by <persName corresp="#JGREEN">Green</persName> in <date when="1824">1824</date>: &#x201C;<name type="astronomical" corresp="#CHARLESSOAK">Rober Caroli, or Charles&#x02BC;s Oak</name>,
+                        is to the east of <name type="astronomical" corresp="#ARGONAVIS">Argo Navis</name>, and contains one star of the first magnitude. Dr. <persName corresp="#EHALLEY">[Edmond] Halley</persName> introduced this asterism on the maps
+                        in <date when="1676">1676</date>, when he was in the <placeName corresp="#STHELENA">Island of St. Helena</placeName>. He named it in honour of the oak whose branches concealed <persName corresp="#KC2">Charles II</persName>
+                        after the battle of <placeName corresp="#WORCESTER">Worcester</placeName>&#x201D;
+                        (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 103).
+                        This battle represented the decisive defeat of Royalist forces in the <date notBefore="1642" notAfter="1651">English Civil War</date>, during which the son of the executed king, <persName corresp="#KC1">Charles I</persName>,
+                        saved his life by hiding in an oak tree. After <persName corresp="#KC2">Charles II</persName> was restored to the throne, the purpose of his astronomer, <persName corresp="#EHALLEY">Halley</persName>,
+                        in traveling to <placeName corresp="#STHELENA">St. Helena</placeName> was, like <persName corresp="#NLL">Lacaille</persName>&#x02BC;s mission, to survey the southern sky, and he published his star catalogue, including the new honorific constellation, in <date when="1679">1679</date> (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName></ref>, 202).</p></note>
+
+                <note xml:id="CRATERGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;I&#x02BC;ll call it <name type="astronomical" corresp="#CRATER">juno&#x02BC;s cup</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#CRATER">Crater (the Cup)</name> is a southern constellation,
+                    clustered togethet with <name type="astronomical" corresp="#CORVUS">Corvus (the Crow)</name> and <name type="astronomical" corresp="#HYDRA">Hydra (the Water Snake)</name>, which are north of <name type="astronomical" corresp="#CENTAURUS">Centaurus</name>.
+                    <name type="astronomical" corresp="#CRATER">Crater</name> is included among the forty&#x2010;eight listed by <persName corresp="#PTOLEMY">Ptolemy</persName>.</p>
+
+                    <p>While <persName corresp="#JR">Ruskin</persName> may &#x201C;call it <persName type="fictional" corresp="#JUNO">juno</persName>&#x02BC;s cup&#x201D;, the best&#x2010;known myth assigns the cup to <persName type="fictional" corresp="#APOLLO">Apollo</persName>, in a story involving <name type="astronomical" corresp="#CORVUS">Corvus</name> and <name type="astronomical" corresp="#HYDRA">Hydra</name>
+                        (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 82&#x2013;83). <persName corresp="#JGREEN">Green</persName> cites writers who associate the cup variously with <persName type="fictional" corresp="#BACCHUS">Bacchus</persName>, <persName type="scriptural" corresp="#NOAH">Noah</persName>, and the Platonists
+                        (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 101).</p></note>
+
+                <note xml:id="HERCULESGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<name type="astronomical" corresp="#HERCULESCONSTELLATION">Hercules</name> appeareth high&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>The constellation <name type="astronomical" corresp="#HERCULESCONSTELLATION">Hercules or Heracles</name> indeed appears higher in the sky than the previous three constellations <persName corresp="#JR">Ruskin</persName> has listed,
+                    which are southern and below the celestial equator. <name type="astronomical" corresp="#HERCULESCONSTELLATION">Hercules</name> stands on the head of <name type="astronomical" corresp="#DRACO">Draco (the Dragon)</name>
+                    and between <name type="astronomical" corresp="#LYRA">Lyra (the Lyre)</name> and <name type="astronomical" corresp="#CORONABOREALIS">Corona Borealis (Northern Crown)</name>. The constellation was listed by <persName corresp="#PTOLEMY">Ptolemy</persName> among his forty&#x2010;eight.</p>
+
+                    <p><persName corresp="#IRIDPATH">Ridpath</persName> remarks that this ancient constellation was known to the poet <persName corresp="#ARATUS">Aratus</persName> only as <hi rend="italic">the kneeling one</hi>,
+                        and that he was identified belatedly with <persName type="fictional" corresp="#HERACLES">Heracles</persName> by <persName corresp="#ERATOSTHENES">Eratosthenes</persName> (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 101). <persName corresp="#JGREEN">Green</persName> supplies an ethical interpretation
+                        of the hero &#x201C;celebrated in antiquity for his heroic valour and corporal strength. He is represented in a kneeling posture,
+                        holding in his right hand a club, and in his left the Hesperidian branch, with the three&#x2010;headed <name type="astronomical" corresp="#CERBERUSCONSTELLATION">Cerberus</name>;
+                        the skin of a lion covers his head and shoulders. This lion he killed in the forests in the neighbourhood of <placeName corresp="#NEMEA">Nem&#x00C6;a</placeName>,
+                        and the celebrated Nem&#x00C6;an games were instituted to commemorate that event. [The astronomer] <persName corresp="#JHEVELIUS">Hevelius</persName> first placed in the hand of this hero the serpent
+                        with three heads, or <name type="astronomical" corresp="#CERBERUSCONSTELLATION">Cerberus</name>. The Hesperidian branch, bearing the golden apples, is probably of a more ancient date. . . .
+                        <persName type="fictional" corresp="#HERCULES">Hercules</persName>, among many other achievements, . . . procured some of these golden apples from the <placeName type="fictional" corresp="#HESPERIDES">Hesperides</placeName>,
+                        by killing the <name type="astronomical" corresp="#DRACO">Dragon [Draco]</name>. . . . It is stated by the mythologists, that he brought upon earth the three&#x2010;headed monster <persName type="fictional" corresp="#CERBERUS">Cerberus</persName>,
+                        which guarded the entrance to <persName type="fictional" corresp="#PLUTO">Pluto</persName>&#x02BC;s dominions. The victory which he obtained over <persName type="fictional" corresp="#CERBERUS">Cerberus</persName>, is thought by some to denote his control
+                        over his bad passions; for he is held out by the ancients as a pattern of virtue and piety. His judicious choice of virtue,
+                        in preference to pleasure, is admirably described by <persName corresp="#XENOPHON">Xenophon</persName>&#x201D;
+                        (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 46&#x2013;47).</p></note>
+
+                <note xml:id="CERBERUSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<name type="astronomical" corresp="#CERBERUSCONSTELLATION">cerberus</name> in the sky&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#JR">Ruskin</persName> places <name type="astronomical" corresp="#CERBERUSCONSTELLATION">Cerberus</name> next, not just by association with <name type="astronomical" corresp="#HERCUlESCONSTELLATION">Hercules</name>,
+                    who slew the monster, but also by its position in the sky. As a constellation, <name type="astronomical" corresp="#CERBERUSCONSTELLATION">Cerberus</name> was created by the astronomer, <persName corresp="#JHEVELIUS">Johannes Hevelius</persName>,
+                    who put the creature in <name type="astronomical" corresp="#HERCULESCONSTELLATION">Hercules</name>&#x02BC;s hand in place of the Herperidian branch. Thereafter, the branch and <name type="astronomical" corresp="#CERBERUSCONSTELLATION">Cerberus</name> were grasped together by <name type="astronomical" corresp="#HERCULESCONSTELLATION">Hercules</name>,
+                    up through <persName corresp="#JBODE">Bode</persName>&#x02BC;s depiction in <date when="1801">1801</date>. As <persName corresp="#JGREEN">Green</persName> acknowledged in <date when="1824">1824</date>,
+                    &#x201C;there is a group of small stars, of the fourth and fifth magnitude, in the branch, intertwined with serpents, which <name type="astronomical" corresp="#HERCULESCONSTELLATION">Hercules</name> holds in his hand.
+                    These serpents are called by some <name type="astronomical" corresp="#CERBERUSCONSTELLATION">Cerberus</name> (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 46).
+                    <name type="astronomical" corresp="#CERBERUSCONSTELLATION">Cerberus</name> is now obsolete as a constellation.</p></note>
+
+                <note xml:id="LACERTAGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;The <name type="astronomical" corresp="#LACERTA">lizard</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#LACERTA">Lacerta (the Lizard)</name> is between <name type="astronomical" corresp="#CYGNUS">Cygnus</name> and <name type="astronomical" corresp="#ANDROMEDACONSTELLATION">Andromeda</name>.
+                    The constellation was introduced by <persName corresp="#JHEVELIUS">Johannes Hevelius</persName> in <date when="1687">1687</date>, and augmented with a few more stars by an English astronomer,
+                    <persName corresp="#JFLAMSTEED">John Flamsteed</persName> (<date notBefore="1646" notAfter="1719">1646&#x2013;1719</date>), in a posthumous publication of <date when="1725">1725</date> (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 111&#x2013;12).</p></note>
+
+                <note xml:id="AQUILAGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the pouncing <name type="astronomical" corresp="#AQUILACONSTELLATION">eagle</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#AQUILACONSTELLATION">Aquila (the Eagle)</name> lies on the celestial equator,
+                    &#x201C;on the edge of the <name type="astronomical" corresp="#MILKYWAY">Milky Way</name>, south of the <name type="astronomical" corresp="#CYGNUS">Swan [Cygnus]</name> and the <name type="astronomical" corresp="#SAGITTA">Arrow [Sagitta]</name>&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 55).
+                    The constellation is among the forty&#x2010;eight listed by <persName corresp="#PTOLEMY">Ptolemy</persName>.</p>
+
+                    <p>&#x201C;Some of the Poets say that this constellation represents the Eagle which brought nectar to <persName type="fictional" corresp="#JUPITERGOD">Jupiter [Zeus]</persName>
+                        while he lay concealed in the cave at <placeName corresp="#CRETE">Crete</placeName>, to avoid the fury of his father, <persName type="fictional" corresp="#SATURNGOD">Saturn</persName>.
+                        Besides this important service, <persName type="fictional" corresp="#AQUILA">Aquila</persName> also assisted him by furnishing weapons [i.e., thunderbolts] in his victory over the giants.
+                        According to other writers, this <persName type="fictional" corresp="#AQUILA">Eagle</persName> is the same as that whose form <persName type="fictional" corresp="#JUPITERGOD">Jupiter</persName> assumed, when he bore away <persName type="fictional" corresp="#GANYMEDE">Ganymede</persName> to serve as his cupbearer [represented by nearby <name type="astronomical" corresp="#AQUARIUS">Aquarius</name>].
+                        Others imagine that this constellation is to commemorate the bird which preyed upon the vitals of <persName type="fictional" corresp="#PROMETHEUS">Prometheus</persName>&#x201D;
+                        (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 56;
+                        see also <ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 44). See also <ref type="internal" target="#CYGNUSGLOSS"><name type="astronomical" corresp="#CYGNUS">Cygnus</name></ref>, above.
+                        .</p></note>
+
+                <note xml:id="CEPHEUSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<name type="astronomical" corresp="#CEPHEUSCONSTELLATION">Cepheus</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><name type="astronomical" corresp="#CEPHEUSCONSTELLATION">Cepheus</name> is a circumpolar constellation,
+                    lying between <name type="astronomical" corresp="#DRACO">Draco</name> and <name type="astronomical" corresp="#CASSIOPEIACONSTELLATION">Cassiopeia</name>. It is &#x201C;in the space between the <name type="astronomical" corresp="#POLARIS">Pole star</name> and the <name type="astronomical" corresp="#MILKYWAY">Milky Way</name>&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 24).
+                    The constellation is among the forty&#x2010;eight listed by <persName corresp="#PTOLEMY">Ptolemy</persName>.</p>
+
+                    <p>&#x201C;This constellation immortalizes the name of an ancient king, who reigned either in <placeName corresp="#ETHIOPIA">Ethiopia</placeName> or <placeName corresp="#INDIA">India</placeName>.
+                        As the Greeks called by the name of <placeName corresp="#INDIA">India</placeName>, all that part of the earth lying beyond the <geogName corresp="#MEDITERRANEAN">Mediterranean sea</geogName>,
+                        it is rendered doubtful in which of the two places he lived. The name of his queen was <persName type="fictional" corresp="#CASSIOPEIA">Cassiopeia</persName>,
+                        and they were the parents of <persName type="fictional" corresp="#ANDROMEDA">Andromeda</persName>&#x201D;
+                        (<ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 24).
+                        Expanding on the story of <persName type="fictional" corresp="#ANDROMEDA">Andromeda</persName>, <persName corresp="#IRIDPATH">Ridpath</persName> explains that <persName type="fictional" corresp="#CASSIOPEIA">Cassiopeia</persName> was a boastful woman, whose vanity led to the shores of <persName type="fictional" corresp="#CEPHEUS">Cepheus</persName>&#x02BC;s kingdom
+                        being ravaged by a sea beast. To appease the beast, <persName type="fictional" corresp="#CEPHEUS">Cepheus</persName> chained <persName type="fictional" corresp="#ANDROMEDA">Andromeda</persName> to a rock by the sea as a sacrifice,
+                        but she was saved by <persName type="fictional" corresp="#PERSEUS">Perseus</persName> who defeated the monster and took <persName type="fictional" corresp="#ANDROMEDA">Andromeda</persName> as his wife (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 72&#x2013;73).</p></note>
+
+                <note xml:id="BOOTESGLOSSS" resp="#DCH"><p><hi rend="bold">&#x201C;<name type="astronomical" corresp="#BOOTES">bootes</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>This is a gloss.</p></note>
+
+                <note xml:id="HIRUNDOGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;sweet <name type="astronomical" corresp="#HIRUNDO">hirundo</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>This is a gloss.</p></note>
+
+                <note xml:id="MONSMAENALUSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<name type="astronomical" corresp="#MONSMAENALUS">Maenalus mountain</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>This is a gloss.</p></note>
+
+                <note xml:id="LYNXGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the furious keen&#x2010;eyed <name type="astronomical" corresp="#LYNX">lynx</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>This is a gloss.</p></note>
+
+                <note xml:id="SCORPIOGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;High up there is <name type="astronomical" corresp="#SCORPIO">scorpio</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>This is a gloss.</p></note>
+
+                <note xml:id="LEOGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the generous <name type="astronomical" corresp="#LEO">leo</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>This is a gloss.</p></note>
+
+                <note xml:id="CAMELOPARDALISGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="MUSCAGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="SERPENSGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="OPHIUCHUSGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="ARIESGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="CLYPEUSSOBIESKIGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="AURIGAGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="TAURUSPONIATOWSKIGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="GRUSGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="ANTINOUSGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="SAGITTAGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="CORONAAUSTRALISGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="DELPHINUSGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="ARAGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="CANESVENATICIGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="TAURUSGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="NORMAGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="LEOMINORGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="MUSCABOREALISGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="PERSEUSGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="PEGASUSGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="CHAMAELEONGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="ANDROMEDAGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="VIRGOGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="TRIANGULAGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="MONOCEROSGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="LIBRAGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="SAGITTARIUSGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="CANCERGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="GEMINIGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="LYRAGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="TRIANGULUMAUSTRALEGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="CAPRICORNUSGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="MILKYWAYGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="JUPITERGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="MERCURYGLOSS" resp="#DCH">This is a gloss.</note>
+
+                <note xml:id="RUSKINNOTE1GLOSS" resp="#DCH">Note the serpent and serpent bearer are two different constellations.</note>
+
+                <note xml:id="RUSKINNOTE2GLOSS" resp="#DCH">Note These constellations though they are next in this poetry are not next in the sky.</note>
+            </div>
+        </body>
+    </text>
+</TEI>
