@@ -279,8 +279,19 @@
         </div>
       </xsl:when>
       
-      <xsl:otherwise>
+      <xsl:when test="@type='extract'">
+        <div class="lg-extract">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+
+      <!-- <xsl:otherwise>
         <xsl:message terminate="yes">&lt;lg&gt; needs the "type" attribute</xsl:message>
+      </xsl:otherwise> -->
+      <xsl:otherwise>
+        <div class="lg-stanza">
+          <xsl:apply-templates/>
+        </div>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>

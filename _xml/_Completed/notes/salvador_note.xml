@@ -3,6 +3,8 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="salvador_note">
             <titleStmt>
                 <title type="main">Salvador</title>
@@ -66,13 +68,13 @@
         <body>
             <div type="note" subtype="biographical">
                 <head type="title">Salvador</head>
-                <p>The courier or <hi rend="italic">cicerone</hi> for the Ruskin family on the <ref type="note" subtype="contextual" target="tour_of_1833_note.php">Tour of 1833</ref>, 
-                    the <ref type="note" subtype="contextual" target="tour_of_1835_note.php">Tour of 1835</ref>, 
-                    and the <ref type="note" subtype="contextual" target="tour_of_1841_note.php">Tour of 1841</ref>.
+                <p>The courier or <hi rend="italic">cicerone</hi> for the Ruskin family on the <ref type="note" subtype="contextual" target="tour_of_1833.php">Tour of 1833</ref>, 
+                    the <ref type="note" subtype="contextual" target="tour_of_1835.php">Tour of 1835</ref>, 
+                    and the <ref type="note" subtype="contextual" target="tour_of_1841.php">Tour of 1841</ref>.
                 </p>
                 <p>Hiring couriers like the Ruskins&#x02BC; <persName corresp="#SALVADOR">Salvador</persName> was, according to <persName corresp="#JM">John Murray</persName>&#x02BC;s <date when="1836">1836</date> guidebook to the <geogName corresp="#CONTINENT">Continent</geogName>, 
                     preferable to bringing English servants, who, knowing only their own language, were &#x201C;worse than useless&#x201D; 
-                    (putting aside a specialized role for an English servant such as tending to the children, performed for the Ruskins on these earlier tours by <ref type="note" subtype="biographical" target="strachan_anne_note.php"><persName corresp="#ASB">Anne Strachan</persName></ref>). 
+                    (putting aside a specialized role for an English servant such as tending to the children, performed for the Ruskins on these earlier tours by <persName corresp="#ASB">Anne Strachan</persName>). 
                     <persName corresp="#JM">Murray</persName>&#x02BC;s guidebook lists, along with advice about couriers&#x02BC; employment, wages, and treatment, their duties as typically consisting in 
                     &#x201C;preceding the carriage at each stage, to secure relays of post horses&#x201D;; 
                     arranging for &#x201C;reception at inns&#x201D; and securing &#x201C;comfortable rooms, clean and well&#x2010;aired beds, and order[ing] meals to be prepared&#x201D;; examining the carriage daily for needed repairs, 
@@ -89,7 +91,7 @@
                     (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 300 n. 10).
                 </p>
                 <p>The distinction between <persName corresp="#SALVADOR">Salvador</persName>&#x02BC;s role and that of a valet de place was observed by the Ruskins 
-                    in the course of the <ref type="note" subtype="contextual" target="tour_of_1833_note.php">Tour of 1833</ref> when engaging a local guide 
+                    in the course of the <ref type="note" subtype="contextual" target="tour_of_1833.php">Tour of 1833</ref> when engaging a local guide 
                     or &#x201C;commissionaire&#x201D; to sights, for example, in <placeName corresp="#MAINZ">Mainz</placeName> [to come] 
                     (<ref type="bibliography" target="bibliography.php#RFT48">Diary of Mary Richardson, 1833</ref>, 26). The distinction between ciceroni and domestic servants 
                     brought from home 
@@ -103,7 +105,7 @@
                     <ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 678 n. 2).</p>
                 <p><persName corresp="#JM">Murray</persName> says that couriers could be engaged on the <geogName corresp="#CONTINENT">Continent</geogName> but also in <placeName corresp="#LONDON">London</placeName> (specifically, No. 7, <placeName corresp="#OLDCOMPTONST">Old Compton Street</placeName>, <placeName corresp="#SOHO">Soho</placeName>; or No. 11, <placeName corresp="#PANTONST">Panton Square</placeName>); 
                     and evidently <persName corresp="#SALVADOR">Salvador</persName> was based in <placeName corresp="#LONDON">London</placeName>, as <persName corresp="#JR">Ruskin</persName> mentions in <date when="1835-02">February 1835</date> that the courier visited <placeName corresp="#HERNE">Herne Hill</placeName> to help plan the route for the 
-                    <ref type="note" subtype="contextual" target="tour_of_1835_note.php">Tour of 1835</ref> 
+                    <ref type="note" subtype="contextual" target="tour_of_1835.php">Tour of 1835</ref> 
                     (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><title type="guidebook" corresp="#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Handbook for Travellers on the Continent</hi></title></ref>, xix; 
                     <ref type="apparatus" target="jr_to_jjr_1835-02-18_al_apparatus.php"><title type="letter" corresp="jr_to_jjr_1835-02-18">letter of <date when="1835-02-18">18 February 1835</date></title></ref> [<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 297]).
                 </p>
