@@ -3,9 +3,11 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <fileDesc xml:id="library_edition_note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="tite_of_work_note">
             <titleStmt>
-                <title type="main">Library Edition</title>
+                <title type="main">Hypothyroidism</title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -55,21 +57,20 @@
     </teiHeader>
     <text>
         <body>
-            <div type="note" subtype="bibliographical">
+            <div type="note">
                 <head type="title">Library Edition</head>
-                <p>Edited by <!-- refs to biographical notes as well as persName tags -->E. T. Cook and Alexander Wedderburn, and published
-                    1903&#x2013;12 by <!-- refs to biographical notes as well as persName tags -->George Allen, 
-                    this 39-volume set was the first collected edition of Ruskin&#x02BC;s works to attempt
+                <p>Edited by E. T. Cook and Alexander Wedderburn, and published
+                    1903&#x2013;12 by George Allen, this 39-volume set was the first collected edition of Ruskin&#x02BC;s works to attempt
                     comprehensiveness. Allen himself oversaw production and release of
                     several volumes before his death in 1907.</p>
                 <p>The Library Edition presented a
-                    significant departure from the first collected edition, the <!-- ref to note as well as Title tag-->Works Series, which
+                    significant departure from the first collected edition, the Works Series, which
                     Ruskin dramatically limited in scope. The new edition aimed at collecting all of
                     the published works, along with a considerable extent of unpublished materials
                     such as drafts, letters, and diary extracts.</p>
                 <p>Despite these aims of comprehensiveness, the results for the early works were
-                    mixed. The first two volumes containing <!-- title tags -->Early Prose (vol. 1) and Poems (vol.
-                    2) were hurried along in 1903 by Allen, who was anxious to prevent subscribers
+                    mixed. The first two volumes containing Early Prose (vol. 1 <!--Entry needed here.-->) and Poems (vol.
+                    2 [1903]) were hurried along by Allen, who was anxious to prevent subscribers
                     from perceiving default of the edition. He thus caused the editors, Wedderburn
                     and Cook, to rely heavily on Allen&#x02BC;s previously published editions
                     of early works and, especially in the case of the early prose, to cobble

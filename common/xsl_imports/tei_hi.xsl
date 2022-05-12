@@ -57,7 +57,13 @@
 
         </xsl:choose>
       </xsl:when>
-
+      
+      <xsl:when test="@rend='line-beginning'">
+        <h2 class="line-beginning">
+          <xsl:apply-templates />
+        </h2>
+      </xsl:when>
+      
       <xsl:when test="@rend='bold'">
         <b>
           <xsl:apply-templates/>

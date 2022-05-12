@@ -3,6 +3,8 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="prout_samuel_note">
             <titleStmt>
                 <title type="main">Samuel Prout (1783&#x2013;1852)</title>
@@ -88,7 +90,7 @@
                     explaining the provenance reaching back to <persName corresp="#JTR">Ruskin&#x02BC;s grandfather</persName> 
                     (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 14: 385; 
                     and see <ref type="bibliography" target="bibliography.php#HEWISONFATHERANDSON"><persName corresp="#RHEWISON">Hewison</persName>, <title type="essay" corresp="#HEWISONFATHERANDSON">&#x201C;Father and Son&#x201D;</title></ref>, 3; and 
-                    <ref type="bibliography" target="bibliography.php#DEARDENRUSKINBB"><persName corresp="#JSD">Dearden</persName>, <title type="book" corresp="DEARDENRUSKINBB"><hi rend="italic">Ruskin, Bembridge, and Brantwood</hi></title></ref>, 185).
+                    <ref type="bibliography" target="bibliography.php#RUSKINBEMBRIDGEBRANTWOOD"><persName corresp="#JSD">Dearden</persName>, <title type="book" corresp="DEARDENRUSKINBB"><hi rend="italic">Ruskin, Bembridge, and Brantwood</hi></title></ref>, 185).
                 </p>
                 <p>In the front of <persName corresp="#SP">Prout</persName>&#x02BC;s <date when="1833">1833</date> volume of lithographs, 
                     <ref type="bibliography" target="bibliography.php#PROUTSKETCHES"><persName corresp="#SP">Prout</persName>, <title type="artwork" corresp="#PROUTSKETCHES"><hi rend="italic">Facsimiles of Sketches Made in <placeName corresp="#FLANDERS">Flanders</placeName> and <placeName corresp="#GERMANY">Germany</placeName></hi></title></ref>, 
@@ -105,7 +107,7 @@
                     in <date when="1823">1823</date>, <placeName corresp="#FRANKFURT">Frankfurt</placeName>, <placeName corresp="#WURZBURG">W&#x00FC;rzburg</placeName>, <placeName corresp="#NUREMBUERG">Nuremberg</placeName>, <placeName corresp="#REGENSBURG">Regensburg</placeName>, <placeName corresp="#MUNICH">Munich</placeName>, 
                     <placeName corresp="#AUGSBURG">Augsburg</placeName>, <placeName corresp="#ULM">Ulm</placeName>, <placeName corresp="#STRASBOURG">Strasbourg</placeName>, <placeName corresp="#BASLE">Basle</placeName>, <placeName corresp="#METZ">Metz</placeName>, <placeName corresp="#TRIER">Trier</placeName>; 
                     in <date when="1824">1824</date>, an <placeName corresp="#ITALY">Italian</placeName> tour (with probable returns to <placeName corresp="#ITALY">Italy</placeName> later in the decade); and in <date when="1829">1829</date>, <placeName corresp="#FRANKFURT">Frankfurt</placeName>, <placeName corresp="#WURZBURG">W&#x00FC;rzburg</placeName>, <placeName corresp="#BAMBERG">Bamberg</placeName>, <placeName corresp="#KARLSBAD">Karlsbad</placeName>, <placeName corresp="#PRAGUE">Prague</placeName>, and <placeName corresp="#DRESDEN">Dresden</placeName> 
-                    (<ref type="bibliography" target="bibliography.php#LOCKETTPROUT">Lockett, <title type="biography" corresp="#LOCKETTPROUT"> <hi rend="italic">Samuel Prout</hi></title></ref>, 53&#x2013;55). In some cases, therefore, many years separated initial on&#x2010;site sketches 
+                    (<ref type="bibliography" target="bibliography.php#LOCKETTPROUT">Lockett, <title type="biography" corresp="#LOCKETTPROUT" rend="italic">Samuel Prout</title></ref>, 53&#x2013;55). In some cases, therefore, many years separated initial on&#x2010;site sketches 
                     and the lithographs presented in the <title type="artwork" corresp="#PROUTSKETCHES"><hi rend="italic">Facsimiles</hi></title>, although in the interim <persName corresp="#SP">Prout</persName> exhibited watercolors based on these tours.
                 </p>
                 <p>Along with his pioneering destinations for sketching tours, <persName corresp="#SP">Prout</persName> was significant for exploring new media. 
@@ -149,7 +151,7 @@
                     <date notBefore="1830-09" notAfter="1830-12">late 1830</date>, respectively), which showcased <persName corresp="#SP">Prout</persName> exclusively. These engravings anticipated 
                     the <persName corresp="#SWITZERLAND">Swiss</persName> and <placeName corresp="#ITALY">Italian</placeName> views that would be lithographed for the <date when="1839">1839</date> 
                     <title type="artwork" corresp="#PROUTSKETCHESITALY"><hi rend="italic">Sketches in <placeName corresp="#FRANCE">France</placeName>, <placeName corresp="#SWITZERLAND">Switzerland</placeName>, and <placeName corresp="#ITALY">Italy</placeName></hi></title> 
-                    (<ref type="bibliography" target="bibliography.php#LOCKETTPROUT"><persName corresp="#RLA">Lockett</persName>, <title type="book" corresp="#LOCKETTPROUT"><hi rend="italic">Samuel Prout</hi></title></ref>, 77&#x2013;80, 175).<note> <persName corresp="#RLA">Lockett</persName> remarks that the third <title type="annual" corresp="JENNINGSLANDSCAPE"><hi rend="italic">Landscape Annual</hi></title> 
+                    (<ref type="bibliography" target="bibliography.php#LOCKETTPROUT"><persName corresp="#RLA">Lockett</persName>, <title type="book" corresp="#LOCKETTPROUT"><hi rend="italic">Samuel Prout</hi></title></ref>, 77&#x2013;80, 175).<note><persName corresp="#RLA">Lockett</persName> remarks that the third <title type="annual" corresp="JENNINGSLANDSCAPE"><hi rend="italic">Landscape Annual</hi></title> 
                         (for <date when="1832">1832</date>) would have allowed <persName corresp="#SP">Prout</persName> to complete use of his sketches from his <date when="1824">1824</date> Italian tour, but that the commission was taken from him by <persName corresp="#JDH">J. D. Harding</persName> (<date when="1797">1797</date>&#x2013;<date when="1863">1863</date>), causing a rift 
                         between the two artists (<ref type="bibliography" target="bibliography.php#LOCKETTPROUT"><persName corresp="#RLA">Lockett</persName>, <title type="book" corresp="#LOCKETTPROUT"><hi rend="italic">Samuel Prout</hi></title></ref>, 79).</note> 
                     Despite his popularity as an illustrator of the engraved annuals, <persName corresp="#SP">Prout</persName> 
@@ -161,7 +163,7 @@
                     <title type="annual" corresp="#CONTINENTALANNUAL1832"><hi rend="italic">The Continental Annual, and Romantic Cabinet, for <date when="1832">1832</date></hi></title>, published by <orgName corresp="#SMITHELDER">Smith, Elder</orgName>, sought to distinguish itself from &#x201C;a class of periodicals&#x201D; 
                     that &#x201C;present too uniform a resemblance to each other&#x201D;: &#x201C;the wish to give all the effect in our power to the graphic designs 
                     of Mr. <persName corresp="#SP">Prout</persName>, has induced us to draw upon the resources of natives of the countries that supply the scenes illustrated&#x201D;, by drawing on traditional 
-                    &#x201C;Romantic narratives&#x201D; of &#x201C;German, French, <placeName corresp="#NETHERLANDS">Dutch</placeName>, <placeName corresp="#ITALY">Italian</placeName>, and even <placeName corresp="#DENMARK">Danish</placeName> genius&#x201D;, as well as commissioning original narratives by an &#x201C;accomplished foreigner&#x201D; 
+                    &#x201C;Romantic narratives&#x201D; of &#x201C;German, French, <placeName corresp="#NETHERLANDS">Dutch</placeName>, <placeName corresp="#ITALY">Italian</placeName>, and even <placeName corresp="#DENMARK">Danish</placeName> genius,&#x201D; as well as commissioning original narratives by an &#x201C;accomplished foreigner&#x201D; 
                     (<ref type="bibliography" target="bibliography.php#CONTINENTALANNUAL1832">Kennedy, ed., <title type="annual" corresp="#CONTINENTALANNUAL1832"><hi rend="italic">Continental Annual</hi></title></ref>, v, vi; and see 
                     <ref type="note" subtype="bibliographical" target="annuals_note.php#LANDSCAPEANNUAL">Annuals and Other Illustrated Books: The Landscape Annual</ref>).  
                     The locales of <persName corresp="#SP">Prout</persName>&#x02BC;s drawings engraved for the volume&#x2014;<placeName corresp="#ANTWERP">Antwerp</placeName>, 

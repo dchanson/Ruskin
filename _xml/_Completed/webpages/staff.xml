@@ -3,6 +3,8 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="webpage">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="staff">
             <titleStmt>
                 <title type="main">Staff Page</title>
@@ -55,7 +57,7 @@
     <text>
         <body>
             <div type="webpage">
-                <head type="title-webpage">Staff and Support</head>
+                <head type="title">Staff and Support</head>
                 <div type="section">
                     <head type="section">Editor</head>
                     <p>David C. Hanson<lb/>
@@ -76,27 +78,21 @@
                 </div>
                 <div type="section">
                     <head type="section">Encoders and Researchers</head>
-                    <div type="subsection">
-                        <head type="subsection">Lead Encoders</head>
-                        <p>Charles Borchers IV, Timothy Dunn, Madeline Felps, Melanie Fondren, Aimee Harris, Jensin Lopez, Katie Moore, Steven Petite, Brianna Poch&#x00E9;, Katrina Thomas, Heidi Toloudis, Amanda Upton, Kyle Volkmann, Casey White, William Woodard</p>
-                    </div>
-                    <div type="subsection">
-                    <head type="subsection">Encoders and Researchers</head>
-                    
-                    <p>Jaime Barrilleaux, Sushantika Bhandari, Samantha Bloemer, Kimberley Calhoun, Makenzi Edwards, Emily Elgin, Jessica Firmin, 
-                        Elizabeth Fox, Julia Gaines, Rebekah Grommon, Brandon Guidry, Stephan Haddad, Simone Hamilton, Eva Hoffmann, 
-                        Terri Ilgen, Garth Kiepper, Lauren Lambert, Cody Love, Sarah Montelepre, Cerissa Morse, Taylor Oakley, 
-                        Emily Odenwald, Rebecca Rainier, Chalines Rosario, Jessica Rushing, Sarah Silk, 
-                        Zachary Slawson, Michael Stevenson, Kiran Thapa&#x2013;Magar, Isaiah Thomas, 
-                        Tracy Valentine, David Wall, Annie Walls<lb/>
+                    <p>Jaime Barrilleaux, Sushantika Bhandari, Samantha Bloemer, Kimberley Calhoun, Timothy Dunn, Makenzi Edwards, 
+                        Emily Elgin, Madeline Felps, Jessica Firmin, 
+                        Elizabeth Fox, Julia Gaines, Rebekah Grommon, Brandon Guidry, Stephan Haddad, Simone Hamilton, Aimee Harris, Eva Hoffmann, 
+                        Terri Ilgen, Garth Kiepper, Lauren Lambert, Jensin Lopez, Cody Love, Sarah Montelepre, Katie Moore, Cerissa Morse, Taylor Oakley, 
+                        Emily Odenwald, Steven Petite, Brianna Poch&#x00E9;, Rebecca Rainier, Chalines Rosario, Jessica Rushing, Sarah Silk, 
+                        Zachary Slawson, Michael Stevenson, Kiran Thapa&#x2013;Magar, Isaiah Thomas, Katrina Thomas, Heidi Toloudis, 
+                        Amanda Upton, Tracy Valentine, 
+                        Kyle Volkmann, David Wall, Casey White, William Woodard<lb/>
                         <hi rend="italic">Southeastern Louisiana University</hi></p>
-                    </div>
                 </div>
                 <div type="section">
                     <head type="section">Programmers</head>
                     <div type="section">
                         <head type="subsection">Lead Programmers</head>
-                        <p>Prashant Basnet, Charles Borchers IV, Damodar Dahal, Garth Kiepper, Silvin Pradhan<lb/>
+                        <p>Prashant Basnet, Charles Borchers IV, Damodar Dahal, Garth Kiepper<lb/>
                             <hi rend="italic">Southeastern Louisiana University</hi></p>
                     </div>
                     <div type="section">
@@ -105,8 +101,7 @@
                             <hi rend="italic">Southeastern Louisiana University</hi></p>
                     </div>
                     <div type="section">
-                        <head type="subsection">Mapping Teams</head>
-                        <p>Subash Dangi, Katrina Thomas</p>
+                        <head type="subsection">Mapping Team</head>
                         <p>Chase Blank, Cory Clapp, Nicholas Cotton, Jenna Hildebrand, Brittney Jarreau, Brian Martinez, Curtis Osko, Holden Pitre, Daniela Raygadas<lb/>
                             <hi rend="italic">Southeastern Louisiana University</hi></p>
                     </div>

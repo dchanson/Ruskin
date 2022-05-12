@@ -3,6 +3,8 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="finden_brothers_note">
             <titleStmt>
                 <title type="main">William and Edward Francis Finden</title>
@@ -55,8 +57,9 @@
     </teiHeader>
     <text>
         <body>
+            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
             <div type="note" subtype="biographical">
-                <head type="title"><persName corresp="#WF">William</persName> and <persName corresp="#EFF">Edward Francis Finden</persName></head>
+                <head type="title"> <persName corresp="#WF">William</persName> and <persName corresp="#EFF">Edward Francis Finden</persName> </head>
                 <p>Engravers, based in <placeName corresp="#LONDON">London</placeName>. The brothers worked jointly, overseeing a large workshop employing many assistants and pupils of the trade. 
                     They specialized in landscape, although they also undertook many portraits. 
                     <persName corresp="#WF">William</persName>&#x02BC;s achievements in steel&#x2010;engraving include the vignettes after <persName corresp="#TSP">Stothard</persName> for <persName corresp="#SR">Samuel Roger</persName>&#x02BC;s <hi rend="italic"> <title type="book" corresp="#ROGERSITALY">Italy</title> </hi> (<date when="1830">1830</date>) 
@@ -71,7 +74,7 @@
                     (<date notBefore="1832" notAfter="1834">1832&#x2010;34</date>). Because these projects proved so ambitious, however, the brothers ultimately relied on collaborations with other publishers. Such was the case, for example, 
                     with <hi rend="italic"> <title type="book" corresp="#FINDENSILLUSTRATIONSBIBLE">Finden&#x02BC;s Landscape Illustrations to the Bible</title> </hi> (<date notBefore="1834" notAfter="1837">1834&#x2010;37</date>).
                 </p>
-                <p><ref type="bibliography" target="bibliography.php#HUNNISETTSTEELENGRAVED"><persName corresp="#BH">Hunnisett</persName>, <title type="essay" corresp="#HUNNISETTSTEELENGRAVED"><hi rend="italic">Steel&#x2010;Engraved Book Illustration in England</hi></title></ref>, 
+                <p><ref type="bibliography" target="bibliography.html#HUNNISETTSTEELENGRAVED"><persName corresp="#BH">Hunnisett</persName>, <title type="essay" corresp="#HUNNISETTSTEELENGRAVED"><hi rend="italic">Steel&#x2010;Engraved Book Illustration in England</hi></title></ref>, 
                     84&#x2013;95. 
                 </p>
                 

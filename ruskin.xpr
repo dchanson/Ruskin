@@ -135,7 +135,7 @@
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Generate and open html</String>
+                                        <String>Generate (global)</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -326,7 +326,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>_xml/_Completed/notes/edgeworth_harry_and_lucy_concluded_note.xml</String>
+                                    <String>_xml/_Completed/witnesses/account_of_a_tour_on_the_continent_toc_msviii.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -435,7 +435,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>_xml/_Completed/witnesses/calais_poem_msia_g1.xml</String>
+                                    <String>_xml/_Completed/apparatuses/lochleven_apparatus.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -620,8 +620,6 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>Generate and open html</String>
-                                        <String>Generate html</String>
-                                        <String>Generate (global)</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -681,13 +679,13 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html</String>
+                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="locationToOpenInBrowserURL">
-                                    <String>http://ruskin.local:8080/${cf}</String>
+                                    <String>http://ruskin.local:8080/src/ruskin_redir_file.php?open=${cf}</String>
                                 </field>
                                 <field name="openInEditor">
                                     <Boolean>false</Boolean>
@@ -747,82 +745,7 @@
                             </scenario>
                             <scenario>
                                 <field name="advancedOptionsMap">
-                                    <serializableOrderedMap>
-                                        <entry>
-                                            <String>Saxon-EE</String>
-                                            <xsltSaxonSAAdvancedOptions>
-                                                <field name="sourceValidation">
-                                                    <String>saxon.source.no.schema.based.validation</String>
-                                                </field>
-                                                <field name="schemaVersion">
-                                                    <String>1.0</String>
-                                                </field>
-                                                <field name="treatResultValidationErrorsAsWarnings">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="addCommentsForValidationErrors">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="streamingEnabled">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="isJITEnabled">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="allowCallsOnExtensionFunctions">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="registerSaxonCEExtensions">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="enableAssertions">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="showVersionWarnings">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="dtdSourceValidation">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="dtdSourceValidationRecover">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="lineNumbering">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="initialMode">
-                                                    <null/>
-                                                </field>
-                                                <field name="initialTemplate">
-                                                    <null/>
-                                                </field>
-                                                <field name="traceXPathExpression">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="expandAttributeDefaults">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="errorRecoverPolicy">
-                                                    <String>saxon.recover.with.warning</String>
-                                                </field>
-                                                <field name="stripWS">
-                                                    <String>saxon.strip.ws.none</String>
-                                                </field>
-                                                <field name="optimizationEnabled">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="useConfigFile">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="configSystemID">
-                                                    <null/>
-                                                </field>
-                                                <field name="initializer">
-                                                    <String></String>
-                                                </field>
-                                            </xsltSaxonSAAdvancedOptions>
-                                        </entry>
-                                    </serializableOrderedMap>
+                                    <null/>
                                 </field>
                                 <field name="name">
                                     <String>Generate and open html</String>
@@ -864,13 +787,13 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html</String>
+                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="locationToOpenInBrowserURL">
-                                    <String>http://ruskin.local:8080/${cf}</String>
+                                    <String>http://ruskin.local:8080/src/ruskin_redir_file.php?open=${cf}&amp;new=1</String>
                                 </field>
                                 <field name="openInEditor">
                                     <Boolean>false</Boolean>
@@ -969,16 +892,16 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="openInBrowser">
-                                    <Boolean>true</Boolean>
+                                    <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html</String>
+                                    <String>${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.php</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="locationToOpenInBrowserURL">
-                                    <String>http://ruskin.local:8080${cf}</String>
+                                    <String>http://ruskin.local:8080/src/ruskin_redir_file.php?open=${cf}&amp;new=1</String>
                                 </field>
                                 <field name="openInEditor">
                                     <Boolean>false</Boolean>
@@ -1046,12 +969,10 @@
         <folder masterFiles="true" name="Master Files">
             <file name="common/ruskin.rnc"/>
             <file name="../Documents/ruskin.ste"/>
-            <file name="common/ruskin.ste"/>
             <file name="common/ruskin.xsl"/>
         </folder>
         <folder path="."/>
         <file name="_xml/_Completed/witnesses/andernacht_prose_le.xml"/>
-        <file name="_etc/_Redundant/Sequesters/apparatuses/apparatus_work1.xml"/>
         <file name="_xml/_Completed/witnesses/calais_prose_msix.xml"/>
     </projectTree>
 </project>

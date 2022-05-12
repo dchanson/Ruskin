@@ -3,6 +3,8 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="goodall_edward_note">
             <titleStmt>
                 <title type="main">Edward Goodall (1795&#x2013;1870)</title>
@@ -55,21 +57,18 @@
     </teiHeader>
     <text>
         <body>
+            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
             <div type="note" subtype="biographical">
-                <head type="title"><persName corresp="#EG">Edward Goodall</persName> (<date notBefore="1795" notAfter="1870">1795&#x2013;1870</date>)</head>
-                <p>Engraver, based in <placeName corresp="#LONDON">London</placeName>. <persName corresp="#EG">Goodall</persName> specialized in landscape, and he was closely associated with <persName corresp="#JMWT">J. M. W. Turner</persName>. 
-                    Important projects included the vignettes after <persName corresp="#JMWT">Turner</persName> for <ref type="note" subtype="biographical" target="rogers_samuel_note.php"><persName corresp="#SR">Samuel Rogers</persName></ref>&#x02BC;s 
-                    <title type="book" corresp="#ROGERSITALY1830"><hi rend="italic">Italy</hi></title> (<date when="1830">1830</date>) 
-                    and for <persName corresp="#SR">Rogers</persName>&#x02BC;s <title type="book" corresp="#ROGERSPOEMS1834"><hi rend="italic">Poems</hi></title> (<date when="1834">1834</date>). In those books, <persName corresp="#EG">Goodall</persName>&#x02BC;s landscape engravings complemented 
-                    <persName corresp="#WF">William Finden</persName>&#x02BC;s figure engravings after subjects by <ref type="note" subtype="biographical" target="stothard_thomas_note.php"><persName corresp="#TSP">Thomas Stothard</persName></ref>. 
-                    Other collaborations with <persName corresp="#JMWT">Turner</persName> using steel engraving included the vignettes for the <title type="book" corresp="#CAMPBELLPOETICALWORKS1837"><hi rend="italic">Poetical Works of <persName corresp="#TCAMPBELL">Thomas Campbell</persName></hi></title> 
-                    (<ref type="bibliography" target="bibliography.php#HUNNISETTSTEELENGRAVED"><persName corresp="#BH">Hunnisett</persName>, <title type="essay" corresp="#HUNNISETTSTEELENGRAVED"><hi rend="italic">Steel&#x2010;Engraved Book Illustration in England</hi></title></ref>, 
-                    101&#x2013;2; <ref type="bibliography" target="bibliography.php#PIGGOTTTURNERSVIGNETTES"><persName corresp="#JPSCHOLAR">Piggott</persName>, <title type="book" corresp="#PIGGOTTTURNERSVIGNETTES"><hi rend="italic">Turner&#x02BC;s Vignettes</hi></title></ref>, 62&#x2013;65).</p>
-                <p>Given <persName corresp="#EG">Goodall</persName>&#x02BC;s close association with <persName corresp="#JMWT">Turner</persName>, <persName corresp="#JR">Ruskin</persName> must have been excited 
-                    that his first commission for a published ekphrastic poem, <ref type="apparatus" target="saltzburg_apparatus.php"><title type="poem" corresp="#JRSALTZBURG">&#x201C;Saltzburg&#x201D;</title></ref>, 
-                    was based on a plate by this master of steel engraving. <persName corresp="#JR">Ruskin</persName>&#x02BC;s ekphrastic technique in this poem was influenced 
-                    by the vignettes after <persName corresp="#JMWT">Turner</persName> for <persName corresp="#SR">Rogers</persName>&#x02BC;s <title type="book" corresp="#ROGERSITALY1830"><hi rend="italic">Italy</hi></title> 
-                    (see <ref type="bibliography" target="bibliography.php#HANSONRUSKIN1830S"><persName corresp="#DCH">Hanson</persName>, <title type="essay" corresp="#HANSONRUSKIN1830S">&#x201C;Ruskin in the 1830s&#x201D;</title></ref>, 143&#x2013;45).</p>
+                <head type="title"> <persName corresp="#EG">Edward Goodall</persName> (<date notBefore="1795" notAfter="1870">1795-1870</date>)</head>
+                <p>Engraver, based in <placeName corresp="#LONDON">London</placeName>. <persName corresp="#EG">Goodall</persName> specialized in landscape, and he was closely associated with <persName corresp="#JMWT">Turner</persName>. 
+                    Important projects included the vignettes after <persName corresp="#JMWT">Turner</persName> for <persName corresp="#SR">Samuel Rogers</persName>&#x02BC;s <hi rend="italic"> <title type="book" corresp="#ROGERSITALY">Italy</title></hi> (<date when="1830">1830</date>) 
+                    and <persName corresp="#SR">Rogers</persName>&#x02BC;s <hi rend="italic"> <title type="book" corresp="#ROGERSPOEMS1834">Poems</title></hi> (<date when="1834">1834</date>), complementing <persName corresp="#WF">William Finden</persName>&#x02BC;s figure engravings for those books after <persName corresp="#TSP">Stothard</persName>. 
+                    Other collaborations with the artist in steel engraving include the illustrations to the Poetical Works of <persName corresp="#TCAMPBELL">Thomas Campbell</persName>.
+                </p>
+                <p><ref type="bibliography" target="bibliography.html#HUNNISETTSTEELENGRAVED"><persName corresp="#BH">Hunnisett</persName>, <title type="essay" corresp="#HUNNISETTSTEELENGRAVED"><hi rend="italic">Steel&#x2010;Engraved Book Illustration in England</hi></title></ref>, 
+                    101&#x2013;2. 
+                </p>
+                
             </div>
         </body>
     </text>
