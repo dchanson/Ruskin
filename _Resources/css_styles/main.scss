@@ -1,0 +1,408 @@
+@charset "UTF-8";
+
+@import "~bootstrap/scss/bootstrap";
+@import "styles_common";
+@import "vars";
+@import "~tao-scss/index";
+@import "components/keyframes";
+
+/*
+ * Styles for components
+ */
+
+$header-color: #fff;
+
+body {
+  color: $body-color;
+
+  a {
+    //text-decoration-color: #aaaaaa;
+    //text-decoration-style: dotted;
+    text-decoration: none;
+  }
+
+  a,
+  a:link,
+  a:visited {
+    color: $link-color;
+  }
+
+  a:hover,
+  a.active:link {
+    color: $link-active-color;
+  }
+
+  .highlighted {
+    background-color: $highlight-color;
+    font-weight: bold;
+    padding: 3px;
+  }
+}
+
+.mainBody > main {
+  animation: 1s cubic-bezier(0.18, 0.4, 0.45, 0.93) 0s 1 fadeInPage;
+}
+
+.SearchItem {
+  background: #eee;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  margin: 16px;
+
+  .title {
+    font-weight: bold;
+    font-size: large;
+    color: #609;
+  }
+
+  .docTypeContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .text {
+    font-style: italic;
+  }
+
+  mark {
+    background: $highlight-color;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+div.QuickSearchBox {
+  display: block;
+
+  .searchbar {
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: 0;
+    height: 48px;
+    background-color: #989c9e;
+    border-radius: 30px;
+    padding: 3px;
+
+    &:hover > .search_input {
+      @media (min-width: 768px) and (max-width: 199px) {
+        width: 100px;
+      }
+
+      @media (min-width: 800px) and (max-width: 860px) {
+        width: 140px;
+      }
+
+      @media (min-width: 861px) and (max-width: 910px) {
+        width: 200px;
+      }
+
+      @media (min-width: 911px) and (max-width: 959px) {
+        width: 250px;
+      }
+
+      @media (min-width: 960px) {
+        width: 300px;
+      }
+
+      caret-color: black;
+      transition: width 0.4s linear;
+    }
+
+    @media (max-width: 767px) {
+      .search_input {
+        width: 100% !important;
+      }
+      .search_icon {
+        margin-top: -38px;
+      }
+    }
+
+    .search_input {
+      margin-right: auto;
+      margin-top: 4px;
+      color: whitesmoke;
+      border: 0;
+      outline: 0;
+      background: none;
+      width: 100px;
+      padding: 3px 10px;
+      caret-color: transparent;
+      line-height: 40px;
+      transition: width 0.4s linear;
+
+      &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #f5f5f569;
+        opacity: 1; /* Firefox */
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .search_icon {
+      cursor: pointer;
+      color: #343a3f;
+      background: white;
+      height: 40px;
+      width: 40px;
+      float: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: 1070px) {
+    .separatorBr {
+      display: initial;
+    }
+  }
+
+  @media (max-width: 1069px) {
+    .separatorBr {
+      display: none;
+    }
+  }
+
+  .advancedSearchHolder {
+    padding-left: 10px;
+
+    //margin-right: 4em;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    @media (min-width: 1070px) {
+      display: block;
+      float: right;
+    }
+
+    .advancedSearch {
+      color: $header-color;
+      font-size: smaller;
+      background: transparent;
+      border: none;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.SearchBox {
+  $first-box-width: 35%;
+  $second-box-width: 20%;
+  $third-box-width: 45%;
+
+  .firstBox,
+  .secondBox,
+  .thirdBox {
+    height: 4em;
+  }
+
+  fieldset {
+    padding-left: 10%;
+    padding-right: 8%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .firstBox {
+    //background: aqua;
+
+    & > #searchText {
+      display: block;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    width: $first-box-width;
+    float: left;
+
+    #fullTextChecked {
+      margin-right: 6px;
+    }
+  }
+
+  .secondBox {
+    width: $second-box-width;
+    float: left;
+    //background: #8e7f7f;
+    text-align: center;
+  }
+
+  .thirdBox {
+    width: $third-box-width;
+    //background: greenyellow;
+    float: left;
+    line-height: 1.5em;
+
+    label {
+      margin: 4px;
+    }
+
+    label[for="searchIn"] {
+      display: block;
+    }
+
+    label[for="type"],
+    label[for="subType"] {
+      display: inline-block;
+    }
+  }
+
+  .error {
+    color: #e82929;
+    margin-top: -0.5em;
+    margin-bottom: 0.2em;
+  }
+}
+
+.UpdateDbRoute {
+  .logs-holder :nth-child(even) {
+    background: #ececec;
+  }
+
+  .line-number {
+    font-size: small;
+    color: darkslategray;
+  }
+
+  .level {
+  }
+
+  .message {
+  }
+  .logger-row {
+    padding: 2px;
+
+    &.level-WARNING {
+      color: orange;
+    }
+    &.level-INFO {
+      color: blue;
+    }
+    &.level-ERROR {
+      color: red;
+    }
+    &.level-FATAL {
+      font-weight: bold;
+      color: red;
+    }
+  }
+}
+
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+}
+
+.HeadNavigation {
+  @media (max-width: 767px) {
+    .navbar-collapse {
+      padding-left: 1em;
+    }
+  }
+  .navbar-brand {
+    img {
+      height: 4em;
+      padding: 1px;
+      margin: 0;
+    }
+    padding: 0;
+  }
+
+  .navbar {
+    border-top: 1px solid #7b7b7b;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+}
+
+[data-reactroot] > main {
+  //margin-left: $side-nav-width;
+  min-height: 77vh;
+  word-break: break-word;
+  margin-top: 1em;
+  text-align: justify;
+
+  .p,
+  .subsection {
+    margin: 1em 0.5em 1em 0.3em;
+  }
+
+  @import "styles_migrated";
+  @import "components/floating_text";
+  @import "components/glosses";
+  @import "components/mini_contents";
+  @import "components/padding_fix";
+}
+
+$margin-left-phone: 5%;
+$margin-right-phone: 3%;
+
+#brand-image {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: -1em;
+}
+
+@media all and (min-width: 501px) {
+  [data-reactroot] > main {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 34px;
+    max-width: 61em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #brand-image {
+    left: (50% - ($margin-left-phone - $margin-right-phone)/2);
+    min-height: 15vh;
+  }
+  [data-reactroot] > main {
+    padding-top: 35px;
+    padding-left: $margin-left-phone;
+    padding-right: $margin-right-phone;
+    line-height: 128%;
+  }
+}
+
+.footer {
+  width: 100%;
+  min-height: 60px; /* Set the fixed height of the footer here */
+  //line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+  margin-top: 1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  .text-muted {
+    a {
+      color: #4374ad;
+    }
+  }
+}
