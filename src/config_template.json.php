@@ -1,6 +1,6 @@
 <?php
 $r_config = array(
-	"BASE"=> "http://ruskin.local:8080/src",
+	"BASE"=> "http://erm.selu.edu/web/pages",
 	"SCSS_DIRECTORY"=> "../_Resources/css_styles",
 	"SEARCH_HOST"=> "http://localhost:9001",
 	"DB"=> array(
