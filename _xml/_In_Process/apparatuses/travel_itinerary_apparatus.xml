@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
+            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
+        <fileDesc xml:id="travel_itinerary_apparatus">
+            <titleStmt>
+                <title type="main">Travel Itinerary and Tour Notes</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>htts://erm.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="apparatus">
+                <head type="title">Travel Itinerary and Tour Notes</head>
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>Untitled by Ruskin.</p>
+                </div>
+                <div type="section" xml:id="GENRE">
+                    <head type="section">Genre</head>
+                    <p>Imitation of a travel guide.</p>
+                </div>
+                <div type="section" xml:id="MAJORMS">
+                    <head type="section">Manuscripts</head>
+                    <p>MS IVB.</p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Before <date notBefore="1828-05" notAfter="1828-07">May and through mid&#x2010;July 1828</date>. The two lists of itineraries (see <ref type="internal" target="#COMPPUB">Composition and Publication</ref>) can be dated only approximately, 
+                        owing to the failure of any family letters to survive from <date when="1828">1828</date>, except for a New Year&#x02BC;s address dated from the last day of the year 
+                        (RFL 170&#x2010;71). One letter ascribed to earlier in <date when="1828">1828</date>, a poem for <persName corresp="#JJR">John James</persName>&#x02BC;s birthday, is an error in RFL (see no. 41); 
+                        therefore, we cannot be certain that the family departed <placeName type="building" corresp="#HERNE">Herne Hill</placeName> following <persName corresp="#JJR">John James</persName>&#x02BC;s May 10 birthday. 
+                        Some dates in May through July can be attached to the actual tour. The prospective list would have been compiled prior to departure, 
+                        of course, presumably at a time when <persName corresp="#JJR">John James</persName> was at home to help annotate the list.</p>
+                </div>
+                <div type="section" xml:id="COMPPUB">
+                    <head type="section">Composition and Publication</head>
+                    <p>Portion reproduced in <ref type="bibliography" target="bibliography.php#HUNTWIDERSEA"><persName corresp="#JDHUNT">Hunt</persName>, <title type="book" corresp="#HUNTWIDERSEA"><hi rend="italic">John Ruskin: A Wider Sea</hi></title></ref>, fig. 6a. 
+                        Quoted in <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 1:xxv&#x2010;xxvi n. 2. Previously unpublished in entirety.</p>
+                    <p>See <ref type="internal" target="#DISCUSSION">Discussion</ref> for the genesis of the travel plans. <title type="manuscript" corresp="#MSIVB">MS IVB</title> contains two itineraries, one at the front of the notebook, and the other at the back, 
+                        consisting of lists of city names, sometimes annotated with sightseeing features to be found in those towns and cities.</p>
+                    <p><persName corresp="#HGV">Helen Viljoen</persName> interpreted the itinerary at the front of the <title type="manuscript" corresp="#JRREDBOOK">Red Book</title> as <persName corresp="#JR">Ruskin</persName>&#x02BC;s prospective plan with annotations by <persName corresp="#JJR">John James</persName>, 
+                        and the list at the end as notes taken during the actual trip (&#x201C;Dating MSS. of Boyhood,&#x201D; HGVP, boxes D.V, E.IX). 
+                        <persName corresp="#HGV">Viljoen</persName>&#x02BC;s interpretation is supported by the prospective list being printed neatly in ink by <persName corresp="#JR">Ruskin</persName> 
+                        (longhand annotations by <persName corresp="#JJR">John James</persName>), while the notes for the actual tour are more roughly written in <persName corresp="#JR">Ruskin</persName>&#x02BC;s ink longhand.</p>
+                    <p>Thus, it appears, sometime prior to departure, <persName corresp="#JR">Ruskin</persName> devised the list of prospective places by dividing pages in half horizontally, 
+                        and labeling each half&#x2010;page with a place name. Most sections were then annotated by <persName corresp="#JJR">John James</persName> with features of special interest, 
+                        obviously drawing on some guidebook, and, one imagines, consulting with his wife and son.</p>
+                    <p>Later, during the journey itself, <persName corresp="#JR">Ruskin</persName> listed merely the names of places they visited, the swing back to <placeName corresp="#LONDON">London</placeName> occurring soon after arriving in <placeName corresp="#PLYMOUTH">Plymouth</placeName>, 
+                        where the family learned of <persName corresp="#JRP">Aunt Jessie</persName>&#x02BC;s death.</p>
+                    <p>Some years later, the lists became densely crowded by <persName corresp="#JR">Ruskin</persName>&#x02BC;s mineralogy notes, written reverso from the other end of the notebook (see no. 171; and part 2, MS IVB, &#x201C;Content&#x201D;).</p>
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <p>These travel itineraries and notes record plans for the Ruskins&#x02BC; &#x201C;great tour&#x201D; of the <geogName corresp="#LAKEDISTRICT">Lake District</geogName> in <date when="1828">1828</date>. 
+                        The tour was planned to compensate for the leaner years of <date when="1826">1826</date> and <date when="1827">1827</date>, when business kept <persName corresp="#JJR">John James Ruskin</persName> 
+                        on the road traveling for orders longer into the spring than normal.</p>
+                    <p>As it turned out, the tour to the <geogName corresp="#LAKEDISTRICT">Lakes</geogName> was not realized until <date when="1830">1830</date>, 
+                        the <date when="1828">1828</date> journey having been interrupted on <date when="1828-05-24">24 May</date> by news of the <date when="1828-05-12">12 May</date> death 
+                        of <persName corresp="#JRP">&#x201C;Aunt Jessie,&#x201D;</persName> <persName corresp="#JR">John James</persName>&#x02BC;s sister, Mrs. Patrick Richardson (see <ref type="bibliography" target="bibliography.php#JRTOURLAKES"><title type="diary" corresp="#JRTOURLAKES"><hi rend="italic">Tour to the Lakes in Cumberland</hi></title>, ed. <persName corresp="#VAB">Burd</persName> and <persName corresp="#JSD">Dearden</persName></ref>, 7; 
+                        and <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 35:70, where the death is mistakenly ascribed to <date when="1829">1829</date>).</p>
+                    <p>For another instance of <persName corresp="#JR">Ruskin</persName>&#x02BC;s preplanning trips, see RFL, 220.</p>
+                     </div>
+                
+            </div>
+        </body>
+    </text>
+</TEI>
