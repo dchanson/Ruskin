@@ -1,7 +1,7 @@
 <?php
 $r_config = array(
-	"BASE"=> "http://erm.selu.edu/web/pages",
-	"SCSS_DIRECTORY"=> "../_Resources/css_styles",
+	"BASE"=> "https://erm.selu.edu/web/pages",
+	"SCSS_DIRECTORY"=> "../styles",
 	"SEARCH_HOST"=> "http://localhost:9001",
 	"DB"=> array(
 		"HOST"=> "localhost",
