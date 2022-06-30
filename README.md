@@ -255,7 +255,7 @@ Setting up php part:
     );
 
 **Add Ruskin Folder to erm.selu.edu workspace in VS Code**
-### Add npx webpack to ./scripts/build.sh:**
+### Add npx webpack to ./scripts/build.sh:
 
      npx webpack \
       --config './src/config/webpack.production.config.babel.js' \
