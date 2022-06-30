@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Eudosia"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS
+                    Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#GMS">Gabriella M. Smith</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department
+                        of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus"
+                                    target="tite_of_apparatus.php#MAJORMS">"Title of Work":
+                                    Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826"
+                                        notAfter="1827">1826-27</date>, examples of which can be
+                                    found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Example entries have been provided from MS I in the <handShift/>s below. Actual entries may vary.-->
+            <!--Simple Verse. Delete this <div/> if not used.-->
+            <div type="prose">
+                <div type="chapter">
+                    <p>EUDOSIA OR / A POEM / ON THE / UNIVERSE / BY JOHN RUSKIN / VOL I</p>
+                    <p>These are thy glorious works parent of good / Almighty thine this universal frame / Thus wondros fair    MILTON</p>
+                    <p>BOTANY / HERN HILL / DULWICH</p>
+                </div>
+            </div>
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>September 28th / 1828 / FIRST BOOK</head>
+                <lg type="stanza" rhyme="aa">
+                    <l>WHEN First the wrath of heav&#x02019;n oerwhelmed the world,</l>
+                    <l>And oer the rocks and hills and mountains hurled</l>
+                    <l>The waters gathering mass and sea oer shore[--]</l>
+                    <l>Then mountains fell, and Vales unknown before,</l>
+                    <l>Lay where they were. Far different was the earth</l>
+                    <l>When first the flood came down then at its second Birth.</l>
+                    <l>Now for its produce. Queen of flowers O rose[--]</l>
+                    <l>From whose fair coloured leaves such odour flows,</l>
+                    <l>Thou must now be before thy subjects Named[--]</l>
+                    <l>Both for thy beauty and thy sweetness famed.</l>
+                    <l>Thou art the flower of england and the flow&#x02019;r</l>
+                    <l>Of Beauty too[,] of Venus odrous Bower[--]</l>
+                    <l>And Thou wilt often shed Sweet odours Round,</l>
+                    <l>And often stooping hide thy head on ground.</l>
+                    <l>And then the lily towering up so proud[--]</l>
+                    <l>And raising its gay head among the various crowd</l>
+                    <l>Of flowers sweet. All opening to the day,</l>
+                    <l>Both to the morning and the suns fair ray.</l>
+                    <l>There the Black spots upon a scarlet ground,</l>
+                    <l>And there the taper pointed leaves are found.</l>
+                    <l>Then thou sweet flower the gentian come in view,</l>
+                    <l>With thy gay hanging Bells of Brightest Blue[--]</l>
+                    <l>And thy sweet Sister Blue Bell comes with thee,</l>
+                    <l>Both are great Beauties for Mankind to see.</l>
+                    <l>And then sweet Maid the Yucca dressed in white,</l>
+                    <l>With fibrous leaves And Dazzled By the light[--]<ref type="gloss_contextual" target="eudosia_glosses_contextual.php#RUSKINSNOTE1GLOSS"/></l>
+                    <l>Erect and straight thou standest mid the flowers,</l>
+                    <l>While oer the rest thy lofty head&#45;bell towr&#x02019;s [i.e., tow&#x02019;rs].</l>
+                    <l>Among the rest the high&#45;topped dalia shows,</l>
+                    <l>With hues, almost superior to the rose.</l>
+                    <l>Its velvet leaves of finest crimson dye</l>
+                    <l>Around a circle of bright yellow lie.</l>
+                    <l>Thy pink and white fair snowberry Appears[--]</l>
+                    <l>Cheering the eye for many running years.</l>
+                    <l>Thy balls of marble and thy blooming pink,</l>
+                    <l>Will make us oft of thy creator think.</l>
+                    <l>The laurustinus white I next will name,</l>
+                    <l>Although it has not just too much of fame[--]</l>
+                    <l>Its buds are brown Its flowers are snowy white[--]</l>
+                    <l>It opens at young Januarys light.<ref type="gloss_contextual" target="eudosia_glosses_contextual.php#RUSKINSNOTE2GLOSS"/></l>
+                    <l>The hanging snowdrop at length must appear,</l>
+                    <l>In spite of all its modest maidlike fear[--]</l>
+                    <l>It hangs its head upon a stalk of green[--]</l>
+                    <l>Its head a bell of purest white is seen.</l>
+                    <l>The lilac primrose on a thick laid bed,</l>
+                    <l>Of clustered leaves doth rest its pretty head,</l>
+                    <l>Beside its sister called primrose red.</l>
+                    <l>And by the by before I should have named</l>
+                    <l>Young hyacinthus by Apollo famed,</l>
+                    <l>Who by the discus stroke did strike him dead[--]</l>
+                    <l>And made this flower from his dying head,</l>
+                    <l>And called it hyacinth. And some are Blue,</l>
+                    <l>And some are White and Pink unto the view[--]</l>
+                    <l>They incline downwards from a stalk full straight,</l>
+                    <l>Sad flowers created from the youths sad fate.</l>
+                    <l>The yellow crocus flames in flowers of gold</l>
+                    <l>Its formed in a pretty cupshaped mould</l>
+                    <l>One flowers in january, its brother then</l>
+                    <l>Flowers in autumnal light autumnal ken.<ref type="gloss_contextual" target="eudosia_glosses_contextual.php#RUSKINSNOTE3GLOSS"/></l>
+                    <l>The fiveleaved Periwinkle coloured blue</l>
+                    <l>With stalk of green and beauteous to the view</l>
+                    <l>Amidst a cluster of the finest green</l>
+                    <l>Hides its sweet head and dislikes to be seen</l>
+                    <l>The heartsease sweet it well deserves the name</l>
+                    <l>For such a beauty hardlys known to fame</l>
+                    <l>Its dyes are gold and purple and with these</l>
+                    <l>Mingled are stripes of black, its name, heartsease</l>
+                    <l>Then comes the violet the purple maid</l>
+                    <l>Upon a bed of leaves its head is laid</l>
+                    <l>And while the flower casts its odours round</l>
+                    <l>The lowly plant neer leaves its mother ground</l>
+                    <l>The jonquil sometimes has an ugly name</l>
+                    <l>Which from its white and yellow mingled came</l>
+                    <l>Butter and eggs it is at other times</l>
+                    <l>Narcissus called and its remaining lines</l>
+                    <l>Are called daffodil. It hath a flow&#x02019;r</l>
+                    <l>That from a stalk foot high its head doth lowr</l>
+                    <l>And of the brightest yellow is the flow&#x02019;r</l>
+                    <l>The wall&#45;flower in its clusters cometh then</l>
+                    <l>Sweet to the smell and sweet to human ken</l>
+                    <l>Brown and bright yellow are its mingled dyes</l>
+                    <l>There even brown is pretty to the eyes</l>
+                    <l>The crown imperial hangs its noble head</l>
+                    <l>Some insects are by its white milk drops fed</l>
+                    <l>For in the bells of each large yellow flower</l>
+                    <l>Four seeming milkdrops have their noble bower</l>
+                    <l>These insects feed on, and they gather quick</l>
+                    <l>While each applies the liquid to the lip</l>
+                    <l>A lowly clustered flower now takes its place</l>
+                    <l>I mean the alysson with a yellow face</l>
+                    <l>This flower in thickest yellow cluster grows</l>
+                    <l>And only its old mother earth well knows</l>
+                    <l>A purple flower I now make known to fame</l>
+                    <l>Tis sometimes white and tis known by the name</l>
+                    <l>Of columbine in pods kept are its seeds</l>
+                    <l>And sometimes columbines are really weeds</l>
+                    <l>The lily of the valley now doth come</l>
+                    <l>Its large leaves hide its face quite from the sun</l>
+                    <l>Beautiful maid so modest and so sweet</l>
+                    <l>And greatly dreading mortal eyes to meet</l>
+                    <l>Green pointed leaves around its flowers grow</l>
+                    <l>And from its pretty bells such odours flow</l>
+                    <l>As might have sent great Jupiter to sleep</l>
+                    <l>When all the world was fighting at his feet</l>
+                    <l>A purple colour doth the flag adorn</l>
+                    <l>It looks like velvet opening to the morn</l>
+                    <l>So rich the colour that it feeds the eye</l>
+                    <l>Every one should be sad that it must die.</l>
+                    <l>Then in the comfrey mixed are blue and red</l>
+                    <l>Odd colours that in flowers they should wed</l>
+                    <l>But when together they are quite as sweet</l>
+                    <l>As both the colours are when they dont meet</l>
+                    <l>Crimson geranium long and pretty name</l>
+                    <l>This flow&#x02019;r is sometimes called bill of the crane</l>
+                    <l>Or cranesbill. Lightish crimson is its hue</l>
+                    <l>Another&#x02019;s colour is a kind of blue</l>
+                    <l>Now comes the flower with a noble name</l>
+                    <l>Name of the nation thats most known to fame</l>
+                    <l>I mean the Greeks This flowers colours blue</l>
+                    <l>And tis indeed a very beauteous hue</l>
+                    <l>The climbing honeysuckle now doth come</l>
+                    <l>Exposing all its flowers to the sun</l>
+                    <l>Its flower various tubes thei&#x02019;r [i.e., theyr&#x02019;e(?)] coloured pink</l>
+                    <l>And it is very beautiful I think</l>
+                    <l>You turkscap lily, Turk although you be</l>
+                    <l>Yet your [i.e., you&#x02019;re] a royal turk e&#x02019;en I can see</l>
+                    <l>Your beauteous caps in clusters thick and fair</l>
+                    <l>You are too noble for Atrides hair</l>
+                    <l>And Oh the province rose4 The flake of snow</l>
+                    <l>From which such overpow&#x02019;ring odours flow</l>
+                    <l>Thou must now beauteous wondrous flowr</l>
+                    <l>The only place your&#x02019;e [i.e., you&#x02019;re] fit for is for Venus bow&#x02019;r.</l>
+                    <l>You Indian pink an honour to that land</l>
+                    <l>Putting to shame all done by mortal hand</l>
+                    <l>And its sweet head of such a crimson hue</l>
+                    <l>Tis wonderful that from a seed it grew</l>
+                    <l>Then Gilder rose small flowers connected all</l>
+                    <l>And when connected their shape is a ball</l>
+                    <l>As white as snow something like provence rose</l>
+                    <l>In a large bush this noble flower grows</l>
+                    <l>Then the sweet William like the Indian Pink</l>
+                    <l>In colour but much larger I do think</l>
+                    <l>And different shape But all are fairest fair</l>
+                    <l>All natures beauties are united there</l>
+                    <l>And then the noisy instrument of fame</l>
+                    <l>All all will know the trumpet is its name</l>
+                    <l>This is the trumpet flowr so named because</l>
+                    <l>Its shape extremely near the trumpet draws</l>
+                    <l>And now that flowr Flowr indeed of sleep</l>
+                    <l>Flower to make too many mothers weep</l>
+                    <l>You dead{l}y poppy Poison though you be</l>
+                    <l>Yet your&#x02019;e [i.e., you&#x02019;re] a beauty for mankind to see</l>
+                    <l>Now comes the foxglove with its hanging bells</l>
+                    <l>But ah alas its nature poison tells</l>
+                    <l>Attractive beautiful but pois&#x02019;nous too</l>
+                    <l>Foxglove I would not dare to play with you</l>
+                    <l>Now comes the king of flowrs Though rose the queen</l>
+                    <l>A nobler king will neer will neer be seen</l>
+                    <l>White lily tis Oh look at that fair crown</l>
+                    <l>From that green stalk so high depending down</l>
+                    <l>Fair on its dark green leaves that crimson flowr</l>
+                    <l>Darts bright upon the eye and whiles away an hour</l>
+                    <l>Glaring it rises from its leafy bed</l>
+                    <l>And always seems as if to you it said.</l>
+                    <l>I know that I am beautiful &#38; see</l>
+                    <l>Whether a flower can compare with me</l>
+                    <l>See my green leaves and see my head beside</l>
+                    <l>With such a crimson such a glorious tide</l>
+                    <l>That which another in thou canst not see</l>
+                    <l>For not another flower is like me.</l>
+                    <l>That the rose is a maiden fair tis true</l>
+                    <l>And almost equals me But then judge you</l>
+                    <l>Whether my darker colour doth not beat</l>
+                    <l>Een that fair flowr where most beauties meet</l>
+                    <l>Now say I Dost thou compare with the rose</l>
+                    <l>Alas what flower itself really knows</l>
+                    <l>That glaring crimson which you seem to like</l>
+                    <l>Know that it glares too much unto the sight</l>
+                    <l>While that fair flowr its maiden pink bestows</l>
+                    <l>With such a sweetness as beseems the rose</l>
+                    <l>Now sir hang down your head and dare no more</l>
+                    <l>To put yourself the beauteous rose before</l>
+                    <l>There is a tree &#38; famed it was of old</l>
+                    <l>It used the brows of conq&#x02019;rors to enfold</l>
+                    <l>I need not name it Tis the tree of him</l>
+                    <l>Who doth preside oer music and to sing</l>
+                    <l>The God who did the Pythoness inspire</l>
+                    <l>From the dark cavern with his sacred fire</l>
+                    <l>As tis his tree it folds the poet&#x02019;s brow</l>
+                    <l>And is the tree of fame Enough of&#x02019;t now.</l>
+                    <l>High in the air the poplar nobly tow&#x02019;rs</l>
+                    <l>And seems for loftiness the King of flowrs</l>
+                    <l>Its head contends to reach the clouds on high</l>
+                    <l>And seems ambitious een to touch the sky.</l>
+                    <l>Now the broad Oak displays its arms around</l>
+                    <l>Its brawny branches spreading sweep the ground</l>
+                    <l>Its kingly arms their giant strength display</l>
+                    <l>With their great breadth een hide the face of day</l>
+                    <l>Broad round the mother trunk they throw their arms</l>
+                    <l>And dare encounter dreadful wars alarms</l>
+                    <l>To their assistance England owes her strength</l>
+                    <l>The spoils of nations come from their dread length</l>
+                    <l>Of them are formed Englands wooden walls</l>
+                    <l>With them surrounded England loves Mars calls</l>
+                    <l>Clothed in that armour of approved strength</l>
+                    <l>The British conquests have unbounded length</l>
+                    <l>In vain the waves attempt to break their sides</l>
+                    <l>And to oerwhelm them with the rushing tides</l>
+                    <l>A copper armour keeps them safe below</l>
+                    <l>They look down proud not frighted as they go</l>
+                    <l>There the stern front the rushing sea divides</l>
+                    <l>And towering high provokes the foaming tides</l>
+                    <l>High at the stern they rear then sink below</l>
+                    <l>Then rise again and then around they go</l>
+                    <l>Foaming with rage that mortals should surmount</l>
+                    <l>The wat&#x02019;ry deep and sail the seas about</l>
+                    <l>Unheeding of their rage the oak sails on</l>
+                    <l>And Britons triumphing by seas are borne</l>
+                    <l>END OF THE FIRST BOOK</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"
+                    />EUDOSIA / BOOK II</head>
+                <lg type="stanza" rhyme="aa">
+                    <l>I SING the pine which clothes high switzers head</l>
+                    <l>And high enthroned grows on a rocky bed</l>
+                    <l>On gulfs so deep on cliffs that are so high</l>
+                    <l>He that would dare to climb them dares to die</l>
+                    <l>There they hang oer the dreadful rocky steeps</l>
+                    <l>There they bend over and they kiss the deeps</l>
+                    <l>Which round the rocks do play and raging still</l>
+                    <l>Awake the echoes from the wavy hill.</l>
+                    <l>But man this pleasing picture soon would spoil</l>
+                    <l>Regardless both of beauty and of toil</l>
+                    <l>Though nature tried in vain to preserve them for a while</l>
+                    <l>In vain to save them she did place them high</l>
+                    <l>Alas in vain for they were doomed to die</l>
+                    <l>Man formed a slide huge pond&#x02019;rous to behold</l>
+                    <l>It cost much labour and it cost much gold</l>
+                    <l>Along the breast of Pilates cliff it lay</l>
+                    <l>Oer rocks and gulfs and glens it held its way</l>
+                    <l>And ended in Lucerne, on this the trees</l>
+                    <l>Roaring like thunder borne upon the breeze</l>
+                    <l>Rushed down and rushing dreadful in their ire</l>
+                    <l>To their assistance such their anger dire</l>
+                    <l>Summoned with red and flaming crown that monster fire</l>
+                    <l>He then would have been king and on the mount</l>
+                    <l>The flaming forests would have spread about</l>
+                    <l>Another Etna Pilate would have been</l>
+                    <l>Oer spacious Switzerland the fires are seen</l>
+                    <l>In one sad ruin all the pines would fall</l>
+                    <l>In vain for help the noble forests call</l>
+                    <l>But man had this foreseen. Ingenious man</l>
+                    <l>Thought, can I this prevent. Yes if I will I can</l>
+                    <l>And so man made the mountain streams descend</l>
+                    <l>And down the trough their dang&#x02019;rous course to bend</l>
+                    <l>This element opposed the raging fire</l>
+                    <l>And did prevent its great effects so dire</l>
+                    <l>Now comes the hawthorn with its blossoms white</l>
+                    <l>Welcoming gaily in Mays cheerful light</l>
+                    <l>With luscious odours it perfumes the breeze</l>
+                    <l>Most fair most cheerful sweetest of the trees</l>
+                    <l>Bound up with clusters white it doth adorn</l>
+                    <l>The tall pole which is raised on Mays first morn</l>
+                    <l>And lightly bounding from the blooming green</l>
+                    <l>Round it the village youth are dancing seen.</l>
+                    <l>Dandily dressed with scarlet ribbons gay</l>
+                    <l>The sweeps with hawthorn welcome in the may</l>
+                    <l>With fluttering rags with yellow &#38; with red</l>
+                    <l>And hawthorn blossoms waving oer their head</l>
+                    <l>Rattling their shovels they do dance about</l>
+                    <l>And think their robes are very fine no doubt.</l>
+                    <l>And now the Yew a mournful tree I sing</l>
+                    <l>Which pois&#x02019;nous is to every living thing</l>
+                    <l>And meet it is that such a tree is placed</l>
+                    <l>In the dread church yard where the corses waste</l>
+                    <l>Now think again in every case the Yew</l>
+                    <l>Shows death in all its terrors to the view</l>
+                    <l>For lo see there Just bursting from the wood</l>
+                    <l>The free and lawless band of Robin Hood</l>
+                    <l>Look at their bows tough Yew confines the string</l>
+                    <l>And Yew elastic gives the arrow wing</l>
+                    <l>Well aimed and thirsting for the purple blood</l>
+                    <l>Of tallest stag that ever ranged the wood</l>
+                    <l>The winged dart flies gladly through the air</l>
+                    <l>And quickly fixes in its body fair</l>
+                    <l>The tall stag fainteth with the deadly wound</l>
+                    <l>And deeply sighing sinks upon the ground</l>
+                    <l>And thus oppressed by the winged death</l>
+                    <l>The dying stag sobs forth its latest breath</l>
+                    <l>And now dost see yon ruined pile on high</l>
+                    <l>Majestic creeping up against the sky</l>
+                    <l>Behold the Ivy creeping oer the stone</l>
+                    <l>Which still remains from Luxury thats gone</l>
+                    <l>Where now foul weeds arise and tempests sweep</l>
+                    <l>Oer the vast hall and tower &#38; donjon keep</l>
+                    <l>In former times were feasts and blazing fires</l>
+                    <l>And mirth and every thing the soul desires</l>
+                    <l>Time hath flown by with mouldering touch hath past</l>
+                    <l>And mirth &#38; luxury have breathed their last</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

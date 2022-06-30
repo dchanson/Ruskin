@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
+            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
+        <fileDesc xml:id="title_of_work_apparatus">
+            <titleStmt>
+                <title type="main">"Eudosia"</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#GMS">Gabriella M. Smith</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department
+                        of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>htts://erm.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="apparatus">
+                <head type="title">&#x201C;Eudosia, or a Poem on the Universe,&#x201D; vol. 1,
+                    &#x201C;Botany,&#x201D;</head>
+                <!--An apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="GENRE">
+                    <head type="section">Genre</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="MAJORMS">
+                    <head type="section">MSS IA, II, IV.</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>composed intermittently between <date notBefore="1828-09" notAfter="1830-02">September 1828 and February 1830</date>.</p>
+                    <p>On the first page of text (<title type="manuscript" corresp="#MSIV">MS IV</title>, p. 2), an abbreviated title is given with a
+                        date: <title type="poem" corresp="#JREUDOSIA">&#x201C;EUDOSIA / September 28th / 1828 / FIRST BOOK.&#x201D;</title> Since the date is
+                        neatly arranged in this space without crowding, it must not have been added
+                        to commemorate the end of fair&#45;copying&#x02014;an end that was never reached, in
+                        any case, <persName corresp="#JR">Ruskin</persName> having numbered pages in <title type="manuscript" corresp="#MSIV">MS IV</title> for the reception of poetry
+                        that was never composed. <date when="1828-09-28">September 28</date> must therefore refer to the onset,
+                        whether of the fair copy or of the draft.</p>
+                    <p><persName corresp="#WGC">Collingwood</persName>&#x02019;s dating of the poem from early <date when="1828">1828</date> is mistaken. Remarking that
+                        the draft in <title type="manuscript" corresp="#MSII">MS II</title> falls before the birthday poem, no. 41, which he
+                        attributed to <date when="1828-05">May 1828</date>, <persName corresp="#WGC">Collingwood</persName> concluded that &#x201C;<title type="poem" corresp="#JREUDOSIA">&#x02018;Eudosia&#x02019;</title> must therefore
+                        have been commenced in <date when="1828-05">March</date> or <date when="1828-04">April 1828</date>&#x201D; (<ref type="bibliography" target="bibliography.php#JRPOEMS8D1891"><title type="book" corresp="#JRPOEMS8D1891"><hi rend="italic">PJR</hi> [1891, 8o]</title></ref>, 1:272).
+                        <persName corresp="#WGC">Collingwood</persName>, however, misdated the birthday ode, which in fact belongs to
+                        <date when="1829">1829</date> (see no. 41). The <title type="poem" corresp="#JREUDOSIA">&#x201C;Eudosia&#x201D;</title> material preceding the ode may therefore be
+                        assigned to the fall of <date when="1828">1828</date>.</p>
+                </div>
+                <div type="section" xml:id="COMPPUB">
+                    <head type="section">Composition &#x0026; Publication</head>
+                    <p>Selections printed in <title type="book" corresp="#JRPOEMS8D1891"><hi rend="italic">PJR</hi> (1891, 8o)</title>, 1:15&#x02013;19, 272; <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title>, 2:269&#x02013;71,
+                        35:59&#x02013;60. Previously unpublished in entirety.</p>
+                    <p>Regardless of whether the specific date of <date when="1828-09-28">28 September</date> is assigned to draft
+                        or to fair copy, it can reasonably be assumed that the draft was begun in
+                        September, with the fair copy following very soon thereafter, since draft
+                        for book I, lines 121&#x02013;60, appears in the late <date when="1828">1828</date> portion of <title type="manuscript" corresp="#MSII">MS II</title>,
+                        preceding the &#x201C;Harry and Lucy&#x201D; material drafted in <date when="1828-12">December 1828</date> (no.
+                        32).</p>
+                    <p>By spring or summer <date when="1829">1829</date>, composition and fair copying had not advanced very
+                        far, since draft for book I, lines 100&#x02013;104, 161&#x02013;218, and book II, lines 1&#x02013;4,
+                        falls between no. 59 (probably <date when="1829-05">May</date>) and no. 60 (probably <date notBefore="1829-05" notAfter="1829-08">late May to early
+                        August</date>) in <title type="manuscript" corresp="#MSII">MS II</title>, with no evidence that this draft predated the surrounding
+                        <date when="1829">1829</date> material. At this stage, <persName corresp="#JR">Ruskin</persName> must have been composing and fair
+                        copying nearly simultaneously; otherwise, he would have been unable to
+                        decipher his draft after any lapse of time, since the words are jammed
+                        pell&#45;mell on the page. For example, the fair&#45;copy lines &#x201C;Of them are formed
+                        <placeName corresp="#ENGLAND">Englands</placeName> wooden walls / With them surrounded <placeName corresp="#ENGLAND">England</placeName> loves Mars calls&#x201D;
+                        appears in draft as</p>
+                    <floatingText>
+                        <body>
+                            <div type="poem">
+                                <lg type="blank_verse">
+                                    <l>Of them are formed</l>
+                                    <l><placeName corresp="#ENGLAND">englands</placeName> wooden</l>
+                                    <l>walls calls loves mars</l>
+                                    <l>With them surroun</l>
+                                    <l>ded <placeName corresp="#ENGLAND">england</placeName></l>
+                                </lg>
+                            </div>
+                        </body>
+                    </floatingText>
+                    <p>(The arrangement of these words may reveal, incidentally, that <persName corresp="#JR">Ruskin</persName> placed
+                        sound effects, such as rhyme and consonance, literally at the center of the
+                        compositional process.)</p>
+                    <p>The composition of <title type="poem" corresp="#JREUDOSIA">&#x201C;Eudosia&#x201D;</title> halted in <date notBefore="1830-02" notAfter="1830-03">February or March 1830</date> when <persName corresp="#JR">Ruskin</persName>
+                        incorporated <title type="poem" corresp="#JRTHEYEW">&#x201C;The Yew&#x201D;</title> (no. 72) into the catalog of trees at the end of the
+                        longer poem.</p>
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <p>Sources.&#x02014;When commenting on <title type="poem" corresp="#JREUDOSIA">&#x201C;Eudosia&#x201D;</title> in <title type="book" corresp="JRPRAETERITA"><hi rend="italic">Praeterita</hi></title>, <persName corresp="#JR">Ruskin</persName> could no longer
+                        remember &#x201C;where I got hold of this name, or what I understood by it&#x201D;
+                        (35:59). Undoubtedly, he got the title from <title type="poem" corresp="LOFFTEUDOSIA"><hi rend="italic">Eudosia, or a Poem on the
+                        Universe</hi></title> by <persName corresp="#CL">Capell Lofft</persName> (<date when="1781">1781</date>), which he would have found frequently quoted
+                        in <persName corresp="#JJ">Jeremiah Joyce</persName>&#x02019;s <title type="book" corresp="#JOYCESCIENTIFICDIALOGUES"><hi rend="italic">Scientific Dialogues</hi></title> (see no. 3). It is less clear
+                        whether he got anything more than the title&#x02019;s euphony; its meaning,
+                        unexplained in <persName corresp="#JJ">Joyce</persName>, is.... Aside from the quotations in <persName corresp="#JJ">Joyce</persName>, <persName corresp="#CL">Lofft</persName>&#x02019;s
+                        poem seems a surprising choice for the Ruskins&#x02019; library. So far as I have
+                        discovered, <persName corresp="#CL">Lofft</persName> had no connection with the Edgeworths&#x02019; system of
+                        education, an association that frequently accounts for the selection of
+                        <persName corresp="#JR">Ruskin</persName>&#x02019;s early reading. <persName corresp="#CL">Lofft</persName>&#x02019;s reputation, based partly on his scientific
+                        achievements but mainly on his firebrand Whig politics, would surely have
+                        appealed more to <persName corresp="#JJ">Joyce</persName> than to the Ruskins (<persName corresp="#JJ">Joyce</persName> himself having been
+                        arrested on suspicion of treason during the war with <placeName corresp="#FRANCE">France</placeName>).</p>
+                    <p><persName corresp="WGC">Collingwood</persName> (<ref type="bibliography" target="bibliography.php#JRPOEMS8D1891"><title type="book" corresp="#JRPOEMS8D1891"><hi rend="italic">PJR</hi> [1891, 8o]</title></ref>, 271) points out the influence of Pope on the
+                        heroic couplets of <title type="poem" corresp="#JREUDOSIA">&#x201C;Eudosia.&#x201D;</title> <persName corresp="#JR">Ruskin</persName> was certainly reading Pope&#x02019;s
+                        translation of the <title type="poem" corresp="#ILIAD"><hi rend="italic">Iliad</hi></title> by this time, since he draws on the epic for
+                        vignettes in no. 35. (For <persName corresp="#JR">Ruskin</persName>&#x02019;s copy of Pope&#x02019;s <title type="poem" corresp="#ILIAD"><hi rend="italic">Iliad</hi></title>, see <ref type="bibliography" target="bibliography.php#VILJOENRUSKINSBACKGROUNDS"><persName corresp="#HGV">Viljoen</persName>, <title type="catalogue" corresp="#VILJOENRUSKINSBACKGROUNDS"><hi rend="italic">Sharp
+                        Collection</hi></title></ref>, 8 [item 5e].) As another source, <persName corresp="#HGV">Viljoen</persName> suggests <persName corresp="#ALB">Barbauld</persName>&#x02019;s
+                        <title type="book" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title>, from which <persName corresp="#JR">Ruskin</persName> derived material on the pine and oak
+                        (HGVP, box F.X; for a copy this book owned by <persName corresp="#JR">Ruskin</persName>, see <ref type="bibliography" target="bibliography.php#VILJOENRUSKINSBACKGROUNDS"><persName corresp="#HGV">Viljoen</persName>, <title type="catalogue" corresp="#VILJOENRUSKINSBACKGROUNDS"><hi rend="italic">Sharp
+                        Collection</hi></title></ref>, 8 [item 5f]). <persName corresp="#JR">Ruskin</persName>&#x02019;s material on flowers, Viljoen believes,
+                        was gathered from direct observation.</p>
+                    <p>Body paragraph containing a list: <list type="ordered">
+                            <item n="1">First item in the list.</item>
+                            <item n="2">Second item.</item>
+                            <item n="3">Third item.</item>
+                        </list>
+                    </p>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="TEXTUALNOTE">
+                    <head type="section">Textual Note</head>
+                    <p>Body paragraph.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
