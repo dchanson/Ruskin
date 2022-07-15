@@ -3,11 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="shepherd_r_h_note">
             <titleStmt>
-                <title type="main">R. H. Shepherd</title>
+                <title type="main">Richard Herne Shepherd (1840&#x2013;95)</title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -89,8 +87,8 @@
                     He was among the early &#x201C;far&#x2010;sighted professionals&#x201D; who, in <persName corresp="#JC">John Carter&#x02BC;s </persName>estimation, helped steer the trend in 
                     <ref type="note" subtype="bibliographical" target="collecting_of_modern_authors_note.php">Collecting of Modern Authors in the Late Nineteenth and Early Twentieth Centuries</ref>, since 
                     he compiled many of the first important bibliographies of these writers for collectors 
-                    (<ref type="bibliography" target="bibliography.php#TASTEANDTECHNIQUE"><persName corresp="#JC">Carter</persName>, <title type="book" corresp="#TASTEANDTECHNIQUE"><hi rend="italic">Taste and Technique in Book&#x2010;Collecting</hi></title></ref>, 23; 
-                    see also <ref type="bibliography" target="bibliography.php#DEVELOPMENTBIBLIOGRAPHICALSTUDY"><persName corresp="#MSS">Sadleir</persName>, &#x201C;Development of Bibliographical Study&#x201D;</ref>, 149). 
+                    (<ref type="bibliography" target="bibliography.php#CARTERTASTEANDTECHNIQUE"><persName corresp="#JC">Carter</persName>, <title type="book" corresp="#CARTERTASTEANDTECHNIQUE"><hi rend="italic">Taste and Technique in Book&#x2010;Collecting</hi></title></ref>, 23; 
+                    see also <ref type="bibliography" target="bibliography.php#SADLEIRDEVELOPMENTBIBLIOGRAPHICALSTUDY"><persName corresp="#MSS">Sadleir</persName>, <title type="essay" corresp="#SADLEIRDEVELOPMENTBIBLIOGRAPHICALSTUDY">&#x201C;Development of Bibliographical Study&#x201D;</title></ref>, 149). 
                     In addition to the <ref type="note" subtype="bibliographical" target="bibliography_of_ruskin_shepherd_note.php">Ruskin bibliography</ref>, <persName corresp="#RHS">Shepherd</persName> 
                     compiled bibliographies of several other modern authors: <persName corresp="#CJHD">Dickens</persName> (<date when="1880">1880</date>), 
                     <persName corresp="#WT">Thackeray</persName> (<date when="1881">1881</date>), <persName corresp="#TC">Carlyle</persName> (<date when="1881">1881</date>), 
@@ -99,10 +97,13 @@
                     Although little more than handlists, rather than descriptive or analytical bibliographies in a present&#x2010;day sense, 
                     <persName corresp="#RHS">Shepherd&#x02BC;s</persName> publications aspired to exhaustiveness, 
                     and his thoroughness led him to uncover early writing by <persName corresp="#JR">Ruskin</persName> and others that was then little known.</p>
+                
+                <div type="section">
+                    <head type="section">Editor of Modern Authors&#x02BC; Juvenilia</head>
                 <p>In addition to ferreting out modern authors&#x02BC; early work for bibliographical description, <persName corresp="#RHS">Shepherd</persName> edited a wide range of juvenilia and youthful writing for
                     publication. In <date when="1866">1866</date> and <date when="1879">1879</date> (2d ed.), he published <title type="ana" corresp="#TENNYSONIANA"><hi rend="italic">Tennysoniana</hi></title>, 
                     which combines biographical narrative with extensive quotation in support of studying 
-                    &#x201C;&#x2018;the growth of a Poet&#x02BC;s mind&#x2019;&#x201D; (<ref type="bibliography" target="bibliography.php#TENNYSONIANA"><persName corresp="#RHS">Shepherd</persName>, <title type="book" corresp="#SHEPHERDTENNYSONIANA"><hi rend="italic">Tennysoniana</hi></title></ref>, v). 
+                    &#x201C;&#x2018;the growth of a Poet&#x02BC;s mind&#x2019;&#x201D; (<ref type="bibliography" target="bibliography.php#SHEPHERDTENNYSONIANA"><persName corresp="#RHS">Shepherd</persName>, <title type="book" corresp="#SHEPHERDTENNYSONIANA"><hi rend="italic">Tennysoniana</hi></title></ref>, v). 
                     Justifying the volume as preserving &#x201C;materials for such a study,&#x201D; materials that might otherwise be allowed to &#x201C;perish,&#x201D; <persName corresp="#RHS">Shepherd</persName> threads together commentary 
                     with liberal quotation from  <persName corresp="#ALT">Tennyson&#x02BC;s</persName> published early poetry, 
                     starting with <title type="collected_poems" corresp="#POEMSBYTWOBROTHERS"><hi rend="italic">Poems by Two Brothers</hi></title> (<date when="1827">1827</date>) and the <placeName corresp="#CAMBRIDGEU">Cambridge</placeName> prize poem (<date when="1829">1829</date>), and continuing with poetry associated with the death of 
@@ -111,25 +112,28 @@
                     In <date when="1872">1872</date> (new ed., <date when="1878">1878</date>), he
                     reconstructed <persName corresp="#CLE">Charles</persName> and <persName corresp="#ML">Mary Lamb</persName>&#x02BC;s <title type="book" corresp="#LAMBSPOETRY"><hi rend="italic">Poetry for Children</hi></title>, and, in <date when="1878">1878</date>, <title type="book" corresp="#BARRETTBROWNINGEARLIERPOEMS1878"><hi rend="italic">The Earlier Poems of <persName corresp="#EBB">Elizabeth Barrett Browning</persName></hi></title>. 
                     In the latter, <persName corresp="#RHS">Shepherd</persName> typographically reproduced <persName corresp="#EBB">Barrett&#x02BC;s</persName> girlhood volume, <title type="book" corresp="#BARRETTBROWNINGANESSAYONMIND"><hi rend="italic">An Essay on Mind with Other Poems</hi></title> (<date when="1826">1826</date>), 
-                    and he filled out the reprint with the miscellaneous poems found in <persName corresp="#EBB">Barrett&#x02BC;s</persName> <title type="book" corresp="#PROMETHEUSBOUNDANDMISC1833"><hi rend="italic">Prometheus Bound</hi></title> volume of <date when="1833">1833</date>.(<persName corresp="#RHS">Shepherd</persName> 
+                    and he filled out the reprint with the miscellaneous poems found in <persName corresp="#EBB">Barrett&#x02BC;s</persName> <title type="book" corresp="#PROMETHEUSBOUNDANDMISC1833"><hi rend="italic">Prometheus Bound</hi></title> volume of <date when="1833">1833</date>. (<persName corresp="#RHS">Shepherd</persName> 
                     believed that <title type="book" corresp="#BARRETTBROWNINGANESSAYONMIND"><hi rend="italic">An Essay on Mind</hi></title> was <persName corresp="#EBB">Barrett&#x02BC;s</persName> earliest published volume, whereas it was in fact preceded in
                     <date when="1820">1820</date> by <title type="poem" corresp="#THEBATTLEOFMARATHON"><hi rend="italic">The Battle of Marathon</hi></title>. <persName corresp="#RHS">Shepherd</persName> was correct, however, that the next volume to appear after <title type="book" corresp="#BARRETTBROWNINGANESSAYONMIND"><hi rend="italic">An Essay on Mind</hi></title> was
                     <title type="book" corresp="#PROMETHEUSBOUNDANDMISC1833"><hi rend="italic">Prometheus Bound . . . and Miscellaneous Poems</hi></title>.) 
                     Also in <date when="1878">1878</date>, <persName corresp="#RHS">Shepherd</persName> collected <title type="book" corresp="#HWLEARLYPOEMS"><hi rend="italic">The Early Poems of Henry Wadsworth Longfellow</hi></title>, and he included <persName corresp="#TM">Moore&#x02BC;s</persName> juvenilia, along with a
                     number of later fugitive pieces in <title type="book" corresp="#MOOREPROSEANDVERSE"><hi rend="italic">Prose and Verse . . . by Thomas Moore</hi></title>. In <date when="1887">1887</date> came <persName corresp="#WMT">Thackeray&#x02BC;s</persName> turn, with recovery of <title type="book" corresp="#THACKERAYSULTANSTORK"><hi rend="italic">Sultan Stork</hi></title>
-                    and other early sketches, which <persName corresp="#RHS">Shepherd&#x02BC;s</persName> included in a republication of his bibliography of the novelist.</p>
+                    and other early sketches, which <persName corresp="#RHS">Shepherd</persName> included in a republication of his bibliography of the novelist.</p>
                 <p>In <persName corresp="#RHS">Shepherd</persName>&#x02BC;s facsimile editions of modern authors&#x02BC; works, the contents are dominated by juvenilia and youthful writing, 
                     doubtless owing in part to the appeal that the rarity of such items posed to collectors, and the opportunity that these scarce items afforded to a publishing market eager to serve collectors 
                     (see <ref type="note" subtype="bibliographical" target="collecting_of_modern_authors_note.php">Collecting of Modern Authors in the Late Nineteenth and Early Twentieth Centuries</ref>). The
                     publisher of <persName corresp="#RHS">Shepherd&#x02BC;s</persName> <persName corresp="#CLE">Lamb</persName>, <persName corresp="#HWL">Longfellow</persName>, and <persName corresp="#WBP">Blake</persName> editions, <persName corresp="#BMP">Basil Montagu</persName>, was among the first to
                     cater to this collecting interest, listing first editions of <persName corresp="#ALT">Tennyson</persName> for sale 
                     as early as <date when="1870">1870</date> 
-                    (<ref type="bibliography" target="bibliography.php#TASTEANDTECHNIQUE"><persName corresp="#JC">Carter</persName>, <title type="book" corresp="#TASTEANDTECHNIQUE"><hi rend="italic">Taste and Technique in Book&#x2010;Collecting</hi></title></ref>, 22). Living authors 
-                    were often indignant to find their earlier work resusitated, and both <persName corresp="#ALT">Tennyson</persName> and <persName corresp="#RB">Robert Browning</persName> contested
+                    (<ref type="bibliography" target="bibliography.php#CARTERTASTEANDTECHNIQUE"><persName corresp="#JC">Carter</persName>, <title type="book" corresp="#CARTERTASTEANDTECHNIQUE"><hi rend="italic">Taste and Technique in Book&#x2010;Collecting</hi></title></ref>, 22).</p>
+                </div>
+                <div type="section">
+                    <head type="section">Controversies over Reprinting of Modern Authors&#x02BC; Juvenilia</head>
+                    <p>Living authors were often indignant to find their earlier work resusitated, and both <persName corresp="#ALT">Tennyson</persName> and <persName corresp="#RB">Robert Browning</persName> contested
                     <persName corresp="#RHS">Shepherd</persName>&#x02BC;s publications as piracies. <persName corresp="#ALT">Tennyson</persName>, who in <date when="1862">1862</date> 
                     had already sued a bookseller, <persName corresp="#JCH">J. C. Hotten</persName>, for sale of a piracy, <title type="book" corresp="#TENNYSON1833POEMS"><hi rend="italic">Poems, <date notBefore="1830" notAfter="1833">1830&#x2013;1833</date></hi></title>, 
                     compiled by <persName corresp="#JDC">James Dykes Campbell</persName> (<date notBefore="1838" notAfter="1895">1838&#x2013;95</date>)  
-                    (<ref type="bibliography" target="bibliography.php#FIRSTPIRATEDEDITION">Sinclair, &#x201C;First Pirated Edition of Tennyson&#x02BC;s Poems&#x201D;</ref>), 
+                        (<ref type="bibliography" target="bibliography.php#SINCLAIRFIRSTPIRATEDEDITION"><persName corresp="#DSINCLAIR">Sinclair</persName>, <title type="essay" corresp="#SINCLAIRFIRSTPIRATEDEDITION">&#x201C;First Pirated Edition of Tennyson&#x02BC;s Poems&#x201D;</title></ref>), 
                     was irritated by <persName corresp="#RHS">Shepherd&#x02BC;s</persName> <title type="ana" corresp="#TENNYSONIANA"><hi rend="italic">Tennysoniana</hi></title> and in <date when="1866">1866</date> complained to 
                     the publisher, <persName corresp="#BMP">Basil Montagu</persName> that its publication was &#x201C;against my desire,&#x201D; having an &#x201C;infinite dislike to the 
                     sort of book about anyone&#x201D;; and he accused the book&#x02BC;s scholarship of inaccuracy (letter of <date when="1866-05-14">14 May 1866</date>, 
@@ -141,7 +145,7 @@
                     <persName corresp="#RHS">Shepherd&#x02BC;s</persName> pirating activities connected with the <hi rend="italic">Tale</hi> 
                     and some other poems, although, on learning that <persName corresp="#RHS">Shepherd</persName> was poor, <persName corresp="#ALT">Tennyson</persName> 
                     himself paid the court costs with which the defendant was charged 
-                    (<ref type="bibliography" target="bibliography.php#TENNYSONSHEPHERDWISE"><persName corresp="#WDP">Paden</persName>, <title type="essay" corresp="#PADENTENNYSONSHEPHERDWISE">&#x201C;Tennyson&#x02BC;s <title type="poem" corresp="#TENNYSONLOVERS"><hi rend="italic">The Lover&#x02BC;s Tale </hi></title>, <persName corresp="#RHS">Shepherd</persName>, and <persName corresp="#TJW">Wise</persName>,&#x201D;</title></ref>, 119&#x2013;24; 
+                    (<ref type="bibliography" target="bibliography.php#PADENTENNYSONSHEPHERDWISE"><persName corresp="#WDP">Paden</persName>, <title type="essay" corresp="#PADENTENNYSONSHEPHERDWISE">&#x201C;Tennyson&#x02BC;s <title type="poem" corresp="#TENNYSONLOVERS"><hi rend="italic">The Lover&#x02BC;s Tale </hi></title>, <persName corresp="#RHS">Shepherd</persName>, and <persName corresp="#TJW">Wise</persName>,&#x201D;</title></ref>, 119&#x2013;24; 
                     as a legitimate publication, the text existed only as a scarce <date when="1833">1833</date> pamphlet, 
                     originally printed by the poet at his own expense and for private circulation only, 
                     <persName corresp="#ALT">Tennyson</persName> having decided to remove the poem from the manuscript of his <date when="1832">1832</date> <title type="book" corresp="#TENNYSON1832POEMS"><hi rend="italic">Poems</hi></title> published by <persName corresp="#EM">Edward Moxon</persName> [ibid., pp. 112&#x2013;13]).</p>
@@ -156,7 +160,7 @@
                     <persName corresp="#JCC">John Churton Collins</persName> (<date notBefore="1848" notAfter="1908">1848&#x2013;1908</date>) as a &#x201C;Louse upon the Locks of Literature&#x201D; for having published such scholarship 
                     (<ref type="bibliography" target="bibliography.php#EDMUNDGOSSE">Thwaite, <hi rend="italic">Edmund Gosse</hi></ref>, 295&#x2013;97; 
                     <persName corresp="#JCC">Collins&#x02BC;s</persName> also compiled an edition of <persName corresp="#ALT">Tennyson&#x02BC;s</persName> revised and suppressed early poems, 
-                    <ref type="bibliography" target="bibliography.php#EARLYPOEMSTENNYSON"><persName corresp="#JCC">Collins</persName>, <title type="book" corresp="#COLLINSEARLYPOEMSTENNYSON"><hi rend="italic">Early Poems of Alfred Lord Tennyson</hi></title></ref>). 
+                    <ref type="bibliography" target="bibliography.php#COLLINSEARLYPOEMSTENNYSON"><persName corresp="#JCC">Collins</persName>, <title type="book" corresp="#COLLINSEARLYPOEMSTENNYSON"><hi rend="italic">Early Poems of Alfred Lord Tennyson</hi></title></ref>). 
                     Despite this intimidating reaction, <persName corresp="#RHS">Shepherd</persName> remained undaunted in supplying &#x201C;materials for . . . study&#x201D; of &#x201C;&#x2018;the growth of a Poet&#x02BC;s mind&#x2019;&#x201D;, 
                     a purpose that, he declared, 
                     trumps both popular opinion of the value of such materials and authors’ authority over their dissemination (when there is no legal obstacle in copyright): 
@@ -173,13 +177,13 @@
                     may have been intensified by <persName corresp="#RB">Browning&#x02BC;s</persName> chagrin that it was his copy of the original <date when="1833">1833</date> pamphlet 
                     of <title type="poem" corresp="#TENNYSONLOVERS"><hi rend="italic">The Lover&#x02BC;s Tale</hi></title> that was sold in <date when="1870">1870</date> to <persName corresp="#RHS">Shepherd&#x02BC;s</persName> 
                     publisher, <persName corresp="#BMP">B. M. Pickering</persName>, thereby supplying the copytext for the piracy 
-                    [<ref type="bibliography" target="bibliography.php#TENNYSONSHEPHERDWISE"><persName corresp="#WDP">Paden</persName>, <title type="book" corresp="#PADENTENNYSONSHEPHERDWISE">&#x201C;Tennyson&#x02BC;s <title type="poem" corresp="#TENNYSONLOVERS"><hi rend="italic">The Lover&#x02BC;s Tale</hi></title>, <persName corresp="#RHS">Shepherd</persName>, and <persName corresp="#TJW">Wise</persName>,&#x201D;</title></ref>, 113]. 
+                    [<ref type="bibliography" target="bibliography.php#PADENTENNYSONSHEPHERDWISE"><persName corresp="#WDP">Paden</persName>, <title type="book" corresp="#PADENTENNYSONSHEPHERDWISE">&#x201C;Tennyson&#x02BC;s <title type="poem" corresp="#TENNYSONLOVERS"><hi rend="italic">The Lover&#x02BC;s Tale</hi></title>, <persName corresp="#RHS">Shepherd</persName>, and <persName corresp="#TJW">Wise</persName>,&#x201D;</title></ref>, 113]. 
                     Paden does not mention whether <persName corresp="#RB">Browning</persName> was aware of this connection. Another score that <persName corresp="#RB">Browning</persName> wished to settle with <persName corresp="#RHS">Shepherd</persName> arose from the latter having stolen 
                     a march on <persName corresp="#RB">Browning&#x02BC;s</persName> publisher by releasing a portion of &#x201C;Herv&#x00E9; Riel&#x201D; obtained from an early draft of the poem 
-                    [<ref type="bibliography" target="bibliography.php#BROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, <title type="essay" corresp="#BROWNINGSTESTIMONY">&#x201C;Browning&#x02BC;s Testimony&#x201D;</title></ref>, 29].) 
+                    [<ref type="bibliography" target="bibliography.php#HONANBROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, <title type="essay" corresp="#HONANBROWNINGSTESTIMONY">&#x201C;Browning&#x02BC;s Testimony&#x201D;</title></ref>, 29].) 
                     <persName corresp="#RB">Browning</persName> later acknowledged in court that he incited the journal&#x02BC;s attack on <persName corresp="#RHS">Shepherd</persName>, 
                     although he testified that he did not himself author the journal&#x02BC;s squib and disclaimed knowledge of the writer&#x02BC;s identity 
-                    (<ref type="bibliography" target="bibliography.php#BROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, &#x201C;<title type="essay" corresp="#BROWNINGSTESTIMONY">Browning&#x02BC;s Testimony</title>&#x201D;</ref>, 28&#x2013;29). 
+                    (<ref type="bibliography" target="bibliography.php#HONANBROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, &#x201C;<title type="essay" corresp="#HONANBROWNINGSTESTIMONY">Browning&#x02BC;s Testimony</title>&#x201D;</ref>, 28&#x2013;29). 
                     It must have been <persName corresp="#RB">Browning</persName>, however, who provided the journal with its key argument opposing the reprint&#x2014;namely, that 
                     <persName corresp="#RHS">Shepherd</persName> violated the wishes of the late poet, <persName corresp="#EBB">Elizabeth Barrett Browning</persName>, 
                     who had specifically suppressed the feature text of the proposed republication. 
@@ -284,12 +288,12 @@
                     (<ref type="bibliography" target="bibliography.php#REVIEWLAMBPOETRY">Unsigned review of <title type="collected_poems" corresp="#LAMBSPOETRY"><hi rend="italic">Poetry for Children</hi></title> by Charles and Mary Lamb</ref>, 47). 
                     (See <ref type="bibliography" target="bibliography.php#SHEPHERDDNB"><persName corresp="#JCC">Collins</persName>, <title type="dictionary_entry" corresp="#SHEPHERDDNB">&#x201C;Richard Herne Shepherd&#x201D;</title></ref>, 
                     which attributes <persName corresp="#RHS">Shepherd&#x02BC;s</persName> suit to the journal&#x02BC;s &#x201C;injurious review&#x201D; of his reprint of the <persName corresp="#ML">Lamb</persName>&#x02BC;s poetry, 
-                    whereas <ref type="bibliography" target="bibliography.php#BROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, <title type="essay" corresp="#BROWNINGSTESTIMONY">&#x201C;Browning&#x02BC;s Testimony&#x201D;</title></ref> 
+                    whereas <ref type="bibliography" target="bibliography.php#HONANBROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, <title type="essay" corresp="#HONANBROWNINGSTESTIMONY">&#x201C;Browning&#x02BC;s Testimony&#x201D;</title></ref> 
                     says the case turned on the journal&#x02BC;s notices of the <persName corresp="#EBB">Barrett Browning</persName> reprint [p. 27n.]. 
                     Doubtless <persName corresp="#RHS">Shepherd</persName> prevailed in his charge of libel given the cumulative effect of the <title type="periodical" corresp="ATHENAEUM"><hi rend="italic">Athenaeum&#x02BC;s</hi></title> reviews, 
                     the <date when="1878-01-12">12 January 1878</date> notice 
                     of the <persName corresp="#ML">Lamb</persName> reprint, in which the reviewer openly questions <persName corresp="#RHS">Shepherd&#x02BC;s</persName> honesty respecting the authenticity of his sources, 
-                    and the <date when="1878-09-14">14 September 1878</date> review of more &#x201C;literary revivals&#x201D; by <persName corresp="#RHS">Shepherd</persName>, in which <persName corresp="#WMR">W. M. Rossetti</persName> belittles the editor as a &#x201C;vampire,&#x201D; 
+                    and the <date when="1878-09-14">14 September 1878</date> review of more &#x201C;literary revivals&#x201D; by <persName corresp="#RHS">Shepherd</persName>, in which <persName corresp="#WMR">W. M. Rossetti</persName> belittles the editor as a &#x201C;vampire&#x201D;, 
                     having followed so soon on the heels of <persName corresp="#TWD">Watts&#x2010;Dunton&#x02BC;s</persName> <date when="1877-12-15">15 December 1877</date> review of the <persName corresp="#EBB">Barrett Browning</persName> reprint. 
                     In his reply to the <title type="periodical" corresp="ATHENAEUM"><hi rend="italic">Athenaeum&#x02BC;s</hi></title> charges against the Lamb reprint, <persName corresp="#RHS">Shepherd</persName> blames the publisher, 
                     <persName corresp="#BMP">B. M. Pickering,</persName> for misleading statements [<ref type="bibliography" target="bibliography.php#LAMBSPOETRY"><title type="book" corresp="#LAMBSPOETRY">&#x201C;Lamb&#x02BC;s &#x2018;Poetry for Children&#x2019;&#x201D;</title></ref>, 89].)</p>  
@@ -305,7 +309,7 @@
                     his reference to the fourteen&#x2010;year&#x2010;old poet extending the ban backward to <persName corresp="#EBB">Barrett&#x02BC;s</persName> first published volume, which <persName corresp="#RHS">Shepherd</persName> had overlooked&#x2014;the <title type="poem" corresp="#BARRETTBATTLEOFMARATHON"><hi rend="italic">Battle of Marathon</hi></title> (<date when="1820">1820</date>). 
                     Therefore, <persName corresp="#RB">Browning</persName> urged, 
                     the defendant was not &#x201C;too strong&#x201D;&#x201D; in pronouncing <persName corresp="#RHS">Shepherd</persName> a man who arrogated the &#x201C;&#x2018;liberty to defy the wishes of the dead and to outrage the feelings of the living&#x2019;&#x201D;
-                    (quotations in <ref type="bibliography" target="bibliography.php#BROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, <title type="essay" corresp="#BROWNINGSTESTIMONY">&#x201C;Browning&#x02BC;s Testimony&#x201D;</title></ref>, 28&#x2013;29).</p> 
+                    (quotations in <ref type="bibliography" target="bibliography.php#HONANBROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, <title type="essay" corresp="#HONANBROWNINGSTESTIMONY">&#x201C;Browning&#x02BC;s Testimony&#x201D;</title></ref>, 28&#x2013;29).</p> 
                 <p>Awkwardly for <persName corresp="#EBB">Browning</persName>, as <persName corresp="#RHS">Shepherd&#x02BC;s</persName> lawyer pointed out, 
                     <persName corresp="#RB">Browning</persName> had acted seemingly analogously to <persName corresp="#RHS">Shepherd</persName> 
                     in an <date when="1852">1852</date> edition of letters by <persName corresp="#PBS">Percy Bysshe Shelley</persName>, published by <persName corresp="#EM">Moxon</persName>, 
@@ -320,14 +324,17 @@
                     In the end <persName corresp="#RB">Browning</persName> seems 
                     only to have helped the plaintiff&#x02BC;s case by admitting not only that he failed to seek the permission of <persName corresp="#PBS">Shelley&#x02BC;s</persName> living descendant before publishing the introduction, 
                     but that he had even recognized the <persName corresp="#PBS">Shelley</persName> letters as forgeries when he undertook the project 
-                    (quotations in <ref type="bibliography" target="bibliography.php#BROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, <title type="essay" corresp="#BROWNINGSTESTIMONY">&#x201C;Browning&#x02BC;s Testimony&#x201D;</title></ref>, 28&#x2013;29, 30).</p>
+                    (quotations in <ref type="bibliography" target="bibliography.php#HONANBROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, <title type="essay" corresp="#HONANBROWNINGSTESTIMONY">&#x201C;Browning&#x02BC;s Testimony&#x201D;</title></ref>, 28&#x2013;29, 30).</p>
+                </div>
+                <div type="section">
+                    <head type="section">The Value of Juvenilia</head>
                 <p>For <persName corresp="#RB">Browning</persName> scholars, the more significant issue presented by this episode is <persName corresp="#RB">Browning&#x02BC;s</persName> confounding admission that he was aware that 
                     <persName corresp="#EM">Moxon&#x02BC;s</persName> edition consisted of forgeries of <persName corresp="#PBS">Shelley&#x02BC;s</persName> letters, 
                     a testimony that scholars have attempted to explain in a more flattering light consistent with the poet&#x02BC;s character. What is more to our purpose is the remark with which the rattled poet sought 
                     to redirect the cross&#x2010;examination to his principle point in having carried the <title type="essay" corresp="#BROWNINGESSAYONSHELLEY"><hi rend="italic">Essay on Shelley</hi></title> into court. As <persName corresp="#RB">Browning</persName> explained: 
                     &#x201C;&#x2018;My essay was on the character of <persName corresp="#PBS">Shelley</persName>, 
                     and I referred to these poems [e.g., &#x201C;Queen Mab&#x201D;] as those of an immature boyhood&#x201D;&#x2019; 
-                    (<ref type="bibliography" target="bibliography.php#BROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, <title type="essay" corresp="#BROWNINGSTESTIMONY">&#x201C;Browning&#x02BC;s Testimony&#x201D;</title></ref>, 30). 
+                    (<ref type="bibliography" target="bibliography.php#HONANBROWNINGSTESTIMONY"><persName corresp="#PHONAN">Honan</persName>, <title type="essay" corresp="#HONANBROWNINGSTESTIMONY">&#x201C;Browning&#x02BC;s Testimony&#x201D;</title></ref>, 30). 
                     For <persName corresp="#RB">Browning</persName>, the immaturity of the poet settles the debate a priori respecting the value of the poems, 
                     just as <persName corresp="#TWD">Watts&#x2010;Dunton</persName> in his review of <title type="book" corresp="#BARRETTBROWNINGEARLIERPOEMS1878"><hi rend="italic">The Earlier Poems of Elizabeth Barrett Browning</hi></title> appeals to the &#x201C;common&#x2010;sense&#x201D; of the &#x201C;judicious . . . British public&#x201D; 
                     in settling judgments of literary value of works that are likely to benefit the nation 
@@ -429,6 +436,7 @@
                     the precocious child both threatens to disrupt control by the adult Wordsworthian &#x201C;literature of power&#x201D; that is designed to quell yet enoble his spirit, 
                     and yet is prone slavishly to imitate the most objectionable literary models.</p>   
                 </div>
+            </div>
         </body>
     </text>
 </TEI>

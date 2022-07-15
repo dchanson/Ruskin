@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -67,8 +66,8 @@
                     drawings for the bibliography volume (vol. 38) of the <title type="book" corresp="#JRWORKSLE">Library Edition</title>. <persName corresp="#ALLENH">Hugh</persName>
                     served as an agent for <!--Entry needed here.--> at the important <title type="catalog_aution" corresp="#SOTHEBYCAT1930">Sotheby&#x02BC;s sales of 1930</title>
                     and <date when="1931">1931</date> of <persName corresp="#JR">Ruskin</persName>&#x02BC;s remaining library and manuscripts.</p>
-                <p>See <persName corresp="#DAWSONP">Dawson</persName>, <title type="book" corresp="#DAWSONPEOPLESRUSKIN"><hi rend="italic">People&#x2019;s Ruskin</hi></title>, 10;
-                    <persName corresp="#JSD">Dearden</persName>, <title type="book" corresp="#JRWORKSLE">&#x201C;Library Edition of the Works of John Ruskin,&#x201D;</title>
+                <p>See <ref type="bibliography" target="bibliography.php#DAWSONPEOPLESRUSKIN"><persName corresp="#DAWSONP">Dawson</persName>, <title type="book" corresp="#DAWSONPEOPLESRUSKIN"><hi rend="italic">People&#x2019;s Ruskin</hi></title></ref>, 10;
+                    <ref type="bibliography" target="bibliography.php#DEARDENLIBRARYEDITION"><persName corresp="#JSD">Dearden</persName>, <title type="book" corresp="#JRWORKSLE">&#x201C;Library Edition of the Works of John Ruskin&#x201D;,</title></ref>ref>
                     61.</p>
             </div>
         </body>

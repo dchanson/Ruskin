@@ -62,10 +62,10 @@
       <body>
         <div type="note">
           <head type="title">Bibliography</head>
-          <div type="section">
+          <div type="section" xml:id="MANUSCRIPTSOURCES">
             <head type="section">Manuscript Sources</head>
-            <div type="subsection">
-              <head type="subsection"><hi rend="bold">Manuscripts and Drawings by Ruskin and the Ruskin Family Other Than Those Constituting This Edition</hi>m</head>
+            <div type="subsection" xml:id="MSSANDDRAWINGSBYJR">
+              <head type="subsection"><hi rend="bold">Manuscripts and Drawings by Ruskin and the Ruskin Family Other Than Those Constituting This Edition</hi></head>
               
               <listBibl>
                 <msDesc xml:id="RFT48">
@@ -274,7 +274,7 @@
                 </listBibl>
               </div>
               
-              <div type="subsection">
+              <div type="subsection" xml:id="WORKSINMSBYOTHERS">
                 <head type="subsection"><hi rend="bold">Works in Manuscript by Authors Other Than the Ruskins</hi></head>
 
                 <listBibl>
@@ -344,7 +344,7 @@
             <div type="section">
               <head type="section">Published Sources</head>
               
-              <div type="subsection">
+              <div type="subsection" xml:id="WORKSBYJRINPUB">
                 <head type="subsection"><hi rend="bold">Works by Ruskin in Published Editions</hi></head>
                 
                 <listBibl>
@@ -943,7 +943,7 @@
                         </monogr>
                       </biblStruct>
                       
-                      <biblStruct xml:id="TOURLAKES">
+                      <biblStruct xml:id="JRTOURLAKES">
                         <monogr>
                           <author>
                             <persName corresp="JR">
@@ -1029,7 +1029,7 @@
                   </div>
                   
                   
-                  <div type="subsection">
+                  <div type="subsection" xml:id="SECONDARYSOURCES">
                     <head type="subsection"><hi rend="bold">Secondary Sources, along with Primary Sources in Published Editions of Authors Other Than Ruskin</hi></head>
                     
                     <listBibl>
@@ -1066,6 +1066,23 @@
                             <pubPlace>London</pubPlace>
                             <publisher>Vintage</publisher>
                             <date when="2001">2001</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="ADAMSCARRIAGES">
+                        <monogr>
+                          <author>
+                            <persName corresp="WBADAMS">
+                              <forename>William Bridges</forename>
+                              <surname>Adams</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">English Pleaasure Carriages; Their Origin, History, Varieties, Materials, Construction, Defects, Improvements, and Capabilities . . .</hi></title>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Charles Knight &#x0026;Co.</publisher>
+                            <date when="1837">1837</date>
                           </imprint>
                         </monogr>
                       </biblStruct>
@@ -1154,7 +1171,6 @@
                         <monogr>
                           <title  level="j"><hi rend="italic">London Literary Gazette, and Journal of Belles Lettres, Arts, Sciences, &#x0026;c</hi></title>
                           <imprint>
-                            <pubPlace>London</pubPlace>
                             <biblScope type="issue">254</biblScope>
                             <date when="1821-12-01">1 December 1821</date>
                             <biblScope type="pages">764</biblScope>
@@ -1461,6 +1477,94 @@
                 </imprint>
               </monogr>
             </biblStruct>
+                      
+                      <biblStruct xml:id="ANNIVERSARY1829">
+                        <monogr>
+                          <title level="m"><hi rend="italic">The Anniversary; or, Poetry and Prose for MDCCCXXIX</hi></title>
+                          <editor>
+                            <persName corresp="ACUNNINGHAM">
+                              <forename>Allan</forename>
+                              <surname>Cunningham</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>John Sharpe</publisher>
+                            <date when="1829">1829</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="ANONTHEANNUALSDEC1827">
+                        <analytic>
+                          <title level="a">&#x201C;The Annuals&#x201D; (unsigned review of <hi rend="italic">Forget Me Not</hi> [1828], <hi rend="italic">The Amulet</hi> [1828], and <hi rend="italic">The Bijou</hi> [1828])</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">London Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="issue">n.s., 9</biblScope>
+                            <date notBefore="1827-09-01" notAfter="1827-12-31">September&#x2013;December 1827</date>
+                            <biblScope type="pages">395&#x2013;409</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="ANONTHEANNUALS">
+                        <analytic>
+                          <title level="a">&#x201C;The Annuals&#x201D; (unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> [1828], <hi rend="italic">The Winter&#x02BC;s Wreath</hi> [1828], <hi rend="italic">The Pledge of Friendship</hi> [1828], and <hi rend="italic">The Christmas Box</hi> [1828])</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">London Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="issue">n.s., 10</biblScope>
+                            <date notBefore="1828-01-01" notAfter="1828-03-31">January&#x2013;March 1828</date>
+                            <biblScope type="pages">55&#x2013;67</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="ANNUALS1828BELLEASSEMBLEE">
+                        <analytic>
+                          <title level="a">&#x201C;The Annuals for 1828&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">La Belle Assembl&#x00E9;e; Or, Court and Fashionable Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="vol">n.s., 6</biblScope>
+                            <biblScope type="issue">no. 35</biblScope>
+                            <date when="1828-11">November 1827</date>
+                            <biblScope type="pages">189&#x2013;207</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="ANNUALS1829BELLEASSEMBLEE">
+                        <analytic>
+                          <title level="a">&#x201C;The Annuals for 1829&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">La Belle Assembl&#x00E9;e; Or, Court and Fashionable Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="vol">8</biblScope>
+                            <date when="1828-11-15">November 1828</date>
+                            <biblScope type="pages">186&#x2013;214</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="ANNUALS1829EDINBURGHLITJNL">
+                        <analytic>
+                          <title level="a">&#x201C;The Annuals for 1829&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Edinburgh Literary Journal; or, Weekly Register of Criticism and Belles Lettres</hi></title>
+                          <imprint>
+                            <biblScope type="issue">1</biblScope>
+                            <date when="1828-11-15">15 November 1828</date>
+                            <biblScope type="pages">2&#x2013;9</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
             
             <biblStruct xml:id="ANNUALSOFFORMERDAYS">
               <analytic>
@@ -1469,6 +1573,7 @@
               <monogr>
                 <title  level="j"><hi rend="italic">Bookseller</hi> (London)</title>
                 <imprint>
+                  <biblScope type="issue">11</biblScope>
                   <date when="1858-11-29">29 November 1858</date>
                   <biblScope type="pages">493&#x2013;99</biblScope>
                 </imprint>
@@ -1570,7 +1675,7 @@
                             <biblScope type="pages">155&#x2013;74</biblScope>
                           </imprint>
                         </monogr>
-                        <note>Reprinted as a pamphlet by Abel Heywood &#x02BC; Son, Manchester and London, 1879.</note>
+                        <note>Reprinted as a pamphlet by Abel Heywood &#x0026; Son, Manchester and London, 1879.</note>
                       </biblStruct>
                       
                       <biblStruct xml:id="AXTELLMAKINGOFPUL">
@@ -1674,6 +1779,39 @@
               </imprint>
             </monogr>
           </biblStruct>
+                      
+                      <biblStruct xml:id="BANNVERNETANDDELAROCHE">
+                        <analytic>
+                          <author>
+                            <persName corresp="SBANN">
+                              <forename>Stephen</forename>
+                              <surname>Bann</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Horace Vernet and Paul Delaroche: Media Old and New&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Horace Vernet and the Thresholds of Nineteenth&#x2010;Century Visual Culture</hi></title>
+                          <editor>
+                            <persName corresp="DHARKETT">
+                              <forename>Daniel</forename>
+                              <surname>Harkett</surname>
+                            </persName>
+                          </editor>
+                          <editor>
+                            <persName corresp="KHORNSTEIN">
+                              <forename>Katie</forename>
+                              <surname>Hornstein</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Hanover, N.H.</pubPlace>
+                            <publisher>Dartmouth College Press</publisher>
+                            <date when="2017">2017</date>
+                            <biblScope type="pages">228&#x2013;44</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
           
           <biblStruct xml:id="BACKHOUSEBAPTISM">
             <analytic>
@@ -1688,6 +1826,24 @@
             </monogr>
             <note>http://www.lan-opc.org.uk/Liverpool/Liverpool-Central/stpeter/baptisms_1819e.html (accessed <date when="2014-01-15">15 January 2014</date>).</note>
           </biblStruct>
+                      
+                      <biblStruct xml:id="BARBAULDLESSONS">
+                        <monogr>
+                          <author>
+                            <persName corresp="ALB">
+                              <forename>Anna Letitia</forename>
+                              <surname>Barbauld</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Lessons for Children</hi></title>
+                          <edition>New ed.</edition>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Baldwin and Cradock; R. Hunter; Harvey and Darton; J. Booker; Hurst, Chance and Co.; Simpkin and Marshall</publisher>
+                            <date when="1830">1830</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
           
           <biblStruct xml:id="BARBAULDPOEMS">
             <monogr>
@@ -1702,9 +1858,9 @@
                 <forename>William</forename>
                 <surname>McCarthy</surname>
               </persName></editor>
-              <editor>
+              <editor><persName corresp="EKRAFT">
                 <forename>Elizabeth</forename>
-                <surname>Kraft</surname>
+                <surname>Kraft</surname></persName>
               </editor>
               <imprint>
                 <pubPlace>Athens</pubPlace>
@@ -1741,8 +1897,8 @@
                         <analytic>
                           <author>
                             <persName corresp="GBARBER">
-                              <forename>Barber</forename>
-                              <surname>Giles</surname>
+                              <forename>Giles</forename>
+                              <surname>Barber</surname>
                             </persName>
                           </author>
                           <title level="a">&#x201C;Galignani&#x02BC;s and the Publication of English Books in France from 1800 to 1852&#x201D;</title>
@@ -1870,6 +2026,24 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="BAUERLONDONMAGAZINE">
+                        <monogr>
+                          <author>
+                            <persName corresp="JBAUER">
+                              <forename>Josephine</forename>
+                              <surname>Bauer</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">The London Magazine, 1820&#x2013;29</hi></title>
+                          <imprint>
+                            <pubPlace>Copenhagen</pubPlace>
+                            <publisher>Rosenkilde and Bagger</publisher>
+                            <date when="1953">1953</date>
+                          </imprint>
+                        </monogr>
+                        <note>Vol. 1 of <hi rend="italic">Anglistica</hi>.</note>
+                      </biblStruct> 
         
         <biblStruct xml:id="SCOTLANDILLUSTRATED">
           <monogr>
@@ -2031,6 +2205,27 @@
           </monogr>
         </biblStruct>
                       
+                      <biblStruct xml:id="BENTLEYHUNTSLITERARYPOCKETBOOK">
+                        <analytic>
+                          <author>
+                            <persName corresp="GEBJR">
+                              <forename>G. E., Jr.</forename>
+                              <surname>Bentley</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Leigh Hunt&#x02BC;s &#x2018;Literary Pocket&#x2010;Book&#x2019;, 1818&#x2013;22: A Romantic Source Book&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Victorian Periodicals Newsletter</hi></title>
+                          <imprint>
+                            <biblScope type="vol">8</biblScope>
+                            <biblScope type="issue">4</biblScope>
+                            <date when="1975-12">December 1975</date>
+                            <biblScope type="pages">125&#x2013;28</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
                       <biblStruct xml:id="BESANTLONDONCITY">
                         <monogr>
                           <author>
@@ -2075,7 +2270,7 @@
                               <surname>Bigler</surname>
                             </persName>
                           </author>
-                          <title level="m"><hi rend="italic">The Politics of German Protestantism: The Rise of the Protestant Church Elite in Prussia, 1815-1848</hi></title>
+                          <title level="m"><hi rend="italic">The Politics of German Protestantism: The Rise of the Protestant Church Elite in Prussia, 1815&#x2013;1848</hi></title>
                           <imprint>
                             <pubPlace>Berkeley and Los Angeles</pubPlace>
                             <publisher>University of California Press</publisher>
@@ -2263,7 +2458,7 @@
                             <date when="1910">1910</date>
                           </imprint>
                         </monogr>
-                        <note>Reprinted from the Publications of the Colonial Society of Massachusetts, vol. 12</note>
+                        <note>Reprinted from the Publications of the Colonial Society of Massachusetts, vol. 12.</note>
                       </biblStruct>
         
         <biblStruct xml:id="OLIVERBOYDADVERTISEMENT">
@@ -2280,6 +2475,23 @@
           </monogr>
           <note>Separately paginated backmatter.</note>
         </biblStruct>
+                      
+                      <biblStruct xml:id="BOYDELLCATALOGUE">
+                        <monogr>
+                          <author>
+                            <persName corresp="JBOYDELL">
+                              <forename>John</forename>
+                              <surname>Boydell</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">A Catalogue of the Pictures, &#x0026;c. in the Shakspeare Gallery</hi></title>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>H. Baldwin</publisher>
+                            <date when="1790">1790</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
         
         <biblStruct xml:id="BRAYSTOTHARD">
           <monogr>
@@ -2361,6 +2573,24 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="BROCKPACIFISM">
+                        <monogr>
+                          <author>
+                            <persName corresp="PBROCK">
+                              <forename>Peter</forename>
+                              <surname>Brock</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Pacifism in Europe to 1814</hi></title>
+                          <imprint>
+                            <pubPlace>Princeton</pubPlace>
+                            <publisher>Princeton University Press</publisher>
+                            <date when="1972">1972</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
         
         <biblStruct xml:id="BROCKEDONILLUSTRATIONS">
           <monogr>
@@ -2403,6 +2633,66 @@
                           </imprint>
                         </monogr>
                       </biblStruct>
+                      
+                      <biblStruct xml:id="BROCKEDONITALYILLUS">
+                        <monogr>
+                          <author>
+                            <persName corresp="WBI">
+                              <forename>William</forename>
+                              <surname>Brockedon</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Road&#x2010;Book from London to Naples</hi></title>
+                          <respStmt>
+                            <resp>Illustrated by</resp>
+                            <persName corresp="CFS">
+                              <forename>Clarkson</forename>
+                              <surname>Stanfield</surname>
+                            </persName>
+                            <persName corresp="SP">
+                              <forename>Samuel</forename>
+                              <surname>Prout</surname>
+                            </persName>
+                            <persName corresp="WBI">
+                              <forename>William</forename>
+                              <surname>Brockedon</surname>
+                            </persName>
+                          </respStmt>
+                          <respStmt>
+                            <resp>Engraved by</resp>
+                            <persName corresp="WF">
+                              <forename>William</forename>
+                              <surname>Finden</surname>
+                            </persName>
+                            <persName corresp="EFF">
+                              <forename>Edward</forename>
+                              <surname>Finden</surname>
+                            </persName>
+                          </respStmt>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>John Murray</publisher>
+                            <date when="1835">1835</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+                      
+                      <biblStruct xml:id="BROCKEDONITALY">
+                        <monogr>
+                          <author>
+                            <persName corresp="WBI">
+                              <forename>William</forename>
+                              <surname>Brockedon</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Traveller&#x02BC;s Guide to Italy; or, Road&#x2010;Book from London to Naples</hi></title>
+                          <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>Baudry&#x02BC;s European Library</publisher>
+                            <date when="1835">1835</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
         
         <biblStruct xml:id="BRONTESTALES">
           <monogr>
@@ -2426,6 +2716,35 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="BRONTEPROFESSOR">
+                        <monogr>
+                          <author>
+                            <persName corresp="CBW">
+                              <forename>Charlotte</forename>
+                              <surname>Bront&#x00EB;</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">The Professor</hi></title>
+                          <editor>
+                            <persName corresp="MSMITH">
+                              <forename>Margaret</forename>
+                              <surname>Smith</surname>
+                            </persName>
+                          </editor>
+                          <editor>
+                            <persName corresp="HROSENGARTEN">
+                              <forename>Herbert</forename>
+                              <surname>Rosengarten</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Oxford</pubPlace>
+                            <publisher>Oxford University Press</publisher>
+                            <date when="2008">2008</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
         
         <biblStruct xml:id="BRONTEVILLETTE">
           <monogr>
@@ -2497,6 +2816,26 @@
                             <biblScope type="issue">3</biblScope>
                             <date when="1931-03">March 1931</date>
                             <biblScope type="pages">1&#x2013;4</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+                      
+                      <biblStruct xml:id="BROWNBELOVEDOBJECTS">
+                        <analytic>
+                          <author>
+                            <persName corresp="KEB">
+                              <forename>Kate E.</forename>
+                              <surname>Brown</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Beloved Objects: Mourning, Materiality, and Charlotte Bront&#x00EB;s &#x2018;Never&#x2010;Ending Story&#x2019;&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">ELH</hi></title>
+                          <imprint>
+                            <biblScope type="vol">65</biblScope>
+                            <date when="1998">1998</date>
+                            <biblScope type="pages">395&#x2013;421</biblScope>
                           </imprint>
                         </monogr>
                       </biblStruct> 
@@ -3155,6 +3494,23 @@
                         </monogr>
                       </biblStruct>
                       
+                      <biblStruct xml:id="ADCRITICMERRILLCOBRANTWOODEDITION">
+                        <analytic>
+                          <author>
+                            <orgName>Charles E. Merrill &#x0026; Company</orgName>
+                          </author>
+                          <title level="a">&#x201c;Charles E. Merrill &#x0026; Co.&#x02BC;s Authorized (Brantwood) Edition of <persName corresp="#JR">Ruskin</persName>&#x02bc;s Works&#x201d; [advertisement]</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">The Critic</hi> (New York)</title>
+                          <imprint>
+                            <biblScope type="vol">n.s., 18</biblScope>
+                            <biblScope type="issue">no. 548</biblScope>
+                            <date when="1892-08-20">20 August 1892</date>
+                            <biblScope type="pages">102</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
         
         <biblStruct xml:id="CHASEEROSANDPSYCHE">
           <monogr>
@@ -3172,6 +3528,20 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="CHRISTMASPRESENTSMIRROROFLIT">
+                        <analytic>
+                          <title level="a">&#x201C;Christmas and New Years&#x02BC; Presents&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Mirror of Literature, Amusement, and Instruction</hi></title>
+                          <imprint>
+                            <biblScope type="vol">4</biblScope>
+                            <date when="1824">1824</date>
+                            <biblScope type="pages">408&#x2013;13</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
                       
                       <biblStruct xml:id="CHURCHHEADSWITZERLAND">
                         <monogr>
@@ -3251,6 +3621,23 @@
                         </monogr>
                       </biblStruct>
                       
+                      <biblStruct xml:id="CLARKEBOYSOWNBOOK1828">
+                        <monogr>
+                          <author>
+                            <persName corresp="WCW">
+                              <forename>William]</forename>
+                              <surname>[Clarke</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">The Boy&#x02BC;s Own Book: A Complete Encyclopedia of All the Diversions, Athletic, Scientific, and Recreative, of Boyhood and Youth</hi></title>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Vizetelly, Branston</publisher>
+                            <date when="1828">ca. 1828</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
                       <biblStruct xml:id="CLARKEBOYSOWNBOOK">
                         <monogr>
                           <author>
@@ -3263,7 +3650,7 @@
                           <imprint>
                             <pubPlace>London</pubPlace>
                             <publisher>Vizetelly, Branston</publisher>
-                            <date notBefore="1830" notAfter="1839">183&#x2013;</date>
+                            <date notBefore="1830" notAfter="1839">ca. 1830s</date>
                           </imprint>
                         </monogr>
                       </biblStruct>
@@ -3708,6 +4095,43 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="COOPEREFFIE">
+                        <monogr>
+                          <author>
+                            <persName corresp="SFCOOPER">
+                              <forename>Suzanne Fagence</forename>
+                              <surname>Cooper</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Effie: The Passionate Lives of Effie Gray, John Ruskin, and John Everett Millais</hi></title>
+                          <imprint>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>St. Martin&#x02BC;s Press</publisher>
+                            <date when="2010">2010</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="JWOODDNB">
+                        <analytic>
+                          <author>
+                            <persName corresp="SFCOOPER">
+                              <forename>Suzanne Fagence</forename>
+                              <surname>Cooper</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Wood, John (<date notBefore="1801" notAfter="1870">1801&#x2013;70</date>)&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Oxford Dictionary of National Biography Online Edition</hi></title>
+                          <imprint>
+                            <publisher>Oxford University Press</publisher>
+                            <date when="2004">2004</date>
+                          </imprint>
+                        </monogr>
+                        <note>http://www.oxforddnb.com/view/article/29880 (accessed <date when="2021-10-06">6 October 2021</date>).</note>
+                      </biblStruct>
         
         <biblStruct xml:id="COPEEARLYANALYSIS">
           <analytic>
@@ -4008,6 +4432,40 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="DAWSONGEORGEALLENOFSUNNYSIDE">
+                        <monogr>
+                          <author>
+                            <persName corresp="PDAWSON">
+                              <forename>Paul</forename>
+                              <surname>Dawson</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">George Allen of Sunnyside</hi></title>
+                          <imprint>
+                            <pubPlace>Lancaster</pubPlace>
+                            <publisher>Ruskin Library</publisher>
+                            <date when="2007">2007</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="DAWSONPEOPLESRUSKIN">
+                        <monogr>
+                          <author>
+                            <persName corresp="PDAWSON">
+                              <forename>Paul</forename>
+                              <surname>Dawson</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">The People&#x02BC;s Ruskin: The George Allen Editions of the Reprinted Works of John Ruskin</hi></title>
+                          <imprint>
+                            <pubPlace>Etchingham</pubPlace>
+                            <publisher>Oxenbridge Press</publisher>
+                            <date when="1999">1999</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
         
         <biblStruct xml:id="DAYHISTORY">
           <monogr>
@@ -4025,6 +4483,24 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="DAYSANDFORDANDMERTON">
+                        <monogr>
+                          <author>
+                            <persName corresp="TD">
+                              <forename>Thomas</forename>
+                              <surname>Day</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">The History of Sandford and Merton</hi></title>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>C. and J. Rivington et al.</publisher>
+                            <date when="1823">1823</date>
+                          </imprint>
+                        </monogr>
+                        <note>With an Account of the Author. Complete in One Volume. Printed for <orgName corresp="#RIVINGTON">F. C. &#x0026; J. Rivington</orgName> &#x0026; the other Proprietors <date when="1823-02">Feb. 1823</date>. By <orgName corresp="#DAVISON">T. Davison</orgName>, <placeName corresp="#WHITEFRIARS">Whitefriars</placeName>. With a frontispiece drawn by <persName corresp="#TUNWINS">T. Unwins</persName> and engraved by <persName corresp="#CWARREN">C. Warren</persName>.</note>
+                      </biblStruct>
                       
                       <biblStruct xml:id="DEARDENCUNLIFFE">
                         <analytic>
@@ -4079,6 +4555,27 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="DEARDENLIBRARYEDITION">
+                        <analytic>
+                          <author>
+                            <persName corresp="JSD">
+                              <forename>James S.</forename>
+                              <surname>Dearden</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;The Library Edition of the Works of John Ruskin&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Book Collector</hi></title>
+                          <imprint>
+                            <biblScope type="vol">44</biblScope>
+                            <biblScope type="issue">no. 1</biblScope>
+                            <date when="1995">Spring 1995</date>
+                            <biblScope type="pages">51&#x2013;66</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
         
         <biblStruct xml:id="DEARDENRUSKINLIBRARY">
           <monogr>
@@ -4234,7 +4731,38 @@
                             <biblScope type="pages">6&#x2013;7</biblScope>
                           </imprint>
                         </monogr>
-                      </biblStruct> 
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="DICKENSDAVIDCOPPERFIELDEDBURGIS">
+                        <monogr>
+                          <author>
+                            <persName corresp="CJHD">
+                              <forename>Charles</forename>
+                              <surname>Dickens</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">David Copperfield</hi></title>
+                          <respStmt>
+                            <resp>Edited by</resp>
+                            <persName corresp="NBURGIS">
+                              <forename>Nina</forename>
+                              <surname>Burgis</surname>
+                            </persName>
+                          </respStmt>
+                          <respStmt>
+                            <resp>With an introduction and notes by</resp>
+                            <persName corresp="ASANDERS">
+                              <forename>Andrew</forename>
+                              <surname>Sanders</surname>
+                            </persName>
+                          </respStmt>
+                          <imprint>
+                            <pubPlace>Oxford</pubPlace>
+                            <publisher>Oxford University Press</publisher>
+                            <date when="1997">1997</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
         
         <biblStruct xml:id="DICKINSONJOHNCARTER">
           <monogr>
@@ -4288,6 +4816,27 @@
                         </monogr>
                         <note>http://www.oxforddnb.com/view/article/26241 (accessed <date when="2020-04-09">9 April 2020</date>).</note>
                       </biblStruct>
+                      
+                      <biblStruct xml:id="DONNELLYBOREDOM">
+                        <analytic>
+                          <author>
+                            <persName corresp="KDONNELLY">
+                              <forename>Kevin</forename>
+                              <surname>Donnelly</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;On the Boredom of Science: Positional Astronomy in the Nineteenth Century&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">British Journal for the History of Science</hi></title>
+                          <imprint>
+                            <biblScope type="vol">47</biblScope>
+                            <biblScope type="issue">3</biblScope>
+                            <date when="2014-09">September 2014</date>
+                            <biblScope type="pages">479&#x2013;503</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
         
         <biblStruct xml:id="DORFMANBLAKE">
           <monogr>
@@ -4305,6 +4854,39 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="DOYLEBADMANNERS">
+                        <analytic>
+                          <author>
+                            <persName corresp="ADOYLE">
+                              <forename>Allan</forename>
+                              <surname>Doyle</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Bad Manners vs. Good <hi rend="italic">Maniera</hi>: Horace Vernet&#x02BC;s <hi rend="italic">Raphael at the Vatican</hi>&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Horace Vernet and the Thresholds of Nineteenth&#x2010;Century Visual Culture</hi></title>
+                          <editor>
+                            <persName corresp="DHARKETT">
+                              <forename>Daniel</forename>
+                              <surname>Harkett</surname>
+                            </persName>
+                          </editor>
+                          <editor>
+                            <persName corresp="KHORNSTEIN">
+                              <forename>Katie</forename>
+                              <surname>Hornstein</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Hanover, N.H.</pubPlace>
+                            <publisher>Dartmouth College Press</publisher>
+                            <date when="2017">2017</date>
+                            <biblScope type="pages">135&#x2013;52</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
         
         <biblStruct xml:id="DEMPSTERDNB">
           <analytic>
@@ -4591,6 +5173,37 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="ENGLISHCLASSICSADVERTISEMENT">
+                        <analytic>
+                          <title level="a">&#x201C;The English Classics&#x201D; (advertisement)</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">The Complete Angler; Or, Contemplative Man&#x02BC;s Recreation: Being a Discourse on Rivers, Fish&#x2010;Ponds, Fish, and Fishing</hi></title>
+                          <respStmt>
+                            <resp>By</resp>
+                            <persName corresp="IW">
+                              <forename>Isaac</forename>
+                              <surname>Walton</surname>
+                            </persName>
+                            <persName corresp="CCOTTON">
+                              <forename>Charles</forename>
+                              <surname>Cotton</surname>
+                            </persName>
+                          </respStmt>
+                          <respStmt>
+                            <resp>Printed for</resp>
+                            <orgName corresp="PROPRIETORSENGLISHCLASSICS">the Proprietors</orgName>
+                          </respStmt>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>J. F. Dove</publisher>
+                            <date when="1825">1825</date>
+                          </imprint>
+                        </monogr>
+                        <note>Advertisement bound with Harvard College Library copy in Collection of Books on Angling, etc., given by John Bartlett, as scanned by Google Books.</note>
+                      </biblStruct>
+                      
         
         <biblStruct xml:id="ERICKSONECONOMY">
           <monogr>
@@ -4625,6 +5238,25 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="EUSTACECLASSICALTOUR">
+                        <monogr>
+                          <author>
+                            <persName corresp="JCEUSTACE">
+                              <forename>John Chetwode</forename>
+                              <surname>Eustace</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">A Classical Tour through Italy</hi></title>
+                          <edition>3d ed.</edition>
+                          <imprint>
+                            <biblScope type="vol">2 vols.</biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>J. Mawman</publisher>
+                            <date when="1819">1819</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
         
         <biblStruct xml:id="FAIRERCHATTERTON">
           <analytic>
@@ -4666,6 +5298,26 @@
           </monogr>
         </biblStruct>
                       
+                      <biblStruct xml:id="FELDMANINSCRIPTIONS">
+                        <analytic>
+                          <author>
+                            <persName corresp="PRF">
+                              <forename>Paula R.</forename>
+                              <surname>Feldman</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Women, Literary Annuals, and the Evidence of Inscriptions&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Keats&#x2010;Shelley Journal</hi></title>
+                          <imprint>
+                            <biblScope type="vol">55</biblScope>
+                            <date when="2006">2006</date>
+                            <biblScope type="pages">54&#x2013;62</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+                      
                       <biblStruct xml:id="JFELTHAM">
                         <monogr>
                           <author>
@@ -4683,6 +5335,46 @@
                             <pubPlace>London</pubPlace>
                             <publisher>Longman, Hurst, Rees, Orme, and Brown</publisher>
                             <date when="1815">1815</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="FELTONCARRIAGES">
+                        <monogr>
+                          <author>
+                            <persName corresp="WFELTON">
+                              <forename>William</forename>
+                              <surname>Felton</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">A Treatise on Carriages; Comprehending Coaches, Chariots, Phaetons, Curricles, Whiskies, &#x0026;c. . . .</hi></title>
+                          <imprint>
+                            <biblScope type="vol">2 vols.</biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>J. Debrett; R. Faulder; J. Egerton; J. White; W. Richardson; A. Jameson</publisher>
+                            <date when="1796">1796</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="FERGUSONLIFEOFTHEAUTHOR">
+                        <analytic>
+                          <author>
+                            <persName corresp="JFERGUSON">
+                              <forename>James</forename>
+                              <surname>Ferguson</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;A Short Account of the Life of the Author&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Select Mechanical Exercises: Shewing How to Construct Different Clocks, Orreries, and Sun&#x2010;Dials on Plain and Easy Principles . . . </hi></title>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>W. Strahan</publisher>
+                            <publisher>T. Cadell</publisher>
+                            <date when="1773">1773</date>
+                            <biblScope type="pages">i&#x2013;xliii</biblScope>
                           </imprint>
                         </monogr>
                       </biblStruct>
@@ -4799,6 +5491,23 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="FLANDERSVICTORIANHOME">
+                        <monogr>
+                          <author>
+                            <persName corresp="JUDITHFLANDERS">
+                              <forename>Judith</forename>
+                              <surname>Flanders</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Inside the Victorian Home: A Portrait of Domestic Life in Victorian England</hi></title>
+                          <imprint>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>W. W. Norton</publisher>
+                            <date when="2003">2003</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
         
         <biblStruct xml:id="LAKESOFSCOTLAND">
           <monogr>
@@ -4879,23 +5588,7 @@
           </monogr>
           <note>www.orgs.muohio.edu/anthologies/fmn/ (accessed <date when="2014-02-26">26 February 2014</date>).</note>
         </biblStruct>
-                      
-                      <biblStruct xml:id="HARRISFORGETMENOT2015">
-                        <monogr>
-                          <editor>
-                            <persName corresp="KDH">
-                              <forename>Katherine D.</forename>
-                              <surname>Harris</surname>
-                            </persName>
-                          </editor>
-                          <title level="m"><hi rend="italic">Forget Me Not: The Rise of the British Literary Annual, <date notBefore="1823" notAfter="1835">1823&#x2013;1835</date></hi></title>
-                          <imprint>
-                            <publisher>Ohio University Press</publisher>
-                            <date when="2015">2015</date>
-                            </imprint>
-                        </monogr>
-                      </biblStruct>
-        
+                     
         <biblStruct xml:id="FRAISTATPOEMANDTHEBOOK">
           <monogr>
             <author>
@@ -5022,6 +5715,40 @@
           <note>http://www.frenchempire.net/about/ (accessed <date when="2017-04-01">1 April 2017</date>).</note>
         </biblStruct>
                       
+                      <biblStruct xml:id="FRIENDSHIPSOFFERING1826">
+                        <monogr>
+                          <title level="m"><hi rend="italic">Friendship&#x02BC;s Offering: A Literary Album</hi></title>
+                          <editor>
+                            <persName corresp="TKH">
+                              <forename>Thomas K.</forename>
+                              <surname>Hervey</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Lupton Relfe</publisher>
+                            <date notBefore="1825-10-01" notAfter="1826-01-01">1826 [ca. 1825]</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="FRIENDSHIPSOFFERING1829">
+                        <monogr>
+                          <title level="m"><hi rend="italic">Friendship&#x02BC;s Offering: A Literary Album, and Christmas and New Year&#x02BC;s Present, for <date when="1835">MDCCCXXIX</date></hi></title>
+                          <editor>
+                            <persName corresp="TP">
+                              <forename>Thomas</forename>
+                              <surname>Pringle</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Smith, Elder</publisher>
+                            <date notBefore="1828-10-01" notAfter="1829-01-01">1829 [ca. 1828]</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
                       <biblStruct xml:id="FRIENDSHIPSOFFERING1830">
                         <monogr>
                           <title level="m"><hi rend="italic">Friendship&#x02BC;s Offering: A Literary Album, and Christmas and New Year&#x02BC;s Present, for <date when="1835">MDCCCXXX</date></hi></title>
@@ -5034,7 +5761,7 @@
                           <imprint>
                             <pubPlace>London</pubPlace>
                             <publisher>Smith, Elder</publisher>
-                            <date notBefore="1834-10-01" notAfter="1835-01-01">1830 [ca. 1829]</date>
+                            <date notBefore="1829-10-01" notAfter="1830-01-01">1830 [ca. 1829]</date>
                           </imprint>
                         </monogr>
                       </biblStruct>
@@ -5072,23 +5799,99 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="PRINCETONLIBRARYSPECIALCOLLECTIONSBLOG-2010-04-10">
+                        <analytic>
+                          <title level="a">&#x201C;&#x2018;<hi rend="italic">Friendship&#x02BC;s Offering</hi> wears a most captivating appearance&#x2019;: 1825&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Rare Book Collections &#x0040; Princeton</hi></title>
+                          <imprint>
+                            <date when="2010-04-10">10 April 2010</date>
+                          </imprint>
+                        </monogr>
+                        <note>https://blogs.princeton.edu/rarebooks/2010/04/friendships-offering-wears-a-m/ (accessed <date when="2022-02-28">28 February 2022</date>).</note>
+                      </biblStruct> 
         
-        <biblStruct xml:id="FRIENDSHIPSOFFERING1826">
-          <monogr>
-            <title level="m"><hi rend="italic">Friendship&#x02BC;s Offering: A Literary Album</hi></title>
-            <editor>
-              <persName corresp="TKHERVEY">
-                <forename>Thomas K.</forename>
-                <surname>Hervey</surname>
-              </persName>
-            </editor>
-            <imprint>
-              <pubPlace>London</pubPlace>
-              <publisher>Lupton Relfe</publisher>
-              <date notBefore="1825" notAfter="1826">1826 [ca. 1825]</date>
-            </imprint>
-          </monogr>
-        </biblStruct>
+                      <biblStruct xml:id="FYFECOPYRIGHTS">
+                        <analytic>
+                          <author>
+                            <persName corresp="AFYFE">
+                              <forename>Aileen</forename>
+                              <surname>Fyfe</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Copyrights and Competition: Producing and Protecting Children&#x02BC;s Books in the Nineteenth Century&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Publishing History</hi></title>
+                          <imprint>
+                            <biblScope type="vol">45</biblScope>
+                            <date when="1999">1999</date>
+                            <biblScope type="pages">35&#x2013;59</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+                      
+                      <biblStruct xml:id="FYFEDISSENTINGFAMILIES">
+                        <analytic>
+                          <author>
+                            <persName corresp="AFYFE">
+                              <forename>Aileen</forename>
+                              <surname>Fyfe</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Reading Children&#x02BC;s Books in Late Eighteenth&#x2010;Century Dissenting Families&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">The Historical Journal</hi></title>
+                          <imprint>
+                            <biblScope type="vol">43</biblScope>
+                            <biblScope type="issue">2</biblScope>
+                            <date when="2000">2000</date>
+                            <biblScope type="pages">453&#x2013;73</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+                      
+                      <biblStruct xml:id="FYFETRACTS">
+                        <analytic>
+                          <author>
+                            <persName corresp="AFYFE">
+                              <forename>Aileen</forename>
+                              <surname>Fyfe</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Tracts, Classics and Brands: Science for Children in the Nineteenth Century&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Popular Children&#x02BC;s Literature in Britain</hi></title>
+                          <editor>
+                            <persName corresp="JBRIGGS">
+                              <forename>Julia</forename>
+                              <surname>Briggs</surname>
+                            </persName>
+                          </editor>
+                          <editor>
+                            <persName corresp="DBUTTS">
+                              <forename>Dennis</forename>
+                              <surname>Butts</surname>
+                            </persName>
+                          </editor>
+                          <editor>
+                            <persName corresp="MOGRENBY">
+                              <forename>M. O.</forename>
+                              <surname>Grenby</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Aldershot</pubPlace>
+                            <publisher>Ashgate</publisher>
+                            <date when="2008">2008</date>
+                            <biblScope type="pages">209&#x2013;228</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
         
         <biblStruct xml:id="BLESSINGTONBYRON">
           <monogr>
@@ -5125,6 +5928,29 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="GASKELLLIFEOFBRONTE">
+                        <monogr>
+                          <author>
+                            <persName corresp="EGASKELL">
+                              <forename>Elizabeth</forename>
+                              <surname>Gaskell</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">The Life of Charlotte Bront&#x00EB;</hi></title>
+                          <editor>
+                            <persName corresp="EJAY">
+                              <forename>Elisabeth</forename>
+                              <surname>Jay</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Penguin</publisher>
+                            <date when="1997">1997</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
                       
                       <biblStruct xml:id="GEROULDVANDYKE">
                         <analytic>
@@ -5201,6 +6027,27 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="GODBURN19THCDUSTJACKETS">
+                        <monogr>
+                          <author>
+                            <persName corresp="MRG">
+                              <forename>Mark R.</forename>
+                              <surname>Godburn</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Nineteenth&#x2010;Century Dust&#x2010;Jackets</hi></title>
+                          <imprint>
+                            <pubPlace>Pinner, Middlesex</pubPlace>
+                            <publisher>Private Libraries Association</publisher>
+                          </imprint>
+                          <imprint>
+                            <pubPlace>New Castle, Del.</pubPlace>
+                            <publisher>Oak Knoll Press</publisher>
+                            <date when="2016">2016</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
                       
                       <biblStruct xml:id="GOLDBERGERROGERS">
                         <analytic>
@@ -5335,6 +6182,27 @@
             </imprint>
           </monogr>
         </biblStruct>
+                      
+                      <biblStruct xml:id="GOTTLIEBFIGHTINGWORDS">
+                        <analytic>
+                          <author>
+                            <persName corresp="EGOTTLIEB">
+                              <forename>Evan</forename>
+                              <surname>Gottlieb</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Fighting Words: Representing the Napoleonic Wars in the Poetry of Hemans and Barbauld&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">European Romantic Review</hi></title>
+                          <imprint>
+                            <biblScope type="vol">20</biblScope>
+                            <biblScope type="issue">3</biblScope>
+                            <date when="2009-07">July 2009</date>
+                            <biblScope type="pages">327&#x2013;43</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
         
         <biblStruct xml:id="GRAVESDICTIONARY">
           <monogr>
@@ -5376,6 +6244,23 @@
           </imprint>
         </monogr>
       </biblStruct>
+                      
+                      <biblStruct xml:id="GREENASTRONOMICALRECREATIONS">
+                        <monogr>
+                          <author>
+                            <persName corresp="JGREEN">
+                              <forename>Jacob</forename>
+                              <surname>Green</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Astronomical Recreations: Or, Sketches of the Relative Position and Mythological History of the Constellations</hi></title>
+                          <imprint>
+                            <pubPlace>Philadelphia</pubPlace>
+                            <publisher>Anthony Finley</publisher>
+                            <date when="1824">1824</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
       
       <biblStruct xml:id="GREENESMOLLETTTHEHISTORIAN">
         <analytic>
@@ -5676,7 +6561,7 @@
           <title level="a">&#x201C;Ruskin in the 1830s: Emerging Authorship and the Print Culture of Travel&#x201D;</title>
         </analytic>
         <monogr>
-          <title level="m"><hi rend="italic">Continental Tourism, Travel Writing, and the Consumption of Culture in the Nineteenth Century</hi></title>
+          <title level="m"><hi rend="italic">Continental Tourism, Travel Writing, and the Consumption of Culture, 1814&#x2013;1900</hi></title>
           <editor>
             <persName corresp="BCOLBERT">
               <forename>Benjamin</forename>
@@ -5692,8 +6577,8 @@
           <imprint>
             <pubPlace>Basingstoke</pubPlace>
             <publisher>Palgrave Macmillan</publisher>
-            <date when="2015">forthcoming</date>
-            <!--<biblScope type="pages">to come</biblScope>-->
+            <date when="2020">2020</date>
+            <biblScope type="pages">119&#x2013;76</biblScope>
           </imprint>
         </monogr>
       </biblStruct>
@@ -5773,6 +6658,41 @@
         </monogr>
         <note>http://journals.tdl.org/paj/index.php/paj/article/view/23</note>
       </biblStruct>
+                      
+                      <biblStruct xml:id="HARRISFEMINIZING">
+                        <analytic>
+                          <author><persName corresp="KDH">
+                            <forename>Katherine D.</forename>
+                            <surname>Harris</surname>
+                          </persName></author>
+                          <title level="a">&#x201C;Feminizing the Textual Body: Female Readers Consuming the Literary Annual&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Papers of the Bibliographical Society of America</hi></title>
+                          <imprint>
+                            <biblScope type="vol">99</biblScope>
+                            <biblScope type="issue">4</biblScope>
+                            <date when="2005-12">December 2005</date>
+                            <biblScope type="pages">573&#x2013;622</biblScope>
+                          </imprint>
+                        </monogr>
+                        </biblStruct>
+                      
+                      <biblStruct xml:id="HARRISFORGETMENOT2015">
+                        <monogr>
+                          <author>
+                            <persName corresp="KDH">
+                              <forename>Katherine D.</forename>
+                              <surname>Harris</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Forget Me Not: The Rise of the British Literary Annual, <date notBefore="1823" notAfter="1835">1823&#x2013;1835</date></hi></title>
+                          <imprint>
+                            <publisher>Ohio University Press</publisher>
+                            <date when="2015">2015</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
       
       <biblStruct xml:id="HARRISGENRESUCCEEDS">
         <analytic>
@@ -5822,6 +6742,29 @@
           </imprint>
         </monogr>
       </biblStruct>
+                      
+                      <biblStruct xml:id="HARRISONTOURISTINPORTUGAL">
+                        <monogr>
+                          <author><persName corresp="WHH">
+                            <forename>W. H.</forename>
+                            <surname>Harrison</surname>
+                          </persName></author>
+                          <title level="m"><hi rend="italic">The Tourist in Portugal</hi></title>
+                          <respStmt>
+                            <resp>Illustrated from paintings by</resp>
+                            <persName corresp="JHP">
+                              <forename>James</forename>
+                              <surname>Holland</surname>
+                            </persName>
+                          </respStmt>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Robert Jennings</publisher>
+                            <date when="1839">1839</date>
+                          </imprint>
+                        </monogr>
+                        <note><hi rend="italic">Jennings&#x02BC;s Landscape Annual; or, Tourist in Portugal, for 1839</hi>.</note>
+                      </biblStruct>
                       
                       <biblStruct xml:id="HASKELLITALIANPATRON">
                         <monogr>
@@ -6018,6 +6961,61 @@
           </imprint>
         </monogr>
       </biblStruct>
+                      
+                      <biblStruct xml:id="HEILBRONELECTRICITY">
+                        <monogr>
+                          <author>
+                            <persName corresp="JLH">
+                              <forename>J. L.</forename>
+                              <surname>Heilbron</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Electricity in the Seventeenth and Eighteenth Centuries: A Study of Early Modern Physics</hi></title>
+                          <imprint>
+                            <pubPlace>Berkeley and Los Angeles</pubPlace>
+                            <publisher>University of California Press</publisher>
+                            <date when="1979">1979</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="EKHRUSKINANDTHEPOETS">
+                        <analytic>
+                          <author>
+                            <persName corresp="EKH">
+                              <forename>Elizabeth K.</forename>
+                              <surname>Helsinger</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Ruskin and the Poets: Alterations in Autobiography&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Modern Philology</hi></title>
+                          <imprint>
+                            <biblScope type="vol">74</biblScope>
+                            <biblScope type="issue">2</biblScope>
+                            <date when="1976-11">November 1976</date>
+                            <biblScope type="pages">142&#x2013;70</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+                      
+                      <biblStruct xml:id="HEMANSDOMESTICAFFECTIONSANDOTHERPOEMS">
+                        <monogr>
+                          <author>
+                            <persName corresp="FDH">
+                              <forename>Felicia [Felicia Dorothea Browne]</forename>
+                              <surname>Hemans</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">"The Domestic Affections" and Other Poems</hi></title>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>T. Cadell and W. Davies</publisher>
+                            <date when="1812">1812</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
                       
                       <biblStruct xml:id="HEMANSSELECTEDPOEMS">
                         <monogr>
@@ -6281,6 +7279,23 @@
           </imprint>
         </monogr>
       </biblStruct>
+                      
+                      <biblStruct xml:id="HOGGLIFEOFCUNNINGHAM">
+                        <monogr>
+                          <author>
+                            <persName corresp="DHOGG">
+                              <forename>David</forename>
+                              <surname>Hogg</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">The Life of Allan Cunningham</hi></title>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Hodder and Stoughton</publisher>
+                            <date when="1875">1875</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
       
       <biblStruct xml:id="HOGGWORKSLETTERSVOL3">
         <monogr>
@@ -6387,6 +7402,69 @@
         </monogr>
         <note>http://www.oxforddnb.com/view/article/57406 (accessed <date when="2012-03-30">30 March 2012</date>).</note>
       </biblStruct>
+                      
+                      <biblStruct xml:id="HOMEAEPINUSANDBRITISHELECTRICIANS">
+                        <analytic>
+                          <author>
+                            <persName corresp="RWH">
+                              <forename>R. W.</forename>
+                              <surname>Home</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Aepinus and the British Electricians: The Dissemination of a Scientific Theory&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Isis</hi></title>
+                          <imprint>
+                            <biblScope type="vol">63</biblScope>
+                            <biblScope type="issue">2</biblScope>
+                            <date when="1972-06">June 1972</date>
+                            <biblScope type="pages">190&#x2013;204</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="HOMEAEPINUSANDTOURMALINE">
+                        <analytic>
+                          <author>
+                            <persName corresp="RWH">
+                              <forename>R. W.</forename>
+                              <surname>Home</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Aepinus, the Tourmaline Crystal, and the Theory of Electricity and Magnetism&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Isis</hi></title>
+                          <imprint>
+                            <biblScope type="vol">67</biblScope>
+                            <biblScope type="issue">1</biblScope>
+                            <date when="1976-03">March 1976</date>
+                            <biblScope type="pages">21&#x2013;30</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="HOMEFRANKLINSELECTRICALATMOSPHERES">
+                        <analytic>
+                          <author>
+                            <persName corresp="RWH">
+                              <forename>Roderick W.</forename>
+                              <surname>Home</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Franklin&#x02BC;s Electrical Atmospheres&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">British Journal for the History of Science</hi></title>
+                          <imprint>
+                            <biblScope type="vol">6</biblScope>
+                            <biblScope type="issue">2</biblScope>
+                            <date when="1972-12">December 1972</date>
+                            <biblScope type="pages">131&#x2013;51</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
       
       <biblStruct xml:id="HONANBROWNINGSTESTIMONY">
         <analytic>
@@ -6913,6 +7991,23 @@
           </bibl>
         </relatedItem>
       </biblStruct>
+                      
+                      <biblStruct xml:id="JAMIESONENGLISHEMBOSSEDBINDINGS">
+                        <monogr>
+                          <author>
+                            <persName corresp="EJ">
+                              <forename>Eleanore</forename>
+                              <surname>Jamieson</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">English Embossed Bindings, 1825&#x2013;1850</hi></title>
+                          <imprint>
+                            <pubPlace>Cambridge</pubPlace>
+                            <publisher>Cambridge University Press</publisher>
+                            <date when="1972">1972</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
       
                       <biblStruct xml:id="JCMOBITCUNLIFFE">
                         <analytic>
@@ -7022,6 +8117,44 @@
           </imprint>
         </monogr>
       </biblStruct>
+                      
+                      <biblStruct xml:id="JOYCECOMPANIONTOSCIENTIFICDIALOGUES">
+                        <monogr>
+                          <author>
+                            <persName corresp="JJ">
+                              <forename>Rev. J.</forename>
+                              <surname>Joyce</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">A Companion to the Scientific Dialogues; Or, the Tutor's Assistant and Pupil's Manual in Natural and Experimental Philosophy</hi></title>
+                          <edition>New ed.</edition>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>J. Johnson</publisher>
+                            <date when="1818">1809</date>
+                          </imprint>
+                        </monogr>
+                        <note>Published as volume 7 of <hi rend="italic">Scientific Dialogues</hi>.</note>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="JOYCESCIENTIFICDIALOGUES1809">
+                        <monogr>
+                          <author>
+                            <persName corresp="JJ">
+                              <forename>Rev. J.</forename>
+                              <surname>Joyce</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Scientific Dialogues: Intended for the Instruction and Entertainment of Young People, in Which the First Principles of Natural and Experimental Philosophy Are Fully Explained</hi></title>
+                          <edition>New edition, corrected and improved</edition>
+                          <imprint>
+                            <biblScope type="vol" n="6">6 vols.</biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>J. Johnson</publisher>
+                            <date when="1818">1809</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
       
       <biblStruct xml:id="JOYCESCIENTIFICDIALOGUES">
         <monogr>
@@ -7032,7 +8165,7 @@
             </persName>
           </author>
           <title level="m"><hi rend="italic">Scientific Dialogues: Intended for the Instruction and Entertainment of Young People, in Which the First Principles of Natural and Experimental Philosophy Are Fully Explained</hi></title>
-          <edition>New ed., corrected and improved</edition>
+          <edition>A new edition, corrected and improved</edition>
           <imprint>
             <biblScope type="vol" n="6">6 vols.</biblScope>
             <pubPlace>London</pubPlace>
@@ -7404,6 +8537,77 @@
           </imprint>
         </monogr>
       </biblStruct>
+                      
+                      <biblStruct xml:id="KNIGHTEDITORSROOM1828">
+                        <analytic>
+                          <author>
+                            <persName corresp="CK">
+                              <forename>Charles]</forename>
+                              <surname>[Knight</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;The Editor&#x02BC;s Room&#x201d; (no. VIII)</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">London Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="vol">3d ser., 2</biblScope>
+                            <date notBefore="1828-08" notAfter="1828-12">August&#x2013;December 1828</date>
+                            <biblScope type="pages">543&#x2013;74</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="KNIGHTPASSAGES">
+                        <monogr>
+                          <author>
+                            <persName corresp="CK">
+                              <forename>Charles</forename>
+                              <surname>Knight</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Passages of a Working Life during Half a Century, with a Prelude of Early Reminiscences</hi></title>
+                          <imprint>
+                            <biblScope type="vol">3 vols.</biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Bradbury &#x0026; Evans</publisher>
+                            <date when="1864">1864</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="KNOEPFLMACHERMUTATIONS">
+                        <analytic>
+                          <author>
+                            <persName corresp="UCK">
+                              <forename>U. C.</forename>
+                              <surname>Knoepflmacher</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Mutations of the Wordsworthian Child of Nature&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Nature and the Victorian Imagination</hi></title>
+                          <editor>
+                            <persName corresp="UCK">
+                              <forename>U. C.</forename>
+                              <surname>Knoepflmacher</surname>
+                            </persName>
+                          </editor>
+                          <editor>
+                            <persName corresp="GBT">
+                              <forename>G. B.</forename>
+                              <surname>Tennyson</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Berkeley and Los Angeles</pubPlace>
+                            <publisher>University of California Press</publisher>
+                            <date when="1977">1977</date>
+                            <biblScope type="pages">391&#x2013;425</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
       
       <biblStruct xml:id="LAMBSPOETRY">
         <analytic>
@@ -7655,6 +8859,39 @@
           </imprint>
         </monogr>
       </biblStruct>
+                      <biblStruct xml:id="LITERARYSOUVENIR1825">
+                        <monogr>
+                          <title level="m"><hi rend="italic">The Literary Souvenir; or, Cabinet of Poetry and Romance</hi> (1825)</title>
+                          <editor>
+                            <persName corresp="AWEDITOR">
+                              <forename>Alaric A.</forename>
+                              <surname>Watts</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Hurst, Robinson, and Co.</publisher>
+                            <date when="1826">1826</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="LITERARYSOUVENIR1826">
+                        <monogr>
+                          <title level="m"><hi rend="italic">The Literary Souvenir; or, Cabinet of Poetry and Romance</hi> (1826)</title>
+                          <editor>
+                            <persName corresp="AWEDITOR">
+                              <forename>Alaric A.</forename>
+                              <surname>Watts</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Hurst, Robinson, and Co.</publisher>
+                            <date when="1826">1826</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
       
       <biblStruct xml:id="LIVYHISTORY">
         <monogr>
@@ -7719,6 +8956,45 @@
         </monogr>
       </biblStruct>
                       
+                      <biblStruct xml:id="LODGEROMANTICRELIQUARIES">
+                        <analytic>
+                          <author>
+                            <persName corresp="SLODGE">
+                              <forename>Sara</forename>
+                              <surname>Lodge</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Romantic Reliquaries: Memory and Irony in the Literary Annuals&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Romanticism: The Journal of Romantic Culture and Criticism</hi></title>
+                          <imprint>
+                            <biblScope type="vol">10</biblScope>
+                            <biblScope type="issue">1</biblScope>
+                            <date when="2004">2004</date>
+                            <biblScope type="pages">23&#x2013;40</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+                      
+                      <biblStruct xml:id="LOFFTEUDOSIA">
+                        <monogr>
+                          <author>
+                            <persName corresp="CL">
+                              <forename>Capel</forename>
+                              <surname>Lofft</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Eudosia; Or, A Poem on the Universe</hi></title>
+                          <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>W. Richardson and C. Dilly</publisher>
+                            <publisher>C. Dilly</publisher>
+                            <date when="1781">1781</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
                       <biblStruct xml:id="LOOSADAM">
                         <analytic>
                           <author>
@@ -7750,6 +9026,22 @@
                           <biblScope type="vol" n="187">Vol. 187</biblScope>
                         </series>
                       </biblStruct>
+                      
+                      <biblStruct xml:id="THELOUNGERCRITIC">
+                        <analytic>
+                          <title level="a">&#x201c;The Lounger&#x201d;</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">The Critic</hi> (New York)</title>
+                          <imprint>
+                            <biblScope type="vol">n.s., 18</biblScope>
+                            <biblScope type="issue">no. 548</biblScope>
+                            <date when="1892-08-20">20 August 1892</date>
+                            <biblScope type="pages">94&#x2013;95</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
             
       <biblStruct xml:id="MAILLESBAYARD">
         <monogr>
@@ -7855,6 +9147,60 @@
                         <note>Privately printed.</note>
                       </biblStruct>
                       
+                      <biblStruct xml:id="MCINELLYWHENWORLDSCOLLIDE">
+                        <analytic>
+                          <author>
+                            <persName corresp="BCMCINELLY">
+                              <forename>Brett C.</forename>
+                              <surname>McInelly</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;When Worlds Collide: Anti&#x2010;Methodist Literature and the Rise of Popular Literary Criticism in the <hi rend="italic">Critical Review</hi> and the <hi rend="italic">Monthly Review</hi>&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Paper, Ink, and Achievement: Gabriel Hornstein and the Revival of Eighteenth&#x2010;Century Scholarship</hi></title>
+                          <editor>
+                            <persName corresp="KLCOPE">
+                              <forename>Kevin L.</forename>
+                              <surname>Cope</surname>
+                            </persName>
+                          </editor>
+                          <editor>
+                            <persName corresp="CDREVERANDII">
+                              <forename>Cedric D., II</forename>
+                              <surname>Reverand</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Lewisburg, Penn.</pubPlace>
+                            <publisher>Bucknell University Press</publisher>
+                            <date when="2021">2021</date>
+                            <biblScope type="pages">131&#x2013;50</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="MAHONSERMONANDSTORY">
+                        <analytic>
+                          <author>
+                            <persName corresp="PMAHON">
+                              <forename>Penny</forename>
+                              <surname>Mahon</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;In Sermon and Story: Contrasting Anti&#x2010;War Rhetoric in the Work of Anna Barbauld and Amelia Opie&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Women&#x02BC;s Writing</hi></title>
+                          <imprint>
+                            <biblScope type="vol">7</biblScope>
+                            <biblScope type="issue">no. 1</biblScope>
+                            <date when="2000">2000</date>
+                            <biblScope type="pages">23&#x2013;38</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+                      
                       <biblStruct xml:id="MAHONEYGOODSPEED">
                         <analytic>
                           <author>
@@ -7883,6 +9229,26 @@
                         </monogr>
                         <note>Vol. 49, pt. 1 (A&#x2013;M) of the <hi rend="italic">Dictionary of Literary Biography</hi>.</note>
                       </biblStruct>
+                      
+                      <biblStruct xml:id="MAIDMENTPIRATEDBOOKS">
+                        <analytic>
+                          <author>
+                            <persName corresp="#BEM">
+                              <forename>B. E.</forename>
+                              <surname>Maidment</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;John Ruskin, George Allen, and American Pirated Books&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Publishing History</hi></title>
+                          <imprint>
+                            <biblScope type="vol">9</biblScope>
+                            <date when="1981-01-01">1 January 1981</date>
+                            <biblScope type="pages">5&#x2013;20</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
       
       <biblStruct xml:id="MAIDMENTONLYPRINT">
         <analytic>
@@ -8157,6 +9523,27 @@
                           </imprint>
                         </monogr>
                       </biblStruct>
+                      
+                      <biblStruct xml:id="MCCARTHYBARBAULDLESSONS">
+                        <analytic>
+                          <author>
+                            <persName corresp="WMCCARTHY">
+                              <forename>William</forename>
+                              <surname>McCarthy</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Mother of All Discourses: Anna Barbauld&#x02BC;s <hi rend="italic">Lessons for Children</hi>&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">The Princeton University Library Chronicle</hi></title>
+                          <imprint>
+                            <biblScope type="vol">60</biblScope>
+                            <biblScope type="issue">no. 2</biblScope>
+                            <date when="1999">Winter 1999</date>
+                            <biblScope type="pages">196&#x2013;219</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
       
       <biblStruct xml:id="MCGANNRADIANT">
         <monogr>
@@ -8174,6 +9561,33 @@
           </imprint>
         </monogr>
       </biblStruct>
+                      
+                      <biblStruct xml:id="MCKITTERICKCHANGES">
+                        <analytic>
+                          <author>
+                            <persName corresp="DMCK">
+                              <forename>David</forename>
+                              <surname>McKitterick</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Changes in the Look of the Book&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">The Cambridge History of the Book in Britain</hi>, vol. 6, <hi rend="italic">1830&#x2013;1914</hi></title>
+                          <editor>
+                            <persName corresp="DMCK">
+                              <forename>David</forename>
+                              <surname>McKitterick</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Cambridge</pubPlace>
+                            <publisher>Cambridge University Press</publisher>
+                            <date when="2009">2009</date>
+                            <biblScope type="pages">75&#x2013;116</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
       
       <biblStruct xml:id="MELVILLEBILLYBUDD">
         <monogr>
@@ -8409,6 +9823,21 @@
                         </monogr>
                       </biblStruct>
                       
+                      <biblStruct xml:id="MISC1826BELLEASSEMBLEE">
+                        <analytic>
+                          <title level="a">&#x201C;Miscellaneous&#x201D; [Unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> (1827)]</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">La Belle Assembl&#x00E9;e; Or, Court and Fashionable Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="vol">n.s., 4</biblScope>
+                            <biblScope type="issue">supplement</biblScope>
+                            <date notBefore="1826-07" notAfter="1826-12">July-December 1826</date>
+                            <biblScope type="pages">296&#x2013;304</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
                       <biblStruct xml:id="MITCHISONHISTORYOFSCOTLAND">
                         <monogr>
                           <author>
@@ -8476,6 +9905,20 @@
                             <pubPlace>Amherst</pubPlace>
                             <publisher>University of Massachusetts Press</publisher>
                             <date when="2005">2005</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="MONOLOGUEONANNUALS">
+                        <analytic>
+                          <title level="a">&#x201C;Monologue, or Soliloquy on the Annuals&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Blackwood&#x02BC;s Edinburgh Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="vol">26</biblScope>
+                            <date notBefore="1829-07" notAfter="1829-12">July&#x2013;December 1829</date>
+                            <biblScope type="pages">948&#x2013;76</biblScope>
                           </imprint>
                         </monogr>
                       </biblStruct>
@@ -8593,6 +10036,27 @@
                         </monogr>
                       </biblStruct>
                       
+                      <biblStruct xml:id="MOURAOREMEMBRANCE">
+                        <analytic>
+                          <author>
+                            <persName corresp="MMOURAO">
+                              <forename>Manuel</forename>
+                              <surname>Mour&#x00E3;o</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Remembrance of Things Past: Literary Annuals&#x02BC; Self&#x2010;Historicization&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Victorian Poetry</hi></title>
+                          <imprint>
+                            <biblScope type="vol">50</biblScope>
+                            <biblScope type="issue">1</biblScope>
+                            <date when="2012">Spring 2012</date>
+                            <biblScope type="pages">107&#x2013;23</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+                      
                       <biblStruct xml:id="PARRISHSTROLLOPEBIBLIA">
                         <analytic>
                           <title level="a">&#x201C;Mr. Parrish's Trollope Collections&#x201D;</title>
@@ -8621,6 +10085,23 @@
       </imprint>
     </monogr>
   </biblStruct>
+                      
+                      <biblStruct xml:id="MUNDAYCOOKE">
+                        <monogr>
+                          <author>
+                            <persName corresp="JMUNDAY">
+                              <forename>John</forename>
+                              <surname>Munday</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Edward William Cooke, 1811&#x2013;1880: A Man of His Time</hi></title>
+                          <imprint>
+                            <pubPlace>Woodbridge, Suffolk</pubPlace>
+                            <publisher>Antique Collectors&#x02BC; Club</publisher>
+                            <date when="1996">1996</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
   
   <biblStruct xml:id="HILLDNB">
     <analytic>
@@ -8690,6 +10171,39 @@
       </imprint>
     </monogr>
   </biblStruct> 
+                      
+                      <biblStruct xml:id="MYERSOFMICEANDMOTHERS">
+                        <analytic>
+                          <author>
+                            <persName corresp="MMYERS">
+                              <forename>Mitzi</forename>
+                              <surname>Myers</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Of Mice and Mothers: Mrs. Barbauld&#x02BC;s &#x2018;New Walk&#x2019; and Gendered Codes in Children&#x02BC;s Literature&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Feminine Principles and Women's Experience in American Composition and Rhetoric</hi></title>
+                          <editor>
+                            <persName corresp="LWPHELPS">
+                              <forename>Louise Wetherbee</forename>
+                              <surname>Phelps</surname>
+                            </persName>
+                          </editor>
+                          <editor>
+                            <persName corresp="JEMIG">
+                              <forename>Janet</forename>
+                              <surname>Emig</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Pittsburgh</pubPlace>
+                            <publisher>University of Pittsburgh Press</publisher>
+                            <date when="1995">1995</date>
+                            <biblScope type="pages">255&#x2013;88</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
                       
                       <biblStruct xml:id="NAPIERLESLIE">
                         <analytic>
@@ -8820,6 +10334,40 @@
       </biblStruct>
     </relatedItem>
   </biblStruct>
+                      
+                      <biblStruct xml:id="NOONBONINGTONDRAWINGS">
+                        <monogr>
+                          <author>
+                            <persName corresp="PNOON">
+                              <forename>Patrick</forename>
+                              <surname>Noon</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Richard Parkes Bonington: The Complete Drawings</hi></title>
+                          <imprint>
+                            <pubPlace>New Haven, Conn.</pubPlace>
+                            <publisher>Yale University Press, for the Paul Mellon Centre for Studies in British Art</publisher>
+                            <date when="2011">2011</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="NOONBONINGTONPAINTINGS">
+                        <monogr>
+                          <author>
+                            <persName corresp="PNOON">
+                              <forename>Patrick</forename>
+                              <surname>Noon</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Richard Parkes Bonington: The Complete Paintings</hi></title>
+                          <imprint>
+                            <pubPlace>New Haven, Conn.</pubPlace>
+                            <publisher>Yale University Press, for the Paul Mellon Centre for Studies in British Art</publisher>
+                            <date when="2008">2008</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
   
   <biblStruct xml:id="RECENTACQUISITIONSYALEJAN43">
     <analytic>
@@ -8963,6 +10511,33 @@
       </imprint>
     </monogr>
   </biblStruct>
+                      
+                      <biblStruct xml:id="ONSLOWGENDEREDPRODUCTION">
+                        <analytic>
+                          <author>
+                            <persName corresp="BONSLOW">
+                              <forename>Barbara</forename>
+                              <surname>Onslow</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Gendered Production: Annuals and Gift Books&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Journalism and the Periodical Press in Nineteenth&#x2010;Century Britain</hi></title>
+                          <editor>
+                            <persName corresp="JSHATTOCK">
+                              <forename>Joanne</forename>
+                              <surname>Shattock</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Cambridge</pubPlace>
+                            <publisher>Cambridge University Press</publisher>
+                            <date when="2017">2017</date>
+                            <biblScope type="pages">66&#x2013;83</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
   
   <biblStruct xml:id="LIVERPOOLORATORY">
     <analytic>
@@ -9083,6 +10658,27 @@
                           </imprint>
                         </monogr>
                       </biblStruct>
+                      
+                      <biblStruct xml:id="PARKUTPICTURAPOESIS">
+                        <analytic>
+                          <author>
+                            <persName corresp="RPARK">
+                              <forename>Roy</forename>
+                              <surname>Park</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;&#x2018;Ut Pictura Poesis&#x2019;: The Nineteenth&#x2010;Century Aftermath&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">The Journal of Aesthetics and Art Criticism</hi></title>
+                          <imprint>
+                            <biblScope type="vol">28</biblScope>
+                            <biblScope type="issue">2</biblScope>
+                            <date when="1969">Winter 1969</date>
+                            <biblScope type="pages">155&#x2013;64</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
 
 <biblStruct xml:id="PARSONSWORTHTHEDETOUR">
   <monogr>
@@ -9289,6 +10885,39 @@
   </monogr>
 </biblStruct>
                       
+                      <biblStruct xml:id="PERCYREVIEWSANDPRESCRIPTIVISM">
+                        <analytic>
+                          <author>
+                            <persName corresp="CPERCY">
+                              <forename>Carol</forename>
+                              <surname>Percy</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Periodical Reviews and the Rise of Prescriptivism: The <hi rend="italic">Monthly</hi> (1749&#x2013;1844) and <hi rend="italic">Critical Review</hi> (1756&#x2013;1817) in the Eighteenth Century&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Current Issues in Late Modern English</hi></title>
+                          <editor>
+                            <persName corresp="ITBVO">
+                              <forename>Ingrid</forename>
+                              <surname>Tieken&#x2010;Boon van Ostade</surname>
+                            </persName>
+                          </editor>
+                          <editor>
+                            <persName corresp="WVDW">
+                              <forename>Wim</forename>
+                              <surname>van der Wurff</surname>
+                            </persName>
+                          </editor>
+                          <imprint>
+                            <pubPlace>Bern</pubPlace>
+                            <publisher>Peter Lang</publisher>
+                            <date when="2009">2009</date>
+                            <biblScope type="pages">117&#x2013;50</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
                       <biblStruct xml:id="PETRARCHSONNETSARMI">
                         <monogr>
                           <author corresp="#PETRARCH">
@@ -9327,8 +10956,25 @@
       <date when="2001">2001</date>
     </imprint>
   </monogr>
-  <note>Exhibition, <date notBefore="2001-01-12" notAfter="2001-03-25">12 January&#x2013;25 March 2001</date>.</note>
+  <note>Exhibition catalogue, <date notBefore="2001-01-12" notAfter="2001-03-25">12 January&#x2013;25 March 2001</date>.</note>
 </biblStruct>
+                      
+                      <biblStruct xml:id="PIERAZZODIGITALSCHOLARLYEDITING">
+                        <monogr>
+                          <author>
+                            <persName corresp="EPIERAZZO">
+                              <forename>Elena</forename>
+                              <surname>Pierazzo</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Digital Scholarly Editing: Theories, Models and Methods</hi></title>
+                          <imprint>
+                            <pubPlace>Farnham, Surrey</pubPlace>
+                            <publisher>Ashgate</publisher>
+                            <date when="2015">2015</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
 
 <biblStruct xml:id="PIGGOTTTURNERSVIGNETTES">
   <monogr>
@@ -9542,6 +11188,26 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="PRAEDSCHOOLFELLOWS">
+                        <analytic>
+                          <author>
+                            <persName corresp="WMP">
+                              <forename>Winthrop Mackworth]</forename>
+                              <surname>[Praed</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;School and Schoolfellows&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">London Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="issue">3d ser., 3</biblScope>
+                            <date notBefore="1829-01-01" notAfter="1829-06-30">January&#x2013;June 1829</date>
+                            <biblScope type="pages">227&#x2013;28</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
 
  <biblStruct xml:id="PRICEPERILOUSCROWN">
   <monogr>
@@ -9594,6 +11260,25 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="PRIESTLEYHISTORYOFELECTRICITY">
+                        <monogr>
+                          <author>
+                            <persName corresp="JP">
+                              <forename>Joseph</forename>
+                              <surname>Priestley</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">The History and Present State of Electricity, with Original Experiments</hi></title>
+                          <edition>3d ed.</edition>
+                          <imprint>
+                            <biblScope n="2">2 vols.</biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>C. Bathurst; T. Lowndes; J. Rivington; J. Johnson; S. Crowder; G. Robinson; R. Baldwin; T. Becket; and T. Cadell</publisher>
+                            <date when="1775">1775</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
 
 <biblStruct xml:id="PRIESTMANPOETRYOFDARWIN">
   <monogr>
@@ -9765,6 +11450,41 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="RIDPATHSTARTALES">
+                        <monogr>
+                          <author>
+                            <persName corresp="IRIDPATH">
+                              <forename>Ian</forename>
+                              <surname>Ridpath</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Star Tales</hi></title>
+                          <edition>2d ed.</edition>
+                          <imprint>
+                            <pubPlace>Cambridge</pubPlace>
+                            <publisher>Lutterworth</publisher>
+                            <date when="2018">2018</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="RIEDEROSSETTIREVISITED">
+                        <monogr>
+                          <author>
+                            <persName corresp="DGRIEDE">
+                              <forename>David G.</forename>
+                              <surname>Riede</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Dante Gabriel Rossetti Revisited</hi></title>
+                          <imprint>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>Twayne</publisher>
+                            <date when="1992">1992</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
 
 <biblStruct xml:id="HEATHSANNUAL1832">
   <monogr>
@@ -10075,6 +11795,51 @@
   </monogr>
 </biblStruct>
                       
+                      <biblStruct xml:id="ROHATGIAMATEURARTISTS">
+                        <analytic>
+                          <author>
+                            <persName corresp="PROHATGI">
+                              <forename>Pauline</forename>
+                              <surname>Rohatgi</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Amateur Artists in Western India: James Forbes and Robert Melville Grindlay&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Marg</hi></title>
+                          <imprint>
+                            <biblScope type="vol">41</biblScope>
+                            <biblScope type="issue">1</biblScope>
+                            <date when="1990">1990</date>
+                            <biblScope type="pages">17&#x2013;34</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="ROHATGIPARLETTINDIANLIFE">
+                        <monogr>
+                          <author>
+                            <persName corresp="PROHATGI">
+                              <forename>Pauline</forename>
+                              <surname>Rohatgi</surname>
+                            </persName>
+                          </author>
+                          <author>
+                            <persName corresp="GPARLETT">
+                              <forename>Graham</forename>
+                              <surname>Parlett</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Indian Life and Landscape by Western Artists: Paintings and Drawings from the Victoria and Albert Museum, Seventeenth to the Early Twentieth Century</hi></title>
+                          <imprint>
+                            <pubPlace>Mumbai</pubPlace>
+                            <publisher>Victoria and Albert Museum</publisher>
+                            <publisher>Chhatrapati Shivaji Maharaj Vastu Sangrahalaya</publisher>
+                            <date when="2008">2008</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
                       <biblStruct xml:id="PAREDITORIALFPUL">
                         <analytic>
                           <author>
@@ -10230,6 +11995,27 @@
                             <biblScope type="issue">no. 1</biblScope>
                             <date when="1983">Spring 1983</date>
                             <biblScope type="pages">22&#x2013;42</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="ROSENBERGRAPHAELANDNAPOLEON">
+                        <analytic>
+                          <author>
+                            <persName corresp="MROSENBERG">
+                              <forename>Martin</forename>
+                              <surname>Rosenberg</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Raphael&#x02BC;s <hi rend="italic">Transfiguration</hi> and Napoleon&#x02BC;s Cultural Politics&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Eighteenth&#x2010;Century Studies</hi></title>
+                          <imprint>
+                            <biblScope type="vol">19</biblScope>
+                            <biblScope type="issue">2</biblScope>
+                            <date notBefore="1985" notAfter="1986">Winter 1985&#x2013;86</date>
+                            <biblScope type="pages">180&#x2013;205</biblScope>
                           </imprint>
                         </monogr>
                       </biblStruct> 
@@ -10391,6 +12177,27 @@
   </monogr>
 </biblStruct>
 
+                      <biblStruct xml:id="SAGLIAIMAGININGIBERIA">
+                        <analytic>
+                          <author>
+                            <persName corresp="DSAGLIA">
+                              <forename>Diego</forename>
+                              <surname>Saglia</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Imag(in)ing Iberia: <hi rend="italic">Landscape Annuals</hi> and Multimedia Narratives of the Spanish Journey in British Romanticism&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Journal of Iberian and Latin American Studies</hi></title>
+                          <imprint>
+                            <biblScope type="vol">12</biblScope>
+                            <biblScope type="issue">2&#x2013;3</biblScope>
+                            <date notBefore="2006-08" notAfter="2006-12">August&#x2013;December 2006</date>
+                            <biblScope type="pages">123&#x2013;46</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+
 <biblStruct xml:id="SAUNDERSREGENTSPARK">
   <monogr>
     <author>
@@ -10407,6 +12214,47 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="SAUNDERSCOSTELLO">
+                        <analytic>
+                          <author>
+                            <persName corresp="CBSAUNDERS">
+                              <forename>Clare Broome</forename>
+                              <surname>Saunders</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Louisa Stuart Costello and Women&#x02BC;s War Poetry&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Wordsworth Circle</hi></title>
+                          <imprint>
+                            <biblScope type="vol">43</biblScope>
+                            <biblScope type="issue">no. 3</biblScope>
+                            <date when="2012">Summer 2012</date>
+                            <biblScope type="pages">178&#x2013;82</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="SAUNDERSCHARGESEPARATION">
+                        <analytic>
+                          <author>
+                            <persName corresp="CSAUNDERS">
+                              <forename>Clive</forename>
+                              <surname>Saunders</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Charge Separation Mechanisms in Clouds&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Space Science Reviews</hi></title>
+                          <imprint>
+                            <biblScope type="vol">137</biblScope>
+                            <date when="2008">2008</date>
+                            <biblScope type="pages">335&#x2013;53</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
 
 <biblStruct xml:id="SAUSSUREVOYAGES">
   <monogr>
@@ -10464,6 +12312,23 @@
   </monogr>
   <note>http://www.oxforddnb.com/view/article/2640 (accessed <date when="2018-01-21">21 January 2018</date>).</note>
 </biblStruct>
+                      
+                      <biblStruct xml:id="SCHIFFERDRAWTHELIGHTNINGDOWN">
+                        <monogr>
+                          <author>
+                            <persName corresp="MBS">
+                              <forename>Michael Brian</forename>
+                              <surname>Schiffer</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Draw the Lightning Down: Benjamin Franklin and Electrical Technology in the Age of Enlightenment</hi></title>
+                          <imprint>
+                            <pubPlace>Berkeley and Los Angeles</pubPlace>
+                            <publisher>University of California Press</publisher>
+                            <date when="2003">2003</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
 
 <biblStruct xml:id="SCHMIDTPICTURESQUE">
   <analytic>
@@ -10963,6 +12828,26 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="SHERIKOPATCHWORKPLAY">
+                        <analytic>
+                          <author>
+                            <persName corresp="NSHERIKO">
+                              <forename>Nicole</forename>
+                              <surname>Sheriko</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Patchwork Play: Nineteenth&#x2010;Century Toy Theater and Participatory Media Culture&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Nineteenth Century Studies</hi></title>
+                          <imprint>
+                            <biblScope type="vol">30</biblScope>
+                            <date notBefore="2017" notAfter="2018">2017&#x2013;18</date>
+                            <biblScope type="pages">25&#x2013;43</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
 
 <biblStruct xml:id="SHILLINGSBURGFROMGUTENBERG">
   <monogr>
@@ -10981,7 +12866,7 @@
   </monogr>
 </biblStruct>
 
-<biblStruct xml:id="SCHOLARLYEDITING">
+<biblStruct xml:id="SHILLINGSBURGSCHOLARLYEDITING">
   <monogr>
     <author>
       <persName corresp="PLS">
@@ -11042,6 +12927,17 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="SKYANDTELESCOPE">
+                        <monogr>
+                          <title level="m"><hi rend="italic">Sky &#x0026; Telescope</hi></title>
+                          <imprint>
+                            <publisher>AAS Sky Publishing</publisher>
+                            <date when="2022">2022</date>
+                          </imprint>
+                        </monogr>
+                        <note>https://skyandtelescope.org/.</note>
+                      </biblStruct>
 
 <biblStruct xml:id="SLATEREARLYEDITIONS">
   <monogr>
@@ -11110,6 +13006,24 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      
+                      <biblStruct xml:id="SMITHELDERFRIENDSHIPSOFFERINGAD1828">
+                        <analytic>
+                          <author>
+                            <orgName>Smith, Elder &#x0026; Company</orgName>
+                          </author>
+                          <title level="a">&#x201C;The <hi rend="italic">Friendship&#x02BC;s Offering</hi> for 1828&#x201D; [advertisement]</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Quarterly Review</hi> (<hi rend="italic">The Quarterly Literary Advertiser</hi>)</title>
+                          <imprint>
+                            <biblScope type="vol">36</biblScope>
+                            <date when="1827-10">October 1827</date>
+                            <biblScope type="pages">29</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
 
 <biblStruct xml:id="SMOLLETTHISTORYOFENGLAND">
   <monogr>
@@ -11203,6 +13117,20 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="SOUVENIRBOOKS">
+                        <analytic>
+                          <title level="a">&#x201C;Souvenir Books; or, Joint&#x2010;Stock Literature&#x201D; [unsigned review of <hi rend="italic">Forget Me Not</hi> (1827) and <hi rend="italic">Friendship&#x02BC;s Offering</hi> (1827)]</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">London Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="vol">n.s., 6</biblScope>
+                            <date notBefore="1826-09" notAfter="1826-12">September&#x2013;December 1826</date>
+                            <biblScope type="pages">478&#x2013;83</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
 
 <biblStruct xml:id="SPATESDARKSTAR">
   <analytic>
@@ -11592,6 +13520,24 @@
   </monogr>
   <note>http://dissacad.english.qmul.ac.uk (accessed <date when="2015-11-20">20 November 2015</date>).</note>
 </biblStruct>
+                      
+                      <biblStruct xml:id="GRAHAMDNB">
+                        <analytic>
+                          <author><persName corresp="DTHOMSON">
+                            <forename>Duncan</forename>
+                            <surname>Thomson</surname>
+                          </persName></author>
+                          <title level="a">&#x201C;Graham, John (<date notBefore="1754" notAfter="1817">1754&#x2013;1817</date>)&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="m"><hi rend="italic">Oxford Dictionary of National Biography Online Edition</hi></title>
+                          <imprint>
+                            <publisher>Oxford University Press</publisher>
+                            <date when="2004">2004</date>
+                          </imprint>
+                        </monogr>
+                        <note>http://www.oxforddnb.com/view/article/11210 (accessed <date when="2020-12-21">21 December 2020</date>).</note>
+                      </biblStruct>
 
 <biblStruct xml:id="THORMAHLENBRONTESEDUCATION">
   <monogr>
@@ -11799,6 +13745,39 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="TRETHEWEYBARBAULDAMONGRADICALS">
+                        <analytic>
+                          <author>
+                            <persName corresp="RTRETHEWEY">
+                              <forename>Rachel</forename>
+                              <surname>Trethewey</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Lady Defender of the Revolution: Barbauld among the British Radicals&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <author>
+                            <persName corresp="WMCCARTHY">
+                              <forename>William</forename>
+                              <surname>McCarthy</surname>
+                            </persName>
+                          </author>
+                          <author>
+                            <persName corresp="OMURPHY">
+                              <forename>Olivia</forename>
+                              <surname>Murphy</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Anna Laetitia Barbauld: New Perspectives</hi></title>
+                          <imprint>
+                            <pubPlace>Lewisburg</pubPlace>
+                            <publisher>Bucknell University Press</publisher>
+                            <date when="2005">2005</date>
+                            <biblScope type="pages">151&#x2013;71</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
 
 <biblStruct xml:id="TROLLOPEBELGIUM">
   <monogr>
@@ -11847,6 +13826,147 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="REVIEWMYERSWORDSWORTH">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">English Men of Letters&#x2014;Wordsworth</hi> by F. W. H. Myers</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Athenaeum</hi> (London)</title>
+                          <imprint>
+                            <biblScope type="issue">2784</biblScope>
+                            <date when="1881-03-05">5 March 1881</date>
+                            <biblScope type="pages">328&#x2013;29</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="REVIEWANNUALS1829MONTHLYFO">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">Forget Me Not</hi> (1829), <hi rend="italic">The Winter&#x02BC;s Wreath</hi> (1829), <hi rend="italic">The Gem</hi> (1829), <hi rend="italic">The Literary Souvenir</hi> (1829), and <hi rend="italic">Friendship&#x02BC;s Offering</hi> (1829)</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Monthly Review</hi> (London)</title>
+                          <imprint>
+                            <biblScope type="vol">n.s., 9</biblScope>
+                            <date notBefore="1828-09" notAfter="1828-12">September&#x2013;December 1828</date>
+                            <biblScope type="pages">377&#x2013;402</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="REVIEWANNUALS1831ECLECTICFO">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">Forget Me Not</hi> (1831), <hi rend="italic">Friendship&#x02BC;s Offering</hi> (1831), <hi rend="italic">The Winter&#x02BC;s Wreath</hi> (1831), and <hi rend="italic">The Iris</hi> (1831)</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Eclectic Review</hi> (London)</title>
+                          <imprint>
+                            <biblScope type="vol">3d ser., 4</biblScope>
+                            <date notBefore="1830-07" notAfter="1830-12">July&#x2013;December 1830</date>
+                            <biblScope type="pages">462&#x2013;74</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="REVIEWFO1825GENTLEMANS">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> (1825)</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Gentleman&#x02BC;s Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="vol">136</biblScope>
+                            <date notBefore="1826-01" notAfter="1826-04">July&#x2013;December 1824</date>
+                            <biblScope type="pages">445</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="REVIEWANNUALS1826MONTHLY">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> (1826) and <hi rend="italic">Janus</hi> (1826)</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Monthly Review</hi> (London)</title>
+                          <imprint>
+                            <biblScope type="vol">n.s., 1</biblScope>
+                            <date notBefore="1826-01" notAfter="1826-04">January&#x2013;April 1826</date>
+                            <biblScope type="pages">161&#x2013;74</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="REVIEWANNUALS1827MONTHLY">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> (1827)</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Monthly Review</hi> (London)</title>
+                          <imprint>
+                            <biblScope type="vol">n.s., 4</biblScope>
+                            <date notBefore="1826-01" notAfter="1826-04">January&#x2013;April 1827</date>
+                            <biblScope type="pages">86&#x2013;94</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="REVIEWANNUALS1830MONTHLY">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">Friendship&#x02BC;s Offering</hi> (1830), <hi rend="italic">The Literary Souvenir</hi> (1830), <hi rend="italic">The Iris</hi> (1830), <hi rend="italic">The Winter&#x02BC;s Wreath</hi> (1830), <hi rend="italic">The Forget Me Not</hi> (1830), <hi rend="italic">The Amulet</hi> (1830), <hi rend="italic">The Juvenile Keepsake</hi> (1830), <hi rend="italic">The Juvenile Forget Me Not</hi> (1830), <hi rend="italic">Ackerman&#x02BC;s Forget Me Not . . . for Youth of Both Sexes</hi> (1830), and <hi rend="italic">The New Year&#x02BC;s Gift, and Juvenile Souvenir</hi> (1830)</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Monthly Review</hi> (London)</title>
+                          <imprint>
+                            <biblScope type="vol">n.s., 12</biblScope>
+                            <date notBefore="1829-09" notAfter="1829-12">September&#x2013;December 1829</date>
+                            <biblScope type="pages">434&#x2013;59</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      
+                      <biblStruct xml:id="REVIEWLAMBPOETRY">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">Poetry for Children</hi> by Charles and Mary Lamb</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Athenaeum</hi> (London)</title>
+                          <imprint>
+                            <biblScope type="issue">2620</biblScope>
+                            <date when="1878-01-12">12 January 1878</date>
+                            <biblScope type="pages">47&#x2013;49</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="REVIEWANNUALS1831ECLECTIC">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">The Amulet</hi> (1831), <hi rend="italic">The Literary Souvenir</hi> (1831), and <hi rend="italic">The Remembrance</hi> (1831)</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Eclectic Review</hi> (London)</title>
+                          <imprint>
+                            <biblScope type="vol">3d ser., 4</biblScope>
+                            <date notBefore="1830-07" notAfter="1830-12">July&#x2013;December 1830</date>
+                            <biblScope type="pages">542&#x2013;60</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="REVIEWANNUALS1829MONTHLY">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">The Anniversary</hi> (1829), <hi rend="italic">The Amulet</hi> (1829), <hi rend="italic">The Juvenile Forget Me Not</hi> (1829), <hi rend="italic">The Juvenile Keepsake</hi> (1829)</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Monthly Review</hi> (London)</title>
+                          <imprint>
+                            <biblScope type="vol">n.s., 9</biblScope>
+                            <date notBefore="1828-09" notAfter="1828-12">September&#x2013;December 1828</date>
+                            <biblScope type="pages">525&#x2013;41</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
 
 <biblStruct xml:id="REVIEWBARRETTBROWNINGEARLIERPOEMS1878">
   <analytic>
@@ -11861,45 +13981,45 @@
     </imprint>
   </monogr>
 </biblStruct>
-
-<biblStruct xml:id="REVIEWMYERSWORDSWORTH">
-  <analytic>
-    <title level="a">Unsigned review of <hi rend="italic">English Men of Letters&#x2014;Wordsworth</hi> by F. W. H. Myers</title>
-  </analytic>
-  <monogr>
-    <title  level="j"><hi rend="italic">Athenaeum</hi> (London)</title>
-    <imprint>
-      <biblScope type="issue">2784</biblScope>
-      <date when="1881-03-05">5 March 1881</date>
-      <biblScope type="pages">328&#x2013;29</biblScope>
-    </imprint>
-  </monogr>
-</biblStruct>
-
-<biblStruct xml:id="REVIEWLAMBPOETRY">
-  <analytic>
-    <title level="a">Unsigned review of <hi rend="italic">Poetry for Children</hi> by Charles and Mary Lamb</title>
-  </analytic>
-  <monogr>
-    <title  level="j"><hi rend="italic">Athenaeum</hi> (London)</title>
-    <imprint>
-      <biblScope type="issue">2620</biblScope>
-      <date when="1878-01-12">12 January 1878</date>
-      <biblScope type="pages">47&#x2013;49</biblScope>
-    </imprint>
-  </monogr>
-</biblStruct>
                       
-                      <biblStruct xml:id="REVIEWSCOTTMONASTERYEDINBURGHMAG">
+                      <biblStruct xml:id="REVIEWANNUALS1828MONTHLY">
                         <analytic>
-                          <title level="a">Unsigned review of <hi rend="italic">The Monastery: A Romance</hi>, by the Author of <hi rend="ital">Waverley</hi>, Constable &#x0026; Co., 1820</title>
+                          <title level="a">Unsigned review of <hi rend="italic">The Keepsake</hi> (1828), <hi rend="italic">Friendship&#x02BC;s Offering</hi> (1828), and <hi rend="italic">The Christmas Box</hi> (1828)</title>
                         </analytic>
                         <monogr>
-                          <title  level="j"><hi rend="italic">Edinburgh Magazine and Literary Miscellany</hi></title>
+                          <title  level="j"><hi rend="italic">Monthly Review</hi> (London)</title>
                           <imprint>
-                            <biblScope type="vol">85</biblScope>
-                            <date notBefore="1820-03" notAfter="1820-04">March&#x2013;April 1820</date>
-                            <biblScope type="pages">254&#x2013;56, 297&#x2013;304</biblScope>
+                            <biblScope type="vol">n.s., 7</biblScope>
+                            <date notBefore="1828-01" notAfter="1828-04">January&#x2013;April 1828</date>
+                            <biblScope type="pages">66&#x2013;78</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="REVIEWLITERARYSOUVENIR1825GENTLEMANS">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">The Literary Souvenir</hi> (1825)</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Gentleman&#x02BC;s Magazine</hi></title>
+                          <imprint>
+                            <biblScope type="vol">136</biblScope>
+                            <date notBefore="1826-01" notAfter="1826-04">July&#x2013;December 1824</date>
+                            <biblScope type="pages">445&#x2013;46</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                     
+                      <biblStruct xml:id="REVIEWLITERARYSOUVENIR1825">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">The Literary Souvenir</hi> (1825)</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Monthly Review</hi> (London)</title>
+                          <imprint>
+                            <biblScope type="vol">2d ser., 108</biblScope>
+                            <date notBefore="1825-09" notAfter="1825-11">September&#x2013;November 1825</date>
+                            <biblScope type="pages">279&#x2013;97</biblScope>
                           </imprint>
                         </monogr>
                       </biblStruct>
@@ -11915,6 +14035,20 @@
                             <biblScope type="issue">24</biblScope>
                             <date when="1820-12">December 1820</date>
                             <biblScope type="pages">691&#x2013;717</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="REVIEWSCOTTMONASTERYEDINBURGHMAG">
+                        <analytic>
+                          <title level="a">Unsigned review of <hi rend="italic">The Monastery: A Romance</hi>, by the Author of <hi rend="ital">Waverley</hi>, Constable &#x0026; Co., 1820</title>
+                        </analytic>
+                        <monogr>
+                          <title  level="j"><hi rend="italic">Edinburgh Magazine and Literary Miscellany</hi></title>
+                          <imprint>
+                            <biblScope type="vol">85</biblScope>
+                            <date notBefore="1820-03" notAfter="1820-04">March&#x2013;April 1820</date>
+                            <biblScope type="pages">254&#x2013;56, 297&#x2013;304</biblScope>
                           </imprint>
                         </monogr>
                       </biblStruct>
@@ -12040,6 +14174,31 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="VASARILIVES">
+                        <monogr>
+                          <author>
+                            <persName corresp="GV">
+                              <forename>Giorgio</forename>
+                              <surname>Vasari</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">Lives of the Most Eminent Painters, Sculptors, and Architects</hi></title>
+                          <respStmt>
+                            <resp>Translated and edited by</resp>
+                            <persName corresp="MRSJFOSTER">
+                              <forename>Mrs. Jonathan</forename>
+                              <surname>Foster</surname>
+                            </persName>
+                          </respStmt>
+                          <imprint>
+                            <biblScope type="vol">4 vols.</biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>Henry G. Bohn</publisher>
+                            <date when="1851">1851</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
 
 <biblStruct xml:id="JACKSONVICTORIANDICTIONARY">
   <monogr>
@@ -12248,7 +14407,28 @@
     </imprint>
   </monogr>
 </biblStruct>
-                      
+
+                      <biblStruct xml:id="WARNERLETTER">
+                        <analytic>
+                          <author>
+                            <persName corresp="DJW">
+                              <forename>Deborah Jean</forename>
+                              <surname>Warner</surname>
+                            </persName>
+                          </author>
+                          <title level="a">letter to the editor</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Sky and Telescope</hi></title>
+                          <imprint>
+                            <biblScope type="vol">52</biblScope>
+                            <biblScope type="issue">3</biblScope>
+                            <date when="1976-09">September 1976</date>
+                            <biblScope type="pages">155, 165</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct> 
+
                       <biblStruct xml:id="WATTERSBEAUTIFULANDTHEGOOD">
                         <analytic>
                           <author>
@@ -12268,7 +14448,27 @@
                           </imprint>
                         </monogr>
                       </biblStruct>
- 
+                      
+                      <biblStruct xml:id="WEAVERSCHOOLBOYSSTORY">
+                        <analytic>
+                          <author>
+                            <persName corresp="WNWEAVER">
+                              <forename>William N.</forename>
+                              <surname>Weaver</surname>
+                            </persName>
+                          </author>
+                          <title level="a"><hi rend="italic">&#x201C;&#x2018;A School&#x2010;Boy&#x02BC;s Story&#x2019;: Writing the Victorian Public Schoolboy Subject&#x201D;</hi></title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Victorian Studies</hi></title>
+                          <imprint>
+                            <biblScope type="vol">46, no. 3</biblScope>
+                            <date when="2004">Spring 2004</date>
+                            <biblScope type="pages">455&#x2013;87</biblScope>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
+                      
 <biblStruct xml:id="WEEKSROGERS">
   <analytic>
     <author>
@@ -12289,6 +14489,30 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="WEESDARKNESSVISIBLE">
+                        <monogr>
+                          <author>
+                            <persName corresp="JDWEES">
+                              <forename>J. Dustin</forename>
+                              <surname>Wees</surname>
+                            </persName>
+                          </author>
+                          <title level="m"><hi rend="italic">&#x201C;Darkness Visible&#x201D;: The Prints of John Martin</hi></title>
+                          <respStmt>
+                            <resp>With contributions by</resp>
+                            <persName corresp="MJCAMPBELL">
+                              <forename>Michael J.</forename>
+                              <surname>Campbell</surname>
+                            </persName>
+                          </respStmt>
+                          <imprint>
+                            <pubPlace>Williamstown, Mass.</pubPlace>
+                            <publisher>Sterling and Francine Clark Art Institute</publisher>
+                            <date when="1986">1986</date>
+                          </imprint>
+                        </monogr>
+                      </biblStruct>
 
 <biblStruct xml:id="COLLECTIONRUSKINMANUSCRIPTS">
   <analytic>
@@ -12338,6 +14562,28 @@
                             <date when="1934-02">February 1934</date>
                           </imprint>
                         </monogr>
+                      </biblStruct>
+                      
+                      <biblStruct xml:id="RJWESTALLWESTALLSLABOURSOFLOVE">
+                        <analytic>
+                          <author>
+                            <persName corresp="RJWESTALL">
+                              <forename>Richard J.</forename>
+                              <surname>Westall</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Richard Westall&#x02BC;s Labours of Love&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">Wordsworth Circle</hi></title>
+                          <imprint>
+                            <biblScope type="vol">43</biblScope>
+                            <biblScope type="issue">1</biblScope>
+                            <date when="2012">Winter 2012</date>
+                            <biblScope type="pages">58&#x2013;62</biblScope>
+                          </imprint>
+                        </monogr>
+                        <note>Wordsworth Summer Conference Papers: A Selection (2011)</note>
                       </biblStruct>
                       
                       <biblStruct xml:id="WHEATLEYLONDON">
@@ -12622,6 +14868,25 @@
     </imprint>
   </monogr>
 </biblStruct>
+                      
+                      <biblStruct xml:id="WORMSDOVESENGLISHCLASSICS">
+                        <analytic>
+                          <author>
+                            <persName corresp="LWORMS">
+                              <forename>Laurence</forename>
+                              <surname>Worms</surname>
+                            </persName>
+                          </author>
+                          <title level="a">&#x201C;Dove&#x02BC;s English Classics&#x201D;</title>
+                        </analytic>
+                        <monogr>
+                          <title level="j"><hi rend="italic">The Bookhunter on Safari</hi> (blog)</title>
+                          <imprint>
+                            <date when="2017-09-14">14 September 2017</date>
+                          </imprint>
+                        </monogr>
+                        <note>https://ashrarebooks.com/2017/09/14/doves-english-classics/</note>
+                      </biblStruct> 
 
 <biblStruct xml:id="WORPOLELASTLANDSCAPES">
   <monogr>
@@ -12779,7 +15044,7 @@
                           <imprint>
                             <pubPlace></pubPlace>
                             <publisher></publisher>
-                            <date when="1990">2012</date>
+                            <date when=""></date>
                             <biblScope type="pages">&#x2013;</biblScope>
                           </imprint>
                         </monogr>
@@ -12791,8 +15056,7 @@
       Contrary States of the Human Soul. Ed. Richard Herne Shepherd. London: Basil
       Montagu Pickering, 1868.  Byron, Complete Poetical Works....
       
-      Lofft, Capel. Eudosia; Or, a
-      Poem on the Universe. London: W. Richardson and C. Dilly, 1781. Moore,
+       Moore,
       Thomas. Prose and Verse, Humorous, Satirical, and Sentimental by Thomas
       Moore, with Suppressed Passages from the Memoirs of Lord Byron, Chiefly from
       the Author’s Manuscript and All Hitherto Inedited and Uncollected. Ed.
@@ -12812,9 +15076,7 @@ Editions of the Reprinted Works of John Ruskin. Etchingham, East Sussex:
 Oxenbridge Press, 1999. Dearden, James S. “The Haddon C. Adams Bequest to
 the Ruskin Galleries.” Ruskin Newsletter 5 (autumn 1971): 7–10. Dearden,
 James S.   Dearden, James S. “The
-Library Edition.” Ruskin Newsletter 6, no. ? (spring 1972): 6–7. Dearden,
-James S. “The Library Edition of the Works of John Ruskin.” Book Collector
-44, no. 1 (spring 1995): 51–66. Dearden, James S. “Mrs Gertrude Atthill.”
+Library Edition.” Ruskin Newsletter 6, no. ? (spring 1972): 6–7.  Dearden, James S. “Mrs Gertrude Atthill.”
 Ruskin Newsletter 4 (spring 1971): 1.
 Ruskin Newsletter 4 (spring 1971): 4.
 Ditchfield, G. M. “Lofft, Capel (1751–1824).” Oxford Dictionary of National
@@ -12842,10 +15104,7 @@ Drawings by Eminent Artists. 2 vols. London: Allan Bell, 1834.  Pearsall, Alan.
 “Dockland Transport.” In Dockland: An Illustrated Historical Survey of Life
 and Work in East London. Ed. R. J. M. Carr. London: North East London
 Polytechnic, 1986. 145–51. Pennant, Thomas. The History and Antiquities of
-London. New ed. 2 vols. London: J. Coxhead, 1813.   Saglia, Diego. “Imag(in)ing Iberia:
-Landscape Annuals and Multimedia Narratives of the Spanish Journey in
-British Romanticism.” Journal of Iberian and Latin American Studies 12
-(2006): 123–46. Sexby, J. J. The Municipal Parks, Gardens, and Open Spaces
+London. New ed. 2 vols. London: J. Coxhead, 1813.    Sexby, J. J. The Municipal Parks, Gardens, and Open Spaces
 of London: Their History and Associations. London: Elliot Stock, 1898.
 Shepherd, Richard Herne, comp. The Bibliography of Ruskin: A Bibliographical
 List Arranged in Chronological Order of the Published Writings in Prose and

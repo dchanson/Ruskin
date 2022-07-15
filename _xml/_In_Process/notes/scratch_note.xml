@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="scratch_note">
+            <titleStmt>
+                <title type="main">Scratch</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
+            <div type="note" subtype="subtype">
+                    <head type="subsection">Ruskin's Adaptation of Sources</head>
+                        <div type="sub-subsection" xml:id="EDUCATION">
+                            <head type="sub-subsection">Reflections of Educational Approaches</head>
+                            <p>Aileen Fyfe has compared the dialogues in Aikin and Barbauld's <title type="book" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title> 
+                                with those in Sarah Trimmer's (1741-1810) 
+                                <title type="book" corresp="#TRIMMEREASYINTRODUCTION">An Easy Introduction to the Knowledge of Nature, and Reading the Holy Scriptures, Adapted to the Capacities of Children</title> (1780) 
+                                in order to highlight the differences in pedagogical approach to science, as adopted by these respectively Unitarian and Church of England late eighteenth-century authors. 
+                                Seeking to understand particularly the effect of these approaches on readers, Fyfe suggests that Barbauld and Aikin inspired child readers to be active inquirers. 
+                                In the dialogues in Evenings, the fictional children take initiative in prompting dialogue with their adult interlocutors, 
+                                and they freely make observations, hazard connections, and draw conclusions. Trimmer's fictional children, in contrast, 
+                                are passively guided by their mother, whose voice dominates the text. She directs the children's attention to natural phenomena 
+                                and tells the children what to think about them, using the terms of natural theology. The difference reflects a philosophical clash 
+                                between a Rousseauist belief in enfranchising the child to discover the world for himself,
+                                and a conservative Christian commitment to guard the child against sinful influences, from both within the self and without, 
+                                by framing an understanding of the natural world as an awe-inspiring revelation of God's design. 
+                                Where Aikin and Barbauld expose their home learners to a wide variety of subjects, including science 
+                                (both boys and girls, albeit to distinct ends), Trimmer prioritizes religious teaching and rules out scientific learning 
+                                that is unmediated by religion as too abstruse and dangerous 
+                                (Fyfe, Reading Children's Books, 468-72, 456-64).</p>
+                            
+                            <p>Admonitory voices like Mrs. Trimmer's persona are certainly represented among Ruskin's surviving early books of tales and poems (see 
+                                <ref type="note" subtype="bibliographical" target="boyhood_books_note.php#DESCRIPTIONS">Books Used by Ruskin in His Youth: Physical Descriptions</ref>), 
+                                but the evidence of Ruskin's adaptation of educational dialogues suggests an uninhibited inquirer. 
+                                In volume 1, chapter 1 of Ruskin's "Harry and Lucy"-which, as proposed in <ref type="internal" target="#COMPOSITION">Composition</ref>, 
+                                probably reflects the most direct influence of Evenings at Home-the conversation proceeds according to the Unitarian model of allowing the child's initiative to direct the topic and development of discourse. 
+                                Ruskin's Lucy declares what she will do (outside the house, visit her rabbit; inside the house, draw a head); and while Mamma imposes reasonable checks on willfulness 
+                                (Lucy cannot go outside in the rain; inside the house, she should "do one thing at once" and finish her landscape before drawing the head), 
+                                Lucy easily diverts Mamma from captious control. Mamma wrests the lead in conversation by inquiring about the status of Lucy's silkworms, 
+                                opening an opportunity to quiz Lucy on addition; however, Lucy turns the tables and stumps her mother with abstruse questions about silkworms 
+                                (the answers to which Mamma might have known had she read Edgeworth's Harry and Lucy Concluded as carefully as Ruskin's Lucy evidently has done). 
+                                Both Lucy and Mamma can be caught up in surprises: before Lucy can draw anything, she must find her pencils, 
+                                which Mamma is amazed to discover in her workbox.</p>
+                            
+                            <p>That Ruskin inhabited this freer and more inquisitive child persona, as compared with Mrs. Trimmer's silently compliant children, is not necessarily surprising for his decade. 
+                                Fyfe remarks that, whereas in the 1790s the progressive Unitarian pedagogical methods in Evenings at Home raised alarms among Church of England book reviewers, including Mrs. Trimmer, 
+                                by the 1820s Aikin and Barbauld's approach had been integrated into the home educations practiced by both Anglican and Dissenter families. 
+                                That readers' responses to Evenings at Home had shifted by this time-as is evident in testimony of Victorians born around 1820, including Ruskin, 
+                                who later treasured their childhood memories of the book-is taken by Fyfe as proof that the mere absence of religious commentary 
+                                in Evenings at Home, which Trimmer considered sufficiently damning, ultimately made the book acceptable to a wider audidence. 
+                                In the long run, Barbauld's light touch justified the Edgeworths' policy of avoiding potentially devisive religious topics in their dialogues, 
+                                fearing that controversy would undermine the universality of rational and practical thinking they sought to cultivate 
+                                (Fyfe, Reading Children's Books, 465-66, 462-63, 472). In a more sardonic view of changes in Barbauld's reception by the 1820s, 
+                                William McCarthy adds that a deliberate project of rehabilitation was undertaken by Barbauld's niece and others to disassociate the writer from Wollstonecraftian feminism 
+                                and other radical political positions-efforts that were achieved by narrowing Barbauld's reputation to children's writing, which had the unfortunate effect of reducing her, 
+                                as McCarthy says, into "a sort of national nanny" instead of the philosophically ambitious author of Eighteen Hundred and Eleven. 
+                                McCarthy quotes a writer for the Edinburgh Review in 1829, who describes works like the "Hymns and Early Lessons of Mrs Barbauld" as exemplary of the "proper and natural business" of writing by women, 
+                                which "is the practical regulation of private life, in all its bearings, affections, and concerns" 
+                                (McCarthy, "A 'High-Minded Christian Lady'", 177-78; and see 
+                                <ref type="note" subtype="biographical" target="barbauld_anna_laetitia_note.php"><persName corresp="#ME"><persName corresp="#ALB">Barbauld</persName></persName></ref>).</p>
+                            
+                            <p>A gradual mainstreaming of formerly suspect Unitarian pedagogical ideas must have occurred for liberal educationists like Aikin and Barbauld, 
+                                the Edgeworths, and Jeremiah Joyce to be read in the Ruskin household. A relaxation had occurred from the alarm of the Revolutionary and Napoleonic periods, 
+                                permitting Margaret Ruskin to take a less anxious view than did Sarah Trimmer about allowing a child's voice to be heard on its own terms: 
+                                "I let Johns letters come just as he writes them", she explained to her husband, "that you may not be misled in your judgment as to his hopes and feelings" 
+                                (Margaret to John James Ruskin, 4 March 1829, in Burd, ed., Ruskin Family Letters, 185). In such a trusting atmosphere, the ease with which Ruskin's "Lucy" 
+                                and "Mamma" exchange the lead in conversation with one another presumably seemed real to Ruskin, not just an idealized imitation the children he found in his books.</p>
+                            
+                            <p>As suggested in BiographicaL Context and Real-Life Lessons, the scientifically more advanced dialogues that Jeremiah Joyce conceived as a stage beyond Barbauld and Aikin's lessons 
+                                may also have prompted a style of learning in the Ruskin household. An indication of how the family may have used the Scientific Dialogues 
+                                and similar texts such as Marcet's Conversations on Chemistry is suggested by Joyce's Companion to the Scientific Dialogues (1807), 
+                                which he produced "at the particular request of several intelligent instructors of youth". The Companion lists 
+                                "Question for examination" to test readers' command of the concepts conveyed by the experiments described in Scientific Dialogues: 
+                                "the plan of giving Questions only, and requiring pupils to frame their own Answers", the Companion advises, represents 
+                                "a modern and capital improvement in the business of education". In the series of experiments copied from the Scientific Dialogues 
+                                toward the end of volume 1 of Ruskin's "Harry and Lucy Concluded", Lucy poses questions while Harry takes the role of Joyce's 
+                                pupil, who, as Joyce explains in the Companion, "knowing beforehand what are the principal points [of the printed dialogue] to which he must bend his attention, 
+                                will, it is presumed, prepare his answers with the greater facility and success. And the tutor himself may find a convenience in having the substance of each lesson 
+                                brought before his eye in another form" (Joyce, A Companion to the Scientific Dialogues, v-vii [preface]).</p>
+                            
+                            <p>None of the questions Ruskin gives to Lucy appears traceable directly to Joyce's Companion, and no direct evidence indicates that the Ruskins used this book; 
+                                however, Ruskin's "Harry" does in some instances demonstrate the aims of such pedagogy, as when he rearranged portions 
+                                of Joyce's conversations and integrates different conversations-an assimilation that constitutes 
+                                "having the substance of each lesson brought before . . . [the Tutor's] eye in another form" (see, e.g., 
+                                Harry's recombining of parts of <persName corresp="#JF">Joyce</persName>'s Conversation 10, &#x201C;Of the Air&#x2010;Gun, and Sound&#x201D; 
+                                and Conversation 2, "Of the Air-Pump", in response to Lucy's question, "What are the principal conductors of common sound"). 
+                                At the same time, if Ruskin assimilates concepts, what primarily prompts him in volume 1 to copy a series of experiments from Joyce seems less a test of comprehension 
+                                than a response to genre. In Edgeworth's Harry and Lucy Concluded, the Scientific Dialogues is "Harry's favourite book", 
+                                the narrator declares; and so, in Ruskin's Harry and Lucy, he puts his Harry onto a series of experiments from Joyce, just as Edgeworth's heroes are deflected from the seaside to immerse themselves 
+                                in Sir Rupert's workroom in consultation with the Scientific Dialogues (<ref type="bibliography" target="bibliography.php#EDGEWORTHHARRYANDLUCYCONCLUDED">Edgeworth, <hi rend="italic">Harry and Lucy Concluded</hi></ref>, 3:319).</p>
+                            
+                            <p>Specifically, Ruskin takes up a thread of discussion between Edgeworth's Harry and Lucy about phenomena associated 
+                                with a vacuum (see contextual glosses). Copying selections from Joyce's volume on "Pneumatics" in the Scientific Dialogues, 
+                                he starts with an experiment that also interests Edgeworth's Harry and Lucy (i.e., the lack of sound 
+                                as well as the relative speed of falling objects in a vacuum). From that point, Ruskin's progress forms an eccentric but fairly systematic loop 
+                                through Joyce's "Pneumatics" volume. From conversations 10 about the phenomena of sound, he proceeds backwards in the volume, 
+                                selecting experiments using the air pump that demonstrate various properties of air presure (though inserting an unrelated geography project 
+                                entailing a globe made from mud). The reverse progress is halted by a sudden leap forward in Joyce's volume to Conversation 9, 
+                                involving "miscellaneous" experiments, albeit still using the air pump. Joyce's purpose in this chapter apparently 
+                                is to encourage the children, Emma and Charles, to recall and apply concepts learned earlier. Ruskin omits this reasoning, however, 
+                                and his aim seems focused on merely "entertaining" Lucy with the "spectacle" of surprising effects of a vacuum. He does not always 
+                                succeed in re-presenting these experiments clearly; though cleaving closely to Joyce's text, he passes over the keys corresponding 
+                                to engraved illustrations of scientific apparatus at the back of Joyce's volume. The disconnection leaves the aims and procedures of these experiments by Ruskin's Harry 
+                                in obscurity; and in one case involving stones and minerals in a vacuum, Ruskin even misrepresents what the experiment is supposed to prove. 
+                                But this gambit does bring him back around to the same physical place where he started in Joyce's "Pneumatics" volume, 
+                                and he returns to experiments in Conversation 10 playing with conductors of sound.</p>
+                            
+                            <p>At the start of Edgeworth's fourth volume, when Harry and Lucy's adventures become centered on Digby Castle's scientific workshop, 
+                                it is electricity, not pneumatics, that fascinates them. Lucy having discovers Sir Rupert's wondrous electrical apparatus, 
+                                she is bent upon "having a shock, and seeing the electric spark". Their father demurs and "looked somewhat sorry at . . . [the request] having been made";
+                                Lucy does "not know why". He consents, however, to their "seeing some of the [electrical] experiments mentioned in Scientific Dialogues" 
+                                if supervised by Sir Rupert (Edgeworth, Harry and Lucy Concluded, 4:9). Ruskin reduces these charged encounters to a single derivation from 
+                                Joyce's sixth volume, "Of Electricity and Galvanism"-observations of electrical phenomena in the atmosphere, which in Ruskin's treatment 
+                                remind Harry of Manfred's magical invocation of the Witch of the Alps in Byron's verse drama. This passage, which Ruskin later made famous 
+                                by reproducing it in type facsimile in Praeterita, and which may have been a somewhat belated addition to the manuscript, 
+                            </p>
+                        </div>
+                        <div type="sub-subsection" xml:id="MANIPULATION">
+                            <head type="sub-subsection">Manipulation of Sources</head>
+                            <p><persName corresp="#JR">Ruskin</persName> also adapts his sources by manipulating and altering their original educational thrust. 
+                                
+                                 
+                            When <persName corresp="#JR">Ruskin</persName> has his characters, Harry and Lucy, follow their father &#x201C;upstairs to the workshop&#x201D;, where they engage in a series of
+                            experiments, which are copied directly from the <hi rend="italic">Dialogues</hi>, Ruskin was imitating the intertextual activities of Edgeworth's Harry and Lucy 
+                            in the well-appointed "workroom" at Digby Castle, where the avuncular Sir Rupert Digby "approved of their seeing some of the experiments mentioned 
+                            in Scientific Dialogues" on electricity 
+                            (<ref type="bibliography" target="bibliography.php#EDGEWORTHHARRYANDLUCYCONCLUDED">Edgeworth, <hi rend="italic">Harry and Lucy Concluded</hi></ref>, 4:9).</p>
+                        
+                        <p>Another intertextuality-which begins with quotations in Evenings at Home, carries through epigraphs for Scientific Dialogues, and rises to a thematic element in Harry and Lucy Concluded-is 
+                            the interconnections between science and poetry. Ruskin might be considered as highlighting and even advancing this form of intertextuality by apppending an anthology, 
+                            <ref type="apparatus" target="msi_poetry_anthology_apparatus.php">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</ref>, to his 
+                            &#x201C;Harry and Lucy . . . Vol I&#x201D;. In some of its poems, he develops themes dear to Aikin and Barbauld, such as a mouse's tale in his 
+                            "The Needless Alarm", and anti-war sentiment in "The Defiance of War". Perhaps the most elaborate instance of intertextuality is the lead poem of the collection, 
+                            <ref type="apparatus" target="the_steam_engine_apparatus.php">&#x201C;When furious up from mines the water pours&#x201D; [&#x201C;The Steam Engine&#x201D;]</ref>. 
+                            Derived from lines on the steam engine in The Botanic Garden 
+                            by <ref type="note" subtype="biographical" target="darwin_erasmus_note.php"><persName corresp="#ED">Erasmus Darwin</persName></ref> 
+                            (for which Ruskin had to consult Darwin's original, and not just lines quoted by Joyce and Edgeworth), 
+                            Ruskin's intention may have been to fulfill a desire expressed by Edgeworth's Harry, not indulged by Harry's father, 
+                            to depart from their travel itinerary and take a side journey to Birmingham, where Harry wants to view a steam-driven coining machine-the 
+                            subject of the lines from <persName corresp="#DE">Darwin</persName>. Harry's wish is granted, as it were, in Ruskin's adaptation of Darwin's lines (see 
+                            <ref type="apparatus" target="the_steam_engine_apparatus.php#SOURCES">&#x201C;When furious up from mines the water pours&#x201D; [&#x201C;The Steam Engine&#x201D;]: Sources</ref>). 
+                            The poem is also an instance of Ruskin's exposure to poetry by Darwin beyond the fragments he found quoted in Edgeworth's works. 
+                            While there is no evidence that the young Ruskin was aware of the political and religious opinions of such writers, he encountered the spirit of scientific and industrial entrepreneurship
+                            represented by members of the <ref type="note" subtype="contextual" target="lunar_society_of_birminigham_note.php"><orgName corresp="#LUNARSOCIETY">Lunar Society</orgName></ref>; 
+                            and beyond the works for children by Unitarian radicals such as Anna Barbauld and Jeremiah Joyce, he knew some poems by Mrs. Barbauld and by 
+                            <ref type="note" subtype="biographical" target="lofft_capel_note.php">Capel Lofft</ref>.</p>
+                    </div>
+                    
+                    <div type="subsection" xml:id="PERSONAE">
+                        <head type="subsection">Personae</head>
+
+                        <p>As Christine Alexander has commented, in nineteenth-century imaginative accounts of childhood such as the bildungsroman, 
+                            a child's voice is appropriated by an adult narrator; however, in nineteenth-century juvenilia, the reverse occurs: 
+                            a child writer appropriates an adult voice. Child writers adopted "the freedoms of the adult world" by working "within a defined discourse" 
+                            that they discovered in the print culture surrounding them. By this means, child writers gave "an account of both their own and the adult world", 
+                            and they empowered themselves to "construct an identity of authorship" chosen in "response to the print culture of their time" 
+                            (<ref type="bibliography" target="bibliography.php#ALEXANDERPLAYANDAPPRENTICESHIP">Alexander, &#x201C;Play and Apprenticeship&#x201D;</ref>, 31). 
+                            Beyond what the child writer created for himself or herself, however, a model did exist for an empowered child's voice in the printed lesson or didactic and scientific dialogue. 
+                            Depending on the religious and political orientation of the author, some of these popular scientific dialogues modeled a standpoint 
+                            from which the child could engage vicariously in rational discourse with an adult interlocutor without experiencing condescension. 
+                            This was the child's subject position in the pedagogy of the dialogue as conceived by Barbauld and Aikin and by Maria Edgeworth.</p>
+                        
+                        
+                        <p>A significant reversal occurs early in chapter 2 of "Harry and Lucy . . . Vol I", where Ruskin's transition from writing in the manner of Evenings at Home 
+                            to imitating his Edgeworth sources is signaled by adoption of third-person narration along with dialogue. Simultaneously, he brings onto the scene 
+                            the character Papa, who in chapter 1 was absent on business in the City, along with the character Harry, "whose history we have hitherto forgot".
+                            Papa's appearance is greeted by Lucy with a demand that he hear her lesson. At his demurral whether he will have time, Lucy is ready with the condition 
+                            that, if he will not hear her in the morning, then he will attend in the evening. What is significant about this exchange is its reversal of emphasis compared to its source 
+                            in Frank: A Sequel, in which Papa decisively limits the time when he is able or willing to hear Harry's lesson, a condition enforced in the face of Harry's "disgraceful" 
+                            performance in his lessons, which he has neglected owing to procrastination. Edgeworth's larger point that children must learn self-control, particularly boys expected 
+                            to leave home for school. Edgeworth warns that, if parents neglect this discipline, boys at school will be enticed to wreckless behavior in order to prove their masculinity. 
+                            In place of these dynamics, Ruskin's persona not only exhibits exemplary behavior, which calls for no rebuke in the first place, but also exerts his will over his father's attentions-a 
+                            reaction to Papa defined by his absence in the opening sentence of chapter 1, and in the poem 
+                            <ref type="apparatus" target="on_papas_leaving_home_apparatus.php"><title type="poem" corresp="ONPAPASLEAVINGHOME">&#x201c;On Papa&#x02bc;s Leaving Home&#x201d;</title></ref> in the 
+                            <ref type="apparatus" target="msi_poetry_anthology_apparatus.php"><title type="anthology" corresp="#MSIPOETRYANTHOLOGY">MS I Poetry Anthology [&#x201C;Poetry&#x201D;]</title></ref>.</p>
+                            
+                        <p><persName corresp="#JJ">Joyce</persName>&#x02BC;s work consists of &#x201C;conversations&#x201D; between a girl Emma, a boy Charles, and their father (and, at times, between two boys,
+                        Charles and James, and their tutor). 
+                        
+                        
+                            
+                            
+                            
+                            who serves as an exemplary voice for the child reader to interact with the adul preceptor in the dialogue.
+                            For the Bront&#x00EB; children, a characteristic resource was the nineteenth-century periodical, 
+                            especially <hi rend="italic">Blackwood's Edinburgh Magazine</hi>, which supplied them with a range of discourses to imitate and adapt. 
+                            As Carol Bock remarks, the "<hi rend="italic">Blackwood&#x02BC;s</hi> satiric model of literary production and reception" served particularly as an analogue for the sibling rivalries between the young Bront&#x00EB; writers. 
+                            For Charlotte and Branwell, the Blackwood's model met "the personal needs of these two competitive young writers" and validated their rivalry, "by giving [their exchange] expression and cultural authority 
+                            at the same time that [the analogue] displaced their competition from the problematic context of family to the safer arena of public life and professional experience" 
+                            (<ref type="bibliography" target="bibliography.php#BOCKOURPLAYS">Bock, &#x201C;&#x2018;Our Plays&#x2019;&#x201D;</ref>, 49).</p>
+                        
+                        <p>For example, in Charlotte&#x02BC;s <hi rend="italic">Young Men&#x02BC;s Magazine</hi>, devised as a "Second Series" when she took over editing of this family 
+                            magazine from Branwell, and in Branwell's reply to the new series, "The Liar Detected", 
+                            the sister and brother compete with one another and ridicule the other's writing. Their jousting is in keeping with their model, 
+                            <hi rend="italic">Blackwood&#x02BC;s</hi> having made its mark with its satirical ribaldry by and between thinly veiled personae in such features as 
+                            the "Noctes Ambrosianae". In this series of imaginary conversations, which ran between 1822 and 1835, 
+                            and which was authored primarily by John Wilson (1785-1854), barbs were traded between Wilson as "Christopher North," 
+                            William Maginn (1794-1842) as "Ensign O'Doherty," 
+                            Thomas De Quincey (1785-1859) as the "Opium Eater," and 
+                            <ref type="note" subtype="biographical" target="hogg_james_note.php">James Hogg (ca. 1770&#x2013;1835)</ref> as the "Ettrick Shepherd". 
+                            Just as these personae vent spleen on one another and on other contemporary writers, while imbibing in the "Ambrose Tavern", 
+                            Charlotte deploys her "Conversations" in "Bravey's Inn" to mock Branwell's persona, Young Soult, poet of Glass Town, whom she shows interrupting the exchange with his frothing verse, 
+                            culminating in a fainting fit. Branwell parries in "The Liar Detected" by vilifying "unprincipled wretches who, having no caracter<!-- stet: DCH --> of their own to support 
+                            and being too indolent to work, vilely employ their days in spitting their venom on every author of reputation within their reach". He implicates Charlotte's 
+                            persona, Lord Charles Wellesley, who, having perked himself for supposed literary greatness on the weak grounds of admiration of "ladies of fashion", has now "forsooth" "stuck up a 
+                            little magazine to instruct" these "young misses" 
+                            (<ref type="bibliography" target="bibliography.php#BRONTESTALES">Bront&#x00EB;s, <hi rend="italic">Tales of Glass Town, Angria, and Gondal</hi>, ed. Alexander</ref>, 45-47, 317-18).</p>
+                        
+                        <p><persName corresp="#JR">Ruskin</persName> will not adopt the satiric voice of the post-Waterloo magazine writer until 1834, when he imitates the tart and sometimes rebarbative prose of travel writers 
+                            like Leitch Ritchie (1800-1865) in essays for Account of a Tour on the Continent, a prelude to his debut in the literary annual, 
+                            Friendship's Offering, as the poet J.R. (see Hanson. . .). 
+                            In his Harry and Lucy Concluded, Ruskin imitates a prose discourse nearer his age (but still precociously advanced), 
+                             In the orderly middle-class domestic setting of Edgeworth's and Letitia Barbauld's lessons, the child subjects progress through didactic and improving episodes-including 
+                            a systematic scientific education and, more importantly, advice about how to learn any subject-which is a world away from the tumultuous and erotic high life 
+                            imitated by the Brontes for Glass Town and Angria. In his way, Ruskin does, as Alexander characterizes the child writer, 
+                            appropriate an adult voice in order to give an account both of his own and the adult worlds, but he does so by mapping onto the
+                            Just as Charlotte and Branwell Bront&#x00EB; traded editorship of their own <hi rend="italic">Young Men&#x02BC;s Magazine</hi>, colonizing the adult discourses found in 
+                            <hi rend="italic">Blackwood&#x02BC;s Edinburgh Magazine</hi>, 
+                            so Ruskin honed his powers of authorship by refashioning his surburban world of 
+                            <ref type="note" subtype="geographical" target="herne_hill_note.php"><placeName corresp="#HERNE">Herne Hill</placeName></ref> as dialogues 
+                            between fictional interlocutors borrowed from Edgeworth and Jeremiah Joyce.</p>
+                        <p>By comparison, in volume 1 of "Harry and Lucy," Ruskin's Harry and Lucy converse in harmonious exchange, presumably because 
+                            both characters present uniform extensions of the single self of this solitary child writer. It is only with the arrival at Herne Hill of Ruskin's 
+                            cousin, Mary Richardson, that the voices of Ruskin's fictional personae diverge and contest one another. 
+                            <!-- Cite Alexander's book, and/or Bock's / give pp. in Alexander's edition -->
+                        </p>
+                        <p>More in keeping with this spirit of adaptation rather than rote copying, chapter 1 and the first part of chapter 2 of &#x201C;Harry and Lucy,&#x201D; seem
+                            original and based on actual experience (with the exception of the unlikely exchange about silkworms). The dialogue is nonetheless based on the <hi rend="italic">kind</hi> of discourse found in <persName corresp="#ME">Edgeworth</persName>&#x02BC;s
+                            books, such as the passage in which <persName corresp="#JR">Ruskin</persName> has the Mamma exploit a task of winding balls of silk thread in order to quiz Lucy on the multiplication
+                            tables. <persName corresp="#JR">Ruskin</persName> seems to relate vivid, everyday experiences with his mother, who, one might speculate, tutored her son using the educational techniques
+                            advocated in <hi rend="italic">Practical Education</hi>. Thus, <persName corresp="#JR">Ruskin</persName>&#x02BC;s &#x201C;Harry and Lucy&#x201D; possibly was
+                            art imitating life imitating art. (Servants, however, make no appearance at all, not even <persName corresp="#JR">Ruskin</persName>&#x02BC;s nurse, <ref type="note" subtype="biographical" target="strachan_ann_note.php"><persName corresp="#ASB">Ann Strachan</persName></ref>, important as she was to him 
+                            (see, e.g., <ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi></ref>, 109).</p>
+                        <p>Personalities and situations in the text seem somewhat modeled on real impressions, as well. The fictional Mamma in &#x201C;Harry and Lucy,&#x201D; is methodical, insistent on
+                            &#x201C;do[ing] one thing at once,&#x201D; a character suggestive of <persName corresp="#MR">Margaret Ruskin</persName>, who tended to spy dangers in any behavior, even opposed behaviors, that failed to be regulated 
+                            by &#x201C;principles&#x201D; (e.g., <ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi></ref>, 98, 100). At the same time, <persName corresp="#MR">Margaret</persName> was probably 
+                            communicating the methodicalness recommended by educators. The parents in <persName corresp="#ME">Edgeworth</persName>&#x02BC;s <hi rend="italic">Early Lessons</hi>
+                            are likewise measured in their approach, the mother saying to a child that she will answer questions at her leisure, and only if the child minds and remembers the answer; and the father checking overly
+                            eager inquiry, since &#x201C;thinking, without tiring ourselves, is very agreeable; but thinking becomes disagreeable, if we tire ourselves.&#x201D; Frank is frequently exhorted to save until later
+                            what he cannot comprehend immediately (<ref type="bibliography" target="bibliography.php#EDGEWORTHWORKS">Edgeworth, <hi rend="italic">Works</hi></ref>, 12:<!--Entry needed here.-->). In <persName corresp="#JJ">Joyce</persName>&#x02BC;s 
+                            <hi rend="italic">Dialogues</hi>, procedures are systematic and graduated, starting with simpler concepts in mechanics and astronomy (vol. 1), and progressing
+                            through hydrostatics and pneumatics (vol. 2), and finally optics, magnetism, electricity, and galvinism (vol. 3). Thus, in her letters, when <persName corresp="#MR">Margaret</persName> attempts to
+                            order <persName corresp="#JR">John</persName>&#x02BC;s (and his <persName corresp="#JJR">father</persName>&#x02BC;s) play by insisting that he finish one project before taking up another
+                            (e.g., <ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi></ref>, 187),
+                            her methodicalness is in keeping with <persName corresp="#ME">Edgeworth</persName>&#x02BC;s advice to balance the spirit of inquiry with management of the gradations of difficulty.</p>
+                        <p>As suggested in <ref type="internal" target="#COMPPUB">Composition and Publication</ref>, <persName corresp="#ME">Maria Edgeworth</persName>&#x02BC;s lessons, while best known for encouraging children to learn 
+                            through their own observation and discovery, in fact depicted a complex dynamic of observation with memory. Frank learns to analyze a passage of verse by 
+                            <ref type="note" subtype="biographical" target="darwin_erasmus_note.php"><persName corresp="#ED">Erasmus Darwin</persName></ref> 
+                            by observing for himself in nature the phenomena that <persName corresp="#ED">Darwin</persName> describes using both poetic metaphor and exact naturalistic description. The culmination of the lesson, however, 
+                            is Frank&#x02BC;s recitation of the verse, learned &#x201C;by rote&#x201D; from the printed text 
+                            (<ref type="bibliography" target="bibliography.php#EDGEWORTHWORKS">Edgeworth, <hi rend="italic">Works</hi></ref>, 12:195&#x2013;203); 
+                            the verse is from <hi rend="italic">The Botanic Garden</hi>, part 2 (&#x2018;The Loves of the Plants&#x2019;), canto 1 
+                            (<ref type="bibliography" target="bibliography.php#DARWINWORKS">Darwin, <hi rend="italic">Poetical Works</hi></ref>, 2:2&#x2013;3).</p>
+                        <p>Yet if <persName corresp="#JR">Ruskin</persName> has his fictional Mamma adopt this methodical approach, he himself
+                            is not so easily restrained. In &#x201C;Harry and Lucy,&#x201D; in response to Mamma&#x02BC;s declaration, &#x201C;Well I think we have had thought enough for the present,&#x201D; Lucy returns &#x201C;just two or three
+                            questions&#x201D; more (chap. 1). Defying <persName corresp="#JJ">Joyce</persName>&#x02BC;s system, <persName corresp="#JR">Ruskin</persName> puts his Harry and Lucy in the middle of the curriculum&#x2014;Harry, the text declares, &#x201C;must begin with pneumatics,&#x201D;&#x2014;and even within that advanced
+                            topic, <persName corresp="#JR">Ruskin</persName>&#x02BC;s text works generally backwards through <persName corresp="#JJ">Joyce</persName>&#x02BC;s series of experiments, starting with most advanced. While <persName corresp="#JR">Ruskin</persName>&#x02BC;s Harry does appear to grasp the central
+                            purpose of <persName corresp="#JJ">Joyce</persName>&#x02BC;s experiments in pneumatics&#x2014;that they are meant to investigate atmospheric &#x201C;pressure and springiness,&#x201D; as Harry puts it (chap. <!--Entry needed here.-->)&#x2014;<persName corresp="#JJ">Joyce</persName>
+                            and the Edgeworths would have expected the seven-year-old <persName corresp="#JR">Ruskin</persName> to work his way gradually through experiments appropriate to his age, such as
+                            Frank&#x02BC;s exploration of the more fundamental concept of experimentation generally, using the homely trial of testing for effective ways to mend a broken
+                            saucer (see <hi rend="italic">Frank</hi>, part 2, in <ref type="bibliography" target="bibliography.php#FRANK">Maria Edgeworth, <hi rend="italic">Frank</hi></ref>,
+                            1:123&#x2013;31). Instead, <persName corresp="#JR">Ruskin</persName>&#x02BC;s determination to have his own way with the system is not only precocious, but enamored of
+                            spectacle. He seems to relish the fancier hardware in <persName corresp="#JJ">Joyce</persName>&#x02BC;s later chapters, and consequently sacrifices preparatory concepts.</p>
+                        <p>This precocious behavior was not necessarily so much resistant as energetic. In <persName corresp="#MR">Margaret</persName>&#x02BC;s letters about <persName corresp="#JR">Ruskin</persName>&#x02BC;s behavior leading up to <date when="1826">1826</date>, 
+                            while she does discuss discipline (especially during <date notBefore="1819-02-08" notAfter="1823-02-07"><persName corresp="#JR">Ruskin</persName>&#x02BC;s first three years</date>), she more frequently remarks his &#x201C;busy&#x201D; activity and &#x201C;chatting&#x201D; (as well as attentive listening) 
+                            (e.g., <ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi></ref>, 108, 116, 126, 128). The sheer bustle of his precocious writing and drawing was also probably directed 
+                            at managing his <persName corresp="#JJR">father</persName>&#x02BC;s absences on business. In &#x201C;Harry and Lucy,&#x201D; it is striking that the episodes copied
+                            from <persName corresp="#JJ">Joyce</persName> center on the father character, whereas <persName corresp="#ME">Edgeworth</persName>&#x02BC;s lessons for younger children, like <persName corresp="#ALB">Barbauld</persName>&#x02BC;s, engage father and mother 
+                            equally in the conversational method. The respective prominence of father or mother, in <persName corresp="#ME">Edgeworth</persName> as in <persName corresp="#JR">Ruskin</persName>, is to an extent a function of the early <date notBefore="1837-06-20" notAfter="1901-01-22">Victorian</date> household. 
+                            In <persName corresp="#ME">Edgeworth</persName>&#x02BC;s lessons for younger children, such as <hi rend="italic">Frank,</hi> the boy and his mother are necessarily often together; and just so,
+                            in <persName corresp="#JR">Ruskin</persName>&#x02BC;s earlier chapters, his Harry and Lucy 
+                            must appeal to Mama since &#x201C;papa has gone out to town&#x201D; (chap. 1). <persName corresp="#JJR">John James Ruskin</persName>, however, as the traveling partner of his firm, spent especially long weeks away from home, 
+                            and his <persName corresp="#JR">son</persName> became caught up in <persName corresp="#MR">Margaret</persName>&#x02BC;s anxieties for <persName corresp="#JJR">John James</persName>&#x02BC;s safety and health. <persName corresp="#JR">Ruskin</persName> may even have attributed his <persName corresp="#JJR">father</persName>&#x02BC;s absences to a guilty sense of own &#x201C;bad&#x201D; behavior 
+                            (e.g., <ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi></ref>, 109, 116). It is perhaps not surprising, then, 
+                            that <persName corresp="#JR">Ruskin</persName> would have used precocious writing in some sense to conjure his <persName corresp="JJR#">father</persName>&#x02BC;s presence.</p>
+                        <p>That this desire drove <persName corresp="#JR">Ruskin</persName> especially in his copying of text beyond his years was registered by
+                            <persName corresp="#MR">Margaret</persName> when <persName corresp="#JR">John</persName>, soon after completing &#x201C;Harry and Lucy,&#x201D; Vol. 1, and MS I, produced what she called his &#x201C;first written letter&#x201D; (either meaning 
+                            the first letter he wrote himself, as opposed to dictating, and to be sent to his <persName corresp="#JJR">Papa</persName> directly, or meaning the first letter he wrote in longhand&#x2014;or both). <persName corresp="#MR">Margaret</persName> observes: 
+                            &#x201C;I believe the showing you his writing occupied his thoughts fully more than how he expressed his feelings so you must excuse that,&#x201D; 
+                            as &#x201C;he is much delighted at being able to use pen &#x0026; ink&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi>, 156</ref>). Just as <persName corresp="ME#">Edgeworth</persName> urges her child characters to use their 
+                            &#x201C;own little eyes&#x201D; in dynamic relation with (not necessarily in opposition to) learning &#x201C;by rote,&#x201D; <persName corresp="#JR">Ruskin</persName> copies dialogues with <persName corresp="#JJR">Papa</persName> at the end of &#x201C;Harry and Lucy&#x201D;
+                            because the performance was, for him, related, not opposed, to the absent father at the start who &#x201C;fear[s] I shall not have time&#x201D; to hear Lucy&#x02BC;s lesson (chap. 2).</p>
+                        <p>If <persName corresp="#JR">Ruskin</persName>&#x02BC;s text exhibits impatience with <persName corresp="#JJ">Joyce</persName>&#x02BC;s system, his verbal and pictorial illustrations reveal a steady advance in
+                            the writer&#x02BC;s ability to represent complex relationships. In the &#x201C;plates&#x201D; at the beginning of MS I, which are
+                            among the earliest surviving drawings by <persName corresp="#JR">Ruskin</persName>, objects are lined up on a single plain, but later plates attempt more complex spacial relationships.
+                            Similarly, in verbal terms, the first portion of the narrative lines up events in simple sequences, whereas, toward the end, the representation of
+                            journeying inspires a more serpentine and surprising description like this one: &#x201C;they climbed a high hill and went on sometimes by the
+                            sides of rivulets at other times half rubbing against hedges but oftenest so attracted by the bubbling of a pure clear stream that they were like to jump
+                            <hi rend="italic">into</hi> it they went through dark avenues and between hedges forming a sort of foot-path sometimes a full view of the sea
+                            sometimes none at all till unexpectedly they arrived at home&#x201D; (chap. 8). Apropos of this increasing sophistication, the experiments from <persName corresp="#JJ">Joyce</persName>, which are clustered
+                            in chapters 8 and 9, may have interested <persName corresp="#JR">Ruskin</persName> because of the language required to explain multiple and complex causal relationships.</p>
+                        <p>At the end of his adaptation, <persName corresp="#JR">Ruskin</persName>&#x02BC;s imitation culminates in a
+                            tour de force combining science and poetry&#x2014;<persName corresp="#JJ">Joyce</persName>&#x02BC;s <hi rend="italic">Dialogues</hi> and 
+                            <ref type="note" subtype="bibliographical" target="byron_note.php"><persName corresp="#GGB">Byron</persName></ref>&#x02BC;s <hi rend="italic">Manfred</hi>&#x2014;in
+                            Harry&#x02BC;s &#x201C;witch of the alps&#x201D; fantasy (chap. 10), which <persName corresp="#JR">Ruskin</persName> made famous by reproducing in facsimile in <hi rend="italic">Praeterita</hi>. Poetry is not alien to <persName corresp="#ME">Edgeworth</persName>&#x02BC;s
+                            lessons, and <persName corresp="#JJ">Joyce</persName> ornaments his dialogues with verse quotations, but their improving works are more apt to quote <persName corresp="#ED">Erasmus Darwin</persName> than <persName corresp="#GGB">Byron</persName>.
+                            <persName corresp="#JR">Ruskin</persName> does adapt <persName corresp="#ED">Darwin</persName> for part of the <ref type="apparatus" target="msi_poetry_anthology_apparatus.php">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</ref> 
+                            (see <ref type="apparatus" target="the_steam_engine_apparatus.php#DISCUSSION">&#x201C;When furious up from mines the water pours&#x201D; [&#x201C;The Steam Engine&#x201D;]: Discussion</ref>). 
+                            But in Harry&#x02BC;s vision closing &#x201C;Harry and Lucy,&#x201D; <persName corresp="#JR">Ruskin</persName> goes beyond the verse ornamentation of scientific prose
+                            to reveal a keen consciousness of the pleasures of crossing genres, for Harry is &#x201C;affected&#x201D; by witnessing &#x201C;in the clouds something like&#x201D; an image from a poem.</p>
+                        <p>What &#x201C;affects&#x201D; Harry is possibly psychological as well as literary. For <persName corresp="#JR">Ruskin</persName>, Harry and Lucy&#x02BC;s
+                            adventures at a <ref type="note" subtype="geographical" target="seaside_resorts_note.php">seaside resort</ref> like <placeName corresp="#HASTINGS">Hastings</placeName> would have represented a joyful release from a period of grief and loneliness
+                            earlier in the year. Business had kept <persName corresp="#JJR">Ruskin&#x02BC;s father</persName> from home for an unusually extended period, and a fatal illness had deprived the boy
+                            of his cousin <ref type="note" subtype="biographical" target="richardson_james_note.php"><persName corresp="#JRPSON">James Richardson</persName></ref>&#x02BC;s companionship forever (see <ref type="apparatus" target="on_scotland_apparatus.php">&#x201C;On Scotland&#x201D;</ref>).
+                            This deprivation may have influenced <persName corresp="#JR">Ruskin</persName>&#x02BC;s decision to imitate the Edgeworths&#x02BC; partnership of Harry and Lucy. Not only would the fictional pairing have
+                            compensated him for losses; their activities together could have played out and controlled in fiction what <persName corresp="#JR">Ruskin</persName> could not control in
+                            life&#x2014;as when Lucy is made to bide the time, first, of a busy father, and, immediately afterward, of a preoccupied brother (chap. 2).</p>
+                        <p>Some episodes in &#x201C;Harry and Lucy&#x201D; seem particularly poignant and psychologically suggestive, such as the children&#x02BC;s
+                            kidnapping their mother and imprisoning her in Harry&#x02BC;s &#x201C;cave,&#x201D; where she must attend to one of
+                            Harry&#x02BC;s &#x201C;schemes,&#x201D; a procession of birds (chaps. 4&#x2013;5). Fantasy may also enter into the concluding
+                            &#x201C;witch of the alps&#x201D; episode with its spectral female form. The passage, with its exchange of negative and positive electrical
+                            discharges, might be read as an attempt to control and neutralize some sort of trouble.</p>
+                        <p><!--Fact checking needed:  Does Ruskin's plan, divvying up of topics in the volumes, reflect a plan in Edgeworth?--></p>
+                        
+                        
+                        </div>
+                    </div>
+                    <div type="subsection" xml:id="MATERIALITY">
+                        <head type="subsection">Materiality</head>
+                        <p></p>
+                        <p>Similarly, in the material appearance of their manuscripts, the child writers appropriated and adapted the typography of the adult publications to their purposes. 
+                            In the case of the Bront&#x00EB;s&#x02BC; <hi rend="italic">Young Men&#x02BC;s Magazine</hi>, "their title pages actually looked like those of 
+                            <hi rend="italic">Blackwood&#x02BC;s</hi>, set out with elaborate colophons and publication details. 
+                            They wrote editorial notes, contents pages, letters to the editor, advertisements, serialised stories, poems, reviews of paintings and books-all 
+                            in minuscule script to imitate the print of <hi rend="italic">Blackwood&#x02BC;s Edinburgh Magazine</hi> 
+                            and signed by different fictitious Glass Town characters" 
+                            (<ref type="bibliography" target="bibliography.php#ALEXANDERREADERSANDWRITERS">Alexander, &#x201C;Readers and Writers&#x201D;</ref>, 60). 
+                            Ruskin, too, adhered closely to his adult model by basing his title page directly on 
+                            <ref type="bibliography" target="bibliography.php#HARRYANDLUCYCONCLUDED">Maria Edgeworth, <hi rend="italic">Harry and Lucy Concluded</hi></ref>; 
+                            and while he did not write in a minuscule hand, he imitated typographic features in his print lettering. For example, he troubled to add serifs to many of his letters; 
+                            and for many of his capitals, he drew a pillar-like, doubled vertical stroke that he called "double lettering." He also justified the margins of his prose text. 
+                            In some places, he simply drew a vertical line to rule the margin nearest the gutter. In other places, he adopted the hyphen as a punctuation device to terminate 
+                            a line at the justified right margin. In only approximately a half-dozen of these instances, however, did he employ the hyphen conventionally, 
+                            as a sign for word division at the terminus of a line; rather, in the child writer's spirit of adaptation, he used the mark where no word was divided, 
+                            but rather as a filler to take up blank space where his printing fell short of the ruled vertical margin. 
+                            Despite these exacting contrivances, Ruskin does not imitate his print culture slavishly. He combines elements from varying models, 
+                            supplying "plates" for Edgeworth's book, which was not originally illustrated, and he embellishes his version by adding a poetry anthology. 
+                            Both on the title page and in the colophon, he adapts his imitations to his own world, in which the work is 
+                            &#x201C;composed by a little boy and also drawn,&#x201D; and which is published at 
+                            &#x201C;<placeName corresp="#HERNE">hernhill</placeName>&#x201D; in an apparently fictitious &#x201C;<placeName corresp="#FOUNTAINST">fountain street</placeName>&#x201D; 
+                            (see <ref type="apparatus" target="msi_apparatus.php#TITLE">MS I: Title</ref> and 
+                            <ref type="apparatus" target="msi_apparatus.php#DISCUSSION">MS I: Discussion</ref>).
+                        </p>
+                    </div>
+                    
+                    
+                    <div type="subsection" xml:id="COMPOSITE">
+                        <head type="subsection">Composite Works</head>
+                        <p>This text is the start of a projected adaptation of <ref type="bibliography" target="bibliography.php#HARRYANDLUCYCONCLUDED">Edgeworth, <hi rend="italic">Harry and Lucy Concluded</hi></ref> 
+                            (see <ref type="internal" target="#DISCUSSION">Discussion</ref>), which <persName corresp="#JR">Ruskin</persName> meant,
+                            according to his title page, to extend to four volumes (see <ref type="internal" target="#TITLE">Title</ref>). Ultimately, the project reached only
+                            three volumes (&#x201C;Harry and Lucy,&#x201D; Vol. 1; <ref type="apparatus" target="harry_and_lucy_vol2_apparatus.php">&#x201C;Harry and Lucy,&#x201D; Vol. 2</ref>;
+                            and <ref type="apparatus" target="harry_and_lucy_vol3_apparatus.php">&#x201C;Harry and Lucy,&#x201D; Vol. 3</ref>), with the third volume itself left
+                            unfinished. <persName corresp="#JR">Ruskin</persName> was generally correct, therefore, when he wrote in <hi rend="italic">Praeterita</hi> that the series is unfinished, although he
+                            inaccurately accuses himself of having &#x201C;accomplished but one and a quarter&#x201D; volumes (<ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 35:52). Possibly this mistake arose because <persName corresp="#JR">Ruskin</persName> did not have at hand all the
+                            <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Books</ref> containing &#x201C;Harry and Lucy,&#x201D; an oversight evidenced by his having notated in <date when="1870">1870</date> only three of the notebooks as
+                            &#x201C;No. 1,&#x201D; &#x201C;No. 2,&#x201D; and &#x201C;No. 3.&#x201D; Of these, only Red Book No. 3 (MS I) and Red Book No. 2 (MS III) contain &#x201C;Harry and Lucy,&#x201D;&#x2014;volumes 1 and 2, respectively, of the work&#x2014;and
+                            since volume 2 takes up only 21 of the 82 numbered pages in MS III, it seems clear that <persName corresp="#JR">Ruskin</persName> mistakenly figured one volume plus a quarter based on an incomplete reckoning of the Red Books.</p>
+                        <p>Differing kinds of composition may be suggested by physical evidence. At points where <persName corresp="#JR">Ruskin</persName> copies nearly verbatim from a source, 
+                            <ref type="bibliography" target="bibliography.php#JOYCESCIENTIFICDIALOGUES">Joyce, <hi rend="italic">Scientific Dialogues</hi></ref> (see <ref type="internal" target="#DISCUSSION"> Discussion</ref>), 
+                            the text abruptly shows the kind of errors associated with transcribing (e.g., words stricken through, because the writer has inadvertently omitted text and must reinsert it). Such text starts with the
+                            discussion about silkworms<!--Fact need checking.-->.</p>
+                        <p>Despite this physical evidence, copying and invention were as dynamically related as they were opposed in <persName corresp="#JR">Ruskin</persName>&#x02BC;s development as a writer. First, copying was how <persName corresp="#JR">Ruskin</persName> learned to write. 
+                            In <date when="1823">1823</date>, Margaret Ruskin remarked that &#x201C;he is beginning to copy from his books and will soon learn himself to write I think,&#x201D; and at this point <persName corresp="#JR">Ruskin</persName>&#x02BC;s most legible writing consisted of his signature, 
+                            which he presumably learned by imitation. Second, copying was integrated within the dynamic of writing by the family as a whole. As his so-called first letter, <persName corresp="#JR">Ruskin</persName> dictated to his <persName corresp="#MR">mother</persName>, who wrote &#x201C;word for word what he pretended to read from his paper&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#RFL"><hi rend="italic">Ruskin Family Letters</hi></ref>, 128). Third, imitation was a significant feature of educational methods of the time, 
+                            but such practices did not necessarily train only rote memory: see <ref type="internal" target="#DISCUSSION">Discussion</ref>.</p>
+                        <p><persName corresp="#JR">Ruskin</persName>&#x02BC;s <title type="lesson" corresp="#JRHARRYANDLUCY">&#x201C;Harry and Lucy Concluded&#x201D;</title> is a composite work in two senses: 
+                            from the start, he parsed the project into volumes, although the three existing volumes seem discontinuous from one another; 
+                            and he treated the idea of a <hi rend="italic">volume</hi> as a composite in itself, capable of expanding beyond the Edgeworthian lesson in the form of dialogue to include other genres-poetry, 
+                            emblem, travelogue-as well as paratextual features such as illustration.</p>
+                        
+                        <p>In compounding of texts to form a volume, Ruskin was not prompted simply by an impulse of accretion, 
+                            but making an observation about the tendency of Edgeworth's instructional works for children to nod approvingly at other works of its kind. In Edgeworth's Harry and Lucy Concluded, 
+                            the characters consult books that their readers can acquire and read for themselves, as Ruskin certainly did-Scientific Dialogues by Jeremiah Joyce, the Poems of Darwin, Conversations on Chemistry by ????. 
+                            As a particularly witty example, Ruskin may have formed the poetry anthology appended to volume 1 of his Harry and Lucy Concluded 
+                            by fulfilling what exists in Edgeworth's text as a frustrated digression-a digression into Erasmus Darwin both as a text and as a location, 
+                            as Harry's desire to visit Birmingham is denied, and Darwin's poem on the steam engine is broken off with a quotation. In Ruskin's volume, 
+                            he develops his own version of the poem, and places it at the head an anthology.</p>
+                        
+                        <p>in According to the <ref type="witness" target="harry_and_lucy_vol1_msi.php#TITLEPAGE">title page of volume 1</ref>, 
+                            the illustrations were not an afterthought, at least at the fair-copying stage: "printed and composed by a little boy &#x007C; and also drawn", 
+                            volume 1 promises "copper plates", as does the <ref type="witness" target="harry_and_lucy_vol2_msiii.php#TITLEPAGE">title page of volume 2</ref>. 
+                            The indecisive placement of a colophon in volume 1 suggests that a further accretion may have been conceived more belatedly-a collection of verse, 
+                            <ref type="apparatus" target="msi_poetry_anthology_apparatus.php"><title type="anthology" corresp="#MSIPOETRYANTHOLOGY">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</title></ref>-but 
+                            the calculated placement of the anthology, <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>, 
+                            in volume 2, allowing sufficient space for the ocmpletion of "Harry and Lucy . . . Vol 2", indicates that this feature had become standard.</p>
+                        
+                        <p>Like a later work, Account of a Tour on the Continent, Ruskin's Harry and Lucy both takes its cue of comnposite genres from its model and elaborates the possibilites. 
+                            In the Account, Ruskin tops Samuel Rogers's illustrated tour poem, Italy, by pairing the topographical poems with prose travelogues, and he enhances the prose pieces with their own graphic vignettes, 
+                            doubling the expected complement of illustrations to be found in Rogers. Maria Edgeworth's Harry and Lucy Concluded was published without any illustrations at all; 
+                            and while the book does quote snatches of verse, its four volumes lace a complete poem, much less an anthology.
+                            
+                            <persName corresp="#JR">Ruskin</persName> intended a volume to comprise not only a division of a lengthier prose work, 
+                            but also illustration. Unlike Maria Edgeworth's original four-volume work, Ruskin's is illustrated, the title page declaring 
+                            Volume 1 comes to include, moreover, 
+                            and while Ruskin may or may not originally have stretched his idea a volume of lessons in dialogue form to comprise a verse anthology, 
+                            the indecisive treatment of a colophon at the end of this Red Book suggests that the generic and material boundaries had sprung wide open 
+                            (see <ref type="apparatus" target="msi_apparatus.php#DISCUSSION"><title type="manuscript" corresp="#MSI">MS I</title>: Discussion</ref>.</p>
+                        <p>Regardless of whether <persName corresp="#JR">Ruskin</persName> intended from the start of composition that Volume 1 of &#x201C;Harry and Lucy Concluded&#x201D; 
+                            would include a poetry anthology, evidence is strong that he started Volume 2 on this plan, by estimating the number of leaves he would require for the second installment of "Harry and Lucy Concluded" 
+                            to close with , 
+                            which he composed roughly simultaneously with the prose work. 
+                            When he failed to compose sufficient "Harry and Lucy" material to fill the intervening leaves, 
+                            he substituted another anthology, "Poetry" [MS III Second Poetry Anthology] 
+                            (see <ref type="apparatus" target="msiii_apparatus.php#DISCUSSION"><title type="manuscript" corresp="#MSIII">MS III</title>: Discussion</ref>). 
+                            The title page for Volume 2 of "Harry and Lucy Concluded" is uniform with that 
+                            for Volume 1, likewise promising "copper plates"; and while this title page, like the first, mentions nothing about poetry, its placement in the Red Book-filling 
+                            the first available blank page, the verso of the front flyleaf-suggests that Ruskin thought of this physical notebook, MS III, as coterminous with "Vol 2."</p>
+                        <p>As Ruskin went on to fill MS III with "The Monastery," his incomplete versification of Walter Scott's novel, as well as with the MS III Third Poetry Anthology, 
+                            the manuscript came increasingly to attenuate the connections-and therefore foreground the persistent ambiguities-between 
+                            <hi rend="italic">work</hi> and <hi rend="italic">manuscript</hi> in the early Ruskin, 
+                            a creative tension between text and/or picture and its physical embodiment; between <hi rend="italic">composite work</hi> and <hi rend="italic">anthology</hi>, 
+                            a creative tension between an integrated multigenre work and a collection of multiple, more or less thematically related works-each a kind of corpus. As throughout ERM, 
+                            the editor can only make a case for the integrity of boundaries that define separate works while drawing attention to what Neil Fraistat would call the contexture 
+                            that tempted Ruskin to extend those boundaries. 
+                            "Harry and Lucy" is a prose work modeled on the lesson, a prose dialogue form developed by the Romantic educationists to prompt the child learner to ask questions 
+                            and actively explore the world rather than to passively accept information and morals. This prose form is declared by Ruskin's title pages for the three volumes 
+                            of "Early Lessons"; and by this declaration, he links the three separate "volumes" of prose, composed over three years, 
+                            to form a single work, even though the three installments share stronger thematic contextures with their respectively attached poetry anthologies 
+                            than with one another.</p>
+                        <p>A composite repesents creative and cognitive development. 
+                            At this stage of Ruskin's development as a writer, he forms composites by projecting forward linearly-"Vol 1" implying a "Vol 2," 
+                            just as in his earliest drawings he tends to line figures up along a horizontal plane, parallel with the axis of the page. As he casts forward into contexture, 
+                            however, thematic associations leap hypertextually, just as by the end of MS I his drawings begin to display serpentine lines bending from behind and around other objects. 
+                            In "Harry and Lucy," Ruskin forms a composite is through accretion, adding one thing to another, until this method comes to seem unsatisfactory, 
+                            and then he stops, leaving the work unfinished, ending mid-sentence after only ? pages of the third volume. Later, in the more sophisticated composite work, 
+                            Account, he will develop the work from the inside out, extending a verse travelogue not only by adding one poem to another but also by elaborating each poem 
+                            with related drawings and prose descriptions. When that experiment is accomplished sufficiently, Ruskin will stop that work, as well, rather than complete it.
+                            Account
+</p>            </div>
+        </body>
+    </text>
+</TEI>

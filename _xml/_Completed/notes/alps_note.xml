@@ -5,7 +5,7 @@
     <teiHeader type="note">
         <fileDesc xml:id="alps_note">
             <titleStmt>
-                <title type="main">Ruskin and the Alps</title>
+                <title type="main">Ruskin&#x02BC;s Knowledge of the Alps</title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -56,15 +56,15 @@
     <text>
         <body>
             <div type="note" subtype="contextual">
-                <head type="title"><persName corresp="#JR">Ruskin&#x02BC;s</persName> and the <geogName corresp="#ALPS">Alps</geogName></head>
+                <head type="title"><persName corresp="#JR">Ruskin&#x02BC;s</persName> Knowledge of the <geogName corresp="#ALPS">Alps</geogName></head>
                 <p><hi rend="italic">Note under development.</hi></p>
-                <p>So far as is known, the most direct outcome of <persName corresp="#JR">Ruskin&#x02BC;s</persName> first encounter with the <geogName corresp="#ALPS">Alps</geogName>, gained during the <ref type="note" subtype="contextual" target="tour_of_1833.php">Tour of <date notBefore="1833-05-14" notAfter="1833-08-19">1833</date></ref>,
+                <p>So far as is known, the most direct outcome of <persName corresp="#JR">Ruskin&#x02BC;s</persName> first encounter with the <geogName corresp="#ALPS">Alps</geogName>, gained during the <ref type="note" subtype="contextual" target="tour_of_1833_note.php">Tour of <date notBefore="1833-05-14" notAfter="1833-08-19">1833</date></ref>,
                     was drawing rather than writing: see <ref type="note" subtype="contextual" target="drawings_1833_note.php">Drawings from the <date notBefore="1833-05-14" notAfter="1833-08-19">Tour of 1833</date></ref>. His writing about the mountains is often generalized and literary in origin. The trope of first sighting frames the sublime spectacle of the distant <geogName corresp="#ALPS">Alps</geogName>, 
                     which are understood as a &#x201C;barrier&#x201D; both between nations on earth and between planes of earthly and spiritual existence. One influential source of these tropes for <persName corresp="#JR">Ruskin</persName>
                     was the poem <title type="poem" corresp="#ROGERSTHEALPS">&#x201C;<geogName corresp="#ALPS">The Alps</geogName>&#x201D;</title> in <title type="poem" corresp="#ROGERSITALY"><hi rend="italic"><placeName corresp="#ITALY">Italy</placeName></hi></title> by 
                     <ref type="note" subtype="biographical" target="rogers_samuel_note.php"><persName corresp="#SR">Samuel Rogers</persName> (<date notBefore="1763" notAfter="1855">1763&#x2013;1855</date>)</ref>, 
                     on which <persName corresp="#JR">Ruskin</persName> modeled <ref type="witness" target="passing_the_alps_poem_msia_g2.php"><title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the <geogName corresp="#ALPS">Alps</geogName>&#x201D;</title></ref> in 
-                    <ref type="apparatus" subtype="work" target="account_of_a_tour_on_the_continent.php"><title type="composite" corresp="#JRACCOUNTTOUR">Account of a Tour on the Continent</title></ref> (see especially 
+                    <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php"><title type="composite" corresp="#JRACCOUNTTOUR">Account of a Tour on the Continent</title></ref> (see especially 
                     <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php#ROGERSINFLUENCEONEXTENSION">The Influence of <persName corresp="#SR">Rogers</persName>&#x02BC;s Poetry on <persName corresp="#JR">Ruskin</persName>&#x02BC;s Planned Extension of the Composite&#x2010;Genre Travelogue to <placeName corresp="#ITALY">Italy</placeName> and <placeName corresp="#SWITZERLAND">Switzerland</placeName></ref>).
                     As explained in connection with another important first&#x2010;sighting poem for the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>,
                     <ref type="witness" target="there_is_a_charmed_peace_that_aye_poem_msviii.php"><title type="poem" corresp="#JRALPSFROMSCHAFFHAUSEN">&#x201C;There is a charmed peace, that aye&#x201D; [&#x201C;The <geogName corresp="#ALPS">Alps</geogName> from <placeName corresp="#SCHAFFHAUSEN">Schaffhausen</placeName>&#x201D;]</title></ref> 
@@ -94,9 +94,11 @@
                                 <persName type="scriptural" corresp="#CREATOR">Creator</persName>&#x02BC;s power&#x2014;that has no spirit stirring in his breast to harmonize and mingle with them, 
                                 had better stay in cities, and study man! But I am happy sometimes to escape from <hi rend="italic">man</hi>, to study <hi rend="italic">nature</hi>&#x2014;and amidst her awful 
                                 or her lovely scenes, to converse with <persName type="scriptural" corresp="#CREATOR">God</persName>. I send you a sketch of the scenery to which I have now alluded. It was committed immediately to paper, while the outline was before me. 
-                                It has the merit of correctness, therefore, though I am well aware it is destitute of every other.</p></div>
+                                It has the merit of correctness, therefore, though I am well aware it is destitute of every other.</p></div></body></floatingText>
+                <floatingText>
+                    <body>
                         <div type="poem">
-                            <lg>
+                            <lg type="stanza">
                                 <l>&#x2014;&#x02BC;Twas noon,</l>
                                 <l>And from the summit of the hill I gazed</l>
                                 <l>Over the fertile plains of southern <placeName corresp="#FRANCE">France</placeName>,</l>
@@ -109,7 +111,7 @@
                                 <l>A mighty chain, that stretched their awful forms</l>
                                 <l>To catch the glories of the mid&#x2010;day sun,</l>
                                 <l>And cast their shadows o&#x02BC;er the &#x201C;realms of noon&#x201D;.</l></lg>
-                            <lg>
+                            <lg type="stanza">
                                 <l>Oh! &#x02BC;twas a goodly sight;</l>
                                 <l>Like some delicious summer evening&#x02BC;s dream,</l>
                                 <l>When worlds etherial float before the mind,</l>
@@ -130,8 +132,13 @@
                                 <l>In gentle murmurs on celestial shores.</l>
                             </lg>
                         </div>
-                        <div type="essay">
-                        <p>(<ref type="bibliography" target="bibliography.php#RAFFLESLETTERS"><persName corresp="#TRAFFLES">Raffles</persName>, <title type="book" corresp="#RAFFLESLETTERS"><hi rend="italic">Letters</hi></title></ref>, 153&#x2013;56).</p>
+                    </body>
+                </floatingText>
+                <floatingText>
+                        <body>
+                            <div type="essay">
+                            
+                        <p>(<ref type="bibliography" target="bibliography.php#RAFFLESLETTERS"><persName corresp="#TRAFFLES">Raffles</persName>, <title type="book" corresp="#RAFFLESLETTERS"><hi rend="italic">Letters</hi></title></ref>, 153&#x2013;56)</p>
                         </div>
                     </body>
                 </floatingText>
@@ -151,7 +158,7 @@
                     <ref type="bibliography" target="bibliography.php#GOLDSMITHGEOGRAPHY"><persName corresp="#JGOLDSMITH">Goldsmith</persName>&#x02BC;s <title type="book" corresp="#GOLDSMITHGEOGRAPHY"><hi rend="italic">Grammar of General Geography</hi></title></ref>, 
                     which lists only the heights of the greatest mountains around the world), <persName corresp="#JR">Ruskin</persName> learned that the &#x201C;ancient appellations of the <geogName corresp="#ALPS">Alps</geogName> have been preserved, to the present day, 
                     as they were in the time of the Romans&#x201D;, and he learned to measure the scope of the chain rhetorically, using such sweeping word lists as this:</p>
-                <floatingText>
+                <!--<floatingText>
                     <body>
                         <div type="essay">
 
@@ -163,7 +170,7 @@
                             <p>(<ref type="bibliography" target="bibliography.php#EBELTRAVELLERSGUIDE"><persName corresp="#JGE">Ebel</persName>, <title type="book" corresp="#EBELTRAVELLERSGUIDE"><hi rend="italic">Traveller&#x02BC;s Guide through <placeName corresp="#SWITZERLAND">Switzerland</placeName></hi></title></ref>, 61)</p>
                         </div>
                     </body>
-                </floatingText>
+                </floatingText>-->
                 <p>Thus, in the two ranges named in the <title type="composite" corresp="#JRACCOUNTTOUR">Account</title>, the <geogName corresp="#RHETIANALPS">Rhetian Alps</geogName> and the <geogName corresp="#DINARICALPS">Dinaric Alps</geogName>, <persName corresp="#JR">Ruskin</persName> appears to have selected the names to express extreme distances. 
                     At the end of the prose section of <title type="composite" corresp="#JRCOLOGNECOMP">&#x201C;<placeName corresp="#COLOGNE">Cologne</placeName>&#x201D;</title>, <ref type="witness" target="cologne_prose_msix.php"><title type="essay" corresp="#JRCOLOGNEPROSE">&#x0201C;And this is the birthplace of <persName corresp="#PPR">Rubens</persName>&#x0201D;</title></ref>, 
                     the narrator sets out on the <geogName corresp="#RHINE">Rhine</geogName> journey, promising &#x201C;to trace the mighty <placeName corresp="#RHINE">Rhine</placeName> to his source among the 
