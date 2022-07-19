@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#GMS">Gabriella M. Smith</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Example entries have been provided from MS I in the <handShift/>s below. Actual entries may vary.-->
+            <!--Simple Verse. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/><title type="poem" corresp="#JRABATTLEIRREGULARMEASURE">A BATTLE / IRREGULAR MEASURE</title></head>
+                <lg type="stanza" rhyme="aa">
+                    <l>THE Summit of <geogName corresp="#SKIDDAW">Skiddaw</geogName> was gilt by the sun,</l>
+                    <l>When first he appeared, when the morning begun:</l>
+                    <l>And the rays of the morning fell lone on the dale,</l>
+                    <l>When the troops of the English gan enter the vale.</l>
+                    <l>The Scotch came swiftly down from the wood upon the hill</l>
+                    <l>And spread themselves along by the side of derwent rill</l>
+                    <l>And the English they came upon the road from <placeName corresp="#PENRITH">Penrith</placeName></l>
+                    <l>And their horses and their chargers, they galloped on so swift</l>
+                    <l>And their flags flew around and their swords waved on high</l>
+                    <l>But all these dismayed not an Highlandmans eye</l>
+                    <l>On the right of the lake stood the clan of bold Ivor</l>
+                    <l>Their chieftain his name was brave <persName type="fictional" corresp="#FERGUSMACIVOR">Fergus Mac&#x2010;Ivor</persName></l>
+                    <l>And as he stood beside the lake he drew forth his claymore</l>
+                    <l>And he said unto his clan think of whats been done before</l>
+                    <l>And think of the acts of the last Vich Ian Vohr.</l>
+                    <l>At this Mac&#x2010;Ivors clan</l>
+                    <l>To the battle quickly ran</l>
+                    <l>Brave <persName type="fictional" corresp="#FERGUSMACIVOR">Fergus</persName> was the first</l>
+                    <l>To strike unto the dust</l>
+                    <l>An Englishman though bold</l>
+                    <l>His life had no strong hold</l>
+                    <l>For <persName type="fictional" corresp="#FERGUSMACIVOR">Fergus</persName> with one blow</l>
+                    <l>Sent him to the shades below</l>
+                    <l>Now the army of the White Cockade</l>
+                    <l>Rushed on to give Mac&#x2010;Ivor aid</l>
+                    <l>And charged at once the English band</l>
+                    <l>Some charged in water, some on land</l>
+                    <l>The Chevalier was all the cry</l>
+                    <l>For him for him we live and die</l>
+                    <l>The English waved on high their swords</l>
+                    <l>And cut and hacked at <geogName corresp="#SCOTTISHHIGHLANDS">Highland</geogName> lords</l>
+                    <l>And pushed at them with pike and spear</l>
+                    <l>But not one particle of fear</l>
+                    <l>Attacked the Highlanders so brave</l>
+                    <l>For they cared not one life to save</l>
+                    <l>But when they saw the spears advance</l>
+                    <l>With polished head and lightning glance</l>
+                    <l>Each man drew his claymore</l>
+                    <l>And of English&#x2010;men a score</l>
+                    <l>That instant headless made</l>
+                    <l>And all were quickly laid</l>
+                    <l>To sleep the sleep of death</l>
+                    <l>After they breathed their last breath</l>
+                    <l>But <persName type="fictional" corresp="#FERGUSMACIVOR">Fergus</persName> on too boldly ran</l>
+                    <l>And separated from his clan</l>
+                    <l>Deep in the ardour of the war</l>
+                    <l>Fighting full brave his clan him saw</l>
+                    <l>Surrounded by an English band</l>
+                    <l>With his good broad claymore in hand</l>
+                    <l>And each blow that his good hand gave</l>
+                    <l>One man not all his friends could save</l>
+                    <l>A hundred blows he now had given</l>
+                    <l>A hundred times he now had striven</l>
+                    <l>To gain his clan but foe&#x02BC;s <!--sic--> opposed</l>
+                    <l>At length oppressed with many throes</l>
+                    <l>Fatigued not conquered <persName type="fictional" corresp="#FERGUSMACIVOR">Fergus</persName> made</l>
+                    <l>A signal to his clan for aid</l>
+                    <l>But ah in vain engaged in war</l>
+                    <l>Though they their chieftains signal saw</l>
+                    <l>They could not come to him just then</l>
+                    <l>For they were deep in war which when</l>
+                    <l><persName type="fictional" corresp="#FERGUSMACIVOR">Fergus</persName> saw he was forced to yield</l>
+                    <l>And was carried off from fighting field</l>
+                    <l>Now now Mac&#x2010;Ivors clan</l>
+                    <l>From the war a small way ran</l>
+                    <l>They halted at the wood</l>
+                    <l>And as they firmly stood</l>
+                    <l>They saw the English rushing</l>
+                    <l>Trampling on and crushing</l>
+                    <l>The Chevaliers good host</l>
+                    <l>They saw the day was lost</l>
+                    <l>And they were going to call</l>
+                    <l>Their brave companions all</l>
+                    <l>When they saw the noble spanish blade</l>
+                    <l>Of the Chevalier raised and he said</l>
+                    <l>Retreat my friends lost is this day</l>
+                    <l>If any can regain it say</l>
+                    <l>But I think that this day is lost</l>
+                    <l>The chief of Ivor in yon host</l>
+                    <l>Retreat retreat again I say</l>
+                    <l>And let us be upon our way</l>
+                    <l>At this the bagpipes sound then drew</l>
+                    <l>The chiefs around for well they knew</l>
+                    <l>That at the bagpipes sound they were</l>
+                    <l>Then to retreat or rush to war</l>
+                    <l>The chiefs got clans in martial rank</l>
+                    <l>And ranging all on <geogName corresp="#DERWENTWATER">Derwents</geogName> bank</l>
+                    <l>They gan their march with lonely sound</l>
+                    <l>Which <geogName corresp="#SKIDDAW">Skiddaw</geogName> echoed all around.</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
