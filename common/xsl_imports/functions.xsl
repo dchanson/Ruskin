@@ -40,7 +40,15 @@
     <xsl:variable name="character" select="codepoints-to-string(96 + $remainder)" />
     
     <!-- <xsl:value-of select="$val" /> -->
-    <xsl:value-of select="custom:printLetterRecursively($character, $quotient)" />
+    <xsl:if test="$quotient &gt; 5">
+    <xsl:value-of select="concat($character, '*', $quotient)" />
+    </xsl:if>
+    <xsl:if test="$quotient = 5">
+    <xsl:value-of select= "custom:printLetterRecursively($character, $quotient)"/>
+    </xsl:if>
+    <xsl:if test="$quotient &lt; 5">
+    <xsl:value-of select= "custom:printLetterRecursively($character, $quotient)"/>
+    </xsl:if>
 
   </xsl:function>
 
