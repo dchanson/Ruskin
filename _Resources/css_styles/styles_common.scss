@@ -1,36 +1,40 @@
 @charset "UTF-8";
 
-@import 'components/fonts';
+@import "components/fonts";
 /**
  * Styles common both for witnesses as well as the website
  */
 
-.tablespace{
-	margin: 2%;
-  > table{
+.tablespace {
+  margin: 2%;
+  > table {
     width: 100%;
-  	max-width: 600px;
-  	text-align: center;
-  	table-layout: fixed;
+    max-width: 600px;
+    text-align: center;
+    table-layout: fixed;
 
-    >tr, >tbody>tr, >tr>td, >tbody>tr>td{
+    > tr,
+    > tbody > tr,
+    > tr > td,
+    > tbody > tr > td {
       border: 1px solid black;
-    	border-collapse: collapse;
+      border-collapse: collapse;
     }
 
-    tr.label{
+    tr.label {
       font-weight: bold;
     }
 
-    >tr>td, >tbody>tr>td{
-      word-wrap:break-word;
-    	white-space: normal;
+    > tr > td,
+    > tbody > tr > td {
+      word-wrap: break-word;
+      white-space: normal;
     }
   }
 }
 
-.p{
-	margin: 1em 0.5em 1em 0.3em;
+.p {
+  margin: 1em 0.5em 1em 0.3em;
 }
 
 .page-title {
@@ -44,4 +48,3 @@
     font-weight: bold;
   }
 }
-

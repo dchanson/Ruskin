@@ -1,0 +1,102 @@
+<?php
+$paths = array('./', '../', '../../');
+$root_path = './';
+
+foreach ($paths  as $path){
+$filename = $path.'header.inc.php';
+
+if (file_exists($filename)){
+$root_path = $path;
+break;
+};
+}
+define('ROOT_PATH', $root_path);
+require_once($root_path."header.inc.php");
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:custom="http://whatever">
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset&#x003D;UTF-8">
+      <title>Jessie Richardson (1783&#x2013;1828)</title><?php require_once(ROOT_PATH."layout_includes/site_top.inc.php"); ?>
+        <link href="<?php echo r_build_url("style.php?p=site_styles.scss"); ?>" rel="stylesheet" type="text/css">
+      
+   </head>
+   
+   <?php require_once(ROOT_PATH."layout_includes/navigation.inc.php"); ?>
+   
+   <div class="note">
+      <div class="biographical" id="">
+         
+         <div class="page-title">Janet (&#x201C;Jessie&#x201D;) Richardson (<span class="date-1783-1828">1783&#x2013;1828</span>)
+         </div>
+         
+         <div class="p"><span class="persName-JR">John Ruskin</span>&#x02BC;s aunt, sister of <span class="persName-JJR">John James Ruskin</span>, married in <span class="date-1804">1804</span> to <a href="<?php echo r_build_url("notes/richardson_patrick_note.php");?>" target="_self"><span class="persName-PR">Patrick Richardson</span> (<span class="date-1774-1824">1774&#x2013;1824</span>)</a> of <span class="placeName-PERTH">Perth, Scotland</span>. 
+                    She was the mother of ten children. By the time <span class="persName-JRP">Jessie</span> herself died on <span class="date-1828-05-18">18 May 1828</span>, six of the ten children had also died, 
+                    including her namesake <a href="<?php echo r_build_url("notes/richardson_jessie_daughter_note.php");?>" target="_self"><span class="persName-JRPDAUGHTER">Janet</span> (&#x201C;Jessie&#x201D;, <span class="date-1820-1827">1820&#x2013;27</span>)</a>, along with <a href="<?php echo r_build_url("notes/richardson_james_note.php");?>" target="_self"><span class="persName-JRPSON">James</span> (<span class="date-1808-1826">1808&#x2013;26</span>)</a>, 
+                    both of whom were dear to <span class="persName-JR">John</span>. <span class="persName-JRPDAUGHTER">Jessie</span>, who was nearer to <span class="persName-JR">John</span> in age, was a playmate 
+                    when the Ruskins visited the family in <span class="placeName-PERTH">Perth</span>; and <span class="persName-JRPSON">James</span> was an older youth, to whom <span class="persName-JR">Ruskin</span> looked up in boyhood, when <span class="persName-JRPSON">James</span> resided at <span class="placeName-building-HERNE">Herne Hill</span>. 
+                    In <span class="title-book-JRPRAETERITA"><i>Praeterita</i></span>, <span class="persName-JR">Ruskin</span> frames his account of his aunt in terms of child deaths
+                    (<a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="persName-VAB">Burd</span>, ed., <span class="title-book-RFL"><i>Ruskin Family Letters</i></span></a>, 1:xlviii&#x2013;xlix, 8 n. 1; <a href="<?php echo r_build_url("notes/bibliography.php#SCOTTISHHERITAGE");?>" target="_self"><span class="persName-HGV">Viljoen</span>, <span class="title-book-SCOTTISHHERITAGE"><i>Ruskin&#x02BC;s Scottish Heritage</i></span></a>, 183, 185, 157; 
+                    <a href="<?php echo r_build_url("notes/bibliography.php#JRWORKSLE");?>" target="_self"><span class="persName-JR">Ruskin</span>, <span class="title-book-JRWORKSLE"><i>Works</i></span></a>, 35:65).
+         </div>
+         
+         
+         <div class="p">In the letters of <span class="persName-JRP">Jessie</span> and <span class="persName-JJR">John James</span>&#x02BC;s mother, <span class="persName-CTWR">Catherine</span> (<span class="date-1763-1817">1763&#x2013;1817</span>), 
+                    she frequently mentions helping <span class="persName-JRP">Jessie</span> care for these children: &#x201C;I have been a great deal at <span class="placeName-PERTH">Perth</span> 
+                    and <span class="persName-JRP">Jessy</span> often here &#x005B;in <span class="placeName-EDINBURGH">Edinburgh</span>&#x005D; since her Marriage&#x201D; (for the Richardson residences in <span class="placeName-PERTH">Perth</span>, see 
+                    <a href="<?php echo r_build_url("notes/richardson_patrick_note.php");?>" target="_self"><span class="persName-PR">Patrick Richardson</span></a>). 
+                    <span class="persName-CTWR">Catherine</span> conveyed the appeal of <span class="persName-JRP">Jessie</span>&#x02BC;s children to her &#x201C;two darlings&#x201D;, her son <span class="persName-JJR">John James</span> 
+                    and his cousin, <span class="persName-MCC">Margaret Cock</span>. (<span class="persName-JJR">John James</span> had been making his way in <span class="placeName-LONDON">London&#x003E;</span> since <span class="date-1801">1801</span> at age sixteen, 
+                    while in the same year <span class="persName-MCC">Margaret</span> had traveled from <span class="placeName-LONDON">London</span> to <span class="placeName-EDINBURGH">Edinburgh</span>&#x2014;and later, <span class="placeName-PERTH">Perth</span>&#x2014;to live with her aunt and uncle and assist them.) 
+                    Writing to <span class="persName-JJR">John James</span> about <span class="persName-JRP">Jessie</span>&#x02BC;s eldest boy, 
+                    <span class="persName-JRPSONELDEST">John Ruskin Richardson</span> (<span class="date-1807-1874">1807&#x2013;74</span>), 
+                    she assured her son that he will admire a portrait of this &#x201C;very fine engaging Child&#x201D;, commissioned in watercolor from an artist 
+                    &#x201C;famous for doing Children&#x201D; (probably <span class="persName-WD">William Douglas</span> &#x005B;<span class="date-1780-1832">1780&#x2013;1832</span>&#x005D;, well known as a miniaturist). When measles afflicted <span class="persName-JJR">John James</span>, 
+                    <span class="persName-JRPSONPATRICK">Patrick</span> (<span class="date-1810-1818">1810&#x2013;18</span>), and <a href="<?php echo r_build_url("notes/richardson_william_note.php");?>" target="_self"><span class="persName-JRPSONWILLIAM">William</span> (<span class="date-1811-1875">1811&#x2013;75</span>)</a>, 
+                    <span class="persName-CTWR">Catherine</span> was relieved to be &#x201C;able to take some of the trouble from <span class="persName-JRP">Jessy</span>&#x201D; but advised <span class="persName-MCC">Margaret</span>: &#x201C;We ought to be very Carefull how we grieve for the death of an Infant&#x201D; 
+                    for &#x201C;if they are taken we are sure they go to Eternal happiness and <span class="persName-scriptural-CREATOR">God</span> only can tell whether they may be spared for A Blessing ar A Curse&#x201D;
+                    (<span class="title-letter-cr_to_jtr_1809-07-11">Catherine Ruskin to John Thomas Ruskin, 11 July 1809</span>; <span class="title-letter-cr_to_jjr_1807-11-02">Catherine Ruskin to John James Ruskin, 2 November 1807</span>; 
+                    <span class="title-letter-cr_to_mcc_1812-07-11">Catherine Ruskin to Margaret Cock, 11 July 1812</span> in <a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="persName-VAB">Burd</span>, ed., <span class="title-book-RFL"><i>Ruskin Family Letters</i></span></a> 34, 33, 12, 50, 49; see 14 n. 3
+                
+         </div>
+         
+         
+         <div class="p">When <span class="persName-JRP">Jessie</span> died on <span class="date-1828-05-18">18 May</span>, the Ruskins were embarked on the <a href="<?php echo r_build_url("notes/tour_of_1828_note.php");?>" target="_self">Tour of <span class="date-1828">1828</span></a>, 
+                    where they received the news of her death on <span class="date-1828-05-24">24 May</span>. <span class="persName-JJR">John James</span> acted immediately to make arrangements for the now orphaned, surviving children&#x2014;the sons 
+                    <span class="persName-JRPSONELDEST">John Ruskin Richardson</span> (<span class="date-1807-1874">1807&#x2013;74</span>), <a href="<?php echo r_build_url("notes/richardson_william_note.php");?>" target="_self"><span class="persName-JRPSONWILLIAM">William Richardson</span> (<span class="date-1811-1875">1811&#x2013;75</span>)</a>, 
+                    and <span class="persName-JRPSONANDREW">Andrew Richardson</span> (b. <span class="date-1817">1817</span>); and the daughter <a href="<?php echo r_build_url("notes/richardson_mary_note.php");?>" target="_self"><span class="persName-MRC">Mary Richardson</span> (<span class="date-1815-1849">1815&#x2013;49</span>)</a>. 
+                    <span class="persName-JJR">John James</span> was one of five trustees of a settlement by <span class="persName-JRP">Jessie</span>&#x02BC;s husband, <span class="persName-PR">Patrick</span> 
+                    (<a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="persName-VAB">Burd</span>, ed., <span class="title-book-RFL"><i>Ruskin Family Letters</i></span></a>, 1:197&#x2013;98 n. 1).
+         </div>
+         
+         
+         <div class="p"><span class="persName-JJR">John James</span>&#x02BC;s household accounts show that, before <span class="date-1828">1828</span>, he had already been supporting <span class="persName-MRC">Mary</span>&#x02BC;s and <span class="persName-JRPSONWILLIAM">William</span>&#x02BC;s educations, as well as sending 
+                    money to his sister. In <span class="date-1828">1828</span> the headings of the expense lists for family charity change from &#x201C;<span class="persName-JRP">Mrs Richardson</span> my Sister at <span class="placeName-PERTH">Perth</span>&#x201D; to 
+                    &#x201C;<span class="persName-JRPSONELDEST">John</span>, <span class="persName-MRC">Mary</span>, And<sup>w</sup> &#x0026; <span class="persName-JRPSONWILLIAM">Will</span><sup>m</sup> Richardson&#x201D; in <span class="date-1829">1829</span>, 
+                    and then to &#x201C;<span class="persName-MRC">Mary</span>, <span class="persName-JRPSONWILLIAM">Will</span><sup>m</sup> &#x0026; And<sup>w</sup> Richardson&#x201D; in <span class="date-1830">1830</span>&#x2014;<span class="persName-JRPSONELDEST">John Ruskin Richardson</span> 
+                    being old enough, by that time, to be self&#x2010;supporting, although <span class="persName-JJR">John James</span> probably continued to lend support by helping him break into the wine business
+                    (<a href="<?php echo r_build_url("notes/bibliography.php#RFL");?>" target="_self"><span class="persName-VAB">Burd</span>, ed., <span class="title-book-RFL"><i>Ruskin Family Letters</i></span></a>, 1:14&#x2013;15 n. 3; <a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="persName-JJR">John James Ruskin</span>, Account Book &#x005B;<span class="date-1827-1845">1827&#x2013;45</span>&#x005D;</a>, 4v, 13v, 18r, 23r).
+         </div>
+         
+         
+         <div class="p">The Ruskin family library included a tale, <span class="title-book-ANONWIDOWOFROSENEATH"><i>The Widow of Roseneath</i></span>, which, published in <span class="date-1822">1822</span>, 
+                    might have been acquired for <span class="persName-JR">John</span> as &#x201C;A Lesson of Piety Affectionately Dedicated to the Young&#x201D; to contemplate the consequences 
+                    of the deaths of his <a href="<?php echo r_build_url("notes/richardson_patrick_note.php");?>" target="_self"><span class="persName-PR">Uncle Patrick</span></a>, his cousins <a href="<?php echo r_build_url("notes/richardson_jessie_cousin_note.php");?>" target="_self"><span class="persName-JRPDAUGHTER">Jessie</span></a> and <a href="<?php echo r_build_url("notes/richardson_james_note.php");?>" target="_self"><span class="persName-JRPSON">James</span></a>, and/or his Aunt <span class="persName-JRP">Jessie</span>. 
+                    The tale relates the fate of a Scottish widow who (like <span class="persName-JRP">Jessie Richardson</span>) was reduced in circumstances by the death of her husband, 
+                    and who must part with her two sons. One son emigrates to <span class="placeName-USA">America</span> and prospers, and the other son resorts to crime. 
+                    The successful son is supported in <span class="placeName-USA">America</span> (as was the Richardson family in <span class="placeName-PERTH">Perth</span>) by his kindly uncle, who, like <span class="persName-JJR">John James Ruskin</span>, is a prudent merchant. 
+                    The book might even have been shared between <span class="persName-JR">John</span> and his cousins <span class="persName-JRPSON">James</span> and <span class="persName-MRC">Mary</span>, when the latter were living at <span class="placeName-building-HERNE">Herne Hill</span> and dependent on <span class="persName-JJR">John James</span>&#x02BC;s charity (see 
+                    <a href="<?php echo r_build_url("notes/boyhood_books_note.php#WIDOW");?>" target="_self">Books Used by Ruskin in His Youth</a>; 
+                    and for a plot summary of the tale and a brief commentary from an <span class="date-1823">1823</span> review, see 
+                    <a href="<?php echo r_build_url("notes/widow_of_roseneath_note.php");?>" target="_self">Anonymous, <span class="title-book-ANONWIDOWOFROSENEATH"><i>The Widow of Roseneath</i></span> (<span class="date-1822">1822</span>)</a>.
+         </div>
+         
+         
+         <div class="p"><a href="<?php echo r_build_url("notes/bibliography.php#RFMS28");?>" target="_self"><span class="persName-JJR">John James Ruskin</span>, Account Book (1827&#x2013;45)</a>, &#x00A9; The Ruskin, Lancaster University.
+         </div>
+         
+      </div>
+   </div>
+   
+   
+   
+</html>

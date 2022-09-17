@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
+            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
+        <fileDesc xml:id="title_of_work_apparatus">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#GMS">Gabriella M. Smith</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department
+                        of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>htts://erm.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="apparatus">
+                <head type="title"><title type="poem" corresp="#JRFRIGHTENEDWASTHEPREACHER">&#x201C;But frightened was the preacher when&#x201D;
+                    (&#x201C;Highland Music&#x201D;)</title></head>
+                <!--An apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>This brief, untitled poem, included in a New Year&#x02BC;s greeting (<ref type="bibliography" target="bibliography.php#RFL"><title type="book" corresp="#RFL">RFL</title></ref>, 170&#x2013;71),
+                        is called &#x201C;Highland Music&#x201D; by <persName corresp="#WGC">Collingwood</persName>,</p>
+                </div>
+                <div type="section" xml:id="GENRE">
+                    <head type="section">Genre</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="MAJORMS">
+                    <head type="section">Manuscripts</head>
+                    <p>PML (MA 3451).</p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>31 December,</p>
+                </div>
+                <div type="section" xml:id="COMPPUB">
+                    <head type="section">Composition &#x0026; Publication</head>
+                    <p>Published in <title type="book" corresp="#JRPOEMS8D1891">PJR (1891?, 8<hi rend="superscript">o</hi>)</title>, 1:271; and <title type="book" corresp="#RFL">RFL</title>, 171. Facsimiled in <title type="book" corresp="#JRPOEMS8D1891">PJR
+                        (1891?, 8<hi rend="superscript">o</hi>)</title>, vol. 1, between pp. 18 and 19; and <title type="book" corresp="#JRWORKSLE">Works</title>, vol. 2, facing p.
+                        265.</p>
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <p><persName corresp="#WGC">Collingwood</persName>, who connects it with <persName corresp="#JR">Ruskin</persName>&#x02BC;s versification of <persName corresp="#WS">Scott</persName>&#x02BC;s <title type="book" corresp="#SCOTTMONASTERY"><hi rend="italic">The
+                        Monastery</hi></title> (no. 46), referring the reader to chapter 35. No such episode
+                        occurs in that chapter, and, in any case, <persName corresp="#JR">Ruskin</persName>&#x02BC;s versification never
+                        extended beyond the opening chapters of the novel. Still more mysteriously,
+                        <persName corresp="#WGC">Collingwood</persName> quotes a &#x201C;note in his father&#x02BC;s handwriting:&#x2014;&#x2018;See <title type="series" corresp="#SCOTTCANONGATE">Chronicles of
+                        the Canongate</title>; the Flute &#x0026; Drum &#x0026; Bagpipe; the latter having no
+                        beauty.&#x2019;&#x201D; No such note by <persName corresp="#JJR">John James</persName> has been found with the manuscript, and
+                        <persName corresp="#JJR">John James</persName>&#x02BC;s reference is equally illusive, <persName corresp="#VAB">Burd</persName> having failed to locate it
+                        in any of the <title type="series" corresp="#SCOTTCANONGATE">Chronicles of the Canongate</title> novels (<ref type="bibliography" target="bibliography.php#RFL"><title type="book" corresp="#RFL">RFL</title></ref>, 171 n. 2).</p>
+                    <p>The poem&#x02BC;s echoing martial music seems to dovetail with the end of no. 33,
+                        adapted from <persName corresp="#WS">Scott</persName>&#x02BC;s <title type="book" corresp="#SCOTTWAVERLEY"><hi rend="italic">Waverley</hi></title>. No &#x201C;frightened preacher&#x201D; hears the &#x201C;music of
+                        the clans&#x201D; in that novel, but <persName type="fictional" corresp="#EDWARDWAVERLEY">Edward</persName> listens to the bagpipes of the
+                        retreating <geogName corresp="#SCOTTISHHIGHLANDS">Highland</geogName> forces, from which he has been cut off. Perhaps <persName corresp="#JR">Ruskin</persName>
+                        was thinking of <persName type="fictional" corresp="#EDWARDWAVERLEY">Edward</persName>&#x02BC;s disguise as a divinity student in the next chapter.
+                        If so, and this poem forms part of the versification of <title type="book" corresp="#SCOTTWAVERLEY"><hi rend="italic">Waverley</hi></title> in no. 33,
+                        it may have originally been intended as text for a puppet performance of the
+                        battle (see no. 35).</p>
+                </div>
+                <div type="section" xml:id="TEXTUALNOTE">
+                    <head type="section">Textual Note</head>
+                    <p>Body paragraph.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

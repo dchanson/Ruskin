@@ -235,10 +235,54 @@ Setting up php part:
     		"UPDATE_TOOL_PASSWORD"=> "password"
     	)
     );
+    
+## Before Deployment:
+
+### Make sure your /src/config_template.json.php looks like:
+    <?php
+    $r_config = array(
+        "BASE"=> "https://erm.selu.edu/web/pages",
+        "SCSS_DIRECTORY"=> "../styles",
+        "SEARCH_HOST"=> "http://localhost:9001",
+        "DB"=> array(
+            "HOST"=> "localhost",
+            "DATABASE_NAME"=> "ruskin",
+            "USERNAME"=> "root",
+            "PASSWORD"=> "",
+            "XML_FOLDER"=> "../../_Completed/",
+            "UPDATE_TOOL_PASSWORD"=> "password"
+        )
+    );
+
+**Add Ruskin Folder to erm.selu.edu workspace in VS Code**
+### Add npx webpack to ./scripts/build.sh:
+
+     npx webpack \
+      --config './src/config/webpack.production.config.babel.js' \
+      $@
+      
+## Generate all files inside of the Completed and InProcess folders:
+   Gen folder must have all xml folders generated as their respective types.
+    
+## ./erm.selu.edu/build/scripts/make-assets.bash
+    echo "Copying PHP and HTML"
+    cp -r ${RUSKIN_ROOT}/gen/_xml/_Completed ${TMP_DIR}/web/pages
+    rsync -a ${RUSKIN_ROOT}/gen/_xml/_In_Process/essays/. ${TMP_DIR}/web/pages/essays
+     
+    cp ${RUSKIN_ROOT}/src/config_template.json.php ${TMP_DIR}/web/pages/config.json.php
+    cp ${RUSKIN_ROOT}/src/composer.json ${TMP_DIR}/web/pages
+    cp ${RUSKIN_ROOT}/src/header.inc.php ${TMP_DIR}/web/pages
+    cp ${RUSKIN_ROOT}/src/style.php ${TMP_DIR}/web/pages
+    cp -r ${RUSKIN_ROOT}/src/layout_includes ${TMP_DIR}/web/pages
+     
+    rsync -a ${RUSKIN_ROOT}/_xml/_In_Process/essays/. ${TMP_DIR}/web/xml/essays`
+     
+Be sure you are copying /src/config_template.json.php and not config_production.json.php. This file does not exist.
         
   
 # Deployment Procedure:
 Remain on the root project of node app
+
 
 ### Compile Node App
      run `./scripts/build.sh` (obtain Node.js production code)

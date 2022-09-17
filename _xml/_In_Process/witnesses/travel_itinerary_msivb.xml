@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#GMS">Gabriella M. Smith</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Example entries have been provided from MS I in the <handShift/>s below. Actual entries may vary.-->
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="prose">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Prose Piece</head>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#CHICHESTER">chichester</placeName></head>
+                    <p>Cross well worth looking at but saw it only in passing</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#PORTSMOUTH">portsmouth</placeName></head>
+                    <p><name type="vessel" corresp="#KINGSYACHT">kings yacht</name> a very fine vessel beautiful deck 
+                        fine windows  disappointed in the men of war in water and astonished
+                        when on stocks<!--i.e., out of the water?--> foundery ropehouse 
+                        blockhouse boat house timber for masts and yards</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter">To make blocks</head>
+                    <p>the pieces of wood first sawed square into 
+                        different sizes 1st machine bored the holes 2d machine made them longer 
+                        3d machine cut off the corners 4th machine made the grooves 5th machine 
+                        rounded the blocks 6th machine cut a round slice off a piece of wood 
+                        7th machine bored a hole through the middle 8th machine cut a cavity 
+                        above this 9th machine polished and made a groove in it at the same 
+                        time 10th machine made an iron pin which finished.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#ISLEOFWIGHT">Isle of Wight</placeName></head>
+                    <p><placeName corresp="#RYDE">Ryde</placeName> fine [pier(?)]  <placeName corresp="#NEWPORT">Newport</placeName> <placeName type="building" corresp="#CARISBROOKECASTLE">Carisbrook castle</placeName> 
+                        built on a fine hill  window where <persName corresp="#KC1">charles</persName> attempted to escape  <placeName corresp="#COWES">Cowes</placeName> 
+                    <persName corresp="#JN">Mr nashs</persName> house  <placeName type="building" corresp="#COWESCASTLE">Cowes castle</placeName>  <placeName corresp="#NEWPORT">Newport</placeName> <placeName type="building" corresp="#APPULDURCOMBE">appledurchome</placeName> [appledurcombe(?)] 
+                    <title type="artwork" corresp="#HEADOFACHILLES">head of achilles</title> common head in a closet statue of a baboon antique 
+                        boat of stone  <placeName corresp="#SHANKLINCHINE">shanklin chine</placeName> small waterfall <placeName corresp="#RYDE">Ryde</placeName> <placeName corresp="#PORTSMOUTH">portsmouth</placeName> place 
+                        where the <name type="vessel" corresp="#ROYALGEORGE">royal george</name> sunk</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#WINCHESTER">Winchester</placeName></head>
+                    <p>longest cathedral in <placeName corresp="#ENGLAND">England</placeName>  grave of <persName corresp="#KW2">william 
+                        Rufus</persName> grave of <persName corresp="#WOW">william of wickham</persName>  statue of <persName corresp="#KC1">charles</persName> and <persName corresp="#KJ1">james the 
+                        first</persName>  <persName corresp="#CHB">Cardinal beaufort</persName> fine perspective  saxon architecture</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#SALISBURY">salisbury</placeName></head>
+                    <p>cathedral with the highest spire in <placeName corresp="#ENGLAND">england</placeName>  
+                        leaning to one side beautiful Monument  cloisters fine pillar 
+                        beautiful gothic architecture  many figures</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#BLANDFORD">blandford</placeName></head>
+                    <p>road from <placeName corresp="#BLANDFORD">blandford</placeName> to <placeName corresp="#DORCHESTER">dorchester</placeName> very beautiful</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#WEYMOUTH">weymouth</placeName></head>
+                    <p>fiery cliff  isle of <placeName corresp="#PORTLAND">portland</placeName>  road from <placeName corresp="#WEYMOUTH">weymouth</placeName> 
+                        to <placeName corresp="#BRIDPORT">bridport</placeName> [bridfort(?)] most beautiful</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#SIDMOUTH">sidmouth</placeName></head>
+                    <p><!--no annotation.--></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#EXETER">exeter</placeName></head>
+                    <p>cathedral</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#PLYMOUTH">plymouth</placeName></head>
+                    <p>breakwater formed by stones being cast 
+                        promiscuously into the sea and left to find their own base  rest same 
+                        as <placeName corresp="#PORTSMOUTH">portsmouth</placeName>.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#ASHBURTON">ashburton</placeName></head>
+                    <p>[quoth(?)] of shells</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#IVYBRIDGE">Ivy bridge</placeName></head>
+                    <p>beautiful bridge covered with ivy  rocky river</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#EXETER">Exeter</placeName></head>
+                    <p><!--no annotation.--></p>
+                </div>
+                <div type="chapter">
+                    <p>
+                        <list type="ordered">
+                            <item n="1"><placeName corresp="#MONMOUTH">monmouth</placeName></item>
+                            <item n="2"><placeName corresp="#CHEPSTOW">chepstow</placeName></item>
+                            <item n="3"><placeName corresp="#BRISTOL">bristol</placeName></item>
+                            <item n="4"><placeName corresp="#MALMSBURY">malmsbury</placeName></item>
+                            <item n="5"><placeName corresp="#MARLBOROUGH">marlborough</placeName></item>
+                            <item n="6"><placeName corresp="#READING">reading</placeName></item>
+                            <item n="7"><placeName corresp="#SALTHILL">salthill</placeName></item>
+                            <item n="8"><placeName corresp="#LONDON">home</placeName></item>
+                        </list>
+                    </p>
+                </div>
+                <div type="chapter">
+                    <p>                    
+                        <list type="ordered">
+                            <item n="1"><placeName corresp="#LINCOLN">lincoln</placeName></item>
+                            <item n="2">[(?)] of lincoln</item>
+                            <item n="3"><placeName corresp="#THORNE">thorne</placeName></item>
+                            <item n="4"><placeName corresp="#LEEDS">leeds</placeName></item>
+                            <item n="5"><placeName corresp="#YORK">york</placeName></item>
+                            <item n="6"><placeName corresp="#SCARBOROUGH">scarborough</placeName></item>
+                            <item n="7"><placeName corresp="#WHITBY">whitby</placeName></item>
+                            <item n="8">[casborough(?)]</item>
+                            <item n="9"><placeName corresp="#STOCKTON">stocton</placeName></item>
+                            <item n="10"><placeName corresp="#NEWCASTLE">Newcastle</placeName></item>
+                            <item n="11"><placeName corresp="#DURHAM">durham</placeName></item>
+                            <item n="12"><placeName corresp="#BISHOPAUCKLAND">bishop auckland</placeName></item>
+                            <item n="13">Barnard castle</item>
+                            <item n="14"><placeName corresp="#BROUGH">brough</placeName></item>
+                            <item n="15"><placeName corresp="#APPLEBY">appleby</placeName></item>
+                            <item n="16"><placeName corresp="#PENRITH">penrith</placeName></item>
+                        </list>
+                    </p>
+                </div>
+                <div type="chapter">
+                    <p>
+                        <list type="ordered">
+                            <item n="1"><placeName corresp="#HONITON">honiton</placeName></item>
+                            <item n="2"><placeName corresp="#CHARD">chard</placeName></item>
+                            <item n="3">[creukhorne(?)]</item>
+                            <item n="4"><placeName corresp="#SHERBORNE">sherborne</placeName></item>
+                            <item n="5"><geogName corresp="#SALISBURYPLAIN">salisbury plain</geogName></item>
+                            <item n="6">[derries(?)]</item>
+                            <item n="7"><placeName corresp="#MALMSBURY">malmsbury</placeName></item>
+                            <item n="8"><placeName corresp="#CHELTENHAM">cheltenham</placeName></item>
+                            <item n="9"><placeName corresp="#WORCESTER">worcester</placeName></item>
+                            <item n="10"><placeName corresp="#WARWICK">warwick</placeName></item>
+                            <item n="11"><persName type="fictional" corresp="#GUYOFWARWICK">guy of warwicks</persName> sword and his [(?)]</item>
+                            <item n="12"><placeName corresp="#LICHFIELD">lichfield</placeName></item>
+                            <item n="13"><placeName corresp="#DERBY">derby</placeName></item>
+                            <item n="14"><placeName corresp="#NOTTINGHAM">nottingham</placeName></item>
+                        </list>
+                    </p>
+                </div>
+                <div type="chapter">
+                    <p>
+                        <list type="ordered">
+                            <item n="1"><placeName corresp="#KESWICK">keswick</placeName></item>
+                            <item n="2"><placeName corresp="#COCKERMOUTH">cockermouth</placeName></item>
+                            <item n="3"><placeName corresp="#AMBLESIDE">ambleside</placeName></item>
+                            <item n="4"><placeName corresp="#CONISTON">Coniston</placeName></item>
+                            <item n="5"><placeName corresp="#ULVERSTON">ulverstone</placeName></item>
+                            <item n="6">[kensal(?)]</item>
+                            <item n="7"><placeName corresp="#LANCASTER">lancaster</placeName></item>
+                            <item n="8"><placeName corresp="#GARSTANG">garstang</placeName></item>
+                            <item n="9"><placeName corresp="#MANCHESTER">manchester</placeName></item>
+                            <item n="10"><placeName corresp="#LIVERPOOL">liverpool</placeName></item>
+                            <item n="11"><placeName corresp="#CHESTER">chester</placeName></item>
+                            <item n="12"><placeName corresp="#STAFFORD">stafford</placeName></item>
+                            <item n="13"><placeName corresp="#SHREWSBURY">shrewsbury</placeName></item>
+                            <item n="14"><placeName corresp="#LUDLOW">ludlow</placeName></item>
+                            <item n="15"><placeName corresp="#HEREFORD">hereford</placeName></item>
+                        </list>
+                    </p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#GUILDFORD">Guildford</placeName></head>
+                    <p>30 Miles
+                        Part of a monastery
+                        Ruins of a castle
+                        <geogName corresp="#RIVERWEY">River Wey</geogName>
+                        To <placeName corresp="#FARNHAM">Farnham</placeName> <geogName corresp="#HOGSBACK">Hogsback</geogName></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#CHICHESTER">Chichester</placeName></head>
+                    <p>61
+                        large cathedral</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#PORTSMOUTH">Portsmouth</placeName></head>
+                    <p>Fine harbour
+                        strongest fortifications in <placeName corresp="#BRITAIN">Great Britain</placeName>
+                        Peninsula
+                        <placeName type="building" corresp="#PORTCHESTERCASTLE">Porchester<!--sic--> Castle</placeName>
+                        Anchor forge Rope house</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#ISLEOFWIGHT">Isle of Wight</placeName></head>
+                    <p>100,000 acres
+                        23 Miles 13
+                        Foreland of <placeName corresp="#STHELENS">St Helens</placeName>
+                        East
+                        <placeName type="building" corresp="#COWESCASTLE">Cowes castle</placeName>
+                        Carisbrook <persName corresp="#KC1">chas 1</persName> confined 1 mile from <placeName corresp="#NEWPORT">Newport</placeName> norman [(?)]
+                        Kings forest
+                        <placeName type="building" corresp="#QUARRABBEY">Quarr abbey</placeName>
+                        <placeName corresp="#STCATHERINES">St Catherines</placeName>
+                        Arlington forest
+                        Park cross fair views
+                        <placeName type="building" corresp="#HURSTCASTLE">Hurst castle</placeName>
+                        Mr Barringtons seat
+                        <placeName corresp="#APPULDURCOMBE">Appledurcombe</placeName> paintings
+                        <geogName corresp="#THENEEDLES">The needles</geogName>
+                        <geogName corresp="#BARNESHOLE">Barns<!--sic--> hole</geogName>
+                        <placeName corresp="#BLACKGANGCHINE">Blackgang chine</placeName>
+                        <placeName type="building" corresp="#CALSHOTCASTLE">Calshot castle</placeName>
+                        <placeName corresp="#APPULDURCOMBE">Appledurcombe</placeName>
+                        <geogName corresp="#NEWFOREST">Newforest</geogName>
+                        Going East from <placeName corresp="#NEWPORT">Newport</placeName> down River
+                        <placeName corresp="#SANDOWN">Sandown</placeName> &#38; [(?)]
+                        Cross [from <placeName corresp="#NEWPORT">Newp{or}t(?)</placeName>] to <placeName corresp="#NEWTOWNISLEOFWIGHT">Newtown</placeName>
+                        <geogName corresp="#CHALEBAY">Chale Bay</geogName> very dangerous
+                        <placeName corresp="#STEEPHILL">Steep Hill</placeName>
+                        <placeName corresp="#MOTTISTONE">Mottistone</placeName> beautiful</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#SOUTHAMPTON">Southampton</placeName></head>
+                    <p><geogName corresp="#RIVERTEST">Test</geogName> &#38; <geogName corresp="#RIVERITCHEN">Itchen Rivers</geogName>
+                        <geogName corresp="#NEWFOREST">New Forest</geogName> fine views
+                        <placeName type="building" corresp="#NUTLEYABBEY">Nutley Abbey</placeName>
+                        Going to <placeName corresp="#WINCHESTER">Winchester</placeName>
+                        B[ellevue(?)] &#38; <placeName corresp="#BEVOISMOUNT">Bevois Mount</placeName>
+                        <placeName corresp="#LONGFORD">Longford</placeName> fine views
+                        <placeName corresp="#DUNMOREHILL">Dunmore Hill</placeName>
+                        <placeName corresp="#ROMSEY">Romsey</placeName>
+                        church fine Gothic cruciform
+                        <placeName corresp="#BISHOPSWALTAM">Bishops Walthams</placeName> priory.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#WINCHESTER">Winchester</placeName></head>
+                    <p>fine cathedral begun <date when="0611">611</date>. fin <date when="1079">1079</date> inside very fine
+                        bishops palace
+                        college  founded by Wm of [(?)]
+                        hall where assizes are kept
+                        unfinished palace of <persName corresp="#KC2">chas 2</persName> 
+                        Tomb of <persName corresp="#KW2">Wm Rufus</persName> [(?)]
+                        Painting by <persName corresp="#BWRA">West</persName>
+                        Fine Saxon Architexture.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#ANDOVER">Andover</placeName></head>
+                    <p>coming from <placeName corresp="#WINCHESTER">Winchester</placeName>
+                        Yew Trees
+                        Devizes
+                        <placeName corresp="#CORSHAM">Corsham</placeName> fine painting of <persName corresp="#PAMETHUEN">Mr Methuen.</persName></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#SALISBURY">Salisbury</placeName></head>
+                    <p>druidical temple or <placeName corresp="#STONEHENGE">stonehenge</placeName>
+                        cathedral  1258 regular Gothic,
+                        vaulting highly pitched between
+                        arches &#38; Cross springers [(?)]
+                        antiques
+                        <placeName type="building" corresp="#WILTONHOUSE">Wilton House</placeName> 3 miles on Road from
+                        <placeName corresp="#SHAFTESBURY">Shaftesbury</placeName>&#x2014;<placeName type="building" corresp="#WARDOURCASTLE">Wardour Castle</placeName>
+                        <placeName corresp="#FONTHILL">Fonthill</placeName>
+                        <placeName corresp="#STOURTON">Stourton</placeName> [Houses(?)] celebrated grounds</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#BLANDFORD">Blandford</placeName></head>
+                    <p><placeName corresp="#WEYMOUTH">Weymouth</placeName> / Ridge joining <placeName corresp="#PORTLAND">Portland</placeName></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#DORCHESTER">Dorchester</placeName></head>
+                    <p>Roman amphitheatre
+                        <placeName type="building" corresp="#MAIDENCASTLE">Maiden castle.</placeName>
+                        <placeName type="building" corresp="#MILTONABBEY">Milton Abbey</placeName>
+                        Ride <placeName corresp="#BRIDPORT">Bridport</placeName> to <placeName corresp="#WEYMOUTH">Weymouth</placeName>
+                        very fine
+                        coming from <placeName corresp="#EXETER">Exeter</placeName> to 
+                        <placeName corresp="#HONITON">Honiton</placeName> 6 miles off H.
+                        fine Prospects.
+                        Sand &#38; flint
+                        [Stockton(?)]
+                        <placeName corresp="#DORSETSHIRE">Dorsetshire</placeName>
+                        Ld Milton.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#EXETER">Exeter</placeName></head>
+                    <p>cathedral</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#PLYMOUTH">Plymouth</placeName></head>
+                    <p>docks
+                        70 acres
+                        <placeName type="building" corresp="#MOUNTEDGCUMBE">Mount Edgcumbe</placeName>&#x2014;¾ mile
+                        by Water  fine views
+                        <placeName type="building" corresp="#EDDYSTONELIGHTHOUSE">Eddystone Lighthouse</placeName>
+                        orangery in great [perfection(?)].</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#FALMOUTH">Falmouth</placeName></head>
+                    <p><!--no annotations--></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#CITYOFBATH">Bath</placeName></head>
+                    <p>Hot wells.
+                        Wildly Gothic or Saracenic <placeName type="building" corresp="#WELLSCATHEDRAL">Cath.
+                        of Wells</placeName> <placeName corresp="#GLASTONBURY">Glastonbury</placeName>
+                        famous Hawthorn blows 
+                        twice a year
+                        <placeName corresp="#BRIDGWATER">Bridgwater</placeName> [Ennione [Enmore(?)] 
+                        castle [state(?)] ancient [Baromal(?)].</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#BRISTOL">Bristol</placeName></head>
+                    <p>Glass houses
+                        sugar refinery
+                        cathedral <placeName type="building" corresp="#STMARYREDCLIFFE">St Mary Redcliffe</placeName>, magnificent
+                        fine bason
+                        Hot well
+                        <placeName corresp="#BRISTOL">Bristol</placeName> stones
+                        <geogName corresp="#STVINCENTSROCK">St vincents rock</geogName>
+                        over <geogName corresp="#RIVERAVON">Avon</geogName> at <placeName corresp="#CLIFTON">Clifton</placeName>
+                        <placeName corresp="#DURDHAMDOWNS">Durdham Down</placeName></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#CHEPSTOW">Chepstow</placeName></head>
+                    <p>priory
+                        Castle.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#GLOUCESTER">Gloucester</placeName></head>
+                    <p><placeName type="building" corresp="#STPETERCATHEDRAL">Cathedral of st peter</placeName>
+                        <placeName corresp="#MATLOCK">Matlock</placeName>
+                        cavern dug by one Man in
+                        17 years.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#ROSSONWYE">Ross</placeName></head>
+                    <p>Fine view over the celebrated <geogName corresp="#WYERIVER">Wye</geogName>.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#DERBY">Derby</placeName></head>
+                    <p><placeName type="building" corresp="#ALLSAINTSCHURCHDERBY">All saints church</placeName>  beautiful
+                        Fabric of porcelain
+                        Spars crystals &#38;c.
+                        Famous silk mill on River
+                        built on Model from <placeName corresp="#ITALY">Italy</placeName> 
+                        100,000 movements by
+                        a single Wheel. It turns
+                        3 times in a minute making
+                        73,728 yds silk each time.
+                        Lord Scarsdales.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#HEREFORD">Hereford</placeName></head>
+                    <p>old cathedral
+                        <placeName corresp="#HOLMELACY">Holme Lacy</placeName>&#x2014;Duke of <placeName corresp="#NORFOLK">Norfolk</placeName>
+                        5 Miles South. Carved
+                        Work.&#x2014;[(?)]. Gardens
+                        on King Williams Stile.
+                        <placeName type="building" corresp="#HAMPTONCOURTCASTLE">Hampton Court</placeName> to [Malden(?)]
+                        <placeName type="building" corresp="#WILTONCASTLE">Wilton Ruins</placeName> near <placeName corresp="#ROSSONWYE">Ross</placeName>
+                        <placeName corresp="#ROSSONWYE">Ross</placeName>. view from <placeName corresp="#ROSSONWYE">Ross</placeName> churchyard.
+                        King &#38; Arms&#x2014;<persName corresp="#JKYRLE">J. Kyrtle<!--sic--> man of Ross</persName></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#TEWKESBURY">Tewksbury</placeName></head>
+                    <p>Field of battle
+                        Largest Church in <placeName corresp="#ENGLAND">England</placeName>,
+                        not Cathedral [or [(?)]</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#KENILWORTH">Kenilworth</placeName></head>
+                    <p>Lake dried up. Property
+                        of [Clarendons(?)]
+                        [Ivory [(?)] Village [(?)]</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#WORCESTER">Worcester</placeName></head>
+                    <p>cathedral  <persName corresp="#KJ">King John</persName> buried
+                        Manufactory of china.
+                        <placeName corresp="#BROMSGROVE">Bromsgrove</placeName> <placeName corresp="#HAGLEY">Hagley</placeName>
+                        <persName corresp="#LGL">L Lyttleton</persName></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#BIRMINGHAM">Birmingham</placeName></head>
+                    <p>steam engines.
+                        <placeName type="building" corresp="#LEASOWES">Leasowes</placeName> 7 miles
+                        off&#x2014;pass thro 4 counties.
+                        <placeName corresp="#HAGLEY">Hagley</placeName>. Browns Gardening.
+                        <placeName corresp="#WARWICK">Warwick</placeName>,
+                        Vineyard near Castle&#x2014;<persName corresp="#KH4">Henry 4</persName>.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#LICHFIELD">Lichfield</placeName>s</head>
+                    <p>cathedral  <date when="0666">666.</date> restored <date when="1661">1661,</date></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#BURTONUPONTRENT">Burton</placeName></head>
+                    <p>Bridge of 37 arches
+                        Had formerly a large abbey.
+                        Towards <placeName corresp="#DERBY">Derby</placeName>
+                        <placeName corresp="#KEDLESTON">Kedleston</placeName> Lord [S(?)]carsdale,
+                        Glory of <placeName corresp="#DERBYSHIRE">Derbyshire</placeName>,
+                        Pillars paintings &#38;c.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#STAFFORD">Stafford</placeName></head>
+                    <p><!--no annotation--></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#SHREWSBURY">Shrewsbury</placeName></head>
+                    <p><placeName corresp="#HAWKSTONE">Hawkestone<!--sic--> &#38; Grottoes</placeName>
+                        to <placeName corresp="#OSWESTRY">Oswestry</placeName> by [(?)]
+                        Wynne</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#CHESTER">Chester</placeName></head>
+                    <p><!--no annotation--></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#NANTWICH">Nantwich</placeName></head>
+                    <p><!--no annotation--></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#MANCHESTER">Manchester</placeName></head>
+                    <p>college
+                        exchange
+                        collegiate church</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#STOCKPORT">Stockport</placeName></head>
+                    <p><placeName corresp="#ASHBOURNEHOUSE">Ashbourne</placeName>
+                        fine Monument of a child.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#ROCHDALE">Rochdale</placeName></head>
+                    <p><!--no annotation--></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#LIVERPOOL">Liverpool</placeName></head>
+                    <p>corinthian edifice</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#PRESTON">Preston</placeName></head>
+                    <p><!--no annotation--></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#LANCASTER">Lancaster</placeName></head>
+                    <p><!--no annotation--></p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#KENDAL">Kendal</placeName></head>
+                    <p>ruins of a castle.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#ULVERSTON">Ulverstone</placeName></head>
+                    <p>Picturesque Road <placeName corresp="#NEWBYBRIDGE">Newby Bridge</placeName>
+                    to <placeName corresp="#CONISTON">Coniston</placeName>.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#AMBLESIDE">Ambleside</placeName></head>
+                    <p>fine waterfall
+                        Seat of Sir [M(?)] de Fleming,
+                        faces <geogName corresp="#LAKEWINDERMERE">Windermere</geogName>.
+                        D[(?)] Stone, Victory
+                        <persName corresp="KE">Edmund I</persName> when Children
+                        of all the Vanquished had their
+                        Eyes put out.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#KESWICK">Keswick</placeName></head>
+                    <p>10 Miles round 5 Islands
+                        <geogName corresp="#SKIDDAW">Skiddaw</geogName> 2500 ft 5 Miles up
+                        Eagles were frequent here
+                        <placeName corresp="#BASSENTHWAITE">Bassenthwaite</placeName> [tonight (?)]
+                        [Eves(?)] crag&#x2014;<geogName corresp="#WALLACRAG">Wallow<!--sic--> Crag</geogName>
+                        from whence Countess <geogName corresp="#DERWENTWATER">Derwent
+                        Water</geogName> escaped <date when="1715">1715</date>
+                        <placeName corresp="#LORDSISLAND">Lords Island</placeName> former Residence
+                        of the Radcliffs <geogName corresp="#DERWENTWATER">Derwentwater</geogName>
+                        <geogName corresp="#SKIDDAW">Skiddaw</geogName> view is like a
+                        tempestuous Sea of Mountains.
+                        Lord [(?)]fford escaped from the
+                        Fury of the Duke of <placeName corresp="#YORK">York</placeName> [(?)]
+                        a Shepherd in these Mountains
+                        24 years.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#COCKERMOUTH">Cockermouth</placeName></head>
+                    <p><!--no annotation--></p>
+                </div>  
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#CARLISLE">Carlisle</placeName></head>
+                    <p>walls.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#PENRITH">Penrith</placeName></head>
+                    <p>several remains of antiquity  <geogName corresp="#BEACONHL">Beacon Hill</geogName>
+                        fine views&#x2014;proceed to <geogName corresp="#ULLSWATER">Ullswater</geogName>
+                        by <placeName type="building" corresp="#LOWTHERCASTLE">Lowther</placeName>&#x2014;<placeName corresp="#CLIFTON">Clifton</placeName> famous
+                        Skirmish Rebels&#x2014;at <placeName type="building" corresp="#LOWTHERCASTLE">Lowther</placeName>
+                        Carpet Manufy like Gobelines
+                        <geogName corresp="#ULLSWATER">Ullswater</geogName> 9 Miles long.
+                        Gobery park fine Cascade
+                        <persName type="fictional" corresp="#KINGARTHUR">Arthurs</persName> Round Table at <placeName corresp="#PENRITH">Penrith</placeName>
+                        use unknown&#x2014;supposed
+                        Tilting Grounds&#x2014;Ice at
+                        <placeName corresp="#PENRITH">Penrith</placeName>&#x2014;Inscription on
+                        [burial(?)] Stone of the Deaths by 
+                        Plague.  Singular Monument
+                        2 pedlars [(?)] &#38; Stones like
+                        Boars. This custom very ancient
+                        <geogName corresp="#RIVEREDEN">Eden River</geogName> all picturesque
+                        Near <placeName corresp="#LITTLESALKELD">little Salkeld</placeName> a
+                        Druidical Monument called
+                        <placeName type="building" corresp="#LONGMEGDAUGHTERS">Meg &#38; her Daughters</placeName>&#x2014;
+                        <placeName corresp="#PENRITH">Penrith</placeName> Women beautiful 
+                        majestic polite simple
+                        Men facetious
+                        Going to <placeName corresp="#KESWICK">Keswick</placeName> see the
+                        Castle Rocks of <geogName corresp="#STJOHNSVALE">St Johns</geogName>. So 
+                        like a Gothic Building&#x2014;
+                        Singular Flood in this Vale 
+                        in <date when="1749">1749</date>. swept cottages &#38; all 
+                        away.&#x2014;except a little School
+                        of Boys left safe in midst
+                        of the Destruction. Going from <placeName corresp="#KESWICK">Keswick</placeName> to
+                        <geogName corresp="#ULLSWATER">Ullswater</geogName> see [(?)] Tower
+                        Sylvan Hill of <geogName corresp="#DUNMALLET">Dunmallet</geogName>.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#WHITEHAVEN">Whitehaven</placeName></head>
+                    <p><placeName corresp="#EGREMONT">Egremont</placeName> Windhill.</p>
+                </div>
+                <div type="chapter">
+                    <p>Going from <placeName corresp="#HEXHAM">Hexham</placeName> to
+                        <geogName corresp="#TEESDALE">Teesdale</geogName>&#x2014;Cataracts
+                        vale of <geogName corresp="#TEESDALE">Tees</geogName>&#x2014;To <placeName corresp="#BARNARDCASTLE">Barnard
+                        Castle</placeName> greatest Corn
+                        Market in North of <placeName corresp="#ENGLAND">E{ngland}</placeName>.
+                        Beautiful falls of <geogName corresp="#TEES">Tees</geogName>
+                        from Bridge near [(?)]
+                        {Castle} Abbey. <placeName type="building" corresp="#ROKEBYPARK">Rokeby Hall</placeName>
+                        where <geogName corresp="#GRETA">Greta</geogName> &#38; <geogName corresp="#TEES">Tees</geogName> join
+                        many antiques &#38; paintings
+                        in the abbey.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#RICHMOND">Richmond</placeName></head>
+                    <p>to <placeName corresp="#BARNARDCASTLE">Barnard</placeName> fine&#x2014;great hall
+                        at <placeName corresp="MIDDLETONINTEESDALE">Middleton</placeName> 10 Miles from
+                        <placeName corresp="#BARNARDCASTLE">Bd Castle</placeName>.
+                        <placeName type="building" corresp="#RABYCASTLE">Raby Castle</placeName> (middling)
+                        <placeName corresp="#BISHOPSAUCKLAND">Bishops Auckland</placeName>&#x2014;park
+                        Town [Large(?)]</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter">Wells<!--Turbridge Wells?--></head>
+                    <p>see former [(?)]
+                        Fasting Bishop [(?)]
+                        tried to fast all Lent
+                        lived 39 days.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#GLASTONBURY">Glastonbury</placeName></head>
+                    <p>see before
+                        for Grandeur &#38; Riches
+                        unequalled once&#x2014;in
+                        times of W. Saxons&#x2014;
+                        the <placeName type="building" corresp="#GEORGEANDPILGRIM">George</placeName> is where the
+                        Pilgrims all came to&#x2014;It
+                        was an Inn built for them.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#NORTHAMPTON">Northampton</placeName></head>
+                    <p><placeName corresp="#ALTHORP">Althorp</placeName> {seat of} Earl Spencer, 5
+                        miles off
+                        a university once <date when="1238">1238</date>.
+                        but Students [(?)] to <orgName corresp="#OXFORDU">Oxford</orgName>.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#WOBURN">Woburn</placeName></head>
+                    <p>Abbey very fine.</p>
+                </div>
+                <div type="chapter">
+                    <p><placeName corresp="#CHALKHILL">Chalk Hill</placeName> by <placeName corresp="#DUNSTABLE">Dunstable</placeName>
+                        reach from <placeName corresp="#DORCHESTER">Dorchester</placeName>
+                        to <placeName corresp="#NORFOLK">Norfolk</placeName>.</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#CIRENCESTER">Cirencester</placeName></head>
+                    <p><placeName corresp="#OAKLEYWOOD">Woods of Oakly</placeName> Ld B[(?)].</p>
+                </div>
+                <div type="chapter">
+                    <head type="chapter"><placeName corresp="#YORK">York</placeName></head>
+                    <p><placeName type="building" corresp="#CASTLEHOWARD">Castle Howard</placeName>.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
