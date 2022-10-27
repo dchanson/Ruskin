@@ -85,8 +85,7 @@
         </fileDesc>
     </teiHeader>
     <text>
-     <front>
-         
+        <front>
             <titlePage xml:id="TITLEPAGE">
                 <pb facs="1229104v"/>
                 <docTitle>
@@ -119,7 +118,7 @@
                         <add><milestone unit="undeclared" rend="hr-full"/></add></titlePart>
                 </docTitle>
             </titlePage>
-         
+            
             <div type="frontispiece" xml:id="FRONTISPIECE">
                 <figure>
                     <head type="title"><space quantity="7" unit="chars"/><title type="artwork" corresp="#JRFRONTISPIECEMSI">frontispiece</title></head>
@@ -131,7 +130,7 @@
             <div>
                 <p><gloss><handShift new="#HANDJR1870" script="print-italic" medium="ink"/><space quantity="5" unit="chars"/>Red book. No 3. <date when="1870-09-08">Sept 8<hi rend="superscript">th</hi> 1870</date><handShift new="#HANDJR1826-27" script="print" medium="pencil"/></gloss></p>
             </div>   
-     </front>
+        </front>
         <body>
             <div type="chapter" n="1">
                 <pb facs="1229105v"/>
@@ -1676,5 +1675,6 @@
             </div>
             <milestone unit="undeclared" rend="hr-half"/>
         </body>
+
     </text>
 </TEI>

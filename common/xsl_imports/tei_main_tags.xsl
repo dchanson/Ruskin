@@ -66,7 +66,7 @@ EOT
         <div class="fileName">
           <span><xsl:value-of select="./tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']" /></span>
         </div>
-
+        <xsl:apply-templates select=".//tei:front/*"/>
         <xsl:apply-templates select=".//tei:body/*"/>
         <xsl:call-template name="tei:pb" />
       </xsl:for-each>
@@ -182,4 +182,37 @@ EOT
 
     </xsl:choose>
   </xsl:template>
+  
+  <xsl:template match="tei:front">
+    
+    <xsl:choose>
+      
+      <xsl:when test="ancestor::*[tei:floatingText]">
+        <div class="floating-text">
+          <title>SOME TITLE</title>
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      <xsl:when test="ancestor::*[tei:teiHeader/@type='apparatus']">
+        <body>
+          <xsl:if test="not($htmlForm)">
+            <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
+          </xsl:if>
+          <xsl:apply-templates/>
+          <xsl:if test="not($htmlForm)">
+            <xsl:value-of select="$topBtnPhpVar" disable-output-escaping="yes"/>
+          </xsl:if>
+        </body>
+      </xsl:when>
+      
+      <xsl:otherwise>
+        <xsl:if test="not($htmlForm)">
+          <xsl:value-of select="$navigationPhpVar" disable-output-escaping="yes"/>
+        </xsl:if>
+        <xsl:apply-templates/>
+      </xsl:otherwise>
+      
+    </xsl:choose>
+  </xsl:template>
+  
 </xsl:stylesheet>

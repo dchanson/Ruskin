@@ -279,7 +279,7 @@
     class in the HTML document such that <title type="anthology corresp="#POEMS1850" rend="italic">Poems</title> becomes
     <span class="title-anthology-POEMS1850-italic>Poems</span>.-->
 
-    <xsl:template match="tei:title" name="tei:title">
+    <xsl:template match="tei:titlePart" name="tei:titlePart">
 
       <xsl:choose>
 

@@ -40,7 +40,7 @@
   <xsl:import href="xsl_imports/tei_main_tags.xsl"/>
   <xsl:import href="xsl_imports/witness_tags.xsl"/>
   <xsl:import href="xsl_imports/tei_variables.xsl"/>
-  
+  <xsl:import href="xsl_imports/tei_titlePage.xsl"/>
   
 
 </xsl:stylesheet>
