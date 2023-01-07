@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="evangelical_magazine_note">
+            <titleStmt>
+                <title type="main"></title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
+            <div type="note" subtype="bibliographical">
+                <head type="title"><title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title></head>                
+                
+                <p>In a letter of 3 March 1823 to John James Ruskin,
+                    Margaret Ruskin mentions receiving this publication 
+                    (Ruskin Family Letters, ed. Burd, 121). Her remark does not make clear when she began her subscription; 
+                    notably, however, with the 1823 issues, the magazine initiated volume 1 of a new series, 
+                    having begun publication in 1793.</p>
+                <p>Regular reading of the Evangelical Magazine necessarily entailed an interest in missionary work,
+                    since a significant portion of each issue was devoted to reporting missionary news 
+                    and especially to promoting the efforts of the London Missionary Society (LMS). 
+                    The magazine supported other interests, as well, which would have engaged the Ruskin family, including 
+                    poetry; articles primarily on religious topics but encompassing other areas of knowledge, such as natural history; 
+                    reviews and notices of religious publications; obituaries and biographies of celebrated clergy, 
+                    embellished by an engraved portrait of a clergyman in each issue; and as an effect of missionary news, 
+                    exposure to peoples, landscapes, and customs of cultures around the world--an exposure that was of course 
+                    filtered through the perception of the missionaries reporting on their experiences.</p>
+                <p>Doctrinally, the magazine claimed a pan-evangelical catholicity of non-affiliation. 
+                    This position became difficult to maintain: a "Retrospect" published at the start of the new series 
+                    admitted to the emergence of rival publications specific to denominations; and 
+                    like the LMS it represented, the magazine became increasingly centered in Congregationalism 
+                    ("Retrospect of the Former Series of the Evangelical Magazine", 1; 
+                    Altholz, ???). 
+                    Nonetheless, as Sujit Sivasundaram argues, the magazine offered readers a collective experience of evangelical zeal and meditation; 
+                    and by reporting on charitable contributions to the LMS, from small donations such as used copies of the magazine to be sent to missionaries abroad, 
+                    to more substantial cash donations, readers felt they participated in a worldwide evangelistic effort 
+                    ("The Periodical as Barometer", 43-48). In the outreach for charitable support, the magazine formed but one part 
+                    of what Anna Johnston describes as the LMS's construction of "a reading audience through its canny manipulation 
+                    of textual and media technologies, a readership that would unite religious Britons in a common cause 
+                    despite differences of class, region, gender, and age" ("British Missionary Publishing", 30).
+                    
+                
+                    
+                    
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>
