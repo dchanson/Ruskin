@@ -7,7 +7,7 @@
             The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="evangelical_magazine_note">
             <titleStmt>
-                <title type="main"></title>
+                <title type="main">evangelical_magazine_note</title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -20,7 +20,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#JAdams">Jazmin J Adams</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -68,7 +68,7 @@
         <body>
             <div type="note" subtype="bibliographical">
                 <!-- 3. Build a nested structure: element: head; element: title; attribute: periodical -->
-                Evangelical Magazine                
+               <head type="title">Evangelical Magazine</head>     
                 
                 <p>In a letter of 3 March 1823 to <name type="person" corresp="#JJR">John James Ruskin</name>,
                     Margaret Ruskin mentions receiving this publication 
@@ -76,7 +76,11 @@
                     but it might be significant that, with the 1823 issues, the magazine initiated volume 1 of a new series.</p>
                 <!-- 4. divs can be nested inside divs; divs can carry attributes. 
             Try adding a div after the first paragraph, so we can create a subsection entitled "Founding of the Evangelical Magazine"--> 
-                
+                <div type="section">
+                    <head type="section">Ruskin's Subscription to the Magazine</head>
+                    <div type="subsection">
+                        <head type="subsection">Founding of the Magazine</head>
+               
                 <!-- 5. then we can add an identifier xml:id to the section head so we can point to it -->
                 <p>The Evangelical Magazine was founded in 1793 as a nondenominational voice of evangelical culture 
                     embracing Anglican Evangelicalism, Old Dissent, and New Dissent (Altbolz, Religious Press in Britain, 45). 
@@ -87,7 +91,10 @@
                     the London Missionary Society (LMS) 
                     ("Retrospect of the Former Series of the Evangelical Magazine", 1; 
                     Altholz, Religious Press in Britain, 46).</p>
-                
+                </div>
+                <div type="subsection">
+                    <head type="subsection">Ruskins and the Evangelical Magazine</head>
+                    <div> 
                 <p>So much of each issue was given over to news and formal reports of LMS activity that the Ruskins' (or at least Margaret's) 
                     regular reading of the Evangelical Magazine implies a strong interest in missionary work. 
                     The reports included lists of charitable contributions to the LMS, which, as Sujit Sivasundaram argues, 
@@ -118,6 +125,9 @@
                     which supplied the sole graphic interest in each issue, apart from the engraved banner. 
                     These biographies exposed the reader to peoples, landscapes, and customs of cultures around the world, 
                     albeit filtered through the perception of missionaries.</p>
+                    </div>
+                        </div>
+                </div>
                 
             </div>
         </body>
