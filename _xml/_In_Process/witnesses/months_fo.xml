@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#APW">Author of Printed Work</persName>
+                </author>
+                <editor>
+                    <persName corresp="#EPW">Editor of Printed Work</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>W. G. Collingwood</persName>
+                        </editor>
+                        <title type="main">The Poems of John Ruskin</title>
+                        <title type="sub">Volume I: Poems Written in Boyhood, 1826-1835</title>
+                        <imprint>
+                            <biblScope type="vol">1</biblScope>
+                            <biblScope type="edition">4<hi rend="superscript">o</hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1891">1891</date>
+                            <biblScope type="pages">xxiii</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Verse. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title">Title of Poem</head>
+                <lg type="stanza" rhyme="aa">
+                    <l>THE MONTHS .
+                        
+                        I.
+                        
+                        FROM your high dwellings , in the realms of snow
+                        And cloud , where many an avalanche's fall
+                        Is heard resounding from the mountain's brow ,
+                        Come , ye cold winds , at January's call ,
+                        On whistling wings ; and with white flakes bestrew
+                        The earth , till February's reign restore
+                        The race of torrents to their wonted flow ,
+                        Whose waves shall stand in silent ice no more ;
+                        But , lashed by March's maddened winds , shall roar
+                        With voice of ire , and beat the rocks on every shore .
+                        
+                        II .
+                        
+                        Bow down your heads , ye flowers , in gentle guise ,
+                        Before the dewy rain that April sheds ,
+                        Whose sun shines through her clouds with quick sur-
+                        prise ,
+                        Shedding soft influences on your heads ;
+                        And wreathe ye round the rosy month that flies
+                        To scatter perfumes in the path of June ;
+                        Till July's sun upon the mountains rise
+                        Triumphant , and the wan and weary moon
+                        Mingle her cold beams with the burning lume
+                        That Sirius shoots through all the dreary midnight
+                        gloom .
+                        
+                        III .
+                        
+                        Rejoice ! ye fields , rejoice , and wave with gold ,
+                        When August round her precious gifts is flinging ;
+                        Lo ! the crushed wain is slowly homeward rolled :
+                        The sun - burnt reaper's jocund lays are singing ;
+                        September's steps her juicy stores unfold ,
+                        If the spring blossoms have not blushed in vain :
+                        October's foliage yellows with his cold :
+                        In rattling showers dark November's rain ,
+                        From every stormy cloud , descends amain ,
+                        Till keen December's snows close up the year again .
+                        
+                        J. R.</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
