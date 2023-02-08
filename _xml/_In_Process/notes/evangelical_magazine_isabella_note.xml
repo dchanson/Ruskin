@@ -68,45 +68,44 @@
         <body>
             <div type="note" subtype="bibliographical">
                 <!-- 3. Build a nested structure: element: head; element: title; attribute: periodical -->
-           <head type="title">The Evangelical Magazine</head>              
-             <div n="1">
-                <head type="section">The Ruskins' and Evangelical Magazine</head>
-                <p>In a letter of 3 March 1823 to <name type="person" corresp="#JJR">John James Ruskin</name>,
+                <head type="title"><title type="periodical" corresp="#EVANGELICALMAG">The Evangelical Magazine</title></head>              
+             
+                <head type="section">The Ruskins and <title type="periodical" corresp="#EVANGELICALMAG">The Evangelical Magazine</title></head>
+                 <p>In a letter of <date when="1823-03-03">3 March 1823</date> to <persName corresp="#JJR">John James Ruskin</persName>,
                     <persName corresp="#MR">Margaret Ruskin</persName> mentions receiving this publication 
-                    (Ruskin Family Letters, ed. Burd, 121). Her remark does not make clear when the Ruskins' subscription began, 
-                    but it might be significant that, with the 1823 issues, the magazine initiated volume 1 of a new series.</p>
+                     (<ref type="bibliography" target="bibliography.php#RFL"><title type="book" corresp="#RFL">Ruskin Family Letters</title>, ed. <persName corresp="#VAB">Burd</persName></ref>, 121). Her remark does not make clear when the Ruskins&#x02BC; subscription began, 
+                     but it might be significant that, with the <date when="1823">1823</date> issues, the magazine initiated volume 1 of a new series.</p>
                 <!-- 4. divs can be nested inside divs; divs can carry attributes. 
             Try adding a div after the first paragraph, so we can create a subsection entitled "Founding of the Evangelical Magazine"--> 
                 
                 <!-- 5. then we can add an identifier xml:id to the section head so we can point to it -->
-                 <p><title type="periodical">The Evangelical Magazine</title> was founded in 1793 as a nondenominational voice of evangelical culture 
-                     embracing <orgName corresp="EVANGELICALANGLICANISM">Anglican Evangelicalism</orgName>, Old Dissent, and New Dissent (Altbolz, Religious Press in Britain, 45). 
-                    That spirit of pan-evangelical catholicity of opinion and mission was reaffirmed at the start of the new series in 1823, 
-                    but the position was being tested. A "Retrospect" published in the first issue of the new series admitted to the emergence of rival denominational publications 
-                    on both the Anglican Evangelical and Congregational sides. In fact, the editorship of the Evangelical Magazine itself 
-                    became dominated by Congregationalists, just as that sect prevailed within the organization that the magazine most prominently represented, 
-                    the <orgName corresp="LMS">London Missionary Society (LMS).</orgName>
-                     ("Retrospect of the Former Series of the Evangelical Magazine", 1; 
-                     <ref type="bibliography" target="bibliography.php#ALTHOLZRELIGIOUSPRESS"><persName corresp="JLA">Altholz</persName>, <title type="book" corresp="#ALTHOLZRELIGIOUSPRESS">Religious Press in Britain</title></ref>, 46).</p>
-             <div n="2">
-                 <head type="subsection"></head>
-                <p>So much of each issue was given over to news and formal reports of LMS activity that the Ruskins' (or at least Margaret's) 
-                    regular reading of the <title type="periodical" corresp="#EVANGELICALMAG">Evangelical Magazine</title> implies a strong interest in missionary work. 
-                    The reports included lists of charitable contributions to the LMS, which, as Sujit Sivasundaram argues, 
+                <p><title type="periodical" corresp="#EVANGELICALMAG">The Evangelical Magazine</title> was founded in <date when="1793">1793</date> as a nondenominational voice of evangelical culture 
+                    embracing <orgName corresp="#EVANGELICALANGLICANISM">Anglican Evangelicalism</orgName>, Old Dissent, and New Dissent (<ref type="bibliography" target="bibliography.php#ALTHOLZRELIGIOUSPRESS"><persName corresp="JLA">Altholz</persName>, <title type="book" corresp="#ALTHOLZRELIGIOUSPRESS"><hi rend="italic">Religious Press in Britain</hi></title></ref>, 45).
+                    That spirit of pan&#x2010;evangelical catholicity of opinion and mission was reaffirmed at the start of the new series in <date when="1823">1823</date>, 
+                     but the position was being tested. A &#x201C;Retrospect&#x201D; published in the first issue of the new series admitted to the emergence of rival denominational publications 
+                     on both the <orgName corresp="#EVANGELICALANGLICANISM">Anglican Evangelical</orgName> and <orgName corresp="#CONGREGATIONALISM">Congregational</orgName> sides. In fact, the editorship of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> itself 
+                    became dominated by <orgName corresp="#CONGREGATIONALISM">Congregationalists</orgName>, just as that sect prevailed within the organization that the magazine most prominently represented, 
+                    the <orgName corresp="#LMS">London Missionary Society (LMS)</orgName>
+                    (<ref type="bibliography" target="bibliography.php#RETROSPECTEVANGELICALMAG">&#x201C;Retrospect of the Former Series of the <hi rend="italic">Evangelical Magazine&#x201D;</hi></ref>, 1; 
+                    <ref type="bibliography" target="bibliography.php#ALTHOLZRELIGIOUSPRESS"><persName corresp="JLA">Altholz</persName>,<title type="book" corresp="#ALTHOLZRELIGIOUSPRESS"><hi rend="italic">Religious Press in Britain</hi></title></ref>, 46).</p>
+             
+                <p>So much of each issue was given over to news and formal reports of <orgName corresp="#LMS">LMS</orgName> activity that the Ruskins&#x02BC; (or at least <persName corresp="#MR">Margaret</persName>&#x02BC;s)
+                    regular reading of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> implies a strong interest in missionary work. 
+                     The reports included lists of charitable contributions to the <orgName corresp="#LMS">LMS</orgName>, which, as <persName corresp="#SSIVASUNDARAM">Sujit Sivasundaram</persName> argues, 
                     inspired readers with a collective experience of evangelical zeal. The lists comprised both large and small donations, 
-                    even so modest as used copies of the Evangelical Magazine to be sent to missionaries abroad, 
+                    even so modest as used copies of the <title type="periodical"><hi rend="italic">Evangelical Magazine</hi></title> to be sent to missionaries abroad, 
                     who duly reported back with their gratitude for fresh reading to relieve the tedium of their missions. 
                     Readers therefore felt they played a part in a worldwide evangelistic effort 
-                    ("The Periodical as Barometer", 43-48).</p>
+                    (<ref type="bibliography" target="bibliography.php#SIVASUNDARAMPERIODICAL"><title type="essay" corresp="#SIVASUNDARAMPERIODICAL">&#x201C;The Periodical as Barometer&#x201D;</title></ref>, 43-48).</p>
                 
-                 <p>Such outreach was characteristic of the <orgName corresp="#LMS">LMS's</orgName> larger effort in print culture, 
+                 <p>Such outreach was characteristic of the <orgName corresp="#LMS">LMS&#x02BC;s</orgName> larger effort in print culture, 
                      which <persName corresp="#AJOHNSTON">Anna Johnston</persName> describes as the construction of "a reading audience through its canny manipulation 
                     of textual and media technologies, a readership that would unite religious Britons in a common cause 
-                    despite differences of class, region, gender, and age" (<ref type="bibiliography" target="bibliography.php#JOHNSTONMISSIONARYPUBLISHING">"British Missionary Publishing"</ref>, 30). 
-                    The young John Ruskin was captured by the excitement, as evidenced by <!--title needed-->, 
+                    despite differences of class, region, gender, and age" (<ref type="bibiliography" target="bibliography.php#JOHNSTONMISSIONARYPUBLISHING">&#x201C;British Missionary Publishing&#x201D;</ref>, 30). 
+                    The young <persName corresp="#JR">John Ruskin</persName> was captured by the excitement, as evidenced by <!--title needed-->, 
                     which appears to record a speech or sermon at a meeting of a missionary society. 
                     Ruskin was also vulnerable to the appeal of missionary celebrity, as shown by his starstruck enthusiasm 
-                    for the poetry and journals of <persName corresp= "#RHBC">Reginald Heber</persName>, Bishop of <placeName corresp= "#CALUCUTTA">Calcutta.</placeName><!-- note on Heber? --></p>
+                    for the poetry and journals of <persName corresp="#RHBC">Reginald Heber</persName>, Bishop of <placeName corresp="#CALUCUTTA">Calcutta.</placeName><!-- note on Heber? --></p>
                 
                 <p>Besides reporting on the missionary activities of LMS, the Evangelical Magazine addressed other interests that probably engaged the Ruskin family. 
                     Each issue contained a section of poetry, albeit strictly pious in subject matter; and the January issue routinely 
@@ -120,8 +119,7 @@
                     which supplied the sole graphic interest in each issue, apart from the engraved banner. 
                     These biographies exposed the reader to peoples, landscapes, and customs of cultures around the world, 
                     albeit filtered through the perception of missionaries.</p>
-                </div> 
-              </div>
+              
            </div>
         </body>
     </text>
