@@ -7,7 +7,7 @@
             The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="evangelical_magazine_note">
             <titleStmt>
-                <title type="main"></title>
+                <title type="main"><title type="periodical" corresp="#EVANGELICALMAG">The <hi rend="italic">Evangelical Magazine</hi></title></title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -23,7 +23,7 @@
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <respStmt>
-                    <persName corresp="#JAdams">Jazmin J Adams</persName>
+                    <persName corresp="#JADAMS">Jazmin J. Adams</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -47,7 +47,7 @@
                     <addrLine>Southeastern Louisiana University</addrLine>
                     <addrLine>SLU 10861</addrLine>
                     <addrLine>Hammond LA 70402</addrLine>
-                    <addrLine>ruskinproject@selu.edu</addrLine>
+                    <addrLine>erm@selu.edu</addrLine>
                 </address>
                 <availability status="restricted">
                     <p>Copyright David C. Hanson.</p>
@@ -61,53 +61,54 @@
     <text>
         <body>
             <div type="note" subtype="bibliographical">
-                <head type="title">Evangelical Magazine</head>                
+                <head type="title">The <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title></head>
                 
-                <p>In a letter of 3 March 1823 to <persName corresp="#JJR">John James Ruskin</persName>,
-                    Margaret Ruskin mentions receiving this publication 
-                    (Ruskin Family Letters, ed. Burd, 121). Her remark does not make clear when the Ruskins' subscription began, 
-                    but it might be significant that, with the 1823 issues, the magazine initiated volume 1 of a new series.</p>
+                <p>In a letter of <date when="1823-03-03">3 March 1823</date> to <persName corresp="#JJR">John James Ruskin</persName>,
+                    <persName corresp="#MR">Margaret Ruskin</persName> mentions receiving this publication 
+                    (<ref type="bibliography" target="bibliography.php#RFL"><title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title>, ed. <persName corresp="#VAB">Burd</persName></ref>, 121). 
+                    Her remark does not make clear when the Ruskins&#x02BC; subscription began, 
+                    but it might be significant that, with the <date when="1823">1823</date> issues, the magazine initiated volume 1 of a new series.</p>
                 
-                <p>The Evangelical Magazine was founded in 1793 as a nondenominational voice of evangelical culture 
-                    embracing Anglican Evangelicalism, Old Dissent, and New Dissent (Altbolz, Religious Press in Britain, 45). 
-                    That spirit of pan-evangelical catholicity of opinion and mission was reaffirmed at the start of the new series in 1823, 
-                    but the position was being tested. A "Retrospect" published in the first issue of the new series admitted to the emergence of rival denominational publications 
-                    on both the Anglican Evangelical and Congregational sides. In fact, the editorship of the Evangelical Magazine itself 
-                    became dominated by Congregationalists, just as that sect prevailed within the organization that the magazine most prominently represented, 
-                    the London Missionary Society (LMS) 
-                    ("Retrospect of the Former Series of the Evangelical Magazine", 1; 
-                    Altholz, Religious Press in Britain, 46).</p>
+                <p>The <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> was founded in <date when="1793">1793</date> as a nondenominational voice of evangelical culture, 
+                    embracing <orgName corresp="#EVANGELICALANGLICANISM">Anglican Evangelicalism</orgName>, Old Dissent, and New Dissent 
+                    (<ref type="bibliography" target="bibliography.php#ALTHOLZRELIGIOUSPRESS"><persName corresp="JLA">Altholz</persName>, <title type="book" corresp="#ALTHOLZRELIGIOUSPRESS"><hi rend="italic">Religious Press in Britain</hi></title></ref>, 45).
+                    That spirit of pan&#x2010;evangelical catholicity of opinion and mission was reaffirmed at the start of the new series of the magazine in <date when="1823">1823</date>, 
+                    but the position was being tested. A <title type="essay" corresp="#RETROSPECTEVANGELICALMAG">&#x201C;Retrospect&#x201D;</title> published in the first issue of the new series admitted to the emergence of rival denominational publications 
+                    on both the <orgName corresp="#EVANGELICALANGLICANISM">Anglican Evangelical</orgName> and <orgName corresp="#CONGREGATIONALISM">Congregational</orgName> sides. In fact, the editorship of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> itself 
+                    became dominated by <orgName corresp="#CONGREGATIONALISM">Congregationalists</orgName>, just as that sect prevailed within the organization that the magazine most prominently represented, 
+                    the <orgName corresp="#LMS">London Missionary Society (LMS)</orgName>
+                    (<ref type="bibliography" target="bibliography.php#RETROSPECTEVANGELICALMAG"><title type="essay" corresp="#RETROSPECTEVANGELICALMAG">&#x201C;Retrospect of the Former Series of the <hi rend="italic">Evangelical Magazine</hi>&#x201D;</title></ref>, 1; 
+                    <ref type="bibliography" target="bibliography.php#ALTHOLZRELIGIOUSPRESS"><persName corresp="JLA">Altholz</persName>, <title type="book" corresp="#ALTHOLZRELIGIOUSPRESS"><hi rend="italic">Religious Press in Britain</hi></title></ref>, 46).</p>
                 
-                <p>So much of each issue was given over to news and formal reports of LMS activity that the Ruskins' (or at least Margaret's) 
-                    regular reading of the Evangelical Magazine implies a strong interest in missionary work. 
-                    The reports included lists of charitable contributions to the LMS, which, as Sujit Sivasundaram argues, 
+                <p>So much of each issue was given over to news and formal reports of <orgName corresp="#LMS">LMS</orgName> activity that the Ruskins&#x02BC; (or at least <persName corresp="#MR">Margaret</persName>&#x02BC;s)
+                    regular reading of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> implies a strong interest in missionary work. 
+                    The reports included lists of charitable contributions to the <orgName corresp="#LMS">LMS</orgName>, which, as <persName corresp="#SSIVASUNDARAM">Sujit Sivasundaram</persName> argues, 
                     inspired readers with a collective experience of evangelical zeal. The lists comprised both large and small donations, 
-                    even so modest as used copies of the Evangelical Magazine to be sent to missionaries abroad, 
+                    even so modest as used copies of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> to be sent to missionaries abroad, 
                     who duly reported back with their gratitude for fresh reading to relieve the tedium of their missions. 
-                    Readers therefore felt they played a part in a worldwide evangelistic effort 
-                    ("The Periodical as Barometer", 43-48).</p>
+                    Readers therefore felt they played a part in a worldwide evangelistic effort, regardless of their level of donation 
+                    (<ref type="bibliography" target="bibliography.php#SIVASUNDARAMPERIODICAL"><persName corresp="#SSIVASUNDARAM">Sivasundaram</persName>, <title type="essay" corresp="#SIVASUNDARAMPERIODICAL">&#x201C;The Periodical as Barometer&#x201D;</title></ref>, 43&#x2013;48).</p>
                 
-                <p>Such outreach was characteristic of the LMS's larger effort in print culture, 
-                    which Anna Johnston describes as the construction of "a reading audience through its canny manipulation 
+                <p>Such outreach was characteristic of the <orgName corresp="#LMS">LMS</orgName>&#x02BC;s larger effort in print culture, 
+                    which <persName corresp="#AJOHNSTON">Anna Johnston</persName> describes as the construction of &#x201C;a reading audience through its canny manipulation 
                     of textual and media technologies, a readership that would unite religious Britons in a common cause 
-                    despite differences of class, region, gender, and age" ("British Missionary Publishing", 30). 
-                    The young John Ruskin was captured by the excitement, as evidenced by <!--title needed-->, 
+                    despite differences of class, region, gender, and age&#x201D; (<ref type="bibliography" target="bibliography.php#JOHNSTONMISSIONARYPUBLISHING">&#x201C;British Missionary Publishing&#x201D;</ref>, 30). 
+                    The young <persName corresp="#JR">John Ruskin</persName> was captured by the excitement, as evidenced by <title type="essay"></title>, 
                     which appears to record a speech or sermon at a meeting of a missionary society. 
-                    Ruskin was also vulnerable to the appeal of missionary celebrity, as shown by his starstruck enthusiasm 
-                    for the poetry and journals of <persName corresp="#RHBC">Reginald Heber, Bishop of Calcutta</persName>.</p>
+                    <persName corresp="#JR">Ruskin</persName> was also vulnerable to the appeal of missionary celebrity, as shown by his starstruck enthusiasm 
+                    for the poetry and journals of <persName corresp="#RHBC">Reginald Heber, Bishop of <placeName corresp="#CALCUTTA">Calcutta</placeName></persName>.</p>
                 
-                <p>Besides reporting on the missionary activities of LMS, the Evangelical Magazine addressed other interests that probably engaged the Ruskin family. 
+                <p>Besides reporting on the missionary activities of the <orgName corresp="#LMS">LMS</orgName>, the <title corresp="periodical">EVANGELICALMAG</title><hi rend="italic">Evangelical Magazine</hi> addressed other interests that probably engaged the Ruskin family. 
                     Each issue contained a section of poetry, albeit strictly pious in subject matter; and the January issue routinely 
-                    printed poems for the New Year, which may have influenced Ruskin's custom of composing a <!--note-->New Year's ode to be fair-copied 
-                    and presented to his father on New Year's Eve. Feature articles mainly concerned religious topics but 
+                    printed poems for the New Year, which may have influenced Ruskin&#x02BC;s custom of composing a <ref type="note" subtype="contextual" target="new_years_poems.php">New Year&#x02BC;s ode</ref> to be fair&#x2010;copied 
+                    and presented to his father on New Year&#x02BC;;s. Feature articles mainly concerned religious topics but 
                     occasionally encompassed other areas of knowledge, such as natural history. 
                     A section of book reviews and brief notices of religious publications, including pious works for children, 
-                    evidently informed the elder Ruskins' choice of some books for John, since some notices correspond to books 
-                    that he is known to have owned (see, e.g., <!--Roseneath-->. Among the most prominent features in each issue 
-                    were lengthy obituaries and biographies of celebrated clergy, embellished by an engraved portrait of a clergyman, 
-                    which supplied the sole graphic interest in each issue, apart from the engraved banner. 
-                    These biographies exposed the reader to peoples, landscapes, and customs of cultures around the world, 
-                    albeit filtered through the perception of missionaries.</p>
+                    evidently informed the elder Ruskins&#x02BC; choice of some books for <persName corresp="#JR">John</persName>, since some notices correspond to books 
+                    that he is known to have owned (see <ref type="note" subtype="bibliographical" target="boyhood_books_note#DESCRIPTIONS">Books Used by <persName corresp="#JR">Ruskin</persName> in His Youth&#x2014;Physical Descriptions</ref>). 
+                    Among the most prominent features in each issue were lengthy obituaries and biographies of celebrated clergy, 
+                    embellished by their engraved portraits, which supplied the sole graphic interest in each issue apart from the engraved banner. 
+                    These biographies exposed the reader to peoples, landscapes, and customs of cultures around the world, albeit filtered through the perception of missionaries.</p>
                 
             </div>
         </body>

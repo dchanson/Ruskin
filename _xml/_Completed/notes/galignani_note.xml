@@ -3,11 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
-        <fileDesc xml:id="tite_of_work_note">
+        <fileDesc xml:id="galignani_note">
             <titleStmt>
-                <title type="main"></title>
+                <title type="main"><orgName corresp="#GALIGNANI">Librairie Galignani</orgName></title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -20,7 +18,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#DCH">DCH</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -44,7 +42,7 @@
                     <addrLine>Southeastern Louisiana University</addrLine>
                     <addrLine>SLU 10861</addrLine>
                     <addrLine>Hammond LA 70402</addrLine>
-                    <addrLine>ruskinproject@selu.edu</addrLine>
+                    <addrLine>erm@selu.edu</addrLine>
                 </address>
                 <availability status="restricted">
                     <p>Copyright David C. Hanson.</p>
@@ -57,13 +55,12 @@
     </teiHeader>
     <text>
         <body>
-            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
             <div type="note" subtype="contextual">
                 <head type="title"><orgName corresp="#GALIGNANI">Librairie Galignani</orgName></head>                
                 
                 <p><orgName corresp="#GALIGNANI">Librairie Galignani</orgName> was a Paris&#x2010;based English&#x2010;language publisher, bookseller, and circulating library, 
                     which supplied British travelers with newspapers, magazines, and books. During the tour of <placeName corresp="#SWITZERLAND">Switzerland</placeName> in <date when="1833">1833</date>, 
-                    for example, when <persName corresp="#JR">John Ruskin</persName> sufffered a minor illness, his father and his cousin, 
+                    for example, when <persName corresp="#JR">John Ruskin</persName> suffered a minor illness, his father and his cousin, 
                     <ref type="note" subtype="biographical" target="#richardson_mary_note.php"><persName corresp="#MRC">Mary Richardson</persName></ref>, 
                     cheered him up by finding &#x201c;some English books from a library&#x201d; along with &#x201c;2 or 3 volumes of 
                     <title type="periodical" corresp="#GALIGNANISMAGAZINE">Gagliani&#x02bc;s [<hi rend="italic">sic</hi>] Magazine</title>&#x201d; 
@@ -86,7 +83,7 @@
                     (<ref type="bibliography" target="bibliography.php#BARBERGALIGNANI"><persName corresp="#GBARBER">Barber</persName>, <title type="essay" corresp="#BARBERGALIGNANI">&#x201c;Galignani&#x02bc;s and the Publication of English Books in France&#x201d;</title></ref>, 269, 284, 272&#x2013;74).</p>
                 
                 <p>From his youth, <persName corresp="#JR">Ruskin</persName> retained one of <orgName corresp="#GALIGNANI">Galignani</orgName>&#x02bc;s outstanding volumes 
-                    in the series, <title type="book" corresp="#POETICALWORKSCOLERIDGEETAL"><hi rend="italic">The Complete Poetical Works of Coleridge, Shelley, and Keats</hi></title> (<date when="1829">1829</date>), 
+                    in the series, <title type="book" corresp="#POETICALWORKSCOLERIDGEETAL"><hi rend="italic">The Complete Poetical Works of <persName corresp="#STC">Coleridge</persName>, <persName corresp="#PBS">Shelley</persName>, and <persName corresp="#JKEATS">Keats</persName></hi></title> (<date when="1829">1829</date>), 
                     an edition that, at the time of publication, was superior to any British edition of <persName corresp="#PBS">Percy Shelley</persName> as well as providing 
                     and the only available edition of <persName corresp="#JKEATS">Keats</persName> in a collected form 
                     (<ref type="bibliography" target="bibliography.php#BARBERGALIGNANI"><persName corresp="#GBARBER">Barber</persName>, <title type="essay" corresp="#BARBERGALIGNANI">&#x201c;Galignani&#x02bc;s and the Publication of English Books in France&#x201d;</title></ref>, 269, 284, 272&#x2013;74; 
