@@ -3,11 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="note">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="evangelical_magazine_note">
             <titleStmt>
-                <title type="main"><title type="periodical" corresp="#EVANGELICALMAG">The <hi rend="italic">Evangelical Magazine</hi></title></title>
+                <title type="main"><orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName> and the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title></title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -24,6 +22,10 @@
                 </respStmt>
                 <respStmt>
                     <persName corresp="#JADAMS">Jazmin J. Adams</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#GMS">Gabriella M. Smith</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -63,11 +65,11 @@
             <div type="note" subtype="bibliographical">
                 <head type="title"><orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName> and the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title></head>
                 
-                <p>In a letter of <date when="1823-03-03">3 March 1823</date> to <persName corresp="#JJR">John James Ruskin</persName>,
+                <p>In a <title type="letter" corresp="mr_to_jjr_1823-03-03">letter of <date when="1823-03-03">3 March 1823</date> to <persName corresp="#JJR">John James Ruskin</persName></title>,
                     <persName corresp="#MR">Margaret Ruskin</persName> mentions receiving this publication 
                     (<ref type="bibliography" target="bibliography.php#RFL"><title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title>, ed. <persName corresp="#VAB">Burd</persName></ref>, 121). 
                     Her remark does not make clear when the Ruskins&#x02BC; subscription began, 
-                    but it might be significant that, with the <date when="1823">1823</date> issues, the magazine initiated volume 1 of a new series.</p>
+                    but it might be significant that, with the <date when="1823">1823</date> issues, the magazine initiated volume one of a new series.</p>
                 
                 <div type="section">
                     <head type="section">The <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine and Missionary Chronicle</hi></title>, the <orgName corresp="#LMS">London Missionary Society</orgName>, and Middle&#x2010;Class <orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName></head>
@@ -76,24 +78,24 @@
                     embracing <orgName corresp="#EVANGELICALANGLICANISM">Anglican Evangelicalism</orgName>, Old Dissent, and New Dissent 
                     (<ref type="bibliography" target="bibliography.php#ALTHOLZRELIGIOUSPRESS"><persName corresp="JLA">Altholz</persName>, <title type="book" corresp="#ALTHOLZRELIGIOUSPRESS"><hi rend="italic">Religious Press in Britain</hi></title></ref>, 45).
                     That spirit of pan&#x2010;evangelical catholicity of opinion and mission was reaffirmed at the start of the new series of the magazine in <date when="1823">1823</date>, 
-                    but the position was being tested. A <title type="essay" corresp="#RETROSPECTEVANGELICALMAG">&#x201C;Retrospect&#x201D;</title> published in the first issue of the new series admitted to the emergence of rival denominational publications 
+                    but the position had been tested. A <title type="essay" corresp="#RETROSPECTEVANGELICALMAG">&#x201C;Retrospect&#x201D;</title> published in the first issue of the new series admitted to the emergence of rival denominational publications 
                     on both the <orgName corresp="#EVANGELICALANGLICANISM">Anglican Evangelical</orgName> and <orgName corresp="#CONGREGATIONALISM">Congregational</orgName> sides. In fact, the editorship of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> itself 
-                    became dominated by <orgName corresp="#CONGREGATIONALISM">Congregationalists</orgName>, just as that sect prevailed within the organization that the magazine most prominently represented, 
+                    had become dominated by <orgName corresp="#CONGREGATIONALISM">Congregationalists</orgName>, just as that sect prevailed within the organization that the magazine most prominently represented, 
                     the <orgName corresp="#LMS">London Missionary Society (LMS)</orgName>
                     (<ref type="bibliography" target="bibliography.php#RETROSPECTEVANGELICALMAG"><title type="essay" corresp="#RETROSPECTEVANGELICALMAG">&#x201C;Retrospect of the Former Series of the <hi rend="italic">Evangelical Magazine</hi>&#x201D;</title></ref>, 1; 
                     <ref type="bibliography" target="bibliography.php#ALTHOLZRELIGIOUSPRESS"><persName corresp="JLA">Altholz</persName>, <title type="book" corresp="#ALTHOLZRELIGIOUSPRESS"><hi rend="italic">Religious Press in Britain</hi></title></ref>, 46; 
-                    <!-- NEW MARKUP --><ref type="bibliography" target="bibliography.php#THORNECONGREGATIONALMISSIONS"><persName corresp="#STHORNE">Thorne</persName>, <title type="book" corresp="#THORNECONGREGATIONALMISSIONS"><hi rend="italic">Congregational Missions and the Making of an Imperial Culture</hi></title></ref>, 24).<!-- END --></p>
+                    <ref type="bibliography" target="bibliography.php#THORNECONGREGATIONALMISSIONS"><persName corresp="#STHORNE">Thorne</persName>, <title type="book" corresp="#THORNECONGREGATIONALMISSIONS"><hi rend="italic">Congregational Missions and the Making of an Imperial Culture</hi></title></ref>, 24).</p>
                 
                 <p>So much of each issue was given over to the section entitled <hi rend="italic">The Missionary Chronicle</hi> containing news and formal reports of <orgName corresp="#LMS">LMS</orgName> activity 
                     that the Ruskins&#x02BC; (or at least <persName corresp="#MR">Margaret</persName>&#x02BC;s) regular reading of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> 
-                    implies a strong interest in missionary work. <!-- NEW MARKUP to end of note -->Indeed, the enthusiasm surrounding foreign missions accounts for a significant part of what tied the Ruskins to <orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName> at this time, 
-                    as documented by <persName corresp="#JR">Ruskin</persName>&#x02BC;s <!-- TITLE AND LINK TO APPARATUS --><ref type="apparatus" target="a_theme_apparatus.php"><title type="essay" corresp="#JRATHEME">&#x201C;a theme&#x201D;</title></ref>, which is a transcript or summary of a meeting for soliciting missionary support. 
-                    Their interest can also be measured by the entire family&#x02BC;s eager reading of the journals and poetry of the <persName corresp="#RHBC">Reverend Reginald Heber</persName>, Bishop of <placeName corresp="#CALCUTTA">Calcutta</placeName>. <persName corresp="#RHBC">Heber</persName>&#x02BC;s celebrity 
-                    attracted them, as did the rising reputation of the <!-- NAME AND NOTE LINK --><ref type="note" target="andrews_edward_note.php"><persName corresp="#EA">Reverend Dr. Edward Andrews</persName></ref>.</p>
-                
+                    implies a strong interest in missionary work. Indeed, the enthusiasm surrounding foreign missions accounts for a significant part of what tied the Ruskins to <orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName> at this time, 
+                    as documented by <persName corresp="#JR">Ruskin</persName>&#x02BC;s <ref type="apparatus" target="a_theme_apparatus.php"><title type="essay" corresp="#JRATHEME">&#x201C;a theme&#x201D;</title></ref>, which is a transcript or summary of a meeting for soliciting support of missionary work. 
+                    Their interest can also be measured by the entire family&#x02BC;s eager reading of the journals and poetry of the <persName corresp="#RHBC">Reverend Reginald Heber, Bishop of <placeName corresp="#CALCUTTA">Calcutta</placeName></persName>. <persName corresp="#RHBC">Heber</persName>&#x02BC;s celebrity 
+                    attracted them, as did the rising reputation of the <ref type="note" target="andrews_edward_note.php"><persName corresp="#EA">Reverend Dr. Edward Andrews</persName></ref>, who encouraged the cause.</p>
+                <here></here>
                 <p>The Ruskins were not uncharacteristic in being bound to <orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName> by the excitement surrounding foreign missions. 
                     <persName corresp="#STHORNE">Susan Thorne</persName> argues that the commitment to missionary labor was a key to coalescing a middle&#x2010;class identity within <orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName>. 
-                    In the <date notBefore="1767" notAfter="1799">late eighteenth century</date>, <persName corresp="#STHORNE">Thorne</persName> explains, &#x201C;missions were a distinctively middle&#x2010;class alternative to gentry modes of authority, 
+                    In the <date notBefore="1767" notAfter="1799">late eighteenth century</date>, <persName corresp="#STHORNE">Thorne</persName> explains, &#x201C;missions [both home and foreign] were a distinctively middle&#x2010;class alternative to gentry modes of authority, 
                     a means of controlling the lower orders at home as well as abroad that was in direct opposition to traditional or gentry forms of rule&#x201D;. 
                     &#x201C;This is not to say&#x201D;, she goes on, &#x201C;that the missionary language of opposition was antiauthoritarian, much less antinational&#x201D; 
                     (<ref type="bibliography" target="bibliography.php#THORNECONGREGATIONALMISSIONS"><persName corresp="#STHORNE">Thorne</persName>, <title type="book" corresp="#THORNECONGREGATIONALMISSIONS"><hi rend="italic">Congregational Missions and the Making of an Imperial Culture</hi></title></ref>, 39, 43). 
@@ -102,47 +104,47 @@
                     the <persName corresp="#WO">Reverend William Orme</persName> (<date notBefore="1787" notAfter="1830">1787&#x2013;1830</date>), 
                     who, years earlier, had parted ways with his first mentor, <persName corresp="#RHALDANE">Richard Haldane</persName> (0000&#x2013;00), who was both 
                     &#x201C;one of <placeName corresp="#SCOTLAND">Scotland</placeName>&#x02BC;s leading advocates of foreign missionary expansion&#x201D; and a fervent supporter of the French Revolution. 
-                    Yet despite <persName corresp="#WO">Orme</persName>&#x02BC;s respectability, his congregation in <placeName corresp="#CAMBERWELL">Camberwell</placeName>, if not <persName corresp="#WO">Orme</persName> himself, may have borne too much the air of the <placeName type="building" corresp="#PDMH">Protestant Dissenting Meeting House</placeName>, as it was then called, 
-                    as compared with &#x201C;<persName corresp="#EA">Dr. Andrews</persName>&#x02BC;s Chapel&#x201D; as described in the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> 
+                    Yet, despite <persName corresp="#WO">Orme</persName>&#x02BC;s respectability, his congregation in <placeName corresp="#CAMBERWELL">Camberwell</placeName>, if not <persName corresp="#WO">Orme</persName> himself, may have borne too much the air of the working&#x2010;class <placeName type="building" corresp="#PDMH">Protestant Dissenting Meeting House</placeName>, as it was then called, 
+                    as compared with &#x201C;<persName corresp="#EA">Dr. Andrews</persName>&#x02BC;s Chapel&#x201D; as named in the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> 
                     (<ref type="bibliography" target="bibliography.php#WORMEDNB"><persName corresp="#AGORDON">Gordon</persName> and <persName corresp="#APB">Pimlott</persName>, <title type="dictionary_entry" corresp="#WORMEDNB">&#x201C;Orme, William [<date notBefore="1787" notAfter="1830">1787&#x2013;1830</date>]&#x201D;</title></ref>; 
                     <ref type="bibliography" target="bibliography.php#THORNECONGREGATIONALMISSIONS"><persName corresp="#STHORNE">Thorne</persName>, <title type="book" corresp="#THORNECONGREGATIONALMISSIONS"><hi rend="italic">Congregational Missions and the Making of an Imperial Culture</hi></title></ref>, 44 [on <persName corresp="#RHALDANE">Haldane</persName>], 58&#x2013;59 [on the increased working&#x2010;class presence in <orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName> in the wake of the Evangelical Revival; 
-                    and see <!-- link to Discussion in apparatus to "theme" --><ref type="apparatus" corresp="a_theme_apparatus.php#DISCUSSION"><title type="essay" corresp="#JRATHEME">&#x201C;the theme&#x201D;</title>: Discussion</ref>).</p>
-                    
-                    <p>Foreign missions and middle&#x2010;class identity were interdependent in <orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName> since the <orgName corresp="#LMS">London Missionary Society</orgName> centered church activity on fund&#x2010;raising for the missions. 
-                        The first <orgName corresp="#CONGREGATIONALISM">Congregational</orgName> foreign missions (sent to the South Seas) were funded by a few wealthy patrons, and relied for success on the will of <persName type="scriptural" corresp="#CREATOR">God</persName>. 
+                    and see <ref type="apparatus" corresp="a_theme_apparatus.php#DISCUSSION"><title type="essay" corresp="#JRATHEME">&#x201C;the theme&#x201D;</title>: Discussion</ref>).</p>
+                    <here></here>
+                    <p>Foreign missions and middle&#x2010;class identity were interdependent in <orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName> in part because the <orgName corresp="#LMS">London Missionary Society</orgName> centered church activity on fundraising for the missions. 
+                        The first <orgName corresp="#CONGREGATIONALISM">Congregational</orgName> foreign missions (sent to the South Seas) were funded by a few wealthy patrons, as tended to be the case in other churches, and relied for success on the will of <persName type="scriptural" corresp="#CREATOR">God</persName>. 
                         Fervent but ill&#x2010;equipped and uninformed, these first missions fell apart; and consequently, 
                         the <orgName corresp="#LMS">LMS</orgName> reorganized fundraising on a broader basis, soliciting contributions both large and small, metropolitan and provincial, but most substantially from the urban middle class 
                         (<ref type="bibliography" target="bibliography.php#THORNECONGREGATIONALMISSIONS"><persName corresp="#STHORNE">Thorne</persName>, <title type="book" corresp="#THORNECONGREGATIONALMISSIONS"><hi rend="italic">Congregational Missions and the Making of an Imperial Culture</hi></title></ref>, 59&#x2013;62).
-                        The fundraising and network of activities were reported in detail in the <hi rend="italic">Missionary Chronicle</hi> section of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title>. 
-                        The published tables of contributions to the <orgName corresp="#LMS">LMS</orgName>, 
+                        The fundraising and network of related activities were reported in detail in the <hi rend="italic">Missionary Chronicle</hi> section of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title>. 
+                        The published tables of contributions to the <orgName corresp="#LMS">LMS</orgName>, along with reports of activities in the local and regional auxiliary <orgName corresp="#LMS">LMS</orgName> societies, 
                         were calculated, as <persName corresp="#SSIVASUNDARAM">Sujit Sivasundaram</persName> argues, to inspire readers with a collective experience of evangelical zeal. 
                         The lists were observantly detailed, even listing contributors of used copies of the magazine to be sent to missionaries abroad, 
-                        who duly reported back with their gratitude for reports from the parent organization, not to mention their relief for fresh reading to palliate the tedium of their missions. 
+                        who duly reported back with their gratitude to receive reports from the parent and auxiliary organizations, not to mention their relief for fresh reading to palliate the tedium of their missions. 
                         Readers, in turn, felt they played a part in a worldwide evangelistic effort, regardless of their level of donation 
                         (<ref type="bibliography" target="bibliography.php#SIVASUNDARAMPERIODICAL"><persName corresp="#SSIVASUNDARAM">Sivasundaram</persName>, <title type="essay" corresp="#SIVASUNDARAMPERIODICAL">&#x201C;The Periodical as Barometer&#x201D;</title></ref>, 43&#x2013;48).</p>
                 </div>
-                
+                <here></here>
                 <div type="section">
-                    <head type="section">The <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title>, the <orgName corresp="#LMS">London Missionary Society</orgName> and Print Culture</head>
-                    
-                
+                    <head type="section">The <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title>, the <orgName corresp="#LMS">London Missionary Society</orgName>, and Print Culture</head>
                     <p>This extensive outreach reported in the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> and <hi rend="italic">Missionary Chronicle</hi> was characteristic 
-                        of the <orgName corresp="#LMS">LMS</orgName>&#x02BC;s broader effort in print culture beyond the journal. 
+                        of the <orgName corresp="#LMS">LMS</orgName>&#x02BC;s broader effort in print culture including and beyond the journal. 
                     As <persName corresp="#AJOHNSTON">Anna Johnston</persName> describes its aim, the <orgName corresp="#LMS">LMS</orgName> constructed &#x201C;a reading audience through its canny manipulation 
                     of textual and media technologies, a readership that would unite religious Britons in a common cause 
                     despite differences of class, region, gender, and age&#x201D; (<ref type="bibliography" target="bibliography.php#JOHNSTONMISSIONARYPUBLISHING"><title type="essay" corresp="#JOHNSTONMISSIONARYPUBLISHING">&#x201C;British Missionary Publishing&#x201D;</title></ref>, 30). 
-                        Thorne comments also on the breadth of social class comprised within Victorian <orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName> while also remarking middle&#x2010;class members&#x02BC; shyness of their working&#x2010;class brethren.
-                    <!--The young <persName corresp="#JR">John Ruskin</persName> was captured by the excitement, as evidenced by "a theme", 
+                        <!--Thorne comments also on the breadth of social class comprised within Victorian <orgName corresp="#CONGREGATIONALISM">Congregationalism</orgName> while also remarking middle&#x2010;class members&#x02BC; shyness of their working&#x2010;class brethren.
+                    The young <persName corresp="#JR">John Ruskin</persName> was captured by the excitement, as evidenced by "a theme", 
                     which appears to record a speech or sermon at a meeting of a missionary society. 
                     <persName corresp="#JR">Ruskin</persName> was also vulnerable to the appeal of missionary celebrity, as shown by his starstruck enthusiasm 
                         for the poetry and journals of <persName corresp="#RHBC">Reginald Heber, Bishop of <placeName corresp="#CALCUTTA">Calcutta</placeName></persName> --></p>
                 
-                    <p>For one middle&#x2010;class family, in any case, the print features of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> probably influenced many productions by the ten&#x2010;year&#x2010;old boy 
+                    <p><!--For one middle&#x2010;class family, in any case, the print features of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> probably influenced many productions by the ten&#x2010;year&#x2010;old boy 
                     whom <persName corresp="#JJR">John James Ruskin</persName> addressed as if he were destined for a sacred mission: &#x201C;You are blessed with a fine Capacity &#x0026; even Genius 
                     &#x0026; you owe it as a Duty to the author of your Being &#x0026; the giver of your Talents to cultivate your powers &#x0026; to use them 
-                    in his Service &#x0026; for the benefit of your fellow Cratures<!-- sic? -->. You may be doomed to enlighten a People by your Wisdon &#x0026; to adorn an age 
+                    in his Service &#x0026; for the benefit of your fellow Creatures. You may be doomed to enlighten a People by your Wisdon &#x0026; to adorn an age 
                     by your Learning&#x201D; and to &#x201C;aid the cause of Truth &#x0026; of Religion &#x0026; enable you to become in many ways a Benfactor to the Human Race&#x201D; 
-                    (<title type="letter" corresp="#jjr_to_jr_1829-11-06">John James to John Ruskin, <date when="1829-11-06">6 November 1829</date></title>, in <title type="book" corresp="#RFL"><hi rend="italic">RFL</hi></title>, ed. <persName corresp="#VAB">Burd</persName>, 209&#x2013;10). The magazine regularly featured a section of poetry, 
+                    (<title type="letter" corresp="#jjr_to_jr_1829-11-06">John James to John Ruskin, <date when="1829-11-06">6 November 1829</date></title>, in <title type="book" corresp="#RFL"><hi rend="italic">RFL</hi></title>, ed. <persName corresp="#VAB">Burd</persName>, 209&#x2013;10).-->For <persName corresp="#JR">Ruskin</persName> as a young writer, 
+                        the magazine appears to have served as a model in a variety of ways, although one might speculate that <persName corresp="#MR">Margaret</persName> meant for the publication to exert its unifying infuence within the home as well as beyond. 
+                        regularly featured a section of poetry, 
                     albeit almost exclusively pious in subject matter; and in particular the January issue routinely 
                     printed poems for the New Year, which may have influenced <persName corresp="#JR">Ruskin</persName>&#x02BC;s custom of composing a 
                     <ref type="note" subtype="contextual" target="new_years_poems.php">New Year&#x02BC;s ode</ref> to be fair&#x2010;copied 
