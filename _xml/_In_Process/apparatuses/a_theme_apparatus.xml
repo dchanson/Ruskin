@@ -5,7 +5,7 @@
     <teiHeader type="a_theme_apparatus">
         <fileDesc xml:id="a_theme_apparatus">
             <titleStmt>
-                <title type="main">“A Theme”</title>
+                <title type="main">&#x201C;A Theme&#x201D;</title>
                 <title type="sub">Apparatus</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -17,12 +17,10 @@
                     <persName corresp="#DCH">David C. Hanson</persName>
                 </principal>
                 <respStmt>
-                    <!--For corresp, enter your first, middle, and last intials.-->
                     <persName corresp="#EAH">Eva Hoffmann</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <respStmt>
-                    <!--For corresp, enter your first, middle, and last intials.-->
                     <persName corresp="#GMS">Gabriella M. Smith</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
@@ -61,33 +59,34 @@
     <text>
         <body>
             <div type="apparatus">
-                <head type="title">&#x201C;A Theme&#x201D;</head>
+                <head type="title"><title type="essay" corresp="#JRATHEME">&#x201C;A Theme&#x201D;</title></head>
                 
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
-                    <p><persName corresp="#JR">Ruskin</persName> wrote the title <title type="essay" corresp="#JRATHEME">&#x201C;a theme&#x201D;</title> centered and on a line by itself above the text, just as he wrote the title 
-                        <!-- ADD REF WHEN DETERMINED -->&#x201C;A sermon&#x201D; 
-                        centered and on a line by itself above the brief text that immediately precedes <title type="essay" corresp="#JRATHEME">&#x201C;a theme&#x201D;</title> on the same page of <title type="manuscript" corresp="#MSII">MS II</title>. 
+                    <p><persName corresp="#JR">Ruskin</persName> wrote the title <title type="essay" corresp="#JRATHEME">&#x201C;a theme&#x201D;</title> centered and on a line by itself above the text, identically to the position of the title of 
+                        <ref type="apparatus" target="a_sermon_beautiful_allegory_apparatus.php"><title type="sermon" corresp="JRSERMONNOTESBEAUTIFULALLEGORY">&#x201C;A sermon&#x201D;</title></ref>, 
+                        which immediately precedes <title type="essay" corresp="#JRATHEME">&#x201C;a theme&#x201D;</title> on the same page of <title type="manuscript" corresp="#MSII">MS II</title>. 
                         In both cases, it appears that <persName corresp="#JR">Ruskin</persName> positioned the title prior to the text as if he was naming a routine genre or exercise.</p>
                 </div>
                 
                 <div type="section" xml:id="GENRE">
                     <head type="section">Genre</head>
-                    <p>If by <hi rend="italic">theme</hi> <persName corresp="#JR">Ruskin</persName> means a written exercise.</p>
-                    <p> <persName corresp="#JR">Ruskin</persName> calls this piece <title type="essay" corresp="#JRATHEME">&#x201C;a theme&#x201D;</title>, rather than a &#x201C;sermon&#x201D;, 
-                        possibly because he did not hear the text in church. The discourse reads like notes on an address to a missionary society. 
-                        <persName corresp="#JR">Ruskin</persName>’s handwriting is unusually illegible for this piece.</p>
+                    <p>In naming his piece a <hi rend="italic">theme</hi>, <persName corresp="#JR">Ruskin</persName> perhaps searched for a secular term to apply to his transcription of a talk 
+                        delivered at a &#x201C;meeting&#x201D;, as the speaker identifies the occasion, rather than a <hi rend="italic">sermon</hi>. The discourse 
+                        suggests an address to a missionary society (see <ref type="internal" target="#DISCUSSION">Discussion</ref>).</p>
                 </div>
                 
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
-                    <p><title type="manuscript" corresp="#MSII">MS II</title> .</p>
+                    <p><title type="manuscript" corresp="#MSII">MS II</title>.</p>
                 </div>
                 
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
                     <p><date notBefore="1829-02" notAfter="1829-03">February to March 1829</date>.</p>
-                    <p>So dated by its position between <title type="sermon" corresp="#JRSERMONBEAUTIFULALLEGORY">&#x201C;A Sermon&#x201D; [&#x201C;beautiful allegory&#x201D;]</title> and <title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATER">On Skiddaw and Derwent Water"</title> in <title type="manuscript" corresp="#MSII">MS II</title> .</p>
+                    <p>So dated by its position between <ref type="apparatus" target="a_sermon_beautiful_allegory_apparatus.php"><title type="sermon" corresp="#JRSERMONBEAUTIFULALLEGORY">&#x201C;A Sermon&#x201D; [&#x201C;beautiful allegory&#x201D;]</title></ref> and 
+                        <ref type="apparatus" target="on_skiddaw_and_derwentwater_apparatus.php"><title corresp="#JRONSKIDDAWANDDERWENTWATERMSII">&#x201C;description of skiddaw &#x0026; lake derwent&#x201D;</title></ref> 
+                        in <title type="manuscript" corresp="#MSII">MS II</title>.</p>
                 </div>
                 
                 <div type="section" xml:id="COMPPUB">
