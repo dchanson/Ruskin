@@ -30,6 +30,10 @@
                     <persName corresp="#CWB">Charles W. Borchers, IV</persName>
                     <resp>contributing review, encoding</resp>
                 </respStmt>
+                <respStmt>
+                    <persName corresp="#GMS">Gabriella M. Smith</persName>
+                    <resp>contributing review, encoding</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America, Blossman Foundation, Huntington Library,
                     Louisiana Board of Regents, National Endowment for the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language
@@ -113,91 +117,108 @@
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
                     <div type="subsection" xml:id="GREATTERROR"><!-- START NEW MARKUP -->
-                        <head type="subsection">The Great Terror of 1803-4</head>
-                        <p>It is possible that Ruskin's poem reflects his parents' memory of an unsettled period during the beginning of their long courtship. 
-                            In 1803, with the collapse of the Peace of Amiens, Napoleon began to mass troops on the French coast of the English Channel along with 
-                            a flotilla of rafts and boats in port cities, ready to carry the invading force across the Channel into England. The threat threw the United Kingdom 
-                            into a state of high alarm, prompting calls to organize, arm, and drill volunteer militias in cities, towns, and villages throughout England and Scotland. 
-                            During this tense period, which held until Horatio Nelson's victory at Trafalgar in October 1805, Margaret Cock was living in the Edinburgh 
-                            residence of her uncle on her mother's side, John Thomas Ruskin (1761-1817), serving as a vital household support to her aunt, Catherine Ruskin (1763-1817). 
-                            Margaret's cousin, John James Ruskin, had recently set out for London in search of a career. In 1803, Margaret was twenty-two and John James was eighteen--the 
-                            latter a dreaming, bookish youth, as captured in the 1802 portrait by George Watson (1766-1837). The cousins had already established an understanding, 
-                            as characterized by John James's 1801 poem addressed to Margaret:</p><!-- CODE POEM AS LG INSIDE FLOATING TEXT -->
-                        <lg>
-                            <l>Suppose a youth entitled to comment,
-                            On praising earthly beauty fully bent,
-                            Say could he find a mortal face like thine,
-                            Where Natures graces ever lovely shine?
-                            . . . . . . . . . . . . . . . . . . . . 
-                            The first thou art that e'er his fancy caught,
-                            To lavish words on Beauty never taught,
-                            Inspired by thee, tis nature dictates all
-                            Those lines that from his pen unpolish'd fall.</l>
-                        </lg>
-                        <p>(Ruskin Family Letters, ed. Burd, 3)</p>
+                        <head type="subsection">The Great Terror of 1803&#x2013;4</head>
+                        <p>It is possible that <persName corresp="#JR">Ruskin</persName>&#x02BC;s poem reflects his parents&#x02BC; memory of an unsettled period during the beginning of their long courtship. 
+                            In <date when="1803">1803</date>, with the collapse of the Peace of <placeName corresp="#AMIENS">Amiens</placeName>, <persName corresp="#NBE">Napoleon</persName> began to mass troops on the French coast of the <geogName corresp="#ENGLISHCHANNEL">English Channel</geogName> along with 
+                            a flotilla of rafts and boats in port cities, ready to carry the invading force across the <geogName corresp="#ENGLISHCHANNEL">Channel</geogName> into <placeName corresp="#ENGLAND">England</placeName>. The threat threw the <placeName corresp="#UK">United Kingdom</placeName> 
+                            into a state of high alarm, prompting calls to organize, arm, and drill volunteer militias in cities, towns, and villages throughout <placeName corresp="#ENGLAND">England</placeName> and <placeName corresp="#SCOTLAND">Scotland</placeName>. 
+                            During this tense period, which held until <persName corresp="#HNVN">Horatio Nelson</persName>&#x02BC;s victory at <placeName corresp="#TRAFALGAR">Trafalgar</placeName> in <date when="1805-10">October 1805</date>, <persName corresp="#MR">Margaret Cock</persName> was living in the <placeName corresp="#EDINBURGH">Edinburgh</placeName> 
+                            residence of her uncle on her mother&#x02BC;s side, <persName corresp="#JTR">John Thomas Ruskin</persName> (<date notBefore="1761" notAfter="1817">1761&#x2013;1817</date>), serving as a vital household support to her aunt, <persName corresp="#CTWR">Catherine Ruskin</persName> (<date notBefore="1763" notAfter="1817">1763&#x2013;1817</date>). 
+                            <persName corresp="#MR">Margaret</persName>&#x02BC;s cousin, <persName corresp="#JJR">John James Ruskin</persName>, had recently set out for <placeName corresp="#LONDON">London</placeName> in search of a career. In <date when="1803">1803</date>, <persName corresp="#MR">Margaret</persName> was twenty&#x2010;two and <persName corresp="#JJR">John James</persName> was eighteen&#x2014;the 
+                            latter a dreaming, bookish youth, as captured in the <date when="1802">1802</date> portrait by <persName corresp="#GW">George Watson</persName> (<date notBefore="1766" notAfter="1837">1766&#x2013;1837</date>). The cousins had already established an understanding, 
+                            as characterized by <persName corresp="#JJR">John James</persName>&#x02BC;s <date when="1801">1801</date> poem addressed to <persName corresp="#MR">Margaret</persName>:</p><!-- CODE POEM AS LG INSIDE FLOATING TEXT -->
+                        <floatingText>
+                            <body>
+                                <div type="poem">
+                                    <lg type="stanza">
+                                        <l>Suppose a youth entitled to comment,</l>
+                                        <l>On praising earthly beauty fully bent,</l>
+                                        <l>Say could he find a mortal face like thine,</l>
+                                        <l>Where Natures graces ever lovely shine?</l>
+                                        <l>. . . . . . . . . . . . . . . . . . . . </l>
+                                        <l>The first thou art that e&#x02BC;er his fancy caught,</l>
+                                        <l>To lavish words on Beauty never taught,</l>
+                                        <l>Inspired by thee, tis nature dictates all</l>
+                                        <l>Those lines that from his pen unpolish&#x02BC;d fall.</l>
+                                    </lg>
+                                    <p>(<ref type="bibliography" target="bibliography.php#RFL"><title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title>, ed. <persName corresp="#VAB">Burd</persName></ref>, 3)</p>
+                                </div>
+                            </body>
+                        </floatingText>
+
+                        <p>In <date notBefore="1803" notAfter="1804">1803&#x2013;4</date>, the unsettled state of the nation was mirrored by <persName corresp="#JJR">John James</persName>&#x02BC;s uncertainty about his future. In <date when="1801">1801</date>, he had gone to <placeName corresp="#LONDON">London</placeName> with letters of introduction in search of a position, 
+                            only to be called back to <placeName corresp="#SCOTLAND">Scotland</placeName> to toil for a druggist in <placeName corresp="#FIFE">Fife</placeName> while awaiting an opening in <placeName corresp="#LONDON">London</placeName>. By <date notBefore="1804" notAfter="1805">1804&#x2013;5</date>, he had finally gained a position with a <placeName corresp="#LONDON">London</placeName> merchant firm, 
+                            but the firm&#x02BC;s future was unpromising. An <date when="1805">1805</date> letter by his mother suggests a complex tangle of emotions&#x2014;on his part, a guilty sense of &#x201C;undutifulness&#x201D; in leaving home, 
+                            combined probably with resentment of his father&#x02BC;s irrational &#x201C;temper&#x201D; that apparently wanted him neither in <placeName corresp="#LONDON">London</placeName> nor at home; and on his mother&#x02BC;s part, self&#x2010;recrimination 
+                            as a &#x201C;poor selfish being who for her own gratification&#x201D;&#x2014;presumably, in wanting to keep him at home&#x2014;&#x201C;would ruin the prospects of her Child and perhaps condemn him to a life of misery forever&#x201D;. 
+                            Now, however, <persName corresp="#CTWR">Catherine</persName> perceived her duty in propping up her son&#x02BC;s &#x201C;habits of Industry&#x201D;, &#x201C;<persName type="scriptural" corresp="#CREATOR">God</persName> requir[ing] that man should be accountable for his time&#x201D; 
+                            and &#x201C;active in doing good to his fellow Creatures&#x201D;
+                            (<ref type="bibliography" target="bibliography.php#RFL"><title type="letter" corresp="#cr_to_jjr_1805-04-18">Catherine to John James Ruskin, <date when="1805-04-18">18 April 1805</date></title>, <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title>, ed. <persName corresp="#VAB">Burd</persName></ref>, 5&#x2013;6, and see 7 n. 2).</p>
                         
-                        <p>In 1803-4, the unsettled state of the nation was mirrored by John James's uncertainty about his future. In 1801, he had gone to London with letters of introduction in search of a position, 
-                            only to be called back to Scotland to toil for a druggist in Fife while awaiting an opening in London. By 1804-5, he had finally gained a position with a London merchant firm, 
-                            but the firm's future was unpromising. An 1805 letter by his mother suggests a complex tangle of emotions--on his part, a guilty sense of "undutifulness" in leaving home, 
-                            combined probably with resentment of his father's irrational "temper" that apparently wanted him neither in London nor at home; and on his mother's part, self-recrimination 
-                            as a "poor selfish being who for her own gratification"--presumably, in wanting to keep him at home--"would ruin the prospects of her Child and perhaps condemn him to a life of misery forever". 
-                            Now, however, Catherine perceived her duty in propping up her son's "habits of Industry", "God requir[ing] that man should be accountable for his time" 
-                            and "active in doing good to his fellow Creatures"
-                            (Catherine to John James Ruskin, 18 April 1805, Ruskin Family Letters, ed. Burd, 5-6, and see 7 n. 2).</p>
-                        
-                        <p>As John James labored under conflicted feelings of guilt, resentment, and duty toward his parents' home in Edinburgh, 
-                            while dreaming of establishing a more stable future home of his own with Margaret, 
-                            his conflicted emotions were writ large by British evangelicals whose assurance of God's protection was thrown into question by the prospect of French invasion. 
-                            As a correspondent in Knaresborough, Yorkshire, cautioned readers of the <!-- TITLE AND LINK TO NOTE -->Evangelical Magazine in 1804: 
-                            "a supposed confidence in God in the season of apparent security, may not produce all the effects expected, in the hour of difficulty and distress. 
-                            It is indeed arguing according to the promise, when we try to persuade ourselves that, 'As our day is, so shall our strength be': 
+                        <p>As <persName corresp="#JJR">John James</persName> labored under conflicted feelings of guilt, resentment, and duty toward his parents&#x02BC; home in <placeName corresp="#EDINBURGH">Edinburgh</placeName>, 
+                            while dreaming of establishing a more stable future home of his own with <persName corresp="#MR">Margaret</persName>, 
+                            his conflicted emotions were writ large by British evangelicals whose assurance of <persName type="scriptural" corresp="#CREATOR">God</persName>&#x02BC;s protection was thrown into question by the prospect of French invasion. 
+                            As a correspondent in <placeName corresp="#KNARESBOROUGH">Knaresborough, Yorkshire</placeName>, cautioned readers of the <!-- TITLE AND LINK TO NOTE --><ref type="note" target="evangelical_magazine_note.php"><title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title></ref> in <date when="1804">1804</date>: 
+                            &#x201C;a supposed confidence in <persName type="scriptural" corresp="#CREATOR">God</persName> in the season of apparent security, may not produce all the effects expected, in the hour of difficulty and distress. 
+                            It is indeed arguing according to the promise, when we try to persuade ourselves that, &#x2018;As our day is, so shall our strength be&#x2019;: 
                             but unless we take into the account an habitual concern to please him and to walk with him, such a persuasion will prove presumptuous, 
-                            rather than the fruit of a lively active faith, and will leave us in want of the consolation and support we expected" 
-                            ("French Invasion, and Capture of the Duff", 73). To the preceding issue of the magazine, 
-                            another correspondent sent a poem pleading forgiveness for whatever "sins" and "crimes" had brought on this threat:
+                            rather than the fruit of a lively active faith, and will leave us in want of the consolation and support we expected&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#HFRENCHINVASIONEVANGELICALMAG1804-02"><title type="essay" corresp="#HFRENCHINVASIONEVANGELICALMAG1804-02">&#x201C;French Invasion, and Capture of the Duff&#x201D;</title></ref>, 73). To the preceding issue of the magazine, 
+                            another correspondent sent a poem pleading forgiveness for whatever &#x201C;sins&#x201D; and &#x201C;crimes&#x201D; had brought on this threat:
                         </p><!-- CODE POEM AS LG INSIDE FLOATING TEXT -->
                         
-                        <lg>
-                        <l>Eternal Sov'reign! Gracious Sire!
-                            To thee we wing the strong desire,--
-                            To thee our prayers ascend.
-                            Turn back thy wrath, thy anger stay,
-                            And give us not to foes a prey;
-                            But prove our gracious Friend!</l>
-                        </lg>
-                        <p>(Philander, "On the Prospect of Invasion")</p>
-                        <p>These fears and doubts would prove at variance with the spirit that Wordsworth would rouse in 1807 with the series, "Sonnets Dedicated to Liberty". 
-                            In the sonnet "October, 1803", Wordsworth, unlike the Yorkshireman, reassures with the promise, "as thy days, so shall thy strength be" (Duet. 33:25), 
-                            arguing that, for "Sound, healthy Children" of God and Britain, "sufficient unto the day is the evil thereof" (Matt. 6:34) since their minds are "untilled" 
-                            by the worldliness that causes "rich men" to quail with "apprehension and despair":
+                        <floatingText>
+                            <body>
+                                <div type="poem">
+                                    <lg type="stanza">
+                                        <l>Eternal Sov&#x02BC;reign! Gracious Sire!</l>
+                                        <l>To thee we wing the strong desire,&#x2014;</l>
+                                        <l>To thee our prayers ascend.</l>
+                                        <l>Turn back thy wrath, thy anger stay,</l>
+                                        <l>And give us not to foes a prey;</l>
+                                        <l>But prove our gracious Friend!</l>
+                                    </lg>
+                                    <p>(<ref type="bibliography" target="bibliography.php#PHILANDERINVASIONEVANGELICALMAG1804-01"><persName corresp="#PHILANDER">Philander</persName>, <title type="poem" corresp="#PHILANDERINVASIONEVANGELICALMAG1804-01">&#x201C;On the Prospect of Invasion&#x201D;</title></ref>)</p>
+                                </div>
+                            </body>
+                        </floatingText>
+                        <p>These fears and doubts would prove at variance with the spirit that <persName corresp="#WW">Wordsworth</persName> would rouse in <date when="1807">1807</date> with the series, <title type="series" corresp="#WORDSWORTHSONNETSLIBERTY">&#x201C;Sonnets Dedicated to Liberty&#x201D;</title>. 
+                            In the sonnet <title type="poem" corresp="#WORDSWORTHOCTOBER1803">&#x201C;October, 1803&#x201D;</title>, <persName corresp="#WW">Wordsworth</persName>, unlike the Yorkshireman, reassures with the promise, &#x201C;as thy days, so shall thy strength be&#x201D; (Duet. 33:25), 
+                            arguing that, for &#x201C;Sound, healthy Children&#x201D; of <persName type="scriptural" corresp="#CREATOR">God</persName> and <placeName corresp="#BRITAIN">Britain</placeName>, &#x201C;sufficient unto the day is the evil thereof&#x201D; (Matt. 6:34) since their minds are &#x201C;untilled&#x201D; 
+                            by the worldliness that causes &#x201C;rich men&#x201D; to quail with &#x201C;apprehension and despair&#x201D;:
                         </p><!-- CODE POEM AS LG INSIDE FLOATING TEXT -->
+                        <floatingText>
+                            <body>
+                                <div type="poem">
+                                    <lg type="stanza">
+                                        <l>These times touch monied Worldlings with dismay:</l>
+                                        <l>Even rich men, brave by nature, taint the air</l>
+                                        <l>With words of apprehension and despair:</l>
+                                        <l>While tens of thousands, thinking on the affray,</l>
+                                        <l>Men unto whom sufficient for the day</l>
+                                        <l>And minds not stinted or untilled are given,</l>
+                                        <l>Sound, healthy Children of the God of Heaven,</l>
+                                        <l>Are cheerful as the rising Sun in May.</l>
+                                        <l>What do we gather hence but firmer faith</l>
+                                        <l>That every gift of noble origin</l>
+                                        <l>Is breathed upon by Hope&#x02BC;s perpetual breath;</l>
+                                        <l>That virtue and the faculties within</l>
+                                        <l>Are vital,&#x2014;and that riches are akin</l>
+                                        <l>To fear, to change, to cowardice, and death!</l>
+                                    </lg>
+                                    <p>(<ref type="bibliography" target="bibliography.php#WORDSWORTHPOETICALWORKS"><title type="poem" corresp="#WORDSWORTHOCTOBER1803">Sonnet 20, &#x201C;October, 1803&#x201D;</title>, <title type="series" corresp="#WORDSWORTHSONNETSLIBERTY">&#x201C;Sonnets Dedicated to Liberty&#x201D;</title>, in <persName corresp="#WW">Wordsworth</persName>, <title type="book" corresp="#WORDSWORTHPOETICALWORKS"><hi rend="italic">Works</hi> [<date when="1827">1827</date>]</title></ref>, 3:146)</p>
+                                </div>
+                            </body>
+                        </floatingText>
                         
-                        <lg>
-                            <l>These times touch monied Worldlings with dismay:
-                                Even rich men, brave by nature, taint the air
-                                With words of apprehension and despair:
-                                While tens of thousands, thinking on the affray,
-                                Men unto whom sufficient for the day
-                                And minds not stinted or untilled are given,
-                                Sound, healthy Children of the God of Heaven,
-                                Are cheerful as the rising Sun in May.
-                                What do we gather hence but firmer faith
-                                That every gift of noble origin
-                                Is breathed upon by Hope's perpetual breath;
-                                That virtue and the faculties within
-                                Are vital,—-and that riches are akin
-                                To fear, to change, to cowardice, and death!</l>
-                        </lg>
-                        <p>(Sonnet 20, "October, 1803", "Sonnets Dedicated to Liberty", in Wordsworth, Works [1827], 3:146)</p>
-                        
-                        <p>As Richard Matlak remarks, this position represents a change of heart in Wordsworth, as he, Dorothy, and S. T. Coleridge 
-                            appear at first to have shunned the summons for militia volunteers by departing home for a tour of Scotland in August-September 1802. 
-                            Immediately on their return, however, Wordsworth signed up with the Grasmere Volunteers, his mind changed, Matlak argues, 
-                            by a meeting with Walter Scott during the tour. Scott was an ardent militarist, and his zeal was answered not just by British countrymen but also by London merchants--those 
-                            "monied Worldlings" whom Wordsworth condemns for cowardice, but whom Matlak reads as straw men 
-                            (Matlak, "Wordsworth and the 'Great Terror' of 1803-05"). 
-                            The temptation to construct straw men would have been strong in a time when patriotism was feverish, yet some were apt to "taint the air" with "apprehension and despair"--not 
-                            because they feared for their riches, but because as evangelicals they read divine retribution into the events. For John James Ruskin, the conflicting signs must have mirrored 
+                        <p>As <persName corresp="#RMATLAK">Richard</persName> Matlak remarks, this position represents a change of heart in <persName corresp="#WW">Wordsworth</persName>, as he, <persName corresp="#DW">Dorothy</persName>, and <persName corresp="#STC">S. T. Coleridge</persName> 
+                            appear at first to have shunned the summons for militia volunteers by departing home for a tour of <placeName corresp="#SCOTLAND">Scotland</placeName> in <date notBefore="1802-08" notAfter="1802-09">August&#x2013;September 1802</date>. 
+                            Immediately on their return, however, <persName corresp="#WW">Wordsworth</persName> signed up with the <orgName corresp="#GRASMEREVOLUNTEERS">Grasmere Volunteers</orgName>, his mind changed, <persName corresp="#RMATLAK">Matlak</persName> argues, 
+                            by a meeting with <persName corresp="#WS">Walter Scott</persName> during the tour. <persName corresp="#WS">Scott</persName> was an ardent militarist, and his zeal was answered not just by British countrymen but also by <placeName corresp="#LONDON">London</placeName> merchants&#x2014;those 
+                            &#x201C;monied Worldlings&#x201D; whom <persName corresp="#WW">Wordsworth</persName> condemns for cowardice, but whom <persName corresp="#RMATLAK">Matlak</persName> reads as straw men 
+                            (<ref type="bibliography" target="bibliography.php#MATLAKWORDSWORTHANDGREATTERROR"><persName corresp="#RMATLAK">Matlak</persName>, <title type="essay" corresp="#MATLAKWORDSWORTHANDGREATTERROR">&#x201C;Wordsworth and the &#x2018;Great Terror&#x2019; of 1803&#x2013;05&#x201D;</title></ref>). 
+                            The temptation to construct straw men would have been strong in a time when patriotism was feverish, yet some were apt to &#x201C;taint the air&#x201D; with &#x201C;apprehension and despair&#x201D;&#x2014;not 
+                            because they feared for their riches, but because as evangelicals they read divine retribution into the events. For <persName corresp="#JJR">John James Ruskin</persName>, the conflicting signs must have mirrored 
                             his own despair even of locating a home much less of defending it.</p>
                     </div><!-- END NEW MARKUP-->
                     
@@ -403,7 +424,6 @@
                         <persName corresp="#CWB">Charles W. Borchers, IV</persName> has discovered beneath the title an erased word that appears to be <hi rend="italic">woe</hi>.</p>-->
                     </div>
                 </div>
-            </div>
         </body>
     </text>
 </TEI>
