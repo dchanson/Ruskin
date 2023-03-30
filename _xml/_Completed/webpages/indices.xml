@@ -79,14 +79,17 @@
                         these titles are also listed in the Works Indices, but the link will take the reader to the Apparatus Page for the composite work.
                     </p>
                     
-                    <p>The current Title Index is arranged alphabetically. Eventually, the archive will offer Title Indices that are arranged chronologically and topically.</p>
+                    <p>The Title Index is arranged both alphabetically and chronologically.</p>
+                </div>
                     <!--<p>Not all works contained in <hi rend="italic">ERM</hi> were authored by Ruskin or by Ruskin exclusively. Some indexed titles represent collaborations 
                     (e.g., with Ruskin&#x02BC;s father, John James Ruskin, or with his cousin, Mary Richardson). Other titles represent glosses on Ruskin&#x02BC;s works or manuscripts 
                     (e.g., glosses by his father or by his mother, Margaret Ruskin).
                     </p>-->
                     
                         
-                        <!-- Dr. Hanson, the items marked with -@@@@@@@@@@@@@@- do not have a .php file in the account, I transferred them to the index as they were. -->      
+                        <!-- Dr. Hanson, the items marked with -@@@@@@@@@@@@@@- do not have a .php file in the account, I transferred them to the index as they were. -->
+                <div type="section" xml:id="WORKS-ALPHABETICAL">
+                    <head type="section">Works (<hi rend="italic">alphabetial list</hi>)</head>
               <!-- A-->
                     <div type="subsection">
                         <head type="subsection"><hi rend="bold">A</hi></head>
@@ -327,16 +330,21 @@
                         <!-- X --> 
                         <!-- Y -->
                         <!-- Z -->
-                        <!--<p>Manuscripts and Corpuses Indices by Title</p>
-                        <list>
-                            <item>Alphabetically</item>
-                            <item>Chronologically</item> 
-                        </list>
-                    <p>The position of a manuscript in chronological sequence is based on its earliest date of use. However, because Ruskin reused some manuscripts, such as the 
-                        <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Books</ref> at various times, in some cases over a range of years, 
-                        placement in the chronological index can be only approximate. Access to the archive through chronology is available with greater precision through the Works Indices.
-                    </p>-->
                     </div>
+                    
+                    <div type="section" xml:id="WORKS-CHRONOLOGICAL">
+                        <head type="section">Works (<hi rend="italic">chronological list</hi>)</head>
+                        
+                        <p>The position of a manuscript in chronological sequence is based on its earliest date of use. However, because Ruskin reused some manuscripts, such as the 
+                        <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Books</ref> at various times, in some cases over a range of years, 
+                        placement in the chronological index can be only approximate. Access to the archive through chronology is available with greater precision through the Works Indices.</p>
+                        
+                        <div type="subsection">
+                            <head type="subsection"><hi rend="bold">1826</hi></head>
+                            <list>
+                                <item></item>
+                            </list>
+                        </div>
                     
                     
                     </div>
@@ -417,7 +425,7 @@
                             </list>
                         </div>
                         </div>
-                        </div>
+                        
                     
                     <div type="section" xml:id="WORKSBYOTHERS">
                         <head type="section">Works by Others</head>
@@ -648,6 +656,8 @@
                      
                   
                
+            </div>
+                </div>
             </div>
         </body>
     </text>
