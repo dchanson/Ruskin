@@ -3,11 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="apparatus">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
-            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
         <fileDesc xml:id="title_of_work_apparatus">
             <titleStmt>
-                <title type="main">"The Constellations"</title>
+                <title type="main">&#x201C;The Constellations: Northern, Some of the Zodiac, and Some of the Southern&#x201D;</title>
                 <title type="sub">Apparatus</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -59,83 +57,65 @@
         <body>
             <div type="apparatus">
                 <head type="title">&#x201C;The Constellations: Northern, Some of the Zodiac, and Some of the Southern&#x201D;</head>
-                <!--An apparatus may contain all or only some of the following sections.-->
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
-                    <p>MS III, Ruskin wrote the title as
-                    &#x0201C;<hi rend="caps">THE CONSTELLATIONS / NORTHERN, SOME OF THE
-                        ZODIAC AND / SOME OF THE SOUTHERN.</hi>&#x0201D; In MS IA, he wrote the title nearly identically, merely
-                    breaking the lines differently, as &#x0201C;<hi rend="caps">THE
-                        CONSTELLATIONS NORTHERN / SOME OF THE ZODIAC / AND SOME OF THE
-                        SOUTHERN.</hi>&#x0201D; In RF
-                            T70, the extension &#x0201C;<hi rend="caps">NOTHERN . . .
-                                SOUTHERN</hi> is placed awkwardly, as if possibly inserted as an
-                    afterthought.</p>
+                    <p>In <!-- TITLES AND LINK -->MS III, Ruskin wrote the title as 
+                    &#x0201C;<hi rend="caps">THE CONSTELLATIONS / NORTHERN, SOME OF THE ZODIAC AND / SOME OF THE SOUTHERN.</hi>&#x0201D; 
+                        In <!-- TITLES AND LINKS -->MS IA, he wrote the title nearly identically, merely breaking the lines differently, 
+                        as &#x0201C;<hi rend="caps">THE CONSTELLATIONS NORTHERN / SOME OF THE ZODIAC / AND SOME OF THESOUTHERN</hi>.&#x0201D; 
+                        In RF T70, the extension &#x0201C;<hi rend="caps">NOTHERN . . . SOUTHERN</hi> is placed awkwardly, 
+                        as if possibly inserted as an afterthought.</p>
                     <p>See <ref type="note" subtype="bibliographical" target="title_citation_note.php">System of Title Citation for Works</ref>.</p>
                 </div>
+                
                 <div type="section" xml:id="GENRE">
                     <head type="section">Genre</head>
-                    <p>Body paragraph.</p>
+                    <p>Poem.</p>
                 </div>
                 <div type="section" xml:id="MAJORMS">
-                    <head type="section">MSS IA and III, RF T70</head>
+                    <head type="section">MS IA; MS III; RF T70</head>
                     
-                    <p><ref type="mss" target="xxx.html">MS IA</ref>; <ref type="mss" target="3.html">MS
-                        III</ref>; <ref type="mss" target="xxx.html">RF T70</ref>.</p>
-                    <p>In <ref type="mss" target="3.html">MS III</ref>, a <ref type="note"
-                        target="redbook.html">Red Book</ref> devoted initially to <ref type="works"
-                            target="20.html">&#x0201C;Harry and Lucy,&#x0201D; Vol. 2</ref>,
-                        &#x0201C;The Constellations&#x0201D; is the first poem in the <ref
-                            type="note" target="msiiipoetryanthology2.html">MS III Second Poetry
-                            Anthology</ref>.</p>
+                    <p>In <!-- TITLES AND LINKS -->MS III, a <ref type="note" subtype="bibliographical" target="red_book_note.php">Red Book</ref> 
+                        devoted initially to &#x0201C;Harry and Lucy . . . Vol 2&#x0201D;, &#x0201C;The Constellations&#x0201D; is the first poem in the 
+                        MS III Second Poetry Anthology.</p>
                     <p>Facsimiles by permission of <title type="archive" corresp="#BEINECKERUSKINCOLLECTION">John Ruskin Collection</title>, General Collection, <orgName corresp="#BEINECKE">Beinecke Rare Book and Manuscript Library</orgName>, <orgName corresp="#YALE">Yale University</orgName>. Transcriptions of texts and commentary &#x00A9; <persName corresp="#DCH">David C. Hanson</persName>.</p>
-                    
                 </div>
+                
                 <div type="section" xml:id="DATE">
-                    <head type="section">January (or January 1827?)</head>
-                    <p>Undated fair copy in <title type="manuscript" corresp="#MSIII">MS III</title>, 
-                        where title written <title type="poem" corresp="#JRTHECONSTELLATIONS">&#x201C;THE CONSTELLATIONS / NORTHERN, SOME OF THE ZODIAC AND / SOME OF THE SOUTHERN.&#x201D;</title>. 
-                        Its placement after the second volume of <title type="lesson" corresp="#JRHARRYANDLUCYVOL2">&#x201C;Harry and Lucy&#x201D;</title> 
-                        and before <title type="poem" corresp="#JRTHESUN">&#x201C;The Sun&#x201D;</title> suggests <date when="1828-01-01">New Year&#x02BC;s 1828</date>. 
-                        Indeed, in the prose section of <title type="manuscript" corresp="#MSIII">MS III</title> preceding the poem, 
-                        <persName type="fictional" corresp="#HARRY">Harry</persName> gives <persName type="fictional" corresp="#LUCY">Lucy</persName> 
+                    <head type="section">December 1827 to January 1828 (or January 1827?)</head>
+                    
+                    <p>The fair copy in <title type="manuscript" corresp="#MSIII">MS III</title> is undated. Its placement following the second volume of 
+                        <!-- LINK --><title type="lesson" corresp="#JRHARRYANDLUCYVOL2">&#x201C;Harry and Lucy&#x201D;</title> 
+                        and before <title type="poem" corresp="#JRTHESUN">&#x201C;The Sun&#x201D;</title>, both of which were completed for <date when="1828-01-01">New Year&#x02BC;s 1828</date>, 
+                        suggests a similar time of January 1828 for "The Constellations". 
+                        Ruskin seems to set up the association in the prose section of <title type="lesson" corresp="#JRHARRYANDLUCYVOL2">&#x201C;Harry and Lucy&#x201D;</title>, 
+                        in which <persName type="fictional" corresp="#HARRY">Harry</persName> gives <persName type="fictional" corresp="#LUCY">Lucy</persName> 
                         a drawing of <name type="astronomical" corresp="#CHARLESSWAIN">Charles&#x02BC;s Wain</name> &#x201C;as an introduction to astronomy&#x201D;. 
-                        Thus, <persName corresp="#JR">Ruskin</persName>&#x02BC;s editors are strictly correct in listing the poem under <date when="1827">1827</date>&#x2014;that is, 
-                        composition in late <date when="1827">1827</date> for a <date when="1828-01-01">New Year&#x02BC;s 1828</date> presentation.</p>
-                    <p>The editors seem to intend earlier <date when="1827">1827</date>, associating the poem with the rough draft of <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> 
-                        in <title type="manuscript" corresp="#MSIA">MS IA</title>, which they misdate as <date when="1827">1827</date>. 
-                        If they based their dating on harder evidence contained in the rough draft of <title type="poem" corresp="#JRTHECONSTELLATIONS">&#x201C;Constellations&#x201D;</title> 
-                        in <title type="manuscript" corresp="#MSIA">MS IA</title> (see <ref type="bibliography" target="bibliography.php#JRWORKSLE"><title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:535), 
-                        their reasoning cannot be confirmed or denied, since a piece of that rough draft manuscript is now very likely missing.
-                        The evidence in <title type="manuscript" corresp="#MSIII">MS III</title> does hold open a possibility for an earlier date. 
+                        Thus, Cook and Wedderburn, the editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php">Library Edition</ref>, 
+                        may have been correct in listing the poem under <date when="1827">1827</date>. More precisely, however, 
+                        composition would have occurred in late <date when="1827">1827</date>, although probably not as a <!-- LINK TO NOTE -->New Year&#x02BC;s poem.</p>
+                    
+                    <p>Cook and Wedderburn seem to intend an earlier <date when="1827">1827</date>, associating the poem with the rough draft of <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> 
+                        in <title type="manuscript" corresp="#MSIA">MS IA</title>, which they misdate as <date when="1827">1827</date> 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>, 2:535; 
+                        and see <!-- LINK TO DATING IN APPARATUS --><title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title>: Date). 
+                        <title type="manuscript" corresp="#MSIA">MS IA</title> contains rough draft of <title type="poem" corresp="#JRTHECONSTELLATIONS">&#x201C;Constellations&#x201D;</title>, 
+                        which, if the editors had grounds for associating with the draft of "The Monastery" also contained therein, 
+                        their reasoning can be neither confirmed nor denied, since a piece of that draft manuscript of "Constellations" is now very likely missing 
+                        (see <!-- LINK TO CONTENTS IN APPARATUS -->MS IA: Contents, <hi rend="italic">b</hi>).</p>
+                        <!--The evidence in <title type="manuscript" corresp="#MSIII">MS III</title> does hold open a possibility for an earlier date. 
                         As noted in nos. 1 and 4, <persName corresp="#JR">Ruskin</persName> seems habitually to have included his previous year&#x02BC;s presentation poems 
                         along with the most recent New Year&#x02BC;s gift in his <title type="lesson" corresp="#JRHARRYANDLUCY">&#x201C;Harry and Lucy&#x201D;</title> books 
                         (e.g., in <title type="manuscript" corresp="#MSIII">MS III</title>, <persName corresp="#JR">Ruskin</persName> includes another older New Year&#x02BC;s poem, no. 4, in this group). 
                         Thus, <title type="poem" corresp="#JRTHECONSTELLATIONS">&#x201C;The Constellations&#x201D;</title> could have existed as a New Year&#x02BC;s gift for <date when="1827">1827</date>, 
-                        although no positive evidence supports the possibility.</p>
-                    <p>If the poem is based on <persName corresp="#JR">Ruskin</persName>&#x02BC;s actual observation of the sky, the alignment of heavenly bodies described at the beginning 
-                        of the poem would not have been possible in <date when="1827">1827</date>, not even as late as December for a New Year&#x02BC;s composition. In that case,
-                        the composition would have to be moved forward to <date notBefore="1828-04" notAfter="1828-05">April&#x2010;May 1828</date>, more in keeping with the occasion of <persName corresp="#JJR">John James</persName>&#x02BC;s birthday. 
-                        See <ref type="internal" target="#DISCUSSION">Discussion</ref>.
-                        <!--<p>Late 1827 to January 1828.</p>
-                        <p>The fair copy in <ref type="mss" target="3.html">MS III</ref> is undated, but its
-                            placement immediately following <ref type="works" target="20.html"
-                                >&#x0201C;Harry and Lucy,&#x0201D; Vol. 2</ref>, and before <ref
-                                    type="works" target="22.html">&#x0201C;The Sun&#x0201D;</ref>
-                            suggests New Year&#x02019;s 1828. Thus, the editors of the <ref type="note"
-                                target="libraryedition.html">Library Edition</ref> are strictly correct in
-                            listing the poem under 1827&#x02014;that is, composition in late 1827 for a
-                            New Year&#x02019;s 1828 presentation. However, the editors seem to intend
-                            earlier 1827, associating the poem with the rough draft of <ref type="works"
-                                target="xxx.html">&#x0201C;The Monastery&#x0201D;</ref> in <ref
-                                    type="mss" target="xxx.html">MS IA</ref> (which they misdate as 1827). If
-                            they based their dating on harder evidence contained in the rough draft of
-                            &#x0201C;The Constellations&#x0201D; in <ref type="mss"
-                                target="xxx.html">MS IA</ref> (see <ref type="biblio"
-                                    target="jrworksle.html">Ruskin, <hi rend="italic">Works</hi></ref>, 2:535),
-                            their reasoning cannot be confirmed or denied, since a piece of that rough draft
-                            manuscript is now very likely missing (see <ref type="mss" target="xxx.html">MS
-                                IA: </ref>Contents, <hi rend="italic">b</hi>).</p>
+                        although no positive evidence supports the possibility.</p>-->
+                    
+                    <p>As internal evidence of dating, if <persName corresp="#JR">Ruskin</persName> based portions of the poem on actual observation of the sky, 
+                        the alignment of heavenly bodies described at the beginning of the poem would not have been possible in <date when="1827">1827</date>, 
+                        but rather would have to be moved forward to <date notBefore="1828-04" notAfter="1828-05">April&#x2010;May 1828</date>, 
+                        more in keeping with the occasion of <persName corresp="#JJR">John James</persName>&#x02BC;s birthday 
+                        (see <ref type="internal" target="#DISCUSSION">Discussion</ref>).
+                        <!--  
                         <p>The evidence in <ref type="mss" target="3.html">MS III</ref> does hold open a
                             possibility for an earlier date. As noted in <ref type="works"
                                 target="1.html#DISCUSSION">&#x0201C;The Needless Alarm&#x0201D;:
