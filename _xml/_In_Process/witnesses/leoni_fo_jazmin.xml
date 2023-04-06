@@ -75,7 +75,12 @@
     </teiHeader>
     <text>
         <body>
-            <!--Simple Prose. Delete this <div/> if not used.-->
+            <!--The paragraphs are not validating because of the way you've marked up the title. Look at the original document: what are you describing?
+                Paragraphs are not validating also because you're not observing the XML grammar of nesting elements inside of elements
+                Remember to mark places and people as "fictional."
+                Insert fw markup for page breaks.
+                
+            -->
             <div type="prose">
                 <head type="title">Leoni</head>
                 <div type="chapter">
