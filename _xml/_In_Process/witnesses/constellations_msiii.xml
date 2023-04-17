@@ -3,9 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="witness">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
-            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
-        <fileDesc xml:id="title_of_work_witness">
+        <fileDesc xml:id="cnstellations_msiii">
             <titleStmt>
                 <title type="main">"The Constellations"</title>
                 <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
@@ -20,7 +18,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#GMS">Gabriella M. Smith</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -75,8 +73,8 @@
                         <!--If additional entries are made below, the hands count must be increased.-->
                         <handDesc hands="1">
                             <handNote corresp="#HANDJR1827-28" scribe="JR">
-                                <p>John Ruskin&#x02BC;s early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826&#x2013;27</date>,
-                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                                <p>John Ruskin&#x02BC;s early boyhood hand, circa <date notBefore="1827" notAfter="1828">1827&#x2013;28</date>,
+                                    examples of which can be found in MS III, pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
                         </handDesc>
                     </physDesc>
@@ -101,18 +99,18 @@
                     <l><hi rend="doubleletter-fill"><hi rend="caps">T</hi></hi>hen the <name type="astronomical" corresp="#URSAMAJOR">greater bear</name> is seen</l>
                     <l><hi rend="doubleletter-fill"><hi rend="caps">T</hi></hi>hen <name type="astronomical" corresp="#CHARLESSWAIN">charles&#x02BC;s wain</name> with his bright team<ref type="gloss_contextual" target="constellations_glosses_contextual.php#CHARLESSWAINGLOSS"/></l>
                     <l><hi rend="doubleletter-fill"><hi rend="caps">N</hi></hi>ext the <name type="astronomical" corresp="#DRACO">dragon</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#DRACOGLOSS"/> doth appear</l>
-                    <l><add rend="linenumber-left-JR">10</add><hi rend="doubleletter-fill"><hi rend="caps">N</hi></hi>ext <name type="astronomical" corresp="#COMABERENICES">berenices golden hair</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#BERENICESHAIRGLOSS"/></l>
+                    <l><add rend="linenumber-left-JR">10</add><hi rend="doubleletter-fill"><hi rend="caps">N</hi></hi>ext <name type="astronomical" corresp="#COMABERENICES">berenices golden hair</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#BERENICESHAIRGLOSS"/><ref type="gloss_textual" target="constellations_glosses_textual.php#BERENICESHAIRTEXTGLOSS"/></l>
                     <l>After that the <name type="astronomical" corresp="#CORONABOREALIS">northern crown</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#CORONABOREALISGLOSS"/></l>
-                    <l>Then the very fiery <name type="astronomical" corresp="#CYGNUS">swan</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#CYGNUSGLOSS"/></l>
+                    <l>Then the very fiery <name type="astronomical" corresp="#CYGNUS">swan</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#CYGNUSGLOSS"/><ref type="gloss_textual" target="constellations_glosses_textual.php#CYGNUSTEXTGLOSS"/></l>
                     <l>Next comes starry <name type="astronomical" corresp="#CHARLESSHEART">charles</name>&#x02BC;s heart<ref type="gloss_contextual" target="constellations_glosses_contextual.php#CHARLESSHEARTGLOSS"/></l>
-                    <l>After that the <name type="astronomical" corresp="#TELESCOPIUM">telescope</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#TELESCOPIUMGLOSS"/></l>
+                    <l>After that the <name type="astronomical" corresp="#TELESCOPIUM">telescope</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#TELESCOPIUMTEXTGLOSS"/><ref type="gloss_textual" target="constellations_glosses_textual.php#TELESCOPIUMTEXTGLOSS"/></l>
                     <l><add rend="linenumber-left-JR">15</add>Next doth come the <name type="astronomical" corresp="#EQUULEUS">little horse</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#EQUULEUSGLOSS"/></l>
                     <l>After that the stupid <name type="astronomical" corresp="#ANSER">goose</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#ANSERGLOSS"/></l>
                     <l>Then the very timid <name type="astronomical" corresp="#LEPUS">hare</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#LEPUSGLOSS"/></l>
                     <l>After that the <name type="astronomical" corresp="#URSAMINOR">lesser bear</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#URSAMINORGLOSS"/></l>
                     <l>Then doth come the cunning <name type="astronomical" corresp="#VULPECULA">fox</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#VULPECULAGLOSS"/></l>
                     <l><add rend="linenumber-left-JR">20</add>Then appears the blessed <name type="astronomical" corresp="#CRUX">cross</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#CRUXGLOSS"/></l>
-                    <l>Then we see great <name type="astronomical" corresp="#CHARLESSOAK">charles&#x02BC;s oak</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#CHARLESSOAK"/></l>
+             here       <l>Then we see great <name type="astronomical" corresp="#CHARLESSOAK">charles&#x02BC;s oak</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#CHARLESSOAK"/></l>
                     <l>Next I&#x02BC;ll call it <name type="astronomical" corresp="#CRATER">juno&#x02BC;s cup</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#CRATERGLOSS"/></l>
                     <l><name type="astronomical" corresp="#HERCULESCONSTELLATION">Hercules</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#HERCULESGLOSS"/> appeareth high</l>
                     <l>Next <name type="astronomical" corresp="#CERBERUSCONSTELLATION">cerberus</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#CERBERUSGLOSS"/> in the sky<!--page break--></l>
