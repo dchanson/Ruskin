@@ -7,7 +7,7 @@
             The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
         <fileDesc xml:id="title_of_work_glosses">
             <titleStmt>
-                <title type="main">"Title of Work"</title>
+                <title type="main">"Leoni"</title>
                 <title type="sub">Glosses</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -58,7 +58,7 @@
     <text>
         <body>
             <div type="glosses">
-                <note xml:id="SOMETHINGUNIQUEGLOSS" resp="#DCH">This is a gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#SOMETHINGUNIQUEGLOSS"/>.-->
+                <note xml:id="CASTLEOFSPACE" resp="#JAdams">This is a gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#SOMETHINGUNIQUEGLOSS"/>.-->
 
                 <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
             </div>
