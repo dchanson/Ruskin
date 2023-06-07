@@ -3,11 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="glosses">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
-        <fileDesc xml:id="title_of_work_glosses">
+        <fileDesc xml:id="constellations_glosses_textual">
             <titleStmt>
-                <title type="main">"Title of Work"</title>
+                <title type="main">&#x201C;The Constellations: Northern, Some of the Zodiac, and Some of the Southern&#x201D;</title>
                 <title type="sub">Glosses</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -20,7 +18,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#GMS">Gabriella M. Smith</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -58,9 +56,63 @@
     <text>
         <body>
             <div type="glosses">
-                <note xml:id="SOMETHINGUNIQUEGLOSS" resp="#DCH">This is a gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#SOMETHINGUNIQUEGLOSS"/>.-->
+                <note xml:id="BERENICESHAIRTEXTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Next <del type="strikethrough">doth</del> <name type="astronomical" corresp="#COMABERENICES">berenice&#x02BC;s [golden] hair</name>&#x201C; 
+                    (<title type="manuscript" corresp="#RFT70">RF T70</title>; <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#JR">Ruskin</persName>&#x02BC;s revision of this line as first fair&#x2014;copied in the manuscript photographed as <title type="manuscript" corresp="#RFT70">RF T70</title>&#x2014;his 
+                    deletion of &#x201C;doth&#x201D; and insertion of the modifier &#x201C;golden&#x201D; following &#x201C;berenice&#x02BC;s&#x201D;&#x2014;is reflected in the <title type="manuscript" corresp="#MSIII">MS III</title> fair copy.</p></note>
 
-                <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
+                <note xml:id="CYGNUSTEXTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;Then the very <del type="strikethrough">pretty</del> <name type="astronomical" corresp="#CYGNUS">swan</name>&#x201C; 
+                    (<title type="manuscript" corresp="#RFT70">RF T70</title>; <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#JR">Ruskin</persName>&#x02BC;s revision of this line as first fair&#x2014;copied in the manuscript photographed as <title type="manuscript" corresp="#RFT70">RF T70</title>&#x2014;his 
+                    deletion of &#x201C;pretty&#x201D; and substitution of &#x201C;fiery&#x201D;&#x2014;is reflected in the <title type="manuscript" corresp="#MSIII">MS III</title> fair copy.</p></note>
+                
+                <note xml:id="TELESCOPIUMTEXTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;after that the <name type="astronomical" corresp="#TELESCOPIUM">telescope</name> 
+                    (<title type="manuscript" corresp="#RFT70">RF T70</title>; <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#JR">Ruskin</persName>&#x02BC;s substitution of this line for the original, 
+                    as first fair&#x2014;copied in the manuscript photographed as <title type="manuscript" corresp="#RFT70">RF T70</title>&#x2014;&#x201C;Then the dread <name type="astronomical" corresp="#MEDUSACONSTELLATION">medusas head</name>&#x201D;&#x2014;is 
+                    reflected in the <title type="manuscript" corresp="#MSIII">MS III</title> fair copy.</p></note>
+                
+                <note xml:id="LEPUSTEXTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;then the very frightened <name type="astronomical" corresp="#LEPUS">hare</name> 
+                    (<title type="manuscript" corresp="#RFT70">RF T70</title>; <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#JR">Ruskin</persName>&#x02BC;s substitution of this line for the original, 
+                    as first fair&#x2014;copied in the manuscript photographed as <title type="manuscript" corresp="#RFT70">RF T70</title>&#x2014;&#x201C;After that doth come the <name type="astronomical" corresp="#LYRA">lyre</name>&#x201D;&#x2014;is 
+                    reflected in the <title type="manuscript" corresp="#MSIII">MS III</title> fair copy. In <title type="manuscript" corresp="#MSIII">MS III</title>, &#x201C;frightened&#x201D; is further revised to &#x201C;timid&#x201D;.</p></note>
+                
+                <note xml:id="SWALLOWTEXTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;After that sweet <name type="astronomical" corresp="#APUS">hirundo</name> 
+                    (<title type="manuscript" corresp="#MSIA">MS IA</title>; <title type="manuscript" corresp="#RFT70">RF T70</title>; <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#JR">Ruskin</persName>&#x02BC;s substitution of this line for the original, 
+                    as first fair&#x2014;copied in the manuscript photographed as <title type="manuscript" corresp="#RFT70">RF T70</title>&#x2014;&#x201C;After that the <name type="astronomical" corresp="#APUS">swallow</name>&#x201D;&#x2014;is 
+                    reflected in the <title type="manuscript" corresp="#MSIII">MS III</title> fair copy.</p></note>
+                
+                <note xml:id="LYNXTEXTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<name type="astronomical" corresp="#APUS">lynx</name> 
+                    (<title type="manuscript" corresp="#MSIA">MS IA</title>; <title type="manuscript" corresp="#RFT70">RF T70</title>; <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>As drafted in 
+                    <title type="manuscript" corresp="#MSIA">MS IA</title>, and as originally fair&#x2014;copied in <title type="manuscript" corresp="#RFT70">RF T70</title>, &#x201C;after that the furious <name type="astronomical" corresp="#LYNX">lynx</name>&#x201D;. Then in <title type="manuscript" corresp="#RFT70">RF T70</title>, 
+                    &#x201C;After that&#x201D; is replaced in ink by &#x201C;then&#x201D;, and &#x201C;furious <name type="astronomical" corresp="#LYNX">lynx</name>&#x201D; replaced in pencil by a phrase that is obscure in the photograph but may be &#x201C;brighteyed <name type="astronomical" corresp="#LYNX">lynx</name>&#x201D;. The latter is 
+                    overwritten in ink by &#x201C;keeneyed <name type="astronomical" corresp="#LYNX">lynx</name>&#x201D;, resulting in the phrase that is fair&#x2014;copied in <title type="manuscript" corresp="#MSIII">MS III</title>, &#x201C;Then the furious keen&#x2014;eyed <name type="astronomical" corresp="#LYNX">lynx</name>&#x201D;.</p></note>  
+                
+                <note xml:id="LEOTEXTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<name type="astronomical" corresp="#APUS">generous leo</name> 
+                    (<title type="manuscript" corresp="#MSIA">MS IA</title>; <title type="manuscript" corresp="#RFT70">RF T70</title>; <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#JR">Ruskin</persName> originally drafted the line in pencil in 
+                    <title type="manuscript" corresp="#MSIA">MS IA</title> as &#x201C;after that king <name type="astronomical" corresp="#LEO">leo</name>&#x201D;, substituting in ink &#x201C;it&#x201d; for &#x201C;that&#x201d;. He incorporated this change into the line 
+                    as fair&#x2014;copied in ink in <title type="manuscript" corresp="#RFT70">RF T70</title>. Then he revised the latter, &#x201C;After it king <name type="astronomical" corresp="#LEO">leo</name>&#x201D;, by substituting in pencil in the margin of <title type="manuscript" corresp="#RFT70">RF T70</title> 
+                    &#x201C;that the generous&#x201D; for &#x201C;it king&#x201D;, resulting in &#x201C;After that the generous <name type="astronomical" corresp="#LEO">leo</name>&#x201D;, the form in which the line is fair&#x2014;copied in 
+                    <title type="manuscript" corresp="#MSIII">MS III</title>.</p></note>
+                
+                <note xml:id="AIRESTEXTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<unclear reason="illegible" resp="#DCH"><del rend="strikethrough"><name type="astronomical" corresp="#AIRES">aires</name> [?]</del></unclear> 
+                    (<title type="manuscript" corresp="#RFT70">RF T70</title>)&#x2014;</hi>An illegible word was inserted in ink in the margin, roughly between lines 34 and 35, but deleted using a double strikethrough. 
+                    It is not certain the hand is <persName corresp="#JR">Ruskin</persName>&#x02BC;s and might be his father&#x02BC;s. If the word was intended as a revision to the text, there is no variant in the <title type="manuscript" corresp="#MSIII">MS III</title> fair copy that is otherwise unaccounted for by a revision in <title type="manuscript" corresp="#RFT70">RF T70</title> and that can be matched with this substitution. 
+                    A guess is that the word is <hi rend="italic">aires</hi>, the Greek name of the constellation in line 36, but what appears to be a letter <hi rend="italic">l</hi> in the word undermines this guess.</p></note>
+                
+                <note xml:id="SERPENSTEXTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<name type="astronomical" corresp="#SERPENS">serpent</name> <name type="astronomical" corresp="#OPHUCHUS">serpent bearer</name> then&#x201C;
+                    (<title type="manuscript" corresp="#MSIA">MS IA</title>; <title type="manuscript" corresp="#RFT70">RF T70</title>; 
+                    <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Because the serpent and the serpent bearer 
+                    form a double constellation, each with its own name but typically represented together, the poetic expression presented a challenge to <persName corresp="#JR">Ruskin</persName>. 
+                    In the <title type="manuscript" corresp="#MSIA">MS IA</title> draft, he wrote &#x201C;serpent&#x201D; twice and, baffled, deleted the second &#x201C;serpent&#x201D;, only to write it again as &#x201C;serpent bearer&#x201D;. 
+                    In the first fair copy, <title type="manuscript" corresp="#RFT70">RF T70</title>, he inserted a prominently drawn comma between the adjacently repeated words, 
+                    and he added an explantory footnote: &#x201C;Note the serpent and serpent bearer are two different constellations&#x201D;. 
+                    In the second fair copy, <title type="manuscript" corresp="#MSIII">MS III</title>, he abandoned the comma but retained the footnote, tagged with an asterisk at the end of the line.</p></note>
+                
+                <note xml:id="GRUSTEXTGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the very longbilled <name type="astronomical" corresp="#GRUS">crane</name>&#x201C;
+                    (<title type="manuscript" corresp="#MSIA">MS IA</title>; <title type="manuscript" corresp="#RFT70">RF T70</title>; 
+                    <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#JR">Ruskin</persName> originally wrote, in the <title type="manuscript" corresp="#MSIA">MS IA</title> draft: 
+                    &#x201C;then the very pretty <name type="astronomical" corresp="#GRUS">crane</name>&#x201D;, but revised &#x201C;then&#x201D; to &#x201C;next&#x201D; in this manuscript. 
+                    He fair&#x2010;copied that revised line in <title type="manuscript" corresp="#RFT70">RF T70</title>, but scored through &#x201C;pretty&#x201D; with pencil and wrote a substitution in the margin, also in pencil: 
+                    &#x201C;long billed&#x201D;&#x2014;the revision carried to <title type="manuscript" corresp="#MSIII">MS III</title>.</p></note>
+              
             </div>
         </body>
     </text>

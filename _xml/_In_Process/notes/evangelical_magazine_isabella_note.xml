@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="evangelical_magazine_note">
+            <titleStmt>
+                <title type="main">The Evangelical Magazine</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#IB">Isabella Bairnsfather</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <text><!-- 1. root element, the beginning of a  nested structures: text, body, and div -->
+        <!-- 2. In an XML document, there can be only one root element. A "well-formed" XML document is one that observes 
+            this basic grammar common to all XML documents. In a TEI XML document, that single root is almost always <text>.
+            
+            An XML document that begins with <text> is thus said to be "valid" according to the particular set of elements 
+            and rules established by the Text Encoding Initiative consortium, a TEI-XML document.
+            
+        The set of elements and their hierarchy is established in your XML editor by a schema, which instructs your editor to operate by the
+        -->
+        <body>
+            <div type="note" subtype="bibliographical">
+                <!-- 3. Build a nested structure: element: head; element: title; attribute: periodical -->
+                <head type="title"><title type="periodical" corresp="#EVANGELICALMAG">The Evangelical Magazine</title></head>              
+             
+                <head type="section">The Ruskins and <title type="periodical" corresp="#EVANGELICALMAG">The Evangelical Magazine</title></head>
+                 <p>In a letter of <date when="1823-03-03">3 March 1823</date> to <persName corresp="#JJR">John James Ruskin</persName>,
+                    <persName corresp="#MR">Margaret Ruskin</persName> mentions receiving this publication 
+                     (<ref type="bibliography" target="bibliography.php#RFL"><title type="book" corresp="#RFL">Ruskin Family Letters</title>, ed. <persName corresp="#VAB">Burd</persName></ref>, 121). Her remark does not make clear when the Ruskins&#x02BC; subscription began, 
+                     but it might be significant that, with the <date when="1823">1823</date> issues, the magazine initiated volume 1 of a new series.</p>
+                <!-- 4. divs can be nested inside divs; divs can carry attributes. 
+            Try adding a div after the first paragraph, so we can create a subsection entitled "Founding of the Evangelical Magazine"--> 
+                
+                <!-- 5. then we can add an identifier xml:id to the section head so we can point to it -->
+                <p><title type="periodical" corresp="#EVANGELICALMAG">The Evangelical Magazine</title> was founded in <date when="1793">1793</date> as a nondenominational voice of evangelical culture 
+                    embracing <orgName corresp="#EVANGELICALANGLICANISM">Anglican Evangelicalism</orgName>, Old Dissent, and New Dissent (<ref type="bibliography" target="bibliography.php#ALTHOLZRELIGIOUSPRESS"><persName corresp="JLA">Altholz</persName>, <title type="book" corresp="#ALTHOLZRELIGIOUSPRESS"><hi rend="italic">Religious Press in Britain</hi></title></ref>, 45).
+                    That spirit of pan&#x2010;evangelical catholicity of opinion and mission was reaffirmed at the start of the new series in <date when="1823">1823</date>, 
+                     but the position was being tested. A &#x201C;Retrospect&#x201D; published in the first issue of the new series admitted to the emergence of rival denominational publications 
+                     on both the <orgName corresp="#EVANGELICALANGLICANISM">Anglican Evangelical</orgName> and <orgName corresp="#CONGREGATIONALISM">Congregational</orgName> sides. In fact, the editorship of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> itself 
+                    became dominated by <orgName corresp="#CONGREGATIONALISM">Congregationalists</orgName>, just as that sect prevailed within the organization that the magazine most prominently represented, 
+                    the <orgName corresp="#LMS">London Missionary Society (LMS)</orgName>
+                    (<ref type="bibliography" target="bibliography.php#RETROSPECTEVANGELICALMAG">&#x201C;Retrospect of the Former Series of the <hi rend="italic">Evangelical Magazine&#x201D;</hi></ref>, 1; 
+                    <ref type="bibliography" target="bibliography.php#ALTHOLZRELIGIOUSPRESS"><persName corresp="JLA">Altholz</persName>,<title type="book" corresp="#ALTHOLZRELIGIOUSPRESS"><hi rend="italic">Religious Press in Britain</hi></title></ref>, 46).</p>
+             
+                <p>So much of each issue was given over to news and formal reports of <orgName corresp="#LMS">LMS</orgName> activity that the Ruskins&#x02BC; (or at least <persName corresp="#MR">Margaret</persName>&#x02BC;s)
+                    regular reading of the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> implies a strong interest in missionary work. 
+                     The reports included lists of charitable contributions to the <orgName corresp="#LMS">LMS</orgName>, which, as <persName corresp="#SSIVASUNDARAM">Sujit Sivasundaram</persName> argues, 
+                    inspired readers with a collective experience of evangelical zeal. The lists comprised both large and small donations, 
+                    even so modest as used copies of the <title type="periodical"><hi rend="italic">Evangelical Magazine</hi></title> to be sent to missionaries abroad, 
+                    who duly reported back with their gratitude for fresh reading to relieve the tedium of their missions. 
+                    Readers therefore felt they played a part in a worldwide evangelistic effort 
+                    (<ref type="bibliography" target="bibliography.php#SIVASUNDARAMPERIODICAL"><title type="essay" corresp="#SIVASUNDARAMPERIODICAL">&#x201C;The Periodical as Barometer&#x201D;</title></ref>, 43-48).</p>
+                
+                 <p>Such outreach was characteristic of the <orgName corresp="#LMS">LMS&#x02BC;s</orgName> larger effort in print culture, 
+                     which <persName corresp="#AJOHNSTON">Anna Johnston</persName> describes as the construction of "a reading audience through its canny manipulation 
+                    of textual and media technologies, a readership that would unite religious Britons in a common cause 
+                    despite differences of class, region, gender, and age" (<ref type="bibiliography" target="bibliography.php#JOHNSTONMISSIONARYPUBLISHING">&#x201C;British Missionary Publishing&#x201D;</ref>, 30). 
+                    The young <persName corresp="#JR">John Ruskin</persName> was captured by the excitement, as evidenced by <!--title needed-->, 
+                    which appears to record a speech or sermon at a meeting of a missionary society. 
+                    Ruskin was also vulnerable to the appeal of missionary celebrity, as shown by his starstruck enthusiasm 
+                    for the poetry and journals of <persName corresp="#RHBC">Reginald Heber</persName>, Bishop of <placeName corresp="#CALUCUTTA">Calcutta.</placeName><!-- note on Heber? --></p>
+                
+                <p>Besides reporting on the missionary activities of LMS, the Evangelical Magazine addressed other interests that probably engaged the Ruskin family. 
+                    Each issue contained a section of poetry, albeit strictly pious in subject matter; and the January issue routinely 
+                    printed poems for the New Year, which may have influenced Ruskin's custom of composing a <!--note-->New Year's ode to be fair-copied 
+                    and presented to his father on New Year's Eve. Feature articles mainly concerned religious topics but 
+                    occasionally encompassed other areas of knowledge, such as natural history. 
+                    A section of book reviews and brief notices of religious publications, including pious works for children, 
+                    evidently informed the elder Ruskins' choice of some books for John, since some notices correspond to books 
+                    that he is known to have owned (see, e.g., <!--Roseneath-->. Among the most prominent features in each issue 
+                    were lengthy obituaries and biographies of celebrated clergy, embellished by an engraved portrait of a clergyman, 
+                    which supplied the sole graphic interest in each issue, apart from the engraved banner. 
+                    These biographies exposed the reader to peoples, landscapes, and customs of cultures around the world, 
+                    albeit filtered through the perception of missionaries.</p>
+              
+           </div>
+        </body>
+    </text>
+</TEI>

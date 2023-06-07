@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#APW">Author of Printed Work</persName>
+                </author>
+                <editor>
+                    <persName corresp="#EPW">Editor of Printed Work</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>W. G. Collingwood</persName>
+                        </editor>
+                        <title type="main">The Poems of John Ruskin</title>
+                        <title type="sub">Volume I: Poems Written in Boyhood, 1826-1835</title>
+                        <imprint>
+                            <biblScope type="vol">1</biblScope>
+                            <biblScope type="edition">4<hi rend="superscript">o</hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1891">1891</date>
+                            <biblScope type="pages">xxiii</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="poem">
+                <head type="title">Swift</head>
+                <lg type="stanza">
+                    <l>The sun, rejoicing in his <hi rend="italic"> race;</hi></l>
+                    <l>The <hi rend="italic">post,</hi> whose tidings spurn delay</l>
+                    <l>The <hi rend="italic">ships,</hi> that scud the watery space;</l>
+                    <l>The <hi rend="italic">eagle,</hi> darting on his prey;</l>
+                    <l>The ebbing <hi rend="italic">tide,</hi> that sinks away;</l>
+                    <l>The <hi rend="italic">meteor</hi> flitting through the skies;</l>
+                    <l>The watchman&#x02BC;s <hi rend="italic">night,</hi> the hireling&#x02BC;s day,</l>
+                    <l>Denote how time incessant flies.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">Short</head>
+                <lg type="stanza">
+                    <l>The <hi rend="italic">vapour,</hi> vanishing in air;</l>
+                    <l>The withering <hi rend="italic">grass,</hi>&#x2014;the fading <hi rend="italic">flower;</hi></l>
+                    <l>The <hi rend="italic">taper&#x02BC;s</hi> last expiring glare;</l>
+                    <l>The <hi rend="italic">vision</hi> of a slumbering hour;</l>
+                    <l>The shepherd&#x02BC;s <hi rend="italic">tent,</hi> removed soon;</l>
+                    <l>The handbreadth, narrow&#x2010;bounded <hi rend="italic">span;</hi></l>
+                    <l>The <hi rend="italic">cloud</hi> exhaled; the waning <hi rend="italic">moon;</hi></l>
+                    <l>Prefigure the short life of man.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">Uncertain</head>
+                <lg type="stanza">
+                    <l><hi rend="italic">To&#x2010;morrow&#x02BC;s</hi> vain fallacious boast;</l>
+                    <l>The <hi rend="italic">goods laid up</hi> for many years;</l>
+                    <l>The <hi rend="italic">rich man&#x02BC;s</hi> late repenting ghost;</l>
+                    <l>The interchanging smiles and tears;</l>
+                    <l>The shifting wind; the restless wave;</l>
+                    <l>The <hi rend="italic">bridegroom&#x02BC;s</hi> voice; the <hi rend="italic">midnight</hi> call;</l>
+                    <l>The <hi rend="italic">wings</hi> of wealth; the hero&#x02BC;s grave;</l>
+                    <l>Show Time&#x02BC;s events uncertain all.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">Unsubstantial</head>
+                <lg type="stanza">
+                    <l>The <hi rend="italic">shadow&#x02BC;s</hi> unsubstantial form;</l>
+                    <l>The <hi rend="italic">garment, fretted</hi> but the moth;</l>
+                    <l>The <hi rend="italic">house</hi> that falls before the storm;</l>
+                    <l>An idle <hi rend="italic">tale;</hi> a <hi rend="italic">cup</hi> of wrath;</l>
+                    <l>The shrivell&#x02BC;d <hi rend="italic">gourd,</hi> o&#x02BC;er Jonah&#x02BC;s head;</l>
+                    <l>The insecure <hi rend="italic">polluted rest;</hi></l>
+                    <l>The <hi rend="italic">prodigal,</hi> devoid of bread;</l>
+                    <l>Time&#x02BC;s gifts but vain and false attest.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">Important</head>
+                <lg type="stanza">
+                    <l>Yet time is precious, more than gold,</l>
+                    <l>When wisdom numbers well the days;</l>
+                    <l>And this poor earthen vase may hold</l>
+                    <l>A treasure for eternal praise.</l>
+                    <l>A moment should not pass in vain;</l>
+                    <l>Time grows in worth as days decrease;</l>
+                    <l>For he shall life immortal gain,</l>
+                    <l>Who lives to God, and dies in peace.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">1.</head>
+                <lg type="stanza">
+                    <l>Eternity who can define?</l>
+                    <l>What mind can the vastness embrace?</l>
+                    <l>What spirit can measure the line</l>
+                    <l>Extending through infinite space?</l>
+                    <l>The fulness from mortals concealed,</l>
+                    <l>The word in due measure explains;</l>
+                    <l>Faith trusting the promise revealed,</l>
+                    <l>The substance invisible gains.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">2.</head>
+                <lg type="stanza">
+                    <l>There dwells the Eternal in light,</l>
+                    <l>Who here is the penitent&#x02BC;s guest;</l>
+                    <l>There angels rejoice in his sight,</l>
+                    <l>And spirits made perfect find rest.</l>
+                    <l>There reigns the Forerunner complete,</l>
+                    <l>Who mansions eternal prepares,</l>
+                    <l>For sinners redeemed and made meet,</l>
+                    <l>Of life everlasting the heirs.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">3.</head>
+                <lg type="stanza">
+                    <l>Corruption can never destroy</l>
+                    <l>The durable treasures above;</l>
+                    <l>Defilement can never alloy</l>
+                    <l>The untainted pleasures they love.</l>
+                    <l>The crowns shall not fade that they wear,</l>
+                    <l>Nor harps on the willows be hung;</l>
+                    <l>The palms shall not wither they bear,</l>
+                    <l>Nor discord complain on the tongue.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">4.</head>
+                <lg type="stanza">
+                    <l>No tempest shall darken the skies;</l>
+                    <l>No doubts shall perplex them again;</l>
+                    <l>All tears shall be wiped from their eyes,</l>
+                    <l>And banish&#x02BC;d all sorrow and pain.</l>
+                    <l>No mourner bereaved shall there</l>
+                    <l>A spirit departed deplore,</l>
+                    <l>Nor bow with affliction and care,</l>
+                    <l>For anguish and death are no more.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">5.</head>
+                <lg type="stanza">
+                    <l>Their sun shall not vanish below;</l>
+                    <l>Their knowledge no error degrade;</l>
+                    <l>Their peace like a river shall flow;</l>
+                    <l>No spot shall their purity shade.</l>
+                    <l>This world and its forms pass away;</l>
+                    <l>This sun shall in darkness descend;</l>
+                    <l>Here, nature and beings decay;&#x2010;&#x2010;&#x2010;</l>
+                    <l>Eternity never can end.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">1.</head>
+                <lg type="stanza">
+                    <l>A little <hi rend="italic">leaven</hi> swells the mass around,</l>
+                    <l>In silence working where it hidden lies;</l>
+                    <l>A little <hi rend="italic">seed,</hi> when buried in the ground,</l>
+                    <l>To some tall shrub or towering tree may rise;</l>
+                    <l>The little <hi rend="italic">cloud,</hi> that like a hand was seen</l>
+                    <l>Spread o&#x02BC;er the heavens, and pour&#x02BC;d abundance down:</l>
+                    <l>Thus God confounds the proud by agents mean,</l>
+                    <l>And great results may humble efforts crown.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">2.</head>
+                <lg type="stanza">
+                    <l>&#x201C;Go forth,&#x201D; the Saviour said &#x201C;my servants, speed;</l>
+                    <l>As lambs among the wolves, I send you hence;</l>
+                    <l>Nor purse, nor scrip, nor arts, nor arms ye need,</l>
+                    <l>I am your guide, your succour and defence.&#x201D;</l>
+                    <l>Returning, lo! their joyful lips exclaim,</l>
+                    <l>&#x201C;All nature, Lord, avows thy wond&#x02BC;rous sway;</l>
+                    <l>E&#x02BC;en men and devils feel thy mighty name,</l>
+                    <l>And quit, subjected, their determin&#x02BC;d prey.&#x201D;</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">3.</head>
+                <lg type="stanza">
+                    <l>Nor rolling ages have unnerv&#x02BC;d the might</l>
+                    <l>Of soul&#x2010;subduing truth, the gospel word;</l>
+                    <l>The shades of death disperse before the light,</l>
+                    <l>And Satan flies before the spirit&#x02BC;s sword.</l>
+                    <l>Behold from far the banish&#x02BC;d trophies brought,</l>
+                    <l>The hideous gods that heathen tribes rever&#x02BC;d;</l>
+                    <l>Survey the change on savage regionss wrought,&#x2010;&#x2010;&#x2010;</l>
+                    <l>A new&#x2010;born nation, and new temples rear&#x02BC;d.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">4.</head>
+                <lg type="stanza">
+                    <l>What power can burst the bonds&#x2010;&#x2010;&#x2010;the rage repel,</l>
+                    <l>That eastern superstition madly frames,</l>
+                    <l>Or disenchant the crafty Brahmin&#x02BC;s spell,</l>
+                    <l>And snatch the youthful widow from the flames.</l>
+                    <l>The subtle Chinese, the Tartarian rude,</l>
+                    <l>What arms can conquer, or what arts reclaim?</l>
+                    <l>Those arms which polish&#x02BC;d pagan Rome subdu&#x02BC;d,</l>
+                    <l>Those arts which brutish Otaheitans tame.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">5.</head>
+                <lg type="stanza">
+                    <l>Here distant realms beneath one standard fight,</l>
+                    <l>Their hatred quitting in the common cause;</l>
+                    <l>Here jarring sects in one great work unite,</l>
+                    <l>Each other cheering with unfeigned applause.</l>
+                    <l>The Prince rejected, now erects his throne;</l>
+                    <l>The man of sorrows glorious grace displays;</l>
+                    <l>And every kingdom shall their Saviour own,</l>
+                    <l>And every language shall express his praise.</l>
+                    <l>Aliquis.</l>
+                </lg>
+            </div>
+            <div type="poem">
+                <head type="title">Friendship&#x02BC;s Offering.</head>
+                <lg type="stanza">
+                    <l>Written in an Annual Publication, presented to a Lady who had suffered much and long affliction.</l>
+                    <l>Reviewing time&#x02BC;s perennial flight,</l>
+                    <l>We mark some lonely hours,</l>
+                    <l>Like stars amidst a stormy night,</l>
+                    <l>Or winter&#x2010;blooming flowers.</l>
+                    <l>Such as among the gloomy past,</l>
+                    <l>Your happiest days appear,</l>
+                    <l>Such&#x2010;&#x2010;&#x2010;but improving to the last,</l>
+                    <l>Be all in this new&#x2010;year!</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

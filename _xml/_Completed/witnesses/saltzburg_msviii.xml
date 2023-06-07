@@ -44,7 +44,7 @@
                     <addrLine>Southeastern Louisiana University</addrLine>
                     <addrLine>SLU 10861</addrLine>
                     <addrLine>Hammond LA 70402</addrLine>
-                    <addrLine>ruskinproject@selu.edu</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
                 </address>
                 <availability status="restricted">
                     <p>Copyright David C. Hanson.</p>
@@ -88,63 +88,71 @@
     <text>
         <body>
             <div type="witness" subtype="poem" rhyme="aa">
+                <fw type="pageNum" place="top-right">p. 106.</fw>
                 <lg type="stanza">
                     <l><handShift new="#HANDJR1833-34" script="cursive" medium="ink"/>The sun <del rend="strikethrough">is</del> <add place="above"><space quantity="9" unit="chars"/>was</add> low on <geogName corresp="#SALZACH">Salza</geogName>s silver deep</l>
-                    <l>Broad loom<hi rend="overwriting">ed</hi> the lofty city in its sleep</l>
+                    <l>Broad loom<subst><add rend="overwriting">ed</add><del>s</del></subst> the lofty city in its sleep</l>
                     <l>Dome over dome in arched array was set</l>
                     <l>Spire over spire and sparkling minaret,</l>
-                    <l>How red you saw the swarthy sunset shine</l>
+                    <l>How red you saw the swarthy sunset shine <add rend="linenumber-right-JR">5</add></l>
                     <l>Where <subst><del>huge</del><add rend="overwriting">rose</add></subst> <placeName type="building" corresp="#SALZBURGCATHEDRAL"><persName corresp="#STRUPERT">St Rupert</persName>s mighty marble shrine</placeName></l>
                     <l>Rich with the spoils of many a <geogName corresp="#HARZ">Hartzwald</geogName> mine</l>
-                    <l>Crag <del rend="strikethrough">heaped</del> poised on crag, with each its battlement</l>
-                    <l><subst><del>That</del><add rend="overwriting">The</add></subst> <placeName corresp="#HOHENSALZBURG">Fortress</placeName> reared its dark and huge ascent<ref type="gloss_textual" target="saltzburg_glosses_textual.php#TRANSPOSITIONGLOSS"/></l>
-                    <l>From its foundation lifted like a cloud,</l>
+                    <l><seg xml:id="l8"><metamark function="transposition" target="l8">2</metamark>Crag <del rend="strikethrough">heaped</del> poised on crag, with each its battlement</seg></l>
+                    <l><seg xml:id="l9"><metamark function="transposition" target="l9">2</metamark><subst><add rend="overwriting">The</add><del>That</del></subst> <placeName corresp="#HOHENSALZBURG">Fortress</placeName> reared its dark and huge ascent<ref type="gloss_textual" target="saltzburg_glosses_textual.php#TRANSPOSITIONGLOSS"/></seg></l>
+                    <listTranspose>
+                        <transpose>
+                            <ptr target="#l9"/>
+                            <ptr target="#l8"/>
+                        </transpose>
+                    </listTranspose>
+                    <l>From its foundation lifted like a cloud, <add rend="linenumber-right-JR">10</add></l>
                     <l><del rend="strikethrough">Silent and</del> <add place="below"><space quantity="1" unit="chars"/><subst><del><handShift new="#HANDJJR" script="cursive" medium="pencil"/>But moveless</del><add rend="overwriting"><handShift new="#HANDJR1833-34" script="cursive" medium="ink"/>But moveless&#x2014;</add></subst></add> changeless, beautifully proud,</l>
                     <l>Shadow imbued with sunbeams like a veil,</l>
                     <l>Clasps the wide city, wreathes its outlines pale</l>
                     <l>And mingles roof with roof and tower with towr,</l>
-                    <l>Twilights soft magic brooding oer the hour,</l>
+                    <l>Twilights soft magic brooding oer the hour, <add rend="linenumber-right-JR">15</add></l>
                     <l>Mysterious beauty upon all seen there</l>
                     <l>And all unseen, imagined passing fair.</l>
                     <l>Oh what can break the still, at even shed,</l>
                     <l>Just as the sun displays his parting red</l>
-                    <l>There is no sound that comes not sweetly by</l> 
+                    <l>There is no sound that comes not sweetly by <add rend="linenumber-right-JR">20</add></l> 
                     <l>When the last lights upon the landscape die,</l>
-                    <l><del rend="strikethrough">Loud shouts</del> <add place="margin-left"><space quantity="-3" unit="chars"/><handShift new="#HANDJJR" script="cursive" medium="pencil"/>Low chaunts</add><add rend="overwriting"><handShift new="#HANDJR1833-34" script="cursive" medium="ink"/>Low chaunts</add> the fisher where the waters pour,</l><space quantity="-3" unit="chars"/><!--if "margin_left" not correct, please revise -->
+                    <l><del rend="strikethrough">Loud shouts</del> <add place="margin-left"><space quantity="-4" unit="chars"/><handShift new="#HANDJJR" script="cursive" medium="pencil"/>Low<lb/> chaunts</add><add place="above"><handShift new="#HANDJR1833-34" script="cursive" medium="ink"/>Low chaunts</add> the fisher where the waters pour,</l><space quantity="-3" unit="chars"/><!--if "margin_left" not correct, please revise -->
                     <l>And murmuring voices come along the shore,</l>
                     <l>And many a plash of wave upon the side,</l>
-                    <l>Of yon dark boat that slumbers on the tide</l>
+                    <l>Of yon dark boat that slumbers on the tide <add rend="linenumber-right-JR">25</add></l>
                     <l>And there are sounds from city &#x0026; from hill</l>
                     <l>Shore, forest, flood, &#x0026; field, yet all <del rend="scratchout"><unclear reason="blotted" resp="DCH"></unclear></del> <add place="above"><space quantity="38" unit="chars"/><handShift new="#HANDJJR" script="cursive" medium="pencil"/>seems</add><add rend="overwriting"><handShift new="#HANDJR1833-34" script="cursive" medium="ink"/>seems</add> still.</l><!--I added "blotted" as a value for attribute "reason" for element "unclear"-->
                     <l>I left the shore, and ere the nights descent</l>
                     <l>Through huge <persName corresp="#STRUPERT">St Rupert</persName>s massive portal went,</l>
-                    <l>Full many a marble there of changing hue,</l>
+                    <l>Full many a marble there of changing hue, <add rend="linenumber-right-JR">30</add></l>
                     <pb facs="MSVIII81v-82r"/>
+                    <fw type="pageNum" place="top-right">82</fw>
                     <l>Chiselled &#x0026; fretted, walled the temple through</l>
                     <l>Successive altars lit with incensed flame</l>
                     <l>Rose through the chapels, none without a name</l>
                     <l>And the worn pavement every shrine before</l>
-                    <l>Of long devotion certain witness bore</l>
+                    <l>Of long devotion certain witness bore <add rend="linenumber-right-JR">35</add></l>
                     <l>And there was many a statue nobly wrought</l>
                     <l>And many a <del rend="strikethrough"><unclear reason="incomplete_word" resp="DCH">sta</unclear></del> painting from the southward brought</l><!-- I invented value "incomplete_word"-->
                     <l>Planned by those master minds, that ever stand</l>
                     <l>The life, the glory, of their native land<ref type="gloss_contextual" target="saltzburg_glosses_contextual.php#AUSONIA"/></l>
-                    <l>And, as hard rock, that mid some softer stone,</l>
+                    <l>And, as hard rock, that mid some softer stone, <add rend="linenumber-right-JR">40</add></l>
                     <l>Stands from the rest, unbuttressed, &#x0026; alone</l>
                     <l>A bulwark, rears its iron strength for aye,</l>
                     <l>The <del rend="strikethrough">weaker</del> <add place="above"><space quantity="4" unit="chars"/><handShift new="HANDJJR" script="cursive" medium="pencil"/>while soft</add> crag around it wears away,<ref type="gloss_textual" target="saltzburg_glosses_textual.php#SUBSTITUTIONGLOSS"/></l>
                     <l>So shall their memory lift itself at last,</l>
-                    <l>Forth from the ruins of the aeras past</l>
+                    <l>Forth from the ruins of the aeras past <add rend="linenumber-right-JR">45</add></l>
                     <l>So, like some lofty beacon, constant shine,</l>
                     <l>Distinctly <del rend="strikethrough">seen amid</del> <add place="above"><space quantity="11" unit="chars"/><handShift new="HANDJJR" script="cursive" medium="pencil"/>glowing <unclear resp="DCH">thro</unclear></add> <handShift new="#HANDJR1833-34" script="cursive" medium="ink"/> the mist of time</l>
                     <l><handShift new="#HANDJR1833-34" script="cursive" medium="ink_dark"/>The vesper hymn was singing, as the night</l>
                     <l>Rolled round the temple, veiling from the sight</l>
-                    <l>The mighty dome so high and heavenward piled</l>
+                    <l>The mighty dome so high and heavenward piled <add rend="linenumber-right-JR">50</add></l>
                     <l>Beneath whose concave slumbers <placeName corresp="#SCOTLAND">Scotland</placeName>s child</l>
                     <l>The Good <persName corresp="#STRUPERT">St Rupert</persName>, &#x0026; full silently</l> 
                     <l>Star after <subst><del>sky</del><add rend="overwriting">star</add></subst> was scattered on the sky</l>
                     <l>And I forgot the city, as I gazed</l> 
-                    <l>Where thousand worlds through all the midnight blazed,</l>
+                    <l>Where thousand worlds through all the midnight blazed, <add rend="linenumber-right-JR">55</add></l>
                     <l>And I held through them commune with the heaven.</l>
                 </lg>                    
             </div>

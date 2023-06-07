@@ -42,7 +42,7 @@
                     <addrLine>Southeastern Louisiana University</addrLine>
                     <addrLine>SLU 10861</addrLine>
                     <addrLine>Hammond LA 70402</addrLine>
-                    <addrLine>ruskinproject@selu.edu</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
                 </address>
                 <availability status="restricted">
                     <p>Copyright David C. Hanson.</p>
@@ -55,11 +55,14 @@
     </teiHeader>
     <text>
         <body>
-            <div type="note" subtype="bibliographical">
-                <head type="title"> <persName corresp="#ME">Maria Edgeworth</persName>, <title type="book" corresp="#EDGEWORTHHARRYANDLUCYCONCLUDED"><hi rend="italic">Harry and Lucy Concluded</hi></title>, Title Page (1825)</head>
-                <figure type="typography">
-                    <graphic url=""/>
-                    <figDesc>Title page of <persName corresp="#ME">Maria Edgeworth</persName> &#x02bc;s <title type="book" corresp="#EDGEWORTHHARRYANDLUCYCONCLUDED"><hi rend="italic">Harry and Lucy Concluded</hi></title>, in the 1825 first edition as owned by <persName corresp="JR">Ruskin</persName> in boyhood. 
+            <div type="figure" subtype="typography">
+                <figure>
+                    <head type="title"><persName corresp="#ME">Maria Edgeworth</persName>, <title type="lesson" corresp="#EDGEWORTHHARRYANDLUCYCONCLUDED"><hi rend="italic">Harry and Lucy Concluded</hi></title>, Title Page (<date when="1825">1825</date>)</head>
+                    <figDesc>
+                        <floatingText>
+                            <body>
+                                <div>
+                                    <p>Title page of <persName corresp="#ME">Maria Edgeworth</persName>&#x02bc;s <title type="lesson" corresp="#EDGEWORTHHARRYANDLUCYCONCLUDED"><hi rend="italic">Harry and Lucy Concluded</hi></title>, in the <date when="1825">1825</date> first edition as owned by <persName corresp="JR">Ruskin</persName> in boyhood. 
                         <persName corresp="#JR">Ruskin</persName>> modeled his print lettering on this tupography when fair&#x2010;copying his own <title type="lesson" corresp="#JRHARRYANDLUCY">&#x201c;Harry and Lucy Concluded&#x201d;</title>.
                         <!--blank text -->
                     </figDesc>

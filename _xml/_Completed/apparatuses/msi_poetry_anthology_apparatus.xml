@@ -25,6 +25,10 @@
                     <persName corresp="#CNW">Casey N. White</persName>
                     <resp>contributing review, encoding</resp>
                 </respStmt>
+                <respStmt>
+                    <persName corresp="#GMS">Gabriella M. Smith</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
                     America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
@@ -49,7 +53,7 @@
                     <addrLine>Southeastern Louisiana University</addrLine>
                     <addrLine>SLU 10861</addrLine>
                     <addrLine>Hammond LA 70402</addrLine>
-                    <addrLine>ruskinproject@selu.edu</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
                 </address>
                 <availability status="restricted">
                     <p>Copyright David C. Hanson.</p>
@@ -63,7 +67,7 @@
     <text>
         <body>
             <div type="apparatus" subtype="manuscript">
-                <head type="title">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</head>
+                <head type="title"><title type="anthology" corresp="#MSIPOETRYANTHOLOGY">&#x201C;Poetry&#x201D; [MS I Poetry Anthology]</title></head>
                 <div type="section" xml:id="WITNESSES">
         			<head type="section">Witnesses</head>
         			<list>
@@ -78,7 +82,7 @@
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
                     <p>Above the first poem, <persName corresp="#JR">Ruskin</persName> entitled the anthology &#x201C;Poetry&#x201D;; and 
-                        following the final poem, he added a colophon: 
+                        following the final poem, he added a colophon 
                         &#x201C;The end / hernhill / fountain street / <del rend="scratchout">end of the poems</del> / juvenile library fountain street.&#x201D; 
                         The deletion suggests that <persName corresp="#JR">Ruskin</persName> initially intended the colophon to close specifically the poetry anthology, 
                         but that he reconsidered and made it serve to conclude <ref type="apparatus" subtype="manuscript" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref> 
@@ -114,81 +118,101 @@
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
                     <div type="subsection" xml:id="ANTHOLOGIES">
-                        <head type="subsection">Anthologies and the Edgeworths&#x02BC; Program for Learning</head>
-                        <p>It is not evident specifically where <persName corresp="#JR">Ruskin</persName> found the idea of appending a poetry anthology to his &#x201C;Harry and Lucy&#x201D; volumes. 
-                            No such anthology exists in the Edgeworths&#x02BC; <title type="lesson" rend="italic" corresp="#HARRYANDLUCYCONCLUDED"><hi rend="italic">Harry and Lucy Concluded</hi></title>, 
-                            which is the model for <ref type="apparatus" subtype="manuscript" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref>. 
-                            He might have encountered anthologies in numerous ways. One anthology possibly connected with <title type="manuscript" corresp="#MSI">MS I</title> 
-                            was <persName corresp="#ENFIELD">James Enfield</persName>&#x02BC;s anthology for instructing elocution, 
+                        <head type="subsection">Models for Anthologies</head>
+                        <p><persName corresp="#JR">Ruskin</persName> could not have modeled the idea of appending a poetry anthology to his <title type="lesson" corresp="#JRHARRYANDLUCY">&#x201C;Harry and Lucy&#x201D;</title> volumes on 
+                            <persName corresp="#ME">Maria Edgeworth</persName>&#x02BC;s <title type="lesson" corresp="#EDGEWORTHHARRYANDLUCYCONCLUDED"><hi rend="italic">Harry and Lucy Concluded</hi></title> or 
+                            <title type="lesson" corresp="#EDGEWORTHFRANKSEQUEL"><hi rend="italic">Frank: A Sequel to Frank in Early Lessons</hi></title>&#x2014;the 
+                            primary inspirations for the <ref type="apparatus" subtype="manuscript" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref> narrative&#x2014;since 
+                            <persName corresp="#ME">Edgeworth</persName>&#x02BC;s origingals contain no such feature. Instead, he might have encountered poetry anthologies in numerous places. 
+                            The most likely source was the <ref type="note" subtype="bibliographical" target="evangelical_magazine_note.php"><title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title></ref>, which <persName corresp="#MR">Margaret Ruskin</persName> read regularly from <date when="1823">1823</date> and possibly earlier. 
+                            From its founding in <date when="1793">1793</date>, each issue featured a brief collection of poems with a header similar to <persName corresp="#JR">Ruskin</persName>&#x02BC;s title for his anthology&#x2014;the single word &#x201C;Poetry&#x201D;, 
+                            which in the magazine is printed in letter&#x2010;spaced capitals. Especially compelling for these monthly anthologies as an inspiration is their inclusion of occasional poems 
+                            such as <ref type="note" subtype="contextual" target="new_years_poems.php">New Year&#x02BC;s Poems</ref> in the annual January issue, which <persName corresp="#JR">Ruskin</persName> likewise composed annually as a present to his father. Unlike the majority of <persName corresp="#JR">Ruskin</persName>&#x02BC;s poems, however, 
+                            the poetry selected for anthologizing in the <title type="periodical" corresp="#EVANGELICALMAG"><hi rend="italic">Evangelical Magazine</hi></title> was almost exclusively religious.</p>
+                        
+                        <p>Other sources that might have modelded poetry anthologies for early nineteenth&#x2010;century youths include 
+                            <persName corresp="#ENFIELD">James Enfield</persName>&#x02BC;s anthology for instructing elocution, 
                             <title type="anthology" rend="italic" corresp="#ENFIELDSPEAKER">The Speaker; or, Miscellaneous Pieces, Selected from the Best English Writers, and Disposed under Proper Heads, with a View to Facilitate the Improvement of Youth in Reading and Speaking</title>, 
                             which may have served as a source for <persName corresp="#JR">Ruskin</persName>&#x02BC;s poem, 
-                            <ref type="apparatus" subtype="work" target="the_needless_alarm_apparatus.php"><title type="poem" corresp="#THENEEDLESSALARM">&#x201C;The Needless Alarm&#x201D;</title></ref>.</p>
-                        <p>Another source of which <persName corresp="#JR">Ruskin</persName> may have been aware&#x2014;a source not only of a printed model of an anthology, but also of the 
-                            serendipidous mode of reading afforded by anthologies&#x2014;occurs in <title rend="italic" corresp="#AIKINBARBAULDEVENINGS">Evenings at Home</title> 
+                            <ref type="apparatus" subtype="work" target="the_needless_alarm_apparatus.php"><title type="poem" corresp="#THENEEDLESSALARM">&#x201C;The Needless Alarm&#x201D;</title></ref>. 
+                            Another source, which may have served <persName corresp="#JR">Ruskin</persName> as a model, not so much for the print design of poetry anthologies 
+                            as for the serendipidous mode of reading afforded by anthologies, was presented by <title type="lesson" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title> 
                             (<date notBefore="1792" notAfter="1796">1792&#x2013;96</date>) by <persName corresp="#JAIKIN">John Aikin</persName> (<date notBefore="1747" notAfter="1822">1747&#x2013;1822</date>) 
-                            and <ref type="note" subtype="biographical" target="barbauld_anna_laetitia_note.php"><persName corresp="#ALB">Anna Letitia Barbauld (1743&#x2013;1825)</persName></ref>. 
+                            and <ref type="note" subtype="biographical" target="barbauld_anna_laetitia_note.php"><persName corresp="#ALB">Anna Letitia Barbauld</persName> (<date notBefore="1743" notAfter="1825">1743&#x2013;1825</date>)</ref>. 
                             In the introduction to this &#x201C;miscellaneous collection of tales, fables, and dialogues, interspersed with some short pieces of verse&#x201D;&#x2014;gathered, 
                             as <persName corresp="#JAIKIN">Aikin</persName>&#x02BC;s daughter and biographer, <persName corresp="#LAIKIN">Lucy Aikin</persName>, remarks, with &#x201C;no arrangement or classification of the pieces&#x201D; 
                             and presented with &#x201C;apparent desultoriness&#x201D; 
-                            (<ref type="bibliography" target="bibliography.php#AIKINMEMOIR">Aikin, <hi rend="italic">Memoir of John Aikin</hi></ref>, 1:157)&#x2014;the narrator 
+                            (<ref type="bibliography" target="bibliography.php#AIKINMEMOIR"><persName corresp="#LAIKIN">Aikin</persName>, <title type="book" corresp="#AIKINMEMOIR"><hi rend="italic">Memoir of John Aikin</hi></title></ref>, 1:157)&#x2014;the narrator 
                             tells a story explaining the collection&#x02BC;s subtitle, <hi rend="italic">The Juvenile Budget Opened</hi>. 
                             A <hi rend="italic">budget</hi> can refer to both a collection and its container; 
                             and <hi rend="italic">to open one&#x02BC;s budget</hi> can mean both to tap into such a container and figuratively to speak one&#x02BC;s mind 
-                            (&#x201C;budget, <hi rend="italic">n.</hi>,&#x201D; <hi rend="italic">OED Online</hi>). According to the story, 
-                            the &#x201C;juvenile budget,&#x201D; <title type="lesson" rend="italic" corresp="#AIKINBARBAULDEVENINGS">Evenings at Home</title>, came to be collected and opened to view 
-                            as the result of a &#x201C;domestic plan&#x201D; that was followed by the Fairborne family of Beechgrove for &#x201C;varying . . . [the] amusements&#x201D; 
-                            and &#x201C;promoting the instruction and entertainment of the younger part&#x201D; of the &#x201C;numerous progeny of children of both sexes.&#x201D; 
-                            Friends and relations of the family, &#x201C;who were entertained with cheerfulness and hospitality, free from ceremony and parade,&#x201D; 
-                            &#x201C;would frequently produce a fable, a story, or dialogue, adapted to the age and understanding of the young people.&#x201D; These compositions were 
-                            &#x201C;always considered as a high favour,&#x201D; so that, &#x201C;when the pieces were once read over, they were carefully deposited by 
-                            Mrs. Fairborne in a box, of which she kept the key:
-                            <hi rend="center">None of these [writings] were allowed to be taken out again till all the children were assembled in the holidays. 
-                            It was then made one of the evening amusements of the family to <hi rend="italic">rummage the budget</hi>, as their phrase was. 
-                            One of the least children was sent to the box, who putting in its little hand, drew out the paper that came next, and brought it into the parlour. 
-                            This was then read distinctly by one of the older ones; and after it had undergone sufficient consideration, 
-                            another little messenger was dispatched for a fresh supply; and so on. . . . Other children were admitted to these readings, 
-                            and as the <hi rend="italic">Budget of Beechgrove Hall</hi> became somewhat celebrated in the neighbourhood, 
-                            its proprietors were at length urged to lay it open to the public. They were induced to comply; and have presented its contents in the promiscuous order 
-                            in which they came to hand, which they think will prove more agreeable than a methodical arrangement. 
-                            (<ref type="bibliography" target="bibliography.php#AIKINBARBAULDEVENINGS">Aikin and Barbauld, <hi rend="italic">Evenings at Home</hi></ref>, 1:1&#x2013;3)
-                        </hi>
-                        </p>
-                        <p>This preference for &#x201C;pomiscuous&#x201D; ordering is a reminder of the flexibility that was advocated by educationists and their system of &#x201C;practical&#x201D; education. 
-                        In the <title type="essay" corresp="EDGEWORTHADDRESS">&#x201C;Address to Mothers&#x201D;</title> by 
-                        <ref type="note" subtype="biographical" target="edgeworth_richard_lovell_note.php"><persName corresp="#RLE">Richard Lovell Edgeworth</persName></ref>, 
-                            which prefaces some editions of <title type="lesson" rend="italic" corresp="#EDGEWORTHEARLYLESSONS">Early Lessons</title>, the writer insists on allowing even greater authority to the child&#x02BC;s 
-                            &#x201C;little hand&#x201D;&#x2014;not just to sift at random and convey a reading, as in the case of the Fairborne child, but deliberately to select what reading is best &#x201C;adapted to [its] age and understanding.&#x201D; 
-                            &#x201C;Well educated children,&#x201D; Edgeworth writes, &#x201C;are . . . the best judges of what is fit for children&#x201D;; and parents should &#x201C;select what they find upon trial 
-                            to be the best for their immediate purpose, and to lay aside the rest for another opportunity.&#x201D; Whereas on the one hand the Edgeworths took care to arrange their books for children as a succession of 
-                            age&#x2010;appropriate &#x201C;lessons&#x201D; pitched to the abilities of their readers&#x2014;from the most accessible dialogues in <hi rend="italic">Frank</hi>, 
-                            to the first part of <hi rend="italic">Harry and Lucy</hi>, to <hi rend="italic">Rosamond</hi>, and finally to the later parts of <hi rend="italic">Harry and Lucy</hi>&#x2014;on the other hand, the Edgeworths emphasized that 
-                            &#x201C;different parts of . . . [these books] are suited to the tastes of different children, as well as to children of different ages&#x201D; 
-                            (<ref type="bibliography" target="bibliography.php#EEDGEWORTHADDRESS">R. L. Edgeworth, &#x201C;Address to Mothers&#x201D;</ref>, 5&#x2013;6).</p>
-                        <p>Judging by the evidence of <ref type="apparatus" subtype="manuscript" target="harry_and_lucy_vol1_apparatus.php"><title type="lesson" corresp="HARRYANDLUCYVOL1">&#x201C;Harry and Lucy,&#x201D; Vol. 1</title></ref>, 
-                            and the poetry anthology appended to it, <persName corresp="#JR">Ruskin</persName> took advantage of both the graduated progression of the educationists&#x02BC; books and the permission to range at will. 
-                        For youngest children, the <title type="essay" corresp="EDGEWORTHADDRESS">&#x201C;Address to Mothers&#x201D;</title> recommends works by 
-                            <persName corresp="#JAIKIN">Aikin</persName> and <persName corresp="#ALB">Barbauld</persName>&#x2014;first, 
-                            <persName corresp="#ALB">Barbauld</persName>&#x02BC;s <title type="lesson" rend="italic" corresp="#BARBAULDLESSONS">Lessons for Children</title> and <title type="anthology" rend="italic" corresp="#BARBAULDHYMNSINPROSE">Hymns in Prose</title>, 
-                            and then <persName corresp="#JAIKIN">Aikin</persName> and <persName corresp="#ALB">Barbauld</persName>&#x02BC;s <title type="lesson" rend="italic" corresp="#AIKINBARBAULDEVENINGS">Evenings at Home</title>. 
-                            While pesumably <persName corresp="#JR">Ruskin</persName>&#x02BC;s exposure to some of the works for the nursery in these collections predated his project 
-                            in <ref type="apparatus" subtype="manuscript" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref>, 
-                            his poem, <ref type="apparatus" subtype="work" target="the_needless_alarm_apparatus.php"><title type="poem" corresp="#THENEEDLESSALARM">&#x201C;The Needless Alarm&#x201D;</title></ref>, 
-                            retains vestiges of that earliest reading. At the same time, <persName corresp="#JR">Ruskin</persName> ranged freely, often imitating texts beyond his years. 
-                            The &#x201C;Address to Mothers&#x201D; recommends acquainting young children with natural history, 
-                        but it advises delaying books that &#x201C;teach particular sciences, or distinct branches of knowledge&#x201D; 
-                        (<ref type="bibliography" target="bibliography.php#EDGEWORTHADDRESS">R. L. Edgeworth, &#x201C;Address to Mothers&#x201D;</ref>, 7). 
-                            In the <title type="anthology" corresp="#MSIPOETRYANTHOLOGY">MS I Poetry Anthology</title>, 
-                        <persName corresp="#JR">Ruskin</persName> reverses this recommended order, by starting with the ambitious 
-                            <ref type="apparatus" subtype="work" target="the_steam_engine_apparatus.php"><title type="poem" corresp="#THESTEAMENGINE">&#x201C;When furious up from mines the water pours&#x201D; [&#x201C;The Steam Engine&#x201D;]</title></ref>, 
-                        an imitation of a poem by <ref type="note" subtype="biographical" target="darwin_erasmus_note.php"><persName corresp="#ED">Erasmus Darwin</persName> (1731&#x2013;1802)</ref>. 
-                        Similarly, whereas the &#x201C;Address to Mothers&#x201D; warns that &#x201C;there is still wanting a series of little books, preparatory to&#x201D; 
-                        <title type="lesson" rend="italic" corresp="#JOYCESCIENTIFICDIALOGUES">Scientific Dialogues</title> (<date when="1807">1807</date>) by 
-                        <ref type="note" subtype="biographical" target="joyce_jeremiah_note.php"><persName corresp="#JJ">Jeremiah Joyce (1763&#x2013;1816)</persName></ref> 
-                            (<ref type="bibliography" target="bibliography.php#EDGEWORTHADDRESS">R. L. Edgeworth, &#x201C;Address to Mothers&#x201D;</ref>, 10), 
-                        <persName corresp="#JR">Ruskin</persName> forged ahead undaunted to copy Joyce&#x02BC;s complicated experiments 
-                            verbatim in <ref type="apparatus" subtype="manuscript" target="harry_and_lucy_vol1_apparatus.php"><title type="lesson" corresp="HARRYANDLUCYVOL1">&#x201C;Harry and Lucy,&#x201D; Vol. 1</title></ref>.</p>
+                            (&#x201C;budget, <hi rend="italic">n.</hi>,&#x201D; <hi rend="italic">OED Online</hi>).</p>
+                        
+                        <p>According to the narrator&#x02BC;s story, the &#x201C;juvenile budget&#x201D; that originated <title type="lesson" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title> came to be collected and opened to view 
+                            as the result of a &#x201C;domestic plan&#x201D; that was followed by the Fairborne family of <placeName type="fictional" corresp="#BEECHGROVE">Beechgrove</placeName> for &#x201C;varying . . . [the] amusements&#x201D; 
+                            and &#x201C;promoting the instruction and entertainment of the younger part&#x201D; of the &#x201C;numerous progeny of children of both sexes&#x201D;. 
+                            Friends and relations of the family, &#x201C;who were entertained with cheerfulness and hospitality, free from ceremony and parade&#x201D;, 
+                            &#x201C;would frequently produce a fable, a story, or dialogue, adapted to the age and understanding of the young people&#x201D;. These compositions were 
+                            &#x201C;always considered as a high favour&#x201D;, so that, &#x201C;when the pieces were once read over, they were carefully deposited by 
+                            <persName type="fictional" corresp="#MRSFAIRBORNEAB">Mrs. Fairborne</persName> in a box, of which she kept the key:</p>
+                        <floatingText>
+                                <body>
+                                    <div type="essay">
+                                        <p>None of these [writings] were allowed to be taken out again till all the children were assembled in the holidays. 
+                                            It was then made one of the evening amusements of the family to <hi rend="italic">rummage the budget</hi>, as their phrase was. 
+                                            One of the least children was sent to the box, who putting in its little hand, drew out the paper that came next, and brought it 
+                                            into the parlour. This was then read distinctly by one of the older ones; and after it had undergone sufficient consideration, 
+                                            another little messenger was dispatched for a fresh supply; and so on. . . . Other children were admitted to these readings, 
+                                            and as the <hi rend="italic">Budget of <placeName type="fictional" corresp="#BEECHGROVE">Beechgrove Hall</placeName></hi> became somewhat celebrated in the neighbourhood, 
+                                            its proprietors were at length urged to lay it open to the public. They were induced to comply; 
+                                            and have presented its contents in the promiscuous order in which they came to hand, which they think will prove more agreeable than a methodical arrangement.</p>
+                                        
+                                        <p>(<ref type="bibliography" target="bibliography.php#AIKINBARBAULDEVENINGS"><persName corresp="#JAIKIN">Aikin</persName> and <persName corresp="#ALB">Barbauld</persName>, <title type="lesson" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title></ref>, 1:1&#x2013;3)</p>
+                                    </div>
+                                </body>
+                        </floatingText>
                     </div>
-                    
+                    <div type="subsection">
+                        <head type="subsection">Anthologies and the Edgeworths&#x02BC; Program for Learning</head>
+                        
+                        <p><persName corresp="#JAIKIN">Aikin</persName> and <persName corresp="#ALB">Barbauld</persName>&#x02BC;s preference for &#x201C;pomiscuous&#x201D; ordering 
+                            is a reminder of the flexibility that was advocated by educationists and their system of &#x201C;practical&#x201D; education. 
+                            In the <title type="essay" corresp="EDGEWORTHADDRESS">&#x201C;Address to Mothers&#x201D;</title> by <ref type="note" subtype="biographical" target="edgeworth_richard_lovell_note.php"><persName corresp="#RLE">Richard Lovell Edgeworth</persName></ref>, 
+                            which prefaces some editions of <title type="lesson" corresp="#EDGEWORTHEARLYLESSONS"><hi rend="italic">Early Lessons</hi></title>, the writer insists on allowing even greater authority to the child&#x02BC;s 
+                            &#x201C;little hand&#x201D;&#x2014;not just to sift at random and convey a reading, as in the case of the Fairborne child, but deliberately to select what reading is best &#x201C;adapted to [its] age and understanding&#x201D;. 
+                            &#x201C;Well educated children&#x201D;, <persName corresp="#RLE">Edgeworth</persName> writes, &#x201C;are . . . the best judges of what is fit for children&#x201D;; and parents should &#x201C;select what they find upon trial 
+                            to be the best for their immediate purpose, and to lay aside the rest for another opportunity&#x201D;. Whereas on the one hand the Edgeworths took care to arrange their books for children as a succession of 
+                            age&#x2010;appropriate lessons pitched to the abilities of their readers&#x2014;from the most accessible &#x201C;early lessons&#x201D; in <title type="lesson" corresp="#EDGEWORTHFRANK"><hi rend="italic">Frank: A Book for Boys</hi></title> and 
+                            <title type="lesson" corresp="#EDGEWORTHHARRYANDLUCYPT2"><hi rend="italic">Harry and Lucy</hi></title>, to <title type="lesson" corresp="#EDGEWORTHROSAMOND"><hi rend="italic">Rosamond</hi></title>, and finally to 
+                                <title type="lesson" corresp="#EDGEWORTHFRANKSEQUEL"><hi rend="italic">Frank: A Sequel</hi></title> and <title type="lesson" corresp="#EDGEWORTHHARRYANDLUCYCONCLUDED"><hi rend="italic">Harry and Lucy Concluded</hi></title>&#x2014;on the other hand, 
+                                the Edgeworths emphasized that &#x201C;different parts of . . . [these books] are suited to the tastes of different children, as well as to children of different ages&#x201D; 
+                                (<ref type="bibliography" target="bibliography.php#EDGEWORTHADDRESS"><persName corresp="#RLE">R. L. Edgeworth</persName>, <title type="essay" corresp="EDGEWORTHADDRESS">&#x201C;Address to Mothers&#x201D;</title></ref>, 5&#x2013;6).</p>
+                        
+                        <p>Judging by the evidence of <persName corresp="#JR">Ruskin</persName>&#x02BC;s <ref type="apparatus" target="harry_and_lucy_apparatus.php"><title type="lesson" corresp="JRHARRYANDLUCYVOL1">&#x201C;Harry and Lucy . . . Vol I&#x201D;</title></ref>, 
+                            and the poetry anthology appended to it, he took advantage of both the graduated progression of the educationists&#x02BC; books and the permission to range at will. 
+                            For youngest children, the <title type="essay" corresp="EDGEWORTHADDRESS">&#x201C;Address to Mothers&#x201D;</title> recommends works by 
+                            <persName corresp="#JAIKIN">Aikin</persName> and <persName corresp="#ALB">Barbauld</persName>&#x2014;first, 
+                            <persName corresp="#ALB">Barbauld</persName>&#x02BC;s <title type="lesson" corresp="#BARBAULDLESSONS"><hi rend="italic">Lessons for Children</hi></title> and <title type="anthology" rend="italic" corresp="#BARBAULDHYMNSINPROSE">Hymns in Prose</title>, 
+                            and then <persName corresp="#JAIKIN">Aikin</persName> and <persName corresp="#ALB">Barbauld</persName>&#x02BC;s <title type="lesson" corresp="#AIKINBARBAULDEVENINGS"><hi rend="italic">Evenings at Home</hi></title>. 
+                            While pesumably <persName corresp="#JR">Ruskin</persName>&#x02BC;s exposure to works for the nursery predated his project 
+                            in <ref type="apparatus" target="msi_apparatus.php"><title type="manuscript" corresp="#MSI">MS I</title></ref>, 
+                            his poem, <ref type="apparatus" target="the_needless_alarm_apparatus.php"><title type="poem" corresp ="#JRTHENEEDLESSALARM">&#x201C;The Needless Alarm&#x201D;</title></ref>, 
+                            retains vestiges of that earliest reading. At the same time, <persName corresp="#JR">Ruskin</persName> ranged freely, often imitating texts beyond his years. 
+                            Whereas the <title type="essay" corresp="EDGEWORTHADDRESS">&#x201C;Address to Mothers&#x201D;</title> recommends acquainting young children with natural history, 
+                            yet advises delaying books that &#x201C;teach particular sciences, or distinct branches of knowledge&#x201D; 
+                            (<ref type="bibliography" target="bibliography.php#EDGEWORTHADDRESS"><persName corresp="#RLE">R. L. Edgeworth</persName>, <title type="essay" corresp="EDGEWORTHADDRESS">&#x201C;Address to Mothers&#x201D;</title></ref>, 7), 
+                            in the <title type="anthology" corresp="#MSIPOETRYANTHOLOGY">MS I Poetry Anthology</title>, <persName corresp="#JR">Ruskin</persName> reverses 
+                            this recommended order, by starting with the ambitious 
+                            <ref type="apparatus" target="the_steam_engine_apparatus.php"><title type="poem" corresp="#JRTHESTEAMENGINE">&#x201C;When furious up from mines the water pours&#x201D; [&#x201C;The Steam Engine&#x201D;]</title></ref>, 
+                            an imitation of a poem by <ref type="note" subtype="biographical" target="darwin_erasmus_note.php"><persName corresp="#ED">Erasmus Darwin</persName> (<date notBefore="1731" notAfter="1802">1731&#x2013;1802</date>)</ref>. 
+                            Similarly, whereas the <title type="essay" corresp="EDGEWORTHADDRESS">&#x201C;Address to Mothers&#x201D;</title> warns that &#x201C;there is still wanting a series of little books, preparatory to&#x201D; 
+                            <title type="lesson" corresp="#JOYCESCIENTIFICDIALOGUES"><hi rend="italic">Scientific Dialogues</hi></title> by 
+                            <ref type="note" subtype="biographical" target="joyce_jeremiah_note.php"><persName corresp="#JJ">Jeremiah Joyce (<date notBefore="1763" notAfter="1816">1763&#x2013;1816</date>)</persName></ref> 
+                            (<ref type="bibliography" target="bibliography.php#EDGEWORTHADDRESS"><persName corresp="#RLE">R. L. Edgeworth</persName>, <title type="essay" corresp="EDGEWORTHADDRESS">&#x201C;Address to Mothers&#x201D;</title></ref>, 10), 
+                            <persName corresp="#JR">Ruskin</persName> forged ahead undaunted to copy some of <persName corresp="#JJ">Joyce</persName>&#x02BC;s most scientifically advanced observations 
+                            verbatim in <ref type="apparatus" target="harry_and_lucy_apparatus.php"><title type="lesson" corresp="JRHARRYANDLUCYVOL1">&#x201C;Harry and Lucy . . . Vol I&#x201D;</title></ref>.</p>
+                    </div>
+                    <!--
                     <div type="subsection" xml:id="IDENTITIES">
                         <head type="subsection">British Identity in the Anthology</head>
                     <p>The anthology brings to the surface <persName corresp="#JR">Ruskin</persName>&#x02BC;s identity as a British subject with family ties
@@ -220,7 +244,7 @@
                             of the <date notBefore="1827-01-01" notAfter="1827-03-20">death</date> of <persName corresp="#JR">Ruskin</persName>&#x02BC;s cousin, 
                             <persName corresp="#JRP">James Richardson</persName>. 
                             At the same time, if these poems reveal anxieties, the poems also work to resolve such tensions.</p>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </body>

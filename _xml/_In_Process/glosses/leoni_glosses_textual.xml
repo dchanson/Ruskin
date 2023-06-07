@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <fileDesc xml:id="leoni_glosses_textual">
+            <titleStmt>
+                <title type="main">&#x201C;Leoni: A Legend of Italy&#x201D;</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="CASTELALTOGLOSS" resp="#DCH"><p><hi rend="bold">Missing name 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>)&#x2014;</hi>Evidently 
+                    undecided about a name for the castle, Ruskin left a gap for the name to be filled later. 
+                    His eventual decision, as printed in Friendship's Offering, 
+                    was <placeName type="fictional" corresp="#CASTELALTO-LEONI"><hi rend="italic">Castel Alto</hi></placeName>.</p></note>
+
+                <note xml:id="OLDMANGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the old man&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>)&#x2014;</hi>In the final text 
+                    for Friendship's Offering, Ruskin replaced "the old man" with the name he had since settled, 
+                    Amalfiero.</p></note>
+                
+                <note xml:id="GARCIOGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;brother; Garcio was feared&#x201D; 
+                    (<title type="manuscript" corresp="#MSVIII">MS VIII</title>)&#x2014;</hi>The wide gaps on either side of the name Garcio 
+                    perhaps indicates that here, like the gap left at the beginning of the story to be filled in with the name of the old man, 
+                    Ruskin had temporized over the name of Giulietta's brother, as well</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>

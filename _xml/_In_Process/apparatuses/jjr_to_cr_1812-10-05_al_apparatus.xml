@@ -2,10 +2,10 @@
 <?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader type="a_theme_apparatus">
-        <fileDesc xml:id="a_theme_apparatus">
+    <teiHeader type="apparatus">
+        <fileDesc xml:id="jjr_to_cr_1813-03-04_al_apparatus">
             <titleStmt>
-                <title type="main">“A Theme”</title>
+                <title type="main">Autograph Letter, John James Ruskin to Catherine Ruskin, 4 March 1813</title>
                 <title type="sub">Apparatus</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -18,7 +18,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#EAH">YEva Hoffmann</persName>
+                    <persName corresp="#MJF">Madeline J. Felps</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -30,7 +30,7 @@
             <editionStmt>
                 <edition n="1.0">
                     <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
-                    <date when="2019-12-04">December 4, 2019</date>
+                    <date when="2011-08-01">August 1, 2011</date>
                     <!--The apparatus version for all first passes is 1.0.-->
                     <title>Apparatus Version 1.0</title>
                 </edition>
@@ -56,39 +56,32 @@
     <text>
         <body>
             <div type="apparatus">
-                <head type="title">&#x201C;A Theme&#x201D;</head>
-                
+                <head type="title">Autograph Letter, John James Ruskin to Catherine Ruskin, 4 March 1813</head>
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
-                    <p>Body paragraph.</p>
+                    <p>Untitled.</p>
                 </div>
-                
                 <div type="section" xml:id="GENRE">
                     <head type="section">Genre</head>
-                    <p>Body paragraph.</p>
+                    <p>Autograph letter.</p>
                 </div>
-                
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
-                    <p><title type="manuscript" corresp="#MSII">MS II</title> .</p>
+                    <p>Placeholder. <!--The John Rylands Library, Manchester. English MS 1257/10--></p>
                 </div>
-                
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p><date notBefore="1829-02" notAfter="1829-03">February to March 1829</date>.</p>
-                    <p>So dated by its position between <title type="sermon">A Sermon" ["beautiful allegory"]</title> and <title type="poem" corresp="#JRONSKIDDAWANDDERWENTWATER">On Skiddaw and Derwent Water"</title> in <title type="manuscript" corresp="#MSII">MS II</title> .</p>
+                    <p>4 March 1813. For postal information, 
+                        see <ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 60.</p>
                 </div>
-                
                 <div type="section" xml:id="COMPPUB">
-                    <head type="section">Composition &#x0026; Publication</head>
-                    <p>Previously unpublished.</p>
-                </div>
-                
+                    <head type="section">Composition and Publication</head>
+                    <p>Placeholder.</p>
+                </div>         
+          
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
-                    <p> <persName corresp="#JR">Ruskin</persName> calls this piece <title type="sermon">“a theme”</title>, rather than a “sermon”, 
-                        possibly because he did not hear the text in church. The discourse reads like notes on an address to a missionary society. 
-                        <persName corresp="#JR">Ruskin</persName>’s handwriting is unusually illegible for this piece.</p>
+                    <p>Placeholder.</p>
                 </div>
             </div>
         </body>
