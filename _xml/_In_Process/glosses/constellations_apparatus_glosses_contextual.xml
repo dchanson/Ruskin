@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="constellations_apparatus_glosses_contextual">
+            <titleStmt>
+                <title type="main">"The Constellations" Apparatus</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="JAMIESONTEXTBOOKGLOSS" resp="#DCH"><p><hi rend="bold">Textbooks by Alexander Jamieson owned by the Ruskins&#x2014;</hi>See 
+                    <ref type="bibliography" target="bibliography.php#DEARDENRUSKINLIBRARY"><persName corresp="JSD">Dearden</persName>, <title type="book" corresp="DEARDENRUSKINLIBRARY"><hi rend="italic">Library of <persName corresp="#JR">John Ruskin</persName></hi></title></ref>, 183 (no. 1405). 
+                    <persName corresp="JSD">Dearden</persName>&#x02BC;s identification is predicated on an entry, &#x201C;<persName corresp="#AJ">Jamieson</persName> 6/6&#x201D;, for <date when="1835-05-14">14 May 1835</date> 
+                    in <persName corresp="#JJR">John James Ruskin</persName>&#x02BC;s <title type="manuscript" corresp="#RFMS28">Account Book</title> (39v), an entry that, as <persName corresp="VAB">Van Akin Burd</persName> admits, could apply, not just to various works by <persName corresp="#AJ">Alexander Jamieson</persName> 
+                    but also to works by the geologist <persName corresp="RJAMIESON">Robert Jamieson</persName> (<date notBefore="1774" notAfter="1854">1774&#x2013;1854</date>). See <ref type="bibliography" target="bibliography.php#RFL"><title type="book" corresp="RFL"><hi rend="italic">Ruskin Family Letters</hi></title>, ed. <persName corresp="VAB">Burd</persName></ref>, 300&#x2013;301 n. 12; 
+                    see also <persName corresp="IRIDPATH">Ridpath</persName>, <title type="essay" corresp="RIDPATHCELESTIALATLASAJ">&#x201C;<hi rend="italic">Celestial Atlas</hi> by <persName corresp="#AJ">Alexander Jamieson</persName>&#x201D;</title>. 
+                    Identification of this item recorded in in <persName corresp="#JJR">John James</persName>&#x02BC;s accounts as a textbook by <persName corresp="#AJ">Alexander Jamieson</persName> is unclear, therefore, although <persName corresp="JSD">Dearden</persName> correlates this item with a gift to the <orgName corresp="WORKINGMENSCOLLEGE">Working Men&#x02BC;s College</orgName> in <date when="1858">1858</date>.</p>
+                    
+                    <p><persName corresp="#JR">Ruskin</persName>&#x02BC;s poem does not contain 
+                        the most telltale signs that would clench his use of the <ref type="bibliography" target="bibliography.php#JAMIESONCELESTIALATLAS"><title type="lesson" corresp="#JAMIESONCELESTIALATLAS"><hi rend="italic">Celestial Atlas</hi></title></ref>&#x2014;namely, his listing of constellations that are original and unique to <persName corresp="#AJ">Jamieson</persName>, 
+                        such as <name type="astronomical" corresp="NOCTUA">Noctua (the Owl)</name>, <name type="astronomical" corresp="SOLARIUM">Solarium (the Sundial)</name>, and <name type="astronomical" corresp="NORMANILOTICA">Norma Nilotica</name> (the <name type="astronomical" corresp="NORMANILOTICA">Nilometer</name>, a rod for measuring the depth of the Nile, 
+                        wielded by <name type="astronomical" corresp="AQUARIUS">Aquarius</name>). <persName corresp="#JR">Ruskin</persName>&#x02BC;s poem omits even <name type="astronomical" corresp="AQUARIUS">Aquarius</name>, much less <name type="astronomical" corresp="AQUARIUS">Aquarius</name>&#x02BC;s <name type="astronomical" corresp="NORMANILOTICA">Nilometer</name>. 
+                        The poem may, however, contain some subtler, if not positive evidence pointing to the <title type="lesson" corresp="#JAMIESONCELESTIALATLAS"><hi rend="italic">Celestial Atlas</hi></title> as a source: see, for example, 
+                    the contextual glosses attached to <name type="astronomical" corresp="#MUSCABOREALIS">Musca, or &#x201C;the little fly&#x201C;</name> and <name type="astronomical" corresp="#MUSCAAUSTRALIS">Apis, or &#x201C;the armed bee&#x201C;</name> in the poem.</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>
