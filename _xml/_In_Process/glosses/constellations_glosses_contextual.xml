@@ -21,6 +21,7 @@
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
                     <persName corresp="#GMS">Gabriella M. Smith</persName>
+                    <persName corresp="#PMG">Patrick M. Gipson</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -872,7 +873,8 @@
                     (<ref type="bibliography" target="bibliography.php#JAMIESONCELESTIALATLAS"><persName corresp="#AJ">Jamieson</persName>, <title type="lesson" corresp="#JAMIESONCELESTIALATLAS"><hi rend="italic">Celestial Atlas</hi></title></ref>, 30; 
                     <ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 204).</p></note>
                 
-                <!-- NEW MARKUP from here forward, including additions to Grus and Aninous, and then entirely new thereafter-->                   
+<!-- NEW MARKUP from here forward, including additions to Grus and Aninous, and then entirely new thereafter-->
+                
                 <note xml:id="GRUSGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the very longbilled <name type="astronomical" corresp="#GRUS">crane</name>&#x201D; 
                     (<title type="manuscript" corresp="#MSIA">MS IA</title>; <title type="manuscript" corresp="#RFT70">RF T70</title>; 
                     <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#JR">Ruskin</persName> again turns to the southern hemisphere to name another of the twelve constellations observed by the Dutch explorers, 
@@ -887,80 +889,83 @@
                     (<title type="manuscript" corresp="#MSIA">MS IA</title>; <title type="manuscript" corresp="#RFT70">RF T70</title>; 
                     <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>For <name type="astronomical" corresp="#ANTINOUSCONSTELLATION">Antin&#x00F6;us</name>, 
                     see <ref type="internal" target="#AQUILAGLOSS"><name type="astronomical" corresp="#AQUILACONSTELLATION">Aquila</name></ref>, 
-                    which Jamieson treats along with the former as a single combined constellation. 
-                    Here, Ruskin names Antinous and Arrow in the same line, the latter referring presumably to the nearby constellation <ref type="internal" target="#SAGITTAGLOSS">Sagitta</ref>), 
-                    which lies between Aquila and <ref type="internal" target="#VULPECULAGLOSS">Vulpecula et Anser</ref>. 
-                    If Ruskin viewed Jamieson's plate containing Antinous, his "arrow" could also refer to the bow and arrows 
-                    with which Jamieson arms Antinous--that weapon formed from additional stars, and placed in the youth's extended left arm and hand. 
-                    This feature is absent from Bode's representation of Antinous in Uranographia (1801). Jamieson's picture of Antinous as an archer was copied in Urania's Mirror.</p></note>
+                    which <persName corresp="#AJ">Jamieson</persName> treats along with the former as a single combined constellation. 
+                    Here, <persName corresp="#JR">Ruskin</persName> names <name type="astronomical" corresp="#ANTINOUSCONSTELLATION">Antinous</name> and <name type="astronomical" corresp="#SAGITTA">Arrow</name> in the same line, the latter referring presumably to the nearby constellation <ref type="internal" target="#SAGITTAGLOSS">Sagitta</ref>), 
+                    which lies between <name type="astronomical" corresp="#AQUILACONSTELLATION">Aquila</name> and <ref type="internal" target="#VULPECULAGLOSS">Vulpecula et Anser</ref>. 
+                    If <persName corresp="#JR">Ruskin</persName> viewed <persName corresp="#AJ">Jamieson</persName>&#x02BC;s plate containing <name type="astronomical" corresp="#ANTINOUSCONSTELLATION">Antinous</name>, his "arrow" could also refer to the bow and arrows 
+                    with which <persName corresp="#AJ">Jamieson</persName> arms <name type="astronomical" corresp="#ANTINOUSCONSTELLATION">Antinous</name>--that weapon formed from additional stars, and placed in the youth's extended left arm and hand. 
+                    This feature is absent from <persName corresp="#JBODE">Bode</persName>&#x02BC;s representation of <name type="astronomical" corresp="#ANTINOUSCONSTELLATION">Antinous</name> in <title type="book" corresp="#BODEURANOGRAPHIA"><hi rend="italic">Uranographia</hi></title> (<date when="1801">1801</date>). <persName corresp="#AJ">Jamieson</persName>&#x02BC;s picture of <name type="astronomical" corresp="#ANTINOUSCONSTELLATION">Antinous</name> as an archer was copied in <name type="toy" corresp="#URANIASMIRROR">Urania&#x02BC;s Mirror</name>.</p></note>
 
-                <note xml:id="SAGITTAGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<name type="astronomical" corresp="#SAGITTA">arrow</name>&#x201C; 
+                <note xml:id="SAGITTAGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;<name type="astronomical" corresp="#SAGITTA">Arrow</name>&#x201C; 
                     (<title type="manuscript" corresp="#MSIA">MS IA</title>; <title type="manuscript" corresp="#RFT70">RF T70</title>; 
-                    <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Jamieson identifies a single Greek myth 
-                    with this small constellation, "its origin" ascribed "to one of the arrows of Hercules, 
-                    with which he killed the vulture, that gnawed the liver of Prometheus, whom Vulcan chained to Mount Caucasus, by order of Jupiter". 
-                    Green's account, as usual, follows Jamieson's closely but slightly elaborates the story.</p>
+                    <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#AJ">Jamieson</persName> identifies a single Greek myth 
+                    with this small constellation, &#x201C;its origin&#x201D; ascribed &#x201C;to one of the arrows of <persName type="fictional" corresp="#HERCULES">Hercules</persName>, 
+                    with which he killed the vulture, that gnawed the liver of <persName type="fictional" corresp="#PROMETHEUS">Prometheus</persName>, whom <persName type="fictional" corresp="#VULCAN">Vulcan</persName> chained to <geogName corresp="#MTCAUCASUS">Mount Caucasus</geogName>, by order of <persName type="fictional" corresp="#JUPITERGOD">Jupiter</persName>&#x201D;. 
+                    <persName corresp="#JGREEN">Green</persName>&#x02BC;s account, as usual, follows <persName corresp="#AJ">Jamieson</persName>&#x02BC;s closely but slightly elaborates the story.</p>
                     
-                    <p>In Ridpath's survey, this story is attributed to the Latin (not Greek) writer, Hyginus. 
-                        In a Greek source, Eratosthenes, Ridpath finds that the arrow was shot by Apollo, 
-                        moved to slay the Cyclopes for making the thunderbolts that Zeus (Jupiter) sent to kill Apollo's son, Asclepius. 
-                    Yet another story, Ridpath adds, was contributed by the Roman emperor, Germanicus Caesar, who, in a rewriting of Aratus's constellations poem, 
-                    gave the arrow to Eros to prick Zeus with passion for Ganymede 
+                    <p>In <persName corresp="#IRIDPATH">Ridpath</persName>&#x02BC;s survey, this story is attributed to the Latin (not Greek) writer, <persName corresp="#HYGINUS">Hyginus</persName>. 
+                    In a Greek source, <persName corresp="#ERATOSTHENES">Eratosthenes</persName>, <persName corresp="#IRIDPATH">Ridpath</persName> finds that the arrow was shot by <persName type="fictional" corresp="#APOLLO">Apollo</persName>, 
+                    moved to slay the <persName type="ficitonal" corresp="#CYCLOPES">Cyclopes</persName> for making the thunderbolts that <persName type="fictional" corresp="#JUPITERGOD">Zeus (Jupiter)</persName> sent to kill <persName type="fictional" corresp="#APOLLO">Apollo</persName>&#x02BC;s son, <persName type="fictional" corresp="#AESCULAPIUS">Asclepius</persName>. 
+                    Yet another story, <persName corresp="#IRIDPATH">Ridpath</persName> adds, was contributed by the Roman emperor, <persName corresp="#GERMANICUS">Germanicus Caesar</persName>, who, in a rewriting of <persName corresp="#ARATUS">Aratus</persName>&#x02BC;s constellations poem, 
+                    gave the arrow to <persName type="fictional" corresp="#EROS">Eros</persName> to prick <persName type="fictional" corresp="#JUPITERGOD">Zeus</persName> with passion for <persName type="fictional" corresp="#GANYMEDE">Ganymede</persName>.
                     (<ref type="bibliography" target="bibliography.php#JAMIESONCELESTIALATLAS"><persName corresp="#AJ">Jamieson</persName>, <title type="lesson" corresp="#JAMIESONCELESTIALATLAS"><hi rend="italic">Celestial Atlas</hi></title></ref>, 30-31; 
                     <ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 47; 
                     <ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 153).</p></note>
                 
                 <note xml:id="CORONAAUSTRALISGLOSS" resp="#DCH"><p><hi rend="bold">&#x201C;the <name type="astronomical" corresp="#CORONAAUSTRALIS">southern crown</name>&#x201C; 
                     (<title type="manuscript" corresp="#MSIA">MS IA</title>; <title type="manuscript" corresp="#RFT70">RF T70</title>; 
-                    <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi>Jamieson 
-                    depicts Corona Australis (the Southern Crown) as a wreath of leaves next to the forelegs 
-                    of Sagittarius (the Archer), but he omits description of it in the text. Green allows only a perfunctory mention 
+                    <title type="manuscript" corresp="#MSIII">MS III</title>)&#x2014;</hi><persName corresp="#AJ">Jamieson</persName> 
+                    depicts <name type="astronomical" corresp="#CORONAAUSTRALIS">Corona Australis (the Southern Crown)</name> as a wreath of leaves next to the forelegs 
+                    of <name type="astronomical" corresp="#SAGITTARIUS">Sagittarius (the Archer)</name>, but he omits description of it in the text. <persName corresp="#JGREEN">Green</persName> allows only a perfunctory mention 
                     (<ref type="bibliography" target="bibliography.php#JAMIESONCELESTIALATLAS"><persName corresp="#AJ">Jamieson</persName>, <title type="lesson" corresp="#JAMIESONCELESTIALATLAS"><hi rend="italic">Celestial Atlas</hi></title></ref>, pl. 20; 
                     <ref type="bibliography" target="bibliography.php#GREENASTRONOMICALRECREATIONS"><title type="book" corresp="#GREENASTRONOMICALRECREATIONS"><hi rend="italic">Astronomical Recreations</hi></title></ref>, 86). 
-                    As Ridpath explains, there was little to be said. Its name derives from the Greek <hi rend="italic">stephanos</hi> or 
-                    <hi rend="italic">wreath</hi>, referring to a victor's crown. It emerged as a distinct constellation, separate from Sagittarius, comparatively late in Greek astronomy, 
-                    named (including by Ptolomy, among his original forty-eight constellations) as <hi rend="italic">Notios stephanos</hi> (<hi rend="italic">Southern Crown</hi>) 
-                    to distinguish it from <hi rend="italic">Stephanos</hi> used to name the Northern Crown. While the Southern Crown has no legends, 
-                    Ridpath speculates that Hyginus intended the southern constellation when he connected 
-                    Corona Borealis (the Northern Crown) with stories of Dionysus, given that this god's followers attested their devotion by wearing crown-wreaths of myrtle 
+                    As <persName corresp="#IRIDPATH">Ridpath</persName> explains, there was little to be said. Its name derives from the Greek <hi rend="italic">stephanos</hi> or 
+                    <hi rend="italic">wreath</hi>, referring to a victor's crown. It emerged as a distinct constellation, separate from <name type="astronomical" corresp="#SAGITTARIUS">Sagittarius</name>, comparatively late in Greek astronomy, 
+                    named (including by <persName corresp="#PTOLOMY">Ptolomy</persName>, among his original forty-eight constellations) as <name type="astronomical" corresp="#CORONAAUSTRALIS"><hi rend="italic">Notios stephanos</hi> (<hi rend="italic">Southern Crown</hi>)</name> 
+                    to distinguish it from <hi rend="italic">Stephanos</hi> used to name the <name type="astronomical" corresp="#CORONABOREALIS">Northern Crown</name>. While the <name type="astronomical" corresp="#CORONAAUSTRALIS">Southern Crown</name> has no legends, 
+                    <persName corresp="#IRIDPATH">Ridpath</persName> speculates that <persName corresp="#HYGINUS">Hyginus</persName> intended the southern constellation when he connected 
+                    <name type="astronomical" corresp="#CORONABOREALIS">Corona Borealis (the Northern Crown)</name> with stories of <persName type="fictional" corresp="#DIONYSUS">Dionysus</persName>, given that this god's followers attested their devotion by wearing crown-wreaths of myrtle 
                     (<ref type="bibliography" target="bibliography.php#RIDPATHSTARTALES"><persName corresp="#IRIDPATH">Ridpath</persName>, <title type="book" corresp="#RIDPATHSTARTALES"><hi rend="italic">Star Tales</hi></title></ref>, 80).</p></note>
-
+                
                 <note xml:id="DELPHINUSGLOSS" resp="#DCH">Dolphins were a familiar sight to Greek sailors, so it is not surprising to find one
                     of these friendly and intelligent creatures depicted in the sky. Two stories
-                    account for the presence of the celestial dolphin. According to Eratosthenes,
-                    this jaunty dolphin represents the messenger of the sea god Poseidon.
-                    After Zeus, Poseidon, and Hades had overthrown their father Cronus, they
-                    divided up the sky, the sea, and the underworld between them, with Poseidon
+                    account for the presence of the celestial dolphin. According to <persName corresp="#ERATOSTHENES">Eratosthenes</persName>,
+                    this jaunty dolphin represents the messenger of the sea god <persName type="fictional" corresp="#POSEIDON">Poseidon</persName>.
+                    After <persName type="fictional" corresp="#JUPITERGOD">Zeus</persName>, <persName type="fictional" corresp="#POSEIDON">Poseidon</persName>, and <persName type="fictional" corresp="#HADES">Hades</persName> had overthrown their father <persName type="fictional" corresp="#CRONUS">Cronus</persName>, they
+                    divided up the sky, the sea, and the underworld between them, with <persName type="fictional" corresp="#POSEIDON">Poseidon</persName>
                     inheriting the sea. He built himself a magnificent underwater palace off the
-                    island of Euboea. For all its opulence, the palace felt empty without a wife, so
-                    Poseidon set out in search of one. He courted Amphitrite, one of the group of
-                    sea nymphs called Nereids, but she fled from his rough advances and took refuge
-                    among the other Nereids. Poseidon sent messengers after her, including a
-                    dolphin, which found her and with soothing gestures brought her back to the sea god, whom she subsequently married. In gratitude, Poseidon placed the
+                    island of <placeName corresp="#EUBOEA">Euboea</placeName>. For all its opulence, the palace felt empty without a wife, so
+                    <persName type="fictional" corresp="#POSEIDON">Poseidon</persName> set out in search of one. He courted <persName type="fictional" corresp="#AMPHITRITE">Amphitrite</persName>, one of the group of
+                    sea nymphs called <persName type="fictional" corresp="#NEREIDS">Nereids</persName>, but she fled from his rough advances and took refuge
+                    among the other <persName type="fictional" corresp="#NEREIDS">Nereids</persName>. <persName type="fictional" corresp="#POSEIDON">Poseidon</persName> sent messengers after her, including a
+                    dolphin, which found her and with soothing gestures brought her back to the sea god, whom she subsequently married. In gratitude, <persName type="fictional" corresp="#POSEIDON">Poseidon</persName> placed the
                     image of the dolphin among the stars.
-                    Another story, given by Hyginus and Ovid, says that this is the dolphin that
-                    saved the life of Arion, a real-life poet and musician of the seventh century BC.
-                    Arion was born on the island of Lesbos, but his reputation spread throughout
-                    Greece for he was said to be unequalled in his skill with the lyre. While Arion
+                    
+                    Another story, given by <persName corresp="#HYGINUS">Hyginus</persName> and <persName corresp="#OVID">Ovid</persName>, says that this is the dolphin that
+                    saved the life of <persName corresp="#ARION">Arion</persName>, a real-life poet and musician of the seventh century BC.
+                    <persName corresp="#ARION">Arion</persName> was born on the island of <placeName corresp="#LESBOS">Lesbos</placeName>, but his reputation spread throughout
+                    Greece for he was said to be unequalled in his skill with the lyre. While <persName corresp="#ARION">Arion</persName>
                     was returning to Greece by ship from a concert tour of Sicily and southern Italy,
                     the sailors plotted to kill him and steal the small fortune that he had earned.
-                    When the sailors surrounded him with swords drawn, Arion asked to be
+                    When the sailors surrounded him with swords drawn, <persName corresp="#ARION">Arion</persName> asked to be
                     allowed to sing one last song. His music attracted a school of dolphins which
-                    swam alongside the ship, leaping playfully. Placing his faith in the gods, Arion
+                    swam alongside the ship, leaping playfully. Placing his faith in the gods, <persName corresp="#ARION">Arion</persName>
                     leaped overboard – and one of the dolphins carried him on its back to Greece,
-                    where Arion later confronted his attackers and had them sentenced to death.
-                    Apollo, god of music and poetry, placed the dolphin among the constellations,
-                    along with the lyre of Arion which is represented by the constellation Lyra.
-                    Delphinus was known in Greek as Δελφίν (Delphin) or Δελφίς (Delphis).
-                    Two stars in Delphinus bear the peculiar names Sualocin and Rotanev, which
+                    where <persName corresp="#ARION">Arion</persName> later confronted his attackers and had them sentenced to death.
+                    <persName type="fictional" corresp="#APOLLO">Apollo</persName>, god of music and poetry, placed the dolphin among the constellations,
+                    along with the lyre of <persName corresp="#ARION">Arion</persName> which is represented by the constellation <name type="astronomical" corresp="#LYRA">Lyra</name>.
+                    
+                    <name type="astronomical" corresp="#DELPHINUS">Delphinus</name> was known in Greek as Δελφίν (Delphin) or Δελφίς (Delphis).
+                    Two stars in <name type="astronomical" corresp="#DELPHINUS">Delphinus</name> bear the peculiar names Sualocin and Rotanev, which
                     first appeared in the Palermo Catalogue of 1814 compiled by the Italian astron -
-                    omer Giuseppe Piazzi (1746–1826). Read backwards, these names spell out
-                    Nicolaus Venator, the Latinized form of Niccolò Cacciatore (1770–1841), who
-                    was Piazzi’s assistant and eventual successor at Palermo Observatory. It is
-                    usually said that Cacciatore was responsible for the naming, which would make
+                    omer <persName corresp="#GIUSEPPEPIAZZI">Giuseppe Piazzi</persName> (<date notBefore="1746" notAfter="1826">1746&#x2013;1826</date>). Read backwards, these names spell out
+                    <persName corresp="#NICCOLOCACCIATORE">Nicolaus Venator</persName>, the Latinized form of <persName corresp="#NICCOLOCACCIATORE">Niccolò Cacciatore</persName> (<date notBefore="1770" notAfter="1841">1770&#x2013;1841</date>), who
+                    was <persName corresp="#GIUSEPPEPIAZZI">Piazzi</persName>&#x02BC;s assistant and eventual successor at Palermo Observatory. It is
+                    usually said that <persName corresp="#NICCOLOCACCIATORE">Cacciatore</persName> was responsible for the naming, which would make
                     him the only person to have named a star after himself and got away with it.
-                    However, it is equally possible that the names were applied by Piazzi to honour
+                    However, it is equally possible that the names were applied by <persName corresp="#GIUSEPPEPIAZZI">Piazzi</persName> to honour
                     his heir apparent, or ‘dauphin’ (dolphin).
+                    
                     The constellation was once popularly called Job’s Coffin, presumably from
                     its elongated box-like shape, although sometimes this name is restricted to the
                     diamond formed by the four stars Alpha, Beta, Gamma, and Delta Delphini.
@@ -975,6 +980,7 @@ nitude in the Dolphin, is a little to the south of the rhombus. These five stars
 make up almost the whole of this beautiful little group.
 Delphinus is bounded by Vulpecula, Sagitta, Aquila, Equuleus, and Pe-
 gasus.
+
 History.--According to some writers, this is the Dolphin which saved the 
 life of Arion, the famous lyric poet and musician of Lesbos. The following 
 are the most interesting particulars of that event. Arion, who had obtained 
@@ -987,7 +993,7 @@ A number of Dolphins had been attracted round the ship by the sweetness of
 the music, and it is said that one of them supported Arion on his back, and 
 brought him safe to land. Whatever may have given rise to this story, the 
 ancients agree in representing the Dolphin as the friend and protector of man.
-Delphinus is said to have been placed among the constellations by Neptune. (Green, 58-9)</note>
+Delphinus is said to have been placed among the constellations by <persName type="fictional" corresp="#POSEIDON">Neptune</persName>. (Green, 58-9)</note>
 
                 <note xml:id="ARAGLOSS" resp="#DCH">Altars feature frequently in Greek legend, for heroes were always making sacrifices to the gods, so it is not surprising to find an altar among the stars. But this
                     altar is a special one, for it was used by the gods themselves to swear a vow of
