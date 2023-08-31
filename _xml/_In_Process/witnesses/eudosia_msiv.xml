@@ -22,6 +22,10 @@
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
                     <persName corresp="#GMS">Gabriella M. Smith</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
                     <persName corresp="#CGP">Caroline G. Pontiff</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
@@ -64,9 +68,8 @@
                         <institution>Yale University</institution>
                         <repository>Beinecke Rare Book and Manuscript Library</repository>
                         <collection>MS Vault Ruskin</collection>
-                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
-                        <msName>MS I</msName>
-                        <msName>"Red book No. 3"</msName>
+                        <msName>MS IV</msName>
+                        <msName>"Red book No. 1"</msName>
                     </msIdentifier>
                     <msContents>
                         <msItem>
@@ -97,7 +100,7 @@
                 <pb facs="1229239"/>
                 <docTitle>
                     
-                    <titlePart type="main"><handShift new="#HANDJR1828-29" script="print" medium="pencil"/><space quantity="2" unit="chars"/><hi rend="caps">Eudosia or</hi><lb/>
+                    <titlePart type="main"><handShift new="#HANDJR1828-29" script="print" medium="ink"/><space quantity="2" unit="chars"/><hi rend="caps">Eudosia or</hi><lb/>
                         <lb/>
                         <lb/><space quantity="17" unit="chars"/><hi rend="smallcaps">A Poem</hi><lb/>
                         <lb/>
@@ -110,6 +113,8 @@
                         <lb/>
                         <lb/><space quantity="5" unit="chars"/><hi rend="caps">By <persName corresp="#JR">John Ruskin</persName></hi><lb/>
                         <lb/>
+                        <lb/><space quantity="16" unit="chars"/><hi rend="small caps"><hi rend="doubleletter">Vol I</hi></hi><lb/>
+                        <lb/>
                         <lb/><space quantity="15" unit="chars"/><hi rend="small caps"></hi><lb/>
                     </titlePart>
                 </docTitle>
@@ -120,7 +125,7 @@
                     <l>Thus wondros fair <gap extent="9" unit="chars"/><persName corresp="#JMILTON">MILTON</persName></l></epigraph><lb/>
                 <figure><figDesc>[two parallel lines]</figDesc></figure><lb/>
                 <docTitle>
-                    <titlePart type="sub"><space quantity="9" unit="chars"/><hi rend="smallcaps">Botany</hi><lb/>
+                    <titlePart type="sub"><space quantity="9" unit="chars"/><hi rend="smallcaps"><hi rend="doubleletter">Botany</hi></hi><lb/>
                         <lb/>
                         <lb/>
                         <lb/><space quantity="14" unit="chars"/><hi rend="smallcaps"><placeName type="building" corresp="#HERNE">Hern Hill</placeName></hi><lb/>
@@ -135,29 +140,22 @@
                     </titlePart>
                 </docTitle>
                 <note>Red book. No 1. Sept. 8th 1870</note><!--different script-->
-            </titlePage><pb facs="1229240"/>
-            <docTitle>
-                <titlePart type="half"><handShift new="#HANDJR1828-29" script="print" medium="pencil"/>
-            <pb facs="1229240r"/><fw type="runningHead" place="top"><space quantity="14" unit="chars"/><name type="botanical" corresp="#ROSE">ROSE</name></fw><fw type="pageNum" place="top"><space quantity="60" unit="chars"/>2</fw>
-                <lb/><space quantity="6" unit="chars"/><hi rend="caps">EUDOSIA</hi><lb/>
-                    <lb/><space quantity="9" unit="chars"/>September 28th<lb/>
-                    <lb/><space quantity="19" unit="chars"/>1828<lb/>
-                    <lb/><space quantity="4" unit="chars"/><hi rend="caps">FIRST BOOK</hi><lb/>
-                    <milestone unit="undeclared" rend="hr-full"></milestone><!--diamond shape and line-->
-                </titlePart>
-            </docTitle>
+            </titlePage>
                 </front>
                 
                 <!--Example entries have been provided from MS I in the <handShift/>s below. Actual entries may vary.-->
                 <!--Simple Verse. Delete this <div/> if not used.-->
         <body>
-                <div type="prose">
-                </div>
-                    <div type="chapter">
-                    </div>
-                <div type="poem">  
-                </div>
-            <div>
+                <div type="witness" subtype="poem" met="-+|-+|-+|-+|-+" rhyme="aa">
+                    <pb facs="1229240r"/><fw><handShift new="#HANDJR1828-29" script="print" medium="ink"/></fw><fw type="runningHead" place="top"><space quantity="14"/><name type="botanical" corresp="#ROSE">ROSE</name></fw><fw type="pageNum" place="top"><space quantity="60" unit="chars"/>2 </fw>
+                
+            <div type="book" xml:id="book1">
+                    <head type="title">
+                        <lb/><space quantity="6" unit="chars"/><hi rend="caps">EUDOSIA</hi><lb/>
+                        <lb/><space quantity="9" unit="chars"/>September 28th<lb/>
+                        <lb/><space quantity="19" unit="chars"/>1828<lb/>
+                        <lb/><space quantity="4" unit="chars"/><hi rend="caps">FIRST BOOK</hi><lb/>
+                        <milestone unit="undeclared" rend="hr-full"></milestone><!--diamond shape and line--></head>
                 <lg type="stanza" rhyme="aa">
                     <l><add rend="linenumber-left-JR">1</add>WHEN First the wrath of heav&#x02BC;n oerwhelmed the world,</l>
                     <l>And oer the rocks and hills and mountains hurled</l>
@@ -393,8 +391,15 @@
             </div>
             <div type="poem">
                 <pb facs="1229246v"/><fw type="pageNum" place="top">13</fw><fw type="runningHead" place="top"><space quantity="7"/><name type="botanical" corresp="#PINE">PINE</name></fw>
-                <head type="title"><handShift new="#HANDJR1828-29" script="print" medium="pencil"
-                    />EUDOSIA / BOOK II</head>
+                <head type="title"><handShift new="#HANDJR1828-29" script="print" medium="ink"
+                    /><lb/><figure><figDesc>[two parallel lines?]</figDesc></figure><lb/>
+                    <lb/><space quantity="7" unit="chars"/><hi rend="caps"><hi rend="doubleletter">EUDOSIA</hi></hi><lb/>
+                    <lb/>
+                    <lb/>
+                    <lb/><space quantity="8" unit="chars"/><hi rend="smallcaps"><hi rend="doubleletter">BOOK II</hi></hi><lb/>
+                    <lb/>
+                    <lb/><figure><figDesc>[two parallel lines?]</figDesc></figure><lb/>
+                </head>
                 <lg type="stanza" rhyme="aa">
                     <l>I SING the <name type="botanical" corresp="#PINE">pine</name> which clothes high switzers<!--Switzerland?--> head</l>
                     <l>And high enthroned grows on a rocky bed</l>
@@ -478,6 +483,7 @@
                     <l>And mirth &#x0026; luxury have breathed their last</l>
                 </lg>
             </div>
+                </div>
     </body>
     </text>
 </TEI>
