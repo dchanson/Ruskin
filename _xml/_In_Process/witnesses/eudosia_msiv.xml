@@ -5,11 +5,11 @@
     <teiHeader type="witness">
         <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
             The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
-        <fileDesc xml:id="title_of_work_witness">
+        <fileDesc xml:id="eudosia_msiv">
             <titleStmt>
                 <title type="main">"Eudosia"</title>
                 <title type="sub">Electronic Text Generated from a Transcription of the MS
-                    Draft/Fair Copy Name/Number</title>
+                    Fair Copy IV</title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
                 </author>
@@ -149,13 +149,15 @@
                 <div type="witness" subtype="poem" met="-+|-+|-+|-+|-+" rhyme="aa">
                     <pb facs="1229240r"/><fw><handShift new="#HANDJR1828-29" script="print" medium="ink"/></fw><fw type="runningHead" place="top"><space quantity="14"/><name type="botanical" corresp="#ROSE">ROSE</name></fw><fw type="pageNum" place="top"><space quantity="60" unit="chars"/>2 </fw>
                 
-            <div type="book" xml:id="book1">
                     <head type="title">
                         <lb/><space quantity="6" unit="chars"/><hi rend="caps">EUDOSIA</hi><lb/>
                         <lb/><space quantity="9" unit="chars"/>September 28th<lb/>
                         <lb/><space quantity="19" unit="chars"/>1828<lb/>
-                        <lb/><space quantity="4" unit="chars"/><hi rend="caps">FIRST BOOK</hi><lb/>
-                        <milestone unit="undeclared" rend="hr-full"></milestone><!--diamond shape and line--></head>
+                        </head>
+                <div type="book" xml:id="book1">
+                    <head type="book">
+                        <space quantity="4" unit="chars"/><hi rend="caps">FIRST BOOK</hi><lb/></head>
+                        <milestone unit="undeclared" rend="hr-full"></milestone><!--diamond shape and line-->
                 <lg type="stanza" rhyme="aa">
                     <l><add rend="linenumber-left-JR">1</add>WHEN First the wrath of heav&#x02BC;n oerwhelmed the world,</l>
                     <l>And oer the rocks and hills and mountains hurled</l>
