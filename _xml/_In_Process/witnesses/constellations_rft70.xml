@@ -167,34 +167,45 @@
                     <substJoin target="#change16 #INSERTION16"/>
                     <l><add rend="linenumber-left-JR">55</add>Shining in golden light he&#x02BC;s drest</l>
                     <l>With a horn instead of a towering crest</l>
-                    <l>The <name type="astronomical" corresp="#LIBRA">scales</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#LIBRAGLOSS"/> <del rend="strikethrough" xml:id="change17">that nothing to weigh would bear</del></l>
-                    <l><del rend="strikethrough" xml:id="change18">But yet contain a thousand more</del></l>
-                    <l><del rend="strikethrough" xml:id="change19">Farther than that I could not say</del></l>
-                    <l><add rend="linenumber-left-JR">60</add><del rend="strikethrough" xml:id="change20">More than than the beautiful milky way</del> <add xml:id="INSERTION17"><handShift script="cursive"/>the crimes and<lb/>virtues of men<lb/>mind mind<handShift script="print"/></add><ref type="gloss_textual" target="constellations_glosses_textual.php#LIBRATEXTGLOSS"/></l>
-                    <substJoin target="#change17 #change18 #change19 #change20 #INSERTION17"/>
-                    <l>The <name type="astronomical" corresp="#SAGITTARIUS">archer</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#SAGITTARIUSGLOSS"/> with his flying dart</l>
+                    <l>The <name type="astronomical" corresp="#LIBRA">scales</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#LIBRAGLOSS"/> <delSpan rend="strikethrough" spanTo="#change17end" xml:id="change17"/>that nothing to weigh would bear</l>
+                    <l>But yet contain a thousand more</l>
+                    <l>Farther than that I could not say</l>
+                    <l><add rend="linenumber-left-JR">60</add>More than than the beautiful milky way</l>
+                    <anchor xml:id="change17end"/>
+                    <addSpan rend="overwriting" spanTo="#INSERTION17end" xml:id="INSERTION17"/><l><handShift script="cursive"/><del><handShift medium="pencil"/><unclear resp="#DCH"/>the scales are in the <name type="astronomical" corresp="#VIRGO">virgin</name>s hand<lb/>and the beautiful <name type="astronomical" corresp="#MILKYWAY">milky way</name> was the land</del><handShift medium="ink"/>the scales in which twas vainly<lb type="runover" rend="below"/><space quantity="26" unit="chars"/>said</l>
+                    <l><del><handShift medium="pencil"/><unclear resp="#DCH"/>by which the ancients used to <unclear reason="blot" resp="#DCH">. . .</unclear><lb/>that then was the very beautiful way</del>the crimes and virtues of men<lb type="runover" rend="below"/><space quantity="10" unit="chars"/>were weighed<ref type="gloss_textual" target="constellations_glosses_textual.php#LIBRATEXTGLOSS"/></l>
+                    <anchor xml:id="INSERTION17end"/>
+                    <substJoin target="#change17 #INSERTION17"/>
+                    <l><handShift script="print"/>The <name type="astronomical" corresp="#SAGITTARIUS">archer</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#SAGITTARIUSGLOSS"/> with his flying dart</l>
                     <l>I should not think it would pierce the heart</l>
-                    <l>The <name type="astronomical" corresp="#CANCER">crab</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#CANCERGLOSS"/> and the <name type="astronomical" corresp="#GEMINI">twins</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#GEMINIGLOSS"/> with their clothes of fire</l>
-                    <l><del rend="strikethrough" xml:id="change21">I wish I had not observed the <name type="astronomical" corresp="#LYRA">lyre</name></del><add xml:id="INSERTION18"><hi rend="strikethrough">then the very frigtened hare</hi> after that doth come the lyre</add><ref type="gloss_textual" target="constellations_glosses_contextual.php#LEPUSTEXTGLOSS"/><ref type="gloss_contextual" target="constellations_glosses_contextual.php#LEPUSGLOSS"/></l>
-                    <substJoin target="change21 #INSERTION18"/>
+                    <l>The <name type="astronomical" corresp="#CANCER">crab</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#CANCERGLOSS"/> and the <name type="astronomical" corresp="#GEMINI">twins</name> with their clothes of fire<ref type="gloss_contextual" target="constellations_glosses_contextual.php#GEMINIGLOSS"/></l>
+                    <l><del rend="strikethrough" xml:id="change18">I wish I had not observed the <name type="astronomical" corresp="#LYRA">lyre</name></del><add xml:id="INSERTION18"><del rend="strikethrough">then the very frigtened hare</del> after that doth come the lyre</add><ref type="gloss_textual" target="constellations_glosses_contextual.php#LEPUSTEXTGLOSS"/> <ref type="gloss_contextual" target="constellations_glosses_contextual.php#LEPUSGLOSS"/></l>
+                    <substJoin target="#change18 #INSERTION18"/>
                     <l>The <name type="astronomical" corresp="#TRIANGULUMMINUS">little triangle</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#TRIANGULUMMINUSGLOSS"/> appears on high</l>
                     <l>And the <name type="astronomical" corresp="#CAPRICORNUS">goat</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#CAPRICORNUSGLOSS"/> that is formed in the arched sky<ref type="gloss_contextual" target="constellations_glosses_contextual.php#ARCHEDGLOSS"/></l>
-                    <!--I did not see this section in the ms pages
-                    <l>But oh that wonder of them all</l>
-                    <l>Which <name type="astronomical" corresp="#MILKYWAY">milky way</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#MILKYWAYGLOSS"/> europeans call</l>
-                    <l>And which the ancients thought the road</l>
-                    <l>Which all their best and bravest trod</l>
-                    <l>Unto great <name type="astronomical" corresp="#JUPITER">Jupiters</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#JUPITERGLOSS"/> blest abode</l>-->
-                    <l>bright these stars are, beauteous gold</l>
-                    <l>but let history unfold</l>
-                    <l>her page of learning let<lb type="runover" rend="above"/><space quantity="19" unit="chars"/>us see</l>
-                    <l>Whether that is not more<lb type="runover" rend="below"/><space quantity="7" unit="chars"/>bright than thee</l>
+                    <addSpan spanTo="#INSERTION19end" xml:id="INSERTION19"/>
+                    <l><handShift script="cursive"/>but oh that wonder of them all</l>
+                    <l>which <name type="astronomical" corresp="#MILKYWAY">milky way</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#MILKYWAYGLOSS"/> europeans<lb type="runover" rend="below"/><space quantity="7" unit="chars"/>call</l>
+                    <l>and which the ancients<lb type="runover" rend="below"/><space quantity="7" unit="chars"/>thought the<lb type="runover" rend="below"/><space quantity="13" unit="chars"/>road</l>
+                    <l>which all their best<lb type="runover" rend="above"/><space quantity="15" unit="chars"/>and bravest trod</l>
+                    <delSpan spanTo="#change19end" xml:id="change19"/>
+                    <l>of heroes that their<lb type="runover" rend="below"/><space quantity="7" unit="chars"/>countrys good</l>
+                    <l>espoused and neer in<lb type="runover" rend="below"/><space quantity="6" unit="chars"/>angry mood</l>
+                    <anchor xml:id="change19end"/>
+                    <l>unto great <name type="astronomical" corresp="#JUPITER">jupiters</name><lb type="runover" rend="below"/><space quantity="5" unit="chars"/>blest abode<handShift script="print"/><ref type="gloss_contextual" target="constellations_glosses_contextual.php#MILKYWAYGLOSS"/></l>
+                    <anchor xml:id="INSERTION19end"/>
+                    <substJoin target="#INSERTION19 #change19"/>
+                    <l>Bright these stars are, beauteous gold</l>
+                    <l>But let <del rend="strikethrough" xml:id="change20">history</del> unfold<add xml:id="INSERTION20"><handShift script="cursive"/>knowledge then</add><ref type="gloss_textual" target="constellations_glosses_textual.php#HISTORYTEXTGLOSS"/></l>
+                    <substJoin target="#change20 #INSERTION20"/>
+                    <l>Her page of learning<ref type="gloss_textual" target="constellations_glosses_textual.php#GAPTEXTGLOSS"/><gap unit="chars" quantity="3"/> let us see</l>
+                    <l>Whether that is not more bright than thee</l>
                     <l>Een thou O beauteous <name type="astronomical" corresp="#MERCURY">mercury</name><ref type="gloss_contextual" target="constellations_glosses_contextual.php#MERCURYGLOSS"/></l>
-                    <l>Much better than the brightest<lb type="runover" rend="below"/><space quantity="9" unit="chars"/>star</l>
-                    <l>Virtue I will say you<lb type="runover" rend="above"/><space quantity="19" unit="chars"/>are</l>
-                    <l>Better than knowledge yes indeed</l>
-                    <l>Virtue you <del rend="strikethrough">shall</del><add place="above"><space quantity="10" unit="chars"/>should</add> have<lb type="runover" rend="below"/><space quantity="7" unit="chars"/>the lead
-                    </l>
+                    <l>Much better than the brightest star</l>
+                    <l>Virtue I will say you are</l>
+                    <l>Better than <del rend="strikethrough" xml:id="change21">history</del><add place="below" xml:id="INSERTION21"><space quantity="12" unit="chars"/><handShift script="cursive"/>knowledge yes</add> <handShift script="print"/>indeed</l>
+                    <substJoin target="#change21 #INSERTION21"/>
+                    <l>Virtue you should have the lead</l>
                 </lg>
             </div>
         </body>
