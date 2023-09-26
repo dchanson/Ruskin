@@ -22,6 +22,11 @@
                     <persName xml:id="JLF">Jessica L. Firmin</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="CGP">Caroline G. Pontiff</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
                 <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
                     America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
@@ -62,35 +67,35 @@
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
                     <p>MS IV</p>
-                    <p>  <persName corresp="#WGC">W. G. Collingwood</persName> assigned roman numeral IV to this <title type="manuscript" corresp="REDBOOK">Red Book</title> in his 
-                        &#x201C;<title type="bibliography_text" corresp="COLLINGWOODPRELIMINARYNOTE">Preliminary Note on the Original MSS. of the Poems</title>&#x201D; for 
-                        <title type="book" corresp="JRPOEMS1891">Poems (1891)</title> (Poems [4o, 1891], 1:262; Poems [8o, 1891], 1:263)<!--how to tag?-->.
+                    <p>  <persName corresp="#WGC">W. G. Collingwood</persName> assigned roman numeral IV to this <title type="manuscript" corresp="#JRREDBOOK">Red Book</title> in his 
+                        &#x201C;<title type="bibliography_text" corresp="#COLLINGWOODPRELIMINARYNOTE">Preliminary Note on the Original MSS. of the Poems</title>&#x201D; for 
+                        <title type="book" corresp="#JRPOEMS1891">Poems (1891)</title> (Poems [4o, 1891], 1:262; Poems [8o, 1891], 1:263)<!--how to tag?-->.
                         Two decades earlier, <persName corresp="#JR">Ruskin</persName> himself had set the precedent for numbering the 
-                        <title type="manuscript" corresp="REDBOOK">Red Books</title>, including this one: at bottom of the title page 
-                        for &#x201C;<title type="poem" corresp="JREUDOSIA">Eudosia</title>,&#x201D; he wrote &#x201C;<title type="manuscript" corresp="REDBOOK">Red book</title> No. 1. 
-                        <date when="1870-08-09">Sept 8th 1870</date>&#x201D; (see &#x201C;<title type="poem" corresp="JREUDOSIA">Eudosia</title>&#x201D;: Title). On the same day, he 
-                        docketed <title type="manuscript" corresp="MSIII"> MS III</title> as &#x201C;<title type="manuscript" corresp="REDBOOK">Red book</title> No. 2,&#x201D; and 
-                        <title type="manuscript" corresp="MSI">MS I</title> as &#x201C;<title type="manuscript" corresp="REDBOOK">Red book</title> No. 3.&#x201D; For the meaning of 
+                        <title type="manuscript" corresp="#JRREDBOOK">Red Books</title>, including this one: at bottom of the title page 
+                        for &#x201C;<title type="poem" corresp="#JREUDOSIA">Eudosia</title>,&#x201D; he wrote &#x201C;<title type="manuscript" corresp="#JRREDBOOK">Red book</title> No. 1. 
+                        <date when="1870-08-09">Sept 8th 1870</date>&#x201D; (see &#x201C;<title type="poem" corresp="#JREUDOSIA">Eudosia</title>&#x201D;: Title). On the same day, he 
+                        docketed <title type="manuscript" corresp="#MSIII"> MS III</title> as &#x201C;<title type="manuscript" corresp="#JRREDBOOK">Red book</title> No. 2,&#x201D; and 
+                        <title type="manuscript" corresp="#MSI">MS I</title> as &#x201C;<title type="manuscript" corresp="#JRREDBOOK">Red book</title> No. 3.&#x201D; For the meaning of 
                         this numbering, see Red Books. <!--NOTE is red_book_note.xml, how do I tag this-->
-                        Apart from these numerical designations, <persName corresp="#JR">Ruskin</persName>&#x02BC;s title&#x2013;intended originally,
-                        it appears, both for <title type="manuscript" corresp="MSIV">MS IV</title> in its entirety as well as for its main work&#x2010;is 
-                        &#x201C;<title type="poem" corresp="JREUDOSIA">EUDOSIA</title> OR / <title type="poem" corresp="JRPOEMONTHEUNIVERSE">A POEM / ON THE / UNIVERSE </title>/
+                        Apart from these numerical designations, <persName corresp="#JR">Ruskin</persName>&#x02BC;s title&#x2014;intended originally,
+                        it appears, both for <title type="manuscript" corresp="#MSIV">MS IV</title> in its entirety as well as for its main work&#x2014;is 
+                        &#x201C;<title type="poem" corresp="#JREUDOSIA">EUDOSIA</title> OR / <title type="poem" corresp="#JRPOEMONTHEUNIVERSE">A POEM / ON THE / UNIVERSE </title>/
                         BY <persName corresp="#JR">JOHN RUSKIN</persName> / VOL I / These are thy glorious works parent of good / Almighty thine this universal frame / 
                         Thus wondros fair <persName corresp="#JMILTON">MILTON</persName> / BOTANY / <placeName type="building" corresp="#HERNE">HERN HILL</placeName> / <placeName corresp="#DULWICH">DULWICH</placeName>.&#x201D;
-                    See also System of Title Citation for Major Manuscripts.</p>
+                    See also System of Title Citation for Major Manuscripts<!--title?-->.</p>
                 </div>
                 <div type="section" xml:id="LOCATION">
                     <head type="section">Location</head>
                     <p>Body paragraph.</p>
                     <p>  <orgName corresp="#BEINECKE">Beinecke Library</orgName>, <orgName corresp="#YALE">Yale University</orgName>, catalogued as . . . Formerly, 
                         the <orgName corresp="#BEINECKE">Beinecke</orgName> kept the manuscript inside the slip case 
-                        &#x201C;<title type="binding_slipcase" corresp="JRHARRYLUCYPOEMS_CASE"> Harry &#x0026; Lucy, Poems</title><!--is this correct?--> &#x0026;c,&#x201D;
+                        &#x201C;<title type="binding_slipcase" corresp="#JRHARRYLUCYPOEMS_CASE"> Harry &#x0026; Lucy, Poems &#x0026;c</title><!--is this correct?-->,&#x201D;
                         which contained it along with four other manuscripts when purchased. The slip case is now preserved separately. </p>
                 </div>
                 <div type="section" xml:id="PROVENANCE">
                     <head type="section">Provenance</head>
                     <p>Body paragraph.</p>
-                    <p> See Provenance: <title type="catalogue_auction" corresp="SOTHEBYCAT1930">Sotheby&#x02BC;s 1930</title>.</p>
+                    <p> See Provenance: <title type="catalogue_auction" corresp="#SOTHEBYCAT1930">Sotheby&#x02BC;s 1930</title>.</p>
                 </div>
                 <div type="section" xml:id="DESCRIPTION">
                     <head type="section">Description</head>
@@ -99,8 +104,8 @@
                     <p>Collation</p>
                     <p>Inside front endboard &#x002B; &#x201C;<title type="poem" corresp="#JREUDOSIA">Eudosia</title>&#x201D;: Title (1r) &#x002B; pp. 1&#x2013;33, with p. 1 started on 1v &#x002B; ?? unnumbered
                         leaves (or ??r/v&#x2013;??r/v, with ??r/v&#x2013;??r/v blank and ??r/v&#x2013;??r/v containing text written reverso from back of book.
-                    Pasted to inside front endboard: clipping from <title type="book" corresp="JRBPOEMS1891">Poems (1891)</title> describing 
-                        <title type="manuscript" corresp="MSIXV">MS IV</title>.</p>
+                    Pasted to inside front endboard: clipping from <title type="book" corresp="#JRPOEMS1891">Poems (1891)</title> describing 
+                        <title type="manuscript" corresp="#MSIXV">MS IV</title>.</p>
                     <!--The subsection that follows, Collation, is common to all manuscript apparatuses and was, accordingly, assigned an xml:id by
                         the Ruskin Project Team during work on the "First Twenty."-->
                     <div type="subsection" xml:id="COLLATION">
@@ -149,31 +154,30 @@
                         failing to realize the ambitious length and predominance of that work&#x2014;the manuscript was left open to being filled by other kinds of writing. 
                         <title type="manuscript" corresp="MSIV">MS IV</title>, however, was left with an unusually large blank section: from the page containing the
                         final fair&#x2010;copied lines of &#x201C;<title type="poem" corresp="JREUDOSIA">Eudosia</title>&#x201D; 
-                        (p. 17) to the <title type="manuscript" corresp="MINERALOGICALDICTIONARY">Mineralogy Notes</title> [ca. <date when="1829">1829</date>] entered reverso from the other end, <title type="manuscript" corresp="MSIV">MS IV</title> 
+                        (p. 17) to the <title type="manuscript" corresp="#MINERALOGICALDICTIONARY">Mineralogy Notes</title> [ca. <date when="1829">1829</date>] entered reverso from the other end, <title type="manuscript" corresp="MSIV">MS IV</title> 
                         contained a section of 29 leaves, blank except for numbering on some pages, until two decades after its initial use, when 
                         <persName corresp="#JJR">John James Ruskin</persName> used some of those leaves for his catalog of his son&#x02BC;s published poems. 
-                        Over time, <persName corresp="#JR">Ruskin</persName> put space in other <title type="manuscript" corresp="JRREDBOOK">Red Books</title> to various uses&#x2014;the additional poetry anthologies
-                        in <title type="manuscript" corresp="MSIII">MS III</title>, the mineralogy notes in <title type="manuscript" corresp="MSIIIA">MS IIIA</title>
-                        (although that <title type="manuscript" corresp="JRREDBOOK">Red Book</title> also retained blank sections extending to significant lengths),
-                        the sermon drafts in <title type="manuscript" corresp="JUVMSA">Juvenilia MS A</title>. That <persName corresp="#JR">Ruskin</persName> left so much of
-                        <title type="manuscript" corresp="MSIV">MS IV</title> unused may suggest that he persisted longer in an intention to carry on with the manuscript&#x02BC;s
-                        main work, &#x201C;<title type="poem" corresp="JREUDOSIA">Eudosia</title>,&#x201D; compared to ambitions for 
-                        &#x201C;<title type="lesson" corresp="JRHARRYANDLUCY">Harry and Lucy</title>,&#x201D; which he relinquished more easily in 
-                        <title type ="manuscript" corresp="MSIII">MS III</title> and <title type="manuscript" corresp="MSIIIA">MS IIIA</title>. 
+                        Over time, <persName corresp="#JR">Ruskin</persName> put space in other <title type="manuscript" corresp="#JRREDBOOK">Red Books</title> to various uses&#x2014;the additional poetry anthologies
+                        in <title type="manuscript" corresp="MSIII">MS III</title>, the mineralogy notes in <title type="manuscript" corresp="#MSIIIA">MS IIIA</title>
+                        (although that <title type="manuscript" corresp="#JRREDBOOK">Red Book</title> also retained blank sections extending to significant lengths),
+                        the sermon drafts in <title type="manuscript" corresp="#JUVMSA">Juvenilia MS A</title>. That <persName corresp="#JR">Ruskin</persName> left so much of
+                        <title type="manuscript" corresp="#MSIV">MS IV</title> unused may suggest that he persisted longer in an intention to carry on with the manuscript&#x02BC;s
+                        main work, &#x201C;<title type="poem" corresp="#JREUDOSIA">Eudosia</title>,&#x201D; compared to ambitions for 
+                        &#x201C;<title type="lesson" corresp="#JRHARRYANDLUCY">Harry and Lucy</title>,&#x201D; which he relinquished more easily in 
+                        <title type ="manuscript" corresp="#MSIII">MS III</title> and <title type="manuscript" corresp="#MSIIIA">MS IIIA</title>. 
                         If so, his lingering ambitions for a long poem would be more expected than for Edgeworthian<!--tag?--> lessons, which he more quickly outgrew.
                         If <persName corresp="#JR">Ruskin </persName>had devoted additional <title type="manuscript" corresp="#JRREDBOOK">Red Books</title> to further &#x201C;volumes&#x201D; of 
-                        &#x201C;<title type="poem" corresp="JREUDOSIA">Eudosia</title>&#x201D;&#x2014;beyond the first volume he planned for 
-                        <title type="manuscript" corresp="MSIV">MS IV</title>, which he gave over to the subject of &#x201C;Botany&#x201D;&#x2014;he presumably 
+                        &#x201C;<title type="poem" corresp="#JREUDOSIA">Eudosia</title>&#x201D;&#x2014;beyond the first volume he planned for 
+                        <title type="manuscript" corresp="#MSIV">MS IV</title>, which he gave over to the subject of &#x201C;Botany&#x201D;&#x2014;he presumably 
                         would have continued to follow something like the plan found in his source, <title type="poem" corresp="#LOFFTEUDOSIA">Lofft, Eudosia</title>. 
                         Since <persName corresp="#JR">Ruskin</persName> subdivides his first volume of his &#x201C;<title type="poem" corresp="#JRPOEMONTHEUNIVERSE">Poem on the Universe</title>&#x201D; into &#x201C;books&#x201D; 
                         (of which he never got beyond the start of book 2), he is even more ambitious than <persName corresp="#CL">Lofft</persName>, whose &#x201C;<title type="poem" corresp="#LOFFTEUDOSIA">Poem on the Universe</title>&#x201D; is divided 
                         only into books (not volumes containing books), of which the first is &#x201C;The Earth<!--tag?-->,&#x201D; corresponding to <persName corresp="#JR">Ruskin&#x02BC;s</persName> &#x201C;Botany<!--tag?-->.&#x201D;
                         It is possible that one of the fair&#x2010;copy versions of &#x201C;<title type="poem" corresp="#JRTHECONSTELLATIONS">The Constellations: Northern, Some of the Zodiac, and Some of the 
-                            Southern</title>&#x201D;&#x2014;that in <title type ="manuscript" corresp="MSIA">MS IA</title>, or <title type="manuscript" corresp="#RFT70">RF T70</title>&#x2014;
+                            Southern</title>&#x201D;&#x2014;that in <title type ="manuscript" corresp="#MSIA">MS IA</title>, or <title type="manuscript" corresp="#RFT70">RF T70</title>&#x2014;
                         represents a continuation of <persName corresp="#JR">Ruskin</persName>&#x02BC;s scheme beyond the first volume in 
-                        <title type="manuscript" corresp="MSIV">MS IV</title>, as a volume on the stars would correspond to <persName corresp="#CL">Lofft</persName>&#x02BC;s
-                        poem: see <ref type="apparatus" target="eudosia_apparatus.php#DISCUSSION"><title type="poem" corresp="#JREUDOSIA">&#x201C;Eudosia&#x201D;</title>: 
-                            Discussion</ref>.</p>
+                        <title type="manuscript" corresp="#MSIV">MS IV</title>, as a volume on the stars would correspond to <persName corresp="#CL">Lofft</persName>&#x02BC;s
+                        poem: see <ref type="apparatus" target="eudosia_apparatus.php#DISCUSSION">&#x201C;Eudosia&#x201D;: Discussion</ref><!--tag title as well?-->.</p>
                     <!--The Discussion section may contain all or only some of the following subsections.-->
                     <div type="subsection">
                         <head type="subsection">Hand</head>
