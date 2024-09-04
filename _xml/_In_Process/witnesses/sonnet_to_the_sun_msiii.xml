@@ -5,10 +5,10 @@
     <teiHeader type="witness">
         <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
             The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
-        <fileDesc xml:id="title_of_work_witness">
+        <fileDesc xml:id="sonnet_to_the_sun_msiii">
             <titleStmt>
-                <title type="main">"Title of Work"</title>
-                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <title type="main">"Sonnet to the Sun"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the Fair Copy </title>
                 <author>
                     <persName corresp="#JR">John Ruskin</persName>
                 </author>
@@ -20,7 +20,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#CRI">Chalines Rosario Irizarry</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -66,7 +66,7 @@
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <locus facs="msiii/1229173.jpg msiii/1229174.jpg">pp. 40-41</locus>
                             <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
                             <filiation><!--Entry needed here.--></filiation>
                         </msItem>
@@ -86,66 +86,24 @@
     </teiHeader>
     <text>
         <body>
-            <!--Example entries have been provided from MS I in the <handShift/>s below. Actual entries may vary.-->
-            <!--Simple Prose. Delete this <div/> if not used.-->
-            <div type="prose">
-                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Prose Piece</head>
-                <div type="chapter">
-                    <head type="chapter">Title of Chapter</head>
-                    <p>Body paragraph.</p>
-                    <p>Body paragraph containing a list:
-                        <list type="ordered">
-                            <item n="1">First item in the list.</item>
-                            <item n="2">Second item.</item>
-                            <item n="3">Third item.</item>
-                        </list>
-                    </p>
-                    <!--Paragraphs containing dialogue.-->
-                    <p>
-                        <said who="#Lucy">oh is it raining</said> cried Lucy <said who="#Lucy">I am very sorry for I have so many things to do.
-                        but however I have plenty of things. to do in the house as well</said> said Lucy
-                    </p>
-                    <p>
-                        <said who="#mamma">yes you have</said> answered her mother.
-                    </p>
-                </div>
-            </div>
-            <!--Simple Verse. Delete this <div/> if not used.-->
             <div type="poem">
-                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Poem</head>
+                <head type="title"><handShift new="#HANDJR1828-29" script="print" medium="ink"/>SONNET TO THE SUN</head>
                 <lg type="stanza" rhyme="aa">
-                    <l>As eagerly waiting the dawn of the day</l>
-                    <l>And sleeplessly counting the moments Hay</l>
-                    <l>I thought of the joys that my bosom should know</l>
-                    <l>Of the rich tides of pleasure unmingled which flow</l>
-                    <l>Unmingled with grief and unmingled with gall</l>
-                    <l>But draughts of delight rapture banquetings all</l>
-                    <l>Impatient I watched as the lingering light</l>
-                    <l>Too slowly overpowered the clouds of the night</l>
-                    <l>Who clothed in her star sprinkled heaven shrouding vest</l>
-                    <l>Which gracefully masked her er peaceful breast</l>
-                    <l>And while on her brows her dark tresses among</l>
-                    <l>Which flowed soft the pale crescent benignantly shone</l>
-                    <l>From the earth cheering rays of Aurora she fled</l>
-                    <l>In stern winter palaces hiding her head</l>
-                    <l>At length the time came when the bill being made</l>
-                    <l>Boots hostler and chambermaid all duly paid</l>
-                    <l>Sticks bonnets hats greatcoats all duly prepared</l>
-                    
-                    
+                    <l>SUN let us see thy beams arise</l>
+                    <l>A happy prospect to our eyes</l>
+                    <pb facs="1229174"/>
+                    <fw type="pageNum" place="top-center"><space quantity="14" unit="chars"/>41</fw>
+                    <l>Sun now deign to shed around</l>
+                    <l>A warmth upon the warming ground</l>
+                    <l>Sun now let us see thy beams</l>
+                    <l>Gild the last expiring gleams</l>
+                    <l>Array the clouds in clothes of gold</l>
+                    <l>Shape them in many a curious mould</l>
+                    <l>This is all I have to say</l>
+                    <l>Sun now now thou may<subst><del>s</del><add rend="overwriting">y</add></subst>st awa<add place="below"><milestone unit="undeclared" rend="hr-full"/></add></l>
                 </lg>
-            </div>
-            <!--Simple Drama. Delete this <div/> if not used.-->
-            <div type="drama">
-                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Drama</head>
-                <div type="act">
-                    <head type="act">Act I</head>
-                    <sp>
-                        <speaker>Antony</speaker>
-                            <stage>(pacing anxiously)</stage>
-                            <l>I come to bury Caesar, not to praise him.</l>
-                    </sp>
-                </div>
+                    
+                
             </div>
         </body>
     </text>
