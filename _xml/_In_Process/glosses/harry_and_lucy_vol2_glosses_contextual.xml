@@ -3,9 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="glosses">
-        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
-            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
-        <fileDesc xml:id="title_of_work_glosses">
+        <fileDesc xml:id="harry_and_lucy_glosses_contextual">
             <titleStmt>
                 <title type="main">"Title of Work"</title>
                 <title type="sub">Glosses</title>
@@ -74,6 +72,9 @@
                 8The missing e is clearly visible in light pencil, Ruskin having failed to trace the letter in ink. This, along with pencil text visible beneath the ink throughout this “Harry and Lucy,” tells us that, at this time, Ruskin’s use of the pen was limited to tracing (see no. 12).
                 9At the bottom of the page, “picture of the Bristol channel,” in which a three-master pulls a smaller boat by a rope, a steamboat approaches from the edge of the frame, and distant vessels are visible on the horizon.
                 10This very common experiment appears in an early chapter on hydrostatics in Joyce, Dialogues, Conversation 2, “Of the Weight and Pressure of Fluids” (2:21-22); however, Ruskin’s language very closely—too closely for coincidence—matches the opening of Conversation 19 on hydrostatics, “Of the Diver’s Bell.” A description of the machine is given with embellishments from Erasmus Darwin’s poem The Botanical Garden, e.g., to the effect that “Britannia [shall] rule the wealthy realms, / Which Ocean’s wide, insatiate wave o’erwhelms” (2:115-19).
+                <note xml:id="GUMGLOSS" resp="#ZSS">a substance or deposit resembling a plant gum (as in sticky or adhesive quality)</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#SOMETHINGUNIQUEGLOSS"/>.-->
+                <note xml:id="GRAYGLOSS" resp="#ZSS">"The Curfew tolls the knell of parting day / . . . / And leaves the world to darkness and to me" (<ref type="bibliography" target="bibliography.php#GRAYPOEMS">Gray, <hi rend="italic">Poems</hi></ref> 37 [lines 1, 4].</note>
+                <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
                 
             </div>
         </body>
