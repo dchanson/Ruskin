@@ -3,9 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="glosses">
-        <fileDesc xml:id="harry_and_lucy_glosses_contextual">
+        <fileDesc xml:id="harry_and_lucy_vol2_glosses_contextual">
             <titleStmt>
-                <title type="main">"Title of Work"</title>
+                <title type="main">"&#x201C;Harry and Lucy . . . Vol 2&#x201D;"</title>
                 <title type="sub">Glosses</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -55,12 +55,20 @@
     </teiHeader>
     <text>
         <body>
-            <div type="glosses">
-                <note xml:id="SOMETHINGUNIQUEGLOSS" resp="#DCH">This is a gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#SOMETHINGUNIQUEGLOSS"/>.-->
+            <div type="glosses" subtype="contextual">
+                <note xml:id="STEAMBOAT" resp="#DCH">Ruskin's drawing resembles the first steam-powered commercial vessels, which were driven by two paddlewheels on the sides,
+                    but which also carried sails. The first such vessel to be successful was The Comet (1812), 
+                    which initially operated on the Clyde River in Scotland, ferrying between Glasgow and Greenock. 
+                    The Comet then toured Scotland in order to stir interest in steam voyaging, and it ended up in 1816 operating on the Firth of Forth. 
+                    Its single tall funnel was sturdy enough to double as a mast (Batchelor and Chant, Complete Encyclpedia of Steamships, 32-33). 
+                    Ruskin's drawing does not show a sail attached to his steamboat's chimney, 
+                    but his actual experience of steam travel on water--and according to his autobiography, he sailed by steam with his parents as early as age three 
+                    (see Tours of 1822-24)--would not necessarily have been aboard the famous Comet, which by the 1820s had inspired construction of dozens of vessels
+                </note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#SOMETHINGUNIQUEGLOSS"/>.-->
 
                 <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
                 
-                1Ruskin wrote “seme.”
+                <!--1Ruskin wrote “seme.”
                 2Ruskin wrote “new.”
                 3In these early printed (as opposed to longhand) texts, Ruskin occasionally imitates the appearance of italic type, and this appears his intention here—unless he is merely squeezing the word into its space at the end of the line. The second e is missing in the original.
                 4Ruskin frequently makes the error of using apostrophes to signify plurals.
@@ -72,9 +80,9 @@
                 8The missing e is clearly visible in light pencil, Ruskin having failed to trace the letter in ink. This, along with pencil text visible beneath the ink throughout this “Harry and Lucy,” tells us that, at this time, Ruskin’s use of the pen was limited to tracing (see no. 12).
                 9At the bottom of the page, “picture of the Bristol channel,” in which a three-master pulls a smaller boat by a rope, a steamboat approaches from the edge of the frame, and distant vessels are visible on the horizon.
                 10This very common experiment appears in an early chapter on hydrostatics in Joyce, Dialogues, Conversation 2, “Of the Weight and Pressure of Fluids” (2:21-22); however, Ruskin’s language very closely—too closely for coincidence—matches the opening of Conversation 19 on hydrostatics, “Of the Diver’s Bell.” A description of the machine is given with embellishments from Erasmus Darwin’s poem The Botanical Garden, e.g., to the effect that “Britannia [shall] rule the wealthy realms, / Which Ocean’s wide, insatiate wave o’erwhelms” (2:115-19).
-                <note xml:id="GUMGLOSS" resp="#ZSS">a substance or deposit resembling a plant gum (as in sticky or adhesive quality)</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#SOMETHINGUNIQUEGLOSS"/>.-->
+                <note xml:id="GUMGLOSS" resp="#ZSS">a substance or deposit resembling a plant gum (as in sticky or adhesive quality)</note>The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#SOMETHINGUNIQUEGLOSS"/>.
                 <note xml:id="GRAYGLOSS" resp="#ZSS">"The Curfew tolls the knell of parting day / . . . / And leaves the world to darkness and to me" (<ref type="bibliography" target="bibliography.php#GRAYPOEMS">Gray, <hi rend="italic">Poems</hi></ref> 37 [lines 1, 4].</note>
-                <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
+                <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note>The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
                 
             </div>
         </body>
