@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="glosses">
-        <fileDesc xml:id="harry_and_lucy_glosses_textual">
+        <fileDesc xml:id="harry_and_lucy_vol2_glosses_textual">
             <titleStmt>
                 <title type="main">&#x201C;Harry and Lucy . . . Vol 2&#x201D;</title>
                 <title type="sub">Glosses</title>
@@ -56,11 +56,23 @@
     <text>
         <body>
             <div type="glosses" subtype="textual">
-                <note xml:id="CARTOUCHEGLOSS" resp="#DCH">Encasing the first line of the title, a rectangle is drawn in pencil, 
+                <note xml:id="CARTOUCHEGLOSS" resp="#DCH"><p>Encasing the first line of the title, a rectangle is drawn in pencil, 
                     which includes scrolls or leaf ornaments, as if imitating a cartouche. The numeral <hi rend="italic">2</hi> 
-                    on opposite ends of the rectangle also appear intended to contribute to the ornamentation.</note>
+                    on opposite ends of the rectangle also appear intended to contribute to the ornamentation.</p></note>
 
-                <note xml:id="ALSOSOMETHINGUNIQUEGLOSS" resp="#DCH">This is another gloss.</note><!--The pointer to this gloss would be <ref type="gloss_contextual" target="filename_glosses.php#ALSOSOMETHINGUNIQUEGLOSS"/>.-->
+                <note xml:id="GOINGGLOSS" resp="#DCH"><p>In light pencil below the caption, Ruskin practiced writing the word <hi rend="italic">going</hi>.</p></note>
+                
+                <note xml:id="JUSTIFICATION" resp="#DCH"><p><hi rend="bold">Justification mark (MS I)&#x2014;</hi>See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#JUSTIFICATION">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Justification, Runover, and Word Division</ref>.</p></note>
+                
+                <note xml:id="GLYPH" resp="#DCH"><p><hi rend="bold">Unidentified mark (MS I)&#x2014;</hi>The meaning of the superscript character between the <hi rend="italic">l</hi> and the <hi rend="italic">s</hi> is obscure. 
+                    Perhaps Ruskin started to form an apostrophe but stopped as he realized his error in making a plural into a possessive.</p></note>
+                
+                <note xml:id="ELLIPSIS-APOSTROPHE" resp="#DCH"><p><hi rend="bold">Unidentified punctuation mark (MS I)&#x2014;</hi>Throughout MS III, 
+                    in volume two of "Harry and Lucy" as well as in "The Monastery", 
+                    Ruskin punctuates using a combination of two points and what might be an apostophe or a single quatation mark or a comma above the baseline--or 
+                    possibly none of these appearances.</p></note>
+                
+                    
             </div>
         </body>
     </text>
