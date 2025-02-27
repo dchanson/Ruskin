@@ -1283,7 +1283,7 @@
                             <p>In the &#x3008;handNote&#x3009; of the TEI header for each holograph witness of a work, 
                                 hands are classified by scribe (i.e., the member of the Ruskin family ressponsible), 
                                 and assigned an xml:id, which, in the case of <persName corresp="#JR">John Ruskin</persName>&#x02BC;s hands, 
-                                identifies a date range (usually a calendar year) along with any broad strokes 
+                                identifies a date range (usually a calendar year or two) along with any broad strokes 
                                 that may be used to classify the holograph among a group of manuscripts sharing a peculiarity of hand. 
                                 In the case of <persName corresp="#JJR">John James Ruskin</persName>&#x02BC;s and 
                                 <persName corresp="#JR">Margaret Ruskin</persName>&#x02BC;s hands, no attempt is made to use the xml:id to refine the classification of their hands, 
@@ -1297,7 +1297,7 @@
                                 typically &#x201C;pencil&#x201D; and &#x201C;ink&#x201D;. These broad classifications are described in 
                                 <ref type="note" subtype="bibliographical" target="hand_note.php">The Ruskin Family Handwriting</ref>, 
                                 while the eccentricities of the hand used for any given manuscript are relegated to discussion in the apparatus for the work in question, 
-                                rather than burdening markup values for &#x0040;script and &#x0040;medium with excessive refinements. 
+                                rather than burdening markup values for &#x0040;script and &#x0040;medium with additional refinements such as colors of ink. 
                                 However, where clusters of manuscripts manifest peculiarities of hand, which may be used to help date works 
                                 and otherwise flag relationships among projects, these classes of handwriting are captured in the values assigned to 
                                 &#x0040;script and &#x0040;medium and may also be coded along with the date range as part of the xml:id given in &#x3008;handNote&#x3009;.</p>
@@ -1369,11 +1369,24 @@
                             <head type="sub-subsection">Italic Letttering</head>
                             <p></p>
                         </div>
-                       
+                       <!-- NEW MARKUP 02-26-25 -->
                         <div type="sub-subsection" xml:id="COMMA">
-                            <head type="sub-subsection">Commas, Periods, and Other Punctuation</head>
-                            <p>In the earliest juvenilia, those dating from <date notBefore="1826" notAfter="1827">1826&#x2013;27</date>, <persName corresp="#JR">Ruskin</persName> 
-                                had trouble writing commas and periods on the baseline, with the result that these marks float as if they were apostrophes or quotation marks. 
+                            <head type="sub-subsection">Commas, Periods, Quotation Marks, and Other Punctuation</head>
+                            <p>In the earliest prose works, dating from <date notBefore="1826" notAfter="1827">1826&#x2013;27</date>, such as "Harry and Lucy . . . Vol I" and letters,
+                                Ruskin closes sentences with terminal punctuation, periods and question marks, but he uses no internal punctuation. 
+                                Verse from the same period is in many cases devoid of punctuation altogether, with the exception of apostrophes for possessives; 
+                                only a few poems close with a period at the end, as if punctuating the entire poem rather than the end of a sentence. 
+                                In the MS I Poetry Anthology, only the final poem, 
+                                <ref type="apparatus" target="on_the_rainbow_apparatus.php"><title type="poem" corresp="JRONTHERAINBOW">&#x201C;On the Rainbow&#x201D;</title></ref>, 
+                                introduces sentence periods internally along with commas at line breaks.</p>
+                                
+                            <p>The commas in <ref type="apparatus" target="on_the_rainbow_apparatus.php"><title type="poem" corresp="JRONTHERAINBOW">&#x201C;On the Rainbow&#x201D;</title></ref> were squeezed in using carets; 
+                                and in both prose and poems of <date notBefore="1827" notAfter="1828">1827&#x2013;28</date>, internal punctuation appears to have been inserted all at once. 
+                                In both the first fair-copy of "The Constellations" and in the MS III fair copy of "The Monastery", 
+                                a portion of the poem abruptly birstles with punctuation and then just as abruptly vanishes altogether from the poem. 
+                                This superimposed punctuation appears uncomfortable. Ruskin evidently had trouble writing commas and periods on the baseline, 
+                                with the result that these marks float as if they were apostrophes or quotation marks. 
+                                
                                 In some cases, <persName corresp="#JR">Ruskin</persName> anchors these with an insertion caret 
                                 (see <ref type="internal" target="#DELETIONANDADDITION">Deletion and Addition</ref>), 
                                 as in <ref type="apparatus" target="on_the_rainbow_apparatus.php"><title type="poem" corresp="JRONTHERAINBOW">&#x201C;On the Rainbow&#x201D;</title></ref>.
@@ -1392,6 +1405,10 @@
                                 as <persName corresp="#VAB">Burd</persName> does in 
                                 <ref type="bibliography" target="bibliography.php#RFL"><title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref> 
                                 in order to aid the reader&#x02BC;s eye.</p>
+                            <p>An especially puzzling terminal punctuation is identified as a glyph &#x0040;type &#x201C;double&#x2010;period&#x201D;, 
+                                which <persName corresp="#JR">Ruskin</persName> forms as two horizontally adjacent points. The mark appears to emerge 
+                                simultaneously with his adoption of pen and ink, and it is
+                            </p>
                             <p>If random flourishes and other marks in a manuscript appear to serve only decorative or doodling purposes, and no purpose of punctuation can be discerned, 
                                 they are ignored in transcription and markup, apart from a textual note atesting to their presence.</p>
                             
