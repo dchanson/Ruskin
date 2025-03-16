@@ -5,7 +5,7 @@
     <teiHeader type="note">
         <fileDesc xml:id="butterworth_e_note">
             <titleStmt>
-                <title type="main">Edmund Butterworth (d. 1814)</title>
+                <title type="main"><persName corresp="#EDB">Edmund Butterworth</persName> (d. 1814)</title>
                 <title type="sub">Note</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -61,14 +61,15 @@
     <text>
         <body>
             <div type="note" subtype="biographical">
-                <head type="title"><persName corresp="#EDB">Edmund Butterworth (d. <date when="1814">1814</date>)</persName></head>
+                <head type="title"><persName corresp="#EDB">Edmund Butterworth (<date notBefore="1772" notAfter="1814">1772&#x2013;1814</date>)</persName></head>
                 <p><persName corresp="#EDB">Butterworth</persName> held the post of writing master and accountant at the <orgName corresp="#RHSE">Royal High School</orgName>, <placeName corresp="#EDINBURGH">Edinburgh</placeName>, 
                     the institution in which <persName corresp="#JJR">John James Ruskin</persName> enrolled in <date when="1795">1795</date> at age ten. 
                     <persName corresp="#EDB">Butterworth</persName> was appointed to the post in <date when="1780-08">August 1780</date> on the merits of &#x201C;the elegance of his penmanship&#x201D; and &#x201C;his success as a teacher&#x201D;, 
                     having previously taught writing and arithmetic <date notBefore="1773" notAfter="1780-08">since 1773</date> at <orgName corresp="#DUMFRIESACADEMY">Dumfries Academy</orgName> 
                     (<ref type="bibliography" target="bibliography.php#STEVENEDINBURGHHIGHSCHOOL"><persName corresp="#WSTEVEN">Steven</persName>, <title type="essay" corresp="#STEVENEDINBURGHHIGHSCHOOL"><hi rend="italic">History of the High School of Edinburgh</hi></title></ref>, 128; app. 6, p. 120). 
                     He proudly advertised his office on the title page of his first&#x2010;published copybook, <title type="book" corresp="#BUTTERWORTHUNIVERSALPENMAN"><hi rend="italic">The Universal Penman; or The Beauties of Writing Delineated</hi></title>, 
-                    which appeared in <date when="1785">1785</date>, printed in <placeName corresp="#EDINBURGH">Edinburgh</placeName> &#x201C;for the Author &#x0026; G. Robinson&#x201D; 
+                    which appeared in <date when="1784">1784</date> according to the <ref type="bibliography" target="bibliography.php#EBUTTERWORTHSBTI"><title type="catalogue" corresp="#SBTI"><hi rend="italic">Scottish Book Trade Index</hi></title></ref>, 
+                    and printed in <placeName corresp="#EDINBURGH">Edinburgh</placeName> &#x201C;for the Author &#x0026; G. Robinson&#x201D; 
                     (<ref type="bibliography" target="bibliography.php#HEALENGLISHWRITINGMASTERS">Heal, <title type="book" corresp="#HEALENGLISHWRITINGMASTERS"><hi rend="italic">English Writing&#x2010;Masters</hi></title></ref>, 25, 193). 
                     <persName corresp="#JJR">John James</persName> would not have been instructed personally by <persName corresp="#EDB">Butterworth</persName>, since the master resigned in <date when="1793-08">August 1793</date> 
                     (<ref type="bibliography" target="bibliography.php#STEVENEDINBURGHHIGHSCHOOL">Steven, <title corresp="#STEVENEDINBURGHHIGHSCHOOL"><hi rend="italic">History of the High School of Edinburgh</hi></title></ref>, app. 6, p. 120).</p>
@@ -92,15 +93,25 @@
                     <persName corresp="#RL">Robert Laurie</persName> (<date notBefore="1755" notAfter="1836">1755?&#x2013;1836</date>), who developed a method 
                     of printing colored mezzotints (<ref type="bibliography" target="bibliography.php#LAURIEDNB"><persName corresp="#TCLAYTON">Clayton</persName> and <persName corresp="#AMCCONNELL">McConnell</persName>, <title type="dictionary_entry" corresp="#LAURIEDNB">&#x201C;Laurie, Robert (<date notBefore="1755" notAfter="1836">1755?&#x2013;1836&#x201D;</date></title></ref>).</p>
                 <p>According to <ref type="bibliography" target="bibliography.php#HEALENGLISHWRITINGMASTERS"><persName corresp="#AHEAL">Heal</persName>, <title type="essay" corresp="#HEALENGLISHWRITINGMASTERS"><hi rend="italic">English Writing&#x2010;Masters</hi></title></ref>, 
-                        <persName corresp="#EDB">Butterworth</persName> produced six additional titles by <date notBefore="1799" notAfter="1801">1799&#x2013;1801</date>, with the book that <persName corresp="#JR">Ruskin</persName> used, 
+                        <persName corresp="#EDB">Butterworth</persName> produced six additional titles by <date notBefore="1799" notAfter="1801">1799&#x2013;1801</date>, with the book that <persName corresp="#JR">Ruskin</persName> is said to have used, 
                     the <title type="book" corresp="#BUTTERWORTHYOUNGARITHMETICIAN"><hi rend="italic">Young Arthmetician&#x02BC;s Instructor</hi></title>, 
-                    appearing in <date when="1805">1805</date>. In addition, the &#x201C;firm&#x201D; of <orgName corresp="#EDBSON">Butterworth &#x0026; Son</orgName> 
-                    produced &#x201C;several copy&#x2010;books from <date notBefore="1800" notAfter="1827">1800&#x2013;1827</date> and possibly later&#x201D; (pp. 25, 193). 
-                    Thus, the firm remained in business in <date when="1827">1827</date>, the year in which <persName corresp="#JJR">John James</persName> purchased the 
-                    <title type="book" corresp="#BUTTERWORTHYOUNGARITHMETICIAN"><hi rend="italic">Young Arthmetician&#x02BC;s Instructor</hi></title>, 
-                    and also the year in which <persName corresp="#JR">Ruskin</persName> first used pen and ink and presumably began to learn round hand 
+                    appearing in <date when="1805">1805</date> (dated <date when="1815">1815</date>, however, by the <title type="catalogue" corresp="#SBTI"><hi rend="italic">Scottish Book Trade Index</hi></title>). 
+                    In addition, the &#x201C;firm&#x201D; of <orgName corresp="#EDBSON">Butterworth &#x0026; Son</orgName>&#x2014;carried forward by <persName corresp="GBUTTERWORTH">George Butterworth</persName>, in <placeName type="building" corresp="GEORGESTEDINBURG">George Street</placeName>, <placeName>Edinburgh</placeName>&#x2014;produced 
+                    &#x201C;several copy&#x2010;books from <date notBefore="1800" notAfter="1827">1800&#x2013;1827</date> and possibly later&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#HEALENGLISHWRITINGMASTERS"><persName corresp="#AHEAL">Heal</persName>, <title type="essay" corresp="#HEALENGLISHWRITINGMASTERS"><hi rend="italic">English Writing&#x2010;Masters</hi></title></ref>, 25, 193; 
+                    <ref type="bibliography" target="bibliography.php#GBUTTERWORTHSBTI"><title type="dictionary_entry" corresp="GBUTTERWORTHSBTI">&#x201C;George Butterworth&#x201D;</title></ref>). 
+                    Thus, the firm remained in business in <date when="1827">1827</date>, the year in which <persName corresp="#JJR">John James</persName> purchased a publication by Butterworth in response to John's first use of pen and ink. 
+                    <persName corresp="#VAB">Van Akin Burd</persName> identified that publication as <title type="book" corresp="#BUTTERWORTHYOUNGARITHMETICIAN"><hi rend="italic">Young Arthmetician&#x02BC;s Instructor</hi></title> 
+                    and <persName corresp="#JSD">James Dearden</persName> followed suit 
                     (<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="collected_letters" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 168 n. 1; 
-                        and see <ref type="note" subtype="bibliographical" target="hand_note.php">Ruskin&#x02BC;s Handwriting</ref>).</p>
+                    <ref type="bibliography" target="bibliography.php#DEARDENRUSKINLIBRARY"><title type="book" corresp="#DEARDENRUSKINLIBRARY"><hi rend="italic">The Library of John Ruskin</hi></title></ref>, 59 [no. 407]). 
+                    Evidence does not support identification of a specific title, however, <persName corresp="#JJR">John James</persName> having summarized the purchase in his accounts for <date when="1827">1827</date> as &#x201C;Writing Butterworth 7/6&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#RFMS28"><persName corresp="#JJR">John James Ruskin</persName>, <title type="manuscript" corresp="#RFMS28">Account Book, RF MS 28 [<date notBefore="1827" notAfter="1845">1827&#x2013;45</date>]</title></ref>, 2r).
+                    In fact, on the basis of that abbreviation of the title, along with the fact that <persName corresp="#JR">John</persName> busied his pen at this time mainly in writing poetry and letters to his father, 
+                    a different title by <persName corresp="#EDB">Butterworth</persName> seems a likelier candidate for <persName corresp="#JJR">John James Ruskin</persName>&#x02BC;s purchase&#x2014;namely, 
+                    <title type="book" corresp="#BUTTERWORTHYOUNGWRITERSINSTRUCTOR"><hi rend="italic">Young Writers Instructor</hi></title> (<date when="1816">1816</date>) 
+                    (see <ref type="bibliography" target="bibliography.php#EBUTTERWORTHSBTI"><title type="dictionary_entry" corresp="EBUTTERWORTHSBTI">&#x201C;Edmund Butterworth&#x201D;</title></ref> 
+                    and see <ref type="note" subtype="bibliographical" target="hand_note.php">The Ruskin Family Handwriting</ref>).</p>
                 
             </div>
         </body>
