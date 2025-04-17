@@ -15,7 +15,6 @@ http://english.selu.edu/humanitiesonline/ruskin/webpages/staff.php
 http://english.selu.edu/humanitiesonline/ruskin/webpages/legal.php
 
 
-
 # For Developer
 
     _xml
@@ -134,8 +133,58 @@ Should print following
 To open conf file in text editor
     
     open -a TextEdit ruskin.local.conf
-    
 
+## For newer MacBook Follow this for nginx configuration
+    cd /opt/homebrew/etc/nginx
+    cd servers
+    touch ruskin.local.conf
+  
+To open conf file in text editor
+    
+    open -a TextEdit ruskin.local.conf
+
+#### It has auto index_on NGINX will automatically generate and display a list of files and directories within it.
+### Donot use auto_index in production. This should be for local development only. Use the one below this for production.
+Paste this nginx configuration in your ruskin.local.conf
+
+    server {
+    listen 8080;
+    server_name ruskin.local;
+    client_max_body_size 210M;
+    
+    root /Users/userselu/documents/RuskinWeb/gen/_xml/_Completed;  # Chnage the directory according to your project
+    index index.php index.html index.htm;
+
+     # Serve static files or forward to Express
+    location / {
+    autoindex on;
+    try_files $uri $uri/ @express;
+}
+
+
+    # Handle PHP files
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_pass 127.0.0.1:9000; # Ensure this matches PHP-FPM socket
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    }
+
+   
+
+    # Proxy requests to Express
+    location @express {
+        proxy_pass http://localhost:9001;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_http_version 1.1;
+        proxy_buffers 8 1024k;
+        proxy_buffer_size 1024k;
+    }
+}
+### Remember to add directory where RuskinWeb is located.
+
+### The configuration below is a another one with auto_index off and older one. 
 So the correct Nginx configuration is:
 ## But remeber to change the root directory, 
 just right click on the Ruskin folder, then get info to get the folder location then copy it from /Users
@@ -347,3 +396,117 @@ If you get any Error while running:
     Clean out the old configuration options for PHP:
     
     rm -rf /usr/local/etc/php/*
+# Common Errors and Fixes
+
+## PHP Error: Error 19968 on `brew services list`
+
+### Fix:
+```sh
+brew services cleanup
+brew services restart php
+brew services list  # Check if PHP is running
+```
+
+### Uninstall and Reinstall PHP
+```sh
+brew uninstall --ignore-dependencies php
+```
+* Homebrew may provide additional instructions for manual removal. Follow them if needed.
+
+#### Check for Remaining PHP Files:
+```sh
+brew list | grep php
+```
+If PHP-related files still exist, remove them individually:
+```sh
+brew uninstall --force <phpVersion>
+```
+
+#### Remove Old PHP Configuration:
+```sh
+rm -rf /opt/homebrew/etc/php/*
+```
+
+### Reinstall PHP
+```sh
+brew install php
+php -v  # Confirm installation
+brew services start php
+brew services list
+```
+
+---
+
+## Nginx Error 256
+
+### Fix:
+#### Check for Syntax Errors
+```sh
+sudo nginx -t
+```
+#### Restart Nginx
+```sh
+brew services restart nginx
+```
+
+#### Check Logs for More Details:
+```sh
+tail -f /opt/homebrew/var/log/nginx/error.log
+```
+
+#### Kill Nginx Processes and Restart
+```sh
+sudo pkill -9 nginx
+brew services start nginx
+```
+
+#### Check If Another Process Is Using Port 8080
+```sh
+sudo lsof -i :8080
+```
+If another process is using port **8080**, kill it:
+```sh
+sudo kill -9 <PID>  # Replace <PID> with the actual process ID
+```
+
+### Uninstall and Reinstall Nginx
+#### Uninstall Nginx
+```sh
+brew uninstall nginx
+```
+#### Verify Nginx is Not Running
+```sh
+ps aux | grep nginx
+```
+If it's still running, force kill the process:
+```sh
+sudo pkill -9 nginx
+```
+#### Manually Remove Configuration Files (if necessary)
+```sh
+rm -rf /opt/homebrew/etc/nginx/
+```
+
+### Reinstall Nginx
+```sh
+brew install nginx
+brew services start nginx
+```
+
+---
+
+## Locate PHP Configuration Files
+```sh
+open /opt/homebrew/etc/php  # Opens the PHP configuration folder in Finder
+```
+
+# Helpful Resources:
+### For hosting multiple servers at the same time on different ports through nginx.
+  https://medium.com/@aakash.poudel.900/how-to-host-multiple-servers-through-nginx-simplified-36cd009fe484
+  https://medium.com/@aakash.poudel.900/get-familiar-with-nginx-nginx-key-commands-b6dcf99f13e9
+  https://medium.com/@aakash.poudel.900/how-to-connect-your-git-to-linux-server-using-ssh-ba9a3f191c0d
+
+  ## Documentation to Follow for Easy Setups
+  setting up mac documentation: https://docs.google.com/document/d/1GKZI8TN6Q9kYZ47mn-RnC5A3dOmvQcf8OejtovxQUng/edit?tab=t.0#heading=h.v07lzcv6ta80
+  Server Access - https://docs.google.com/document/d/1LyoEEQngviermBCQoiO8gOwsCROqdQqyH5bMRxXzyKI/edit?tab=t.0
+
