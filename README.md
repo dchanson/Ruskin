@@ -499,6 +499,16 @@ brew services start nginx
 ```sh
 open /opt/homebrew/etc/php  # Opens the PHP configuration folder in Finder
 ```
+### PHP Error
+ ## If you see this error: Fatal error: Uncaught Error: Failed opening required './header.inc.php' (include_path='.:/opt/homebrew/Cellar/php/8.4.6/share/php/pear')
+ Note: This error can occur after system updates 
+ Fix: Recreate the symbolic links by running:
+ ```sh
+ cd gen/_xml
+ln -s ../../src/header.inc.php .
+ln -s ../../src/style.php .
+ln -s ../../src/layout_includes .
+```
 
 # Helpful Resources:
 ### For hosting multiple servers at the same time on different ports through nginx.
