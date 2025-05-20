@@ -146,102 +146,133 @@ To open conf file in text editor
 #### It has auto index_on NGINX will automatically generate and display a list of files and directories within it.
 ### Donot use auto_index in production. This should be for local development only. Use the one below this for production.
 Paste this nginx configuration in your ruskin.local.conf
-
-    server {
-    listen 8080;
-    server_name ruskin.local;
-    client_max_body_size 210M;
-    
-    root /Users/userselu/documents/RuskinWeb/gen/_xml/_Completed;  # Chnage the directory according to your project
-    index index.php index.html index.htm;
-
-     # Serve static files or forward to Express
-    location / {
-    autoindex on;
-    try_files $uri $uri/ @express;
-}
-
-
-    # Handle PHP files
-    location ~ \.php$ {
-        include fastcgi_params;
-        fastcgi_pass 127.0.0.1:9000; # Ensure this matches PHP-FPM socket
-        fastcgi_index index.php;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-    }
-
-   
-
-    # Proxy requests to Express
-    location @express {
-        proxy_pass http://localhost:9001;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_http_version 1.1;
-        proxy_buffers 8 1024k;
-        proxy_buffer_size 1024k;
-    }
-}
-### Remember to add directory where RuskinWeb is located.
-
 ### The configuration below is a another one with auto_index off and older one. 
 So the correct Nginx configuration is:
 ## But remeber to change the root directory, 
 just right click on the Ruskin folder, then get info to get the folder location then copy it from /Users
-and paste it in following root
+and paste it in following root[this is new config without express ]
 
+      server {
+    listen 8080;
+    server_name ruskin.local;
+    client_max_body_size 210M;
+    autoindex on;
+    root /Users/userselu/Ruskin/gen/_xml/_Completed;
+    index index.php index.html index.htm;
 
+    # Static content type handlers
+    location ~* \.html$ {
+        default_type text/html;
+        charset utf-8;
+        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
+        sub_filter_once on;
+    }
 
-      server { 
-      
-        listen 8080;
-        server_name ruskin.local;
-        client_max_body_size 210M;
-        autoindex on;
-        root /Users/prashantbasnet/Ruskin/;
-        index index.php index.html index.html;
-       
-        location / {
-       
-          proxy_pass http://localhost:9001;
-          proxy_set_header Host $host;
-          proxy_set_header X-Real-IP $remote_addr;
-          proxy_set_header http_version 1.1;
-          proxy_buffers 8 1024k;
-          proxy_buffer_size 1024k;
-          add_header 'X-1' '$1' always;
-        }
-   
-        location ~* ^/web/pages/(.+)$ {
-   
-          location ~ /web/pages/(.*\.php)$ {
-                try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 $uri=404;
-                add_header 'X-Script_Filename' '$document_root$fastcgi_script_name' always;
-                add_header 'X-DocumentRoot' '$document_root' always;
-                add_header 'X-1' '$1' always;
-                add_header 'X-URI' '$uri' always;
-                fastcgi_pass 127.0.0.1:9000;
-                include fastcgi_params;
-                fastcgi_index index.php;
-                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-                fastcgi_param DOCUMENT_ROOT $document_root;
-           
-              }
-   
-          location ~* ^/web/pages/(.+)$ {    
-        try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 $uri=404;
-            add_header 'X-DocumentRoot' '$document_root' always;
-            add_header 'X-1' '$1' always;
-            add_header 'X-URI' '$uri' always;
-          }
-        }
-       }
+    location ~* \.xml$ {
+        default_type application/xml;
+    }
+
+    location ~* \.css$ {
+        default_type text/css;
+    }
+
+    location ~* \.js$ {
+        default_type application/javascript;
+    }
+
+    # Static file alias
+    location /_Resources {
+        alias /Users/userselu/Ruskin/_Resources;
+    }
+
+    # Homepage
+    location = / {
+        try_files /webpages/homepage.html =404;
+    }
+
+    # Fallback for HTML folders with clean URLs (no .html)
+    location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)$ {
+        try_files /$1/$2.html /gen/_xml/_Completed/$1/$2.html /gen/_xml/_In_Process/$1/$2.html /gen/_xml/$1/$2.html =404;
+        add_header Content-Type text/html;
+        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
+        sub_filter_once on;
+    }
+
+    # Fallback for PHP folders with clean URLs (no .php)
+    location ~* ^/(witnesses|figures|corpuses)/([^/]+)$ {
+        try_files /$1/$2.php /gen/_xml/_Completed/$1/$2.php /gen/_xml/_In_Process/$1/$2.php /gen/_xml/$1/$2.php =404;
+        fastcgi_pass 127.0.0.1:9000;
+        include fastcgi_params;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root/$1/$2.php;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+    # Explicit PHP access for transformed folders
+    location ~ ^/(Corpuses|Figures|Witnesses)/(.+\.php)$ {
+        try_files /gen/_xml/_Completed/$1/$2 /gen/_xml/_In_Process/$1/$2 /gen/_xml/$1/$2 =404;
+        fastcgi_pass 127.0.0.1:9000;
+        include fastcgi_params;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root/$1/$2;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+    # HTML-transformed folders (with .html)
+    location ~ ^/(apparatuses|glosses|letters|notes|webpages)/(.+\.html?)$ {
+        try_files /gen/_xml/_Completed/$1/$2 /gen/_xml/_In_Process/$1/$2 /gen/_xml/$1/$2 =404;
+        add_header Content-Type text/html;
+        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
+        sub_filter_once on;
+    }
+
+    # HTML fallback with .html extension for unmatched folders
+    location ~ ^/(apparatuses|glosses|letters|notes|webpages)/(.+)$ {
+        try_files /gen/_xml/_Completed/$1/$2.html /gen/_xml/_In_Process/$1/$2.html /gen/_xml/$1/$2.html =404;
+        add_header Content-Type text/html;
+        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
+        sub_filter_once on;
+    }
+
+    # PHP fallback for /web/pages
+    location ~ ^/web/pages/(.+\.php)$ {
+        try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 =404;
+        fastcgi_pass 127.0.0.1:9000;
+        include fastcgi_params;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+    # Non-PHP fallback for /web/pages
+    location ~ ^/web/pages/(.+)$ {
+        try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 =404;
+    }
+
+    # Global PHP handler
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+    # General fallback for unmatched requests
+    location / {
+        try_files $uri $uri/ $uri.html $uri.html/ 
+                  /gen/_xml/_In_Process$uri 
+                  /gen/_xml/_In_Process$uri.html 
+                  =404;
+    }
+}
+
        
 
 ### Be aware of the line 
 
        //change it where your Ruskin folder is placed
-       root /Users/prashantbasnet/Ruskin/;
+       root /Users/userselu/Ruskin/gen/_xml/_Completed;
         
         
 
@@ -499,6 +530,18 @@ brew services start nginx
 ```sh
 open /opt/homebrew/etc/php  # Opens the PHP configuration folder in Finder
 ```
+
+### PHP Error
+ ## If you see this error: Fatal error: Uncaught Error: Failed opening required './header.inc.php' (include_path='.:/opt/homebrew/Cellar/php/8.4.6/share/php/pear')
+ Note: This error can occur after system updates 
+ Fix: Recreate the symbolic links by running:
+ ```sh
+ cd gen/_xml
+ln -s ../../src/header.inc.php .
+ln -s ../../src/style.php .
+ln -s ../../src/layout_includes .
+```
+
 
 # Helpful Resources:
 ### For hosting multiple servers at the same time on different ports through nginx.
