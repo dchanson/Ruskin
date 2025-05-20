@@ -152,18 +152,19 @@ So the correct Nginx configuration is:
 just right click on the Ruskin folder, then get info to get the folder location then copy it from /Users
 and paste it in following root[this is new config without express ]
 
-      server {
+server {
     listen 8080;
     server_name ruskin.local;
     client_max_body_size 210M;
     autoindex on;
     root /Users/userselu/Ruskin/gen/_xml/_Completed;
     index index.php index.html index.htm;
+    charset utf-8;
+
 
     # Static content type handlers
     location ~* \.html$ {
         default_type text/html;
-        charset utf-8;
         sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
         sub_filter_once on;
     }
