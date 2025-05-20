@@ -146,6 +146,120 @@ To open conf file in text editor
 #### It has auto index_on NGINX will automatically generate and display a list of files and directories within it.
 ### Donot use auto_index in production. This should be for local development only. Use the one below this for production.
 Paste this nginx configuration in your ruskin.local.conf
+server {
+    listen 8080;
+    server_name ruskin.local;
+    client_max_body_size 210M;
+    autoindex on;
+    root /Users/userselu/Ruskin/gen/_xml/_Completed;
+    index index.php index.html index.htm;
+
+    # Static content type handlers
+    location ~* \.html$ {
+        default_type text/html;
+        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
+        sub_filter_once on;
+    }
+
+    location ~* \.xml$ {
+        default_type application/xml;
+    }
+
+    location ~* \.css$ {
+        default_type text/css;
+    }
+
+    location ~* \.js$ {
+        default_type application/javascript;
+    }
+
+    # Static file alias
+    location /_Resources {
+        alias /Users/userselu/Ruskin/_Resources;
+    }
+
+    # Homepage
+    location = / {
+        try_files /webpages/homepage.html =404;
+    }
+
+    # Fallback for HTML folders with clean URLs (no .html)
+    location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)$ {
+        try_files /$1/$2.html /gen/_xml/_Completed/$1/$2.html /gen/_xml/_In_Process/$1/$2.html /gen/_xml/$1/$2.html =404;
+        add_header Content-Type text/html;
+        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
+        sub_filter_once on;
+    }
+
+    # Fallback for PHP folders with clean URLs (no .php)
+    location ~* ^/(witnesses|figures|corpuses)/([^/]+)$ {
+        try_files /$1/$2.php /gen/_xml/_Completed/$1/$2.php /gen/_xml/_In_Process/$1/$2.php /gen/_xml/$1/$2.php =404;
+        fastcgi_pass 127.0.0.1:9000;
+        include fastcgi_params;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root/$1/$2.php;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+    # Explicit PHP access for transformed folders
+    location ~ ^/(Corpuses|Figures|Witnesses)/(.+\.php)$ {
+        try_files /gen/_xml/_Completed/$1/$2 /gen/_xml/_In_Process/$1/$2 /gen/_xml/$1/$2 =404;
+        fastcgi_pass 127.0.0.1:9000;
+        include fastcgi_params;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root/$1/$2;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+    # HTML-transformed folders (with .html)
+    location ~ ^/(apparatuses|glosses|letters|notes|webpages)/(.+\.html?)$ {
+        try_files /gen/_xml/_Completed/$1/$2 /gen/_xml/_In_Process/$1/$2 /gen/_xml/$1/$2 =404;
+        add_header Content-Type text/html;
+        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
+        sub_filter_once on;
+    }
+
+    # HTML fallback with .html extension for unmatched folders
+    location ~ ^/(apparatuses|glosses|letters|notes|webpages)/(.+)$ {
+        try_files /gen/_xml/_Completed/$1/$2.html /gen/_xml/_In_Process/$1/$2.html /gen/_xml/$1/$2.html =404;
+        add_header Content-Type text/html;
+        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
+        sub_filter_once on;
+    }
+
+    # PHP fallback for /web/pages
+    location ~ ^/web/pages/(.+\.php)$ {
+        try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 =404;
+        fastcgi_pass 127.0.0.1:9000;
+        include fastcgi_params;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+    # Non-PHP fallback for /web/pages
+    location ~ ^/web/pages/(.+)$ {
+        try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 =404;
+    }
+
+    # Global PHP handler
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+    # General fallback for unmatched requests
+    location / {
+        try_files $uri $uri/ $uri.html $uri.html/ 
+                  /gen/_xml/_In_Process$uri 
+                  /gen/_xml/_In_Process$uri.html 
+                  =404;
+    }
+}
+
 
     
 ### Remember to add directory where RuskinWeb is located.
