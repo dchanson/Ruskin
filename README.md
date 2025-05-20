@@ -147,50 +147,14 @@ To open conf file in text editor
 ### Donot use auto_index in production. This should be for local development only. Use the one below this for production.
 Paste this nginx configuration in your ruskin.local.conf
 
-    server {
-    listen 8080;
-    server_name ruskin.local;
-    client_max_body_size 210M;
     
-    root /Users/userselu/documents/RuskinWeb/gen/_xml/_Completed;  # Chnage the directory according to your project
-    index index.php index.html index.htm;
-
-     # Serve static files or forward to Express
-    location / {
-    autoindex on;
-    try_files $uri $uri/ @express;
-}
-
-
-    # Handle PHP files
-    location ~ \.php$ {
-        include fastcgi_params;
-        fastcgi_pass 127.0.0.1:9000; # Ensure this matches PHP-FPM socket
-        fastcgi_index index.php;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-    }
-
-   
-
-    # Proxy requests to Express
-    location @express {
-        proxy_pass http://localhost:9001;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_http_version 1.1;
-        proxy_buffers 8 1024k;
-        proxy_buffer_size 1024k;
-    }
-}
 ### Remember to add directory where RuskinWeb is located.
 
 ### The configuration below is a another one with auto_index off and older one. 
 So the correct Nginx configuration is:
 ## But remeber to change the root directory, 
 just right click on the Ruskin folder, then get info to get the folder location then copy it from /Users
-and paste it in following root
-
-
+and paste it in following root[this is new config without express ]
 
       server { 
       
