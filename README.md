@@ -598,3 +598,8 @@ ln -s ../../src/layout_includes .
   setting up mac documentation: https://docs.google.com/document/d/1GKZI8TN6Q9kYZ47mn-RnC5A3dOmvQcf8OejtovxQUng/edit?tab=t.0#heading=h.v07lzcv6ta80
   Server Access - https://docs.google.com/document/d/1LyoEEQngviermBCQoiO8gOwsCROqdQqyH5bMRxXzyKI/edit?tab=t.0
 
+  ## Ruskin.local.conf Docs link
+  Link - https://docs.google.com/document/d/16Jzgnlaf824cS3dUCilBr-Q8lyAQAQS6HbVbx-oWmDE/edit?tab=t.0
+  
+
+
