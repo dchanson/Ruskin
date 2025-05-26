@@ -54,10 +54,17 @@ try {
 
     $results = [];
 
+    $seenFilenames = [];
     foreach ($response['hits']['hits'] as $hit) {
         $source = $hit['_source'];
+        $filename = $source['filename'];
 
-        // Use highlighted snippet if available
+        if (in_array($filename, $seenFilenames)) {
+        continue;
+        }
+
+        $seenFilenames[] = $filename;
+
         $snippet = '';
         if (isset($hit['highlight'])) {
             $highlighted = reset($hit['highlight']);
@@ -66,7 +73,6 @@ try {
             $snippet = mb_substr(strip_tags($source['content']), 0, 200) . '...';
         }
 
-        // Build results
         $results[] = [
             'title' => $source['title'],
             'snippet' => $snippet,

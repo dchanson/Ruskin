@@ -55,6 +55,7 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
     try {
         $client->index([
             'index' => $INDEX_NAME,
+            'id' => $document['filename'],
             'body' => $document
         ]);
         echo "📄 Indexed: $filepath\n";
