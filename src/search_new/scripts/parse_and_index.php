@@ -31,6 +31,8 @@ function init_index($client, $INDEX_NAME) {
 }
 
 function parse_and_index_file($client, $filepath, $INDEX_NAME) {
+    global $DATA_DIR;
+
     $doc = new DOMDocument();
     libxml_use_internal_errors(true);
     $doc->load($filepath);
@@ -45,17 +47,22 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
     $titleType = $titleNode && $titleNode->hasAttribute("type") ? $titleNode->getAttribute("type") : "unknown";
     $content = $bodyNode ? trim($bodyNode->textContent) : "";
 
+    $absoluteFilePath = realpath($filepath);
+    $absoluteBasePath = realpath($DATA_DIR);
+    $relativePath = ltrim(str_replace('\\', '/', substr($absoluteFilePath, strlen($absoluteBasePath))), '/');
+
     $document = [
         'title' => $title,
         'title_type' => $titleType,
         'content' => $content,
-        'filename' => basename($filepath)
+        'filename' => basename($filepath),
+        'relative_path' => $relativePath
     ];
 
     try {
         $client->index([
             'index' => $INDEX_NAME,
-            'id' => $document['filename'],
+            'id' => sha1($relativePath),
             'body' => $document
         ]);
         echo "📄 Indexed: $filepath\n";

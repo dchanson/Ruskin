@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Search Ruskin Archive</title>
-    <link rel="stylesheet" href="/_Resources/css/fonts.css">
-    <link rel="stylesheet" href="/_Resources/css/digital_archive.css">
+    <link rel="stylesheet" href="/_Resources/fonts/fonts.css">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'RuskinFont', sans-serif;
             background-color: #f9f9f9;
             margin: 0;
             padding: 0;
@@ -150,7 +149,7 @@
                     result.className = 'result-item';
 
                     result.innerHTML = `
-                        <div class="result-title"><a href="${item.link}" target="_blank">${item.title}</a></div>
+                        <div class="result-title"><a href="${item.link}">${item.title}</a></div>
                         <div class="result-snippet">${item.snippet}</div>
                         <div class="result-link">${item.filename}</div>
                     `;

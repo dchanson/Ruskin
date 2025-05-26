@@ -53,18 +53,20 @@ try {
     ]);
 
     $results = [];
+    $seen = [];
 
-    $seenFilenames = [];
     foreach ($response['hits']['hits'] as $hit) {
         $source = $hit['_source'];
         $filename = $source['filename'];
+        $relativePath = $source['relative_path'] ?? null;
 
-        if (in_array($filename, $seenFilenames)) {
-        continue;
+        // Avoid duplicates
+        if (!$relativePath || in_array($relativePath, $seen)) {
+            continue;
         }
+        $seen[] = $relativePath;
 
-        $seenFilenames[] = $filename;
-
+        // Highlighted snippet fallback
         $snippet = '';
         if (isset($hit['highlight'])) {
             $highlighted = reset($hit['highlight']);
@@ -73,11 +75,17 @@ try {
             $snippet = mb_substr(strip_tags($source['content']), 0, 200) . '...';
         }
 
+        // Normalize path (strip prefixes and .xml extension)
+        $relativeCleanPath = preg_replace('#^(gen/_xml/|_Completed/|_In_Process/)?#', '', $source['relative_path']);
+        $relativeCleanPath = preg_replace('/\.xml$/', '', $relativeCleanPath);
+        $link = '/' . $relativeCleanPath;
+
+
         $results[] = [
             'title' => $source['title'],
             'snippet' => $snippet,
-            'filename' => $source['filename'],
-            'link' => '/webpages/' . pathinfo($source['filename'], PATHINFO_FILENAME) . '.html'
+            'filename' => $filename,
+            'link' => $link
         ];
     }
 
