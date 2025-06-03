@@ -13,6 +13,10 @@
             color: #333;
         }
 
+        input, select, button {
+            font-family: 'RuskinFont', sans-serif;
+        }
+
         .search-container {
             max-width: 700px;
             margin: 60px auto 40px;
@@ -36,7 +40,7 @@
             gap: 10px;
         }
 
-        input[type="text"] {
+        input[type="text"] {    
             flex: 1;
             padding: 10px 16px;
             font-size: 16px;
