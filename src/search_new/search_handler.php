@@ -30,10 +30,22 @@ $fields = $fieldMap[$filter] ?? ['title', 'content'];
 
 $body = [
     'query' => [
-        'multi_match' => [
-            'query' => $query,
-            'fields' => $fields,
-            'type' => 'most_fields'
+        'function_score' => [
+            'query' => [
+                'multi_match' => [
+                    'query' => $query,
+                    'fields' => $fields,
+                    'type' => 'most_fields'
+                ]
+            ],
+            'functions' => [
+                ['filter' => ['term' => ['directory' => 'apparatuses']], 'weight' => 4],
+                ['filter' => ['term' => ['directory' => 'witnesses']], 'weight' => 3],
+                ['filter' => ['term' => ['directory' => 'notes']], 'weight' => 2],
+                ['filter' => ['term' => ['directory' => 'glosses']], 'weight' => 1]
+            ],
+            'score_mode' => 'sum',
+            'boost_mode' => 'multiply'
         ]
     ],
     'highlight' => [
@@ -45,6 +57,7 @@ $body = [
         ])
     ]
 ];
+
 
 try {
     $response = $client->search([
@@ -58,7 +71,8 @@ try {
     foreach ($response['hits']['hits'] as $hit) {
         $source = $hit['_source'];
         $filename = $source['filename'];
-        $relativePath = $source['relative_path'] ?? null;
+        if (!isset($source['relative_path'])) continue;
+        $relativePath = $source['relative_path'];
 
         // Avoid duplicates
         if (!$relativePath || in_array($relativePath, $seen)) {

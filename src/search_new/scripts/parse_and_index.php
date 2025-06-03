@@ -46,17 +46,25 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
     $title = $titleNode ? trim($titleNode->textContent) : "Untitled";
     $titleType = $titleNode && $titleNode->hasAttribute("type") ? $titleNode->getAttribute("type") : "unknown";
     $content = $bodyNode ? trim($bodyNode->textContent) : "";
+    $firstDiv = $xpath->query('//tei:div')->item(0);
+    $divType = $firstDiv && $firstDiv->hasAttribute("type") ? $firstDiv->getAttribute("type") : "unknown";
+    $divSubType = $firstDiv && $firstDiv->hasAttribute("subtype") ? $firstDiv->getAttribute("subtype") : "unknown";
 
     $absoluteFilePath = realpath($filepath);
     $absoluteBasePath = realpath($DATA_DIR);
     $relativePath = ltrim(str_replace('\\', '/', substr($absoluteFilePath, strlen($absoluteBasePath))), '/');
+    $folderType = explode('/', $relativePath)[0] ?? 'unknown';
 
     $document = [
         'title' => $title,
         'title_type' => $titleType,
         'content' => $content,
         'filename' => basename($filepath),
-        'relative_path' => $relativePath
+        'filename' => basename($filepath),
+        'relative_path' => $relativePath,
+        'directory' => $folderType,
+        'type' => $divType,
+        'subtype' => $divSubType
     ];
 
     try {
