@@ -74,11 +74,13 @@ try {
         if (!isset($source['relative_path'])) continue;
         $relativePath = $source['relative_path'];
 
+        // Avoid duplicates
         if (!$relativePath || in_array($relativePath, $seen)) {
             continue;
         }
         $seen[] = $relativePath;
 
+        // Highlighted snippet fallback
         $snippet = '';
         if (isset($hit['highlight'])) {
             $highlighted = reset($hit['highlight']);
@@ -87,6 +89,7 @@ try {
             $snippet = mb_substr(strip_tags($source['content']), 0, 200) . '...';
         }
 
+        // Normalize path (strip prefixes and .xml extension)
         $relativeCleanPath = preg_replace('#^(gen/_xml/|_Completed/|_In_Process/)?#', '', $source['relative_path']);
         $relativeCleanPath = preg_replace('/\.xml$/', '', $relativeCleanPath);
         $link = '/' . $relativeCleanPath;
