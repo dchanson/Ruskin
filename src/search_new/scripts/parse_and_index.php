@@ -60,7 +60,6 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
         'title_type' => $titleType,
         'content' => $content,
         'filename' => basename($filepath),
-        'filename' => basename($filepath),
         'relative_path' => $relativePath,
         'directory' => $folderType,
         'type' => $divType,

@@ -58,7 +58,7 @@
         }
 
         button {
-            background-color: #2d6cdf;
+            background-color: #3498db;
             color: #fff;
             border: none;
             padding: 10px 18px;
@@ -118,7 +118,7 @@
                 <option value="title">Title</option>
                 <option value="content">Content</option>
             </select>
-            <button type="submit">🔍 Search</button>
+            <button type="submit">Search</button>
         </form>
     </div>
 
@@ -148,17 +148,34 @@
                     return;
                 }
 
+                const grouped = {};
                 results.forEach(item => {
-                    const result = document.createElement('div');
-                    result.className = 'result-item';
-
-                    result.innerHTML = `
-                        <div class="result-title"><a href="${item.link}">${item.title}</a></div>
-                        <div class="result-snippet">${item.snippet}</div>
-                        <div class="result-link">${item.filename}</div>
-                    `;
-                    resultsDiv.appendChild(result);
+                    const dir = item.link.split('/')[1] || 'others';
+                    if (!grouped[dir]) grouped[dir] = [];
+                    grouped[dir].push(item);
                 });
+
+                const order = ['apparatuses', 'witnesses', 'notes', 'glosses'];
+                order.forEach(dir => {
+                    if (grouped[dir]) {
+                        const section = document.createElement('div');
+                        section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${dir.charAt(0).toUpperCase() + dir.slice(1)}</h2>`;
+                        
+                        grouped[dir].forEach(item => {
+                            const result = document.createElement('div');
+                            result.className = 'result-item';
+                            result.innerHTML = `
+                                <div class="result-title"><a href="${item.link}">${item.title}</a></div>
+                                <div class="result-snippet">${item.snippet}</div>
+                                <div class="result-link">${item.filename}</div>
+                            `;
+                            section.appendChild(result);
+                        });
+
+                        resultsDiv.appendChild(section);
+                    }
+                });
+
             } catch (error) {
                 resultsDiv.innerHTML = '<p style="color:red;">❌ Error retrieving results. Please check console.</p>';
                 console.error('Search error:', error);
