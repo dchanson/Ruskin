@@ -23,7 +23,8 @@ $filter = $_GET['filter'] ?? 'all';
 $fieldMap = [
     'all' => ['title^3', 'content'],
     'title' => ['title^5'],
-    'content' => ['content']
+    'content' => ['content'],
+    'persName' => ['persNames']
 ];
 
 $fields = $fieldMap[$filter] ?? ['title', 'content'];

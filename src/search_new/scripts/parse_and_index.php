@@ -49,7 +49,8 @@ function init_index($client, $INDEX_NAME) {
                        ],
                        'directory' => ['type' => 'keyword'],
                        'type' => ['type' => 'keyword'],
-                       'subtype' => ['type' => 'keyword']
+                       'subtype' => ['type' => 'keyword'],
+                        'persNames' => ['type' => 'text', 'analyzer' => 'standard']
                    ]
                ]
            ]
@@ -89,6 +90,15 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
    $relativePath = ltrim(str_replace('\\', '/', substr($absoluteFilePath, strlen($absoluteBasePath))), '/');
    $folderType = explode('/', $relativePath)[0] ?? 'unknown';
 
+   $person = $xpath->query('//tei:persName');
+   $persNames = [];
+   foreach ($person as $name) {
+    $text = trim($name->textContent);
+    if ($text !== '') {
+        $persNames[] = $text;
+    }
+}
+
    $documentId = sha1($relativePath);
 
    $document = [
@@ -99,7 +109,8 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
        'relative_path' => $relativePath,
        'directory' => $folderType,
        'type' => $divType,
-       'subtype' => $divSubType
+       'subtype' => $divSubType,
+       'persNames' => implode(' ', $persNames)
    ];
 
    try {

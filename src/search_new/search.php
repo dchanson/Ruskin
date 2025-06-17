@@ -117,6 +117,7 @@
                 <option value="all">All</option>
                 <option value="title">Title</option>
                 <option value="content">Content</option>
+                <option value="persName">Person Name</option>
             </select>
             <button type="submit">Search</button>
         </form>
