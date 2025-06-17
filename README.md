@@ -14,11 +14,11 @@ The developer notes can be found [here](developer_notes.md)
 
 ### Staff and Support:
 
-[http://english.selu.edu/humanitiesonline/ruskin/webpages/staff.php](http://english.selu.edu/humanitiesonline/ruskin/webpages/staff.php)
+[http://erm.selu.edu/webpages/staff.html](http://erm.selu.edu/webpages/staff.html)
 
 ### Legal:
 
-[http://english.selu.edu/humanitiesonline/ruskin/webpages/legal.php](http://english.selu.edu/humanitiesonline/ruskin/webpages/legal.php)
+[https://erm.selu.edu/webpages/legal.html](https://erm.selu.edu/webpages/legal.html)
 
 ---
 
@@ -63,13 +63,7 @@ Use **Oxygen XML Editor**:
 
 # Local Dev Setup @ ruskin.local:8080
 
-## Install Requirements (macOS):
-
-```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-brew install nginx
-brew install php@7.2
-```
+Refer to the documentation [here](https://docs.google.com/document/d/1GKZI8TN6Q9kYZ47mn-RnC5A3dOmvQcf8OejtovxQUng/edit?usp=sharing) for detailed instructions. **ONLY CONTINUE ONCE YOU HAVE GONE THROUGH THE DOCUMENTATION LINK**. Some steps may be repeated in this readme file.
 
 ### Useful Brew Commands:
 
@@ -114,20 +108,34 @@ server {
     charset utf-8;
 
     # -----------------------------
-    # MIME Types
+    # MIME Types for static files
     # -----------------------------
-    location ~* \.html$ {
-        default_type text/html;
-        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
-        sub_filter_once on;
-    }
+    # Applies to all HTML files, including those routed with try_files
+location ~* \.html$ {
+    default_type text/html;
+    charset utf-8;
+    gzip off;
+
+    # Enable sub_filter for HTML content
+    sub_filter_types text/html;
+    sub_filter '<main' '<link rel="stylesheet" href="/gen/_xml/_Completed/webpages/indices.css"><main';
+    sub_filter_once on;
+
+    # Let try_files below handle routing logic
+    try_files $uri $uri.html
+              /gen/_xml/_Completed$uri.html
+              /gen/_xml/_In_Process$uri.html
+              /gen/_xml$uri.html
+              =404;
+}
+
 
     location ~* \.xml$ { default_type application/xml; }
     location ~* \.css$ { default_type text/css; }
     location ~* \.js$  { default_type application/javascript; }
 
     # -----------------------------
-    # Font Serving with CORS
+    # Fonts (with CORS)
     # -----------------------------
     location ~* ^/_Resources/fonts/(.+\.(woff|woff2|eot|ttf|otf))$ {
         alias /Users/userselu/Ruskin/_Resources/fonts/$1;
@@ -137,7 +145,7 @@ server {
     }
 
     # -----------------------------
-    # Static Resources
+    # Static resources (CSS, JS, images, etc.)
     # -----------------------------
     location /_Resources/ {
         alias /Users/userselu/Ruskin/_Resources/;
@@ -145,14 +153,14 @@ server {
     }
 
     # -----------------------------
-    # Homepage
+    # Homepage route
     # -----------------------------
     location = / {
         try_files /gen/_xml/_Completed/webpages/homepage.html =404;
     }
 
     # -----------------------------
-    # Search Pages (PHP)
+    # Search PHP Pages
     # -----------------------------
     location = /search.php {
         fastcgi_pass 127.0.0.1:9000;
@@ -171,21 +179,22 @@ server {
     }
 
     # -----------------------------
-    # HTML Routing: Both Clean & .html
+    # HTML Routing (apparatuses, glosses, letters, notes, webpages)
     # -----------------------------
     location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
-    	try_files /gen/_xml/_Completed/$1/$2.html
-              /gen/_xml/_In_Process/$1/$2.html
-              /gen/_xml/$1/$2.html
-              =404;
-    	add_header Content-Type text/html;
-    	sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
-    	sub_filter_once on;
-	}
+        try_files /gen/_xml/_Completed/$1/$2.html
+                  /gen/_xml/_In_Process/$1/$2.html
+                  /gen/_xml/$1/$2.html
+                  =404;
+        add_header Content-Type text/html;
 
+        # Inject the same CSS for these HTML files as well
+        sub_filter '<main' '<link rel="stylesheet" href="/gen/_xml/_Completed/webpages/indices.css"><main';
+        sub_filter_once on;
+    }
 
     # -----------------------------
-    # PHP Routing
+    # PHP Routing for witnesses, figures, corpuses
     # -----------------------------
     location ~* ^/(witnesses|figures|corpuses)/([^/]+)$ {
         try_files /gen/_xml/_Completed/$1/$2.php
@@ -210,7 +219,7 @@ server {
     }
 
     # -----------------------------
-    # Global PHP fallback
+    # Global PHP fallback for any other PHP files
     # -----------------------------
     location ~ \.php$ {
         include fastcgi_params;
@@ -221,7 +230,7 @@ server {
     }
 
     # -----------------------------
-    # Final fallback
+    # Final fallback for other requests
     # -----------------------------
     location / {
         try_files $uri $uri/ $uri.html $uri.html/
@@ -236,7 +245,7 @@ server {
 ### Restart NGINX:
 
 ```sh
-nginx -s reload
+brew services restart nginx
 ```
 
 ---
