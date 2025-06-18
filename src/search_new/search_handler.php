@@ -24,7 +24,9 @@ $fieldMap = [
     'all' => ['title^3', 'content'],
     'title' => ['title^5'],
     'content' => ['content'],
-    'persName' => ['persNames']
+    'persName' => ['persNames'],
+    'place' => ['placeNames']
+
 ];
 
 $fields = $fieldMap[$filter] ?? ['title', 'content'];

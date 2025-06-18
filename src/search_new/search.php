@@ -118,6 +118,7 @@
                 <option value="title">Title</option>
                 <option value="content">Content</option>
                 <option value="persName">Person Name</option>
+                <option value="place">Place Name</option>
             </select>
             <button type="submit">Search</button>
         </form>
