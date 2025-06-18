@@ -50,7 +50,9 @@ function init_index($client, $INDEX_NAME) {
                        'directory' => ['type' => 'keyword'],
                        'type' => ['type' => 'keyword'],
                        'subtype' => ['type' => 'keyword'],
-                        'persNames' => ['type' => 'text', 'analyzer' => 'standard']
+                        'persNames' => ['type' => 'text', 'analyzer' => 'standard'],
+                        'placeNames' => ['type' => 'text', 'analyzer' => 'standard']
+
                    ]
                ]
            ]
@@ -98,6 +100,14 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
         $persNames[] = $text;
     }
 }
+$places = $xpath->query('//tei:placeName');
+$placeNames = [];
+foreach ($places as $place) {
+    $text = trim($place->textContent);
+    if ($text !== '') {
+        $placeNames[] = $text;
+    }
+}
 
    $documentId = sha1($relativePath);
 
@@ -110,7 +120,8 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
        'directory' => $folderType,
        'type' => $divType,
        'subtype' => $divSubType,
-       'persNames' => implode(' ', $persNames)
+       'persNames' => implode(' ', $persNames),
+       'placeNames' => implode(' ', $placeNames)    
    ];
 
    try {
