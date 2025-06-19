@@ -11,6 +11,10 @@ body {
 	height: 100%;
 	width: 85%;
 }
+.p {
+	margin-bottom: 0.5em;
+}
+
 .navigation {
 	background-color: #FFF;
 	color: #036;
@@ -84,10 +88,10 @@ body {
 .head-section {
 	color: #036;
 	font-size: 16pt;
+	margin-top: 13px;
+	display: block;
 }
-.section {
-	padding-top: 20px;
-}
+
 .head-subsection {
 	color: #036;
 	font-size: 14pt;
@@ -96,6 +100,8 @@ body {
 	color: #036;
 	font-size: 14pt;
 	font-style: italic;
+	margin-top: 13px;
+	display: block;
 }
 .subsection {
 	padding-top: 20px;
@@ -126,6 +132,7 @@ ul {
 	color: #000;
 	list-style-type: square;
 	padding-right: 30px;
+	font-size: 12pt;
 }
 
 /* T a b l e s */
@@ -887,8 +894,7 @@ position: fixed;
 	width: 39.85%;
 }
 #witnesses {
-	color: #FFF;
-	padding: 6%;
+	padding: 1%;
 }
 
 
