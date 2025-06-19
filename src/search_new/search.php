@@ -58,6 +58,7 @@
     input[type="text"],
     select {
       padding: 12px 16px;
+      box-sizing: border-box;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 10px;
@@ -152,6 +153,10 @@
       color: #888;
     }
 
+    .hidden-element {
+        display: none;
+    }
+
     @media (max-width: 600px) {
       .form-row {
         flex-direction: column;
@@ -164,7 +169,7 @@
     <h1>Search Ruskin Works</h1>
     <form id="searchForm">
       <div class="form-row">
-        <div class="form-group" style="flex: 2;">
+        <div class="form-group" style="flex: 3;">
           <label for="q">Keyword Search</label>
           <input type="text" name="q" id="q" placeholder="Search titles or content..." />
         </div>
@@ -196,7 +201,7 @@
     </form>
   </div>
 
-  <div class="results" id="results"></div>
+<div class="results hidden-element" id="results"></div>
 
   <script>
     function toggleAdvanced() {
@@ -225,6 +230,7 @@
       if (placeName) params.append('placeName', placeName);
 
       const resultsDiv = document.getElementById('results');
+      resultsDiv.classList.remove("hidden-element")
       resultsDiv.innerHTML = 'Searching...';
 
       try {
