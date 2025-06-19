@@ -30,17 +30,52 @@ $fieldMap = [
 ];
 
 $fields = $fieldMap[$filter] ?? ['title', 'content'];
+$persName = $_GET['persName'] ?? '';
+$placeName = $_GET['placeName'] ?? '';
 
-// Build query body
+$must = [];
+
+if (!empty($query)) {
+    $must[] = [
+        'multi_match' => [
+            'query' => $query,
+            'fields' => $fields,
+            'type' => $filter === 'title' ? 'phrase' : 'most_fields',
+            'operator' => 'and'
+        ]
+    ];
+}
+
+if (!empty($persName)) {
+    $must[] = [
+'match_phrase' => [
+  'persNames' => $persName
+]
+
+    ];
+}
+
+if (!empty($placeName)) {
+    $must[] = [
+'match_phrase' => [
+  'placeNames' => $placeName
+]
+
+    ];
+}
+
+// If no fields were entered, return early
+if (empty($must)) {
+    echo json_encode([]);
+    exit;
+}
+
 $body = [
     'query' => [
         'function_score' => [
             'query' => [
-                'multi_match' => [
-                    'query' => $query,
-                    'fields' => $fields,
-                    'type' => $filter === 'title' ? 'phrase' : 'most_fields',
-                    'operator' => 'and'
+                'bool' => [
+                    'must' => $must
                 ]
             ],
             'functions' => [
@@ -57,16 +92,16 @@ $body = [
     'highlight' => [
         'pre_tags' => ['<strong>'],
         'post_tags' => ['</strong>'],
-        'fields' => array_fill_keys(
-            array_map(fn($f) => preg_replace('/\^.+$/', '', $f), $fields), // remove ^boost
-            [
-                'fragment_size' => 150,
-                'number_of_fragments' => 1
-            ]
-        )
+        'fields' => [
+            'title' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+            'content' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+            'persNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+            'placeNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+        ]
     ],
     'size' => 50
 ];
+
 
 try {
     $response = $client->search([
