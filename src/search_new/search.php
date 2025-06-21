@@ -251,7 +251,7 @@
           grouped[dir].push(item);
         });
 
-        const order = ['apparatuses', 'witnesses', 'notes', 'glosses'];
+        const order = ['apparatuses', 'witnesses', 'notes', 'glosses', 'figures'];
         order.forEach((dir) => {
           if (grouped[dir]) {
             const section = document.createElement('div');

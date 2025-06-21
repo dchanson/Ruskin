@@ -17,7 +17,6 @@ $client = ClientBuilder::create()
 
 function init_index($client, $INDEX_NAME) {
    try {
-       // Check if index exists and delete it if it does
        try {
            $indexExists = $client->indices()->exists(['index' => $INDEX_NAME])->asBool();
        } catch (Exception $e) {
@@ -31,7 +30,6 @@ function init_index($client, $INDEX_NAME) {
            echo " Index doesn't exist yet: $INDEX_NAME\n";
        }
 
-       // Create index with proper mapping
        $mapping = [
            'index' => $INDEX_NAME,
            'body' => [

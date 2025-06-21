@@ -82,7 +82,9 @@ $body = [
                 ['filter' => ['term' => ['directory' => 'apparatuses']], 'weight' => 4],
                 ['filter' => ['term' => ['directory' => 'witnesses']], 'weight' => 3],
                 ['filter' => ['term' => ['directory' => 'notes']], 'weight' => 2],
-                ['filter' => ['term' => ['directory' => 'glosses']], 'weight' => 1]
+                ['filter' => ['term' => ['directory' => 'glosses']], 'weight' => 1],
+                ['filter' => ['term' => ['directory' => 'figures']], 'weight' => 1]
+
             ],
             'score_mode' => 'sum',
             'boost_mode' => 'multiply',
