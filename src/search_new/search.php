@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/_Resources/fonts/fonts.css" />
   <style>
     body {
-      font-family: 'RuskinFont', sans-serif;
+      font-family: 'RuskinFont';
       background-color: #f2f2f2;
       margin: 0;
       padding: 0;
@@ -57,6 +57,7 @@
 
     input[type="text"],
     select {
+      font-family: 'RuskinFont';
       padding: 12px 16px;
       box-sizing: border-box;
       font-size: 16px;
@@ -73,6 +74,7 @@
     }
 
     .toggle-advanced-btn {
+      font-family: 'RuskinFont';
       background: none;
       border: none;
       color: #3498db;
@@ -109,6 +111,7 @@
       padding: 12px;
       border-radius: 10px;
       font-size: 16px;
+      font-family: 'RuskinFont';
       font-weight: 500;
       cursor: pointer;
       transition: background-color 0.2s ease;
@@ -162,6 +165,31 @@
         flex-direction: column;
       }
     }
+
+    .suggestion-box {
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-family: 'RuskinFont', sans-serif;
+      width: calc(100% - 2px);
+      margin-top: -10px;
+    }
+
+    .suggestion-box li {
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .suggestion-box li:hover {
+      background-color: #e6f0fb;
+    }
   </style>
 </head>
 <body>
@@ -189,11 +217,11 @@
         <h3>Advanced Search Options</h3>
         <div class="form-group">
           <label for="persName">Person Name</label>
-          <input type="text" name="persName" id="persName" placeholder="e.g. John Ruskin" />
+          <input type="text" name="persName" id="persName" placeholder="e.g. John Ruskin" list="persName-list" />
         </div>
         <div class="form-group" style="margin-top: 16px;">
           <label for="placeName">Place Name</label>
-          <input type="text" name="placeName" id="placeName" placeholder="e.g. Venice" />
+          <input type="text" name="placeName" id="placeName" placeholder="e.g. Venice" list="placeName-list" />
         </div>
       </div>
 
@@ -251,7 +279,7 @@
           grouped[dir].push(item);
         });
 
-        const order = ['apparatuses', 'witnesses', 'notes', 'glosses'];
+        const order = ['apparatuses', 'witnesses', 'notes', 'glosses', 'figures'];
         order.forEach((dir) => {
           if (grouped[dir]) {
             const section = document.createElement('div');
@@ -276,6 +304,74 @@
         console.error('Search error:', error);
       }
     });
+    
+    function attachSuggest(inputId, type) {
+      const input = document.getElementById(inputId);
+      let timeout;
+
+      const suggestionBox = document.createElement('ul');
+      suggestionBox.className = 'suggestion-box';
+      suggestionBox.style.display = 'none';
+      document.body.appendChild(suggestionBox);
+
+      function positionBox() {
+        const rect = input.getBoundingClientRect();
+        suggestionBox.style.top = `${window.scrollY + rect.bottom}px`;
+        suggestionBox.style.left = `${window.scrollX + rect.left}px`;
+        suggestionBox.style.width = `${rect.width}px`;
+      }
+
+      window.addEventListener('resize', positionBox);
+      window.addEventListener('scroll', positionBox);
+
+      input.addEventListener('input', () => {
+        clearTimeout(timeout);
+        const query = input.value.trim();
+        if (!query) {
+          suggestionBox.style.display = 'none';
+          return;
+        }
+
+        timeout = setTimeout(async () => {
+          positionBox();
+
+          const res = await fetch(`autocomplete_handler.php?term=${encodeURIComponent(query)}&type=${type}`);
+          const suggestions = await res.json();
+
+          if (!Array.isArray(suggestions) || suggestions.length === 0) {
+            suggestionBox.style.display = 'none';
+            return;
+          }
+
+          suggestionBox.innerHTML = '';
+          suggestions.forEach(s => {
+            const li = document.createElement('li');
+            li.textContent = s;
+            li.addEventListener('click', () => {
+              input.value = s;
+              suggestionBox.style.display = 'none';
+            });
+            suggestionBox.appendChild(li);
+          });
+
+          suggestionBox.style.display = 'block';
+        }, 200);
+      });
+
+      input.addEventListener('blur', () => {
+        setTimeout(() => suggestionBox.style.display = 'none', 100);
+      });
+
+      input.addEventListener('focus', () => {
+        if (suggestionBox.children.length > 0) {
+          positionBox();
+          suggestionBox.style.display = 'block';
+        }
+      });
+    }
+
+    attachSuggest('persName', 'person');
+    attachSuggest('placeName', 'place');
   </script>
 </body>
 </html>
