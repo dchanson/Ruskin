@@ -165,6 +165,31 @@
         flex-direction: column;
       }
     }
+
+    .suggestion-box {
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-family: 'RuskinFont', sans-serif;
+      width: calc(100% - 2px);
+      margin-top: -10px;
+    }
+
+    .suggestion-box li {
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .suggestion-box li:hover {
+      background-color: #e6f0fb;
+    }
   </style>
 </head>
 <body>
@@ -193,12 +218,10 @@
         <div class="form-group">
           <label for="persName">Person Name</label>
           <input type="text" name="persName" id="persName" placeholder="e.g. John Ruskin" list="persName-list" />
-          <datalist id="persName-list"></datalist>
         </div>
         <div class="form-group" style="margin-top: 16px;">
           <label for="placeName">Place Name</label>
           <input type="text" name="placeName" id="placeName" placeholder="e.g. Venice" list="placeName-list" />
-          <datalist id="placeName-list"></datalist>
         </div>
       </div>
 
@@ -281,28 +304,69 @@
         console.error('Search error:', error);
       }
     });
-    async function attachSuggest(inputId, type) {
+    
+    function attachSuggest(inputId, type) {
       const input = document.getElementById(inputId);
       let timeout;
+
+      const suggestionBox = document.createElement('ul');
+      suggestionBox.className = 'suggestion-box';
+      suggestionBox.style.display = 'none';
+      document.body.appendChild(suggestionBox);
+
+      function positionBox() {
+        const rect = input.getBoundingClientRect();
+        suggestionBox.style.top = `${window.scrollY + rect.bottom}px`;
+        suggestionBox.style.left = `${window.scrollX + rect.left}px`;
+        suggestionBox.style.width = `${rect.width}px`;
+      }
+
+      window.addEventListener('resize', positionBox);
+      window.addEventListener('scroll', positionBox);
 
       input.addEventListener('input', () => {
         clearTimeout(timeout);
         const query = input.value.trim();
-        if (!query) return;
+        if (!query) {
+          suggestionBox.style.display = 'none';
+          return;
+        }
 
         timeout = setTimeout(async () => {
+          positionBox();
+
           const res = await fetch(`autocomplete_handler.php?term=${encodeURIComponent(query)}&type=${type}`);
           const suggestions = await res.json();
 
-          input.setAttribute("list", `${inputId}-list`);
-          let datalist = document.getElementById(`${inputId}-list`);
-          if (!datalist) {
-            datalist = document.createElement("datalist");
-            datalist.id = `${inputId}-list`;
-            document.body.appendChild(datalist);
+          if (!Array.isArray(suggestions) || suggestions.length === 0) {
+            suggestionBox.style.display = 'none';
+            return;
           }
-          datalist.innerHTML = suggestions.map(s => `<option value="${s}">`).join('');
+
+          suggestionBox.innerHTML = '';
+          suggestions.forEach(s => {
+            const li = document.createElement('li');
+            li.textContent = s;
+            li.addEventListener('click', () => {
+              input.value = s;
+              suggestionBox.style.display = 'none';
+            });
+            suggestionBox.appendChild(li);
+          });
+
+          suggestionBox.style.display = 'block';
         }, 200);
+      });
+
+      input.addEventListener('blur', () => {
+        setTimeout(() => suggestionBox.style.display = 'none', 100);
+      });
+
+      input.addEventListener('focus', () => {
+        if (suggestionBox.children.length > 0) {
+          positionBox();
+          suggestionBox.style.display = 'block';
+        }
       });
     }
 
