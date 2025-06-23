@@ -49,8 +49,9 @@ function init_index($client, $INDEX_NAME) {
                        'type' => ['type' => 'keyword'],
                        'subtype' => ['type' => 'keyword'],
                         'persNames' => ['type' => 'text', 'analyzer' => 'standard'],
-                        'placeNames' => ['type' => 'text', 'analyzer' => 'standard']
-
+                        'placeNames' => ['type' => 'text', 'analyzer' => 'standard'],
+                        'persNames_suggest' => ['type' => 'completion'],
+                        'placeNames_suggest' => ['type' => 'completion']
                    ]
                ]
            ]
@@ -119,7 +120,9 @@ foreach ($places as $place) {
        'type' => $divType,
        'subtype' => $divSubType,
        'persNames' => implode(' ', $persNames),
-       'placeNames' => implode(' ', $placeNames)    
+       'placeNames' => implode(' ', $placeNames),
+       'persNames_suggest' => ['input' => array_values(array_unique($persNames))],
+       'placeNames_suggest' => ['input' => array_values(array_unique($placeNames))]    
    ];
 
    try {

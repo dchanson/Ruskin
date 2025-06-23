@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/_Resources/fonts/fonts.css" />
   <style>
     body {
-      font-family: 'RuskinFont', sans-serif;
+      font-family: 'RuskinFont';
       background-color: #f2f2f2;
       margin: 0;
       padding: 0;
@@ -57,6 +57,7 @@
 
     input[type="text"],
     select {
+      font-family: 'RuskinFont';
       padding: 12px 16px;
       box-sizing: border-box;
       font-size: 16px;
@@ -73,6 +74,7 @@
     }
 
     .toggle-advanced-btn {
+      font-family: 'RuskinFont';
       background: none;
       border: none;
       color: #3498db;
@@ -109,6 +111,7 @@
       padding: 12px;
       border-radius: 10px;
       font-size: 16px;
+      font-family: 'RuskinFont';
       font-weight: 500;
       cursor: pointer;
       transition: background-color 0.2s ease;
@@ -189,11 +192,13 @@
         <h3>Advanced Search Options</h3>
         <div class="form-group">
           <label for="persName">Person Name</label>
-          <input type="text" name="persName" id="persName" placeholder="e.g. John Ruskin" />
+          <input type="text" name="persName" id="persName" placeholder="e.g. John Ruskin" list="persName-list" />
+          <datalist id="persName-list"></datalist>
         </div>
         <div class="form-group" style="margin-top: 16px;">
           <label for="placeName">Place Name</label>
-          <input type="text" name="placeName" id="placeName" placeholder="e.g. Venice" />
+          <input type="text" name="placeName" id="placeName" placeholder="e.g. Venice" list="placeName-list" />
+          <datalist id="placeName-list"></datalist>
         </div>
       </div>
 
@@ -276,6 +281,33 @@
         console.error('Search error:', error);
       }
     });
+    async function attachSuggest(inputId, type) {
+      const input = document.getElementById(inputId);
+      let timeout;
+
+      input.addEventListener('input', () => {
+        clearTimeout(timeout);
+        const query = input.value.trim();
+        if (!query) return;
+
+        timeout = setTimeout(async () => {
+          const res = await fetch(`autocomplete_handler.php?term=${encodeURIComponent(query)}&type=${type}`);
+          const suggestions = await res.json();
+
+          input.setAttribute("list", `${inputId}-list`);
+          let datalist = document.getElementById(`${inputId}-list`);
+          if (!datalist) {
+            datalist = document.createElement("datalist");
+            datalist.id = `${inputId}-list`;
+            document.body.appendChild(datalist);
+          }
+          datalist.innerHTML = suggestions.map(s => `<option value="${s}">`).join('');
+        }, 200);
+      });
+    }
+
+    attachSuggest('persName', 'person');
+    attachSuggest('placeName', 'place');
   </script>
 </body>
 </html>
