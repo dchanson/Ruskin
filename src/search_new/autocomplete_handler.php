@@ -30,6 +30,7 @@ $body = [
             'prefix' => $term,
             'completion' => [
                 'field' => $field,
+                'size' => 10,
                 'fuzzy' => ['fuzziness' => 1]
             ]
         ]
@@ -42,9 +43,64 @@ try {
         'body' => $body
     ]);
 
-    $options = $response['suggest']['name-suggest'][0]['options'];
+    $options = $response['suggest']['name-suggest'][0]['options'] ?? [];
     $results = array_unique(array_map(fn($opt) => $opt['text'], $options));
-    echo json_encode(array_values($results));
+    
+    // Sort with normalized matching (ignore spaces, keep dots)
+    $sortedResults = array_values($results);
+    usort($sortedResults, function($a, $b) use ($term) {
+        $aScore = calculateNormalizedMatchScore($a, $term);
+        $bScore = calculateNormalizedMatchScore($b, $term);
+        
+        
+        return $bScore - $aScore;
+    });
+    
+    echo json_encode($sortedResults);
+    
 } catch (Exception $e) {
     echo json_encode(['error' => $e->getMessage()]);
 }
+
+function normalizeText($text) {
+    // Remove only spaces, keep dots, convert to lowercase
+    return strtolower(preg_replace('/\s/', '', $text));
+}
+
+function calculateNormalizedMatchScore($text, $term) {
+    $normalizedText = normalizeText($text);
+    $normalizedTerm = normalizeText($term);
+    
+    $score = 0;
+    
+    if ($normalizedText === $normalizedTerm) {
+        return 1000;
+    }
+    
+    if (strpos($normalizedText, $normalizedTerm) === 0) {
+        return 500 + (100 - strlen($text)); }
+    
+    $matchingChars = 0;
+    $minLength = min(strlen($normalizedText), strlen($normalizedTerm));
+    for ($i = 0; $i < $minLength; $i++) {
+        if ($normalizedText[$i] === $normalizedTerm[$i]) {
+            $matchingChars++;
+        } else {
+            break;
+        }
+    }
+    
+    if (strlen($normalizedTerm) > 0) {
+        $prefixScore = ($matchingChars / strlen($normalizedTerm)) * 300;
+        $score += $prefixScore;
+    }
+    
+    if (strpos($normalizedText, $normalizedTerm) !== false) {
+        $score += 100;
+    }
+    
+    $score += (100 - strlen($text)) / 10;
+    
+    return $score;
+}
+?>
