@@ -48,16 +48,13 @@ _xml
 - **To PHP:** Corpuses, Figures, Witnesses
 - **To HTML:** Apparatuses, Glosses, Letters, Notes, Webpages
 
-### Homepage
-
-[https://erm.selu.edu/](https://erm.selu.edu/) → `webpages/homepage/index`
-
 ### XML to HTML/PHP Transformation
 
 Use **Oxygen XML Editor**:
 
-1. Right-click on file/folder → Transform → Configure scenario.
-2. Confirm correct branch: `php_removal`.
+1. Open the `ruskin.xpr` file.
+2. Right-click on file/folder → Transform → Configure transformation scenario.
+3. Check `Generate html` for HTML files and `Generate (global)` for PHP files.
 
 ---
 
@@ -118,7 +115,7 @@ location ~* \.html$ {
 
     # Enable sub_filter for HTML content
     sub_filter_types text/html;
-    sub_filter '<main' '<link rel="stylesheet" href="/gen/_xml/_Completed/webpages/indices.css"><main';
+    sub_filter '<main' '<link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
     sub_filter_once on;
 
     # Let try_files below handle routing logic
@@ -178,6 +175,15 @@ location ~* \.html$ {
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
 
+    location = /autocomplete_handler.php {
+        fastcgi_pass 127.0.0.1:9000;
+        include fastcgi_params;
+        fastcgi_index autocomplete_handler.php;
+        fastcgi_param SCRIPT_FILENAME $document_root/src/search_new/autocomplete_handler.php;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+
     # -----------------------------
     # HTML Routing (apparatuses, glosses, letters, notes, webpages)
     # -----------------------------
@@ -189,7 +195,7 @@ location ~* \.html$ {
         add_header Content-Type text/html;
 
         # Inject the same CSS for these HTML files as well
-        sub_filter '<main' '<link rel="stylesheet" href="/gen/_xml/_Completed/webpages/indices.css"><main';
+        sub_filter '<main' '<link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
         sub_filter_once on;
     }
 
@@ -309,6 +315,16 @@ Should return cluster info JSON and a line that says "You know, for search".
 
 ```sh
 docker-compose down
+```
+
+---
+
+# Convert the SCSS files
+
+Run the given code in your terminal.
+
+```sh
+sass /Users/userselu/Ruskin/_Resources/css_styles/site_styles.scss /Users/userselu/Ruskin/_Resources/css_styles/site_styles.css
 ```
 
 ---
