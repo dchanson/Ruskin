@@ -104,36 +104,47 @@ server {
     index index.php index.html index.htm;
     charset utf-8;
 
-    # -----------------------------
-    # MIME Types for static files
-    # -----------------------------
-    # Applies to all HTML files, including those routed with try_files
-location ~* \.html$ {
-    default_type text/html;
-    charset utf-8;
-    gzip off;
+    # Favicon request
+    location = /favicon.ico {
+        alias /Users/userselu/Ruskin/_Resources/images/ruskin_icon.png;
+    }
 
-    # Enable sub_filter for HTML content
-    sub_filter_types text/html;
-    sub_filter '<main' '<link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
-    sub_filter_once on;
+    # HTML files
+    location ~* \.html$ {
+        default_type text/html;
+        charset utf-8;
+        gzip off;
 
-    # Let try_files below handle routing logic
-    try_files $uri $uri.html
-              /gen/_xml/_Completed$uri.html
-              /gen/_xml/_In_Process$uri.html
-              /gen/_xml$uri.html
-              =404;
-}
+        sub_filter_types text/html;
+        sub_filter_once off;
 
+        sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
+
+        try_files $uri $uri.html
+                  /gen/_xml/_Completed$uri.html
+                  /gen/_xml/_In_Process$uri.html
+                  /gen/_xml$uri.html
+                  =404;
+    }
+
+    # PHP files: inject icon tag after <?php
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+
+        sub_filter_types application/x-httpd-php text/html;
+        sub_filter_once off;
+
+        sub_filter '<?php' '<?php echo \'<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png">\';';
+    }
 
     location ~* \.xml$ { default_type application/xml; }
     location ~* \.css$ { default_type text/css; }
     location ~* \.js$  { default_type application/javascript; }
 
-    # -----------------------------
-    # Fonts (with CORS)
-    # -----------------------------
     location ~* ^/_Resources/fonts/(.+\.(woff|woff2|eot|ttf|otf))$ {
         alias /Users/userselu/Ruskin/_Resources/fonts/$1;
         access_log off;
@@ -141,28 +152,19 @@ location ~* \.html$ {
         default_type application/font-woff;
     }
 
-    # -----------------------------
-    # Static resources (CSS, JS, images, etc.)
-    # -----------------------------
     location /_Resources/ {
         alias /Users/userselu/Ruskin/_Resources/;
         autoindex on;
     }
 
-    # -----------------------------
-    # Homepage route
-    # -----------------------------
     location = / {
         try_files /gen/_xml/_Completed/webpages/homepage.html =404;
     }
 
-    # -----------------------------
-    # Search PHP Pages
-    # -----------------------------
+    # Direct PHP routes
     location = /search.php {
         fastcgi_pass 127.0.0.1:9000;
         include fastcgi_params;
-        fastcgi_index search.php;
         fastcgi_param SCRIPT_FILENAME $document_root/src/search_new/search.php;
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
@@ -170,7 +172,6 @@ location ~* \.html$ {
     location = /search_handler.php {
         fastcgi_pass 127.0.0.1:9000;
         include fastcgi_params;
-        fastcgi_index search_handler.php;
         fastcgi_param SCRIPT_FILENAME $document_root/src/search_new/search_handler.php;
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
@@ -178,15 +179,11 @@ location ~* \.html$ {
     location = /autocomplete_handler.php {
         fastcgi_pass 127.0.0.1:9000;
         include fastcgi_params;
-        fastcgi_index autocomplete_handler.php;
         fastcgi_param SCRIPT_FILENAME $document_root/src/search_new/autocomplete_handler.php;
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
 
-
-    # -----------------------------
-    # HTML Routing (apparatuses, glosses, letters, notes, webpages)
-    # -----------------------------
+    # HTML Routing for major folders
     location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
         try_files /gen/_xml/_Completed/$1/$2.html
                   /gen/_xml/_In_Process/$1/$2.html
@@ -194,14 +191,12 @@ location ~* \.html$ {
                   =404;
         add_header Content-Type text/html;
 
-        # Inject the same CSS for these HTML files as well
-        sub_filter '<main' '<link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
-        sub_filter_once on;
+        sub_filter_types text/html;
+        sub_filter_once off;
+        sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
     }
 
-    # -----------------------------
     # PHP Routing for witnesses, figures, corpuses
-    # -----------------------------
     location ~* ^/(witnesses|figures|corpuses)/([^/]+)$ {
         try_files /gen/_xml/_Completed/$1/$2.php
                   /gen/_xml/_In_Process/$1/$2.php
@@ -224,20 +219,6 @@ location ~* \.html$ {
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
 
-    # -----------------------------
-    # Global PHP fallback for any other PHP files
-    # -----------------------------
-    location ~ \.php$ {
-        include fastcgi_params;
-        fastcgi_pass 127.0.0.1:9000;
-        fastcgi_index index.php;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        fastcgi_param DOCUMENT_ROOT $document_root;
-    }
-
-    # -----------------------------
-    # Final fallback for other requests
-    # -----------------------------
     location / {
         try_files $uri $uri/ $uri.html $uri.html/
                   /gen/_xml/_In_Process$uri
@@ -245,6 +226,7 @@ location ~* \.html$ {
                   =404;
     }
 }
+
 
 ```
 
