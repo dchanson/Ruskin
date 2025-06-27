@@ -72,17 +72,22 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
    $doc = new DOMDocument();
    libxml_use_internal_errors(true);
    $doc->load($filepath);
+   if (!$doc->load($filepath)) {
+    echo "⚠️ Failed to load XML: $filepath\n";
+    return;
+    }
 
    $xpath = new DOMXPath($doc);
    $xpath->registerNamespace("tei", "http://www.tei-c.org/ns/1.0");
 
    $titleNode = $xpath->query('//tei:title')->item(0);
-   $bodyNode = $xpath->query('//tei:body')->item(0);
-
    $title = $titleNode ? trim($titleNode->textContent) : "Untitled";
-   $titleType = $titleNode && $titleNode->hasAttribute("type") ? $titleNode->getAttribute("type") : "unknown";
+
+   $bodyNode = $xpath->query('//tei:body')->item(0);
    $content = $bodyNode ? trim($bodyNode->textContent) : "";
-   $firstDiv = $xpath->query('//tei:div')->item(0);
+   
+   $firstDiv = $bodyNode ? $xpath->query('.//tei:div', $bodyNode)->item(0) : null;
+
    $divType = $firstDiv && $firstDiv->hasAttribute("type") ? $firstDiv->getAttribute("type") : "unknown";
    $divSubType = $firstDiv && $firstDiv->hasAttribute("subtype") ? $firstDiv->getAttribute("subtype") : "unknown";
 
@@ -94,25 +99,24 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
    $person = $xpath->query('//tei:persName');
    $persNames = [];
    foreach ($person as $name) {
-    $text = trim($name->textContent);
-    if ($text !== '') {
-        $persNames[] = $text;
+        $text = trim($name->textContent);
+        if ($text !== '') {
+            $persNames[] = $text;
+        }
     }
-}
-$places = $xpath->query('//tei:placeName');
-$placeNames = [];
-foreach ($places as $place) {
-    $text = trim($place->textContent);
-    if ($text !== '') {
-        $placeNames[] = $text;
+    $places = $xpath->query('//tei:placeName');
+    $placeNames = [];
+    foreach ($places as $place) {
+        $text = trim($place->textContent);
+        if ($text !== '') {
+            $placeNames[] = $text;
+        }
     }
-}
 
    $documentId = sha1($relativePath);
 
    $document = [
        'title' => $title,
-       'title_type' => $titleType,
        'content' => $content,
        'filename' => basename($filepath),
        'relative_path' => $relativePath,
