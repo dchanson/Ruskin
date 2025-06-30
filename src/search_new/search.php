@@ -202,13 +202,25 @@
           <input type="text" name="q" id="q" placeholder="Search titles or content..." />
         </div>
         <div class="form-group" style="flex: 1; min-width: 120px;">
-          <label for="filter">Search In</label>
-          <select name="filter" id="filter">
-            <option value="all">All</option>
-            <option value="title">Title</option>
-            <option value="content">Content</option>
-          </select>
-        </div>
+                <label for="type">Type</label>
+                <select name="type" id="type">
+                  <option value="all">All</option>
+                  <option value="apparatus">Apparatus</option>
+                  <option value="figures">Figures</option>
+                  <option value="glosses">Glosses</option>
+                  <option value="letters">Letters</option>
+                  <option value="notes">Notes</option>
+                  <option value="witness">Witness</option>
+                  <option value="witness:poem">Witness – Poem</option>
+                  <option value="witness:essay">Witness – Essay</option>
+                  <option value="witness:sermon">Witness – Sermon</option>
+                  <option value="witness:lesson">Witness – Lesson</option>
+                  <option value="witness:letter">Witness – letter</option>
+                  <option value="witness:story">Witness – Story</option>
+                  <option value="apparatus:work">Apparatus - Work</option>
+                  <option value="apparatus:manuscript">Apparatus - Manuscript</option>
+                </select>
+            </div>
       </div>
 
       <button type="button" class="toggle-advanced-btn" onclick="toggleAdvanced()">+ Advanced Search</button>
@@ -242,7 +254,7 @@
 
       const form = e.target;
       const q = form.q.value.trim();
-      const filter = form.filter.value;
+      const type = form.type.value;
       const persName = form.persName.value.trim();
       const placeName = form.placeName.value.trim();
 
@@ -253,7 +265,7 @@
 
       const params = new URLSearchParams();
       if (q) params.append('q', q);
-      if (filter) params.append('filter', filter);
+      if (type && type !== 'all') params.append('typeFilter', type);
       if (persName) params.append('persName', persName);
       if (placeName) params.append('placeName', placeName);
 
