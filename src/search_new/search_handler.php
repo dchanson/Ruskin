@@ -19,6 +19,7 @@ $client = ClientBuilder::create()
 $index = 'ruskin_works';
 $query = $_GET['q'] ?? '';
 $filter = $_GET['filter'] ?? 'all';
+$typeFilter = $_GET['typeFilter'] ?? ''; // expecting format "type[:subtype]"
 
 $fieldMap = [
     'all' => ['title^3', 'content'],
@@ -26,7 +27,6 @@ $fieldMap = [
     'content' => ['content'],
     'persName' => ['persNames'],
     'place' => ['placeNames']
-
 ];
 
 $fields = $fieldMap[$filter] ?? ['title', 'content'];
@@ -48,23 +48,38 @@ if (!empty($query)) {
 
 if (!empty($persName)) {
     $must[] = [
-'match_phrase' => [
-  'persNames' => $persName
-]
-
+        'match_phrase' => [
+            'persNames' => $persName
+        ]
     ];
 }
 
 if (!empty($placeName)) {
     $must[] = [
-'match_phrase' => [
-  'placeNames' => $placeName
-]
-
+        'match_phrase' => [
+            'placeNames' => $placeName
+        ]
     ];
 }
 
-// If no fields were entered, return early
+if (!empty($typeFilter)) {
+    $parts = explode(':', $typeFilter);
+    $type = $parts[0] ?? '';
+    $subtype = $parts[1] ?? '';
+
+    if (!empty($type)) {
+        $must[] = [
+            'term' => ['type' => $type]
+        ];
+    }
+
+    if (!empty($subtype)) {
+        $must[] = [
+            'term' => ['subtype' => $subtype]
+        ];
+    }
+}
+
 if (empty($must)) {
     echo json_encode([]);
     exit;
@@ -84,7 +99,6 @@ $body = [
                 ['filter' => ['term' => ['directory' => 'notes']], 'weight' => 2],
                 ['filter' => ['term' => ['directory' => 'glosses']], 'weight' => 1],
                 ['filter' => ['term' => ['directory' => 'figures']], 'weight' => 1]
-
             ],
             'score_mode' => 'sum',
             'boost_mode' => 'multiply',
@@ -103,7 +117,6 @@ $body = [
     ],
     'size' => 50
 ];
-
 
 try {
     $response = $client->search([
@@ -127,7 +140,7 @@ try {
         $pathKey = strtolower($relativePath);
         $titleKey = strtolower($title);
 
-        //  Deduplicate
+        // Deduplicate
         if (in_array($pathKey, $seenPaths) || in_array($titleKey, $seenTitles)) {
             continue;
         }
@@ -144,7 +157,7 @@ try {
             $snippet = $filter === 'title' ? $title : (mb_substr(strip_tags($source['content'] ?? ''), 0, 200) . '...');
         }
 
-        //  Normalize path
+        // Normalize path
         $relativeCleanPath = preg_replace('#^(gen/_xml/|_Completed/|_In_Process/)?#', '', $relativePath);
         $relativeCleanPath = preg_replace('/\.xml$/', '', $relativeCleanPath);
         $link = '/' . $relativeCleanPath;

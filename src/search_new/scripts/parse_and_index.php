@@ -36,7 +36,6 @@ function init_index($client, $INDEX_NAME) {
                'mappings' => [
                    'properties' => [
                        'title' => ['type' => 'text', 'analyzer' => 'standard'],
-                       'title_type' => ['type' => 'keyword'],
                        'content' => ['type' => 'text', 'analyzer' => 'standard'],
                        'filename' => ['type' => 'keyword'],
                        'relative_path' => [
