@@ -542,6 +542,7 @@
     function attachSuggest(inputId, type) {
       const input = document.getElementById(inputId);
       let timeout;
+      let activeBox = null;
 
       const suggestionBox = document.createElement('ul');
       suggestionBox.className = 'suggestion-box';
@@ -555,14 +556,25 @@
         suggestionBox.style.width = `${rect.width}px`;
       }
 
+      function hideBox() {
+        suggestionBox.style.display = 'none';
+        activeBox = null;
+      }
+
       window.addEventListener('resize', positionBox);
       window.addEventListener('scroll', positionBox);
+
+      document.addEventListener('click', (e) => {
+        if (!suggestionBox.contains(e.target) && e.target !== input) {
+          hideBox();
+        }
+      });
 
       input.addEventListener('input', () => {
         clearTimeout(timeout);
         const query = input.value.trim();
         if (!query) {
-          suggestionBox.style.display = 'none';
+          hideBox();
           return;
         }
 
@@ -573,7 +585,7 @@
           const suggestions = await res.json();
 
           if (!Array.isArray(suggestions) || suggestions.length === 0) {
-            suggestionBox.style.display = 'none';
+            hideBox();
             return;
           }
 
@@ -583,17 +595,22 @@
             li.textContent = s;
             li.addEventListener('click', () => {
               input.value = s;
-              suggestionBox.style.display = 'none';
+              hideBox();
             });
             suggestionBox.appendChild(li);
           });
 
           suggestionBox.style.display = 'block';
+          activeBox = suggestionBox;
         }, 200);
       });
 
       input.addEventListener('blur', () => {
-        setTimeout(() => suggestionBox.style.display = 'none', 100);
+        setTimeout(() => {
+          if (document.activeElement !== input) {
+            hideBox();
+          }
+        }, 150);
       });
 
       input.addEventListener('focus', () => {
@@ -603,6 +620,7 @@
         }
       });
     }
+
 
     attachSuggest('persName', 'person');
     attachSuggest('placeName', 'place');
