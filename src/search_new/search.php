@@ -160,9 +160,86 @@
         display: none;
     }
 
+    /* Pagination Styles */
+    .pagination-info {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #666;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+    }
+
+    .pagination-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      padding: 20px 0;
+      border-top: 1px solid #eee;
+    }
+
+    .pagination-nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .pagination-btn {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: 'RuskinFont';
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .pagination-btn:hover:not(:disabled) {
+      background-color: #2980b9;
+      transform: translateY(-1px);
+    }
+
+    .pagination-btn:disabled {
+      background-color: #bdc3c7;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .page-info {
+      font-size: 14px;
+      color: #666;
+      font-weight: 500;
+    }
+
+    .page-size-control {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .page-size-control select {
+      padding: 6px 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: 'RuskinFont';
+    }
+
     @media (max-width: 600px) {
       .form-row {
         flex-direction: column;
+      }
+      
+      .pagination-controls {
+        flex-direction: column;
+        gap: 15px;
       }
     }
 
@@ -202,13 +279,25 @@
           <input type="text" name="q" id="q" placeholder="Search titles or content..." />
         </div>
         <div class="form-group" style="flex: 1; min-width: 120px;">
-          <label for="filter">Search In</label>
-          <select name="filter" id="filter">
-            <option value="all">All</option>
-            <option value="title">Title</option>
-            <option value="content">Content</option>
-          </select>
-        </div>
+                <label for="type">Type</label>
+                <select name="type" id="type">
+                  <option value="all">All</option>
+                  <option value="apparatus">Apparatus</option>
+                  <option value="figures">Figures</option>
+                  <option value="glosses">Glosses</option>
+                  <option value="letters">Letters</option>
+                  <option value="notes">Notes</option>
+                  <option value="witness">Witness</option>
+                  <option value="witness:poem">Witness – Poem</option>
+                  <option value="witness:essay">Witness – Essay</option>
+                  <option value="witness:sermon">Witness – Sermon</option>
+                  <option value="witness:lesson">Witness – Lesson</option>
+                  <option value="witness:letter">Witness – letter</option>
+                  <option value="witness:story">Witness – Story</option>
+                  <option value="apparatus:work">Apparatus - Work</option>
+                  <option value="apparatus:manuscript">Apparatus - Manuscript</option>
+                </select>
+            </div>
       </div>
 
       <button type="button" class="toggle-advanced-btn" onclick="toggleAdvanced()">+ Advanced Search</button>
@@ -232,9 +321,195 @@
 <div class="results hidden-element" id="results"></div>
 
   <script>
+    let currentSearchParams = null;
+    let currentPage = 1;
+    let currentPerPage = 10;
+
     function toggleAdvanced() {
       const section = document.getElementById('advancedSearch');
       section.style.display = section.style.display === 'block' ? 'none' : 'block';
+    }
+
+    async function performSearch(page = 1, perPage = 10) {
+      if (!currentSearchParams) return;
+
+      const params = new URLSearchParams(currentSearchParams);
+      params.set('page', page);
+      params.set('per_page', perPage);
+
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.classList.remove("hidden-element");
+      resultsDiv.innerHTML = 'Searching...';
+
+      try {
+        const response = await fetch('search_handler.php?' + params.toString());
+        const data = await response.json();
+
+        resultsDiv.innerHTML = '';
+
+        if (data.results && data.pagination) {
+          displayPaginatedResults(data);
+        } else {
+          displayLegacyResults(data);
+        }
+
+      } catch (error) {
+        resultsDiv.innerHTML = '<p style="color:red;">❌ Error retrieving results. Please check console.</p>';
+        console.error('Search error:', error);
+      }
+    }
+
+    function displayPaginatedResults(data) {
+      const resultsDiv = document.getElementById('results');
+      const { results, pagination } = data;
+
+      if (!results || results.length === 0) {
+        resultsDiv.innerHTML = '<p>No results found.</p>';
+        return;
+      }
+
+      const paginationInfo = document.createElement('div');
+      paginationInfo.className = 'pagination-info';
+      paginationInfo.innerHTML = `
+        Showing ${pagination.from} to ${pagination.to} of ${pagination.total_results} results
+      `;
+      resultsDiv.appendChild(paginationInfo);
+
+      const grouped = {};
+      results.forEach((item) => {
+        const dir = item.link.split('/')[1] || 'others';
+        if (!grouped[dir]) grouped[dir] = [];
+        grouped[dir].push(item);
+      });
+
+      const order = ['apparatuses', 'witnesses', 'notes', 'glosses', 'figures'];
+      order.forEach((dir) => {
+        if (grouped[dir]) {
+          const section = document.createElement('div');
+          section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${dir.charAt(0).toUpperCase() + dir.slice(1)}</h2>`;
+
+          grouped[dir].forEach((item) => {
+            const result = document.createElement('div');
+            result.className = 'result-item';
+            result.innerHTML = `
+                <div class="result-title"><a href="${item.link}">${item.title}</a></div>
+                <div class="result-snippet">${item.snippet}</div>
+                <div class="result-link">${item.filename}</div>
+              `;
+            section.appendChild(result);
+          });
+
+          resultsDiv.appendChild(section);
+        }
+      });
+
+      createPaginationControls(pagination);
+    }
+
+    function displayLegacyResults(results) {
+      const resultsDiv = document.getElementById('results');
+
+      if (!Array.isArray(results) || results.length === 0) {
+        resultsDiv.innerHTML = '<p>No results found.</p>';
+        return;
+      }
+
+      const grouped = {};
+      results.forEach((item) => {
+        const dir = item.link.split('/')[1] || 'others';
+        if (!grouped[dir]) grouped[dir] = [];
+        grouped[dir].push(item);
+      });
+
+      const order = ['apparatuses', 'witnesses', 'notes', 'glosses', 'figures'];
+      order.forEach((dir) => {
+        if (grouped[dir]) {
+          const section = document.createElement('div');
+          section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${dir.charAt(0).toUpperCase() + dir.slice(1)}</h2>`;
+
+          grouped[dir].forEach((item) => {
+            const result = document.createElement('div');
+            result.className = 'result-item';
+            result.innerHTML = `
+                <div class="result-title"><a href="${item.link}">${item.title}</a></div>
+                <div class="result-snippet">${item.snippet}</div>
+                <div class="result-link">${item.filename}</div>
+              `;
+            section.appendChild(result);
+          });
+
+          resultsDiv.appendChild(section);
+        }
+      });
+    }
+
+    function createPaginationControls(pagination) {
+      const resultsDiv = document.getElementById('results');
+      
+      const paginationContainer = document.createElement('div');
+      paginationContainer.className = 'pagination-controls';
+
+      const pageSizeControl = document.createElement('div');
+      pageSizeControl.className = 'page-size-control';
+      pageSizeControl.innerHTML = `
+        <span>Show:</span>
+        <select id="pageSizeSelect">
+          <option value="10" ${pagination.per_page === 10 ? 'selected' : ''}>10</option>
+          <option value="20" ${pagination.per_page === 20 ? 'selected' : ''}>20</option>
+          <option value="50" ${pagination.per_page === 50 ? 'selected' : ''}>50</option>
+        </select>
+        <span>per page</span>
+      `;
+
+      const navigationDiv = document.createElement('div');
+      navigationDiv.className = 'pagination-nav';
+
+      const prevBtn = document.createElement('button');
+      prevBtn.className = 'pagination-btn';
+      prevBtn.textContent = '← Previous';
+      prevBtn.disabled = !pagination.has_previous;
+      prevBtn.onclick = () => {
+        if (pagination.has_previous) {
+          currentPage = pagination.current_page - 1;
+          performSearch(currentPage, currentPerPage);
+        }
+      };
+
+      const pageInfo = document.createElement('div');
+      pageInfo.className = 'page-info';
+      pageInfo.textContent = `Page ${pagination.current_page} of ${pagination.total_pages}`;
+
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'pagination-btn';
+      nextBtn.textContent = 'Next →';
+      nextBtn.disabled = !pagination.has_next;
+      nextBtn.onclick = () => {
+        if (pagination.has_next) {
+          currentPage = pagination.current_page + 1;
+          performSearch(currentPage, currentPerPage);
+        }
+      };
+
+      navigationDiv.appendChild(prevBtn);
+      navigationDiv.appendChild(pageInfo);
+      navigationDiv.appendChild(nextBtn);
+
+      const rightSpacer = document.createElement('div');
+
+      paginationContainer.appendChild(pageSizeControl);
+      paginationContainer.appendChild(navigationDiv);
+      paginationContainer.appendChild(rightSpacer);
+
+      resultsDiv.appendChild(paginationContainer);
+
+      document.getElementById('pageSizeSelect').onchange = function(e) {
+        currentPerPage = parseInt(e.target.value);
+        currentPage = 1;
+        performSearch(currentPage, currentPerPage);
+      };
+    }
+
+    function createPageButton(pageNum, currentPageNum) {
     }
 
     document.getElementById('searchForm').addEventListener('submit', async function (e) {
@@ -242,7 +517,7 @@
 
       const form = e.target;
       const q = form.q.value.trim();
-      const filter = form.filter.value;
+      const type = form.type.value;
       const persName = form.persName.value.trim();
       const placeName = form.placeName.value.trim();
 
@@ -253,61 +528,21 @@
 
       const params = new URLSearchParams();
       if (q) params.append('q', q);
-      if (filter) params.append('filter', filter);
+      if (type && type !== 'all') params.append('typeFilter', type);
       if (persName) params.append('persName', persName);
       if (placeName) params.append('placeName', placeName);
 
-      const resultsDiv = document.getElementById('results');
-      resultsDiv.classList.remove("hidden-element")
-      resultsDiv.innerHTML = 'Searching...';
+      currentSearchParams = params.toString();
+      currentPage = 1;
+      currentPerPage = 10;
 
-      try {
-        const response = await fetch('search_handler.php?' + params.toString());
-        const results = await response.json();
-
-        resultsDiv.innerHTML = '';
-
-        if (!Array.isArray(results) || results.length === 0) {
-          resultsDiv.innerHTML = '<p>No results found.</p>';
-          return;
-        }
-
-        const grouped = {};
-        results.forEach((item) => {
-          const dir = item.link.split('/')[1] || 'others';
-          if (!grouped[dir]) grouped[dir] = [];
-          grouped[dir].push(item);
-        });
-
-        const order = ['apparatuses', 'witnesses', 'notes', 'glosses', 'figures'];
-        order.forEach((dir) => {
-          if (grouped[dir]) {
-            const section = document.createElement('div');
-            section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${dir.charAt(0).toUpperCase() + dir.slice(1)}</h2>`;
-
-            grouped[dir].forEach((item) => {
-              const result = document.createElement('div');
-              result.className = 'result-item';
-              result.innerHTML = `
-                  <div class="result-title"><a href="${item.link}">${item.title}</a></div>
-                  <div class="result-snippet">${item.snippet}</div>
-                  <div class="result-link">${item.filename}</div>
-                `;
-              section.appendChild(result);
-            });
-
-            resultsDiv.appendChild(section);
-          }
-        });
-      } catch (error) {
-        resultsDiv.innerHTML = '<p style="color:red;">❌ Error retrieving results. Please check console.</p>';
-        console.error('Search error:', error);
-      }
+      performSearch(currentPage, currentPerPage);
     });
     
     function attachSuggest(inputId, type) {
       const input = document.getElementById(inputId);
       let timeout;
+      let activeBox = null;
 
       const suggestionBox = document.createElement('ul');
       suggestionBox.className = 'suggestion-box';
@@ -321,14 +556,25 @@
         suggestionBox.style.width = `${rect.width}px`;
       }
 
+      function hideBox() {
+        suggestionBox.style.display = 'none';
+        activeBox = null;
+      }
+
       window.addEventListener('resize', positionBox);
       window.addEventListener('scroll', positionBox);
+
+      document.addEventListener('click', (e) => {
+        if (!suggestionBox.contains(e.target) && e.target !== input) {
+          hideBox();
+        }
+      });
 
       input.addEventListener('input', () => {
         clearTimeout(timeout);
         const query = input.value.trim();
         if (!query) {
-          suggestionBox.style.display = 'none';
+          hideBox();
           return;
         }
 
@@ -339,7 +585,7 @@
           const suggestions = await res.json();
 
           if (!Array.isArray(suggestions) || suggestions.length === 0) {
-            suggestionBox.style.display = 'none';
+            hideBox();
             return;
           }
 
@@ -349,17 +595,22 @@
             li.textContent = s;
             li.addEventListener('click', () => {
               input.value = s;
-              suggestionBox.style.display = 'none';
+              hideBox();
             });
             suggestionBox.appendChild(li);
           });
 
           suggestionBox.style.display = 'block';
+          activeBox = suggestionBox;
         }, 200);
       });
 
       input.addEventListener('blur', () => {
-        setTimeout(() => suggestionBox.style.display = 'none', 100);
+        setTimeout(() => {
+          if (document.activeElement !== input) {
+            hideBox();
+          }
+        }, 150);
       });
 
       input.addEventListener('focus', () => {
@@ -369,6 +620,7 @@
         }
       });
     }
+
 
     attachSuggest('persName', 'person');
     attachSuggest('placeName', 'place');
