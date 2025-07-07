@@ -47,10 +47,25 @@ function init_index($client, $INDEX_NAME) {
                        'directory' => ['type' => 'keyword'],
                        'type' => ['type' => 'keyword'],
                        'subtype' => ['type' => 'keyword'],
-                        'persNames' => ['type' => 'text', 'analyzer' => 'standard'],
+                       'names' => ['type' => 'text', 'analyzer' => 'standard'],
+                       'persNames' => ['type' => 'text', 'analyzer' => 'standard'],
                         'placeNames' => ['type' => 'text', 'analyzer' => 'standard'],
+                        'geogNames' => ['type' => 'text', 'analyzer' => 'standard'],
+                        'orgNames' => ['type' => 'text', 'analyzer' => 'standard'],
                         'persNames_suggest' => ['type' => 'completion'],
-                        'placeNames_suggest' => ['type' => 'completion']
+                        'placeNames_suggest' => ['type' => 'completion'],
+                        'geogNames_suggest' => ['type' => 'completion'],
+                        'orgNames_suggest' => ['type' => 'completion'],
+                        'names_suggest' => ['type' => 'completion'],
+                        'names_by_type_suggest' => [
+                            'type' => 'object',
+                            'dynamic' => true,
+                            'properties' => new \stdClass()
+                        ],
+                        'persNameTypes' => ['type' => 'keyword'],
+                        'placeNameTypes' => ['type' => 'keyword'],
+                        'geogNameTypes' => ['type' => 'keyword'],
+                        'orgNameTypes' => ['type' => 'keyword'],
                    ]
                ]
            ]
@@ -95,6 +110,28 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
    $relativePath = ltrim(str_replace('\\', '/', substr($absoluteFilePath, strlen($absoluteBasePath))), '/');
    $folderType = explode('/', $relativePath)[0] ?? 'unknown';
 
+   $otherName = $xpath->query('//tei:name');
+    $names = [];
+    $namesByType = [];
+
+    foreach ($otherName as $node) {
+        $text = trim($node->textContent);
+        if ($text === '') continue;
+
+        $names[] = $text;
+
+        $type = $node->getAttribute('type') ?: 'unknown';
+        if (!isset($namesByType[$type])) {
+            $namesByType[$type] = [];
+        }
+        $namesByType[$type][] = $text;
+    }
+
+    $namesSuggestFields = [];
+    foreach ($namesByType as $type => $values) {
+        $namesSuggestFields[$type] = ['input' => array_values(array_unique($values))];
+    }
+
    $person = $xpath->query('//tei:persName');
    $persNames = [];
    foreach ($person as $name) {
@@ -103,6 +140,13 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
             $persNames[] = $text;
         }
     }
+
+    $persNameTypes = [];
+    foreach ($person as $name) {
+        $type = $name->getAttribute('type') ?: 'unknown';
+        $persNameTypes[] = $type;
+    }
+
     $places = $xpath->query('//tei:placeName');
     $placeNames = [];
     foreach ($places as $place) {
@@ -110,6 +154,42 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
         if ($text !== '') {
             $placeNames[] = $text;
         }
+    }
+
+    $placeNameTypes = [];
+    foreach ($places as $place) {
+        $type = $place->getAttribute('type') ?: 'unknown';
+        $placeNameTypes[] = $type;
+    }
+
+    $geogs = $xpath->query('//tei:geogName');
+    $geogNames = [];
+    foreach ($geogs as $location) {
+        $text = trim($location->textContent);
+        if($text !== '') {
+            $geogNames[] = $text;
+        }
+    }
+
+    $geogNameTypes = [];
+    foreach ($geogs as $location) {
+        $type = $location->getAttribute('type') ?: 'unknown';
+        $geogNameTypes[] = $type;
+    }
+
+    $orgs = $xpath->query('//tei:orgName');
+    $orgNames = [];
+    foreach ($orgs as $org) {
+        $text = trim($org->textContent);
+        if($text !== '') {
+            $orgNames[] = $text;
+        }
+    }
+
+    $orgNameTypes = [];
+    foreach ($orgs as $org) {
+        $type = $org->getAttribute('type') ?: 'unknown';
+        $orgNameTypes[] = $type;
     }
 
    $documentId = sha1($relativePath);
@@ -122,10 +202,22 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
        'directory' => $folderType,
        'type' => $divType,
        'subtype' => $divSubType,
+       'name' => implode(' ', $names),
        'persNames' => implode(' ', $persNames),
        'placeNames' => implode(' ', $placeNames),
+       'orgNames' => implode(' ', $orgNames),
+       'geogNames' => implode(' ', $geogNames),
        'persNames_suggest' => ['input' => array_values(array_unique($persNames))],
-       'placeNames_suggest' => ['input' => array_values(array_unique($placeNames))]    
+       'placeNames_suggest' => ['input' => array_values(array_unique($placeNames))],
+       'orgNames_suggest' => ['input' => array_values(array_unique($orgNames))],
+       'geogNames_suggest' => ['input' => array_values(array_unique($geogNames))],
+       'names_suggest' => ['input' => array_values(array_unique($names))],
+       'names_by_type_suggest' => $namesSuggestFields,   
+       'persNameTypes' => array_values(array_unique($persNameTypes)),
+        'placeNameTypes' => array_values(array_unique($placeNameTypes)),
+        'geogNameTypes' => array_values(array_unique($geogNameTypes)),
+        'orgNameTypes' => array_values(array_unique($orgNameTypes)),
+
    ];
 
    try {

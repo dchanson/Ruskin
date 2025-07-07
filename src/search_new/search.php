@@ -304,15 +304,91 @@
 
       <div class="advanced-search" id="advancedSearch">
         <h3>Advanced Search Options</h3>
-        <div class="form-group">
-          <label for="persName">Person Name</label>
-          <input type="text" name="persName" id="persName" placeholder="e.g. John Ruskin" list="persName-list" />
+
+        <!-- Person Name -->
+        <div class="form-row" style="margin-top: 16px;">
+          <div class="form-group" style="flex: 3;">
+            <label for="persName">Person Name</label>
+            <input type="text" name="persName" id="persName" placeholder="e.g. John Ruskin" />
+          </div>
+          <div class="form-group" style="flex: 1; min-width: 120px;">
+            <label for="persNameType">Type</label>
+            <select name="persNameType" id="persNameType">
+              <option value="all">All</option>
+              <option value="fictional">Fictional</option>
+            </select>
+          </div>
         </div>
-        <div class="form-group" style="margin-top: 16px;">
-          <label for="placeName">Place Name</label>
-          <input type="text" name="placeName" id="placeName" placeholder="e.g. Venice" list="placeName-list" />
+
+        <!-- Place Name -->
+        <div class="form-row" style="margin-top: 16px;">
+          <div class="form-group" style="flex: 3;">
+            <label for="placeName">Place Name</label>
+            <input type="text" name="placeName" id="placeName" placeholder="e.g. Venice" list="placeName-list" />
+          </div>
+          <div class="form-group" style="flex: 1;">
+            <label for="placeNameType">Type</label>
+            <select name="placeNameType" id="placeNameType">
+              <option value="all">All</option>
+              <option value="building">Building</option>
+              <option value="fictional">Fictional</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Geographical Name -->
+        <div class="form-row" style="margin-top: 16px;">
+          <div class="form-group" style="flex: 3;">
+            <label for="geogName">Geographical Name</label>
+            <input type="text" name="geogName" id="geogName" placeholder="e.g. Bowder stone" list="geogName-list" />
+          </div>
+          <div class="form-group" style="flex: 1;">
+            <label for="geogNameType">Type</label>
+            <select name="geogNameType" id="geogNameType">
+              <option value="all">All</option>
+              <option value="building">Building</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Organization Name -->
+        <div class="form-row" style="margin-top: 16px;">
+          <div class="form-group" style="flex: 3;">
+            <label for="orgName">Organization Name</label>
+            <input type="text" name="orgName" id="orgName" placeholder="e.g. Cadell" list="orgName-list" />
+          </div>
+          <div class="form-group" style="flex: 1;">
+            <label for="orgNameType">Type</label>
+            <select name="orgNameType" id="orgNameType">
+              <option value="all">All</option>
+              <option value="institution">Institution</option>
+              <option value="fictional">Fictional</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- General Name -->
+        <div class="form-row" style="margin-top: 16px;">
+          <div class="form-group" style="flex: 3;">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="e.g. Marmion" list="name-list" />
+          </div>
+          <div class="form-group" style="flex: 1;">
+            <label for="nameType">Type</label>
+            <select name="nameType" id="nameType">
+              <option value="all">All</option>
+              <option value="animal">Animal</option>
+              <option value="astronomical">Astronomical</option>
+              <option value="fictional_person">Fictional person</option>
+              <option value="fictional_place">Fictional place</option>
+              <option value="botanical">Botanical</option>
+              <option value="toy">Toy</option>
+              <option value="vessel">Vessel</option>
+            </select>
+          </div>
         </div>
       </div>
+
 
       <button type="submit">Search</button>
     </form>
@@ -520,17 +596,54 @@
       const type = form.type.value;
       const persName = form.persName.value.trim();
       const placeName = form.placeName.value.trim();
+      const geogName = form.geogName.value.trim();
+      const orgName = form.orgName.value.trim();
+      const name = form.name.value.trim();
+      const nameType = form.nameType.value;
+      const persNameType = form.persNameType.value;
+      const placeNameType = form.placeNameType.value;
+      const geogNameType = form.geogNameType.value;
+      const orgNameType = form.orgNameType.value;
 
-      if (!q && !persName && !placeName) {
-        alert('Please enter a keyword, person name, or place name to search.');
+      if (!q && !persName && !placeName && !geogName && !orgName && !name) {
+        alert('Please enter a keyword to search.');
         return;
       }
 
       const params = new URLSearchParams();
       if (q) params.append('q', q);
       if (type && type !== 'all') params.append('typeFilter', type);
-      if (persName) params.append('persName', persName);
-      if (placeName) params.append('placeName', placeName);
+      if (persName) {
+        params.append('persName', persName);
+        if (persNameType && persNameType !== 'all') {
+          params.append('persNameType', persNameType);
+        }
+      }
+      if (placeName) {
+        params.append('placeName', placeName);
+        if (placeNameType && placeNameType !== 'all') {
+          params.append('placeNameType', placeNameType);
+        }
+      }
+      if (geogName) {
+        params.append('geogName', geogName);
+        if (geogNameType && geogNameType !== 'all') {
+          params.append('geogNameType', geogNameType);
+        }
+      }
+      if (orgName) {
+        params.append('orgName', orgName);
+        if (orgNameType && orgNameType !== 'all') {
+          params.append('orgNameType', orgNameType);
+        }
+      }
+
+      if (name && nameType && nameType !== 'all') {
+        params.append('nameValue', name);
+        params.append('nameType', nameType);
+      } else if (name) {
+        params.append('nameValue', name);
+      }
 
       currentSearchParams = params.toString();
       currentPage = 1;
@@ -624,6 +737,9 @@
 
     attachSuggest('persName', 'person');
     attachSuggest('placeName', 'place');
+    attachSuggest('geogName', 'geog');
+    attachSuggest('orgName', 'org');
+    attachSuggest('name', 'name');
   </script>
 </body>
 </html>
