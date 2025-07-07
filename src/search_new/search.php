@@ -316,6 +316,8 @@
             <select name="persNameType" id="persNameType">
               <option value="all">All</option>
               <option value="fictional">Fictional</option>
+              <option value="pen_name">Pen name</option>
+              <option value="fictional_person">Fictional Person</option>
             </select>
           </div>
         </div>
@@ -332,6 +334,7 @@
               <option value="all">All</option>
               <option value="building">Building</option>
               <option value="fictional">Fictional</option>
+              <option value="scriptural">Scriptural</option>
             </select>
           </div>
         </div>
@@ -346,7 +349,7 @@
             <label for="geogNameType">Type</label>
             <select name="geogNameType" id="geogNameType">
               <option value="all">All</option>
-              <option value="building">Building</option>
+              <option value="fictional">Fictional</option>
             </select>
           </div>
         </div>
@@ -361,7 +364,6 @@
             <label for="orgNameType">Type</label>
             <select name="orgNameType" id="orgNameType">
               <option value="all">All</option>
-              <option value="institution">Institution</option>
               <option value="fictional">Fictional</option>
             </select>
           </div>
@@ -379,11 +381,17 @@
               <option value="all">All</option>
               <option value="animal">Animal</option>
               <option value="astronomical">Astronomical</option>
+              <option value="astrological">Astrological</option>
+              <option value="constellation">Constellation</option>
               <option value="fictional_person">Fictional person</option>
               <option value="fictional_place">Fictional place</option>
               <option value="botanical">Botanical</option>
+              <option value="building">Building</option>
               <option value="toy">Toy</option>
               <option value="vessel">Vessel</option>
+              <option value="person">Person</option>
+              <option value="geological">Geological</option>
+              <option value="other">Other</option>
             </select>
           </div>
         </div>

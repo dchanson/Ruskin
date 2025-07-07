@@ -15,20 +15,22 @@ $client = ClientBuilder::create()
 
 $index = 'ruskin_works';
 $term = $_GET['term'] ?? '';
-$type = preg_replace('/[^a-zA-Z0-9_]/', '', ($_GET['type'] ?? 'person'));
+$type = preg_replace('/[^a-zA-Z0-9_]/', '', ($_GET['type'] ?? 'names'));
 
 $fieldMap = [
     'person' => 'persNames_suggest',
     'place'  => 'placeNames_suggest',
     'geog'   => 'geogNames_suggest',
     'org'    => 'orgNames_suggest',
+    'names'  => 'names_suggest'
 ];
 
-if (isset($fieldMap[$type])) {
-    $field = $fieldMap[$type];
+if (!isset($fieldMap[$type])) {
+    $field = $fieldMap['names'];
 } else {
-    $field = "names_by_type_suggest.$type.input";
+    $field = $fieldMap[$type];
 }
+
 if (!$term) {
     echo json_encode([]);
     exit;

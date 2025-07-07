@@ -100,14 +100,18 @@ if (!empty($orgName)) {
     }
 }
 
-if (!empty($nameType) && !empty($nameValue)) {
+if (!empty($nameValue)) {
     $must[] = [
-        'match' => [
-            "names_by_type_suggest.$nameType.input" => $nameValue
+        'match_phrase' => [
+            'names' => $nameValue
         ]
     ];
+    if (!empty($nameType) && $nameType !== 'all') {
+        $must[] = [
+            'term' => ['nameTypes' => strtolower($nameType)]
+        ];
+    }
 }
-
 
 
 if (!empty($typeFilter)) {
@@ -157,6 +161,7 @@ $body = [
             'placeNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
             'orgNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
             'geogNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+            'names' => ['fragment_size' => 150, 'number_of_fragments' => 1],
         ]
     ],
     'from' => $from,

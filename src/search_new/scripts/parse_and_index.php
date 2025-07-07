@@ -4,7 +4,7 @@ require 'src/vendor/autoload.php';
 use Elastic\Elasticsearch\ClientBuilder;
 
 $INDEX_NAME = 'ruskin_works';
-$DATA_DIR = dirname(__DIR__, 3) . '/_xml';
+$DATA_DIR = dirname(__DIR__, 3) . '/_xml/_Completed';
 
 $client = ClientBuilder::create()
    ->setHosts(['localhost:9200'])
@@ -57,15 +57,11 @@ function init_index($client, $INDEX_NAME) {
                         'geogNames_suggest' => ['type' => 'completion'],
                         'orgNames_suggest' => ['type' => 'completion'],
                         'names_suggest' => ['type' => 'completion'],
-                        'names_by_type_suggest' => [
-                            'type' => 'object',
-                            'dynamic' => true,
-                            'properties' => new \stdClass()
-                        ],
                         'persNameTypes' => ['type' => 'keyword'],
                         'placeNameTypes' => ['type' => 'keyword'],
                         'geogNameTypes' => ['type' => 'keyword'],
                         'orgNameTypes' => ['type' => 'keyword'],
+                        'nameTypes' => ['type' => 'keyword'],
                    ]
                ]
            ]
@@ -111,26 +107,20 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
    $folderType = explode('/', $relativePath)[0] ?? 'unknown';
 
    $otherName = $xpath->query('//tei:name');
-    $names = [];
-    $namesByType = [];
-
-    foreach ($otherName as $node) {
+   $names = [];
+   foreach ($otherName as $node) {
         $text = trim($node->textContent);
-        if ($text === '') continue;
-
-        $names[] = $text;
-
-        $type = $node->getAttribute('type') ?: 'unknown';
-        if (!isset($namesByType[$type])) {
-            $namesByType[$type] = [];
+        if ($text !== '') {
+            $names[] = $text;
         }
-        $namesByType[$type][] = $text;
     }
 
-    $namesSuggestFields = [];
-    foreach ($namesByType as $type => $values) {
-        $namesSuggestFields[$type] = ['input' => array_values(array_unique($values))];
+    $nameTypes =[];
+    foreach ($otherName as $node) {
+        $type = $node->getAttribute('type') ?: 'unknown';
+        $nameTypes[] = $type;
     }
+
 
    $person = $xpath->query('//tei:persName');
    $persNames = [];
@@ -195,30 +185,30 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
    $documentId = sha1($relativePath);
 
    $document = [
-       'title' => $title,
-       'content' => $content,
-       'filename' => basename($filepath),
-       'relative_path' => $relativePath,
-       'directory' => $folderType,
-       'type' => $divType,
-       'subtype' => $divSubType,
-       'name' => implode(' ', $names),
-       'persNames' => implode(' ', $persNames),
-       'placeNames' => implode(' ', $placeNames),
-       'orgNames' => implode(' ', $orgNames),
-       'geogNames' => implode(' ', $geogNames),
-       'persNames_suggest' => ['input' => array_values(array_unique($persNames))],
-       'placeNames_suggest' => ['input' => array_values(array_unique($placeNames))],
-       'orgNames_suggest' => ['input' => array_values(array_unique($orgNames))],
-       'geogNames_suggest' => ['input' => array_values(array_unique($geogNames))],
-       'names_suggest' => ['input' => array_values(array_unique($names))],
-       'names_by_type_suggest' => $namesSuggestFields,   
-       'persNameTypes' => array_values(array_unique($persNameTypes)),
-        'placeNameTypes' => array_values(array_unique($placeNameTypes)),
-        'geogNameTypes' => array_values(array_unique($geogNameTypes)),
-        'orgNameTypes' => array_values(array_unique($orgNameTypes)),
+    'title' => $title,
+    'content' => $content,
+    'filename' => basename($filepath),
+    'relative_path' => $relativePath,
+    'directory' => $folderType,
+    'type' => $divType,
+    'subtype' => $divSubType,
+    'name' => implode(' ', $names),
+    'persNames' => implode(' ', $persNames),
+    'placeNames' => implode(' ', $placeNames),
+    'orgNames' => implode(' ', $orgNames),
+    'geogNames' => implode(' ', $geogNames),
+    'persNames_suggest' => ['input' => array_values(array_unique($persNames))],
+    'placeNames_suggest' => ['input' => array_values(array_unique($placeNames))],
+    'orgNames_suggest' => ['input' => array_values(array_unique($orgNames))],
+    'geogNames_suggest' => ['input' => array_values(array_unique($geogNames))],
+    'names_suggest' => ['input' => array_values(array_unique($names))],
+    'persNameTypes' => array_values(array_unique($persNameTypes)),
+    'placeNameTypes' => array_values(array_unique($placeNameTypes)),
+    'geogNameTypes' => array_values(array_unique($geogNameTypes)),
+    'orgNameTypes' => array_values(array_unique($orgNameTypes)),
+    'nameTypes' => array_values(array_unique($nameTypes))
+];
 
-   ];
 
    try {
        $client->index([
