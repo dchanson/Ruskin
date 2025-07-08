@@ -116,14 +116,29 @@ if (!empty($nameValue)) {
 
 if (!empty($typeFilter)) {
     $parts = explode(':', $typeFilter);
-    $type = $parts[0] ?? '';
-    $subtype = $parts[1] ?? '';
+    $mainType = $parts[0] ?? '';
+    $subType = $parts[1] ?? '';
 
-    if (!empty($type)) {
-        $must[] = ['term' => ['type' => $type]];
+    $directoryMap = [
+        'apparatus' => 'apparatuses',
+        'figures' => 'figures',
+        'glosses' => 'glosses',
+        'letters' => 'letters',
+        'notes' => 'notes',
+        'witness' => 'witnesses',
+    ];
+
+    // Check if the mainType maps to a directory filter
+    if (isset($directoryMap[$mainType])) {
+        $must[] = ['term' => ['directory' => $directoryMap[$mainType]]];
     }
-    if (!empty($subtype)) {
-        $must[] = ['term' => ['subtype' => $subtype]];
+    // Handle specific type/subtype filters (like "witness:poem", "apparatus:work")
+    else if (!empty($mainType)) {
+        $must[] = ['term' => ['type' => $mainType]];
+    }
+
+    if (!empty($subType)) {
+        $must[] = ['term' => ['subtype' => $subType]];
     }
 }
 
@@ -205,7 +220,7 @@ try {
             $snippet = mb_substr(strip_tags($source['content'] ?? ''), 0, 200) . '...';
         }
 
-        
+
         $relativeCleanPath = preg_replace('#^(gen/_xml/|_Completed/|_In_Process/)?#', '', $relativePath);
         $relativeCleanPath = preg_replace('/\.xml$/', '', $relativeCleanPath);
         $link = '/' . $relativeCleanPath;
@@ -220,7 +235,7 @@ try {
 
     $totalResults = $response['hits']['total']['value'];
     $totalPages = ceil($totalResults / $perPage);
-    
+
     if (isset($_GET['page']) || isset($_GET['per_page'])) {
         echo json_encode([
             'results' => $results,
@@ -238,7 +253,6 @@ try {
     } else {
         echo json_encode($results);
     }
-
 } catch (Exception $e) {
     echo json_encode(['error' => $e->getMessage()]);
 }

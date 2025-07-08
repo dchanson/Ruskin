@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Search Ruskin Archive</title>
+    <link rel="stylesheet" href="/_Resources/fonts/fonts.css" />
+    <link rel="stylesheet" href="search_style.css" />
+  </head>
+
+  <body>
+    <div class="search-container">
+      <h1>Search Ruskin Works</h1>
+      <form id="searchForm">
+        <div class="form-row">
+          <div class="form-group" style="flex: 3">
+            <label for="q">Keyword Search</label>
+            <input type="text" name="q" id="q" placeholder="Search titles or content..." />
+          </div>
+          <div class="form-group" style="flex: 1; min-width: 120px">
+            <label for="type">Type</label>
+            <select name="type" id="type">
+              <option value="all">All</option>
+              <option value="apparatus">Apparatus</option>
+              <option value="apparatus:manuscript">Apparatus - Manuscript</option>
+              <option value="apparatus:work">Apparatus - Work</option>
+              <option value="witness">Witness</option>
+              <option value="witness:essay">Witness – Essay</option>
+              <option value="witness:lesson">Witness – Lesson</option>
+              <option value="witness:letter">Witness – Letter</option>
+              <option value="witness:poem">Witness – Poem</option>
+              <option value="witness:sermon">Witness – Sermon</option>
+              <option value="witness:story">Witness – Story</option>
+              <option value="notes">Notes</option>
+              <option value="notes:bibliographical">Notes - Bibliographical</option>
+              <option value="notes:biographical">Notes - Biographical</option>
+              <option value="notes:contextual">Notes - Contextual</option>
+              <option value="notes:geographical">Notes - Geographical</option>
+              <option value="figures">Figures</option>
+              <option value="figures:drawing">Figures - Drawing</option>
+              <option value="figures:photogravure">Figures - Photogravure</option>
+              <option value="glosses">Glosses</option>
+              <option value="glosses:contextual">Glosses - Contextual</option>
+              <option value="glosses:textual">Glosses - Textual</option>
+              <option value="letters">Letters</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="button" class="toggle-advanced-btn" onclick="toggleAdvanced()">
+          + Advanced Search
+        </button>
+
+        <div class="advanced-search" id="advancedSearch">
+          <h3>Advanced Search Options</h3>
+
+          <div id="advancedFields">
+            <div class="advanced-field" data-field-type="person">
+              <div class="field-content">
+                <div class="form-row">
+                  <div class="form-group" style="flex: 3">
+                    <label for="persName_1">Person Name</label>
+                    <input
+                      type="text"
+                      name="persName"
+                      id="persName_1"
+                      placeholder="e.g. John Ruskin"
+                    />
+                  </div>
+                  <div class="form-group" style="flex: 1; min-width: 120px">
+                    <label for="persNameType_1">Type</label>
+                    <select name="persNameType" id="persNameType_1">
+                      <option value="all">All</option>
+                      <option value="fictional">Fictional</option>
+                      <option value="pen_name">Pen name</option>
+                      <option value="fictional_person">Fictional Person</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="remove-field-btn"
+                style="visibility: hidden"
+                disabled
+                title="Default field cannot be removed"
+              >
+                −
+              </button>
+            </div>
+          </div>
+
+          <button type="button" class="add-field-btn" onclick="showFieldSelector()">
+            + Add Search Field
+          </button>
+
+          <div class="field-selector hidden-element" id="fieldSelector">
+            <label for="fieldType">Select field to add:</label>
+            <select id="fieldType">
+              <option value="">Choose a field...</option>
+              <option value="person">Person Name</option>
+              <option value="place">Place Name</option>
+              <option value="geog">Geographical Name</option>
+              <option value="org">Organization Name</option>
+              <option value="name">Name</option>
+            </select>
+            <button
+              type="button"
+              style="
+                margin-left: 10px;
+                padding: 8px 16px;
+                background-color: #3498db;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+              "
+              onclick="addField()"
+            >
+              Add
+            </button>
+            <button
+              type="button"
+              style="
+                margin-left: 5px;
+                padding: 8px 16px;
+                background-color: #95a5a6;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+              "
+              onclick="hideFieldSelector()"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="results hidden-element" id="results"></div>
+
+    <script src="search_script.js"></script>
+  </body>
+</html>
