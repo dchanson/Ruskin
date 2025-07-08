@@ -192,7 +192,7 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME) {
     'directory' => $folderType,
     'type' => $divType,
     'subtype' => $divSubType,
-    'name' => implode(' ', $names),
+    'names' => implode(' ', $names),
     'persNames' => implode(' ', $persNames),
     'placeNames' => implode(' ', $placeNames),
     'orgNames' => implode(' ', $orgNames),
