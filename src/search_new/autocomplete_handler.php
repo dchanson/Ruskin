@@ -57,24 +57,25 @@ try {
 
     $options = $response['suggest']['name-suggest'][0]['options'] ?? [];
     $results = array_unique(array_map(fn($opt) => $opt['text'], $options));
-    
+
     // Sort with normalized matching (ignore spaces, keep dots)
     $sortedResults = array_values($results);
-    usort($sortedResults, function($a, $b) use ($term) {
+    usort($sortedResults, function ($a, $b) use ($term) {
         return calculateNormalizedMatchScore($b, $term) - calculateNormalizedMatchScore($a, $term);
     });
 
     echo json_encode($sortedResults);
-
 } catch (Exception $e) {
     echo json_encode(['error' => $e->getMessage()]);
 }
 
-function normalizeText($text) {
+function normalizeText($text)
+{
     return strtolower(preg_replace('/\s+/', '', $text));
 }
 
-function calculateNormalizedMatchScore($text, $term) {
+function calculateNormalizedMatchScore($text, $term)
+{
     $normalizedText = normalizeText($text);
     $normalizedTerm = normalizeText($term);
     $score = 0;
@@ -109,4 +110,3 @@ function calculateNormalizedMatchScore($text, $term) {
 
     return $score;
 }
-?>

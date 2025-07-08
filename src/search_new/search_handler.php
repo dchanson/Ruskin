@@ -205,7 +205,7 @@ try {
             $snippet = mb_substr(strip_tags($source['content'] ?? ''), 0, 200) . '...';
         }
 
-        
+
         $relativeCleanPath = preg_replace('#^(gen/_xml/|_Completed/|_In_Process/)?#', '', $relativePath);
         $relativeCleanPath = preg_replace('/\.xml$/', '', $relativeCleanPath);
         $link = '/' . $relativeCleanPath;
@@ -220,7 +220,7 @@ try {
 
     $totalResults = $response['hits']['total']['value'];
     $totalPages = ceil($totalResults / $perPage);
-    
+
     if (isset($_GET['page']) || isset($_GET['per_page'])) {
         echo json_encode([
             'results' => $results,
@@ -238,7 +238,6 @@ try {
     } else {
         echo json_encode($results);
     }
-
 } catch (Exception $e) {
     echo json_encode(['error' => $e->getMessage()]);
 }

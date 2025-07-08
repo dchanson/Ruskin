@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Search Ruskin Archive</title>
@@ -111,63 +112,71 @@
 
     .add-field-btn {
       font-family: 'RuskinFont';
-      background-color: #27ae60;
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 14px;
+      background-color: #eef6f1;
+      color: #2e7d4f;
+      border: 1px solid #c9e4d5;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 15px;
       font-weight: 500;
-      margin-top: 10px;
-      transition: background-color 0.2s ease;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      margin-bottom: 20px;
     }
 
     .add-field-btn:hover {
-      background-color: #219a52;
+      background-color: #dff0e4;
+      color: #256e46;
+      border-color: #b3dac4;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      transform: translateY(-1px);
     }
 
+
+
     .advanced-field {
-  margin-bottom: 20px;
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
+      margin-bottom: 20px;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
 
 
-.field-content {
-  flex: 1;
-}
+    .field-content {
+      flex: 1;
+    }
 
-.remove-field-btn {
-  background-color: #e74c3c;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-  flex-shrink: 0;
-  margin-top: 28px;
-  line-height: 1;
-}
+    .remove-field-btn {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+      margin-top: 28px;
+      line-height: 1;
+    }
 
-.remove-field-btn:hover:not(:disabled) {
-  background-color: #c0392b;
-  transform: scale(1.05);
-}
+    .remove-field-btn:hover:not(:disabled) {
+      background-color: #c0392b;
+      transform: scale(1.05);
+    }
 
-.remove-field-btn:disabled {
-  cursor: default;
-  transform: none;
-}
+    .remove-field-btn:disabled {
+      cursor: default;
+      transform: none;
+    }
+
     .field-selector {
       margin-bottom: 15px;
     }
@@ -231,7 +240,7 @@
     }
 
     .hidden-element {
-        display: none;
+      display: none;
     }
 
     /* Pagination Styles */
@@ -310,7 +319,7 @@
       .form-row {
         flex-direction: column;
       }
-      
+
       .pagination-controls {
         flex-direction: column;
         gap: 15px;
@@ -343,6 +352,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="search-container">
     <h1>Search Ruskin Works</h1>
@@ -353,25 +363,25 @@
           <input type="text" name="q" id="q" placeholder="Search titles or content..." />
         </div>
         <div class="form-group" style="flex: 1; min-width: 120px;">
-                <label for="type">Type</label>
-                <select name="type" id="type">
-                  <option value="all">All</option>
-                  <option value="apparatus">Apparatus</option>
-                  <option value="figures">Figures</option>
-                  <option value="glosses">Glosses</option>
-                  <option value="letters">Letters</option>
-                  <option value="notes">Notes</option>
-                  <option value="witness">Witness</option>
-                  <option value="witness:poem">Witness – Poem</option>
-                  <option value="witness:essay">Witness – Essay</option>
-                  <option value="witness:sermon">Witness – Sermon</option>
-                  <option value="witness:lesson">Witness – Lesson</option>
-                  <option value="witness:letter">Witness – letter</option>
-                  <option value="witness:story">Witness – Story</option>
-                  <option value="apparatus:work">Apparatus - Work</option>
-                  <option value="apparatus:manuscript">Apparatus - Manuscript</option>
-                </select>
-            </div>
+          <label for="type">Type</label>
+          <select name="type" id="type">
+            <option value="all">All</option>
+            <option value="apparatus">Apparatus</option>
+            <option value="figures">Figures</option>
+            <option value="glosses">Glosses</option>
+            <option value="letters">Letters</option>
+            <option value="notes">Notes</option>
+            <option value="witness">Witness</option>
+            <option value="witness:poem">Witness – Poem</option>
+            <option value="witness:essay">Witness – Essay</option>
+            <option value="witness:sermon">Witness – Sermon</option>
+            <option value="witness:lesson">Witness – Lesson</option>
+            <option value="witness:letter">Witness – letter</option>
+            <option value="witness:story">Witness – Story</option>
+            <option value="apparatus:work">Apparatus - Work</option>
+            <option value="apparatus:manuscript">Apparatus - Manuscript</option>
+          </select>
+        </div>
       </div>
 
       <button type="button" class="toggle-advanced-btn" onclick="toggleAdvanced()">+ Advanced Search</button>
@@ -380,27 +390,27 @@
         <h3>Advanced Search Options</h3>
 
         <div id="advancedFields">
-  <div class="advanced-field" data-field-type="person">
-    <div class="field-content">
-      <div class="form-row">
-        <div class="form-group" style="flex: 3;">
-          <label for="persName_1">Person Name</label>
-          <input type="text" name="persName" id="persName_1" placeholder="e.g. John Ruskin" />
+          <div class="advanced-field" data-field-type="person">
+            <div class="field-content">
+              <div class="form-row">
+                <div class="form-group" style="flex: 3;">
+                  <label for="persName_1">Person Name</label>
+                  <input type="text" name="persName" id="persName_1" placeholder="e.g. John Ruskin" />
+                </div>
+                <div class="form-group" style="flex: 1; min-width: 120px;">
+                  <label for="persNameType_1">Type</label>
+                  <select name="persNameType" id="persNameType_1">
+                    <option value="all">All</option>
+                    <option value="fictional">Fictional</option>
+                    <option value="pen_name">Pen name</option>
+                    <option value="fictional_person">Fictional Person</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="remove-field-btn" style="visibility: hidden;" disabled title="Default field cannot be removed">−</button>
+          </div>
         </div>
-        <div class="form-group" style="flex: 1; min-width: 120px;">
-          <label for="persNameType_1">Type</label>
-          <select name="persNameType" id="persNameType_1">
-            <option value="all">All</option>
-            <option value="fictional">Fictional</option>
-            <option value="pen_name">Pen name</option>
-            <option value="fictional_person">Fictional Person</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <button type="button" class="remove-field-btn" style="visibility: hidden;" disabled title="Default field cannot be removed">−</button>
-  </div>
-</div>
 
         <button type="button" class="add-field-btn" onclick="showFieldSelector()">+ Add Search Field</button>
 
@@ -423,8 +433,8 @@
     </form>
   </div>
 
-<div class="results hidden-element" id="results"></div>
-<script>
+  <div class="results hidden-element" id="results"></div>
+  <script>
     let currentSearchParams = null;
     let currentPage = 1;
     let currentPerPage = 10;
@@ -493,7 +503,7 @@
       let fieldHTML = '';
       let inputId, typeId, inputName, typeName, label, placeholder, typeOptions;
 
-      switch(fieldType) {
+      switch (fieldType) {
         case 'person':
           inputId = `persName_${fieldCounter}`;
           typeId = `persNameType_${fieldCounter}`;
@@ -572,7 +582,7 @@
           break;
       }
 
-   fieldHTML = `
+      fieldHTML = `
   <div class="field-content">
     <div class="form-row">
       <div class="form-group" style="flex: 3;">
@@ -593,12 +603,12 @@
       fieldsContainer.appendChild(fieldDiv);
 
 
-      const autocompleteType = fieldType === 'name' ? 'name' : 
-                              fieldType === 'person' ? 'person' :
-                              fieldType === 'place' ? 'place' :
-                              fieldType === 'geog' ? 'geog' :
-                              fieldType === 'org' ? 'org' : 'name';
-      
+      const autocompleteType = fieldType === 'name' ? 'name' :
+        fieldType === 'person' ? 'person' :
+        fieldType === 'place' ? 'place' :
+        fieldType === 'geog' ? 'geog' :
+        fieldType === 'org' ? 'org' : 'name';
+
       setTimeout(() => {
         attachSuggest(inputId, autocompleteType);
       }, 100);
@@ -641,7 +651,10 @@
 
     function displayPaginatedResults(data) {
       const resultsDiv = document.getElementById('results');
-      const { results, pagination } = data;
+      const {
+        results,
+        pagination
+      } = data;
 
       if (!results || results.length === 0) {
         resultsDiv.innerHTML = '<p>No results found.</p>';
@@ -725,7 +738,7 @@
 
     function createPaginationControls(pagination) {
       const resultsDiv = document.getElementById('results');
-      
+
       const paginationContainer = document.createElement('div');
       paginationContainer.className = 'pagination-controls';
 
@@ -788,7 +801,7 @@
         performSearch(currentPage, currentPerPage);
       };
     }
-    document.getElementById('searchForm').addEventListener('submit', async function (e) {
+    document.getElementById('searchForm').addEventListener('submit', async function(e) {
       e.preventDefault();
 
       const form = e.target;
@@ -856,11 +869,11 @@
 
       performSearch(currentPage, currentPerPage);
     });
-    
+
     function attachSuggest(inputId, type) {
       const input = document.getElementById(inputId);
-      if (!input) return; 
-      
+      if (!input) return;
+
       let timeout;
       let activeBox = null;
 
@@ -951,4 +964,5 @@
     });
   </script>
 </body>
+
 </html>
