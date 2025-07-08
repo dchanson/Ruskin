@@ -15,9 +15,21 @@ $client = ClientBuilder::create()
 
 $index = 'ruskin_works';
 $term = $_GET['term'] ?? '';
-$type = $_GET['type'] ?? 'person';
+$type = preg_replace('/[^a-zA-Z0-9_]/', '', ($_GET['type'] ?? 'names'));
 
-$field = $type === 'place' ? 'placeNames_suggest' : 'persNames_suggest';
+$fieldMap = [
+    'person' => 'persNames_suggest',
+    'place'  => 'placeNames_suggest',
+    'geog'   => 'geogNames_suggest',
+    'org'    => 'orgNames_suggest',
+    'names'  => 'names_suggest'
+];
+
+if (!isset($fieldMap[$type])) {
+    $field = $fieldMap['names'];
+} else {
+    $field = $fieldMap[$type];
+}
 
 if (!$term) {
     echo json_encode([]);
@@ -49,37 +61,32 @@ try {
     // Sort with normalized matching (ignore spaces, keep dots)
     $sortedResults = array_values($results);
     usort($sortedResults, function($a, $b) use ($term) {
-        $aScore = calculateNormalizedMatchScore($a, $term);
-        $bScore = calculateNormalizedMatchScore($b, $term);
-        
-        
-        return $bScore - $aScore;
+        return calculateNormalizedMatchScore($b, $term) - calculateNormalizedMatchScore($a, $term);
     });
-    
+
     echo json_encode($sortedResults);
-    
+
 } catch (Exception $e) {
     echo json_encode(['error' => $e->getMessage()]);
 }
 
 function normalizeText($text) {
-    // Remove only spaces, keep dots, convert to lowercase
-    return strtolower(preg_replace('/\s/', '', $text));
+    return strtolower(preg_replace('/\s+/', '', $text));
 }
 
 function calculateNormalizedMatchScore($text, $term) {
     $normalizedText = normalizeText($text);
     $normalizedTerm = normalizeText($term);
-    
     $score = 0;
-    
+
     if ($normalizedText === $normalizedTerm) {
         return 1000;
     }
-    
-    if (strpos($normalizedText, $normalizedTerm) === 0) {
-        return 500 + (100 - strlen($text)); }
-    
+
+    if (str_starts_with($normalizedText, $normalizedTerm)) {
+        return 500 + (100 - strlen($text));
+    }
+
     $matchingChars = 0;
     $minLength = min(strlen($normalizedText), strlen($normalizedTerm));
     for ($i = 0; $i < $minLength; $i++) {
@@ -89,18 +96,17 @@ function calculateNormalizedMatchScore($text, $term) {
             break;
         }
     }
-    
+
     if (strlen($normalizedTerm) > 0) {
-        $prefixScore = ($matchingChars / strlen($normalizedTerm)) * 300;
-        $score += $prefixScore;
+        $score += ($matchingChars / strlen($normalizedTerm)) * 300;
     }
-    
+
     if (strpos($normalizedText, $normalizedTerm) !== false) {
         $score += 100;
     }
-    
+
     $score += (100 - strlen($text)) / 10;
-    
+
     return $score;
 }
 ?>
