@@ -104,6 +104,9 @@ server {
     index index.php index.html index.htm;
     charset utf-8;
 
+    # Set default content type once per server block
+    default_type text/html;
+
     # Favicon request
     location = /favicon.ico {
         alias /Users/userselu/Ruskin/_Resources/images/ruskin_icon.png;
@@ -111,10 +114,10 @@ server {
 
     # HTML files
     location ~* \.html$ {
-        default_type text/html;
         charset utf-8;
         gzip off;
 
+        # Substitution only for HTML content
         sub_filter_types text/html;
         sub_filter_once off;
 
@@ -135,16 +138,19 @@ server {
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         fastcgi_param DOCUMENT_ROOT $document_root;
 
+        # Substitution for PHP-generated HTML content
         sub_filter_types application/x-httpd-php text/html;
         sub_filter_once off;
 
         sub_filter '<?php' '<?php echo \'<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png">\';';
     }
 
+    # Static file types: explicitly set default_type
     location ~* \.xml$ { default_type application/xml; }
     location ~* \.css$ { default_type text/css; }
     location ~* \.js$  { default_type application/javascript; }
 
+    # Fonts with CORS
     location ~* ^/_Resources/fonts/(.+\.(woff|woff2|eot|ttf|otf))$ {
         alias /Users/userselu/Ruskin/_Resources/fonts/$1;
         access_log off;
@@ -152,21 +158,34 @@ server {
         default_type application/font-woff;
     }
 
+    # Alias for _Resources folder with directory listing
     location /_Resources/ {
         alias /Users/userselu/Ruskin/_Resources/;
         autoindex on;
     }
 
+    # Home page fallback
     location = / {
         try_files /gen/_xml/_Completed/webpages/homepage.html =404;
     }
 
-    # Direct PHP routes
-    location = /search.php {
-        fastcgi_pass 127.0.0.1:9000;
-        include fastcgi_params;
-        fastcgi_param SCRIPT_FILENAME $document_root/src/search_new/search.php;
-        fastcgi_param DOCUMENT_ROOT $document_root;
+    # Direct HTML routes for search
+    location = /search.html {
+        root /Users/userselu/Ruskin/src/search_new;
+        try_files $uri =404;
+    }
+
+    location = /search_style.css {
+        root /Users/userselu/Ruskin/src/search_new;
+        default_type text/css;
+        try_files $uri =404;
+    }
+
+    # Serve the script.js file for the search page
+    location = /search_script.js {
+        root /Users/userselu/Ruskin/src/search_new;
+        default_type application/javascript;
+        try_files $uri =404;
     }
 
     location = /search_handler.php {
@@ -183,13 +202,12 @@ server {
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
 
-    # HTML Routing for major folders
+    # HTML Routing for main folders with sub_filter
     location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
         try_files /gen/_xml/_Completed/$1/$2.html
                   /gen/_xml/_In_Process/$1/$2.html
                   /gen/_xml/$1/$2.html
                   =404;
-        add_header Content-Type text/html;
 
         sub_filter_types text/html;
         sub_filter_once off;
@@ -201,6 +219,7 @@ server {
         try_files /gen/_xml/_Completed/$1/$2.php
                   /gen/_xml/_In_Process/$1/$2.php
                   /gen/_xml/$1/$2.php =404;
+
         fastcgi_pass 127.0.0.1:9000;
         include fastcgi_params;
         fastcgi_index index.php;
@@ -212,6 +231,7 @@ server {
         try_files /gen/_xml/_Completed/$1/$2
                   /gen/_xml/_In_Process/$1/$2
                   /gen/_xml/$1/$2 =404;
+
         fastcgi_pass 127.0.0.1:9000;
         include fastcgi_params;
         fastcgi_index index.php;
@@ -219,6 +239,7 @@ server {
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
 
+    # Fallback location
     location / {
         try_files $uri $uri/ $uri.html $uri.html/
                   /gen/_xml/_In_Process$uri
@@ -226,7 +247,6 @@ server {
                   =404;
     }
 }
-
 
 ```
 
