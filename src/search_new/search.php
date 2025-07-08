@@ -104,6 +104,80 @@
       color: #2c3e50;
     }
 
+    .advanced-field {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .add-field-btn {
+      font-family: 'RuskinFont';
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 10px;
+      transition: background-color 0.2s ease;
+    }
+
+    .add-field-btn:hover {
+      background-color: #219a52;
+    }
+
+    .advanced-field {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+
+.field-content {
+  flex: 1;
+}
+
+.remove-field-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  margin-top: 28px;
+  line-height: 1;
+}
+
+.remove-field-btn:hover:not(:disabled) {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.remove-field-btn:disabled {
+  cursor: default;
+  transform: none;
+}
+    .field-selector {
+      margin-bottom: 15px;
+    }
+
+    .field-selector select {
+      width: 200px;
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+
     button[type="submit"] {
       background-color: #3498db;
       color: #fff;
@@ -305,115 +379,237 @@
       <div class="advanced-search" id="advancedSearch">
         <h3>Advanced Search Options</h3>
 
-        <!-- Person Name -->
-        <div class="form-row" style="margin-top: 16px;">
-          <div class="form-group" style="flex: 3;">
-            <label for="persName">Person Name</label>
-            <input type="text" name="persName" id="persName" placeholder="e.g. John Ruskin" />
-          </div>
-          <div class="form-group" style="flex: 1; min-width: 120px;">
-            <label for="persNameType">Type</label>
-            <select name="persNameType" id="persNameType">
-              <option value="all">All</option>
-              <option value="fictional">Fictional</option>
-              <option value="pen_name">Pen name</option>
-              <option value="fictional_person">Fictional Person</option>
-            </select>
-          </div>
+        <div id="advancedFields">
+  <div class="advanced-field" data-field-type="person">
+    <div class="field-content">
+      <div class="form-row">
+        <div class="form-group" style="flex: 3;">
+          <label for="persName_1">Person Name</label>
+          <input type="text" name="persName" id="persName_1" placeholder="e.g. John Ruskin" />
         </div>
-
-        <!-- Place Name -->
-        <div class="form-row" style="margin-top: 16px;">
-          <div class="form-group" style="flex: 3;">
-            <label for="placeName">Place Name</label>
-            <input type="text" name="placeName" id="placeName" placeholder="e.g. Venice" list="placeName-list" />
-          </div>
-          <div class="form-group" style="flex: 1;">
-            <label for="placeNameType">Type</label>
-            <select name="placeNameType" id="placeNameType">
-              <option value="all">All</option>
-              <option value="building">Building</option>
-              <option value="fictional">Fictional</option>
-              <option value="scriptural">Scriptural</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Geographical Name -->
-        <div class="form-row" style="margin-top: 16px;">
-          <div class="form-group" style="flex: 3;">
-            <label for="geogName">Geographical Name</label>
-            <input type="text" name="geogName" id="geogName" placeholder="e.g. Bowder stone" list="geogName-list" />
-          </div>
-          <div class="form-group" style="flex: 1;">
-            <label for="geogNameType">Type</label>
-            <select name="geogNameType" id="geogNameType">
-              <option value="all">All</option>
-              <option value="fictional">Fictional</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Organization Name -->
-        <div class="form-row" style="margin-top: 16px;">
-          <div class="form-group" style="flex: 3;">
-            <label for="orgName">Organization Name</label>
-            <input type="text" name="orgName" id="orgName" placeholder="e.g. Cadell" list="orgName-list" />
-          </div>
-          <div class="form-group" style="flex: 1;">
-            <label for="orgNameType">Type</label>
-            <select name="orgNameType" id="orgNameType">
-              <option value="all">All</option>
-              <option value="fictional">Fictional</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- General Name -->
-        <div class="form-row" style="margin-top: 16px;">
-          <div class="form-group" style="flex: 3;">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="e.g. Marmion" list="name-list" />
-          </div>
-          <div class="form-group" style="flex: 1;">
-            <label for="nameType">Type</label>
-            <select name="nameType" id="nameType">
-              <option value="all">All</option>
-              <option value="animal">Animal</option>
-              <option value="astronomical">Astronomical</option>
-              <option value="astrological">Astrological</option>
-              <option value="constellation">Constellation</option>
-              <option value="fictional_person">Fictional person</option>
-              <option value="fictional_place">Fictional place</option>
-              <option value="botanical">Botanical</option>
-              <option value="building">Building</option>
-              <option value="toy">Toy</option>
-              <option value="vessel">Vessel</option>
-              <option value="person">Person</option>
-              <option value="geological">Geological</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
+        <div class="form-group" style="flex: 1; min-width: 120px;">
+          <label for="persNameType_1">Type</label>
+          <select name="persNameType" id="persNameType_1">
+            <option value="all">All</option>
+            <option value="fictional">Fictional</option>
+            <option value="pen_name">Pen name</option>
+            <option value="fictional_person">Fictional Person</option>
+          </select>
         </div>
       </div>
+    </div>
+    <button type="button" class="remove-field-btn" style="visibility: hidden;" disabled title="Default field cannot be removed">−</button>
+  </div>
+</div>
 
+        <button type="button" class="add-field-btn" onclick="showFieldSelector()">+ Add Search Field</button>
+
+        <div class="field-selector hidden-element" id="fieldSelector">
+          <label for="fieldType">Select field to add:</label>
+          <select id="fieldType">
+            <option value="">Choose a field...</option>
+            <option value="person">Person Name</option>
+            <option value="place">Place Name</option>
+            <option value="geog">Geographical Name</option>
+            <option value="org">Organization Name</option>
+            <option value="name">Name</option>
+          </select>
+          <button type="button" onclick="addField()" style="margin-left: 10px; padding: 8px 16px; background-color: #3498db; color: white; border: none; border-radius: 6px; cursor: pointer;">Add</button>
+          <button type="button" onclick="hideFieldSelector()" style="margin-left: 5px; padding: 8px 16px; background-color: #95a5a6; color: white; border: none; border-radius: 6px; cursor: pointer;">Cancel</button>
+        </div>
+      </div>
 
       <button type="submit">Search</button>
     </form>
   </div>
 
 <div class="results hidden-element" id="results"></div>
-
-  <script>
+<script>
     let currentSearchParams = null;
     let currentPage = 1;
     let currentPerPage = 10;
+    let fieldCounter = 1;
 
     function toggleAdvanced() {
       const section = document.getElementById('advancedSearch');
-      section.style.display = section.style.display === 'block' ? 'none' : 'block';
+      const btn = document.querySelector('.toggle-advanced-btn');
+      if (section.style.display === 'block') {
+        section.style.display = 'none';
+        btn.textContent = '+ Advanced Search';
+      } else {
+        section.style.display = 'block';
+        btn.textContent = '- Advanced Search';
+      }
     }
 
+    function updateFieldSelector() {
+      const fieldSelector = document.getElementById('fieldType');
+      const existingFields = Array.from(document.querySelectorAll('.advanced-field[data-field-type]'))
+        .map(field => field.getAttribute('data-field-type'));
+
+      Array.from(fieldSelector.options).forEach(option => {
+        option.disabled = false;
+        option.style.color = '';
+      });
+
+      existingFields.forEach(fieldType => {
+        const option = fieldSelector.querySelector(`option[value="${fieldType}"]`);
+        if (option) {
+          option.disabled = true;
+          option.style.color = '#999';
+        }
+      });
+    }
+
+    function showFieldSelector() {
+      updateFieldSelector();
+      document.getElementById('fieldSelector').classList.remove('hidden-element');
+    }
+
+    function hideFieldSelector() {
+      document.getElementById('fieldSelector').classList.add('hidden-element');
+      document.getElementById('fieldType').value = '';
+    }
+
+    function addField() {
+      const fieldType = document.getElementById('fieldType').value;
+      if (!fieldType) {
+        alert('Please select a field type first.');
+        return;
+      }
+
+      const existingField = document.querySelector(`.advanced-field[data-field-type="${fieldType}"]`);
+      if (existingField) {
+        alert('This field type is already added. You can only have one field of each type.');
+        return;
+      }
+
+      fieldCounter++;
+      const fieldsContainer = document.getElementById('advancedFields');
+      const fieldDiv = document.createElement('div');
+      fieldDiv.className = 'advanced-field';
+      fieldDiv.setAttribute('data-field-type', fieldType);
+
+      let fieldHTML = '';
+      let inputId, typeId, inputName, typeName, label, placeholder, typeOptions;
+
+      switch(fieldType) {
+        case 'person':
+          inputId = `persName_${fieldCounter}`;
+          typeId = `persNameType_${fieldCounter}`;
+          inputName = 'persName';
+          typeName = 'persNameType';
+          label = 'Person Name';
+          placeholder = 'e.g. John Ruskin';
+          typeOptions = `
+            <option value="all">All</option>
+            <option value="fictional">Fictional</option>
+            <option value="pen_name">Pen name</option>
+            <option value="fictional_person">Fictional Person</option>
+          `;
+          break;
+        case 'place':
+          inputId = `placeName_${fieldCounter}`;
+          typeId = `placeNameType_${fieldCounter}`;
+          inputName = 'placeName';
+          typeName = 'placeNameType';
+          label = 'Place Name';
+          placeholder = 'e.g. Venice';
+          typeOptions = `
+            <option value="all">All</option>
+            <option value="building">Building</option>
+            <option value="fictional">Fictional</option>
+            <option value="scriptural">Scriptural</option>
+          `;
+          break;
+        case 'geog':
+          inputId = `geogName_${fieldCounter}`;
+          typeId = `geogNameType_${fieldCounter}`;
+          inputName = 'geogName';
+          typeName = 'geogNameType';
+          label = 'Geographical Name';
+          placeholder = 'e.g. Bowder stone';
+          typeOptions = `
+            <option value="all">All</option>
+            <option value="fictional">Fictional</option>
+          `;
+          break;
+        case 'org':
+          inputId = `orgName_${fieldCounter}`;
+          typeId = `orgNameType_${fieldCounter}`;
+          inputName = 'orgName';
+          typeName = 'orgNameType';
+          label = 'Organization Name';
+          placeholder = 'e.g. Cadell';
+          typeOptions = `
+            <option value="all">All</option>
+            <option value="fictional">Fictional</option>
+          `;
+          break;
+        case 'name':
+          inputId = `name_${fieldCounter}`;
+          typeId = `nameType_${fieldCounter}`;
+          inputName = 'name';
+          typeName = 'nameType';
+          label = 'Name';
+          placeholder = 'e.g. Marmion';
+          typeOptions = `
+            <option value="all">All</option>
+            <option value="animal">Animal</option>
+            <option value="astronomical">Astronomical</option>
+            <option value="astrological">Astrological</option>
+            <option value="constellation">Constellation</option>
+            <option value="fictional_person">Fictional person</option>
+            <option value="fictional_place">Fictional place</option>
+            <option value="botanical">Botanical</option>
+            <option value="building">Building</option>
+            <option value="toy">Toy</option>
+            <option value="vessel">Vessel</option>
+            <option value="person">Person</option>
+            <option value="geological">Geological</option>
+            <option value="other">Other</option>
+          `;
+          break;
+      }
+
+   fieldHTML = `
+  <div class="field-content">
+    <div class="form-row">
+      <div class="form-group" style="flex: 3;">
+        <label for="${inputId}">${label}</label>
+        <input type="text" name="${inputName}" id="${inputId}" placeholder="${placeholder}" />
+      </div>
+      <div class="form-group" style="flex: 1; min-width: 120px;">
+        <label for="${typeId}">Type</label>
+        <select name="${typeName}" id="${typeId}">
+          ${typeOptions}
+        </select>
+      </div>
+    </div>
+  </div>
+<button type="button" class="remove-field-btn" onclick="removeField(this)" title="Remove this field">−</button>
+`;
+      fieldDiv.innerHTML = fieldHTML;
+      fieldsContainer.appendChild(fieldDiv);
+
+
+      const autocompleteType = fieldType === 'name' ? 'name' : 
+                              fieldType === 'person' ? 'person' :
+                              fieldType === 'place' ? 'place' :
+                              fieldType === 'geog' ? 'geog' :
+                              fieldType === 'org' ? 'org' : 'name';
+      
+      setTimeout(() => {
+        attachSuggest(inputId, autocompleteType);
+      }, 100);
+
+      hideFieldSelector();
+    }
+
+    function removeField(button) {
+      const fieldDiv = button.parentElement;
+      fieldDiv.remove();
+    }
     async function performSearch(page = 1, perPage = 10) {
       if (!currentSearchParams) return;
 
@@ -438,7 +634,7 @@
         }
 
       } catch (error) {
-        resultsDiv.innerHTML = '<p style="color:red;">❌ Error retrieving results. Please check console.</p>';
+        resultsDiv.innerHTML = '<p style="color:red;"> Error retrieving results. Please check console.</p>';
         console.error('Search error:', error);
       }
     }
@@ -592,28 +788,20 @@
         performSearch(currentPage, currentPerPage);
       };
     }
-
-    function createPageButton(pageNum, currentPageNum) {
-    }
-
     document.getElementById('searchForm').addEventListener('submit', async function (e) {
       e.preventDefault();
 
       const form = e.target;
       const q = form.q.value.trim();
       const type = form.type.value;
-      const persName = form.persName.value.trim();
-      const placeName = form.placeName.value.trim();
-      const geogName = form.geogName.value.trim();
-      const orgName = form.orgName.value.trim();
-      const name = form.name.value.trim();
-      const nameType = form.nameType.value;
-      const persNameType = form.persNameType.value;
-      const placeNameType = form.placeNameType.value;
-      const geogNameType = form.geogNameType.value;
-      const orgNameType = form.orgNameType.value;
 
-      if (!q && !persName && !placeName && !geogName && !orgName && !name) {
+      const persNames = Array.from(form.querySelectorAll('input[name="persName"]')).map(input => input.value.trim()).filter(val => val);
+      const placeNames = Array.from(form.querySelectorAll('input[name="placeName"]')).map(input => input.value.trim()).filter(val => val);
+      const geogNames = Array.from(form.querySelectorAll('input[name="geogName"]')).map(input => input.value.trim()).filter(val => val);
+      const orgNames = Array.from(form.querySelectorAll('input[name="orgName"]')).map(input => input.value.trim()).filter(val => val);
+      const names = Array.from(form.querySelectorAll('input[name="name"]')).map(input => input.value.trim()).filter(val => val);
+
+      if (!q && persNames.length === 0 && placeNames.length === 0 && geogNames.length === 0 && orgNames.length === 0 && names.length === 0) {
         alert('Please enter a keyword to search.');
         return;
       }
@@ -621,36 +809,45 @@
       const params = new URLSearchParams();
       if (q) params.append('q', q);
       if (type && type !== 'all') params.append('typeFilter', type);
-      if (persName) {
-        params.append('persName', persName);
+
+      if (persNames.length > 0) {
+        params.append('persName', persNames[0]);
+        const persNameType = form.querySelector('select[name="persNameType"]')?.value;
         if (persNameType && persNameType !== 'all') {
           params.append('persNameType', persNameType);
         }
       }
-      if (placeName) {
-        params.append('placeName', placeName);
+
+      if (placeNames.length > 0) {
+        params.append('placeName', placeNames[0]);
+        const placeNameType = form.querySelector('select[name="placeNameType"]')?.value;
         if (placeNameType && placeNameType !== 'all') {
           params.append('placeNameType', placeNameType);
         }
       }
-      if (geogName) {
-        params.append('geogName', geogName);
+
+      if (geogNames.length > 0) {
+        params.append('geogName', geogNames[0]);
+        const geogNameType = form.querySelector('select[name="geogNameType"]')?.value;
         if (geogNameType && geogNameType !== 'all') {
           params.append('geogNameType', geogNameType);
         }
       }
-      if (orgName) {
-        params.append('orgName', orgName);
+
+      if (orgNames.length > 0) {
+        params.append('orgName', orgNames[0]);
+        const orgNameType = form.querySelector('select[name="orgNameType"]')?.value;
         if (orgNameType && orgNameType !== 'all') {
           params.append('orgNameType', orgNameType);
         }
       }
 
-      if (name && nameType && nameType !== 'all') {
-        params.append('nameValue', name);
-        params.append('nameType', nameType);
-      } else if (name) {
-        params.append('nameValue', name);
+      if (names.length > 0) {
+        params.append('nameValue', names[0]);
+        const nameType = form.querySelector('select[name="nameType"]')?.value;
+        if (nameType && nameType !== 'all') {
+          params.append('nameType', nameType);
+        }
       }
 
       currentSearchParams = params.toString();
@@ -662,6 +859,8 @@
     
     function attachSuggest(inputId, type) {
       const input = document.getElementById(inputId);
+      if (!input) return; 
+      
       let timeout;
       let activeBox = null;
 
@@ -702,27 +901,32 @@
         timeout = setTimeout(async () => {
           positionBox();
 
-          const res = await fetch(`autocomplete_handler.php?term=${encodeURIComponent(query)}&type=${type}`);
-          const suggestions = await res.json();
+          try {
+            const res = await fetch(`autocomplete_handler.php?term=${encodeURIComponent(query)}&type=${type}`);
+            const suggestions = await res.json();
 
-          if (!Array.isArray(suggestions) || suggestions.length === 0) {
-            hideBox();
-            return;
-          }
-
-          suggestionBox.innerHTML = '';
-          suggestions.forEach(s => {
-            const li = document.createElement('li');
-            li.textContent = s;
-            li.addEventListener('click', () => {
-              input.value = s;
+            if (!Array.isArray(suggestions) || suggestions.length === 0) {
               hideBox();
-            });
-            suggestionBox.appendChild(li);
-          });
+              return;
+            }
 
-          suggestionBox.style.display = 'block';
-          activeBox = suggestionBox;
+            suggestionBox.innerHTML = '';
+            suggestions.forEach(s => {
+              const li = document.createElement('li');
+              li.textContent = s;
+              li.addEventListener('click', () => {
+                input.value = s;
+                hideBox();
+              });
+              suggestionBox.appendChild(li);
+            });
+
+            suggestionBox.style.display = 'block';
+            activeBox = suggestionBox;
+          } catch (error) {
+            console.error('Autocomplete error:', error);
+            hideBox();
+          }
         }, 200);
       });
 
@@ -742,12 +946,9 @@
       });
     }
 
-
-    attachSuggest('persName', 'person');
-    attachSuggest('placeName', 'place');
-    attachSuggest('geogName', 'geog');
-    attachSuggest('orgName', 'org');
-    attachSuggest('name', 'name');
+    document.addEventListener('DOMContentLoaded', function() {
+      attachSuggest('persName_1', 'person');
+    });
   </script>
 </body>
 </html>
