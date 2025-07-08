@@ -1,0 +1,904 @@
+<main xmlns:custom="http://whatever" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <title id="mainTitle">&#x201C;The Monastery&#x201D;</title>
+   <body id="mainBody">
+      <div>
+         
+         
+         
+         <body>
+            
+            <div class="apparatus" id="">
+               
+               <div id="top" class="page-title">
+                  <div class="title-text">&#x201C;The Monastery&#x201D;</div>
+                  <hr>
+                  <ul class="mini-contents">
+                     <li><a href="#WITNESSES">Witnesses</a>
+                      &#x007C; 
+                    </li>
+                     <li><a href="#TITLE">Title</a>
+                      &#x007C; 
+                    </li>
+                     <li><a href="#GENRE">Genre</a>
+                      &#x007C; 
+                    </li>
+                     <li><a href="#MAJORMS">Manuscripts</a>
+                      &#x007C; 
+                    </li>
+                     <li><a href="#DATE">Date</a>
+                      &#x007C; 
+                    </li>
+                     <li><a href="#COMPPUB">Composition and Publication</a>
+                      &#x007C; 
+                    </li>
+                     <li><a href="#DISCUSSION">Discussion</a></li>
+                  </ul>
+               </div>
+               
+               
+               <div id="WITNESSES" class="section">
+                  <span class="head-section">Witnesses</span>
+                  
+                  <ul>
+                     
+                     <li>&#x003C;a href&#x003D;"/apparatuses/msia_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSII">MS IA</span>&#x003C;/a&#x003E;</li>
+                     
+                     <li>
+                        <ul>
+                           
+                           <li>&#x003C;a href&#x003D;"/witnesses/now_must_we_leave_poor_martin_there_msia" target&#x003D;"_self"&#x003E;<span class="title-manuscript-">&#x201C;now must we leave poor martin there&#x201D;</span>&#x003C;/a&#x003E;</li>
+                           
+                           <li>&#x003C;a href&#x003D;"/witnesses/come_on_good_horse_and_let_us_see_msia" target&#x003D;"_self"&#x003E;<span class="title-manuscript-">&#x201C;come on good horse and let us see&#x201D;</span>&#x003C;/a&#x003E;</li>
+                           </ul>
+                     </li>
+                     
+                     <li>&#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E;</li>
+                     
+                     <li>
+                        <ul>
+                           
+                           <li>&#x003C;a href&#x003D;"/witnesses/monastery_msiii" target&#x003D;"_self"&#x003E;<span class="title-poem-JRMONASTERY">&#x201C;The Monastery&#x201D;</span>&#x003C;/a&#x003E;</li>
+                           </ul>
+                     </li>
+                     </ul>
+                  </div>
+               
+               
+               <div id="TITLE" class="section">
+                  <span class="head-section">Title</span>
+                  
+                  <div class="p">Entitled <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> in the &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E; fair copy, 
+                        written as <span class="title-poem-JRTHEMONASTERY">&#x201C;THE MONASTERY&#x201D;</span>; 
+                        untitled in the &#x003C;a href&#x003D;"/apparatuses/msia_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIA">MS IA</span>&#x003C;/a&#x003E; draft.</div>
+                  </div>
+               
+               <div id="GENRE" class="section">
+                  <span class="head-section">Genre</span>
+                  
+                  <div class="p">Narrative poem, rendering in verse scenes from <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span> by <span class="persName-WS">Walter Scott</span>.</div>
+                  </div>
+               
+               <div id="MAJORMS" class="section">
+                  <span class="head-section">Manuscripts</span>
+                  
+                  <div class="p">&#x003C;a href&#x003D;"/apparatuses/msia_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIA">MS IA</span>&#x003C;/a&#x003E;; &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E;.</div>
+                  
+                  <div class="p">Facsimiles by permission of <span class="title-archive-BEINECKERUSKINCOLLECTION">John Ruskin Collection</span>, General Collection, Beinecke Rare Book and Manuscript Library, Yale University. Transcriptions of texts and commentary &#x00A9; <span class="persName-DCH">David C. Hanson</span>.</div>
+                  </div>
+               
+               <div id="DATE" class="section">
+                  <span class="head-section">Date</span>
+                  
+                  <div class="p">A range of <span class="date-1827-01-01-1829-12-31">1827&#x2013;29</span> is possible. &#x201C;Book I&#x201D; and &#x201C;Book II&#x201D; may have been composed as early as <span class="date-1827-01-01-1828-12-31">1827&#x2013;28</span>, 
+                        but more likely in <span class="date-1828">1828</span>; 
+                        &#x201C;Book III&#x201D; and &#x201C;Book IV&#x201D; may have been composed and fair&#x2010;copied (not completed) by <span class="date-1829-03">March 1829</span>.</div>
+                  
+                  
+                  <div class="p"><span class="persName-WGC">W. G. Collingwood</span> dated the work from the <span class="date-1828-01-1828-06">&#x201C;early part of 1828&#x201D; or &#x201C;first half of 1828&#x201D;</span>, 
+                        based on his analysis of the sequence in which <span class="persName-JR">Ruskin</span> entered poetry selections in &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E; (see <a href="#COMPPUB">Composition and Publication</a>; and see 
+                        &#x003C;a href&#x003D;"/notes/bibliography#JRPOEMS4D1891" target&#x003D;"_self"&#x003E;<span class="title-book-JRPOEMS4D1891"><i>Poems</i> &#x005B;4<sup>o</sup></span>, 1891&#x005D;&#x003C;/a&#x003E;, 1:262, 272; 
+                        &#x003C;a href&#x003D;"/notes/bibliography#JRPOEMS8D1891" target&#x003D;"_self"&#x003E;<span class="title-book-JRPOEMS8D1891"><i>Poems</i> &#x005B;8<sup>o</sup>, 1891&#x005D;</span>&#x003C;/a&#x003E; 1:263, 273; 
+                        &#x003C;a href&#x003D;"/notes/bibliography#JRWORKSLE" target&#x003D;"_self"&#x003E;<span class="persName-JR">Ruskin</span>, <span class="title-book-JRWORKSLE"><i>Works</i></span>&#x003C;/a&#x003E;, 2:530). 
+                        <span class="persName-ETC">E. T. Cook</span> and <span class="persName-AW">Alexander Wedderburn</span> disagreed 
+                        and ascribed the work to <span class="date-1827">1827</span>, in the belief that the poem was &#x201C;a result of &#x005B;<span class="persName-JR">Ruskin</span>&#x02BC;s&#x005D; visit 
+                        to <span class="placeName-SCOTLAND">Scotland</span> in that year&#x201D; 
+                        (&#x003C;a href&#x003D;"/notes/bibliography#JRWORKSLE" target&#x003D;"_self"&#x003E;<span class="persName-JR">Ruskin</span>, <span class="title-book-JRWORKSLE"><i>Works</i></span>&#x003C;/a&#x003E; 2:260 n. 1; and see 276 n. 1). 
+                        <span class="persName-HGV">Helen Viljoen</span> was initially inclined to accept the earlier date, because she considered the hand in the 
+                        &#x003C;a href&#x003D;"/apparatuses/msia_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIA">MS IA</span>&#x003C;/a&#x003E; draft to be &#x201C;very childish&#x201D;, but then she decided that 
+                        <span class="persName-ETC">Cook</span> and <span class="persName-AW">Wedderburn</span> had &#x201C;no legitimate basis&#x201D; 
+                        for correcting <span class="persName-WGC">Collingwood</span>&#x02BC;s date of <span class="date-1828">1828</span> 
+                        (&#x003C;a href&#x003D;"/notes/bibliography#VILJOENPAPERS" target&#x003D;"_self"&#x003E;&#x201C;Helen Gill Viljoen Papers&#x201D;&#x003C;/a&#x003E;, box F, transcription of <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span>).</div>
+                  
+                  
+                  <div class="p">The reasoning by the editors of the <span class="title-book-JRWORKSLE">Library Edition</span> seems to stand on the most speculative evidence&#x2014;namely, 
+                        <span class="persName-JR">Ruskin</span>&#x02BC;s comment in <span class="title-book-JRPRAETERITA"><i>Praeterita</i></span> 
+                        that he &#x201C;used to read the <span class="title-book-SCOTTABBOT"><i>Abbot</i></span> at <span class="placeName-KINROSS">Kinross</span>, 
+                        and the <span class="title-book-SCOTTMONASTERY"><i>Monastery</i></span> in <span class="geogName-GLENFARG">Glen Farg</span>&#x201D; 
+                        (&#x003C;a href&#x003D;"/notes/bibliography#JRWORKSLE" target&#x003D;"_self"&#x003E;<span class="persName-JR">Ruskin</span>, <span class="title-book-JRWORKSLE"><i>Works</i></span>&#x003C;/a&#x003E;, 2:260 n. 1; 35:16). 
+                        While <span class="persName-JR">Ruskin</span> may well have associated <span class="persName-WS">Walter Scott</span>&#x02BC;s novels with landmarks along the Ruskins&#x02BC; route to <span class="placeName-SCOTLAND">Scotland</span> in the <span class="date-1820-01-01-1829-12-31">1820s</span>, 
+                        the editors neglect to explain why these associations should be tied so specifically to the journey of <span class="date-1827">1827</span>. It is not known when <span class="persName-JR">Ruskin</span> first read <span class="persName-WS">Scott</span>&#x02BC;s <span class="title-book-SCOTTMONASTERY"><i>Monastery</i></span> 
+                        or heard it read to him. The case is strengthened, however, by the contents of &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E;, 
+                        the manuscript containing the fair copy of <span class="title-poem-JRMONASTERY">&#x201C;The Monastery&#x201D;</span>. Immediately preceding 
+                        <span class="persName-JR">Ruskin</span>&#x02BC;s poem occurs the anthology, &#x003C;a href&#x003D;"/apparatuses/poetry_discriptive_apparatus" target&#x003D;"_self"&#x003E;<span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span>&#x003C;/a&#x003E;, 
+                        which includes poems describing <span class="placeName-building-LOCHLEVENCAS">Loch Leven Castle</span> and <span class="geogName-GLENFARG">Glen Farg</span>&#x2014;the 
+                        points along the journey to <span class="placeName-PERTH">Perth</span> that, according to <span class="title-book-JRPRAETERITA"><i>Praeterita</i></span>, 
+                        <span class="persName-JR">Ruskin</span> connected with his reading of <span class="persName-WS">Scott</span>&#x02BC;s novels. (In fact, it may have been this evidence in 
+                        <span class="title-manuscript-MSIII">MS III</span> that originally prompted <span class="persName-JR">Ruskin</span>&#x02BC;s comment in the autobiography, 
+                        rather than this evidence independently documenting his memory.)</div>
+                  
+                  
+                  <div class="p">In using this statement in <span class="title-book-JRPRAETERITA"><i>Praeterita</i></span> 
+                        to link <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> to the family journey to <span class="placeName-PERTH">Perth</span> in <span class="date-1827">1827</span>, 
+                        the editors of the <span class="title-book-JRWORKSLE">Library Edition</span> evidently did not base their conclusion on the juxtaposition of the poem with a small anthology of poems in &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E;, 
+                        &#x003C;a href&#x003D;"/apparatuses/poetry_discriptive_apparatus" target&#x003D;"_self"&#x003E;<span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span>&#x003C;/a&#x003E;, 
+                        probably because they believed the latter to date from <span class="date-1826">1826</span> 
+                        (see &#x003C;a href&#x003D;"/notes/bibliography#JRWORKSLE" target&#x003D;"_self"&#x003E;<span class="persName-JR">Ruskin</span>, <span class="title-book-JRWORKSLE"><i>Works</i></span>&#x003C;/a&#x003E;, 2:260 n. 1, and see 2:535). 
+                        The poems in <span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span> do in fact belong to the family tour of <span class="date-1827">1827</span>, thus tending to confirm <span class="persName-ETC">Cook</span> and <span class="persName-AW">Wedderburn</span>&#x02BC;s speculations. 
+                        <span class="persName-HGV">Viljoen</span>&#x02BC;s qualms about a date this early can be resolved by evidence that this tour fell unusually late in <span class="date-1827">1827</span>&#x2014;primarily 
+                        in <span class="date-1827-08-1827-11">September and October, with departure sometime in August, and return sometime in November</span> 
+                        (see &#x003C;a href&#x003D;"/notes/tours_of_1826-27_note" target&#x003D;"_self"&#x003E;Tours of <span class="date-1826-1827">1826&#x2013;27</span>&#x003C;/a&#x003E;).</div>
+                  
+                  
+                  <div class="p">The evidence is more indirect regarding whether <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> specifically&#x2014;or at least its first one or two books&#x2014;should be considered as contemporaneous 
+                        with the circa <span class="date-1827-08-1827-11">August&#x2013;November 1827</span> <span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span> project&#x2014;or, 
+                        as <span class="persName-WGC">Collingwood</span> contends, an insertion in that place in &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E; at a later time. As explained in 
+                        <a href="#COMPPUB">Composition and Publication</a>, the only documented record of <span class="persName-JR">Ruskin</span>&#x02BC;s labor 
+                        on <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> dates from <span class="date-1829-03">March 1829</span>, 
+                        and even that passing reference in a letter is somewhat ambiguous. The statement might mean that, at that time, he was returning to composition and/or fair copy of the poem itself, 
+                        or that he was working on something in <span class="title-manuscript-MSIII">MS III</span>, a manuscript that he simply identified by its happening to contain <span class="title-poem-JRMONASTERY">&#x201C;The Monastery&#x201D;</span>&#x2014;that is, 
+                        the &#x003C;a href&#x003D;"/notes/red_book_note" target&#x003D;"_self"&#x003E;Red Book&#x003C;/a&#x003E; known in the family for its containing the poem, 
+                        <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span>. Based on the concatenation of evidence 
+                        in <a href="#COMPPUB">Composition and Publication</a>, it appears likely that, in <span class="date-1829-03">March 1829</span>, 
+                        he did compose and/or fair&#x2010;copy some portion of <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span>&#x2014;probably, 
+                        books 3&#x2013;4 (which he left incomplete)&#x2014;while books 1&#x2013;2 date from an earlier period. This period may be as early as 
+                        <span class="date-1827-08-1827-11">between August and November 1827</span>, but more likely date from some time in <span class="date-1828">1828</span>. 
+                        As for the poem&#x02BC;s associations with travel to <span class="placeName-SCOTLAND">Scotland</span>, rather than deriving from the &#x003C;a href&#x003D;"/notes/tours_of_1826-27_note" target&#x003D;"_self"&#x003E;<span class="date-1827">Tour of 1827</span>&#x003C;/a&#x003E;, 
+                        the poem could equally be connected with the sadder occasion of mourning the loss of <span class="persName-JR">Ruskin</span>&#x02BC;s &#x003C;a href&#x003D;"/notes/richardson_jessie_note" target&#x003D;"_self"&#x003E;&#x003C;/a&#x003E;<span class="persName-JRP">Aunt Jessie</span>, 
+                        who died in <span class="placeName-PERTH">Perth</span> in <span class="date-1828-05">May 1828</span>.</div>
+                  
+                  
+                  <div class="p">The <span class="title-manuscript-MSIII">MS III</span> fair copy of book 3 shares some handwriting features with <span class="persName-JR">Ruskin</span>&#x02BC;s &#x003C;a href&#x003D;"/notes/new_years_poems_note" target&#x003D;"_self"&#x003E;<span class="date-1829-01-01">New Year&#x02BC;s 1829</span> productions&#x003C;/a&#x003E;, 
+                        &#x003C;a href&#x003D;"/apparatuses/harry_and_lucy_apparatus" target&#x003D;"_self"&#x003E;<span class="title-lesson-JRHARRYANDLUCYVOL3">&#x201C;Harry and Lucy Vol. III&#x201D;</span>&#x003C;/a&#x003E; and 
+                        &#x003C;a href&#x003D;"/apparatuses/a_battle_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRABATTLEIRREGULARMEASURE">&#x201C;A Battle: Irregular Measure&#x201D;</span>&#x003C;/a&#x003E;. 
+                        There are also similarities in presentation with a production probably meant for his <span class="persName-JJR">his father</span>&#x02BC;s <span class="date-1829-05-10">10 May 1829 birthday</span>, the pamphlet 
+                        &#x003C;a href&#x003D;"/apparatuses/battle_of_waterloo_ms_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-BATTLEOFWATERLOOMS">&#x201C;Battle of Waterloo, A Play, in Two Acts, with Other Small Poems, Dedicated to His Father&#x201D;</span>&#x003C;/a&#x003E;. &#x005B;More to come.&#x005D; 
+                    </div>
+                  
+                  
+                  </div>
+               
+               <div id="COMPPUB" class="section">
+                  <span class="head-section">Composition and Publication</span>
+                  
+                  <div class="p">Previously unpublished in entirety. Brief excerpts were printed in 
+                        &#x003C;a href&#x003D;"/notes/bibliography#JRPOEMS4D1891" target&#x003D;"_self"&#x003E;<span class="title-book-JRPOEMS4D1891"><i>Poems</i> &#x005B;4<sup>o</sup></span>, 1891&#x005D;&#x003C;/a&#x003E;, 1:272; 
+                        &#x003C;a href&#x003D;"/notes/bibliography#JRPOEMS8D1891" target&#x003D;"_self"&#x003E;<span class="title-book-JRPOEMS8D1891"><i>Poems</i> &#x005B;8<sup>o</sup>, 1891&#x005D;</span>&#x003C;/a&#x003E; 1:273; 
+                        &#x003C;a href&#x003D;"/notes/bibliography#JRWORKSLE" target&#x003D;"_self"&#x003E;<span class="persName-JR">Ruskin</span>, <span class="title-book-JRWORKSLE"><i>Works</i></span>&#x003C;/a&#x003E; 2:260 n. 1, 276 n. 1.</div>
+                  
+                  
+                  <div class="p">In a &#x003C;a href&#x003D;"/apparatuses/mr_to_jjr_1829-03-04_al_apparatus" target&#x003D;"_self"&#x003E;<span class="title-letter-"><span class="date-1829-03-04">4 March 1829</span> letter</span>&#x003C;/a&#x003E; to her <span class="persName-JJR">husband</span>, 
+                        <span class="persName-MR">Margaret Ruskin</span> remarked on <span class="persName-JR">John</span>&#x02BC;s writing &#x201C;a novel&#x201D; 
+                        (&#x003C;a href&#x003D;"/notes/bibliography#RFL" target&#x003D;"_self"&#x003E;<span class="title-book-RFL"><i>Ruskin Family Letters</i></span>, ed. <span class="persName-VAB">Burd</span>&#x003C;/a&#x003E;, 185)&#x2014;presumably 
+                        referring to his versification of scenes from <span class="persName-WS">Walter Scott</span>&#x02BC;s novel, <span class="title-book-"><i>The Monastery</i></span> (<span class="date-1820">1820</span>). 
+                        In a &#x003C;a href&#x003D;"/apparatuses/jr_to_jjr_1829-03-10_al_apparatus" target&#x003D;"_self"&#x003E;<span class="title-letter-"><span class="date-1829-03-10">10 March</span> letter</span>&#x003C;/a&#x003E; to his <span class="persName-JJR">father</span>, 
+                        <span class="persName-JR">John</span> confirmed: &#x201C;I am trying to get that &#x003C;a href&#x003D;"/notes/red_book_note" target&#x003D;"_self"&#x003E;red book&#x003C;/a&#x003E; of mine 
+                        which has <span class="title-poem-JRTHEMONASTERY">the Monastery</span> in it finished, by the time you come home&#x201D; 
+                        (&#x003C;a href&#x003D;"/notes/bibliography#RFL" target&#x003D;"_self"&#x003E;<span class="title-book-RFL"><i>Ruskin Family Letters</i></span>, ed. <span class="persName-VAB">Burd</span>&#x003C;/a&#x003E;, 192). 
+                        Of the surviving &#x003C;a href&#x003D;"/notes/red_book_note" target&#x003D;"_self"&#x003E;Red Books&#x003C;/a&#x003E;, only &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E; contains any portion of this work; 
+                        and while <span class="persName-JR">Ruskin</span>&#x02BC;s statement is ambiguous, as remarked in <a href="#DATE">Date</a>, respecting whether he was working <i>on</i> the poem 
+                        or simply in the &#x003C;a href&#x003D;"/notes/red_book_note" target&#x003D;"_self"&#x003E;Red Book&#x003C;/a&#x003E; containing the poem, <span class="persName-MR">Margaret</span> indicated to <span class="persName-JJR">John James</span> that she saw definite progress on <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> itself: 
+                        &#x201C;he has commenced writing a novel &#x0026; a Sermon both as far as they have gone very tolerable I assure you&#x201D; 
+                        (&#x003C;a href&#x003D;"/apparatuses/mr_to_jjr_1829-03-04_al_apparatus" target&#x003D;"_self"&#x003E;<span class="title-letter-">letter of <span class="date-1829-03-04">4 March 1829</span></span>&#x003C;/a&#x003E; &#x005B;&#x003C;a href&#x003D;"/notes/bibliography#RFL" target&#x003D;"_self"&#x003E;<span class="title-book-RFL"><i>Ruskin Family Letters</i></span>&#x003C;/a&#x003E;, ed. <span class="persName-VAB">Burd</span>, 185&#x005D;).</div>
+                  
+                  
+                  <div class="p"><span class="persName-MR">Margaret</span>&#x02BC;s term <i>commenced</i> is also ambiguous, suggesting that <span class="persName-JR">Ruskin</span> 
+                        began his &#x201C;novel&#x201D; at this time; however, in his &#x003C;a href&#x003D;"/apparatuses/jr_to_jjr_1829-03-10_al_apparatus" target&#x003D;"_self"&#x003E;<span class="title-letter-"><span class="date-1829-03-10">10 March 1829</span> letter</span>&#x003C;/a&#x003E; to his father, 
+                        <span class="persName-JR">Ruskin</span> implies that <span class="persName-JJR">John James</span> was already familiar with some portion of the versified novel. 
+                        Initial composition may therefore have significantly predated <span class="persName-JR">Ruskin</span>&#x02BC;s &#x201C;finishing&#x201D; of &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E;. 
+                        Physical evidence in the &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E; fair copy 
+                        can be interpreted as reflecting two distinct stages of labor on the poem&#x2014;a first stage comprising books 1&#x2013;2, and a second (uncompleted) stage comprising books 3&#x2013;4.</div>
+               </div>
+               
+               
+               <div id="COMPPUB1" class="subsection">
+                  <span class="head-subsection">Stage One of Composition, circa 1828</span>
+                  
+                  
+                  <div class="p">In &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E;, <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> 
+                        immediately follows a group of poems entitled 
+                        &#x003C;a href&#x003D;"/apparatuses/poetry_discriptive_apparatus" target&#x003D;"_self"&#x003E;<span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span>&#x003C;/a&#x003E;, 
+                        which <span class="persName-JR">Ruskin</span> fair&#x2010;copied no earlier than <span class="date-1827-05">May 1827</span>, and probably sometime between <span class="date-1827-08-01-1828-01-01">August 1827 and New Year&#x02BC;s 1828</span> 
+                        (see &#x003C;a href&#x003D;"/apparatuses/wales_apparatus#DATE" target&#x003D;"_self"&#x003E;<span class="title-poem-JRWALES">&#x201C;Wales&#x201D;</span>: Date&#x003C;/a&#x003E;; and 
+                        &#x003C;a href&#x003D;"/apparatuses/poetry_discriptive_apparatus#DATE" target&#x003D;"_self"&#x003E;<span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span>: Date&#x003C;/a&#x003E;). 
+                        There is no physical break between the anthology and the &#x201C;novel&#x201D; to indicate a change in genre or project, 
+                        so it is possible that <span class="persName-JR">Ruskin</span> considered <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> to be a continuation of the &#x003C;a href&#x003D;"/apparatuses/poetry_discriptive_apparatus" target&#x003D;"_self"&#x003E;<span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span>&#x003C;/a&#x003E;. 
+                        Given the inclusion in <span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span> of travel poems 
+                        about <span class="geogName-GLENFARG">Glenfarg</span> and <span class="placeName-building-LOCHLEVENCAS">Loch Leven</span>, 
+                        and the juxtaposition of these poems with the verse novel, this portion of <span class="title-manuscript-MSIII">MS III</span> 
+                        bears witness to (and may even have inspired) <span class="persName-JR">Ruskin</span>&#x02BC;s autobiographical recollection that he 
+                        &#x201C;used to read the <span class="title-book-SCOTTABBOT"><i>Abbot</i></span> at <span class="placeName-KINROSS">Kinross</span>, 
+                        and the <span class="title-book-SCOTTMONASTERY"><i>Monastery</i></span> in <span class="geogName-GLENFARG">Glen Farg</span>, 
+                        which I confused with &#x2018;<span class="geogName-GLENDEARG">Glendearg</span>&#x2019; &#x005B;the fictional setting of the novel; see <a href="#DISCUSSION">Discussion</a>, and see also 
+                        &#x003C;a href&#x003D;"/notes/glenfarg_place_note" target&#x003D;"_self"&#x003E;<span class="placeName-GLENFARG">Glenfarg</span> (place)&#x003C;/a&#x003E;&#x005D;&#x201D;. 
+                        He &#x201C;thought&#x201D;, he goes on in <span class="title-book-JRPRAETERITA"><i>Praeterita</i></span>, &#x201C;that the <span class="persName-fictional-WHITELADY">White Lady</span> had as certainly lived by the streamlet &#x005B;the <span class="geogName-FARG">Farg</span>&#x005D; in that glen of the <span class="geogName-OCHILS">Ochils</span>, 
+                        as the <span class="persName-MQS">Queen of Scots</span> in the island of <span class="geogName-LOCHLEVEN">Loch Leven</span>&#x201D; 
+                        (&#x003C;a href&#x003D;"/notes/bibliography#JRWORKSLE" target&#x003D;"_self"&#x003E;<span class="persName-JR">Ruskin</span>, <span class="title-book-JRWORKSLE"><i>Works</i></span>&#x003C;/a&#x003E;, 35:16). 
+                        As further evidence shows, however, while <span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span> establishes a lower limit 
+                        in the time of composition for <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span>, the two projects were distinct.</div>
+                  
+                  
+                  <div class="p">If &#x003C;a href&#x003D;"/apparatuses/poetry_discriptive_apparatus" target&#x003D;"_self"&#x003E;<span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span>&#x003C;/a&#x003E; and the 
+                        &#x003C;a href&#x003D;"/notes/tours_of_1826-27_note" target&#x003D;"_self"&#x003E;<span class="date-1827">Tour of 1827</span> to <span class="placeName-SCOTLAND">Scotland</span>&#x003C;/a&#x003E; form a terminus a quo 
+                        for composition of <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span>, how much time separated the verse novel from the tour poem anthology? For this question, the only evidence is handwriting. 
+                        The hand for the verse novel uses print lettering similar to that for &#x003C;a href&#x003D;"/apparatuses/poetry_discriptive_apparatus" target&#x003D;"_self"&#x003E;<span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span>&#x003C;/a&#x003E;, but generally smaller. 
+                        Size of lettering in fact varies considerably within the anthology itself, the smallest being used for its first poem, 
+                        &#x003C;a href&#x003D;"/apparatuses/ragland_castle_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRRAGLANDCASTLE">&#x201C;Ragland Castle&#x201D;</span>&#x003C;/a&#x003E;. Still, regardless of size, and despite the similarity in formation of letters, 
+                        there is greater affinity between the lettering throughout the poems in &#x003C;a href&#x003D;"/apparatuses/poetry_discriptive_apparatus" target&#x003D;"_self"&#x003E;<span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span>&#x003C;/a&#x003E; 
+                        and the lettering used for the original versions of two of its poems, &#x003C;a href&#x003D;"/apparatuses/wales_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRWALES">&#x201C;Wales&#x201D;</span>&#x003C;/a&#x003E; and 
+                        &#x003C;a href&#x003D;"/apparatuses/spring_blank_verse_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRSPRINGBLANKVERSE">&#x201C;Spring: Blank Verse&#x201D;</span>&#x003C;/a&#x003E; 
+                        (as first fair&#x2010;copied in a &#x003C;a href&#x003D;"/apparatuses/jr_to_jjr_1827-05_al_apparatus" target&#x003D;"_self"&#x003E;<span class="title-letter-"><span class="date-1827-05">May 1827</span> letter</span>&#x003C;/a&#x003E; by <span class="persName-JR">Ruskin</span> to his father), 
+                        than between the respective hands for the poetry anthology and for <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span>.</div>
+                  
+                  
+                  <div class="p">The orthography of <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> is distinctive for its studied attention to punctuation, which is largly neglected in the <span class="date-1827">1827</span> fair copies 
+                        of &#x003C;a href&#x003D;"/apparatuses/wales_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRWALES">&#x201C;Wales&#x201D;</span>&#x003C;/a&#x003E;, &#x003C;a href&#x003D;"/apparatuses/spring_blank_verse_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRSPRINGBLANKVERSE">&#x201C;Spring: Blank Verse&#x201D;</span>&#x003C;/a&#x003E; as well as the poems in &#x003C;a href&#x003D;"/apparatuses/poetry_discriptive_apparatus" target&#x003D;"_self"&#x003E;<span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span>&#x003C;/a&#x003E;. 
+                        In book 1 and the first eighty lines of book 2, almost every line of <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> ends with punctuation, most frequently a prominent comma formed to look like book print, with a dot and a curl, although the commas 
+                        hover above the baseline like a swimming tadpole. There are also semicolons, which are almost consistently formed upside down, with the comma above the point. 
+                        The eccentricity of the punctuation resembles the usage in &#x003C;a href&#x003D;"/apparatuses/eudosia_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JREUDOSIA">&#x201C;Eudosia&#x201D;</span>&#x003C;/a&#x003E; in &#x003C;a href&#x003D;"/apparatuses/msiv_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIV">MS IV</span>&#x003C;/a&#x003E;. Here, too, the commas are typeface&#x2010;like, 
+                        though they now fall on the baseline; and there are no upside&#x2010;down semicolons in <span class="title-poem-JREUDOSIA">&#x201C;Eudosia&#x201D;</span>, although a new oddity turns up in the form of a two&#x2010;point ellipsis, like a colon on its side, its function unclear. 
+                        (<span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> is also punctuated with colons, but their rhetorical or grammatical function is obscure.) 
+                        What most tellingly links the punctuation practice in &#x003C;a href&#x003D;"/apparatuses/eudosia_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JREUDOSIA">&#x201C;Eudosia&#x201D;</span>&#x003C;/a&#x003E; with that in <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> 
+                        is that, in both cases, the dense but confusing marks abruptly give out altogether after several pages of fair&#x2010;copying, suggesting that <span class="persName-JR">Ruskin</span> added the punctuation all at once, 
+                        layering the marks over top of the already fair&#x2010;copied text. Evidently, he had not yet learned to integrate punctuation as a rhetorical and grammatical element of writing, 
+                        but treated it effectively as a decorative feature in fair copy, as if to enhance the imitation of typeface. He used almost no punctuation when drafting the poem, 
+                        as witnessed by the two draft fragments in &#x003C;a href&#x003D;"/apparatuses/msia_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIA">MS IA</span>&#x003C;/a&#x003E;, 
+                        &#x003C;a href&#x003D;"/witnesses/now_must_we_leave_poor_martin_there_msia" target&#x003D;"_self"&#x003E;<span class="title-manuscript-">&#x201C;now must we leave poor martin there&#x201D;</span>&#x003C;/a&#x003E; and 
+                        &#x003C;a href&#x003D;"/witnesses/come_on_good_horse_and_let_us_see_msia" target&#x003D;"_self"&#x003E;<span class="title-manuscript-">&#x201C;come on good horse and let us see&#x201D;</span>&#x003C;/a&#x003E;. 
+                        (See also &#x003C;a href&#x003D;"/apparatuses/constellations_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRTHECONSTELLATIONS">&#x201C;The Constellations&#x201D;</span>&#x003C;/a&#x003E;, which, in its 
+                        <span class="title-manuscript-RFT70">RF T70</span> fair copy, exhibits the decorative rather than rhetorical sprinkling of punctuation marks only at the start of the manuscript, 
+                        but which does have the colons turned right&#x2010;side up, suggesting a slightly more advanced grasp of usage.)</div>
+                  
+                  
+                  <div class="p">Since <span class="persName-JR">Ruskin</span> himself dated &#x003C;a href&#x003D;"/apparatuses/eudosia_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JREUDOSIA">&#x201C;Eudosia&#x201D;</span>&#x003C;/a&#x003E; as <span class="date-1828-09-28">28 September 1828</span> 
+                        (whether he meant the beginning or termination of that project), a timeline takes shape starting with <span class="persName-JR">Ruskin</span>&#x02BC;s first use of pen and ink, 
+                        which his <span class="persName-MR">mother</span> documented in <span class="date-1827-04">April 1827</span> (see &#x003C;a href&#x003D;"/notes/hand_note" target&#x003D;"_self"&#x003E;The Ruskin Family Handwriting&#x003C;/a&#x003E;). This is the period when <span class="persName-JR">Ruskin</span> 
+                        composed &#x003C;a href&#x003D;"/apparatuses/wales_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRWALES">&#x201C;Wales&#x201D;</span>&#x003C;/a&#x003E; and 
+                        &#x003C;a href&#x003D;"/apparatuses/spring_blank_verse_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRSPRINGBLANKVERSE">&#x201C;Spring: Blank Verse&#x201D;</span>&#x003C;/a&#x003E;, 
+                        and sent the poems in a &#x003C;a href&#x003D;"/apparatuses/jr_to_jjr_1827-05_al_apparatus" target&#x003D;"_self"&#x003E;<span class="title-letter-"><span class="date-1827-05">May 1827</span> letter</span>&#x003C;/a&#x003E; to his father, 
+                        in anticipation of the &#x003C;a href&#x003D;"/notes/tours_of_1826-27_note" target&#x003D;"_self"&#x003E;<span class="date-1827">Tour of 1827</span>&#x003C;/a&#x003E;. 
+                        While that tour was delayed until <span class="date-1827-08-1827-11">August&#x2013;November</span>, its product in the 
+                        &#x003C;a href&#x003D;"/apparatuses/poetry_discriptive_apparatus" target&#x003D;"_self"&#x003E;<span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span>&#x003C;/a&#x003E; anthology is 
+                        orthographically and thematically more akin to <span class="title-poem-JRWALES">&#x201C;Wales&#x201D;</span> and 
+                        <span class="title-poem-JRSPRINGBLANKVERSE">&#x201C;Spring: Blank Verse&#x201D;</span> than to <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> and 
+                        &#x003C;a href&#x003D;"/apparatuses/constellations_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRTHECONSTELLATIONS">&#x201C;The Constellations&#x201D;</span>&#x003C;/a&#x003E;, 
+                        which share a style of punctuation and other features with <span class="title-poem-JREUDOSIA">&#x201C;Eudosia&#x201D;</span>. (<span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> and 
+                        <span class="title-poem-JREUDOSIA">&#x201C;Eudosia&#x201D;</span> are also alike in being divided into &#x201C;books&#x201D;.) 
+                        This suggests that, despite the lack of a physical separation between <span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span> and <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> 
+                        in &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E;, those two projects were separated by a number of months, 
+                        falling between the Ruskins&#x02BC; return to <span class="placeName-building-HERNE">Herne Hill</span> 
+                        from <span class="placeName-SCOTLAND">Scotland</span> in <span class="date-1827-11">November 1827</span> and the composition of <span class="title-poem-JREUDOSIA">&#x201C;Eudosia&#x201D;</span> in <span class="date-1828-09">September 1828</span>.</div>
+                  
+                  
+                  <div class="p">This first stage of composition and fair&#x2010;copying appears clearly demarcated in &#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E;, 
+                        with books 1&#x2013;2 extending from the title, <span class="title-poem-JRTHEMONASTERY">&#x201C;THE MONASTERY&#x201D;</span>,  to almost the end of the notebook (pp. 70&#x2013;80). 
+                        On p. 80, <span class="persName-JR">Ruskin</span> concludes with a colophon, &#x201C;<span class="caps">END OF BOOK SECOND</span> / <span class="smallcaps">HERNE HILL</span> / <span class="smallcaps">DULWICH</span>&#x201D;. 
+                        Inserted above the &#x201C;<span class="caps">END OF BOOK SECOND</span>&#x201D; is a direction to the reader to &#x201C;go back to page 52&#x201D; 
+                        (since <span class="persName-JR">Ruskin</span> had run out of available space at the end of the notebook), 
+                        and on that earlier page the poem resumes with book 3, and extends through book 4, which breaks off incomplete on p. 58, after 52 lines of verse.</div>
+                  
+                  
+                  
+                  <div class="p">A hiatus in composition would not necessarily have corresponded with the end of fair&#x2010;copying book 2, given that, in any case, the fair&#x2010;copying was delimited 
+                        by the physical end of the red book. Nonetheless, it seems probable that <span class="persName-JR">Ruskin</span> signaled a significant break at the end of book 2 by adding the &#x201C;publication&#x201D; information 
+                        &#x201C;<span class="smallcaps"><span class="placeName-building-HERNE">HERNE HILL</span></span> / <span class="smallcaps"><span class="placeName-DULWIICH">DULWICH</span></span>&#x201D;. No evidence proves when he inserted the direction to &#x201C;go back to page 52&#x201D;, 
+                        but handwriting evidence in book 3 suggests that he took up that phase at a different time and under other circumstances. This division in the stages 
+                        of composition is further supported by the two separate surviving witnesses of rough draft in &#x003C;a href&#x003D;"/apparatuses/msia_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIA">MS IA</span>&#x003C;/a&#x003E;, 
+                        &#x003C;a href&#x003D;"/witnesses/now_must_we_leave_poor_martin_there_msia" target&#x003D;"_self"&#x003E;<span class="title-manuscript-">&#x201C;now must we leave poor martin there&#x201D;</span>&#x003C;/a&#x003E; and 
+                        &#x003C;a href&#x003D;"/witnesses/come_on_good_horse_and_let_us_see_msia" target&#x003D;"_self"&#x003E;<span class="title-manuscript-">&#x201C;come on good horse and let us see&#x201D;</span>&#x003C;/a&#x003E;. 
+                        The first, which is a draft of a portion of book 2, is written in cursive with pencil; the second, which is a draft of a portion of book 3, 
+                        is written in cursive with pen and ink. When <span class="persName-JR">Ruskin</span> first began to use pen and ink in <span class="date-1827">1827</span>, he restricted his penmanship to fair&#x2010;copying in print letters, 
+                        while continuing to rely on pencil for cursive script. Later, he transitioned to pen and ink for both draft in cursive and fair copy in print lettering 
+                        (see &#x003C;a href&#x003D;"/notes/hand_note" target&#x003D;"_self"&#x003E;The Ruskin Family Handwriting&#x003C;/a&#x003E;). 
+                        An example of the former is <span class="persName-JR">Ruskin</span>&#x02BC;s 
+                        &#x003C;a href&#x003D;"/apparatuses/jr_to_jjr_1827-05_al_apparatus" target&#x003D;"_self"&#x003E;<span class="title-letter-"><span class="date-1827-05">May 1827</span> letter</span>&#x003C;/a&#x003E; to his father, 
+                        in which he fair&#x2010;copied the poems &#x003C;a href&#x003D;"/apparatuses/wales_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRWALES">&#x201C;Wales&#x201D;</span>&#x003C;/a&#x003E; and 
+                        &#x003C;a href&#x003D;"/apparatuses/spring_blank_verse_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRSPRINGBLANKVERSE">&#x201C;Spring: Blank Verse&#x201D;</span>&#x003C;/a&#x003E;, in ink print lettering, 
+                        but wrote the body text of the letter in pencil cursive. An example of the latter is the <span class="date-1828-01-01-1829-12-31">1828&#x2013;29</span> handmade pamphlet, &#x003C;a href&#x003D;"/apparatuses/msii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIA">MS II</span>&#x003C;/a&#x003E;, 
+                        which includes ink cursive draft of &#x003C;a href&#x003D;"/apparatuses/eudosia_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JREUDOSIA">&#x201C;Eudosia&#x201D;</span>&#x003C;/a&#x003E; and 
+                        &#x003C;a href&#x003D;"/apparatuses/on_skiddaw_and_derwentwater_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRONSKIDDAWANDDERWENTWATER">&#x201C;On Skiddaw and Derwent Water&#x201D;</span>&#x003C;/a&#x003E;, 
+                        which are fair&#x2010;copied in ink print lettering elsewhere.</div>
+                  
+                  
+                  <div class="p">Since the first stage of composition probably comprised books 1&#x2013;2 in <span class="date-1828">1828</span>, what occasioned the work? A conjecture based on internal evidence, 
+                        and in keeping with the physical evidence for dating and composition, is the death of &#x003C;a href&#x003D;"/notes/richardson_jessie_note" target&#x003D;"_self"&#x003E;<span class="persName-JRP">Janet (&#x201C;Jessie&#x201D;) Richardson</span>&#x003C;/a&#x003E;, 
+                        the sister of <span class="persName-JJR">John James Ruskin</span>, in <span class="placeName-PERTH">Perth</span> 
+                        on <span class="date-1828-05-18">18 May 1828</span>. As internal evidence of this connection, <span class="persName-JR">Ruskin</span> condensed and rearranged opening episodes of <span class="persName-WS">Scott</span>&#x02BC;s novel to emphasize its supernatural and spiritual aspects 
+                        (see <a href="#ARRANGEMENTOFEPISODES"><span class="persName-JR">Ruskin</span>&#x02BC;s Arrangement of Episodes from <span class="persName-WS">Scott</span>&#x02BC;s Novel</a>). In addition, 
+                        as an internal reflection of the immediate consequence of <span class="persName-JRP">Jessie</span>&#x02BC;s death&#x2014;the Ruskins&#x02BC; adoption of the only surviving Richardson daughter, 
+                        &#x003C;a href&#x003D;"/notes/richardson_mary_note" target&#x003D;"_self"&#x003E;<span class="persName-MRC">Mary</span>&#x003C;/a&#x003E;, into the <span class="placeName-building-HERNE">Herne Hill</span> household&#x2014;<span class="persName-JR">Ruskin</span>&#x02BC;s 
+                        book 2 is a detailed rendering of an episode that tangentially concerns adoption. In the novel, a benign captain of an English raiding party, <span class="persName-fictional-STAWARTHBOLTON">Stawarth Bolton</span>, 
+                        confronts <span class="persName-fictional-ELSPETGLENDINNING">Elspet Glendinning</span> and her two sons, and half&#x2010;jokingly offers to adopt either the &#x201C;blue eyed&#x201D; and reverential younger brother, <span class="persName-fictional-EDWARDGLENDINNING">Edward</span>, 
+                        or the &#x201C;black eyed&#x201D; and feisty older brother, <span class="persName-fictional-HALBERTGLENDINNING">Halbert</span>. For <span class="persName-WS">Scott</span>, the purpose of the episode was primarily to dramatize the English policy, following their 
+                        victory at the <span class="date-1547-09-10">Battle of Pinkie Cleuch</span>, of balancing assurances of protection for compliant Scots, especially Protestants, with threats of destruction against defiant 
+                        Scots patriots (see <a href="#HISTORICALCONTEXT">Discussion: The Historical Context of <span class="persName-WS">Scott</span>&#x02BC;s Novel</a>).</div>
+                  </div>
+               
+               <div id="COMPPUB1-DRAFT" class="sub-subsection">
+                  <span class="head-sub-subsection">Stage One of Composition: Surviving Draft</span>
+                  
+                  
+                  <div class="p">While the version of <span class="persName-JR">Ruskin</span>&#x02BC;s poem in the <span class="title-manuscript-MSIII">MS III</span> fair copy does play out details connected to these political and military themes, the text in the <span class="title-manuscript-MSIA">MS IA</span> pencil draft, 
+                        &#x003C;a href&#x003D;"/witnesses/now_must_we_leave_poor_martin_there_msia" target&#x003D;"_self"&#x003E;<span class="title-manuscript-">&#x201C;now must we leave poor martin there&#x201D;</span>&#x003C;/a&#x003E;, consists solely of lines 29&#x2013;62 of book 2, 
+                        containing the portion of <span class="persName-fictional-STAWARTHBOLTON">Captain Stawarth Bolton</span>&#x02BC;s visit to the <span class="placeName-fictional-TOWEROFGLENDEARG">Tower of Glendearg</span>, in which he offers to <span class="persName-fictional-ELSPETGLENDINNING">Elspet Glendinning</span> 
+                        to adopt her two sons&#x2014;first, <span class="persName-fictional-EDWARDGLENDINNING">Edward</span>, the younger, 
+                        and then <span class="persName-fictional-HALBERTGLENDINNING">Halbert</span>, the elder. This manuscript is therefore focused on the theme of adoption, 
+                        a topic that would have been on <span class="persName-JR">Ruskin</span>&#x02BC;s mind with the recent adoption of his cousin, 
+                        &#x003C;a href&#x003D;"/notes/richardson_mary_note" target&#x003D;"_self"&#x003E;<span class="persName-MRC">Mary Richardson</span>&#x003C;/a&#x003E;, into the <span class="placeName-building-HERNE">Herne Hill</span> household. 
+                        For more conjecture about the family events underlying stage one of composition, see <a href="#FAMILYCONTEXT">Discussion: The Family Context of Composition</a>.</div>
+                  </div>
+               
+               
+               <div id="COMPPUB2" class="subsection">
+                  <span class="head-subsection">Stage Two of Composition, circa <span class="date-1829-03">March 1829</span></span>
+                  
+                  <div class="p">To return to <span class="persName-MR">Margaret Ruskin</span>&#x02BC;s observation on &#x003C;a href&#x003D;"/apparatuses/mr_to_jjr_1829-03-04_al_apparatus" target&#x003D;"_self"&#x003E;<span class="date-1829-03-04">4 March 1829</span>&#x003C;/a&#x003E; that 
+                        <span class="persName-JR">John</span> had &#x201C;commenced writing a novel &#x0026; a Sermon&#x201D; 
+                        (&#x003C;a href&#x003D;"/notes/bibliography#RFL" target&#x003D;"_self"&#x003E;<span class="persName-VAB">Burd</span>, ed., <span class="title-book-RFL"><i>Ruskin Family Letters</i></span>&#x003C;/a&#x003E;, 185)&#x2014;a 
+                        resumption, actually, of <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span>, although <span class="persName-MR">Margaret</span> could reasonably perceive it as a commencement, since perhaps a year had elapsed since the first stage of composition&#x2014;the 
+                        second stage of composition can be correlated with sermon materials composed between <span class="date-1829-02-1829-05">February&#x2013;May 1829</span>: the fragments, 
+                        &#x003C;a href&#x003D;"/apparatuses/a_theme_apparatus" target&#x003D;"_self"&#x003E;<span class="title-essay-JRATHEME">&#x201C;A Theme&#x201D;</span>&#x003C;/a&#x003E; and 
+                        &#x003C;a href&#x003D;"/apparatuses/sermon_notes_christs_intercession_apparatus" target&#x003D;"_self"&#x003E;<span class="title-sermon-JRSERMONNOTESCHRISTS">Sermon Notes &#x005B;&#x201C;christs intercession&#x201D;&#x005D;</span>&#x003C;/a&#x003E;, 
+                        are embedded in the midst of draft of &#x003C;a href&#x003D;"/apparatuses/on_skiddaw_and_derwentwater_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRONSKIDDAWANDDERWENTWATER">&#x201C;On Skiddaw and Derwent Water&#x201D;</span>&#x003C;/a&#x003E; 
+                        (i.e., between installments of the latter&#x02BC;s &#x003C;a href&#x003D;"/apparatuses/msii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSII">MS II</span>&#x003C;/a&#x003E; draft witness, 
+                        &#x003C;a href&#x003D;"/witnesses/description_of_skiddaw_and_lake_derwent_msii" target&#x003D;"_self"&#x003E;<span class="title-poem-JRONSKIDDAWANDDERWENTWATERMSII">&#x201C;description of skiddaw &#x0026; lake derwent&#x201D;</span>&#x003C;/a&#x003E;). 
+                        These writings are associated with <span class="persName-JR">John</span>&#x02BC;s infatuation with &#x003C;a href&#x003D;"/notes/andrews_edward_note" target&#x003D;"_self"&#x003E;<span class="persName-EA">the Reverend Edward Andrews</span>&#x003C;/a&#x003E;, a hero worship shared and perhaps instigated by his cousin <span class="persName-MRC">Mary Richardson</span>, 
+                        who was now very much at home in <span class="placeName-CAMBERWELL">Camberwell</span>.</div>
+                  
+                  
+                  <div class="p">Physical evidence in <span class="title-manuscript-MSIII">MS III</span> supports the hypothesis that the second stage of composition 
+                        comprised books 3 and 4 of <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span>. 
+                        The pages occupied by these two books (pp. 52&#x2013;58, plus three blanks, pp. 59&#x2013;61) 
+                        take up the available leaves in <span class="title-manuscript-MSIII">MS III</span> that fall between pages containing 
+                        a group of poems dated <span class="date-1829-03-09">9 March 1829</span>, the 
+                        &#x003C;a href&#x003D;"/apparatuses/msiii_poetry_anthology_3_apparatus" target&#x003D;"_self"&#x003E;<span class="title-anthology-MSIIIPOETRYANTHOLOGY3">MS III Third Poetry Anthology</span>&#x003C;/a&#x003E; (pp. 36&#x2013;50, plus a blank, p. 51), 
+                        and the leaves containing the &#x003C;a href&#x003D;"/apparatuses/poetry_discriptive_apparatus" target&#x003D;"_self"&#x003E;<span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span>&#x003C;/a&#x003E; (pp. 62&#x2013;70). 
+                        When <span class="persName-JR">Ruskin</span> turned to these interstitial leaves to continue with books 3&#x2013;4 
+                        (having used up the leaves at the end of the notebook to fair&#x2010;copy books 1&#x2013;2), the space occupied by <span class="title-anthology-POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</span> 
+                        unquestionably presented him with a terminus ad quem for available space, while a terminus a quo was likely already present 
+                        in the form of the <span class="title-anthology-MSIIIPOETRYANTHOLOGY3">MS III Third Poetry Anthology</span>, dated <span class="date-1829-03-09">9 March 1829</span> 
+                        by <span class="persName-JR">Ruskin</span>&#x2014;or that group was at least underway.</div>
+                  
+                  
+                  <div class="p">The inference that the <span class="title-anthology-MSIIIPOETRYANTHOLOGY3">MS III Third Poetry Anthology</span> 
+                        must have been in place or underway cannot now be proven with physical evidence, but that scenario is more persuasive than <span class="persName-JR">Ruskin</span> having decided in <span class="date-1829">1829</span> 
+                        to resume book 3 on p. 52 arbitrarily, with nothing in particular framing that space. Rather, one can assume, when <span class="persName-JR">Ruskin</span> 
+                        reported to his father on <span class="date-1829-03-10">10 March 1829</span> that he was determined to &#x201C;get that &#x003C;a href&#x003D;"/notes/red_book_note" target&#x003D;"_self"&#x003E;red book&#x003C;/a&#x003E; of mine 
+                        &#x005B;&#x003C;a href&#x003D;"/apparatuses/msiii_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIII">MS III</span>&#x003C;/a&#x003E;&#x005D; 
+                        which has <span class="title-poem-JRTHEMONASTERY">the Monastery</span> in it finished, by the time you come home&#x201D;, 
+                        he had at least begun the <span class="title-anthology-MSIIIPOETRYANTHOLOGY3">MS III Third Poetry Anthology</span> 
+                        with its prominent and repeated datelines &#x201C;<span class="date-1829-03">March 1829</span>&#x201D; and &#x201C;<span class="date-1829-03-09">March 9th 1829</span>&#x201D; scattered throughout 
+                        (&#x003C;a href&#x003D;"/apparatuses/jr_to_jjr_1829-03-10_al_apparatus" target&#x003D;"_self"&#x003E;<span class="title-letter-">letter of <span class="date-1829-03-10">10 March 1829</span></span>&#x003C;/a&#x003E; &#x005B;&#x003C;a href&#x003D;"/notes/bibliography#RFL" target&#x003D;"_self"&#x003E;<span class="persName-VAB">Burd</span>, ed., <span class="title-book-RFL"><i>Ruskin Family Letters</i></span>&#x003C;/a&#x003E;, 192&#x005D;). 
+                        By interspersing the date <span class="date-1829-03-09">9 March 1829</span> among that group of poems, 
+                        <span class="persName-JR">Ruskin</span> was evidently concerned to demonstrate his success in meeting this deadline 
+                        (see the commentary on the first poem copied in the <span class="date-1829-03-09">March 9</span> group, 
+                        &#x003C;a href&#x003D;"/apparatuses/of_rocks_first_and_of_caverns_now_i_sing_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JROFROCKSFIRST">&#x201C;Of rocks first and of caverns now i sing&#x201D;</span>&#x003C;/a&#x003E;).</div>
+                  
+                  
+                  <div class="p">But despite his promise, <span class="persName-JR">Ruskin</span> left <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> unfinished, 
+                        with marginal line numbering trailing into unfilled space on p. 58 and three available pages left blank. 
+                        By this time, his attention must have been diverted from the narrative poem&#x2014;which, in any case, conceptually presented an endless drudgery, with thirty chapters remaining 
+                        in <span class="persName-WS">Scott</span>&#x02BC;s novel to be versified, not to mention the novel&#x02BC;s sequel, <span class="title-book-SCOTTABBOT"><i>The Abbot</i></span>&#x2014;and 
+                        he was now absorbed in composing a major loco&#x2010;descriptive poem for his father&#x02BC;s <span class="date-1829-05-10">10 May 1829</span> birthday, 
+                        &#x003C;a href&#x003D;"/apparatuses/on_skiddaw_and_derwentwater_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRONSKIDDAWANDDERWENTWATER">&#x201C;On Skiddaw and Derwent Water&#x201D;</span>&#x003C;/a&#x003E;. 
+                        Whether <span class="persName-JR">Ruskin</span> achieved a form of emotional closure with <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> is another question. 
+                        He turned aside from a gothic narrative, which for him was entangled with connections in <span class="placeName-SCOTLAND">Scotland</span> that had been severed by death, 
+                        in exchange for a poem in the picturesque mode for his father&#x02BC;s birthday, a poem that reopened a desire for the <span class="geogName-LAKEDISTRICT">Lake District</span> that had been thwarted during the 
+                        &#x003C;a href&#x003D;"/notes/tour_of_1828_note" target&#x003D;"_self"&#x003E;Tour of 1828&#x003C;/a&#x003E;.</div>
+                  </div>
+               
+               <div id="COMPPUB2-DRAFT" class="sub-subsection">
+                  <span class="head-sub-subsection">Stage Two of Composition: Surviving Draft</span>
+                  
+                  <div class="p">There is no surviving draft from the second stage of composing <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> that <span class="persName-JR">Ruskin</span> neglected to fair&#x2010;copy. 
+                        A portion that was fair&#x2010;copied does survive, however, in &#x003C;a href&#x003D;"/apparatuses/msia_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manuscript-MSIA">MS IA</span>&#x003C;/a&#x003E;, as a one&#x2010;sheet manuscript, 
+                        &#x003C;a href&#x003D;"/witnesses/come_on_good_horse_and_let_us_see_msia" target&#x003D;"_self"&#x003E;<span class="title-manuscript-">&#x201C;come on good horse and let us see&#x201D;</span>&#x003C;/a&#x003E;, 
+                        containing lines from &#x201C;Book Third&#x201D; in <span class="title-manuscript-MSIII">MS III</span>. This manuscript exhibits significant revision.</div>
+                  
+                  
+                  <div class="p">On the verso of this manuscript, a line group starts with &#x201C;<span class="persName-fictional-MTACKET">martin</span> took his task as guide&#x201D;, 
+                        lines 20&#x2013;21 as fair&#x2010;copied and numbered in the <span class="title-manuscript-MSIII">MS III</span> version of book 3. In draft, this couplet is followed by a horizontal rule, 
+                        and then by lines 14&#x2013;19 and 22&#x2013;25 of book 3 (as fair&#x2010;copied). The text continues onto the recto with line 26, 
+                        &#x201C;come on good horse and let us see&#x201D;; and the text continues to the bottom of the recto, through line 59 as fair&#x2010;copied in <span class="title-manuscript-MSIII">MS III</span>. 
+                        The text continues onto the verso again, with lines 60&#x2013;62 at the top of the verso, above the line group starting with lines 20&#x2013;21. 
+                        Thus, the text of lines 14&#x2013;62 loop around the two sides of the manuscript.</div>
+                  
+                  
+                  <div class="p">Physical characteristics of the manuscript do not necessarily lend themselves, however, to a straightforward interpretation of the sequence of composition. 
+                        The hand is <span class="persName-JR">Ruskin</span>&#x02BC;s cursive throughout, but on the verso, the medium is entirely pencil, including both the beginning of the passage, lines 20&#x2013;21, 14&#x2013;19, and 22&#x2013;25, 
+                        and the ending lines of the passage, 60&#x2013;62. On the recto, the medium is entirely ink, lines 26&#x2013;59. Moreover, the sheet has been sheared and torn at the edges, 
+                        resulting in loss of portions of the verso&#x02BC;s pencil text, where the writing had extended into the lost edges, whereas on the recto the ink text 
+                        did not suffer from the tearing. Rather, on this side, <span class="persName-JR">Ruskin</span> appears to have fitted 
+                        his writing to the margins that were left following the mutilation. Based on the physical evidence, then, one interpretation of the sequence of composition 
+                        suggests that <span class="persName-JR">Ruskin</span> reused the sheet after it was torn&#x2014;damage that partially obscured the penciled lines on the verso, 
+                        but leaving him with a blank side, the recto, to compose the subsequent text in ink 
+                        (see &#x003C;a href&#x003D;"/apparatuses/msia_apparatus" target&#x003D;"_self"&#x003E;MS IA Apparatus&#x003C;/a&#x003E;).</div>
+                  
+                  
+                  <div class="p">This interpretation, which assumes straightforward continuity of composition&#x2014;from verso, to recto, and back to verso, with intervening mutilation of the sheet&#x2014;is 
+                        not contradicted by the three lines (60&#x2013;62) continued at the top of the verso, since those lines are complete, unaffected by the tearing. 
+                        This reconstruction does fail to explain, however, why <span class="persName-JR">Ruskin</span> would have switched from pen and ink back to pencil 
+                        for the final three lines on the verso. It seems odd that he would have put down his pen at the bottom of the recto and returned to pencil.</div>
+                  
+                  
+                  <div class="p">As an alternative explanation, the ink text on the recto may be viewed as representing, not part of a continuous act of composition looping around both sides of the sheet, 
+                        but a discontinuous intervention. The ink text might represent a copy or new version of a witness, now unknown, that had carried on with the text from the verso, starting from line 26, 
+                        <span class="title-manuscript-">&#x201C;come on good horse and let us see&#x201D;</span>. The ink text, moreover, contains significant revision in itself, 
+                        in the form of complex substitutions. These changes are encoded in the <span class="title-manuscript-MSIA">MS IA</span> witness and discussed in an accompanying textual gloss. 
+                        If, in addition, the ink text represents an intervention prior to this revision, then the manuscript pays double witness to perplexity that 
+                        <span class="persName-JR">Ruskin</span> encountered in versifying this section of <span class="persName-WS">Scott</span>&#x02BC;s novel. See 
+                        <a href="#RELIGIOUSCONTEXT">Anti&#x2010;Catholicism in the Ruskin Family</a></div>                    
+                  </div>
+               
+               
+               <div id="DISCUSSION" class="section">
+                  <span class="head-section">Discussion</span>
+                  
+                  <div id="HISTORICALCONTEXT" class="subsection">
+                     <span class="head-subsection">The Historical Context of <span class="persName-WS">Scott</span>&#x02BC;s Novel</span>
+                     
+                     <div class="p">The political context of <span class="persName-WS">Scott</span>&#x02BC;s <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span> is set in motion prior to its opening by the &#x201C;rough wooing&#x201D; of <span class="date-1544-01-01-1545-12-31">1544&#x2013;45</span>, 
+                            whereby <span class="persName-KH8">Henry VIII</span> sought to force a union between his son and heir, <span class="persName-">Edward</span> (<span class="date-1537-10-12-1553-07-06">1537&#x2013;53</span>), and the infant <span class="persName-MQS">Mary Stewart</span> 
+                            (<span class="date-1542-12-08-1587-02-08">1542&#x2013;87</span>), daughter of the late <span class="persName-KJ5">James V of Scotland</span> (<span class="date-1512-04-10-1542-12-14">1512&#x2013;42</span>) and <span class="persName-MG">Mary of Guise</span> (<span class="date-1515-11-22-1560-06-11">1515&#x2013;60</span>). 
+                            &#x201C;They speak about the wedding of the <span class="persName-">Prince</span> and our <span class="persName-MQS">Queen</span>&#x201D;, observes <span class="persName-fictional-ELSPETGLENDINNING">Elspet Glendinning</span> near the beginning of the novel. 
+                            <span class="persName-KH8">Henry</span> hoped to break <span class="placeName-SCOTLAND">Scotland</span>&#x02BC;s traditional alliance with <span class="placeName-FRANCE">France</span> and annex the country as part of assuring the Tudor succession. 
+                            In <span class="placeName-SCOTLAND">Scotland</span>, a treaty to this effect was guided by <span class="persName-JHEA">James Hamilton, earl of Arran</span> (<span class="date-1519-1575-01-22">1519&#x2013;75</span>), 
+                            who had been appointed governor of <span class="placeName-SCOTLAND">Scotland</span> and tutor to the child <span class="persName-">Mary</span> upon the death of <span class="persName-KJ5">James V</span>. 
+                            As a Protestant, <span class="persName-JHEA">Arran</span> had been the first to propose the future union of the two royal heirs. 
+                            At home, however, an anti&#x2010;English faction quickly formed against him, composed of clergy and nobles. The Scottish parliament 
+                            did prepare a treaty agreeing to the marriage, but preserving Scottish sovereignty, terms that <span class="persName-KH8">Henry</span> was unlikely to accept, as he pursued increasingly aggressive conditions for the agreement. 
+                            The arrangement foundered, with the Scottish parliament now condemning the treaty; Mary was crowned queen of Scots; 
+                            and the anti&#x2010;English, pro&#x2010;Catholic faction reaffirmed the Auld Alliance with <span class="placeName-FRANCE">France</span>. 
+                            <span class="persName-KH8">Henry</span> was incensed, determined to force the marriage, and to claim overlordship of <span class="placeName-SCOTLAND">Scotland</span> 
+                            with no allowance for separate sovereignty. Accordingly, he appointed troops under <span class="persName-ESEH">Edward Seymour, earl of Hertford</span> (<span class="date-1500-1552-01-22">1500&#x2013;52</span>), to &#x201C;put all to fyre and swoord&#x201D;. 
+                            In two campaigns, <span class="persName-ESEH">Hertford</span> destroyed portions of <span class="placeName-EDINBURGH">Edinburgh</span>, and he captured castles and monasteries around the <span class="geogName-FIRTHOFFORTH">Firth of Forth</span>, 
+                            including <span class="placeName-building-MELROSEABBEY">Melrose Abbey</span> on which <span class="persName-WS">Scott</span> loosely modeled his novel&#x02BC;s eponymous fictional 
+                            <span class="placeName-fictional-SAINTMARYMONASTERY">Monastery of Saint Mary</span> at <span class="placeName-fictional-KENNAQUHAIR">Kennaquhair</span> 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#MITCHISONHISTORYOFSCOTLAND" target&#x003D;"_self"&#x003E;<span class="persName-RMITCHISON">Mitchison</span>, <span class="title-book-MITCHISONHISTORYOFSCOTLAND"><i>History of Scotland</i></span>&#x003C;/a&#x003E;, 103&#x2013;4, 105&#x2013;6; 
+                            &#x003C;a href&#x003D;"/notes/bibliography#KINGETTYENGLANDANDSCOTLAND" target&#x003D;"_self"&#x003E;<span class="persName-AKING">King</span> and <span class="persName-CETTY">Etty</span>, <span class="title-book-KINGETTYENGLANDANDSCOTLAND"><i>England and Scotland</i></span>&#x003C;/a&#x003E;, 109&#x2013;12; 
+                            &#x003C;a href&#x003D;"/notes/bibliography#SCOTTMONASTERYFIELDING" target&#x003D;"_self"&#x003E;<span class="persName-WS">Scott</span>, <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>, ed. <span class="persName-PFIELDING">Fielding</span>&#x003C;/a&#x003E;, 53 &#x005B;vol. 1, chap. 4&#x005D;; 
+                            &#x003C;a href&#x003D;"/notes/bibliography#FIELDINGMONASTERYHISTORICALNOTE" target&#x003D;"_self"&#x003E;<span class="persName-PFIELDING">Fielding</span>, <span class="title-essay-FIELDINGMONASTERYHISTORICALNOTE">&#x201C;Historical Note&#x201D;</span>&#x003C;/a&#x003E;, 434&#x2013;35).</div>
+                     
+                     
+                     <div class="p">After <span class="persName-KH8">Henry</span>&#x02BC;s death in <span class="date-1547-01">January 1547</span>, <span class="persName-ESEH">Hertford</span>, now duke of Somerset and lord protector under <span class="persName-KE6">Edward VI</span>, 
+                            sought a new approach to <span class="placeName-SCOTLAND">Scotland</span>. Temporary raids would give way to a campaign for permanent occupation, 
+                            while compliant Scots would be offered assurances, with a view to establishing a Protestant Britain. <span class="persName-ESEH">Somerset</span> marched an army north in <span class="date-1547-09">September 1547</span> 
+                            and won a decisive victory at the <span class="date-1547-09-10">Battle of Pinkie Cleuch</span>, 
+                            near <span class="placeName-EDINBURGH">Edinburgh</span>. This battle, along with the English raids surrounding it, forms the historical reference point at the start of <span class="persName-WS">Scott</span>&#x02BC;s <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>&#x2014;the 
+                            conflict that made widows of both <span class="persName-fictional-LADYAVENEL">Lady Avenel</span> and her neighboring yeoman&#x02BC;s wife, <span class="persName-ficitonal-ELSPETGLENDINNING">Elspet Glendinning</span>. 
+                            As dramatized by the novel&#x02BC;s opening encounter between an occupying English soldier and <span class="persName-fictional-ELSPETGLENDINNING">Elspet</span> and her two sons&#x2014;the 
+                            lads barely able to contain their defiance of the &#x201C;heretic&#x201D; Englishman&#x2014;the military victory not only failed to quell Scottish resistance, 
+                            but also helped to undermine the Scottish Protestant interests that <span class="persName-ESEH">Somerset</span> hoped to enlist. <span class="persName-MG">Mary of Guise</span> successfully concluded 
+                            her daughter&#x02BC;s betrothal to the French dauphin, later <span class="persName-KF2">François II</span> (<span class="date-1544-01-19-1560-12-05">1544&#x2013;60</span>); and 
+                            hatred of the English invaders and the reaffirmation of the Auld Alliance put Scottish Protestants on the defensive, 
+                            hesitant to look to <span class="placeName-ENGLAND">England</span> for support&#x2014;a hope that soon turned even less tenable with the accession of the English Catholic queen, <span class="persName-QM1">Mary I</span> 
+                            (ruled <span class="date-1553-1558">1553&#x2013;58</span>). <span class="persName-ESEH">Somerset</span>&#x02BC;s program of winning over the Scots with assurances 
+                            declined, with influence shifting back to <span class="placeName-FRANCE">France</span> 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#MITCHISONHISTORYOFSCOTLAND" target&#x003D;"_self"&#x003E;<span class="persName-RMITCHISON">Mitchison</span>, <span class="title-book-MITCHISONHISTORYOFSCOTLAND"><i>History of Scotland</i></span>&#x003C;/a&#x003E;, 107&#x2013;8; 
+                            &#x003C;a href&#x003D;"/notes/bibliography#KINGETTYENGLANDANDSCOTLAND" target&#x003D;"_self"&#x003E;<span class="persName-AKING">King</span> and <span class="persName-CETTY">Etty</span>, <span class="title-book-KINGETTYENGLANDANDSCOTLAND"><i>England and Scotland</i></span>&#x003C;/a&#x003E;, 113&#x2013;17).</div>
+                     
+                     <div class="p">With the death of <span class="persName-QM1">Mary I</span> and succession of <span class="persName-QE1">Elizabeth I</span> in <span class="placeName-ENGLAND">England</span>, 
+                            <span class="placeName-FRANCE">France</span> and <span class="placeName-SPAIN">Spain</span> joined in a program to suppress Protestantism, stirring conflict and resentment in <span class="placeName-SCOTLAND">Scotland</span>, already restive under the Auld Alliance, 
+                            which had saddled the country with the expensive presence of French troops. When <span class="persName-KH2">Henri II</span> of <span class="placeName-FRANCE">France</span> declared that his daughter&#x2010;in&#x2010;law <span class="persName-MQS">Mary, Queen of Scots</span>, was Queen of <span class="placeName-ENGLAND">England</span> 
+                            as well, Scottish Protestants were again emboldened to look to <span class="placeName-ENGLAND">England</span> for a common cause of resistance. Religious divisions in <span class="placeName-SCOTLAND">Scotland</span> deepened, 
+                            as <span class="persName-JKNOX">John Knox</span> preached fiery sermons that incited mob attacks on abbeys. Protestants were firmly in control by <span class="date-1561">1561</span>, when <span class="persName-">Mary Stewart</span> 
+                            returned from <span class="placeName-FRANCE">France</span> to <span class="placeName-SCOTLAND">Scotland</span>, recently widowed by the death of the dauphin 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#JOHNSONABBOTHISTORICALNOTE" target&#x003D;"_self"&#x003E;<span class="persName-CJOHNSON">Johnson</span>, <span class="title-essay-JOHNSONABBOTHISTORICALNOTE">&#x201C;Historical Note&#x201D;</span>&#x003C;/a&#x003E;, 464&#x2013;65).</div>
+                     
+                     
+                     <div class="p">Strictly, these latest events of <span class="date-1558-1561">1558&#x2013;61</span> belong to the context of <span class="persName-WS">Scott</span>&#x02BC;s sequel to <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>, 
+                            <span class="title-book-SCOTTABBOT"><i>The Abbot</i></span>; 
+                            however, as <span class="persName-PFIELDING">Penny Fielding</span> explains, <span class="persName-WS">Scott</span> deliberately avoided specifying dates and treated chronology loosely in <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>. 
+                            Toward the end of the novel, <span class="persName-QE1">Elizabeth</span> has already come to the throne in <span class="placeName-ENGLAND">England</span>, and the widowed <span class="persName-MQS">Mary Stewart</span> has returned to <span class="placeName-SCOTLAND">Scotland</span>&#x2014;events 
+                            that historically would have fallen after the years comprised by the novel&#x02BC;s chronology, as based on a strict reckoning of the characters&#x02BC; ages 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#FIELDINGMONASTERYHISTORICALNOTE" target&#x003D;"_self"&#x003E;<span class="persName-PFIELDING">Fielding</span>, <span class="title-essay-FIELDINGMONASTERYHISTORICALNOTE">&#x201C;Historical Note&#x201D;</span>&#x003C;/a&#x003E;, 434). 
+                            This warped chronology has no effect on <span class="persName-JR">Ruskin</span>&#x02BC;s project of versifying the novel, 
+                            which never extended beyond the opening chapters set in the aftermath of the <span class="date-1547-09-10">Battle of Pinkie</span>. 
+                            As novels about the rise of the Scottish Reformation, however, <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span> and <span class="title-book-SCOTTABBOT"><i>The Abbot</i></span>&#x2014;the latter of which <span class="persName-JR">Ruskin</span> had also read by <span class="date-1829-03">March 1829</span> 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#RFL" target&#x003D;"_self"&#x003E;<span class="persName-VAB">Burd</span>, ed., <span class="title-book-RFL"><i>Ruskin Family Letters</i></span>&#x003C;/a&#x003E;, 193&#x2013;94, 195 n. 5)&#x2014;must 
+                            be viewed as significant choices for <span class="persName-JR">Ruskin</span>&#x02BC;s decision to compose a &#x201C;novel&#x201D; in <span class="date-1828-1829">1828&#x2013;29</span>. 
+                            At that time, and particularly during <a href="">Stage Two of Composition</a>, 
+                            the <span class="title-law-CATHOLICEMANCIPATION">Catholic Emancipation Bill</span> was being hotly debated 
+                            (see <a href="">Discussion: Anti&#x2010;Catholicism in the Ruskin Family</a>).</div>
+                     </div>
+                  
+                  
+                  <div id="ARRANGEMENTOFEPISODES" class="subsection">
+                     <span class="head-subsection"><span class="persName-JR">Ruskin</span>&#x02BC;s Arrangement of Episodes from <span class="persName-WS">Scott</span>&#x02BC;s Novel</span>
+                     
+                     <div class="p">In his selection of episodes, <span class="persName-JR">Ruskin</span> lifts events out of <span class="persName-WS">Scott</span>&#x02BC;s narrative sequence, 
+                            and begins with an episode centered on the <span class="persName-fictional-WHITELADY">White Lady</span>. The apparition is the spectral protector 
+                            of the Avenel family, and she is particularly watchful over <span class="persName-fictional-LADYAVENEL">Lady Avenel</span>&#x02BC;s vernacular bible&#x2014;the 
+                            novel&#x02BC;s recurring metonymic sign of forbidden Protestant worship within the monastery&#x02BC;s sacred sphere, its &#x201C;halidome&#x201D;. Overall, <span class="persName-JR">Ruskin</span>&#x02BC;s selections de&#x2010;emphasize the novel&#x02BC;s staging of complex political conflict surrounding the Scottish Reformation, 
+                            and instead favor the story&#x02BC;s supernatural elements.</div>
+                     
+                     
+                     <div class="p">The focus seems chosen in part for the sake of the supernaturalism in itself, 
+                            although the choice also bears the effect of favoring Scottish Protestantism at the cost of <span class="persName-WS">Scott</span>&#x02BC;s purposes, 
+                            which are more latitudinarian respecting religion. As summarized in <span class="persName-WS">Scott</span>&#x02BC;s 
+                                <span class="title-essay-SCOTTMONASTERYINTRODUCTIONMAGNUM">introduction to the <span class="title-series-SCOTTMAGNUM">Magnum Opus</span> edition of the novel</span>, 
+                            the novel&#x02BC;s aim is &#x201C;to conjoin two characters &#x005B;i.e., the monastery Sub&#x2010;Prior <span class="persName-fictional-FATHEREUSTACE">Eustace</span> and the Reform preacher <span class="persName-fictional-HENRYWARDEN">Henry Warden</span>&#x005D; 
+                            in that bustling and contentious age who, thrown into situations which gave them different views on the subject of the Reformation, 
+                            should, with the same sincerity and purity of intention, dedicate themselves, the one to the support of the sinking fabric of the Catholic Church, 
+                                the other to the establishment of the Reformed doctrines&#x201D; (&#x003C;a href&#x003D;"/notes/bibliography#SCOTTWORKSCALEDONIAN" target&#x003D;"_self"&#x003E;<span class="persName-WS">Scott</span>, <span class="title-book-CALEDONIANEDITION"><i>Works</i>, Caledonian Edition</span>&#x003C;/a&#x003E;, 17:ix). As commented in <i>ERM</i>&#x02BC;s contextual glosses on the text, 
+                            <span class="persName-JR">Ruskin</span> tips the scales of <span class="persName-WS">Scott</span>&#x02BC;s ecumenical aim by coloring particular passages with Protestant discourse and by foregrounding in the overall arrangement the supernatural interventions 
+                            of <span class="persName-fictional-WHITELADY">White Lady</span> in defense of the Protestant vernacular bible.</div>
+                     
+                     
+                     <div class="p"><span class="persName-JR">Ruskin</span> omits the names of the monastery fathers, with the exception of <span class="persName-fictional-FATHEREUSTACE">Eustace</span>, referring to them only (and sometimes confusingly) as &#x201C;the monk&#x201D;, 
+                            &#x201C;the abbot&#x201D;, and so on. The neglect may suggest that he avoided personalizing the Roman Catholic characters, 
+                            given that he does name each of the Scottish characters. Confusion may also have arisen, however, from his unfamiliarity with monastic titles, which he gets wrong in places. 
+                            He also mistakes the military rank of the English soldier, <span class="persName-fictional-STAWARTHBOLTON">Stawarth Bolton</span>.</div>
+                     
+                     
+                     <div class="p"><span class="persName-JR">Ruskin</span>&#x02BC;s episodes correspond to <span class="persName-WS">Scott</span>&#x02BC;s chapters as follows:</div>
+                     
+                     <div class="p">
+                        
+                        <ul>
+                           
+                           <li><b>Book 1, based on <span class="title-book-"><i>The Monastery</i></span>, chapters 5, 7.</b></li>
+                           
+                           <li>
+                              <ul>
+                                 <li><span class="persName-JR">Ruskin</span> establishes a context by inventing a brief invocation to the <span class="persName-fictional-WHITELADY">White Lady</span>. 
+                                    The action begins with a monk (<span class="persName-fictional-FATHERPHILIP">Father Philip</span>, the sacristan of 
+                                    the <span class="placeName-fictional-SAINTMARYMONASTERY">Monastery of Saint Mary</span>) being 
+                                    denied passage over the <span class="geogName-TWEEDRIVER">Tweed</span> by the warder of the drawbridge. 
+                                    Preparing to ford the river on his mule, he encounters the <span class="persName-fictional-WHITELADY">White Lady</span>. 
+                                    Supposing her to be a woman stranded on the bank by the churlish bridge&#x2010;ward, he offers to carry her across the stream, 
+                                    only to be thrown from his mount by the spirit, when they reach deep water. While <span class="persName-JR">Ruskin</span>&#x02BC;s poem mentions that 
+                                    <span class="persName-fictional-FATHERPHILIP">the monk</span> grasps &#x201C;a black volume&#x201D;&#x2014;<span class="persName-fictional-LADYAVENEL">Lady Avenel</span>&#x02BC;s vernacular bible, 
+                                    which <span class="persName-fictional-FATHERPHILIP">Father Philip</span> has confiscated&#x2014;the poem omits explanation of <span class="persName-fictional-FATHERPHILIP">Philip</span>&#x02BC;s discovery 
+                                    of the forbidden book on a pastoral visit to the <span class="placeName-fictional-TOWEROFGLENDEARG">Tower of Glendearg</span>, 
+                                    where <span class="persName-fictional-LADYAVENEL">Lady Avenel</span> and her daughter are residing. 
+                                    The poem also passes over the monks&#x02BC; expressions of zeal (in <span class="persName-WS">Scott</span>&#x02BC;s chapters 5, 6, and 7) 
+                                    to crush heretical Reform ideas infiltrating the halidome. Cutting to the end of <span class="persName-WS">Scott</span>&#x02BC;s chapter 7, 
+                                    <span class="persName-JR">Ruskin</span> follows <span class="persName-fictional-FATHERPHILIP">Philip</span> home to the monastery, 
+                                    where, still amazed and gibbering snatches of the <span class="persName-fictional-WHITELADY">White Lady</span>&#x02BC;s song, he is interviewed by 
+                                    <span class="persName-fictional-ABBOTBONIFACE">Abbot Boniface</span> and <span class="persName-fictional-FATHEREUSTACE">Father Eustace</span>, 
+                                    who resolve that <span class="persName-fictional-FATHEREUSTACE">Eustace</span> shall visit <span class="geogName-GLENDEARG">Glendearg</span> to investigate for himself.</li>
+                                 </ul>
+                           </li>
+                           
+                           <li><b>Book 2, based on <span class="title-book-"><i>The Monastery</i></span>, chapters 2, 3.</b></li>
+                           
+                           <li>
+                              <ul>
+                                 <li><span class="persName-JR">Ruskin</span> efficiently condenses the introduction of the main Scottish characters. 
+                                    He touches on the <span class="date-1547-09-10">Battle of Pinkie</span> to explain conditions at the <span class="placeName-fictional-TOWEROFGLENDEARG">Tower of Glendearg</span>, which is bereft of its master, the yeoman <span class="persName-fictional-SIMONGLENDINNING">Simon Glendinning</span>; 
+                                    and (skipping to the opening of <span class="persName-WS">Scott</span>&#x02BC;s chapter 3), he draws a parallel with the estate of Avenel, 
+                                    likewise absent of its baron, <span class="persName-fictional-WALTERAVENEL">Walter Avenel</span>, who has been killed &#x201C;for the good of his country in battle&#x201D;. Still continuing with <span class="persName-WS">Scott</span>&#x02BC;s chapter 3, 
+                                    <span class="persName-JR">Ruskin</span> introduces the widow, <span class="persName-fictional-LADYAVENEL">Alice, Lady Avenel</span> 
+                                    and her daughter, <span class="persName-fictional-MARYAVENEL">Mary Avenel</span>. Thus, he reverses the order in which characters are introduced in the novel, 
+                                    which begins in <span class="persName-WS">Scott</span>&#x02BC;s chapter two with the yeoman&#x02BC;s widow, <span class="persName-fictional-ELSPETGLENDINNING">Elspet Glendinning</span>, and her two sons&#x2014;<span class="persName-fictional-HALBERTGLENDINNING">Halbert</span>, the elder; and <span class="persName-fictional-EDWARDGLENDINNING">Edward</span>, the younger. 
+                                    By beginning with the knighted class of characters, <span class="persName-JR">Ruskin</span> maintains a connection with the &#x201C;avenel haunt&#x201D; that he introduces in book 1, 
+                                    though at the cost of some confusion over what &#x201C;foe&#x201D; drives <span class="persName-fictional-LADYAVENEL">Lady Avenel</span> and <span class="persName-fictional-MARYAVENEL">Mary</span> to seek refuge in the farmer&#x02BC;s cottage 
+                                    of <span class="persName-fictional-MTACKET">Martin</span> and <span class="persName-fictional-TTACKET">Tibb Tacket</span>, 
+                                    whom <span class="persName-JR">Ruskin</span> introduces here, as does <span class="persName-WS">Scott</span> in chapter 3. The threat that alarms them, of &#x201C;english barbarians that plunder the land&#x201D;, 
+                                    refers to <span class="persName-ESEH">Somerset</span>&#x02BC;s occupation of the Border after <span class="date-1547-09-10">Pinkie Cleuch</span>, 
+                                    and his attempt to win over Scottish Protestants by combining the coercion of raids with the persuasion of assurances. 
+                                    This context is supplied as <span class="persName-JR">Ruskin</span> swings back to <span class="persName-WS">Scott</span>&#x02BC;s chapter two, 
+                                    and the confrontation between the English captain, <span class="persName-fictional-STAWARTHBOLTON">Stawarth Bolton</span>, 
+                                    and <span class="persName-fictional-ELSPETGLENDINNING">Dame Glendinning</span> and her two sons. <span class="persName-JR">Ruskin</span> dwells on this episode in considerable detail, 
+                                    clearly finding great interest in the boys&#x02BC; contrasting personalities and their respective responses to <span class="persName-fictional-STAWARTHBOLTON">Bolton</span>&#x02BC;s bestowal of his protection and 
+                                    his half&#x2010;joking offer to adopt either of the boys.</li>
+                                 </ul>
+                           </li>
+                           
+                           <li><b>Book 3, based on <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>, chapters 3, 4.</b></li>
+                           
+                           <li>
+                              <ul>
+                                 <li><span class="persName-JR">Ruskin</span> returns the focus to the <span class="persName-fictional-WHITELADY">White Lady</span> and the Avenels, by narrating the journey to the <span class="placeName-fictional-TOWEROFGLENDEARG">Tower of Glendearg</span> by 
+                                    <span class="persName-fictional-LADYAVENEL">Lady Avenel</span> and <span class="persName-fictional-MARYAVENEL">Mary</span>, 
+                                    led by <span class="persName-fictional-MTACKET">Martin</span> and <span class="persName-fictional-TTACKET">Tibb Tacket</span>. 
+                                    Losing their way, the party is stranded in a dangerous bog. As the pony <span class="name--SHAGRAMSCOTTMONASTERY">Shagram</span>, who is carrying 
+                                    <span class="persName-fictional-MARYAVENEL">Mary</span>, shies from moving forward, the girl observes 
+                                    a fair lady, whom no one else can see&#x2014;the <span class="persName-fictional-WHITELADY">White Lady</span>&#x2014;signaling 
+                                    to the party to follow her on a path to safety. <span class="persName-fictional-TTACKET">Tibb</span> and <span class="persName-fictional-MTACKET">Martin</span> exchange apprehensions about fairies. 
+                                    The narrator draws briefly on an exchange between <span class="persName-fictional-ELSPETGLENDINNING">Dame Glendinning</span> and <span class="persName-fictional-TTACKET">Tibb Tacket</span> 
+                                    in chapter 4 to explain the haunting of the House of Avenel by the <span class="persName-fictional-WHITELADY">White Lady</span>.</li>
+                                 </ul>
+                           </li>
+                           
+                           <li><b>Book 4, based on <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>, chapter 4.</b></li>
+                           
+                           <li>
+                              <ul>
+                                 <li>To establish the occasion of this episode as All&#x2010;Hallow&#x02BC;s Eve (an evening that, in <span class="persName-WS">Scott</span>&#x02BC;s novel, also marks the anniversary of the All&#x2010;Hallow&#x02BC;s Eve three years earlier, 
+                                    when the party crossed the bog to the <span class="placeName-fictional-TOWEROFGLENDEARG">Tower of Glendearg</span>), <span class="persName-JR">Ruskin</span> prefaces the action 
+                                    with original verses, cataloguing a variety of Scottish spirits. On this evening, <span class="persName-fictional-ELSPETGLENDINNING">Dame Glendinning</span> 
+                                    and the servants work by the fire, as <span class="persName-fictional-LADYAVENEL">Lady Avenel</span> reads from her bible. The children&#x2014;<span class="persName-fictional-HALBERTGLENDINNING">Halbert</span>, <span class="persName-fictional-EDWARDGLENDINNING">Edward</span>, and <span class="persName-fictional-MARYAVENEL">Mary</span>&#x2014;have been playing in 
+                                    adjacent rooms, when the boys rush to the elders to report sighting a &#x201C;ghost like fame&#x201D;, an armed man. All return to the room 
+                                    but find no one, and <span class="persName-fictional-ELSPETGLENDINNING">Dame Glendinning</span> upbraids the boys for their fright. The episode breaks off, unfinished, 
+                                    just short of explaining that, on Halloween night, <span class="persName-fictional-MARYAVENEL">Mary Avenel</span> has witnessed the apparition of her dead father.</li>
+                              </ul>
+                           </li>
+                           </ul>
+                     </div>
+                     </div>
+                  
+                  
+                  <div id="CRITICALCONTEXT" class="subsection">
+                     <span class="head-subsection">The Critical Context of <span class="persName-WS">Scott</span>&#x02BC;s Novel versus <span class="persName-JR">Ruskin</span>&#x02BC;s Supernatural Emphasis</span>
+                     
+                     
+                     <div class="p"><span class="persName-JR">Ruskin</span>&#x02BC;s favoring the supernatural episodes, and the <span class="persName-fictional-WHITELADY">White Lady</span> in particular, 
+                            reversed the majority opinion in the critical reception of the novel. 
+                            In the <span class="title-essay-SCOTTMONASTERYINTRODUCTIONMAGNUM">introduction to the <span class="title-series-SCOTTMAGNUM">Magnum Opus</span> edition</span> (published in <span class="date-1830">1830</span>, after the date of <span class="persName-JR">Ruskin</span>&#x02BC;s poem &#x005B;&#x003C;a href&#x003D;"/notes/bibliography#MILLGATESCOTTSLASTEDITION" target&#x003D;"_self"&#x003E;<span class="persName-JMILLGATE">Millgate</span>, <span class="title-book-MILLGATESCOTTSLASTEDITION"><i><span class="persName-WS">Scott</span>&#x02BC;s Last Edition</i></span>&#x003C;/a&#x003E;, 24&#x005D;), 
+                            <span class="persName-WS">Scott</span> admitted that the <span class="persName-fictional-WHITELADY">White Lady</span> &#x201C;was far from being popular&#x201D; (&#x003C;a href&#x003D;"/notes/bibliography#SCOTTWORKSCALEDONIAN" target&#x003D;"_self"&#x003E;<span class="title-book-CALEDONIANEDITION"><i>Works</i>, Caledonian Edition</span>&#x003C;/a&#x003E;, 17:xx). Reviewers&#x02BC; objections centered on the &#x201C;machinery&#x201D; 
+                            of the <span class="persName-fictional-WHITELADY">White Lady</span>&#x02BC;s interventions. In the view of <span class="persName-NWS">Nassau Senior</span> (<span class="date-1790-1864">1790&#x2013;1864</span>), writing in <span class="date-1821">1821</span> for the <span class="title-periodical-QUARTERLYREVIEW"><i>Quarterly Review</i></span>, <span class="persName-WS">Scott</span> neglected to explain &#x201C;what he intends to represent&#x201D; 
+                            by the <span class="persName-fictional-WHITELADY">White Lady</span>. <span class="persName-NWS">Senior</span> could discern &#x201C;no motives&#x201D; for the character, except to carry forward a poorly &#x201C;digested plan&#x201D; for the novel&#x2014;a mechanism reflected in the novel&#x02BC;s &#x201C;disproportion of parts&#x201D; 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#SENIORREVIEWSCOTTMONASTERY" target&#x003D;"_self"&#x003E;<span class="title-essay-SENIORREVIEWSCOTTMONASTERY">Review of <i>Rob Roy</i> &#x005B;etc.&#x005D; by the <span class="persName-pen_name-WS">Author of <span class="title-book-SCOTTWAVERLEY"><i>Waverley</i></span></span></span>&#x003C;/a&#x003E;, 137; 
+                            see also &#x003C;a href&#x003D;"/notes/bibliography#SENIORESSAYSONFICTION" target&#x003D;"_self"&#x003E;<span class="persName-NWS">Senior</span>, <span class="title-book-SENIORESSAYSONFICTION"><i>Essays on Fiction</i></span>&#x003C;/a&#x003E;, 55). Similarly, in <span class="date-1820">1820</span>, the reviewer for the <span class="title-periodical-EDINBURGHMAGAZINE"><i>Edinburgh Magazine</i></span> 
+                            considered the <span class="persName-fictional-WHITELADY">White Lady</span> merely &#x201C;opportune&#x201D;, her &#x201C;insufferable&#x201D; manifestations ludicrously suggesting the meddling of a &#x201C;female Puck or Robin Goodfellow&#x201D; 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#REVIEWSCOTTMONASTERYEDINBURGHMAG" target&#x003D;"_self"&#x003E;<span class="title-essay-REVIEWSCOTTMONASTERYEDINBURGHMAG">Unsigned review of <i>The Monastery: A Romance</i></span>&#x003C;/a&#x003E;, 302, 303). 
+                            Such &#x201C;machinery is introduced to no ultimate purpose&#x201D;, chimed in the <span class="title-periodical-EDINBURGHMONTHLYREVIEW"><i>Edinburgh Monthly Review</i></span>, 
+                            &#x201C;and every thing &#x005B;the <span class="persName-fictional-WHITELADY">White Lady</span>&#x005D; does, is absurd almost to childishness&#x201D; 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#REVIEWSCOTTMONASTERYEDINBURGHMONTHLYREVIEW" target&#x003D;"_self"&#x003E;<span class="title-essay-REVIEWSCOTTMONASTERYEDINBURGHMONTHLYREVIEW">Unsigned review of <i>The Monastery: A Romance</i>; and <i>The Abbot</i></span>&#x003C;/a&#x003E;, 694).</div>
+                     
+                     
+                     <div class="p">For the high&#x2010;spirited young <span class="persName-JR">Ruskin</span>, episodes that struck sober reviewers as childish, 
+                            such as the <span class="persName-fictional-WHITELADY">White Lady</span>&#x02BC;s dunking <span class="persName-fictional-FATHERPHILIP">Father Philip</span> in the <span class="geogName-TWEEDRIVER">Tweed</span>, may well have seemed just good fun. 
+                            At the same time, <span class="persName-JR">Ruskin</span> felt the mystery of the <span class="persName-fictional-WHITELADY">White Lady</span>, as suggested by the incantation with which he begins his poem. 
+                            In capturing this mood of the novel, <span class="persName-JR">Ruskin</span>&#x02BC;s response might be compared to that of the reviewer for <span class="title-periodical-BLACKWOODSMAGAZINE"><i>Blackwood&#x02BC;s Edinburgh Magazine</i></span>, 
+                            who was untroubled by the other reviewers&#x02BC; standard for a credible plot, instead finding merit 
+                            in &#x201C;the <i>reading</i> of the <span class="title-poem-JRTHEMONASTERY">Monastery</span>&#x201D; as &#x201C;a calm enjoyment&#x201D; (emphasis in original): &#x201C;Nothing can be more delightful; 
+                            but nothing at the same time can be more quiet. The different scenes spread themselves out in a fine variegated and easy succession&#x201D;. 
+                            The reviewer relates this unfolding of varying scenes and moods to what he or she imagines <span class="persName-WS">Scott</span>&#x02BC;s experience to have been when composing the novel. 
+                            In the aftermath of the author&#x02BC;s previous &#x201C;extraordinary exertions&#x201D; over <span class="title-book-SCOTTIVANHOE"><i>Ivanhoe</i></span>, the reviewer believes, <span class="persName-WS">Scott</span> was 
+                            &#x201C;induced . . . to linger so very near home&#x201D; in the novel&#x02BC;s Border setting, and &#x201C;to luxuriate over the silence of his own pastoral glens, 
+                            the music of his own haunted mountain&#x2010;brooks&#x2014;and the calm domestic magnificence of that unrivalled landscape&#x201D; and &#x201C;stately beauty of <span class="placeName-building-MELROSEABBEY">Melrose</span>&#x201D; 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#REVIEWSCOTTMONASTERYBLACKWOODS" target&#x003D;"_self"&#x003E;<span class="title-essay-REVIEWSCOTTMONASTERYBLACKWOODS">Unsigned review of <i>The Monastery: A Romance</i></span>&#x003C;/a&#x003E;, 693).</div>
+                     </div>
+                  
+                  
+                  <div id="FAMILYCONTEXT" class="subsection">
+                     <span class="head-subsection">The Family Context of Composition</span>
+                     
+                     
+                     <div id="SPIRITUALCONTEXT" class="subsection">
+                        <span class="head-sub-subsection">Recent Family Deaths</span>
+                        
+                        
+                        <div class="p">As proposed in <a href="#COMPPUB1">Stage One of Composition, circa <span class="date-1828">1828</span></a>, 
+                        <span class="persName-JR">Ruskin</span>&#x02BC;s composition of <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> 
+                            may have been prompted by the death of his <span class="persName-JRP">Aunt Jessie</span> in <span class="date-1828-05">May 1828</span>, and the adoption of his cousin, 
+                        &#x003C;a href&#x003D;"/notes/richardson_mary_note" target&#x003D;"_self"&#x003E;<span class="persName-MRC">Mary Richardson</span> (<span class="date-1815-1849">1815&#x2013;49</span>)&#x003C;/a&#x003E;, into the household in <span class="date-1828-07">July 1828</span>. 
+                            (<span class="persName-JJR">John James</span> also committed to financial support of the three surviving sons; see &#x003C;a href&#x003D;"/notes/richardson_jessie_note" target&#x003D;"_self"&#x003E;<span class="persName-JRP">Jessie Richardson</span> &#x005B;<span class="date-1783-1828">1783&#x2013;1828</span>&#x005D;&#x003C;/a&#x003E;.) 
+                            These events can be seen reflected in the outcome of 
+                            stage one of composition, books 1 and 2 of <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span>, especially if these two books are considered 
+                            as constituting a work in itself, finished off with a colophon on p. 80. Book 1 narrates a haunting by a supernatural spirit of Scottish lore, 
+                            followed by book 2 and its banter about possible adoption&#x2014;the latter being almost the sole theme represented in the <span class="title-manuscript-MSIA">MS IA</span> draft fragment of book 2. Even the comedy in book 1, 
+                            the <span class="persName-fictional-WHITELADY">White Lady</span>&#x02BC;s fording the river with <span class="persName-fictional-FATHERPHILIP">Father Philip</span> after he was denied passage across the bridge, 
+                            suggests uncanny connections with family history. The Richardsons lived at <span class="placeName-building-BRIDGEEND">Bridge End</span> on the east end of <span class="placeName-building-PERTHBRIDGE">Perth Bridge</span>, 
+                            before moving across the river to <span class="placeName-building-ROSETER">Rose Terrace</span>, on the <span class="placeName-NORTHINCH">North Inch</span>. In <span class="title-book-JRPRAETERITA"><i>Praeterita</i></span>, 
+                            <span class="persName-JRP">Aunt Jessie</span> is credited with a &#x201C;foresight dream&#x201D; of river crossings, foreboding her own death as well as the deaths 
+                            of <span class="persName-JR">Ruskin</span>&#x02BC;s younger cousin, <span class="persName-JRPDAUGHTER">Jessie</span> (<span class="date-1820-1827">1820&#x2013;27</span>), and an old servant, <span class="persName-MAUSESERVANT">Mause</span> 
+                        (&#x003C;a href&#x003D;"/notes/bibliography#JRWORKSLE" target&#x003D;"_self"&#x003E;<span class="persName-JR">Ruskin</span>, <span class="title-book-JRWORKSLE"><i>Works</i></span>&#x003C;/a&#x003E;, 35:70&#x2013;71; for more on the thematic resonance of <span class="persName-WS">Scott</span>&#x02BC;s <span class="title-book-SCOTTMONASTERY"><i>Monastery</i></span> throughout <span class="persName-JR">Ruskin</span>&#x02BC;s career, see 
+                        &#x003C;a href&#x003D;"/notes/bibliography#SAWYERRUSKINSPOETICARGUMENT" target&#x003D;"_self"&#x003E;<span class="persName-PLSAWYER">Sawyer</span>, <span class="title-book-SAWYERRUSKINSPOETICARGUMENT"><i>Ruskin&#x02BC;s Poetic Argument</i></span>&#x003C;/a&#x003E;, 17&#x2013;19).</div>
+                        
+                        
+                        <div class="p"><span class="persName-JRP">Aunt Jessie</span>&#x02BC;s death interrupted a family tour to the west country and the <span class="geogName-LAKEDISTRICT">Lake District</span>. The family was in <span class="placeName-PLYMOUTH">Plymouth</span> when the news 
+                            reached them on <span class="date-1828-05-24">24 May 1828</span> 
+                            (see &#x003C;a href&#x003D;"/notes/tour_of_1828_note" target&#x003D;"_self"&#x003E;Tour of <span class="date-1828">1828</span>&#x003C;/a&#x003E;; and 
+                            &#x003C;a href&#x003D;"/apparatuses/travel_itinerary_and_tour_notes_1828_apparatus" target&#x003D;"_self"&#x003E;<span class="title-manual_guide-JRTRAVELITINERARY1828">Travel Itinerary and Tour Notes &#x005B;<span class="date-1828">1828</span>&#x005D;</span>&#x003C;/a&#x003E;; 
+                            &#x003C;a href&#x003D;"/apparatuses/the_sound_of_the_sea_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-HEMANSSOUNDOFTHESEA">&#x201C;The Sound of the Sea&#x201D;</span>&#x003C;/a&#x003E;). 
+                            <span class="persName-JR">Ruskin</span> recalls in <span class="title-book-JRPRAETERITA"><i>Praeterita</i></span> returning from a walk with his nurse, &#x003C;a href&#x003D;"/notes/strachan_anne_note" target&#x003D;"_self"&#x003E;<span class="persName-ASB">Anne Strachan</span>&#x003C;/a&#x003E;, &#x201C;on the hill east of the town                            &#x005B;<span class="geogName-PLYMOUTHHOE">Plymouth Hoe</span>&#x005D;, looking out on the bay and breakwater, and came in to find my father, for the first time I had ever seen him, 
+                            in deep distress of sobbing tears&#x201D; (&#x003C;a href&#x003D;"/notes/bibliography#JRWORKSLE" target&#x003D;"_self"&#x003E;<span class="persName-JR">Ruskin</span>, <span class="title-book-JRWORKSLE"><i>Works</i></span>&#x003C;/a&#x003E;, 35:71). The Ruskins abbreviated but did not immediately terminate their tour, 
+                            continuing to visit sites in the southwest. There is no evidence that they traveled to <span class="placeName-SCOTLAND">Scotland</span>, but <span class="persName-JR">Ruskin</span> may have begun stage one of composition 
+                            of <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span> soon after the return home. Cousin <span class="persName-MRC">Mary</span> came to <span class="placeName-building-HERNE">Herne Hill</span> 
+                            in <span class="date-1828-07">July 1828</span> (see &#x003C;a href&#x003D;"/notes/bibliography#TOURLAKESINTRO" target&#x003D;"_self"&#x003E;<span class="persName-VAB">Burd</span>, <span class="title-essay-TOURLAKESINTRO">introduction to <span class="title-diary-TOURLAKES"><i>A Tour to the Lakes in Cumberland</i></span></span>&#x003C;/a&#x003E;, 7), 
+                            an event that may well have put <span class="persName-JR">Ruskin</span> in mind of the two families, the Avenels and the Glendinnings, 
+                            coming together in a single household in <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>. <span class="persName-JR">Ruskin</span> may even have been conscious of some class tension surrounding 
+                            the adoption of his northern cousin&#x2014;just as, in the novel, the two widows, <span class="persName-fictional-LADYAVENEL">Lady Avenel</span> 
+                            and <span class="persName-fictional-ELSPETGLENDINNING">Dame Glendinning</span>, form an amiable relationship, while maintaining class differences 
+                            that the servant <span class="persName-fictional-TTACKET">Tibb Tacket</span> continuously observes in order to secure her own status.</div>
+                        
+                        
+                        <div class="p">More enigmatic is how the spirit of that deceased cousin, <span class="persName-JRPDAUGHTER">Jessie</span>, may also hover over <span class="persName-JR">Ruskin</span>&#x02BC;s adaptation of the novel. 
+                            In <span class="title-book-JRPRAETERITA"><i>Praeterita</i></span>, <span class="persName-JR">Ruskin</span> memorializes <span class="persName-JRPDAUGHTER">Jessie</span> as an inseperable playmate, both in their exhibitions of precocious infant piety 
+                            and in their unhindered romps among streams and fields on the <span class="placeName-NORTHINCH">North Inch</span> of <span class="placeName-PERTH">Perth</span> 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#JRWORKSLE" target&#x003D;"_self"&#x003E;<span class="persName-JR">Ruskin</span>, <span class="title-book-JRWORKSLE"><i>Works</i></span>&#x003C;/a&#x003E;, 35:63, 66, 69). Three years passed after her death in <span class="date-1827">1827</span>, 
+                            before <span class="persName-JR">Ruskin</span> directly acknowledged her passing in &#x003C;a href&#x003D;"/apparatuses/on_the_death_of_my_cousin_jessy_apparatus" target&#x003D;"_self"&#x003E;<span class="title-poem-JRDEATHOFJESSY">&#x201C;On the Death of My Cousin Jessy&#x201D;</span>&#x003C;/a&#x003E;. The exact date of her death at age eight is not recorded 
+                            by <span class="persName-HGV">Viljoen</span> in &#x003C;a href&#x003D;"/notes/bibliography#SCOTTISHHERITAGE" target&#x003D;"_self"&#x003E;<span class="title-book-SCOTTISHHERITAGE"><i><span class="persName-JR">Ruskin</span>&#x02BC;s Scottish Heritage</i></span>&#x003C;/a&#x003E;, presumably because the date is not discoverable (pp. 157, 182, 185), but one wonders if this loss 
+                            contributed to delaying the Ruskins&#x02BC; <span class="placeName-SCOTLAND">Scotland</span> journey in <span class="date-1827">1827</span>, and then solemnized the long two&#x2010;month visit in <span class="date-1827-09-1827-10">September and October</span> 
+                            (see &#x003C;a href&#x003D;"/notes/tours_of_1826-27_note" target&#x003D;"_self"&#x003E;<span class="date-1827">Tours of 1826&#x2013;27</span>&#x003C;/a&#x003E;). 
+                            This death too, then, would have contributed to <span class="persName-JR">Ruskin</span>&#x02BC;s feelings when choosing to summarize <span class="persName-WS">Scott</span>&#x02BC;s novel in the next year.</div>
+                        
+                        
+                        <div class="p">Most engimatic of all, perhaps, is <span class="persName-JR">Ruskin</span>&#x02BC;s abandonment of his project (in fair copy, and so far as we know, also in draft) just short of bearing witness 
+                            to the death, not of a mother or daughter, but of a father&#x2014;<span class="persName-fictional-MARYAVENEL">Mary Avenel</span>&#x02BC;s haunting by the spirit of <span class="persName-fictional-WALTERAVENEL">Sir Walter Avenel</span>. 
+                            One might speculate that the omission was related to <span class="persName-JR">Ruskin</span>&#x02BC;s alarm over his father&#x02BC;s vulnerability, exposed to him 
+                            when witnessing <span class="persName-JJR">John James</span> in &#x201C;distress of sobbing tears&#x201D; over his sister <span class="persName-JRP">Jessie</span>&#x02BC;s death&#x2014;&#x201C;the first time I had ever seen him&#x201D; so, 
+                            <span class="persName-JR">Ruskin</span> adds, when recalling this powerful image in <span class="title-book-JRPRAETERITA"><i>Praeterita</i></span> 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#JRWORKSLE" target&#x003D;"_self"&#x003E;<span class="persName-JR">Ruskin</span>, <span class="title-book-JRWORKSLE"><i>Works</i></span>&#x003C;/a&#x003E;, 35:71).</div>
+                        
+                        
+                        <div class="p">Beyond reflecting the impact of immediate family losses, the mystery of the <span class="persName-fictional-WHITELADY">White Lady</span> 
+                            seems to have been further deepened for <span class="persName-JR">Ruskin</span> by association with <span class="persName-GGB">Byron</span>&#x02BC;s <span class="persName-fictional-WITCHOFTHEALPS">Witch of the Alps</span>. 
+                            <span class="persName-FJ">Francis Jeffrey</span>, as well, noticed the derivation from <span class="title-poem-BYRONMANFRED"><i>Manfred</i></span>. Reviewing <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span> for the <span class="title-periodical-EDINBURGHMONTHLYREVIEW"><i>Edinburgh Review</i></span> in <span class="date-1822">1822</span>, he considered 
+                            &#x201C;the first apparition of the spirit &#x005B;the <span class="persName-fictional-WHITELADY">White Lady</span>&#x005D; by her lonely fountain (though borrowed 
+                            from <span class="persName-GGB">Lord Byron</span>&#x02BC;s <span class="persName-fictional-WITCHOFTHEALPS">Witch of the Alps</span> in <span class="title-poem-BYRONMANFRED"><i>Manfred</i></span>)&#x201D; to be &#x201C;very beautifully imagined&#x201D;, justifying the powerful 
+                            &#x201C;effect of the interview on the mind of the young aspirant to whom she reveals herself 
+                            &#x005B;<span class="persName-fictional-HALBERTGLENDINNING">Halbert Glendinning</span>&#x005D;&#x201D;. While <span class="persName-FJ">Jeffrey</span> draws the line, like other reviewers, at the <span class="persName-fictional-WHITELADY">White Lady</span>&#x02BC;s bizarre &#x201C;descent&#x201D; with <span class="persName-fictional-HALBERTGLENDINNING">Halbert</span> 
+                            &#x201C;into an alabaster cavern, and the seizure of a stolen Bible from an altar blazing with cold flames&#x201D;, 
+                            which he compares to &#x201C;an unlucky combination of a French fairy tale and a dull German romance&#x201D;, 
+                            he did not consider the Romantic&#x2010;inspired image of the <span class="persName-fictional-WHITELADY">White Lady</span> &#x201C;the worst blemish of <span class="title-poem-JRTHEMONASTERY">&#x2018;the Monastery&#x2019;</span>&#x201D; 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#JEFFREYREVIEWSCOTTFORTUNESOFNIGEL1822" target&#x003D;"_self"&#x003E;<span class="title-essay-JEFFREYREVIEWSCOTTFORTUNESOFNIGEL1822">Review of <span class="title-book-SCOTTFORTUNESOFNIGEL"><i>The Fortunes of Nigel</i></span>, by the <span class="persName-pen_name-WS">Author of <span class="title-book-SCOTTWAVERLEY"><i>Waverley</i></span></span></span>&#x003C;/a&#x003E;, 205; 
+                            see also &#x003C;a href&#x003D;"/notes/bibliography#JEFFREYCONTRIBUTIONS" target&#x003D;"_self"&#x003E;<span class="persName-FJ">Jeffrey</span>, <span class="title-book-JEFFREYCONTRIBUTIONS"><i>Contributions to the Edinburgh Review</i></span>&#x003C;/a&#x003E;, 3:483). For <span class="persName-JR">Ruskin</span>, the <span class="persName-fictional-WHITELADY">White Lady</span> seems to resonate 
+                            with a fascination deeply rooted in the juvenila, starting with 
+                            &#x003C;a href&#x003D;"/apparatuses/harry_and_lucy_vol1_apparatus" target&#x003D;"_self"&#x003E;<span class="title-lesson-JRHARRYANDLUCYVOL1">&#x201C;Harry and Lucy&#x201D;, Vol. 1</span>&#x003C;/a&#x003E; (<span class="date-1826-01-01-1827-12-31">1826&#x2013;27</span>), 
+                            in which Harry &#x201C;observed a rainbow and a rising mist under it which his fancy soon transformed into a female form&#x201D;, 
+                            and he &#x201C;remembered the witch of the waters at <span class="geogName-ALPS">the Alps</span>&#x201D; 
+                            who in <span class="persName-GGB">Byron</span>&#x02BC;s <span class="title-poem-BYRONMANFRED"><i>Manfred</i></span> &#x201C;was raised from them by takeing some water in the hand and throwing it into the air pronouncing 
+                            some unintelligable words&#x201D;. In book 3 of <span class="persName-JR">Ruskin</span>&#x02BC;s <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span>, 
+                            the <span class="persName-fictional-WHITELADY">White Lady</span> is a &#x201C;form appearing like a fog&#x201D; (see &#x003C;a href&#x003D;"/witnesses/monastery_msiii#book3" target&#x003D;"_self"&#x003E;<span class="title-poem-JRMONASTERY">&#x201C;The Monastery&#x201D;</span>&#x003C;/a&#x003E;).</div>
+                     </div>
+                     
+                     
+                     <div id="RELIGIOUSCONTEXT" class="subsection">
+                        <span class="head-sub-subsection">Anti&#x2010;Catholicism in the Ruskin Family</span>
+                        
+                        
+                        <div class="p">On <span class="date-1829-02-14">14 February 1829</span>, shortly before <span class="persName-JR">Ruskin</span> started the 
+                            <a href="#COMPPUB2">second phase</a> of composing <span class="title-poem-JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</span>, 
+                            <span class="persName-MR">Margaret</span> flashed out in a postscript to a 
+                            &#x003C;a href&#x003D;"/apparatuses/jr_and_mr_to_jjr_1829-02-13_al_apparatus" target&#x003D;"_self"&#x003E;<span class="title-letter-">letter to <span class="persName-JJR">John James</span></span>&#x003C;/a&#x003E;, 
+                            &#x201C;I may be prejudiced but it seems to me that all that is urged by the R Catholics and their favourers is weak equivocal underhand 
+                            equally devoid of sincerity or honesty &#x0026; integrity&#x005B;. I&#x005D;n short they appear to me not to care what they do or say to gain their end&#x005B;.&#x005D; I believe they would 
+                            take <span class="persName-scriptural-SATAN">Satan</span> himself into their cabals to further their purposes to bring every thing under their subjection&#x201D; 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#RFL" target&#x003D;"_self"&#x003E;<span class="persName-VAB">Burd</span>, ed., <span class="title-book-RFL"><i>Ruskin Family Letters</i></span>&#x003C;/a&#x003E;, 177). 
+                            Such hostility and suspicion would not have been shared by <span class="persName-WS">Scott</span>, who as a Scottish Episcopalian approved of moderation and compromise, 
+                            and &#x201C;in his expression of his personal religious views&#x201D; <span class="persName-GMARSHALL">George Marshall</span> remarks, 
+                            &#x201C;consistently placed a high value on common sense and civic, as well as individual, virtue&#x201D; 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#MARSHALLSCOTTRELIGION" target&#x003D;"_self"&#x003E;<span class="persName-GMARSHALL">Marshall</span>, <span class="title-essay-MARSHALLSCOTTRELIGION">&#x201C;Scott and the Reformation of Religion&#x201D;</span>&#x003C;/a&#x003E;, 83).</div>
+                        
+                        
+                        <div class="p">Knowing that his even&#x2010;handed treatment of the Scottish Reformation in <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span> 
+                            would not be popular with many readers, <span class="persName-WS">Scott</span> prefaced the novel with fictitious epistles that 
+                            &#x201C;raise the question of partiality and impartiality, in a jocular, self-deprecating, and sometimes slightly ironic, way&#x201D; 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#MARSHALLSCOTTRELIGION" target&#x003D;"_self"&#x003E;<span class="persName-GMARSHALL">Marshall</span>, <span class="title-essay-MARSHALLSCOTTRELIGION">&#x201C;Scott and the Reformation of Religion&#x201D;</span>&#x003C;/a&#x003E;, 84). 
+                            The first epistle, by a local antiquarian of <span class="placeName-fictional-KENNAQUHAIR">Kennaquhair</span>, <span class="persName-fictional-CLUTTERBUCK">Captain Clutterbuck</span>, 
+                            relates how he was entrusted with the manuscript of <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span> by a stranger, a Benedictine monk&#x2014;&#x201C;&#x2018;a gentleman every inch of him&#x2019;&#x201D;, and a scholar&#x2014;who 
+                            traveled to the abbey ruin to disinter the entombed heart of his ancestor (<span class="persName-fictional-EDWARDGLENDINNING">Abbot Ambrose</span>, <span class="persName-fictional-EDWARDGLENDINNING">Edward Glendinning</span>). The <span class="persName-fictional-CLUTTERBUCK">Captain</span> is respectful toward 
+                            the monk and assists him, but scrupulously declines, as &#x201C;a sound protestant&#x201D;, &#x201C;to implicate myself in any recruiting . . . for the advancement of popery&#x201D;. 
+                            In a reply to <span class="persName-fictional-CLUTTERBUCK">Clutterbuck</span>, the <span class="persName-pen_name-WS">Author of <span class="title-book-SCOTTWAVERLEY"><i>Waverley</i></span></span> 
+                            undertakes publication of the manuscript on condition of &#x201C;alter&#x005B;ing&#x005D; whatever seemed too favourable 
+                            to the Church of <span class="placeName-ROME">Rome</span>, which I abominate, were it but for her fasts and penance&#x201D;. Thus, with this urbane joke, 
+                            <span class="persName-WS">Scott</span> deflates what <span class="persName-MR">Margaret Ruskin</span> considered a national crisis 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#SCOTTMONASTERYFIELDING" target&#x003D;"_self"&#x003E;<span class="persName-WS">Scott</span>, <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>, ed. <span class="persName-PFIELDING">Fielding</span>&#x003C;/a&#x003E;, 
+                            9, 15, 30 &#x005B;<span class="title-essay-SCOTTMONASTERYCLUTTERBUCKEPISTLE">&#x201C;Introductory Epistle from <span class="persName-fictional-CLUTTERBUCK">Captain Clutterbuck</span> . . . to the <span class="persName-pen_name-WS">Author of <span class="title-book-SCOTTWAVERLEY">&#x2018;Waverley&#x2019;</span></span>&#x201D;</span>, 
+                            <span class="title-essay-SCOTTMONASTERYANSWEREPISTLE">&#x201C;Answer by &#x2018;the <span class="persName-pen_name-WS">Author of <span class="title-book-SCOTTWAVERLEY">Waverley</span>&#x2019;</span> to the Foregoing Letter from <span class="persName-fictional-CLUTTERBUCK">Captain Clutterbuck</span>&#x201D;</span>&#x005D;).</div>
+                        
+                        
+                        <div class="p"><span class="persName-JR">Ruskin</span> likely heard heated opinions about Roman Catholicism expressed in the household 
+                            while he was engaged with the second phase of composing <span class="title-poem-JRMONASTERY">&#x201C;The Monastery&#x201D;</span>, during which <span class="title-law-CATHOLICEMANCIPATION">Catholic Emancipation</span> was being debated. 
+                            Since <span class="persName-MR">Margaret</span> commented approvingly on his &#x201C;writing a novel &#x0026; a Sermon both as far as they have gone 
+                            very tolerable I assure you&#x201D;, she may have perceived these compositions as exercises in anti&#x2010;Catholicism 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#RFL" target&#x003D;"_self"&#x003E;<span class="persName-VAB">Burd</span>, ed., <span class="title-book-RFL"><i>Ruskin Family Letters</i></span>&#x003C;/a&#x003E;, 185). 
+                            While <span class="persName-JR">Ruskin</span> was perhaps not equal to or interested in versifying the more polemical passages of the novel&#x2014;passages that, 
+                            in any case, conveyed a more judicious view of the Protestant&#x2010;Catholic divide during the Reformation than his mother would have approved&#x2014;he 
+                            did, as previously suggested, implicitly favor the Protestant cause through his arrangement of episodes 
+                            (<a href="#ARRANGEMENTOFEPISODES"><span class="persName-JR">Ruskin</span>&#x02BC;s Arrangement of Episodes from <span class="persName-WS">Scott</span>&#x02BC;s Novel</a>). 
+                            That a ten&#x2010;year&#x2010;old achieved this emphasis by concentrating on episodes involving the <span class="persName-fictional-WHITELADY">White Lady</span>&#x02BC;s interventions on behalf of the Avenels would, 
+                            in the view of most reviewers of <span class="persName-WS">Scott</span>&#x02BC;s novel, have only confirmed what they regarded as the &#x201C;childishness&#x201D; of those episodes 
+                            (<a href="#CRITICALCONTEXT">The Critical Context of <span class="persName-WS">Scott</span>&#x02BC;s Novel versus <span class="persName-JR">Ruskin</span>&#x02BC;s Supernatural Emphasis</a>). 
+                            Yet <span class="persName-JR">Ruskin</span>&#x02BC;s fixation on the <span class="persName-fictional-WHITELADY">White Lady</span> may not be adequately explained 
+                            as a means to appease his <span class="persName-MR">mother</span>&#x02BC;s anti&#x2010;Catholicism combined with Gothic excitement; arguably, his response was an authentically spiritual expression, 
+                            reacting positively to the supernaturalism in <span class="persName-WS">Scott</span>&#x02BC;s novel that critics found jarring.</div>
+                        
+                        
+                        <div class="p"><span class="persName-CTMAY">Chad T. May</span> argues that <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span> 
+                            is &#x201C;unlike any other novel <span class="persName-WS">Scott</span> wrote&#x201D; in the directness with which he represented religious mystery. 
+                            Whereas &#x201C;supernatural elements are incorporated throughout <span class="persName-WS">Scott</span>&#x02BC;s novels&#x201D;, 
+                            <span class="persName-CTMAY">May</span> argues, these elements are &#x201C;always presented within a rational framework that allows readers 
+                            to see them as simply the product of a prior belief system&#x201D;. In <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>, however, 
+                            &#x201C;the <span class="persName-fictional-WHITELADY">White Lady</span>&#x02BC;s presence and actions . . . exceed the skeptical frame 
+                            of the narrator&#x201D;. <span class="persName-WS">Scott</span> licensed this excess, <span class="persName-CTMAY">May</span> believes, 
+                            in order to employ &#x201C;the <span class="persName-fictional-WHITELADY">White Lady</span> as a figure to represent the mysteries of religious faith&#x201D;:</div>
+                        
+                        
+                        <div class="floating-text">
+                           
+                           <div class="essay" id="">
+                              
+                              <div class="p">In other words, instead of offering an account of the psychological or emotional conflicts that must surely precede any type of religious conversion, 
+                                            the text offers a symbolic account that alludes to instances of religious transformation throughout the Christian tradition 
+                                            as well as the central theological disputes that animated the Protestant reformers. . . . The <span class="persName-fictional-WHITELADY">White Lady</span> may have been a failure 
+                                            from the perspective of <span class="persName-WS">Scott</span>&#x02BC;s critics, but she stands as a marker for that which lies outside historical explanation, 
+                                            in this case faith. Without the dominant rational or skeptical framework present in his other novels, 
+                                            <span class="persName-WS">Scott</span> makes it clear that what is at stake is not simply representing a belief system of the past, 
+                                            but giving voice to those qualities of human existence which remain, even in the present day, beyond the purview of reason.</div>
+                              
+                              
+                              <div class="p">(&#x003C;a href&#x003D;"/notes/bibliography#MAYSCOTTMONASTERYRELIGIOUSBELIEF" target&#x003D;"_self"&#x003E;<span class="persName-CTMAY">May</span>, <span class="title-essay-MAYSCOTTMONASTERYRELIGIOUSBELIEF">&#x201C;<span class="persName-WS">Sir Walter Scott</span>&#x02BC;s <i>The Monastery</i> and the Representation of Religious Belief&#x201D;</span>&#x003C;/a&#x003E;, 191, 197, 203, 206&#x2013;7)</div>
+                              </div>
+                           </div>
+                        
+                        
+                        <div class="p">As a comparatively naive, but intensive reader, <span class="persName-JR">Ruskin</span> perhaps held an advantage over <span class="persName-WS">Scott</span>&#x02BC;s critics 
+                            in responding emotionally and without embarrassment to this representation of religious mystery. Textual evidence exists that <span class="persName-JR">Ruskin</span> 
+                            specifically rejected a rational, historicized explanation of spiritual phenomena in the novel. In the the draft fragment, 
+                            &#x003C;a href&#x003D;"/witnesses/come_on_good_horse_and_let_us_see_msia" target&#x003D;"_self"&#x003E;<span class="title-manuscript-">&#x201C;come on good horse and let us see&#x201D;</span>&#x003C;/a&#x003E;, 
+                            <span class="persName-JR">Ruskin</span> initially wrote that it was the family &#x201C;avenels fate / 
+                            to see things that nobody saw / except themselves, and would say pshaw&#x201D;. <span class="persName-JR">Ruskin</span> deleted this gruff expression of skepticism 
+                            and, in an intricate substitution, replaced the couplet with &#x201C;but it was great avenels fate / 
+                            to have a spirit in their line / and so it was this odd time&#x201D;. <span class="persName-JR">Ruskin</span>&#x02BC;s source passage in the novel 
+                            contained a cue that would have allowed for the &#x201C;pshaw&#x201D;, or at least for a more politely noncommital expression, 
+                            by relegating the <span class="persName-fictional-WHITELADY">White Lady</span>&#x02BC;s manifestations 
+                            to an &#x201C;<i>old</i> time&#x201D; rather than an &#x201C;<i>odd</i> time&#x201D;. In an exchange between 
+                            <span class="persName-fictional-TTACKET">Tibb Tacket</span> and <span class="persName-fictional-ELSPETGLENDINNING">Elspet Glendinning</span> 
+                            on the Halloween night when <span class="persName-fictional-MARYAVENEL">Mary Avenel</span> allegedly saw the ghost of her <span class="persName-fictional-SIMONGLENDINNING">father</span>, 
+                            <span class="persName-fictional-TTACKET">Tibb</span> defends the Avenels&#x02BC; privileged connection with the spirit world: 
+                            &#x201C;&#x2018;Mony braw services&#x2019;&#x201D; the <span class="persName-fictional-WHITELADY">White Lady</span> 
+                            &#x201C;&#x2018;has dune&#x2019;&#x201D; for the Avenels &#x201C;&#x2018;in the auld histories&#x2019;&#x201D;, 
+                            <span class="persName-fictional-TTACKET">Tibb</span> proudly declares, although she admits that &#x201C;&#x2018;I mind o&#x02BC; naething in my day, except it was her that the bairn saw in the bog&#x2019;&#x201D; 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#SCOTTMONASTERYFIELDING" target&#x003D;"_self"&#x003E;<span class="persName-WS">Scott</span>, <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>, ed. <span class="persName-PFIELDING">Fielding</span>&#x003C;/a&#x003E;, 
+                            56 &#x005B;vol. 1, chap. 4&#x005D;). Restricting the <span class="persName-fictional-WHITELADY">White Lady</span>&#x02BC;s actions to the &#x201C;auld histories&#x201D; of the novel&#x02BC;s pre&#x2010;history or even 
+                            its sixteenth&#x2010;century setting would have served as a typical disclaimer in any other <span class="persName-WS">Scott</span> novel. In draft revision, 
+                            <span class="persName-JR">Ruskin</span> specifically rejected this choice, however, supplanting a scornful &#x201C;pshaw&#x201D;, 
+                            not with a tolerance for beliefs of an &#x201C;old&#x201D; time, but with wonder over the mystery of an &#x201C;odd&#x201D; time  
+                            (see also <a href="#COMPPUB2-DRAFT">Stage Two of Composition: Surviving Draft</a>).</div>
+                        
+                        
+                        <div class="p">At the same time, other religious aspects of the novel presented <span class="persName-JR">Ruskin</span> with choices about which he may have felt more ambivalent. As already suggested, 
+                            the project&#x02BC;s connection with <a href="#SPIRITUALCONTEXT">Recent Family Deaths</a> is enigmatic; and the point at which <span class="persName-JR">Ruskin</span> abandoned the project, at least in fair copy, 
+                            suggests that he may have felt a particular challenge assimilating an episode that raises the spectre of a father&#x02BC;s death. The novel may also have challenged <span class="persName-JR">Ruskin</span> 
+                            by presenting conflicts in his identification with the protagonists. <span class="persName-fictional-HALBERTGLENDINNING">Halbert Glendinning</span> 
+                            grows into the Protestant hero, a journey that begins with his summoning the <span class="persName-fictional-WHITELADY">White Lady</span> 
+                            by pronouncing &#x201C;mystical rhymes&#x201D;, as does <span class="persName-JR">Ruskin</span>&#x02BC;s <span class="persName-fictional-HARRY">Harry</span> at the end of 
+                            &#x003C;a href&#x003D;"/apparatuses/harry_and_lucy_vol1_apparatus" target&#x003D;"_self"&#x003E;<span class="title-lesson-JRHARRYANDLUCYVOL1">&#x201C;Harry and Lucy&#x201D;, Vol. 1</span>&#x003C;/a&#x003E;, 
+                            when invoking the <span class="persName-fictional-WITCHOFTHEALPS">Witch of the Alps</span>. According to the narrator, <span class="persName-fictional-HALBERTGLENDINNING">Halbert</span> 
+                            &#x201C;&#x2018;came hither a boy&#x2019;&#x201D; to confront the <span class="persName-fictional-WHITELADY">White Lady</span> 
+                            but means to &#x201C;&#x2018;return a man&#x2019;&#x201D;, determined to gain the the spirit&#x02BC;s aid in 
+                            &#x201C;learn&#x005B;ing&#x005D; the contents of that mysterious volume&#x201D;, <span class="persName-fictional-LADYAVENEL">Alice Avenel</span>&#x02BC;s vernacular bible, 
+                            and to understand &#x201C;why the <span class="persName-fictional-LADYAVENEL">Lady of Avenel</span> loved it&#x2014;why the priests feared, and would have stolen it&#x201D;. 
+                            Compared to this scene, <span class="persName-fictional-EDWARDGLENDINNING">Edward Glendinning</span> exhibits no less resolution than his brother, 
+                            when defending <span class="persName-fictional-MARYAVENEL">Mary Avenel</span>&#x02BC;s possession of her mother&#x02BC;s bible against the pressure 
+                            by Sub&#x2010;Prior <span class="persName-fictional-FATHEREUSTACE">Eustace</span> to &#x201C;borrow&#x201D; it. 
+                            Yet, for a Protestant reader, <span class="persName-fictional-EDWARDGLENDINNING">Edward</span>&#x02BC;s independence 
+                            is ominously compromised by his acceptance of a pledge that <span class="persName-fictional-FATHEREUSTACE">Eustace</span> offers in place of the plain &#x201C;black book&#x201D;&#x2014;a 
+                            &#x201C;gay missal&#x201D;, filled with images that excite his &#x201C;eager curiosity&#x201D; 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#SCOTTMONASTERYFIELDING" target&#x003D;"_self"&#x003E;<span class="persName-WS">Scott</span>, <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>, ed. <span class="persName-PFIELDING">Fielding</span>&#x003C;/a&#x003E;, 
+                            113, 115 &#x005B;vol. 2, chap. 1&#x005D;; 91 &#x005B;vol. 1, chap. 9&#x005D;).</div>
+                        
+                        
+                        <div class="p">Ultimately, tbe novel palliates Protestant anxiety about idolatry. Although <span class="persName-fictional-FATHEREUSTACE">Eustace</span>&#x02BC;s 
+                            distraction succeeds in gaining him temporary possession of the bible, <span class="persName-fictional-EDWARDGLENDINNING">Edward</span> 
+                            is not so &#x201C;lost in wonder&#x201D; over the missal&#x02BC;s pictures that he forgets that 
+                            &#x201C;&#x2018;<span class="persName-fictional-MARYAVENEL">Mary</span> may like that &#x005B;black book&#x005D; best which was her mother&#x02BC;s&#x2019;&#x201D;. 
+                            Terrors do not lie in <span class="persName-fictional-FATHEREUSTACE">Eustace</span>&#x02BC;s parting promise to <span class="persName-fictional-EDWARDGLENDINNING">Edward</span>&#x2014;to 
+                            &#x201C;&#x2018;teach you to write and read such beautiful letters as you see there written, and to paint them blue, green, and yellow, and to blazon them with gold&#x2019;&#x201D;. 
+                            The greatest temptation raised in <span class="persName-fictional-EDWARDGLENDINNING">Edward</span>&#x02BC;s mind by the prospect of making graven images is merely to learn to &#x201C;paint <span class="persName-fictional-MARYAVENEL">Mary</span>&#x02BC;s picture&#x201D;&#x2014;<span class="persName-fictional-MARYAVENEL">Mary Avenel</span>&#x02BC;s, 
+                            not the <span class="persName-scriptural-VIRGINMARY">Virgin</span>&#x02BC;s&#x2014;a fancy that reminds him to exact a parting promise from <span class="persName-fictional-FATHEREUSTACE">Eustace</span> to return the bible. 
+                            Even at the end of the novel, when <span class="persName-fictional-EDWARDGLENDINNING">Edward</span>, now a novitiate, 
+                            learns that he has lost <span class="persName-fictional-MARYAVENEL">Mary</span> to both his brother and the Protestant faith, 
+                            and the <span class="persName-JSEM1">Earl of Moray</span>&#x02BC;s army is closing on <span class="placeName-fictional-KENNAQUHAIR">Kennaquhair</span> 
+                            and threatening destruction of the abbey, <span class="persName-WS">Scott</span> brings the preacher, <span class="persName-fictional-HENRYWARDEN">Henry Warden</span>, 
+                            on the scene for little purpose other than to have even this most fanatical of the Protestant characters deliver &#x201C;&#x2018;testimony&#x2019;&#x201D; 
+                            against &#x201C;&#x2018;wanton devastation&#x2019;&#x201D; of the building and its treasures: &#x201C;&#x2018;I would have these stately shrines deprived 
+                            of the idols which, no longer simply regarded as the effigies of the good and the wise, have become the objects of foul idolatry. I would otherwise have 
+                            its ornaments subsist, unless as they are, or may be, a snare to the souls of men; and especially do I condemn those ravages which have been made by the heady fury of the people&#x2019;&#x201D; 
+                            (&#x003C;a href&#x003D;"/notes/bibliography#SCOTTMONASTERYFIELDING" target&#x003D;"_self"&#x003E;<span class="persName-WS">Scott</span>, <span class="title-book-SCOTTMONASTERY"><i>The Monastery</i></span>, ed. <span class="persName-PFIELDING">Fielding</span>&#x003C;/a&#x003E;, 
+                            91 &#x005B;vol. 1, chap. 9&#x005D;; 339 &#x005B;vol. 3, chap. 12&#x005D;).</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </body>
+         
+         
+         </div>
+   </body>
+</main>
