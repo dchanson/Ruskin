@@ -1,0 +1,77 @@
+&#x003C;?php
+&#x0024;paths &#x003D; array('./', '../', '../../');
+&#x0024;root_path &#x003D; './';
+
+foreach (&#x0024;paths  as &#x0024;path){
+&#x0024;filename &#x003D; &#x0024;path.'header.inc.php';
+
+if (file_exists(&#x0024;filename)){
+&#x0024;root_path &#x003D; &#x0024;path;
+break;
+};
+}
+define('ROOT_PATH', &#x0024;root_path);
+require_once(&#x0024;root_path."header.inc.php");
+?&#x003E;&#x003C;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&#x003E;<!DOCTYPE HTML><html xmlns:custom="http://whatever" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:xi="http://www.w3.org/2001/XInclude">
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset&#x003D;UTF-8">
+      <title>Edmund Butterworth (d. 1814)</title>&#x003C;?php require_once(ROOT_PATH."layout_includes/site_top.inc.php"); ?&#x003E;
+          &#x003C;link href&#x003D;"&#x003C;?php echo r_build_url("style.php?p&#x003D;site_styles.scss"); ?&#x003E;" rel&#x003D;"stylesheet" type&#x003D;"text/css"&#x003E;
+        </head>
+   
+   &#x003C;?php require_once(ROOT_PATH."layout_includes/navigation.inc.php"); ?&#x003E;
+   
+   <div class="note">
+      <div class="biographical" id="">
+         
+         <h1 class="page-title"><span class="persName-EDB">Edmund Butterworth (d. <span class="date-1814">1814</span>)</span></h1>
+         
+         <div class="p"><span class="persName-EDB">Butterworth</span> held the post of writing master and accountant at the Royal High School, <span class="placeName-EDINBURGH">Edinburgh</span>, 
+                    the institution in which <span class="persName-JJR">John James Ruskin</span> enrolled in <span class="date-1795">1795</span> at age ten. 
+                    <span class="persName-EDB">Butterworth</span> was appointed to the post in <span class="date-1780-08">August 1780</span> on the merits of &#x201C;the elegance of his penmanship&#x201D; and &#x201C;his success as a teacher&#x201D;, 
+                    having previously taught writing and arithmetic <span class="date-1773-1780-08">since 1773</span> at Dumfries Academy 
+                    (&#x003C;a href&#x003D;"/notes/bibliography#STEVENEDINBURGHHIGHSCHOOL" target&#x003D;"_self"&#x003E;<span class="persName-WSTEVEN">Steven</span>, <span class="title-essay-STEVENEDINBURGHHIGHSCHOOL"><i>History of the High School of Edinburgh</i></span>&#x003C;/a&#x003E;, 128; app. 6, p. 120). 
+                    He proudly advertised his office on the title page of his first&#x2010;published copybook, <span class="title-book-BUTTERWORTHUNIVERSALPENMAN"><i>The Universal Penman; or The Beauties of Writing Delineated</i></span>, 
+                    which appeared in <span class="date-1785">1785</span>, printed in <span class="placeName-EDINBURGH">Edinburgh</span> &#x201C;for the Author &#x0026; G. Robinson&#x201D; 
+                    (&#x003C;a href&#x003D;"/notes/bibliography#HEALENGLISHWRITINGMASTERS" target&#x003D;"_self"&#x003E;Heal, <span class="title-book-HEALENGLISHWRITINGMASTERS"><i>English Writing&#x2010;Masters</i></span>&#x003C;/a&#x003E;, 25, 193). 
+                    <span class="persName-JJR">John James</span> would not have been instructed personally by <span class="persName-EDB">Butterworth</span>, since the master resigned in <span class="date-1793-08">August 1793</span> 
+                    (&#x003C;a href&#x003D;"/notes/bibliography#STEVENEDINBURGHHIGHSCHOOL" target&#x003D;"_self"&#x003E;Steven, <span class="title-STEVENEDINBURGHHIGHSCHOOL"><i>History of the High School of Edinburgh</i></span>&#x003C;/a&#x003E;, app. 6, p. 120).</div>
+         
+         <div class="p"><span class="persName-EDB">Butterworth</span> must have brought unusual distinction to the post of writing master. Since the earliest days of the Royal High School, 
+                    the class in writing had been considered optional at this institution devoted primarily to study of classics; 
+                    and in <span class="date-1704">1704</span> the school authorities felt compelled to intervene in order to assure that the writing master was 
+                    &#x201C;properly countenanced&#x201D;, by urging the Latin masters to &#x201C;use their best endeavours to get more constant employment to . . . the teacher of writing&#x201D;. 
+                    The prestige of the post had not improved later in the century, when <span class="persName-EDB">Butterworth</span> was appointed to succeed an &#x201C;eccentric person&#x201D; who had deserted the school. 
+                    Instruction in writing included basic arithmetic until <span class="date-1827-1828">1827&#x2013;28</span>, when greater dignity was bestowed on this part of the curriculum by combining its study with mathematics. 
+                    This reform was part of an expansion and liberalization of the overall curriculum, although writing and arithmetic remained optional classes, allowing for students to obtain this instruction elsewhere 
+                    (&#x003C;a href&#x003D;"/notes/bibliography#STEVENEDINBURGHHIGHSCHOOL" target&#x003D;"_self"&#x003E;<span class="persName-WSTEVEN">Steven</span>, <span class="title-essay-STEVENEDINBURGHHIGHSCHOOL"><i>History of the High School of Edinburgh</i></span>&#x003C;/a&#x003E;, 80&#x2013;81, 128, 227).</div>
+         
+         <div class="p"><span class="persName-EDB">Butterworth</span> designed his copybook, <span class="title-book-BUTTERWORTHUNIVERSALPENMAN"><i>The Universal Penman; or The Beauties of Writing Delineated</i></span>, according to its title page, 
+                    for the &#x201C;improvement of youth&#x201D; and &#x201C;amusement of the curious&#x201D; 
+                    (&#x003C;a href&#x003D;"/notes/bibliography#HEALENGLISHWRITINGMASTERS" target&#x003D;"_self"&#x003E;<span class="persName-AHEAL">Heal</span>, <span class="title-essay-HEALENGLISHWRITINGMASTERS"><i>English Writing&#x2010;Masters</i></span>&#x003C;/a&#x003E;, 193). The main title, 
+                    <span class="title-book-BUTTERWORTHUNIVERSALPENMAN"><i>The Universal Penman</i></span>, was shared with that of an older, well&#x2010;known copybook by <span class="persName-GBE">George Bickham</span> (<span class="date-1684-1758">1684&#x2013;1758</span>) 
+                    (see &#x003C;a href&#x003D;"/notes/hand_note" target&#x003D;"_self"&#x003E;Ruskin&#x02BC;s Handwriting&#x003C;/a&#x003E;). Nonetheless, another edition of <span class="persName-EDB">Butterworth</span>&#x02BC;s text 
+                    was published in <span class="date-1799">1799</span> in <span class="placeName-LONDON">London</span> by Laurie and Whittle (p. 25). As was typical for publication of copybooks 
+                    (see &#x003C;a href&#x003D;"/notes/bibliography#BECKERPRACTICEOFLETTERS" target&#x003D;"_self"&#x003E;<span class="persName-DPBECKER">Becker</span>, <span class="title-book-BECKERPRACTICEOFLETTERS"><i>Practice of Letters</i></span>&#x003C;/a&#x003E;, xiii), 
+                    this firm was a print publisher specializing in maps, charts, 
+                    and other pictorial prints. Laurie and Whittle also maintained a Hibernian connection, the firm being headed by the Scottish engraver, 
+                    <span class="persName-RL">Robert Laurie</span> (<span class="date-1755-1836">1755?&#x2013;1836</span>), who developed a method 
+                    of printing colored mezzotints (&#x003C;a href&#x003D;"/notes/bibliography#LAURIEDNB" target&#x003D;"_self"&#x003E;<span class="persName-TCLAYTON">Clayton</span> and <span class="persName-AMCCONNELL">McConnell</span>, <span class="title-dictionary_entry-LAURIEDNB">&#x201C;Laurie, Robert (<span class="date-1755-1836">1755?&#x2013;1836&#x201D;</span></span>&#x003C;/a&#x003E;).</div>
+         
+         <div class="p">According to &#x003C;a href&#x003D;"/notes/bibliography#HEALENGLISHWRITINGMASTERS" target&#x003D;"_self"&#x003E;<span class="persName-AHEAL">Heal</span>, <span class="title-essay-HEALENGLISHWRITINGMASTERS"><i>English Writing&#x2010;Masters</i></span>&#x003C;/a&#x003E;, 
+                        <span class="persName-EDB">Butterworth</span> produced six additional titles by <span class="date-1799-1801">1799&#x2013;1801</span>, with the book that <span class="persName-JR">Ruskin</span> used, 
+                    the <span class="title-book-BUTTERWORTHYOUNGARITHMETICIAN"><i>Young Arthmetician&#x02BC;s Instructor</i></span>, 
+                    appearing in <span class="date-1805">1805</span>. In addition, the &#x201C;firm&#x201D; of Butterworth &#x0026; Son 
+                    produced &#x201C;several copy&#x2010;books from <span class="date-1800-1827">1800&#x2013;1827</span> and possibly later&#x201D; (pp. 25, 193). 
+                    Thus, the firm remained in business in <span class="date-1827">1827</span>, the year in which <span class="persName-JJR">John James</span> purchased the 
+                    <span class="title-book-BUTTERWORTHYOUNGARITHMETICIAN"><i>Young Arthmetician&#x02BC;s Instructor</i></span>, 
+                    and also the year in which <span class="persName-JR">Ruskin</span> first used pen and ink and presumably began to learn round hand 
+                    (&#x003C;a href&#x003D;"/notes/bibliography#RFL" target&#x003D;"_self"&#x003E;<span class="persName-VAB">Burd</span>, ed., <span class="title-collected_letters-RFL"><i>Ruskin Family Letters</i></span>&#x003C;/a&#x003E;, 168 n. 1; 
+                        and see &#x003C;a href&#x003D;"/notes/hand_note" target&#x003D;"_self"&#x003E;Ruskin&#x02BC;s Handwriting&#x003C;/a&#x003E;).</div>
+         
+         </div>
+   </div>
+   
+   
+   </html>
