@@ -1,5 +1,7 @@
 <?php
-require 'src/vendor/autoload.php';
+require __DIR__ . '/../../vendor/autoload.php';
+
+putenv('ELASTIC_USE_GUZZLE=true');
 
 use Elastic\Elasticsearch\ClientBuilder;
 
