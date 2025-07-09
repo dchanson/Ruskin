@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 
-use Elasticsearch\ClientBuilder;
+use Elastic\Elasticsearch\ClientBuilder;
 
 $client = ClientBuilder::create()
     ->setHosts(['localhost:9200'])
@@ -11,4 +11,3 @@ $client = ClientBuilder::create()
         ]
     ])
     ->build();
-?>

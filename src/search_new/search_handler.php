@@ -21,6 +21,15 @@ $query = $_GET['q'] ?? '';
 $typeFilter = $_GET['typeFilter'] ?? '';
 $persName = $_GET['persName'] ?? '';
 $placeName = $_GET['placeName'] ?? '';
+$geogName = $_GET['geogName'] ?? '';
+$orgName = $_GET['orgName'] ?? '';
+$nameType = $_GET['nameType'] ?? '';
+$nameValue = $_GET['nameValue'] ?? '';
+$persNameType = $_GET['persNameType'] ?? '';
+$placeNameType = $_GET['placeNameType'] ?? '';
+$geogNameType = $_GET['geogNameType'] ?? '';
+$orgNameType = $_GET['orgNameType'] ?? '';
+
 
 $page = max(1, intval($_GET['page'] ?? 1));
 $perPage = max(1, min(50, intval($_GET['per_page'] ?? 10)));
@@ -45,6 +54,11 @@ if (!empty($persName)) {
             'persNames' => $persName
         ]
     ];
+    if (!empty($persNameType) && $persNameType !== 'all') {
+        $must[] = [
+            'term' => ['persNameTypes' => $persNameType]
+        ];
+    }
 }
 
 if (!empty($placeName)) {
@@ -53,18 +67,78 @@ if (!empty($placeName)) {
             'placeNames' => $placeName
         ]
     ];
+    if (!empty($placeNameType) && $placeNameType !== 'all') {
+        $must[] = [
+            'term' => ['placeNameTypes' => $placeNameType]
+        ];
+    }
 }
+
+if (!empty($geogName)) {
+    $must[] = [
+        'match_phrase' => [
+            'geogNames' => $geogName
+        ]
+    ];
+    if (!empty($geogNameType) && $geogNameType !== 'all') {
+        $must[] = [
+            'term' => ['geogNameTypes' => $geogNameType]
+        ];
+    }
+}
+
+if (!empty($orgName)) {
+    $must[] = [
+        'match_phrase' => [
+            'orgNames' => $orgName
+        ]
+    ];
+    if (!empty($orgNameType) && $orgNameType !== 'all') {
+        $must[] = [
+            'term' => ['orgNameTypes' => $orgNameType]
+        ];
+    }
+}
+
+if (!empty($nameValue)) {
+    $must[] = [
+        'match_phrase' => [
+            'names' => $nameValue
+        ]
+    ];
+    if (!empty($nameType) && $nameType !== 'all') {
+        $must[] = [
+            'term' => ['nameTypes' => strtolower($nameType)]
+        ];
+    }
+}
+
 
 if (!empty($typeFilter)) {
     $parts = explode(':', $typeFilter);
-    $type = $parts[0] ?? '';
-    $subtype = $parts[1] ?? '';
+    $mainType = $parts[0] ?? '';
+    $subType = $parts[1] ?? '';
 
-    if (!empty($type)) {
-        $must[] = ['term' => ['type' => $type]];
+    $directoryMap = [
+        'apparatus' => 'apparatuses',
+        'figures' => 'figures',
+        'glosses' => 'glosses',
+        'letters' => 'letters',
+        'notes' => 'notes',
+        'witness' => 'witnesses',
+    ];
+
+    // Check if the mainType maps to a directory filter
+    if (isset($directoryMap[$mainType])) {
+        $must[] = ['term' => ['directory' => $directoryMap[$mainType]]];
     }
-    if (!empty($subtype)) {
-        $must[] = ['term' => ['subtype' => $subtype]];
+    // Handle specific type/subtype filters (like "witness:poem", "apparatus:work")
+    else if (!empty($mainType)) {
+        $must[] = ['term' => ['type' => $mainType]];
+    }
+
+    if (!empty($subType)) {
+        $must[] = ['term' => ['subtype' => $subType]];
     }
 }
 
@@ -100,6 +174,9 @@ $body = [
             'content' => ['fragment_size' => 150, 'number_of_fragments' => 1],
             'persNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
             'placeNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+            'orgNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+            'geogNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+            'names' => ['fragment_size' => 150, 'number_of_fragments' => 1],
         ]
     ],
     'from' => $from,
@@ -143,7 +220,7 @@ try {
             $snippet = mb_substr(strip_tags($source['content'] ?? ''), 0, 200) . '...';
         }
 
-        
+
         $relativeCleanPath = preg_replace('#^(gen/_xml/|_Completed/|_In_Process/)?#', '', $relativePath);
         $relativeCleanPath = preg_replace('/\.xml$/', '', $relativeCleanPath);
         $link = '/' . $relativeCleanPath;
@@ -158,7 +235,7 @@ try {
 
     $totalResults = $response['hits']['total']['value'];
     $totalPages = ceil($totalResults / $perPage);
-    
+
     if (isset($_GET['page']) || isset($_GET['per_page'])) {
         echo json_encode([
             'results' => $results,
@@ -176,7 +253,6 @@ try {
     } else {
         echo json_encode($results);
     }
-
 } catch (Exception $e) {
     echo json_encode(['error' => $e->getMessage()]);
 }
