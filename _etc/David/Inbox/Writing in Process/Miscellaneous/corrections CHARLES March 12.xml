@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="tite_of_work_note">
+            <titleStmt>
+                <title type="main">Corrections March 2015</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="subtype">
+                
+                <!-- HOME PAGE -->
+                
+                <!-- (1) Line 2 of home page: code correct apostrophe -->
+                <!-- (2) Line 6: missing article "the": "1890s through turn of the century" should be "1890s through the turn of the century"-->
+                
+                <!-- (3) Line 6: in place of "convery the corpus of junvenilia and youthful wrting by a major modern author" the following -->
+                
+                <p>convey the corpus of juvenilia and youthful writing by a major &#x201C;modern&#x201D; (i.e., nineteenth&#x2010;century) author </p>
+                
+                <!-- (4) Below intro paragraphs, add links to "Staff" and "Legal": new pages to be placed in your Inbox-->
+                
+                <!-- (5) News feed: let's reduce the 4 entries to 1 as follows -->
+                
+                <p>2.19.15 First viewing of <hi rend="italic">ERM</hi> presented at the Ruskin Seminar, Lancaster University.</p>
+                
+                
+                
+                
+                <!-- INDICES: WORKS BY OTHERS -->
+                <!-- (1) "Works by Others" is missing from the sidebar navigation -->
+                
+                
+                <!-- INDICES: COMMENTARY -->
+                
+                <!-- (4) In biographical notes, reverse entry so last name first followed by comma, and re-alphabetize -->
+                <!-- (5) In biographical notes, names missing their dates: Shepherd (and R. H. should be Richard Herne); Salvador (add (dates unknown)); Prideaux -->
+                
+                
+                
+                
+            </div>
+            
+            <div>
+                <!-- ACCOUNT APPARATUS -->
+                
+                
+                <!-- Witness list: link to corpus VIII: click on the full corpus for VIII and you'll see the problem: the transcript overlaps the facsimile -->
+                <!-- Witness list: link to corpus IX: typo, and doesn't go to showcase even for that single "Calais" -->
+                
+                <!-- WITNESSES specific sections listed under corpora: all the links work, but some transcripts in Showcase move horizontally: Should they? -->
+                
+                <!-- EVERY section: internal links (to Title, etc.) go to "Not Found" page -->
+                <!-- EVERY section: link to MS IA g1 and MS IA g2 don't work and the "<hi rend="italic">g</hi>" is missing from every corpus name -->
+                
+                <!-- EVERY section, apart from Witnesses at top of page: links to other corpora besides IA also don't  work -->
+                
+            </div>
+            
+            <div>
+                <!-- Account (general)  -->
+                <!-- I guess the "Drawings" files will go into the Corpus IX list, but how are they going to display? I would think they'd show up as text alongside a facsimile, 
+                just as a transcript does, though the text is like a note -->
+            </div>
+            
+            <div>
+                <!-- CALAIS POEM G1 -->
+                <!-- In toggle view, why doesn't Ruskin's insertion gray out on the first view? (see also "Cassel" last line of 1st p., the canceled "T" -->
+                <!-- Line 20, the numeral "20" not in the margin -->
+                
+                <!-- CALAIS POEM IX -->
+                <!-- How are we going to display titles for corpuses? -->
+                
+            </div>
+            
+            
+            
+            <div>
+                <!-- CALAIS PROSE G2 -->
+                <!-- Line 1: "Ever" and "How" displaying as overwriting and they're not -->
+            </div>
+            
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="tite_of_work_note">
+            <titleStmt>
+                <title type="main">Title of Work</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The notes version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
+            <div type="note" subtype="subtype">
+                <head type="title">Title of Note</head>
+                <p><provenance> <herne_hill>
+                    <head2>Provenance during Herne Hill Years (18??-1842)
+                        Given the parameters of the <corpus>corpus of early manuscripts as 1826 to 1842, the period of <herne_hill>Herne Hill years would appear to be rule out discussion of provenance, strictly understood as postproduction history, since the Ruskins departed Herne Hill for their new house, <denmark_hill>Denmark Hill, in 1842, at the end of the period bounding the corpus. However, within even this earliest period and location of the major manuscripts there arise questions of ownership and preservation: (1) First, did the Ruskin family possess the presently surviving corpus exclusively, or could some manuscripts have once been owned by others? Also, even if what survives was probably owned by the Ruskins, do individual texts or manuscripts at least point to copies or versions held by others but now lost? (2) What do we know about care for the manuscripts at Herne Hill--about where they were kept, and who kept them?
+                            
+                            These questions bear on a larger question of the relation between the composition of juvenilia and the house in which it was composed (see "--------"). For Ruskin, those associations remained vital as late as the 1870s/1880s???, when he returned to his old nursery in the now vacated???? Herne Hill in order to compose the opening chapters of <praeterita>Praeterita. Ruminating in the autobiography on the role of writing in his childhood, Ruskin transmitted (and altered) text from one of his <"Harry and Lucy"> books. Clearly, as he wrote, he had at hand the <red_book>Red Books, which contain those texts.
+                                
+                                <head3>Possession of Early Manuscripts outside the Family
+                                    Of the corpus of early manuscripts, the only items that definitely belonged to anyone outside the family are the letters to Thomas Dale and the <essay on literature> published by George Allen as ..., and the letters to Edward Clayton and <essay on ...> published by Allen as Letters to a College Friend. In both cases, the manuscripts were offered to George Allen for publication by members of those respective families (see ...).
+                                        
+                                        Otherwise, while the corpus includes a number of texts that tantalizingly suggest that versions were likely made for others, no manuscript other than the Dale and Clayton materials already mentioned bears any direct indication of having belonged to anyone outside the family in these earlier years. In cases of texts addressed to others, the status of the manuscript is often unclear: that is, whether the manuscript should be interpreted as "original" or "copy," or as neither in the sense that the communication is imaginative (such as a love poem) and was perhaps never meant to be physically sent to its implied addressee. This is not to argue the unlikelihood of Ruskin having ever presented work to anyone apart from his parents. Clearly, he did write for others besides himself and his parents (although he did so more commonly after age ???), and some texts contain strong presumptive evidence that the surviving manuscript is a copy or draft of an original sent to another, now lost. The <letter to Mrs. Monro> (182?) in <MS II> is evidently a copy of an epistle sent to that friend of the family since it refers to making notes of a sermon "in a book at home" and that reference is apparently to MS II itself--the remark therefore making no sense unless Mrs. Monro received the original letter.
+                                            
+                                            <exhibition>
+                                                Most of the early manuscripts, up to age ???, appear to have been written for and treasured by the immediate family, but they could also be loaned. In a letter, Margaret asks her husband to <exhibiting Ruskin's juvenile poems> to personal friends such as the <Grays>....
+                                                    
+                                                    After 183?, when Ruskin wrote to and for others more frequently, presumably he sent such work as his rhymed letters to his friends <Willoughby> and <Richard Fall> to their recipients. In those cases, he fortunately retained copies for himself (assuming the manuscripts are his copies and not Willoughby's and Fall's that somehow came back to him); other poems and letters written for others must have been lost without a trace. The early work perhaps most famously produced for another--The King of the Golden River, allegedly produced for the youthful Effie Gray--is particularly frustrating in the provenance history of its manuscripts.
+                                                        
+                                                        Other texts present inherently ambiguous cases for provenance of surviving or conjectural manuscripts. Was <Edward Andrews>--the family preacher and, after 182?, Ruskin's tutor--presented with some version of <notes> on his own sermons? Were devout poems concerning churchgoing made for Andrews, or Ruskin's mother, or both or neither? The audience for some texts changed over time, so that manuscripts appear to be in transit, as it were. The poem <On Skiddaw and Derwent Water> was originally intended by Ruskin as a gift to his father, and its first fair copy (in MS ?) would have been retained within the family; however, an extant draft in MS II reveals the process of revision that ultimately divided the poem into two, forming Ruskin's first publications. Fair copies must therefore have existed belongeing to the publisher, Reverend Andrews (for his journal, Spiritual Times).
+                                                            
+                                                            Possession within the family is even more obscure: Were Ruskin's rough-draft notebooks, MSS VI and VIII, entirely private to him? Who owned the 1830 manuscript diary of the family's travels in the Lake District, which was jointly authored by Ruskin and his cousin, Mary Richardson, but with Ruskin responsible for the lion's share? Were copies in the hand of Ruskin's mother, Margaret, made for herself? Boundaries of possession within families are often neither fixed nor stable, pointing to the rich complexity of <audience> entailed especially in juvenile writing.
+                                                                
+                                                                <head3>Care for the Early Manuscripts at Herne Hill
+                                                                    Throughout the years at <Herne Hill> and <Denmark Hill>, I know of no indication as to where the early manuscripts were kept or who kept them--say, whether they were in Ruskin's parents' keeping or his own. Their first association with a specific room in a house is Ruskin's keeping some of them by him when sitting in his old nursery at <Herne Hill> in order to write the childhood chapters of <Praeterita>. <! How do I know that? !>.</p>
+                <p>Body paragraph containing a list:
+                    <list type="ordered">
+                        <item n="1">First item in the list.</item>
+                        <item n="2">Second item.</item>
+                        <item n="3">Third item.</item>
+                    </list>
+                </p>
+                <p>Body paragraph.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

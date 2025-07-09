@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="tite_of_work_note">
+            <titleStmt>
+                <title type="main">William and Edward Francis Finden</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
+            <div type="note" subtype="biographical">
+                <head type="title">William and Edward Francis Finden</head>
+                <p>Engravers, based in London. The brothers worked jointly, overseeing a large workshop employing many assistants and pupils of the trade. 
+                    They specialized in landscape, although they also undertook many portraits. 
+                    William's achievements in steel-engraving include the vignettes after Stothard for Samuel Rogers's <hi rend="italic">Italy</hi> (1830) 
+                    and Rogers's <hi rend="italic"> Poems</hi> (1834), complementing Edward Goodall's work after Turner for those volumes. 
+                    Edward's well-known works include the plates for William Brockedon's 
+                    <hi rend="italic">Illustrations of the Passes of the Alps</hi> (1827-29). 
+                    The brothers enjoyed a long relationship with the firm of John Murray, for example contributing significantly to the 1841 edition of 
+                    Byron's <hi rend="italic">Childe Harold's Pilgrimage</hi>.
+                </p>
+                <p>The Findens attempted publishing in their own right, 
+                    issuing for example <hi rend="italic">Finden's Landscape Illustrations to Mr. Murray's First Complete and Uniform Edition of the Life and Works of Lord Byron</hi> 
+                    (1832-34). Because these projects proved so ambitious, however, the brothers ultimately relied on collaborations with other publishers. Such was the case, for example, 
+                    with <hi rend="italic">Finden's Landscape Illustrations to the Bible</hi> (1834-37).
+                </p>
+                <p><ref type="bibliography" target="bibliography.html#HUNNISETTSTEELENGRAVED">Hunnisett, <hi rend="italic">Steel&#x2010;Engraved Book Illustration in England</hi></ref>, 
+                    84&#x2013;95. 
+                </p>
+                
+            </div>
+        </body>
+    </text>
+</TEI>

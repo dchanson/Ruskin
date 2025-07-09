@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="brussels_poem_glosses">
+            <titleStmt>
+                <title type="main">"Brussels" [poem]</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="DRAWBRIDGE" resp="#DCH">&#x201C;The drawbridge rung, we past the gate&#x201D; (MS IA, <hi rend="ital">g</hi>.1; MS IX; <hi rend="italic">Poems</hi> [1891]; <hi rend="italic">Works</hi> [1903])&#x2014; According 
+                    to a guidebook of the period, if approaching <placeName corresp="#BRUSSELS">Brussels</placeName> from <placeName corresp="#CALAIS">Calais</placeName> via 
+                    <placeName corresp="#LILLE">Lille</placeName> and <placeName corresp="#TOURNAI">Tournai</placeName>, one entered the city through the 
+                    <placeName corresp="#ANDERLECHTGATE">Porte d&#x02BC;Anderlecht</placeName>. At this date, the medieval ramparts were in process of being transformed into modern boulevards, 
+                    but the <placeName corresp="#ANDERLECHTGATE">gate at Anderlecht</placeName> remained &#x201C;a heap of ruins&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#TRAVELLERSGUIDEBELGIUM"><hi rend="italic">Traveller&#x02BC;s Guide through Belgium</hi>, 97, 166</ref>). 
+                    Since the approach to this gate crossed both the <geogName corresp="#CHARLEROI">Charleroi Canal</geogName> and the <geogName corresp="#SENNE">Senne River</geogName>, 
+                    there may well have been a modern drawbridge. By mentioning this detail in connection with the entrance to <placeName corresp="#BRUSSELS">Brussels</placeName>, 
+                    <persName corresp="#JR">Ruskin</persName> may also have wanted to allude to the supposed origin of the city&#x02BC;s name in <hi rend="italic">Brug&#x2010;Senne</hi>&#x2014;i.e., 
+                    <hi rend="italic">bridge over the <geogName corresp="#SENNE">Senne River</geogName></hi>.</note>
+                
+                <note xml:id="HOTELDEVILLEGLOSS" resp="#DCH">&#x201C;Hotel de ville&#x201D; (MS IA, <hi rend="ital">g</hi>.1; MS IX; <hi rend="italic">Poems</hi> [1891]; <hi rend="italic">Works</hi> [1903])&#x2014;In 
+                    <ref type="bibliography" target="bibliography.php#PROUTSKETCHES">Prout, <hi rend="italic">Facsimiles of Sketches Made in <placeName corresp="#FLANDERS">Flanders</placeName> and <placeName corresp="#GERMANY">Germany</placeName></hi></ref>, 
+                    which helped to prompt the Ruskins&#x02BC; <ref type="note" subtype="contextual" target="tour_of_1833_note.php">Tour of 1833</ref>, 
+                    &#x201C;Hotel de Ville Brussels&#x201D; is the first plate in the volume of lithogrqphs. The artist shows the building towering over the marketplace; 
+                    see <ref type="note" subtype="biographical" target="prout_samuel_note.php"><persName corresp="#SP">Samuel Prout</persName> (<date notBefore="1783" notAfter="1852">1783&#x2013;1852</date>)</ref>.
+                </note>
+
+                <note xml:id="JULYSDREADFULNIGHTGLOSS" resp="#DCH">&#x201C;Julys dreadful night&#x201D; (MS IA, <hi rend="ital">g</hi>.1; MS IX; <hi rend="italic">Poems</hi> [1891]; <hi rend="italic">Works</hi> [1903])&#x2014;On 
+                    <date when="1815-06-16">16 June 1815</date>, the allied forces under <persName corresp="#AWW">Lord Wellington</persName> 
+                    and the Prussian army under <persName corresp="#GLB">General Bl&#x00FC;cher</persName> engaged with the French under <persName corresp="#NBE">Napoleon</persName> 
+                    near <placeName corresp="#BRUSSELS">Brussels</placeName> in the <date when="1815-06-16">Battle of Quatre Bras</date>, 
+                    and on <date when="1815-06-18">18 June 1815</date> the allies defeated <persName corresp="#NBE">Napoleon</persName>&#x02BC;s army 
+                    in the <date when="1815-06-18">Battle of Waterloo</date>. 
+                    <persName corresp="#JR">Ruskin</persName> mistakes the date as falling in July, 
+                    but in referring to the &#x201C;midnight . . . repose&#x201D; of <placeName corresp="#BRUSSELS">Brussels</placeName> 
+                    being &#x201C;broken&#x201D; on that &#x201C;dreadful night,&#x201D; he clearly alludes to <persName corresp="#GGB">Byron</persName>&#x02BC;s description in 
+                    <hi rend="italic">Childe Harold&#x02BC;s Pilgrimage</hi>, canto 3 (<date when="1816">1816</date>), 
+                    of the &#x201C;sound of revelry by night&#x201D; when &#x201C;<placeName corresp="#BELGIUM">Belgium</placeName>&#x02BC;s capital had gathered then / 
+                    Her Beauty and her Chivalry&#x201D; (stanza 21)&#x2014;the ball held on <date when="1815-06-15">15 June</date> by the 
+                    <persName corresp="#CGL">Duchess of Richmond</persName> for <persName corresp="#AWW">Wellington</persName> and his officers. 
+                    The ball was interrupted in the early hours of <date when="1815-06-16">16 June</date> by the news of <persName corresp="#NBE">Napoleon</persName>&#x02BC;s advance, 
+                    and <persName corresp="#AWW">Wellington</persName> hurried to prepare to engage at Quatre Bras 
+                    (<ref type="bibliography" target="bibliography.php#BYRONWORKS">Byron, <hi rend="italic">Complete Poetical Works</hi>, ed. McGann</ref>, 2:84).
+                </note>
+            </div>
+        </body>
+    </text>
+</TEI>

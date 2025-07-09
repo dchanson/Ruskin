@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main"><!--Entry needed here.--></title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS VIII</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#JRG">Julia R. Gaines</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp= "#SEP">Steven E. Petite</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp= "ZSS">Zachary S. Slawson</persName>
+                    <resp>contributing review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2016-10-11">October 11, 2016</date>
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. 70-71</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="70" to="71">MSVIII70v-71r</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="poem" met= "-+|-+|-+|-+|" rhyme="ababccddeefghgaaiiifjfj">          
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="ink"/>Not such the night</head>
+                <lg type="stanza">
+                    <l>Not such the night whose stormy might, <add rend= "linenumber-right">1160</add></l>
+                    <l>Heroic <persName corresp="#BALMA">Balma</persName> braved,</l>
+                    <l>When darken<del change= "character">ed</del> ning on the <geogName corresp="#GOUTES">Goutes</geogName> height,</l>
+                    <l>The tempest howled and raved.</l>
+                    <l>Upon the mighty hill forlorn</l>
+                    <l>He stood alone amid the storm, <add rend= "linenumber-right">1165</add></l> 
+                    <l>Watching the last day gleams decay</l>
+                    <l>Supposing its returning ray,</l>
+                    <l>Should see him lying there asleep</l>
+                    <l>With <geogName corresp="#ALPINE">Alpine</geogName> snow for winding sheet.</l>
+                    <l>Methinks I see him, as he stood, <add rend= "linenumber-right">1170</add></l> 
+                    <l>Upon the ridge of snow,</l>
+                    <l>The battering burst of winds above</l>
+                    <l>The cloudy precipice below</l>
+                    <l>Watching the dawn.  With proud delight</l>
+                    <l>He saw that long <del rend="strikethrough">and</del> tempest<add type= "overwriting" place= "above"><space quantity="25" unit="chars"/>uous</add> night, <add rend= "linenumber-right">1175</add></l> 
+                    <l>Drive to the westward, and unfold,</l>
+                    <l>The ocean snowfields upwards rolled,</l>
+                    <l>Bright with the mornings glance of gold,</l>
+                    <l>It past away, the <del rend="strikethrough">headlong</del> tossing flood</l>
+                    <l>Of changing vapour headlong riding <add rend= "linenumber-right">1180</add></l> 
+                    <l>And lo, the untrodden summit stood,</l>
+                    <l>Accessibly beside him,</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject MANUSCRIPT followed by "apparatus", for example,
+            "msi_apparatus". The xml:id also corresponds with its XML file's name, for example, "msi_apparatus.xml".-->
+        <fileDesc xml:id="title_of_manuscript_apparatus">
+            <titleStmt>
+                <title type="main">Title of Manuscript</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>            
+    <text>
+        <body>
+            <div type="apparatus">
+            <head type="title">Title of Manuscript</head>
+                <!--A manuscript apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>MS VIIIB</p>
+                </div>
+                <div type="section" xml:id="LOCATION">
+                    <head type="section">Location</head>
+                    <p>Body paragraph.</p>
+                    PML ?
+                </div>
+                <div type="section" xml:id="PROVENANCE">
+                    <head type="section">Provenance</head>
+                    <p>Body paragraph.</p>
+                    Sharp.
+                </div>
+                <div type="section" xml:id="DESCRIPTION">
+                    <head type="section">Description</head>
+                    <p>Body paragraph.</p>
+                    If MS VIIIA is Ruskin’s first sketchbook, the Morgan sketchbook is his second--at any rate, one used, like the first, during the summer tour of 1832. The Morgan sketchbook is covered by brown marbled boards with a calf spine and corners, 18.5 X 26.5 cm (cover) and 17.5 X 26.5 (pages); 20 leaves. The paper is watermarked  J Wh[. . .]man Tur[. . .]ky Mill [. . .]30.
+                    <!--The subsection that follows, Collation, is common to all manuscript apparatuses and was, accordingly, assigned an xml:id by
+                        the Ruskin Project Team during work on the "First Twenty."-->
+                    <div type="subsection" xml:id="COLLATION">
+                    <head type="subsection">Collation</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+                <div type="section" xml:id="CONTENTS">
+                    <head type="section">Contents</head>
+                    <!--Typically, this section will begin:-->
+                    <p>
+                        <hi rend="italic">From front of book, the sequential order of contents:</hi>
+                    </p>
+                    <!--and continue with a list, which may group items according to type (e.g. prose, poetry) or other similiarity. Note: drawings
+                        may be included as items in this list.-->
+                    <list xml:id="LIST" type="ordered">
+                        <item n="a">Item belonging to Group A.</item>
+                        <item n="b.1">First item belonging to Group B.</item>
+                        <item n="b.2">Second item belonging to Group B.</item>
+                        <item n="b.3">Third item belonging to Group B.</item>
+                        <item n="c">Item belonging to Group C.</item>
+                    </list>
+                    <p>Body paragraph.</p>
+                    Described by Ruskin
+                    
+                    Taken from the Gardens of the Crown Inn, Seven Oaks  (1r);  Seven Oaks church from Behind the Crown inn Gardens  (2r);  Knole house and park  (3r);  From the Tunbridge road near Seven Oaks  (4r);  Entrance to Seven Oaks from the Tunbridge road  (5r);  Leeds Castle near Maidstone  (6r); the seventh leaf cut away;  Ruins of the Roman Tower, Dover Castle (built by Julius Caesar)  (8r);  One of entrance towers. Dover Castle  (9r);  St Radigunds abbey from the inside  (10r);  Entrance to sally port, Dover castle  (11r); an incomplete and unannotated drawing of a ruined wall with an entrance (12r);  Entrance to an old College at Maidstone  (13r, but a loose sheet that may be out of place); unannotated drawing of large rock or cliffs with trees (14r); unannotated drawing of a ravine (15r); a fence and trees along a road identified as  At Dulwich, Surrey  (16r); four blank leaves. (Tears in the margin reveal two missing leaves, though 13r appears not to be one of these.)
+                    
+                    These subjects closely match some of those in Mary Richardson’s sketchbook, which may have been done at John’s side at the same time in either 1831 or 1832, since both children were students of Charles Runciman--Mary, for once, even maintaining the prior claim to the instruction and accomplishment (see Dearden, ibid., p. 89, and RFL, p. 258, 263). Even more notable is how closely the subjects match Ruskin’s own drawings in the 1831 Bembridge sketchbook--annotated in the 1880s by Ruskin as  Gateway at Maidstone 1831; Maidstone Church 1831; Dover Cliffs; [St. Radigund’s] Abbey near Dover see Fors; My first tree from nature 1831; Gateway of a college at Maidstone inside view  (Dearden, ibid., p. 89).
+                    One wonders whether the summer 1832 tour was limited to the southeast in order to give the children, especially John, ample opportunity to develop their sketching abilities, going over and improving the same subjects--perhaps at Runciman’s recommendation. In February 1832, Ruskin had boasted to his father how he had invented a Welsh scene out of his head by plundering Mary’s sketches for the techniques he needed:  I examined one of Mary’s pictures, to see how the rocks were done, &#x0026; then another to see how the woods were done, &#x0026; another to see how the mountains were done, and another to see how the cottages were done, and I patched them all together, &#x0026; I made such a lovely scene  (RFL 263). By returning to the same scenes in the Southeast on what would amount to Ruskin’s first deliberate sketching tour, perhaps he was catching up with Mary and learning  how it was done. 
+                    All of these sketches employ the pencil drawing that, Ruskin said later that February,  does well for near scenes, analyses of foliage, or large trees, but not for distance, or bare &#x0026; wild scenery --not, that is, the watercolor that Runciman, impressed by Ruskin’s Welsh composition, immediately set him to learn, and not the dramatic commotion of expansive picturesque views he attempted in his  Dover Castle  of c. 1832 (RFL 267-68; see Paul H. Walton, The Drawings of John Ruskin [London: Oxford University Press, 1972], pp. 7, 9 pl. 4). The sketches, rather, bring the spectator close to the subject, though always from the perspective of entering, exiting, passing by--the experience of picturesque travel.
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Body paragraph.</p>
+                    The Morgan sketchbook was not dated by Ruskin; an unknown hand (perhaps Sharp’s) has inscribed it as an  Early drawing book of sketches by J. Ruskin (done in 1831-32)  However, if the Bembridge sketchbook--at least according to the elderly Ruskin’s testimony (see Dearden, Facets, p. 89)--was in use during those two years, it seems likely that the first book was used for sketching primarily in 1831 and thereafter recycled for note-taking and more sketching, while the Morgan sketchbook was exclusively devoted to sketching the 1832 tour. The contents of the latter match well with the tour limited to the southeast, an itenerary recorded by John James as  1832  Sevenoaks, Dover from 22 May to 30 June; Hastings to 19 July  (qtd. in Dearden, ibid., p. 87). This would have allowed Ruskin considerable time for the, at least, fifteen sketches, annotated by him contemporaneously as follows (Content):
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <!--The Discussion section may contain all or only some of the following subsections.-->
+                    <div type="subsection">
+                        <head type="subsection">Hand</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Composition &#x0026; Sources</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Domestic Scene</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

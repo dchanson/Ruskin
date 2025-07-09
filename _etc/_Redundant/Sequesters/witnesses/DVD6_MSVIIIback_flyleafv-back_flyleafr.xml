@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="MSVIIIback_flyleafv-back_flyleafr">
+            <titleStmt>
+                <title type="main">"Ehrenbreitstein"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS IX Fair Copy</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#KCM">Katie C. Moore</persName>
+                    <resp>contributing encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Contents"</idno>
+                        <msName>MS VIII</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="MSVIIIback_flyleafv-back_flyleafr.tif">back_flyleafv-back_flylefr</locus><!--Ruskin's page numbering.-->
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="prose">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pen"/>For him, 9th verse...</head>
+                <p>
+                    <list type="simple">
+                        <item n="1">1 Andernacht</item>
+                        <item n="2">2 Ehrenbreistein</item>
+                        <item n="3">3 St Goar</item>
+                        <item n="4">4 <del rend="strikethrough">???</del></item>
+                        <item n="5">5 Heudelberg</item>
+                        <item n="6">6 Strasburg</item>
+                        <item n="7">7 The swiss cottages</item>
+                        <item n="8">8 Schaffhausen</item>
+                        <item n="9">9 The Alps</item>
+                        <item n="10">10 The fall of the Rhine</item>
+                        <item n="11">11 Coustnace</item>
+                        <item n="12">12 Werdenberg</item>
+                        <item n="13">13 </item>
+                        <item n="14">14 Passing the Alps</item>
+                        <item n="15">15 The via mala</item>
+                        <item n="16">16 </item>
+                        <item n="17">17 The descent/The summit</item>
+                        <item n="18">18 Italia, Italia</item>
+                        <item n="19">19 Lago di Como</item>
+                        <item n="20">20 Cadenabbia</item>
+                        <item n="21">21 Villa pliniana</item>
+                        <item n="22">22 Milan</item>
+                        <item n="23">23 The duomo of Milan</item>
+                        <item n="24">24 The carso of Milan</item>
+                        <item n="25">25 The certosa</item>
+                        <item n="26">26 The Appenines</item>
+                        <item n="27">27 Genoa</item>
+                        <item n="28">28 <del rend="strikethrough">???</del></item>
+                        <item n="29">29 Marengo</item>
+                        <item n="30">30 Turin</item>
+                        <item n="31">31 <del rend="strikethrough">???</del>Novora</item>
+                        <item n="32">32 Maggiare</item>
+                        <item n="33">33 The Madonna del monte</item>
+                        <item n="34">34 </item>
+                        <item n="35">35 Farewell to Italy</item>
+                        <item n="36"> The Glaciers</item>
+                        <item n="37">Brieg</item>
+                        <item n="38">Fourtman</item>
+                        <item n="39">Martigny</item>
+                        <item n="40">36 The Ascent</item>
+                        <item n="41">The Grand St Bernand</item>
+                        <item n="42">The Mauriel</item>
+                        <item n="43">The lake of Geneva</item>
+                        <item n="44">Chillou</item>
+                        <item n="45">40 Laul...</item>
+                        <item n="46">Fribourg</item>
+                        <item n="47">Berne</item>
+                        <item n="48"></item>
+                        <item n="49">Interlaken</item>
+                        <item n="50">45 The Lung...</item>
+                        <item n="51">The Giekbach</item>
+                        <item n="52">Luc...</item>
+                        <item n="53"></item>
+                        <item n="54">Rigi</item>
+                        <item n="55">50 Goldau</item>
+                        <item n="56">Schwytz</item>
+                        <item n="57"></item>
+                        <item n="58">The lake of Zurich</item>
+                        <item n="59">Basle</item>
+                        <item n="60">55 The Rhine</item>
+                        <item n="61">Balstall</item>
+                        <item n="62">Neufchatel</item>
+                        <item n="63">Geneva</item>
+                        <item n="64">60 Champuni</item>
+                        <item n="65">The Mont Blanc</item>
+                        <item n="66">The source of the Arveron</item>
+                        <item n="67">The morning</item>
+                        <item n="68">The Mout...</item>
+                        <item n="69">65 The Merde Glace</item>
+                        <item n="70">Our last walk.</item>
+                        <item n="71">Farewell.</item>
+                        <item n="72">Lyons</item>
+                        <item n="73">Dijon</item>
+                        <item n="74">70 Paris</item>
+                        <item n="75">Pere la chaise</item>
+                        <item n="76">The last night in France</item>
+                        <item n="77">Old England.</item>
+                        <item n="78"><del rend="strikethrough">Peace to </del></item>
+                    </list>
+                </p>
+                <p>
+                    <list type="simple">
+                        <item n="1">wanted</item>
+                        <item n="2">0 &#x007C; Heudelberg</item>
+                        <item n="3">0 &#x007C; St Goar</item>
+                        <item n="4">0 &#x007C; </item>
+                        <item n="5">02 &#x007C; Strasburg</item>
+                        <item n="6">4 &#x007C; Schaffhausen</item>
+                        <item n="7">3 &#x007C; The Alps.</item>
+                        <item n="8">3 &#x007C; Fall of the Rhine</item>
+                        <item n="9">3 &#x007C; Coustnace</item>
+                        <item n="10">3 &#x007C; Werdenberg</item>
+                        <item n="11">1 &#x007C;</item>
+                        <item n="12">3 &#x007C; Passing Alps</item>
+                        <item n="13">0 &#x007C; Via mala </item>
+                        <item n="14">0 &#x007C;</item>
+                        <item n="15">2 &#x007C; The summit</item>
+                        <item n="16">0 &#x007C; The descent</item>
+                        <space quantity="1" unit="lines"/>
+                        <item n="17">2 &#x007C;2 Como</item>
+                        <item n="18">? &#x007C; Cadenabbia</item>
+                        <item n="19">? &#x007C; Villa plin</item>
+                        <item n="20">4 &#x007C; Milan</item>
+                        <item n="21">2 &#x007C; The duomo</item>
+                        <item n="22">2 &#x007C; The corso</item>
+                        <item n="23">4 &#x007C; The certosa</item>
+                        <item n="24">0 &#x007C; Appenines</item>
+                        <item n="25">1 &#x007C; Genoa</item>
+                        <item n="26">1 &#x007C; Marengo</item>
+                        <item n="27">2 &#x007C; Turin</item>
+                        <item n="28">2 &#x007C; Novora</item>
+                        <item n="29"><del rend="strikethrough">1</del>&#x007C; Maggiore</item>
+                        <item n="30">4 &#x007C; Madonna</item>
+                        <item n="31">0 &#x007C; </item>
+                        <item n="32">0 &#x007C; Farewell</item>
+                        <item n="33">2 &#x007C; Glaciers</item>
+                        <item n="34">4 &#x007C; Brieg</item>
+                        <item n="35">2 &#x007C; Martigny</item>
+                        <item n="36">1 &#x007C; Ascent</item>
+                        <item n="37">0 &#x007C; great St B</item>
+                        <item n="38">1 &#x007C;</item>
+                        <item n="39">3 &#x007C; lake of Gen</item>
+                        <item n="40">2 &#x007C; Chillou</item>
+                        <item n="41">3 &#x007C; </item>
+                        <item n="42"><del rend="strikethrough">3</del>&#x007C; Fribourg</item>
+                        <item n="43">2 &#x007C; Berne</item>
+                        <item n="44">3 &#x007C; </item>
+                        <item n="45">3 &#x007C; Interlaken</item>
+                        <item n="46">2 &#x007C; </item>
+                        <item n="47">0 &#x007C;The Giekbach</item>
+                        <item n="48">0 &#x007C;</item>
+                        <item n="49">3 &#x007C;</item>
+                        <item n="50">1 &#x007C; Rigi</item>
+                        <item n="51">4 &#x007C;Goldau</item>
+                        <item n="52"> &#x007C; Schwytz</item>
+                        <item n="53">3 &#x007C; </item>
+                        <item n="54">4 &#x007C; Lake of Zurich</item>
+                        <item n="55">3 &#x007C; Basle</item>
+                        <item n="56">2 &#x007C; Rhine</item>
+                        <item n="57">2 &#x007C; Balstall</item>
+                        <item n="58">4 &#x007C; Neufchatel</item>
+                        <item n="59">1 &#x007C; Geneva</item>
+                        <item n="60"> &#x007C; Champuni</item>
+                        <item n="61">1 &#x007C; Mont Blanc</item>
+                        <item n="62">3 &#x007C; source of the Arveron</item>
+                        <item n="63">4 &#x007C; The morning</item>
+                        <item n="64">60 Champuni</item>
+                        <item n="65">3 &#x007C; Merde Glace</item>
+                        <item n="66">3 &#x007C; last walk</item>
+                        <item n="67">1 &#x007C; Farewell</item>
+                        <item n="68">1 &#x007C; Lyons</item>
+                        <item n="69">2 &#x007C; Dijon</item>
+                        <item n="70">&#x007C; Paris</item>
+                        <item n="71">&#x007C; Perelachaise</item>
+                        <item n="72">&#x007C; Last night</item>
+                        <item n="73">&#x007C;Old England</item>
+                    </list>
+                </p>
+                <p>
+                    <list type="simple">
+                        <item n="1">Begin with</item>
+                    </list>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

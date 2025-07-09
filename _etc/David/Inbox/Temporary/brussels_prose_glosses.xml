@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="brussels_prose_glosses">
+            <titleStmt>
+                <title type="main">"Brussels [prose]"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="CATHEDRALHOTELDEVILLEGLOSS" resp="#DCH">Cathedral towers contrasted with spire of <placeName corresp="#HOTELDEVILLE">H&#x00F4;tel de Ville</placeName> 
+                    (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;As 
+                    <persName corresp="#JM">John Murray</persName> explains in his <date when="1836">1836</date> guidebook to the <geogName corresp="#CONTINENT">Continent</geogName>, <placeName corresp="#BRUSSELS">Brussels</placeName> &#x201C;is divided into the upper and lower towns, 
+                    the former being the newest as well as the most fashionable and healthy quarter, and built on a height. 
+                    It contains the King&#x02BC;s palace, the chambers, and the chief hotels. 
+                    The lower town abounds in fine old picturesque buildings, the residences in former times of the Brabant noblesse, 
+                    now occupied by merchants and tradespeople: the Grande Place, with its splendid <placeName corresp="#HOTELDEVILLE">H&#x00F4;tel de Ville</placeName> in this quarter, 
+                    is beyond doubt unrivalled as an instance of Gothic splendour in civic edifices&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand-book for Travellers on the Continent</hi></ref>, 134). 
+                    As a plate for the <date when="1834">1834</date> volume of <persName corresp="#WS">Walter Scott</persName>&#x02BC;s <hi rend="italic">Miscellaneous Prose Works</hi> containing the <date when="1815-06-18">Waterloo</date> travel narrative, 
+                    <hi rend="italic">Paul&#x02BC;s Letters to His Kinsfolk</hi> (<date when="1816">1816</date>), published by <orgName corresp="#CADELLROBERT">Cadell</orgName>, 
+                    <persName corresp="#JMWT">J. M. W. Turner</persName> drew a distant view of <placeName corresp="#BRUSSELS">Brussels</placeName> (engraved by <persName corresp="#WME">William Miller</persName>), 
+                    showing a sideways silhouette of the cathedral nave and towers of <placeName corresp="#STMICHAELCATH">St. Michael</placeName> and <placeName corresp="#STGUDULACATH">St. Gudula</placeName>, which massively overhangs the town sloping uphill and around the church toward the upper town, 
+                    while, on the level terrain below the hill and to the right of the picture, the outline of the thin spire of the <placeName corresp="#HOTELDEVILLE">H&#x00F4;tel de Ville</placeName> marks the lower town 
+                    (<ref type="bibliography" target="bibliography.php#SCOTTMISCELLANEOUSPROSE">Scott, <hi rend="italic">Miscellaneous Prose Works</hi></ref>, 5: frontispiece). 
+                    <persName corresp="#JR">Ruskin</persName> could have seen this plate no earlier than <date when="1834-09">September 1834</date>, 
+                    when Cadell published the fifth of the monthly volumes of <hi rend="italic">Miscellaneous Prose Works</hi> 
+                    (<ref type="bibliography" target="bibliography.php#MILLGATESCOTTSLASTEDITION">Millgate, <hi rend="italic">Scotts Last Edition</hi></ref>, 47-48, 105-6; 
+                    <ref type="bibliography" target="bibliography.php#FINLEYLANDSCAPESOFMEMORY">Finley, <hi rend="italic">Landscapes of Memory</hi></ref>, 171-210). 
+                    If the plate directly influenced <persName corresp="#JR">Ruskin</persName>&#x02BC;s composition, its September date&#x2014;considered even as terminus a quo&#x2014;would situate draft of &#x201C;Part of <placeName corresp="#BRUSSELS">Brussels</placeName>&#x201D; 
+                    months later in <date when="1834">1834</date> than what is suggested by other evidence; see 
+                    <ref type="appartus" target="account_of_a_tour_on_the_continent_apparatus.php">Account of a Tour on the Continent: Apparatus</ref>.
+                </note>
+                
+                <note xml:id="PARISBRICKKILNSGLOSS" resp="DCH">&#x201C;<placeName corresp="#PARIS">Paris</placeName> would look like an assemblage of brick kilns beside it&#x201D; 
+                    (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;<placeName corresp="#BRUSSELS">Brussels</placeName> 
+                    cultivated a reputation as a &#x201C;little Paris.&#x201D; In <date when="1836">1836</date>, <persName corresp="#JM">John Murray</persName> compared the city favorably to the French capital: 
+                    &#x201C;Those who are acquainted with the French metropolis will find here many similarities, 
+                    which give <placeName corresp="#BRUSSELS">Brussels</placeName> the character of <hi rend="italic"><placeName corresp="#PARIS">Paris</placeName> on a small scale</hi>. 
+                    Besides the language, which is the same, and a certain affectation of French manners and habits perceptible in society here, 
+                    the town of <placeName corresp="#BRUSSELS">Brussels</placeName> has its little opera in imitation of that of <placeName corresp="#PARIS">Paris</placeName>, 
+                    its caf&#x00E9;s in the manner of those of the <placeName corresp="#PALAISROYAL">Palais Royal</placeName>, 
+                    a palace garden which pretends to a similarity with those of the <placeName corresp="#TUILLERIES">Tuilleries</placeName>, 
+                    and miniature Boulevards around the town&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand-book for Travellers on the Continent</hi></ref>, 134).</note>
+                
+                <note xml:id="WAXINGDARKGLOSS" resp="DCH">&#x201C;It was waxing dark . . . It makes one shiver&#x201D; 
+                    (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;<persName corresp="#JR">Ruskin</persName>&#x02BC;s romantic response to a twilight arrival in <placeName corresp="#BRUSSELS">Brussels</placeName> contrasts with <name type="fictional" corresp="#LUCYSNOWE">Lucy Snowe</name>&#x02BC;s anxious and lonely nighttime arrival 
+                    in <persName corresp="#CBW">Charlotte Bronte</persName>Paul&#x02BC;s <hi rend="italic">Villette</hi> (0000, chap. ?). Despite either of these reactions, <placeName corresp="#BRUSSELS">Brussels</placeName> was not an alien place to the English, 
+                    the city having accommodated &#x201C;the largest British colony on the <geogName corresp="#CONTINENT">Continent</geogName>,&#x201D; 
+                    according to <persName corresp="#JM">John Murray</persName> in <date when="1836">1836</date>, owing to &#x201C;the cheapness of living,&#x201D; although he also remarks that large numbers of the British residents had been dispersed 
+                    by the <date when="1830-08">Belgian Revolution of August 1830</date> 
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand-book for Travellers on the Continent</hi></ref>, 134). 
+                    In <date when="1833">1833</date>, <persName corresp="#FMT">Mrs. Trollope</persName>, too, was warned that, because &#x201C;many families, both native and foreign, had forsaken&#x201D; the city, 
+                    &#x201C;pleasure and business went on sluggishly&#x201D;; nonetheless, she found &#x201C;<placeName corresp="#BRUSSELS">Brussels</placeName> . . . still delightful&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#TROLLOPEBELGIUM">Trollope, <hi rend="italic">Belgium and Western Germany in 1833</hi></ref>, 1: 52).</note>
+                
+                <note xml:id="FACILISDESCENSUSAVERNIGLOSS" resp="#DCH">&#x201C;Facilis descensus Averni&#x201D; (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;&#x201C;the descent of Avernus [is] easy,&#x201C; referring to <persName corresp="#PVM"> </persName>, <hi rend="italic">Aeneid</hi>, book 6, line 126.</note>
+                
+                <note xml:id="SEDSEDGLOSS" resp="#DCH">&#x201C;Sed sed&#x201D; (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;A setting in Latin of an English ejaculation, perhaps &#x201C;but . . . but.&#x201D;</note>
+                
+                <note xml:id="THERESTHERUBGLOSS" resp="#DCH">&#x201C;Ay there&#x02BC;s the rub&#x201D; (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;<persName corresp="#WSP">Shakespeare</persName>, <hi rend="italic">Hamlet</hi>, act 3, scene 1, line 65.</note>
+                
+                <note xml:id="HOTELDEBELLEVUEBRUSSELSGLOSS" resp="#DCH">The <placeName corresp="#HOTELDEBELLEVUE">Hotel de Bellevue</placeName> at <placeName corresp="#BRUSSELS">Brussels</placeName> 
+                    (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;The 
+                    <placeName corresp="#HOTELDEBELLEVUE">H&#x00F4;tel de Bellevue</placeName> was built in the final quarter of the <date notBefore="1701" notAfter="1800">eighteenth century</date> on the site of the Habsburg imperial residence, which burned in <date when="1731">1731</date>. 
+                    The hotel premises were extended throughout the <date notBefore="1801" notAfter="1839">first three decades of the nineteenth century</date>. Today, the buildings house a museum of Belgian history 
+                    (<ref type="bibliography" target="bibliography.php#BELLEVUEHOTELHISTORY">website of BeLvue Museum: "History"</ref> In 
+                    <persName corresp="#JM">John Murray</persName>&#x02BC;s <date when="1836">1836</date> guidebook to the Continent, the <placeName corresp="#HOTELDEBELLEVUE">H&#x00F4;tel de Bellevue</placeName>, <placeName corresp="#PALAISROYAL">Place Royale</placeName>, 
+                    is listed as a principal accommodation. It was located in the upper town, between the <placeName corresp="#PALAISROYAL">Place Royale</placeName> and the Park. <persName corresp="#JM">Murray</persName> comments: 
+                    &#x201C;The Park was the scene of the principal combat during the revolution of <date when="1830">1830</date>. 
+                    It was occupied by the Dutch troops, and the trees still bear marks of the wounds they then received. 
+                    The <placeName corresp="#HOTELDEBELLEVUE">H&#x00F4;tel de Bellevue</placeName>, standing between the <placeName corresp="#PALAISROYAL">Place Royale</placeName>, where the Belgian insurgents were posted, 
+                    and the Park, was the centre of action, and was actually riddled with shot. 
+                    To gratify the curiosity of travellers, the landlord retained some of the cannon&#x2010;balls <hi rend="italic">in situ</hi> 
+                    as long as the Belgic revolution remained a subject of curiosity&#x201D;
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand-book for Travellers on the Continent</hi></ref>, 134, and see 133).</note>
+                
+                <note xml:id="FORESTOFSOIGNYGLOSS" resp="#DCH">&#x201C;The aged trees of the <placeName corresp="#SONIANFOREST">Forest of Soigny</placeName>&#x201D; 
+                    (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;The ancient <placeName corresp="#SONIANFOREST">Sonian Forest</placeName> or <placeName corresp="#SONIANFOREST">For&#x00EA;t de Soignes</placeName> stretches between <placeName corresp="#BRUSSELS">Brussels</placeName> and <placeName corresp="#WATERLOO">Waterloo</placeName>. 
+                    In his travel narrative, <hi rend="italic">Paul&#x02BC;s Letters to His Kinsfolk</hi> (1816), letter 8, <persName corresp="#WS">Walter Scott </persName>
+                    explains the approach to <placeName corresp="#WATERLOO">Waterloo</placeName> through the forest: 
+                    &#x201C;<placeName corresp="#SONIANFOREST">The forest of Soignies</placeName>, a wood composed of beech trees growing uncommonly close together, 
+                    is traversed by the road from <placeName corresp="#BRUSSELS">Brussels</placeName>, a long broad causeway, which, upon issuing from the wood, 
+                    reaches the small village of <placeName corresp="#WATERLOO">Waterloo</placeName>. Beyond this point the wood assumes a more straggling and dispersed appearance, 
+                    until about a mile farther, where at an extended ridge, called the heights of Mount St John, 
+                    from a farm&#x2010;house situated upon the <placeName corresp="#BRUSSELS">Brussels</placeName> road, the trees almost entirely disappear, 
+                    and the country becomes quite open&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#SCOTTMISCELLANEOUSPROSE">Scott, <hi rend="italic">Miscellaneous Prose Works</hi></ref>, 5: 100). 
+                    In stanza 1 of <persName corresp="#WS">Scott</persName>&#x02BC;s poem, <hi rend="italic">The Field of Waterloo</hi> (<date when="1815">1815</date>), 
+                    the tourist speaker finds the forest more somber and oppressive than does <persName corresp="#JR">Ruskin</persName>: &#x201C;Thy wood, dark <placeName corresp="#SONIANFOREST">Soignies</placeName>, holds us now, / 
+                    Where the tall beeches&#x02BC; glossy bough / For many a league around, / With birch and darksome oak between, / Spreads deep and far a pathless screen / 
+                    Of tangled forest ground. / Stems planted close by stems defy / The adventurous foot&#x2014;the curious eye / 
+                    For access seeks in vain; / And the brown tapestry of leaves, / Strewed on the blighted ground, receives / Nor sun nor air nor rain. / 
+                    No opening glade dawns on our way, / No streamlet glancing to the ray / Our woodland path has corssed; / 
+                    And the straight causeway which we tread / Prolongs a line of dull arcade, / Unvarying through the unvaried shade / Until in distance lost&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#SCOTTWORKSCALEDONIAN">Scott, <hi rend="italic">Works</hi></ref>, 48: 317-18). 
+                    In <hi rend="italic">Childe Harold&#x02BC;s Pilgrimage</hi>, canto 3, stanza 27, <persName corresp="#GGB">Byron</persName> imagines the soldiers&#x02BC; 
+                    rush to battle from <placeName corresp="#BRUSSELS">Brussels</placeName>: &#x201C;<placeName corresp="#ARDENNESFOREST">Ardennes</placeName> waves above them her green leaves, / 
+                    Dewy with nature&#x02BC;s tear&#x2010;drops, as they pass, / Grieving, if aught inanimate e&#x02BC;er grieves, / Over the unreturning brave.&#x201D; 
+                    The poet explains in a note: &#x201C;<placeName corresp="#SONIANFOREST">The wood of Soignies</placeName> is supposed to be a remnant of the &#x2018;<placeName corresp="#ARDENNESFOREST">forest of Ardennes</placeName>,&#x2019; 
+                    famous in <persName corresp="#MMB">Boiardo</persName>&#x02BC;s <hi rend="italic">Orlando</hi> [i.e., <hi rend="italic">Orlando innamorato</hi> (1483)], 
+                    and immortal in Shakespeare&#x02BC;s &#x2018;As you like it.&#x2019; 
+                    It is also celebrated in Tacitus as being the spot of successful defence by the Germans against the Roman encroachments.&#x2014;I 
+                    have ventured to adopt the name [i.e., <hi rend="italic">Ardennes</hi>] connected with nobler associations than those of mere slaughter.&#x201D; 
+                    <persName corresp="#GGB">Byron</persName>&#x02BC;s editor, <persName corresp="#JJM">Jerome McGann</persName>, comments that, among other errors, <persName corresp="#GGB">Byron</persName> misidentifies the forest as <placeName corresp="#ARDENNESFOREST">Ardennes</placeName>, which is located in <placeName corresp="#LUXEMBURG">Luxemburg</placeName>, 
+                    and that his association of the wood with <persName corresp="#WSP">Shakespeare</persName>&#x02BC;s Arden is &#x201C;out of the question&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#BYRONWORKS">Byron, <hi rend="italic">Complete Poetical Works</hi>, ed. McGann</ref>, 2: 86, 302).
+                    </note>
+                
+                <note xml:id="GLISTERGLOSS" resp="#DCH">&#x201C;Glister&#x201D; (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;The <hi rend="italic">Oxford English Dictionary</hi> 
+                    defines as &#x201C;A glistering; a bright light, brilliance, lustre.&#x201D; For the verb form of the word, the dictionary cites an <date when="1808">1808</date> example, 
+                    which would have been well known to <persName corresp="#JR">Ruskin</persName>, from <persName corresp="#WS">Walter Scott</persName>, 
+                    <hi rend="italic">Marmion</hi> (book 2, stanza 21): 
+                    &#x201C;It did a ghastly contrast bear / To those bright ringlets glistering fair&#x201D; 
+                    (&#x201C;glister, v.,&#x201D; <hi rend="italic">OED Online</hi>, accessed <date when="2014-11-09">9 November 2014</date>).</note>
+                
+                <note xml:id="FIELDOFWATERLOOGLOSS" resp="#DCH">&#x201C;This is the field of <placeName corresp="#WATERLOO">Waterloo</placeName>&#x201D; (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;In 
+                    <date when="1833">1833</date>, with recent revolution vying for travelers&#x02BC; imagination, 
+                    the attraction of viewing the battlefield of <placeName corresp="#WATERLOO">Waterloo</placeName> had become &#x201C;&#x2018;somewhat musty,&#x2019; and decidedly out of fashion,&#x201D; 
+                    according to Frances Trollope. Despite nearly two decades elapsing since the battle, however, Trollope admits that 
+                    &#x201C;all my English feelings were as much awakened at the idea of seeing [the battlefield] as if its glory had arisen but yesterday,&#x201D; 
+                    and she gives a moving account of the experience 
+                    (<ref type="bibliography" target="bibliography.php#TROLLOPEBELGIUM">Trollope, <hi rend="italic">Belgium and Western Germany in 1833</hi></ref>, 1: 75).</note>
+                
+                <note xml:id="TREADSOFTLYGLOSS" resp="#DCH">&#x201C;Oh tread on it softly&#x201D; (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;Echoing Byron, <hi rend="italic">Childe Harold's Pilgrimage</hi>, canto 3, stanza 17: 
+                    &#x201C;Stop!&#x2014;for thy tread is on an Empire's dust!&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#BYRONWORKS">Byron, <hi rend="italic">Complete Poetical Works</hi>, ed. McGann</ref>, 2: 82).</note>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject MANUSCRIPT followed by "apparatus", for example,
+            "msi_apparatus". The xml:id also corresponds with its XML file's name, for example, "msi_apparatus.xml".-->
+        <fileDesc xml:id="title_of_manuscript_apparatus">
+            <titleStmt>
+                <title type="main">Title of Manuscript</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>            
+    <text>
+        <body>
+            <div type="apparatus">
+            <head type="title">Title of Manuscript</head>
+                <!--A manuscript apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>MS IVD</p>
+                </div>
+                <div type="section" xml:id="LOCATION">
+                    <head type="section">Location</head>
+                    <p>Body paragraph.</p>
+                    Princeton (cataloged as  Ruskin MS.--Early Geology ).
+                </div>
+                <div type="section" xml:id="PROVENANCE">
+                    <head type="section">Provenance</head>
+                    <p>Body paragraph.</p>
+                    Sotheby’s 1931.
+                </div>
+                <div type="section" xml:id="DESCRIPTION">
+                    <head type="section">Description</head>
+                    <p>Body paragraph.</p>
+                    Ruskin’s so-called Mineralogical Dictionary (untitled in manuscript) and mineralogical notes, in five handmade books and some loose folios, bound together in dark red buckram, 33.5 × 20.5 cm, with  Ruskin MS.--Early Geology  stamped in gilt on spine. When bound, the sequence of the parts was confused, so that they are best described in connection with their content.
+                    <!--The subsection that follows, Collation, is common to all manuscript apparatuses and was, accordingly, assigned an xml:id by
+                        the Ruskin Project Team during work on the "First Twenty."-->
+                    <div type="subsection" xml:id="COLLATION">
+                    <head type="subsection">Collation</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+                <div type="section" xml:id="CONTENTS">
+                    <head type="section">Contents</head>
+                    <!--Typically, this section will begin:-->
+                    <p>
+                        <hi rend="italic">From front of book, the sequential order of contents:</hi>
+                    </p>
+                    <!--and continue with a list, which may group items according to type (e.g. prose, poetry) or other similiarity. Note: drawings
+                        may be included as items in this list.-->
+                    <list xml:id="LIST" type="ordered">
+                        <item n="a">Item belonging to Group A.</item>
+                        <item n="b.1">First item belonging to Group B.</item>
+                        <item n="b.2">Second item belonging to Group B.</item>
+                        <item n="b.3">Third item belonging to Group B.</item>
+                        <item n="c">Item belonging to Group C.</item>
+                    </list>
+                    <p>Body paragraph.</p>
+                    Content
+                    a) Two sheets watermarked  Judicature Foolscap,  32.5 × 19.5 cm, hand-ruled in light pencil and otherwise blank except for a letter d, which resembles Ruskin’s early script, in upper right corner of first recto. These are most likely unrelated binder’s sheets, or sheets added by Alexander Wedderburn, who frequently used such large sheets to list a table of contents for the manuscripts he assembled and had bound (see also i, below; contrary to Wedderburn’s usual practice, however, no title or table of contents prefaces MS IVD). If these are binder’s sheets, the notation d is not, of course, by Ruskin. If the sheets are original to the dictionary, however, and the d by Ruskin, he may have left them to indicate a proposed continuation, since the dictionary had bogged down in the Cs (see no. 98).
+                    b) Two sheets mounted on stubs, 19 × 30.5 cm, watermarked  A Cowan &#x0026; Son / 1830,  numbered on rectos 1 and 2 by a later hand. If preceded by h (see below), which is bound out of sequence, the three folios h and b, along with the first recto of c, form the earliest part of the Mineralogical Dictionary--i.e., unalphabetized entries on gold, silver, iron, copper, and lead. This earliest attempt at the dictionary is described in no. 98 and dated about 1831-32.
+                    c) One loose (?) sheet plus a sewn booklet, all identical in size and watermark to b, with rectos numbered 3 through 7 by a later hand. The recto of the first sheet, which appears glued to the sewn booklet (although in the present state of MS IVD, it cannot be ascertained whether the sheet was originally loose), begins with text on ruby copper, which is clearly continuous with the text that ends b. This recto goes on to describe varieties of lead, to the bottom of the page. Then, on the verso of that folio, the dictionary begins anew with alphabetized entries ( Acanticone,   Actynolite,   Glossy Actynolite,  etc.)--Ruskin deleting an entry at the top of this page for  Phosphate of Lead,  which would have been continuous with the discussion of lead begun on the recto. The new series of alphabetized entries continues throughout this sewn booklet and on into d, e, and g. The alphabetized entries date from 1833-35 (see no. 98).
+                    d) Another sewn booklet, identical in size and watermark to b, rectos numbered 8 through 15 in a later hand. Clearly an unbroken continuation of c, since the end of c reads  See next paper for continuation of Amber,  and the top of d, 8r, reads  Amber continued.  This booklet carries the Dictionary into the Bs.
+                    e) Sewn booklet, 19.5 × 32 cm, watermarked  J &#x0026; M Mills / 1827,  rectos numbered 16 through 21 in a later hand. Begins in mid-entry on basaltic rocks, carrying over from end of d. Again, the continuity is confirmed by Ruskin having written, at the end of d,  See opposite page,  and the text continuing unbroken at the start of the new booklet. This booklet finishes the Bs and takes Cs up to  clay  entries. Ruskin drew an ornament at the end of e, much like those found in other fair-copy manuscripts of the early 1830s.
+                    f) Interrupting the Dictionary, no. 98, this handsewn booklet contains no. 196, geological notes and illustrations more sophisticated than the Dictionary and dating from 1835-36. The booklet is made of bluish, unwatermarked paper; 19 × 31.5 cm; 16 folios, of which only the first eight have been numbered 22 through 29 on the rectos by a later hand, the following six left unnumbered because blank, and the fifteenth and sixteenth numbered as 30 and 31. The first three pages were also numbered by Ruskin himself.
+                    The two folios at the end contain, reading upside-down and running oppositely to the text at the beginning of the booklet, a rough draft entry for  Acanticone.  ( Acanticone  forms the first entry of the fair-copy alphabetized portion of c above, but Ruskin had merely cross-referenced the item for an entry in the Es, not yet written:  Is a variety of Epidote which see. ) This rough draft for  Acanticone  is followed by page references to various minerals in Saussure’s Voyages dans les Alpes (amber 267, salt 297, basalt 345 373 (1)), and then by lists of references to minerals found in an unknown multivolume work up to the eighth volume (not the Magazine of Natural History) (??? vol 8, garnets 20, schorl 36, gold 38; vol 7 hyacinth 140, prxnite 143, manganese 145). Still working backwards from the end of the booklet, on the overleaf of the acanticone entry and the indexes, Ruskin gives another index that he has compiled from some work (cross stone 1:362, cyanite 2:94, diamond 1:1, dolomite 2:462, electrum 3:67). Since these are alphabetized C to F ( corundum  through  euclase  and  felspar ), he was probably projecting entries for the continuation of the Mineralogical Dictionary, which had come to a  stick  in 1835 with the Cs (see no. 98)--the last completed entries having concerned forms of copper, which would alphabetically have preceded  corundum.  Finally, on both sides of the second of these ending folios, a key to Ruskin’s mineralogical code, expanded and revised from an earlier code (see no. 99). All these entries on the two end folios appear earlier than no. 196 and more closely related to no. 98, especially to its unfulfilled continuation, suggesting that Ruskin initially constructed the booklet for purposes of no. 98, put it aside, and later returned to it for the more advanced purposes of no. 196.
+                    g) Returning to the Mineralogical Dictionary proper, no. 98, this last complex assemblage interleaves blank pages of differing sizes with holograph pages, the blanks evidently provided in order to take up runover and afterthoughts--as indeed they sometimes do. In sequence, the folios of this handsewn booklet are as follows:
+                    g.1) Three sheets, same bluish paper as f, 18.5 × 31.5, rectos numbered 32 through 34 by a later hand, and beginning with entry on  Clay slate,  which answers to the last entry of e,  Slate clay.  (Sheet numbered 35 does not belong with this sequence; see h below.)
+                    g.2) Blank unnumbered , 19.5 × 32.5, no watermark.
+                    g.3) Bluish 18.5 × 31.5 sheet, later numbered 36, which continues coal entries from g.1, 34v.
+                    g.4) Blank 32.5 × 19.5 sheet, no watermark.
+                    g.5) Bluish 18.5 × 31.5 sheet, later numbered 37, continuing on coal.
+                    g.6) Blank unnumbered 19.5 × 32.5 sheet, no watermark.
+                    g.7) A large swatch of the bluish 18.5 × 31.5 folios, interleaved with both small blank half-sheets (about 16 × 20 cm) and larger, folio-sized sheets of white paper. Of these, the holograph pages (including many of the bluish sheets and a few of the half-sheets) are numbered 38 through 45, while sixteen completely blank folios of differing sizes are left unnumbered. Included among the latter are two blank folios, 32.5 × 19.5, watermarked  J Whatman / Turkey Mill / 1832,  proving that these blanks were interleaved by Ruskin, and not by the later binders of the manuscript. The last entry (incomplete) in g gives the heading only for  Earthy red copper ore. 
+                    g.8) A final folio that forms the back of the booklet, numbered 46, shows on its verso a sketch of a roadside cottage or inn.
+                    h) Although bound on a stub in the middle of g (between folio 34 and a large blank folio) and numbered 35 by a later hand, I list this folio separately because it clearly belongs in front of b. Identical in size and watermark to b, the closing entry on  white silver  on h, 35v, runs smoothly into the text on silver at the top of b, 1r.
+                    i) Two folios, indentical to a, though with no lettering, close the entire manuscript. Most likely binder’s sheets.
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Body paragraph.</p>
+                    Date of composition about 1831 through 1836. Viljoen does not extend the date of the manuscript late enough, ascribing it to 1831-34.
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <!--The Discussion section may contain all or only some of the following subsections.-->
+                    <div type="subsection">
+                        <head type="subsection">Hand</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Composition &#x0026; Sources</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Domestic Scene</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

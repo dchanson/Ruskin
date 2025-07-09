@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="scott_walter_note">
+            <titleStmt>
+                <title type="main">Walter Scott</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="note" subtype="biographical">
+                <head type="title">Walter Scott (1771&#x2013;1832)</head>
+                <p>Scottish poet and novelist. Scott is a source for some of Ruskin's earliest imitations of imaginative writing.
+                </p>
+                <p>In January 1834, when Ruskin's father wrote in reply to 
+                    <ref type="note" subtype="biographical" target="hogg_james_note.html"><persName corresp="JH">James Hogg</persName> (ca. <date notBefore="1770" notAfter="1835">1770&#x2013;1835</date>)</ref>, 
+                    who had asked for an account of Ruskin's progress in using his wonderful abilities, John James included a sample of John's rhymes, possibly taken from 
+                    <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.html">Account of a Tour on the Continent</ref>, which Ruskin was composing at that time. 
+                    Hogg's critique of the lines, which is known only from Ruskin's reply to Hogg, dwelled on the boy's imitation of Scott and Byron, 
+                    presumably intending to encourage greater originality. 
+                    Ruskin's comment identifies the boy's touchstone in Scott's poetry: 
+                    "If I could write one piece of poetry in my lifetime at all resembling the description of the battle of Flodden field, 
+                    I think toward the conclusion of Marmion, it would be enough honour for me" 
+                    (<ref type="bibliography" target="bibliography.html#GARDENMEMORIALS">Garden, ed., <hi rend="italic">Memorials of James Hogg</hi></ref>, 277).
+                </p>
+                <p>Striking poetic diction in Ruskin's verse often can be traced to Scott's novels and poetry; see, e.g., <ref type="witness" target="lille_poem_msia_g1.html"></ref>, line 12;</p>
+                
+            </div>
+        </body>
+    </text>
+</TEI>

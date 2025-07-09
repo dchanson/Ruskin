@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject MANUSCRIPT followed by "apparatus", for example,
+            "msi_apparatus". The xml:id also corresponds with its XML file's name, for example, "msi_apparatus.xml".-->
+        <fileDesc xml:id="title_of_manuscript_apparatus">
+            <titleStmt>
+                <title type="main">Title of Manuscript</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>            
+    <text>
+        <body>
+            <div type="apparatus">
+            <head type="title">Title of Manuscript</head>
+                <!--A manuscript apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>MS XIA</p>
+                </div>
+                <div type="section" xml:id="LOCATION">
+                    <head type="section">Location</head>
+                    <p>Body paragraph.</p>
+                    HL (HM 6103).
+                </div>
+                <div type="section" xml:id="PROVENANCE">
+                    <head type="section">Provenance</head>
+                    <p>Body paragraph.</p>
+                    Huntington.
+                </div>
+                <div type="section" xml:id="DESCRIPTION">
+                    <head type="section">Description</head>
+                    <p>Body paragraph.</p>
+                    Unruled notebook, blue-green marbled boards, half-bound in red leather; 23.5 × 19 cm. Extant are 38 leaves. At least 4 leaves have been torn out from the end of the notebook. Watermark  J Whatman / Turkey Mill / 1831. 
+                    Title page (2r):  Practical / GEOMETRY.  The word  Practical  is lettered in a gothic style, while  GEOMETRY  is lettered in the style used for the words  ITERIAD  and  ATHENS  on the title pages to those epics in MS VII (see MS VII,  Description ). Above the title is an ornament consisting of a face surrounded by fancy scroll. While early cataloger’s notes at HL assume that such  ornamental pen work  must be  in another hand  (see Hodson,  Checklist,  196), the ornamented lettering, like that for the title pages of  Iteriad  and  Athens  in MS VII, was likely copied by Ruskin from E. Butterworth, Butterworth’s Young Arithmetician’s Instructor, Containing Specimens of Writing with Directions (Edinburgh, 1815?). Such a text seems an appropriate model for Ruskin’s geometry exercise notebook, but the Young Arithmetician’s Instructor did not necessarily form part of the regimen assigned by Ruskin’s mathematics tutor, Mr. Rowbotham. The Butterworth text had been purchased by John James in 1827 (RFL 168 n. 1), much earlier than Ruskin’s formal mathematics tutoring, and it appears to have been consulted by the family mainly for orthographical instruction and practice (RFL 251, 259). In fact, the exercises that Ruskin labels  problems  in his notebook are more orthographical than mathematical in character, being more concerned with how to draw geometrical shapes accurately than with how to theorize about them--a  practical,  not a pure, geometry.
+                    <!--The subsection that follows, Collation, is common to all manuscript apparatuses and was, accordingly, assigned an xml:id by
+                        the Ruskin Project Team during work on the "First Twenty."-->
+                    <div type="subsection" xml:id="COLLATION">
+                    <head type="subsection">Collation</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+                <div type="section" xml:id="CONTENTS">
+                    <head type="section">Contents</head>
+                    <!--Typically, this section will begin:-->
+                    <p>
+                        <hi rend="italic">From front of book, the sequential order of contents:</hi>
+                    </p>
+                    <!--and continue with a list, which may group items according to type (e.g. prose, poetry) or other similiarity. Note: drawings
+                        may be included as items in this list.-->
+                    <list xml:id="LIST" type="ordered">
+                        <item n="a">Item belonging to Group A.</item>
+                        <item n="b.1">First item belonging to Group B.</item>
+                        <item n="b.2">Second item belonging to Group B.</item>
+                        <item n="b.3">Third item belonging to Group B.</item>
+                        <item n="c">Item belonging to Group C.</item>
+                    </list>
+                    <p>Body paragraph.</p>
+                    Content
+                    a) Notes on Greek, Egyptian, and Asiatic empires (see no. 135); algebra problems (inside front endboard).
+                    b) Inscription (1r, see  Description  above; 1v, blank).
+                    c) Title page (2r, see  Description  above; 2v blank).
+                    d) Practical geometry problems (3r-26v). Each page is devoted to a single problem, consisting of a heading ( Problem I,   Problem II,  etc., each heading decorated with flourishes, as described in  Description  above); a prose statement of the problem; and an elegant diagram that carries out the the problem. There are 48 problems total. Problem 44 is missing its roman numeral in the heading, which reads simply  Problem.  Problems 46-48 are missing their prose statements.
+                    This portion of the notebook bears out Duncan K. Wilson’s remark about methods of teaching arithmetic (at least in Scotland and up through the eighteenth century, which are the limits of his study), namely that  it was customary for the master to dictate rules and examples which the pupil slavishly reproduced in his copybook in beautiful copperplate writing  (The History of Mathematical Teaching in Scotland to the End of the Eighteenth Century [London: University of London Press, 1935], 45). The same must have been true of geometry instruction, which tended to be practically oriented (Wilson, pp. 57, 82). A few specimens of text will serve to indicate the nature of all 48 problems. In manuscript, each of the following texts is accompanied by a diagram that demonstrates its respective problem in geometrical drawing: 
+                    
+                    Problem I
+                    From a point C in a given line AB to raise a perpendicular to that line.
+                    
+                    Problem II
+                    To divide a given right line AB into two equal parts that is to bisect it.
+                    
+                    Problem III
+                    From a given point D to let fall a perpendicular on a given line AB.
+                    
+                    Ruskin, for whom no copying task could prove too obsessive, may have enjoyed this practical labor, although he complained bitterly about his more abstract mathematics instruction (see no. 173).
+                    e) Five neatly copied rules of proportion, e.g.,  If the line a = b / And the line c = b / Then will the line c = a  (27r-28r).
+                    f) Small pencil and watercolor landscape drawings over top of geometrical figures (28v-29r).
+                    g) Algebraic exercises, pencil and ink (29v-38v, plus inside back endboard). Also on endpaper: pencil drawing of a gothic edifice, perhaps a cathedral entrance.
+                    h) Between 38v and endpaper, at least 4 pages removed, of which the stubs remain.
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Body paragraph.</p>
+                    Date of composition starting either in early 1832 or in early 1833 and continuing for an unspecifiable period, probably not longer than a year or two.
+                    The first leaf (1r) displays an ornamented inscription,  Mastr Ruskin, / Jany 21st 1833.  No indication is given whether this date refers to the inception of the text or its completion. An argument for 21 January 1833 as the completion date can be drawn from the orthography. The scroll work on each page around the headings  Problem I,   Problem II,  etc., closely resembles that used for the  Finis  to  Iteriad -- such a finis,  Ruskin said on 14 January 1832 when he finished  Iteriad,  that he  took [from] Mr Butterworth  and indeed  quite eclipsed Mr Butterworth [and] threw him into the shade   (RFL 259; see RGI pl. 7). If Ruskin went on in early 1832 to use this style of flourish for his  Practical Geometry,  he might well have finished the notebook a year later on 21 January 1833. This hypothesis is supported also by the distinctive lettering used for  GEOMETRY.  The title pages sharing that lettering,  Iteriad  and  Athens  in MS VII, probably were drawn during the last quarter of 1831 (see nos. 91, 135). Thus, we can imagine Ruskin, at the beginning of 1832, drawing on his full orthographic arsenal for his  Practical Geometry. 
+                    Alternatively, an argument for 21 January 1833 as the date of inaugurating the notebook is suggested by the apparent incompletion of the project. The loose ends are not very noticeable (see  Content  below), however, and Ruskin likewise inscribed his  Iteriad  fair copy as finished, despite missing  Notes  (see no. 91). Nonetheless, the fact that  Practical Geometry  is incomplete must weigh somewhat against Ruskin having signed and dated it as if to signify an accomplished ending.
+                    The choice between the alternative interpretations is not greatly helped by the contents. In his 14 January 1832 letter, the same letter in which Ruskin mentions drawing on Butterworth for the  Finis  to  Iteriad,  he also refers to his mathematics lessons as  Mr Roebothams [sic] sums --namely,  addition subtraction multiplication and division.  By 4 March, he had  positively got to the Rule of three  (RFL 273), a method of working out problems of proportion. On 15 January 1833, shortly before the inscription date in  Practical Geometry,  Ruskin complained of being  bogged in my algebra.  At any time during this progress, Ruskin might have begun the  problems  in MX XIA, which are  practical,  not theoretical; that is, the problems are designed to hone the student’s skill with compass and ruler. This practical training might have been started in January 1833 in preparation for Euclidean geometry, which is first mentioned by Ruskin in early 1834, when he reached the fifth book of Euclid (RFL 279); however, the exercises might just as easily have begun earlier.
+                    It is possible, of course, that Ruskin’s inscription has nothing whatever to do with the geometry exercises, and that on 21 January 1833 he merely took a fancy to inscribing his name. I favor interpreting the date as referring to the geometry  problems,  however, and specifically to the notebook’s completion. Besides the orthographical considerations mentioned above, which seem stronger than coincidence would allow, the ending date of January 1833 is suggested by the practical geometry  problems  being followed by algebraic problems--exercises that might well have  bogged  Ruskin afterward, as he complained on 15 January 1833.
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <!--The Discussion section may contain all or only some of the following subsections.-->
+                    <div type="subsection">
+                        <head type="subsection">Hand</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Composition &#x0026; Sources</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Domestic Scene</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

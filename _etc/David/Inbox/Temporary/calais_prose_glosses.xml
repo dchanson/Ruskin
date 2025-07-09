@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="calais_prose_glosses">
+            <titleStmt>
+                <title type="main">"Calais" [prose]</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#CWB">Charles W. Borchers, IV</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-25">January 25, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="INTRODUCTIONTOFRANCEGLOSS" resp="#DCH"><hi rend="italic">&#x201C;Introduction to France</hi>&#x201D; 
+                    (MS VIII; MS IX; <hi rend="italic">Works</hi> [1903])&#x2014;<persName corresp="#JR">Ruskin</persName> adopts a picturesque view of <placeName corresp="#CALAIS">Calais</placeName> 
+                    (&#x201C;a little France, a miniature picture&#x201D;). Similarly, in her journal of the tour, 
+                    <ref type="note" subtype="biographical" target="richardson_mary_note.php"><persName corresp="#MRC">Mary Richardson</persName> (1815&#x2013;49)</ref> 
+                    framed a picturesque view: &#x201C;much pleased with the appearance of <placeName corresp="#CALAIS">Calais</placeName> from the sea&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#RFT48">Diary of Mary Richardson, 1833</ref>, p. 1). Guidebooks and travel accounts of the period tended to take a more practical view, 
+                    portraying the port city in terms of British travelers&#x02BC; complaints about difficulties in negotiating customs and finding lodging; see, for example, 
+                    <hi rend="italic">Heath&#x02BC;s Picturesque Annual for <date when="1832">1832</date></hi>, which warns that, in <placeName corresp="#CALAIS">Calais</placeName>, 
+                    &#x201C;the communication between the strangers and natives is full of strife and wrangling or silent bitterness&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#HEATHSANNUAL1832">Ritchie, <hi rend="italic">Travelling Sketches in the North of Italy, the Tyrol, and on the Rhine</hi></ref>, 3). 
+                    Whereas <persName corresp="#JR">Ruskin</persName>&#x02BC;s account turns the abrupt transition from English character to French, separated only by the <geogName corresp="#ENGLISHCHANNEL">Channel</geogName> crossing, into a topic for picturesque contrasts of scenery and costume, 
+                    <persName corresp="#JM">John Murray</persName>&#x02BC;s <date when="1836">1836</date> guidebook emphasizes the comforts of familiarity: <placeName corresp="#CALAIS">Calais</placeName> &#x201C;is half Anglicised and our language is generally spoken&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand-book for Travellers on the Continent</hi></ref>, 86). 
+                    Likewise, <persName corresp="#MRC">Mary Richardson</persName>, once landed on shore, is interested in practical business, 
+                    reporting that, on arrival, &#x201C;<persName corresp="#JJR">Uncle</persName>, <persName corresp="#MR">Aunt</persName>, <persName corresp="#JR">John</persName> and I, 
+                    along with <ref type="note" subtype="biographical" target="strachan_ann_note.php"><persName corresp="#ASB">Anne [Strachan</persName> (ca. 1799&#x2013;1871)]</ref> 
+                    were put into a French vehicle and proceeded to the Custom House escorted by an officer,&#x201D; 
+                    where &#x201C;[o]nly <persName corresp="#ASB">Anne</persName> was searched&#x201D; along with the boxes 
+                    (<ref type="bibliography" target="bibliography.php#RFT48">Diary of Mary Richardson, 1833</ref>, pp. 1&#x2013;2). 
+                    See also <ref type="note" subtype="contextual" target="tour_of_1833_note.php">Tour of 1833</ref>.
+                    
+                 <p><persName corresp="#JR">Ruskin</persName>&#x02BC;s picturesque commentary on <placeName corresp="CALAIS">Calais</placeName> as a place of arrival 
+                    corresponds to <ref type="note" subtype="biographical" target="rogers_samuel_note.php"><persName corresp="#SR">Samuel Rogers</persName></ref>&#x02BC;s trope 
+                    of entering a foreign scene through a city gate in &#x201C;The Lake of Geneva,&#x201C; 
+                    the poem that opens <hi rend="italic">Italy</hi>. <persName corresp="#SR">Rogers</persName> alludes to <persName corresp="#JJRPHILOSOPHER">Jean&#x2010;Jacques Rousseau</persName>&#x02BC;s (<date notBefore="1712" notAfter="1778">1712&#x2013;78</date>) 
+                    story in the <hi rend="italic">Confessions</hi> (<date notBefore="1782" notAfter="1789">1782&#x2013;89</date>) in which, 
+                    at age sixteen during his apprenticeship to a tyrannical watchmaker, 
+                    <persName corresp="#JJRPHILOSOPHER">Jean&#x2010;Jacques</persName> returned to <placeName corresp="#GENEVA">Geneva</placeName> from a country excursion too late to re&#x2010;enter the city gates; 
+                    in despair over the punishment his master would inflict on him for his lack of restraint and discipline, 
+                    the youth determines to exile himself from his native city. Following this evocation, <persName corresp="#SR">Rogers</persName> reverses the trope 
+                    to imagine youths entering <placeName corresp="#LONDON">London</placeName>&#x02BC;s city gates with hope&#x2014;first, 
+                    <ref type="note" subtype="biographical" target="chatterton_thomas.php"><persName corresp="#TCPOET">Thomas Chatterton</persName> (<date notBefore="1752" notAfter="1770">1752&#x2010;70</date>)</ref>, 
+                    a youth more ill&#x2010;fated even than <persName corresp="#JJRPHILOSOPHER">Rousseau</persName>; 
+                    and then <persName corresp="#DG">David Garrick</persName> (<date notBefore="1717" notAfter="1779">1717&#x2013;79</date>) and 
+                    <persName corresp="#SJ">Samuel Johnson</persName> (<date notBefore="1709" notAfter="1784">1709&#x2013;84</date>), destined respectively for fame and neglect 
+                    (<ref type="bibliography" target="bibliography.php#ROGERSITALY1830">Rogers, <hi rend="italic">Italy</hi> (1830)</ref>, 1&#x2013;3; and see 
+                    <ref type="bibliography" target="bibliography.php#ROUSSEAUCONFESSIONS">Rousseau, <hi rend="italic">Confessions</hi></ref>, 49 [bk. 1]).</p>
+                </note>
+
+                <note xml:id="FOURHOURSGLOSS" resp="#DCH">&#x201C;Four hours&#x201D; 
+                    (MS IA, <hi rend="italic">g</hi>.2)&#x2014;Steamers from <geogName corresp="#DOVERCLF">Dover</geogName> to <placeName corresp="#CALAIS">Calais</placeName> averaged, according to <persName corresp="#JM">John Murray</persName>&#x02BC;s <date when="1836">1836</date> guidebook, 
+                    two&#x2010;and&#x2010;a&#x2010;half hours for the crossing  
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand-book for Travellers on the Continent</hi></ref>, 86). 
+                    This was the time required for the Ruskins&#x02BC; crossing, <persName corresp="#MRC">Mary Richardson</persName> commenting: &#x201C;two hours and a half exactly in crossing and just saved the tide 
+                    so that we all landed at the pier, without having recourse to small boats&#x201D; 
+                    (<ref type="bibliography" target="bibliography.php#RFT48">Diary of Mary Richardson, 1833</ref>, p. 1). 
+                    Unless a return crossing (which is what <persName corresp="#JR">Ruskin</persName>&#x02BC;s &#x201C;four hours&#x201D; estimates) did require a longer time, 
+                    his narrator is mistaken; and in the <title type="manuscript" corresp="#MSIX">MS IX</title> version <persName corresp="#JR">Ruskin</persName> 
+                    substituted &#x201C;half an hours&#x02BC;&#x201D; crossing&#x2014;a change that did not improve on the accuracy of &#x201C;four hours,&#x201D; 
+                    but that captured the tone he desired for his narrator.
+                    
+                 <p>From the <placeName corresp="#TOWEROFLONDON">Tower of London</placeName> to <placeName corresp="#CALAIS">Calais</placeName>, the trip lasted twelve hours, 
+                    according to <persName corresp="#JM">Murray</persName>&#x02BC;s guidebook as well as to <persName corresp="#MSA">Mariana Starke</persName>&#x02BC;s <date when="1833">1833</date>  
+                    (<ref type="bibliography" target="bibliography.php#STARKETRAVELSINEUROPE">Starke, <hi rend="italic">Travels in Europe</hi></ref>, 526).</p></note>
+            </div>
+        </body>
+    </text>
+</TEI>

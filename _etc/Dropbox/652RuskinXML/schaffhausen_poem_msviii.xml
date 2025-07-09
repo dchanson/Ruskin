@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="schaffhausen_poem_msviii">
+            <titleStmt>
+                <title type="main">"Schaffhausen" [poem]</title>
+                <title type="sub">Electronic Text Generated from a Transcription of MS VIII</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#RLG">Rebekah L. Grommon</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#BGG">Brandon G. Guidry</persName>
+                    <resp>contributing encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2016-10-22">October 22, 2016</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Account of a Tour on the Continent"</idno>
+                        <msName>MS VIII</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msviii70v-71r.jpg">pp. 70-71</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="msviii_apparatus.php#MAJORMS">MS VIII: Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833-34</date>,
+                                    examples of which can be found in MS VIII, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb facs="MSVIII70v"/>
+            <div type="poem" met="-+|-+|-+|-+/-+|-+|-+" rhyme="ababcdcdefgf">
+                <head type="title"><handShift new="#HANDJR1833-34" script="print" medium="ink"/><placeName corresp="SCHAFFHAUSEN">Schaffhausen</placeName></head>
+                <lg type="stanza" n="1">
+                    <l>The eve was darkening, as we climbed,</l>
+                    <l>The summit of the hill,</l>
+                    <l>And cradled mid the mountain pine,</l>
+                    <l>The <del rend="strikethrough">breeze</del> <add place="above"><space quantity="6"></space>wind</add> was lying still <add rend="linenumber-right-JR">1151</add></l>
+                    <l>Beneath the forests shadowy,</l>
+                    <l>Long time our path wound on,</l>
+                    <l>One narrow strip of starry sky,</l>
+                    <l>Between the dark firs shone, <add rend="linenumber-right-JR">1155</add></l>
+                    <l>The drowsy gnats had ceased their song <g>#</g></l>
+                    <l>The birds upon the bough were sleeping,</l>
+                    <l>And stealthily across our path,</l>
+                    <l>The leveret was leaping,</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>

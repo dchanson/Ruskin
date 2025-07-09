@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="tite_of_work_note">
+            <titleStmt>
+                <title type="main">Title of Work</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The notes version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
+            <div type="note" subtype="subtype">
+                <head type="title">Introductory Essay on the Provenance of the Early Manuscripts</head>
+                <p>Most of the early manuscripts share at least one major thread of ownership and preservation. It is convenient, therefore, to organize these threads in an 
+                    introductory essay for central reference. At the opposite end of the scale in the archive, the Apparatus Pages for each individual 
+                    <hi rend="italic">work</hi> and <hi rend="italic">manuscript</hi> (see <ref type="note" subtype="bibliographical" target="plan_of_archive_note.xml">Plan of the Archive</ref>) 
+                    contain provenance information specific to the object in question, 
+                    while also linking the reader to this essay and/or to one of the notes tracing a major thread of provenance.</p>
+                <p>This essay provides an overview of the provenance of the early manuscripts, including what is known about when they presumably were kept together at Ruskin's three homes, 
+                    Herne Hill, Denmark Hill, and Brantwood. 
+                    Following Ruskin's death, clusters of manuscripts were carried along separate threads of provenance, which are traced in the following associated notes on sales and individual collectors:
+                    <list type="ordered">
+                        <item n="1"><ref type="note" subtype="bibliographical" target="provenance_sothebys_1930.php">Sotheby's 1930 Sale of Ruskin Manuscripts</ref>;</item>
+                        <item n="2">Second item.</item>
+                        <item n="3">Third item.</item>
+                    </list>
+                </p>
+                ofyears becomes complicated by Ruskin's occasional <gift>gifts of his early work. After Ruskin's death, the narrative branches into intersecting stories of <preservation>preservation, <sale>sales (authorized and unauthorized), and <collector>collectors.</p>
+                    
+                <p><provenance>
+                    <!-- The provenance page for each manuscript should consist of <head1>The Provenance of the Major Manuscripts followed in every case by <head2>General Introduction <provenance_introduction>. Then follows a set of links (each head3) as appropriate to a given manuscript, e.g. <Sotheby_1930> -->
+                    
+                    Was anything in the Ruskin Centenary Exhibition 1919, at the Royal Academy (1 Oct - 22 Nov) and Coniston (21 July - 20 Sept)?
+                    
+                    
+                    <provenance_sale>
+                        <head2>The Sales
+                            Following the Brantwood years, the provenance of most <major manuscripts> of the early manuscripts is accounted for in the two Sotheby’s sales of Ruskin manuscripts removed from the house, held respectively on 24 July 1930 (<Sotheby’s 1930>) and 18 May 1931 (<Sotheby’s 1931>). Most remaining early manuscripts were probably sold during the final dispersal sale at Brantwood itself on 28, 30, and 31 July 1931 (<Brantwood Dispersal>).
+                                
+                                Authorized sales defined as those approved by the Ruskin executors...? What started the sales?
+                                [make this a 2 column table, slipcase identification and contents]
+                                
+                                
+                                d from William S. Allen. He had been disposing of his family’s Ruskin inheritance since the second decade of the century (RBB 34), and, were it not for the attribution of the Ruskin/Beever collection to Goodspeed, the Allens could be considered a logical source of that collection, since George Allen published Hortus Inclusus. The Allen sale to the Huntington, however, appears to be solidly established as consisting of manuscripts of the 1850s and afterwards, not letters or earlier manuscripts.
+                                                
+                                                Severn sale 25-26 July 1921. See Newsletter 12 (spring 1975): 2. What was the unsold "Studies in Horace"?.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

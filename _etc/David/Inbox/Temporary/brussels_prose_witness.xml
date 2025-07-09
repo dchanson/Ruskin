@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="brussels_witness">
+            <titleStmt>
+                <title type="main">"Brussels"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#">E. T. Cook and Alexander Wedderburn</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>E. T. Cook and Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <imprint>
+                            <biblScope type="vol">2</biblScope>
+                            <biblScope type="edition">Library<hi rend="superscript"></hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1903">1903</date>
+                            <biblScope type="pages">xxiii<!--I don't know what goes here?--></biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Simple Prose. Delete this <div/> if not used.-->
+            <div type="prose">
+                <head type="title"><placeName corresp="#BRUSSELS">Brussels</placeName> 
+                   <name><persName corresp="#JR">by John Ruskin</persName></name></head>  
+                <p><placeName corresp="#BRUSSELS">Brussels</placeName> is a lovely, a queen&#x2010;like city&#x2014;from a distance, sweeping up 
+                    the flanks of its hill, battlement over battlement swelling up higher, and 
+                    higher, and (yet) higher, and the massive obscurity of the two huge square 
+                    cathedral tow&#x02BC;rs looming over the whole, and contrasted strangely with 
+                    the delicate sharp spiriness of the steeple of the <placeName corresp="#HOTELDEVILLE">H&#x00F4;tel de ville</placeName>. <placeName corresp="#PARIS">Paris</placeName> 
+                    would look like an assemblage of brick&#x2010;kilns beside it. We saw <placeName corresp="#BRUSSELS">Brussels</placeName> 
+                    at eleven miles&#x02BC; distance, its towers rising dark and spear&#x2010;like out of the 
+                    horizon. It was waxing dark as we entered the city, and the lights began 
+                    to twinkle in the few, the very few shop windows. I love to pass through 
+                    a city at night, the hum of the voices rises so softly out of the obscurity, 
+                    and the figures flit about dark and bat&#x2010;like, and the cold starlight mingles 
+                    so strangely with the red swarthy gleam of the lamps; and when you look 
+                    up, the narrow strip of sky is of such a dark, dark blue, you may see it 
+                    appear to quiver with the starlight if you look long, and the white house&#x2010; 
+                    fronts rise so ghastly, so ghost&#x2010;like against it, and the windows seem 
+                    grinning maliciously askance at you. It makes one shiver to think of it. 
+                    Cities are exceedingly picturesque when built upon hills; but for exploring, 
+                    for circumnavigating, for perambulating&#x2014;Oh, woe to the walker who is 
+                    compelled to drag himself up their steeps, those tiresome paved steeps,
+                    <pb/>
+                    those hard, unyielding, provokingly smooth flagstones, or to go thundering 
+                    down, his rapidity increasing every instant, when he is once in for it 
+                    lurching tremendously like a ship in a swell, jerk, jerk, jerking&#x2014;<emph>Oh, facilis 
+                    descensus Averni, sed sed;</emph>&#x2014;Ay, there's the rub. The H&#x00F4;tel de Bellevue 
+                    at <placeName corresp="#BRUSSELS">Brussels</placeName> ought to have a <emph>belle vue</emph> for you might as well scale the crags 
+                    of <placeName corresp="#GIBRALTAR">Gibraltar</placeName> as storm the heights of the H&#x00F4;tel de Bellevue; whence, for all 
+                    the boast of its title, I never could discover more <emph>belle vue</emph> than a dusty 
+                    square, some formal houses, and a few murky park trees. </p>
+                    
+                <p>We left <placeName corresp="#BRUSSELS">Brussels</placeName> on Wednesday morning for <placeName corresp="#WATERLOO">Waterloo</placeName>; the sun beamed 
+                    sweetly among the long trunks of the aged trees of the forest of Soigny; 
+                    and their damp bark glistened dewily,&#x2014;as it rose up taller and taller, 
+                    branching off into the bending boughs, and slender spray, with the delicate 
+                    foliage scattered through: here every leaf defined separately and clearly 
+                    as you looked up to the broad sky; there in light, spready masses, par&#x2010; 
+                    tially concealing the long tapery trunks which retired back, farther and 
+                    still farther, yet distinctly grouped, and those groups separated by the 
+                    gleamy stream of yellow sunshine, which shone full on the sides of the 
+                    swelling green grassy banks, then broken by the intervening hollows, 
+                    then climbing again up the dewy moss and white trunks. It was exceed- 
+                    ing beautiful; I could have fancied the glister of the bright bayonets 
+                    changing, like starlight on a wavy ocean, among the retiring foliage of 
+                    those ancient trees&#x2014;I forgot how many long years had past by since 
+                    that eventful day. </p>
+                    
+                    <p>This is the field of <placeName corresp="#WATERLOO">Waterloo</placeName>. The round hills of green pasture lay 
+                    unbroken before me, without a single tree, except where, fax to the right, 
+                    the rich forest country commenced again, breaking away in rounded 
+                    masses, till lost in the blue of the faint horizon. All is peace now. 
+                    Englishmen may feel proud on the field of Waterloo&#x2014;perhaps I did; but 
+                    there is something mingled with it&#x2014;Poor <persName corresp="#NBE">Napoleon</persName>! The grass is very 
+                    green on the field of <placeName corresp="#WATERLOO">Waterloo</placeName>&#x2014;it has grown from the dust of our bravest. 
+                    Oh, tread on it softly!  </p>
+                
+                
+            </div>
+        </body>
+    </text>
+</TEI>

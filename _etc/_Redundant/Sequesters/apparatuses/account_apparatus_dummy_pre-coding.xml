@@ -1,0 +1,1802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
+            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
+        <fileDesc xml:id="title_of_work_apparatus">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department
+                        of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="apparatus">
+                <head type="title">Account of a Tour on the Continent</head>
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>Although W. G. Collingwood printed this title without square brackets in <hi
+                            rend="italic">Poems</hi> (1891) to indicate his intervention, the title
+                        by which this poem has become familiarly known was apparently his, as Ruskin
+                        assigned no title to the sequence as a whole in any of the extant
+                        manuscripts. What titles Ruskin supplied apply only to some individual verse
+                        and prose sections of the work. As another discrepancy, in both <ref
+                            type="note" subtype="bibliographical" target="poems_1891_note.html"><hi
+                                rend="italic">Poems</hi> (1891)</ref> and the <ref type="note"
+                            subtype="bibliographical" target="library_edition_note.html">Library
+                            Edition</ref>, the title is given in the table of contents as "Account
+                        of a Tour on the Continent in 1833," but the title pages of the poem itself
+                        in these editions lack the extension with the date (<ref type="bibliography"
+                            target="bibliography.html#POEMS4D1891"><hi rend="italic">Poems</hi>
+                                [4<hi rend="superscript">o</hi>, 1891]</ref>, 1:xv, 119;; <ref
+                            type="bibliography" target="bibliography.html#POEMS8D1891"><hi
+                                rend="italic">Poems</hi> [8<hi rend="superscript">o</hi>,
+                            1891]</ref>, 1:xix, 119; <ref type="bibliography"
+                            target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic"
+                                >Works</hi></ref>, 2:xii, 340).</p>
+                    <p>According to Randolph Vigne, the title "Fragments from a Metrical Journal"
+                        for the selections published in <hi rend="italic">Friendship's Offering</hi>
+                        (see Composition and Publication) was invented by the editor, Thomas
+                        Pringle, although Vigne cites no source for this statement (<ref
+                            type="bibliography" target="bibliography.html#VIGNEPRINGLE">Vigne, <hi
+                                rend="italic">Thomas Pringle</hi></ref>, 188).</p>
+                </div>
+                <div type="section" xml:id="GENRE">
+                    <head type="section">Genre</head>
+                    <p>Composite: verse, prose, and illustration.</p>
+                    <!--entry needed-->
+                </div>
+                <div type="section" xml:id="MAJORMS">
+                    <head type="section">Manuscripts</head>
+                    <p>MS IA, MS VII, MS VIII, MS IX, MS XI.</p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>After May 1833 (possibly not earlier than October 1833) and into 1834.</p>
+                </div>
+                <div type="section" xml:id="COMPPUB">
+                    <head type="section">Composition and Publication</head>
+                    <div type="subsection" xml:id="PUBLICATION">
+                        <head type="subsection">Publication</head>
+                        <p>Two verse selections subtitled “Andernacht” and “St. Goar” respectively,
+                            published under the main title, “Fragments from a Metrical Journal,” and
+                            signed "J. R.," in <ref type="bibliography"
+                                target="bibliography.html#FRIENDSHIPSOFFERING1835"><hi rend="italic"
+                                    >Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath . . .
+                                    for 1835</hi></ref>, 317-19; no engraving was paired with the
+                            selections, unlike another poem by "J. R." in the same volume, <ref
+                                type="apparatus" subtype="work" target="saltzburg_apparatus.html"
+                                >"Saltzburg"</ref>. Another verse selection, “Ehrenbreitstein /
+                            Fragment from a Metrical Journal. / (Aetat 16.),” published in <ref
+                                type="bibliography" target="bibliography.html#POEMS1850">Ruskin, <hi
+                                    rend="italic">Poems</hi> (1850)</ref>, 8-12. For the
+                            circumstances surrounding publication of "Fragments from a Metrical
+                            Journal" in <hi rend="italic">Friendship's Offering</hi> by the editor,
+                            Thomas Pringle, see <ref type="bibliography"
+                                target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic"
+                                    >Works</hi></ref>, 2:353-54 n. 2; and <ref type="bibliography"
+                                target="bibliography.html#VIGNEPRINGLE">Vigne, <hi rend="italic"
+                                    >Thomas Pringle</hi></ref>, 188.</p>
+                        <p>Selections more fully representing the "metrical journal" as originally
+                            drafted and fair-copied were edited by W. G. Collingwood in <ref
+                                type="bibliography" target="bibliography.html#POEMS4D1891"><hi
+                                    rend="italic">Poems</hi> (4<hi rend="superscript">o</hi>,
+                                1891)</ref>, 1:119-63, 281-83; <ref type="bibliography"
+                                target="bibliography.html#POEMS8D1891"><hi rend="italic">Poems</hi>
+                                    (8<hi rend="superscript">o</hi>, 1891)</ref>, 1:119-63, 283-85.
+                            Collingwood drew on both Ruskin's manuscript fair copy and his draft,
+                            but limited his selections to poetry, according to the parameters of the
+                            1891 edition. The editors of the Library Edition reprinted Collingwood's
+                            poetry texts and expanded them somewhat with additional verse taken from
+                            Ruskin's draft, but Cook and Wedderburn's most notable additions were
+                            Ruskin's prose sections for the work, revealing for the first time (in
+                            published form) the composite genre of the "Account" (Works, 2:340-87).
+                            Like Collingwood's solely verse version, Cook and Wedderburn's verse and
+                            prose version is a reconstruction from fair copy and draft. To some
+                            extent beyond the fair copy (see Ruskin, Works, 2:364 n. 1), that
+                            reconstruction is conjectural.</p>
+                    </div>
+                    <div type="subsection" xml:id="FAIRCOPY">
+                        <head type="subsection">Fair Copy (MS IX, MS VII, MS XI)</head>
+                        <p>See Discussion: Sources, for Ruskin's modeling of the "Account" on the
+                            1830 illustrated edition of the topographical poem <hi rend="italic"
+                                >Italy</hi> by Samuel Rogers, with engraved vignettes after drawings
+                            by J. M. W. Turner, Thomas Stothard and Samuel Prout; and on the 1833
+                            edition of lithographs by Samuel Prout, <hi rend="italic">Facsimiles of
+                                Sketches Made in Flanders and Germany</hi>. Ruskin's manuscript fair
+                            copy of his travelogue is contained in MS IX, which is divided into
+                            sections, each entitled by a place name. In its way, Ruskin's fair copy
+                            surpasses the ambitions even of its ekphrastic models, in that he
+                            elaborating most sections, in prose as well as verse--not just one or
+                            the other--and he illustrates each section with hand-drawn imitations of
+                            the engraved vignettes and lithographs in the Rogers and Prout volumes.
+                            The text is lettered in a careful copperplate-style hand--presumably all
+                            by Ruskin, although copyists such as his mother, Margaret Ruskin, and
+                            his cousin, Mary Richardson, may have had a hand in the copying, as
+                            wel--and the vignettes are drawn in pencil and/or pen and ink on
+                            separate paper, which was then cut and pasted into place in MS IX.
+                            Ruskin copied some scenes for his vignettes directly from his sources,
+                            while for others he invented the scene but realized it stylistically in
+                            the manner of Prout or Turner or Stothard.</p>
+                        <p>In the fair copy, MS IX, each section except one, "Aix la Chapelle,"
+                            consists of both verse and prose; and each section, up to "St. Goar," is
+                            illustrated by at least one drawing. ("Aix la Chapelle" lacks a poem,
+                            and it is ambiguous whether this section was meant to include one; see
+                            item nos. 4-5 in the list below.) Many sections contain blank spaces
+                            likely meant to be filled with additional drawings (i.e., the cut-out
+                            slips with drawings, to be pasted into the space), which either Ruskin
+                            either never completed, or which once were positioned in the manuscript
+                            and afterward removed. Starting either with the section for "St. Goar"
+                            or with that for "Heidelberg" (the Library Edition's documentation
+                            confuses the issue, as explained below), even a single drawing is
+                            presently lacking; and the fair copy of the text ends a short way into
+                            the prose for "Heidelberg"--so at this point in MS IX, the fair-copy
+                            project clearly had broken down, and it is unlikely that once-existing
+                            drawings have been removed. These blank spaces in MS IX are as follows
+                            (measures approximated):</p>
+                        <p>
+                            <list type="ordered">
+                                <item n="1">Half-page vertical space above the heading for
+                                    "Brussels" (p. ???).<!-- entry needed --></item>
+                                <item n="2">Third-page vertical space following the prose section
+                                    for "Brussels" (p. ???).<!-- entry needed --></item>
+                                <item n="3">Third-page vertical space above the heading for "The
+                                    Meuse" (p. ???).<!-- entry needed --></item>
+                                <item n="4">Third-page vertical space following the prose section
+                                    for "The Meuse" (p. ???).<!-- entry needed -->; however, since a
+                                    full-page broadside copy--so far, unprecedented in its scale--of
+                                    a scene from Prout's <hi rend="italic">Facsimiles</hi> occupies
+                                    the following page (p. ???)<!-- entry needed -->, no
+                                    vignette-sized sketch may have been intended here. Just so, the
+                                    verso following p. ???<!-- entry needed --> containing the
+                                    broadside (i.e., p. ???)<!-- entry needed --> is blank, and
+                                    Ruskin may have intended nothing here, just as the versos of the
+                                    large, full-page lithographs in Prout's <hi rend="italic"
+                                        >Facsimiles</hi> are blank. The following section, "Aix la
+                                    Chapelle," lacks a poem, but such verse presumably would not
+                                    have preceded the heading and drawing for this section, which
+                                    appear on p. ???. </item>
+                                <item n="5">Three-quarters-page vertical space, between the two
+                                    final lines of prose section for "Aix la Chapelle" at the top of
+                                    the page, and the two opening lines of the poem for "Cologne" at
+                                    the bottom of the page (p. ???). This space might have been
+                                    intended for a drawing related to "Cologne," or for a poem
+                                    related to the preceding section, "Aix la
+                                    Chapelle."<!-- entry needed -->.</item>
+                                <item n="6">Two-line vertical space, as if two lines of the poem for
+                                    "Cologne" are missing (p. ???)<!-- entry needed -->, but if a
+                                    vignette was projected for this space, its small size would have
+                                    been unpecedented.</item>
+                                <item n="7">Quarter-page vertical space following the prose section
+                                    for "Cologne" (p. ???).<!-- entry needed --></item>
+                                <item n="8">Two-thirds-page vertical space above the heading for
+                                    "Andernacht" (p. ???).<!-- entry needed --></item>
+                                <item n="9">Three-quarters-page vertical space following the prose
+                                    section for "Andernacht" (p. ???).<!-- entry needed --></item>
+                                <item n="10">Three-quarters-page vertical space following the poem
+                                    for "Ehrenbreitstein," which ends on the preceding verso, and
+                                    above the opening four lines of prose for this section, at the
+                                    bottom of this page (p. ???).<!-- entry needed --></item>
+                                <item n="11">Half-page vertical space above the poem for "St. Goar,"
+                                    which itself lacks a heading (p.
+                                    ???).<!-- entry needed --></item>
+                                <item n="12">Quarter-page vertical space following poem for "St.
+                                    Goar" (p. ???), but this small space may have not been intended
+                                    for a drawing.<!-- entry needed --></item>
+                                <item n="13">Third-page vertical space above the prose section for
+                                    "St. Goar" (p. ???).<!-- entry needed --> At this place in the
+                                    Library Edition, the editors do identify a "sketch of a town in
+                                    a large plain, with distant mountains" (Works, 2:360 n. 1), but
+                                    this appears to be an error. A drawing fitting that description
+                                    appears instead on p. ???, in a space above the poem (which
+                                    lacks a heading) for "Heidelberg," where the editors do not note
+                                    the presence of a drawing. It appears, therefore, that the
+                                    editors simply misplaced their note on this drawing--unless at
+                                    some point following their description, the slip with the
+                                    drawing became detached and was reattached in the incorrect
+                                    space.</item>
+                                <item n="14">On each of two facing pages (pp. ???), a half-page
+                                    vertical space below lines in the poem "Heidelberg"--following,
+                                    respectively, "In the melee, or the tilt" (p. ???) and
+                                    "Mimicking with motion dread" (p.
+                                    ???).<!-- entry needed --></item>
+                                <item n="1">Two full pages (pp. ????) and a half-page vertical space
+                                    (p. ???) above an opening fragment of prose for "Heidelberg"
+                                    ("Most beautiful . . . sometimes").<!-- entry needed --></item>
+                            </list>
+                        </p>
+                        <p>Folowing the recto (p. ???)<!-- entry needed --> containing the prose
+                            fragment for "Heidelberg," no more text appears in MS IX, although on
+                            the following 7 rectos (pp. ???)<!-- 7 entries needed --> are pasted the
+                            7 drawings described in Ruskin, Works, 2:364 n. 1--all of them showing
+                            mountain
+                            scenes.<!-- need to list drawings with refs to each apparatus --> The
+                            blank versos facing each of these 7 pages would not have been adequate
+                            to contain verse and/or prose at the lengths exhibited in earlier
+                            sections; therefore, it appears that someone was using these rectos as
+                            an exhibition space for remaining drawings, without the expectation that
+                            text would ever be fair-copied, although draft text does exist in MS
+                            VIII relating to these kinds of scenes.</p>
+                        <p>In either <hi rend="italic">Poems</hi> (1891) or the Library Edition, the
+                            only page reproduced showing both drawing and text is that for
+                            "Ehrenbreitstein" (p. ??? in MS IX), reproduced in the Library Edition
+                            alone (Ruskin, Works, 2:356 opp.). Otherwise, the Library Edition
+                            reproduces two plates from Collingwood <hi rend="italic">Poems</hi>
+                            (1891)--"Watch-tower at Andernach (1833)," in the manner of Prout, and
+                            taken apparently from a sketchbook; and "The Jungfrau from Interlachen
+                            (1833)" (<ref type="bibliography" target="bibliography.html#POEMS4D1891"
+                                    ><hi rend="italic">Poems</hi> [4<hi rend="superscript">o</hi>,
+                                1891]</ref>, 1:128 opp., and 1:140 opp., respectively; <ref
+                                type="bibliography" target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                    rend="italic">Works</hi></ref>, 2:354 opp., and 2:380 opp.).
+                            Both editions situate the "Andernach" plate with its corresponding poem
+                            and verse; the "Jungfrau" plate, however, is placed opposite "The Alps
+                            from Schaffhausen" in <hi rend="italic">Poems</hi> (1891), and opposite
+                            "Chamouni" in the Library Edition. Surprisingly, the "Jungfrau" drawing,
+                            unlike the "Watch-tower" sketch, has the appearance of a vignette made
+                            for MS IX. If it ever was included in that manuscript, however,
+                            Collingwood must have removed it prior to the editing of the Library
+                            Edition, as Cook and Wedderburn do not record anything like it in their
+                            notes documenting placement of draings (although, as already remarked,
+                            at least one of their notes is muddled).</p>
+                        <p>Some of Ruskin's drawings or draft for the "Account" have been reproduced
+                            in various places, including <ref type="bibliography"
+                                target="bibliography.html#WIDERSEA">Hunt, Wider Sea</ref>, plate
+                            23a.</p>
+                        <!-- ADDITIONAL ENTRIES?? -->
+                        <p>Other hands than Ruskin's--possibly those of Margaret Ruskin or Ruskin's
+                            cousin, Mary Richardson--are responsible for fair copies of the portions
+                            of the "Account" in MS VII and MS XI. . . .<!-- Expand --></p>
+                    </div>
+                    <div type="subsection" xml:id="DRAFT">
+                        <head type="subsection">Draft (MS IA, MS VIII)</head>
+                        <p>Draft, both of text that was fair-copied and of text left in rough form,
+                            survives on loose sheets in MS IA, and in MS VIII, a notebook that
+                            Ruskin had used since 1831--and would continue to use through 1836--for
+                            rough copy of poetry and other imaginative work. The draft for the
+                            "Account" in MS VIII first appears following draft for <ref
+                                type="apparatus"
+                                target="my_fathers_birthday_the_month_of_may_apparatus.html">"My
+                                Father's Birthday: The Month of May"</ref>, Ruskin's 10 May birthday
+                            tribute for 1833--logically so, as the family departed for the tour
+                            following John James's birthday. In this section of MS VIII, it is not
+                            in all instances clear, however, what writing Ruskin intended for the
+                            "Account," as he did not entitle the work as a whole, and left many of
+                            its parts untitled, as well (see <ref type="apparatus"
+                                target="ms_viii_apparatus.html#CONTENTS">MS VIII: Contents, Section
+                                b</ref>.</p>
+                        <p>There is no indication how much time elapsed between composition of the
+                            birthday ode in MS VIII, which must have preceded 10 May 1833, and the
+                            ensuing entry of draft for the "Account"; Ruskin may not have resumed
+                            use of MS VIII until following the family's return from the <ref
+                                type="note" subtype="contextual" target="tour_of_1833_note.html"
+                                >Tour of 1833</ref> in September. It is possible also that, whenever
+                            he took up this notebook to draft the "Account," he had already begun
+                            the work in another manuscript or manuscripts. For example, two loose
+                            sheets, which are now bound in MS
+                            IA,<!-- CITE APPROPRIATE SECTIONS OF IA CONTENTS --> contain draft of
+                            portions of the work that are not otherwise represented in the MS VIII
+                            draft, and these versions of texts are unquestionably prior to those
+                            texts' corresponding fair copies in MS IX, since revisions made to the
+                            MS IA drafts are incorporated into the fair copies. Could these MS IA
+                            sheets have been composed during the journey itself? There appears no
+                            way of knowing for sure.</p>
+                        <p>Nor does any extant manuscript evidence establish when Ruskin began
+                            fair-copying vis-&#x00E0;-vis drafting. One broad inference on this
+                            count does seem well enough justified, however, if not definitively
+                            provable: namely, two MS IA draft
+                            sheets<!-- CITE APPROPRIATE SECTIONS OF IA CONTENTS -->, which consist
+                            solely of verse treatments of places belonging, topographically, to the
+                            earliest stages of the tour (i.e., in northern France and Belgium),
+                            preceded the MS VIII draft. The latter, in contrast, begins by
+                            describing a very late stage of the tour (e.g., Chamouni), and proceeds
+                            in no logical topographical order--in fact, turning backward in the
+                            middle of the sequence to draft <hi rend="italic">prose</hi> accounts of
+                                <hi rend="italic">earliest</hi> stages of the journey (e.g., for
+                            Brussels, and for the Meuse). Clearly, then, Ruskin could not have begun
+                            the MS VIII draft prior to the advanced stage of the tour with which it
+                            begins ("The Source of the Arveron">; and he could not have started the
+                            fair copy in MS IX prior to drafting its opening prose sections, which
+                            appear well along in the MS VIII draft. The logical inference, then, is
+                            that Ruskin started the draft in MS VIII after the family's return home
+                            from the tour in late September 1833; and he started the fair copy, with
+                            its elaborate drawings, even later in the fall or the winter of 1833-34.
+                            That several of the drawings for earlier sections--those for "Cassel"
+                            and "Lille," if not one for "Calais," as well--are based on lithographs
+                            in Prout's <hi rend="italic">Facsimiles</hi> argues even more strongly
+                            for Ruskin starting the fair copy at home, in late 1833, as the huge
+                            Prout folio could not have been carried on the journey itself. </p>
+                        <p>It may be hazarded, moreover, that the MS IA sheets containing solely
+                            verse accounts of the northern France and Belgian stages of the tour
+                            represent the earliest conception of the "Account"--whether or not the
+                            sheets themselves (or a draft on which they are based) were composed
+                            while the family was in progress on the tour. There survives also a
+                            sheet--likewise later bound into MS IA, but quite different in
+                            appearance from the other two sheets--which does contain both prose and
+                            verse, but the selections pick out points along the entire tour,
+                            beginning to end, as a kind of epitome of the whole. I hypothesize that
+                            this sheet represents a transitional stage, a generic reconsideration of
+                            the work, along the way to the composite form that emerges in MS VIII
+                            and MS IX. In other words, a still broader inference from the draft
+                            remains, and an arresting one, is that Ruskin arrived at the composite
+                            genre of his work--verse, prose, and illustration--only gradually and
+                            comparatively late in the compositional process, and that the initial
+                            plan was for a solely verse account. Another This hypothesis radically
+                            contradicts--indeed, inverts--Ruskin's narrative in <hi rend="italic"
+                                >Praeterita</hi> of how Rogers's and Prout's ekphrastic works
+                            brought about a kind of vocational conversion, prior to departure or
+                            even proposing the journey of 1833.</p>
+                        <p>In Table 1<!-- add jump -->, the columns list the sequence of poems,
+                            and/or prose, and/or drawings as they appear in the respective
+                            manuscripts or parts of manuscripts. The columns are ordered according
+                            to Ruskin's probable chronological sequence of work on the manuscripts,
+                            although this sequence is necessarily conjectural, and his work in more
+                            than one manuscript may well have overlapped (e.g., he may have begun
+                            fair-copying in MS IX while still drafting in MS VIII). Rather than
+                            placing MS IX in column 1, as necessarily representing a teleological
+                            intention, the table allows for an unfolding intentionality. The table
+                            complements the following analysis of MS IA and MS VIII.</p>
+                        <!--Sample entry follows. If you wanted your <ref> for "Oh are there spirits, can there be" in msvii_apparatus.xml to point here, the first occurence of "Oh are there spirits, can there be" in this apparatus, you would add the XML ID 1 (see msvii_apparatus.xml) to the <p>. Note that a # does NOT precede the XML ID. The symbol is reserved for the @corresp, used to refer back to a unique XML ID, which, in turn, defines some object (e.g. a person, a place). Here, the unique XML ID 1 serves as a navigation anchor; it does not "refer" to a defined object.-->
+                        <p>The manuscript portions of the "Account" bound into MS IA (a compilation
+                            bound by Ruskin's editors, not by Ruskin himself) consists, first, of
+                            two sheets<!-- link to appropriate Contents IA section --> of identical
+                            size and containing text running continuously from one sheet to the
+                            next. The first of these sheets is partly in the hand of John James
+                            Ruskin, and partly in the hand of his son, while the second sheet is
+                            entirely in John's hand. Together, these two sheets contain versions of
+                            the first five poems of the "Account" as fair-copied in MS IX, and in
+                            the order that those poems appear in the fair copy: "Calais," "Cassel,"
+                            "Lille," "Brussels," and "The
+                            Meuse."<!-- link respectively to IA transcripts --> While these versions
+                            appear too neat to represent initial draft, they do contain
+                            substitutions, and these changes are reflected in the fair copy, MS IX,
+                            suggesting that the sheets may represent interim versions of these poems
+                            between a lost earlier draft of these poems and their ultimate fair
+                            copies in MS IX. Ruskin numbered the lines of the poems sequentially
+                            (1-173)--that is, without starting his numbering anew with each
+                            poem--confirming he had established their sequence (and their sequence
+                            was established by topography, of course, as the traveler followed the
+                            route from Calais to Brussels [see <ref type="note" subtype="contextual"
+                                target="tour_of_1833_note.html">Tour of
+                            1833</ref>]).<!-- 1081613/14 & 1038179/1081617 --></p>
+                        <p>A third sheet in MS IA, which differs physically from the other two
+                            sheets, does present a prose section--a draft of the prose for "Calais,"
+                            as fair-copied in MS IX. This is followed by draft of two poems that, in
+                            topographical terms, skip far ahead in the tour to "Passing the Alps"
+                            and "Milan Cathedral"; and then two more poems follow that, in
+                            topographical terms, go backwards to the Rhine, "Andernacht" and "St.
+                            Goar." The Alpine and Milan poems do not appear at all in the fair copy,
+                            MS IX (this draft is the sole source of copytext for these poems in <hi
+                                rend="italic">Poems</hi> 1891 and the Library Edition versions of
+                            the "Account"). The Rhine poems do appear in MS IX fair copies, versions
+                            that incorporate substitutions shown in this draft. (These are not the
+                            versions of those two Rhine poems as they would be published in <hi
+                                rend="italic">Friendship's Offering</hi> for 1835.) Since the
+                            corresponding prose sections for "Andernacht" and "St. Goar" are drafted
+                            near the beginning of the "Account" draft in MS VIII, it is reasonable
+                            to conclude that this sheet represents a stage of composition between
+                            the other two MS IA sheets containing the first five poems, and the
+                            rather chaotic draft (in terms of topographical sequence) taken up in
+                            the draft notebook, MS VIII. It may be also be hazarded, if more
+                            cautiously, that this third sheet represents a transition in terms of
+                            work's generic character--from a verse travelogue to a composite work.
+                            Possibly carrying along with that development, MS VIII contains rough
+                            pen-and-ink sketches.<!-- Give links to MS VIII apparatus --></p>
+                        <p>An additional clue tending to confirm this proposed sequence of
+                            composition is Ruskin's line numbering for verse draft, which appears
+                            both in the MS IA sheets and in the portion of MS VIII devoted to
+                            drafting the "Account." As mentioned, the five poems in the two MS IA
+                            sheets in John's and John's James's hands are numbered continuously 1 to
+                            173. In the third MS IA sheet, starting with "Passing the Alps," the
+                            line numbering is again continuous from poem to poem, 360-429. The line
+                            numbering in MS VIII begins with line 506. The line numbering carries
+                            relentlessly forward along with the physical sequence of the drafts of
+                            poems, without regard for their topographical logic (which is mixed),
+                            but this fact would seem to reinforce the connection of the numbering
+                            with the sequence of composition. (That is, the numbering bears no
+                            relation to the ultimate rearrangement of these sections for the fair
+                                copy.)<note>One cannot assume, it is true, that the sequence of
+                                draft in MS VIII represents exactly the sequence of composition.
+                                Take, as an example of possible inconsistency with appearances, the
+                                prose section on Brussels, which begins on 62r, three-quarters down
+                                the page. Ruskin entitled this segment "Part of Brussels," and
+                                extended the draft halfway through 62v. Here, the draft stops in
+                                mid-sentence (". . . circumnavigating," for <del>traversing</del>),
+                                and is followed by a poem, "Oh softly blew the mounting breeze"
+                                (entitled "Chiavenna" in the 1891 Poems and the Library Edition).
+                                Ruskin numbered these lines 810-22, which is continuous with a
+                                previous installment of verse (778-809, for a quite different poem,
+                                "The Black Forest," as so-called in the later editions). The
+                                remainder of the prose passage on Brussels ("perambulating . . .
+                                tread on it softly") begins at the top of the next recto, 63r, and
+                                finishes on 63v. One inference is that Ruskin wrapped the prose
+                                around the poem, already drafted in its place, on 62v. Another
+                                explanation, however, is that the sequence of composition was what
+                                it appears to be, but the abrupt shifts between prose and poetry
+                                provide a clue about the process of fair-copying. In the fair copy
+                                of this prose passage on Brussels in MS IX, a line of text ends with
+                                "circumnavigating for" (the "for" jammed against the justified right
+                                margin). The next line of text takes up with
+                                "perambulating.&#x2014;Oh woe to the weather" etc. One might infer,
+                                then, that Ruskin fair-copied in MS IX as far as he had drafted in
+                                MS VIII (62v); crossed out the last word in draft
+                                    (<del>traversing</del>), which he could not fit on the line in
+                                MS IX (hence, the run-together "circumnavigating,for"); stopped
+                                fair-copying to draft the poem "Oh softly blew the mounting breeze,"
+                                numbering its lines in correct sequence; and then resumed drafting
+                                the prose passage, but changing his mind about the next word (making
+                                it "perambulating," rather than "traversing"). Either scenario can
+                                be supported by the evidence.</note></p>
+                        <p>After the draft in MS VIII supplies the prose sections corresponding to
+                            the MS IA "Andernacht" and "St. Goar," it goes on to mix poetry about
+                            the Alpine and Italian segments of the tour with draft of prose
+                            corresponding to earlier IA poems, such prose descriptions of "Brussels"
+                            and "The Meuse." The appearance of such prose pieces may signal Ruskin's
+                            simultaneously working on the opening sections of MS IX, but that work
+                            may have been delayed until later.</p>
+                        <p>In MS VIII, Ruskin's line numbering may lead to some ambiguities in what
+                            belongs to the "Account" project. Following the May 1833 birthday ode
+                            for Ruskin's father, the first piece to appear sequentially, and the
+                            first in MS VIII to exhibit line numbering, is <ref type="apparatus"
+                                target="oh_are_there_spirits_apparatus.html">"Oh are there spirits,
+                                can there be"</ref>, which picks up the numbering system with line
+                            506. As already suggested, many months may have elapsed between
+                            composition of the May birthday ode and this poem--a period when Ruskin
+                            was drafting the "Account" on loose sheets like those in MS IA. The
+                            ambiguity here is that this poem, "Oh are there spirits, can there be,"
+                            cannot be definitely associated with the "Account" (Ruskin did not
+                            fair-copy the lyric in MS IX, but he left that version far from
+                            complete). project. The poem is separated from the preceding verse for
+                            the birthday ode by a horizontal line--a designation that, throughout MS
+                            VIII, appears to divide one work from another--but Ruskin supplies no
+                            title for this piece in particular or for the "Account" in general that
+                            establishes the start of the project's draft in MS VIII. The line
+                            numbering provides the only clue. If the lyric does belong to the
+                            "Account," its reference to spiritual presences, rather than to visible
+                            topography, would seem to have significant implications for how Ruskin
+                            thought about his first journey abroad, particularly mountain
+                            scenery.</p>
+                        <p>Following this lyric, both the content of the drafts and other physical
+                            indications in the manuscript (see <ref type="apparatus"
+                                target="ms_viii_apparatus.html#DESCRIPTION">MS VIII:
+                                Description</ref>) leave little doubt that, in this portion of the
+                            notebook, Ruskin was exclusively occupied with the "Account." Only
+                            toward the end of this portion, draft of sections for the "Account"
+                            become mixed with drafts of the May 1834 birthday poems for John James,
+                                <ref type="apparatus" target="the_crystal_hunter_apparatus.html"
+                                >"The Crystal Hunter"</ref> and <ref type="apparatus"
+                                target="the_address_apparatus.html">"The
+                            Address"</ref><!--nos. 188 and 192-->. While this occurrence calls into
+                            question whether the line numbering system--which persists into the
+                            birthday odes--can serve as a reliable identifier of earlier "Account"
+                            draft (such as the enigmatic "Oh are there spirits, can there be"), the
+                            run-up of the "Account" draft against the birthday poems does at least
+                            provide evidence of dating. Ruskin was now drafting the "Account" in MS
+                            VIII, and may have been simultaneously fair-copying in MS IX, into the
+                            first quarter of 1834. Moreover, judging by the scarcity of other
+                            (extant) work from winter 1833-34, compared to the outpouring of
+                            1831-33, he was occupied with the "Account" almost exclusively. It may
+                            be that Ruskin largely completed the fair copy of the Account in MS IX
+                            through its Rhine journey sections during the winter of 1833 and early
+                            1834, since, following the incompletely fair-copied prose section on
+                            Heidelberg, which is the last section to be attempted in MS IX, there
+                            occur only the drawings of mountain scenery, some of which may have been
+                            inspired by illustrations in <ref type="bibliography"
+                                target="bibliography.html#BROCKEDONILLUSTRATIONS">Brockedon, <hi
+                                    rend="italic">Illustrations of the Passes of the
+                            Alps</hi></ref>, which Ruskin received for his birthday on 22 February
+                            1834. As he wrote his father, Brockedon's engravings carried him "again
+                            over the summits of the higher Alps, over the winding paths of Splugen,
+                            and the glaciered crest of the Simplon, and the summmer snows of the St
+                            Bernard, and the lovely plains of gentle Italy” (<ref
+                                type="bibliography" target="bibliography.php#RFL">Burd, ed., <hi
+                                    rend="italic">Ruskin Family Letters</hi></ref>, 278). </p>
+                        <p>No known manuscript represents the revision of "Andernacht" and "St.
+                            Goar" for publication in <hi rend="italic">Friendship&#x02BC;s
+                                Offering</hi>, which would have had to be ready by 1 August 1834,
+                            the editor's deadline to deliver the edited volume to the printer (the
+                            editor, <ref type="note" subtype="biographical"
+                                target="pringle_thomas_note.html">Thomas Pringle
+                                (1789&#x2013;1834)</ref>, died in December of this year; <ref
+                                type="bibliography" target="bibliography.html#VIGNEPRINGLE">Vigne,
+                                    <hi rend="italic">Thomas Pringle</hi></ref>, 244, 247).</p>
+                        <p>
+                            <table rows="20" cols="9" xml:id="APPARATUSTABLE1">
+                                <head>Table 1. Account of a Tour on the Continent: Sequence of
+                                    Sections, by Manuscript and Edition</head>
+                                <row role="label">
+                                    <cell role="data">MS VIII</cell>
+                                    <cell role="data">MS VIII, Ruskin's Line Numbering</cell>
+                                    <cell role="data">MS VIII, Ruskin's List of Proposed
+                                        Sections</cell>
+                                    <cell role="data">MS IA</cell>
+                                    <cell role="data">MS IA, Ruskin's Line Numbering</cell>
+                                    <!-- Is it JR's or copyist's? -->
+                                    <cell role="data">MS VII</cell>
+                                    <cell role="data">MS IX</cell>
+                                    <cell role="data"><hi rend="italic">Poems</hi> (1891)</cell>
+                                    <cell role="data"><hi rend="italic">Works</hi> (1902)</cell>
+                                </row>
+                                <row role="data">
+                                    <!--Sample entry follows. If you wanted your <ref> for "Oh are there spirits, can there be" in msvii_apparatus.xml to point here, you would add the XML ID 1 (see msvii_apparatus.xml) to the <cell> (i.e. <cell role="data" xml:id="1">). Note that a # does NOT precede the XML ID. The symbol is reserved for the @corresp, used to refer back to a unique XML ID, which, in turn, defines some object (e.g. a person, a place). Here, the unique XML ID 1 serves as a navigation anchor; it does not "refer" to a defined object. Because XML IDs are unique, I have NOT added the ID below; if I had, I would have invalidated this document: encoding a unique XML ID twice: once above and then again below.-->
+                                    <cell role="data" xml:id="OHARETHERESPIRITS"><ref type="witness"
+                                            target="oh_are_there_spirits_msviii.html">"Oh are there
+                                            spirits, can there be"</ref> (poem)</cell>
+                                    <cell role="data">506-19</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="CALAIS"><ref type="witness"
+                                            target="calais_msix.html">"Calais"</ref>(poem)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:384 n. 1</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="SOURCEOFTHEARVERON"><ref
+                                            type="witness"
+                                            target="source_of_the_arveron_msviii.html">"The Source
+                                            of the Arveron"</ref> (prose)</cell>
+                                    <cell/>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="CALAIS"><ref type="witness"
+                                            target="calais_prose_msix.html"
+                                        >"Calais"</ref>(prose)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:386-87</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="IWOKETOHEARTHELULLABY"><ref
+                                            type="witness"
+                                            target="i_woke_to_hear_the_lullaby_msviii.html">"I woke
+                                            to hear the lullaby" ["The Arve at Chamouni"]</ref>
+                                        (poem)</cell>
+                                    <cell role="data">520-64</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="CASSEL"><ref type="witness"
+                                            target="cassel_msix.html">"Cassel"</ref>(poem)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:384-85</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="ANDERNACHT"><ref type="witness"
+                                            target="andernacht_msviii.html">"Andernacht"</ref>
+                                        (prose section only)</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="WHENSHALLWEGETUPONTHISHILL"><ref
+                                            type="witness"
+                                            target="when_shall_we_get_up_on_this_hill.html">"When
+                                            shall we get up on this hill"</ref>(prose)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:354-55</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="STGOAR"><ref type="witness"
+                                            target="st_goar_msviii.html">"St. Goar is the least and
+                                            sweetest place"</ref> (prose section only)</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="LILLE"><ref type="witness"
+                                            target="lille_msix.html">"Lille"</ref>(poem)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:360-61</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="THEREISACHARMEDPEACE"><ref
+                                            type="witness"
+                                            target="there_is_a_charmed_peace_msviii.html">"There is
+                                            a charmed peace, that aye" ["The Alps from
+                                            Schaffhausen"]</ref> (poem)</cell>
+                                    <cell role="data">565-614</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="PASSEPORTMONSIEUR"><ref
+                                            type="witness" target="passeporte_monsieur_msix.html"
+                                            >"Passporte, Monsieur"</ref>(prose)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:366-67</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="VIAMALA"><ref type="witness"
+                                            target="viamala_msviii.html">"Viamala"</ref>
+                                        (poem)</cell>
+                                    <cell role="data">615-46</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="BRUSSELS"><ref type="witness"
+                                            target="brussels_msix.html"
+                                        >"Brussels"</ref>(poem)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:369</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="SPLUGEN"><ref type="witness"
+                                            target="splugen_msviii.html">"Splugen"</ref>
+                                        (poem)</cell>
+                                    <cell role="data">647-95</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="BRUSSELS"><ref type="witness"
+                                            target="brussels_prose_msix.html"
+                                        >"Brussels"</ref>(prose)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:370-71</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="THESUMMIT"><ref type="witness"
+                                            target="the_summit_msviii.html">"The Summit"</ref>
+                                        (poem; title revised from "The <del>descent</del>")</cell>
+                                    <cell role="data">696-751</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="THEMEUSE"><ref type="witness"
+                                            target="the_meuse_msix.html">"The
+                                        Meuse"</ref>(poem)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:371-72</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="THEDESCENT"><ref type="witness"
+                                            target="the_descent_msviii.html">"The descent"</ref>
+                                        (poem)</cell>
+                                    <cell role="data">752-77</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="THEMEUSE"><ref type="witness"
+                                            target="the_meuse_prose_msix.html">"The
+                                        Meuse"</ref>(prose)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:372-73</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="THEMEUSE"><ref type="witness"
+                                            target="the_meuse_msviii.html">"The Meuse"</ref>
+                                        (prose)</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="AIXLACHAPELLE"><ref type="witness"
+                                            target="aix_la_chapelle_msix.html">"Aix la
+                                            Chapelle"</ref>(poem)</cell>
+                                    <!--MSIX 28v-29r and 29v-30r do not appear to cohere-->
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:349-50</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="COLOGNE"><ref type="witness"
+                                            target="cologne_msviii.html">"Cologne"</ref> (prose,
+                                        first paragraph only, noted as "fragment" by Ruskin in
+                                        manuscript)</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="ORFROMSIXTOCOLOGNE"><ref
+                                            type="witness" target="or_from_six_to_cologne_msix.html"
+                                            >"or from Six to Cologne"</ref>(prose)</cell>
+                                    <!--MSIX 28v-29r and 29v-30r do not appear to cohere-->
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:351-52</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="OHTHEMORNLOOKEDBRIGHT"><ref
+                                            type="witness"
+                                            target="oh_the_morn_looked_bright_over_hill_and_dale_msviii.html"
+                                            >"Oh the morn looked bright over hill and dale" ["The
+                                            Black Forest"]</ref> (poem)</cell>
+                                    <cell role="data">778-809</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="COLOGNE"><ref type="witness"
+                                            target="cologne_msix.html">"Cologne"</ref>(poem)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:365-66, 366 n. 1,
+                                        the note containing the final line of the draft poem</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="ITWASAWIDESTRETCHYSWEEP"><ref
+                                            type="witness"
+                                            target="it_was_a_wide_stretchy_sweep_msviii.html">"It
+                                            was a wide stretchy sweep"</ref> (prose)</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="ANDTHISISTHEBIRTHPLACEOFRUBENS"><ref
+                                            type="witness"
+                                            target="and_this_is_the_birthplace_of_Rubens_msix.html"
+                                            >"And this is the birthplace of
+                                        Rubens"</ref>(prose)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:360 n. 1, attached
+                                        by the editors to the end of the "St. Goar" poem, for which
+                                        the draft, they say, "contains at this point the . . . prose
+                                        passage." In manuscript, however, this prose has no
+                                        association with "St. Goar"; it follows, rather, the poem,
+                                        "Oh the morn looked bright over hill and dale," in which
+                                        lines 8 and 27 identify what the prose passage calls "our
+                                        entrance into the narrow dell above mentioned."</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="BRUSSELS1"><ref type="witness"
+                                            target="part_of_brussels_msviii.html">"Part of
+                                            Brussels"</ref> (prose, from "Brussels is a lovely, a
+                                        queenlike city from a distance" to "for circumnavigating,
+                                        for <del>traversing</del>);</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="ANDERNACHT"><ref type="witness"
+                                            target="andernacht_msix.html"
+                                        >"Andernacht"</ref>(poem)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:347</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="OHSOFTLYBLEW"><ref type="witness"
+                                            target="oh_softly_blew_the_mounting_breeze_msviii.html"
+                                            >"Oh softly blew the mounting breeze"
+                                            ["Chiavenna"]</ref> (poem)</cell>
+                                    <cell role="data">810-22</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="WHATISITTHATMAKESTHEVERYHEARTLEAP"
+                                            ><ref type="witness"
+                                            target="what_is_it_that_makes_the_very_heart_leap_msix.html"
+                                            >"What is it that makes the very heart
+                                        leap"</ref>(prose)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:373</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="BRUSSELS2"><ref type="witness"
+                                            target="part_of_brussels_msviii.html">"Part of
+                                            Brussels"</ref> (prose, from from "perambulating. Oh woe
+                                        to the walker" to "Oh tread on it softly")</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="EHRENBREITSTEIN"><ref type="witness"
+                                            target="ehrenbreit_stein_msix.html">"Ehrenbreit
+                                            Stein"</ref>(poem)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:347-48</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="LAGODICOMO"><ref type="witness"
+                                            target="lago_di_como_msviii.html">"Lago di Como"</ref>
+                                        (poem)</cell>
+                                    <cell role="data">823-63</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"
+                                        corresp="ITISSAIDTHATFRENCHWILLCARRYYOUOVERALLEUROPE"><ref
+                                            type="witness"
+                                            target="it_is_said_that_french_will_carry_you_over_all_europe_msix.html"
+                                            >"It is said that French will carry you all over
+                                            Europe"</ref>(prose)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:373-74</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="GENOA1"><ref type="witness"
+                                            target="genoa1_msviii.html">"Genoa" ("Of various trees a
+                                            vista green")</ref> (poem; untitled, but a version of
+                                        lines incorporated in a later draft entitled by Ruskin as
+                                        "Genoa")</cell>
+                                    <cell role="data">864-89</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="WEPASSAROCK"><ref type="witness"
+                                            target="we_pass_a_rock_msix.html">"We pass a
+                                        rock"</ref>(prose)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:378-79</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="ITWASANEVEOFSUMMERMILD"><ref
+                                            type="witness"
+                                            target="it_was_an_eve_of_summer_mild_msviii.html">"It
+                                            was an eve of summer, mild," ["Lago Maggiore"]</ref>
+                                        (poem)</cell>
+                                    <cell role="data">890-920</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="LTGOARISTHELEASTANDSWEETESTPLACE"
+                                            ><ref type="witness"
+                                            target="lt_goar_is_the_least_and_sweetest_place_msix.html"
+                                            >"Lt Goar is the least and sweetest
+                                        place"</ref>(prose)</cell>
+                                    <!--First two words appear unclear. Appeared to be "Lt Goar"-->
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:377-78, the
+                                        editors adding to the end of this draft 8 lines . . .</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="AIXLACHAPELLE"><ref type="witness"
+                                            target="aix_la_chapelle_msviii.html">"Aix la
+                                            Chapelle"</ref> (prose)</cell>
+                                    <cell role="data">None that is intended clearly to refer to "Aix
+                                        la Chapelle," but see <ref type="apparatus"
+                                            target="msviii_apparatus.html#DESCRIPTIONAIXLACHAPELLE"
+                                            >MS VIII: Description</ref> for line numbering on p. 66r
+                                        that bears no clear referent.</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="NOWFROMTHESMILINGAFTERNOON"><ref
+                                            type="witness"
+                                            target="now_from_the_smiling_afternoon_msix.html">"Now
+                                            from the smiling afternoon"</ref>(poem)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:350-51</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="HEIDELBERG1"><ref type="witness"
+                                            target="smiling_from_those_bright_rays_kiss_msviii.html"
+                                            >"Smiling from those bright rays kiss"</ref>
+                                        (poem)</cell>
+                                    <cell role="data">939-68</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data" corresp="MOSTBEAUTIFULARETHEPATHS"><ref
+                                            type="witness"
+                                            target="most_beautiful_are_the_paths_msix.html">"Most
+                                            beautiful are the paths"</ref>(poem)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:361-62. In n. 1 on
+                                        p. 361, the editors print what they represent as draft lines
+                                        in MS VIII, dropped from the fair copy in MS IX. The reverse
+                                        is true, however; these lines are not found in MS VIII, but
+                                        in MS IX. In other words, if the reader restores the lines
+                                        in n. 1 to their place where annotated by the editors, the
+                                        poem reads as it appears in fair copy, MS IX. When one makes
+                                        this correction to the text as edited in the Library
+                                        Edition, the 30 lines comprising <ref type="witness"
+                                            target="smiling_from_those_bright_rays_kiss_msviii.html"
+                                            >"Smiling from those bright rays kiss"</ref> can be
+                                        recognized as draft for lines 19-48 of the fair
+                                        copy--counting, that is, the lines that the editors
+                                        inexplicably drop into a note on p. 361. </cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="TRADITIONSOFTHERHINE"><ref
+                                            type="witness"
+                                            target="traditions_of_the_rhine_msviii.html">"The
+                                            traditions of the Rhine"</ref> (prose)</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:368</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="EHRENBREITSTEIN"><ref type="witness"
+                                            target="oh_warmly_down_the_sunbeams_fell_msviii.html"
+                                            >"Oh warmly down the sunbeams fell"</ref> (poem)</cell>
+                                    <cell role="data">973-1081</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:355-58</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="HEIDELBERG2"><ref type="witness"
+                                            target="continuation_heidelberg_msviii.html"
+                                            >"Continuation Heidelberg"</ref> (poem)</cell>
+                                    <cell role="data">1083-1155 (the title mistakenly counted as a
+                                        line, 1082)</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:362-64</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="SCHAFFHAUSEN"><ref type="witness"
+                                            target="schaffhausen_msviii.html">"Schaffhausen"</ref>
+                                        (poem)</cell>
+                                    <cell role="data">1148-59</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:366</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="NOTSUCHTHENIGHT"><ref type="witness"
+                                            target="not_such_the_night_msviii.html">"Not such the
+                                            night whose stormy might"</ref> (poem)</cell>
+                                    <cell role="data">1160-82</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:385-86</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="ITISSAIDTHATFRENCH"><ref
+                                            type="witness"
+                                            target="it_is_said_that_french_msviii.html">"It is said
+                                            that French will carry you over all Europe"</ref>
+                                        (prose)</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:358</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="MOSTBEAUTIFULARETHEPATHS"><ref
+                                            type="witness"
+                                            target="most_beautiful_are_the_paths_msviii.html">"Most
+                                            beautiful are the paths"</ref> (prose)</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">Fair-copied in from MS VIII draft only in
+                                        part, up to "ancient granite, sometimes"</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:364</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="HEIDELBERG3"><ref type="witness"
+                                            target="cont_heidelberg_msviii.html">"Cont.
+                                            Heidelberg"</ref> (prose)</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:364-65</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="SOBROADLYSTRETCHED"><ref
+                                            type="witness" target="so_broadly_stretched_msviii.html"
+                                            >"So broadly stretched in sapphire sheet"</ref>
+                                        (poem)</cell>
+                                    <cell role="data">1369-76</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:378</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="HEIDELBERG4"><ref type="witness"
+                                            target="all_has_yielded_to_it_msviii.html">"All has
+                                            yielded to it from time immemorial"</ref> (prose)</cell>
+                                    <cell role="data">None</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>,
+                                        2:???<!--should be end of Heidelberg--></cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="GENOA2"><ref type="witness"
+                                            target="genoa2_msviii.html">"Genoa" ("Now rouse the ho.
+                                            For Genoa straight")</ref> (poem)</cell>
+                                    <cell role="data">1376-97</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:378-79</cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="CADENABBIA"><ref type="witness"
+                                            target="cadenabbia_msviii.html">"Cadenabbia"</ref>
+                                        (poem)</cell>
+                                    <cell role="data">1417-61</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:375-76 </cell>
+                                </row>
+                                <row role="data">
+                                    <cell role="data" xml:id="VILLAPLINIANA"><ref type="witness"
+                                            target="villa_pliniana_msviii.html">"Villa
+                                            Pliniana"</ref> (poem)</cell>
+                                    <cell role="data">1462-84</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data">to come</cell>
+                                    <cell role="data"><ref type="bibliography"
+                                            target="bibliography.html#JRWORKSLE">Ruskin, <hi
+                                                rend="italic">Works</hi></ref>, 2:376 </cell>
+                                </row>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <div type="subsection" xml:id="SOURCES">
+                        <head type="subsection">Sources</head>
+                        <p>For the itinerary and other details concerning the family's journey, see
+                                <ref type="note" subtype="contextual"
+                                target="tour_of_1833_note.html">Tour of 1833</ref>. The most
+                            familiar description of the literary and artistic context that
+                            surrounded both the actual journey and Ruskin's composition of the
+                            "Account" is Ruskin's story in the autobiography, <hi rend="italic"
+                                >Praeterita</hi>, in which he declares that "the main tenor of my
+                            life" was established in 1832 by the gift of the 1830 illustrated
+                            edition of the topographical poem <hi rend="italic">Italy</hi> by Samuel
+                            Rogers, with engraved vignettes primarily by J. M. W. Turner and Thomas
+                            Stothard (and with two contributions by Samuel Prout).<note>Prout played
+                                third fiddle, scarcely credited for his few contributions to the
+                                illustrated <hi rend="italic">Italy</hi>; see <ref
+                                    type="bibliography"
+                                    target="bibliography.html#HERRMANNTURNERPRINTS">Herrmann, <hi
+                                        rend="italic">Turner Prints</hi></ref>, 183.</note> While
+                            there is some uncertainty regarding the actual date of this acquisition
+                            vis-&#x00E0;-vis the composition of the "Account,"<note>In the
+                                autobiography, Ruskin admits that he has "told this story so often"
+                                about the journey's poetic and artistic inspirations "that I begin
+                                to doubt its time." In <hi rend="italic">Praeterita</hi>'s typically
+                                dramatizing fashion, he declares that "the main tenor of my life"
+                                was set on 8 February 1832 by the birthday gift--from his father's
+                                business partner, Henry Telford--of the 1830 illustrated edition of
+                                Rogers's <hi rend="italic">Italy</hi>. "It is curiously tiresome
+                                that Mr. Telford did not himself write my name in the book, and my
+                                father, who writes in it, 'The gift of Henry Telford, Esq.,' still
+                                more curiously, for him, puts no date: if it was a year later [i.e.,
+                                8 February 1833], no matter" (<ref type="bibliography"
+                                    target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic"
+                                        >Works</hi></ref>, 39:79). In its non-illustrated edition,
+                                Rogers's poem had been in the Ruskin household since 1828 at the
+                                latest (<ref type="bibliography" target="bibliography.php#RFL">Burd,
+                                    ed., <hi rend="italic">Ruskin Family Letters</hi></ref>, 188 n.
+                                4)--the year that Rogers published the second part of the poem, but
+                                also the year that, in disgust over the work's tepid reception, the
+                                poet bought out remaining copies of both parts and destroyed them
+                                (see <ref type="note" subtype="biographical"
+                                    target="samuel_rogers_note.html">Samuel Rogers
+                                (1763-1855)</ref>). Thus, even before the poem achieved popularity
+                                in the illustrated edition, the Ruskins could count themselves among
+                                the select number of appreciative readers of Rogers's <hi
+                                    rend="italic">Italy</hi>, and it is possible that John or John
+                                James projected a work on this model even prior to his receiving the
+                                gift of the illustrated version. There is even an outside
+                                possibility that Ruskin did not study the illustrated edition until
+                                after the family had returned from the Continent, as John James's
+                                accounts record purchase of a copy of <hi rend="italic">Italy</hi>
+                                in October 1833, just shortly after the September homecoming (<ref
+                                    type="bibliography" target="bibliography.php#RFL">Burd, ed., <hi
+                                        rend="italic">Ruskin Family Letters</hi></ref>, 286 n. 1).
+                                This could well have been an additional copy, but one cannot
+                                discount the possibility that Rogers's tutelage of the Ruskins'
+                                viewing of the Alps and Italy was, during the tour itself, solely
+                                poetic, without the ekphrastic support of Turner and
+                                Stothard.</note> the autobiography's story can be linked reliably to
+                            the family's acquisition of Samuel Prout's <hi rend="italic">Facsimiles
+                                of Sketches Made in Flanders and Germany</hi>. This work, which
+                            appeared in Spring 1833 with John James Ruskin listed among the
+                            subscribers, and which is listed in the senior Ruskin's accounts for
+                            that year, is most directly credited in <hi rend="italic"
+                                >Praeterita</hi> for prompting the family's first major tour of the
+                            Continent: "there is no doubt . . . that early in the spring of 1833
+                            Prout published his <hi rend="italic">Sketches in Flanders and
+                                Germany</hi>. I well remember going with my father into the shop
+                            where subscribers entered their names, and being referred to the
+                            specimen print, the turreted window over Moselle, at Coblentz. We got
+                            the book home to Herne Hill before the time of our usual annual tour."
+                            More apocryphal may be the spontaneity of the outcome that Ruskin says
+                            to have arisen from enjoyment of Prout's lithographs: "as my mother
+                            watched my father's pleasure and mine in looking at the wonderful
+                            places, she said, why should we not go and see some of them in reality?
+                            My father hesitated a little, then with glittering eyes said--why not?
+                            And there were two or three weeks of entirely rapturous and amazed
+                            preparation" (<ref type="bibliography"
+                                target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic"
+                                    >Works</hi></ref>, 39:79; <ref type="bibliography"
+                                target="bibliography#RFL">Burd, ed., <hi rend="italic">Ruskin Family
+                                    Letters</hi></ref>, 286 n. 1). </p>
+                        <p>Regardless of how the family's planning actually unfolded respecting the
+                            acquisition of these two books, implicit in the story is the books'
+                            representative role (whether exclusively so or not) in the family's
+                            conceptualization of their northern and southern destinations. Prout's
+                                <hi rend="italic">Facsimiles</hi> provided a pictorial tour through
+                            Belgium and Germany, whereas Rogers led the reader on the more
+                            traditional Grand Tour of the South. The books contrasted also in their
+                            material representations. The <hi rend="italic">Facsimiles</hi>
+                            consisted of 50 lithographic prints of picturesque architectural sites
+                            in Belgium and Germany, with no letterpress--only the place names
+                            lettered directly onto the lithographic stone, as part of images,
+                            identifying the locales depicted. The lithographs, then a new medium in
+                            Britain, would have struck the Ruskins with their dramatically large
+                            size (22 by 15 inches) and watercolor-like texture, as compared with the
+                            exquisite preciousness of Rogers's <hi rend="italic">Italy</hi>,
+                            illustrated with vignette engravings (2-3 inches by 3-4 inches). The <hi
+                                rend="italic">Italy</hi> was also ekphrastic in the
+                            late-eighteenth-century manner, with Rogers's topographical poem
+                            assuming priority in topographical description, despite the poem's
+                            having gained its popularity solely byt means of the graphic
+                            enhancements.</p>
+                        <p>Despite these material and substantive contrasts in framing the Ruskins'
+                            tour, both books represented the bourgeoning publishing trade that
+                            responded to the growth in British travel on the Continent in the
+                            decades immediately after Waterloo; and both complemented improvements
+                            in transport and tourism with their show of technical advances in
+                            printing--lithography in Prout's case, steel engraving in Rogers's (for
+                            further information about these volumes, see <ref type="note"
+                                subtype="biographical" target="prout_samuel_note.html">Samuel Prout
+                                (1783-1852)</ref> and <ref type="note" subtype="biographical"
+                                target="rogers_samuel_note.html">Samuel Rogers (1763-1855)</ref>;
+                            and for the improvements in tourism and transport, brought about
+                            primarily by the rapid development of steam-packet crossings from
+                            Britain to norther France and the Low Countries, see <ref type="note"
+                                subtype="contextual" target="tour_of_1825_note.html">Tour of
+                                1825</ref> and <ref type="note" subtype="contextual"
+                                target="tour_of_1833_note.html">Tour of 1833</ref>).</p>
+                        <p>While Ruskin's later autobiographical account doubtless lays too much
+                            weight on these two particular publications, Rogers's and Prout's books
+                            can be usefully understaood as representative of changing modes of
+                            travel and travel art and literature in the 1820s and 1830s. Critics and
+                            biographers, following Ruskin's cue in limiting their view to just these
+                            two books, have been lead to treat Ruskin's own literary and artistic
+                            response, his "Account," as merely derivative--an imitation--of these
+                            sources. For that matter, the "Account" is even more falsely treated as
+                            an imitation solely of the 1830 illustrated <hi rend="italic"
+                            >Italy</hi>, with Prout's influence passed
+                            over.<!-- references needed for this view --> But the "Account" not only
+                            responds creatively, and not just derivatively, to these two books, but
+                            also reflects with considerable complexity the context of the decades
+                            after Waterloo that made these books possible and successful.</p>
+                        <p>As remarked in Composition and Publication, the compositional history of
+                            the "Account" suggests competing or evolving generic intentions, from
+                            the poetic travelogue in early MS IA draft to the composite work
+                            developed in MS VIII and MS IX. These evolving manuscript states may
+                            point to creative tensions that Ruskin discovered in his sources and
+                            creatively exploited. The two MS IA sheets in John's and John James's
+                            hands, being solely in verse form, reflect the influence of Rogers's
+                            poetic travelogue (although <hi rend="italic">Italy</hi> does contain
+                            some prose); yet, Ruskin's (and his father's?) poems adapt the poetic
+                            travelogue, which Rogers organizes around the traditional Grand Tour, to
+                            the Nord-Pas-de-Calais and Belgium, the northern sites depicted by
+                            Prout. The MS VIII draft and MS IX fair copy, in contrast, use both
+                            verse and prose to represent the northern as well as southern segments
+                            of the tour. Thus, the MS IA sheets represent a stage when the project
+                            aspired to an exclusively "metrical journal"--the term used ultimately
+                            and inaccurately to describe the project when excerpts were published in
+                            1835 as "fragments of a metrical journal"--and reflect the influence of
+                            Rogers and the tradition of the eighteenth-century topographical poem.
+                            The later compositional stage, incorporating prose and illustration,
+                            reaches beyond Rogers's neoclassicism to attempt a mixed genre
+                            symptomatic of a transitional stage in English travel writing and
+                            artistic representation that emerged in the 1820s and 1830s.</p>
+                        <p>In these decades, this emergent touristic experience was most vivid in
+                            routes through northern Europe rather than along the well-worn path of
+                            the Grand Tour to Italy. Ruskin's memory in <hi rend="italic"
+                                >Praeterita</hi> of the significance of Prout's <hi rend="italic"
+                                >Facsimiles</hi> in prompting the family's journey is corroborated
+                            by the novelty that the artist's representations of towns in northern
+                            France, Belgium, and Germany afforded to British viewers in 1833. While
+                            such scenic representations grew more familiar in the later 1830s and
+                            1840s from similar projects by T. M. Richardson (1784-1848), J. D.
+                            Harding (1797-1863), T. S. Boys (1803-74), Clarkson Stanfield
+                            (1793-1867), and Louis Haghe (1806-85), Prout was a foundational
+                            influence on artists seeking architectural picturesque subjects in this
+                            region (<ref type="bibliography" target="bibliography.html#LOCKETTPROUT"
+                                >Lockett, <hi rend="italic">Samuel Prout</hi></ref>, 76).</p>
+                        <p>Prout's role in this transition remains an emphasis even in Ruskin's
+                            later writing about the artist. Despite Ruskin's changing purposes over
+                            the years, his writing always refers back to Prout's discovery of
+                            northern Europe as the artist's distinction in these earlier decades.
+                            For example, in his 1849 article on Prout for the <hi rend="italic">Art
+                                Journal</hi>, Ruskin characterizes Prout's first tour of the region
+                            in terms of conversion and destiny, "the painter's vocation . . . fixed
+                            from that hour. The first effect upon his mind was irrepressible
+                            enthusiasm, with a strong feeling of a new-born attachment to Art, in a
+                            new world [in northern Europe] of exceeding interest." While the essay
+                            is in keeping with the concerns of <hi rend="italic">The Seven Lamps of
+                                Architecture</hi> and <hi rend="italic">The Stones of
+                            Venice</hi>--situating Prout's personal discovery of vocation within a
+                            larger history framed by a critique of misguided modernist feeling
+                            (Prout "became the interpreter of a great period of the world's history,
+                            of that in which age and neglect had cast the interest of ruin over the
+                            noblest ecclesiastical structures of Europe, and in which there had been
+                            born at their feet a generation . . . which understood not their
+                            meaning" and which would destroy those structures, in Ruskin's view, by
+                            way of "resoration" [<ref type="bibliography"
+                                target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic"
+                                    >Works</hi></ref>, 12:311, 314])--the core of the argument is
+                            built arount Prout's discovery of Flanders. Likewise, in his 1879-80 <hi
+                                rend="italic">Notes</hi> on Prout prepared to accompany his loan of
+                            drawings for exhibition at the Fine Art Society, Ruskin's experience of
+                            Prout in the 1830s is preserved in his later purpose, which is to
+                            hearken autobiographically to his youth spent with his father in regular
+                            attendance at the Old Water Colour Society. There, Ruskin alleges,
+                            Prout's discovery of northern Europe earned the artist "by common and
+                            tacit consent" the "privilege . . . to introduce foreign elements of
+                            romance and amazement into this--perhaps slightly fenny--atmosphere of
+                            English common sense" typical of the homelier subjects of other artists
+                                (<ref type="bibliography" target="bibliography.html#JRWORKSLE"
+                                >Ruskin, <hi rend="italic">Works</hi></ref>, 14:390). This latter
+                            characterization comes closest to <hi rend="italic">Praeterita</hi>'s
+                            presentation of the role of Prout's <hi rend="italic">Facsimiles</hi> as
+                            prompting the family's "amazed" sudden departure for this romantic
+                            travel starting in northern France and Belgium (<ref type="bibliography"
+                                target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic"
+                                    >Works</hi></ref>, 39:79).</p>
+                        <p>In 1833, travel in the Pas-de-Calais and Flanders remained comparatively
+                            unfamiliar to English tourists except as a route to be got over as
+                            quickly as possible on the way to France and Germany. (Prout's even more
+                            far-flung destinations in Eastern Europe, such as Prague, which he
+                            depicted in the <hi rend="italic">Facsimiles</hi> and exhibited
+                            watercolors, found little success with the public.) Since the early
+                            1820s, Prout had established his lead in depicting the market towns of
+                            this region for the Old Water Color Society. Accordingly, his <hi
+                                rend="italic">Facsimiles</hi> of 1833 may well have served as a kind
+                            of guide for the Ruskins to adopt a more leisurely and attentive pace
+                            through these towns. In fact, the Ruskins traced a route through
+                            northern France and Germany similar to that of the artist's sketching
+                            tour of 1821, although the sequence of the published lithographs in <hi
+                                rend="italic">Facsimiles</hi> departs somewhat from that route,
+                            opening with a market scene occupying the square in front of the Hotel
+                            de Ville, Brussels (see <ref type="bibliography"
+                                target="bibliography.html#LOCKETTPROUT">Lockett, <hi rend="italic"
+                                    >Samuel Prout</hi></ref>, 50, 59; and compare <ref type="note"
+                                subtype="biographical" target="prout_samuel_note.html">Samuel Prout
+                                (1783-1852)</ref> and <ref type="note" subtype="contextual"
+                                target="tour_of_1833_note.html">Tour of 1833</ref>).</p>
+                        <p>Neither Prout in the 1820s nor the Ruskins in the early 1830s could find
+                            their way in the region with the assistance of what became the vade
+                            mecum for English travelers landing in Normandy and the Low
+                            Countries--Murray's <ref type="bibliography"
+                                target="bibliography.html#MURRAYSHANDBOOKCONTINENT1836"><hi
+                                    rend="italic">Hand-book for Travellers on the
+                                Continent</hi></ref>, as this guidebook was not published until
+                            1836. Murray's <hi rend="italic">Hand-book</hi> is now often credited
+                            with initiating the modern genre of the English traveler's guidebook,
+                            but earlier journeys like the Ruskins', taken between the reopening of
+                            the Continent after Waterloo and the late 1830s, had to rely on a
+                            transitional period of travel writing and illustration, of which Prout's
+                                <hi rend="italic">Facsimiles</hi> formed a part. As Pieter
+                            Fran&#x00E7;ois has shown, prior to the publication of Murray's <hi
+                                rend="italic">Hand-book</hi>, there appeared between 1815 and the
+                            1830s numerous examples of the guidebook genre in an emerging and
+                            somewhat inchoate form, particularly as related to the Low Countries.
+                            After Waterloo, the modern guidebook gradually emerged as a genre
+                            distinct from the travel "account" in offering mainly practical travel
+                            advice, as compared with the traditional travel account's emphasis on
+                            topographical description and narrative from an individual (but not too
+                            individualistic) perspective. In the transitional, post-Waterloo period,
+                            however, genres became mixed: the emerging, modern guidebooks, along
+                            with their practical advice, often retained traces of the
+                            eighteenth-century travel account--for example, by presenting
+                            recommendations in epistolary form--whereas, correspondingly, the more
+                            traditional travel accounts of the period (which became legion when the
+                            Continent reopened) recommended themselves in a crowded field by
+                            proferring the detailed practical advice more typical of the guidebook
+                                (<ref type="bibliography" target="bibliography.html#FRANCOIS1815"
+                                >Fran&#x00E7;ois, &#x201C;If It&#x02BC;s 1815, This Must Be
+                                Belgium&#x201D;</ref>, 76-82).</p>
+                        <p>In 1833-34, this transitional and eclectic period of travel writing is
+                            reflected in the Ruskins' book purchases, both before setting out on
+                            their journey and following their return. Prior to departure, besides
+                            admiring Rogers's <hi rend="italic">Italy</hi> and Prout's <hi
+                                rend="italic">Sketches</hi>, the family armed themselves with
+                            practical resources--a German grammar, and a work by Mariana Starke
+                            (1762-1838), whose travel books are characterized by both
+                            Fran&#x00E7;ois and James Buzard as characteristic of the transitional
+                            period of travel writing, displaying characteristics both of the
+                            guidebook and the travel account, and whose work Charles Batten
+                            similarly describes as moving away from the decorum of the
+                            eighteenth-century travel account that balances information with
+                            entertainment (<ref type="bibliography"
+                                target="bibliography.html#FRANCOIS1815">Fran&#x00E7;ois, &#x201C;If
+                                It&#x02BC;s 1815, This Must Be Belgium&#x201D;</ref>, 76, 90; <ref
+                                type="bibliography" target="bibliography.html#BUZARDBEATEN">Buzard,
+                                    <hi rend="italic">Beaten Track</hi></ref>, 68-70; <ref
+                                type="bibliography"
+                                target="bibliography.html#BATTENPLEASURABLEINSTRUCTION">Batten, <hi
+                                    rend="italic">Pleasurable Instruction</hi></ref>, 30). The
+                            Starke work may have been <hi rend="italic">Travels in Europe</hi>, a
+                            popular guidebook first published by Murray in 1820 as <hi rend="italic"
+                                >Travels on the Continent</hi>, and available in a "considerably
+                            enlarged" eighth edition in 1833.<note>Starke's <hi rend="italic"
+                                    >Travels in Europe</hi> along with her more portable <hi
+                                    rend="italic">Information and Directions for Travellers on the
+                                    Continent</hi>, which was published on the Continent by
+                                Galignani, approached closely, Buzard remarks, to the form of the
+                                modern guidebook. Even Starke's much earlier success, <hi
+                                    rend="italic">Travels in Italy</hi> (1800), had been "felt by
+                                many before the rise of the Murray and Baedeker guides to be the
+                                best available vade-mecum for Italy," yet that "work was by no means
+                                single-mindedly devoted to the role of 'handbook.'" Characteristic
+                                of this transitional period of travel writing, <hi rend="italic"
+                                    >Travels in Italy</hi> "has the appearance, when we look back at
+                                it with generic presuppositions founded on Murray and Baedeker, of
+                                an impressionistic 'travel book'"--that is, as still relying,
+                                despite its "serving as a makeshift [modern] 'handbook' in the
+                                absence of any alternative," on such eighteenth-century conventions
+                                as a series of letters containing the traveler's personal
+                                impressions balanced by judicious reflection (<ref
+                                    type="bibliography" target="bibliography.html#BUZARDBEATEN"
+                                    >Buzard, <hi rend="italic">Beaten Track</hi></ref>, 68, and see
+                                69-70).</note> Compendious as it was, however, <hi rend="italic"
+                                >Travels in Europe</hi> offered no route from Calais to Cologne,
+                            which the Ruskins followed in order to access the Rhine; for while
+                            Starke's updated guide did supply information on Germany and many other
+                            regions of Europe in an appendix, the main text remained traditionally
+                            focused on getting the traveler first to Paris, and then to Italy. Yet,
+                            once arrived in the South, the Ruskins would have found Starke's work
+                            handy for its more modern, guidebook-like feature of convenient
+                            "catalogues of the most valuable specimens of Architecture, Painting,
+                            and Sculpture, in France, Italy, Magna Graecia, Sicily, and Germany;
+                            with the opinions of Nardini, Venuti, Winckelmann, and Visconti, on some
+                            of the most celebrated Works of Art" (<ref type="bibliography"
+                                target="bibliography.html#STARKETRAVELSINEUROPE">Starke, <hi
+                                    rend="italic">Travels in Europe</hi></ref>, 2).</p>
+                        <p>Following the family's return in autumn 1833, and during Ruskin's ongoing
+                            composition of the "Account" in 1834, John James continued to acquire
+                            travel publications typical of this eclectic, transitional period. There
+                            were travel accounts written in the immediate post-Waterloo period by
+                            Vicomte Fran&#x00E7;ois Ren&#x00E9; de Chateaubriand (1768-1848) and by
+                            William Stewart Rose (1775-1843), an associate of Byron and
+                                Rogers.<note>John James's account book does not identify the titles,
+                                but Van Akin Burd suggests Chateaubriand's <hi rend="italic"
+                                    >Souvenirs d'Italie, d'Angleterre, et d'Am&#x00E9;rique</hi>
+                                (1815) and Rose's <hi rend="italic">Letters from the North of
+                                    Italy</hi> (1819).</note> There was also a "P. Rhine" (perhaps
+                                <hi rend="italic">Pilgrims of the Rhine</hi>, a decidedly eclectic
+                            work by Edward Bulwer-Lytton, published in this year), alongside a work
+                            by Horace-B&#x00E9;n&#x00E9;dict de Saussure (1740-99), whose writings
+                            combined travel narrative with scientific observation of the Alps (for
+                            John James Ruskin's 1833-34 booklists, see <ref type="bibliography"
+                                target="bibliography#RFL">Burd, ed., <hi rend="italic">Ruskin Family
+                                    Letters</hi></ref>, 286 n. 1).</p>
+                        <p>By comparison with these changes, and with the bustle of multiple,
+                            inventive genres of travel writing that were vying to serve the rising
+                            tide of middle-class tourism on the Continent. Rogers's neoclassical
+                            poetry seems out of step. Turner complied with Rogers's style, reining
+                            in his apocalyptic manner in favor of nondramatic perspective and
+                            essentializing representations of landscape and buildings (see <ref
+                                type="bibliography"
+                                target="bibliography.html#HOLCOMBCLASSICALTURNER">Holcomb,
+                                "Neglected Classical Phase of Turner's Art"</ref>). Yet, the 1830
+                            illustrated version of Rogers's <hi rend="italic">Italy</hi> likewise
+                            drew on up-to-date printing methods, exploiting the popularity of the
+                            literary "annuals," illustrated by steel engravings that allowed durable
+                            mass production for mass production and wide distribution. Even within
+                            this mode of production, the 1830 <hi rend="italic">Italy</hi> was
+                            innovative, in combining intaglio illustration with relief type on the
+                            same page (see <ref type="note" subtype="biographical"
+                                target="rogers_samuel_note.html">Samuel Rogers (1763-1855)</ref>).
+                            Influential and popular as this best-seller was, however, its
+                            significance lies in its representative status. It is no accident that
+                            Ruskin received the illustrated <hi rend="italic">Italy</hi> as a
+                            birthday present in the same period when his cousin, <ref type="note"
+                                subtype="biographical" target="richardson_charles_note.html">Charles
+                                Thomas Richardson (1811&#x2013;34)</ref>, presented him with a copy
+                            of the steel-engraved annual, <ref type="note" subtype="biographical"
+                                target="friendships_offering_note.html"><hi rend="italic"
+                                    >Friendship&#x02BC;s Offering</hi></ref>, published by Charles's
+                            employer, Smith, Elder &#x0026; Co., as the latest and most sumptuous
+                            addition to the crowding field. The editor of that 1829 or 1830 volume
+                            was <ref type="note" subtype="biographical"
+                                target="pringle_thomas_note.html">Thomas Pringle
+                                (1789&#x2013;1834)</ref>, the poet and editor who would take Ruskin
+                            himself under his wing and introduce the prodigy to the public as "J.
+                            R.," author of the “Fragments from a Metrical Journal” in <ref
+                                type="bibliography"
+                                target="bibliography.html#FRIENDSHIPSOFFERING1835"><hi rend="italic"
+                                    >Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath . . .
+                                    for 1835</hi></ref>.</p>
+                        <p>At the same time, Ruskin stepped backward in time into the Regency world
+                            of the "man of taste," <ref type="note" subtype="biographical"
+                                target="rogers_samuel_note.html">Samuel Rogers (1763-1855)</ref>,
+                            when Pringle ushered the prodigy to St. James Place, Rogers's palace of
+                            neoclassical art, to meet the great man. The only known records of this
+                            episode, Ruskin's stories about the meeting in much later
+                            autobiographical writing, again retain a germ of an essential experience
+                            of the 1830s--namely, that the boy "knew more of the vignettes [in <hi
+                                rend="italic">Italy</hi>] than the verses" (<ref type="bibliography"
+                                target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic"
+                                    >Works</hi></ref>, 34:96, and see also 35:93). Of course he did,
+                            as he had been so obsessively studying and copying the engravings for
+                            his own "Account," even imitating the fine, intaglio lines in his
+                            drawings. The boy probably knew better than Rogers did how this modern
+                            refinement of intaglio technique compared with the radically different
+                            feel of the new lithography, since Ruskin had imitated both results for
+                            his "Account." In fact, while the circumstances are not documented, it
+                            is a reasonable guess that Pringle gained Ruskin's access to Rogers by
+                            borrowing MS IX beforehand, to exhibit their precocious imitations of
+                            the illustrated <hi rend="italic">Italy</hi> to the boy's fellow
+                            entrepreneur of modern, refined ekphrastic writing.</p>
+                        <p>Let's say that the audience with Rogers took place in early 1834, when
+                            Ruskin had pushed on with his fair copy of the "Account" in MS IX. By
+                            that time, it must have been decided that he would contribute selections
+                            from the "Account" to <ref type="bibliography"
+                                target="bibliography.html#FRIENDSHIPSOFFERING1835"><hi rend="italic"
+                                    >Friendship&#x02BC;s Offering; and Winter&#x02BC;s Wreath . . .
+                                    for 1835</hi></ref>. The entitling of these sections in the
+                            annual as "fragments" from a "metrical journal," and printing them
+                            without their prose or pictorial accompaniments, return the project
+                            full-circle to its apparently purely verse beginnings in MS IA; and in
+                            so doing, bring the project round to knowing more of the verses than the
+                            vignettes, after all. This courteous nod to the eighteenth century would
+                            have been arranged not only by Pringle but also, presumably, by his
+                            friend, John James Ruskin, whose hand is manifest in the earliest, fully
+                            poetic MS IA stage of the project. In this instance, a struggle of
+                            intentions between an eighteeenth-century verse genre and a
+                            nineteenth-century composite genre won out in the fathers' favor. In the
+                            same volume of <hi rend="italic">Friendship's Offering</hi>, however,
+                            Ruskin also contributed the poem, "Saltzburg," written to order as
+                            accompaniment to a steel-engraved plate, meant to entertain the modern
+                            middle-class consumer.</p>
+                        <div type="subsection" xml:id="IDENTITIES">
+                            <head type="subsection">National Identities</head>
+                            <p>Signs of havoc caused by the July Revolution in France and the
+                                Belgian Revolution of 1830 were still being marked six years later
+                                by Murray's <hi rend="italic">Hand-book for Travellers on the
+                                    Continent</hi>; and decades later, Ruskin would contrast Prout's
+                                quietude of manner with the state of medieval French architecture
+                                "such as her vestiges remained after all the wreck of revolution and
+                                recoil of war had passed over them" (<ref type="bibliography"
+                                    target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic"
+                                        >Works</hi></ref>, 14:395). In the boyhood "Account,"
+                                however, Ruskin appears completely unconscious of recent political
+                                history. Inevitably, as an English travel narrative, the "Account"
+                                does comment on national identities, seeing Calais as "an
+                                introduction to France, and to the French," but the narrator
+                                moralizes in non-specific terms. On the road between Calais and
+                                Brussels, climbing to the top of Mont Cassel, the narrator points
+                                out the "fifteen battle-fields" visible from the eminence that tell
+                                "a fearful tale of the ready ire of nations, yet looking as green
+                                and peaceful as if they had never been watered with blood." Nothing
+                                is said about such signs of recent conflict as the destruction of
+                                the ancient Abbey of St. Bertin at St. Omer; rather, while the
+                                narrator, passing St. Omer, sneers at the "serpent folds" of "Romes
+                                religion" hidden beneath a religious procession, the English
+                                anti-Catholic sentiment associated with that place was as old as the
+                                Gunpowder Plot--the Jesuit College at St. Omer having been
+                                implicated in that history.</p>
+                            <p>Similarly out of date is the poem's passage through France to Belgium
+                                and the neglect of any commentary on the Belgian character. The
+                                Belgian Revolution of 1830 had established the Kingdom of Belgium as
+                                a state separate from the United Kingdom of the Netherlands. English
+                                attitudes to the new kingdom--as Pieter Fran&#x00E7;ois finds,
+                                examining such popular sources as travel guidebooks--were initially
+                                divided along party lines, with Whigs approving the Catholic
+                                revolutionaries and Tories supporting the Protestant Dutch kingdom
+                                (Murray's 1836 <hi rend="italic">Hand-book</hi> remained staunchly
+                                Tory). Over the course of the 1830s, however, British opinion
+                                unified around a myth of Belgium as a "little Britain" that had
+                                copied its neighbor's constitutionalism and rising
+                                industrialization, shared a royal connection in King Leopold I, and
+                                even harbored an alleged "hidden" protestantism beneath the nation's
+                                apparent Catholic national identity (<ref type="bibliography"
+                                    target="bibliography.html#FRANCOISBELGIUM">Fran&#x00E7;ois,
+                                    "Belgium"</ref>, 663-64). Yet Ruskin's impressions of Belgium in
+                                the "Account" neither reflects the partisan views of Murray's <hi
+                                    rend="italic">Hand-book</hi>, which condemns the Belgians for
+                                lacking the "heroic patriotism" and "high-minded courage and
+                                ceaseless perseverence" of their Protestant Dutch neighbors and for
+                                possessing "a coarseness of manners" and "debasement of the national
+                                character" (<ref type="bibliography"
+                                    target="bibliography.html#MURRAYSHANDBOOKCONTINENT1836"><hi
+                                        rend="italic">Hand-book for Travellers on the
+                                    Continent</hi></ref>, 78); nor do his views share in the myth of
+                                the Englishness of the Belgian character. Brussels is. . . JJR as
+                                subscriber among aristocrats in 1833, Prout's publications, apart
+                                from his few contributions to engravings in the Rogers volume, could
+                                supply no direction to the Ruskins' southern journey, as the
+                                complementary volume to the <hi rend="italic">Facsimiles</hi>, the
+                                    <hi rend="italic">Sketches Made in France, Switzerland, and
+                                    Italy</hi>, was not published until 1839). </p>
+                        </div>
+                        <div type="section" xml:id="TEXTUALNOTE">
+                            <head type="section">Textual Note</head>
+                            <p>, . This hypothesis--that Ruskin had been steadily fair-copying and
+                                drawing in MS IX, until his attention was captured by imitating
+                                Brockendon in late February 1834--appears corroborated by comparing
+                                the sequence of sections in the fair copy against the progress of
+                                draft in MS VIII. To facilitate the following comparisons of fair
+                                copy with rough draft, Table 1 arranges the sections of the Account
+                                in columns according to manuscript. Column ?, listing MS IX, the
+                                illustrated fair copy, should be read as the base column, for only
+                                here are the sections listed in the order they appear in manuscript.
+                                Other manuscript copies of sections (in IA, VII, VIII, and XI) are
+                                matched against the base column in order to establish the
+                                relationship between drafting and fair-copying. Thus, the columns
+                                for MSS IA, VII, VIII, and XI do not show the sequential order of
+                                sections in those manuscripts, but the sequences can be inferred
+                                from column ?, which lists Ruskin’s continuous line numbering.
+                                Ruskin’s line numbering, which he used in MSS IA and VIII, is
+                                carried sequentially throughout the poems; i.e., he did not start
+                                his numbering anew with each poem but numbered continuously from
+                                poem to poem, skipping over the prose draft. Presumably the system
+                                served Ruskin as a guide to fair-copying. In the fair copy, MS IX,
+                                he left some pages blank for prose or poetry to be added later but
+                                pasted in illustrations, and he filled other pages with writing but
+                                left blank spaces for illustrations. To work in this piecemeal
+                                manner, he must have known the length of the sections to be
+                                copied--hence, his line numbering. It is tempting to declare that
+                                the numbering also establishes the sequence of composition; however,
+                                the numbering could have been added at any time after the poems’
+                                drafting. ; however, the order of sections in these manuscripts is
+                                more conveniently listed in Part 1. For other directions to
+                                interpreting Table 1, see the notes at the bottom of the table.) The
+                                chronology of composition is equally conjectural, since Ruskin left
+                                no dates on draft or fair copy. The first five poems of the
+                                travelogue (“Calais,” “Cassel,” “Lille,” “Brussels,” and “The
+                                Meuse”), without their respective prose sections, appear on two
+                                sheets in MS IA in the order they are fair-copied in the illustrated
+                                version, MS IX (see part 1, MS IA, “Content,” g). These sheets are
+                                mostly in Ruskin’s hand but partly in John James’s. What stage of
+                                draft they represent cannot be determined, except that they probably
+                                predate the fair-copy MS IX, since they share a characteristic of
+                                the MS VIII draft--namely, Ruskin’s line numbering, The line
+                                numbering on the two MS IA sheets containing the first five poems
+                                begins at one and carries through 173 for the first four poems; the
+                                fifth poem, “The Meuse,” is unnumbered, because it is crowded
+                                sideways on the second sheet, with no space left for numbering. One
+                                might infer from these two sheets in MS IA containing the initial
+                                poems of the Account that Ruskin composed substantial portions of
+                                the verse prior to the prose. Such a conclusion cannot be warranted,
+                                however, in absence of the purpose of these sheets. The pieces
+                                fair-copied in MS VII cannot be dated, except as probably postdating
+                                the last use of that notebook for the fair copy of “Athens.” Since
+                                the draft of that epic was abandoned in 1832, prior to the Account
+                                project, this lower limiting date is of no use. Only the MS VIII
+                                pieces are unquestionably rough drafts and probably more or less
+                                sequential, therefore providing clues to the order of composition,
+                                if not precise dates. Also, on the back endpapers of MS VIII, Ruskin
+                                entered a list of proposed sections of the poem (reproduced in WS,
+                                pl. 6b). Table 1 shows that the first draft sections in MS VIII to
+                                be fair-copied in MS IX were the prose sections on Andernacht and
+                                St. Goar. At this stage MS IX falters to a halt, with spaces for
+                                drawings left blank, and the fair copy following St. Goar--on
+                                Heidelberg--left incomplete. Since the fter St. Goar, the Meuse,
+                                Cologne, and Brussels--respectively, the fourth, fifth, eleventh,
+                                twelfth, fifteenth and seventeenth Account-related entries in MS
+                                VIII. This may suggest, though with no certainty, that by the time
+                                Ruskin was about halfway into the MS VIII draft (i.e., the fifteenth
+                                and seventeenth of thirty-seven items in MS VIII), he had already
+                                begun fair-copying and illustrating MS IX, i.e., the poetry and
+                                prose sections of “Calais,” “Cassel,” “Lille,” “Brussels,” “Meuse,”
+                                “Aix-la-Chapelle,” “Cologne,” “Andernacht,” “Ehrenbreitstein,” “St.
+                                Goar,” and “Heidelberg.” (Note that MS IX’s relatively late prose
+                                sections for “Andernacht” and “St. Goar” occur quite early in MS
+                                VIII, the fourth and fifth entries, while “Aix-la-Chapelle” and
+                                “Ehrenbreitstein” and “Heidelberg” occur later among the MS VIII
+                                entries, scattered between the twenty-first and thirty-third.) Since
+                                the verse portions of the five opening sections of MS IX exist in MS
+                                IA copy, one might hazard that Ruskin began by drafting,
+                                fair-copying, and illustrating the Account as a response to Samuel
+                                Prout’s Sketches in Flanders and Germany. MS VIII, despite its
+                                drafts related to the German stages of the journey, appears more
+                                closely modeled on Samuel Rogers’s Italy. Putting aside the prose
+                                sections on Andernacht and St. Goar, MS VIII begins with a cluster
+                                of mountain pieces--the Arveron and Arve pieces, the sighting of the
+                                Alps from Schaffhausen, the crossing of the Alps into Italy--and
+                                then roughly alternates Italian and Swiss with German descriptions.
+                                In the absence of benchmark dates except at the point when Ruskin
+                                paused amid the “Tour” in MS VIII to compose his father’s birthday
+                                poems for 1834 (see app. A, MS VIII, “Content,” [b]), various
+                                scenarios are possible. Unquestionably, the fair-copying in MS IX
+                                was begun at home, following the journey, since sections as early as
+                                “Lille” comment on Italian stages of the itenerary (although the
+                                tipped-in drawings conceivably could have been started during the
+                                journey). This fair-copying may have started from draft, now lost
+                                though possibly represented by sheets in MS IA, that could have been
+                                composed during the journey itself, or soon following it. If so, the
+                                draft in MS VIII shows Ruskin composing for the on-going
+                                fair-copying of Lowland and German sections and, simultaneously, for
+                                the later largely Swiss and Italian sections that were never
+                                fair-copied. (Ruskin did, however, place illustrations, with no
+                                text, in MS IX that depict mountain and lake scenes for the later
+                                sections; see Works 2:364 n. 1. For these sketches, he also put to
+                                use an older rough-draft notebook, MS VI; see app. A, “Content”
+                                [e].) The illustration of the Swiss passages could have been
+                                spurred, not only by Rogers’s Italy, but also by William
+                                Brockendon’s Illustrations of the Passes of the Alps and H. B.
+                                Saussure’s Voyages dans les Alpes, both of which Ruskin received for
+                                his birthday in February 1834 (RFL 278). Alternatively, MS VIII
+                                could represent Ruskin’s initial poetic response to the
+                                Continent--the sublimities of the Alps and the Italian lakes,
+                                mediated by Scott, Rogers, and Byron, taking precedence over the
+                                Proutian picturesque. (Even the early occurring “Andernacht” and
+                                “St. Goar” prose sections concern the psychology of mountain and
+                                hill viewing.)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

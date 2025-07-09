@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="tite_of_work_note">
+            <titleStmt>
+                <title type="main">Bibliography of Ruskin (1878&#x2013;81)</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For xml:id, enter your first, middle, and last intials.-->
+                    <persName xml:id="YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The notes version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--Note subtypes include bibliographical, biographical, contextual, and geographical.-->
+            <div type="note" subtype="subtype">
+                <head type="title"><hi rend="italic">Complete Bibliography of . . . Ruskin</hi> (1889&#x2013;93)</head>
+                <p>Thomas H. Wise and James P. Smart compiled this exhaustive bibliography, 
+                    <hi rend="italic">A Complete Bibliography of the Writings in Prose and Verse of John Ruskin, LL.D., with a List of the More Important Ruskiniana</hi>. 
+                    It was initially issued in parts:</p>
+                    <list>
+                        <item><ref type="bibliography" target="bibliography.html#RUSKINBIBLIOGRAPHYSHEPHERD1">&#x201C;From 1835 to the Present Time (September 1878)&#x201D; [1st ed.]</ref>;</item>
+                        <item><ref type="bibliography" target="bibliography.html#RUSKINBIBLIOGRAPHYSHEPHERD2">&#x201C;From 1834 to the Present Time (October 1878)&#x201D; [2d ed.]</ref>;</item>
+                        <item><ref type="bibliography" target="bibliography.html#RUSKINBIBLIOGRAPHYSHEPHERD3">&#x201C;From 1834 to the Present Time (November 1878)&#x201D; [3d ed.]</ref>;</item>
+                        <item><ref type="bibliography" target="bibliography.html#RUSKINBIBLIOGRAPHYSHEPHERD4">&#x201C;(From 1834 to 1879), 4th edition, revised and enlarged&#x201D;</ref>;</item>
+                        <item><ref type="bibliography" target="bibliography.html#RUSKINBIBLIOGRAPHYSHEPHERD5">&#x201C;(From 1834 to 1881), 5th edition, revised and enlarged&#x201D;</ref>.</item>
+                    </list>
+                <p>In addition, an American edition, published in New York by John Wiley and Sons in 1878, was based on the second edition. 
+                    Of the British editions, only the fifth carries a publisher's imprint on the title page: 
+                    London: / Elliot Stock, 62, Paternoster Row. This edition was issued also in a large format, 
+                    a "special edition printed for the members of the Ruskin Society." Of the British editions prior to the fifth&#x2014;certainly the first, and presumably the second through the fourth, as well&#x2014;were 
+                    "printed for private circulation," 
+                    according to a clipping attached to a copy of the first edition held by the Ruskin Library, and copies were available "on application to the editor." See also the description of the publication 
+                    in <ref type="bibliography" target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 38:110. 
+                    <ref type="bibliography" target="bibliography.html#SHEPHERDDNB">Collins, &#x201C;Richard Herne Shepherd,&#x201D;</ref> mentions that some of Shepherd's works were published by his brother, 
+                    who ran a bookshop in Holborn under the name of Frank Hollings, but this arrangement would not have come about prior to 1892 
+                    (see <ref type="bibliography" target="bibliography.html#TENNYSONSHEPHERDWISE">Paden, &#x201C;Tennyson&#x02BC;s <hi rend="italic">The Lover&#x02BC;s Tale</hi>, Shepherd, and Wise,&#x201D; 117n</ref>).</p>
+                <p>The first, third, and fifth editions appear to have been published without the compiler's name anywhere indicated, whether on the title page or at the end of the introduction.</p> 
+                <p>The first four editions carry a dedication to the artist, 
+                    <ref type="note" subtype="biographical" target="backhouse_h_f_note.html">Henry Backhouse</ref> 
+                    (his full name given as Henry Fleetwood Backhouse, starting with the third edition), &#x201C;who first
+                    suggested to the compiler the idea of this little bibliography,&#x201D; Perhaps Backhouse originally helped subsidize the publication, 
+                    since the dedication is dropped from the fifth edition, published by Elliot Stock; 
+                    or perhaps Backhouse was simply one of the avid Ruskin "collectors" to whom the author hoped the bibliography would "prove useful," according to the clipping on the Ruskin Library copy.</p>
+                <p>Expansion and reissue of the bibliography was planned from the start, since, in the introduction to the first edition, the author anticipates "more fortunate or more persistent research" 
+                    (<ref type="bibliography" target="bibliography.html#RUSKINBIBLIOGRAPHYSHEPHERD1">Shepherd, <hi rend="italic">Bibliography of Ruskin</hi> [1st ed.]</ref>, vii). Already expanded for reissue a month later, 
+                    the second edition names with thanks several individuals who supplied additional items for description 
+                    (<ref type="bibliography" target="bibliography.html#RUSKINBIBLIOGRAPHYSHEPHERD2">Shepherd, <hi rend="italic">Bibliography of Ruskin</hi> [2d ed.]</ref>, viii). The list attests that influential persons 
+                    took an interest in the project.</p> 
+                <p>Doubtless Shepherd had also hoped from the start to gain an acknowledgment from Ruskin himself. In a letter of 30 September 1878, written apparently in response to receiving the first edition, 
+                    Ruskin answered Shepherd: 
+                    &#x201C;So far from being distasteful to me, your perfect reckoning up of me not only flatters my vanity extremely, but will be in the highest degree useful to myself. 
+                    But you know so much more about me than I now remember about anything, that I can't find a single thing to correct or add&#x2014;glancing through at least. 
+                    I will not say you have wasted your time; but I may at least regret the quantity of trouble the book must have given you. . . .&#x201D; In a second letter, dated 23 October 1878, 
+                    Ruskin acknowledges receipt undoubtedly of the second edition: "I am very deeply grateful to you, as I am in all duty bound, for this very curious record of myself. It will be of extreme value to me 
+                    in filling up what gaps I can in this patched coverlid of my life, before it is draped over my coffin&#x2014;if it may be. I am especially glad to have note of the letters to newspapers.&#x201D; 
+                    These letters are printed as loose inserts included with the second edition, at least as found in the Ruskin Library's copy, 
+                    but various evidence confirms that the letters did originally belong to that edition.<note>The American edition, published by Wiley and based on the second edition, carries the 30 September letter, 
+                        printed opposite the title page. In both the American and the British second editions, this letter is prefaced by the explanation: 
+                    "The Compiler of this Bibliography has had the honour to receive, in acknowledgment of a copy which he sent to Brantwood, 
+                    the following letter from Mr. Ruskin." The second letter, as suggested by its 23 October 1878 date, may likewise have accompanied the second edition; 
+                    however, the origin of its separate printed card is unclear. The Bodleian Library copy of the second edition, as shown online in Google Books, includes only the first Ruskin letter.</note> 
+                It is no accident, therefore, that the second edition carried Shepherd's name in print, as did the fourth, which likewise involved self-advertisement using Ruskin's letters (see below).</p> 
+                <p>Ruskin's comment in the October letter about his interest in "the letters to newspapers" refers to a particular interest of Shepherd's. In the introduction to the first edition of the bibliography, 
+                    Shepherd expressed his special solicitude to track down the public letters, and the second edition does 
+                    contain additional entries of this kind. One wonders if Shepherd was planning to collect these ephemera; if so, he was trumped by Alexander Wedderburn, who with Ruskin's support collected 
+                    Ruskin's public letters to newspapers in  
+                    <hi rend="italic">Arrows of the Chase</hi>, published in 1880 (see <ref type="bibliography" target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 34:xxxviii).<note>Wedderburn 
+                        prints Ruskin's letters to Shepherd in <hi rend="italic">Arrows of the Chase</hi>, noting that the letters are "given in the List of 'Mr. Shepherd's Publications,' 
+                        printed at the end of his <hi rend="italic">The Bibliography of Dickens</hi>, 1880" 
+                    (<ref type="bibliography" target="bibliography.html#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 34:537). The texts of both letters, September and October 1878, are indeed 
+                    found in the back matter of <ref type="bibliography" target="bibliography.html#DICKENSBIBLIOGRAPHYSHEPHERD">Shepherd, <hi rend="italic">The Bibliography of Dickens</hi></ref>), 
+                    following numerous complimentary squibs from journals about Shepherd's Ruskin bibliography. Wedderburn's remark in <hi rend="italic">Arrows of the Chase</hi> suggests that he took the texts of the letters 
+                    from this source and knew nothing about their prior printing to accompany the Ruskin bibliography. The list printed at the back of the Dickens bibliography advertises specifically the fourth edition 
+                    of the bibliography, which is the one other edition besides the second to bear Shepherd's name in print.</note></p>
+                <p>In each edition of the bibliography except the last, which drops the author's introduction, Shepherd dwells on his care: &#x201C;the materials for [the bibliography&#x02BC;s] compilation have taken many years to collect, 
+                    and much anxious labour has been spent on its preparation and arrangement. No entry has in any case been made at second&#x2010;hand; but always with the actual book, pamphlet,
+                    magazine, or journal described lying before the compiler.&#x201D; Indeed, the thoroughness of Shepherd's sleuthing is impressive. Entries on Ruskin's early publications are in some cases annotated 
+                    with quotations identifying or legitimating the piece. For example, Shepherd authenticates his entry for Ruskin's two 1834 essays published in <hi rend="italic">The Magazine of Natural History</hi>, 
+                    &#x201C;Enquiries on the Causes of the Colour of the Water of the Rhine,&#x201D; 
+                    and &#x201C;Facts and Considerations on the Strata of Mont Blanc,&#x201D; by quoting a footnote from the so&#x2010;called 
+                    <hi rend="italic">Instructions in Use of the Rudimentary Series</hi> for the Drawing Schools at Oxford (1872), where Ruskin remarks that &#x201C;Mr. Loudon was the first
+                        literary patron who sent words of mine to be actually set up in print, in his
+                    <hi rend="italic">Magazine of Natural History</hi>, when I was sixteen&#x201D; 
+                    (<ref type="bibliography" target="bibliography.html#RUSKINBIBLIOGRAPHYSHEPHERD2">Shepherd, <hi rend="italic">Bibliography of Ruskin</hi> [2d ed.]</ref>, 1-2; see also 
+                    <ref type="bibliography" target="bibliography.html#JRWORKSLE"><hi rend="italic">Works</hi></ref> 21:243n). 
+                    Similarly, in the entry for <hi rend="italic">The Poetry of Architecture</hi> (1839), Shepherd appends a nugget from Ruskin&#x02BC;s 1878 essay on 
+                    W. H. Harrison, &#x201C;My First Editor: An Autobiographical Reminiscence.&#x201D; Shepherd quotes: &#x201C;the series of essays written for the <hi rend="italic">Architectural Magazine</hi>, 
+                    under the signature of Kata Phusin, contain sentences nearly as well put together as any I have done since&#x201D; 
+                    (<ref type="bibliography" target="bibliography.html#RUSKINBIBLIOGRAPHYSHEPHERD2">Shepherd, <hi rend="italic">Bibliography of Ruskin</hi> [2d ed.]</ref>, 2; see also
+                    <ref type="bibliography" target="bibliography.html#JRWORKSLE"><hi rend="italic">Works</hi></ref>, 34:97). In the quotation from the <hi rend="italic">Instructions</hi> for the Drawing Schools, 
+                        Shepherd not only references an obscure footnote; he must have obtained the pamphlet itself with some difficulty, it having never been issued for sale, but printed only for
+                        students of the Drawing Schools (perhaps obtained from Backhouse or one of the contributors thanked in the introduction). Ruskin's essay on Harrison was likewise somewhat obscure. 
+                        Familiar nowadays to Ruskin scholars, as it was reprinted in 1885 in <hi rend="italic">On the Old Road</hi>, in 1878 the piece would have been accessible to Shepherd 
+                    only as a preface to Harrison&#x02BC;s memoir, recently published in the <hi rend="italic">Dublin University Magazine</hi>. (In fact, since Ruskin's essay on Harrison appeared in April 1878, 
+                    and Shepherd's first issue of the bibliography later that year in September, one wonders if it was Ruskin's tribute to his first editor 
+                that first inspired Shepherd's project.) Similarly, in his edition of Barrett Browning's juvenilia, Shepherd cites journal and encyclopedia articles authenticating the poet's early volumes, 
+                and those essays, too, may have prompted Shepherd's undertaking  
+                (<ref type="bibliography" target="bibliography.html#BARRETTBROWNINGEARLIERPOEMS1878">Barrett Browning, <hi rend="italic">Earlier Poems</hi>, ed. Shepherd</ref>, v-viii).</p>
+                
+            </div>
+        </body>
+    </text>
+</TEI>

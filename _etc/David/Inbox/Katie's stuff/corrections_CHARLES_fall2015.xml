@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="note">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="tite_of_work_note">
+            <titleStmt>
+                <title type="main">Title of Work</title>
+                <title type="sub">Note</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2012-09-04">September 4, 2011</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Notes Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            
+            
+            <div>
+                <p>PERMISSIONS
+                    <p>Facsimiles by permission of <title type="archive" corresp="#BEINECKERUSKINCOLLECTION">John Ruskin Collection</title>, General Collection, <orgName corresp="#BEINECKE">Beinecke Rare Book and Manuscript Library</orgName>, <orgName corresp="#YALE">Yale University</orgName>. Transcriptions of texts and commentary &#x00A9; <persName corresp="#DCH">David C. Hanson</persName>. 
+                        In commentary, material quoted from <ref type="bibliography" target="bibliography.php#RFT48"><title type="transcript" corresp="#RFT48">Diary of Mary Richardson, 1833</title></ref>; and  
+                        <ref type="bibliography" target="bibliography.php#RFMS28"><persName corresp="#JJR">John James Ruskin</persName>, Account Book (1827&#x2013;45)</ref>, &#x00A9; <orgName corresp="#RUSKINLIBRARYLANCASTER">The Ruskin</orgName>, <orgName corresp="#LANCASTERU">Lancaster University</orgName>.
+                    </p>
+                    
+                    <div type="section" xml:id="MAJORMS">
+                        <head type="section">Manuscript</head>
+                        <p>Facsimiles by permission of <title type="archive" corresp="#BEINECKERUSKINCOLLECTION">John Ruskin Collection</title>, General Collection, <orgName corresp="#BEINECKE">Beinecke Rare Book and Manuscript Library</orgName>, <orgName corresp="#YALE">Yale University</orgName>. Transcriptions of texts and commentary &#x00A9; <persName corresp="#DCH">David C. Hanson</persName>. 
+                            In commentary, material quoted from <ref type="bibliography" target="bibliography.php#RFMS28"><persName corresp="#JJR">John James Ruskin</persName>, Account Book (1827&#x2013;45)</ref>, &#x00A9; <orgName corresp="#RUSKINLIBRARYLANCASTER">The Ruskin</orgName>, <orgName corresp="#LANCASTERU">Lancaster University</orgName>.</p>
+                    </div>
+                </p>
+                <p>GUIDEBOOKS
+                <persName corresp="#JM">John Murray III</persName> in his <date when="1836">1836</date> guidebook to the <geogName corresp="#CONTINENT">Continent</geogName>
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKCONTINENT1836"><persName corresp="#JM">Murray</persName>, <title type="book" corresp="#MURRAYSHANDBOOKCONTINENT1836"><hi rend="italic">Hand&#x2010;book for Travellers on the Continent</hi></title></ref>, ???).
+                    
+                    <ref type="bibliography" target="bibliography.php#EBELTRAVELLERSGUIDE"><persName corresp="#JGE">Ebel</persName>, <title type="book" corresp="#EBELTRAVELLERSGUIDE"><hi rend="italic">Traveller&#x02BC;s Guide through Switzerland</hi></title></ref>
+                    
+                    <ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKSWITZERLAND1838"><persName corresp="#JM">Murray</persName>, <title type="book" corresp="#MURRAYSHANDBOOKSWITZERLAND1838"><hi rend="italic">Hand&#x2010;book for Travellers in Switzerland</hi></title></ref>
+                    
+                    (<ref type="bibliography" target="bibliography.php#MURRAYSHANDBOOKNORTHERNITALY1847"><persName corresp="#GBM">Maule</persName>, <title type="book" corresp="#MURRAYSHANDBOOKNORTHERNITALY1847"><hi rend="italic">Hand&#x2010;book for Travellers in Northern Italy</hi></title></ref>
+                   
+                
+                <persName corresp="#FMT">Frances Trollope</persName> (<date notBefore="1769" notAfter="1863">1779&#x2013;1863</date>
+                    <ref type="bibliography" target="bibliography.php#TROLLOPEBELGIUM"><persName corresp="#FMT">Trollope</persName>, <title type="book" corresp="#TROLLOPEBELGIUM"><hi rend="italic">Belgium and Western Germany in 1833</hi></title></ref>
+                
+                <date when="1828">1828</date> travel narrative by <persName corresp="#SJB">John Barrow</persName> (<date notBefore="1764" notAfter="1848">1764&#x2013;1848</date>) 
+                    <ref type="bibliography" target="bibliography.php#BARROWFAMILYTOUR"><title type="book" corresp="#BARROWFAMILYTOUR"><hi rend="italic">A Family Tour through South Holland</hi></title></ref>
+                   
+                   <persName corresp="#JML">James Mathews Leigh</persName> (<date notBefore="1808" notAfter="1860">1808&#x2013;60</date>)
+                    <ref type="bibliography" target="bibliography.php#LEIGHRHENISHALBUM"><persName corresp="#JML">Leigh</persName>, <title type="book" corresp="#LEIGHRHENISHALBUM"><hi rend="italic">Rhenish Album</hi></title></ref>, 169&#x2013;70
+                    
+                </p>
+              
+              <p>DIARIES
+                    <ref type="note" subtype="biographical" target="richardson_mary_note.php"><persName corresp="#MRC">Mary Richardson</persName></ref>
+                    <ref type="bibliography" target="bibliography.php#RFT48"><title type="transcript" corresp="#RFT48">Diary of Mary Richardson, 1833</title></ref>
+                  
+                  <p><ref type="bibliography" target="bibliography.php#RFMS33A"><title type="manuscript" corresp="#RFMS33A">Diary of John James Ruskin, 1833&#x2013;46</title></ref>, &#x00A9; <orgName corresp="#RUSKINLIBRARYLANCASTER">The Ruskin</orgName>, <orgName corresp="#LANCASTERU">Lancaster University</orgName>.</p>
+                  
+              </p>
+                <p>LETTERS
+                </p>
+               <p>EDITIONS    
+                    <ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>
+                    
+                <ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSLE"><hi rend="italic">Works</hi></title></ref>
+                   
+                   <persName corresp="#WGC">W. G. Collingwood</persName>
+                   <ref type="bibliography" target="bibliography.php#POEMS4D1891"><title type="book" corresp="#POEMS4D1891"><hi rend="italic">Poems</hi> [4<hi rend="superscript">o</hi></title>, 1891]</ref></ref>, 1:280&#x2013;81; 
+                   <ref type="bibliography" target="bibliography.php#POEMS8D1891"><title type="book" corresp="#POEMS8D1891"><hi rend="italic">Poems</hi> [8<hi rend="superscript">o</hi>, 1891]</title></ref>, 1:282; 
+                   
+               </p>
+                <p>REFERENCE
+                    
+                    <ref type="bibliography" target="bibliography.php#DEARDENRUSKINLIBRARY"><persName corresp="#JSD">Dearden</persName>, <title type="book" corresp="#DEARDENRUSKINLIBRARY"><hi rend="italic">The Library of John Ruskin</hi></title></ref>, 309 [no. 2428]
+            </p>
+                
+                <p>PUNCTUATION GLOSSES
+                    
+                <note xml:id="JUSTIFICATION" resp="#DCH">Justification mark (MS IX)&#x2014;See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#JUSTIFICATION">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Justification, Runover, and Word Division</ref>.</note>
+                <g type="justification">-</g>
+                    <note xml:id="RUNOVER" resp="#DCH">Runover mark (MS I)&#x2014;See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#JUSTIFICATION">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Justification, Runover, and Word Division</ref>.</note>
+                <note xml:id="PAUSEPERIOD" resp="#DCH">Pause&#x2013;period (MS IX)&#x2014;See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</note>
+                <note xml:id="TERMINALCOMMA" resp="#DCH">Terminal comma (MS IA, <hi rend="italic">g</hi>.2)&#x2014;See <ref type="note" subtype="bibliographical" target="editorial_rationale_note.php#COMMA">Editorial and Encoding Rationale and Methodology: Element, Attribute, and Value Usage&#x2014;Commas, Periods, and Other Punctuation</ref>.</note>
+                </p>
+                
+                <p>SANDBOX</p>
+                <!-- FROM MONASTERY -->
+                <p>the last poem fair&#x2010;copied in <ref type="apparatus" target="poetry_discriptive_apparatus.php"><title type="anthology" corresp="#POETRYDISCRIPTIVE">&#x201C;poetry discriptive&#x201D;</title></ref>does not necessarily imply, moreover, that <persName corresp="#JR">Ruskin</persName> misunderstood the difference 
+                    between the brief lyric mode of descriptive verse and a long narrative poem: from the outset of the fair copy, 
+                    he divided <title type="poem" corresp="#JRTHEMONASTERY">&#x201C;The Monastery&#x201D;</title> into numbered &#x201c;books&#x201d; 
+                    that corresponded to chapters in <persName corresp="#WS">Scott</persName>&#x02bc;s novel&#x2014;a sequence that  could have extended to the end of the original story, 
+                    but that he never carried beyond <persName corresp="#WS">Scott</persName>&#x02bc;s chapter four, so far as the record shows. which  incorportated into the half&#x2010;title and first page of Book I (the same divisions used for <title type="poem" corresp="#JRTHEMONASTERY">&#x201c;The Monastery&#x201d;</title>). Accordingly, a timeline falls into place,</p>
+                    
+                    <!-- INSERTION FOR TOUR 1827 -->
+                    <p>In <persName corresp="#JJR">John James</persName>&#x02bc;s household accounts ledger, the &#x201c;Sundries&#x201d; for <date notBefore="1827-06-01" notAfter="1827-06-30">June 1827</date> include &#x201c;Northcotes visit 25/&#x201d;. If this means a visit to <placeName type="building" corresp="#HERNE">Herne Hill</placeName> by the painter, 
+                        <ref type="note" subtype="biographical" target="northcote_james_note.php"><persName corresp="#JNORTHCOTE">James Northcote</persName> (<date notBefore="1746-10-22" notAfter="1831-07-13">1746&#x2013;1831</date>)</ref>, then the family was at home during that month; and the entry for the following month, <date notBefore="1827-07-01" notAfter="1827-07-31">July</date>, includes 
+                        &#x201c;Gown my sister &#x00A3;4.4&#x201d;, presumably a gift for <ref type="note" subtype="biographical" target="richardson_jessie_note.php"><persName corresp="#JRP">Jessie Richardson</persName></ref> to be carried north. <date notBefore="1827-08-01" notAfter="1827-08-31">August</date> has an entry 
+                        &#x201c;chaise Perth <space quantity="3" unit="chars"/><unclear reason="illegible" resp="#DCH">M.<hi rend="superscript">t</hi>[?]</unclear> &#x00A3;2.18&#x201d;, 
+                        an expense related to arranging for the <ref type="note" subtype="contextual" target="travelling_carriages_note.php">post&#x2010;chaise</ref> to carry the family to <placeName corresp="#PERTH">Perth</placeName>. 
+                        There are no entries for <date notBefore="1827-09-01" notAfter="1827-09-30">September</date> and <date notBefore="1827-10-01" notAfter="1827-10-31">October</date>, the accounts resuming in <date notBefore="1827-11-01" notAfter="1827-11-30">November</date> with items suggesting a departure: &#x201c;postage Perth &#x00A3;3.15/&#x201d;; 
+                        &#x201c;Freights <space quantity="5" unit="chars"/><unclear reason="illegible" resp="#DCH">pres<hi rend="superscript">t</hi>[?]</unclear> 47/7&#x201d;; 
+                        &#x201c;Servants Perth 5/ &#x00A3;6.6&#x201d;; and <ref type="bibliography" target="bibliography.php#KITCHINERTRAVELLERSORACLE">&#x201c;Travellers Oracle 12/&#x201d;</ref>, a book comprising songs and other diversions for road travel by <persName corresp="#WKITCHINER">William Kitchiner</persName>, 
+                        along with his revision of &#x201c;Horse and Carriage Keeper&#x02bc;s Oracle&#x201d; by an &#x201c;Old Coachman&#x201d;, <persName corresp="#JJERVIS">John Jervis</persName>.
+                        It appears, then, that the <placeName corresp="#PERTH">Perth</placeName> visit in <date when="1827">1827</date> took place mainly in <date notBefore="1827-09-01" notAfter="1827-10-31">September and October</date>, with departure probably in <date notBefore="1827-08-01" notAfter="1827-08-31">August</date> and return in <date notBefore="1827-11-01" notAfter="1827-11-30">November</date>. 
+                        Confirming these parameters, the &#x201c;House Expenses&#x201d; (i.e., groceries and other household consumables) in <persName corresp="#JJR">John James</persName>&#x02bc;s accounts for that year skip from an entry for <date notBefore="1827-07-01" notAfter="1827-07-31">July</date> 
+                        to one for <date notBefore="1827-12-01" notAfter="1827-12-31">December<date>, the latter including the items &#x201c;At Perth Aug.<hi rend="superscript">t</hi> &#x00A3;5 Perth &#x00A3;12 &#x00A3;4&#x201d;; 
+                        and the &#x201c;Expenses Travelling&#x201d; lists an item under <date notBefore="1827-12-01" notAfter="1827-12-31">December</date>, &#x201c;To Scotland &#x0026; back &#x00A3;215&#x201d; 
+                        (<ref type="bibliography" target="bibliography.php#RFMS28"><persName corresp="#JJR">John James Ruskin</persName>, <title type="manuscript" corresp="#RFMS28">Account Book [<date notBefore="1827-01-01" notAfter="1845-12-31">1827&#x2013;45</date>]</title></ref>, 2r, 2v, 5v).</p>
+                   <note xml:id="BRUSSELSBLANK" resp="#DCH">Blank space on page for possible drawing (MS IX)&#x2014;Since the heading of this section is placed significantly below the top of the page, 
+                       leaving a vertical column measuring approximately nine lines of <persName corresp="#JR">Ruskin</persName>&#x02BC;s cursive copperplate script, it is reasonable to assume that 
+                       he intended to paste a drawing here, but never produced it, or that he produced a drawing, but it has been removed or lost.</note>
+                   
+                   <note xml:id="BRUSSELSBLANK2" resp="#DCH">Blank space on page for possible drawing (MS IX)&#x2014;While it is impossible to prove intention about a space left on a page following 
+                       the end of a piece of writing, the vertical column at the bottom of this page, which measures approximately seven lines of <persName corresp="#JR">Ruskin</persName>&#x02BC;s 
+                       cursive copperplate script, certainly tempted him to insert drawings in other such available spaces in MS IX. Either he never produced such a drawing, however; 
+                       or he did produce it, but it has been removed or lost.</note>
+                    
+                   
+                    
+                    <title type="artwork" corresp="#WBISIMPLONGREATGALLEY">Gondo Gallery</title> shown in <persName corresp="#JR">Ruskin</persName>&#x02BC;s surviving drawing
+                    which from defile with <placeName corresp="#DOMODOSSOLA">Duomo d&#x02BC;Ossola</placeName>. 
+                    <title type="artwork" corresp="#BROCKEDONSIMPLONGREATGALLERY">Entrance to Gondo Gallery</title> vignette. My own two&#x201D;  <persName corresp="#JR">Ruskin</persName>
+                    .
+                    from that mapped in the  which runs from <placeName corresp="#GENEVA">Geneva</placeName> 
+                    to <placeName corresp="#MILAN">Milan</placeName> via the <geogName corresp="#SIMPLON">Simplon</geogName>. The first scene copied from <persName corresp="#WBI">Brockedon</persName> would have been taken from plate 3 for the chapter, 
+                    <title type="artwork" corresp="BROCKEDONVALDOSSOLAFROMDEFILEOFDOVEDRO"><hi rend="italic">Val D&#x02BC;Ossola from the Defile of the Dovedro</hi></title>, described as 
+                    &#x201C;the route gradually lower[ing]&#x201D;&#x2014;the Ruskins would have looked back on this scene, as they climbed&#x2014;&#x201C;to where the grand and beautiful <placeName corresp="#PONTEDICREVOLA">Ponte Crevola</placeName> crosses the <geogName corresp="#DOVEDRO">Dovedro [River]</geogName>, 
+                    at its entrance into the <geogName corresp="#VALDOSSOLA">Val d&#x02BC;Ossola</geogName>. 
+                    
+                    This bridge is first seen where a view of the plains of <placeName corresp="#DOMODOSSOLA">Domo d&#x02BC;Ossola</placeName> is also presented. The landscape is one of singular beauty, 
+                    and its effect, bursting upon the traveller at the end of his journey through the savage defiles of the <geogName corresp="#DOVEDRO">Dovedro</geogName>, is very impressive&#x201D;. 
+                    
+                    
+                    his delivery of revised text for 
+                    <ref type="witness" target="account_of_a_tour_on_the_continent_fo.php"><title type="poem" corresp="#JRFRAGMENTS">&#x201C;Fragments from a Metrical Journal&#x201D;</title></ref>, along with a separate poem, 
+                    <ref type="apparatus" target="saltzburg_apparatus.php"><title type="poem" corresp="#JRSALTZBURG">&#x201C;Saltzburg&#x201D;</title></ref>, to the editor 
+                    (previously misdated by <persName corresp="#WGC">W. G. Collingwood</persName> as <date when="1835-12">December 1835</date>).
+                
+                
+                <p>Along the way, the reader is occasionally referred to textual and contextual glosses that hang from the transcripts of certain witnesses, 
+                    elaborating what particular poems, essays, or drawings, or clusters of pieces, reveal about literary and artistic influences and compositional strategies.</p>
+                <p>The analysis is supported by <ref type="internal" target="#APPARATUSTABLE1">Table 1</ref> listing the sequential contents of each of the manuscripts, 
+                    and the contents of the published versions of the work. The table also tracks <persName corresp="#JR">Ruskin</persName>&#x02BC;s system of 
+                    <ref type="internal" target="#LINENUMBERING">Line Numbering</ref> in the draft.
+                    
+                    would develop these poetic influences more substantially afterward, in the 
+                    <ref type="internal" target="#PROPOSEDCONTENTS">List of Proposed Additional Contents for the &#x201C;Account&#x201D;</ref>, and in poems corresponding 
+                    to that plan that he drafted in <title type="manuscript" corresp="#MSVIII">MS VIII</title> 
+                    the poem <title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title> reveals that, at this earlier stage, <persName corresp="#JR">Ruskin</persName> 
+                    
+                    This poem, which <persName corresp="#JR">Ruskin</persName> had already composed in <title type="manuscript" corresp="MSIAG2">MS IA, <hi rend="italic">g</hi>.2</title>, 
+                    may have been the first in the entire sequence of composing the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title> to reflect 
+                    <persName corresp="#SR">Samuel Rogers</persName>&#x02BC;s influence as a poet, as distinct from the influence of the print culture associated with the 
+                    <title type="poem" corresp="#ROGERSITALY1830">1830 illustrated edition of <hi rend="italic">Italy</hi></title>. <persName corresp="#JR">Ruskin</persName> 
+                    studied how <persName corresp="#SR">Rogers</persName> situates his poem, <title type="poem" corresp="#ROGERSTHEALPS">&#x201C;The Alps&#x201D;</title>, 
+                    in <title type="poem" corresp="#ROGERSITALY"><hi rend="italic">Italy</hi></title> as a summary reflection on the experience of crossing the mountains 
+                    (see the contextual glosses attached to the witnesses of <ref type="witness" target="passing_the_alps_poem_msia_g2.php"><title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title></ref>). 
+                    He continues to develop this trope in the cluster of mountain poems near the start of <title type="manuscript" corresp="#MSVIII">MS VIII</title> draft.
+                </p>
+                <p>Readers privileged to know all this would also have recognized that the status of <title type="poem" corresp="#JREHRENBREITSTEIN1850">&#x201C;Ehrenbreitstein&#x201D;</title> 
+                    as a &#x201C;Fragment from a <hi rend="italic">Metrical</hi> Journal&#x201D; was a fiction, as was the claim of the originally published &#x201C;Fragments&#x201D;, 
+                    since <persName corresp="#JR">Ruskin</persName> had developed the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title> beyond exclusively verse.</p>
+                
+                <div type="section" xml:id="APPARATUSTABLE1">
+                    <head type="section">Table 1</head>
+                    <p>In <ref type="table" target="account_of_a_tour_on_the_continent_table1.php">Table 1</ref>, the columns list vertically, by title, the separate verse and prose sections 
+                        and illustrations of the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>, as they appear sequentially in the manuscripts 
+                        or parts of manuscripts containing the work. Horizontally, the columns represent a rough chronological order, extending from the conjecturally earliest composed 
+                        to the latest composed or fair&#x2010;copied of the manuscripts, followed by the successive edited versions of the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>. 
+                        The final column lists the <hi rend="italic">ERM</hi> proposed reconstruction of the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>, 
+                        including correction of some portions of the sequence in earlier editions, and extension of the sequence to include <persName corresp="#JR">Ruskin</persName>&#x02BC;s 
+                        <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php"><title type="bibliography_text" corresp="JRPROPOSEDTABLEOFCONTENTS">List of Proposed Additional Contents for Account of a Tour on the Continent</title></ref>.</p>
+                    <p>The horizontal arrangement of the table is not meant to represent the sequence of composition, poem by poem, essay by essay, with strict accuracy, 
+                        since <persName corresp="#JR">Ruskin</persName> worked on more than one of these manuscripts simultaneously. For example, while <persName corresp="#JR">Ruskin</persName> 
+                        probably started the fair copy, <title type="manuscript" corresp="#MSIX">MS IX</title>, before taking up <title type="manuscript" corresp="#MSVIII">MS VIII</title> 
+                        for drafting later sections of the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>, after a certain point he developed one alongside the other.</p>
+                    <p>Additional information is provided in columns to the right of some manuscripts and editions. Columns listing <persName corresp="#JR">Ruskin</persName>&#x02BC;s 
+                        line numbering, which he attached to the verse sections of some manuscripts, may provide clues about the sequence of composition when this numbering can be viewed in tabular form. 
+                        Columns listing editorial glosses inform the reader which section titles carry textual and/or contextual glosses.</p>
+                    
+                </div>
+                <div type="subsection" xml:id="ITINERARY">
+                    <head type="subsection">Itinerary and Tourism</head>
+                    <p>For the itinerary and other details concerning the Ruskin family&#x02BC;s first major tour to the Continent, 
+                        which inspired <persName corresp="#JR">Ruskin</persName>&#x02BC;s <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>, see 
+                        <ref type="note" subtype="contextual" target="tour_of_1833_note.php">Tour of 1833</ref> and also the Map and Chronology. For the family&#x02BC;s earlier, and much more limited Continental tour, 
+                        when <persName corresp="#JR">Ruskin</persName> was only six years old, see <ref type="note" subtype="contextual" target="tour_of_1825_note.php">Tour of 1825</ref>.</p>
+                    
+                    <p>At the center of this cluster turning on the first sighting of the <geogName corresp="ALPS">Alps</geogName>, <persName corresp="#JR">Ruskin</persName> adopted the title of <persName corresp="#SR">Rogers</persName>&#x02BC;s poem from <title type="poem" corresp="#ROGERSITALY"><hi rend="italic">Italy</hi></title>, 
+                        <title type="poem" corresp="ROGERSTHEALPS">&#x201C;The Alps&#x201D;</title>.  
+                        (For further detail about these allusions to <persName corresp="#SR">Rogers</persName>&#x02BC;s <title type="poem" corresp="ROGERSTHEALPS">&#x201C;The Alps&#x201D;</title>, 
+                        see the contextual glosses attached to <persName corresp="#JR">Ruskin</persName>&#x02BC;s <ref type="witness" target="schaffhausen_msviii.php"><title type="poem" corresp="#JRALPSFROMSSCHAFFHAUSENPOEM">&#x201C;There is a charmed peace that aye&#x201D; [&#x201C;The Alps from Schaffhausen&#x201D;]</title></ref>.)</p>
+                    <p>We do not know how <persName corresp="#JR">Ruskin</persName> would have played out the theme of first sightings of mountain country throughout this cluster&#x2014;no known draft verse or prose survives 
+                        relating to <placeName corresp="#STRASBOURG">Strasbourg</placeName>, <placeName corresp="#CONSTANCE">Constance</placeName>, <placeName corresp="#WERDENGERBERG">Werdenberg</placeName>, or <placeName corresp="#PFAFFERS">Pfaffers</placeName>&#x2014;but for the following cluster of titles listed in the <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan</title>, 
+                        a cluster detailing the experience of physically crossing the <geogName corresp="#ALPS">Alps</geogName>, he drafted poems unquestionably connected with nearly every title, and he drafted them 
+                        in the same sequence as the titles appear in the <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan</title>. 
+                        And again, to develop the trope of mountain crossing, he drew on various aspects of <persName corresp="#SR">Rogers</persName>&#x02BC;s influence:</p>
+                    
+                    <p>The draft poem connected with the first title, <title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title>, is particularly rich 
+                        with borrowings from <persName corresp="#SR">Rogers</persName>&#x02BC;s <title type="poem" corresp="ROGERSTHEALPS">&#x201C;The Alps&#x201D;</title>. In <persName corresp="#SR">Rogers</persName>&#x02BC;s poem, 
+                        following the trope which <persName corresp="#JR">Ruskin</persName> used in the previous cluster&#x2014;the first, revelatory sight of the mountains reorienting the self to a new era in the self&#x02BC;s history, 
+                        by &#x201C;look[ing] once on the <geogName corresp="#ALPS">Alps</geogName> . . . / And think[ing] on the moment thenceforward for ever&#x201D;&#x2014;the speaker 
+                        goes on to meditate on the <geogName corresp="ALPS">Alps</geogName> as a &#x201C;barrier&#x201D; determining the fate of nations rather than the self, whether of nations struggling to conquer that barrier or seeking its protection. 
+                        
+                        (see the contextual glosses for <title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title>).</p>
+                    
+                    <p>By selecting only the one historical example of <persName corresp="#HANNIBAL">Hannibal</persName>&#x02BC;s crossing for elaboration, however, from the several with which <persName corresp="#SR">Rogers</persName> crowds <title type="poem" corresp="ROGERSTHEALPS">&#x201C;The Alps&#x201D;</title>, 
+                        <persName corresp="#JR">Ruskin</persName> demonstrates a tendency to expand and attenuate what <persName corresp="#SR">Rogers</persName> presents as layers of memory and history. 
+                        On the one hand, by positioning his <persName corresp="#HANNIBAL">Hannibal</persName> poem, <title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title>, 
+                        as a fulcrum between sections about approaching the <geogName corresp="#ALPS">Alps</geogName> and sections about crossing the mountains, <persName corresp="#JR">Ruskin</persName> acknowledges <persName corresp="#SR">Rogers</persName>&#x02BC;s procedure of concentrating and multiplying perspectives. 
+                        In <persName corresp="#SR">Rogers</persName>&#x02BC;s <title type="poem" corresp="#ROGERSTHEALPS">&#x201C;The Alps&#x201D;</title>, the speaker describes multiple viewpoints, 
+                        first recalling his approach to the mountains from below, in western <placeName corresp="#SWITZERLAND">Switzerland</placeName> (<persName corresp="#SR">Rogers</persName> begins <title type="poem" corresp="#ROGERSITALY"><hi rend="italic">Italy</hi></title> in <placeName corresp="#LAKEGENEVA">Lake Geneva</placeName> and environs) 
+                        and then gazing over a wide prospect from above&#x2014;retracing the winding road that he has climbed, and anticipating the path that he will follow to descend 
+                        into <placeName corresp="#ITALY">Italy</placeName>. </p>
+                    
+                    <p>The <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan</title> does not make clear whether <persName corresp="#JR">Ruskin</persName> 
+                        meant these titles to refer to composite sections, or to individual pieces, some of which he had already composed, but we can only assume 
+                        that he intended to maintain the composite design of the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>. For this cluster of titles, 
+                        the extant individual draft pieces that, in their content, most likely correspond to the proposed composite sections include the poem, 
+                        <ref type="witness" target="oh_the_morn_looked_bright_on_hill_and_dale_poem_msviii.php"><title type="poem" corresp="JROHTHEMORNLOOKEDBRIGHT">&#x201C;Oh, the morn looked bright on hill and dale&#x201D;</title></ref>, 
+                        which <persName corresp="#WGC">Collingwood</persName> entitled <title type="poem" corresp="JROHTHEMORNLOOKEDBRIGHT">&#x201C;The Black Forest&#x201D;</title>, 
+                        and which is suggestive of the title given in the <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan</title> as 
+                        <title type="composite" corresp="#JRSWISSCOTTAGESCOMP">&#x201C;The swiss cottages&#x201D;</title>. (It was then common, if inaccurate, 
+                        to characterize <geogName corresp="#BLACKFOREST">Black Forest</geogName> peasant houses as &#x201C;Swiss&#x201D;.) This poem was drafted in <title type="manuscript" corresp="#MSVIII">MS VIII</title>, 
+                        where it is followed by a prose fragment, <ref type="witness" target="it_was_a_wide_and_stretchy_sweep_prose_msviii.php"><title type="essay" corresp="#JRITWASAWIDESTRETCHYSWEEP">&#x201C;It was a wide stretchy sweep of lovely blue champaign&#x201D;</title></ref>,
+                        which is almost certainly intended as part a composite with the poem (see the glosses attached to this essay, which the editors of the <title type="book" corresp="#JRWORKSLE">Library Edition</title>, 
+                        erroneously associated with a different poem). Two other pieces pertinent to this cluster in the <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan</title>, 
+                        which were drafted in <title type="manuscript" corresp="#MSVIII">MS VIII</title>, are the poems, 
+                        <ref type="witness" target="schaffhausen_msviii.php"><title type="poem" corresp="#JRSCHAFFHAUSENPOEM">&#x201C;Schaffhausen&#x201D;</title></ref>, 
+                        which <persName corresp="#JR">Ruskin</persName> himself entitled, although <persName corresp="#WGC">Collingwood</persName> decided to rename it 
+                        <title type="poem" corresp="#JRSCHAFFHAUSENPOEM">&#x201C;Entrance to Schaffhausen&#x201D;</title>; and 
+                        <ref type="witness" target="there_is_a_charmed_peace_that_aye_msviii.php">&#x201C;There is a charmed peace that aye&#x201D;</ref>, 
+                        which <persName corresp="#JR">Ruskin</persName> left untitled, and which <persName corresp="#WGC">Collingwood</persName> called <title type="poem" corresp="#JRALPSFROMSSCHAFFHAUSENPOEM">&#x201C;The Alps from Schaffhausen&#x201D;</title>.</p>
+                    
+                    
+                    <p>In context of <persName corresp="#JR">Ruskin</persName>&#x02BC;s <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan</title>, <title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title> 
+                        can be viewed structurally either as a pivot between the two clusters&#x2014;that on the first distant sighting of the <geogName corresp="#ALPS">Alps</geogName>, 
+                        and the cluster on crossing the mountains into <placeName corresp="#ITALY">Italy</placeName>&#x2014;or the poem can be regarded as the first piece 
+                        in the series relating the physical crossing. It should be borne in mind that <persName corresp="#JR">Ruskin</persName> composed the poem earlier than and separately from the other poems 
+                        about mountain crossing. In its original context, <title type="manuscript" corresp="#MSIAG2">MS IA, <hi rend="italic">g</hi>.2</title>, 
+                        <title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title> was situated between the prose essay, 
+                        <title type="essay" corresp="#JRCALAISPROSE">&#x201C;Calais&#x201D;</title>, and the poem, <title type="poem" corresp="#JRMILANCATHEDRAL">&#x201C;Milan Cathedral&#x201D;</title> 
+                        (see <ref type="internal" target="#COMPOSITETRAVELOGUE">The Composite&#x2010;Genre Travelogue [MS IA, <hi rend="italic">g</hi>.2]</ref>). 
+                        Here, <persName corresp="#JR">Ruskin</persName> was perhaps imitating <persName corresp="#SR">Rogers</persName>&#x02BC;s structural function of <title type="poem" corresp="#ROGERSTHEALPS">&#x201C;The Alps&#x201D;</title> as a pivotal poem, 
+                        preparing the reader for passing through the &#x201C;barrier&#x201D; of the <geogName corresp="#ALPS">Alps</geogName> between north and south, <placeName corresp="#CALAIS">Calais</placeName> and <placeName corresp="#MILAN">Milan</placeName>, by reflecting on history and spectacle&#x2014;<persName corresp="#HANNIBAL">Hannibal</persName>&#x02BC;s crossing&#x2014;just 
+                        as <persName corresp="#SR">Rogers</persName> causes the reader to trace and re&#x2013;trace ground between west and east, by reflecting on both ancient and modern history.</p>
+                    <div type="section" xml:id="PUBLICATIONEXTENSION">
+                        <head type="section">The Conjectural Extension of the Composite&#x2010;Genre Travelogue in <hi rend="italic">Poems</hi> (1891), <hi rend="italic">Works</hi> (1903), and in <hi rend="italic">Early Ruskin Manuscripts</hi></head>
+                        <p>See <ref type="internal" target="PUBLICATION1891">Publication: <hi rend="italic">Poems</hi>, ed. Collingwood (1891)</ref> and 
+                            <ref type="internal" target="PUBLICATION1903">Publication: <hi rend="italic">Works</hi>, ed. Cook and Wedderburn (1903)</ref> for these editors' respective 
+                            decisions about copytext and reconstruction of the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title> in its integrity as a connected work, 
+                            as compared with the few "fragments" published in 1834 and 1850. To summarize, <persName corresp="#WGC">Collingwood</persName> limited his edition to verse, 
+                            whereas <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn</persName> were the first to represent 
+                            the work as composite in genre, albeit curtailing reproduction of the drawings. Both editions, however, sought to complete the work beyond the version in <title type="manuscript" corresp="#MSIX">MS IX</title>, 
+                            which Ruskin abandoned in the middle of fair-copying the section on "Heidelberg". Cook and Wedderburn's reconstruction relied heavily on Collingwood's for the conjectural ordering 
+                            of the poems and essays that Ruskin left in draft, although the 1903 edition not only rejoined the poems that Collingwood had edited with their complementary prose essays, 
+                            but also rescued poems and essays about places along the tour that Collingwood had neglected altogether.</p>
+                        <p>For <persName corresp="#WGC">Collingwood</persName>, it was necessary to restore the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title> 
+                            to some degree of integrity in order to justify publishing the fragmentary work at all, given the conditions placed on his edition (probably by Ruskin himself, but Collingwood does not identify the source) 
+                            of omitting "poems and passages as were either without general interest, or incomplete and inadequately representative of the author's attainments and style 
+                            at the time" of composition. In <title type="book" corresp="JRPRAETERITA"><hi rend="italic">Praeterita</hi></title>, the author had rejected 
+                            the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title> as an &#x201C;unfinished folly&#x201D;, 
+                            which "none but friends" should ever see. Collingwood interpreted this embargo as referring, "not to the literary quality of the verse"--the first condition 
+                            for inclusion in an edition of the poetry--"but to the miscalculation and miscarriage of an ambitious project", thus stigmatizing the work on the grounds 
+                            of the second condition. In defense, Collingwood pleaded for reconstructing the work from the &#x201C;rough copies&#x201D; of poems, 
+                            which he was &#x201C;pretty certain . . . [<persName corresp="#JR">Ruskin</persName>] was not aware of&#x201D; lying &#x201C;at the back of his book&#x2010;shelves&#x201D; 
+                            (in <title type="manuscript" corresp="#MSIA">MS IA</title> and <title type="manuscript" corresp="#MSVIII">MS VIII</title>), when he passed his rash judgment on the project in the autobiography
+                            (<ref type="bibliography" target="bibliography.php#POEMS8D1891"><hi rend="italic">Poems</hi> [4<hi rend="superscript">o</hi>, 1891]</ref>; 1:???, 266; 
+                            <ref type="bibliography" target="bibliography.php#POEMS8D1891"><hi rend="italic">Poems</hi> [8<hi rend="superscript">o</hi>, 1891]</ref>, 1:xii, 267; 
+                            <ref type="bibliography" target="bibliography.php#JRWORKSLE">Ruskin, <hi rend="italic">Works</hi></ref>, 35:81). The verse framework at which
+                            <persName corresp="#WGC">Collingwood</persName> served as <persName corresp="#ETC">Cook</persName> and <persName corresp="#AW">Wedderburn</persName>&#x02BC;s 
+                            base text; and while they expanded the edited text to include prose and at least a facsimilie of one drawing along with notes describing the remaining drawings, 
+                            the later editors never fundamentally questioned Collingwood's framework or his editorial assumptions.</p>
+                        <p>As suggested in <ref type="internal" target="ROGERSINFLUENCEONEXTENSION">The Influence of <persName corresp="#SR">Rogers</persName>&#x02BC;s Poetry on <persName corresp="#JR">Ruskin</persName>&#x02BC;s Planned Extension of the Composite&#x2010;Genre Travelogue</ref>, 
+                            Collingwood's assumptions guiding his editorial approach to the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title> were more biographical 
+                            than literary, as indeed he introduced the entire edition of <hi rend="italic">Poems</hi> as revealing "the ground-plan of [Ruskin's] character,--the 
+                            bias of his mental development" (<ref type="bibliography" target="bibliography.php#POEMS8D1891"><hi rend="italic">Poems</hi> [4<hi rend="superscript">o</hi>, 1891]</ref>; 1:xx; 
+                            <ref type="bibliography" target="bibliography.php#POEMS8D1891"><hi rend="italic">Poems</hi> [8<hi rend="superscript">o</hi>, 1891]</ref>, 1:???). 
+                            He regarded the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title> 
+                            as documentary evidence for <persName corresp="#JR">Ruskin</persName>&#x02BC;s narrative about the tour in <title type="book" corresp="JRPRAETERITA"><hi rend="italic">Praeterita</hi></title>, 
+                            as he indicated adding quotations from that narrative as epigraphs to the work as a whole and to some individual poems. 
+                            Collingwood did not complete the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title>, as he knew to be impossible. 
+                            He was acquainted with the <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php"><title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan for Continuation</title></ref> 
+                            that <persName corresp="#JR">Ruskin</persName> compiled on the back endpapers of MS VIII--"I find from a list at the end of No. VIII" that Ruskin "intended this volume 
+                            to contain about 150 pieces of prose and poetry, and at least as many drawings!--but he was concerned only to use the draft poems to bring the reader to closure 
+                            as a record of the tour, with Ruskin's impressions of Chamounix. He did not treat the <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan for Continuation</title> 
+                            as an authoritative constraint on how he arranged and even entitled the draft poems that he used to round out the work.</p>
+                        
+                        <p>Clearly, Collingwood did not consider himself bound by titles in the <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan</title> 
+                            for pieces that <persName corresp="#JR">Ruskin</persName> did not fair-copy, even though a case could be made that corresponding draft, titled and untitled, 
+                            could be identified. Collingwood instead invented titles that more effectively  Of course, one can argue that literary features 
+                            of the "Account" influenced the narrative in Praeterita, but Collingwood stated that the latter possessed "a power of recollective imagination resembling Turner," 
+                            while the use of the former was to document that "the account of the tour of Praeterita [is not] quite accurate," because, for example, "the travellers 
+                            went to the west of Switzerland and the Oberland after being in Italy" 
+                            (<ref type="bibliography" target="bibliography.php#POEMS8D1891"><hi rend="italic">Poems</hi> [4<hi rend="superscript">o</hi>, 1891]</ref>; 1:283, 280; 
+                            <ref type="bibliography" target="bibliography.php#POEMS8D1891"><hi rend="italic">Poems</hi> [8<hi rend="superscript">o</hi>, 1891]</ref>, 1:285, 282).If one views the <title type="composite" corresp="#JRACCOUNTTOUR">&#x201C;Account&#x201D;</title> simply as a topographical record, Collingwood deserves flexibility 
+                            in his retitling of the draft poems, since their content can be associated with various titles in the <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan</title>. 
+                            Lines in <title type="poem" corresp="#JRALPSFROMSSCHAFFHAUSENPOEM">&#x201C;There is a charmed peace that aye&#x201D; [&#x201C;The Alps from Schaffhausen&#x201D;]</title>
+                            connect with three titles in <persName corresp="#JR">Ruskin</persName>&#x02BC;s list: <title type="composite" corresp="#JRSCHAFFHAUSENCOMP">&#x201C;Schaffhausen&#x201D;</title>, 
+                            <title type="composite" corresp="#JRTHEALPSCOMP">&#x201C;The Alps&#x201D;</title>, and <title type="composite" corresp="#JRFALLOFTHERHINECOMP">&#x201C;The Fall of the Rhine&#x201D;</title> 
+                            (see the textual and contextual glosses to these poems). But the more significant connection between this draft poem and the titles in the list is the clue 
+                            that the poem provides to the <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan for Continuation of the &#x201C;Account&#x201D;</title> 
+                            as a literary design, and not just a sequential list of places visited during the tour. </p>
+                        <p>Collingwood, intent on presenting the "Account" more as a record of the 1833 tour than as Ruskin's literary and artistic apprenticeship (or, perhaps better said, 
+                            assuming those two purposes to be identical), omitted the tale of Gough and his dog from "The Summit," presumably because he was offended by the intrusion of a Lake District 
+                            story into an account of a Continental tour. On the same principle of treating the "Account" as a diary rather than as a literary construction, 
+                            he misplaced <title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title>, relegating it to the end of the sequence--between 
+                            the poems about Italy and those about the finale of the tour, Chamounix in Switzerland--rather 
+                            than where Ruskin's <title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">Plan for Continuation of the Account</title> explicitly 
+                            situates the poem, as a preface to the series about crossing the Alps at Splugen. Collingwood's logic is clear enough: <persName corresp="#HANNIBAL">Hannibal</persName> 
+                            descended on Italy through the western Alpine approach, the <geogName corresp="#SIMPLON">Simplon</geogName>, not the northern; however, such geographical and historical literalism misses the point of Ruskin's engagement 
+                            with writers and artists in the "Account." Arguably, in situating <title type="poem" corresp="#JRPASSINGTHEALPSPOEM">&#x201C;Passing the Alps&#x201D;</title> as an introduction 
+                            to Chamounix, Collingwood fulfilled Ruskin's idea, apparent in the Plan, to complement the series about crossing the Alps from the north with a reverse poetic series 
+                            describing the crossing from the east in Italy:</p>
+                        <p>Given Collingwood's indifference to the Plan, however, he evidence suggests that his approximation of Ruskins' intention was a happy accident.</p>
+                        <p> 
+                            
+                            in the <placeName type="building" corresp="#LIEBFRAUENKIRCHEKOBLENZ">Liebfrauenkirche</placeName> towers in the distance: the matching scalloped trim and onion domes on the turrets in the foreground, 
+                            as my colleague <persName corresp="#INERO">Irene Nero</persName> suggests, may indicate a monastic complex in the neighborhood of the mother church. Also, nearby and to the right, 
+                            outside of <persName corresp="#SP">Prout</persName>&#x02BC;s frame, stood&#x2014;and still stands&#x2014;the <placeName type="building" corresp="#ALTEBURG">Alte Burg (Old Castle)</placeName>, founded in the <date notBefore="1201" notAfter="1300">thirteenth century</date>. 
+                            The castle connects to the <placeName type="building" corresp="#BALDWINBRIDGE">Balduinbr&#x00FC;cke (Baldwin Bridge)</placeName>, which spans the <geogName corresp="#MOSELLE">Moselle</geogName>. 
+                            In a lithograph published in <date when="1839">1839</date>, <title type="artwork" corresp="#BUTLERCOBLENZ"><hi rend="italic">Moselle Bridge, Coblenz</hi></title>, 
+                            the most prominent landmarks are formed by the castle and bridge, with the <placeName type="building" corresp="#LIEBFRAUENKIRCHEKOBLENZ">Liebfrauenkirche</placeName> towers to the left&#x2014;and 
+                            at a right angle to the river, as in <persName corresp="#SP">Prout</persName>&#x02BC;s image 
+                            (<ref type="bibliography" target="bibliography.php#SNOWERHINE"><persName corresp="#JSNOWE">Snowe</persName>, <title type="book" corresp="#SNOWERHINE"><hi rend="italic">The Rhine</hi></title></ref>, vol. 2, pagination varies; 
+                            image drawn by <persName corresp="#ABUTLER">A. Butler</persName>, and printed by the lithographer, <persName corresp="#CCHABOT">Charles Chabot</persName>).</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

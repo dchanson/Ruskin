@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="lille_prose_witness">
+            <titleStmt>
+                <title type="main">"Lille Prose"</title>
+                <title type="sub">Electronic Text Generated from the Printed Witness in <hi rend="italic">Title of Printed Work</hi> (Date)</title>
+                <!--The xml:ids for author and editor below should include the first, middle, and last initials of the author and the editor, respectively.-->
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#">E. T. Cook and Alexander Wedderburn</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#KBV">Kyle B. Volkmann</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <respStmt>
+                    <persName corresp="#KBT">Katrina B. Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <!--Example entries have been provided for The Poems of John Ruskin (1891). Actual entries may vary.-->
+                        <editor>
+                            <persName>E. T. Cook and Alexander Wedderburn</persName>
+                        </editor>
+                        <title type="main">The Works of John Ruskin</title>
+                        <imprint>
+                            <biblScope type="vol">2</biblScope>
+                            <biblScope type="edition">Library<hi rend="superscript"></hi></biblScope>
+                            <pubPlace>London</pubPlace>
+                            <publisher>George Allen</publisher>
+                            <date when="1903">1903</date>
+                            <biblScope type="pages">xxiii<!--I don't know what goes here?--></biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+          <div type="prose">        
+                <head type="Title"><placeName corresp="#LILLE">Lille</placeName> Prose
+                <name><persName corresp="#JR">by John Ruskin</persName></name></head>
+              
+              <p><emph>Passeport, monsieur, s&#x02BC;il vous plait.</emph>. I hate fortified towns, in general, 
+                  that is.&#x2014;Their houses are like barracks, their public buildings like prisons, 
+                  their population like so many rats in a rat trap; they are arduous to get 
+                  in (<emph>sic</emph>), difficult to get out, and disagreeable to remain in. To all this, how&#x2010; 
+                  ever, <placeName corresp="#LILLE">Lille</placeName> is an exception, except in one circumstance&#x2014;its difficulty of access. 
+                  We were detained after a long day&#x02BC;s journey under a burning sun, hot, 
+                  hungry, and stupid, while our passport was examined. Slowly the sentinel 
+                  unfolded the paper, spelled over its contents with tiresome coolness and 
+                  provoking minuteness, slowly returned it, and then came&#x2014;<emph>Passez</emph>. And 
+                  pass we did right gladly. <placeName corresp="#LILLE">Lille</placeName> is a beautiful, a most beautiful town. I 
+                  have seen none equal to it, for grandeur of efiect, for the massive magni&#x2010; 
+                  ficence of its edifices, for the palace like nobility of its streets, except 
+                  <placeName corresp="#GENOA">Genoa</placeName>. The day also on which we entered it was almost Italian, the sky 
+                  was of such a deep and unbroken blue, and a stream of rich, glowing, 
+                  tawny light shot upon the full fretwork and elaborate carving of the upper 
+                  parts of the houses; but their bases, owing to the narrowness of the 
+                  streets and the enormous height of the opposing buildings, were wrapt in 
+                  shade, deep, gloomily deep, when contrasted with the flood of sunshine 
+                  that glanced on the gable roofs, and almost gave to life<hi rend="superscript">3</hi> the many statues 
+                  of the Virgin, that stood beneath their Gothic niches, really very respect&#x2010; 
+                  ably sculptured, at every angle of the streets.</p> 
+              
+              <p><hi rend="superscript">3</hi> [So in the MS., for &#x201C;gave life to.&#x201D;]</p>
+            </div>
+        </body>
+    </text>
+</TEI>
