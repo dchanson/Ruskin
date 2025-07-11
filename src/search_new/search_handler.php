@@ -18,20 +18,22 @@ $client = ClientBuilder::create()
 
 $index = 'ruskin_works';
 $query = $_GET['q'] ?? '';
-$filter = $_GET['filter'] ?? 'all';
-
-$fieldMap = [
-    'all' => ['title^3', 'content'],
-    'title' => ['title^5'],
-    'content' => ['content'],
-    'persName' => ['persNames'],
-    'place' => ['placeNames']
-
-];
-
-$fields = $fieldMap[$filter] ?? ['title', 'content'];
+$typeFilter = $_GET['typeFilter'] ?? '';
 $persName = $_GET['persName'] ?? '';
 $placeName = $_GET['placeName'] ?? '';
+$geogName = $_GET['geogName'] ?? '';
+$orgName = $_GET['orgName'] ?? '';
+$nameType = $_GET['nameType'] ?? '';
+$nameValue = $_GET['nameValue'] ?? '';
+$persNameType = $_GET['persNameType'] ?? '';
+$placeNameType = $_GET['placeNameType'] ?? '';
+$geogNameType = $_GET['geogNameType'] ?? '';
+$orgNameType = $_GET['orgNameType'] ?? '';
+
+
+$page = max(1, intval($_GET['page'] ?? 1));
+$perPage = max(1, min(50, intval($_GET['per_page'] ?? 10)));
+$from = ($page - 1) * $perPage;
 
 $must = [];
 
@@ -39,8 +41,8 @@ if (!empty($query)) {
     $must[] = [
         'multi_match' => [
             'query' => $query,
-            'fields' => $fields,
-            'type' => $filter === 'title' ? 'phrase' : 'most_fields',
+            'fields' => ['title^3', 'content'],
+            'type' => 'most_fields',
             'operator' => 'and'
         ]
     ];
@@ -48,23 +50,98 @@ if (!empty($query)) {
 
 if (!empty($persName)) {
     $must[] = [
-'match_phrase' => [
-  'persNames' => $persName
-]
-
+        'match_phrase' => [
+            'persNames' => $persName
+        ]
     ];
+    if (!empty($persNameType) && $persNameType !== 'all') {
+        $must[] = [
+            'term' => ['persNameTypes' => $persNameType]
+        ];
+    }
 }
 
 if (!empty($placeName)) {
     $must[] = [
-'match_phrase' => [
-  'placeNames' => $placeName
-]
-
+        'match_phrase' => [
+            'placeNames' => $placeName
+        ]
     ];
+    if (!empty($placeNameType) && $placeNameType !== 'all') {
+        $must[] = [
+            'term' => ['placeNameTypes' => $placeNameType]
+        ];
+    }
 }
 
-// If no fields were entered, return early
+if (!empty($geogName)) {
+    $must[] = [
+        'match_phrase' => [
+            'geogNames' => $geogName
+        ]
+    ];
+    if (!empty($geogNameType) && $geogNameType !== 'all') {
+        $must[] = [
+            'term' => ['geogNameTypes' => $geogNameType]
+        ];
+    }
+}
+
+if (!empty($orgName)) {
+    $must[] = [
+        'match_phrase' => [
+            'orgNames' => $orgName
+        ]
+    ];
+    if (!empty($orgNameType) && $orgNameType !== 'all') {
+        $must[] = [
+            'term' => ['orgNameTypes' => $orgNameType]
+        ];
+    }
+}
+
+if (!empty($nameValue)) {
+    $must[] = [
+        'match_phrase' => [
+            'names' => $nameValue
+        ]
+    ];
+    if (!empty($nameType) && $nameType !== 'all') {
+        $must[] = [
+            'term' => ['nameTypes' => strtolower($nameType)]
+        ];
+    }
+}
+
+
+if (!empty($typeFilter)) {
+    $parts = explode(':', $typeFilter);
+    $mainType = $parts[0] ?? '';
+    $subType = $parts[1] ?? '';
+
+    $directoryMap = [
+        'apparatus' => 'apparatuses',
+        'figures' => 'figures',
+        'glosses' => 'glosses',
+        'letters' => 'letters',
+        'notes' => 'notes',
+        'witness' => 'witnesses',
+    ];
+
+    // Check if the mainType maps to a directory filter
+    if (isset($directoryMap[$mainType])) {
+        $must[] = ['term' => ['directory' => $directoryMap[$mainType]]];
+    }
+    // Handle specific type/subtype filters (like "witness:poem", "apparatus:work")
+    else if (!empty($mainType)) {
+        $must[] = ['term' => ['type' => $mainType]];
+    }
+
+    if (!empty($subType)) {
+        $must[] = ['term' => ['subtype' => $subType]];
+    }
+}
+
 if (empty($must)) {
     echo json_encode([]);
     exit;
@@ -84,11 +161,9 @@ $body = [
                 ['filter' => ['term' => ['directory' => 'notes']], 'weight' => 2],
                 ['filter' => ['term' => ['directory' => 'glosses']], 'weight' => 1],
                 ['filter' => ['term' => ['directory' => 'figures']], 'weight' => 1]
-
             ],
             'score_mode' => 'sum',
-            'boost_mode' => 'multiply',
-            'min_score' => 0.1
+            'boost_mode' => 'multiply'
         ]
     ],
     'highlight' => [
@@ -99,11 +174,15 @@ $body = [
             'content' => ['fragment_size' => 150, 'number_of_fragments' => 1],
             'persNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
             'placeNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+            'orgNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+            'geogNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+            'names' => ['fragment_size' => 150, 'number_of_fragments' => 1],
         ]
     ],
-    'size' => 50
+    'from' => $from,
+    'size' => $perPage,
+    'track_total_hits' => true
 ];
-
 
 try {
     $response = $client->search([
@@ -118,7 +197,6 @@ try {
     foreach ($response['hits']['hits'] as $hit) {
         $source = $hit['_source'];
         $filename = $source['filename'] ?? '';
-
         $relativePath = $source['relative_path'] ?? '';
         $title = trim($source['title'] ?? '');
 
@@ -127,7 +205,6 @@ try {
         $pathKey = strtolower($relativePath);
         $titleKey = strtolower($title);
 
-        //  Deduplicate
         if (in_array($pathKey, $seenPaths) || in_array($titleKey, $seenTitles)) {
             continue;
         }
@@ -135,16 +212,15 @@ try {
         $seenPaths[] = $pathKey;
         $seenTitles[] = $titleKey;
 
-        // Highlight or fallback
         $snippet = '';
         if (isset($hit['highlight'])) {
             $highlighted = reset($hit['highlight']);
             $snippet = $highlighted[0];
         } else {
-            $snippet = $filter === 'title' ? $title : (mb_substr(strip_tags($source['content'] ?? ''), 0, 200) . '...');
+            $snippet = mb_substr(strip_tags($source['content'] ?? ''), 0, 200) . '...';
         }
 
-        //  Normalize path
+
         $relativeCleanPath = preg_replace('#^(gen/_xml/|_Completed/|_In_Process/)?#', '', $relativePath);
         $relativeCleanPath = preg_replace('/\.xml$/', '', $relativeCleanPath);
         $link = '/' . $relativeCleanPath;
@@ -157,7 +233,26 @@ try {
         ];
     }
 
-    echo json_encode($results);
+    $totalResults = $response['hits']['total']['value'];
+    $totalPages = ceil($totalResults / $perPage);
+
+    if (isset($_GET['page']) || isset($_GET['per_page'])) {
+        echo json_encode([
+            'results' => $results,
+            'pagination' => [
+                'current_page' => $page,
+                'per_page' => $perPage,
+                'total_results' => $totalResults,
+                'total_pages' => $totalPages,
+                'has_previous' => $page > 1,
+                'has_next' => $page < $totalPages,
+                'from' => $from + 1,
+                'to' => min($from + $perPage, $totalResults)
+            ]
+        ]);
+    } else {
+        echo json_encode($results);
+    }
 } catch (Exception $e) {
     echo json_encode(['error' => $e->getMessage()]);
 }
