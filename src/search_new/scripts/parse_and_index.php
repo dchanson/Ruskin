@@ -1,5 +1,6 @@
 <?php
 require __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/unicode_normalizer.php';
 
 putenv('ELASTIC_USE_GUZZLE=true');
 
@@ -97,6 +98,9 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME)
 
     $bodyNode = $xpath->query('//tei:body')->item(0);
     $content = $bodyNode ? trim($bodyNode->textContent) : "";
+
+    $title = normalize_unicode_to_ascii($title);
+    $content = normalize_unicode_to_ascii($content);
 
     $firstDiv = $bodyNode ? $xpath->query('.//tei:div', $bodyNode)->item(0) : null;
 
