@@ -1,22 +1,12 @@
 <?php
 require __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/elastic_config.php';
 require_once __DIR__ . '/unicode_normalizer.php';
 
 putenv('ELASTIC_USE_GUZZLE=true');
 
-use Elastic\Elasticsearch\ClientBuilder;
-
 $INDEX_NAME = 'ruskin_works';
 $DATA_DIR = dirname(__DIR__, 3) . '/_xml/_Completed';
-
-$client = ClientBuilder::create()
-    ->setHosts(['localhost:9200'])
-    ->setHttpClientOptions([
-        'headers' => [
-            'Accept' => 'application/vnd.elasticsearch+json; compatible-with=8'
-        ]
-    ])
-    ->build();
 
 function init_index($client, $INDEX_NAME)
 {

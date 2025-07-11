@@ -1,6 +1,7 @@
 <?php
 header('Content-Type: application/json');
 require __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/scripts/elastic_config.php';
 
 use Elastic\Elasticsearch\ClientBuilder;
 
