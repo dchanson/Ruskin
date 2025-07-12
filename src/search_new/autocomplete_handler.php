@@ -3,17 +3,6 @@ header('Content-Type: application/json');
 require __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/scripts/elastic_config.php';
 
-use Elastic\Elasticsearch\ClientBuilder;
-
-$client = ClientBuilder::create()
-    ->setHosts(['localhost:9200'])
-    ->setHttpClientOptions([
-        'headers' => [
-            'Accept' => 'application/vnd.elasticsearch+json; compatible-with=8'
-        ]
-    ])
-    ->build();
-
 $index = 'ruskin_works';
 $term = $_GET['term'] ?? '';
 $type = preg_replace('/[^a-zA-Z0-9_]/', '', ($_GET['type'] ?? 'names'));
