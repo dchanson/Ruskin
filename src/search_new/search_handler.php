@@ -4,17 +4,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 require __DIR__ . '/../vendor/autoload.php';
-
-use Elastic\Elasticsearch\ClientBuilder;
-
-$client = ClientBuilder::create()
-    ->setHosts(['localhost:9200'])
-    ->setHttpClientOptions([
-        'headers' => [
-            'Accept' => 'application/vnd.elasticsearch+json; compatible-with=8'
-        ]
-    ])
-    ->build();
+require_once __DIR__ . '/scripts/elastic_config.php';
 
 $index = 'ruskin_works';
 $query = $_GET['q'] ?? '';
