@@ -298,6 +298,14 @@ $r_config = array(
 
 # Elasticsearch Setup (with Docker)
 
+### Create a .env file:
+
+Use the following terminal command to create a `.env` file. Once created open the file and enter the given credentials for elastic containers.
+
+```sh
+echo -e "ES_USER=\nES_PASS=" > .env
+```
+
 ### Start Elasticsearch Locally:
 
 ```sh
@@ -306,8 +314,10 @@ docker-comopose up -d
 
 ### Confirm It’s Running:
 
+Replace the username and password with the given credentials.
+
 ```sh
-curl http://localhost:9200
+curl -u username:password http://localhost:9200
 ```
 
 Should return cluster info JSON and a line that says "You know, for search".
@@ -320,8 +330,10 @@ docker-compose down
 
 ### For debugging: Delete all records form the container
 
+Enter the given username and password in the said fields.
+
 ```sh
-curl -X DELETE "localhost:9200/ruskin_works"
+curl -u username:password -X DELETE "http://localhost:9200/ruskin_works"
 ```
 
 ---

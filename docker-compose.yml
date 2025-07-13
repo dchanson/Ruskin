@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.11.3
@@ -11,8 +9,8 @@ services:
       - xpack.security.http.ssl.enabled=false
       - bootstrap.memory_lock=true
       - ES_JAVA_OPTS=-Xms1g -Xmx1g
-      - ELASTIC_USERNAME=${ELASTIC_USERNAME}
-      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - ELASTIC_USERNAME=${ES_USER}
+      - ELASTIC_PASSWORD=${ES_PASS}
     ports:
       - '9200:9200'
       - '9300:9300'
