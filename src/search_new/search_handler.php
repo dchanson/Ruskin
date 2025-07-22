@@ -13,13 +13,14 @@ $persName = $_GET['persName'] ?? '';
 $placeName = $_GET['placeName'] ?? '';
 $geogName = $_GET['geogName'] ?? '';
 $orgName = $_GET['orgName'] ?? '';
+$bodyTitle = $_GET['bodyTitle'] ?? '';
 $nameType = $_GET['nameType'] ?? '';
 $nameValue = $_GET['nameValue'] ?? '';
 $persNameType = $_GET['persNameType'] ?? '';
 $placeNameType = $_GET['placeNameType'] ?? '';
 $geogNameType = $_GET['geogNameType'] ?? '';
 $orgNameType = $_GET['orgNameType'] ?? '';
-
+$bodyTitleType = $_GET['bodyTitleType'] ?? '';
 
 $page = max(1, intval($_GET['page'] ?? 1));
 $perPage = max(1, min(50, intval($_GET['per_page'] ?? 10)));
@@ -45,8 +46,44 @@ if (!empty($persName)) {
         ]
     ];
     if (!empty($persNameType) && $persNameType !== 'all') {
+        if ($bodyTitleType === 'other') {
+            $knownTypes = [
+                'book',
+                'manuscript',
+                'poem',
+                'essay',
+                'artwork',
+                'composite',
+                'lesson',
+                'bibliography_text',
+                'letter',
+                'anthology',
+                'archive'
+            ];
+            $must[] = [
+                'bool' => [
+                    'must_not' => [
+                        ['terms' => ['bodyTitleTypes' => array_map('strtolower', $knownTypes)]]
+                    ]
+                ]
+            ];
+        } else {
+            $must[] = [
+                'term' => ['persNameTypes' => strtolower($persNameType)]
+            ];
+        }
+    }
+}
+
+if (!empty($bodyTitle)) {
+    $must[] = [
+        'match_phrase' => [
+            'bodyTitles' => $bodyTitle
+        ]
+    ];
+    if (!empty($bodyTitleType) && $bodyTitleType !== 'all') {
         $must[] = [
-            'term' => ['persNameTypes' => $persNameType]
+            'term' => ['bodyTitleTypes' => strtolower($bodyTitleType)]
         ];
     }
 }
@@ -102,7 +139,6 @@ if (!empty($nameValue)) {
         ];
     }
 }
-
 
 if (!empty($typeFilter)) {
     $parts = explode(':', $typeFilter);
@@ -167,6 +203,7 @@ $body = [
             'orgNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
             'geogNames' => ['fragment_size' => 150, 'number_of_fragments' => 1],
             'names' => ['fragment_size' => 150, 'number_of_fragments' => 1],
+            'bodyTitles' => ['fragment_size' => 150, 'number_of_fragments' => 1]
         ]
     ],
     'from' => $from,
