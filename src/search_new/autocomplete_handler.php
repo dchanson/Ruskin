@@ -12,7 +12,8 @@ $fieldMap = [
     'place'  => 'placeNames_suggest',
     'geog'   => 'geogNames_suggest',
     'org'    => 'orgNames_suggest',
-    'names'  => 'names_suggest'
+    'names'  => 'names_suggest',
+    'title' => 'bodyTitles_suggest'
 ];
 
 if (!isset($fieldMap[$type])) {

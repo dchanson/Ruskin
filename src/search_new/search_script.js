@@ -144,6 +144,29 @@ function addField() {
             <option value="other">Other</option>
           `;
       break;
+    case 'title':
+      inputId = `bodyTitle_${fieldCounter}`;
+      typeId = `bodyTitleType_${fieldCounter}`;
+      inputName = 'bodyTitle';
+      typeName = 'bodyTitleType';
+      label = 'Title';
+      placeholder = 'e.g. The Stones of Venice';
+      typeOptions = `
+            <option value="all">All</option>
+            <option value="book">Book</option>
+            <option value="manuscript">Manuscript</option>
+            <option value="poem">Poem</option>
+            <option value="essay">Essay</option>
+            <option value="artwork">ArtWork</option>
+            <option value="composite">Composite</option>
+            <option value="lesson">Lesson</option>
+            <option value="bibliography_text">Bibliography text</option>
+            <option value="letter">Letter</option>
+            <option value="anthology">Anthology</option>
+            <option value="archive">Archive</option>
+            <option value="other">Other</option>
+            `;
+      break;
   }
 
   fieldHTML = `
@@ -170,14 +193,16 @@ function addField() {
     fieldType === 'name'
       ? 'name'
       : fieldType === 'person'
-        ? 'person'
-        : fieldType === 'place'
-          ? 'place'
-          : fieldType === 'geog'
-            ? 'geog'
-            : fieldType === 'org'
-              ? 'org'
-              : 'name';
+      ? 'person'
+      : fieldType === 'place'
+      ? 'place'
+      : fieldType === 'geog'
+      ? 'geog'
+      : fieldType === 'title'
+      ? 'title'
+      : fieldType === 'org'
+      ? 'org'
+      : 'name';
 
   setTimeout(() => {
     attachSuggest(inputId, autocompleteType);
@@ -246,7 +271,9 @@ function displayPaginatedResults(data) {
   order.forEach((dir) => {
     if (grouped[dir]) {
       const section = document.createElement('div');
-      section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${dir.charAt(0).toUpperCase() + dir.slice(1)}</h2>`;
+      section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${
+        dir.charAt(0).toUpperCase() + dir.slice(1)
+      }</h2>`;
 
       grouped[dir].forEach((item) => {
         const result = document.createElement('div');
@@ -285,7 +312,9 @@ function displayLegacyResults(results) {
   order.forEach((dir) => {
     if (grouped[dir]) {
       const section = document.createElement('div');
-      section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${dir.charAt(0).toUpperCase() + dir.slice(1)}</h2>`;
+      section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${
+        dir.charAt(0).toUpperCase() + dir.slice(1)
+      }</h2>`;
 
       grouped[dir].forEach((item) => {
         const result = document.createElement('div');
@@ -390,6 +419,9 @@ document.getElementById('searchForm').addEventListener('submit', async function 
   const names = Array.from(form.querySelectorAll('input[name="name"]'))
     .map((input) => input.value.trim())
     .filter((val) => val);
+  const bodyTitles = Array.from(form.querySelectorAll('input[name="bodyTitle"]'))
+    .map((input) => input.value.trim())
+    .filter((val) => val);
 
   if (
     !q &&
@@ -397,7 +429,8 @@ document.getElementById('searchForm').addEventListener('submit', async function 
     placeNames.length === 0 &&
     geogNames.length === 0 &&
     orgNames.length === 0 &&
-    names.length === 0
+    names.length === 0 &&
+    bodyTitles.length === 0
   ) {
     alert('Please enter a keyword to search.');
     return;
@@ -444,6 +477,14 @@ document.getElementById('searchForm').addEventListener('submit', async function 
     const nameType = form.querySelector('select[name="nameType"]')?.value;
     if (nameType && nameType !== 'all') {
       params.append('nameType', nameType);
+    }
+  }
+
+  if (bodyTitles.length > 0) {
+    params.append('bodyTitle', bodyTitles[0]);
+    const bodyTitleType = form.querySelector('select[name="bodyTitleType"]')?.value;
+    if (bodyTitleType && bodyTitleType !== 'all') {
+      params.append('bodyTitleType', bodyTitleType);
     }
   }
 
@@ -546,5 +587,5 @@ function attachSuggest(inputId, type) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  attachSuggest('persName_1', 'person');
+  attachSuggest('bodyTitle_1', 'title');
 });
