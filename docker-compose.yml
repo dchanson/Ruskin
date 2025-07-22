@@ -1,16 +1,17 @@
 services:
-  elasticsearch:
+  elasticsearch-node1:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.11.3
-    container_name: elasticsearch
+    container_name: elasticsearch-node1
     environment:
-      - discovery.type=single-node
-      - xpack.security.enabled=true
-      - xpack.security.transport.ssl.enabled=false
-      - xpack.security.http.ssl.enabled=false
+      - node.name=elasticsearch-node1
+      - cluster.name=my-elastic-cluster
+      - discovery.seed_hosts=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
+      - cluster.initial_master_nodes=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
       - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+      - xpack.security.enrollment.enabled=false
       - ES_JAVA_OPTS=-Xms1g -Xmx1g
-      - ELASTIC_USERNAME=${ES_USER}
-      - ELASTIC_PASSWORD=${ES_PASS}
     ports:
       - '9200:9200'
       - '9300:9300'
@@ -19,7 +20,55 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - esdata:/usr/share/elasticsearch/data
+      - esdata1:/usr/share/elasticsearch/data
+    networks:
+      - elastic
+
+  elasticsearch-node2:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.3
+    container_name: elasticsearch-node2
+    environment:
+      - node.name=elasticsearch-node2
+      - cluster.name=my-elastic-cluster
+      - discovery.seed_hosts=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
+      - cluster.initial_master_nodes=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ports:
+      - '9201:9200'
+      - '9301:9300'
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - esdata2:/usr/share/elasticsearch/data
+    networks:
+      - elastic
+
+  elasticsearch-node3:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.3
+    container_name: elasticsearch-node3
+    environment:
+      - node.name=elasticsearch-node3
+      - cluster.name=my-elastic-cluster
+      - discovery.seed_hosts=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
+      - cluster.initial_master_nodes=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ports:
+      - '9202:9200'
+      - '9302:9300'
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - esdata3:/usr/share/elasticsearch/data
+    networks:
+      - elastic
 
   kibana:
     image: docker.elastic.co/kibana/kibana:8.11.3
@@ -27,9 +76,19 @@ services:
     ports:
       - '5601:5601'
     environment:
-      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - ELASTICSEARCH_HOSTS=["http://elasticsearch-node1:9200","http://elasticsearch-node2:9200","http://elasticsearch-node3:9200"]
     depends_on:
-      - elasticsearch
+      - elasticsearch-node1
+      - elasticsearch-node2
+      - elasticsearch-node3
+    networks:
+      - elastic
 
 volumes:
-  esdata:
+  esdata1:
+  esdata2:
+  esdata3:
+
+networks:
+  elastic:
+    driver: bridge
