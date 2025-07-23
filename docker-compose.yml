@@ -1,15 +1,25 @@
 services:
-  elasticsearch-node1:
+  es01:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.11.3
-    container_name: elasticsearch-node1
+    container_name: es01
     environment:
-      - node.name=elasticsearch-node1
+      - node.name=es01
       - cluster.name=my-elastic-cluster
-      - discovery.seed_hosts=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
-      - cluster.initial_master_nodes=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
+      - discovery.seed_hosts=es01,es02,es03
+      - cluster.initial_master_nodes=es01,es02,es03
       - bootstrap.memory_lock=true
-      - xpack.security.enabled=false
-      - xpack.security.http.ssl.enabled=false
+      - xpack.security.enabled=true
+      - ELASTIC_USERNAME=${ES_USER}
+      - ELASTIC_PASSWORD=${ES_PASS}
+      - xpack.security.transport.ssl.enabled=true
+      - xpack.security.transport.ssl.verification_mode=certificate
+      - xpack.security.transport.ssl.key=/usr/share/elasticsearch/config/certs/es01/es01.key
+      - xpack.security.transport.ssl.certificate=/usr/share/elasticsearch/config/certs/es01/es01.crt
+      - xpack.security.transport.ssl.certificate_authorities=/usr/share/elasticsearch/config/certs/ca/ca.crt
+      - xpack.security.http.ssl.key=/usr/share/elasticsearch/config/certs/es01/es01.key
+      - xpack.security.http.ssl.certificate=/usr/share/elasticsearch/config/certs/es01/es01.crt
+      - xpack.security.http.ssl.certificate_authorities=["/usr/share/elasticsearch/config/certs/ca/ca.crt"]
+      - xpack.security.http.ssl.enabled=true
       - xpack.security.enrollment.enabled=false
       - ES_JAVA_OPTS=-Xms1g -Xmx1g
     ports:
@@ -21,19 +31,31 @@ services:
         hard: -1
     volumes:
       - esdata1:/usr/share/elasticsearch/data
+      - ./elastic/certs:/usr/share/elasticsearch/config/certs
     networks:
       - elastic
 
-  elasticsearch-node2:
+  es02:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.11.3
-    container_name: elasticsearch-node2
+    container_name: es02
     environment:
-      - node.name=elasticsearch-node2
+      - node.name=es02
       - cluster.name=my-elastic-cluster
-      - discovery.seed_hosts=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
-      - cluster.initial_master_nodes=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
+      - discovery.seed_hosts=es01,es02,es03
+      - cluster.initial_master_nodes=es01,es02,es03
       - bootstrap.memory_lock=true
-      - xpack.security.enabled=false
+      - xpack.security.enabled=true
+      - ELASTIC_USERNAME=${ES_USER}
+      - ELASTIC_PASSWORD=${ES_PASS}
+      - xpack.security.transport.ssl.enabled=true
+      - xpack.security.transport.ssl.verification_mode=certificate
+      - xpack.security.transport.ssl.key=/usr/share/elasticsearch/config/certs/es02/es02.key
+      - xpack.security.transport.ssl.certificate=/usr/share/elasticsearch/config/certs/es02/es02.crt
+      - xpack.security.transport.ssl.certificate_authorities=/usr/share/elasticsearch/config/certs/ca/ca.crt
+      - xpack.security.http.ssl.key=/usr/share/elasticsearch/config/certs/es02/es02.key
+      - xpack.security.http.ssl.certificate=/usr/share/elasticsearch/config/certs/es02/es02.crt
+      - xpack.security.http.ssl.certificate_authorities=["/usr/share/elasticsearch/config/certs/ca/ca.crt"]
+      - xpack.security.http.ssl.enabled=true
       - ES_JAVA_OPTS=-Xms1g -Xmx1g
     ports:
       - '9201:9200'
@@ -44,19 +66,31 @@ services:
         hard: -1
     volumes:
       - esdata2:/usr/share/elasticsearch/data
+      - ./elastic/certs:/usr/share/elasticsearch/config/certs
     networks:
       - elastic
 
-  elasticsearch-node3:
+  es03:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.11.3
-    container_name: elasticsearch-node3
+    container_name: es03
     environment:
-      - node.name=elasticsearch-node3
+      - node.name=es03
       - cluster.name=my-elastic-cluster
-      - discovery.seed_hosts=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
-      - cluster.initial_master_nodes=elasticsearch-node1,elasticsearch-node2,elasticsearch-node3
+      - discovery.seed_hosts=es01,es02,es03
+      - cluster.initial_master_nodes=es01,es02,es03
       - bootstrap.memory_lock=true
-      - xpack.security.enabled=false
+      - xpack.security.enabled=true
+      - ELASTIC_USERNAME=${ES_USER}
+      - ELASTIC_PASSWORD=${ES_PASS}
+      - xpack.security.transport.ssl.enabled=true
+      - xpack.security.transport.ssl.verification_mode=certificate
+      - xpack.security.transport.ssl.key=/usr/share/elasticsearch/config/certs/es03/es03.key
+      - xpack.security.transport.ssl.certificate=/usr/share/elasticsearch/config/certs/es03/es03.crt
+      - xpack.security.transport.ssl.certificate_authorities=/usr/share/elasticsearch/config/certs/ca/ca.crt
+      - xpack.security.http.ssl.key=/usr/share/elasticsearch/config/certs/es03/es03.key
+      - xpack.security.http.ssl.certificate=/usr/share/elasticsearch/config/certs/es03/es03.crt
+      - xpack.security.http.ssl.certificate_authorities=["/usr/share/elasticsearch/config/certs/ca/ca.crt"]
+      - xpack.security.http.ssl.enabled=true
       - ES_JAVA_OPTS=-Xms1g -Xmx1g
     ports:
       - '9202:9200'
@@ -67,6 +101,7 @@ services:
         hard: -1
     volumes:
       - esdata3:/usr/share/elasticsearch/data
+      - ./elastic/certs:/usr/share/elasticsearch/config/certs
     networks:
       - elastic
 
@@ -76,11 +111,16 @@ services:
     ports:
       - '5601:5601'
     environment:
-      - ELASTICSEARCH_HOSTS=["http://elasticsearch-node1:9200","http://elasticsearch-node2:9200","http://elasticsearch-node3:9200"]
+      - ELASTICSEARCH_HOSTS=["https://es01:9200","https://es02:9200","https://es03:9200"]
+      - ELASTIC_USERNAME=${KB_USER}
+      - ELASTIC_PASSWORD=${KB_PASS}
+      - ELASTICSEARCH_SSL_CERTIFICATEAUTHORITIES=["/usr/share/kibana/config/certs/ca.crt"]
+    volumes:
+      - ./elastic/certs/ca/ca.crt:/usr/share/kibana/config/certs/ca.crt:ro
     depends_on:
-      - elasticsearch-node1
-      - elasticsearch-node2
-      - elasticsearch-node3
+      - es01
+      - es02
+      - es03
     networks:
       - elastic
 

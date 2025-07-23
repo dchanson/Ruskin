@@ -298,18 +298,86 @@ $r_config = array(
 
 # Elasticsearch Setup (with Docker)
 
-### Create a .env file:
+### Step 1: Create folders for certificates and config
 
-Use the following terminal command to create a `.env` file. Once created open the file and enter the given credentials for elastic containers.
+Inside your project root, create the following folders:
 
 ```sh
-echo -e "ES_USER=\nES_PASS=" > .env
+mkdir -p elastic/certs/es01
+mkdir -p elastic/certs/es02
+mkdir -p elastic/certs/es03
+mkdir -p elastic/config
 ```
 
-### Start Elasticsearch Locally:
+### Step 2: Configure certs.yml and .env
+
+Paste the following to create the file inside `elastic/config/`
 
 ```sh
-docker-comopose up -d
+echo -e "instances:
+  - name: es01
+    dns: [ es01, localhost ]
+    ip: [ 127.0.0.1 ]
+  - name: es02
+    dns: [ es02, localhost ]
+    ip: [ 127.0.0.1 ]
+  - name: es03
+    dns: [ es03, localhost ]
+    ip: [ 127.0.0.1 ]
+" > elastic/config/certs.yml
+```
+
+Paste the following to create the `.env` file:
+
+```sh
+echo -e "ES_USER=\nES_PASS=\nKB_USER=\nKB_PASS=" > .env
+```
+
+Create your desired credentials. **Production credentials are provided to the project manager.**
+
+### Step 3: Generate SSL certificates and keys for the cluster nodes
+
+Use Elasticsearch's `elasticsearch-certutil` tool to create your CA and node certificates:
+
+1. Create a Certificate Authority (CA) :
+
+```sh
+docker run --rm \
+  -v /Users/userselu/Ruskin/elastic/certs:/certs \
+  docker.elastic.co/elasticsearch/elasticsearch:8.11.3 \
+  bin/elasticsearch-certutil ca --pem --out /certs/ca.zip
+```
+
+2. Extract the CA files:
+
+```sh
+unzip elastic/certs/ca.zip -d elastic/certs
+```
+
+3. Generate node certificates signed by the CA:
+
+```sh
+docker run --rm \
+  -v /Users/userselu/Ruskin/elastic/config:/config \
+  -v /Users/userselu/Ruskin/elastic/certs:/certs \
+  docker.elastic.co/elasticsearch/elasticsearch:8.11.3 \
+  bin/elasticsearch-certutil cert --pem \
+  --in /config/certs.yml \
+  --out /certs/certs.zip \
+  --ca-cert /certs/ca/ca.crt \
+  --ca-key /certs/ca/ca.key
+```
+
+4. Extract the node certificates:
+
+```sh
+unzip elastic/certs/certs.zip -d elastic/certs
+```
+
+### Step 4: Start Elasticsearch cluster
+
+```sh
+ docker compose up -d
 ```
 
 ### Confirm It’s Running:
@@ -317,7 +385,7 @@ docker-comopose up -d
 Replace the username and password with the given credentials.
 
 ```sh
-curl -u username:password http://localhost:9200
+curl --cacert elastic/certs/ca/ca.crt -u your_username:your_password https://localhost:9200
 ```
 
 Should return cluster info JSON and a line that says "You know, for search".
@@ -325,7 +393,7 @@ Should return cluster info JSON and a line that says "You know, for search".
 ### Optional: Remove Elasticsearch
 
 ```sh
-docker-compose down
+docker compose down -v
 ```
 
 ### For debugging: Delete all records form the container
@@ -333,7 +401,7 @@ docker-compose down
 Enter the given username and password in the said fields.
 
 ```sh
-curl -u username:password -X DELETE "http://localhost:9200/ruskin_works"
+curl --cacert elastic/certs/ca/ca.crt -u your_username:your_password -X DELETE "https://localhost:9200/ruskin_works"
 ```
 
 ---
