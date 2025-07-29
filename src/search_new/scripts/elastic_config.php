@@ -19,16 +19,18 @@ loadEnvFile(dirname(__DIR__, 3) . '/.env');
 
 putenv('ELASTIC_USE_GUZZLE=true');
 
-$host = getenv('ES_HOST') ?: 'localhost:9200';
-$user = getenv('ES_USER') ?: '';
+$host = getenv('ES_HOST') ?: 'https://localhost:9200';
+$user = getenv('ES_USER') ?: 'elastic';
 $pass = getenv('ES_PASS') ?: '';
+$caPath = __DIR__ . '/../../../elastic/certs/ca/ca.crt';
 
 $client = ClientBuilder::create()
-    ->setBasicAuthentication($user, $pass)
     ->setHosts([$host])
+    ->setBasicAuthentication($user, $pass)
     ->setHttpClientOptions([
+        'verify' => $caPath,
         'headers' => [
-            'Accept' => 'application/vnd.elasticsearch+json; compatible-with=8'
-        ]
+            'Accept' => 'application/vnd.elasticsearch+json; compatible-with=8',
+        ],
     ])
     ->build();
