@@ -9,8 +9,7 @@ services:
       - cluster.initial_master_nodes=es01,es02,es03
       - bootstrap.memory_lock=true
       - xpack.security.enabled=true
-      - ELASTIC_USERNAME=${ES_USER}
-      - ELASTIC_PASSWORD=${ES_PASS}
+      - ELASTIC_PASSWORD=${ES_PASS}            # Remove ELASTIC_USERNAME, only password needed
       - xpack.security.transport.ssl.enabled=true
       - xpack.security.transport.ssl.verification_mode=certificate
       - xpack.security.transport.ssl.key=/usr/share/elasticsearch/config/certs/es01/es01.key
@@ -18,7 +17,7 @@ services:
       - xpack.security.transport.ssl.certificate_authorities=/usr/share/elasticsearch/config/certs/ca/ca.crt
       - xpack.security.http.ssl.key=/usr/share/elasticsearch/config/certs/es01/es01.key
       - xpack.security.http.ssl.certificate=/usr/share/elasticsearch/config/certs/es01/es01.crt
-      - xpack.security.http.ssl.certificate_authorities=["/usr/share/elasticsearch/config/certs/ca/ca.crt"]
+      - xpack.security.http.ssl.certificate_authorities=/usr/share/elasticsearch/config/certs/ca/ca.crt
       - xpack.security.http.ssl.enabled=true
       - xpack.security.enrollment.enabled=false
       - ES_JAVA_OPTS=-Xms1g -Xmx1g
@@ -45,7 +44,6 @@ services:
       - cluster.initial_master_nodes=es01,es02,es03
       - bootstrap.memory_lock=true
       - xpack.security.enabled=true
-      - ELASTIC_USERNAME=${ES_USER}
       - ELASTIC_PASSWORD=${ES_PASS}
       - xpack.security.transport.ssl.enabled=true
       - xpack.security.transport.ssl.verification_mode=certificate
@@ -54,7 +52,7 @@ services:
       - xpack.security.transport.ssl.certificate_authorities=/usr/share/elasticsearch/config/certs/ca/ca.crt
       - xpack.security.http.ssl.key=/usr/share/elasticsearch/config/certs/es02/es02.key
       - xpack.security.http.ssl.certificate=/usr/share/elasticsearch/config/certs/es02/es02.crt
-      - xpack.security.http.ssl.certificate_authorities=["/usr/share/elasticsearch/config/certs/ca/ca.crt"]
+      - xpack.security.http.ssl.certificate_authorities=/usr/share/elasticsearch/config/certs/ca/ca.crt
       - xpack.security.http.ssl.enabled=true
       - ES_JAVA_OPTS=-Xms1g -Xmx1g
     ports:
@@ -80,7 +78,6 @@ services:
       - cluster.initial_master_nodes=es01,es02,es03
       - bootstrap.memory_lock=true
       - xpack.security.enabled=true
-      - ELASTIC_USERNAME=${ES_USER}
       - ELASTIC_PASSWORD=${ES_PASS}
       - xpack.security.transport.ssl.enabled=true
       - xpack.security.transport.ssl.verification_mode=certificate
@@ -89,7 +86,7 @@ services:
       - xpack.security.transport.ssl.certificate_authorities=/usr/share/elasticsearch/config/certs/ca/ca.crt
       - xpack.security.http.ssl.key=/usr/share/elasticsearch/config/certs/es03/es03.key
       - xpack.security.http.ssl.certificate=/usr/share/elasticsearch/config/certs/es03/es03.crt
-      - xpack.security.http.ssl.certificate_authorities=["/usr/share/elasticsearch/config/certs/ca/ca.crt"]
+      - xpack.security.http.ssl.certificate_authorities=/usr/share/elasticsearch/config/certs/ca/ca.crt
       - xpack.security.http.ssl.enabled=true
       - ES_JAVA_OPTS=-Xms1g -Xmx1g
     ports:
@@ -111,10 +108,10 @@ services:
     ports:
       - '5601:5601'
     environment:
-      - ELASTICSEARCH_HOSTS=["https://es01:9200","https://es02:9200","https://es03:9200"]
-      - ELASTIC_USERNAME=${KB_USER}
-      - ELASTIC_PASSWORD=${KB_PASS}
-      - ELASTICSEARCH_SSL_CERTIFICATEAUTHORITIES=["/usr/share/kibana/config/certs/ca.crt"]
+      - ELASTICSEARCH_HOSTS=https://es01:9200,https://es02:9200,https://es03:9200
+      - ELASTICSEARCH_USERNAME=${KB_USER}   # fix variable name
+      - ELASTICSEARCH_PASSWORD=${KB_PASS}
+      - ELASTICSEARCH_SSL_CERTIFICATEAUTHORITIES=/usr/share/kibana/config/certs/ca.crt  # no brackets or quotes
     volumes:
       - ./elastic/certs/ca/ca.crt:/usr/share/kibana/config/certs/ca.crt:ro
     depends_on:
