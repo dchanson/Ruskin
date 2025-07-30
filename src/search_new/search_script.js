@@ -220,14 +220,14 @@ function removeField(button) {
 // CORRECTED: Function to collect search terms for highlighting - preserves complete phrases
 function collectSearchTerms(form) {
   const terms = [];
-  
+
   // Collect keyword search - KEEP AS COMPLETE PHRASE
   const keyword = form.q.value.trim();
   if (keyword) {
     // Convert to lowercase but keep as complete phrase
     terms.push(keyword.toLowerCase());
   }
-  
+
   // Collect advanced field terms - KEEP AS COMPLETE PHRASES
   const fieldInputs = [
     ...form.querySelectorAll('input[name="persName"]'),
@@ -235,32 +235,32 @@ function collectSearchTerms(form) {
     ...form.querySelectorAll('input[name="geogName"]'),
     ...form.querySelectorAll('input[name="orgName"]'),
     ...form.querySelectorAll('input[name="name"]'),
-    ...form.querySelectorAll('input[name="bodyTitle"]')
+    ...form.querySelectorAll('input[name="bodyTitle"]'),
   ];
-  
-  fieldInputs.forEach(input => {
+
+  fieldInputs.forEach((input) => {
     const value = input.value.trim();
     if (value) {
       terms.push(value.toLowerCase());
     }
   });
-  
-  return [...new Set(terms.filter(term => term.length > 0))];
+
+  return [...new Set(terms.filter((term) => term.length > 0))];
 }
 
 function createHighlightUrl(originalUrl, terms) {
   if (!terms || terms.length === 0) return originalUrl;
-  
+
   const url = new URL(originalUrl, window.location.origin);
-  
+
   const cleanTerms = terms
-    .filter(term => term && term.trim().length > 0)
-    .map(term => term.trim());
-  
+    .filter((term) => term && term.trim().length > 0)
+    .map((term) => term.trim());
+
   if (cleanTerms.length === 0) return originalUrl;
-  
+
   url.searchParams.set('highlight', cleanTerms.join(','));
-  
+
   return url.toString();
 }
 
@@ -338,16 +338,20 @@ function displayPaginatedResults(data) {
       grouped[dir].forEach((item) => {
         const result = document.createElement('div');
         result.className = 'result-item';
-        
+
         const highlightUrl = createHighlightUrl(item.link, searchTerms);
-        
+
         result.innerHTML = `
                 <div class="result-title">
                   <a href="${highlightUrl}" target="_blank">${item.title}</a>
-                  ${searchTerms.length > 0 ? '<span class="highlight-indicator" title="This page will highlight your search terms">🔍</span>' : ''}
+                  ${
+                    searchTerms.length > 0
+                      ? '<span class="highlight-indicator" title="This page will highlight your search terms"></span>'
+                      : ''
+                  }
                 </div>
                 <div class="result-snippet">${item.snippet}</div>
-                <div class="result-link">${item.filename}</div>
+                <!--<div class="result-link">${item.filename}</div>>
               `;
         section.appendChild(result);
       });
@@ -396,13 +400,17 @@ function displayLegacyResults(results) {
       grouped[dir].forEach((item) => {
         const result = document.createElement('div');
         result.className = 'result-item';
-        
+
         const highlightUrl = createHighlightUrl(item.link, searchTerms);
-        
+
         result.innerHTML = `
                 <div class="result-title">
                   <a href="${highlightUrl}" target="_blank">${item.title}</a>
-                  ${searchTerms.length > 0 ? '<span class="highlight-indicator" title="This page will highlight your search terms">🔍</span>' : ''}
+                  ${
+                    searchTerms.length > 0
+                      ? '<span class="highlight-indicator" title="This page will highlight your search terms"></span>'
+                      : ''
+                  }
                 </div>
                 <div class="result-snippet">${item.snippet}</div>
                 <div class="result-link">${item.filename}</div>
