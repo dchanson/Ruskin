@@ -112,16 +112,18 @@ server {
         alias /Users/userselu/Ruskin/_Resources/images/ruskin_icon.png;
     }
 
-    # HTML files
+    # HTML files - with highlighting
     location ~* \.html$ {
         charset utf-8;
         gzip off;
 
-        # Substitution only for HTML content
-        sub_filter_types text/html;
         sub_filter_once off;
 
+        # Add icon and site styles before <main>
         sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
+        
+        # Add highlighting functionality before </body>
+        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
 
         try_files $uri $uri.html
                   /gen/_xml/_Completed$uri.html
@@ -130,7 +132,7 @@ server {
                   =404;
     }
 
-    # PHP files: inject icon tag after <?php
+    # PHP files - with highlighting
     location ~ \.php$ {
         include fastcgi_params;
         fastcgi_pass 127.0.0.1:9000;
@@ -138,14 +140,16 @@ server {
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         fastcgi_param DOCUMENT_ROOT $document_root;
 
-        # Substitution for PHP-generated HTML content
-        sub_filter_types application/x-httpd-php text/html;
         sub_filter_once off;
 
+        # Add icon in PHP header
         sub_filter '<?php' '<?php echo \'<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png">\';';
+        
+        # Add highlighting functionality before </body>
+        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
 
-    # Static file types: explicitly set default_type
+    # Static file types
     location ~* \.xml$ { default_type application/xml; }
     location ~* \.css$ { default_type text/css; }
     location ~* \.js$  { default_type application/javascript; }
@@ -158,7 +162,7 @@ server {
         default_type application/font-woff;
     }
 
-    # Alias for _Resources folder with directory listing
+    # _Resources folder
     location /_Resources/ {
         alias /Users/userselu/Ruskin/_Resources/;
         autoindex on;
@@ -169,7 +173,7 @@ server {
         try_files /gen/_xml/_Completed/webpages/homepage.html =404;
     }
 
-    # Direct HTML routes for search
+    # Search routes (no highlighting needed)
     location = /search.html {
         root /Users/userselu/Ruskin/src/search_new;
         try_files $uri =404;
@@ -181,7 +185,6 @@ server {
         try_files $uri =404;
     }
 
-    # Serve the script.js file for the search page
     location = /search_script.js {
         root /Users/userselu/Ruskin/src/search_new;
         default_type application/javascript;
@@ -202,19 +205,23 @@ server {
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
 
-    # HTML Routing for main folders with sub_filter
+    # HTML Routing for main folders - with highlighting for this specific pattern
     location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
         try_files /gen/_xml/_Completed/$1/$2.html
                   /gen/_xml/_In_Process/$1/$2.html
                   /gen/_xml/$1/$2.html
                   =404;
 
-        sub_filter_types text/html;
         sub_filter_once off;
+        
+        # Add icon and site styles before <main>
         sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
+        
+        # Add highlighting functionality - needed for URLs without .html extension
+        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
 
-    # PHP Routing for witnesses, figures, corpuses
+    # PHP Routing for witnesses, figures, corpuses - with highlighting
     location ~* ^/(witnesses|figures|corpuses)/([^/]+)$ {
         try_files /gen/_xml/_Completed/$1/$2.php
                   /gen/_xml/_In_Process/$1/$2.php
@@ -225,8 +232,12 @@ server {
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $document_root/gen/_xml/_Completed/$1/$2.php;
         fastcgi_param DOCUMENT_ROOT $document_root;
+        
+        sub_filter_once off;
+        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
 
+    # PHP Routing for capitalized folders - with highlighting
     location ~ ^/(Corpuses|Figures|Witnesses)/(.+\.php)$ {
         try_files /gen/_xml/_Completed/$1/$2
                   /gen/_xml/_In_Process/$1/$2
@@ -237,6 +248,9 @@ server {
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $document_root/gen/_xml/_Completed/$1/$2;
         fastcgi_param DOCUMENT_ROOT $document_root;
+        
+        sub_filter_once off;
+        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
 
     # Fallback location
