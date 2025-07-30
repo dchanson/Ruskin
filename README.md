@@ -344,7 +344,7 @@ echo -e "instances:
 Paste the following to create the `.env` file:
 
 ```sh
-echo -e "ES_USER=\nES_PASS=\nKB_USER=\nKB_PASS=" > .env
+echo -e "ES_USER=\nES_PASS=" > .env
 ```
 
 Create your desired credentials. **Production credentials are provided to the project manager.**
@@ -394,7 +394,7 @@ unzip elastic/certs/certs.zip -d elastic/certs
  docker compose up -d
 ```
 
-### Confirm It’s Running:
+### Step 5: Confirm It’s Running:
 
 Replace the username and password with the given credentials.
 
