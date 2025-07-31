@@ -79,8 +79,8 @@ function addField() {
       typeOptions = `
             <option value="all">All</option>
             <option value="fictional">Fictional</option>
-            <option value="pen_name">Pen name</option>
             <option value="fictional_person">Fictional Person</option>
+            <option value="pen_name">Pen name</option>
           `;
       break;
     case 'place':
@@ -131,17 +131,17 @@ function addField() {
       typeOptions = `
             <option value="all">All</option>
             <option value="animal">Animal</option>
-            <option value="astronomical">Astronomical</option>
             <option value="astrological">Astrological</option>
+            <option value="astronomical">Astronomical</option>
+            <option value="botanical">Botanical</option>
+            <option value="building">Building</option>
             <option value="constellation">Constellation</option>
             <option value="fictional_person">Fictional person</option>
             <option value="fictional_place">Fictional place</option>
-            <option value="botanical">Botanical</option>
-            <option value="building">Building</option>
+            <option value="geological">Geological</option>
+            <option value="person">Person</option>
             <option value="toy">Toy</option>
             <option value="vessel">Vessel</option>
-            <option value="person">Person</option>
-            <option value="geological">Geological</option>
             <option value="other">Other</option>
           `;
       break;
@@ -154,18 +154,19 @@ function addField() {
       placeholder = 'e.g. The Stones of Venice';
       typeOptions = `
             <option value="all">All</option>
-            <option value="book">Book</option>
-            <option value="manuscript">Manuscript</option>
-            <option value="poem">Poem</option>
-            <option value="essay">Essay</option>
-            <option value="artwork">ArtWork</option>
-            <option value="composite">Composite</option>
-            <option value="lesson">Lesson</option>
-            <option value="bibliography_text">Bibliography text</option>
-            <option value="letter">Letter</option>
+            <option value="annual">Annual</option>
             <option value="anthology">Anthology</option>
+            <option value="artwork">ArtWork</option>
             <option value="archive">Archive</option>
+            <option value="book">Book</option>
+            <option value="composite">Composite</option>
+            <option value="essay">Essay</option>
+            <option value="lesson">Lesson</option>
+            <option value="letter">Letter</option>
+            <option value="manuscript">Manuscript</option>
             <option value="other">Other</option>
+            <option value="poem">Poem</option>
+            <option value="scripture">Scripture</option>
             `;
       break;
   }
