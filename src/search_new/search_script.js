@@ -2,6 +2,7 @@ let currentSearchParams = null;
 let currentPage = 1;
 let currentPerPage = 10;
 let fieldCounter = 1;
+let searchTerms = []; // Store current search terms for highlighting
 
 function toggleAdvanced() {
   const section = document.getElementById('advancedSearch');
@@ -78,8 +79,8 @@ function addField() {
       typeOptions = `
             <option value="all">All</option>
             <option value="fictional">Fictional</option>
-            <option value="pen_name">Pen name</option>
             <option value="fictional_person">Fictional Person</option>
+            <option value="pen_name">Pen name</option>
           `;
       break;
     case 'place':
@@ -130,19 +131,43 @@ function addField() {
       typeOptions = `
             <option value="all">All</option>
             <option value="animal">Animal</option>
-            <option value="astronomical">Astronomical</option>
             <option value="astrological">Astrological</option>
+            <option value="astronomical">Astronomical</option>
+            <option value="botanical">Botanical</option>
+            <option value="building">Building</option>
             <option value="constellation">Constellation</option>
             <option value="fictional_person">Fictional person</option>
             <option value="fictional_place">Fictional place</option>
-            <option value="botanical">Botanical</option>
-            <option value="building">Building</option>
+            <option value="geological">Geological</option>
+            <option value="person">Person</option>
             <option value="toy">Toy</option>
             <option value="vessel">Vessel</option>
-            <option value="person">Person</option>
-            <option value="geological">Geological</option>
             <option value="other">Other</option>
           `;
+      break;
+    case 'title':
+      inputId = `bodyTitle_${fieldCounter}`;
+      typeId = `bodyTitleType_${fieldCounter}`;
+      inputName = 'bodyTitle';
+      typeName = 'bodyTitleType';
+      label = 'Title';
+      placeholder = 'e.g. The Stones of Venice';
+      typeOptions = `
+            <option value="all">All</option>
+            <option value="annual">Annual</option>
+            <option value="anthology">Anthology</option>
+            <option value="artwork">ArtWork</option>
+            <option value="archive">Archive</option>
+            <option value="book">Book</option>
+            <option value="composite">Composite</option>
+            <option value="essay">Essay</option>
+            <option value="lesson">Lesson</option>
+            <option value="letter">Letter</option>
+            <option value="manuscript">Manuscript</option>
+            <option value="other">Other</option>
+            <option value="poem">Poem</option>
+            <option value="scripture">Scripture</option>
+            `;
       break;
   }
 
@@ -170,14 +195,16 @@ function addField() {
     fieldType === 'name'
       ? 'name'
       : fieldType === 'person'
-        ? 'person'
-        : fieldType === 'place'
-          ? 'place'
-          : fieldType === 'geog'
-            ? 'geog'
-            : fieldType === 'org'
-              ? 'org'
-              : 'name';
+      ? 'person'
+      : fieldType === 'place'
+      ? 'place'
+      : fieldType === 'geog'
+      ? 'geog'
+      : fieldType === 'title'
+      ? 'title'
+      : fieldType === 'org'
+      ? 'org'
+      : 'name';
 
   setTimeout(() => {
     attachSuggest(inputId, autocompleteType);
@@ -190,6 +217,54 @@ function removeField(button) {
   const fieldDiv = button.parentElement;
   fieldDiv.remove();
 }
+
+// CORRECTED: Function to collect search terms for highlighting - preserves complete phrases
+function collectSearchTerms(form) {
+  const terms = [];
+
+  // Collect keyword search - KEEP AS COMPLETE PHRASE
+  const keyword = form.q.value.trim();
+  if (keyword) {
+    // Convert to lowercase but keep as complete phrase
+    terms.push(keyword.toLowerCase());
+  }
+
+  // Collect advanced field terms - KEEP AS COMPLETE PHRASES
+  const fieldInputs = [
+    ...form.querySelectorAll('input[name="persName"]'),
+    ...form.querySelectorAll('input[name="placeName"]'),
+    ...form.querySelectorAll('input[name="geogName"]'),
+    ...form.querySelectorAll('input[name="orgName"]'),
+    ...form.querySelectorAll('input[name="name"]'),
+    ...form.querySelectorAll('input[name="bodyTitle"]'),
+  ];
+
+  fieldInputs.forEach((input) => {
+    const value = input.value.trim();
+    if (value) {
+      terms.push(value.toLowerCase());
+    }
+  });
+
+  return [...new Set(terms.filter((term) => term.length > 0))];
+}
+
+function createHighlightUrl(originalUrl, terms) {
+  if (!terms || terms.length === 0) return originalUrl;
+
+  const url = new URL(originalUrl, window.location.origin);
+
+  const cleanTerms = terms
+    .filter((term) => term && term.trim().length > 0)
+    .map((term) => term.trim());
+
+  if (cleanTerms.length === 0) return originalUrl;
+
+  url.searchParams.set('highlight', cleanTerms.join(','));
+
+  return url.toString();
+}
+
 async function performSearch(page = 1, perPage = 10) {
   if (!currentSearchParams) return;
 
@@ -235,6 +310,17 @@ function displayPaginatedResults(data) {
       `;
   resultsDiv.appendChild(paginationInfo);
 
+  // if (searchTerms.length > 0) {
+  //   const highlightInfo = document.createElement('div');
+  //   highlightInfo.className = 'highlight-info';
+  //   highlightInfo.innerHTML = `
+  //     <p style="font-size: 0.9rem; color: #666; text-align: center; margin: 10px 0;">
+  //       <strong>Tip:</strong> Click on any result link to view the page with your search terms highlighted
+  //     </p>
+  //   `;
+  //   resultsDiv.appendChild(highlightInfo);
+  // }
+
   const grouped = {};
   results.forEach((item) => {
     const dir = item.link.split('/')[1] || 'others';
@@ -246,15 +332,27 @@ function displayPaginatedResults(data) {
   order.forEach((dir) => {
     if (grouped[dir]) {
       const section = document.createElement('div');
-      section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${dir.charAt(0).toUpperCase() + dir.slice(1)}</h2>`;
+      section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${
+        dir.charAt(0).toUpperCase() + dir.slice(1)
+      }</h2>`;
 
       grouped[dir].forEach((item) => {
         const result = document.createElement('div');
         result.className = 'result-item';
+
+        const highlightUrl = createHighlightUrl(item.link, searchTerms);
+
         result.innerHTML = `
-                <div class="result-title"><a href="${item.link}">${item.title}</a></div>
+                <div class="result-title">
+                  <a href="${highlightUrl}" target="_blank">${item.title}</a>
+                  ${
+                    searchTerms.length > 0
+                      ? '<span class="highlight-indicator" title="This page will highlight your search terms"></span>'
+                      : ''
+                  }
+                </div>
                 <div class="result-snippet">${item.snippet}</div>
-                <div class="result-link">${item.filename}</div>
+                <!--<div class="result-link">${item.filename}</div>>
               `;
         section.appendChild(result);
       });
@@ -274,6 +372,17 @@ function displayLegacyResults(results) {
     return;
   }
 
+  if (searchTerms.length > 0) {
+    const highlightInfo = document.createElement('div');
+    highlightInfo.className = 'highlight-info';
+    highlightInfo.innerHTML = `
+      <p style="font-size: 0.9rem; color: #666; text-align: center; margin: 10px 0;">
+        <strong>Tip:</strong> Click on any result link to view the page with your search terms highlighted
+      </p>
+    `;
+    resultsDiv.appendChild(highlightInfo);
+  }
+
   const grouped = {};
   results.forEach((item) => {
     const dir = item.link.split('/')[1] || 'others';
@@ -285,13 +394,25 @@ function displayLegacyResults(results) {
   order.forEach((dir) => {
     if (grouped[dir]) {
       const section = document.createElement('div');
-      section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${dir.charAt(0).toUpperCase() + dir.slice(1)}</h2>`;
+      section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${
+        dir.charAt(0).toUpperCase() + dir.slice(1)
+      }</h2>`;
 
       grouped[dir].forEach((item) => {
         const result = document.createElement('div');
         result.className = 'result-item';
+
+        const highlightUrl = createHighlightUrl(item.link, searchTerms);
+
         result.innerHTML = `
-                <div class="result-title"><a href="${item.link}">${item.title}</a></div>
+                <div class="result-title">
+                  <a href="${highlightUrl}" target="_blank">${item.title}</a>
+                  ${
+                    searchTerms.length > 0
+                      ? '<span class="highlight-indicator" title="This page will highlight your search terms"></span>'
+                      : ''
+                  }
+                </div>
                 <div class="result-snippet">${item.snippet}</div>
                 <div class="result-link">${item.filename}</div>
               `;
@@ -368,12 +489,15 @@ function createPaginationControls(pagination) {
     performSearch(currentPage, currentPerPage);
   };
 }
+
 document.getElementById('searchForm').addEventListener('submit', async function (e) {
   e.preventDefault();
 
   const form = e.target;
   const q = form.q.value.trim();
   const type = form.type.value;
+
+  searchTerms = collectSearchTerms(form);
 
   const persNames = Array.from(form.querySelectorAll('input[name="persName"]'))
     .map((input) => input.value.trim())
@@ -390,6 +514,9 @@ document.getElementById('searchForm').addEventListener('submit', async function 
   const names = Array.from(form.querySelectorAll('input[name="name"]'))
     .map((input) => input.value.trim())
     .filter((val) => val);
+  const bodyTitles = Array.from(form.querySelectorAll('input[name="bodyTitle"]'))
+    .map((input) => input.value.trim())
+    .filter((val) => val);
 
   if (
     !q &&
@@ -397,7 +524,8 @@ document.getElementById('searchForm').addEventListener('submit', async function 
     placeNames.length === 0 &&
     geogNames.length === 0 &&
     orgNames.length === 0 &&
-    names.length === 0
+    names.length === 0 &&
+    bodyTitles.length === 0
   ) {
     alert('Please enter a keyword to search.');
     return;
@@ -444,6 +572,14 @@ document.getElementById('searchForm').addEventListener('submit', async function 
     const nameType = form.querySelector('select[name="nameType"]')?.value;
     if (nameType && nameType !== 'all') {
       params.append('nameType', nameType);
+    }
+  }
+
+  if (bodyTitles.length > 0) {
+    params.append('bodyTitle', bodyTitles[0]);
+    const bodyTitleType = form.querySelector('select[name="bodyTitleType"]')?.value;
+    if (bodyTitleType && bodyTitleType !== 'all') {
+      params.append('bodyTitleType', bodyTitleType);
     }
   }
 
@@ -546,5 +682,5 @@ function attachSuggest(inputId, type) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  attachSuggest('persName_1', 'person');
+  attachSuggest('bodyTitle_1', 'title');
 });
