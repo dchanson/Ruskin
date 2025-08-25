@@ -1,22 +1,12 @@
 <?php
 require __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/elastic_config.php';
 require_once __DIR__ . '/unicode_normalizer.php';
 
 putenv('ELASTIC_USE_GUZZLE=true');
 
-use Elastic\Elasticsearch\ClientBuilder;
-
 $INDEX_NAME = 'ruskin_works';
 $DATA_DIR = dirname(__DIR__, 3) . '/_xml/_Completed';
-
-$client = ClientBuilder::create()
-    ->setHosts(['localhost:9200'])
-    ->setHttpClientOptions([
-        'headers' => [
-            'Accept' => 'application/vnd.elasticsearch+json; compatible-with=8'
-        ]
-    ])
-    ->build();
 
 function init_index($client, $INDEX_NAME)
 {
@@ -56,16 +46,19 @@ function init_index($client, $INDEX_NAME)
                         'placeNames' => ['type' => 'text', 'analyzer' => 'standard'],
                         'geogNames' => ['type' => 'text', 'analyzer' => 'standard'],
                         'orgNames' => ['type' => 'text', 'analyzer' => 'standard'],
+                        'bodyTitles' => ['type' => 'text', 'analyzer' => 'standard'],
                         'persNames_suggest' => ['type' => 'completion'],
                         'placeNames_suggest' => ['type' => 'completion'],
                         'geogNames_suggest' => ['type' => 'completion'],
                         'orgNames_suggest' => ['type' => 'completion'],
                         'names_suggest' => ['type' => 'completion'],
+                        'bodyTitles_suggest' => ['type' => 'completion'],
                         'persNameTypes' => ['type' => 'keyword'],
                         'placeNameTypes' => ['type' => 'keyword'],
                         'geogNameTypes' => ['type' => 'keyword'],
                         'orgNameTypes' => ['type' => 'keyword'],
                         'nameTypes' => ['type' => 'keyword'],
+                        'bodyTitleTypes' => ['type' => 'keyword']
                     ]
                 ]
             ]
@@ -106,6 +99,21 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME)
 
     $divType = ($firstDiv instanceof DOMElement && $firstDiv->hasAttribute("type")) ? $firstDiv->getAttribute("type") : "unknown";
     $divSubType = ($firstDiv instanceof DOMElement && $firstDiv->hasAttribute("subtype")) ? $firstDiv->getAttribute("subtype") : "unknown";
+
+    $bodyTitlesNodes = $xpath->query('.//tei:title', $bodyNode);
+
+    $bodyTitles = [];
+    $bodyTitleTypes = [];
+    foreach ($bodyTitlesNodes as $node) {
+        if ($node instanceof DOMElement) {
+            $text = trim($node->textContent);
+            if ($text !== '') {
+                $bodyTitles[] = normalize_unicode_to_ascii($text);
+                $type = $node->getAttribute('type') ?: 'unknown';
+                $bodyTitleTypes[] = $type;
+            }
+        }
+    }
 
     $absoluteFilePath = realpath($filepath);
     $absoluteBasePath = realpath($DATA_DIR);
@@ -213,16 +221,19 @@ function parse_and_index_file($client, $filepath, $INDEX_NAME)
         'placeNames' => implode(' ', $placeNames),
         'orgNames' => implode(' ', $orgNames),
         'geogNames' => implode(' ', $geogNames),
+        'bodyTitles' => implode(' ', $bodyTitles),
         'persNames_suggest' => ['input' => array_values(array_unique($persNames))],
         'placeNames_suggest' => ['input' => array_values(array_unique($placeNames))],
         'orgNames_suggest' => ['input' => array_values(array_unique($orgNames))],
         'geogNames_suggest' => ['input' => array_values(array_unique($geogNames))],
         'names_suggest' => ['input' => array_values(array_unique($names))],
+        'bodyTitles_suggest' => ['input' => array_values(array_unique($bodyTitles))],
         'persNameTypes' => array_values(array_unique($persNameTypes)),
         'placeNameTypes' => array_values(array_unique($placeNameTypes)),
         'geogNameTypes' => array_values(array_unique($geogNameTypes)),
         'orgNameTypes' => array_values(array_unique($orgNameTypes)),
-        'nameTypes' => array_values(array_unique($nameTypes))
+        'nameTypes' => array_values(array_unique($nameTypes)),
+        'bodyTitleTypes' => array_values(array_unique($bodyTitleTypes)),
     ];
 
 
