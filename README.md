@@ -1,555 +1,495 @@
 # The Early Ruskin Manuscripts, 1826–1842
-http://english.selu.edu/humanitiesonline/ruskin
+
+[https://erm.selu.edu/](https://erm.selu.edu)
 
 ## About:
+
 The Early Ruskin Manuscripts, 1826–1842 is a project of Southeastern Louisiana University and Humanities Online, both under the direction of the university's Department of English.
 
 All commentary in ERM, including apparatuses, glosses, notes transcripts, and other editorial treatments of the manuscripts is © by David C. Hanson.
 
 ## Developer notes
+
 The developer notes can be found [here](developer_notes.md)
+
 ### Staff and Support:
-http://english.selu.edu/humanitiesonline/ruskin/webpages/staff.php
+
+[http://erm.selu.edu/webpages/staff](http://erm.selu.edu/webpages/staff)
 
 ### Legal:
-http://english.selu.edu/humanitiesonline/ruskin/webpages/legal.php
 
+[https://erm.selu.edu/webpages/legal](https://erm.selu.edu/webpages/legal)
 
-# For Developer
+---
 
-    _xml
-    ├── style.php
-    ├── header.inc.php
-    ├── layout_includes
-    ├── images
-    ├──inprocess
-    ├── _Completed         
-    │   ├── apparatuses           
-    │   ├── corpuses                  
-    │   ├── figures            
-    │   ├── webpages              # Contains homepage
-    |   |   |--homepage              # this is what you see in  https://erm.selu.edu/
-    |   |   |--legal              
-    |   |   |--staff
-   
+# Developer Overview
 
+### Project Directory Structure:
 
-###Following folders are transformed into php || Showcase
-    Corpuses 
-    Figures
-    Witnesses
+```
+_xml
+├── style.php
+├── header.inc.php
+├── layout_includes
+├── images
+├── inprocess
+├── _Completed
+│   ├── apparatuses
+│   ├── corpuses
+│   ├── figures
+│   ├── webpages
+│   │   ├── homepage  # Homepage content for https://erm.selu.edu/
+│   │   ├── legal
+│   │   └── staff
+```
 
-###Following folders are transformed into Html
-    apparatuses
-    glosses
-    letters
-    notes
-    webpages
-    
-###Home Page @  https://erm.selu.edu/ 
-    Weppages => homepage => index
+### Transformed Folders:
 
+- **To PHP:** Corpuses, Figures, Witnesses
+- **To HTML:** Apparatuses, Glosses, Letters, Notes, Webpages
 
-###To transform any xml to  html || php
-Be on the erm php removal branch.
- 
-    Right click on the file or folder Transform
-    Configure transforming scenario
+### XML to HTML/PHP Transformation
 
-You should see something like following :
+Use **Oxygen XML Editor**:
 
-    https://i.ibb.co/hZvSZJt/Screen-Shot-2020-05-14-at-12-21-04-PM.png
- 
-If you see :
+1. Open the `ruskin.xpr` file.
+2. Right-click on file/folder → Transform → Configure transformation scenario.
+3. Check `Generate html` for HTML files and `Generate (global)` for PHP files.
 
-    https://i.ibb.co/qg7t3yn/Screen-Shot-2020-05-14-at-12-20-33-PM.png
-You are in the wrong branch.
+---
 
-`Generate Html => renders html`
+# Local Dev Setup @ ruskin.local:8080
 
- 
-# Setting dev server at ruskin.local:8080
+Refer to the documentation [here](https://docs.google.com/document/d/1GKZI8TN6Q9kYZ47mn-RnC5A3dOmvQcf8OejtovxQUng/edit?usp=sharing) for detailed instructions. **ONLY CONTINUE ONCE YOU HAVE GONE THROUGH THE DOCUMENTATION LINK**. Some steps may be repeated in this readme file.
 
-## use homebrew 
-to install ` nginx and composer`
+### Useful Brew Commands:
 
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-    
-    brew install nginx  
-    
-    brew install php@7.2   
-    
-### Useful cmd for brew:
+```sh
+brew services list
+brew services stop --all
+brew services start --all
+brew services restart --all
+```
 
-    brew services list
-    brew services stop --all     ====> Stop all brew services
-    brew services start --all    ====> Start all brew services
-    brew services restart --all  ====> Restart all brew services
+### Hosts File Update:
 
-Any way brew service should print: 
+```sh
+sudo vim /etc/hosts
+```
 
+Add:
 
-    Name    Status  User Plist
-    nginx   started root /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
-    php@7.2 started root /Library/LaunchDaemons/homebrew.mxcl.php@7.2.plist
+```
+127.0.0.1       ruskin.local
+```
 
-### Add nginx route to local host
-   
-    vim /etc/hosts
-    
- add following:
-   
-    127.0.0.1       ruskin.local
+### NGINX Config:
 
-this will redirect the trafic to your particular local machine
-   
-     cat /etc/hosts should print following
+For Apple Silicon:
 
-To change permission to write in the file     
+```sh
+cd /opt/homebrew/etc/nginx/servers
+open -a TextEdit ruskin.local.conf
+```
 
-     sudo chmod 755 /etc/hosts 
-     sudo vim /etc/hosts
-   
-Add following    
-    
-    127.0.0.1       ruskin.local
-    
-## cat /etc/hosts 
-    
-Should print following
+Paste:
 
-    127.0.0.1       localhost
-    255.255.255.255 broadcasthost
-    ::1             localhost  
-    127.0.0.1       ruskin.local
-
-## Following is ruskin.local.conf for nginx configuration
-
-    mdfind kind:folder "nginx"
-    cd usr/local/etc/nginx
-    cd servers  
-    touch ruskin.local.conf
-    
-To open conf file in text editor
-    
-    open -a TextEdit ruskin.local.conf
-
-## For newer MacBook Follow this for nginx configuration
-    cd /opt/homebrew/etc/nginx
-    cd servers
-    touch ruskin.local.conf
-  
-To open conf file in text editor
-    
-    open -a TextEdit ruskin.local.conf
-
-#### It has auto index_on NGINX will automatically generate and display a list of files and directories within it.
-### Donot use auto_index in production. This should be for local development only. Use the one below this for production.
-Paste this nginx configuration in your ruskin.local.conf
-### The configuration below is a another one with auto_index off and older one. 
-So the correct Nginx configuration is:
-## But remeber to change the root directory, 
-just right click on the Ruskin folder, then get info to get the folder location then copy it from /Users
-and paste it in following root[this is new config without express ]
-
-      server {
+```nginx
+server {
     listen 8080;
     server_name ruskin.local;
+    root /Users/userselu/Ruskin;
     client_max_body_size 210M;
     autoindex on;
-    root /Users/userselu/Ruskin/gen/_xml/_Completed;
     index index.php index.html index.htm;
+    charset utf-8;
 
-    # Static content type handlers
+    # Set default content type once per server block
+    default_type text/html;
+
+    # Favicon request
+    location = /favicon.ico {
+        alias /Users/userselu/Ruskin/_Resources/images/ruskin_icon.png;
+    }
+
+    # HTML files - with highlighting
     location ~* \.html$ {
-        default_type text/html;
         charset utf-8;
-        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
-        sub_filter_once on;
+        gzip off;
+
+        sub_filter_once off;
+
+        # Add icon and site styles before <main>
+        sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
+        
+        # Add highlighting functionality before </body>
+        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
+
+        try_files $uri $uri.html
+                  /gen/_xml/_Completed$uri.html
+                  /gen/_xml/_In_Process$uri.html
+                  /gen/_xml$uri.html
+                  =404;
     }
 
-    location ~* \.xml$ {
-        default_type application/xml;
-    }
-
-    location ~* \.css$ {
-        default_type text/css;
-    }
-
-    location ~* \.js$ {
-        default_type application/javascript;
-    }
-
-    # Static file alias
-    location /_Resources {
-        alias /Users/userselu/Ruskin/_Resources;
-    }
-
-    # Homepage
-    location = / {
-        try_files /webpages/homepage.html =404;
-    }
-
-    # Fallback for HTML folders with clean URLs (no .html)
-    location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)$ {
-        try_files /$1/$2.html /gen/_xml/_Completed/$1/$2.html /gen/_xml/_In_Process/$1/$2.html /gen/_xml/$1/$2.html =404;
-        add_header Content-Type text/html;
-        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
-        sub_filter_once on;
-    }
-
-    # Fallback for PHP folders with clean URLs (no .php)
-    location ~* ^/(witnesses|figures|corpuses)/([^/]+)$ {
-        try_files /$1/$2.php /gen/_xml/_Completed/$1/$2.php /gen/_xml/_In_Process/$1/$2.php /gen/_xml/$1/$2.php =404;
-        fastcgi_pass 127.0.0.1:9000;
-        include fastcgi_params;
-        fastcgi_index index.php;
-        fastcgi_param SCRIPT_FILENAME $document_root/$1/$2.php;
-        fastcgi_param DOCUMENT_ROOT $document_root;
-    }
-
-    # Explicit PHP access for transformed folders
-    location ~ ^/(Corpuses|Figures|Witnesses)/(.+\.php)$ {
-        try_files /gen/_xml/_Completed/$1/$2 /gen/_xml/_In_Process/$1/$2 /gen/_xml/$1/$2 =404;
-        fastcgi_pass 127.0.0.1:9000;
-        include fastcgi_params;
-        fastcgi_index index.php;
-        fastcgi_param SCRIPT_FILENAME $document_root/$1/$2;
-        fastcgi_param DOCUMENT_ROOT $document_root;
-    }
-
-    # HTML-transformed folders (with .html)
-    location ~ ^/(apparatuses|glosses|letters|notes|webpages)/(.+\.html?)$ {
-        try_files /gen/_xml/_Completed/$1/$2 /gen/_xml/_In_Process/$1/$2 /gen/_xml/$1/$2 =404;
-        add_header Content-Type text/html;
-        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
-        sub_filter_once on;
-    }
-
-    # HTML fallback with .html extension for unmatched folders
-    location ~ ^/(apparatuses|glosses|letters|notes|webpages)/(.+)$ {
-        try_files /gen/_xml/_Completed/$1/$2.html /gen/_xml/_In_Process/$1/$2.html /gen/_xml/$1/$2.html =404;
-        add_header Content-Type text/html;
-        sub_filter '</head>' '<link rel="stylesheet" href="/_Resources/css/fonts.css"><link rel="stylesheet" href="/_Resources/css/digital_archive.css"></head>';
-        sub_filter_once on;
-    }
-
-    # PHP fallback for /web/pages
-    location ~ ^/web/pages/(.+\.php)$ {
-        try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 /gen/_xml/$1 =404;
-        fastcgi_pass 127.0.0.1:9000;
-        include fastcgi_params;
-        fastcgi_index index.php;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        fastcgi_param DOCUMENT_ROOT $document_root;
-    }
-
-    # Non-PHP fallback for /web/pages
-    location ~ ^/web/pages/(.+)$ {
-        try_files /src/$1 /gen/_xml/_Completed/$1 /gen/_xml/_In_Process/$1 =404;
-    }
-
-    # Global PHP handler
+    # PHP files - with highlighting
     location ~ \.php$ {
         include fastcgi_params;
         fastcgi_pass 127.0.0.1:9000;
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         fastcgi_param DOCUMENT_ROOT $document_root;
+
+        sub_filter_once off;
+
+        # Add icon in PHP header
+        sub_filter '<?php' '<?php echo \'<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png">\';';
+        
+        # Add highlighting functionality before </body>
+        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
 
-    # General fallback for unmatched requests
+    # Static file types
+    location ~* \.xml$ { default_type application/xml; }
+    location ~* \.css$ { default_type text/css; }
+    location ~* \.js$  { default_type application/javascript; }
+
+    # Fonts with CORS
+    location ~* ^/_Resources/fonts/(.+\.(woff|woff2|eot|ttf|otf))$ {
+        alias /Users/userselu/Ruskin/_Resources/fonts/$1;
+        access_log off;
+        add_header Access-Control-Allow-Origin *;
+        default_type application/font-woff;
+    }
+
+    # _Resources folder
+    location /_Resources/ {
+        alias /Users/userselu/Ruskin/_Resources/;
+        autoindex on;
+    }
+
+    # Home page fallback
+    location = / {
+        try_files /gen/_xml/_Completed/webpages/homepage.html =404;
+    }
+
+    # Search routes (no highlighting needed)
+    location = /search.html {
+        root /Users/userselu/Ruskin/src/search_new;
+        try_files $uri =404;
+    }
+
+    location = /search_style.css {
+        root /Users/userselu/Ruskin/src/search_new;
+        default_type text/css;
+        try_files $uri =404;
+    }
+
+    location = /search_script.js {
+        root /Users/userselu/Ruskin/src/search_new;
+        default_type application/javascript;
+        try_files $uri =404;
+    }
+
+    location = /search_handler.php {
+        fastcgi_pass 127.0.0.1:9000;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root/src/search_new/search_handler.php;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+    location = /autocomplete_handler.php {
+        fastcgi_pass 127.0.0.1:9000;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root/src/search_new/autocomplete_handler.php;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+    # HTML Routing for main folders - with highlighting for this specific pattern
+    location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
+        try_files /gen/_xml/_Completed/$1/$2.html
+                  /gen/_xml/_In_Process/$1/$2.html
+                  /gen/_xml/$1/$2.html
+                  =404;
+
+        sub_filter_once off;
+        
+        # Add icon and site styles before <main>
+        sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
+        
+        # Add highlighting functionality - needed for URLs without .html extension
+        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
+    }
+
+    # PHP Routing for witnesses, figures, corpuses - with highlighting
+    location ~* ^/(witnesses|figures|corpuses)/([^/]+)$ {
+        try_files /gen/_xml/_Completed/$1/$2.php
+                  /gen/_xml/_In_Process/$1/$2.php
+                  /gen/_xml/$1/$2.php =404;
+
+        fastcgi_pass 127.0.0.1:9000;
+        include fastcgi_params;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root/gen/_xml/_Completed/$1/$2.php;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+        
+        sub_filter_once off;
+        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
+    }
+
+    # PHP Routing for capitalized folders - with highlighting
+    location ~ ^/(Corpuses|Figures|Witnesses)/(.+\.php)$ {
+        try_files /gen/_xml/_Completed/$1/$2
+                  /gen/_xml/_In_Process/$1/$2
+                  /gen/_xml/$1/$2 =404;
+
+        fastcgi_pass 127.0.0.1:9000;
+        include fastcgi_params;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root/gen/_xml/_Completed/$1/$2;
+        fastcgi_param DOCUMENT_ROOT $document_root;
+        
+        sub_filter_once off;
+        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
+    }
+
+    # Fallback location
     location / {
-        try_files $uri $uri/ $uri.html $uri.html/ 
-                  /gen/_xml/_In_Process$uri 
-                  /gen/_xml/_In_Process$uri.html 
+        try_files $uri $uri/ $uri.html $uri.html/
+                  /gen/_xml/_In_Process$uri
+                  /gen/_xml/_In_Process$uri.html
                   =404;
     }
 }
 
-       
-
-### Be aware of the line 
-
-       //change it where your Ruskin folder is placed
-       root /Users/userselu/Ruskin/gen/_xml/_Completed;
-        
-        
-
- 
-
-To Restart Nginx Server
-
-    nginx -s reload
-    
-    
-## Php     
-Setting up php part:
-    
-    cd gen/_xml
-    $ ln -s ../../src/header.inc.php .
-    $ ln -s ../../src/style.php .
-    $ ln -s ../../src/layout_includes .
-
-### installing composer
-
-    cd src/
-    brew composer install
-    composer install
-    cp config_template.json.php config.json.php
-
-
-###  config.json.php   
-    
-    <?php
-    $r_config = array(
-    	"BASE"=> "https://erm.selu.edu/web/pages",
-    	"SCSS_DIRECTORY"=> "../_Resources/css_styles",
-    	"SEARCH_HOST"=> "http://localhost:9001",
-    	"DB"=> array(
-    		"HOST"=> "localhost",
-    		"DATABASE_NAME"=> "ruskin",
-    		"USERNAME"=> "root",
-    		"PASSWORD"=> "",
-    		"XML_FOLDER"=> "../../_Completed/",
-    		"UPDATE_TOOL_PASSWORD"=> "password"
-    	)
-    );
-    
-## Before Deployment:
-
-### Make sure your /src/config_template.json.php looks like:
-    <?php
-    $r_config = array(
-        "BASE"=> "https://erm.selu.edu/web/pages",
-        "SCSS_DIRECTORY"=> "../styles",
-        "SEARCH_HOST"=> "http://localhost:9001",
-        "DB"=> array(
-            "HOST"=> "localhost",
-            "DATABASE_NAME"=> "ruskin",
-            "USERNAME"=> "root",
-            "PASSWORD"=> "",
-            "XML_FOLDER"=> "../../_Completed/",
-            "UPDATE_TOOL_PASSWORD"=> "password"
-        )
-    );
-
-**Add Ruskin Folder to erm.selu.edu workspace in VS Code**
-### Add npx webpack to ./scripts/build.sh:
-
-     npx webpack \
-      --config './src/config/webpack.production.config.babel.js' \
-      $@
-      
-## Generate all files inside of the Completed and InProcess folders:
-   Gen folder must have all xml folders generated as their respective types.
-    
-## ./erm.selu.edu/build/scripts/make-assets.bash
-    echo "Copying PHP and HTML"
-    cp -r ${RUSKIN_ROOT}/gen/_xml/_Completed ${TMP_DIR}/web/pages
-    rsync -a ${RUSKIN_ROOT}/gen/_xml/_In_Process/essays/. ${TMP_DIR}/web/pages/essays
-     
-    cp ${RUSKIN_ROOT}/src/config_template.json.php ${TMP_DIR}/web/pages/config.json.php
-    cp ${RUSKIN_ROOT}/src/composer.json ${TMP_DIR}/web/pages
-    cp ${RUSKIN_ROOT}/src/header.inc.php ${TMP_DIR}/web/pages
-    cp ${RUSKIN_ROOT}/src/style.php ${TMP_DIR}/web/pages
-    cp -r ${RUSKIN_ROOT}/src/layout_includes ${TMP_DIR}/web/pages
-     
-    rsync -a ${RUSKIN_ROOT}/_xml/_In_Process/essays/. ${TMP_DIR}/web/xml/essays`
-     
-Be sure you are copying /src/config_template.json.php and not config_production.json.php. This file does not exist.
-        
-  
-# Deployment Procedure:
-Remain on the root project of node app
-
-
-### Compile Node App
-     run `./scripts/build.sh` (obtain Node.js production code)
-   
-### Make Assets of all the pages in Ruskin
-    run `./scripts/make-assets.bash`
-    
-### Deploy the changes to the server
-    run `./scripts/deploy.bash`
-    
-    
-    
-![alt text](https://i.ibb.co/WnSR19c/Screen-Shot-2021-04-23-at-11-31-25-AM.png)
-
-    XML URL: ${currentFileURL}
-    XSL URL : ${pdu}/common/ruskin_html.xsl
-
-
-![alt text](https://i.ibb.co/568tCWc/Screen-Shot-2021-04-23-at-11-31-36-AM.png)
-
-
-![alt text](https://i.ibb.co/2j68mbd/Screen-Shot-2021-04-23-at-11-31-47-AM.png)
-
-    save as: ${pd}/gen/${makeRelative(${pd}, ${cfd})}/${cfn}.html
-    open in browswer: http://ruskin.local:8080/src/ruskin_redir_file.php?open=${cf}&new=1
-    
-### To resolve PHP services `error` :
-
-If you get any Error while running:
-    
-    brew services list
-    
-    Displays ->
-    
-    Name    Status  User Plist
-    nginx   started root /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
-    php@7.2 error root /Library/LaunchDaemons/homebrew.mxcl.php@7.2.plist
-    
-    1. brew update
-    2.  brew upgrade
-    3.  brew cleanup
-    
-    Double check the current installed PHP package :
-    
-    4. brew list | grep php
-    
-    Remove everything:
-    
-    brew uninstall --force php56 php56-apcu php56-opcache php56-xdebug php56-yaml
-    brew uninstall --force php70 php70-apcu php70-opcache php70-xdebug php70-yaml
-    brew uninstall --force php71 php71-apcu php71-opcache php71-xdebug php71-yaml
-    brew uninstall --force php72 php72-apcu php72-opcache php72-xdebug php72-yaml
-    brew cleanup
-    
-    Re-check if anything PHP-related is left:
-    
-    brew list | grep php
-    
-    If something is still left, you can uninstall those individually using the same
-    run brew uninstall --force <@phpVersionNumber>
-
-    Clean out the old configuration options for PHP:
-    
-    rm -rf /usr/local/etc/php/*
-# Common Errors and Fixes
-
-## PHP Error: Error 19968 on `brew services list`
-
-### Fix:
-```sh
-brew services cleanup
-brew services restart php
-brew services list  # Check if PHP is running
 ```
 
-### Uninstall and Reinstall PHP
-```sh
-brew uninstall --ignore-dependencies php
-```
-* Homebrew may provide additional instructions for manual removal. Follow them if needed.
+### Restart NGINX:
 
-#### Check for Remaining PHP Files:
-```sh
-brew list | grep php
-```
-If PHP-related files still exist, remove them individually:
-```sh
-brew uninstall --force <phpVersion>
-```
-
-#### Remove Old PHP Configuration:
-```sh
-rm -rf /opt/homebrew/etc/php/*
-```
-
-### Reinstall PHP
-```sh
-brew install php
-php -v  # Confirm installation
-brew services start php
-brew services list
-```
-
----
-
-## Nginx Error 256
-
-### Fix:
-#### Check for Syntax Errors
-```sh
-sudo nginx -t
-```
-#### Restart Nginx
 ```sh
 brew services restart nginx
 ```
 
-#### Check Logs for More Details:
-```sh
-tail -f /opt/homebrew/var/log/nginx/error.log
-```
-
-#### Kill Nginx Processes and Restart
-```sh
-sudo pkill -9 nginx
-brew services start nginx
-```
-
-#### Check If Another Process Is Using Port 8080
-```sh
-sudo lsof -i :8080
-```
-If another process is using port **8080**, kill it:
-```sh
-sudo kill -9 <PID>  # Replace <PID> with the actual process ID
-```
-
-### Uninstall and Reinstall Nginx
-#### Uninstall Nginx
-```sh
-brew uninstall nginx
-```
-#### Verify Nginx is Not Running
-```sh
-ps aux | grep nginx
-```
-If it's still running, force kill the process:
-```sh
-sudo pkill -9 nginx
-```
-#### Manually Remove Configuration Files (if necessary)
-```sh
-rm -rf /opt/homebrew/etc/nginx/
-```
-
-### Reinstall Nginx
-```sh
-brew install nginx
-brew services start nginx
-```
-
 ---
 
-## Locate PHP Configuration Files
-```sh
-open /opt/homebrew/etc/php  # Opens the PHP configuration folder in Finder
-```
+# PHP Setup
 
-### PHP Error
- ## If you see this error: Fatal error: Uncaught Error: Failed opening required './header.inc.php' (include_path='.:/opt/homebrew/Cellar/php/8.4.6/share/php/pear')
- Note: This error can occur after system updates 
- Fix: Recreate the symbolic links by running:
- ```sh
- cd gen/_xml
+```sh
+cd gen/_xml
 ln -s ../../src/header.inc.php .
 ln -s ../../src/style.php .
 ln -s ../../src/layout_includes .
 ```
 
+### Install Composer:
 
-# Helpful Resources:
-### For hosting multiple servers at the same time on different ports through nginx.
-  https://medium.com/@aakash.poudel.900/how-to-host-multiple-servers-through-nginx-simplified-36cd009fe484
-  https://medium.com/@aakash.poudel.900/get-familiar-with-nginx-nginx-key-commands-b6dcf99f13e9
-  https://medium.com/@aakash.poudel.900/how-to-connect-your-git-to-linux-server-using-ssh-ba9a3f191c0d
+```sh
+brew install composer
+cd src/
+composer install
+cp config_template.json.php config.json.php
+```
 
-  ## Documentation to Follow for Easy Setups
-  setting up mac documentation: https://docs.google.com/document/d/1GKZI8TN6Q9kYZ47mn-RnC5A3dOmvQcf8OejtovxQUng/edit?tab=t.0#heading=h.v07lzcv6ta80
-  Server Access - https://docs.google.com/document/d/1LyoEEQngviermBCQoiO8gOwsCROqdQqyH5bMRxXzyKI/edit?tab=t.0
+### config.json.php Sample:
 
+```php
+<?php
+$r_config = array(
+	"BASE"=> "https://english.selu.edu/web/pages",
+	"SCSS_DIRECTORY"=> "../_Resources/css_styles",
+	"DB"=> array(
+		"HOST"=> "localhost",
+		"DATABASE_NAME"=> "ruskin",
+		"USERNAME"=> "root",
+		"PASSWORD"=> "",
+		"XML_FOLDER"=> "../../_Completed/",
+		"UPDATE_TOOL_PASSWORD"=> "password"
+	)
+);
+```
+
+---
+
+# Elasticsearch Setup (with Docker)
+
+### Step 1: Create folders for certificates and config
+
+Inside your project root, create the following folders:
+
+```sh
+mkdir -p elastic/certs/es01
+mkdir -p elastic/certs/es02
+mkdir -p elastic/certs/es03
+mkdir -p elastic/config
+```
+
+### Step 2: Configure certs.yml and .env
+
+Paste the following to create the file inside `elastic/config/`
+
+```sh
+echo -e "instances:
+  - name: es01
+    dns: [ es01, localhost ]
+    ip: [ 127.0.0.1 ]
+  - name: es02
+    dns: [ es02, localhost ]
+    ip: [ 127.0.0.1 ]
+  - name: es03
+    dns: [ es03, localhost ]
+    ip: [ 127.0.0.1 ]
+" > elastic/config/certs.yml
+```
+
+Paste the following to create the `.env` file:
+
+```sh
+echo -e "ES_USER=\nES_PASS=" > .env
+```
+
+Create your desired credentials. **Production credentials are provided to the project manager.**
+
+### Step 3: Generate SSL certificates and keys for the cluster nodes
+
+Use Elasticsearch's `elasticsearch-certutil` tool to create your CA and node certificates:
+
+1. Create a Certificate Authority (CA) :
+
+```sh
+docker run --rm \
+  -v /Users/userselu/Ruskin/elastic/certs:/certs \
+  docker.elastic.co/elasticsearch/elasticsearch:8.11.3 \
+  bin/elasticsearch-certutil ca --pem --out /certs/ca.zip
+```
+
+2. Extract the CA files:
+
+```sh
+unzip elastic/certs/ca.zip -d elastic/certs
+```
+
+3. Generate node certificates signed by the CA:
+
+```sh
+docker run --rm \
+  -v /Users/userselu/Ruskin/elastic/config:/config \
+  -v /Users/userselu/Ruskin/elastic/certs:/certs \
+  docker.elastic.co/elasticsearch/elasticsearch:8.11.3 \
+  bin/elasticsearch-certutil cert --pem \
+  --in /config/certs.yml \
+  --out /certs/certs.zip \
+  --ca-cert /certs/ca/ca.crt \
+  --ca-key /certs/ca/ca.key
+```
+
+4. Extract the node certificates:
+
+```sh
+unzip elastic/certs/certs.zip -d elastic/certs
+```
+
+### Step 4: Start Elasticsearch cluster
+
+```sh
+ docker compose up -d
+```
+
+### Step 5: Confirm It’s Running:
+
+Replace the username and password with the given credentials.
+
+```sh
+curl --cacert elastic/certs/ca/ca.crt -u your_username:your_password https://localhost:9200
+```
+
+Should return cluster info JSON and a line that says "You know, for search".
+
+### Optional: Remove Elasticsearch
+
+```sh
+docker compose down -v
+```
+
+### For debugging: Delete all records form the container
+
+Enter the given username and password in the said fields.
+
+```sh
+curl --cacert elastic/certs/ca/ca.crt -u your_username:your_password -X DELETE "https://localhost:9200/ruskin_works"
+```
+
+---
+
+# Convert the SCSS files
+
+Run the given code in your terminal.
+
+```sh
+sass /Users/userselu/Ruskin/_Resources/css_styles/site_styles.scss /Users/userselu/Ruskin/_Resources/css_styles/site_styles.css
+```
+
+---
+
+# Deployment Steps
+
+1. **Compile Node App**:
+
+```sh
+./scripts/build.sh
+```
+
+2. **Make Assets**:
+
+```sh
+./scripts/make-assets.bash
+```
+
+3. **Deploy to Server**:
+
+```sh
+./scripts/deploy.bash
+```
+
+---
+
+# Troubleshooting
+
+### PHP Link Error:
+
+```sh
+ln -s ../../src/header.inc.php .
+ln -s ../../src/style.php .
+ln -s ../../src/layout_includes .
+```
+
+### PHP Not Running:
+
+```sh
+brew services cleanup
+brew services restart php
+```
+
+### NGINX 256 Error:
+
+```sh
+sudo nginx -t
+brew services restart nginx
+tail -f /opt/homebrew/var/log/nginx/error.log
+```
+
+### Port Conflict:
+
+```sh
+sudo lsof -i :8080
+sudo kill -9 <PID>
+```
+
+---
+
+# References & Resources
+
+- [Setup Docs (Google Doc)](https://docs.google.com/document/d/1GKZI8TN6Q9kYZ47mn-RnC5A3dOmvQcf8OejtovxQUng/edit#heading=h.v07lzcv6ta80)
+
+- [Hosting multiple nginx servers](https://medium.com/@aakash.poudel.900/how-to-host-multiple-servers-through-nginx-simplified-36cd009fe484)
+- [Nginx key commands](https://medium.com/@aakash.poudel.900/get-familiar-with-nginx-nginx-key-commands-b6dcf99f13e9)
+- [Git SSH Setup](https://medium.com/@aakash.poudel.900/how-to-connect-your-git-to-linux-server-using-ssh-ba9a3f191c0d)
