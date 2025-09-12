@@ -10,7 +10,7 @@
 	
 	<link rel="icon" 
       type="image/png" 
-      href="http://example.com/myicon.png">
+      href="https://english.selu.edu/web/images/ruskin_icon.png">
   
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script>

@@ -19,7 +19,7 @@ $open = str_replace("_In_Process/", "", $open);
 
 $open = r_build_url($open);
 
-header("Location: $open");
+include $open;
 
 // echo $open;
 die;

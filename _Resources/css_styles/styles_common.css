@@ -1,0 +1,49 @@
+/* Used by IE8 */
+@font-face {
+  font-family: Andron;
+  src: url('/_Resources/fonts/andron_scriptor_web_3_1.eot');
+}
+/* Used by Other Web Browsers */
+@font-face {
+  font-family: Andron;
+  src: url('/_Resources/fonts/andron_scriptor_web_3_1.woff');
+}
+body {
+  font-family: Andron, Arial, sans-serif;
+  font-size: 12pt;
+  line-height: 1.5em;
+}
+
+/**
+ * Early Ruskin Manuscripts.
+ */
+.tablespace {
+  margin: 2%;
+}
+.tablespace > table {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  table-layout: fixed;
+}
+.tablespace > table > tr,
+.tablespace > table > tbody > tr,
+.tablespace > table > tr > td,
+.tablespace > table > tbody > tr > td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.tablespace > table tr.label {
+  font-weight: bold;
+}
+.tablespace > table > tr > td,
+.tablespace > table > tbody > tr > td {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.p {
+  margin: 1em 0.5em 1em 0.3em;
+}
+
+/*# sourceMappingURL=styles_common.css.map */

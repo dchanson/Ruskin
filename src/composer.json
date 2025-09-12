@@ -1,5 +1,11 @@
 {
   "require": {
-    "leafo/scssphp": "0.0.12"
+    "leafo/scssphp": "0.0.12",
+    "elasticsearch/elasticsearch": "^8.11"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
   }
 }
