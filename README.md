@@ -121,13 +121,12 @@ server {
 
         # Add icon and site styles before <main>
         sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
-        
+
         # Add highlighting functionality before </body>
         sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
 
         try_files $uri $uri.html
                   /gen/_xml/_Completed$uri.html
-                  /gen/_xml/_In_Process$uri.html
                   /gen/_xml$uri.html
                   =404;
     }
@@ -144,7 +143,7 @@ server {
 
         # Add icon in PHP header
         sub_filter '<?php' '<?php echo \'<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png">\';';
-        
+
         # Add highlighting functionality before </body>
         sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
@@ -208,15 +207,14 @@ server {
     # HTML Routing for main folders - with highlighting for this specific pattern
     location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
         try_files /gen/_xml/_Completed/$1/$2.html
-                  /gen/_xml/_In_Process/$1/$2.html
                   /gen/_xml/$1/$2.html
                   =404;
 
         sub_filter_once off;
-        
+
         # Add icon and site styles before <main>
         sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
-        
+
         # Add highlighting functionality - needed for URLs without .html extension
         sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
@@ -224,7 +222,6 @@ server {
     # PHP Routing for witnesses, figures, corpuses - with highlighting
     location ~* ^/(witnesses|figures|corpuses)/([^/]+)$ {
         try_files /gen/_xml/_Completed/$1/$2.php
-                  /gen/_xml/_In_Process/$1/$2.php
                   /gen/_xml/$1/$2.php =404;
 
         fastcgi_pass 127.0.0.1:9000;
@@ -232,7 +229,7 @@ server {
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $document_root/gen/_xml/_Completed/$1/$2.php;
         fastcgi_param DOCUMENT_ROOT $document_root;
-        
+
         sub_filter_once off;
         sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
@@ -240,7 +237,6 @@ server {
     # PHP Routing for capitalized folders - with highlighting
     location ~ ^/(Corpuses|Figures|Witnesses)/(.+\.php)$ {
         try_files /gen/_xml/_Completed/$1/$2
-                  /gen/_xml/_In_Process/$1/$2
                   /gen/_xml/$1/$2 =404;
 
         fastcgi_pass 127.0.0.1:9000;
@@ -248,7 +244,7 @@ server {
         fastcgi_index index.php;
         fastcgi_param SCRIPT_FILENAME $document_root/gen/_xml/_Completed/$1/$2;
         fastcgi_param DOCUMENT_ROOT $document_root;
-        
+
         sub_filter_once off;
         sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
@@ -256,8 +252,6 @@ server {
     # Fallback location
     location / {
         try_files $uri $uri/ $uri.html $uri.html/
-                  /gen/_xml/_In_Process$uri
-                  /gen/_xml/_In_Process$uri.html
                   =404;
     }
 }
