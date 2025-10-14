@@ -254,6 +254,14 @@ server {
         try_files $uri $uri/ $uri.html $uri.html/
                   =404;
     }
+    # Custom 404 handling
+    error_page 404 /gen/_xml/_Completed/webpages/incompleted.html;
+
+location = /gen/_xml/_Completed/webpages/incompleted.html {
+    root /Users/userselu/Ruskin;
+    internal;
+}
+
 }
 
 ```
