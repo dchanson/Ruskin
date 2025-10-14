@@ -18,12 +18,9 @@ if (typeof PageHighlighter === 'undefined') {
       }
 
       const urlTerms = this.getHighlightTermsFromURL();
-      const storedTerms = this.getStoredHighlightTerms();
-      this.currentTerms = urlTerms.length ? urlTerms : storedTerms;
+      this.currentTerms = urlTerms;
 
       if (this.currentTerms.length) {
-        this.storeHighlightTerms(this.currentTerms);
-
         const filteredTerms = this.filterOutIndividualWords(this.currentTerms);
 
         if (filteredTerms.length) {
@@ -43,31 +40,12 @@ if (typeof PageHighlighter === 'undefined') {
       return highlightParam ? this.parseHighlightTerms(highlightParam) : [];
     }
 
+    // Disable persistence completely
     getStoredHighlightTerms() {
-      try {
-        const stored = sessionStorage.getItem(HIGHLIGHT_STORAGE_KEY);
-        return stored ? JSON.parse(stored) : [];
-      } catch (err) {
-        console.warn('Could not retrieve stored highlight terms:', err);
-        return [];
-      }
+      return [];
     }
-
-    storeHighlightTerms(terms) {
-      try {
-        sessionStorage.setItem(HIGHLIGHT_STORAGE_KEY, JSON.stringify(terms));
-      } catch (err) {
-        console.warn('Could not store highlight terms:', err);
-      }
-    }
-
-    clearStoredHighlightTerms() {
-      try {
-        sessionStorage.removeItem(HIGHLIGHT_STORAGE_KEY);
-      } catch (err) {
-        console.warn('Could not clear stored highlight terms:', err);
-      }
-    }
+    storeHighlightTerms(terms) {}
+    clearStoredHighlightTerms() {}
 
     /* ──────────────────────────── PARSING ──────────────────────────── */
 
@@ -102,7 +80,7 @@ if (typeof PageHighlighter === 'undefined') {
         if (this.isInternalLink(href) && !href.includes('highlight=')) {
           const separator = href.includes('?') ? '&' : '?';
           const highlightParam = encodeURIComponent(this.currentTerms.join(','));
-          link.href = `${href}${separator}highlight=${highlightParam}`;
+          // link.href = `${href}${separator}highlight=${highlightParam}`;
           // magnifying-glass indicator removed
         }
       });
@@ -328,7 +306,6 @@ if (typeof PageHighlighter === 'undefined') {
       });
 
       if (this.notification) this.notification.remove();
-      this.clearStoredHighlightTerms();
 
       const url = new URL(window.location);
       url.searchParams.delete('highlight');
@@ -339,7 +316,6 @@ if (typeof PageHighlighter === 'undefined') {
       this.notification = null;
       this.currentTerms = [];
 
-      // No indicator elements were created, but call kept for robustness
       document.querySelectorAll('.persistent-highlight-indicator').forEach((el) => el.remove());
     }
   }
