@@ -61,6 +61,14 @@
     <img id="toggle-transcription" src="<?php echo r_build_url('images/navbar/text-composite.jpg'); ?>" alt="Transcription Button" title="Toggle Transcriptions" width="26" height="20" />
     <img id="toggle-hand" src="<?php echo r_build_url('images/navbar/scribe_ro.jpg'); ?>" alt="Hands Button" title="Toggle Hands On/Off" width="26" height="20" />
     <img id="toggle-info" src="<?php echo r_build_url('images/navbar/info_ro.jpg'); ?>" alt="Info Button" title="Learn about Showcase" width="26" height="20" style="float:right" />
+    
+    <div class="navbar-top-links" 
+        style="display:inline-block; float:right; margin-right:15px; font-family:inherit; line-height:20px;">
+      <a href="/" style="color:#fff; text-decoration:none; font-size:13px; margin-left:15px;">Home</a>
+      <a href="/webpages/indices" style="color:#fff; text-decoration:none; font-size:13px; margin-left:15px;">Indices</a>
+      <a href="/search.html" style="color:#fff; text-decoration:none; font-size:13px; margin-left:15px;">Search</a>
+    </div>
+
     <div id="navbar-facsimile" title="Select a Facsimile">
       <div class="navbar-facsimile-text" id="navbar-facsimile-holder">
         Facsimile:
