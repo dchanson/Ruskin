@@ -98,24 +98,46 @@
   </xsl:template>
 
   <!--<item>-->
-  <xsl:template match="tei:item">
-    <xsl:choose>
-      <xsl:when test="@xml:id">
-        <a class="id-holder" id="{@xml:id}">N</a>
-        <li class="id-holder-data">
-          <xsl:apply-templates/>
-        </li>
-      </xsl:when>
-      
-      <xsl:otherwise>
+ <xsl:template match="tei:item">
+  <xsl:choose>
+    <!-- Case 1: item contains a nested list -->
+    <xsl:when test="tei:list">
+      <!-- Process content before the nested list -->
+      <xsl:variable name="before" select="node()[following-sibling::tei:list]"/>
+      <xsl:if test="$before[normalize-space(.) != '' or self::*]">
         <li>
-          <xsl:apply-templates/>
+          <xsl:apply-templates select="$before"/>
         </li>
-      </xsl:otherwise>
-    </xsl:choose>
+      </xsl:if>
+      
+      <!-- Output the nested <ul> directly -->
+      <xsl:apply-templates select="tei:list"/>
+      
+      <!-- Process content after the nested list (if non-empty) -->
+      <xsl:variable name="after" select="node()[preceding-sibling::tei:list]"/>
+      <xsl:if test="$after[normalize-space(.) != '' or self::*]">
+        <li>
+          <xsl:apply-templates select="$after"/>
+        </li>
+      </xsl:if>
+    </xsl:when>
 
+    <!-- Case 2: item has @xml:id and real content -->
+    <xsl:when test="@xml:id">
+      <a class="id-holder" id="{@xml:id}"></a>
+      <li class="id-holder-data">
+        <xsl:apply-templates/>
+      </li>
+    </xsl:when>
 
-  </xsl:template>
+    <!-- Case 3: normal item -->
+    <xsl:otherwise>
+      <li>
+        <xsl:apply-templates/>
+      </li>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
 
     <xsl:template match="tei:gap">
       <xsl:choose>

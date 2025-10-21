@@ -1,0 +1,106 @@
+.searchFields {
+	padding: 5px;
+	text-align: left;
+}
+
+.searchFields select, input {
+	margin: 5px;
+}
+
+.searchFields select {
+	min-width: 150px;
+}
+
+.searchbox {
+	width: 250px;
+}
+
+.searchFields table, tr, td {
+	border: none;
+	width: initial;
+	padding: 0px;
+	font-size: 10pt;
+	text-align: left;
+}
+
+.searchFields table {
+	margin: auto;
+	width: 800px;
+}
+
+.innerTable {
+	margin-left: -20px !important;
+	width: initial !important;
+}
+
+.subtype {
+	display: none;
+}
+
+.content {
+	padding-top: initial;
+}
+
+select:disabled {
+	color: #666;
+    text-shadow: 1px 1px 1px #fff;
+    background: #ddd;
+}
+
+label {
+	padding: 3px;
+	margin-left: 5px;
+}
+
+.labelDisabled {
+	color: #666;
+    text-shadow: 1px 1px 1px #fff;
+    background: #ddd;
+	padding: 3px;
+}
+
+.searchPages a {
+	background: -webkit-linear-gradient(to bottom right, #fff, #ccc);
+	background: -o-linear-gradient(to bottom right, #fff, #ccc);
+	background: -moz-linear-gradient(to bottom right, #fff, #ccc);
+	background: linear-gradient(to bottom right, #fff, #ccc);
+	padding: 5px;
+	border-radius: 5px;
+	margin: 2px;
+	border: 1px solid #666;
+	box-shadow: 1px 1px 0px #aaa;
+	text-decoration: none;
+	color: #000;
+	font-size: 10pt;
+}
+
+.selectedPage {
+	box-shadow: -1px -1px 1px #222 !important;
+    background: linear-gradient(to bottom right, #ccc, #fff) !important;
+}
+
+.autoCompleteResults {
+	margin-top: -5px;
+    margin-left: 5px;
+    width: 252px;
+	background: linear-gradient(to top right, #ddd, rgba(255, 255, 255, 0.80));
+	position: absolute;
+	display: none;
+	border: 1px solid #6F6F6F;
+	border-top: none;
+    border-radius: 0px 0px 5px 5px;
+	box-shadow: 3px 5px 10px #999;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+.autoCompleteResults span {
+	display: block;
+    overflow: hidden;
+    height: 20px;
+    border-bottom: solid 1px #aaa;
+    padding: 3px;
+}
+
+.autoCompleteResults span:hover {
+	background: rgba(212, 219, 255, 0.75);
+}

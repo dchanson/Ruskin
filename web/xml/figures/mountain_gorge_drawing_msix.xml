@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="figure">
+        <fileDesc xml:id="mountain_gorge_drawing_msix">
+            <titleStmt>
+                <title type="main">Mountain Gorge Drawing</title>
+                <title type="sub">Electronic text describing original drawing</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2017-09-06">September 6, 2017</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                       <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS IX</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msix/MSIX49v-50r.jpg">p. 49r</locus>
+
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msix"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p><persName corresp="#JR">John Ruskin</persName>&#x02BC;s early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833&#x2013;34</date>,
+                                    examples of which can be found in <title type="manuscript" corresp="MSVIII">MS VIII</title> and <title type="manuscript" corresp="#MSIX">MS IX</title>, pages <locus from="##" to="##">##&#x2013;##</locus>, and <title type="manuscript" corresp="#MSIX">MS IX</title>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="figure" subtype="drawing">
+                <figure>
+                    <head type="title"><title type="artwork" corresp="#JRMOUNTAINGORGEMSIX">Entrance to Gondo Gallery</title></head>
+                    <figDesc>Pen and ink, approx. ? &#x00D7; ? cm (image only).</figDesc>
+                    <p>The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php"><title type="book" corresp="#JRWORKSLE">Library Edition</title></ref> 
+                        describe the image as a &#x201C;a mountain gorge&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSKLE"><hi rend="italic">Works</hi></title></ref>, 2:364 n. 1). 
+                        The drawing is a copy of <persName corresp="#WBI">William Brockedon</persName>&#x02BC;s chapter&#x2010;title vignette for &#x201C;The Pass of the Simplon&#x201D;, 
+                        <title type="artwork" corresp="WBISIMPLONGREATGALLERY"><hi rend="italic">The Great Gallery near Gondo</hi></title>, 
+                        engraved by <persName corresp="#EFF">Edward Finden</persName>, in <ref type="bibliography" target="bibliography.php#BROCKEDONILLUSTRATIONS"><title type="book" corresp="#BROCKEDONILLUSTRATIONS"><hi rend="italic">Illustrations of the Passes of the Alps</hi></title></ref> (vol. 2, &#x201C;The Pass of the Simplon &#x201D;, title page).</p>
+                    
+                    <p>According to <persName corresp="#JR">Ruskin</persName>&#x02BC;s <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php#ACCOUNTTOCFAREWELLTOITALYILLUS"><title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">List of Proposed Additional Contents for the Account of a Tour on the Continent</title></ref>, 
+                        he destined this drawing for a section entitled <title type="composite" corresp="#JRFAREWELLCOMP">&#x201C;Farewell to <placeName corresp="#ITALY">Italy&#x201D;</placeName></title>, 
+                        referring to the crossing into <placeName corresp="#SWITZERLAND">Switzerland</placeName> via the <geogName corresp="#SIMPLON">Simplon Pass</geogName>. 
+                        Along with the vignette, a copy of another plate from <persName corresp="#WBI">Brockedon</persName>&#x02BC;s <geogName corresp="#SIMPLON">Simplon</geogName> chapter, 
+                        <title type="artwork" corresp="#WBIVALDOSSOLADEFILE"><hi rend="italic">Val d&#x02BC;Ossola from the Defile of the Dovedro</hi></title>, were to be placed
+                        in reverse order from their appearance in the <title type="book" corresp="#BROCKEDONILLUSTRATIONS"><hi rend="italic">Illustrations</hi></title>, 
+                        since the Ruskins&#x02BC; itinerary carried them in the opposite direction from <persName corresp="#WBI">Brockedon</persName>&#x02BC;s imagined traveler.</p>
+                    
+                    <p><persName corresp="#WBI">Brockedon</persName> dwells on &#x201C;<hi rend="italic">les belles horreurs</hi> of the <geogName corresp="#SIMPLON">Simplon</geogName>&#x201D;, 
+                        particularly the narrow <geogName corresp="#GONDOGORGE">Gondo Gorge</geogName>, where several dramatic features converge to form the scene in the vignette: 
+                        &#x201C;the rocky and perpendicular bases of the mountains approach more closely, 
+                        leaving only space for the road and the foaming torrent [of the <geogName corresp="#DIVERIARIVER">Diveria River</geogName>], which the latter in some places entirely usurps; 
+                        and in such places the road is carried through galleries cut in the rocks. . . . [T]he wonder of this part of the road is the great gallery, which is formed just below the place 
+                        where a bridge leads from the right to the left bank of the <geogName corresp="#DIVERIARIVER">Dovedro [i.e., Diveria]</geogName>. The ravine appears to be closed in, 
+                        and the only passage is by one of the most stupendous works ever accomplished&#x2014;a gallery, cut through the <name type="geological" corresp="#GRANITE">granite</name>, 
+                        596 English feet long, which at the opening on the Italian side crosses the waterfall of the <geogName corresp="#FRASSINONE">Frassinone</geogName>: 
+                        this torrent, falling from a great height, rushes through the bridge thrown across it, and descends above 100 feet into the <geogName corresp="#DOVEDRO">Dovedro</geogName>, where the latter river, 
+                        forming a cataract, meets the waters of the <geogName corresp="#FRASSINONE">Frassinone</geogName> in horrible commotion: it is a spot unrivalled in its astonishing effect&#x201D;
+                        (<ref type="bibliography" target="bibliography.php#BROCKEDONILLUSTRATIONS"><persName corresp="#WBI">Brockedon</persName>, <title type="book" corresp="#BROCKEDONILLUSTRATIONS"><hi rend="italic">Illustrations of the Passes of the Alps</hi></title></ref> (vol. 2, &#x201C;The Pass of the Simplon &#x201D;, 12; 
+                        see also <ref type="bibliography" target="bibliography.php#EBELTRAVELLERSGUIDE"><persName corresp="#JGE">Ebel</persName>, <title type="book" corresp="#EBELTRAVELLERSGUIDE"><hi rend="italic">Traveller&#x02BC;s Guide through Switzerland</hi></title></ref>, 84&#x2013;85, 
+                        in which the river forming the cataract is also named the <geogName corresp="#FRASSINONE">Alpirnbach</geogName>&#x2014;today, the <geogName corresp="#FRASSINONE">Alpjerbach</geogName> and <geogName corresp="#FRASSINONE">Alpjerfall</geogName>).</p>
+                </figure>
+            </div>
+        </body>
+    </text>
+</TEI>
