@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="figure">
+        <fileDesc xml:id="mountain_chalet_drawing_msix">
+            <titleStmt>
+                <title type="main">Mountain Scene with Chalet Drawing</title>
+                <title type="sub">Electronic text describing original drawing</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#AEH">Aimee E. Harris</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2017-09-06">September 6, 2017</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>ruskinproject@selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                       <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <msName>MS IX</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="msix/MSIX52v-53r.jpg">p. 53r</locus>
+
+                            <filiation><ref type="apparatus" target="apparatuses/account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_msix"></ref></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1833-34" scribe="JR">
+                                <p><persName corresp="#JR">John Ruskin</persName>&#x02BC;s early boyhood hand, circa <date notBefore="1833" notAfter="1834">1833&#x2013;34</date>,
+                                    examples of which can be found in <title type="manuscript" corresp="MSVIII">MS VIII</title> and <title type="manuscript" corresp="#MSIX">MS IX</title>, pages <locus from="##" to="##">##&#x2013;##</locus>, and <title type="manuscript" corresp="#MSIX">MS IX</title>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="figure" subtype="drawing">
+                <figure>
+                    <head type="title"><title type="artwork" corresp="#JRMOUNTAINCHALETMSIX">Mountain Scene (Alps?) with Chalet</title></head>
+                    <figDesc>Pen and ink, approx. ? &#x00D7; ? cm (image only).</figDesc>
+                    <p>The editors of the <ref type="note" subtype="bibliographical" target="library_edition_note.php"><title type="book" corresp="#JRWORKSLE">Library Edition</title></ref> 
+                        describe the image as &#x201C;a mountain scene, ch&#x00E2;let in foreground&#x201D; 
+                        (<ref type="bibliography" target="bibliography.php#JRWORKSLE"><persName corresp="#JR">Ruskin</persName>, <title type="book" corresp="#JRWORKSKLE"><hi rend="italic">Works</hi></title></ref>, 2:364 n. 1).
+                        The original image that <persName corresp="#JR">Ruskin</persName> may have copied is unknown, but evidence in the 
+                        <ref type="witness" target="account_of_a_tour_on_the_continent_toc_msviii.php#ACCOUNTTOCSTRASBURGILLUS"><title type="bibliography_text" corresp="#JRPROPOSEDTABLEOFCONTENTS">List of Proposed Additional Contents for the &#x201C;Account&#x201D; (Table 2, Illustrations)</title></ref> 
+                        for the section <ref type="apparatus" target="account_of_a_tour_on_the_continent_apparatus.php#account_of_a_tour_on_the_continent_pcs_corpus_strasburgcomp"><title type="composite" corresp="#JRSTRASBURGCOMP">&#x201C;<placeName corresp="#STRASBOURG">Strasburg</placeName>&#x201D;</title></ref> 
+                        suggests that this drawing may correspond to a proposed illustration that Ruskin entitled &#x201C;The swiss cottages&#x201D;.</p>
+                    <p>The connection between Swiss cottages and Strasbourg in Ruskin's mind is the opening to the Black Forest. His poem 
+                        <ref type="witness" target="oh_the_morn_looked_bright_on_hill_and_dale_poem_msviii.php"><title type="poem" corresp="#JROHTHEMORNLOOKEDBRIGHT">&#x201C;Oh the morn looked bright on hill and dale&#x201D;</title></ref> 
+                        focuses on the departure from Strasbourg and Kehl, leading into the Black Forest through the valley of the Kinzig River where it empties into the Rhine; 
+                        and his essay <ref type="witness" target="it_was_a_wide_and_stretchy_sweep_prose_msviii.php"><title type="essay" corresp="#JRITWASAWIDEANDSTRETCHYSWEEP">&#x201C;It was a wide and stretchy sweep of lovely blue champaign&#x201D;</title></ref> 
+                        marks the family's first view of that "celebrated thing", the "Swiss cottage". They were in fact encountering the architecture of the Black Forest house, 
+                        not the Alpine chalet, but British guidebooks similarly encouraged the perception of the Black Forest as "Swiss" in character (see the contextual glosses attached to 
+                        <ref type="witness" target="oh_the_morn_looked_bright_on_hill_and_dale_poem_msviii.php"><title type="poem" corresp="#JROHTHEMORNLOOKEDBRIGHT">&#x201C;Oh the morn looked bright on hill and dale&#x201D;</title></ref>). 
+                        Whatever the source of Ruskin's drawing, it appears to depict an Alpine scene, not the Black Forest.</p>
+                </figure>
+            </div>
+        </body>
+    </text>
+</TEI>
