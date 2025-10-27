@@ -70,6 +70,16 @@ body {
     width: auto;
   }
 }
+.floating-text .essay.compact {
+  background-color: transparent;
+  overflow: auto;
+  padding-bottom: 2% !important;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2% !important;
+  height: auto !important;
+  max-height: none !important;
+}
 @media all and (min-width: 901px) {
   .content,
   .apparatus,
