@@ -1,0 +1,22 @@
+/* 
+  Styles for glosses.
+ */
+
+.glosses {
+  a.anchor-control.active+span {
+    display: block;
+    
+    animation: 1s ease-out 0s 1 blinkActiveGloss;
+    
+    background-color: $activeGlossFinalColor;
+    border: 1px solid black;
+    border-radius: 25px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  
+}
