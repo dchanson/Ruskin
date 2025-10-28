@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject MANUSCRIPT followed by "apparatus", for example,
+            "msi_apparatus". The xml:id also corresponds with its XML file's name, for example, "msi_apparatus.xml".-->
+        <fileDesc xml:id="msiiia_apparatus">
+            <titleStmt>
+                <title type="main">MS IIIA</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#TPD">Isaiah Thomas</persName>
+                    <resp>conributing transcription/encoding</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of
+                    America, Blossman Foundation, Huntington Library, Louisiana Board of Regents,
+                    National Endowment for the Humanities, NINES, Pierpont Morgan Library, South
+                    Central Modern Language Association, and Southeastern Louisiana
+                    University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0. Where a version number is followed by "(TC)", the file has been TextCrawled.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine><name type="institution">Southeastern Louisiana University</name></addrLine>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond, LA 70402</addrLine>
+                    <addrLine>erm@humanitiesonline.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>            
+    <text>
+        <body>
+            <div type="apparatus">
+            <head type="title">MS IIIA</head>
+                <!--A manuscript apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p><title type="manuscript" corresp="#MSIIIA">MS IIIA</title>
+                    </p>
+                </div>
+                <div type="section" xml:id="LOCATION">
+                    <head type="section">Location</head>
+                    <p><orgName corresp="#YALE">Yale</orgName> (in slipcase  <title type="lesson" corresp="#JRHARRYANDLUCY">Harry &#x0026; Lucy</title>, Poems &#x0026;c ). </p>
+                </div>
+                <div type="section" xml:id="PROVENANCE">
+                    <head type="section">Provenance</head>
+                    <p>Sotheby’s <date when="1930">1930</date>..(described only in a footnote as "another similar <ref type="note" subtype="bibliographical" target="red_book_note.php"><title type="manuscript" corresp="#REDBOOK"></title>red book</ref> contain[ing] the remainder of <title type="lesson" corresp="#JRHARRYANDLUCY">'Harry and Lucy,'</title> 
+                        and some more notes of sermons" which <persName corresp="#WGC">Collingwood</persName> omitted from the "Note" because it contains 
+                        no poetry.</p>
+                </div>
+                <div type="section" xml:id="DESCRIPTION">
+                    <head type="section">Description</head>
+                    <p><ref type="note" subtype="bibliographical" target="red_book_note.php"><title type="manuscript" corresp="#REDBOOK"></title>Red Book</ref>; 9.8 × 15.2 cm; 38 leaves (counting from <orgName corresp="#YALE">Yale&#x02bc;s</orgName> bookplate, and including final leaf or endpaper, which has been partially glued to back board), of which 2r&#x2013;15r numbered by <persName corresp="#JR">Ruskin</persName> as pp. 1&#x2013;29; watermark <date when="1823">1823</date>. The leaf 31r&#x2013;v has been attached to 30v with tape, and a stub along the inside margin of 31v shows that a leaf has been torn out. Following 31v, the gathering 32r&#x2013;37v is loose and could be missing outermost leaves.
+                       The inside front board is blank except for <orgName corresp="#YALE">Yale&#x02bc;s </orgName> bookplate and, unlike the other <ref type="note" subtype="bibliographical" target="red_book_note.php"><title type="manuscript" corresp="#REDBOOK"></title>Red Books</ref> in the slipcase <title type="lesson" corresp="#JRHARRYANDLUCY">Harry &#x0026; Lucy</title>, does not have glued or tipped in a brief description of the notebook penned by <persName corresp="#AW">Wedderburn</persName>(?) with a clipping from PJR. <title type="manuscript" corresp="#MSIIIA">MS IIIA</title> was never described by the earlier editors, however, neither in PJR nor in Works. <persName corresp="#AW">Wedderburn</persName>, or whoever was responsible for slipcasing the juvenilia, was evidently content to include <title type="manuscript" corresp="#MSIIIA">MS IIIA</title> in the <title type="lesson" corresp="#JRHARRYANDLUCY">Harry and Lucy</title> slipcase, where it logically belonged.
+                       Title page (1r):  <title type="lesson" corresp="#JRHARRYANDLUCY">HARRY AND LUCY</title> / CONCLUDED / BEING / THE LAST PART / OF / EARLY LESSONS / BY / <persName corresp="#JR">JOHN RUSKIN</persName>/ IN FOUR VOLUMES / VOL III / HERNHILL / DULWICH.  On back of the title page (1v), <persName corresp="#JR">Ruskin</persName> imitated a printed page of  ERRATA. 
+                       Unlike the  <title type="lesson" corresp="#JRHARRYANDLUCY">Harry and Lucy</title>  narratives in <title type="manuscript" corresp="#MSI">MS I</title> and <title type="manuscript" corresp="#MSIII">III</title>, this volume of the tale is written entirely in ink; however, this volume contains no  plates,  for which pencil had been reserved in <title type="manuscript" corresp="#MSIII">MS III</title>, even when the text was ink. Later in <title type="manuscript" corresp="#MSIIIA">MS IIIA</title>, the mineralogy notes and sermon draft are written in pencil.
+                       The pages following  <title type="lesson" corresp="#JRHARRYANDLUCY">Harry and Lucy</title>  that are blank except for <persName corresp="#JR">Ruskin's</persName> page numbering (pp. 10&#x2013;29) must have been intended for the continuation of the narrative, since <persName corresp="#JR">Ruskin</persName> prepared the pages in the same way as pp. 1&#x2013;9&#x2014;i.e., with verticle rules in pencil near the inside and outside margins, serving as guides to  justify <persName corresp="#JR">Ruskin&#x02bc;s</persName> printing.
+                        <persName corresp="#HGV">Viljoen</persName> misdated <title type="manuscript" corresp="#MSIIIA">MS IIIA</title> as autumn <date when="1828">1828</date>, <date when="182930">1829-30</date>, <date when="1832">1832</date>. The mineralogy notes, no. 172, are presumably no earlier than the note on payment for the <persName corresp="#HOMER">Homer</persName> and for  mineralogy articles,  which precedes the notes written from the end of the volume. Payment for <persName corresp="#HOMER">Homer</persName> must refer to translating the <title type="poem" corresp="Iliad">Iliad</title> (no. 160a) in <date when="1832-02-27">late February 1832</date>:  But <persName corresp="#HOMER">Homer</persName>! I am happy to inform you, sir, that I have translated about 550 lines of the first book. . . . These however I do suppose are news to you extremely unwelcome&#x2014;unwelcome owing to what <persName corresp="#JJR">John James</persName> will have to pay (<ref type="apparatus" target="jr_to_jjr_1832-02-27_al_apparatus.php"><title type="letter" corresp="#jr_to_jjr_1832-02-27">letter of <date when="1832-02-27">27 February 1832</date></title></ref> [<ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName>, ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref> 268&#x2013;69]). The following mineralogy notes were entered considerably later, I believe, probably after December <date when="1832">1832</date> (see note to no. 172). Finally, following the mineralogical notes, the rough draft of the eighteenth <title type="sermon" corresp="#JRSERMONSONTHEPENTATEUCH">Sermon on the Pentateuch</title> could have been entered anytime in <date when="1833">1833</date> after sermons <title type="manuscript" corresp="VIII-X">VIII-X</title> were drafted early in that year (see nos. 174-75).</p>
+                    <!--The subsection that follows, Collation, is common to all manuscript apparatuses and was, accordingly, assigned an xml:id by
+                        the Ruskin Project Team during work on the "First Twenty."-->
+                    <div type="subsection" xml:id="COLLATION">
+                    <head type="subsection">Collation</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+                <div type="section" xml:id="CONTENTS">
+                    <head type="section">Contents</head>
+                    <!--Typically, this section will begin:-->
+                    <p>Forward from front of book:
+                        a) Following title page (1r), a list of  errata  (1v).
+                        b) Vol. 3 of  <title type="lesson" corresp="#JRHARRYANDLUCY">Harry and Lucy</title>,  no. 32 (pp. 1&#x2013;9 [2r&#x2013;6r]). The end of the narrative (pp. 7&#x2013;9 [5r&#x2013;6r]), is nearly identical to its draft in <title type="manuscript" corresp="#MSII">MS II</title>. The fair&#x2010;copy text is broken off in the middle of a sentence.
+                        c) Blank pp. 10&#x2013;11 (6v&#x2013;7r), presumably left open for continuation of <title type="lesson" corresp="#JRHARRYANDLUCY">Harry and Lucy</title>, never completed.
+                        d) Mineralogy notes, no. 172 (pp. 12&#x2013;15 [7v&#x2013;9r]), later composed on pp. originally set aside for continuation of  <title type="lesson" corresp="#JRHARRYANDLUCY">Harry and Lucy</title>. These notes appear roughly contemporaneous with j below.
+                        e) Blank, 9v&#x2013;24v (9v&#x2013;15r numbered by <persName corresp="#JR">Ruskin</persName> pp. 16&#x2013;29, and 15v&#x2013;23v left completely blank).
+                        f) List of minerals keyed to numbers of unknown significance (24r).
+                        g) Blank, 24v&#x2013;25r.
+                        Forward from back of book:
+                        h) Mineral list, no. 186 (38r).
+                        i) List of payments to <persName corresp="#JR">Ruskin</persName> by <persName corresp="#JJR">John James</persName> (37v):
+                        s.	d
+                        To	80 Lines composition.	0	4
+                        To	8. min. articles.		0	8
+                        To	2. Pages homer		2.	0
+                        _______
+                        3.	0
+                        To	2 ditto			2.	0
+                        Lent					2.	6
+                        _______
+                        Paid	1.	6 <!-- Removed tags around the 1 and the 6 on this line because I could not figure out why they are invalid.-->
+                        Presumably, the total paid is crossed out, because <persName corresp="#JR">Ruskin</persName> had short-changed himself a shilling. According to no. 148, <persName corresp="#JR">Ruskin</persName> was getting a halfpenny per line for his  greek  in late <date when="1831">1831</date> and early <date when="1832">1832</date>, presumably for his translation of the <title type="poem" corresp="Iliad">Iliad</title> (see no. 160a). It is not clear what  lines  he is counting, but 24 lines to earn a shilling for a  page  appears a likely equation.
+                            From this sum, we also discover that a mineralogical  article  earned a penny, and, at least at this time, poetry composition was paid a farthing per five lines of poetry (see no. 91).
+                            j) Mineralology notes (36v, 35v, 34v), no. 172. These notes alternate with blank pages (37r, 36r, 35r, 34r; 37r contains a few words).
+                            k) Draft of sermon 18, no. 182 (32v, 31v, 30v, 29v, 28v, 27v, 26v, 25v). As in j, the draft pages alternate with blank pages (32r, 30r, 29r, 28r, 27r, 26r).
+                            l) Pen and ink sketch of group of trees on an outcropping of rock (31r, undatable).
+                        <hi rend="italic">From front of book, the sequential order of contents:</hi>
+                    </p>
+                    <!--and continue with a list, which may group items according to type (e.g. prose, poetry) or other similiarity. Note: drawings
+                        may be included as items in this list.-->
+                    <list xml:id="LIST" type="ordered">
+                        <item n="a">Item belonging to Group A.</item>
+                        <item n="b.1">First item belonging to Group B.</item>
+                        <item n="b.2">Second item belonging to Group B.</item>
+                        <item n="b.3">Third item belonging to Group B.</item>
+                        <item n="c">Item belonging to Group C.</item>
+                    </list>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Date of composition December <date when="1828">1828</date>; <date when="183334">1833-34</date>.</p>
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <!--The Discussion section may contain all or only some of the following subsections.-->
+                    <div type="subsection">
+                        <head type="subsection">Hand</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Composition &#x0026; Sources</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                    <div type="subsection">
+                        <head type="subsection">Domestic Scene</head>
+                        <p>Body paragraph.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

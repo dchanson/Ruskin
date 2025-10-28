@@ -103,27 +103,31 @@ if ($nameValue !== '') {
 }
 
 if ($typeFilter !== '') {
-    $parts   = explode(':', $typeFilter);
-    $mainType = $parts[0] ?? '';
-    $subType  = $parts[1] ?? '';
+    if ($typeFilter === 'bibliography') {
+        $must[] = ['term' => ['relative_path.keyword' => 'notes/bibliography.xml']];
+    } else {
+        $parts   = explode(':', $typeFilter);
+        $mainType = $parts[0] ?? '';
+        $subType  = $parts[1] ?? '';
 
-    $directoryMap = [
-        'apparatus' => 'apparatuses',
-        'figures'   => 'figures',
-        'glosses'   => 'glosses',
-        'letters'   => 'letters',
-        'notes'     => 'notes',
-        'witness'   => 'witnesses',
-    ];
+        $directoryMap = [
+            'apparatus' => 'apparatuses',
+            'figures'   => 'figures',
+            'glosses'   => 'glosses',
+            'letters'   => 'letters',
+            'notes'     => 'notes',
+            'witness'   => 'witnesses',
+        ];
 
-    if (isset($directoryMap[$mainType])) {
-        $must[] = ['term' => ['directory' => $directoryMap[$mainType]]];
-    } elseif ($mainType !== '') {
-        $must[] = ['term' => ['type' => $mainType]];
-    }
+        if (isset($directoryMap[$mainType])) {
+            $must[] = ['term' => ['directory' => $directoryMap[$mainType]]];
+        } elseif ($mainType !== '') {
+            $must[] = ['term' => ['type' => $mainType]];
+        }
 
-    if ($subType !== '') {
-        $must[] = ['term' => ['subtype' => $subType]];
+        if ($subType !== '') {
+            $must[] = ['term' => ['subtype' => $subType]];
+        }
     }
 }
 
