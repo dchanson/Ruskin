@@ -116,7 +116,6 @@ server {
     location ~* \.html$ {
         charset utf-8;
         gzip off;
-
         sub_filter_once off;
 
         # Add icon and site styles before <main>
@@ -204,25 +203,38 @@ server {
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
 
-    # HTML Routing for main folders - with highlighting for this specific pattern
-    location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
-        try_files /gen/_xml/_Completed/$1/$2.html
-                  /gen/_xml/$1/$2.html
-                  =404;
+    # HTML Routing for main folders - with highlighting
+    # HTML Routing for main folders - with highlighting
+location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
+    default_type text/html;
+    charset utf-8;
+    gzip off;
 
-        sub_filter_once off;
+    sub_filter_once off;
+    sub_filter_types text/html text/plain;
 
-        # Add icon and site styles before <main>
-        sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
+    # Add icon and site styles before <main>
+    sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
 
-        # Add highlighting functionality - needed for URLs without .html extension
-        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
-    }
+    # Inject Home button after the page title (handles both h1 and div)
+    sub_filter '<h1 class="page-title">' '<h1 class="page-title"><div class="site-controls"><a class="btn-home" href="/" aria-label="Home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/></svg></a></div>';
+    
+    sub_filter '<div id="top" class="page-title">' '<div id="top" class="page-title"><div class="site-controls"><a class="btn-home" href="/" aria-label="Home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/></svg></a></div>';
+
+    # Add highlighting functionality
+    sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
+
+    try_files /gen/_xml/_Completed/$1/$2.html
+              /gen/_xml/$1/$2.html
+              =404;
+}
+
 
     # PHP Routing for witnesses, figures, corpuses - with highlighting
     location ~* ^/(witnesses|figures|corpuses)/([^/]+)$ {
         try_files /gen/_xml/_Completed/$1/$2.php
-                  /gen/_xml/$1/$2.php =404;
+                  /gen/_xml/$1/$2.php
+                  =404;
 
         fastcgi_pass 127.0.0.1:9000;
         include fastcgi_params;
@@ -237,7 +249,8 @@ server {
     # PHP Routing for capitalized folders - with highlighting
     location ~ ^/(Corpuses|Figures|Witnesses)/(.+\.php)$ {
         try_files /gen/_xml/_Completed/$1/$2
-                  /gen/_xml/$1/$2 =404;
+                  /gen/_xml/$1/$2
+                  =404;
 
         fastcgi_pass 127.0.0.1:9000;
         include fastcgi_params;
@@ -254,15 +267,16 @@ server {
         try_files $uri $uri/ $uri.html $uri.html/
                   =404;
     }
+
     # Custom 404 handling
     error_page 404 /gen/_xml/_Completed/webpages/incompleted.html;
 
-location = /gen/_xml/_Completed/webpages/incompleted.html {
-    root /Users/userselu/Ruskin;
-    internal;
+    location = /gen/_xml/_Completed/webpages/incompleted.html {
+        root /Users/userselu/Ruskin;
+        internal;
+    }
 }
 
-}
 
 ```
 
