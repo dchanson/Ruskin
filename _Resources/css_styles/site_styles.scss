@@ -948,3 +948,31 @@ position: fixed;
   color: #036;
   font-size: 14pt;
 }
+
+  .site-controls {
+  display: inline-block;
+  margin-left: 0.15rem;
+  vertical-align: middle;
+}
+
+.btn-home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  margin-left: 0.25rem !important;
+  margin-top: -75px !important;
+}
+
+.btn-home svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  display: block;
+}
