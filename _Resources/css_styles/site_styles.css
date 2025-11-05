@@ -1,13 +1,13 @@
 /* Used by IE8 */
 @font-face {
   font-family: Andron;
-  src: url('/_Resources/fonts/andron_scriptor_web_3_1.eot');
+  src: url('/web/fonts/andron_scriptor_web_3_1.eot');
 }
 
 /* Used by Other Web Browsers */
 @font-face {
   font-family: Andron;
-  src: url('/_Resources/fonts/andron_scriptor_web_3_1.woff');
+  src: url('/web/fonts/andron_scriptor_web_3_1.woff');
 }
 
 body {
@@ -23,27 +23,27 @@ body {
   margin: 2%;
 }
 
-.tablespace>table {
+.tablespace > table {
   width: 100%;
   max-width: 600px;
   text-align: center;
   table-layout: fixed;
 }
 
-.tablespace>table>tr,
-.tablespace>table>tbody>tr,
-.tablespace>table>tr>td,
-.tablespace>table>tbody>tr>td {
+.tablespace > table > tr,
+.tablespace > table > tbody > tr,
+.tablespace > table > tr > td,
+.tablespace > table > tbody > tr > td {
   border: 1px solid black;
   border-collapse: collapse;
 }
 
-.tablespace>table tr.label {
+.tablespace > table tr.label {
   font-weight: bold;
 }
 
-.tablespace>table>tr>td,
-.tablespace>table>tbody>tr>td {
+.tablespace > table > tr > td,
+.tablespace > table > tbody > tr > td {
   word-wrap: break-word;
   white-space: normal;
 }
@@ -134,19 +134,7 @@ body {
   padding-top: 8%;
 }
 
-.floating-text .essay.compact {
-  background-color: transparent;
-  overflow: auto;
-  padding-bottom: 2% !important;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2% !important;
-  height: auto !important;
-  max-height: none !important;
-}
-
 @media all and (max-width: 900px) {
-
   .content,
   .apparatus,
   .essay,
@@ -158,9 +146,18 @@ body {
     width: auto;
   }
 }
+.floating-text .essay.compact {
+  background-color: transparent;
+  overflow: auto;
+  padding-bottom: 2% !important;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2% !important;
+  height: auto !important;
+  max-height: none !important;
+}
 
 @media all and (min-width: 901px) {
-
   .content,
   .apparatus,
   .essay,
@@ -1098,12 +1095,12 @@ position: fixed;
   text-indent: -22px;
 }
 
-.webpage>title {
+.webpage > title {
   color: #036;
   font-size: 14pt;
 }
 
- .site-controls {
+.site-controls {
   display: inline-block;
   margin-left: 0.15rem;
   vertical-align: middle;
