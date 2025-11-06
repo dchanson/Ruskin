@@ -172,9 +172,9 @@ server {
     }
 
     # Search routes (no highlighting needed)
-    location = /search.html {
+    location ~ ^/search(?:\.html)?$ {
         root /Users/userselu/Ruskin/src/search_new;
-        try_files $uri =404;
+        try_files /search.html =404;
     }
 
     location = /search_style.css {
@@ -204,30 +204,29 @@ server {
     }
 
     # HTML Routing for main folders - with highlighting
-    # HTML Routing for main folders - with highlighting
-location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
-    default_type text/html;
-    charset utf-8;
-    gzip off;
+    location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
+        default_type text/html;
+        charset utf-8;
+        gzip off;
 
-    sub_filter_once off;
-    sub_filter_types text/html text/plain;
+        sub_filter_once off;
+        sub_filter_types text/html text/plain;
 
-    # Add icon and site styles before <main>
-    sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
+        # Add icon and site styles before <main>
+        sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
 
-    # Inject Home button after the page title (handles both h1 and div)
-    sub_filter '<h1 class="page-title">' '<h1 class="page-title"><div class="site-controls"><a class="btn-home" href="/" aria-label="Home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/></svg></a></div>';
-    
-    sub_filter '<div id="top" class="page-title">' '<div id="top" class="page-title"><div class="site-controls"><a class="btn-home" href="/" aria-label="Home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/></svg></a></div>';
+        # Inject Home button after the page title (handles both h1 and div)
+        sub_filter '<h1 class="page-title">' '<h1 class="page-title"><div class="site-controls"><a class="btn-home" href="/" aria-label="Home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/></svg></a></div>';
 
-    # Add highlighting functionality
-    sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
+        sub_filter '<div id="top" class="page-title">' '<div id="top" class="page-title"><div class="site-controls"><a class="btn-home" href="/" aria-label="Home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/></svg></a></div>';
 
-    try_files /gen/_xml/_Completed/$1/$2.html
-              /gen/_xml/$1/$2.html
-              =404;
-}
+        # Add highlighting functionality
+        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
+
+        try_files /gen/_xml/_Completed/$1/$2.html
+                /gen/_xml/$1/$2.html
+                =404;
+    }
 
 
     # PHP Routing for witnesses, figures, corpuses - with highlighting
