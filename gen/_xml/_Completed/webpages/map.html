@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Map - Ruskin</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+<body>
+    <h1 class="page-title"> Map of Places</h1>
+    <div id="map" style="height: 600px;"></div>
+  <script>
+    const map = L.map('map').setView([52.0, 5.0], 4); // Europe
+    // Add OpenStreetMap tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18, attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Load GeoJSON data
+    const GEOJSON_URL = '/_Map/GIS/ARCGIS Webmap Application/GeoJsonData/AllPoints.json';
+    
+    fetch(GEOJSON_URL)
+      .then(r => r.json())
+      .then(geojson => {
+        function onEachFeature(feature, layer) {
+          const p = feature.properties || {};
+          // Assume properties contain title and slug (if not, adapt)
+          const title = p.title || p.name || 'Place';
+          const slug = p.slug || p.url || p.id || null;
+          let html = `<strong>${title}</strong>`;
+          if (slug) {
+            const url = slug.startsWith('/') ? slug : ('/apparatuses/' + slug);
+            html += `<br><a href="${url}" target="_self">Open</a>`;
+          }
+          layer.bindPopup(html);
+        }
+
+        L.geoJSON(geojson, {
+          onEachFeature: onEachFeature,
+          pointToLayer: (feat, latlng) => L.marker(latlng)
+        }).addTo(map);
+      })
+      .catch(e => console.error('GeoJSON load failed', e));
+  </script>
+</body>
+</html
