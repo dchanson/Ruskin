@@ -20,7 +20,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#BDT">Brady Daniel Thomas</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -47,11 +47,11 @@
                     <addrLine>htts://erm.selu.edu</addrLine>
                 </address>
                 <availability status="restricted">
-                    <p>Copyright David C. Hanson.</p>
+                    <p>Copyright <persName corresp="#DCH">David C. Hanson</persName>.</p>
                 </availability>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digitally, prepared by David C. Hanson.</p>
+                <p>Born digitally, prepared by <persName corresp="#DCH">David C. Hanson</persName>.</p>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -74,9 +74,9 @@
                 </div>
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p>June-July 1830. 
-                        Undated, but positioned in MS V 
-                        between "Despair" (dated by Ruskin 11 June 1830) 
+                    <p><date notBefore="1830-06-01" notAfter="1830-07-31">June-July 1830</date>. 
+                        Undated, but positioned in <title type="manuscript" corresp="MSV">MS V</title>.
+                        between "Despair" (dated by <persName corresp="#JR">Ruskin</persName> <date when="1830-06-11">11 June 1830</date>.) 
                         and "Haddon Hall" (ca. June-July 1830).</p>
                 </div>
                 <div type="section" xml:id="COMPPUB">
@@ -85,12 +85,12 @@
                 </div>
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
-                    <p>This poem about a child’s death could have been inspired by 
+                    <p>This poem about a child&#x2019;s death could have been inspired by 
                         Sir Francis Chantrey’s “Snowdrop Monument,” 
                         a memorial to the Robinson daughters who died by fire. 
-                        Ruskin was struck by the monument on June 3, 
+                        <persName corresp="#JR">Ruskin</persName>was struck by the monument on June 3, 
                         during the summer tour (TLC, 31, 66 n. 26; see no. 78). 
-                        Two more monuments to infant deaths were carefully scrutinized by Ruskin during the tour 
+                        Two more monuments to infant deaths were carefully scrutinized by <persName corresp="#JR">Ruskin</persName> during the tour 
                         (see TLC, 56, 58-59).</p>
                     
                     <p>Body paragraph.</p>

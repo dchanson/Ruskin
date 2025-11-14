@@ -5,7 +5,7 @@
     <teiHeader type="apparatus">
         <fileDesc xml:id="etna_apparatus">
             <titleStmt>
-                <title type="main">"Etna"</title>
+                <title type="main">&#x201C;Etna&#x201D;</title>
                 <title type="sub">Apparatus</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -18,7 +18,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#YNH">Your Name Here</persName>
+                    <persName corresp="#BDT">Brady Daniel Thomas</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -45,11 +45,11 @@
                     <addrLine>htts://erm.selu.edu</addrLine>
                 </address>
                 <availability status="restricted">
-                    <p>Copyright David C. Hanson.</p>
+                    <p>Copyright <persName corresp="#DCH">David C. Hanson</persName>.</p>
                 </availability>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digitally, prepared by David C. Hanson.</p>
+                <p>Born digitally, prepared by <persName corresp="#DCH">David C. Hanson</persName>.</p>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -60,7 +60,7 @@
                 <!--An apparatus may contain all or only some of the following sections.-->
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
-                    <p>Title written “ETNA.”</p>
+                    <p>Title written &#x201C;ETNA&#x201D;.</p>
                 </div>
                 <div type="section" xml:id="GENRE">
                     <head type="section">Genre</head>
@@ -68,14 +68,14 @@
                 </div>
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
-                    <p>MS V.</p>
+                    <p><title type="manuscript" corresp="#MSV">MS V</title>.</p>
                 </div>
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p>Dated by Ruskin 25 October 1829</p>
+                    <p>Dated by Ruskin <date when="1829-10-25">25 October 1829</date></p>
                 </div>
                 <div type="section" xml:id="COMPPUB">
-                    <head type="section">Composition &#x0026; Publication</head>
+                    <head type="section">Composition and Publication</head>
                     <p>Body paragraph.</p>
                 </div>
                 <div type="section" xml:id="DISCUSSION">
