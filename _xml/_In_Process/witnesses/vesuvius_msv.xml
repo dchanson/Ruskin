@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Vesuvius"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="WDD">Wilkins Dowdy</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            
+            <!--Simple Verse. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>Title of Poem</head>
+                <lg type="stanza" rhyme="aa">
+                    <l>Night had oerspread the restless deep</l>
+                    <l>And mortals lay ah long to sleep</l>
+                    <l>In proud Pompeii's walls</l>
+                    <l>And Herculaneum rested there</l>
+                    <l>With all its palaces so fair</l>
+                    <l>And all its ancient halls</l>
+                </lg>
+                <lg type="stanza" rhyme="aa">
+                    <l>In grandeur rose each column high</l>
+                    <l>Each pile majestic braved the sky</l>
+                    <l>And there the placid moon</l>
+                    <l>Had touched each column tower &#x0026; tree</l>
+                    <l>With bright and solemn majesty</l>
+                    <l>To be destoryed too soon</l>
+                </lg>
+                <lg type="stanza" rhyme="aa">
+                    <l>Lo to the west the rolling sea</l>
+                    <l>Moans forth its booming minstrelsy</l>
+                    <l>Upon the Italian shore</l>
+                    <l>And sings a solemn dirge for those</l>
+                    <l>Who when the evening breeze arose</l>
+                    <l>Lay down to rise no more</l>
+                </lg>
+                <lg type="stanza" rhyme="aa">
+                    <l>There on the plain Vesuvius heaps</l>
+                    <l>His giant crags his towering steeps</l>
+                    <l>Full dismal dark and drear</l>
+                    <l>And as the crater proudly towrs</l>
+                    <l>Up to the stars at midnight hours</l>
+                    <l>Inspires the soul with fear</l>
+                </lg>
+                <lg type="stanza" rhyme="aa">
+                    <l>Hark hark I heard a thundering sound</l>
+                    <l>Seeming as if twere under ground</l>
+                    <l>Ha how the earth it shakes</l>
+                    <l>The moon is lost in murky clouds</l>
+                    <l>The stars are wrapped in thickest shrouds</l>
+                    <l>And how the mountain quakes</l>
+                </lg>
+                <lg type="stanza" rhyme="aa">
+                    <l>Behold a massy vapour creeps</l>
+                    <l>Up dark Vesuvius giant steeps</l>
+                    <l>It rises towering still</l>
+                    <l>And widely spreading darkens night</l>
+                    <l>View how it towrs three times the height</l>
+                    <l>Of black Vesuvius hill</l>
+                </lg>
+                <lg type="stanza" rhyme="aa">
+                    <l>Now through its body dark &#x0026; deep</l>
+                    <l>High rising from Vesuvius steep</l>
+                    <l>Volcanic lightnings play</l>
+                    <l>And then tow'rds Herculaneum fair</l>
+                    <l>Adown the rocky sides so bare</l>
+                    <l>The lava burnt its way</l>
+                </lg>
+                <lg type="stanza" rhyme="aa">
+                    <L>Now oer the landscape darkness spread</L>
+                    <l>And hid Vesuvius giant head</l>
+                    <l>In black oershadowing night</l>
+                    <l>Then came the sounds of woe most deep</l>
+                    <l>Borne on the tempest whirlwind sweep</l>
+                    <l>And grief and screams and fright</l>
+                </lg>
+                <lg type="stanza" rhyme="aa">
+                    <l>Again again red bursts of flame</l>
+                    <l>And lava from Vesuvius came</l>
+                    <l>Again the mountain shook</l>
+                    <l>And bursting forth with thundering sound</l>
+                    <l>And shaking all the earth around</l>
+                    <l>Forth forth the ashes broke</l>
+                </lg>
+                <lg tyoe="stanza" rhyme="aa">
+                    <l>Then sounds of wailing sounds of grief</l>
+                    <l>And screams of agony full brief</l>
+                    <l>From Herculaneum rose</l>
+                    <l>The liquid lava as it rolled</l>
+                    <l>Circling them in its burning fold</l>
+                    <l>Made short their dying throes</l>
+                </lg>
+            </div>
+            
+            </div>
+        </body>
+    </text>
+</TEI>
