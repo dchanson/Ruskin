@@ -1,360 +1,443 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ruskin — Map of Places</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ruskin — Map of Places</title>
 
-  <!-- Leaflet + MarkerCluster -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <!-- Leaflet + MarkerCluster -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
-  <!-- jQuery + CSV parser from legacy map -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../_Map/GIS/ARCGIS%20Webmap%20Application/jquery.csv-0.71.js"></script>
+    <!-- jQuery + CSV parser from legacy map -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../_Map/GIS/ARCGIS%20Webmap%20Application/jquery.csv-0.71.js"></script>
 
-  <style>
-    #map { height:640px; }
-html, body { margin: 0; padding: 0; }
-    .controls { position: absolute; top:10px; left:10px; z-index:1000; background:#fff; padding:8px; border-radius:4px; box-shadow:0 1px 4px rgba(0,0,0,0.2); }
-    .controls input[type="text"]{ width:220px; }
-    .opacity-label { display:inline-block; width:90px; }
-  </style>
-</head>
-<body>
-  <h1 class="page-title" style="padding:8px 16px; margin:0">Ruskin — Map of Places</h1>
+    <style>
+      #map {
+        height: 640px;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .controls {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        background: #fff;
+        padding: 8px;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+      }
+      .controls input[type='text'] {
+        width: 220px;
+      }
+      .opacity-label {
+        display: inline-block;
+        width: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="page-title" style="padding: 8px 16px; margin: 0">Ruskin — Map of Places</h1>
 
-  <div id="map"></div>
+    <div id="map"></div>
 
-  <div class="controls" id="map-controls" style="margin-top: 120px;">
-    <div>
-      <input id="map-search" type="text" placeholder="Search place name..." />
-      <button id="map-search-btn">Find</button>
+    <div class="controls" id="map-controls" style="margin-top: 120px">
+      <div>
+        <input id="map-search" type="text" placeholder="Search place name..." />
+        <button id="map-search-btn">Find</button>
+      </div>
+      <span id="hist-val"></span>
     </div>
-    <span id="hist-val"></span>
-   
-  </div>
-    <div id="timeline-embed" style="height:320px; margin:12px;"></div>
+    <div id="timeline-embed" style="height: 320px; margin: 12px"></div>
 
-  <!-- TimelineJS (Knight Lab) -->
-  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
-  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <!-- TimelineJS (Knight Lab) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
+    />
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
-  <script>
-    // CONFIG: data sources (relative to project root)
-    const GEOJSON_URL = encodeURI('/_Map/GIS/ARCGIS Webmap Application/GeoJsonData/AllPoints.json');
-    const CSV_URL = '/_Map/GIS/CSV/places_mockup2.csv'; // alternate: '/_Map/CSV/places_visited_by_mary_mockup.csv'
-    // If you have a CSV field providing slug paths to your site, set SLUG_FIELD to that column name:
-    const SLUG_FIELD = 'slug'; // or 'page' if available; fallback will search
+    <script>
+      // CONFIG: data sources (relative to project root)
+      const GEOJSON_URL = encodeURI(
+        '/_Map/GIS/ARCGIS Webmap Application/GeoJsonData/AllPoints.json',
+      );
+      const CSV_URL = '/_Map/GIS/CSV/places_mockup2.csv'; // alternate: '/_Map/CSV/places_visited_by_mary_mockup.csv'
+      // If you have a CSV field providing slug paths to your site, set SLUG_FIELD to that column name:
+      const SLUG_FIELD = 'slug'; // or 'page' if available; fallback will search
 
-    // Create map
-    const map = L.map('map').setView([50.5, 6.0], 5);
+      // Create map
+      const map = L.map('map').setView([50.5, 6.0], 5);
 
-    // Modern basemap
-    const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
+      // Modern basemap
+      const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors',
+      }).addTo(map);
 
-    const carto = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      maxZoom: 19,
-      attribution: '&copy; CARTO'
-    });
+      const carto = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        attribution: '&copy; CARTO',
+      });
 
-    // HISTORICAL TILE LAYER (serve gdal2tiles output here)
-    // Generate tiles with gdal2tiles and place under /_Map/tiles/historical/{z}/{x}/{y}.png
-    const historical = L.tileLayer('/_Map/tiles/historical/{z}/{x}/{y}.png', {
-      maxZoom: 18,
-      attribution: 'Historical map (Ruskin era)'
-    }).setOpacity(0.85);
+      // HISTORICAL TILE LAYER (serve gdal2tiles output here)
+      // Generate tiles with gdal2tiles and place under /_Map/tiles/historical/{z}/{x}/{y}.png
+      const historical = L.tileLayer('/_Map/tiles/historical/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Historical map (Ruskin era)',
+      }).setOpacity(0.85);
 
-    // Marker layers
-    const geoCluster = L.markerClusterGroup();
-    const csvCluster = L.markerClusterGroup();
+      // Marker layers
+      const geoCluster = L.markerClusterGroup();
+      const csvCluster = L.markerClusterGroup();
 
-    // Keep searchable index
-    const searchIndex = [];
+      // Keep searchable index
+      const searchIndex = [];
 
-    function makePopupHtml(name, props) {
-      let html = '<div><strong>' + (name || 'Place') + '</strong>';
-      if (props && (props.place_note || props.note)) {
-        html += '<div>' + (props.place_note || props.note) + '</div>';
-      }
-      // Link to a page if CSV/GeoJSON contains a slug or url
-      if (props && props[SLUG_FIELD]) {
-        const slug = props[SLUG_FIELD];
-        const url = slug.startsWith('/') ? slug : ('/witnesses/' + slug);
-        html += '<div><a href="' + url + '" target="_self">Open item</a></div>';
-      } else {
-        // fallback: search on site
-        const q = encodeURIComponent(name || '');
-        html += '<div><a href="/search.php?q=' + q + '" target="_self">Search related items</a></div>';
-      }
-      html += '</div>';
-      return html;
-    }
-
-    // Load GeoJSON features
-    fetch(GEOJSON_URL).then(r => {
-      if (!r.ok) throw new Error('GeoJSON load failed');
-      return r.json();
-    }).then(json => {
-      const layer = L.geoJSON(json, {
-        pointToLayer: (f, latlng) => L.marker(latlng),
-        onEachFeature: (feature, layer) => {
-          const props = feature.properties || {};
-          const title = props.City_Names || props.name || props.place || props.City || 'Place';
-          layer.bindPopup(makePopupHtml(title, props));
-          geoCluster.addLayer(layer);
-          searchIndex.push({name: title, layer: layer, latlng: latlngFor(layer)});
+      function makePopupHtml(name, props) {
+        let html = '<div><strong>' + (name || 'Place') + '</strong>';
+        if (props && (props.place_note || props.note)) {
+          html += '<div>' + (props.place_note || props.note) + '</div>';
         }
-      });
-      map.addLayer(geoCluster);
-      try { map.fitBounds(L.geoJSON(json).getBounds(), {maxZoom:8}); } catch(e){}
-    }).catch(err => console.error(err));
-
-    // Load CSV and parse points (uses jquery.csv)
-    $.ajax({ url: CSV_URL, dataType: 'text' })
-      .done(csvText => {
-        try {
-          const rows = $.csv.toObjects(csvText);
-          rows.forEach(row => {
-            const lat = parseFloat(row.y_latitude || row.lat || row.latitude || row.Y || row.y);
-            const lon = parseFloat(row.x_longitude || row.lon || row.longitude || row.X || row.x);
-            if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
-            const title = row.place_name || row.place || row.City || row.City_Names || row.name || 'Place';
-            const m = L.marker([lat, lon]);
-            m.bindPopup(makePopupHtml(title, row));
-            csvCluster.addLayer(m);
-            searchIndex.push({name: title, layer: m, latlng: L.latLng(lat, lon)});
-          });
-          map.addLayer(csvCluster);
-        } catch (e) { console.error('CSV parse error', e); }
-      }).fail(err => console.error('CSV load failed', err));
-
-    // Helpers
-    function latlngFor(layer){
-      try { return layer.getLatLng ? layer.getLatLng() : null; } catch(e){ return null; }
-    }
-
-    // Layer control
-    const baseMaps = { "OpenStreetMap": osm, "Carto Light": carto };
-    const overlayMaps = { "GeoJSON places": geoCluster, "CSV places": csvCluster, "Historical map": historical };
-    L.control.layers(baseMaps, overlayMaps, {collapsed:false}).addTo(map);
-
-    // Historical controls
-    // document.getElementById('hist-opacity').addEventListener('input', function(e){
-    //   const v = parseFloat(e.target.value);
-    //   historical.setOpacity(v);
-    //   document.getElementById('hist-val').textContent = v.toFixed(2);
-    // });
-    // document.getElementById('toggle-historical').addEventListener('change', function(e){
-    //   if (e.target.checked) {
-    //     if (!map.hasLayer(historical)) map.addLayer(historical);
-    //   } else {
-    //     if (map.hasLayer(historical)) map.removeLayer(historical);
-    //   }
-    // });
-    // // start with historical layer on
-    // map.addLayer(historical);
-
-    // Simple search
-    function findAndOpen(q) {
-      q = (q || '').toLowerCase().trim();
-      if (!q) return false;
-      const found = searchIndex.find(s => s.name && s.name.toLowerCase() === q) ||
-                    searchIndex.find(s => s.name && s.name.toLowerCase().includes(q));
-      if (found && found.latlng) {
-        map.setView(found.latlng, Math.max(map.getZoom(), 8));
-        if (found.layer && found.layer.openPopup) found.layer.openPopup();
-        return true;
-      }
-      return false;
-    }
-
-    document.getElementById('map-search-btn').addEventListener('click', () => {
-      const q = document.getElementById('map-search').value;
-      if (!findAndOpen(q)) alert('No exact match — try broader terms or use the index/search pages.');
-    });
-    document.getElementById('map-search').addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') { e.preventDefault(); document.getElementById('map-search-btn').click(); }
-    });
-
-    // OPTIONAL: expose a function for linking from archive pages to the map (open and focus a place name)
-    window.ruskinMap = { findAndOpen };
-
-     const _timelineEvents = [];
-     function parseDateParts(s) {
-      if(!s) return null;
-      // expected forms: YYYY, YYYY-MM, YYYY-MM-DD, "15 Jan 1832", "Jan 1832"
-      s = String(s).trim();
-      // ISO-ish quick parse
-      const iso = s.match(/^(\d{4})(?:[-\/](\d{1,2})(?:[-\/](\d{1,2}))?)?$/);
-      if(iso) {
-        return { year: iso[1], month: iso[2] || null, day: iso[3] || null };
-      }
-      // try "DD MMM YYYY" or "MMM YYYY"
-      const parts = s.split(/\s+/);
-      const months = {jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
-      for(let i=0;i<parts.length;i++) parts[i]=parts[i].replace(/[.,]/g,'').toLowerCase();
-      // find a 4-digit year token
-      const yearTok = parts.find(p => /^\d{4}$/.test(p));
-      if(yearTok) {
-        const year = yearTok;
-        // try find month token before year
-        const monTok = parts.find(p => months[p.substring(0,3)]);
-        const month = monTok ? months[monTok.substring(0,3)] : null;
-        // try find day token (1-31)
-        const dayTok = parts.find(p => /^\d{1,2}$/.test(p));
-        const day = dayTok && dayTok !== year ? dayTok : null;
-        return { year, month, day };
-      }
-      return null;
-    }
-    function pushTimelineEvent(title, props, latlng) {
-      // try common date fields
-      const dateStr = props && (props.date || props.Date || props.year || props.date_visited || props.visit_date);
-      if(!dateStr) return;
-      const d = parseDateParts(dateStr);
-      if(!d) return;
-      const event = {
-        start_date: { year: String(d.year) },
-        text: { headline: title || 'Place', text: (props && (props.description||props.note||props.place_note||'')) || '' }
-      };
-      if(d.month) event.start_date.month = String(d.month);
-      if(d.day) event.start_date.day = String(d.day);
-      // attach coordinates to event for map panning (Timeline will ignore unknown fields, but we keep it)
-      event._map = latlng ? { lat: latlng.lat || latlng[0], lon: latlng.lng || latlng[1] } : null;
-      // optional unique id
-      event.unique_id = (_timelineEvents.length + 1);
-      _timelineEvents.push(event);
-    }
-    function buildAndAttachTimeline() {
-      if(_timelineEvents.length === 0) {
-        document.getElementById('timeline-embed').innerHTML = '<p style="padding:10px">No dated events found for timeline. Add "date" or "year" fields to your CSV/GeoJSON features.</p>';
-        return;
-      }
-      const timelineJson = {
-        title: { text: { headline: "Ruskin timeline", text: "Places and dated visits" } },
-        events: _timelineEvents
-      };
-
-      // create timeline
-      window.ruskinTimeline = new TL.Timeline('timeline-embed', timelineJson, {
-        initial_zoom: 2,
-        language: 'en'
-      });
-
-      // respond to user changing slides: attempt to pan map to event coordinates
-      // timeline.on('change', ...) is supported by many TL builds; fallback to polling if not available.
-      try {
-        if(window.ruskinTimeline && window.ruskinTimeline.on) {
-          window.ruskinTimeline.on('change', function(data) {
-            // 'data' often contains the current event index or event data depending on build
-            // try to derive index/id then find event in _timelineEvents
-            let idx = null;
-            if(typeof data === 'number') idx = data;
-            else if(data && data.unique_id) idx = _timelineEvents.findIndex(e=>e.unique_id==data.unique_id);
-            else if(data && data.event && typeof data.event === 'object' && data.event.unique_id) idx = _timelineEvents.findIndex(e=>e.unique_id==data.event.unique_id);
-            // if we couldn't resolve idx, try reading current slide via timeline API (getCurrentSlideIndex)
-            if(idx === null && window.ruskinTimeline.getCurrentSlideIndex) idx = window.ruskinTimeline.getCurrentSlideIndex();
-            if(idx === null) return;
-            const ev = _timelineEvents[idx];
-            if(ev && ev._map) {
-              map.setView([ev._map.lat, ev._map.lon], 10);
-            }
-          });
+        // Link to a page if CSV/GeoJSON contains a slug or url
+        if (props && props[SLUG_FIELD]) {
+          const slug = props[SLUG_FIELD];
+          const url = slug.startsWith('/') ? slug : '/witnesses/' + slug;
+          html += '<div><a href="' + url + '" target="_self">Open item</a></div>';
         } else {
-          // fallback: poll selected slide every 500ms (safe fallback)
-          let lastIndex = -1;
-          setInterval(() => {
-            try {
-              const current = window.ruskinTimeline && window.ruskinTimeline.getCurrentSlideIndex ? window.ruskinTimeline.getCurrentSlideIndex() : lastIndex;
-              if(typeof current === 'number' && current !== lastIndex) {
-                lastIndex = current;
-                const ev = _timelineEvents[current];
-                if(ev && ev._map) map.setView([ev._map.lat, ev._map.lon], 10);
+          // fallback: search on site
+          const place = encodeURIComponent(name || '');
+          const url = '/search?placeName=' + place + '&placeNameType=all';
+          html += '<div><a href="' + url + '" target="_self">Search related items</a></div>';
+        }
+        html += '</div>';
+        return html;
+      }
+
+      // Load GeoJSON features
+      fetch(GEOJSON_URL)
+        .then((r) => {
+          if (!r.ok) throw new Error('GeoJSON load failed');
+          return r.json();
+        })
+        .then((json) => {
+          const layer = L.geoJSON(json, {
+            pointToLayer: (f, latlng) => L.marker(latlng),
+            onEachFeature: (feature, layer) => {
+              const props = feature.properties || {};
+              const title = props.City_Names || props.name || props.place || props.City || 'Place';
+              layer.bindPopup(makePopupHtml(title, props));
+              geoCluster.addLayer(layer);
+              searchIndex.push({ name: title, layer: layer, latlng: latlngFor(layer) });
+            },
+          });
+          map.addLayer(geoCluster);
+          try {
+            map.fitBounds(L.geoJSON(json).getBounds(), { maxZoom: 8 });
+          } catch (e) {}
+        })
+        .catch((err) => console.error(err));
+
+      // Load CSV and parse points (uses jquery.csv)
+      $.ajax({ url: CSV_URL, dataType: 'text' })
+        .done((csvText) => {
+          try {
+            const rows = $.csv.toObjects(csvText);
+            rows.forEach((row) => {
+              const lat = parseFloat(row.y_latitude || row.lat || row.latitude || row.Y || row.y);
+              const lon = parseFloat(row.x_longitude || row.lon || row.longitude || row.X || row.x);
+              if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+              const title =
+                row.place_name || row.place || row.City || row.City_Names || row.name || 'Place';
+              const m = L.marker([lat, lon]);
+              m.bindPopup(makePopupHtml(title, row));
+              csvCluster.addLayer(m);
+              searchIndex.push({ name: title, layer: m, latlng: L.latLng(lat, lon) });
+            });
+            map.addLayer(csvCluster);
+          } catch (e) {
+            console.error('CSV parse error', e);
+          }
+        })
+        .fail((err) => console.error('CSV load failed', err));
+
+      // Helpers
+      function latlngFor(layer) {
+        try {
+          return layer.getLatLng ? layer.getLatLng() : null;
+        } catch (e) {
+          return null;
+        }
+      }
+
+      // Layer control
+      const baseMaps = { OpenStreetMap: osm, 'Carto Light': carto };
+      const overlayMaps = {
+        'GeoJSON places': geoCluster,
+        'CSV places': csvCluster,
+        'Historical map': historical,
+      };
+      L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(map);
+
+      // Historical controls
+      // document.getElementById('hist-opacity').addEventListener('input', function(e){
+      //   const v = parseFloat(e.target.value);
+      //   historical.setOpacity(v);
+      //   document.getElementById('hist-val').textContent = v.toFixed(2);
+      // });
+      // document.getElementById('toggle-historical').addEventListener('change', function(e){
+      //   if (e.target.checked) {
+      //     if (!map.hasLayer(historical)) map.addLayer(historical);
+      //   } else {
+      //     if (map.hasLayer(historical)) map.removeLayer(historical);
+      //   }
+      // });
+      // // start with historical layer on
+      // map.addLayer(historical);
+
+      // Simple search
+      function findAndOpen(q) {
+        q = (q || '').toLowerCase().trim();
+        if (!q) return false;
+        const found =
+          searchIndex.find((s) => s.name && s.name.toLowerCase() === q) ||
+          searchIndex.find((s) => s.name && s.name.toLowerCase().includes(q));
+        if (found && found.latlng) {
+          map.setView(found.latlng, Math.max(map.getZoom(), 8));
+          if (found.layer && found.layer.openPopup) found.layer.openPopup();
+          return true;
+        }
+        return false;
+      }
+
+      document.getElementById('map-search-btn').addEventListener('click', () => {
+        const q = document.getElementById('map-search').value;
+        if (!findAndOpen(q))
+          alert('No exact match — try broader terms or use the index/search pages.');
+      });
+      document.getElementById('map-search').addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          document.getElementById('map-search-btn').click();
+        }
+      });
+
+      // OPTIONAL: expose a function for linking from archive pages to the map (open and focus a place name)
+      window.ruskinMap = { findAndOpen };
+
+      const _timelineEvents = [];
+      function parseDateParts(s) {
+        if (!s) return null;
+        // expected forms: YYYY, YYYY-MM, YYYY-MM-DD, "15 Jan 1832", "Jan 1832"
+        s = String(s).trim();
+        // ISO-ish quick parse
+        const iso = s.match(/^(\d{4})(?:[-\/](\d{1,2})(?:[-\/](\d{1,2}))?)?$/);
+        if (iso) {
+          return { year: iso[1], month: iso[2] || null, day: iso[3] || null };
+        }
+        // try "DD MMM YYYY" or "MMM YYYY"
+        const parts = s.split(/\s+/);
+        const months = {
+          jan: 1,
+          feb: 2,
+          mar: 3,
+          apr: 4,
+          may: 5,
+          jun: 6,
+          jul: 7,
+          aug: 8,
+          sep: 9,
+          oct: 10,
+          nov: 11,
+          dec: 12,
+        };
+        for (let i = 0; i < parts.length; i++)
+          parts[i] = parts[i].replace(/[.,]/g, '').toLowerCase();
+        // find a 4-digit year token
+        const yearTok = parts.find((p) => /^\d{4}$/.test(p));
+        if (yearTok) {
+          const year = yearTok;
+          // try find month token before year
+          const monTok = parts.find((p) => months[p.substring(0, 3)]);
+          const month = monTok ? months[monTok.substring(0, 3)] : null;
+          // try find day token (1-31)
+          const dayTok = parts.find((p) => /^\d{1,2}$/.test(p));
+          const day = dayTok && dayTok !== year ? dayTok : null;
+          return { year, month, day };
+        }
+        return null;
+      }
+      function pushTimelineEvent(title, props, latlng) {
+        // try common date fields
+        const dateStr =
+          props &&
+          (props.date || props.Date || props.year || props.date_visited || props.visit_date);
+        if (!dateStr) return;
+        const d = parseDateParts(dateStr);
+        if (!d) return;
+        const event = {
+          start_date: { year: String(d.year) },
+          text: {
+            headline: title || 'Place',
+            text: (props && (props.description || props.note || props.place_note || '')) || '',
+          },
+        };
+        if (d.month) event.start_date.month = String(d.month);
+        if (d.day) event.start_date.day = String(d.day);
+        // attach coordinates to event for map panning (Timeline will ignore unknown fields, but we keep it)
+        event._map = latlng ? { lat: latlng.lat || latlng[0], lon: latlng.lng || latlng[1] } : null;
+        // optional unique id
+        event.unique_id = _timelineEvents.length + 1;
+        _timelineEvents.push(event);
+      }
+      function buildAndAttachTimeline() {
+        if (_timelineEvents.length === 0) {
+          document.getElementById('timeline-embed').innerHTML =
+            '<p style="padding:10px">No dated events found for timeline. Add "date" or "year" fields to your CSV/GeoJSON features.</p>';
+          return;
+        }
+        const timelineJson = {
+          title: { text: { headline: 'Ruskin timeline', text: 'Places and dated visits' } },
+          events: _timelineEvents,
+        };
+
+        // create timeline
+        window.ruskinTimeline = new TL.Timeline('timeline-embed', timelineJson, {
+          initial_zoom: 2,
+          language: 'en',
+        });
+
+        // respond to user changing slides: attempt to pan map to event coordinates
+        // timeline.on('change', ...) is supported by many TL builds; fallback to polling if not available.
+        try {
+          if (window.ruskinTimeline && window.ruskinTimeline.on) {
+            window.ruskinTimeline.on('change', function (data) {
+              // 'data' often contains the current event index or event data depending on build
+              // try to derive index/id then find event in _timelineEvents
+              let idx = null;
+              if (typeof data === 'number') idx = data;
+              else if (data && data.unique_id)
+                idx = _timelineEvents.findIndex((e) => e.unique_id == data.unique_id);
+              else if (data && data.event && typeof data.event === 'object' && data.event.unique_id)
+                idx = _timelineEvents.findIndex((e) => e.unique_id == data.event.unique_id);
+              // if we couldn't resolve idx, try reading current slide via timeline API (getCurrentSlideIndex)
+              if (idx === null && window.ruskinTimeline.getCurrentSlideIndex)
+                idx = window.ruskinTimeline.getCurrentSlideIndex();
+              if (idx === null) return;
+              const ev = _timelineEvents[idx];
+              if (ev && ev._map) {
+                map.setView([ev._map.lat, ev._map.lon], 10);
               }
-            } catch(e){}
-          }, 600);
-        }
-      } catch(e){ console.warn('timeline event wiring failed', e); }
-    }
-   
-   function addDemoTimeline() {
-  const demoData = {
-    title: {
-      text: {
-        headline: "Ruskin Timeline",
-        text: "Example timeline with images, events, and narrative."
-      }
-    },
-    events: [
-      {
-        start_date: { year: "1810", month: "02", day: "08" },
-        text: {
-          headline: "Ruskin's Birth",
-          text: "John Ruskin was born in London. This event includes a portrait image."
-        },
-        media: {
-          url: "https://victorianweb.org/authors/ruskin/gallery/5.jpg",
-          caption: "Ruskin in age of 3"
-        }
-      },
-      {
-        start_date: { year: "1843" },
-        text: {
-          headline: "Modern Painters Published",
-          text: "Ruskin published the first volume of <i>Modern Painters</i>."
-        },
-        media: {
-          url: "https://ia903202.us.archive.org/view_archive.php?archive=/32/items/olcovers574/olcovers574-L.zip&file=5744894-L.jpg",
-          caption: "Title page of Modern Painters"
-        }
-      },
-      {
-        start_date: { year: "1851" },
-        text: {
-          headline: "The Stones of Venice",
-          text: "Ruskin's influential work describing Venetian architecture."
-        },
-        media: {
-          url: "https://m.media-amazon.com/images/I/71WbBYhEK+L._AC_UF1000,1000_QL80_.jpg",
-          caption: "The Stones of Venice, 1851"
-        }
-      },
-      {
-        start_date: { year: "1878" },
-        text: {
-          headline: "Slade Professor",
-          text: "Ruskin became the first Slade Professor of Fine Art at Oxford."
-        },
-        media: {
-          url: "https://www.hoa.ox.ac.uk/sites/default/files/styles/mt_image_small/public/hoa/images/page/ruskin.jpg?itok=YRFxckV6",
-          caption: "Ruskin at Oxford"
+            });
+          } else {
+            // fallback: poll selected slide every 500ms (safe fallback)
+            let lastIndex = -1;
+            setInterval(() => {
+              try {
+                const current =
+                  window.ruskinTimeline && window.ruskinTimeline.getCurrentSlideIndex
+                    ? window.ruskinTimeline.getCurrentSlideIndex()
+                    : lastIndex;
+                if (typeof current === 'number' && current !== lastIndex) {
+                  lastIndex = current;
+                  const ev = _timelineEvents[current];
+                  if (ev && ev._map) map.setView([ev._map.lat, ev._map.lon], 10);
+                }
+              } catch (e) {}
+            }, 600);
+          }
+        } catch (e) {
+          console.warn('timeline event wiring failed', e);
         }
       }
-    ]
-  };
 
-  window.demoTimeline = new TL.Timeline('timeline-embed', demoData, {
-    initial_zoom: 2,
-    timenav_height_percentage: 35
-  });
-}
-setTimeout(() => {
-  if (_timelineEvents.length === 0) {
-    addDemoTimeline();        // Load demo timeline with images
-  } else {
-    buildAndAttachTimeline(); // Load real data timeline
-  }
-}, 1200);
+      function addDemoTimeline() {
+        const demoData = {
+          title: {
+            text: {
+              headline: 'Ruskin Timeline',
+              text: 'Example timeline with images, events, and narrative.',
+            },
+          },
+          events: [
+            {
+              start_date: { year: '1810', month: '02', day: '08' },
+              text: {
+                headline: "Ruskin's Birth",
+                text: 'John Ruskin was born in London. This event includes a portrait image.',
+              },
+              media: {
+                url: 'https://victorianweb.org/authors/ruskin/gallery/5.jpg',
+                caption: 'Ruskin in age of 3',
+              },
+            },
+            {
+              start_date: { year: '1843' },
+              text: {
+                headline: 'Modern Painters Published',
+                text: 'Ruskin published the first volume of <i>Modern Painters</i>.',
+              },
+              media: {
+                url: 'https://ia903202.us.archive.org/view_archive.php?archive=/32/items/olcovers574/olcovers574-L.zip&file=5744894-L.jpg',
+                caption: 'Title page of Modern Painters',
+              },
+            },
+            {
+              start_date: { year: '1851' },
+              text: {
+                headline: 'The Stones of Venice',
+                text: "Ruskin's influential work describing Venetian architecture.",
+              },
+              media: {
+                url: 'https://m.media-amazon.com/images/I/71WbBYhEK+L._AC_UF1000,1000_QL80_.jpg',
+                caption: 'The Stones of Venice, 1851',
+              },
+            },
+            {
+              start_date: { year: '1878' },
+              text: {
+                headline: 'Slade Professor',
+                text: 'Ruskin became the first Slade Professor of Fine Art at Oxford.',
+              },
+              media: {
+                url: 'https://www.hoa.ox.ac.uk/sites/default/files/styles/mt_image_small/public/hoa/images/page/ruskin.jpg?itok=YRFxckV6',
+                caption: 'Ruskin at Oxford',
+              },
+            },
+          ],
+        };
 
-
-  </script>
-</body>
+        window.demoTimeline = new TL.Timeline('timeline-embed', demoData, {
+          initial_zoom: 2,
+          timenav_height_percentage: 35,
+        });
+      }
+      setTimeout(() => {
+        if (_timelineEvents.length === 0) {
+          addDemoTimeline(); // Load demo timeline with images
+        } else {
+          buildAndAttachTimeline(); // Load real data timeline
+        }
+      }, 1200);
+    </script>
+  </body>
 </html>
