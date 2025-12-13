@@ -1,0 +1,151 @@
+{
+    "div": {
+        "@type": "places",
+        "listPlace": {
+            "place": [
+                {
+                    "@type": "settlement",
+                    "@xml:id": "BONNEVILLE",
+                    "placeName": "Bonneville",
+                    "location": {
+                        "bloc": {
+                            "@type": "continent",
+                            "#text": "Europe"
+                        },
+                        "country": "France",
+                        "geo": "46.0797, 6.4014"
+                    },
+                    "terrain": {
+                        "desc": [
+                            "Length: 10.48 sq mi",
+                            "Half way between Geneva and Chamouni."
+                        ]
+                    },
+                    "event": {
+                        "@type": "arrival",
+                        "@when": "14th",
+                        "label": "Stopped enroute to Chamouni for dinner."
+                    },
+                    "note": null
+                },
+                {
+                    "@type": "settlement",
+                    "@xml:id": "CHAMOUNI",
+                    "placeName": "Chamouni",
+                    "location": {
+                        "bloc": {
+                            "@type": "countinent",
+                            "#text": "Europe"
+                        },
+                        "country": "France",
+                        "geo": "45.9231, 6.8697"
+                    },
+                    "terrain": {
+                        "desc": null
+                    },
+                    "event": {
+                        "@type": "arrival",
+                        "@when": "15th",
+                        "label": "Arrival during heavy rain."
+                    },
+                    "note": {
+                        "p": null
+                    },
+                    "place": {
+                        "placeName": "Mer de Glace",
+                        "location": {
+                            "geo": "45.916111, 6.937222"
+                        },
+                        "terrain": {
+                            "desc": "Mountain located within the Mont Blanc massif mountain range in Chamouni."
+                        },
+                        "event": {
+                            "@type": "visited",
+                            "@when": "",
+                            "label": "Mer de Glace on mules accompanied by guides and little boys to watch mules. Witnessed a small avalanche."
+                        },
+                        "note": {
+                            "p": null
+                        }
+                    }
+                },
+                {
+                    "@type": "settlement",
+                    "@xml:id": "BLOIS",
+                    "placeName": "Blois",
+                    "location": {
+                        "bloc": {
+                            "@type": "countinent",
+                            "#text": "Europe"
+                        },
+                        "country": "France"
+                    },
+                    "terrain": {
+                        "desc": null
+                    },
+                    "event": {
+                        "@type": "arrival",
+                        "@when": "18th",
+                        "label": "Sunday."
+                    },
+                    "note": {
+                        "p": null
+                    }
+                },
+                {
+                    "@type": "settlement",
+                    "@xml:id": "GENEVA",
+                    "placeName": "Geneva",
+                    "location": {
+                        "bloc": {
+                            "@type": "continent",
+                            "#text": "Europe"
+                        },
+                        "country": "Switzerland"
+                    },
+                    "terrain": {
+                        "desc": [
+                            "Length: 6.15 sq mi",
+                            "Rhone River flows through town, split into two with houses built on island between."
+                        ]
+                    },
+                    "event": {
+                        "@type": "arrival",
+                        "@when": "19th",
+                        "label": "Returned"
+                    }
+                },
+                {
+                    "@type": "building",
+                    "@xml:id": "THEGLENFARG",
+                    "placeName": "The Glenfarg",
+                    "location": {
+                        "bloc": [
+                            {
+                                "@type": "continent",
+                                "#text": "Europe"
+                            },
+                            {
+                                "@type": "state",
+                                "#text": "United Kingdom of Great Britain and Ireland"
+                            }
+                        ],
+                        "country": "Scotland",
+                        "region": {
+                            "@type": "county",
+                            "#text": "Perth and Kinross"
+                        },
+                        "settlement": "Glenfarg",
+                        "geo": "56.2796672 -3.3982974000000468"
+                    },
+                    "terrain": {
+                        "desc": "The Glenfarg is a family‐run Scottish country hotel located in the village of Glenfarg. The building dates back to the late 1890s."
+                    },
+                    "note": {
+                        "p": "Ruskin could have stayed here late in his life."
+                    }
+                }
+            ]
+        }
+    }
+}
