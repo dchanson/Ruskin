@@ -79,6 +79,7 @@
     const CSV_URL = '/_Map/GIS/CSV/places_mockup2.csv';
     const PLACES_JSON_URL = '/_Map/Places/places.json';
     const MARY_PLACES_JSON_URL = '/_Map/Places/mary_places.json';
+    const PLACES_VISITED_BY_MARY = '/_Map/Places/places_visited_by_mary.json';
 
     const SLUG_FIELD = 'slug';
 
@@ -250,6 +251,7 @@
       return !x ? [] : Array.isArray(x) ? x : [x];
     }
 
+
     function pushTimelineEventsFromTeiPlace(title, placeObj, latlngArr) {
       const events = asArray(placeObj?.event);
       events.forEach((ev) => {
@@ -411,6 +413,89 @@
           map.addLayer(cluster);
         });
     }
+    function loadMaryVisitedPlacesTimeline(url) {
+  return fetch(url)
+    .then((r) => {
+      if (!r.ok) throw new Error('Mary visited places load failed');
+      return r.json();
+    })
+    .then((json) => {
+      const places = json?.div?.listPlace?.place || [];
+
+      places.forEach((place) => {
+        const title = (place['@corresp'] || 'Place')
+          .replace('#', '')
+          .toLowerCase()
+          .replace(/\b\w/g, (c) => c.toUpperCase());
+
+        const note = safeText(place?.note?.p);
+        const events = asArray(place?.event);
+
+        events.forEach((ev) => {
+          if (!ev?.['@when']) return;
+
+          pushTimelineEvent(
+            title,
+            {
+              date: ev['@when'],
+              description: `
+                <strong>${ev['@type'] || 'event'}:</strong>
+                ${ev.label || ''}
+                ${note ? '<br/>' + note : ''}
+              `,
+            },
+            null, // no guaranteed geo in this file
+          );
+        });
+      });
+    });
+}
+
+    function maryPlacesToTimeline(json) {
+  const timeline = { events: [] };
+
+  const places = json?.div?.listPlace?.place || [];
+
+  places.forEach(place => {
+    const name = (place['@corresp'] || '')
+      .replace('#', '')
+      .toLowerCase()
+      .replace(/\b\w/g, c => c.toUpperCase());
+
+    const note = safeText(place?.note?.p);
+
+    const arrivals = (place.event || []).filter(e => e['@type'] === 'arrival');
+    const departures = (place.event || []).filter(e => e['@type'] === 'departure');
+
+    arrivals.forEach((arrival, i) => {
+      const dep = departures[i] || null;
+
+      const [sy, sm, sd] = arrival['@when'].split('-');
+
+      const ev = {
+        start_date: { year: sy, month: sm, day: sd },
+        text: {
+          headline: name,
+          text: `
+            <strong>Arrival:</strong> ${arrival.label || 'Arrived'}<br/>
+            ${dep?.label ? '<strong>Departure:</strong> ' + dep.label + '<br/>' : ''}
+            ${note || ''}
+          `
+        }
+      };
+
+      if (dep?.['@when']) {
+        const [ey, em, ed] = dep['@when'].split('-');
+        ev.end_date = { year: ey, month: em, day: ed };
+      }
+
+      timeline.events.push(ev);
+    });
+  });
+
+  return timeline;
+}
+
 
     // -----------------------------
     // SEARCH UI
