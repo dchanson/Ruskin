@@ -123,7 +123,7 @@
     const maryTeiCluster = L.markerClusterGroup();
     // Path layer for places visited by Mary
     const VisitedByMaryPathLayer = L.featureGroup();
-    overlayMaps['Mary Visited Places Path'] = VisitedByMaryPathLayer;
+    
 
 
     // Layer control
@@ -132,7 +132,7 @@
       'GeoJSON places': geoCluster,
       'CSV places': csvCluster,
       'TEI places.json': teiCluster,
-      'Mary places.json': maryTeiCluster,
+      'Mary places.json': VisitedByMaryPathLayer,
       'Historical map': historical,
     };
     L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(map);
@@ -390,6 +390,7 @@
         })
         .then((data) => {
           const places = data?.div?.listPlace?.place || [];
+          const pathLatLngs = [];
           places.forEach((p) => {
             const title = p.placeName || p.head?.['#text'] || p['@xml:id'] || 'Place';
             const geo = parseGeo(p?.location?.geo);
@@ -411,10 +412,18 @@
 
               const latlng = L.latLng(geo[0], geo[1]);
               addToSearchIndex(title, marker, latlng);
+               pathLatLngs.push(latlng);
             }
           });
+          //Creating a polyline from the latlngs and adding to the VisitedByMaryPathLayer
+          if (pathLatLngs.length > 1) {
+            const polyline = L.polyline(pathLatLngs, { color: 'blue', weight: 3, opacity: 0.7, dashArray: '5, 10' });
+            VisitedByMaryPathLayer.addLayer(polyline);
+            map.addLayer(VisitedByMaryPathLayer);
+          }
 
           map.addLayer(cluster);
+         
         });
     }
     function loadMaryVisitedPlacesTimeline(url) {
