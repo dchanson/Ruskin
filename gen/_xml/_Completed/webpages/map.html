@@ -538,6 +538,7 @@
       loadCsvLayer(CSV_URL, csvCluster, STYLE.csv),
       loadTeiPlacesJsonLayer(PLACES_JSON_URL, teiCluster, STYLE.tei),
       loadTeiPlacesJsonLayer(MARY_PLACES_JSON_URL, maryTeiCluster, STYLE.mary),
+      loadMaryVisitedPlacesTimeline(PLACES_VISITED_BY_MARY),
     ])
       .then(() => {
         buildAndAttachTimeline();
