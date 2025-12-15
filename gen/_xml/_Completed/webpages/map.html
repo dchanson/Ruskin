@@ -121,6 +121,10 @@
     const csvCluster = L.markerClusterGroup();
     const teiCluster = L.markerClusterGroup();
     const maryTeiCluster = L.markerClusterGroup();
+    // Path layer for places visited by Mary
+    const VisitedByMaryPathLayer = L.featureGroup();
+    overlayMaps['Mary Visited Places Path'] = VisitedByMaryPathLayer;
+
 
     // Layer control
     const baseMaps = { OpenStreetMap: osm, 'Carto Light': carto };
