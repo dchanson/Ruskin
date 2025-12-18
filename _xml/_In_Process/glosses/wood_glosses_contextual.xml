@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="title_of_work_glosses">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="TITLEGLOSS" resp="#DCH">Here Ruskin’s poetry is centered around the Boundes estate near Southborough. 
+                    According to Murray’s Handbook for travellers in Kent and Sussex, “This estate was granted by Sir Henry VIII., after the attainder of the D. of Buckingham, to Sir T. More, who was visited here by Erasmus” 
+                    (Murray, Handbook for Travellers in Kent and Sussex (third edition, revised). London, 1868, 268).</note>.-->
+
+                <note xml:id="BIRCHESGLOSS" resp="#DCH">John Evelyn (1661): “I greatly admired at the extravagant turnings, insinuations, and growth of certain birch-trees among the rocks” 
+                    (Murray, John. Handbook for Travellers in Kent and Sussex 268)</note>
+                
+                <note xml:id="MONUMENTGLOSS" resp="#DCH">“In the birch wood is a column erected to the memory of Lady Catherine Stewart, 
+                    first wife of the Marquis of Londonderry, then General Stewart” (Murray, John. Handbook for Travellers in Kent and Sussex 268). 
+                    There is an inscription on the monument of a poem written while Lady Stewart was still alive. The poem, 
+                    “Epitaph of Poor Mama” is by her son, six years old at the time he wrote it, who will later become Viscount Castlereigh:
+                    “'Here lies a faded rose, / Who, struck by death on every hand, / Contented died, contented lived. / In God she put her trust'”
+                    &#x2014;By Fred, every word. December 29th, 1811". The same article goes on to say that Lady Stewart lived at the estate and birchwood had been her favorite walk 
+                    (“The woodland monument of the Great Bounds,” Kent and Sussex Courier, May 1950, 000). </note>
+                
+                <note xml:id="LADYCATHERINEGLOSS" resp="#DCH">First wife of Sir Charles Stewart, third marquess of Londonderry (1778-1854). According to Lives of Lord Castlereagh and Sir Charles Stewart, 
+                    “During [Stewart’s] residence at the Castle of Dublin he became intimate with the Earl of Darnley’s family” (320). 
+                    On August 8th, 1808, he married the earl’s fourth daughter, the “elegant and accomplished” Lady Catherine Bligh. 
+                    Four years later Lady Steward died of a brief illness, and she was mourned heavily by her husband, “for the deceased was a person endowed with every virtue.” (481)
+                    (Alison. Lives of Lord Castlereagh and Sir Charles Stewart: the Second and Third Marquesses of Londonderry).
+                </note>
+            </div>
+        </body>
+    </text>
+</TEI>

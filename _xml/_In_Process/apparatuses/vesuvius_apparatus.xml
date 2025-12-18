@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="apparatus">
+        <fileDesc xml:id="title_of_work_apparatus">
+            <titleStmt>
+                <title type="main">"Vesuvius"</title>
+                <title type="sub">Apparatus</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <persName corresp="#BDT">Brady Daniel Thomas</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The apparatus version for all first passes is 1.0.-->
+                    <title>Apparatus Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>htts://erm.selu.edu</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright <persName corresp="#DCH">David C. Hanson</persName>.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by <persName corresp="#DCH">David C. Hanson</persName>.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="apparatus">
+                <head type="title">&#x201C;Title of Work&#x201D;</head>
+                <!--An apparatus may contain all or only some of the following sections.-->
+                <div type="section" xml:id="TITLE">
+                    <head type="section">Title</head>
+                    <p>Title written “VESUVIUS” in MS V.</p>
+                </div>
+                <div type="section" xml:id="GENRE">
+                    <head type="section">Genre</head>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="MAJORMS">
+                    <head type="section">Manuscripts</head>
+                    <p>MS IA, MS V, [MS VI].</p>
+                    <p>See MS IA, &#x201C;Content,&#x201D; e. 
+                        According to the index of MS VI, the sixth page of the section of the manuscript now torn away contained a copy of &#x201C;Vesuvius,&#x201D; 
+                        probably the rough draft, and it was followed two pages later by &#x201C;Trafalgar&#x201D;. presentation copy, MS IA, &#x201C;Content,&#x201D; e.</p>
+                </div>
+                <div type="section" xml:id="DATE">
+                    <head type="section">Date</head>
+                    <p>Dated <date when="1830-02-01">1 February 1830</date>by <persName corresp="#JR">Ruskin</persName>in <title type="manuscript" corresp="MSV">MS V</title>. 
+                        For a possible February 8 presentation copy, MS IA, &#x201C;Content,&#x201D; e.</p>
+                </div>
+                <div type="section" xml:id="COMPPUB">
+                    <head type="section">Composition &#x0026; Publication</head>
+                    <p>Previously unpublished.</p>
+                </div>
+                <div type="section" xml:id="DISCUSSION">
+                    <head type="section">Discussion</head>
+                    <p><persName corresp="#JR">Ruskin</persName>&#x2019;s dating of the poem as <date notBefore="1830-02-01" notAfter="1830-02-28">February 1830</date>is in keeping with the publication of Friendship&#x2019;s Offering for <date when="1830">1830</date>
+                        (marketed for the holiday season starting ca. <date notBefore="1829-11-01" notAfter="1829-11-30">November 1829</date>), which contained a tale, &#x201C;Il Vesuviano,&#x201D; 
+                        by the Reverend George Croly (see Works, 1:445). The tale was accompanied by a Turner engraving of Vesuvius, 
+                        &#x201C;the first piece of Turner I ever saw,&#x201D; according to <persName corresp="#JR">Ruskin</persName>in later years (Works, 13:428).</p>
+                    
+                    <p><persName corresp="#GCREV">Croly</persName>&#x2019;s story contains some slight details that <persName corresp="#JR">Ruskin</persName> may have borrowed for his poem.</p>
+                    
+                    <p>Another possible source, as Helen Viljoen remarked (HGVP, box F.X), 
+                        was <persName corresp="#ME">Maria Edgeworth</persName>&#x2019;s story &#x201C;The Little Merchants&#x201D; in The Parent’s Assistant. 
+                        This tale would have interested the Ruskins for rewards bestowed on the honesty of a boy entrepreneur, <persName corresp="#FRANCISCO">Francisco</persName>, 
+                        whose honorable actions lead to the discovery and cultivation of his artistic talents. 
+                        In his climactic adventure, <persName corresp="#FRANCISCO">Francisco</persName>prudently removes his friends and family from the threat of <geogName corresp="#VESUVIUS">Vesuvius</geogName>&#x2019;s eruption, 
+                        and then, when the threat proves a dangerous reality, he heroically defends the property of an aristocratic patron from pillage. 
+                        <persName corresp="#FRANCISCO">Francisco</persName>&#x2019;s bravery is to be celebrated by an improvisatore &#x201C;in a poem . . . on the late eruption of <geogName corresp="#VESUVIUS">Mount Vesuvius</geogName>,&#x201D; 
+                        but <persName corresp="#JR">Ruskin</persName>&#x2019;s poem does not fulfill this promise, his subject being the more ancient disaster of <placeName corresp="#HERCULANEUM">Herculaneum</placeName>and <placeName corresp="#POMPEII">Pompeii</placeName>. 
+                        <persName corresp="#JR">Ruskin</persName>could have read about the ancient eruption in &#x201C;The Little Merchants,&#x201D; which includes an historical note on the event, 
+                        and which sends <persName corresp="#FRANCISCO">Francisco</persName>into the cave of the excavated &#x201C;subterraneous city&#x201D; of <placeName corresp="#HERCULANEUM">Herculaneum</placeName> to sketch the ruins 
+                        (Edgeworth, Parent’s Assistant, 2:135, 105).</p>
+                    
+                    <p><persName corresp="#JR">Ruskin</persName>&#x2019;s mother would have approved the <persName corresp="#RLE">Edgeworth</persName>story more than the other possible sources of this poem, 
+                        the art and literature of the annuals. The <persName corresp="#RLE">Edgeworth</persName>stories were carefully written to &#x201C;improve&#x201D; the young reader morally, 
+                        if not religiously. The annuals failed this test, when <persName corresp="#MR">Margaret</persName>examined her son&#x2019;s first Friendship&#x2019;s Offering, 
+                        a gift of his cousin Charles, who was employed by its publisher, Smith, Elder & Co.: 
+                        &#x201C;the plates are well done but they are not interesting  the tales are horrible enough  
+                        the poetry very so I think  upon the whole it does not improve&#x201D;
+                        (RFL, 208, letter of <date when="1829-10-31">31 October 1829</date>, by which time the Friendship’s Offering for <date when="1830">1830</date> might have been published, 
+                        although Burd&#x2019;s note [RFL, 209 n. 6] fails to clarify reference to the annual volume for <date when="1829">1829</date>, 
+                        published in <date notBefore="1828-07-01" notAfter="1828-12-31">late 1828</date>, or the one published in <date when="1829">1829</date>, for <date when="1830">1830</date>).</p>
+                    <p>Body paragraph containing a list:
+                        <list type="ordered">
+                            <item n="1">First item in the list.</item>
+                            <item n="2">Second item.</item>
+                            <item n="3">Third item.</item>
+                        </list>
+                    </p>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="TEXTUALNOTE">
+                    <head type="section">Textual Note</head>
+                    <p>Body paragraph.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
