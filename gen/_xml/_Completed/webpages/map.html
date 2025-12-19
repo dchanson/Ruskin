@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ruskin — Map of Places</title>
+
+    <!-- Leaflet + MarkerCluster -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+    <!-- jQuery + CSV parser from legacy map -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../_Map/GIS/ARCGIS%20Webmap%20Application/jquery.csv-0.71.js"></script>
+
+    <style>
+      #map {
+        height: 640px;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .controls {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        background: #fff;
+        padding: 8px;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .controls input[type='text'] {
+        width: 220px;
+      }
+
+      .opacity-label {
+        display: inline-block;
+        width: 90px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="page-title" style="padding: 8px 16px; margin: 0">Ruskin — Map of Places</h1>
+
+    <div id="map"></div>
+
+    <div class="controls" id="map-controls" style="margin-top: 120px">
+      <div>
+        <input id="map-search" type="text" placeholder="Search place name..." />
+        <button id="map-search-btn">Find</button>
+      </div>
+      <span id="hist-val"></span>
+    </div>
+    <div id="timeline-embed" style="height: 320px; margin: 12px"></div>
+
+    <!-- TimelineJS (Knight Lab) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
+    />
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <script>
+      // -----------------------------
+      // CONFIG
+      // -----------------------------
+      const GEOJSON_URL = encodeURI(
+        '/_Map/GIS/ARCGIS Webmap Application/GeoJsonData/AllPoints.json',
+      );
+      const CSV_URL = '/_Map/GIS/CSV/places_mockup2.csv';
+      const PLACES_JSON_URL = '/_Map/Places/places.json';
+      const PLACES_BY_MARY = '/_Map/Places/places_by_mary.json';
+      const MARY_PLACES_JSON_URL = '/_Map/Places/mary_places.json';
+      const PLACES_VISITED_BY_MARY = '/_Map/Places/places_visited_by_mary.json';
+
+      const SLUG_FIELD = 'slug';
+
+      const STYLE = {
+        geojson: {
+          radius: 7,
+          weight: 2,
+          fillOpacity: 0.85,
+          color: '#1f77b4',
+          fillColor: '#1f77b4',
+        }, //blue
+        csv: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#ff7f0e', fillColor: '#ff7f0e' }, //orange
+        tei: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#9467bd', fillColor: '#9467bd' }, //purple
+        mary: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#2ca02c', fillColor: '#2ca02c' }, //green
+      };
+
+      // -----------------------------
+      // MAP SETUP
+      // -----------------------------
+      const map = L.map('map').setView([50.5, 6.0], 5);
+
+      const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors',
+      }).addTo(map);
+
+      const carto = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        attribution: '&copy; CARTO',
+      });
+
+      const historical = L.tileLayer('/_Map/tiles/historical/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Historical map (Ruskin era)',
+      }).setOpacity(0.85);
+
+    // Layers (clusters)
+    const geoCluster = L.markerClusterGroup();
+    const csvCluster = L.markerClusterGroup();
+    const teiCluster = L.markerClusterGroup();
+    const maryTeiCluster = L.markerClusterGroup();
+    // Path layer for places visited by Mary
+    const VisitedByMaryPathLayer = L.featureGroup();
+    
+
+
+    // Layer control
+    const baseMaps = { OpenStreetMap: osm, 'Carto Light': carto };
+    const overlayMaps = {
+      'GeoJSON places': geoCluster,
+      'CSV places': csvCluster,
+      'TEI places.json': teiCluster,
+      'Mary places.json': VisitedByMaryPathLayer,
+      'Historical map': historical,
+    };
+    L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(map);
+
+      // Search index across ALL datasets
+      const searchIndex = [];
+
+      // -----------------------------
+      // POPUP + UTILITIES
+      // -----------------------------
+      function makePopupHtml(name, props) {
+        let html = '<div><strong>' + (name || 'Place') + '</strong>';
+
+        const note = props && (props.place_note || props.note);
+        if (note) html += '<div>' + note + '</div>';
+
+        if (props && props[SLUG_FIELD]) {
+          const slug = props[SLUG_FIELD];
+          const url = slug.startsWith('/') ? slug : '/witnesses/' + slug;
+          html += '<div><a href="' + url + '" target="_self">Open item</a></div>';
+        } else {
+          const place = encodeURIComponent(name || '');
+          const url = '/search?placeName=' + place + '&placeNameType=all';
+          html += '<div><a href="' + url + '" target="_self">Search related items</a></div>';
+        }
+
+        html += '</div>';
+        return html;
+      }
+
+      function addToSearchIndex(title, layer, latlng) {
+        if (!title || !latlng) return;
+        searchIndex.push({ name: title, layer, latlng });
+      }
+
+      function parseGeo(geoVal) {
+        if (!geoVal) return null;
+        const s = String(geoVal).trim();
+        const parts = s.split(/[,\s]+/).filter(Boolean);
+        if (parts.length < 2) return null;
+
+        const lat = parseFloat(parts[0]);
+        const lon = parseFloat(parts[1]);
+        if (!Number.isFinite(lat) || !Number.isFinite(lon)) return null;
+        return [lat, lon];
+      }
+
+      function safeText(x) {
+        if (x == null) return '';
+        if (typeof x === 'string') return x;
+        if (typeof x === 'object' && x['#text']) return String(x['#text']);
+        return String(x);
+      }
+
+      // -----------------------------
+      // TIMELINE HELPERS
+      // -----------------------------
+      const _timelineEvents = [];
+
+      function parseDateParts(s) {
+        if (!s) return null;
+        s = String(s).trim();
+        const iso = s.match(/^(\d{4})(?:[-\/](\d{1,2})(?:[-\/](\d{1,2}))?)?$/);
+        if (iso) return { year: iso[1], month: iso[2] || null, day: iso[3] || null };
+
+        const parts = s.split(/\s+/).map((p) => p.replace(/[.,]/g, '').toLowerCase());
+        const months = {
+          jan: 1,
+          feb: 2,
+          mar: 3,
+          apr: 4,
+          may: 5,
+          jun: 6,
+          jul: 7,
+          aug: 8,
+          sep: 9,
+          oct: 10,
+          nov: 11,
+          dec: 12,
+        };
+        const yearTok = parts.find((p) => /^\d{4}$/.test(p));
+        if (!yearTok) return null;
+
+        const monTok = parts.find((p) => months[p.substring(0, 3)]);
+        const dayTok = parts.find((p) => /^\d{1,2}$/.test(p));
+
+        return {
+          year: yearTok,
+          month: monTok ? months[monTok.substring(0, 3)] : null,
+          day: dayTok && dayTok !== yearTok ? dayTok : null,
+        };
+      }
+
+      function pushTimelineEvent(title, props, latlng) {
+        const dateStr =
+          props &&
+          (props.date || props.Date || props.year || props.date_visited || props.visit_date);
+        if (!dateStr) return;
+
+        const d = parseDateParts(dateStr);
+        if (!d) return;
+
+        const ev = {
+          start_date: { year: String(d.year) },
+          text: {
+            headline: title || 'Place',
+            text: (props && (props.description || props.note || props.place_note || '')) || '',
+          },
+          unique_id: _timelineEvents.length + 1,
+          _map: latlng ? { lat: latlng.lat ?? latlng[0], lon: latlng.lng ?? latlng[1] } : null,
+        };
+
+        if (d.month) ev.start_date.month = String(d.month);
+        if (d.day) ev.start_date.day = String(d.day);
+
+        _timelineEvents.push(ev);
+      }
+
+      function asArray(x) {
+        return !x ? [] : Array.isArray(x) ? x : [x];
+      }
+
+      function pushTimelineEventsFromTeiPlace(title, placeObj, latlngArr) {
+        const events = asArray(placeObj?.event);
+        events.forEach((ev) => {
+          const when = ev?.['@when'];
+          if (!when) return;
+
+          const kind = ev?.['@type'] ? String(ev['@type']) : 'event';
+          const label = ev?.label ? String(ev.label) : '';
+          const note = placeObj?.note?.p ? String(placeObj.note.p) : '';
+
+          pushTimelineEvent(
+            title,
+            { date: when, description: `${kind}: ${label}\n${note}` },
+            latlngArr,
+          );
+        });
+      }
+
+      function buildAndAttachTimeline() {
+        if (_timelineEvents.length === 0) {
+          document.getElementById('timeline-embed').innerHTML =
+            '<p style="padding:10px">No dated events found for timeline.</p>';
+          return;
+        }
+
+        const timelineJson = {
+          title: { text: { headline: 'Ruskin timeline', text: 'Places and dated visits' } },
+          events: _timelineEvents,
+        };
+
+        window.ruskinTimeline = new TL.Timeline('timeline-embed', timelineJson, {
+          initial_zoom: 2,
+          language: 'en',
+        });
+
+        // Pan map when slide changes (best-effort)
+        try {
+          if (window.ruskinTimeline && window.ruskinTimeline.on) {
+            window.ruskinTimeline.on('change', () => {
+              const idx = window.ruskinTimeline.getCurrentSlideIndex
+                ? window.ruskinTimeline.getCurrentSlideIndex()
+                : null;
+              if (idx == null) return;
+              const ev = _timelineEvents[idx];
+              if (ev && ev._map) map.setView([ev._map.lat, ev._map.lon], 10);
+            });
+          }
+        } catch (e) {
+          console.warn('timeline wiring failed', e);
+        }
+      }
+
+      // -----------------------------
+      // GENERIC LOADERS (NO DUPLICATION)
+      // -----------------------------
+      function loadGeoJsonLayer(url, cluster, style) {
+        return fetch(url)
+          .then((r) => {
+            if (!r.ok) throw new Error('GeoJSON load failed');
+            return r.json();
+          })
+          .then((json) => {
+            L.geoJSON(json, {
+              pointToLayer: (_f, latlng) => L.circleMarker(latlng, style),
+              onEachFeature: (feature, layer) => {
+                const props = feature.properties || {};
+                const title =
+                  props.City_Names || props.name || props.place || props.City || 'Place';
+                layer.bindPopup(makePopupHtml(title, props));
+                cluster.addLayer(layer);
+                addToSearchIndex(title, layer, layer.getLatLng());
+                pushTimelineEvent(title, props, layer.getLatLng()); // only works if geojson has date fields
+              },
+            });
+
+            map.addLayer(cluster);
+
+            // optional fit
+            try {
+              map.fitBounds(L.geoJSON(json).getBounds(), { maxZoom: 8 });
+            } catch {}
+          });
+      }
+
+      function loadCsvLayer(url, cluster, style) {
+        return new Promise((resolve, reject) => {
+          $.ajax({ url, dataType: 'text' })
+            .done((csvText) => {
+              try {
+                const rows = $.csv.toObjects(csvText);
+                rows.forEach((row) => {
+                  const lat = parseFloat(
+                    row.y_latitude || row.lat || row.latitude || row.Y || row.y,
+                  );
+                  const lon = parseFloat(
+                    row.x_longitude || row.lon || row.longitude || row.X || row.x,
+                  );
+                  if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+
+                  const title =
+                    row.place_name ||
+                    row.place ||
+                    row.City ||
+                    row.City_Names ||
+                    row.name ||
+                    'Place';
+
+                  // FIXED: circleMarker spelling + style
+                  const m = L.circleMarker([lat, lon], style).bindPopup(makePopupHtml(title, row));
+                  cluster.addLayer(m);
+
+                  const latlng = L.latLng(lat, lon);
+                  addToSearchIndex(title, m, latlng);
+                  pushTimelineEvent(title, row, latlng);
+                });
+
+                map.addLayer(cluster);
+                resolve();
+              } catch (e) {
+                reject(e);
+              }
+            })
+            .fail((err) => reject(err));
+        });
+      }
+
+    function loadTeiPlacesJsonLayer(url, cluster, style) {
+      return fetch(url)
+        .then((r) => {
+          if (!r.ok) throw new Error('TEI places.json load failed');
+          return r.json();
+        })
+        .then((data) => {
+          const places = data?.div?.listPlace?.place || [];
+          const pathLatLngs = [];
+          places.forEach((p) => {
+            const title = p.placeName || p.head?.['#text'] || p['@xml:id'] || 'Place';
+            const geo = parseGeo(p?.location?.geo);
+            pushTimelineEventsFromTeiPlace(title, p, geo);
+
+
+              const props = {
+                id: p['@xml:id'],
+                type: p['@type'],
+                country: safeText(p?.location?.country),
+                region: safeText(p?.location?.region),
+                note: safeText(p?.note?.p),
+                place_note: safeText(p?.terrain?.desc),
+              };
+
+              if (geo) {
+                const marker = L.circleMarker(geo, style).bindPopup(makePopupHtml(title, props));
+                cluster.addLayer(marker);
+
+              const latlng = L.latLng(geo[0], geo[1]);
+              addToSearchIndex(title, marker, latlng);
+               pathLatLngs.push(latlng);
+            }
+          });
+          //Creating a polyline from the latlngs and adding to the VisitedByMaryPathLayer
+          if (pathLatLngs.length > 1) {
+            const polyline = L.polyline(pathLatLngs, { color: 'blue', weight: 3, opacity: 0.7, dashArray: '5, 10' });
+            VisitedByMaryPathLayer.addLayer(polyline);
+            map.addLayer(VisitedByMaryPathLayer);
+          }
+
+          map.addLayer(cluster);
+         
+        });
+    }
+    function loadMaryVisitedPlacesTimeline(url) {
+  return fetch(url)
+    .then((r) => {
+      if (!r.ok) throw new Error('Mary visited places load failed');
+      return r.json();
+    })
+    .then((json) => {
+      const places = json?.div?.listPlace?.place || [];
+
+            places.forEach((place) => {
+              const title = (place['@corresp'] || 'Place')
+                .replace('#', '')
+                .toLowerCase()
+                .replace(/\b\w/g, (c) => c.toUpperCase());
+
+              const note = safeText(place?.note?.p);
+              const events = asArray(place?.event);
+
+              events.forEach((ev) => {
+                if (!ev?.['@when']) return;
+
+                pushTimelineEvent(
+                  title,
+                  {
+                    date: ev['@when'],
+                    description: `
+                <strong>${ev['@type'] || 'event'}:</strong>
+                ${ev.label || ''}
+                ${note ? '<br/>' + note : ''}
+              `,
+                  },
+                  null, // no guaranteed geo in this file
+                );
+              });
+            });
+          });
+      }
+
+      function maryPlacesToTimeline(json) {
+        const timeline = { events: [] };
+
+        const places = json?.div?.listPlace?.place || [];
+
+        places.forEach((place) => {
+          const name = (place['@corresp'] || '')
+            .replace('#', '')
+            .toLowerCase()
+            .replace(/\b\w/g, (c) => c.toUpperCase());
+
+          const note = safeText(place?.note?.p);
+
+          const arrivals = (place.event || []).filter((e) => e['@type'] === 'arrival');
+          const departures = (place.event || []).filter((e) => e['@type'] === 'departure');
+
+          arrivals.forEach((arrival, i) => {
+            const dep = departures[i] || null;
+
+            const [sy, sm, sd] = arrival['@when'].split('-');
+
+            const ev = {
+              start_date: { year: sy, month: sm, day: sd },
+              text: {
+                headline: name,
+                text: `
+            <strong>Arrival:</strong> ${arrival.label || 'Arrived'}<br/>
+            ${dep?.label ? '<strong>Departure:</strong> ' + dep.label + '<br/>' : ''}
+            ${note || ''}
+          `,
+              },
+            };
+
+            if (dep?.['@when']) {
+              const [ey, em, ed] = dep['@when'].split('-');
+              ev.end_date = { year: ey, month: em, day: ed };
+            }
+
+            timeline.events.push(ev);
+          });
+        });
+
+        return timeline;
+      }
+
+      // -----------------------------
+      // SEARCH UI
+      // -----------------------------
+      function findAndOpen(q) {
+        q = (q || '').toLowerCase().trim();
+        if (!q) return false;
+
+        const found =
+          searchIndex.find((s) => s.name && s.name.toLowerCase() === q) ||
+          searchIndex.find((s) => s.name && s.name.toLowerCase().includes(q));
+
+        if (found && found.latlng) {
+          map.setView(found.latlng, Math.max(map.getZoom(), 8));
+          if (found.layer && found.layer.openPopup) found.layer.openPopup();
+          return true;
+        }
+        return false;
+      }
+
+      document.getElementById('map-search-btn').addEventListener('click', () => {
+        const q = document.getElementById('map-search').value;
+        if (!findAndOpen(q))
+          alert('No exact match — try broader terms or use the index/search pages.');
+      });
+      document.getElementById('map-search').addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          document.getElementById('map-search-btn').click();
+        }
+      });
+
+      window.ruskinMap = { findAndOpen };
+
+      // -----------------------------
+      // LOAD EVERYTHING, THEN BUILD TIMELINE ONCE
+      // -----------------------------
+      Promise.all([
+        loadGeoJsonLayer(GEOJSON_URL, geoCluster, STYLE.geojson),
+        loadCsvLayer(CSV_URL, csvCluster, STYLE.csv),
+        loadTeiPlacesJsonLayer(PLACES_BY_MARY, maryTeiCluster, STYLE.mary),
+        loadTeiPlacesJsonLayer(PLACES_JSON_URL, teiCluster, STYLE.tei),
+        loadMaryVisitedPlacesTimeline(PLACES_VISITED_BY_MARY),
+      ])
+        .then(() => {
+          buildAndAttachTimeline();
+        })
+        .catch((err) => {
+          console.error(err);
+          // still attempt timeline if some sources loaded
+          buildAndAttachTimeline();
+        });
+    </script>
+  </body>
+</html>

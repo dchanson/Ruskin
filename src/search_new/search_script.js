@@ -681,6 +681,60 @@ function attachSuggest(inputId, type) {
   });
 }
 
+function initSearchFromUrl() {
+  const urlParams = new URLSearchParams(window.location.search);
+
+  const hasAnyParam = [
+    'q',
+    'placeName',
+    'persName',
+    'geogName',
+    'orgName',
+    'nameValue',
+    'bodyTitle',
+    'typeFilter',
+  ].some((key) => urlParams.get(key));
+
+  if (!hasAnyParam) return;
+
+  const form = document.getElementById('searchForm');
+  if (!form) return;
+
+  const q = urlParams.get('q') || '';
+  if (q && form.q) form.q.value = q;
+
+  const typeFilter = urlParams.get('typeFilter');
+  if (typeFilter && form.type) {
+    form.type.value = typeFilter;
+  }
+
+  const terms = [];
+  if (q) terms.push(q.toLowerCase());
+
+  const facetParams = ['persName', 'placeName', 'geogName', 'orgName', 'nameValue', 'bodyTitle'];
+  facetParams.forEach((key) => {
+    const v = urlParams.get(key);
+    if (v) terms.push(v.toLowerCase());
+  });
+
+  searchTerms = [...new Set(terms)];
+
+  urlParams.delete('page');
+  urlParams.delete('per_page');
+  currentSearchParams = urlParams.toString();
+
+  // Read page/per_page from URL if present, else default
+  currentPage = parseInt(new URLSearchParams(window.location.search).get('page') || '1', 10);
+  currentPerPage = parseInt(
+    new URLSearchParams(window.location.search).get('per_page') || '10',
+    10,
+  );
+
+  // Trigger the search
+  performSearch(currentPage, currentPerPage);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   attachSuggest('bodyTitle_1', 'title');
+  initSearchFromUrl();
 });
