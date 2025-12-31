@@ -22,13 +22,13 @@
       crossorigin=""
     ></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-    <!-- Leaflet IIIF plugin -->
-    <script src="https://unpkg.com/leaflet-iiif@2.0.0/leaflet-iiif.min.js"></script>
 
 
     <!-- jQuery + CSV parser from legacy map -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../_Map/GIS/ARCGIS%20Webmap%20Application/jquery.csv-0.71.js"></script>
+     <!-- Leaflet IIIF plugin -->
+     <script src="https://unpkg.com/leaflet-iiif"></script>
 
     <style>
       #map {
@@ -126,11 +126,19 @@
         maxZoom: 19,
         attribution: '&copy; CARTO',
       });
-      const historicalIIIF = L.tileLayer.iiif("https://www.davidrumsey.com/luna/servlet/iiif/m/RUMSEY~8~1~373366~90140092/manifest", {
-        maxZoom: 18,
-        opacity: 0.7,
-        attribution: 'Historical map © David Rumsey Map Collection',
-      });
+
+     
+      const historicalIIIF = L.imageOverlay(
+  "https://www.davidrumsey.com/luna/servlet/iiif/RUMSEY~8~1~373366~90140092/full/full/0/default.jpg",
+  [
+    [35.0, -10.0],
+    [72.0, 40.0]
+  ],
+  {
+    opacity: 0.8,
+    attribution: "© David Rumsey Map Collection"
+  }
+);
 
     // Layers (clusters)
     const geoCluster = L.markerClusterGroup();
