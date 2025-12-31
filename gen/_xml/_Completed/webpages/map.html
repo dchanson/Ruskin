@@ -126,7 +126,11 @@
         maxZoom: 19,
         attribution: '&copy; CARTO',
       });
-
+      const historicalIIIF = L.tileLayer.iiif("https://www.davidrumsey.com/luna/servlet/iiif/m/RUMSEY~8~1~373366~90140092/manifest", {
+        maxZoom: 18,
+        opacity: 0.7,
+        attribution: 'Historical map © David Rumsey Map Collection',
+      });
 
     // Layers (clusters)
     const geoCluster = L.markerClusterGroup();
@@ -145,7 +149,7 @@
       'CSV places': csvCluster,
       'TEI places.json': teiCluster,
       'Mary places.json': VisitedByMaryPathLayer,
-      'Historical map': historical,
+      'Historical map': historicalIIIF,
     };
     L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(map);
 
