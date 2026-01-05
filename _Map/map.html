@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ruskin — Map of Places</title>
+
+    <!-- Leaflet + MarkerCluster -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+    <!-- jQuery + CSV parser -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../_Map/GIS/ARCGIS%20Webmap%20Application/jquery.csv-0.71.js"></script>
+
+    <!-- TimelineJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
+    />
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <style>
+      :root {
+        --bg: #f5f7fb;
+        --card: #ffffff;
+        --ink: #0f172a;
+        --muted: #64748b;
+        --stroke: #e6ebf2;
+
+        /* Ruskin-ish accents (keep your brand colors) */
+        --brand: #003768;
+        --brand-2: #ba8e0b;
+
+        /* softer geometry */
+        --radius: 16px;
+        --radius-sm: 12px;
+
+        /* more subtle shadows (yours were a bit “heavy”) */
+        --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+        --shadow-sm: 0 6px 16px rgba(15, 23, 42, 0.07);
+
+        --focus: rgba(0, 55, 104, 0.18);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        color: var(--ink);
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+        background: radial-gradient(900px 500px at 20% 0%, rgba(0, 55, 104, 0.05), transparent 60%),
+          radial-gradient(700px 450px at 90% 20%, rgba(186, 142, 11, 0.06), transparent 55%),
+          var(--bg);
+        overflow: hidden; /* one screen desktop */
+      }
+
+      /* ---------- App Shell ---------- */
+      .app {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 12px;
+        padding: 12px;
+      }
+
+      /* Topbar */
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 12px 14px;
+        border: 1px solid var(--stroke);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(10px);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: var(--brand-2);
+        box-shadow: 0 0 0 4px rgba(186, 142, 11, 0.14);
+        flex: 0 0 auto;
+      }
+
+      .titlewrap {
+        min-width: 0;
+      }
+      .title {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 780;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .subtitle {
+        margin: 2px 0 0;
+        font-size: 12px;
+        color: var(--muted);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .chip {
+        font-size: 12px;
+        color: var(--brand);
+        background: rgba(0, 55, 104, 0.08);
+        border: 1px solid rgba(0, 55, 104, 0.14);
+        padding: 8px 10px;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+
+      /* ---------- Main Grid (FIXED) ---------- */
+      .main {
+        min-height: 0;
+        display: grid;
+        grid-template-columns: 320px 1fr 300px;
+        gap: 12px;
+      }
+
+      .panel,
+      .card {
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--stroke);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-sm);
+        overflow: hidden;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .panel-hd,
+      .card-hd {
+        padding: 12px 12px 10px;
+        border-bottom: 1px solid var(--stroke);
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.92) 0%,
+          rgba(255, 255, 255, 0.75) 100%
+        );
+      }
+
+      .panel-hd h2,
+      .card-hd h2 {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 760;
+        letter-spacing: 0.2px;
+      }
+
+      .hint {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .panel-bd {
+        padding: 12px;
+        overflow: auto;
+      }
+
+      /* Center content: map + timeline */
+      .content {
+        min-height: 0;
+        display: grid;
+        grid-template-rows: 1.35fr 0.85fr;
+        gap: 12px;
+      }
+
+      .card {
+        box-shadow: var(--shadow);
+      }
+
+      .card-body {
+        flex: 1;
+        min-height: 0;
+        background: #fff;
+      }
+
+      #map,
+      #timeline-embed {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* ---------- Inputs ---------- */
+      .row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .input {
+        flex: 1;
+        height: 40px;
+        border-radius: 12px;
+        border: 1px solid var(--stroke);
+        background: #fff;
+        padding: 0 12px;
+        outline: none;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        font-size: 14px;
+      }
+
+      .input:focus {
+        border-color: rgba(0, 55, 104, 0.45);
+        box-shadow: 0 0 0 4px var(--focus);
+      }
+
+      .btn {
+        height: 40px;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 55, 104, 0.18);
+        background: linear-gradient(180deg, rgba(0, 55, 104, 0.96), rgba(0, 55, 104, 0.88));
+        color: #fff;
+        padding: 0 14px;
+        cursor: pointer;
+        font-weight: 750;
+        letter-spacing: 0.2px;
+      }
+
+      .btn:active {
+        transform: translateY(1px);
+      }
+
+      .divider {
+        height: 1px;
+        background: var(--stroke);
+        margin: 12px 0;
+      }
+
+      .label {
+        font-size: 12px;
+        color: var(--muted);
+        margin-bottom: 6px;
+      }
+
+      .pill {
+        font-size: 12px;
+        color: var(--brand);
+        background: rgba(0, 55, 104, 0.08);
+        border: 1px solid rgba(0, 55, 104, 0.14);
+        padding: 6px 10px;
+        border-radius: 999px;
+        min-width: 60px;
+        text-align: center;
+      }
+
+      .kv {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid var(--stroke);
+        border-radius: 12px;
+        background: #fff;
+      }
+
+      .kv strong {
+        font-size: 12px;
+      }
+      .kv span {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .legend {
+        display: grid;
+        gap: 8px;
+      }
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid var(--stroke);
+        border-radius: 12px;
+        background: #fff;
+      }
+
+      .swatch {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        flex: 0 0 auto;
+      }
+
+      /* Leaflet polish */
+      .leaflet-control-layers {
+        border-radius: 12px !important;
+        box-shadow: var(--shadow-sm) !important;
+        border: 1px solid var(--stroke) !important;
+        overflow: hidden;
+      }
+      .leaflet-control-layers-expanded {
+        padding: 10px 12px !important;
+      }
+      .leaflet-popup-content-wrapper {
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+      .leaflet-popup-content {
+        margin: 12px 14px;
+        font-size: 13px;
+        line-height: 1.35;
+      }
+
+      /* TimelineJS container cleanup (their defaults can look harsh) */
+      #timeline-embed {
+        background: #fff;
+      }
+      .tl-timeline {
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial !important;
+      }
+
+      /* =========================
+   TimelineJS – typography + fit
+   ========================= */
+
+      /* Make Timeline inherit your font stack */
+      #timeline-embed,
+      #timeline-embed * {
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial !important;
+      }
+
+      /* Overall base sizing */
+      #timeline-embed .tl-timeline {
+        font-size: 14px; /* base */
+      }
+
+      /* Headline */
+      #timeline-embed .tl-headline,
+      #timeline-embed .tl-headline a {
+        font-size: 16px !important;
+        line-height: 1.2 !important;
+        font-weight: 750 !important;
+        letter-spacing: 0.2px;
+        margin-bottom: 6px !important;
+      }
+
+      /* Body text */
+      #timeline-embed .tl-text-content,
+      #timeline-embed .tl-text-content p,
+      #timeline-embed .tl-text-content div {
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+        color: #334155 !important; /* similar to your muted ink */
+      }
+
+      /* Reduce extra padding that wastes space */
+      #timeline-embed .tl-slide-content-container {
+        padding: 10px 12px !important;
+      }
+
+      #timeline-embed .tl-slide .tl-slide-content {
+        padding: 0 !important;
+      }
+
+      /* Make the text area scroll if there’s a lot of text */
+      #timeline-embed .tl-text,
+      #timeline-embed .tl-text-content-container {
+        max-height: 100% !important;
+        overflow: auto !important;
+      }
+
+      /* Clamp long headlines so they don't dominate the slide */
+      #timeline-embed .tl-headline {
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-line-clamp: 2 !important;
+        overflow: hidden !important;
+      }
+
+      /* Make nav/controls slightly smaller so content gets more room */
+      #timeline-embed .tl-menubar,
+      #timeline-embed .tl-timeaxis {
+        font-size: 12px !important;
+      }
+
+      /* ---------- Responsive ---------- */
+      @media (max-width: 980px) {
+        html,
+        body {
+          overflow: auto;
+        }
+        .app {
+          height: auto;
+        }
+        .main {
+          grid-template-columns: 1fr;
+          grid-auto-rows: auto;
+        }
+        .content {
+          grid-template-rows: 560px 380px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="map-dashboard">
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <div class="dot"></div>
+          <div class="titlewrap">
+            <p class="title">Ruskin — Map of Places</p>
+            <p class="subtitle">Map (top) + timeline (bottom)</p>
+          </div>
+        </div>
+        <div class="chip" title="Tip: toggle layers (top-right on map)">Layers + Timeline</div>
+      </header>
+
+      <!-- ✅ This wrapper was missing in your latest version; without it the 3-column grid breaks -->
+      <main class="main">
+        <!-- LEFT SIDEBAR -->
+        <aside class="panel">
+          <div class="panel-hd">
+            <h2>Search & Controls</h2>
+            <span class="hint">Global</span>
+          </div>
+          <div class="panel-bd">
+            <div class="label">Search place name</div>
+            <div class="row">
+              <input id="map-search" class="input" type="text" placeholder="e.g., Venice" />
+              <button id="map-search-btn" class="btn" type="button">Find</button>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="kv">
+              <div>
+                <strong>Historical map opacity</strong><br />
+                <span>Only affects the “Historical map” layer</span>
+              </div>
+              <span id="hist-val" class="pill">85%</span>
+            </div>
+
+            <div style="margin-top: 10px">
+              <input
+                id="hist-opacity"
+                type="range"
+                min="0"
+                max="100"
+                value="85"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="kv">
+              <div>
+                <strong>Quick tips</strong><br />
+                <span>Use the layer control on the map to toggle datasets.</span>
+              </div>
+              <span class="pill">⌘</span>
+            </div>
+          </div>
+        </aside>
+
+        <!-- CENTER: MAP + TIMELINE -->
+        <section class="content">
+          <div class="card">
+            <div class="card-hd">
+              <h2>Map</h2>
+              <div class="hint">Clusters + popups + layer toggles</div>
+            </div>
+            <div class="card-body">
+              <div id="map"></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-hd">
+              <h2>Timeline</h2>
+              <div class="hint">Slide changes pan the map when coords exist</div>
+            </div>
+            <div class="card-body">
+              <div id="timeline-embed"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="panel">
+          <div class="panel-hd">
+            <h2>Legend</h2>
+            <span class="hint">Colors</span>
+          </div>
+          <div class="panel-bd">
+            <div class="legend">
+              <div class="legend-item">
+                <span class="swatch" style="background: #1f77b4"></span>
+                <div>
+                  <strong style="font-size: 12px">GeoJSON</strong><br />
+                  <span style="font-size: 12px; color: var(--muted)">AllPoints.json</span>
+                </div>
+              </div>
+
+              <div class="legend-item">
+                <span class="swatch" style="background: #ff7f0e"></span>
+                <div>
+                  <strong style="font-size: 12px">CSV</strong><br />
+                  <span style="font-size: 12px; color: var(--muted)">places_mockup2.csv</span>
+                </div>
+              </div>
+
+              <div class="legend-item">
+                <span class="swatch" style="background: #9467bd"></span>
+                <div>
+                  <strong style="font-size: 12px">TEI places</strong><br />
+                  <span style="font-size: 12px; color: var(--muted)">places.json</span>
+                </div>
+              </div>
+
+              <div class="legend-item">
+                <span class="swatch" style="background: #2ca02c"></span>
+                <div>
+                  <strong style="font-size: 12px">Mary places</strong><br />
+                  <span style="font-size: 12px; color: var(--muted)">mary_places.json</span>
+                </div>
+              </div>
+
+              <div class="legend-item">
+                <span
+                  class="swatch"
+                  style="background: linear-gradient(90deg, #3b82f6, #0ea5e9)"
+                ></span>
+                <div>
+                  <strong style="font-size: 12px">Mary path</strong><br />
+                  <span style="font-size: 12px; color: var(--muted)">Polyline from TEI coords</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="kv">
+              <div>
+                <strong>Status</strong><br />
+                <span id="status-text">Loading…</span>
+              </div>
+              <span id="status-pill" class="pill">…</span>
+            </div>
+
+            <div style="margin-top: 10px; font-size: 12px; color: var(--muted); line-height: 1.35">
+              If timeline events don’t appear, it usually means the source data has no dates in the
+              expected fields (<code>date</code>, <code>year</code>, <code>@when</code>, etc.).
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script>
+      // -----------------------------
+      // CONFIG
+      // -----------------------------
+      const GEOJSON_URL = encodeURI(
+        '/_Map/GIS/ARCGIS Webmap Application/GeoJsonData/AllPoints.json',
+      );
+      const CSV_URL = '/_Map/GIS/CSV/places_mockup2.csv';
+      const PLACES_JSON_URL = '/_Map/Places/places.json';
+      const MARY_PLACES_JSON_URL = '/_Map/Places/mary_places.json';
+      const PLACES_VISITED_BY_MARY = '/_Map/Places/places_visited_by_mary.json';
+      const SLUG_FIELD = 'slug';
+
+      const STYLE = {
+        geojson: {
+          radius: 7,
+          weight: 2,
+          fillOpacity: 0.85,
+          color: '#1f77b4',
+          fillColor: '#1f77b4',
+        },
+        csv: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#ff7f0e', fillColor: '#ff7f0e' },
+        tei: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#9467bd', fillColor: '#9467bd' },
+        mary: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#2ca02c', fillColor: '#2ca02c' },
+      };
+
+      // -----------------------------
+      // MAP SETUP
+      // -----------------------------
+      const map = L.map('map', { zoomControl: true }).setView([50.5, 6.0], 5);
+
+      const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors',
+      }).addTo(map);
+
+      const carto = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        attribution: '&copy; CARTO',
+      });
+
+      const historical = L.tileLayer('/_Map/tiles/historical/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Historical map (Ruskin era)',
+      }).setOpacity(0.85);
+
+      const geoCluster = L.markerClusterGroup();
+      const csvCluster = L.markerClusterGroup();
+      const teiCluster = L.markerClusterGroup();
+      const maryCluster = L.markerClusterGroup();
+      const VisitedByMaryPathLayer = L.featureGroup();
+
+      const baseMaps = { OpenStreetMap: osm, 'Carto Light': carto };
+      const overlayMaps = {
+        'GeoJSON places': geoCluster,
+        'CSV places': csvCluster,
+        'TEI places.json': teiCluster,
+        'Mary places.json': maryCluster,
+        'Mary visited path': VisitedByMaryPathLayer,
+        'Historical map': historical,
+      };
+      L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(map);
+
+      // Make Leaflet compute sizes correctly in a grid layout
+      setTimeout(() => map.invalidateSize(), 0);
+      window.addEventListener('resize', () => map.invalidateSize());
+
+      // -----------------------------
+      // Status UI
+      // -----------------------------
+      const statusText = document.getElementById('status-text');
+      const statusPill = document.getElementById('status-pill');
+      function setStatus(text, pill) {
+        statusText.textContent = text;
+        statusPill.textContent = pill || '';
+      }
+
+      // -----------------------------
+      // SEARCH INDEX
+      // -----------------------------
+      const searchIndex = [];
+
+      function addToSearchIndex(title, layer, latlng) {
+        if (!title || !latlng) return;
+        searchIndex.push({ name: title, layer, latlng });
+      }
+
+      function findAndOpen(q) {
+        q = (q || '').toLowerCase().trim();
+        if (!q) return false;
+
+        const found =
+          searchIndex.find((s) => s.name && s.name.toLowerCase() === q) ||
+          searchIndex.find((s) => s.name && s.name.toLowerCase().includes(q));
+
+        if (found && found.latlng) {
+          map.setView(found.latlng, Math.max(map.getZoom(), 8));
+          if (found.layer && found.layer.openPopup) found.layer.openPopup();
+          return true;
+        }
+        return false;
+      }
+
+      document.getElementById('map-search-btn').addEventListener('click', () => {
+        const q = document.getElementById('map-search').value;
+        if (!findAndOpen(q)) alert('No match — try broader terms.');
+      });
+
+      document.getElementById('map-search').addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          document.getElementById('map-search-btn').click();
+        }
+      });
+
+      window.ruskinMap = { findAndOpen };
+
+      // -----------------------------
+      // Popup + Helpers
+      // -----------------------------
+      function makePopupHtml(name, props) {
+        let html = '<div><strong>' + (name || 'Place') + '</strong>';
+        const note = props && (props.place_note || props.note || props.description);
+        if (note)
+          html += '<div style="margin-top:6px;color:#475569;line-height:1.3">' + note + '</div>';
+
+        html += '<div style="margin-top:10px;">';
+        if (props && props[SLUG_FIELD]) {
+          const slug = props[SLUG_FIELD];
+          const url = String(slug).startsWith('/') ? slug : '/witnesses/' + slug;
+          html += '<a href="' + url + '" target="_self">Open item</a>';
+        } else {
+          const place = encodeURIComponent(name || '');
+          const url = '/search?placeName=' + place + '&placeNameType=all';
+          html += '<a href="' + url + '" target="_self">Search related items</a>';
+        }
+        html += '</div></div>';
+        return html;
+      }
+
+      function parseGeo(geoVal) {
+        if (!geoVal) return null;
+        const s = String(geoVal).trim();
+        const parts = s.split(/[,\s]+/).filter(Boolean);
+        if (parts.length < 2) return null;
+        const lat = parseFloat(parts[0]);
+        const lon = parseFloat(parts[1]);
+        if (!Number.isFinite(lat) || !Number.isFinite(lon)) return null;
+        return [lat, lon];
+      }
+
+      function safeText(x) {
+        if (x == null) return '';
+        if (typeof x === 'string') return x;
+        if (typeof x === 'object' && x['#text']) return String(x['#text']);
+        return String(x);
+      }
+
+      function asArray(x) {
+        return !x ? [] : Array.isArray(x) ? x : [x];
+      }
+
+      // -----------------------------
+      // Timeline
+      // -----------------------------
+      const _timelineEvents = [];
+
+      function parseDateParts(s) {
+        if (!s) return null;
+        s = String(s).trim();
+
+        const iso = s.match(/^(\d{4})(?:[-\/](\d{1,2})(?:[-\/](\d{1,2}))?)?$/);
+        if (iso) return { year: iso[1], month: iso[2] || null, day: iso[3] || null };
+
+        const parts = s.split(/\s+/).map((p) => p.replace(/[.,]/g, '').toLowerCase());
+        const months = {
+          jan: 1,
+          feb: 2,
+          mar: 3,
+          apr: 4,
+          may: 5,
+          jun: 6,
+          jul: 7,
+          aug: 8,
+          sep: 9,
+          oct: 10,
+          nov: 11,
+          dec: 12,
+        };
+        const yearTok = parts.find((p) => /^\d{4}$/.test(p));
+        if (!yearTok) return null;
+
+        const monTok = parts.find((p) => months[p.substring(0, 3)]);
+        const dayTok = parts.find((p) => /^\d{1,2}$/.test(p));
+
+        return {
+          year: yearTok,
+          month: monTok ? months[monTok.substring(0, 3)] : null,
+          day: dayTok && dayTok !== yearTok ? dayTok : null,
+        };
+      }
+
+      function pushTimelineEvent(title, props, latlng) {
+        const dateStr =
+          props &&
+          (props.date || props.Date || props.year || props.date_visited || props.visit_date);
+        if (!dateStr) return;
+
+        const d = parseDateParts(dateStr);
+        if (!d) return;
+
+        const ev = {
+          start_date: { year: String(d.year) },
+          text: {
+            headline: title || 'Place',
+            text: (props && (props.description || props.note || props.place_note || '')) || '',
+          },
+          unique_id: _timelineEvents.length + 1,
+          _map: latlng ? { lat: latlng.lat ?? latlng[0], lon: latlng.lng ?? latlng[1] } : null,
+        };
+
+        if (d.month) ev.start_date.month = String(d.month);
+        if (d.day) ev.start_date.day = String(d.day);
+
+        _timelineEvents.push(ev);
+      }
+
+      function pushTimelineEventsFromTeiPlace(title, placeObj, geoArr) {
+        const events = asArray(placeObj?.event);
+        events.forEach((ev) => {
+          const when = ev?.['@when'];
+          if (!when) return;
+          const kind = ev?.['@type'] ? String(ev['@type']) : 'event';
+          const label = ev?.label ? String(ev.label) : '';
+          const note = placeObj?.note?.p ? safeText(placeObj.note.p) : '';
+          pushTimelineEvent(
+            title,
+            { date: when, description: `${kind}: ${label}${note ? '\n' + note : ''}` },
+            geoArr,
+          );
+        });
+      }
+
+      function buildAndAttachTimeline() {
+        const el = document.getElementById('timeline-embed');
+        if (!el) return;
+
+        if (_timelineEvents.length === 0) {
+          el.innerHTML =
+            '<p style="padding:12px;color:#64748b">No dated events found for timeline.</p>';
+          return;
+        }
+
+        const timelineJson = {
+          title: { text: { headline: 'Ruskin timeline', text: 'Places and dated visits' } },
+          events: _timelineEvents,
+        };
+
+        window.ruskinTimeline = new TL.Timeline('timeline-embed', timelineJson, {
+          initial_zoom: 2,
+          language: 'en',
+        });
+
+        try {
+          if (window.ruskinTimeline && window.ruskinTimeline.on) {
+            window.ruskinTimeline.on('change', () => {
+              const idx = window.ruskinTimeline.getCurrentSlideIndex
+                ? window.ruskinTimeline.getCurrentSlideIndex()
+                : null;
+              if (idx == null) return;
+              const ev = _timelineEvents[idx];
+              if (ev && ev._map) map.setView([ev._map.lat, ev._map.lon], 10);
+            });
+          }
+        } catch (e) {
+          console.warn('timeline wiring failed', e);
+        }
+      }
+
+      // -----------------------------
+      // Loaders
+      // -----------------------------
+      function loadGeoJsonLayer(url, cluster, style) {
+        return fetch(url)
+          .then((r) => {
+            if (!r.ok) throw new Error('GeoJSON load failed: ' + r.status);
+            return r.json();
+          })
+          .then((json) => {
+            L.geoJSON(json, {
+              pointToLayer: (_f, latlng) => L.circleMarker(latlng, style),
+              onEachFeature: (feature, layer) => {
+                const props = feature.properties || {};
+                const title =
+                  props.City_Names || props.name || props.place || props.City || 'Place';
+                layer.bindPopup(makePopupHtml(title, props));
+                cluster.addLayer(layer);
+                addToSearchIndex(title, layer, layer.getLatLng());
+                pushTimelineEvent(title, props, layer.getLatLng());
+              },
+            });
+            map.addLayer(cluster);
+          });
+      }
+
+      function loadCsvLayer(url, cluster, style) {
+        return new Promise((resolve, reject) => {
+          $.ajax({ url, dataType: 'text' })
+            .done((csvText) => {
+              try {
+                const rows = $.csv.toObjects(csvText);
+                rows.forEach((row) => {
+                  const lat = parseFloat(
+                    row.y_latitude || row.lat || row.latitude || row.Y || row.y,
+                  );
+                  const lon = parseFloat(
+                    row.x_longitude || row.lon || row.longitude || row.X || row.x,
+                  );
+                  if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+
+                  const title =
+                    row.place_name ||
+                    row.place ||
+                    row.City ||
+                    row.City_Names ||
+                    row.name ||
+                    'Place';
+
+                  const marker = L.circleMarker([lat, lon], style).bindPopup(
+                    makePopupHtml(title, row),
+                  );
+                  cluster.addLayer(marker);
+
+                  const latlng = marker.getLatLng();
+                  addToSearchIndex(title, marker, latlng);
+                  pushTimelineEvent(title, row, latlng);
+                });
+
+                map.addLayer(cluster);
+                resolve();
+              } catch (e) {
+                reject(e);
+              }
+            })
+            .fail((_xhr, _status, err) => reject(new Error('CSV load failed: ' + err)));
+        });
+      }
+
+      function loadTeiPlacesJsonLayer(url, cluster, style, opts = {}) {
+        const { buildPath = false, pathLayer = null } = opts;
+
+        return fetch(url)
+          .then((r) => {
+            if (!r.ok) throw new Error('TEI places load failed: ' + r.status);
+            return r.json();
+          })
+          .then((data) => {
+            const places = data?.div?.listPlace?.place || [];
+            const pathLatLngs = [];
+
+            places.forEach((p) => {
+              const title =
+                safeText(p.placeName) ||
+                safeText(p.head) ||
+                safeText(p['@xml:id']) ||
+                safeText(p['@corresp']) ||
+                'Place';
+
+              const geo = parseGeo(p?.location?.geo);
+              if (!geo) {
+                pushTimelineEventsFromTeiPlace(title, p, null);
+                return;
+              }
+
+              const latlng = L.latLng(geo[0], geo[1]);
+              const props = { note: safeText(p?.note?.p), slug: p?.[SLUG_FIELD] };
+
+              const marker = L.circleMarker(latlng, style).bindPopup(makePopupHtml(title, props));
+              cluster.addLayer(marker);
+
+              addToSearchIndex(title, marker, latlng);
+              pushTimelineEventsFromTeiPlace(title, p, geo);
+
+              if (buildPath) pathLatLngs.push(latlng);
+            });
+
+            map.addLayer(cluster);
+
+            if (buildPath && pathLayer && pathLatLngs.length > 1) {
+              const polyline = L.polyline(pathLatLngs, {
+                color: 'blue',
+                weight: 3,
+                opacity: 0.7,
+                dashArray: '5, 10',
+              });
+              pathLayer.addLayer(polyline);
+              map.addLayer(pathLayer);
+            }
+          });
+      }
+
+      function loadMaryVisitedPlacesTimeline(url) {
+        return fetch(url)
+          .then((r) => {
+            if (!r.ok) throw new Error('Mary visited places load failed: ' + r.status);
+            return r.json();
+          })
+          .then((json) => {
+            const places = json?.div?.listPlace?.place || [];
+            places.forEach((place) => {
+              const title = safeText(place['@corresp'] || place.placeName || 'Place')
+                .replace('#', '')
+                .toLowerCase()
+                .replace(/\b\w/g, (c) => c.toUpperCase());
+
+              const note = safeText(place?.note?.p);
+              const events = asArray(place?.event);
+
+              events.forEach((ev) => {
+                if (!ev?.['@when']) return;
+                pushTimelineEvent(
+                  title,
+                  {
+                    date: ev['@when'],
+                    description:
+                      `<strong>${safeText(ev['@type'] || 'event')}:</strong> ` +
+                      `${safeText(ev.label || '')}` +
+                      (note ? '<br/>' + note : ''),
+                  },
+                  null,
+                );
+              });
+            });
+          });
+      }
+
+      // -----------------------------
+      // Historical opacity slider
+      // -----------------------------
+      const histSlider = document.getElementById('hist-opacity');
+      const histVal = document.getElementById('hist-val');
+      function setHistOpacity(percent) {
+        const p = Math.max(0, Math.min(100, Number(percent)));
+        historical.setOpacity(p / 100);
+        histVal.textContent = `${p}%`;
+      }
+      setHistOpacity(histSlider.value);
+      histSlider.addEventListener('input', (e) => setHistOpacity(e.target.value));
+
+      // -----------------------------
+      // Load all, then timeline
+      // -----------------------------
+      setStatus('Loading datasets…', '…');
+
+      Promise.all([
+        loadGeoJsonLayer(GEOJSON_URL, geoCluster, STYLE.geojson),
+        loadCsvLayer(CSV_URL, csvCluster, STYLE.csv),
+        loadTeiPlacesJsonLayer(PLACES_JSON_URL, teiCluster, STYLE.tei),
+        loadTeiPlacesJsonLayer(MARY_PLACES_JSON_URL, maryCluster, STYLE.mary, {
+          buildPath: true,
+          pathLayer: VisitedByMaryPathLayer,
+        }),
+        loadMaryVisitedPlacesTimeline(PLACES_VISITED_BY_MARY),
+      ])
+        .then(() => {
+          setStatus('Loaded. Use layers to toggle.', 'OK');
+          buildAndAttachTimeline();
+        })
+        .catch((err) => {
+          console.error(err);
+          setStatus('Loaded with errors (see console).', 'WARN');
+          buildAndAttachTimeline();
+        });
+    </script>
+  </body>
+</html>

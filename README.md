@@ -118,9 +118,6 @@ server {
         gzip off;
         sub_filter_once off;
 
-        # Add icon and site styles before <main>
-        sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
-
         # Add highlighting functionality before </body>
         sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
 
@@ -201,6 +198,11 @@ server {
         include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME $document_root/src/search_new/autocomplete_handler.php;
         fastcgi_param DOCUMENT_ROOT $document_root;
+    }
+
+    location ~ /map(?:\.html)?$ {
+        default_type text/html;
+        alias /Users/userselu/Ruskin/_Map/map.html;
     }
 
     # HTML Routing for main folders - with highlighting
