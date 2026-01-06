@@ -23,7 +23,7 @@
     ></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
-    <!-- jQuery + CSV parser -->
+    <!-- jQuery + CSV parser (legacy) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../_Map/GIS/ARCGIS%20Webmap%20Application/jquery.csv-0.71.js"></script>
 
@@ -42,18 +42,14 @@
         --muted: #64748b;
         --stroke: #e6ebf2;
 
-        /* Ruskin-ish accents (keep your brand colors) */
         --brand: #003768;
         --brand-2: #ba8e0b;
 
-        /* softer geometry */
         --radius: 16px;
         --radius-sm: 12px;
 
-        /* more subtle shadows (yours were a bit “heavy”) */
         --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
         --shadow-sm: 0 6px 16px rgba(15, 23, 42, 0.07);
-
         --focus: rgba(0, 55, 104, 0.18);
       }
 
@@ -71,10 +67,9 @@
         background: radial-gradient(900px 500px at 20% 0%, rgba(0, 55, 104, 0.05), transparent 60%),
           radial-gradient(700px 450px at 90% 20%, rgba(186, 142, 11, 0.06), transparent 55%),
           var(--bg);
-        overflow: hidden; /* one screen desktop */
+        overflow: hidden;
       }
 
-      /* ---------- App Shell ---------- */
       .app {
         height: 100vh;
         display: grid;
@@ -83,7 +78,6 @@
         padding: 12px;
       }
 
-      /* Topbar */
       .topbar {
         display: flex;
         align-items: center;
@@ -144,8 +138,7 @@
         white-space: nowrap;
       }
 
-      /* ---------- Main Grid (FIXED) ---------- */
-      .main {
+      .shell {
         min-height: 0;
         display: grid;
         grid-template-columns: 320px 1fr 300px;
@@ -197,7 +190,6 @@
         overflow: auto;
       }
 
-      /* Center content: map + timeline */
       .content {
         min-height: 0;
         display: grid;
@@ -221,7 +213,6 @@
         height: 100%;
       }
 
-      /* ---------- Inputs ---------- */
       .row {
         display: flex;
         gap: 10px;
@@ -325,7 +316,6 @@
         flex: 0 0 auto;
       }
 
-      /* Leaflet polish */
       .leaflet-control-layers {
         border-radius: 12px !important;
         box-shadow: var(--shadow-sm) !important;
@@ -345,27 +335,15 @@
         line-height: 1.35;
       }
 
-      /* TimelineJS container cleanup (their defaults can look harsh) */
-      #timeline-embed {
-        background: #fff;
-      }
-      .tl-timeline {
+      /* Timeline fit (trimmed + non-redundant) */
+      #timeline-embed .tl-timeline,
+      #timeline-embed .tl-text,
+      #timeline-embed .tl-text * {
         font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial !important;
       }
 
-      /* =========================
-   TimelineJS – typography + fit
-   ========================= */
-
-      /* Make Timeline inherit your font stack */
-      #timeline-embed,
-      #timeline-embed * {
-        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial !important;
-      }
-
-      /* Overall base sizing */
       #timeline-embed .tl-timeline {
-        font-size: 14px; /* base */
+        font-size: 14px;
       }
 
       /* Headline */
@@ -384,26 +362,25 @@
       #timeline-embed .tl-text-content div {
         font-size: 13px !important;
         line-height: 1.45 !important;
-        color: #334155 !important; /* similar to your muted ink */
+        color: #334155 !important;
       }
 
-      /* Reduce extra padding that wastes space */
+      /* Reduce wasted padding */
       #timeline-embed .tl-slide-content-container {
         padding: 10px 12px !important;
       }
-
       #timeline-embed .tl-slide .tl-slide-content {
         padding: 0 !important;
       }
 
-      /* Make the text area scroll if there’s a lot of text */
+      /* Make long text scroll instead of breaking layout */
       #timeline-embed .tl-text,
       #timeline-embed .tl-text-content-container {
         max-height: 100% !important;
         overflow: auto !important;
       }
 
-      /* Clamp long headlines so they don't dominate the slide */
+      /* Clamp long titles (optional) */
       #timeline-embed .tl-headline {
         display: -webkit-box !important;
         -webkit-box-orient: vertical !important;
@@ -411,13 +388,38 @@
         overflow: hidden !important;
       }
 
-      /* Make nav/controls slightly smaller so content gets more room */
+      /* Make nav/controls slightly smaller (safe) */
       #timeline-embed .tl-menubar,
       #timeline-embed .tl-timeaxis {
         font-size: 12px !important;
       }
 
-      /* ---------- Responsive ---------- */
+      /* Neutralize any global button styles for Timeline only */
+      #timeline-embed button {
+        height: auto;
+        border-radius: 0;
+        background: initial;
+        border: initial;
+        color: inherit;
+        padding: initial;
+      }
+
+      /* ✅ Restore TimelineJS icon font */
+      #timeline-embed .tl-icon,
+      #timeline-embed .tl-icon:before,
+      #timeline-embed [class^='tl-icon-'],
+      #timeline-embed [class^='tl-icon-']:before,
+      #timeline-embed [class*=' tl-icon-'],
+      #timeline-embed [class*=' tl-icon-']:before {
+        font-family: 'tl-icons' !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        speak: none;
+        text-transform: none !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
       @media (max-width: 980px) {
         html,
         body {
@@ -426,7 +428,7 @@
         .app {
           height: auto;
         }
-        .main {
+        .shell {
           grid-template-columns: 1fr;
           grid-auto-rows: auto;
         }
@@ -437,22 +439,21 @@
     </style>
   </head>
 
-  <body class="map-dashboard">
+  <body>
     <div class="app">
       <header class="topbar">
         <div class="brand">
           <div class="dot"></div>
           <div class="titlewrap">
             <p class="title">Ruskin — Map of Places</p>
-            <p class="subtitle">Map (top) + timeline (bottom)</p>
+            <p class="subtitle">Dashboard: map + timeline + datasets</p>
           </div>
         </div>
-        <div class="chip" title="Tip: toggle layers (top-right on map)">Layers + Timeline</div>
+        <div class="chip" title="Tip: use the layer control on the map">Layers + Timeline</div>
       </header>
 
-      <!-- ✅ This wrapper was missing in your latest version; without it the 3-column grid breaks -->
-      <main class="main">
-        <!-- LEFT SIDEBAR -->
+      <div class="shell">
+        <!-- LEFT -->
         <aside class="panel">
           <div class="panel-hd">
             <h2>Search & Controls</h2>
@@ -470,9 +471,9 @@
             <div class="kv">
               <div>
                 <strong>Historical map opacity</strong><br />
-                <span>Only affects the “Historical map” layer</span>
+                <span>Only affects “Historical map (IIIF)”</span>
               </div>
-              <span id="hist-val" class="pill">85%</span>
+              <span id="hist-val" class="pill">80%</span>
             </div>
 
             <div style="margin-top: 10px">
@@ -481,7 +482,7 @@
                 type="range"
                 min="0"
                 max="100"
-                value="85"
+                value="80"
                 style="width: 100%"
               />
             </div>
@@ -490,20 +491,20 @@
 
             <div class="kv">
               <div>
-                <strong>Quick tips</strong><br />
-                <span>Use the layer control on the map to toggle datasets.</span>
+                <strong>Quick tip</strong><br />
+                <span>Use layers to isolate datasets before searching.</span>
               </div>
               <span class="pill">⌘</span>
             </div>
           </div>
         </aside>
 
-        <!-- CENTER: MAP + TIMELINE -->
+        <!-- CENTER -->
         <section class="content">
           <div class="card">
             <div class="card-hd">
               <h2>Map</h2>
-              <div class="hint">Clusters + popups + layer toggles</div>
+              <div class="hint">Clusters + popups + overlay</div>
             </div>
             <div class="card-body">
               <div id="map"></div>
@@ -513,7 +514,7 @@
           <div class="card">
             <div class="card-hd">
               <h2>Timeline</h2>
-              <div class="hint">Slide changes pan the map when coords exist</div>
+              <div class="hint">Slide changes pan map when coords exist</div>
             </div>
             <div class="card-body">
               <div id="timeline-embed"></div>
@@ -521,7 +522,7 @@
           </div>
         </section>
 
-        <!-- RIGHT SIDEBAR -->
+        <!-- RIGHT -->
         <aside class="panel">
           <div class="panel-hd">
             <h2>Legend</h2>
@@ -584,17 +585,17 @@
             </div>
 
             <div style="margin-top: 10px; font-size: 12px; color: var(--muted); line-height: 1.35">
-              If timeline events don’t appear, it usually means the source data has no dates in the
+              If timeline events don’t appear, it usually means your source data has no dates in the
               expected fields (<code>date</code>, <code>year</code>, <code>@when</code>, etc.).
             </div>
           </div>
         </aside>
-      </main>
+      </div>
     </div>
 
     <script>
       // -----------------------------
-      // CONFIG
+      // CONFIG (edit paths here)
       // -----------------------------
       const GEOJSON_URL = encodeURI(
         '/_Map/GIS/ARCGIS Webmap Application/GeoJsonData/AllPoints.json',
@@ -603,7 +604,18 @@
       const PLACES_JSON_URL = '/_Map/Places/places.json';
       const MARY_PLACES_JSON_URL = '/_Map/Places/mary_places.json';
       const PLACES_VISITED_BY_MARY = '/_Map/Places/places_visited_by_mary.json';
+
       const SLUG_FIELD = 'slug';
+
+      // IIIF overlay (legacy feature)
+      const HISTORICAL_IIIF_URL =
+        'https://www.davidrumsey.com/luna/servlet/iiif/RUMSEY~8~1~373366~90140092/full/full/0/default.jpg';
+
+      // Format: [[southWestLat, southWestLng],[northEastLat, northEastLng]]
+      const HISTORICAL_BOUNDS = [
+        [35.0, -10.0],
+        [72.0, 40.0],
+      ];
 
       const STYLE = {
         geojson: {
@@ -633,53 +645,57 @@
         attribution: '&copy; CARTO',
       });
 
-      const historical = L.tileLayer('/_Map/tiles/historical/{z}/{x}/{y}.png', {
-        maxZoom: 18,
-        attribution: 'Historical map (Ruskin era)',
-      }).setOpacity(0.85);
+      const historicalIIIF = L.imageOverlay(HISTORICAL_IIIF_URL, HISTORICAL_BOUNDS, {
+        opacity: 0.8,
+        attribution: '© David Rumsey Map Collection (IIIF image)',
+      });
 
+      // Layers
       const geoCluster = L.markerClusterGroup();
       const csvCluster = L.markerClusterGroup();
       const teiCluster = L.markerClusterGroup();
       const maryCluster = L.markerClusterGroup();
-      const VisitedByMaryPathLayer = L.featureGroup();
+      const visitedByMaryPathLayer = L.featureGroup();
 
-      const baseMaps = { OpenStreetMap: osm, 'Carto Light': carto };
-      const overlayMaps = {
-        'GeoJSON places': geoCluster,
-        'CSV places': csvCluster,
-        'TEI places.json': teiCluster,
-        'Mary places.json': maryCluster,
-        'Mary visited path': VisitedByMaryPathLayer,
-        'Historical map': historical,
-      };
-      L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(map);
+      L.control
+        .layers(
+          { OpenStreetMap: osm, 'Carto Light': carto },
+          {
+            'GeoJSON places': geoCluster,
+            'CSV places': csvCluster,
+            'TEI places.json': teiCluster,
+            'Mary places.json': maryCluster,
+            'Mary visited path': visitedByMaryPathLayer,
+            'Historical map (IIIF)': historicalIIIF,
+          },
+          { collapsed: false },
+        )
+        .addTo(map);
 
-      // Make Leaflet compute sizes correctly in a grid layout
-      setTimeout(() => map.invalidateSize(), 0);
-      window.addEventListener('resize', () => map.invalidateSize());
+      // Layout sizing fixes
+      const invalidateMapSize = () => map.invalidateSize();
+      setTimeout(invalidateMapSize, 0);
+      window.addEventListener('resize', invalidateMapSize);
 
       // -----------------------------
       // Status UI
       // -----------------------------
       const statusText = document.getElementById('status-text');
       const statusPill = document.getElementById('status-pill');
-      function setStatus(text, pill) {
+      const setStatus = (text, pill = '') => {
         statusText.textContent = text;
-        statusPill.textContent = pill || '';
-      }
+        statusPill.textContent = pill;
+      };
 
       // -----------------------------
       // SEARCH INDEX
       // -----------------------------
       const searchIndex = [];
+      const addToSearchIndex = (title, layer, latlng) => {
+        if (title && latlng) searchIndex.push({ name: title, layer, latlng });
+      };
 
-      function addToSearchIndex(title, layer, latlng) {
-        if (!title || !latlng) return;
-        searchIndex.push({ name: title, layer, latlng });
-      }
-
-      function findAndOpen(q) {
+      const findAndOpen = (q) => {
         q = (q || '').toLowerCase().trim();
         if (!q) return false;
 
@@ -687,13 +703,12 @@
           searchIndex.find((s) => s.name && s.name.toLowerCase() === q) ||
           searchIndex.find((s) => s.name && s.name.toLowerCase().includes(q));
 
-        if (found && found.latlng) {
-          map.setView(found.latlng, Math.max(map.getZoom(), 8));
-          if (found.layer && found.layer.openPopup) found.layer.openPopup();
-          return true;
-        }
-        return false;
-      }
+        if (!found?.latlng) return false;
+
+        map.setView(found.latlng, Math.max(map.getZoom(), 8));
+        found.layer?.openPopup?.();
+        return true;
+      };
 
       document.getElementById('map-search-btn').addEventListener('click', () => {
         const q = document.getElementById('map-search').value;
@@ -707,59 +722,58 @@
         }
       });
 
-      window.ruskinMap = { findAndOpen };
-
       // -----------------------------
       // Popup + Helpers
       // -----------------------------
-      function makePopupHtml(name, props) {
-        let html = '<div><strong>' + (name || 'Place') + '</strong>';
-        const note = props && (props.place_note || props.note || props.description);
-        if (note)
-          html += '<div style="margin-top:6px;color:#475569;line-height:1.3">' + note + '</div>';
-
-        html += '<div style="margin-top:10px;">';
-        if (props && props[SLUG_FIELD]) {
-          const slug = props[SLUG_FIELD];
-          const url = String(slug).startsWith('/') ? slug : '/witnesses/' + slug;
-          html += '<a href="' + url + '" target="_self">Open item</a>';
-        } else {
-          const place = encodeURIComponent(name || '');
-          const url = '/search?placeName=' + place + '&placeNameType=all';
-          html += '<a href="' + url + '" target="_self">Search related items</a>';
-        }
-        html += '</div></div>';
-        return html;
-      }
-
-      function parseGeo(geoVal) {
-        if (!geoVal) return null;
-        const s = String(geoVal).trim();
-        const parts = s.split(/[,\s]+/).filter(Boolean);
-        if (parts.length < 2) return null;
-        const lat = parseFloat(parts[0]);
-        const lon = parseFloat(parts[1]);
-        if (!Number.isFinite(lat) || !Number.isFinite(lon)) return null;
-        return [lat, lon];
-      }
-
-      function safeText(x) {
+      const safeText = (x) => {
         if (x == null) return '';
         if (typeof x === 'string') return x;
         if (typeof x === 'object' && x['#text']) return String(x['#text']);
         return String(x);
-      }
+      };
 
-      function asArray(x) {
-        return !x ? [] : Array.isArray(x) ? x : [x];
-      }
+      const asArray = (x) => (!x ? [] : Array.isArray(x) ? x : [x]);
+
+      const parseGeo = (geoVal) => {
+        if (!geoVal) return null;
+        const parts = String(geoVal)
+          .trim()
+          .split(/[,\s]+/)
+          .filter(Boolean);
+        if (parts.length < 2) return null;
+        const lat = parseFloat(parts[0]);
+        const lon = parseFloat(parts[1]);
+        return Number.isFinite(lat) && Number.isFinite(lon) ? [lat, lon] : null;
+      };
+
+      const makePopupHtml = (name, props) => {
+        const title = name || 'Place';
+        const note = props?.place_note || props?.note || props?.description || '';
+        const slug = props?.[SLUG_FIELD];
+
+        const linkHtml = slug
+          ? `<a href="${
+              String(slug).startsWith('/') ? slug : '/witnesses/' + slug
+            }" target="_self">Open item</a>`
+          : `<a href="/search?placeName=${encodeURIComponent(
+              title,
+            )}&placeNameType=all" target="_self">Search related items</a>`;
+
+        return `
+          <div>
+            <strong>${title}</strong>
+            ${note ? `<div style="margin-top:6px;color:#475569;line-height:1.3">${note}</div>` : ''}
+            <div style="margin-top:10px;">${linkHtml}</div>
+          </div>
+        `;
+      };
 
       // -----------------------------
       // Timeline
       // -----------------------------
       const _timelineEvents = [];
 
-      function parseDateParts(s) {
+      const parseDateParts = (s) => {
         if (!s) return null;
         s = String(s).trim();
 
@@ -781,6 +795,7 @@
           nov: 11,
           dec: 12,
         };
+
         const yearTok = parts.find((p) => /^\d{4}$/.test(p));
         if (!yearTok) return null;
 
@@ -792,50 +807,51 @@
           month: monTok ? months[monTok.substring(0, 3)] : null,
           day: dayTok && dayTok !== yearTok ? dayTok : null,
         };
-      }
+      };
 
-      function pushTimelineEvent(title, props, latlng) {
+      const pushTimelineEvent = (title, props, latlng) => {
         const dateStr =
-          props &&
-          (props.date || props.Date || props.year || props.date_visited || props.visit_date);
+          props?.date || props?.Date || props?.year || props?.date_visited || props?.visit_date;
         if (!dateStr) return;
 
         const d = parseDateParts(dateStr);
         if (!d) return;
 
         const ev = {
-          start_date: { year: String(d.year) },
+          start_date: {
+            year: String(d.year),
+            ...(d.month ? { month: String(d.month) } : {}),
+            ...(d.day ? { day: String(d.day) } : {}),
+          },
           text: {
             headline: title || 'Place',
-            text: (props && (props.description || props.note || props.place_note || '')) || '',
+            text: props?.description || props?.note || props?.place_note || '',
           },
           unique_id: _timelineEvents.length + 1,
           _map: latlng ? { lat: latlng.lat ?? latlng[0], lon: latlng.lng ?? latlng[1] } : null,
         };
 
-        if (d.month) ev.start_date.month = String(d.month);
-        if (d.day) ev.start_date.day = String(d.day);
-
         _timelineEvents.push(ev);
-      }
+      };
 
-      function pushTimelineEventsFromTeiPlace(title, placeObj, geoArr) {
-        const events = asArray(placeObj?.event);
-        events.forEach((ev) => {
+      const pushTimelineEventsFromTeiPlace = (title, placeObj, geoArr) => {
+        asArray(placeObj?.event).forEach((ev) => {
           const when = ev?.['@when'];
           if (!when) return;
+
           const kind = ev?.['@type'] ? String(ev['@type']) : 'event';
-          const label = ev?.label ? String(ev.label) : '';
+          const label = ev?.label ? safeText(ev.label) : '';
           const note = placeObj?.note?.p ? safeText(placeObj.note.p) : '';
+
           pushTimelineEvent(
             title,
             { date: when, description: `${kind}: ${label}${note ? '\n' + note : ''}` },
             geoArr,
           );
         });
-      }
+      };
 
-      function buildAndAttachTimeline() {
+      const buildAndAttachTimeline = () => {
         const el = document.getElementById('timeline-embed');
         if (!el) return;
 
@@ -855,27 +871,35 @@
           language: 'en',
         });
 
+        // Pan map when slide changes
         try {
-          if (window.ruskinTimeline && window.ruskinTimeline.on) {
-            window.ruskinTimeline.on('change', () => {
-              const idx = window.ruskinTimeline.getCurrentSlideIndex
-                ? window.ruskinTimeline.getCurrentSlideIndex()
-                : null;
-              if (idx == null) return;
-              const ev = _timelineEvents[idx];
-              if (ev && ev._map) map.setView([ev._map.lat, ev._map.lon], 10);
-            });
-          }
+          window.ruskinTimeline?.on?.('change', () => {
+            const idx = window.ruskinTimeline.getCurrentSlideIndex?.();
+            if (idx == null) return;
+            const ev = _timelineEvents[idx];
+            if (ev?._map) map.setView([ev._map.lat, ev._map.lon], 10);
+          });
         } catch (e) {
           console.warn('timeline wiring failed', e);
         }
-      }
+      };
 
       // -----------------------------
       // Loaders
       // -----------------------------
-      function loadGeoJsonLayer(url, cluster, style) {
-        return fetch(url)
+      const bindPoint = (cluster, latlng, style, title, props) => {
+        const marker = L.circleMarker(latlng, style).bindPopup(makePopupHtml(title, props));
+        cluster.addLayer(marker);
+
+        const ll = marker.getLatLng();
+        addToSearchIndex(title, marker, ll);
+        pushTimelineEvent(title, props, ll);
+
+        return marker;
+      };
+
+      const loadGeoJsonLayer = (url, cluster, style) =>
+        fetch(url)
           .then((r) => {
             if (!r.ok) throw new Error('GeoJSON load failed: ' + r.status);
             return r.json();
@@ -895,15 +919,13 @@
             });
             map.addLayer(cluster);
           });
-      }
 
-      function loadCsvLayer(url, cluster, style) {
-        return new Promise((resolve, reject) => {
+      const loadCsvLayer = (url, cluster, style) =>
+        new Promise((resolve, reject) => {
           $.ajax({ url, dataType: 'text' })
             .done((csvText) => {
               try {
-                const rows = $.csv.toObjects(csvText);
-                rows.forEach((row) => {
+                $.csv.toObjects(csvText).forEach((row) => {
                   const lat = parseFloat(
                     row.y_latitude || row.lat || row.latitude || row.Y || row.y,
                   );
@@ -919,15 +941,7 @@
                     row.City_Names ||
                     row.name ||
                     'Place';
-
-                  const marker = L.circleMarker([lat, lon], style).bindPopup(
-                    makePopupHtml(title, row),
-                  );
-                  cluster.addLayer(marker);
-
-                  const latlng = marker.getLatLng();
-                  addToSearchIndex(title, marker, latlng);
-                  pushTimelineEvent(title, row, latlng);
+                  bindPoint(cluster, [lat, lon], style, title, row);
                 });
 
                 map.addLayer(cluster);
@@ -938,9 +952,8 @@
             })
             .fail((_xhr, _status, err) => reject(new Error('CSV load failed: ' + err)));
         });
-      }
 
-      function loadTeiPlacesJsonLayer(url, cluster, style, opts = {}) {
+      const loadTeiPlacesJsonLayer = (url, cluster, style, opts = {}) => {
         const { buildPath = false, pathLayer = null } = opts;
 
         return fetch(url)
@@ -966,78 +979,75 @@
                 return;
               }
 
-              const latlng = L.latLng(geo[0], geo[1]);
-              const props = { note: safeText(p?.note?.p), slug: p?.[SLUG_FIELD] };
+              const props = {
+                note: safeText(p?.note?.p),
+                place_note: safeText(p?.terrain?.desc),
+                slug: p?.[SLUG_FIELD],
+              };
+              const ll = L.latLng(geo[0], geo[1]);
 
-              const marker = L.circleMarker(latlng, style).bindPopup(makePopupHtml(title, props));
-              cluster.addLayer(marker);
-
-              addToSearchIndex(title, marker, latlng);
+              bindPoint(cluster, ll, style, title, props);
               pushTimelineEventsFromTeiPlace(title, p, geo);
 
-              if (buildPath) pathLatLngs.push(latlng);
+              if (buildPath) pathLatLngs.push(ll);
             });
 
             map.addLayer(cluster);
 
             if (buildPath && pathLayer && pathLatLngs.length > 1) {
-              const polyline = L.polyline(pathLatLngs, {
-                color: 'blue',
-                weight: 3,
-                opacity: 0.7,
-                dashArray: '5, 10',
-              });
-              pathLayer.addLayer(polyline);
+              pathLayer.addLayer(
+                L.polyline(pathLatLngs, {
+                  color: 'blue',
+                  weight: 3,
+                  opacity: 0.7,
+                  dashArray: '5, 10',
+                }),
+              );
               map.addLayer(pathLayer);
             }
           });
-      }
+      };
 
-      function loadMaryVisitedPlacesTimeline(url) {
-        return fetch(url)
+      const loadMaryVisitedPlacesTimeline = (url) =>
+        fetch(url)
           .then((r) => {
             if (!r.ok) throw new Error('Mary visited places load failed: ' + r.status);
             return r.json();
           })
           .then((json) => {
-            const places = json?.div?.listPlace?.place || [];
-            places.forEach((place) => {
+            (json?.div?.listPlace?.place || []).forEach((place) => {
               const title = safeText(place['@corresp'] || place.placeName || 'Place')
                 .replace('#', '')
                 .toLowerCase()
                 .replace(/\b\w/g, (c) => c.toUpperCase());
 
               const note = safeText(place?.note?.p);
-              const events = asArray(place?.event);
 
-              events.forEach((ev) => {
+              asArray(place?.event).forEach((ev) => {
                 if (!ev?.['@when']) return;
-                pushTimelineEvent(
-                  title,
-                  {
-                    date: ev['@when'],
-                    description:
-                      `<strong>${safeText(ev['@type'] || 'event')}:</strong> ` +
-                      `${safeText(ev.label || '')}` +
-                      (note ? '<br/>' + note : ''),
-                  },
-                  null,
-                );
+
+                pushTimelineEvent(title, {
+                  date: ev['@when'],
+                  description: `${safeText(ev['@type'] || 'event')}: ${safeText(ev.label || '')}${
+                    note ? '\n' + note : ''
+                  }`,
+                });
               });
             });
           });
-      }
 
       // -----------------------------
-      // Historical opacity slider
+      // Historical opacity slider (IIIF overlay)
       // -----------------------------
       const histSlider = document.getElementById('hist-opacity');
       const histVal = document.getElementById('hist-val');
-      function setHistOpacity(percent) {
+
+      const setHistOpacity = (percent) => {
         const p = Math.max(0, Math.min(100, Number(percent)));
-        historical.setOpacity(p / 100);
+        historicalIIIF.setOpacity(p / 100);
         histVal.textContent = `${p}%`;
-      }
+      };
+
       setHistOpacity(histSlider.value);
       histSlider.addEventListener('input', (e) => setHistOpacity(e.target.value));
 
@@ -1052,7 +1062,7 @@
         loadTeiPlacesJsonLayer(PLACES_JSON_URL, teiCluster, STYLE.tei),
         loadTeiPlacesJsonLayer(MARY_PLACES_JSON_URL, maryCluster, STYLE.mary, {
           buildPath: true,
-          pathLayer: VisitedByMaryPathLayer,
+          pathLayer: visitedByMaryPathLayer,
         }),
         loadMaryVisitedPlacesTimeline(PLACES_VISITED_BY_MARY),
       ])
