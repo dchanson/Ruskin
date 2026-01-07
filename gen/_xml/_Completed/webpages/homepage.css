@@ -48,7 +48,7 @@ main {
   background-color: #fff;
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Paragraphs */
@@ -83,6 +83,7 @@ a:hover {
 ul {
   list-style-type: none;
   margin-top: 20px;
+  display: flow-root;
 }
 
 li {
