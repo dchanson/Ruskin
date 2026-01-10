@@ -23,24 +23,26 @@
     ></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
-
-    <!-- jQuery + CSV parser from legacy map -->
+    <!-- jQuery + CSV parser -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../_Map/GIS/ARCGIS%20Webmap%20Application/jquery.csv-0.71.js"></script>
-     <!-- Leaflet IIIF plugin -->
-     <script src="https://unpkg.com/leaflet-iiif"></script>
+
+    <!-- TimelineJS (Knight Lab) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
+    />
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
     <style>
       #map {
         height: 640px;
       }
-
       html,
       body {
         margin: 0;
         padding: 0;
       }
-
       .controls {
         position: absolute;
         top: 10px;
@@ -51,14 +53,8 @@
         border-radius: 4px;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
       }
-
       .controls input[type='text'] {
         width: 220px;
-      }
-
-      .opacity-label {
-        display: inline-block;
-        width: 90px;
       }
     </style>
   </head>
@@ -75,14 +71,8 @@
       </div>
       <span id="hist-val"></span>
     </div>
-    <div id="timeline-embed" style="height: 320px; margin: 12px"></div>
 
-    <!-- TimelineJS (Knight Lab) -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
-    />
-    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <div id="timeline-embed" style="height: 320px; margin: 12px"></div>
 
     <script>
       // -----------------------------
@@ -91,9 +81,11 @@
       const GEOJSON_URL = encodeURI(
         '/_Map/GIS/ARCGIS Webmap Application/GeoJsonData/AllPoints.json',
       );
+
       const CSV_URL = '/_Map/GIS/CSV/places_mockup2.csv';
+
+      // TEI-ish JSON exports (your existing paths)
       const PLACES_JSON_URL = '/_Map/Places/places.json';
-      const PLACES_BY_MARY = '/_Map/Places/places_by_mary.json';
       const MARY_PLACES_JSON_URL = '/_Map/Places/mary_places.json';
       const PLACES_VISITED_BY_MARY = '/_Map/Places/places_visited_by_mary.json';
 
@@ -106,14 +98,14 @@
           fillOpacity: 0.85,
           color: '#1f77b4',
           fillColor: '#1f77b4',
-        }, //blue
-        csv: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#ff7f0e', fillColor: '#ff7f0e' }, //orange
-        tei: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#9467bd', fillColor: '#9467bd' }, //purple
-        mary: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#2ca02c', fillColor: '#2ca02c' }, //green
+        },
+        csv: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#ff7f0e', fillColor: '#ff7f0e' },
+        tei: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#9467bd', fillColor: '#9467bd' },
+        mary: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#2ca02c', fillColor: '#2ca02c' },
       };
 
       // -----------------------------
-      // MAP SETUP
+      // MAP SETUP (ONLY ONCE)
       // -----------------------------
       const map = L.map('map').setView([50.5, 6.0], 5);
 
@@ -140,26 +132,26 @@
   }
 );
 
-    // Layers (clusters)
-    const geoCluster = L.markerClusterGroup();
-    const csvCluster = L.markerClusterGroup();
-    const teiCluster = L.markerClusterGroup();
-    const maryTeiCluster = L.markerClusterGroup();
-    // Path layer for places visited by Mary
-    const VisitedByMaryPathLayer = L.featureGroup();
-    
+      // Marker clusters
+      const geoCluster = L.markerClusterGroup();
+      const csvCluster = L.markerClusterGroup();
+      const teiCluster = L.markerClusterGroup();
+      const maryCluster = L.markerClusterGroup();
 
+      // Path layer for Mary visited places
+      const VisitedByMaryPathLayer = L.featureGroup();
 
-    // Layer control
-    const baseMaps = { OpenStreetMap: osm, 'Carto Light': carto };
-    const overlayMaps = {
-      'GeoJSON places': geoCluster,
-      'CSV places': csvCluster,
-      'TEI places.json': teiCluster,
-      'Mary places.json': VisitedByMaryPathLayer,
-      'Historical map': historicalIIIF,
-    };
-    L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(map);
+      // Layer control
+      const baseMaps = { OpenStreetMap: osm, 'Carto Light': carto };
+      const overlayMaps = {
+        'GeoJSON places': geoCluster,
+        'CSV places': csvCluster,
+        'TEI places.json': teiCluster,
+        'Mary places.json': maryCluster,
+        'Mary visited path': VisitedByMaryPathLayer,
+        'Historical map': historical,
+      };
+      L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(map);
 
       // Search index across ALL datasets
       const searchIndex = [];
@@ -170,12 +162,12 @@
       function makePopupHtml(name, props) {
         let html = '<div><strong>' + (name || 'Place') + '</strong>';
 
-        const note = props && (props.place_note || props.note);
+        const note = props && (props.place_note || props.note || props.description);
         if (note) html += '<div>' + note + '</div>';
 
         if (props && props[SLUG_FIELD]) {
           const slug = props[SLUG_FIELD];
-          const url = slug.startsWith('/') ? slug : '/witnesses/' + slug;
+          const url = String(slug).startsWith('/') ? slug : '/witnesses/' + slug;
           html += '<div><a href="' + url + '" target="_self">Open item</a></div>';
         } else {
           const place = encodeURIComponent(name || '');
@@ -197,7 +189,6 @@
         const s = String(geoVal).trim();
         const parts = s.split(/[,\s]+/).filter(Boolean);
         if (parts.length < 2) return null;
-
         const lat = parseFloat(parts[0]);
         const lon = parseFloat(parts[1]);
         if (!Number.isFinite(lat) || !Number.isFinite(lon)) return null;
@@ -211,6 +202,10 @@
         return String(x);
       }
 
+      function asArray(x) {
+        return !x ? [] : Array.isArray(x) ? x : [x];
+      }
+
       // -----------------------------
       // TIMELINE HELPERS
       // -----------------------------
@@ -219,9 +214,12 @@
       function parseDateParts(s) {
         if (!s) return null;
         s = String(s).trim();
+
+        // yyyy or yyyy-mm or yyyy-mm-dd
         const iso = s.match(/^(\d{4})(?:[-\/](\d{1,2})(?:[-\/](\d{1,2}))?)?$/);
         if (iso) return { year: iso[1], month: iso[2] || null, day: iso[3] || null };
 
+        // "Mar 1879" etc
         const parts = s.split(/\s+/).map((p) => p.replace(/[.,]/g, '').toLowerCase());
         const months = {
           jan: 1,
@@ -275,11 +273,7 @@
         _timelineEvents.push(ev);
       }
 
-      function asArray(x) {
-        return !x ? [] : Array.isArray(x) ? x : [x];
-      }
-
-      function pushTimelineEventsFromTeiPlace(title, placeObj, latlngArr) {
+      function pushTimelineEventsFromTeiPlace(title, placeObj, geoArr) {
         const events = asArray(placeObj?.event);
         events.forEach((ev) => {
           const when = ev?.['@when'];
@@ -287,20 +281,22 @@
 
           const kind = ev?.['@type'] ? String(ev['@type']) : 'event';
           const label = ev?.label ? String(ev.label) : '';
-          const note = placeObj?.note?.p ? String(placeObj.note.p) : '';
+          const note = placeObj?.note?.p ? safeText(placeObj.note.p) : '';
 
           pushTimelineEvent(
             title,
-            { date: when, description: `${kind}: ${label}\n${note}` },
-            latlngArr,
+            { date: when, description: `${kind}: ${label}${note ? '\n' + note : ''}` },
+            geoArr,
           );
         });
       }
 
       function buildAndAttachTimeline() {
+        const el = document.getElementById('timeline-embed');
+        if (!el) return;
+
         if (_timelineEvents.length === 0) {
-          document.getElementById('timeline-embed').innerHTML =
-            '<p style="padding:10px">No dated events found for timeline.</p>';
+          el.innerHTML = '<p style="padding:10px">No dated events found for timeline.</p>';
           return;
         }
 
@@ -322,6 +318,7 @@
                 ? window.ruskinTimeline.getCurrentSlideIndex()
                 : null;
               if (idx == null) return;
+
               const ev = _timelineEvents[idx];
               if (ev && ev._map) map.setView([ev._map.lat, ev._map.lon], 10);
             });
@@ -332,12 +329,12 @@
       }
 
       // -----------------------------
-      // GENERIC LOADERS (NO DUPLICATION)
+      // LOADERS
       // -----------------------------
       function loadGeoJsonLayer(url, cluster, style) {
         return fetch(url)
           .then((r) => {
-            if (!r.ok) throw new Error('GeoJSON load failed');
+            if (!r.ok) throw new Error('GeoJSON load failed: ' + r.status);
             return r.json();
           })
           .then((json) => {
@@ -350,16 +347,10 @@
                 layer.bindPopup(makePopupHtml(title, props));
                 cluster.addLayer(layer);
                 addToSearchIndex(title, layer, layer.getLatLng());
-                pushTimelineEvent(title, props, layer.getLatLng()); // only works if geojson has date fields
+                pushTimelineEvent(title, props, layer.getLatLng()); // only if geojson has date-ish fields
               },
             });
-
             map.addLayer(cluster);
-
-            // optional fit
-            try {
-              map.fitBounds(L.geoJSON(json).getBounds(), { maxZoom: 8 });
-            } catch {}
           });
       }
 
@@ -386,12 +377,13 @@
                     row.name ||
                     'Place';
 
-                  // FIXED: circleMarker spelling + style
-                  const m = L.circleMarker([lat, lon], style).bindPopup(makePopupHtml(title, row));
-                  cluster.addLayer(m);
+                  const marker = L.circleMarker([lat, lon], style).bindPopup(
+                    makePopupHtml(title, row),
+                  );
+                  cluster.addLayer(marker);
 
-                  const latlng = L.latLng(lat, lon);
-                  addToSearchIndex(title, m, latlng);
+                  const latlng = marker.getLatLng();
+                  addToSearchIndex(title, marker, latlng);
                   pushTimelineEvent(title, row, latlng);
                 });
 
@@ -401,65 +393,80 @@
                 reject(e);
               }
             })
-            .fail((err) => reject(err));
+            .fail((_xhr, _status, err) => reject(new Error('CSV load failed: ' + err)));
         });
       }
 
-    function loadTeiPlacesJsonLayer(url, cluster, style) {
-      return fetch(url)
-        .then((r) => {
-          if (!r.ok) throw new Error('TEI places.json load failed');
-          return r.json();
-        })
-        .then((data) => {
-          const places = data?.div?.listPlace?.place || [];
-          const pathLatLngs = [];
-          places.forEach((p) => {
-            const title = p.placeName || p.head?.['#text'] || p['@xml:id'] || 'Place';
-            const geo = parseGeo(p?.location?.geo);
-            pushTimelineEventsFromTeiPlace(title, p, geo);
+      // TEI-ish JSON structure: data.div.listPlace.place[]
+      function loadTeiPlacesJsonLayer(url, cluster, style, opts = {}) {
+        const { buildPath = false, pathLayer = null } = opts;
 
+        return fetch(url)
+          .then((r) => {
+            if (!r.ok) throw new Error('TEI places load failed: ' + r.status);
+            return r.json();
+          })
+          .then((data) => {
+            const places = data?.div?.listPlace?.place || [];
+            const pathLatLngs = [];
 
-              const props = {
-                id: p['@xml:id'],
-                type: p['@type'],
-                country: safeText(p?.location?.country),
-                region: safeText(p?.location?.region),
-                note: safeText(p?.note?.p),
-                place_note: safeText(p?.terrain?.desc),
-              };
+            places.forEach((p) => {
+              const title =
+                safeText(p.placeName) ||
+                safeText(p.head) ||
+                safeText(p['@xml:id']) ||
+                safeText(p['@corresp']) ||
+                'Place';
 
-              if (geo) {
-                const marker = L.circleMarker(geo, style).bindPopup(makePopupHtml(title, props));
-                cluster.addLayer(marker);
+              const geo = parseGeo(p?.location?.geo);
+              if (!geo) {
+                // still allow timeline from events even if no geo
+                pushTimelineEventsFromTeiPlace(title, p, null);
+                return;
+              }
 
               const latlng = L.latLng(geo[0], geo[1]);
+              const props = {
+                note: safeText(p?.note?.p),
+                slug: p?.[SLUG_FIELD],
+              };
+
+              const marker = L.circleMarker(latlng, style).bindPopup(makePopupHtml(title, props));
+              cluster.addLayer(marker);
+
               addToSearchIndex(title, marker, latlng);
-               pathLatLngs.push(latlng);
+              pushTimelineEventsFromTeiPlace(title, p, geo);
+
+              if (buildPath) pathLatLngs.push(latlng);
+            });
+
+            map.addLayer(cluster);
+
+            if (buildPath && pathLayer && pathLatLngs.length > 1) {
+              const polyline = L.polyline(pathLatLngs, {
+                color: 'blue',
+                weight: 3,
+                opacity: 0.7,
+                dashArray: '5, 10',
+              });
+              pathLayer.addLayer(polyline);
+              map.addLayer(pathLayer);
             }
           });
-          //Creating a polyline from the latlngs and adding to the VisitedByMaryPathLayer
-          if (pathLatLngs.length > 1) {
-            const polyline = L.polyline(pathLatLngs, { color: 'blue', weight: 3, opacity: 0.7, dashArray: '5, 10' });
-            VisitedByMaryPathLayer.addLayer(polyline);
-            map.addLayer(VisitedByMaryPathLayer);
-          }
+      }
 
-          map.addLayer(cluster);
-         
-        });
-    }
-    function loadMaryVisitedPlacesTimeline(url) {
-  return fetch(url)
-    .then((r) => {
-      if (!r.ok) throw new Error('Mary visited places load failed');
-      return r.json();
-    })
-    .then((json) => {
-      const places = json?.div?.listPlace?.place || [];
+      // This file seems focused on timeline events, may not contain geo reliably.
+      function loadMaryVisitedPlacesTimeline(url) {
+        return fetch(url)
+          .then((r) => {
+            if (!r.ok) throw new Error('Mary visited places load failed: ' + r.status);
+            return r.json();
+          })
+          .then((json) => {
+            const places = json?.div?.listPlace?.place || [];
 
             places.forEach((place) => {
-              const title = (place['@corresp'] || 'Place')
+              const title = safeText(place['@corresp'] || place.placeName || 'Place')
                 .replace('#', '')
                 .toLowerCase()
                 .replace(/\b\w/g, (c) => c.toUpperCase());
@@ -469,67 +476,20 @@
 
               events.forEach((ev) => {
                 if (!ev?.['@when']) return;
-
                 pushTimelineEvent(
                   title,
                   {
                     date: ev['@when'],
-                    description: `
-                <strong>${ev['@type'] || 'event'}:</strong>
-                ${ev.label || ''}
-                ${note ? '<br/>' + note : ''}
-              `,
+                    description:
+                      `<strong>${safeText(ev['@type'] || 'event')}:</strong> ` +
+                      `${safeText(ev.label || '')}` +
+                      (note ? '<br/>' + note : ''),
                   },
-                  null, // no guaranteed geo in this file
+                  null,
                 );
               });
             });
           });
-      }
-
-      function maryPlacesToTimeline(json) {
-        const timeline = { events: [] };
-
-        const places = json?.div?.listPlace?.place || [];
-
-        places.forEach((place) => {
-          const name = (place['@corresp'] || '')
-            .replace('#', '')
-            .toLowerCase()
-            .replace(/\b\w/g, (c) => c.toUpperCase());
-
-          const note = safeText(place?.note?.p);
-
-          const arrivals = (place.event || []).filter((e) => e['@type'] === 'arrival');
-          const departures = (place.event || []).filter((e) => e['@type'] === 'departure');
-
-          arrivals.forEach((arrival, i) => {
-            const dep = departures[i] || null;
-
-            const [sy, sm, sd] = arrival['@when'].split('-');
-
-            const ev = {
-              start_date: { year: sy, month: sm, day: sd },
-              text: {
-                headline: name,
-                text: `
-            <strong>Arrival:</strong> ${arrival.label || 'Arrived'}<br/>
-            ${dep?.label ? '<strong>Departure:</strong> ' + dep.label + '<br/>' : ''}
-            ${note || ''}
-          `,
-              },
-            };
-
-            if (dep?.['@when']) {
-              const [ey, em, ed] = dep['@when'].split('-');
-              ev.end_date = { year: ey, month: em, day: ed };
-            }
-
-            timeline.events.push(ev);
-          });
-        });
-
-        return timeline;
       }
 
       // -----------------------------
@@ -553,9 +513,9 @@
 
       document.getElementById('map-search-btn').addEventListener('click', () => {
         const q = document.getElementById('map-search').value;
-        if (!findAndOpen(q))
-          alert('No exact match — try broader terms or use the index/search pages.');
+        if (!findAndOpen(q)) alert('No match — try broader terms.');
       });
+
       document.getElementById('map-search').addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
           e.preventDefault();
@@ -571,16 +531,17 @@
       Promise.all([
         loadGeoJsonLayer(GEOJSON_URL, geoCluster, STYLE.geojson),
         loadCsvLayer(CSV_URL, csvCluster, STYLE.csv),
-        loadTeiPlacesJsonLayer(PLACES_BY_MARY, maryTeiCluster, STYLE.mary),
         loadTeiPlacesJsonLayer(PLACES_JSON_URL, teiCluster, STYLE.tei),
+        loadTeiPlacesJsonLayer(MARY_PLACES_JSON_URL, maryCluster, STYLE.mary, {
+          buildPath: true,
+          pathLayer: VisitedByMaryPathLayer,
+        }),
         loadMaryVisitedPlacesTimeline(PLACES_VISITED_BY_MARY),
       ])
-        .then(() => {
-          buildAndAttachTimeline();
-        })
+        .then(() => buildAndAttachTimeline())
         .catch((err) => {
           console.error(err);
-          // still attempt timeline if some sources loaded
+          // best-effort timeline even if one source fails
           buildAndAttachTimeline();
         });
     </script>
