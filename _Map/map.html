@@ -648,17 +648,18 @@
       attribution: '&copy; CARTO',
     });
 
-    const historicalIIIF = L.imageOverlay(
-      "https://www.davidrumsey.com/luna/servlet/iiif/RUMSEY~8~1~373366~90140092/full/full/0/default.jpg",
-      [
-        [35.0, -10.0],
-        [72.0, 40.0]
-      ],
-      {
-        opacity: 0.8,
-        attribution: "© David Rumsey Map Collection"
-      }
-    );
+    
+
+const historicalIIIF = L.tileLayer(
+  'https://wmts.oldmapsonline.org/maps/a12658fa-abc3-4f03-9b29-88f944877132/2025-12-04T00:47:10.771Z/{z}/{x}/{y}.png?key=uCj3mp3TjUDy17XhFNeb',
+  {
+    attribution: 'David Rumsey Map Collection',
+    tms: false, 
+    opacity: 0.8,
+    maxZoom: 18,
+    bounds: [[30, -30], [75, 60]] 
+  }
+);
 
 
 
