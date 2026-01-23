@@ -7,22 +7,12 @@
   <title>Ruskin — Map of Places</title>
 
   <!-- Leaflet + MarkerCluster -->
- <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
 
   <!-- jQuery + CSV parser (legacy) -->
@@ -586,14 +576,13 @@
             <span id="status-pill" class="pill">…</span>
           </div>
           <div class="divider"></div>
-          <div style="font-size: 11px; color: var(--muted); padding: 12px; background: rgba(15, 23, 42, 0.04); border-radius: var(--radius-sm); line-height: 1.4;">
-            <strong style="color: var(--ink); display: block; margin-bottom: 4px;">Historical Map Source:</strong>
-            <p style="margin: 0;">
-              Vandermaelen, Ph. <em>Carte de l'Europe</em> (1831).<br />
-               Source: Establissement Géographique de Bruxelles.
-              Courtesy of <a href="https://www.davidrumsey.com" target="_blank" style="color: var(--brand); text-decoration: none;">David Rumsey Map Collection</a>.<br />
-              <span style="opacity: 0.8;"> List: 16613.005</span>
-            </p>
+          <div
+            style="font-size: 11px; color: var(--muted); padding: 10px; background: rgba(0,0,0,0.03); border-radius: 8px;">
+            <strong>Historical Map Source:</strong><br>
+            Vandermaelen, <em>Atlas universel</em> (1831).<br>
+            Pub: Établissement Géographique de Bruxelles.<br>
+            Courtesy of David Rumsey Map Collection.<br>
+            List No: 16613.005
           </div>
 
           <div style="margin-top: 10px; font-size: 12px; color: var(--muted); line-height: 1.35">
@@ -658,18 +647,18 @@
       attribution: '&copy; CARTO',
     });
 
-    
 
-const historicalIIIF = L.tileLayer(
-  'https://wmts.oldmapsonline.org/maps/a12658fa-abc3-4f03-9b29-88f944877132/2025-12-04T00:47:10.771Z/{z}/{x}/{y}.png?key=uCj3mp3TjUDy17XhFNeb',
-  {
-    attribution: 'Historical Map: <a href="https://www.davidrumsey.com/">David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries</a> | Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>',
-    tms: false,
-    opacity: 0.8,
-    maxZoom: 18,
-    bounds: [[30, -30], [75, 60]] 
-  }
-);
+
+    const historicalIIIF = L.tileLayer(
+      'https://wmts.oldmapsonline.org/maps/a12658fa-abc3-4f03-9b29-88f944877132/2025-12-04T00:47:10.771Z/{z}/{x}/{y}.png?key=uCj3mp3TjUDy17XhFNeb',
+      {
+        attribution: 'Historical Map: <a href="https://www.davidrumsey.com/">David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries</a> | Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>',
+        tms: false,
+        opacity: 0.8,
+        maxZoom: 18,
+        bounds: [[30, -30], [75, 60]]
+      }
+    );
 
 
 
@@ -757,30 +746,30 @@ const historicalIIIF = L.tileLayer(
 
     const asArray = (x) => (!x ? [] : Array.isArray(x) ? x : [x]);
 
- function parseGeo(geoVal) {
-  if (!geoVal) return null;
+    function parseGeo(geoVal) {
+      if (!geoVal) return null;
 
-  const parts = String(geoVal)
-    .trim()
-    .split(/[,\s]+/)
-    .map(Number);
+      const parts = String(geoVal)
+        .trim()
+        .split(/[,\s]+/)
+        .map(Number);
 
-  if (parts.length < 2) return null;
+      if (parts.length < 2) return null;
 
-  let [a, b] = parts;
+      let [a, b] = parts;
 
-  // Detect lon lat (TEI)
-  if (Math.abs(a) > 90 && Math.abs(b) <= 90) {
-    return [b, a];
-  }
+      // Detect lon lat (TEI)
+      if (Math.abs(a) > 90 && Math.abs(b) <= 90) {
+        return [b, a];
+      }
 
-  // Already lat lon
-  if (Math.abs(a) <= 90 && Math.abs(b) <= 180) {
-    return [a, b];
-  }
+      // Already lat lon
+      if (Math.abs(a) <= 90 && Math.abs(b) <= 180) {
+        return [a, b];
+      }
 
-  return null;
-}
+      return null;
+    }
 
 
 
@@ -992,105 +981,104 @@ const historicalIIIF = L.tileLayer(
       });
 
     const loadTeiPlacesJsonLayer = (url, cluster, style) =>
-  fetch(url)
-    .then((r) => r.json())
-    .then((data) => {
-      const places = data?.div?.listPlace?.place || [];
+      fetch(url)
+        .then((r) => r.json())
+        .then((data) => {
+          const places = data?.div?.listPlace?.place || [];
 
-      places.forEach((p) => {
-        const xmlId = p['@xml:id'];
-        const geo = parseGeo(p?.location?.geo);
-        
-        if (!geo) {
-          // Still process timeline events even without coordinates
-          const title = safeText(p.placeName || xmlId || 'Place');
-          pushTimelineEventsFromTeiPlace(title, p, null);
-          return;
-        }
+          places.forEach((p) => {
+            const xmlId = p['@xml:id'];
+            const geo = parseGeo(p?.location?.geo);
 
-        const ll = L.latLng(geo[0], geo[1]);
-        
-        // Store coordinates for Mary's path
-        if (xmlId) {
-          placeCoordinatesMap.set(xmlId.toLowerCase(), ll);
-        }
+            if (!geo) {
+              // Still process timeline events even without coordinates
+              const title = safeText(p.placeName || xmlId || 'Place');
+              pushTimelineEventsFromTeiPlace(title, p, null);
+              return;
+            }
 
-        const title = safeText(p.placeName || xmlId || 'Place');
-        const props = {
-          note: safeText(p?.note?.p),
-          place_note: safeText(p?.terrain?.desc),
-          slug: p?.[SLUG_FIELD],
-        };
+            const ll = L.latLng(geo[0], geo[1]);
 
-        const marker = L.circleMarker(ll, style).bindPopup(makePopupHtml(title, props));
-        cluster.addLayer(marker);
-        addToSearchIndex(title, marker, ll);
-        
-        // Push timeline events
-        pushTimelineEventsFromTeiPlace(title, p, ll);
-      });
+            // Store coordinates for Mary's path
+            if (xmlId) {
+              placeCoordinatesMap.set(xmlId.toLowerCase(), ll);
+            }
 
-      map.addLayer(cluster);
-      console.log(`✅ Loaded ${placeCoordinatesMap.size} canonical places with timeline events`);
-    });
+            const title = safeText(p.placeName || xmlId || 'Place');
+            const props = {
+              note: safeText(p?.note?.p),
+              place_note: safeText(p?.terrain?.desc),
+              slug: p?.[SLUG_FIELD],
+            };
 
-const loadMaryVisitedPlacesTimeline = (url) =>
-  fetch(url)
-    .then((r) => r.json())
-    .then((json) => {
-      const places = json?.div?.listPlace?.place || [];
-      const orderedStops = [];
+            const marker = L.circleMarker(ll, style).bindPopup(makePopupHtml(title, props));
+            cluster.addLayer(marker);
+            addToSearchIndex(title, marker, ll);
 
-      places.forEach((p) => {
-        const ref = safeText(p['@corresp']).replace('#', '').toLowerCase();
-        const order = parseInt(safeText(p.head?.['@n'] || p.head?.['#text'] || p.head), 10) || 999;
-        
-        const title = safeText(p['@corresp'] || 'Place')
-          .replace('#', '')
-          .toLowerCase()
-          .replace(/\b\w/g, (c) => c.toUpperCase());
-        
-        const note = safeText(p?.note?.p);
-
-        // Add timeline events from Mary's visited places
-        asArray(p?.event).forEach((ev) => {
-          if (!ev?.['@when']) return;
-
-          pushTimelineEvent(title, {
-            date: ev['@when'],
-            description: `${safeText(ev['@type'] || 'event')}: ${safeText(ev.label || '')}${
-              note ? '\n' + note : ''
-            }`,
+            // Push timeline events
+            pushTimelineEventsFromTeiPlace(title, p, ll);
           });
+
+          map.addLayer(cluster);
+          console.log(`✅ Loaded ${placeCoordinatesMap.size} canonical places with timeline events`);
         });
 
-        const ll = placeCoordinatesMap.get(ref);
-        if (!ll) {
-          console.warn(' No coordinates for:', ref);
-          return;
-        }
+    const loadMaryVisitedPlacesTimeline = (url) =>
+      fetch(url)
+        .then((r) => r.json())
+        .then((json) => {
+          const places = json?.div?.listPlace?.place || [];
+          const orderedStops = [];
 
-        orderedStops.push({ order, ll });
-      });
+          places.forEach((p) => {
+            const ref = safeText(p['@corresp']).replace('#', '').toLowerCase();
+            const order = parseInt(safeText(p.head?.['@n'] || p.head?.['#text'] || p.head), 10) || 999;
 
-      // Sort by journey order
-      orderedStops.sort((a, b) => a.order - b.order);
-      const pathLatLngs = orderedStops.map((s) => s.ll);
+            const title = safeText(p['@corresp'] || 'Place')
+              .replace('#', '')
+              .toLowerCase()
+              .replace(/\b\w/g, (c) => c.toUpperCase());
 
-      if (pathLatLngs.length > 1) {
-        const polyline = L.polyline(pathLatLngs, {
-          color: '#3b82f6',
-          weight: 4,
-          opacity: 0.9,
-          dashArray: '8, 8',
+            const note = safeText(p?.note?.p);
+
+            // Add timeline events from Mary's visited places
+            asArray(p?.event).forEach((ev) => {
+              if (!ev?.['@when']) return;
+
+              pushTimelineEvent(title, {
+                date: ev['@when'],
+                description: `${safeText(ev['@type'] || 'event')}: ${safeText(ev.label || '')}${note ? '\n' + note : ''
+                  }`,
+              });
+            });
+
+            const ll = placeCoordinatesMap.get(ref);
+            if (!ll) {
+              console.warn(' No coordinates for:', ref);
+              return;
+            }
+
+            orderedStops.push({ order, ll });
+          });
+
+          // Sort by journey order
+          orderedStops.sort((a, b) => a.order - b.order);
+          const pathLatLngs = orderedStops.map((s) => s.ll);
+
+          if (pathLatLngs.length > 1) {
+            const polyline = L.polyline(pathLatLngs, {
+              color: '#3b82f6',
+              weight: 4,
+              opacity: 0.9,
+              dashArray: '8, 8',
+            });
+
+            visitedByMaryPathLayer.addLayer(polyline);
+            map.addLayer(visitedByMaryPathLayer);
+
+            console.log(`Mary visited path built with ${pathLatLngs.length} points in order`);
+          }
         });
-
-        visitedByMaryPathLayer.addLayer(polyline);
-        map.addLayer(visitedByMaryPathLayer);
-        
-        console.log(`Mary visited path built with ${pathLatLngs.length} points in order`);
-      }
-    });
 
 
     // -----------------------------
@@ -1114,25 +1102,25 @@ const loadMaryVisitedPlacesTimeline = (url) =>
     setStatus('Loading datasets…', '…');
 
     Promise.all([
-  loadGeoJsonLayer(GEOJSON_URL, geoCluster, STYLE.geojson),
-  loadCsvLayer(CSV_URL, csvCluster, STYLE.csv),
+      loadGeoJsonLayer(GEOJSON_URL, geoCluster, STYLE.geojson),
+      loadCsvLayer(CSV_URL, csvCluster, STYLE.csv),
 
-  
-  loadTeiPlacesJsonLayer(PLACES_JSON_URL, teiCluster, STYLE.tei),
-])
-.then(() => {
-  
-  return loadMaryVisitedPlacesTimeline(PLACES_VISITED_BY_MARY);
-})
-.then(() => {
-  setStatus('Loaded. Use layers to toggle.', 'OK');
-  buildAndAttachTimeline();
-})
-.catch((err) => {
-  console.error(err);
-  setStatus('Loaded with errors (see console).', 'WARN');
-  buildAndAttachTimeline();
-});
+
+      loadTeiPlacesJsonLayer(PLACES_JSON_URL, teiCluster, STYLE.tei),
+    ])
+      .then(() => {
+
+        return loadMaryVisitedPlacesTimeline(PLACES_VISITED_BY_MARY);
+      })
+      .then(() => {
+        setStatus('Loaded. Use layers to toggle.', 'OK');
+        buildAndAttachTimeline();
+      })
+      .catch((err) => {
+        console.error(err);
+        setStatus('Loaded with errors (see console).', 'WARN');
+        buildAndAttachTimeline();
+      });
 
   </script>
 </body>
