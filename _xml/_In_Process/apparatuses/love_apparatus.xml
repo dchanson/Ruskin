@@ -3,9 +3,11 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="apparatus">
-        <fileDesc xml:id="trafalgar_apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
+            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
+        <fileDesc xml:id="title_of_work_apparatus">
             <titleStmt>
-                <title type="main">"Trafalgar"</title>
+                <title type="main">"Title of Work"</title>
                 <title type="sub">Apparatus</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -42,7 +44,7 @@
                     <addrLine>Southeastern Louisiana University</addrLine>
                     <addrLine>SLU 10861</addrLine>
                     <addrLine>Hammond LA 70402</addrLine>
-                    <addrLine>https://erm.selu.edu/</addrLine>
+                    <addrLine>htts://erm.selu.edu</addrLine>
                 </address>
                 <availability status="restricted">
                     <p>Copyright <persName corresp="#DCH">David C. Hanson</persName>.</p>
@@ -56,11 +58,11 @@
     <text>
         <body>
             <div type="apparatus">
-                <head type="title">&#x201C;Title of Work&#x201D;</head>
+                <head type="title">&#x201C;Love&#x201D;</head>
                 <!--An apparatus may contain all or only some of the following sections.-->
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
-                    <p>Title written &#x201C;TRAFALGAR&#x201D; in MSS IA and V.</p>
+                    <p>Body paragraph.</p>
                 </div>
                 <div type="section" xml:id="GENRE">
                     <head type="section">Genre</head>
@@ -68,27 +70,34 @@
                 </div>
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
-                    <p>MSS IA, V, [VI]. 
-                        Presentation copy in MS IA probably dated February 8 (see part 1, MS IA, &#x201C;Content,&#x201D; e). 
-                        According to the index of <title type="manuscript" corresp="MSVI">MS VI</title>, the section of the manuscript now torn away contained &#x201C;Trafalgar,&#x201D; 
-                        probably its rough draft, between <title type="poem" corresp="#JRVESUVIUS">&#x201C;Vesuvius&#x201D;</title> and <title type="poem" corresp="#JRDEATH">&#x201C;Death&#x201D;</title></p>
+                    <p>MS V.</p>
                 </div>
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p>February 8 and 12. Copy in MS V dated February 12 by <persName corresp="#JR">Ruskin</persName>, with the addition by <persName corresp="#JR">John James</persName>, &#x201C;Age 11 years&#x201D;;</p>
+                    <p><date notBefore="1830-06-01" notAfter="1830-07-31">June-July 1830</date>. 
+                        Undated, but positioned in <title type="manuscript" corresp="MSV">MS V</title>.
+                        between &#x201C;Despair&#x201D; (dated by <persName corresp="#JR">Ruskin</persName> <date when="1830-06-11">11 June 1830</date>.)  
+                       and &#x201C;Haddon Hall&#x201D; (ca. June-July 1830).</p>
                 </div>
                 <div type="section" xml:id="COMPPUB">
                     <head type="section">Composition &#x0026; Publication</head>
-                    <p>Printed PJR, 1:35-37; Works, 2:279-81.</p>
+                    <p>Printed TLC, 104-6, from Cook and Wedderburn’s transcript</p>
                 </div>
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
-                    <p>Two patriotic images related to <placeName corresp="#TRAFALGAR">Trafalgar</placeName> hung in the dining room of <persName corresp="#JR">Ruskin</persName>&#x02BC;s paternal grandparents, when they lived 
-                        in <placeName type="building" corresp="#STJAMESSQEDINBURGH">St. James Square</placeName> in <placeName type="building" corresp="#NEWTOWNEDINBURGH">New Town</placeName> of <placeName corresp="#EDINBURGH">Edinburgh</placeName>. 
-                        One was a picture of <persName corresp="#DUFF">Captain George Duff</persName>, killed at <placeName corresp="#TRAFALGAR">Trafalgar</placeName> in <date when="1805">1805</date>, which 
-                        <persName corresp="#VAB">Van Akin Burd</persName> suggests may have been an engraving by <persName corresp="#DAWE">George Dawe</persName> after a portrait by <persName corresp="#SHR">Henry Raeburn</persName>. 
-                        Two other pictures depicted <persName corresp="#HNVN">Nelson</persName> (<title type="letter" corresp="ctwr_to_jjr_1807-11-02"><persName corresp="#CTWR">Catherine Ruskin</persName> to <persName corresp="#JJR">John James Ruskin</persName>, <date when="1807-11-02">2 November 1807</date></title>, 
-                        in <ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName> ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 1:12, 14 n. 3).</p>
+                    <p>This poem about a child&#x2019;s death could have been inspired by 
+                        Sir Francis Chantrey’s &#x201C;Snowdrop Monument,&#x201D; 
+                        a memorial to the Robinson daughters who died by fire. 
+                        <persName corresp="#JR">Ruskin</persName>was struck by the monument on <date when="1830-06-03">June 3</date>, 
+                        during the summer tour (TLC, 31, 66 n. 26; see no. 78). 
+                        Two more monuments to infant deaths were carefully scrutinized by <persName corresp="#JR">Ruskin</persName> during the tour 
+                        (see TLC, 56, 58-59).</p>
+                    
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="TEXTUALNOTE">
+                    <head type="section">Textual Note</head>
+                    <p>Body paragraph.</p>
                 </div>
             </div>
         </body>

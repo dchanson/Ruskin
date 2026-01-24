@@ -3,9 +3,9 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="apparatus">
-        <fileDesc xml:id="trafalgar_apparatus">
+        <fileDesc xml:id="wood_of_birches_apparatus">
             <titleStmt>
-                <title type="main">"Trafalgar"</title>
+                <title type="main">"The Wood of Birches Near Tunbridge"</title>
                 <title type="sub">Apparatus</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -42,7 +42,7 @@
                     <addrLine>Southeastern Louisiana University</addrLine>
                     <addrLine>SLU 10861</addrLine>
                     <addrLine>Hammond LA 70402</addrLine>
-                    <addrLine>https://erm.selu.edu/</addrLine>
+                    <addrLine>htts://erm.selu.edu</addrLine>
                 </address>
                 <availability status="restricted">
                     <p>Copyright <persName corresp="#DCH">David C. Hanson</persName>.</p>
@@ -56,11 +56,11 @@
     <text>
         <body>
             <div type="apparatus">
-                <head type="title">&#x201C;Title of Work&#x201D;</head>
+                <head type="title">&#x201C;The Wood of Birches Near Tunbridge&#x201D;</head>
                 <!--An apparatus may contain all or only some of the following sections.-->
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
-                    <p>Title written &#x201C;TRAFALGAR&#x201D; in MSS IA and V.</p>
+                    <p>Body paragraph.</p>
                 </div>
                 <div type="section" xml:id="GENRE">
                     <head type="section">Genre</head>
@@ -68,27 +68,26 @@
                 </div>
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
-                    <p>MSS IA, V, [VI]. 
-                        Presentation copy in MS IA probably dated February 8 (see part 1, MS IA, &#x201C;Content,&#x201D; e). 
-                        According to the index of <title type="manuscript" corresp="MSVI">MS VI</title>, the section of the manuscript now torn away contained &#x201C;Trafalgar,&#x201D; 
-                        probably its rough draft, between <title type="poem" corresp="#JRVESUVIUS">&#x201C;Vesuvius&#x201D;</title> and <title type="poem" corresp="#JRDEATH">&#x201C;Death&#x201D;</title></p>
+                    <p><title type="manuscript" corresp="MSV">MS V</title>.</p>
                 </div>
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p>February 8 and 12. Copy in MS V dated February 12 by <persName corresp="#JR">Ruskin</persName>, with the addition by <persName corresp="#JR">John James</persName>, &#x201C;Age 11 years&#x201D;;</p>
+                    <p>Dated by Ruskin <date when="1829-07-12">12 July 1829</date>.</p>
                 </div>
                 <div type="section" xml:id="COMPPUB">
-                    <head type="section">Composition &#x0026; Publication</head>
-                    <p>Printed PJR, 1:35-37; Works, 2:279-81.</p>
+                    <head type="section">Composition and Publication</head>
+                    <p>Previously unpublished.</p>
                 </div>
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
-                    <p>Two patriotic images related to <placeName corresp="#TRAFALGAR">Trafalgar</placeName> hung in the dining room of <persName corresp="#JR">Ruskin</persName>&#x02BC;s paternal grandparents, when they lived 
-                        in <placeName type="building" corresp="#STJAMESSQEDINBURGH">St. James Square</placeName> in <placeName type="building" corresp="#NEWTOWNEDINBURGH">New Town</placeName> of <placeName corresp="#EDINBURGH">Edinburgh</placeName>. 
-                        One was a picture of <persName corresp="#DUFF">Captain George Duff</persName>, killed at <placeName corresp="#TRAFALGAR">Trafalgar</placeName> in <date when="1805">1805</date>, which 
-                        <persName corresp="#VAB">Van Akin Burd</persName> suggests may have been an engraving by <persName corresp="#DAWE">George Dawe</persName> after a portrait by <persName corresp="#SHR">Henry Raeburn</persName>. 
-                        Two other pictures depicted <persName corresp="#HNVN">Nelson</persName> (<title type="letter" corresp="ctwr_to_jjr_1807-11-02"><persName corresp="#CTWR">Catherine Ruskin</persName> to <persName corresp="#JJR">John James Ruskin</persName>, <date when="1807-11-02">2 November 1807</date></title>, 
-                        in <ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName> ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 1:12, 14 n. 3).</p>
+                    <p>In <persName corresp="#JR">Ruskin</persName>, <ref type="bibliography" target="bibliography.php#JRWORKSLE"><title type="book" corresp="#JRWORKSLE">Works</title></ref>, 2:536, &#x201C;Beeches&#x201D; is erroneously given for &#x201C;Birches&#x201D; in the title. 
+                        The poem concerns &#x201C;a monument of stone . . . erected . . . to <persName corresp="#CATHERINE">Lady Catherine</persName>&#x2019;s memory&#x201D;.</p>
+                    
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="TEXTUALNOTE">
+                    <head type="section">Textual Note</head>
+                    <p>Body paragraph.</p>
                 </div>
             </div>
         </body>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"Trafalgar"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#MA">Munia Akter</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            
+            <!--Simple Verse. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>TRAFALGAR<ref type="gloss_contextual" target="trafalgar_msv_glosses_contextual.php#TRAFALGARGLOSS"/></head>
+                <lg type="stanza" rhyme="aa">
+                    
+                    <l>Upon the Atlantic spacious breast<ref type="gloss_contextual" target="trafalgar_msv_glosses_contextual.php#SPACIOUSBREASTGLOSS"/></l>
+                    <l>The British ships come on<ref type="gloss_contextual" target="trafalgar_msv_glosses_contextual.php#SHIPSGLOSS"/></l>
+         <l>Full many a soul shall go to rest</l>
+                    <l>Ere the fatal day is done<ref type="gloss_contextual" target="trafalgar_msv_glosses_contextual.php#SAILORSGLOSS"/></l>
+         <l>The waves rose dancing at the prow</l>
+         <l>In foaming sparkling spray</l>
+         <l>And each surge was tipped with a crest of snow</l>
+         <l>As the warship cut their way</l>
+         <l>And on the waves which tossed around</l>
+         <l>The murderous lines of cannon frownn'd</l>
+         <l>Now with a wild and hissing sweep</l>
+         <l>A ball there dashes oer the deep</l>
+                    <l>Then flash on flash and roar on roar<ref type="gloss_contextual" target="trafalgar_msv_glosses_contextual.php#ROARGLOSS"/></l>
+         <l>The British ships began the war</l>
+         <l>There through the volumes of the smoke</l>
+         <l>The lighting flash of cannon broke</l>
+         <l>And the high bounding crested wave</l>
+                    <l>Was tinged with the blood of the dying brave<ref type="gloss_contextual" target="trafalgar_msv_glosses_contextual.php#BLOODGLOSS"/></l>
+         <l>And darkness rising drear and dread</l>
+         <l>On the field of death ther wings outspread</l>
+         <l>Now the Spanish line gave way</l>
+         <l>Now the British won the day</l>
+         <l>But the Spanish parting volley gave</l>
+         <l>A naval hero to the grave</l>
+         <l>Fearless on the stern he stood</l>
+         <l>Looking on the purple flood</l>
+         <l>One parting flash one bursting roar</l>
+                    <l>Trafalgars hero rose no more<ref type="gloss_contextual" target="trafalgar_msv_glosses_contextual.php#NAVALHEROGLOSS"/></l>
+         <l>Then the British heart beat high</l>
+         <l>Then lightning flashed from every eye</l>
+         <l>Revenge burst wildly on the breeze</l>
+         <l>Revenge it sounded oer the seas</l>
+         <l>With killing rage with murderous roar</l>
+         <l>The British on the Spaniards bore</l>
+         <l>Now oer the field of battle dread</l>
+         <l>A sudden blaze there shone</l>
+         <l>And every bloody billow bore</l>
+         <l>A brightness not its own</l>
+         <l>As when the setting sun doth lave</l>
+         <l>Its glories in the ocean wave</l>
+         <l>And when the gentle evening breeze</l>
+         <l>Curls the light ripple of the seas</l>
+         <l>Which glancing in the rays so bright</l>
+         <l>Reflect a glittering line of light</l>
+                    <l>So blazing high sublime &#x0026; dread</l>
+         <l>The flames rose flashing overhead</l>
+         <l>When sudden to the skies arose</l>
+         <l>A far re-echoing sound</l>
+                    <l>And broken masts &#x0026; splintered boards</l>
+         <l>And flames were tossed around</l>
+         <l>And sinking in the ocean deep</l>
+         <l>The brave together calmly sleep</l>
+         <l>And now Spanish foeman fled</l>
+         <l>Full swiftly oer the Atlantic main</l>
+         <l>And while lamenting for their dead</l>
+         <l>They sought the Spanish land again</l>
+         <l>Meantime the mourning victors bore</l>                                                                                                                                     
+                    <l>Their Nelson to his native shore</l>
+         <l>And a whole weeping nation gave</l>
+         <l>Funereal honours to the brave</l>
+         <l>Where was the eye that did not give</l>
+         <l>One single bitter tear</l>
+         <l>Where was the man that did not weep</l>
+         <l>Upon Lord Nelson bier</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
