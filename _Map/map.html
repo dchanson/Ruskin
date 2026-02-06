@@ -27,9 +27,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../_Map/GIS/ARCGIS%20Webmap%20Application/jquery.csv-0.71.js"></script>
 
-    <!-- Leaflet IIIF -->
-    <script src="https://unpkg.com/leaflet-iiif"></script>
-
     <!-- TimelineJS -->
     <link
       rel="stylesheet"
@@ -411,7 +408,6 @@
       #timeline-embed .tl-headline {
         display: -webkit-box !important;
         -webkit-box-orient: vertical !important;
-        -webkit-line-clamp: 2 !important;
         overflow: hidden !important;
       }
 
@@ -441,7 +437,6 @@
         font-family: 'tl-icons' !important;
         font-style: normal !important;
         font-weight: normal !important;
-        speak: none;
         text-transform: none !important;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -676,7 +671,9 @@
       // -----------------------------
       // MAP SETUP
       // -----------------------------
-      const map = L.map('map', { zoomControl: true }).setView([50.5, 6.0], 5);
+      const map = L.map('map', {
+        zoomControl: true,
+      }).setView([50.5, 6.0], 5);
 
       const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -688,16 +685,36 @@
         attribution: '&copy; CARTO',
       });
 
-      const historicalTile = L.tileLayer(
-        'https://wmts.oldmapsonline.org/maps/a12658fa-abc3-4f03-9b29-88f944877132/2025-12-04T00:47:10.771Z/{z}/{x}/{y}.png?key=uCj3mp3TjUDy17XhFNeb',
-        {
-          attribution:
-            'Historical Map: <a href="https://www.davidrumsey.com/">David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries</a> | Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>',
-          tms: false,
-          opacity: 0.8,
-          maxZoom: 18,
-        },
-      );
+      const EUROPE_1931_IMG_URL = '/_Map/Europe1931OverlayImg/Europe1931.png';
+      const EUROPE_1931_BOUNDS = [
+        [29.972381, -17.966306], // SouthWest
+        [62.588278, 53.898917], // NorthEast
+      ];
+
+      const historicalTile = L.imageOverlay(EUROPE_1931_IMG_URL, EUROPE_1931_BOUNDS, {
+        interactive: false,
+        opacity: 0.8,
+        attribution:
+          'Historical Map: <a href="https://www.davidrumsey.com/">David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries</a> | Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>',
+      });
+
+      map.on('click', (e) => console.log('clicked', e.latlng));
+      map.fitBounds(EUROPE_1931_BOUNDS);
+
+      // -----------------------------
+      // Historical opacity slider
+      // -----------------------------
+      const histSlider = document.getElementById('hist-opacity');
+      const histVal = document.getElementById('hist-val');
+
+      const setHistOpacity = (percent) => {
+        const p = Math.max(0, Math.min(100, Number(percent)));
+        historicalTile.setOpacity(p / 100);
+        histVal.textContent = `${p}%`;
+      };
+
+      setHistOpacity(histSlider.value);
+      histSlider.addEventListener('input', (e) => setHistOpacity(e.target.value));
 
       // Layers
       const geoCluster = L.markerClusterGroup();
@@ -715,7 +732,7 @@
             'TEI places.json': teiCluster,
             'Mary places.json': maryCluster,
             'Mary visited path': visitedByMaryPathLayer,
-            'Historical map (IIIF)': historicalTile,
+            'Historical map': historicalTile,
           },
           { collapsed: false },
         )
@@ -1118,21 +1135,6 @@
               console.log(`Mary visited path built with ${pathLatLngs.length} points in order`);
             }
           });
-
-      // -----------------------------
-      // Historical opacity slider (IIIF overlay)
-      // -----------------------------
-      const histSlider = document.getElementById('hist-opacity');
-      const histVal = document.getElementById('hist-val');
-
-      const setHistOpacity = (percent) => {
-        const p = Math.max(0, Math.min(100, Number(percent)));
-        historicalTile.setOpacity(p / 100);
-        histVal.textContent = `${p}%`;
-      };
-
-      setHistOpacity(histSlider.value);
-      histSlider.addEventListener('input', (e) => setHistOpacity(e.target.value));
 
       // -----------------------------
       // Load all, then timeline
