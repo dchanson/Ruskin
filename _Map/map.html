@@ -34,434 +34,8 @@
     />
     <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
-    <style>
-      :root {
-        --bg: #f5f7fb;
-        --card: #ffffff;
-        --ink: #0f172a;
-        --muted: #64748b;
-        --stroke: #e6ebf2;
-
-        --brand: #003768;
-        --brand-2: #ba8e0b;
-
-        --radius: 16px;
-        --radius-sm: 12px;
-
-        --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-        --shadow-sm: 0 6px 16px rgba(15, 23, 42, 0.07);
-        --focus: rgba(0, 55, 104, 0.18);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        color: var(--ink);
-        font-family:
-          ui-sans-serif,
-          system-ui,
-          -apple-system,
-          Segoe UI,
-          Roboto,
-          Helvetica,
-          Arial;
-        background:
-          radial-gradient(900px 500px at 20% 0%, rgba(0, 55, 104, 0.05), transparent 60%),
-          radial-gradient(700px 450px at 90% 20%, rgba(186, 142, 11, 0.06), transparent 55%),
-          var(--bg);
-        overflow: hidden;
-      }
-
-      .app {
-        height: 100vh;
-        display: grid;
-        grid-template-rows: auto 1fr;
-        gap: 12px;
-        padding: 12px;
-      }
-
-      .topbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding: 12px 14px;
-        border: 1px solid var(--stroke);
-        border-radius: var(--radius);
-        background: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        box-shadow: var(--shadow-sm);
-      }
-
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        min-width: 0;
-      }
-
-      .dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 999px;
-        background: var(--brand-2);
-        box-shadow: 0 0 0 4px rgba(186, 142, 11, 0.14);
-        flex: 0 0 auto;
-      }
-
-      .titlewrap {
-        min-width: 0;
-      }
-
-      .title {
-        margin: 0;
-        font-size: 15px;
-        font-weight: 780;
-        letter-spacing: 0.2px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      .subtitle {
-        margin: 2px 0 0;
-        font-size: 12px;
-        color: var(--muted);
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      .chip {
-        font-size: 12px;
-        color: var(--brand);
-        background: rgba(0, 55, 104, 0.08);
-        border: 1px solid rgba(0, 55, 104, 0.14);
-        padding: 8px 10px;
-        border-radius: 999px;
-        white-space: nowrap;
-      }
-
-      .shell {
-        min-height: 0;
-        display: grid;
-        grid-template-columns: 320px 1fr 300px;
-        gap: 12px;
-      }
-
-      .panel,
-      .card {
-        background: rgba(255, 255, 255, 0.92);
-        border: 1px solid var(--stroke);
-        border-radius: var(--radius);
-        box-shadow: var(--shadow-sm);
-        overflow: hidden;
-        min-height: 0;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .panel-hd,
-      .card-hd {
-        padding: 12px 12px 10px;
-        border-bottom: 1px solid var(--stroke);
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 10px;
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.92) 0%,
-          rgba(255, 255, 255, 0.75) 100%
-        );
-      }
-
-      .panel-hd h2,
-      .card-hd h2 {
-        margin: 0;
-        font-size: 13px;
-        font-weight: 760;
-        letter-spacing: 0.2px;
-      }
-
-      .hint {
-        font-size: 12px;
-        color: var(--muted);
-      }
-
-      .panel-bd {
-        padding: 12px;
-        overflow: auto;
-      }
-
-      .content {
-        min-height: 0;
-        display: grid;
-        grid-template-rows: 1.35fr 0.85fr;
-        gap: 12px;
-      }
-
-      .card {
-        box-shadow: var(--shadow);
-      }
-
-      .card-body {
-        flex: 1;
-        min-height: 0;
-        background: #fff;
-      }
-
-      #map,
-      #timeline-embed {
-        width: 100%;
-        height: 100%;
-      }
-
-      .row {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-      }
-
-      .input {
-        flex: 1;
-        height: 40px;
-        border-radius: 12px;
-        border: 1px solid var(--stroke);
-        background: #fff;
-        padding: 0 12px;
-        outline: none;
-        transition:
-          border-color 0.15s ease,
-          box-shadow 0.15s ease;
-        font-size: 14px;
-      }
-
-      .input:focus {
-        border-color: rgba(0, 55, 104, 0.45);
-        box-shadow: 0 0 0 4px var(--focus);
-      }
-
-      .btn {
-        height: 40px;
-        border-radius: 12px;
-        border: 1px solid rgba(0, 55, 104, 0.18);
-        background: linear-gradient(180deg, rgba(0, 55, 104, 0.96), rgba(0, 55, 104, 0.88));
-        color: #fff;
-        padding: 0 14px;
-        cursor: pointer;
-        font-weight: 750;
-        letter-spacing: 0.2px;
-      }
-
-      .btn:active {
-        transform: translateY(1px);
-      }
-
-      .divider {
-        height: 1px;
-        background: var(--stroke);
-        margin: 12px 0;
-      }
-
-      .label {
-        font-size: 12px;
-        color: var(--muted);
-        margin-bottom: 6px;
-      }
-
-      .pill {
-        font-size: 12px;
-        color: var(--brand);
-        background: rgba(0, 55, 104, 0.08);
-        border: 1px solid rgba(0, 55, 104, 0.14);
-        padding: 6px 10px;
-        border-radius: 999px;
-        min-width: 60px;
-        text-align: center;
-      }
-
-      .kv {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 10px;
-        align-items: center;
-        padding: 10px;
-        border: 1px solid var(--stroke);
-        border-radius: 12px;
-        background: #fff;
-      }
-
-      .kv strong {
-        font-size: 12px;
-      }
-
-      .kv span {
-        font-size: 12px;
-        color: var(--muted);
-      }
-
-      .legend {
-        display: grid;
-        gap: 8px;
-      }
-
-      .legend-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px;
-        border: 1px solid var(--stroke);
-        border-radius: 12px;
-        background: #fff;
-      }
-
-      .swatch {
-        width: 10px;
-        height: 10px;
-        border-radius: 999px;
-        flex: 0 0 auto;
-      }
-
-      .leaflet-control-layers {
-        border-radius: 12px !important;
-        box-shadow: var(--shadow-sm) !important;
-        border: 1px solid var(--stroke) !important;
-        overflow: hidden;
-      }
-
-      .leaflet-control-layers-expanded {
-        padding: 10px 12px !important;
-      }
-
-      .leaflet-popup-content-wrapper {
-        border-radius: 14px;
-        box-shadow: var(--shadow);
-      }
-
-      .leaflet-popup-content {
-        margin: 12px 14px;
-        font-size: 13px;
-        line-height: 1.35;
-      }
-
-      /* Timeline fit (trimmed + non-redundant) */
-      #timeline-embed .tl-timeline,
-      #timeline-embed .tl-text,
-      #timeline-embed .tl-text * {
-        font-family:
-          ui-sans-serif,
-          system-ui,
-          -apple-system,
-          Segoe UI,
-          Roboto,
-          Helvetica,
-          Arial !important;
-      }
-
-      #timeline-embed .tl-timeline {
-        font-size: 14px;
-      }
-
-      /* Headline */
-      #timeline-embed .tl-headline,
-      #timeline-embed .tl-headline a {
-        font-size: 16px !important;
-        line-height: 1.2 !important;
-        font-weight: 750 !important;
-        letter-spacing: 0.2px;
-        margin-bottom: 6px !important;
-      }
-
-      /* Body text */
-      #timeline-embed .tl-text-content,
-      #timeline-embed .tl-text-content p,
-      #timeline-embed .tl-text-content div {
-        font-size: 13px !important;
-        line-height: 1.45 !important;
-        color: #334155 !important;
-      }
-
-      /* Reduce wasted padding */
-      #timeline-embed .tl-slide-content-container {
-        padding: 10px 12px !important;
-      }
-
-      #timeline-embed .tl-slide .tl-slide-content {
-        padding: 0 !important;
-      }
-
-      /* Make long text scroll instead of breaking layout */
-      #timeline-embed .tl-text,
-      #timeline-embed .tl-text-content-container {
-        max-height: 100% !important;
-        overflow: auto !important;
-      }
-
-      /* Clamp long titles (optional) */
-      #timeline-embed .tl-headline {
-        display: -webkit-box !important;
-        -webkit-box-orient: vertical !important;
-        overflow: hidden !important;
-      }
-
-      /* Make nav/controls slightly smaller (safe) */
-      #timeline-embed .tl-menubar,
-      #timeline-embed .tl-timeaxis {
-        font-size: 12px !important;
-      }
-
-      /* Neutralize any global button styles for Timeline only */
-      #timeline-embed button {
-        height: auto;
-        border-radius: 0;
-        background: initial;
-        border: initial;
-        color: inherit;
-        padding: initial;
-      }
-
-      /* ✅ Restore TimelineJS icon font */
-      #timeline-embed .tl-icon,
-      #timeline-embed .tl-icon:before,
-      #timeline-embed [class^='tl-icon-'],
-      #timeline-embed [class^='tl-icon-']:before,
-      #timeline-embed [class*=' tl-icon-'],
-      #timeline-embed [class*=' tl-icon-']:before {
-        font-family: 'tl-icons' !important;
-        font-style: normal !important;
-        font-weight: normal !important;
-        text-transform: none !important;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-
-      @media (max-width: 980px) {
-        html,
-        body {
-          overflow: auto;
-        }
-
-        .app {
-          height: auto;
-        }
-
-        .shell {
-          grid-template-columns: 1fr;
-          grid-auto-rows: auto;
-        }
-
-        .content {
-          grid-template-rows: 560px 380px;
-        }
-      }
-    </style>
+    <!-- App styles -->
+    <link rel="stylesheet" href="_Map/map.css" />
   </head>
 
   <body>
@@ -511,41 +85,14 @@
                 style="width: 100%"
               />
             </div>
-
-            <div class="divider"></div>
-
-            <div class="kv">
-              <div>
-                <strong>Quick tip</strong><br />
-                <span>Use layers to isolate datasets before searching.</span>
-              </div>
-              <span class="pill">⌘</span>
-            </div>
           </div>
         </aside>
 
         <!-- CENTER -->
-        <section class="content">
-          <div class="card">
-            <div class="card-hd">
-              <h2>Map</h2>
-              <div class="hint">Clusters + popups + overlay</div>
-            </div>
-            <div class="card-body">
-              <div id="map"></div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-hd">
-              <h2>Timeline</h2>
-              <div class="hint">Slide changes pan map when coords exist</div>
-            </div>
-            <div class="card-body">
-              <div id="timeline-embed"></div>
-            </div>
-          </div>
-        </section>
+        <div id="map"></div>
+        <div id="timeline-container">
+          <div id="timeline-embed"></div>
+        </div>
 
         <!-- RIGHT -->
         <aside class="panel">
@@ -558,32 +105,32 @@
               <div class="legend-item">
                 <span class="swatch" style="background: #1f77b4"></span>
                 <div>
-                  <strong style="font-size: 12px">GeoJSON</strong><br />
-                  <span style="font-size: 12px; color: var(--muted)">AllPoints.json</span>
+                  <strong>GeoJSON</strong><br />
+                  <span>AllPoints.json</span>
                 </div>
               </div>
 
               <div class="legend-item">
                 <span class="swatch" style="background: #ff7f0e"></span>
                 <div>
-                  <strong style="font-size: 12px">CSV</strong><br />
-                  <span style="font-size: 12px; color: var(--muted)">places_mockup2.csv</span>
+                  <strong>CSV</strong><br />
+                  <span>places_mockup2.csv</span>
                 </div>
               </div>
 
               <div class="legend-item">
                 <span class="swatch" style="background: #9467bd"></span>
                 <div>
-                  <strong style="font-size: 12px">TEI places</strong><br />
-                  <span style="font-size: 12px; color: var(--muted)">places.json</span>
+                  <strong>TEI places</strong><br />
+                  <span>places.json</span>
                 </div>
               </div>
 
               <div class="legend-item">
                 <span class="swatch" style="background: #2ca02c"></span>
                 <div>
-                  <strong style="font-size: 12px">Mary places</strong><br />
-                  <span style="font-size: 12px; color: var(--muted)">mary_places.json</span>
+                  <strong>Mary places</strong><br />
+                  <span>mary_places.json</span>
                 </div>
               </div>
 
@@ -593,8 +140,8 @@
                   style="background: linear-gradient(90deg, #3b82f6, #0ea5e9)"
                 ></span>
                 <div>
-                  <strong style="font-size: 12px">Mary path</strong><br />
-                  <span style="font-size: 12px; color: var(--muted)">Polyline from TEI coords</span>
+                  <strong>Mary path</strong><br />
+                  <span>Polyline from TEI coords</span>
                 </div>
               </div>
             </div>
@@ -608,26 +155,14 @@
               </div>
               <span id="status-pill" class="pill">…</span>
             </div>
+
             <div class="divider"></div>
-            <div
-              style="
-                font-size: 11px;
-                color: var(--muted);
-                padding: 10px;
-                background: rgba(0, 0, 0, 0.03);
-                border-radius: 8px;
-              "
-            >
+
+            <div class="source-box">
               <strong>Historical Map Source:</strong><br />
               Vandermaelen, <em>Atlas universel</em> (1831).<br />
-              Pub: Établissement Géographique de Bruxelles.<br />
               Courtesy of David Rumsey Map Collection.<br />
               List No: 16613.005
-            </div>
-
-            <div style="margin-top: 10px; font-size: 12px; color: var(--muted); line-height: 1.35">
-              If timeline events don’t appear, it usually means your source data has no dates in the
-              expected fields (<code>date</code>, <code>year</code>, <code>@when</code>, etc.).
             </div>
           </div>
         </aside>
@@ -671,9 +206,22 @@
       // -----------------------------
       // MAP SETUP
       // -----------------------------
+      const EUROPE_1931_BOUNDS = [
+        [29.972381, -17.966306], // SouthWest
+        [62.588278, 53.898917], // NorthEast
+      ];
+
       const map = L.map('map', {
         zoomControl: true,
-      }).setView([50.5, 6.0], 5);
+        maxBounds: EUROPE_1931_BOUNDS,
+        maxBoundsViscosity: 1.0,
+      });
+
+      const europeFitZoom = map.getBoundsZoom(EUROPE_1931_BOUNDS);
+      const INITIAL_ZOOM = europeFitZoom + 1;
+      map.setView(L.latLngBounds(EUROPE_1931_BOUNDS).getCenter(), INITIAL_ZOOM);
+      map.setMinZoom(europeFitZoom + 0.5);
+      map.setMaxZoom(12);
 
       const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -686,10 +234,6 @@
       });
 
       const EUROPE_1931_IMG_URL = '/_Map/Europe1931OverlayImg/Europe1931Map.png';
-      const EUROPE_1931_BOUNDS = [
-        [29.972381, -17.966306], // SouthWest
-        [62.588278, 53.898917], // NorthEast
-      ];
 
       const historicalTile = L.imageOverlay(EUROPE_1931_IMG_URL, EUROPE_1931_BOUNDS, {
         interactive: false,
@@ -699,7 +243,6 @@
       });
 
       map.on('click', (e) => console.log('clicked', e.latlng));
-      map.fitBounds(EUROPE_1931_BOUNDS);
 
       // -----------------------------
       // Historical opacity slider
@@ -946,7 +489,7 @@
         };
 
         window.ruskinTimeline = new TL.Timeline('timeline-embed', timelineJson, {
-          initial_zoom: 2,
+          initial_zoom: 0,
           language: 'en',
         });
 
@@ -955,8 +498,15 @@
           window.ruskinTimeline?.on?.('change', () => {
             const idx = window.ruskinTimeline.getCurrentSlideIndex?.();
             if (idx == null) return;
+
             const ev = _timelineEvents[idx];
-            if (ev?._map) map.setView([ev._map.lat, ev._map.lon], 10);
+            if (!ev?._map) return;
+
+            const ll = L.latLng(ev._map.lat, ev._map.lon);
+
+            if (!EUROPE_1931_BOUNDS.contains(ll)) return;
+
+            map.setView(ll, Math.max(map.getZoom(), 7), { animate: true });
           });
         } catch (e) {
           console.warn('timeline wiring failed', e);
