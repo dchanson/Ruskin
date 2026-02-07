@@ -237,7 +237,7 @@
 
       const historicalTile = L.imageOverlay(EUROPE_1931_IMG_URL, EUROPE_1931_BOUNDS, {
         interactive: false,
-        opacity: 0.8,
+        opacity: 1,
         attribution:
           'Historical Map: <a href="https://www.davidrumsey.com/">David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries</a> | Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>',
       });
@@ -489,7 +489,7 @@
         };
 
         window.ruskinTimeline = new TL.Timeline('timeline-embed', timelineJson, {
-          initial_zoom: 0,
+          initial_zoom: 6,
           language: 'en',
         });
 
