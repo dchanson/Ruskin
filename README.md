@@ -205,7 +205,7 @@ server {
         alias /Users/userselu/Ruskin/_Map/map.html;
     }
 
-    location ^~ /_Map/Europe1931OverlayImg/ {
+    location ^~ /_Map/Europe1831OverlayImg/ {
         add_header Access-Controll-Allow-Origin *;
         try_files $uri =404;
     }

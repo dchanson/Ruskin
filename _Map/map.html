@@ -40,132 +40,27 @@
 
   <body>
     <div class="app">
-      <header class="topbar">
-        <div class="brand">
-          <div class="dot"></div>
-          <div class="titlewrap">
-            <p class="title">Ruskin — Map of Places</p>
-            <p class="subtitle">Dashboard: map + timeline + datasets</p>
-          </div>
+      <div id="map"></div>
+
+      <div class="search-container">
+        <input
+          id="map-search"
+          class="search-input"
+          type="text"
+          placeholder="Search Ruskin places..."
+        />
+        <button id="map-search-btn" class="search-btn" type="button">Find</button>
+      </div>
+
+      <div class="overlay-panel">
+        <div class="panel-section">
+          <span class="section-title">Layers & Legend</span>
+          <div id="layer-control-container"></div>
         </div>
-        <div class="chip" title="Tip: use the layer control on the map">Layers + Timeline</div>
-      </header>
+      </div>
 
-      <div class="shell">
-        <!-- LEFT -->
-        <aside class="panel">
-          <div class="panel-hd">
-            <h2>Search & Controls</h2>
-            <span class="hint">Global</span>
-          </div>
-          <div class="panel-bd">
-            <div class="label">Search place name</div>
-            <div class="row">
-              <input id="map-search" class="input" type="text" placeholder="e.g., Venice" />
-              <button id="map-search-btn" class="btn" type="button">Find</button>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="kv">
-              <div>
-                <strong>Historical map opacity</strong><br />
-                <span>Only affects “Historical map (IIIF)”</span>
-              </div>
-              <span id="hist-val" class="pill">80%</span>
-            </div>
-
-            <div style="margin-top: 10px">
-              <input
-                id="hist-opacity"
-                type="range"
-                min="0"
-                max="100"
-                value="80"
-                style="width: 100%"
-              />
-            </div>
-          </div>
-        </aside>
-
-        <!-- CENTER -->
-        <div id="map"></div>
-        <div id="timeline-container">
-          <div id="timeline-embed"></div>
-        </div>
-
-        <!-- RIGHT -->
-        <aside class="panel">
-          <div class="panel-hd">
-            <h2>Legend</h2>
-            <span class="hint">Colors</span>
-          </div>
-          <div class="panel-bd">
-            <div class="legend">
-              <div class="legend-item">
-                <span class="swatch" style="background: #1f77b4"></span>
-                <div>
-                  <strong>GeoJSON</strong><br />
-                  <span>AllPoints.json</span>
-                </div>
-              </div>
-
-              <div class="legend-item">
-                <span class="swatch" style="background: #ff7f0e"></span>
-                <div>
-                  <strong>CSV</strong><br />
-                  <span>places_mockup2.csv</span>
-                </div>
-              </div>
-
-              <div class="legend-item">
-                <span class="swatch" style="background: #9467bd"></span>
-                <div>
-                  <strong>TEI places</strong><br />
-                  <span>places.json</span>
-                </div>
-              </div>
-
-              <div class="legend-item">
-                <span class="swatch" style="background: #2ca02c"></span>
-                <div>
-                  <strong>Mary places</strong><br />
-                  <span>mary_places.json</span>
-                </div>
-              </div>
-
-              <div class="legend-item">
-                <span
-                  class="swatch"
-                  style="background: linear-gradient(90deg, #3b82f6, #0ea5e9)"
-                ></span>
-                <div>
-                  <strong>Mary path</strong><br />
-                  <span>Polyline from TEI coords</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="kv">
-              <div>
-                <strong>Status</strong><br />
-                <span id="status-text">Loading…</span>
-              </div>
-              <span id="status-pill" class="pill">…</span>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="source-box">
-              <strong>Historical Map Source:</strong><br />
-              Vandermaelen, <em>Atlas universel</em> (1831).<br />
-              Courtesy of David Rumsey Map Collection.<br />
-              List No: 16613.005
-            </div>
-          </div>
-        </aside>
+      <div id="timeline-container">
+        <div id="timeline-embed"></div>
       </div>
     </div>
 
@@ -184,12 +79,6 @@
       const SLUG_FIELD = 'slug';
       const placeCoordinatesMap = new Map();
 
-      // IIIF overlay (legacy feature)
-      // const HISTORICAL_IIIF_URL =
-      //   'https://www.davidrumsey.com/luna/servlet/iiif/RUMSEY~8~1~373366~90140092/full/full/0/default.jpg';
-
-      // Format: [[southWestLat, southWestLng],[northEastLat, northEastLng]]
-
       const STYLE = {
         geojson: {
           radius: 7,
@@ -206,21 +95,21 @@
       // -----------------------------
       // MAP SETUP
       // -----------------------------
-      const EUROPE_1931_BOUNDS = [
+      const EUROPE_1831_BOUNDS = [
         [29.972381, -17.966306], // SouthWest
         [62.588278, 53.898917], // NorthEast
       ];
 
       const map = L.map('map', {
         zoomControl: true,
-        maxBounds: EUROPE_1931_BOUNDS,
+        maxBounds: EUROPE_1831_BOUNDS,
         maxBoundsViscosity: 1.0,
       });
 
-      const europeFitZoom = map.getBoundsZoom(EUROPE_1931_BOUNDS);
+      const europeFitZoom = map.getBoundsZoom(EUROPE_1831_BOUNDS);
       const INITIAL_ZOOM = europeFitZoom + 1;
-      map.setView(L.latLngBounds(EUROPE_1931_BOUNDS).getCenter(), INITIAL_ZOOM);
-      map.setMinZoom(europeFitZoom + 0.5);
+      map.setView(L.latLngBounds(EUROPE_1831_BOUNDS).getCenter(), INITIAL_ZOOM);
+      map.setMinZoom(europeFitZoom + 1);
       map.setMaxZoom(12);
 
       const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -233,31 +122,16 @@
         attribution: '&copy; CARTO',
       });
 
-      const EUROPE_1931_IMG_URL = '/_Map/Europe1931OverlayImg/Europe1931Map.png';
+      const EUROPE_1831_IMG_URL = '/_Map/Europe1831OverlayImg/Europe1831Map.png';
 
-      const historicalTile = L.imageOverlay(EUROPE_1931_IMG_URL, EUROPE_1931_BOUNDS, {
+      const historicalTile = L.imageOverlay(EUROPE_1831_IMG_URL, EUROPE_1831_BOUNDS, {
         interactive: false,
         opacity: 1,
         attribution:
           'Historical Map: <a href="https://www.davidrumsey.com/">David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries</a> | Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>',
       });
 
-      map.on('click', (e) => console.log('clicked', e.latlng));
-
-      // -----------------------------
-      // Historical opacity slider
-      // -----------------------------
-      const histSlider = document.getElementById('hist-opacity');
-      const histVal = document.getElementById('hist-val');
-
-      const setHistOpacity = (percent) => {
-        const p = Math.max(0, Math.min(100, Number(percent)));
-        historicalTile.setOpacity(p / 100);
-        histVal.textContent = `${p}%`;
-      };
-
-      setHistOpacity(histSlider.value);
-      histSlider.addEventListener('input', (e) => setHistOpacity(e.target.value));
+      map.addLayer(historicalTile);
 
       // Layers
       const geoCluster = L.markerClusterGroup();
@@ -266,35 +140,43 @@
       const maryCluster = L.markerClusterGroup();
       const visitedByMaryPathLayer = L.featureGroup();
 
-      L.control
-        .layers(
-          { OpenStreetMap: osm, 'Carto Light': carto },
-          {
-            'GeoJSON places': geoCluster,
-            'CSV places': csvCluster,
-            'TEI places.json': teiCluster,
-            'Mary places.json': maryCluster,
-            'Mary visited path': visitedByMaryPathLayer,
-            'Historical map': historicalTile,
-          },
-          { collapsed: false },
-        )
-        .addTo(map);
+      const layerColors = {
+        'GeoJSON places': '#1f77b4',
+        'CSV places': '#ff7f0e',
+        'TEI places.json': '#9467bd',
+        'Mary places.json': '#2ca02c',
+        'Mary visited path': '#3b82f6',
+        'Historical map': '#daa520',
+      };
+
+      // Define the control
+      const layerControl = L.control.layers(
+        { OpenStreetMap: osm, 'Carto Light': carto },
+        {
+          'CSV places': csvCluster,
+          'GeoJSON places': geoCluster,
+          'TEI places.json': teiCluster,
+          'Mary places.json': maryCluster,
+          'Mary visited path': visitedByMaryPathLayer,
+          'Historical map': historicalTile,
+        },
+        { collapsed: false },
+      );
+
+      layerControl.addTo(map);
+
+      // MOVE the Leaflet-generated control into your panel
+      const checklistUI = layerControl.getContainer();
+      document.getElementById('layer-control-container').appendChild(checklistUI);
+
+      map.on('overlayadd overlayremove', () => {
+        requestAnimationFrame(injectLayerLegendSwatches);
+      });
 
       // Layout sizing fixes
       const invalidateMapSize = () => map.invalidateSize();
       setTimeout(invalidateMapSize, 0);
       window.addEventListener('resize', invalidateMapSize);
-
-      // -----------------------------
-      // Status UI
-      // -----------------------------
-      const statusText = document.getElementById('status-text');
-      const statusPill = document.getElementById('status-pill');
-      const setStatus = (text, pill = '') => {
-        statusText.textContent = text;
-        statusPill.textContent = pill;
-      };
 
       // -----------------------------
       // SEARCH INDEX
@@ -389,6 +271,38 @@
           </div>
         `;
       };
+
+      function injectLayerLegendSwatches() {
+        const labels = document.querySelectorAll('#layer-control-container label');
+
+        labels.forEach((label) => {
+          const input = label.querySelector('input');
+          if (!input) return;
+
+          const name = label.textContent.trim();
+          const color = layerColors[name];
+          if (!color) return;
+
+          // Clear label safely
+          label.innerHTML = '';
+
+          // Checkbox
+          input.style.margin = '0';
+
+          // Color swatch
+          const swatch = document.createElement('span');
+          swatch.className = 'layer-swatch';
+          swatch.style.backgroundColor = color;
+
+          // Text
+          const text = document.createElement('span');
+          text.textContent = name;
+
+          label.appendChild(input);
+          label.appendChild(swatch);
+          label.appendChild(text);
+        });
+      }
 
       // -----------------------------
       // Timeline
@@ -504,7 +418,7 @@
 
             const ll = L.latLng(ev._map.lat, ev._map.lon);
 
-            if (!EUROPE_1931_BOUNDS.contains(ll)) return;
+            if (!EUROPE_1831_BOUNDS.contains(ll)) return;
 
             map.setView(ll, Math.max(map.getZoom(), 7), { animate: true });
           });
@@ -689,24 +603,21 @@
       // -----------------------------
       // Load all, then timeline
       // -----------------------------
-      setStatus('Loading datasets…', '…');
 
       Promise.all([
         loadGeoJsonLayer(GEOJSON_URL, geoCluster, STYLE.geojson),
         loadCsvLayer(CSV_URL, csvCluster, STYLE.csv),
-
+        loadTeiPlacesJsonLayer(MARY_PLACES_JSON_URL, maryCluster, STYLE.mary),
         loadTeiPlacesJsonLayer(PLACES_JSON_URL, teiCluster, STYLE.tei),
       ])
         .then(() => {
           return loadMaryVisitedPlacesTimeline(PLACES_VISITED_BY_MARY);
         })
         .then(() => {
-          setStatus('Loaded. Use layers to toggle.', 'OK');
           buildAndAttachTimeline();
         })
         .catch((err) => {
           console.error(err);
-          setStatus('Loaded with errors (see console).', 'WARN');
           buildAndAttachTimeline();
         });
     </script>
