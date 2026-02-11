@@ -403,8 +403,12 @@
         };
 
         window.ruskinTimeline = new TL.Timeline('timeline-embed', timelineJson, {
-          initial_zoom: 6,
+          initial_zoom: 3,
           language: 'en',
+          height:350,
+          marker_height_min: 30,
+          track_events: ['back_to_start', 'nav_next', 'nav_previous'],
+          zoom_sequence: [0.5, 1, 2, 3, 5, 8, 13]
         });
 
         // Pan map when slide changes
