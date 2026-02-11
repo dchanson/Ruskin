@@ -116,11 +116,7 @@ server {
     location ~* \.html$ {
         charset utf-8;
         gzip off;
-
         sub_filter_once off;
-
-        # Add icon and site styles before <main>
-        sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
 
         # Add highlighting functionality before </body>
         sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
@@ -173,9 +169,9 @@ server {
     }
 
     # Search routes (no highlighting needed)
-    location = /search.html {
+    location ~ ^/search(?:\.html)?$ {
         root /Users/userselu/Ruskin/src/search_new;
-        try_files $uri =404;
+        try_files /search.html =404;
     }
 
     location = /search_style.css {
@@ -204,25 +200,47 @@ server {
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
 
-    # HTML Routing for main folders - with highlighting for this specific pattern
+    location ~ /map(?:\.html)?$ {
+        default_type text/html;
+        alias /Users/userselu/Ruskin/_Map/map.html;
+    }
+
+    location ^~ /_Map/Europe1831OverlayImg/ {
+        add_header Access-Controll-Allow-Origin *;
+        try_files $uri =404;
+    }
+
+    # HTML Routing for main folders - with highlighting
     location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
-        try_files /gen/_xml/_Completed/$1/$2.html
-                  /gen/_xml/$1/$2.html
-                  =404;
+        default_type text/html;
+        charset utf-8;
+        gzip off;
 
         sub_filter_once off;
+        sub_filter_types text/html text/plain;
 
         # Add icon and site styles before <main>
         sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
 
-        # Add highlighting functionality - needed for URLs without .html extension
+        # Inject Home button after the page title (handles both h1 and div)
+        sub_filter '<h1 class="page-title">' '<h1 class="page-title"><div class="site-controls"><a class="btn-home" href="/" aria-label="Home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/></svg></a></div>';
+
+        sub_filter '<div id="top" class="page-title">' '<div id="top" class="page-title"><div class="site-controls"><a class="btn-home" href="/" aria-label="Home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/></svg></a></div>';
+
+        # Add highlighting functionality
         sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
+
+        try_files /gen/_xml/_Completed/$1/$2.html
+                /gen/_xml/$1/$2.html
+                =404;
     }
+
 
     # PHP Routing for witnesses, figures, corpuses - with highlighting
     location ~* ^/(witnesses|figures|corpuses)/([^/]+)$ {
         try_files /gen/_xml/_Completed/$1/$2.php
-                  /gen/_xml/$1/$2.php =404;
+                  /gen/_xml/$1/$2.php
+                  =404;
 
         fastcgi_pass 127.0.0.1:9000;
         include fastcgi_params;
@@ -237,7 +255,8 @@ server {
     # PHP Routing for capitalized folders - with highlighting
     location ~ ^/(Corpuses|Figures|Witnesses)/(.+\.php)$ {
         try_files /gen/_xml/_Completed/$1/$2
-                  /gen/_xml/$1/$2 =404;
+                  /gen/_xml/$1/$2
+                  =404;
 
         fastcgi_pass 127.0.0.1:9000;
         include fastcgi_params;
@@ -254,14 +273,14 @@ server {
         try_files $uri $uri/ $uri.html $uri.html/
                   =404;
     }
+
     # Custom 404 handling
     error_page 404 /gen/_xml/_Completed/webpages/incompleted.html;
 
-location = /gen/_xml/_Completed/webpages/incompleted.html {
-    root /Users/userselu/Ruskin;
-    internal;
-}
-
+    location = /gen/_xml/_Completed/webpages/incompleted.html {
+        root /Users/userselu/Ruskin;
+        internal;
+    }
 }
 
 ```
@@ -454,6 +473,217 @@ sass /Users/userselu/Ruskin/_Resources/css_styles/site_styles.scss /Users/userse
 
 ---
 
+# Ruskin — Map of Places
+
+**Interactive Map & Timeline Documentation**
+
+This document explains how the **Ruskin — Map of Places** web page works and how to maintain or extend it.
+
+---
+
+## 1. Overview
+
+This page combines:
+
+- **Leaflet.js** for interactive maps
+- **MarkerCluster** for performance with many points
+- **GeoJSON, CSV, and TEI-derived JSON** data sources
+- **TimelineJS (Knight Lab)** for a synchronized historical timeline
+- **IIIF historical map overlay** (David Rumsey Collection)
+- **Search across all datasets**
+
+The result is:
+
+- A map with multiple toggleable layers
+- Clustered place markers
+- A timeline that pans the map to relevant places
+- A simple place-name search
+
+---
+
+## 2. Page Structure
+
+### Main HTML Elements
+
+| Element ID       | Purpose                    |
+| ---------------- | -------------------------- |
+| `map`            | Main Leaflet map container |
+| `map-controls`   | Search UI                  |
+| `timeline-embed` | TimelineJS container       |
+
+```html
+<div id="map"></div>
+<div class="controls" id="map-controls"></div>
+<div id="timeline-embed"></div>
+```
+
+## 3. External Libraries Used
+
+### Mapping
+
+- **Leaflet 1.9.4**  
+  Core interactive mapping library.
+- **Leaflet.MarkerCluster**  
+  Groups nearby markers into clusters for better performance and readability.
+- **Leaflet-IIIF**  
+  Enables displaying georeferenced IIIF images (used for historical map overlays).
+
+### Data Handling
+
+- **jQuery 3.6**  
+  Used for AJAX requests and general DOM utilities.
+- **jquery.csv**  
+  Parses CSV files into JavaScript objects (`CSV → JS objects`).
+
+### Timeline
+
+- **TimelineJS 3 (Knight Lab)**  
+  Renders an interactive historical timeline synchronized with the map.
+
+---
+
+## 4. Configuration Constants
+
+All major paths and styles are defined at the top of the script for easy maintenance.
+
+### Data Sources
+
+```js
+const GEOJSON_URL = '/_Map/GIS/.../AllPoints.json';
+const CSV_URL = '/_Map/GIS/CSV/places_mockup2.csv';
+const PLACES_JSON_URL = '/_Map/Places/places.json';
+const PLACES_BY_MARY = '/_Map/Places/places_by_mary.json';
+const PLACES_VISITED_BY_MARY = '/_Map/Places/places_visited_by_mary.json';
+```
+
+## Marker Styles
+
+Each dataset is visually distinguished by color:
+
+| Dataset             | Color  |
+| ------------------- | ------ |
+| GeoJSON             | Blue   |
+| CSV                 | Orange |
+| TEI places          | Purple |
+| Mary-related places | Green  |
+
+## 5. Map Initialization
+
+The Leaflet map is initialized with a default geographic center and zoom level, targeting a specific HTML container.
+
+```js
+const map = L.map('map').setView([50.5, 6.0], 5);
+```
+
+### Base Maps
+
+Users can switch between different base maps via the built-in Leaflet layer control:
+
+- **OpenStreetMap**: Standard map data for general orientation.
+- **Carto Light**: A visually minimal base map that prioritizes the visibility of data overlays.
+
+## 6. Historical Map Overlay (IIIF)
+
+A georeferenced historical map from the David Rumsey Map Collection is integrated as an optional layer. This allows users to compare contemporary geography with historical records.
+
+```js
+const historicalIIIF = L.imageOverlay(
+  'https://www.davidrumsey.com/.../default.jpg',
+  [
+    [35.0, -10.0],
+    [72.0, 40.0],
+  ],
+  { opacity: 0.8 },
+);
+```
+
+- **Toggle Control**: Integrated into the layer control UI for on/off switching.
+- **Georeferencing**: Utilizes geographic bounds to ensure historical imagery aligns with modern coordinate systems.
+
+## 7. Layer & Cluster Management
+
+To ensure the map remains performant and readable when handling large datasets, markers are grouped into independent clusters based on their source.
+
+```js
+const geoCluster = L.markerClusterGroup();
+const csvCluster = L.markerClusterGroup();
+const teiCluster = L.markerClusterGroup();
+const maryTeiCluster = L.markerClusterGroup();
+```
+
+### Mary's Travel Path Layer
+
+A dedicated `featureGroup` is used to visualize travel routes as spatial lines rather than individual points.
+
+```js
+const VisitedByMaryPathLayer = L.featureGroup();
+```
+
+## 8. Popups
+
+Each marker contains a dynamic popup providing context for the specific location. Content is generated via the `makePopupHtml(name, properties)` function and includes:
+
+- **Place Name**: The primary header.
+- **Descriptive Notes**: Additional metadata from the source data.
+- **Navigation Links**:
+  - A link to a specific TEI witness page (if a unique slug is present).
+  - A site-wide search link for the place if no direct witness page exists.
+
+## 9. Search System
+
+The system maintains a global index of all loaded markers to facilitate rapid searching.
+
+```js
+searchIndex.push({ name, layer, latlng });
+```
+
+### Search Behavior
+
+- **Prioritization**: Attempts an exact string match first, then falls back to partial matches.
+- **Interaction**: Upon a successful search, the map automatically pans to the location and opens the corresponding marker popup.
+- **API Usage**: `window.ruskinMap.findAndOpen("Paris");`
+
+## 10. Timeline Integration
+
+Timeline events are harvested during the data loading process and stored in a central repository.
+
+```js
+const _timelineEvents = [];
+```
+
+### Supported Date Formats
+
+The system parses a variety of temporal data:
+
+- **Standard ISO**: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`
+- **Natural Language**: e.g., "March 1845"
+
+## 11. TEI-Specific Timeline Events
+
+TEI `<event>` elements are specifically targeted for conversion into TimelineJS entries.
+
+| TEI Attribute | Function                                                 |
+| ------------- | -------------------------------------------------------- |
+| `@when`       | Defines the specific event date.                         |
+| `@type`       | Categorizes the event (e.g., arrival, departure, visit). |
+| `label`       | The text description displayed on the timeline slide.    |
+
+## 12. Timeline Rendering
+
+The timeline is rendered only after all data sources (GeoJSON, CSV, TEI) have been fully loaded and parsed.
+
+```js
+buildAndAttachTimeline();
+```
+
+### Key Features
+
+- **Automatic Scaling**: The timeline automatically adjusts its zoom level based on the range of dates provided.
+- **Spatial Synchronization**: Navigating through timeline slides triggers the map to pan to the associated geographic coordinates.
+- **Fallback Logic**: Displays a notification if no valid dated events are present in the current dataset.
+
+---
+
 # Troubleshooting
 
 ### PHP Link Error:
@@ -491,7 +721,7 @@ sudo kill -9 <PID>
 # References & Resources
 
 - [Setup Docs (Google Doc)](https://docs.google.com/document/d/1GKZI8TN6Q9kYZ47mn-RnC5A3dOmvQcf8OejtovxQUng/edit#heading=h.v07lzcv6ta80)
-
+- [Elasticsearch in server]()
 - [Hosting multiple nginx servers](https://medium.com/@aakash.poudel.900/how-to-host-multiple-servers-through-nginx-simplified-36cd009fe484)
 - [Nginx key commands](https://medium.com/@aakash.poudel.900/get-familiar-with-nginx-nginx-key-commands-b6dcf99f13e9)
 - [Git SSH Setup](https://medium.com/@aakash.poudel.900/how-to-connect-your-git-to-linux-server-using-ssh-ba9a3f191c0d)

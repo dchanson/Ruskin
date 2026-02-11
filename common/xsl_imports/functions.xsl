@@ -30,19 +30,22 @@
   
   <!-- Generate alphabetic indices-->
   <xsl:function name="custom:getAlphabeticIndex">
-    <xsl:param name="number"/>
+  <xsl:param name="number"/>
 
-    <xsl:variable name="val" select="floor($number)" />
+  <xsl:variable name="val" select="floor($number)" />
+  <xsl:variable name="remainder" select="floor(($val - 1) mod 26) + 1"/>
+  <xsl:variable name="quotient" select="(($val - $remainder) div 26) + 1"/>
+  <xsl:variable name="character" select="codepoints-to-string(96 + $remainder)" />
 
-    <xsl:variable name="remainder" select="floor(($val - 1) mod 26) + 1"/>
-    <xsl:variable name="quotient" select="(($val - $remainder) div 26) + 1"/>
-    
-    <xsl:variable name="character" select="codepoints-to-string(96 + $remainder)" />
-    
-    <!-- <xsl:value-of select="$val" /> -->
-    <xsl:value-of select="custom:printLetterRecursively($character, $quotient)" />
-
-  </xsl:function>
+  <xsl:choose>
+    <xsl:when test="$quotient &gt; 4">
+      <xsl:value-of select="concat($character, $quotient)" />
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="custom:printLetterRecursively($character, $quotient)" />
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
 
 
   <xsl:template name="custom:render_anchor">

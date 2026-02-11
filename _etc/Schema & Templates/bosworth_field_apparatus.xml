@@ -3,9 +3,11 @@
 <?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader type="apparatus">
-        <fileDesc xml:id="trafalgar_apparatus">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK followed by "apparatus", for example,
+            "the_steam_engine_apparatus". The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_apparatus.xml".-->
+        <fileDesc xml:id="title_of_work_apparatus">
             <titleStmt>
-                <title type="main">"Trafalgar"</title>
+                <title type="main">"Title of Work"</title>
                 <title type="sub">Apparatus</title>
                 <author>
                     <persName corresp="#DCH">David C. Hanson</persName>
@@ -18,7 +20,7 @@
                 </principal>
                 <respStmt>
                     <!--For corresp, enter your first, middle, and last intials.-->
-                    <persName corresp="#BDT">Brady Daniel Thomas</persName>
+                    <persName corresp="#YNH">Your Name Here</persName>
                     <resp>contributing transcription/encoding/review</resp>
                 </respStmt>
                 <sponsor>Southeastern Louisiana University</sponsor>
@@ -42,14 +44,14 @@
                     <addrLine>Southeastern Louisiana University</addrLine>
                     <addrLine>SLU 10861</addrLine>
                     <addrLine>Hammond LA 70402</addrLine>
-                    <addrLine>https://erm.selu.edu/</addrLine>
+                    <addrLine>htts://erm.selu.edu</addrLine>
                 </address>
                 <availability status="restricted">
-                    <p>Copyright <persName corresp="#DCH">David C. Hanson</persName>.</p>
+                    <p>Copyright David C. Hanson.</p>
                 </availability>
             </publicationStmt>
             <sourceDesc>
-                <p>Born digitally, prepared by <persName corresp="#DCH">David C. Hanson</persName>.</p>
+                <p>Born digitally, prepared by David C. Hanson.</p>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -60,7 +62,7 @@
                 <!--An apparatus may contain all or only some of the following sections.-->
                 <div type="section" xml:id="TITLE">
                     <head type="section">Title</head>
-                    <p>Title written &#x201C;TRAFALGAR&#x201D; in MSS IA and V.</p>
+                    <p>Body paragraph.</p>
                 </div>
                 <div type="section" xml:id="GENRE">
                     <head type="section">Genre</head>
@@ -68,27 +70,31 @@
                 </div>
                 <div type="section" xml:id="MAJORMS">
                     <head type="section">Manuscripts</head>
-                    <p>MSS IA, V, [VI]. 
-                        Presentation copy in MS IA probably dated February 8 (see part 1, MS IA, &#x201C;Content,&#x201D; e). 
-                        According to the index of <title type="manuscript" corresp="MSVI">MS VI</title>, the section of the manuscript now torn away contained &#x201C;Trafalgar,&#x201D; 
-                        probably its rough draft, between <title type="poem" corresp="#JRVESUVIUS">&#x201C;Vesuvius&#x201D;</title> and <title type="poem" corresp="#JRDEATH">&#x201C;Death&#x201D;</title></p>
+                    <p>Body paragraph.</p>
                 </div>
                 <div type="section" xml:id="DATE">
                     <head type="section">Date</head>
-                    <p>February 8 and 12. Copy in MS V dated February 12 by <persName corresp="#JR">Ruskin</persName>, with the addition by <persName corresp="#JR">John James</persName>, &#x201C;Age 11 years&#x201D;;</p>
+                    <p>Body paragraph.</p>
                 </div>
                 <div type="section" xml:id="COMPPUB">
                     <head type="section">Composition &#x0026; Publication</head>
-                    <p>Printed PJR, 1:35-37; Works, 2:279-81.</p>
+                    <p>Body paragraph.</p>
                 </div>
                 <div type="section" xml:id="DISCUSSION">
                     <head type="section">Discussion</head>
-                    <p>Two patriotic images related to <placeName corresp="#TRAFALGAR">Trafalgar</placeName> hung in the dining room of <persName corresp="#JR">Ruskin</persName>&#x02BC;s paternal grandparents, when they lived 
-                        in <placeName type="building" corresp="#STJAMESSQEDINBURGH">St. James Square</placeName> in <placeName type="building" corresp="#NEWTOWNEDINBURGH">New Town</placeName> of <placeName corresp="#EDINBURGH">Edinburgh</placeName>. 
-                        One was a picture of <persName corresp="#DUFF">Captain George Duff</persName>, killed at <placeName corresp="#TRAFALGAR">Trafalgar</placeName> in <date when="1805">1805</date>, which 
-                        <persName corresp="#VAB">Van Akin Burd</persName> suggests may have been an engraving by <persName corresp="#DAWE">George Dawe</persName> after a portrait by <persName corresp="#SHR">Henry Raeburn</persName>. 
-                        Two other pictures depicted <persName corresp="#HNVN">Nelson</persName> (<title type="letter" corresp="ctwr_to_jjr_1807-11-02"><persName corresp="#CTWR">Catherine Ruskin</persName> to <persName corresp="#JJR">John James Ruskin</persName>, <date when="1807-11-02">2 November 1807</date></title>, 
-                        in <ref type="bibliography" target="bibliography.php#RFL"><persName corresp="#VAB">Burd</persName> ed., <title type="book" corresp="#RFL"><hi rend="italic">Ruskin Family Letters</hi></title></ref>, 1:12, 14 n. 3).</p>
+                    <p>Body paragraph.</p>
+                    <p>Body paragraph containing a list:
+                        <list type="ordered">
+                            <item n="1">First item in the list.</item>
+                            <item n="2">Second item.</item>
+                            <item n="3">Third item.</item>
+                        </list>
+                    </p>
+                    <p>Body paragraph.</p>
+                </div>
+                <div type="section" xml:id="TEXTUALNOTE">
+                    <head type="section">Textual Note</head>
+                    <p>Body paragraph.</p>
                 </div>
             </div>
         </body>

@@ -70,6 +70,16 @@ body {
     width: auto;
   }
 }
+.floating-text .essay.compact {
+  background-color: transparent;
+  overflow: auto;
+  padding-bottom: 2% !important;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2% !important;
+  height: auto !important;
+  max-height: none !important;
+}
 @media all and (min-width: 901px) {
   .content,
   .apparatus,
@@ -937,4 +947,32 @@ position: fixed;
 .webpage > title {
   color: #036;
   font-size: 14pt;
+}
+
+.site-controls {
+  display: inline-block;
+  margin-left: 0.15rem;
+  vertical-align: middle;
+}
+
+.btn-home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  margin-left: 0.25rem !important;
+  margin-top: -75px !important;
+}
+
+.btn-home svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  display: block;
 }

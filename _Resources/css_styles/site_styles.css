@@ -1,13 +1,15 @@
 /* Used by IE8 */
 @font-face {
   font-family: Andron;
-  src: url('/_Resources/fonts/andron_scriptor_web_3_1.eot');
+  src: url('/web/fonts/andron_scriptor_web_3_1.eot');
 }
+
 /* Used by Other Web Browsers */
 @font-face {
   font-family: Andron;
-  src: url('/_Resources/fonts/andron_scriptor_web_3_1.woff');
+  src: url('/web/fonts/andron_scriptor_web_3_1.woff');
 }
+
 body {
   font-family: Andron, Arial, sans-serif;
   font-size: 12pt;
@@ -20,12 +22,14 @@ body {
 .tablespace {
   margin: 2%;
 }
+
 .tablespace > table {
   width: 100%;
   max-width: 600px;
   text-align: center;
   table-layout: fixed;
 }
+
 .tablespace > table > tr,
 .tablespace > table > tbody > tr,
 .tablespace > table > tr > td,
@@ -33,9 +37,11 @@ body {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
 .tablespace > table tr.label {
   font-weight: bold;
 }
+
 .tablespace > table > tr > td,
 .tablespace > table > tbody > tr > td {
   word-wrap: break-word;
@@ -60,6 +66,7 @@ ul.mini-contents {
   margin-left: 0;
   margin-top: -0.2em;
 }
+
 ul.mini-contents li {
   display: inline-block;
   font-size: smaller;
@@ -139,6 +146,17 @@ body {
     width: auto;
   }
 }
+.floating-text .essay.compact {
+  background-color: transparent;
+  overflow: auto;
+  padding-bottom: 2% !important;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2% !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
 @media all and (min-width: 901px) {
   .content,
   .apparatus,
@@ -150,15 +168,18 @@ body {
     height: 72%;
     width: 65%;
   }
+
   body {
     margin-left: 15%;
   }
 }
+
 .page-title {
   /* x New 04/06/16 */
   color: #036;
   font-size: 18pt;
 }
+
 .page-title .title-text {
   font-weight: bold;
 }
@@ -739,7 +760,8 @@ Note: Bold, italics, and underlining are performed by the <b>, <i>, and <u> HTML
   color: #000;
 }
 
-/* R u s k i n   P r o j e c t   T e a m */ /* x New 04/06/16 */
+/* R u s k i n   P r o j e c t   T e a m */
+/* x New 04/06/16 */
 .supplied {
   color: #036;
 }
@@ -1076,6 +1098,34 @@ position: fixed;
 .webpage > title {
   color: #036;
   font-size: 14pt;
+}
+
+.site-controls {
+  display: inline-block;
+  margin-left: 0.15rem;
+  vertical-align: middle;
+}
+
+.btn-home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  margin-left: 0.25rem !important;
+  margin-top: -75px !important;
+}
+
+.btn-home svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  display: block;
 }
 
 /*# sourceMappingURL=site_styles.css.map */

@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ruskin — Map of Places</title>
+
+    <!-- Leaflet + MarkerCluster -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+    <!-- TimelineJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
+    />
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="_Map/map.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div id="map"></div>
+
+      <div class="overlay-panel">
+        <!-- SEARCH SECTION -->
+        <div class="panel-section">
+          <span class="section-title">Search</span>
+          <div class="search-container">
+            <input
+              id="map-search"
+              class="search-input"
+              type="text"
+              placeholder="Search Ruskin places..."
+            />
+            <button id="map-search-btn" class="search-btn" type="button">Find</button>
+          </div>
+        </div>
+
+        <!-- LEGEND SECTION -->
+        <div class="panel-section">
+          <span class="section-title">Layers & Legend</span>
+          <div id="layer-control-container"></div>
+        </div>
+      </div>
+
+      <div id="timeline-container">
+        <div id="timeline-embed"></div>
+      </div>
+    </div>
+
+    <script>
+      // -----------------------------
+      // CONFIG (edit paths here)
+      // -----------------------------
+      const GEOJSON_URL = encodeURI(
+        '/_Map/GIS/ARCGIS Webmap Application/GeoJsonData/AllPoints.json',
+      );
+      const CSV_URL = '/_Map/GIS/CSV/places_mockup2.csv';
+      const PLACES_JSON_URL = '/_Map/Places/places.json';
+      const MARY_PLACES_JSON_URL = '/_Map/Places/mary_places.json';
+      const PLACES_VISITED_BY_MARY = '/_Map/Places/places_visited_by_mary.json';
+
+      const SLUG_FIELD = 'slug';
+      const placeCoordinatesMap = new Map();
+
+      const STYLE = {
+        geojson: {
+          radius: 5,
+          weight: 1,
+          fillOpacity: 0.85,
+          color: '#1f77b4',
+          fillColor: '#1f77b4',
+        },
+        csv: { radius: 5, weight: 1, fillOpacity: 0.85, color: '#ff7f0e', fillColor: '#ff7f0e' },
+        tei: { radius: 5, weight: 1, fillOpacity: 0.85, color: '#9467bd', fillColor: '#9467bd' },
+        mary: { radius: 5, weight: 1, fillOpacity: 0.85, color: '#2ca02c', fillColor: '#2ca02c' },
+      };
+
+      // -----------------------------
+      // MAP SETUP
+      // -----------------------------
+      const EUROPE_1831_BOUNDS = [
+        [29.972381, -17.966306], // SouthWest
+        [62.588278, 53.898917], // NorthEast
+      ];
+
+      const map = L.map('map', {
+        zoomControl: true,
+        maxBounds: EUROPE_1831_BOUNDS,
+        maxBoundsViscosity: 1.0,
+        preferCanvas: true,
+      });
+
+      const europeFitZoom = map.getBoundsZoom(EUROPE_1831_BOUNDS);
+      const INITIAL_ZOOM = europeFitZoom + 1;
+      map.setView(L.latLngBounds(EUROPE_1831_BOUNDS).getCenter(), INITIAL_ZOOM);
+      map.setMinZoom(europeFitZoom + 1);
+      map.setMaxZoom(12);
+
+      const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors',
+      }).addTo(map);
+
+      const carto = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        attribution: '&copy; CARTO',
+      });
+
+      const EUROPE_1831_IMG_URL = '/_Map/Europe1831OverlayImg/Europe1831Map.png';
+
+      const historicalTile = L.imageOverlay(EUROPE_1831_IMG_URL, EUROPE_1831_BOUNDS, {
+        interactive: false,
+        opacity: 1,
+        attribution:
+          'Historical Map: <a href="https://www.davidrumsey.com/">David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries</a> | Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>',
+      });
+
+      map.addLayer(historicalTile);
+
+      // Layers
+      const clusterOptions = {
+        chunkedLoading: true,
+        chunkDelay: 25,
+        chunkInterval: 200,
+        animate: false,
+        spiderfyOnMaxZoom: false,
+        removeOutsideVisibleBounds: true,
+      };
+
+      const geoCluster = L.markerClusterGroup(clusterOptions);
+      const csvCluster = L.markerClusterGroup(clusterOptions);
+      const teiCluster = L.markerClusterGroup(clusterOptions);
+      const maryCluster = L.markerClusterGroup(clusterOptions);
+
+      const visitedByMaryPathLayer = L.featureGroup();
+
+      const layerColors = {
+        'GeoJSON places': '#1f77b4',
+        'CSV places': '#ff7f0e',
+        'TEI places.json': '#9467bd',
+        'Mary places.json': '#2ca02c',
+        'Mary visited path': '#3b82f6',
+        'Historical map': '#daa520',
+      };
+
+      // Define the control
+      const layerControl = L.control.layers(
+        { OpenStreetMap: osm, 'Carto Light': carto },
+        {
+          'CSV places': csvCluster,
+          'GeoJSON places': geoCluster,
+          'TEI places.json': teiCluster,
+          'Mary places.json': maryCluster,
+          'Mary visited path': visitedByMaryPathLayer,
+          'Historical map': historicalTile,
+        },
+        { collapsed: false },
+      );
+
+      layerControl.addTo(map);
+
+      // MOVE the Leaflet-generated control into your panel
+      const checklistUI = layerControl.getContainer();
+      document.getElementById('layer-control-container').appendChild(checklistUI);
+
+      map.on('overlayadd overlayremove', () => {
+        requestAnimationFrame(injectLayerLegendSwatches);
+      });
+
+      // Layout sizing fixes
+      const invalidateMapSize = () => map.invalidateSize();
+      requestAnimationFrame(invalidateMapSize);
+      window.addEventListener('resize', invalidateMapSize);
+
+      // -----------------------------
+      // SEARCH INDEX
+      // -----------------------------
+      const searchIndex = [];
+      const addToSearchIndex = (title, layer, latlng) => {
+        if (title && latlng) searchIndex.push({ name: title, layer, latlng });
+      };
+
+      const findAndOpen = (q) => {
+        q = (q || '').toLowerCase().trim();
+        if (!q) return false;
+
+        const found =
+          searchIndex.find((s) => s.name && s.name.toLowerCase() === q) ||
+          searchIndex.find((s) => s.name && s.name.toLowerCase().includes(q));
+
+        if (!found?.latlng) return false;
+
+        map.setView(found.latlng, Math.max(map.getZoom(), 8));
+        found.layer?.openPopup?.();
+        return true;
+      };
+
+      document.getElementById('map-search-btn').addEventListener('click', () => {
+        const q = document.getElementById('map-search').value;
+        if (!findAndOpen(q)) alert('No match — try broader terms.');
+      });
+
+      document.getElementById('map-search').addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          document.getElementById('map-search-btn').click();
+        }
+      });
+
+      // -----------------------------
+      // Popup + Helpers
+      // -----------------------------
+      const safeText = (x) => {
+        if (x == null) return '';
+        if (typeof x === 'string') return x;
+        if (typeof x === 'object' && x['#text']) return String(x['#text']);
+        return String(x);
+      };
+
+      const asArray = (x) => (!x ? [] : Array.isArray(x) ? x : [x]);
+
+      function parseGeo(geoVal) {
+        if (!geoVal) return null;
+
+        const parts = String(geoVal)
+          .trim()
+          .split(/[,\s]+/)
+          .map(Number);
+
+        if (parts.length < 2) return null;
+
+        let [a, b] = parts;
+
+        // Detect lon lat (TEI)
+        if (Math.abs(a) > 90 && Math.abs(b) <= 90) {
+          return [b, a];
+        }
+
+        // Already lat lon
+        if (Math.abs(a) <= 90 && Math.abs(b) <= 180) {
+          return [a, b];
+        }
+
+        return null;
+      }
+
+      const makePopupHtml = (name, props) => {
+        const title = name || 'Place';
+        const note = props?.place_note || props?.note || props?.description || '';
+        const slug = props?.[SLUG_FIELD];
+
+        const linkHtml = slug
+          ? `<a href="${
+              String(slug).startsWith('/') ? slug : '/witnesses/' + slug
+            }" target="_self">Open item</a>`
+          : `<a href="/search?placeName=${encodeURIComponent(
+              title,
+            )}&placeNameType=all" target="_self">Search related items</a>`;
+
+        return `
+          <div>
+            <strong>${title}</strong>
+            ${note ? `<div style="margin-top:6px;color:#475569;line-height:1.3">${note}</div>` : ''}
+            <div style="margin-top:10px;">${linkHtml}</div>
+          </div>
+        `;
+      };
+
+      function injectLayerLegendSwatches() {
+        const labels = document.querySelectorAll('#layer-control-container label');
+
+        labels.forEach((label) => {
+          const input = label.querySelector('input');
+          if (!input) return;
+
+          const name = label.textContent.trim();
+          const color = layerColors[name];
+          if (!color) return;
+
+          // Clear label safely
+          while (label.firstChild) label.removeChild(label.firstChild);
+
+          // Checkbox
+          input.style.margin = '0';
+
+          // Color swatch
+          const swatch = document.createElement('span');
+          swatch.className = 'layer-swatch';
+          swatch.style.backgroundColor = color;
+
+          // Text
+          const text = document.createElement('span');
+          text.textContent = name;
+
+          label.appendChild(input);
+          label.appendChild(swatch);
+          label.appendChild(text);
+        });
+      }
+
+      // -----------------------------
+      // Timeline
+      // -----------------------------
+      const _timelineEvents = [];
+
+      const parseDateParts = (s) => {
+        if (!s) return null;
+        s = String(s).trim();
+
+        const iso = s.match(/^(\d{4})(?:[-\/](\d{1,2})(?:[-\/](\d{1,2}))?)?$/);
+        if (iso) return { year: iso[1], month: iso[2] || null, day: iso[3] || null };
+
+        const parts = s.split(/\s+/).map((p) => p.replace(/[.,]/g, '').toLowerCase());
+        const months = {
+          jan: 1,
+          feb: 2,
+          mar: 3,
+          apr: 4,
+          may: 5,
+          jun: 6,
+          jul: 7,
+          aug: 8,
+          sep: 9,
+          oct: 10,
+          nov: 11,
+          dec: 12,
+        };
+
+        const yearTok = parts.find((p) => /^\d{4}$/.test(p));
+        if (!yearTok) return null;
+
+        const monTok = parts.find((p) => months[p.substring(0, 3)]);
+        const dayTok = parts.find((p) => /^\d{1,2}$/.test(p));
+
+        return {
+          year: yearTok,
+          month: monTok ? months[monTok.substring(0, 3)] : null,
+          day: dayTok && dayTok !== yearTok ? dayTok : null,
+        };
+      };
+
+      const pushTimelineEvent = (title, props, latlng) => {
+        const dateStr =
+          props?.date || props?.Date || props?.year || props?.date_visited || props?.visit_date;
+        if (!dateStr) return;
+
+        const d = parseDateParts(dateStr);
+        if (!d) return;
+
+        const ev = {
+          start_date: {
+            year: String(d.year),
+            ...(d.month ? { month: String(d.month) } : {}),
+            ...(d.day ? { day: String(d.day) } : {}),
+          },
+          text: {
+            headline: title || 'Place',
+            text: props?.description || props?.note || props?.place_note || '',
+          },
+          unique_id: _timelineEvents.length + 1,
+          _map: latlng ? { lat: latlng.lat ?? latlng[0], lon: latlng.lng ?? latlng[1] } : null,
+        };
+
+        _timelineEvents.push(ev);
+      };
+
+      const pushTimelineEventsFromTeiPlace = (title, placeObj, geoArr) => {
+        asArray(placeObj?.event).forEach((ev) => {
+          const when = ev?.['@when'];
+          if (!when) return;
+
+          const kind = ev?.['@type'] ? String(ev['@type']) : 'event';
+          const label = ev?.label ? safeText(ev.label) : '';
+          const note = placeObj?.note?.p ? safeText(placeObj.note.p) : '';
+
+          pushTimelineEvent(
+            title,
+            { date: when, description: `${kind}: ${label}${note ? '\n' + note : ''}` },
+            geoArr,
+          );
+        });
+      };
+
+      const buildAndAttachTimeline = () => {
+        const el = document.getElementById('timeline-embed');
+        if (!el) return;
+
+        if (_timelineEvents.length === 0) {
+          el.innerHTML =
+            '<p style="padding:12px;color:#64748b">No dated events found for timeline.</p>';
+          return;
+        }
+
+        const timelineJson = {
+          title: { text: { headline: 'Ruskin timeline', text: 'Places and dated visits' } },
+          events: _timelineEvents,
+        };
+
+        window.ruskinTimeline = new TL.Timeline('timeline-embed', timelineJson, {
+          initial_zoom: 4,
+          language: 'en',
+          height: 350,
+          marker_height_min: 30,
+          track_events: ['back_to_start', 'nav_next', 'nav_previous'],
+          zoom_sequence: [0.5, 1, 2, 3, 5, 8, 13],
+        });
+
+        // Pan map when slide changes
+        try {
+          window.ruskinTimeline?.on?.('change', () => {
+            const idx = window.ruskinTimeline.getCurrentSlideIndex?.();
+            if (idx == null) return;
+
+            const ev = _timelineEvents[idx];
+            if (!ev?._map) return;
+
+            const ll = L.latLng(ev._map.lat, ev._map.lon);
+
+            if (!EUROPE_1831_BOUNDS.contains(ll)) return;
+
+            map.setView(ll, Math.max(map.getZoom(), 7), { animate: true });
+          });
+        } catch (e) {
+          console.warn('timeline wiring failed', e);
+        }
+      };
+
+      // -----------------------------
+      // Loaders
+      // -----------------------------
+      const bindPoint = (cluster, latlng, style, title, props) => {
+        const marker = L.circleMarker(latlng, style).bindPopup(makePopupHtml(title, props));
+        cluster.addLayer(marker);
+
+        const ll = marker.getLatLng();
+        addToSearchIndex(title, marker, ll);
+        pushTimelineEvent(title, props, ll);
+
+        return marker;
+      };
+
+      const loadGeoJsonLayer = (url, cluster, style) =>
+        fetch(url)
+          .then((r) => {
+            if (!r.ok) throw new Error('GeoJSON load failed: ' + r.status);
+            return r.json();
+          })
+          .then((json) => {
+            L.geoJSON(json, {
+              pointToLayer: (_f, latlng) => L.circleMarker(latlng, style),
+              onEachFeature: (feature, layer) => {
+                const props = feature.properties || {};
+                const title =
+                  props.City_Names || props.name || props.place || props.City || 'Place';
+                layer.bindPopup(makePopupHtml(title, props));
+                cluster.addLayer(layer);
+                addToSearchIndex(title, layer, layer.getLatLng());
+                pushTimelineEvent(title, props, layer.getLatLng());
+              },
+            });
+            map.addLayer(cluster);
+          });
+
+      const loadCsvLayer = (url, cluster, style) =>
+        fetch(url)
+          .then((r) => r.text())
+          .then((text) => {
+            const rows = text
+              .trim()
+              .split(/\r?\n/)
+              .map((r) => r.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/));
+            const headers = rows.shift();
+
+            const latIdx = headers.findIndex((h) => /lat|latitude|y/i.test(h));
+            const lonIdx = headers.findIndex((h) => /lon|longitude|x/i.test(h));
+            const nameIdx = headers.findIndex((h) => /place|city|name/i.test(h));
+
+            rows.forEach((cols) => {
+              const lat = parseFloat(cols[latIdx]);
+              const lon = parseFloat(cols[lonIdx]);
+              if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+
+              const title = cols[nameIdx] || 'Place';
+              bindPoint(cluster, [lat, lon], style, title, {});
+            });
+
+            map.addLayer(cluster);
+          });
+
+      const loadTeiPlacesJsonLayer = (url, cluster, style) =>
+        fetch(url)
+          .then((r) => r.json())
+          .then((data) => {
+            const places = data?.div?.listPlace?.place || [];
+
+            places.forEach((p) => {
+              const xmlId = p['@xml:id'];
+              const geo = parseGeo(p?.location?.geo);
+
+              if (!geo) {
+                // Still process timeline events even without coordinates
+                const title = safeText(p.placeName || xmlId || 'Place');
+                pushTimelineEventsFromTeiPlace(title, p, null);
+                return;
+              }
+
+              const ll = L.latLng(geo[0], geo[1]);
+
+              // Store coordinates for Mary's path
+              if (xmlId) {
+                placeCoordinatesMap.set(xmlId.toLowerCase(), ll);
+              }
+
+              const title = safeText(p.placeName || xmlId || 'Place');
+              const props = {
+                note: safeText(p?.note?.p),
+                place_note: safeText(p?.terrain?.desc),
+                slug: p?.[SLUG_FIELD],
+              };
+
+              const marker = L.circleMarker(ll, style).bindPopup(makePopupHtml(title, props));
+              cluster.addLayer(marker);
+              addToSearchIndex(title, marker, ll);
+
+              // Push timeline events
+              pushTimelineEventsFromTeiPlace(title, p, ll);
+            });
+
+            map.addLayer(cluster);
+            console.log(
+              `✅ Loaded ${placeCoordinatesMap.size} canonical places with timeline events`,
+            );
+          });
+
+      const loadMaryVisitedPlacesTimeline = (url) =>
+        fetch(url)
+          .then((r) => r.json())
+          .then((json) => {
+            const places = json?.div?.listPlace?.place || [];
+            const orderedStops = [];
+
+            places.forEach((p) => {
+              const ref = safeText(p['@corresp']).replace('#', '').toLowerCase();
+              const order =
+                parseInt(safeText(p.head?.['@n'] || p.head?.['#text'] || p.head), 10) || 999;
+
+              const title = safeText(p['@corresp'] || 'Place')
+                .replace('#', '')
+                .toLowerCase()
+                .replace(/\b\w/g, (c) => c.toUpperCase());
+
+              const note = safeText(p?.note?.p);
+
+              // Add timeline events from Mary's visited places
+              asArray(p?.event).forEach((ev) => {
+                if (!ev?.['@when']) return;
+
+                pushTimelineEvent(title, {
+                  date: ev['@when'],
+                  description: `${safeText(ev['@type'] || 'event')}: ${safeText(ev.label || '')}${
+                    note ? '\n' + note : ''
+                  }`,
+                });
+              });
+
+              const ll = placeCoordinatesMap.get(ref);
+              if (!ll) {
+                console.warn(' No coordinates for:', ref);
+                return;
+              }
+
+              orderedStops.push({ order, ll });
+            });
+
+            // Sort by journey order
+            orderedStops.sort((a, b) => a.order - b.order);
+            const pathLatLngs = orderedStops.map((s) => s.ll);
+
+            if (pathLatLngs.length > 1) {
+              const polyline = L.polyline(pathLatLngs, {
+                color: '#3b82f6',
+                weight: 4,
+                opacity: 0.9,
+                dashArray: '8, 8',
+              });
+
+              visitedByMaryPathLayer.addLayer(polyline);
+              map.addLayer(visitedByMaryPathLayer);
+
+              console.log(`Mary visited path built with ${pathLatLngs.length} points in order`);
+            }
+          });
+
+      // -----------------------------
+      // Load all, then timeline
+      // -----------------------------
+
+      Promise.all([
+        loadGeoJsonLayer(GEOJSON_URL, geoCluster, STYLE.geojson),
+        loadCsvLayer(CSV_URL, csvCluster, STYLE.csv),
+        loadTeiPlacesJsonLayer(MARY_PLACES_JSON_URL, maryCluster, STYLE.mary),
+        loadTeiPlacesJsonLayer(PLACES_JSON_URL, teiCluster, STYLE.tei),
+      ])
+        .then(() => {
+          return loadMaryVisitedPlacesTimeline(PLACES_VISITED_BY_MARY);
+        })
+        .then(() => {
+          requestIdleCallback
+            ? requestIdleCallback(buildAndAttachTimeline)
+            : setTimeout(buildAndAttachTimeline, 400);
+        })
+        .catch((err) => {
+          console.error(err);
+          requestIdleCallback
+            ? requestIdleCallback(buildAndAttachTimeline)
+            : setTimeout(buildAndAttachTimeline, 400);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="glosses">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the NOTE followed by "note", for example, "red_book_note".
+            The xml:id also corresponds with its XML file's name, for example, "red_book_note.xml".-->
+        <fileDesc xml:id="title_of_work_glosses">
+            <titleStmt>
+                <title type="main">"Title of Work"</title>
+                <title type="sub">Glosses</title>
+                <author>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#YNH">Your Name Here</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2015-01-12">January 12, 2015</date>
+                    <!--The notes version for all first passes is 1.0.-->
+                    <title>Glasses Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digitally, prepared by David C. Hanson.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="glosses">
+                <note xml:id="VESUVIUSGLOSS" resp="#DCH">Ruskin’s knowledge of Vesuvius has two likely origins, 
+                    one being an 1830 annual entitled Friendship’s Offering, which includes a story about Vesuvius’s eruption and the devastation it caused nearby towns. 
+                    The story, “Il Vesuviano,” opens with, “On one of the last evenings of a residence in Naples, I visited the grand Lion of the soil, Vesuvius” 
+                    (Friendship's Offering for 1830 4). 
+                    The story includes an illustration of Vesuvius, as it was erupting, by J.M.W. Turner. 
+                    Towards the end of the story, the narrator details the eruption, which Ruskin likely drew inspiration from while constructing the poem. 
+                    Ruskin’s poem also bears a strong resemblance to a poem by Rev. C. Strong entitled “Eruption of Vesuvius,” which was included in The Amulet, 1828, 
+                    which references the volcano and which likely informed some of the details of Ruskin’s piece (The Amulet for 1828).</note>
+                
+                <note xml:id="POMPEIIGLOSS" resp="#DCH">Pompeii is referenced in Rev. C. Strong’s “Eruption of Vesuvius,” in The Amulet, 1828, 
+                    which Ruskin plausibly would have read: “I never with such horror stood aghast / as when in lone Pompeii’s silent street / 
+                    I felt thy mighty pulse, Vesuvius, beat” (Strong, lines 2-3). It also establishes Pompeii’s location in relation to Vesuvius. 
+                    The syntax and rhythm of Ruskin’s poem also greatly mirrors Strong’s, with both poems outlining the devastation caused by Vesuvius. 
+                    Ruskin’s poem distinguishes itself by having the narrative told from the perspective of Herculaneum, as opposed to Pompeii, 
+                    which is where Strong tells his story from.</note>
+                
+                <note xml:id="HERCULANEUMGLOSS" resp="#DCH">Ruskin likely would have read about Herculaneum in Maria Edgeworth’s The Parent’s Assistant: or, Stories for Children, 
+                    in the story “The Little Merchant,” which includes a reference to Herculaneum, followed by a detailed accounting of it in the story’s footnotes. 
+                    Edgeworth geared the footnote towards “young English readers who may not be acquainted with the ancient city of Herculaneum” (Edgeworth, Parent's Assistant, 203). 
+                    The footnote reads like an educational chronology of how a volcanic eruption would play out: “flames and immense clouds of smoke issue from different openings…. 
+                    A rumbling, and afterwards a roaring, noise is heard within, and prodigious quantities of stones and minerals burnt into masses are thrown out of the crater, 
+                    sometimes to a great distance” (Edgeworth, Parent's Assistant, 203). This footnote would have been critical in Ruskin’s understanding of the mechanics of a volcano, 
+                    something which would have been pretty foreign to a young English boy.</note>
+                
+                <note xml:id="HERCULANEUMHALLSGLOSS" resp="#DCH">In the footnotes of “The Little Merchant,” Edgeworth establishes the spatial location of Herculaneum in relation to Vesuvius; 
+                    she calls Herculaneum a “large city”, which likely informed Ruskin’s description of the city’s “palaces” and “ancient halls”. 
+                    She describes the city as being “situated at about four miles’ distance from the volcano,” and proceeds to describe the devastation it wrought: 
+                    “overwhelmed by streams of lava which poured into [Herculaneum], filled up the streets, and quickly covered over the tops of the houses….” 
+                    (Edgeworth, Parent's Assistant 203-4) Ruskin’s description of the lava’s “burning fold” enveloping Herculaneum appears to have been informed by this previous excerpt.</note> 
+            </div>
+        </body>
+    </text>
+</TEI>

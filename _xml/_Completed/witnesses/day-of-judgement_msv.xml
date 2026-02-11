@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="../../../common/ruskin.rnc" type="compact"?>
+<?xml-stylesheet type="text/xsl" href="../../../common/ruskin.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="witness">
+        <!--The xml:id for <fileDesc/> should include the title (or an abbreviated title) of the subject WORK and its WITNESS, for example, "the_steam_engine_msi".
+            The xml:id also corresponds with its XML file's name, for example, "the_steam_engine_msi.xml".-->
+        <fileDesc xml:id="title_of_work_witness">
+            <titleStmt>
+                <title type="main">"dayof judgment"</title>
+                <title type="sub">Electronic Text Generated from a Transcription of the MS Draft/Fair Copy Name/Number</title>
+                <author>
+                    <persName corresp="#JR">John Ruskin</persName>
+                </author>
+                <editor>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </editor>
+                <principal>
+                    <persName corresp="#DCH">David C. Hanson</persName>
+                </principal>
+                <respStmt>
+                    <!--For corresp, enter your first, middle, and last intials.-->
+                    <persName corresp="#HLC">Hope L. Crawford</persName>
+                    <resp>contributing transcription/encoding/review</resp>
+                </respStmt>
+                <sponsor>Southeastern Louisiana University</sponsor>
+                <funder>American Philosophical Society, Beinecke Library, Bibliographical Society of America,
+                    Blossman Foundation, Huntington Library, Louisiana Board of Regents, National Endowment for
+                    the Humanities, NINES, Pierpont Morgan Library, South Central Modern Language Association,
+                    and Southeastern Louisiana University</funder>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">
+                    <!--DATE WHEN should reflect the date that this electronic text was finalized for publication to the Web.-->
+                    <date when="2011-08-01">August 1, 2011</date>
+                    <!--The transcript version for all first passes is 1.0.-->
+                    <title>Transcript Version 1.0</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor><name type="institution">Southeastern Louisiana University Department of English</name></distributor>
+                <address>
+                    <addrLine>Department of English</addrLine>
+                    <addrLine>Southeastern Louisiana University</addrLine>
+                    <addrLine>SLU 10861</addrLine>
+                    <addrLine>Hammond LA 70402</addrLine>
+                    <addrLine>https://erm.selu.edu/</addrLine>
+                </address>
+                <availability status="restricted">
+                    <p>Copyright David C. Hanson.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!--Example entries have been provided for MS I from the Beinecke Rare Book and Manuscript Library. Actual entries may vary.-->
+                        <country type="nation">United States of America</country>
+                        <region type="state">Connecticut</region>
+                        <settlement type="city">New Haven</settlement>
+                        <institution>Yale University</institution>
+                        <repository>Beinecke Rare Book and Manuscript Library</repository>
+                        <collection>MS Vault Ruskin</collection>
+                        <idno>"Harry &#x0026; Lucy, Poems &#x0026;c"</idno>
+                        <msName>MS I</msName>
+                        <msName>"Red book No. 3"</msName>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <locus facs="image.jpg image.jpg">pp. ##-##</locus>
+                            <note>For a discussion of foliation, see <ref type="apparatus" target="tite_of_apparatus.php#MAJORMS">"Title of Work": Manuscripts</ref>.</note>
+                            <filiation><!--Entry needed here.--></filiation>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--If additional entries are made below, the hands count must be increased.-->
+                        <handDesc hands="1">
+                            <handNote corresp="#HANDJR1826-27" scribe="JR">
+                                <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1826-27</date>,
+                                    examples of which can be found in MS I, pages <locus from="##" to="##">##-##</locus>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            
+            <!--Simple Verse. Delete this <div/> if not used.-->
+            <div type="poem">
+                <head type="title"><handShift new="#HANDJR1826-27" script="print" medium="pencil"/>The Day of Judgement</head>
+                <lg type="stanza" rhyme="abab">
+                    <l>THE sky was of the hue of blood<ref type="gloss_contextual" target="day-of-judgement_msv_glosses_contextual.php#BLOODGLOSS"/></l>
+                <l>The clouds were dark &amp; dun</l>
+                <l>The slumbering fire on the tempest rode</l>
+                <l>And crimson was the sun</l>
+                <l>No night had been so horrible</l>
+                <l>No breeze had such a sound</l>
+                <l>For God was on the tempest blast</l>
+                <l>That parched the panting ground</l>
+                    
+                <l>2</l>
+                    <l>That billow<ref type="gloss_contextual" target="day-of-judgement_msv_glosses_contextual.php#BILLOWGLOSS"/> threw a darkened foam</l>
+                <l>That was not of the snow</l>
+                <l>And raised a mournful murmuring moan</l>
+                <l>As if in deepest woe</l>
+                <l>Man gazed upon the bloody sky</l>
+                <l>And on the murky cloud</l>
+                <l>And felt the burning breeze sweep by</l>
+                <l>But thought not on his God.</l>
+                    
+                <l>3</l>
+                <l>Twas midnight &amp; the tempest blew</l>
+                <l>The moon looked ghastly pale</l>
+                <l>Like birds of night the daemons flew</l>
+                <l>And screamed upon the gale</l>
+                <l>The earth it shook most dreadfully</l>
+                <l>And quaked for very fear</l>
+                <l>The moon became as red as blood</l>
+                    <l>The parting horror is near<ref type="gloss_contextual" target="day-of-judgement_msv_glosses_contextual.php#HORRORGLOSS"/></l>
+                    
+                <l>4</l>
+                <l>The stars fell trembling to the ground</l>
+                <l>And black became the sun</l>
+                <l>The earth in inward terror groaned</l>
+                <l>For lo her hour is come</l>
+                <l>When sounding oer the mighty sea</l>
+                <l>And oer the trembling earth</l>
+                <l>And silencing the thunders roll</l>
+                    <l>The trumpet blast had birth<ref type="gloss_contextual" target="day-of-judgement_msv_glosses_contextual.php#TRUMPETGLOSS"/></l>
+                    
+                <l>5</l>
+                <l>Then widely yawned the horrid grave</l>
+                <l>The sea gave up its dead</l>
+                <l>And from the now departing wave</l>
+                <l>The righteous raised his head</l>
+                <l>On that cloud there was a throne</l>
+                <l>And dazzling was its light</l>
+                <l>For the Lamb sat there in glory</l>
+                <l>Than departed suns more bright</l>
+                    
+                <l>6</l>
+                <l>Then softly swelled his soothing voice</l>
+                <l>As he spoke unto the bless'd</l>
+                <l>Ye righteous &amp; upright rejoice</l>
+                <l>In everlasting rest</l>
+                <l>Then rose a heavenly strain</l>
+                <l>As they sung the works of God</l>
+                <l>And their unclean sinful souls</l>
+                    <l>All redeemed by his blood<ref type="gloss_contextual" target="day-of-judgement_msv_glosses_contextual.php#REDEEMEDGLOSS"/></l>
+                    
+                <l>7</l>
+                <l>But then he spoke in thunder</l>
+                <l>Depart accursed to hell</l>
+                <l>The rocks were rent asunder</l>
+                <l>And the trembling mountains fell</l>
+                <l>The accursed in dire confusion driven</l>
+                <l>Fallen headlong from the skies</l>
+                <l>The lightnings hurled them from the heaven</l>
+                <l>To where flames eternal rise</l>
+                    
+                <l>8</l>
+                <l>They gnashed their teeth in agony</l>
+                <l>Blasphemed the holy name</l>
+                <l>For there the fiery billows rolled</l>
+                <l>Crowned with a crest of flame</l>
+                <l>The lake of liquid sulphur broke</l>
+                <l>In sheets of living fire</l>
+                <l>And beat against the burning rock</l>
+                <l>So horrible &amp; dire</l>
+                    
+                <l>9</l>
+                <l>Around their heads the thunders break</l>
+                <l>The living lightnings play</l>
+                <l>While devils laugh exultingly</l>
+                <l>And walk the burning way</l>
+                <l>And mid those flames were hellish forms</l>
+                <l>The venomed vipers rise</l>
+                <l>They dart their forked fiery tongues</l>
+                <l>And flash their flaming eyes</l>
+                    
+                <l>10</l>
+                <l>But oh how different the abode</l>
+                <l>Of those who loved their God</l>
+                <l>And who have washed their robes of snow</l>
+                <l>In Christs allsaving blood</l>
+                <l>Their bosom now no sorrow knows</l>
+                <l>No scorching tears can spring</l>
+                <l>For ever freed from all their woes</l>
+                <l>They touch the sacred string</l>
+                    
+                <l>11</l>
+                <l>How loud their golden lyres resound</l>
+                <l>Oer which their fingers rove</l>
+                <l>They sing the Saviours agonies</l>
+                <l>And Gods eternal love</l>
+                <l>And midst them all the Saviour shone</l>
+                <l>With grace &amp; love &amp; peace</l>
+                <l>High on his bright eternal throne</l>
+                <l>The Sun of Righteousness</l>
+                    
+                <l>12</l>
+                <l>They need no sun except their God</l>
+                <l>Who ever gives them light</l>
+                <l>No gloom can pierce that bles't abode</l>
+                <l>And banished is the night</l>
+                <l>Their state of joy shall know no end</l>
+                <l>And does the worldly bliss</l>
+                <l>And they shall sing for evermore</l>
+                <l>Their Saviour's righteousness</l>
+                    
+                    
+                    
+                </lg>
+            </div>
+            
+            
+        </body>
+    </text>
+</TEI>
