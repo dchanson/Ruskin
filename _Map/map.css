@@ -172,3 +172,43 @@ body,
 #layer-control-container input:not(:checked) + .layer-swatch {
   opacity: 0.35;
 }
+#timeline-container {
+    background: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+}
+
+/* Customizing TimelineJS Internals */
+.tl-timeline {
+    font-family: 'Inter', -apple-system, sans-serif !important; /* Modern font */
+}
+
+/* Make headlines stand out */
+.tl-headline {
+    font-weight: 400 !important;
+    
+}
+
+/* Improve the "Markers" on the bottom navigation */
+.tl-timemarker-content {
+    border-radius: 4px !important;
+    background-color: #f1f5f9 !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content {
+    background-color: #3b82f6 !important;
+    border-color: #2563eb !important;
+}
+
+/* Soften the transitions and backgrounds */
+.tl-slide {
+    background-color: transparent !important;
+}
+
+.tl-text-content p {
+    color: #475569 !important;
+    line-height: 1.6 !important;
+    font-size: 1.05rem !important;
+}
