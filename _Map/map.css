@@ -5,117 +5,113 @@
   --muted: #64748b;
   --stroke: rgba(0, 0, 0, 0.08);
   --brand: #1a73e8;
-  --radius: 12px;
-  --shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --radius: 14px;
+  --shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
 }
 
+/* ===============================
+   Andron Font
+   =============================== */
+
+@font-face {
+  font-family: 'Andron';
+  src:
+    url('/web/fonts/andron_scriptor_web_3_1.woff') format('woff'),
+    url('/web/fonts/andron_scriptor_web_3_1.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===============================
+   Base Layout
+   =============================== */
+
 html,
-body,
-.app {
+body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Andron', serif;
+  background: var(--bg);
   overflow: hidden;
 }
 
 #map {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
+  inset: 0;
   z-index: 1;
 }
 
-/* Floating Search */
-.search-container {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
-  width: 360px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-  display: flex;
-  padding: 4px;
-}
-.search-input {
-  border: none;
-  padding: 12px 16px;
-  flex: 1;
-  outline: none;
-  font-size: 15px;
-  background: transparent;
-}
-.search-btn {
-  background: white;
-  border: none;
-  padding: 0 15px;
-  cursor: pointer;
-  color: var(--brand);
-  font-weight: bold;
-  border-left: 1px solid var(--stroke);
-}
+/* ===============================
+   Overlay Panel (Search + Legend)
+   =============================== */
 
-/* Floating Controls Overlay */
 .overlay-panel {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 24px;
+  top: 24px;
   z-index: 1000;
-  width: 280px;
+  width: 300px;
   background: var(--card);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border: 1px solid var(--stroke);
-  max-height: 80vh;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-height: 82vh;
   overflow-y: auto;
 }
-.panel-section {
-  padding: 14px 16px;
-  border-bottom: 1px solid var(--stroke);
-}
+
+/* Section Title */
 .section-title {
-  font-size: 11px;
-  font-weight: 800;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 10px;
-  display: block;
 }
 
-/* Injected Checklist Styling */
-#layer-control-container .leaflet-control-layers-list {
-  font-size: 13px;
-  line-height: 1.8;
-  color: var(--ink);
-}
-#layer-control-container .leaflet-control-layers-base,
-#layer-control-container .leaflet-control-layers-overlays {
-  margin: 0;
-  padding: 0;
-}
-.leaflet-control-layers {
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
+/* ===============================
+   Search
+   =============================== */
 
-/* Timeline Container */
-#timeline-container {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 96%;
-  height: 230px;
-  z-index: 1001; /* Above map */
-  background: white;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
+.search-container {
+  display: flex;
+  align-items: center;
   border: 1px solid var(--stroke);
+  border-radius: 10px;
+  background: #fff;
   overflow: hidden;
+  height: 40px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 0 14px;
+  font-size: 14px;
+  background: transparent;
+  outline: none;
+}
+
+.search-btn {
+  border: none;
+  background: transparent;
+  padding: 0 14px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--brand);
+  font-weight: 600;
+  border-left: 1px solid var(--stroke);
+  height: 100%;
+}
+
+.search-btn:hover {
+  background: rgba(0, 0, 0, 0.03);
 }
 
 /* ===============================
@@ -123,92 +119,123 @@ body,
    =============================== */
 
 #layer-control-container {
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
-#layer-control-container .leaflet-control-layers {
-  padding: 0 !important;
+/* Remove ALL Leaflet default styling */
+#layer-control-container .leaflet-control-layers,
+#layer-control-container .leaflet-control-layers-base,
+#layer-control-container .leaflet-control-layers-overlays {
+  margin: 0;
+  padding: 0;
+  border: none !important;
   background: transparent !important;
   box-shadow: none !important;
-  border: none !important;
 }
 
+.leaflet-control-layers-separator,
+#layer-control-container hr {
+  display: none !important;
+}
+
+/* Legend Items */
 #layer-control-container label {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 6px 4px;
-  font-size: 13px;
+  gap: 12px;
+  padding: 8px 6px;
+  font-size: 14px;
   color: var(--ink);
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
 }
 
 #layer-control-container label:hover {
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 /* Checkbox */
 #layer-control-container input[type='checkbox'],
 #layer-control-container input[type='radio'] {
   margin: 0;
-  transform: scale(1.05);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
-/* Color dot */
+/* Color Swatch */
 .layer-swatch {
-  width: 9px;
-  height: 9px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   flex-shrink: 0;
 }
 
-/* Layer name */
+/* Layer Text */
 #layer-control-container label span:last-child {
+  flex: 1;
   white-space: nowrap;
 }
 
-/* Dim swatch when layer is off */
+/* Dim swatch when unchecked */
 #layer-control-container input:not(:checked) + .layer-swatch {
   opacity: 0.35;
 }
+
+/* ===============================
+   Timeline Container
+   =============================== */
+
 #timeline-container {
-    background: #ffffff;
-    border-top: 1px solid #e2e8f0;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
-    padding: 10px;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 270px;
+  z-index: 1001;
+  background: #ffffff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--stroke);
+  overflow: hidden;
+  padding: 12px 14px;
 }
 
-/* Customizing TimelineJS Internals */
-.tl-timeline {
-    font-family: 'Inter', -apple-system, sans-serif !important; /* Modern font */
+/* ===============================
+   Timeline Typography
+   =============================== */
+
+/* Apply Andron ONLY to text */
+.tl-timeline h1,
+.tl-timeline h2,
+.tl-timeline h3,
+.tl-timeline h4,
+.tl-timeline p,
+.tl-headline,
+.tl-text-content {
+  font-family: 'Andron', serif !important;
 }
 
-/* Make headlines stand out */
-.tl-headline {
-    font-weight: 400 !important;
-    
+/* Restore Timeline icon font */
+.tl-icon,
+.tl-icon-content,
+.tl-nav-next,
+.tl-nav-previous,
+.tl-slidenav-icon,
+.tl-menubar-button,
+[class^='tl-icon-'],
+[class*=' tl-icon-'] {
+  font-family: 'tl-icons' !important;
 }
 
-/* Improve the "Markers" on the bottom navigation */
-.tl-timemarker-content {
-    border-radius: 4px !important;
-    background-color: #f1f5f9 !important;
-    border: 1px solid #cbd5e1 !important;
-}
-
-.tl-timemarker.tl-timemarker-active .tl-timemarker-content {
-    background-color: #3b82f6 !important;
-    border-color: #2563eb !important;
-}
-
-/* Soften the transitions and backgrounds */
+/* Keep timeline bar styling ORIGINAL (no visual override) */
 .tl-slide {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .tl-text-content p {
-    color: #475569 !important;
-    line-height: 1.6 !important;
-    font-size: 1.05rem !important;
+  color: #475569 !important;
+  line-height: 1.6 !important;
+  font-size: 1.05rem !important;
 }
