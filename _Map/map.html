@@ -23,10 +23,6 @@
     ></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
-    <!-- jQuery + CSV parser (legacy) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../_Map/GIS/ARCGIS%20Webmap%20Application/jquery.csv-0.71.js"></script>
-
     <!-- TimelineJS -->
     <link
       rel="stylesheet"
@@ -42,17 +38,22 @@
     <div class="app">
       <div id="map"></div>
 
-      <div class="search-container">
-        <input
-          id="map-search"
-          class="search-input"
-          type="text"
-          placeholder="Search Ruskin places..."
-        />
-        <button id="map-search-btn" class="search-btn" type="button">Find</button>
-      </div>
-
       <div class="overlay-panel">
+        <!-- SEARCH SECTION -->
+        <div class="panel-section">
+          <span class="section-title">Search</span>
+          <div class="search-container">
+            <input
+              id="map-search"
+              class="search-input"
+              type="text"
+              placeholder="Search Ruskin places..."
+            />
+            <button id="map-search-btn" class="search-btn" type="button">Find</button>
+          </div>
+        </div>
+
+        <!-- LEGEND SECTION -->
         <div class="panel-section">
           <span class="section-title">Layers & Legend</span>
           <div id="layer-control-container"></div>
@@ -81,15 +82,15 @@
 
       const STYLE = {
         geojson: {
-          radius: 7,
-          weight: 2,
+          radius: 5,
+          weight: 1,
           fillOpacity: 0.85,
           color: '#1f77b4',
           fillColor: '#1f77b4',
         },
-        csv: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#ff7f0e', fillColor: '#ff7f0e' },
-        tei: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#9467bd', fillColor: '#9467bd' },
-        mary: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#2ca02c', fillColor: '#2ca02c' },
+        csv: { radius: 5, weight: 1, fillOpacity: 0.85, color: '#ff7f0e', fillColor: '#ff7f0e' },
+        tei: { radius: 5, weight: 1, fillOpacity: 0.85, color: '#9467bd', fillColor: '#9467bd' },
+        mary: { radius: 5, weight: 1, fillOpacity: 0.85, color: '#2ca02c', fillColor: '#2ca02c' },
       };
 
       // -----------------------------
@@ -104,6 +105,7 @@
         zoomControl: true,
         maxBounds: EUROPE_1831_BOUNDS,
         maxBoundsViscosity: 1.0,
+        preferCanvas: true,
       });
 
       const europeFitZoom = map.getBoundsZoom(EUROPE_1831_BOUNDS);
@@ -134,10 +136,20 @@
       map.addLayer(historicalTile);
 
       // Layers
-      const geoCluster = L.markerClusterGroup();
-      const csvCluster = L.markerClusterGroup();
-      const teiCluster = L.markerClusterGroup();
-      const maryCluster = L.markerClusterGroup();
+      const clusterOptions = {
+        chunkedLoading: true,
+        chunkDelay: 25,
+        chunkInterval: 200,
+        animate: false,
+        spiderfyOnMaxZoom: false,
+        removeOutsideVisibleBounds: true,
+      };
+
+      const geoCluster = L.markerClusterGroup(clusterOptions);
+      const csvCluster = L.markerClusterGroup(clusterOptions);
+      const teiCluster = L.markerClusterGroup(clusterOptions);
+      const maryCluster = L.markerClusterGroup(clusterOptions);
+
       const visitedByMaryPathLayer = L.featureGroup();
 
       const layerColors = {
@@ -175,7 +187,7 @@
 
       // Layout sizing fixes
       const invalidateMapSize = () => map.invalidateSize();
-      setTimeout(invalidateMapSize, 0);
+      requestAnimationFrame(invalidateMapSize);
       window.addEventListener('resize', invalidateMapSize);
 
       // -----------------------------
@@ -284,7 +296,7 @@
           if (!color) return;
 
           // Clear label safely
-          label.innerHTML = '';
+          while (label.firstChild) label.removeChild(label.firstChild);
 
           // Checkbox
           input.style.margin = '0';
@@ -403,12 +415,12 @@
         };
 
         window.ruskinTimeline = new TL.Timeline('timeline-embed', timelineJson, {
-          initial_zoom: 3,
+          initial_zoom: 4,
           language: 'en',
-          height:350,
+          height: 350,
           marker_height_min: 30,
           track_events: ['back_to_start', 'nav_next', 'nav_previous'],
-          zoom_sequence: [0.5, 1, 2, 3, 5, 8, 13]
+          zoom_sequence: [0.5, 1, 2, 3, 5, 8, 13],
         });
 
         // Pan map when slide changes
@@ -468,37 +480,30 @@
           });
 
       const loadCsvLayer = (url, cluster, style) =>
-        new Promise((resolve, reject) => {
-          $.ajax({ url, dataType: 'text' })
-            .done((csvText) => {
-              try {
-                $.csv.toObjects(csvText).forEach((row) => {
-                  const lat = parseFloat(
-                    row.y_latitude || row.lat || row.latitude || row.Y || row.y,
-                  );
-                  const lon = parseFloat(
-                    row.x_longitude || row.lon || row.longitude || row.X || row.x,
-                  );
-                  if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+        fetch(url)
+          .then((r) => r.text())
+          .then((text) => {
+            const rows = text
+              .trim()
+              .split(/\r?\n/)
+              .map((r) => r.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/));
+            const headers = rows.shift();
 
-                  const title =
-                    row.place_name ||
-                    row.place ||
-                    row.City ||
-                    row.City_Names ||
-                    row.name ||
-                    'Place';
-                  bindPoint(cluster, [lat, lon], style, title, row);
-                });
+            const latIdx = headers.findIndex((h) => /lat|latitude|y/i.test(h));
+            const lonIdx = headers.findIndex((h) => /lon|longitude|x/i.test(h));
+            const nameIdx = headers.findIndex((h) => /place|city|name/i.test(h));
 
-                map.addLayer(cluster);
-                resolve();
-              } catch (e) {
-                reject(e);
-              }
-            })
-            .fail((_xhr, _status, err) => reject(new Error('CSV load failed: ' + err)));
-        });
+            rows.forEach((cols) => {
+              const lat = parseFloat(cols[latIdx]);
+              const lon = parseFloat(cols[lonIdx]);
+              if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+
+              const title = cols[nameIdx] || 'Place';
+              bindPoint(cluster, [lat, lon], style, title, {});
+            });
+
+            map.addLayer(cluster);
+          });
 
       const loadTeiPlacesJsonLayer = (url, cluster, style) =>
         fetch(url)
@@ -618,11 +623,15 @@
           return loadMaryVisitedPlacesTimeline(PLACES_VISITED_BY_MARY);
         })
         .then(() => {
-          buildAndAttachTimeline();
+          requestIdleCallback
+            ? requestIdleCallback(buildAndAttachTimeline)
+            : setTimeout(buildAndAttachTimeline, 400);
         })
         .catch((err) => {
           console.error(err);
-          buildAndAttachTimeline();
+          requestIdleCallback
+            ? requestIdleCallback(buildAndAttachTimeline)
+            : setTimeout(buildAndAttachTimeline, 400);
         });
     </script>
   </body>
