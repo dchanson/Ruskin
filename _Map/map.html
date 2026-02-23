@@ -61,6 +61,10 @@
       </div>
 
       <div id="timeline-container">
+        <div class="panel-section" style="margin-bottom: 12px">
+          <span class="section-title">Location</span>
+          <button id="timeline-find-btn" class="search-btn" type="button">Find on Map</button>
+        </div>
         <div id="timeline-embed"></div>
       </div>
     </div>
@@ -464,6 +468,27 @@
           console.warn('timeline wiring failed', e);
         }
       };
+
+      document.getElementById('timeline-find-btn').addEventListener('click', () => {
+        const tl = window.ruskinTimeline;
+
+        if (!tl?.current_id) {
+          alert('Timeline not ready.');
+          return;
+        }
+
+        const currentEvent = _timelineEvents.find((e) => e.unique_id === tl.current_id);
+        if (!currentEvent?.text?.headline) {
+          alert('No active slide with headline.');
+          return;
+        }
+
+        const found = findAndOpen(currentEvent.text.headline);
+
+        if (!found) {
+          alert('Location not found on map.');
+        }
+      });
 
       // -----------------------------
       // Loaders
