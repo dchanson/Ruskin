@@ -23,10 +23,6 @@
     ></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
-    <!-- jQuery + CSV parser (legacy) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../_Map/GIS/ARCGIS%20Webmap%20Application/jquery.csv-0.71.js"></script>
-
     <!-- TimelineJS -->
     <link
       rel="stylesheet"
@@ -34,603 +30,42 @@
     />
     <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
-    <style>
-      :root {
-        --bg: #f5f7fb;
-        --card: #ffffff;
-        --ink: #0f172a;
-        --muted: #64748b;
-        --stroke: #e6ebf2;
-
-        --brand: #003768;
-        --brand-2: #ba8e0b;
-
-        --radius: 16px;
-        --radius-sm: 12px;
-
-        --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-        --shadow-sm: 0 6px 16px rgba(15, 23, 42, 0.07);
-        --focus: rgba(0, 55, 104, 0.18);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        color: var(--ink);
-        font-family:
-          ui-sans-serif,
-          system-ui,
-          -apple-system,
-          Segoe UI,
-          Roboto,
-          Helvetica,
-          Arial;
-        background:
-          radial-gradient(900px 500px at 20% 0%, rgba(0, 55, 104, 0.05), transparent 60%),
-          radial-gradient(700px 450px at 90% 20%, rgba(186, 142, 11, 0.06), transparent 55%),
-          var(--bg);
-        overflow: hidden;
-      }
-
-      .app {
-        height: 100vh;
-        display: grid;
-        grid-template-rows: auto 1fr;
-        gap: 12px;
-        padding: 12px;
-      }
-
-      .topbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding: 12px 14px;
-        border: 1px solid var(--stroke);
-        border-radius: var(--radius);
-        background: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(10px);
-        box-shadow: var(--shadow-sm);
-      }
-
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        min-width: 0;
-      }
-
-      .dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 999px;
-        background: var(--brand-2);
-        box-shadow: 0 0 0 4px rgba(186, 142, 11, 0.14);
-        flex: 0 0 auto;
-      }
-
-      .titlewrap {
-        min-width: 0;
-      }
-
-      .title {
-        margin: 0;
-        font-size: 15px;
-        font-weight: 780;
-        letter-spacing: 0.2px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      .subtitle {
-        margin: 2px 0 0;
-        font-size: 12px;
-        color: var(--muted);
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      .chip {
-        font-size: 12px;
-        color: var(--brand);
-        background: rgba(0, 55, 104, 0.08);
-        border: 1px solid rgba(0, 55, 104, 0.14);
-        padding: 8px 10px;
-        border-radius: 999px;
-        white-space: nowrap;
-      }
-
-      .shell {
-        min-height: 0;
-        display: grid;
-        grid-template-columns: 320px 1fr 300px;
-        gap: 12px;
-      }
-
-      .panel,
-      .card {
-        background: rgba(255, 255, 255, 0.92);
-        border: 1px solid var(--stroke);
-        border-radius: var(--radius);
-        box-shadow: var(--shadow-sm);
-        overflow: hidden;
-        min-height: 0;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .panel-hd,
-      .card-hd {
-        padding: 12px 12px 10px;
-        border-bottom: 1px solid var(--stroke);
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 10px;
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.92) 0%,
-          rgba(255, 255, 255, 0.75) 100%
-        );
-      }
-
-      .panel-hd h2,
-      .card-hd h2 {
-        margin: 0;
-        font-size: 13px;
-        font-weight: 760;
-        letter-spacing: 0.2px;
-      }
-
-      .hint {
-        font-size: 12px;
-        color: var(--muted);
-      }
-
-      .panel-bd {
-        padding: 12px;
-        overflow: auto;
-      }
-
-      .content {
-        min-height: 0;
-        display: grid;
-        grid-template-rows: 1.35fr 0.85fr;
-        gap: 12px;
-      }
-
-      .card {
-        box-shadow: var(--shadow);
-      }
-
-      .card-body {
-        flex: 1;
-        min-height: 0;
-        background: #fff;
-      }
-
-      #map,
-      #timeline-embed {
-        width: 100%;
-        height: 100%;
-      }
-
-      .row {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-      }
-
-      .input {
-        flex: 1;
-        height: 40px;
-        border-radius: 12px;
-        border: 1px solid var(--stroke);
-        background: #fff;
-        padding: 0 12px;
-        outline: none;
-        transition:
-          border-color 0.15s ease,
-          box-shadow 0.15s ease;
-        font-size: 14px;
-      }
-
-      .input:focus {
-        border-color: rgba(0, 55, 104, 0.45);
-        box-shadow: 0 0 0 4px var(--focus);
-      }
-
-      .btn {
-        height: 40px;
-        border-radius: 12px;
-        border: 1px solid rgba(0, 55, 104, 0.18);
-        background: linear-gradient(180deg, rgba(0, 55, 104, 0.96), rgba(0, 55, 104, 0.88));
-        color: #fff;
-        padding: 0 14px;
-        cursor: pointer;
-        font-weight: 750;
-        letter-spacing: 0.2px;
-      }
-
-      .btn:active {
-        transform: translateY(1px);
-      }
-
-      .divider {
-        height: 1px;
-        background: var(--stroke);
-        margin: 12px 0;
-      }
-
-      .label {
-        font-size: 12px;
-        color: var(--muted);
-        margin-bottom: 6px;
-      }
-
-      .pill {
-        font-size: 12px;
-        color: var(--brand);
-        background: rgba(0, 55, 104, 0.08);
-        border: 1px solid rgba(0, 55, 104, 0.14);
-        padding: 6px 10px;
-        border-radius: 999px;
-        min-width: 60px;
-        text-align: center;
-      }
-
-      .kv {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 10px;
-        align-items: center;
-        padding: 10px;
-        border: 1px solid var(--stroke);
-        border-radius: 12px;
-        background: #fff;
-      }
-
-      .kv strong {
-        font-size: 12px;
-      }
-
-      .kv span {
-        font-size: 12px;
-        color: var(--muted);
-      }
-
-      .legend {
-        display: grid;
-        gap: 8px;
-      }
-
-      .legend-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px;
-        border: 1px solid var(--stroke);
-        border-radius: 12px;
-        background: #fff;
-      }
-
-      .swatch {
-        width: 10px;
-        height: 10px;
-        border-radius: 999px;
-        flex: 0 0 auto;
-      }
-
-      .leaflet-control-layers {
-        border-radius: 12px !important;
-        box-shadow: var(--shadow-sm) !important;
-        border: 1px solid var(--stroke) !important;
-        overflow: hidden;
-      }
-
-      .leaflet-control-layers-expanded {
-        padding: 10px 12px !important;
-      }
-
-      .leaflet-popup-content-wrapper {
-        border-radius: 14px;
-        box-shadow: var(--shadow);
-      }
-
-      .leaflet-popup-content {
-        margin: 12px 14px;
-        font-size: 13px;
-        line-height: 1.35;
-      }
-
-      /* Timeline fit (trimmed + non-redundant) */
-      #timeline-embed .tl-timeline,
-      #timeline-embed .tl-text,
-      #timeline-embed .tl-text * {
-        font-family:
-          ui-sans-serif,
-          system-ui,
-          -apple-system,
-          Segoe UI,
-          Roboto,
-          Helvetica,
-          Arial !important;
-      }
-
-      #timeline-embed .tl-timeline {
-        font-size: 14px;
-      }
-
-      /* Headline */
-      #timeline-embed .tl-headline,
-      #timeline-embed .tl-headline a {
-        font-size: 16px !important;
-        line-height: 1.2 !important;
-        font-weight: 750 !important;
-        letter-spacing: 0.2px;
-        margin-bottom: 6px !important;
-      }
-
-      /* Body text */
-      #timeline-embed .tl-text-content,
-      #timeline-embed .tl-text-content p,
-      #timeline-embed .tl-text-content div {
-        font-size: 13px !important;
-        line-height: 1.45 !important;
-        color: #334155 !important;
-      }
-
-      /* Reduce wasted padding */
-      #timeline-embed .tl-slide-content-container {
-        padding: 10px 12px !important;
-      }
-
-      #timeline-embed .tl-slide .tl-slide-content {
-        padding: 0 !important;
-      }
-
-      /* Make long text scroll instead of breaking layout */
-      #timeline-embed .tl-text,
-      #timeline-embed .tl-text-content-container {
-        max-height: 100% !important;
-        overflow: auto !important;
-      }
-
-      /* Clamp long titles (optional) */
-      #timeline-embed .tl-headline {
-        display: -webkit-box !important;
-        -webkit-box-orient: vertical !important;
-        overflow: hidden !important;
-      }
-
-      /* Make nav/controls slightly smaller (safe) */
-      #timeline-embed .tl-menubar,
-      #timeline-embed .tl-timeaxis {
-        font-size: 12px !important;
-      }
-
-      /* Neutralize any global button styles for Timeline only */
-      #timeline-embed button {
-        height: auto;
-        border-radius: 0;
-        background: initial;
-        border: initial;
-        color: inherit;
-        padding: initial;
-      }
-
-      /* ✅ Restore TimelineJS icon font */
-      #timeline-embed .tl-icon,
-      #timeline-embed .tl-icon:before,
-      #timeline-embed [class^='tl-icon-'],
-      #timeline-embed [class^='tl-icon-']:before,
-      #timeline-embed [class*=' tl-icon-'],
-      #timeline-embed [class*=' tl-icon-']:before {
-        font-family: 'tl-icons' !important;
-        font-style: normal !important;
-        font-weight: normal !important;
-        text-transform: none !important;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-
-      @media (max-width: 980px) {
-        html,
-        body {
-          overflow: auto;
-        }
-
-        .app {
-          height: auto;
-        }
-
-        .shell {
-          grid-template-columns: 1fr;
-          grid-auto-rows: auto;
-        }
-
-        .content {
-          grid-template-rows: 560px 380px;
-        }
-      }
-    </style>
+    <!-- App styles -->
+    <link rel="stylesheet" href="_Map/map.css" />
   </head>
 
   <body>
     <div class="app">
-      <header class="topbar">
-        <div class="brand">
-          <div class="dot"></div>
-          <div class="titlewrap">
-            <p class="title">Ruskin — Map of Places</p>
-            <p class="subtitle">Dashboard: map + timeline + datasets</p>
+      <div id="map"></div>
+
+      <div class="overlay-panel">
+        <!-- SEARCH SECTION -->
+        <div class="panel-section">
+          <span class="section-title">Search</span>
+          <div class="search-container">
+            <input
+              id="map-search"
+              class="search-input"
+              type="text"
+              placeholder="Search Ruskin places..."
+            />
+            <button id="map-search-btn" class="search-btn" type="button">Find</button>
           </div>
         </div>
-        <div class="chip" title="Tip: use the layer control on the map">Layers + Timeline</div>
-      </header>
 
-      <div class="shell">
-        <!-- LEFT -->
-        <aside class="panel">
-          <div class="panel-hd">
-            <h2>Search & Controls</h2>
-            <span class="hint">Global</span>
-          </div>
-          <div class="panel-bd">
-            <div class="label">Search place name</div>
-            <div class="row">
-              <input id="map-search" class="input" type="text" placeholder="e.g., Venice" />
-              <button id="map-search-btn" class="btn" type="button">Find</button>
-            </div>
+        <!-- LEGEND SECTION -->
+        <div class="panel-section">
+          <span class="section-title">Layers & Legend</span>
+          <div id="layer-control-container"></div>
+        </div>
+      </div>
 
-            <div class="divider"></div>
-
-            <div class="kv">
-              <div>
-                <strong>Historical map opacity</strong><br />
-                <span>Only affects “Historical map (IIIF)”</span>
-              </div>
-              <span id="hist-val" class="pill">80%</span>
-            </div>
-
-            <div style="margin-top: 10px">
-              <input
-                id="hist-opacity"
-                type="range"
-                min="0"
-                max="100"
-                value="80"
-                style="width: 100%"
-              />
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="kv">
-              <div>
-                <strong>Quick tip</strong><br />
-                <span>Use layers to isolate datasets before searching.</span>
-              </div>
-              <span class="pill">⌘</span>
-            </div>
-          </div>
-        </aside>
-
-        <!-- CENTER -->
-        <section class="content">
-          <div class="card">
-            <div class="card-hd">
-              <h2>Map</h2>
-              <div class="hint">Clusters + popups + overlay</div>
-            </div>
-            <div class="card-body">
-              <div id="map"></div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-hd">
-              <h2>Timeline</h2>
-              <div class="hint">Slide changes pan map when coords exist</div>
-            </div>
-            <div class="card-body">
-              <div id="timeline-embed"></div>
-            </div>
-          </div>
-        </section>
-
-        <!-- RIGHT -->
-        <aside class="panel">
-          <div class="panel-hd">
-            <h2>Legend</h2>
-            <span class="hint">Colors</span>
-          </div>
-          <div class="panel-bd">
-            <div class="legend">
-              <div class="legend-item">
-                <span class="swatch" style="background: #1f77b4"></span>
-                <div>
-                  <strong style="font-size: 12px">GeoJSON</strong><br />
-                  <span style="font-size: 12px; color: var(--muted)">AllPoints.json</span>
-                </div>
-              </div>
-
-              <div class="legend-item">
-                <span class="swatch" style="background: #ff7f0e"></span>
-                <div>
-                  <strong style="font-size: 12px">CSV</strong><br />
-                  <span style="font-size: 12px; color: var(--muted)">places_mockup2.csv</span>
-                </div>
-              </div>
-
-              <div class="legend-item">
-                <span class="swatch" style="background: #9467bd"></span>
-                <div>
-                  <strong style="font-size: 12px">TEI places</strong><br />
-                  <span style="font-size: 12px; color: var(--muted)">places.json</span>
-                </div>
-              </div>
-
-              <div class="legend-item">
-                <span class="swatch" style="background: #2ca02c"></span>
-                <div>
-                  <strong style="font-size: 12px">Mary places</strong><br />
-                  <span style="font-size: 12px; color: var(--muted)">mary_places.json</span>
-                </div>
-              </div>
-
-              <div class="legend-item">
-                <span
-                  class="swatch"
-                  style="background: linear-gradient(90deg, #3b82f6, #0ea5e9)"
-                ></span>
-                <div>
-                  <strong style="font-size: 12px">Mary path</strong><br />
-                  <span style="font-size: 12px; color: var(--muted)">Polyline from TEI coords</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="kv">
-              <div>
-                <strong>Status</strong><br />
-                <span id="status-text">Loading…</span>
-              </div>
-              <span id="status-pill" class="pill">…</span>
-            </div>
-            <div class="divider"></div>
-            <div
-              style="
-                font-size: 11px;
-                color: var(--muted);
-                padding: 10px;
-                background: rgba(0, 0, 0, 0.03);
-                border-radius: 8px;
-              "
-            >
-              <strong>Historical Map Source:</strong><br />
-              Vandermaelen, <em>Atlas universel</em> (1831).<br />
-              Pub: Établissement Géographique de Bruxelles.<br />
-              Courtesy of David Rumsey Map Collection.<br />
-              List No: 16613.005
-            </div>
-
-            <div style="margin-top: 10px; font-size: 12px; color: var(--muted); line-height: 1.35">
-              If timeline events don’t appear, it usually means your source data has no dates in the
-              expected fields (<code>date</code>, <code>year</code>, <code>@when</code>, etc.).
-            </div>
-          </div>
-        </aside>
+      <div id="timeline-container">
+        <div class="panel-section" style="margin-bottom: 12px">
+          <span class="section-title">Location</span>
+          <button id="timeline-find-btn" class="search-btn" type="button">Find on Map</button>
+        </div>
+        <div id="timeline-embed"></div>
       </div>
     </div>
 
@@ -649,31 +84,39 @@
       const SLUG_FIELD = 'slug';
       const placeCoordinatesMap = new Map();
 
-      // IIIF overlay (legacy feature)
-      // const HISTORICAL_IIIF_URL =
-      //   'https://www.davidrumsey.com/luna/servlet/iiif/RUMSEY~8~1~373366~90140092/full/full/0/default.jpg';
-
-      // Format: [[southWestLat, southWestLng],[northEastLat, northEastLng]]
-
       const STYLE = {
         geojson: {
-          radius: 7,
-          weight: 2,
+          radius: 5,
+          weight: 1,
           fillOpacity: 0.85,
           color: '#1f77b4',
           fillColor: '#1f77b4',
         },
-        csv: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#ff7f0e', fillColor: '#ff7f0e' },
-        tei: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#9467bd', fillColor: '#9467bd' },
-        mary: { radius: 7, weight: 2, fillOpacity: 0.85, color: '#2ca02c', fillColor: '#2ca02c' },
+        csv: { radius: 5, weight: 1, fillOpacity: 0.85, color: '#ff7f0e', fillColor: '#ff7f0e' },
+        tei: { radius: 5, weight: 1, fillOpacity: 0.85, color: '#9467bd', fillColor: '#9467bd' },
+        mary: { radius: 5, weight: 1, fillOpacity: 0.85, color: '#2ca02c', fillColor: '#2ca02c' },
       };
 
       // -----------------------------
       // MAP SETUP
       // -----------------------------
+      const EUROPE_1831_BOUNDS = [
+        [29.972381, -17.966306], // SouthWest
+        [62.588278, 53.898917], // NorthEast
+      ];
+
       const map = L.map('map', {
         zoomControl: true,
-      }).setView([50.5, 6.0], 5);
+        maxBounds: EUROPE_1831_BOUNDS,
+        maxBoundsViscosity: 1.0,
+        preferCanvas: true,
+      });
+
+      const europeFitZoom = map.getBoundsZoom(EUROPE_1831_BOUNDS);
+      const INITIAL_ZOOM = europeFitZoom + 1;
+      map.setView(L.latLngBounds(EUROPE_1831_BOUNDS).getCenter(), INITIAL_ZOOM);
+      map.setMinZoom(europeFitZoom + 1);
+      map.setMaxZoom(12);
 
       const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -685,94 +128,114 @@
         attribution: '&copy; CARTO',
       });
 
-      const EUROPE_1931_IMG_URL = '/_Map/Europe1931OverlayImg/Europe1931.png';
-      const EUROPE_1931_BOUNDS = [
-        [29.972381, -17.966306], // SouthWest
-        [62.588278, 53.898917], // NorthEast
-      ];
+      const EUROPE_1831_IMG_URL = '/_Map/Europe1831OverlayImg/Europe1831Map.png';
 
-      const historicalTile = L.imageOverlay(EUROPE_1931_IMG_URL, EUROPE_1931_BOUNDS, {
+      const historicalTile = L.imageOverlay(EUROPE_1831_IMG_URL, EUROPE_1831_BOUNDS, {
         interactive: false,
-        opacity: 0.8,
+        opacity: 1,
         attribution:
           'Historical Map: <a href="https://www.davidrumsey.com/">David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries</a> | Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>',
       });
 
-      map.on('click', (e) => console.log('clicked', e.latlng));
-      map.fitBounds(EUROPE_1931_BOUNDS);
-
-      // -----------------------------
-      // Historical opacity slider
-      // -----------------------------
-      const histSlider = document.getElementById('hist-opacity');
-      const histVal = document.getElementById('hist-val');
-
-      const setHistOpacity = (percent) => {
-        const p = Math.max(0, Math.min(100, Number(percent)));
-        historicalTile.setOpacity(p / 100);
-        histVal.textContent = `${p}%`;
-      };
-
-      setHistOpacity(histSlider.value);
-      histSlider.addEventListener('input', (e) => setHistOpacity(e.target.value));
+      map.addLayer(historicalTile);
 
       // Layers
-      const geoCluster = L.markerClusterGroup();
-      const csvCluster = L.markerClusterGroup();
-      const teiCluster = L.markerClusterGroup();
-      const maryCluster = L.markerClusterGroup();
+      const clusterOptions = {
+        chunkedLoading: true,
+        chunkDelay: 25,
+        chunkInterval: 200,
+        animate: false,
+        spiderfyOnMaxZoom: false,
+        removeOutsideVisibleBounds: true,
+      };
+
+      const geoCluster = L.markerClusterGroup(clusterOptions);
+      const csvCluster = L.markerClusterGroup(clusterOptions);
+      const teiCluster = L.markerClusterGroup(clusterOptions);
+      const maryCluster = L.markerClusterGroup(clusterOptions);
+
       const visitedByMaryPathLayer = L.featureGroup();
 
-      L.control
-        .layers(
-          { OpenStreetMap: osm, 'Carto Light': carto },
-          {
-            'GeoJSON places': geoCluster,
-            'CSV places': csvCluster,
-            'TEI places.json': teiCluster,
-            'Mary places.json': maryCluster,
-            'Mary visited path': visitedByMaryPathLayer,
-            'Historical map': historicalTile,
-          },
-          { collapsed: false },
-        )
-        .addTo(map);
+      const layerColors = {
+        'GeoJSON places': '#1f77b4',
+        'CSV places': '#ff7f0e',
+        'TEI places.json': '#9467bd',
+        'Mary places.json': '#2ca02c',
+        'Mary visited path': '#3b82f6',
+        'Historical map': '#daa520',
+      };
+
+      // Define the control
+      const layerControl = L.control.layers(
+        { OpenStreetMap: osm, 'Carto Light': carto },
+        {
+          'CSV places': csvCluster,
+          'GeoJSON places': geoCluster,
+          'TEI places.json': teiCluster,
+          'Mary places.json': maryCluster,
+          'Mary visited path': visitedByMaryPathLayer,
+          'Historical map': historicalTile,
+        },
+        { collapsed: false },
+      );
+
+      layerControl.addTo(map);
+
+      // MOVE the Leaflet-generated control into your panel
+      const checklistUI = layerControl.getContainer();
+      document.getElementById('layer-control-container').appendChild(checklistUI);
+
+      map.on('overlayadd overlayremove', () => {
+        requestAnimationFrame(injectLayerLegendSwatches);
+      });
 
       // Layout sizing fixes
       const invalidateMapSize = () => map.invalidateSize();
-      setTimeout(invalidateMapSize, 0);
+      requestAnimationFrame(invalidateMapSize);
       window.addEventListener('resize', invalidateMapSize);
-
-      // -----------------------------
-      // Status UI
-      // -----------------------------
-      const statusText = document.getElementById('status-text');
-      const statusPill = document.getElementById('status-pill');
-      const setStatus = (text, pill = '') => {
-        statusText.textContent = text;
-        statusPill.textContent = pill;
-      };
 
       // -----------------------------
       // SEARCH INDEX
       // -----------------------------
-      const searchIndex = [];
+      const searchIndex = new Map();
       const addToSearchIndex = (title, layer, latlng) => {
-        if (title && latlng) searchIndex.push({ name: title, layer, latlng });
+        if (!title || !latlng) return;
+
+        const key = title.toLowerCase().trim();
+
+        searchIndex.set(key, { name: title, layer, latlng });
       };
 
       const findAndOpen = (q) => {
         q = (q || '').toLowerCase().trim();
         if (!q) return false;
 
-        const found =
-          searchIndex.find((s) => s.name && s.name.toLowerCase() === q) ||
-          searchIndex.find((s) => s.name && s.name.toLowerCase().includes(q));
+        let found = searchIndex.get(q);
 
-        if (!found?.latlng) return false;
+        if (!found) {
+          for (const [key, value] of searchIndex.entries()) {
+            if (key.includes(q)) {
+              found = value;
+              break;
+            }
+          }
+        }
 
-        map.setView(found.latlng, Math.max(map.getZoom(), 8));
-        found.layer?.openPopup?.();
+        if (!found?.layer) return false;
+
+        const marker = found.layer;
+        const clusters = [geoCluster, csvCluster, teiCluster, maryCluster];
+        const parentCluster = clusters.find((c) => c.hasLayer(marker));
+
+        if (parentCluster) {
+          parentCluster.zoomToShowLayer(marker, () => {
+            marker.openPopup();
+          });
+        } else {
+          map.setView(marker.getLatLng(), 9);
+          marker.openPopup();
+        }
+
         return true;
       };
 
@@ -846,6 +309,38 @@
           </div>
         `;
       };
+
+      function injectLayerLegendSwatches() {
+        const labels = document.querySelectorAll('#layer-control-container label');
+
+        labels.forEach((label) => {
+          const input = label.querySelector('input');
+          if (!input) return;
+
+          const name = label.textContent.trim();
+          const color = layerColors[name];
+          if (!color) return;
+
+          // Clear label safely
+          while (label.firstChild) label.removeChild(label.firstChild);
+
+          // Checkbox
+          input.style.margin = '0';
+
+          // Color swatch
+          const swatch = document.createElement('span');
+          swatch.className = 'layer-swatch';
+          swatch.style.backgroundColor = color;
+
+          // Text
+          const text = document.createElement('span');
+          text.textContent = name;
+
+          label.appendChild(input);
+          label.appendChild(swatch);
+          label.appendChild(text);
+        });
+      }
 
       // -----------------------------
       // Timeline
@@ -946,8 +441,12 @@
         };
 
         window.ruskinTimeline = new TL.Timeline('timeline-embed', timelineJson, {
-          initial_zoom: 2,
+          initial_zoom: 4,
           language: 'en',
+          height: 350,
+          marker_height_min: 30,
+          track_events: ['back_to_start', 'nav_next', 'nav_previous'],
+          zoom_sequence: [0.5, 1, 2, 3, 5, 8, 13],
         });
 
         // Pan map when slide changes
@@ -955,13 +454,41 @@
           window.ruskinTimeline?.on?.('change', () => {
             const idx = window.ruskinTimeline.getCurrentSlideIndex?.();
             if (idx == null) return;
+
             const ev = _timelineEvents[idx];
-            if (ev?._map) map.setView([ev._map.lat, ev._map.lon], 10);
+            if (!ev?._map) return;
+
+            const ll = L.latLng(ev._map.lat, ev._map.lon);
+
+            if (!EUROPE_1831_BOUNDS.contains(ll)) return;
+
+            map.setView(ll, Math.max(map.getZoom(), 7), { animate: true });
           });
         } catch (e) {
           console.warn('timeline wiring failed', e);
         }
       };
+
+      document.getElementById('timeline-find-btn').addEventListener('click', () => {
+        const tl = window.ruskinTimeline;
+
+        if (!tl?.current_id) {
+          alert('Timeline not ready.');
+          return;
+        }
+
+        const currentEvent = _timelineEvents.find((e) => e.unique_id === tl.current_id);
+        if (!currentEvent?.text?.headline) {
+          alert('No active slide with headline.');
+          return;
+        }
+
+        const found = findAndOpen(currentEvent.text.headline);
+
+        if (!found) {
+          alert('Location not found on map.');
+        }
+      });
 
       // -----------------------------
       // Loaders
@@ -1000,37 +527,30 @@
           });
 
       const loadCsvLayer = (url, cluster, style) =>
-        new Promise((resolve, reject) => {
-          $.ajax({ url, dataType: 'text' })
-            .done((csvText) => {
-              try {
-                $.csv.toObjects(csvText).forEach((row) => {
-                  const lat = parseFloat(
-                    row.y_latitude || row.lat || row.latitude || row.Y || row.y,
-                  );
-                  const lon = parseFloat(
-                    row.x_longitude || row.lon || row.longitude || row.X || row.x,
-                  );
-                  if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+        fetch(url)
+          .then((r) => r.text())
+          .then((text) => {
+            const rows = text
+              .trim()
+              .split(/\r?\n/)
+              .map((r) => r.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/));
+            const headers = rows.shift();
 
-                  const title =
-                    row.place_name ||
-                    row.place ||
-                    row.City ||
-                    row.City_Names ||
-                    row.name ||
-                    'Place';
-                  bindPoint(cluster, [lat, lon], style, title, row);
-                });
+            const latIdx = headers.findIndex((h) => /lat|latitude|y/i.test(h));
+            const lonIdx = headers.findIndex((h) => /lon|longitude|x/i.test(h));
+            const nameIdx = headers.findIndex((h) => /place|city|name/i.test(h));
 
-                map.addLayer(cluster);
-                resolve();
-              } catch (e) {
-                reject(e);
-              }
-            })
-            .fail((_xhr, _status, err) => reject(new Error('CSV load failed: ' + err)));
-        });
+            rows.forEach((cols) => {
+              const lat = parseFloat(cols[latIdx]);
+              const lon = parseFloat(cols[lonIdx]);
+              if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+
+              const title = cols[nameIdx] || 'Place';
+              bindPoint(cluster, [lat, lon], style, title, {});
+            });
+
+            map.addLayer(cluster);
+          });
 
       const loadTeiPlacesJsonLayer = (url, cluster, style) =>
         fetch(url)
@@ -1139,25 +659,26 @@
       // -----------------------------
       // Load all, then timeline
       // -----------------------------
-      setStatus('Loading datasets…', '…');
 
       Promise.all([
         loadGeoJsonLayer(GEOJSON_URL, geoCluster, STYLE.geojson),
         loadCsvLayer(CSV_URL, csvCluster, STYLE.csv),
-
+        loadTeiPlacesJsonLayer(MARY_PLACES_JSON_URL, maryCluster, STYLE.mary),
         loadTeiPlacesJsonLayer(PLACES_JSON_URL, teiCluster, STYLE.tei),
       ])
         .then(() => {
           return loadMaryVisitedPlacesTimeline(PLACES_VISITED_BY_MARY);
         })
         .then(() => {
-          setStatus('Loaded. Use layers to toggle.', 'OK');
-          buildAndAttachTimeline();
+          requestIdleCallback
+            ? requestIdleCallback(buildAndAttachTimeline)
+            : setTimeout(buildAndAttachTimeline, 400);
         })
         .catch((err) => {
           console.error(err);
-          setStatus('Loaded with errors (see console).', 'WARN');
-          buildAndAttachTimeline();
+          requestIdleCallback
+            ? requestIdleCallback(buildAndAttachTimeline)
+            : setTimeout(buildAndAttachTimeline, 400);
         });
     </script>
   </body>

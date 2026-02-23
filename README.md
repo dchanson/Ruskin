@@ -205,6 +205,11 @@ server {
         alias /Users/userselu/Ruskin/_Map/map.html;
     }
 
+    location ^~ /_Map/Europe1831OverlayImg/ {
+        add_header Access-Controll-Allow-Origin *;
+        try_files $uri =404;
+    }
+
     # HTML Routing for main folders - with highlighting
     location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
         default_type text/html;
@@ -277,7 +282,6 @@ server {
         internal;
     }
 }
-
 
 ```
 
@@ -468,10 +472,12 @@ sass /Users/userselu/Ruskin/_Resources/css_styles/site_styles.scss /Users/userse
 ```
 
 ---
-# Ruskin — Map of Places  
+
+# Ruskin — Map of Places
+
 **Interactive Map & Timeline Documentation**
 
-This document explains how the **Ruskin — Map of Places** web page works and how to maintain or extend it.  
+This document explains how the **Ruskin — Map of Places** web page works and how to maintain or extend it.
 
 ---
 
@@ -487,6 +493,7 @@ This page combines:
 - **Search across all datasets**
 
 The result is:
+
 - A map with multiple toggleable layers
 - Clustered place markers
 - A timeline that pans the map to relevant places
@@ -498,11 +505,11 @@ The result is:
 
 ### Main HTML Elements
 
-| Element ID | Purpose |
-|-----------|--------|
-| `map` | Main Leaflet map container |
-| `map-controls` | Search UI |
-| `timeline-embed` | TimelineJS container |
+| Element ID       | Purpose                    |
+| ---------------- | -------------------------- |
+| `map`            | Main Leaflet map container |
+| `map-controls`   | Search UI                  |
+| `timeline-embed` | TimelineJS container       |
 
 ```html
 <div id="map"></div>
@@ -513,6 +520,7 @@ The result is:
 ## 3. External Libraries Used
 
 ### Mapping
+
 - **Leaflet 1.9.4**  
   Core interactive mapping library.
 - **Leaflet.MarkerCluster**  
@@ -521,12 +529,14 @@ The result is:
   Enables displaying georeferenced IIIF images (used for historical map overlays).
 
 ### Data Handling
+
 - **jQuery 3.6**  
   Used for AJAX requests and general DOM utilities.
 - **jquery.csv**  
   Parses CSV files into JavaScript objects (`CSV → JS objects`).
 
 ### Timeline
+
 - **TimelineJS 3 (Knight Lab)**  
   Renders an interactive historical timeline synchronized with the map.
 
@@ -550,16 +560,17 @@ const PLACES_VISITED_BY_MARY = '/_Map/Places/places_visited_by_mary.json';
 
 Each dataset is visually distinguished by color:
 
-| Dataset              | Color  |
-|----------------------|--------|
-| GeoJSON              | Blue   |
-| CSV                  | Orange |
-| TEI places           | Purple |
-| Mary-related places  | Green  |
+| Dataset             | Color  |
+| ------------------- | ------ |
+| GeoJSON             | Blue   |
+| CSV                 | Orange |
+| TEI places          | Purple |
+| Mary-related places | Green  |
 
 ## 5. Map Initialization
 
 The Leaflet map is initialized with a default geographic center and zoom level, targeting a specific HTML container.
+
 ```js
 const map = L.map('map').setView([50.5, 6.0], 5);
 ```
@@ -574,11 +585,15 @@ Users can switch between different base maps via the built-in Leaflet layer cont
 ## 6. Historical Map Overlay (IIIF)
 
 A georeferenced historical map from the David Rumsey Map Collection is integrated as an optional layer. This allows users to compare contemporary geography with historical records.
+
 ```js
 const historicalIIIF = L.imageOverlay(
-  "https://www.davidrumsey.com/.../default.jpg",
-  [[35.0, -10.0], [72.0, 40.0]],
-  { opacity: 0.8 }
+  'https://www.davidrumsey.com/.../default.jpg',
+  [
+    [35.0, -10.0],
+    [72.0, 40.0],
+  ],
+  { opacity: 0.8 },
 );
 ```
 
@@ -588,6 +603,7 @@ const historicalIIIF = L.imageOverlay(
 ## 7. Layer & Cluster Management
 
 To ensure the map remains performant and readable when handling large datasets, markers are grouped into independent clusters based on their source.
+
 ```js
 const geoCluster = L.markerClusterGroup();
 const csvCluster = L.markerClusterGroup();
@@ -598,6 +614,7 @@ const maryTeiCluster = L.markerClusterGroup();
 ### Mary's Travel Path Layer
 
 A dedicated `featureGroup` is used to visualize travel routes as spatial lines rather than individual points.
+
 ```js
 const VisitedByMaryPathLayer = L.featureGroup();
 ```
@@ -615,6 +632,7 @@ Each marker contains a dynamic popup providing context for the specific location
 ## 9. Search System
 
 The system maintains a global index of all loaded markers to facilitate rapid searching.
+
 ```js
 searchIndex.push({ name, layer, latlng });
 ```
@@ -628,6 +646,7 @@ searchIndex.push({ name, layer, latlng });
 ## 10. Timeline Integration
 
 Timeline events are harvested during the data loading process and stored in a central repository.
+
 ```js
 const _timelineEvents = [];
 ```
@@ -643,15 +662,16 @@ The system parses a variety of temporal data:
 
 TEI `<event>` elements are specifically targeted for conversion into TimelineJS entries.
 
-| TEI Attribute | Function |
-|---------------|----------|
-| `@when` | Defines the specific event date. |
-| `@type` | Categorizes the event (e.g., arrival, departure, visit). |
-| `label` | The text description displayed on the timeline slide. |
+| TEI Attribute | Function                                                 |
+| ------------- | -------------------------------------------------------- |
+| `@when`       | Defines the specific event date.                         |
+| `@type`       | Categorizes the event (e.g., arrival, departure, visit). |
+| `label`       | The text description displayed on the timeline slide.    |
 
 ## 12. Timeline Rendering
 
 The timeline is rendered only after all data sources (GeoJSON, CSV, TEI) have been fully loaded and parsed.
+
 ```js
 buildAndAttachTimeline();
 ```
@@ -661,7 +681,6 @@ buildAndAttachTimeline();
 - **Automatic Scaling**: The timeline automatically adjusts its zoom level based on the range of dates provided.
 - **Spatial Synchronization**: Navigating through timeline slides triggers the map to pan to the associated geographic coordinates.
 - **Fallback Logic**: Displays a notification if no valid dated events are present in the current dataset.
-
 
 ---
 
