@@ -193,23 +193,45 @@
       // -----------------------------
       // SEARCH INDEX
       // -----------------------------
-      const searchIndex = [];
+      const searchIndex = new Map();
       const addToSearchIndex = (title, layer, latlng) => {
-        if (title && latlng) searchIndex.push({ name: title, layer, latlng });
+        if (!title || !latlng) return;
+
+        const key = title.toLowerCase().trim();
+
+        searchIndex.set(key, { name: title, layer, latlng });
       };
 
       const findAndOpen = (q) => {
         q = (q || '').toLowerCase().trim();
         if (!q) return false;
 
-        const found =
-          searchIndex.find((s) => s.name && s.name.toLowerCase() === q) ||
-          searchIndex.find((s) => s.name && s.name.toLowerCase().includes(q));
+        let found = searchIndex.get(q);
 
-        if (!found?.latlng) return false;
+        if (!found) {
+          for (const [key, value] of searchIndex.entries()) {
+            if (key.includes(q)) {
+              found = value;
+              break;
+            }
+          }
+        }
 
-        map.setView(found.latlng, Math.max(map.getZoom(), 8));
-        found.layer?.openPopup?.();
+        if (!found?.layer) return false;
+
+        const marker = found.layer;
+        const clusters = [geoCluster, csvCluster, teiCluster, maryCluster];
+        const parentCluster = clusters.find((c) => c.hasLayer(marker));
+
+        if (parentCluster) {
+          parentCluster.zoomToShowLayer(marker, () => {
+            marker.openPopup();
+          });
+        } else {
+          map.setView(marker.getLatLng(), 9);
+          marker.openPopup();
+        }
+
         return true;
       };
 
