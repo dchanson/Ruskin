@@ -61,6 +61,10 @@
       </div>
 
       <div id="timeline-container">
+        <div class="panel-section" style="margin-bottom: 12px">
+          <span class="section-title">Location</span>
+          <button id="timeline-find-btn" class="search-btn" type="button">Find on Map</button>
+        </div>
         <div id="timeline-embed"></div>
       </div>
     </div>
@@ -193,23 +197,45 @@
       // -----------------------------
       // SEARCH INDEX
       // -----------------------------
-      const searchIndex = [];
+      const searchIndex = new Map();
       const addToSearchIndex = (title, layer, latlng) => {
-        if (title && latlng) searchIndex.push({ name: title, layer, latlng });
+        if (!title || !latlng) return;
+
+        const key = title.toLowerCase().trim();
+
+        searchIndex.set(key, { name: title, layer, latlng });
       };
 
       const findAndOpen = (q) => {
         q = (q || '').toLowerCase().trim();
         if (!q) return false;
 
-        const found =
-          searchIndex.find((s) => s.name && s.name.toLowerCase() === q) ||
-          searchIndex.find((s) => s.name && s.name.toLowerCase().includes(q));
+        let found = searchIndex.get(q);
 
-        if (!found?.latlng) return false;
+        if (!found) {
+          for (const [key, value] of searchIndex.entries()) {
+            if (key.includes(q)) {
+              found = value;
+              break;
+            }
+          }
+        }
 
-        map.setView(found.latlng, Math.max(map.getZoom(), 8));
-        found.layer?.openPopup?.();
+        if (!found?.layer) return false;
+
+        const marker = found.layer;
+        const clusters = [geoCluster, csvCluster, teiCluster, maryCluster];
+        const parentCluster = clusters.find((c) => c.hasLayer(marker));
+
+        if (parentCluster) {
+          parentCluster.zoomToShowLayer(marker, () => {
+            marker.openPopup();
+          });
+        } else {
+          map.setView(marker.getLatLng(), 9);
+          marker.openPopup();
+        }
+
         return true;
       };
 
@@ -442,6 +468,27 @@
           console.warn('timeline wiring failed', e);
         }
       };
+
+      document.getElementById('timeline-find-btn').addEventListener('click', () => {
+        const tl = window.ruskinTimeline;
+
+        if (!tl?.current_id) {
+          alert('Timeline not ready.');
+          return;
+        }
+
+        const currentEvent = _timelineEvents.find((e) => e.unique_id === tl.current_id);
+        if (!currentEvent?.text?.headline) {
+          alert('No active slide with headline.');
+          return;
+        }
+
+        const found = findAndOpen(currentEvent.text.headline);
+
+        if (!found) {
+          alert('Location not found on map.');
+        }
+      });
 
       // -----------------------------
       // Loaders
