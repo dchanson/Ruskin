@@ -99,27 +99,60 @@ server {
     listen 8080;
     server_name ruskin.local;
     root /Users/userselu/Ruskin;
+
     client_max_body_size 210M;
     autoindex on;
+
     index index.php index.html index.htm;
     charset utf-8;
-
-    # Set default content type once per server block
     default_type text/html;
 
-    # Favicon request
+    # ---------------------------------------------------
+    # Favicon
+    # ---------------------------------------------------
+
     location = /favicon.ico {
         alias /Users/userselu/Ruskin/_Resources/images/ruskin_icon.png;
     }
 
-    # HTML files - with highlighting
+    # ---------------------------------------------------
+    # Static file types
+    # ---------------------------------------------------
+
+    location ~* \.xml$ { default_type application/xml; }
+    location ~* \.css$ { default_type text/css; }
+    location ~* \.js$  { default_type application/javascript; }
+
+    # ---------------------------------------------------
+    # Fonts with CORS
+    # ---------------------------------------------------
+
+    location ~* ^/_Resources/fonts/(.+\.(woff|woff2|eot|ttf|otf))$ {
+        alias /Users/userselu/Ruskin/_Resources/fonts/$1;
+        access_log off;
+        add_header Access-Control-Allow-Origin *;
+    }
+
+    # ---------------------------------------------------
+    # Resources
+    # ---------------------------------------------------
+
+    location /_Resources/ {
+        alias /Users/userselu/Ruskin/_Resources/;
+        autoindex on;
+    }
+
+    # ---------------------------------------------------
+    # HTML Files (single script injection point)
+    # ---------------------------------------------------
+
     location ~* \.html$ {
+
         charset utf-8;
         gzip off;
-        sub_filter_once off;
 
-        # Add highlighting functionality before </body>
-        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
+        sub_filter_once off;
+        sub_filter_types text/html;
 
         try_files $uri $uri.html
                   /gen/_xml/_Completed$uri.html
@@ -127,48 +160,39 @@ server {
                   =404;
     }
 
-    # PHP files - with highlighting
+    # ---------------------------------------------------
+    # PHP Files
+    # ---------------------------------------------------
+
     location ~ \.php$ {
+
         include fastcgi_params;
         fastcgi_pass 127.0.0.1:9000;
+
         fastcgi_index index.php;
+
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         fastcgi_param DOCUMENT_ROOT $document_root;
 
         sub_filter_once off;
 
-        # Add icon in PHP header
-        sub_filter '<?php' '<?php echo \'<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png">\';';
+        sub_filter '<?php' '<?php echo "<link rel=\"icon\" type=\"image/png\" href=\"/_Resources/images/ruskin_icon.png\">";';
 
-        # Add highlighting functionality before </body>
         sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
 
-    # Static file types
-    location ~* \.xml$ { default_type application/xml; }
-    location ~* \.css$ { default_type text/css; }
-    location ~* \.js$  { default_type application/javascript; }
+    # ---------------------------------------------------
+    # Homepage
+    # ---------------------------------------------------
 
-    # Fonts with CORS
-    location ~* ^/_Resources/fonts/(.+\.(woff|woff2|eot|ttf|otf))$ {
-        alias /Users/userselu/Ruskin/_Resources/fonts/$1;
-        access_log off;
-        add_header Access-Control-Allow-Origin *;
-        default_type application/font-woff;
-    }
-
-    # _Resources folder
-    location /_Resources/ {
-        alias /Users/userselu/Ruskin/_Resources/;
-        autoindex on;
-    }
-
-    # Home page fallback
     location = / {
         try_files /gen/_xml/_Completed/webpages/homepage.html =404;
     }
 
-    # Search routes (no highlighting needed)
+    # ---------------------------------------------------
+    # Search
+    # ---------------------------------------------------
+
     location ~ ^/search(?:\.html)?$ {
         root /Users/userselu/Ruskin/src/search_new;
         try_files /search.html =404;
@@ -177,104 +201,136 @@ server {
     location = /search_style.css {
         root /Users/userselu/Ruskin/src/search_new;
         default_type text/css;
-        try_files $uri =404;
     }
 
     location = /search_script.js {
         root /Users/userselu/Ruskin/src/search_new;
         default_type application/javascript;
-        try_files $uri =404;
     }
 
     location = /search_handler.php {
-        fastcgi_pass 127.0.0.1:9000;
+
         include fastcgi_params;
+        fastcgi_pass 127.0.0.1:9000;
+
         fastcgi_param SCRIPT_FILENAME $document_root/src/search_new/search_handler.php;
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
 
     location = /autocomplete_handler.php {
-        fastcgi_pass 127.0.0.1:9000;
+
         include fastcgi_params;
+        fastcgi_pass 127.0.0.1:9000;
+
         fastcgi_param SCRIPT_FILENAME $document_root/src/search_new/autocomplete_handler.php;
         fastcgi_param DOCUMENT_ROOT $document_root;
     }
 
+    # ---------------------------------------------------
+    # Map
+    # ---------------------------------------------------
+
     location ~ /map(?:\.html)?$ {
-        default_type text/html;
         alias /Users/userselu/Ruskin/_Map/map.html;
+        default_type text/html;
     }
 
     location ^~ /_Map/Europe1831OverlayImg/ {
-        add_header Access-Controll-Allow-Origin *;
+        add_header Access-Control-Allow-Origin *;
         try_files $uri =404;
     }
 
-    # HTML Routing for main folders - with highlighting
+    # ---------------------------------------------------
+    # Main HTML Routing
+    # ---------------------------------------------------
+
     location ~* ^/(apparatuses|glosses|letters|notes|webpages)/([^/]+)(\.html)?$ {
-        default_type text/html;
+
         charset utf-8;
         gzip off;
 
         sub_filter_once off;
-        sub_filter_types text/html text/plain;
+        sub_filter_types text/html;
 
-        # Add icon and site styles before <main>
-        sub_filter '<main' '<link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png"><link rel="stylesheet" href="/_Resources/css_styles/site_styles.css"><main';
+        sub_filter '<main' '
+        <link rel="icon" type="image/png" href="/_Resources/images/ruskin_icon.png">
+        <link rel="stylesheet" href="/_Resources/css_styles/site_styles.css">
+        <main';
 
-        # Inject Home button after the page title (handles both h1 and div)
-        sub_filter '<h1 class="page-title">' '<h1 class="page-title"><div class="site-controls"><a class="btn-home" href="/" aria-label="Home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/></svg></a></div>';
+        sub_filter '<h1 class="page-title">' '
+        <h1 class="page-title">
+        <div class="site-controls">
+        <a class="btn-home" href="/" aria-label="Home">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+        <path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/>
+        </svg>
+        </a>
+        </div>';
 
-        sub_filter '<div id="top" class="page-title">' '<div id="top" class="page-title"><div class="site-controls"><a class="btn-home" href="/" aria-label="Home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/></svg></a></div>';
+        sub_filter '<div id="top" class="page-title">' '
+        <div id="top" class="page-title">
+        <div class="site-controls">
+        <a class="btn-home" href="/" aria-label="Home">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+        <path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" fill="currentColor"/>
+        </svg>
+        </a>
+        </div>';
 
-        # Add highlighting functionality
-        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
+        sub_filter '</body>' '
+        <script src="/_Resources/js/page-highlighter.js"></script>
+        <script src="/_Resources/js/apparatus_summary.js"></script>
+        </body>';
 
         try_files /gen/_xml/_Completed/$1/$2.html
-                /gen/_xml/$1/$2.html
-                =404;
+                  /gen/_xml/$1/$2.html
+                  =404;
     }
 
+    # ---------------------------------------------------
+    # Witness / Figure PHP Routing
+    # ---------------------------------------------------
 
-    # PHP Routing for witnesses, figures, corpuses - with highlighting
     location ~* ^/(witnesses|figures|corpuses)/([^/]+)$ {
+
         try_files /gen/_xml/_Completed/$1/$2.php
                   /gen/_xml/$1/$2.php
                   =404;
 
-        fastcgi_pass 127.0.0.1:9000;
         include fastcgi_params;
-        fastcgi_index index.php;
+
+        fastcgi_pass 127.0.0.1:9000;
+
         fastcgi_param SCRIPT_FILENAME $document_root/gen/_xml/_Completed/$1/$2.php;
         fastcgi_param DOCUMENT_ROOT $document_root;
-
-        sub_filter_once off;
-        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
 
-    # PHP Routing for capitalized folders - with highlighting
     location ~ ^/(Corpuses|Figures|Witnesses)/(.+\.php)$ {
+
         try_files /gen/_xml/_Completed/$1/$2
                   /gen/_xml/$1/$2
                   =404;
 
-        fastcgi_pass 127.0.0.1:9000;
         include fastcgi_params;
-        fastcgi_index index.php;
+
+        fastcgi_pass 127.0.0.1:9000;
+
         fastcgi_param SCRIPT_FILENAME $document_root/gen/_xml/_Completed/$1/$2;
         fastcgi_param DOCUMENT_ROOT $document_root;
-
-        sub_filter_once off;
-        sub_filter '</body>' '<script src="/_Resources/js/page-highlighter.js"></script></body>';
     }
 
-    # Fallback location
+    # ---------------------------------------------------
+    # Default fallback
+    # ---------------------------------------------------
+
     location / {
-        try_files $uri $uri/ $uri.html $uri.html/
-                  =404;
+        try_files $uri $uri/ $uri.html $uri.html/ =404;
     }
 
-    # Custom 404 handling
+    # ---------------------------------------------------
+    # 404
+    # ---------------------------------------------------
+
     error_page 404 /gen/_xml/_Completed/webpages/incompleted.html;
 
     location = /gen/_xml/_Completed/webpages/incompleted.html {
@@ -282,7 +338,6 @@ server {
         internal;
     }
 }
-
 ```
 
 ### Restart NGINX:
