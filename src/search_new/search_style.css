@@ -550,3 +550,35 @@ button[type='submit']:hover {
   margin-top: 0;
   position: relative;
 }
+.did-you-mean-section {
+  margin: 20px 0 10px;
+  padding: 15px;
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+}
+.did-you-mean-heading {
+  font-weight: bold;
+  color: #856404;
+  margin: 0 0 8px;
+}
+.did-you-mean-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.did-you-mean-item {
+  margin-bottom: 6px;
+}
+.did-you-mean-item a {
+  color: #2980b9;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.did-you-mean-item a:hover {
+  color: #1a5276;
+}
+.no-results-message {
+  color: #555;
+  margin-top: 10px;
+}
