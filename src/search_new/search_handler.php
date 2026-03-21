@@ -41,7 +41,9 @@ if ($query !== '') {
             'query'    => $query,
             'fields'   => ['title^3', 'content'],
             'type'     => 'most_fields',
-            'operator' => 'and'
+            'operator' => 'and',
+            'fuzziness' => 'AUTO',
+            'prefix_length' => 1
         ]
     ];
 }
@@ -166,6 +168,22 @@ $body = [
             'bodyTitles' => ['fragment_size' => 150, 'number_of_fragments' => 1],
         ]
     ],
+    'suggest' => [
+    'text' => $query,
+    'did_you_mean' => [
+        'phrase' => [
+            'field' => 'title',
+            'size' => 1,
+            'gram_size' => 3,
+            'direct_generator' => [
+                [
+                    'field' => 'title',
+                    'suggest_mode' => 'always'
+                ]
+            ]
+        ]
+    ]
+],
     'from' => $from,
     'size' => $perPage,
     'track_total_hits' => true
@@ -174,6 +192,15 @@ $body = [
 // ---- EXECUTION ----
 try {
     $response = $client->search(['index' => $index, 'body' => $body]);
+
+    $suggestion = null;
+    if ($suggestion === $query) {
+        $suggestion = null;
+    }
+
+    if (!empty($response['suggest']['did_you_mean'][0]['options'])) {
+        $suggestion = $response['suggest']['did_you_mean'][0]['options'][0]['text'];
+    }
 
     $results    = [];
     $seenTitles = [];
@@ -223,6 +250,7 @@ try {
     if (isset($_GET['page']) || isset($_GET['per_page'])) {
         echo json_encode([
             'results'    => $results,
+            'suggestion' => $suggestion,
             'pagination' => [
                 'current_page'  => $page,
                 'per_page'      => $perPage,
@@ -235,8 +263,11 @@ try {
             ]
         ]);
     } else {
-        echo json_encode(['results' => $results]);
-    }
+        echo json_encode([
+            'results' => $results,
+            'suggestion' => $suggestion
+        ]);
+        }
 
 } catch (Throwable $e) {
     http_response_code(500);

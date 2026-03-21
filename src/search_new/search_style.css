@@ -78,7 +78,9 @@ select {
   font-size: 0.95rem;
   border: 1px solid #cdd4da; /* Cooler, slightly darker border */
   border-radius: 0.5rem;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
   width: 100%;
   background-color: #ffffff;
 }
@@ -217,7 +219,9 @@ select:focus {
   padding: 0.5rem 1rem !important;
   border-radius: 0.4rem !important;
   font-weight: 600;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
   box-shadow: 0 0.08rem 0.2rem rgba(0, 0, 0, 0.08);
   font-size: 0.85rem;
 }
@@ -251,7 +255,10 @@ button[type='submit'] {
   font-family: 'RuskinFont', serif;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
   box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
 }
 
@@ -289,7 +296,9 @@ button[type='submit']:hover {
   font-weight: 700;
   color: #5d7e9b;
   text-decoration: none;
-  transition: color 0.2s ease, text-decoration 0.2s ease;
+  transition:
+    color 0.2s ease,
+    text-decoration 0.2s ease;
 }
 
 .result-title a:hover {
@@ -484,7 +493,9 @@ button[type='submit']:hover {
   object-fit: contain;
   vertical-align: middle;
   opacity: 0.8;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
   opacity: 40%;
 }
 
@@ -549,4 +560,34 @@ button[type='submit']:hover {
 .select-with-info .info-container {
   margin-top: 0;
   position: relative;
+}
+
+/* Suggestion (Did you mean...) */
+.suggestion {
+  max-width: 700px;
+  margin: 1rem auto;
+  padding: 0.9rem 1.2rem;
+  background-color: #fbfdfe;
+  border: 1px solid #e0e4e8;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.03);
+
+  font-size: 0.9rem;
+  color: #4f4f4f;
+  text-align: center;
+}
+
+/* "Did you mean" link */
+.suggestion a {
+  color: #5d7e9b;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dashed #5d7e9b;
+  transition: all 0.2s ease;
+}
+
+.suggestion a:hover {
+  color: #4a6a84;
+  border-bottom: 1px solid #4a6a84;
 }
