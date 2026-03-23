@@ -408,12 +408,11 @@ try {
     $response = $client->search(['index' => $index, 'body' => $body]);
 
     $suggestion = null;
-    if ($suggestion === $query) {
-        $suggestion = null;
-    }
-
     if (!empty($response['suggest']['did_you_mean'][0]['options'])) {
         $suggestion = $response['suggest']['did_you_mean'][0]['options'][0]['text'];
+        if ($suggestion === $query) {
+            $suggestion = null;
+        }
     }
 
     $results    = [];
@@ -422,16 +421,12 @@ try {
 
     foreach ($response['hits']['hits'] as $hit) {
         $formatted = formatHit($hit);
-        if ($formatted === null) {
-            continue;
-        }
+        if ($formatted === null) continue;
 
         $pathKey  = strtolower($hit['_source']['relative_path'] ?? '');
         $titleKey = strtolower($formatted['title']);
 
-        if (in_array($pathKey, $seenPaths, true) || in_array($titleKey, $seenTitles, true)) {
-            continue;
-        }
+        if (in_array($pathKey, $seenPaths, true) || in_array($titleKey, $seenTitles, true)) continue;
 
         $seenPaths[]  = $pathKey;
         $seenTitles[] = $titleKey;
@@ -441,34 +436,16 @@ try {
     $totalResults = $response['hits']['total']['value'] ?? 0;
     $totalPages   = $perPage > 0 ? (int) ceil($totalResults / $perPage) : 1;
 
-    if (isset($_GET['page']) || isset($_GET['per_page'])) {
-        echo json_encode([
-            'results'    => $results,
-            'suggestion' => $suggestion,
-            'pagination' => [
-                'current_page'  => $page,
-                'per_page'      => $perPage,
-                'total_results' => $totalResults,
-                'total_pages'   => $totalPages,
-                'has_previous'  => $page > 1,
-                'has_next'      => $page < $totalPages,
-                'from'          => $from + 1,
-                'to'            => min($from + $perPage, $totalResults)
-            ]
-        ]);
-    } else {
-        echo json_encode([
-            'results' => $results,
-            'suggestion' => $suggestion
-        ]);
-        }
+    // Get "did you mean?" suggestions when there are no results
+    $suggestions = empty($results)
+        ? getDidYouMeanSuggestions($query, $client, $index)
+        : ['fuzzy_titles' => [], 'phrase_suggestions' => []];
 
-    // ===========================================================
-    // Build the JSON response
-    // ===========================================================
+    // Build ONE output array
     $output = [
-        'results'     => $results,
-        'suggestions' => $suggestions,    // empty array when results exist
+        'results'    => $results,
+        'suggestion' => $suggestion,
+        'suggestions' => $suggestions,
     ];
 
     if (isset($_GET['page']) || isset($_GET['per_page'])) {
@@ -484,6 +461,7 @@ try {
         ];
     }
 
+    // Single echo — only one JSON payload
     echo json_encode($output);
 
 } catch (\Throwable $e) {
