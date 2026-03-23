@@ -28,7 +28,7 @@ def summarize_text(text):
     text related to the works of John Ruskin.
 
     Requirements:
-    - 250 word limit
+    - 150 word limit
     - Explain the key themes and arguments
     - Maintain academic tone
     - Mention the work(s) of John Ruskin discussed and details about when and where they were crafted and published
