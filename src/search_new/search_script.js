@@ -195,16 +195,16 @@ function addField() {
     fieldType === 'name'
       ? 'name'
       : fieldType === 'person'
-      ? 'person'
-      : fieldType === 'place'
-      ? 'place'
-      : fieldType === 'geog'
-      ? 'geog'
-      : fieldType === 'title'
-      ? 'title'
-      : fieldType === 'org'
-      ? 'org'
-      : 'name';
+        ? 'person'
+        : fieldType === 'place'
+          ? 'place'
+          : fieldType === 'geog'
+            ? 'geog'
+            : fieldType === 'title'
+              ? 'title'
+              : fieldType === 'org'
+                ? 'org'
+                : 'name';
 
   setTimeout(() => {
     attachSuggest(inputId, autocompleteType);
@@ -363,6 +363,8 @@ async function performSearch(page = 1, perPage = 10) {
   params.set('per_page', perPage);
 
   const resultsDiv = document.getElementById('results');
+  const suggestionBox = document.getElementById('suggestionBox');
+
   resultsDiv.classList.remove('hidden-element');
   resultsDiv.innerHTML = 'Searching...';
 
@@ -371,6 +373,23 @@ async function performSearch(page = 1, perPage = 10) {
     const data = await response.json();
 
     resultsDiv.innerHTML = '';
+
+    if (suggestionBox && data.suggestion && data.suggestion !== params.get('q')) {
+      suggestionBox.innerHTML = `
+        Did you mean: 
+        <a id="suggestionLink">${data.suggestion}</a>?
+      `;
+      suggestionBox.classList.remove('hidden-element');
+
+      document.getElementById('suggestionLink').onclick = () => {
+        params.set('q', data.suggestion);
+        currentSearchParams = Object.fromEntries(params.entries());
+        performSearch(1, perPage);
+      };
+    } else if (suggestionBox) {
+      suggestionBox.classList.add('hidden-element');
+      suggestionBox.innerHTML = '';
+    }
 
     if (data.results && data.pagination) {
       displayPaginatedResults(data);

@@ -46,7 +46,9 @@ if ($query !== '') {
             'fields'   => ['title^3', 'content'],
             'type'     => 'most_fields',
             'operator' => 'and',
-        ],
+            'fuzziness' => 'AUTO',
+            'prefix_length' => 1
+        ]
     ];
 }
 
@@ -187,9 +189,25 @@ $body = [
             'bodyTitles' => ['fragment_size' => 150, 'number_of_fragments' => 1],
         ],
     ],
-    'from'            => $from,
-    'size'            => $perPage,
-    'track_total_hits' => true,
+    'suggest' => [
+    'text' => $query,
+    'did_you_mean' => [
+        'phrase' => [
+            'field' => 'title',
+            'size' => 1,
+            'gram_size' => 3,
+            'direct_generator' => [
+                [
+                    'field' => 'title',
+                    'suggest_mode' => 'always'
+                ]
+            ]
+        ]
+    ]
+],
+    'from' => $from,
+    'size' => $perPage,
+    'track_total_hits' => true
 ];
 
 // ============================================================
@@ -389,9 +407,18 @@ function formatHit(array $hit): ?array
 try {
     $response = $client->search(['index' => $index, 'body' => $body]);
 
-    $results     = [];
-    $seenTitles  = [];
-    $seenPaths   = [];
+    $suggestion = null;
+    if ($suggestion === $query) {
+        $suggestion = null;
+    }
+
+    if (!empty($response['suggest']['did_you_mean'][0]['options'])) {
+        $suggestion = $response['suggest']['did_you_mean'][0]['options'][0]['text'];
+    }
+
+    $results    = [];
+    $seenTitles = [];
+    $seenPaths  = [];
 
     foreach ($response['hits']['hits'] as $hit) {
         $formatted = formatHit($hit);
@@ -414,14 +441,27 @@ try {
     $totalResults = $response['hits']['total']['value'] ?? 0;
     $totalPages   = $perPage > 0 ? (int) ceil($totalResults / $perPage) : 1;
 
-    // ===========================================================
-    // "Did you mean?" — only when the primary search found nothing
-    //  and the user actually typed a free-text query ($query).
-    // ===========================================================
-    $suggestions = [];
-    if ($totalResults === 0 && $query !== '') {
-        $suggestions = getDidYouMeanSuggestions($query, $client, $index);
-    }
+    if (isset($_GET['page']) || isset($_GET['per_page'])) {
+        echo json_encode([
+            'results'    => $results,
+            'suggestion' => $suggestion,
+            'pagination' => [
+                'current_page'  => $page,
+                'per_page'      => $perPage,
+                'total_results' => $totalResults,
+                'total_pages'   => $totalPages,
+                'has_previous'  => $page > 1,
+                'has_next'      => $page < $totalPages,
+                'from'          => $from + 1,
+                'to'            => min($from + $perPage, $totalResults)
+            ]
+        ]);
+    } else {
+        echo json_encode([
+            'results' => $results,
+            'suggestion' => $suggestion
+        ]);
+        }
 
     // ===========================================================
     // Build the JSON response
