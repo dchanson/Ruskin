@@ -537,12 +537,18 @@ Note: Bold, italics, and underlining are performed by the <b>, <i>, and <u> HTML
 
 .doubleletter {
   color: #fff;
-  text-shadow: 1px 1px #000, 0px 1px #000, 0px -1px #000;
+  text-shadow:
+    1px 1px #000,
+    0px 1px #000,
+    0px -1px #000;
 }
 
 .doubleletter-fill {
   color: #666;
-  text-shadow: 1px 1px #000, 0px 1px #000, 0px -1px #000;
+  text-shadow:
+    1px 1px #000,
+    0px 1px #000,
+    0px -1px #000;
 }
 
 .overwriting {
@@ -1079,6 +1085,18 @@ position: fixed;
   height: 100%;
   overflow: auto;
   width: 39.85%;
+}
+
+.apparatus-summary {
+  background: #f7f7f7;
+  border-left: 4px solid #444;
+  padding: 16px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.apparatus-summary h3 {
+  margin-top: 0;
 }
 
 #witnesses {

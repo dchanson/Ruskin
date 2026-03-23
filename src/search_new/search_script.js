@@ -195,16 +195,16 @@ function addField() {
     fieldType === 'name'
       ? 'name'
       : fieldType === 'person'
-      ? 'person'
-      : fieldType === 'place'
-      ? 'place'
-      : fieldType === 'geog'
-      ? 'geog'
-      : fieldType === 'title'
-      ? 'title'
-      : fieldType === 'org'
-      ? 'org'
-      : 'name';
+        ? 'person'
+        : fieldType === 'place'
+          ? 'place'
+          : fieldType === 'geog'
+            ? 'geog'
+            : fieldType === 'title'
+              ? 'title'
+              : fieldType === 'org'
+                ? 'org'
+                : 'name';
 
   setTimeout(() => {
     attachSuggest(inputId, autocompleteType);
@@ -265,6 +265,96 @@ function createHighlightUrl(originalUrl, terms) {
   return url.toString();
 }
 
+function buildDidYouMeanBlock(suggestions) {
+  if (!suggestions) return null;
+ 
+  const fuzzyTitles = suggestions.fuzzy_titles || [];
+  const phraseSuggestions = suggestions.phrase_suggestions || [];
+ 
+  // Nothing to show
+  if (fuzzyTitles.length === 0 && phraseSuggestions.length === 0) return null;
+ 
+  const wrapper = document.createElement('div');
+  wrapper.className = 'did-you-mean-section';
+ 
+  const heading = document.createElement('p');
+  heading.className = 'did-you-mean-heading';
+  heading.textContent = 'Did you mean:';
+  wrapper.appendChild(heading);
+ 
+  const list = document.createElement('ul');
+  list.className = 'did-you-mean-list';
+ 
+  // De-duplicate: collect all suggestion texts we've already rendered
+  const seen = new Set();
+ 
+  // 1) Phrase suggestions first (they are spelling-corrected queries)
+  phraseSuggestions.forEach((s) => {
+    const text = s.text || '';
+    if (!text || seen.has(text.toLowerCase())) return;
+    seen.add(text.toLowerCase());
+ 
+    const li = document.createElement('li');
+    li.className = 'did-you-mean-item';
+ 
+    const link = document.createElement('a');
+    link.href = '#';
+    // Show the highlighted version if available (corrected words wrapped in <em>)
+    link.innerHTML = s.highlighted || escapeHtml(text);
+    link.title = 'Search for "' + text + '"';
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      searchForSuggestion(text);
+    });
+ 
+    li.appendChild(link);
+    list.appendChild(li);
+  });
+ 
+  // 2) Fuzzy-matched titles (clickable document titles)
+  fuzzyTitles.forEach((title) => {
+    if (!title || seen.has(title.toLowerCase())) return;
+    seen.add(title.toLowerCase());
+ 
+    const li = document.createElement('li');
+    li.className = 'did-you-mean-item';
+ 
+    const link = document.createElement('a');
+    link.href = '#';
+    link.textContent = title;
+    link.title = 'Search for "' + title + '"';
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      searchForSuggestion(title);
+    });
+ 
+    li.appendChild(link);
+    list.appendChild(li);
+  });
+ 
+  if (list.children.length === 0) return null;
+ 
+  wrapper.appendChild(list);
+  return wrapper;
+}
+ 
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+ 
+/**
+ * Programmatically re-run the search with a suggested term.
+ * Updates the keyword input and triggers form submission.
+ */
+function searchForSuggestion(term) {
+  const form = document.getElementById('searchForm');
+  if (!form) return;
+  form.q.value = term;
+  form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+}
+
 async function performSearch(page = 1, perPage = 10) {
   if (!currentSearchParams) return;
 
@@ -273,6 +363,8 @@ async function performSearch(page = 1, perPage = 10) {
   params.set('per_page', perPage);
 
   const resultsDiv = document.getElementById('results');
+  const suggestionBox = document.getElementById('suggestionBox');
+
   resultsDiv.classList.remove('hidden-element');
   resultsDiv.innerHTML = 'Searching...';
 
@@ -281,6 +373,23 @@ async function performSearch(page = 1, perPage = 10) {
     const data = await response.json();
 
     resultsDiv.innerHTML = '';
+
+    if (suggestionBox && data.suggestion && data.suggestion !== params.get('q')) {
+      suggestionBox.innerHTML = `
+        Did you mean: 
+        <a id="suggestionLink">${data.suggestion}</a>?
+      `;
+      suggestionBox.classList.remove('hidden-element');
+
+      document.getElementById('suggestionLink').onclick = () => {
+        params.set('q', data.suggestion);
+        currentSearchParams = Object.fromEntries(params.entries());
+        performSearch(1, perPage);
+      };
+    } else if (suggestionBox) {
+      suggestionBox.classList.add('hidden-element');
+      suggestionBox.innerHTML = '';
+    }
 
     if (data.results && data.pagination) {
       displayPaginatedResults(data);
@@ -296,10 +405,21 @@ async function performSearch(page = 1, perPage = 10) {
 
 function displayPaginatedResults(data) {
   const resultsDiv = document.getElementById('results');
-  const { results, pagination } = data;
-
+  const { results, pagination, suggestions } = data;
+ 
   if (!results || results.length === 0) {
-    resultsDiv.innerHTML = '<p>No results found.</p>';
+    // ---- "Did you mean?" block when zero results ----
+    const didYouMean = buildDidYouMeanBlock(suggestions);
+    if (didYouMean) {
+      resultsDiv.appendChild(didYouMean);
+    }
+ 
+    const noResultP = document.createElement('p');
+    noResultP.className = 'no-results-message';
+    noResultP.textContent = didYouMean
+      ? 'No exact results found. Try one of the suggestions above, or refine your search.'
+      : 'No results found.';
+    resultsDiv.appendChild(noResultP);
     return;
   }
 
@@ -364,14 +484,29 @@ function displayPaginatedResults(data) {
   createPaginationControls(pagination);
 }
 
-function displayLegacyResults(results) {
+function displayLegacyResults(data) {
   const resultsDiv = document.getElementById('results');
-
-  if (!Array.isArray(results) || results.length === 0) {
-    resultsDiv.innerHTML = '<p>No results found.</p>';
+ 
+  // data may be a plain array (old format) or { results, suggestions }
+  const results = Array.isArray(data) ? data : (data.results || []);
+  const suggestions = Array.isArray(data) ? null : (data.suggestions || null);
+ 
+  if (!results || results.length === 0) {
+    // ---- "Did you mean?" block ----
+    const didYouMean = buildDidYouMeanBlock(suggestions);
+    if (didYouMean) {
+      resultsDiv.appendChild(didYouMean);
+    }
+ 
+    const noResultP = document.createElement('p');
+    noResultP.className = 'no-results-message';
+    noResultP.textContent = didYouMean
+      ? 'No exact results found. Try one of the suggestions above, or refine your search.'
+      : 'No results found.';
+    resultsDiv.appendChild(noResultP);
     return;
   }
-
+ 
   if (searchTerms.length > 0) {
     const highlightInfo = document.createElement('div');
     highlightInfo.className = 'highlight-info';
@@ -382,14 +517,14 @@ function displayLegacyResults(results) {
     `;
     resultsDiv.appendChild(highlightInfo);
   }
-
+ 
   const grouped = {};
   results.forEach((item) => {
     const dir = item.link.split('/')[1] || 'others';
     if (!grouped[dir]) grouped[dir] = [];
     grouped[dir].push(item);
   });
-
+ 
   const order = ['apparatuses', 'witnesses', 'notes', 'glosses', 'figures'];
   order.forEach((dir) => {
     if (grouped[dir]) {
@@ -397,13 +532,13 @@ function displayLegacyResults(results) {
       section.innerHTML = `<h2 style="color:#2d3e50;border-bottom:1px solid #ccc;padding-bottom:4px">${
         dir.charAt(0).toUpperCase() + dir.slice(1)
       }</h2>`;
-
+ 
       grouped[dir].forEach((item) => {
         const result = document.createElement('div');
         result.className = 'result-item';
-
+ 
         const highlightUrl = createHighlightUrl(item.link, searchTerms);
-
+ 
         result.innerHTML = `
                 <div class="result-title">
                   <a href="${highlightUrl}" target="_blank">${item.title}</a>
@@ -418,7 +553,7 @@ function displayLegacyResults(results) {
               `;
         section.appendChild(result);
       });
-
+ 
       resultsDiv.appendChild(section);
     }
   });
