@@ -28,12 +28,9 @@ def summarize_text(text):
     text related to the works of John Ruskin.
 
     Requirements:
-    - 250 word limit
-    - Explain the key themes and arguments
-    - Maintain academic tone
-    - Mention the work(s) of John Ruskin discussed and details about when and where they were crafted and published
-    - Include any relevant historical context or connections to Ruskin's broader oeuvre
-    - Do not use words like "This apparatus" or "The apparatus text" or "The text" or "This text" or "The following text" or "The following apparatus" or "This following text" or "This following apparatus"
+    - 100 word limit
+    - Explain the key themes and arguments presented in the text.
+    - Avoid personal opinions or interpretations; focus on summarizing the content accurately and comprehensively.
 
     TEXT:
     {text}
