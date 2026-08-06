@@ -75,6 +75,9 @@
                                 <p>John Ruskin's early boyhood hand, circa <date notBefore="1826" notAfter="1827">1827-28</date>,
                                     examples of which can be found in MS III, pages <locus from="##" to="##">##-##</locus>.</p>
                             </handNote>
+                            <handNote corresp="#HANDJR1870" scribe="JR">
+                                <p>John Ruskin's mature hand, circa <date when="1870">1870</date>.</p>
+                            </handNote>
                         </handDesc>
                     </physDesc>
                 </msDesc>
@@ -100,10 +103,14 @@
                         <lb/><space quantity="8" unit="chars"/><hi rend="caps">FOUR VOLUMES</hi><lb/>
                             <space quantity="9" unit="chars"/><hi rend="caps">VOL 2</hi><lb/>
                                 <space quantity="8" unit="chars"/><hi rend="smallcaps">WITH COPPER PLATES</hi><lb/><lb/><add place="below"><milestone unit="undeclared" rend="hr-quarter"/></add><lb/>
+                        
                     </titlePart>
                 </docTitle>
-                <docImprint><space quantity="8" unit="chars"/><hi rend="smallcaps">HERN HILL</hi><lb/></docImprint>   
+                <note><p><handShift new="#HANDJR1870" script="cursive" medium="ink"/>Red book No. 2. Sept 8<hi rend="superscript">th</hi> 1870</p></note><ref type="gloss_textual" target="harry_and_lucy_vol2_glosses_textual.php#1870GLOSS"/>
+                <docImprint><handShift new="#HANDJR1827-28" script="print" medium="pencil"/><space quantity="8" unit="chars"/><hi rend="smallcaps">HERN HILL</hi><lb/></docImprint>   
             </titlePage>
+            
+            
             <pb facs="1229151r"/>
             <div type="frontispiece" xml:id="FRONTISPIECE">
                 <p>harry <hi rend="doubleletter">g</hi>oing across the sea<lb/> 
